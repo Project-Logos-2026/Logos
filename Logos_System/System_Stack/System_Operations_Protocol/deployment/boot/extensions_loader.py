@@ -232,7 +232,7 @@ class ExtensionsManager:
 
         # Also log to file if audit_logger available
         try:
-            from logos_core.persistence import audit_logger
+            from Logos_Protocol.logos_core.persistence import audit_logger
 
             audit_logger.log(entry)
         except:

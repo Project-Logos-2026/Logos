@@ -24,7 +24,7 @@ PIN = CFG.get("expected_kernel_hash", "")
 # Try real gate
 RM = None
 try:
-    from logos_core.logos_nexus import LogosNexus
+    from Logos_Protocol.logos_core.logos_nexus import LogosNexus
 
     RM = LogosNexus(CFG).validator.rm
 except Exception:

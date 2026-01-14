@@ -188,7 +188,7 @@ class PersistentAgentIdentity:
                         return False, f"World model snapshot missing: {snapshot_path}"
                     try:
                         # Import lazily to avoid hard dependency if module unavailable
-                        from logos_core.world_model import uwm as world_model_module  # type: ignore
+                        from Logos_Protocol.logos_core.world_model import uwm as world_model_module  # type: ignore
                     except ImportError as exc:
                         return False, f"World model validation unavailable: {exc}"
 

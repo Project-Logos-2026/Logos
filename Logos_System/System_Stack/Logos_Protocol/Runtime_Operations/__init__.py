@@ -1,19 +1,37 @@
-"""Compatibility layer for legacy ``logos_core`` imports.
+"""Compatibility layer for ``logos_core`` imports.
 
-This package re-exports everything from
-``LOGOS_AGI.Advanced_Reasoning_Protocol.logos_core`` while also making local
-compatibility shims available (for example the stub enhanced reference monitor
-used during testing). The module path search is extended so that submodules in
-both locations are discoverable by Python's import system.
+This package re-exports everything from the in-repo
+``Logos_Protocol.logos_core`` package. Local compatibility shims remain
+available (for example the stub enhanced reference monitor used during
+testing). The module path search is extended so that submodules in the
+authoritative location are discoverable by Python's import system.
 """
 
 from __future__ import annotations
 
 import importlib
+import sys
 from pathlib import Path
 
 
-_core_pkg = importlib.import_module("LOGOS_AGI.Advanced_Reasoning_Protocol.logos_core")
+def _load_core():
+    stack_root = Path(__file__).resolve().parents[2]
+    lp_root = stack_root / "Logos_Protocol"
+    for candidate_path in (stack_root, lp_root):
+        if candidate_path.exists():
+            cand_str = str(candidate_path)
+            if cand_str not in sys.path:
+                sys.path.append(cand_str)
+    name = "Logos_Protocol.logos_core"
+    try:
+        return importlib.import_module(name), name
+    except ImportError as exc:  # pragma: no cover - best effort loader
+        raise ImportError(
+            "logos_core not found; expected under System_Stack/Logos_Protocol"
+        ) from exc
+
+
+_core_pkg, _core_name = _load_core()
 
 # Re-export public names from the core package.
 __all__ = list(getattr(_core_pkg, "__all__", []))
@@ -25,8 +43,7 @@ _modal_evaluator_shim = None
 
 try:
     _modal_module = importlib.import_module(
-        "LOGOS_AGI.Advanced_Reasoning_Protocol.iel_toolkit.onto_logic."
-        "modal_privative_overlays"
+        "Logos_Protocol.logos_core.iel_overlays"
     )
 except ImportError:  # pragma: no cover - defensive in case dependency moves
     pass
@@ -60,7 +77,7 @@ elif "ModalEvaluator" not in globals():
 # Import IEL domain types from the advanced reasoning package if available.
 try:
     _iel_overlays = importlib.import_module(
-        "LOGOS_AGI.Advanced_Reasoning_Protocol.logos_core.iel_overlays"
+        "Logos_Protocol.logos_core.iel_overlays"
     )
 except ImportError:  # pragma: no cover - fallback to lightweight shells
     _IELDomain = None

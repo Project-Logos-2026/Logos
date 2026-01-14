@@ -23,10 +23,10 @@ import statistics
 
 # Import core components
 try:
-    from logos_core.coherence.coherence_metrics import CoherenceCalculator
-    from logos_core.coherence.coherence_optimizer import CoherenceOptimizer
-    from logos_core.meta_reasoning.iel_registry import IELRegistry, IELCandidate
-    from logos_core.governance.iel_signer import IELSigner
+    from Logos_Protocol.logos_core.coherence.coherence_metrics import CoherenceCalculator
+    from Logos_Protocol.logos_core.coherence.coherence_optimizer import CoherenceOptimizer
+    from Logos_Protocol.logos_core.meta_reasoning.iel_registry import IELRegistry, IELCandidate
+    from Logos_Protocol.logos_core.governance.iel_signer import IELSigner
 except ImportError as e:
     logging.warning(f"Core import failed: {e}, using fallback classes")
 

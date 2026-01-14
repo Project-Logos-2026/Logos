@@ -30,13 +30,13 @@ from pathlib import Path
 from collections import defaultdict
 
 try:
-    from logos_core.unified_formalisms import UnifiedFormalismValidator as UnifiedFormalisms
+    from Logos_Protocol.logos_core.unified_formalisms import UnifiedFormalismValidator as UnifiedFormalisms
 except ImportError:
     class UnifiedFormalisms:
         def __init__(self): pass
 
 try:
-    from logos_core.daemon.gap_detector import ReasoningGap
+    from Logos_Protocol.logos_core.daemon.gap_detector import ReasoningGap
 except ImportError:
     from dataclasses import dataclass
 

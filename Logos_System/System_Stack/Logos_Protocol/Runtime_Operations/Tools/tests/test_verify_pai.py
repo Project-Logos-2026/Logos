@@ -24,7 +24,7 @@ def test_fresh_start():
         print("✓ Deleted existing identity file")
 
     # Create fresh identity
-    from logos_core.governance.agent_identity import load_or_create_identity
+    from Logos_Protocol.logos_core.governance.agent_identity import load_or_create_identity
 
     load_or_create_identity("fresh_test_hash", REPO_ROOT)
 
@@ -45,7 +45,7 @@ def test_continuity():
     """Test 2: Stable continuity - run multiple updates, confirm hash chain."""
     print("\n=== Test 2: Stable Continuity ===")
 
-    from logos_core.governance.agent_identity import (
+    from Logos_Protocol.logos_core.governance.agent_identity import (
         load_or_create_identity,
         update_identity,
     )
@@ -75,7 +75,7 @@ def test_continuity():
     print(f"✓ After update 2 prev_hash: {hash3}")
 
     # Verify chain: hash3 should equal hash of identity2_copy (before its prev_hash was updated)
-    from logos_core.governance.agent_identity import identity_hash
+    from Logos_Protocol.logos_core.governance.agent_identity import identity_hash
 
     computed_hash2 = identity_hash(identity2_copy, REPO_ROOT)
 
@@ -124,7 +124,7 @@ def test_capability_updates():
         for entry in test_entries:
             f.write(json.dumps(entry) + "\n")
 
-    from logos_core.governance.agent_identity import (
+    from Logos_Protocol.logos_core.governance.agent_identity import (
         load_or_create_identity,
         update_identity,
     )
@@ -158,7 +158,7 @@ def test_policy_blocking():
     """Test 4: Policy mismatch blocks enhancements."""
     print("\n=== Test 4: Policy Blocking ===")
 
-    from logos_core.governance.agent_identity import load_or_create_identity
+    from Logos_Protocol.logos_core.governance.agent_identity import load_or_create_identity
 
     # Load identity (should have allow_enhancements=false)
     identity = load_or_create_identity("policy_test_hash", REPO_ROOT)

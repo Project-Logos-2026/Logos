@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.abspath("."))
 from boot.extensions_loader import extensions_manager
 
 try:
-    from logos_core.natural_language_processor import NaturalLanguageProcessor
+    from Logos_Protocol.logos_core.natural_language_processor import NaturalLanguageProcessor
 
     HAS_NLP = True
 except ImportError:
