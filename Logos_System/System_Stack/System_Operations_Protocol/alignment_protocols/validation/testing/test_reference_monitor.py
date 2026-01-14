@@ -17,14 +17,14 @@ from unittest.mock import Mock, patch
 current_dir = Path(__file__).parent
 sys.path.insert(0, str(current_dir))
 
-from System_Stack.Logos_Protocol.Runtime_Operations.monitoring.enhanced_reference_monitor import (
+from System_Stack.Logos_Protocol.Runtime_Operations.Monitoring.enhanced_reference_monitor import (
     AnomalyDetector,
     ConsistencyValidator,
     EnhancedReferenceMonitor,
     EvaluationRecord,
     ProofBridgeError,
 )
-from System_Stack.Logos_Protocol.Runtime_Operations.tools.implementations.entry import initialize_logos_core
+from Logos_System.System_Stack.Logos_Protocol.Runtime_Operations.IEL_generator.entry import initialize_logos_core
 
 
 class TestConsistencyValidator(unittest.TestCase):
@@ -530,7 +530,7 @@ class TestIntegrationWithEntry(unittest.TestCase):
             mock_iel.return_value = mock_iel_instance
 
             # Import and test convenience functions
-            from System_Stack.Logos_Protocol.Runtime_Operations.tools.implementations.entry import evaluate_iel, evaluate_modal, get_status
+            from Logos_System.System_Stack.Logos_Protocol.Runtime_Operations.IEL_generator.entry import evaluate_iel, evaluate_modal, get_status
 
             # Test modal evaluation
             result = evaluate_modal("p && q")

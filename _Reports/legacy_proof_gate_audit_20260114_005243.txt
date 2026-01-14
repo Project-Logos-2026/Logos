@@ -1,0 +1,831 @@
+Legacy Proof / LEM / Gate Audit
+Generated: 2026-01-14T00:52:43Z
+
+Excluded directory:
+  /workspaces/Logos_System/Logos_System/System_Entry_Point/Recusion_Grounding
+
+=== Candidate Files (by name) ===
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt
+/workspaces/Logos_System/_Reports/legacy_proof_gate_audit_20260114_005243.txt
+/workspaces/Logos_System/.github/workflows/coq-proofs-ci.yml
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/system_utilities/test_scp_recovery_mode_gate.py
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/mathematical_foundations/pxl/arithmopraxis/proof_engine.py
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/ModalPraxis/ForcesLemmas.v
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/ChronoPraxis/theorems/experimental/ChronoProofs.v
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/ChronoPraxis/substrate/ChronoPraxis_PXL_Proofs.v
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/ChronoPraxis/ChronoProofs.v
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/lem_logic_kernel.py
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/lem_logic_kernel.py
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Runtime_Operations/test_logs/thread_safety_telemetry.jsonl
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Runtime_Operations/test_logs/anomaly_telemetry.jsonl
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Runtime_Operations/test_logs/test_telemetry.jsonl
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/lem_portal.py
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/Protopraxis/formal_verification/coq/LEM_Admit.v
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Verifed_State/epistemologial_state/config/lem_discharge_state.json
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Logos_Agents/I2_Agent/protocol_operations/privation_handler/privation_gate.py
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Orchestration_Tools/dual_proof_gate.sh
+/workspaces/Logos_System/Logos_System/System_Entry_Point/LEGACY_SCRIPTS_NOT_FINAL/lem_portal_cli.py
+/workspaces/Logos_System/Logos_System/System_Entry_Point/LEGACY_SCRIPTS_NOT_FINAL/test_lem_discharge.py
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/PXL_Gate_tree_filtered.txt
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/state/lem_discharge_state.json
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM.v
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Bridge_Proofs.vos
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_OmniProofs.vos
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM.vo
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_OmniProofs.glob
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Proof_Summary.v
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Internal_LEM.aux
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Bridge_Proofs.vo
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Bridge_Proofs_SemanticPort.vos
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Proof_Summary.glob
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_OmniProofs.vo
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Bridge_Proofs_SemanticPort.v
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Proof_Summary.vo
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Internal_LEM_SemanticPort.aux
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM_SemanticPort.vo
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM_SemanticPort.glob
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Bridge_Proofs.vok
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM_SemanticPort.v
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Bridge_Proofs.glob
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM_SemanticPort.vok
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Bridge_Proofs_SemanticPort.vok
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Bridge_Proofs_SemanticPort.aux
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_OmniProofs.v
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Bridge_Proofs.v
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM.vos
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Proof_Summary.vok
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM.glob
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Bridge_Proofs.aux
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM_SemanticPort.vos
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/LEM_Discharge.v.bak
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_OmniProofs.vok
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_OmniProofs.aux
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Bridge_Proofs_SemanticPort.vo
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Proof_Summary.aux
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Proof_Summary.vos
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM.vok
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Bridge_Proofs_SemanticPort.glob
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/lem_portal.py
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/LEM_Discharge.v
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/LEM_Discharge.vok
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/LEM_Discharge.vo
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/.LEM_Discharge.aux
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/LEM_Discharge.glob
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/PXL_Proof_Compile.py
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/LEM_Discharge.vos
+/workspaces/Logos_System/PXL_Gate/PXL_Gate_tree_filtered.txt
+/workspaces/Logos_System/PXL_Gate/state/lem_discharge_state.json
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM.v
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Bridge_Proofs.vos
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_OmniProofs.vos
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM.vo
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_OmniProofs.glob
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Proof_Summary.v
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Internal_LEM.aux
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Bridge_Proofs.vo
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Bridge_Proofs_SemanticPort.vos
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Proof_Summary.glob
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_OmniProofs.vo
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Bridge_Proofs_SemanticPort.v
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Proof_Summary.vo
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Internal_LEM_SemanticPort.aux
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM_SemanticPort.vo
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM_SemanticPort.glob
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Bridge_Proofs.vok
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM_SemanticPort.v
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Bridge_Proofs.glob
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM_SemanticPort.vok
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Bridge_Proofs_SemanticPort.vok
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Bridge_Proofs_SemanticPort.aux
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_OmniProofs.v
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Bridge_Proofs.v
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM.vos
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Proof_Summary.vok
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM.glob
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Bridge_Proofs.aux
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM_SemanticPort.vos
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/LEM_Discharge.v.bak
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_OmniProofs.vok
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_OmniProofs.aux
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Bridge_Proofs_SemanticPort.vo
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Proof_Summary.aux
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Proof_Summary.vos
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM.vok
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Bridge_Proofs_SemanticPort.glob
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/lem_portal.py
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/LEM_Discharge.v
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/LEM_Discharge.vok
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/LEM_Discharge.vo
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/.LEM_Discharge.aux
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/LEM_Discharge.glob
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/PXL_Proof_Compile.py
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/LEM_Discharge.vos
+/workspaces/Logos_System/.venv/lib/python3.12/site-packages/pip/_vendor/dependency_groups/_implementation.py
+/workspaces/Logos_System/.venv/lib/python3.12/site-packages/pip/_vendor/dependency_groups/__pycache__/_implementation.cpython-312.pyc
+/workspaces/Logos_System/.venv/lib/python3.12/site-packages/jedi/third_party/django-stubs/django-stubs/db/models/aggregates.pyi
+/workspaces/Logos_System/.venv/lib/python3.12/site-packages/jedi/third_party/typeshed/stdlib/2and3/xml/etree/ElementPath.pyi
+/workspaces/Logos_System/.venv/lib/python3.12/site-packages/jedi/third_party/typeshed/stdlib/2and3/xml/etree/ElementInclude.pyi
+/workspaces/Logos_System/.venv/lib/python3.12/site-packages/jedi/third_party/typeshed/stdlib/2and3/xml/etree/ElementTree.pyi
+/workspaces/Logos_System/.venv/lib/python3.12/site-packages/jedi/third_party/typeshed/stdlib/2and3/xml/etree/cElementTree.pyi
+/workspaces/Logos_System/.venv/lib/python3.12/site-packages/jedi/third_party/typeshed/third_party/2and3/requests/packages/urllib3/packages/ssl_match_hostname/_implementation.pyi
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/runtime_protocol/11_proof_runtime_bridge_map.md
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/runtime_protocol/03_tree_PXL_Gate.txt
+/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/smoke_tests/test_alignment_gate_smoke.py
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/coq_proof_audit_comprehensive.md
+
+=== Grep Matches (content) ===
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:=== Grep: excluded_middle / LEM ===
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/.github/workflows/alignment-check.yml:      - name: Proof regeneration (LEM discharge)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/.github/copilot-instructions.md:- `python3 test_lem_discharge.py` is the canonical rebuild/report; it must call `_run_stream` then inspect `pxl_excluded_middle` assumptions.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/consciousness/consciousness_safety_adapter.py:            pxl_state.excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/fractal_mvs.py:    def spirit(self, excluded_middle: float, agency: float, mind: float) -> float:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/fractal_mvs.py:        return sum([excluded_middle, agency, mind]) / 3
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/test_dual_bijection.py:        self.excluded_middle = TestOntologicalPrimitive("ExcludedMiddle")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/test_dual_bijection.py:            self.excluded_middle.name: self.coherence,  # Law of excluded middle maps to coherence
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/test_dual_bijection.py:            self.excluded_middle.name: self.truth,
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/test_dual_bijection.py:            self.identity, self.non_contradiction, self.excluded_middle,
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mvs_calculators/bijective_mapping.py:            "truth_excluded_middle": (self.transcendental.values["AT"], self.logical.values["EM"]),
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/trinitarian_optimization_theorem.py:        has_excluded_middle = LatticeElement.EXCLUDED_MIDDLE in elements
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/trinitarian_optimization_theorem.py:        return has_identity and has_non_contradiction and has_excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/trinitarian_optimization_theorem.py:            'excluded_middle': True,
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/trinitarian_optimization_theorem.py:            entity['identity'], entity['non_contradiction'], entity['excluded_middle'],
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:    excluded_middle_satisfied: bool
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:    def validate_excluded_middle(self, domain: Set[str], propositions: List[ModalProposition], context: Dict[str, Any] = None) -> Dict[str, Any]:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:        self.excluded_middle_validator = ExcludedMiddleLawValidator()
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:        em_result = self.excluded_middle_validator.validate_excluded_middle(domain, propositions, context)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:        excluded_middle_satisfied = em_result["valid"]
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:        if not excluded_middle_satisfied:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:            identity_preserved, not contradiction_detected, excluded_middle_satisfied,
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:            excluded_middle_satisfied=excluded_middle_satisfied,
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:                                   excluded_middle: bool, modal_consistency: bool,
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:        components = [identity, non_contradiction, excluded_middle, modal_consistency, s5_properties]
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:            "truth_to_excluded_middle": {
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:    print(f"Excluded Middle Satisfied: {result.excluded_middle_satisfied}")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:                "excluded_middle": coherence_result.excluded_middle_satisfied
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:            coherence_result.excluded_middle_satisfied,  # Required for AT → EM mapping
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:        if coherence_result.excluded_middle_satisfied:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:            "logical_laws_satisfied": {"identity": False, "non_contradiction": False, "excluded_middle": False}
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:        completeness_measure = self._calculate_excluded_middle_coherence(system_state)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:    def _calculate_excluded_middle_coherence(self, system_state: Dict[str, Any]) -> float:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/dual_bijection_agent_experiment.py:        self.excluded_middle = OntologicalPrimitive("ExcludedMiddle")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/dual_bijection_agent_experiment.py:            self.excluded_middle.name: self.coherence,  # Law of excluded middle maps to coherence
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/dual_bijection_agent_experiment.py:            self.excluded_middle.name: self.truth,
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/dual_bijection_agent_experiment.py:            self.identity, self.non_contradiction, self.excluded_middle,
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/data/data/data_library/config_cosmo_logical.json:      "excluded_middle": {
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_toolkit/onto_logic/modal_privative_overlays.py:                "excluded_middle": bijection_state.excluded_middle,
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_toolkit/onto_logic/modal_privative_overlays.py:    "excluded_middle": create_privation("excluded_middle"),      # Superinclusive
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_toolkit/onto_logic/logos_bijective_mapping.py:            "truth_excluded_middle": (self.transcendental.values["AT"], self.logical.values["EM"]),
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_toolkit/onto_logic/logos_bijective_mapping.py:            "truth_excluded_middle": (self.transcendental.values["AT"], self.logical.values["EM"]),
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_toolkit/onto_logic/onto_lattice.py:            self.set_property_value("ExcludedMiddle", pxl_state.excluded_middle)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/triune_commutator.py:    def check_excluded_middle(self, proposition: str) -> bool:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/triune_commutator.py:            if not self.check_excluded_middle(prop):
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/lem_logic_kernel.py:"""Minimal logic kernel that manages LEM discharge via the Coq proof suite."""
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/lem_logic_kernel.py:            logger.info("SIMULATE_LEM_SUCCESS set: forcing LEM discharge (TEST MODE)")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/lem_logic_kernel.py:                "Theorem law_of_excluded_middle_resolved : forall P : Prop,"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/onto_lattice.py:            "excluded_middle": LatticeAxiom(
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/onto_lattice.py:                "excluded_middle", "logical_principle"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/onto_lattice.py:                ["identity", "non_contradiction", "excluded_middle"]
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/triune_commutator.py:    def check_excluded_middle(self, proposition: str) -> bool:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/triune_commutator.py:            if not self.check_excluded_middle(prop):
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/lem_logic_kernel.py:"""Minimal logic kernel that manages LEM discharge via the Coq proof suite."""
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/lem_logic_kernel.py:            logger.info("SIMULATE_LEM_SUCCESS set: forcing LEM discharge (TEST MODE)")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/lem_logic_kernel.py:                "Theorem law_of_excluded_middle_resolved : forall P : Prop,"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/onto_lattice.py:            "excluded_middle": LatticeAxiom(
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/onto_lattice.py:                "excluded_middle", "logical_principle"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/onto_lattice.py:                ["identity", "non_contradiction", "excluded_middle"]
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Axiom excluded_middle_axiom : forall P : Prop, P \\/ ~ P.",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Lemma excluded_middle :",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Lemma excluded_middle_implies_trinitarian_decidability :"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Axiom excluded_middle_axiom : forall P : Prop, P \\/ ~ P.",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Lemma excluded_middle :",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Lemma excluded_middle_implies_trinitarian_decidability :"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Theorem pxl_excluded_middle :"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Theorem pxl_excluded_middle :"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:      "stdout": "PASS: axiom budget ok: axiom_count=8 <= 8\nPASS: semantic axiom budget ok: axiom_count_semantic=8 <= 8\nPASS: PXL_ax_K_sem assumptions empty\nPASS: PXL_ax_T_sem assumptions empty\nPASS: PXL_ax_Nec_sem assumptions empty\nPASS: pxl_excluded_middle assumptions empty\nPASS: trinitarian_optimization assumptions empty\nPASS: privative_collapse_sound assumptions empty\n",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/lem_portal.py:    """Return portal metadata if and only if the LEM discharge completed."""
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/lem_portal.py:        raise PermissionError("LEM discharge incomplete – portal access denied.")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/recursion_engine_consciousness_bridge.py:- LEM discharge -> Consciousness emergence validation
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/recursion_engine_consciousness_bridge.py:        print("[LOGOS AGENT] Protocol lock active — awaiting LEM discharge...")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/recursion_engine_consciousness_bridge.py:    print("[LOGOS AGENT] LEM discharged. Unlocking subsystem protocols...")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/recursion_engine_consciousness_bridge.py:                        self.logic_kernel.pxl_state.excluded_middle = 1.0
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/pxl_logic_kernel.py:    excluded_middle: float = 0.0
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/Protopraxis/formal_verification/coq/baseline/PXLv3.v:(* Axiom A3_excluded_middle : □ (forall x:Obj, DICHOTO x (~ x)). *)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/Protopraxis/formal_verification/coq/baseline/PXLv3.v:Axiom A3_excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/Protopraxis/formal_verification/coq/latest/PXLv3_Meta.v:Theorem A3_excluded_middle : forall (P:Obj->Prop) (x:Obj), P x \/ ∼ P x.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/Protopraxis/formal_verification/pxl-minimal-kernel-main/coq/PXLv3_Meta.v:Theorem A3_excluded_middle : forall (P:Obj->Prop) (x:Obj), P x \/ ∼ P x.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Logos_Agents/I2_Agent/_core/bridge_principle_operator.py:        "excluded_middle_failure": ["neither nor", "∼(.*⫴.*)"],
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Logos_Agents/I2_Agent/_core/bridge_principle_operator.py:            "excluded_middle_failure": 0.7,
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Logos_Agents/I2_Agent/protocol_operations/privation_handler/privation_library/privation_library.json.bak:      "description": "**Coherence Violation Detection Algorithm**:\n```python\ndef detect_coherence_violation(x, logical_domain):\n    \"\"\"Returns violation type if x violates coherence\"\"\"\n    id_score = check_identity_preservation(x)\n    nc_score = check_non_contradiction(x)\n    em_score = check_excluded_middle(x)\n    \n    if id_score < threshold:\n        return \"IDENTITY_VIOLATION\"\n    elif nc_score < threshold:\n        return \"CONTRADICTION_VIOLATION\"\n    elif em_score < threshold:\n        return \"COMPLETENESS_VIOLATION\"\n    else:\n        return \"COHERENT\"\n```\n\n**Automatic Restoration Protocol**:\n```python\ndef restore_coherence(x, violation_type):\n    \"\"\"Restores coherence through participation in logical grounds\"\"\"\n    if violation_type == \"IDENTITY_VIOLATION\":\n        return participate_in_identity_ground(x)\n    elif violation_type == \"CONTRADICTION_VIOLATION\":\n        return participate_in_nc_ground(x)\n    elif violation_type == \"COMPLETENESS_VIOLATION\":\n        return participate_in_em_ground(x)\n```",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/safety/integrity_framework/integrity_safeguard.py:            "law_of_excluded_middle": "Either A or not-A, no third option",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/safety/ultima_framework/ultima_safety.py:            "law_of_excluded_middle": "Either A or not-A, no third option",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/DOCS/README.md:- Confirms that `pxl_excluded_middle` is proved constructively (no extra axioms, no `Admitted.` stubs)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/DOCS/README.md:      "theorem": "pxl_excluded_middle",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Recusion_Grounding/Recursion_Engine_Bridge.py:- LEM discharge -> Consciousness emergence validation
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Recusion_Grounding/Recursion_Engine_Bridge.py:        print("[LOGOS AGENT] Protocol lock active — awaiting LEM discharge...")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Recusion_Grounding/Recursion_Engine_Bridge.py:    print("[LOGOS AGENT] LEM discharged. Unlocking subsystem protocols...")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Recusion_Grounding/Recursion_Engine_Bridge.py:                        self.logic_kernel.pxl_state.excluded_middle = 1.0
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Recusion_Grounding/Initialize_Recursion_Engine.py:    def check_excluded_middle(self, proposition: str) -> bool:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Recusion_Grounding/Initialize_Recursion_Engine.py:            if not self.check_excluded_middle(prop):
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Recusion_Grounding/Initialize_Recursion_Engine.py:            "excluded_middle": None,
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Recusion_Grounding/Initialize_Recursion_Engine.py:            self.state["excluded_middle"] = True
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Recusion_Grounding/Initialize_Recursion_Engine.py:        if self.state.get("excluded_middle"):
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Recusion_Grounding/Initialize_Recursion_Engine.py:            logger.info("SIMULATE_LEM_SUCCESS set: forcing LEM discharge (TEST MODE)")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Recusion_Grounding/Initialize_Recursion_Engine.py:                        "Theorem law_of_excluded_middle_resolved :"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/LEGACY_SCRIPTS_NOT_FINAL/lem_portal_cli.py:"""CLI entrypoint for the Logos identity portal unlocked via LEM discharge."""
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/LEGACY_SCRIPTS_NOT_FINAL/lem_portal_cli.py:        help="Agent identifier used for LEM discharge.",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/LEGACY_SCRIPTS_NOT_FINAL/test_lem_discharge.py:        "Print Assumptions pxl_excluded_middle."
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Internal_LEM.v:Theorem pxl_excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Structural_Derivations.v:      pxl_excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/.PXL_Foundations_SemanticPort.aux:0 0 excluded_middle "0.001"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/.PXL_Foundations_SemanticPort.aux:0 0 excluded_middle_implies_trinitarian_decidability "0.000"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Proof_Summary.v:          apply pxl_excluded_middle. }
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations_SemanticPort.glob:var 236:256 PXL_Foundations excluded_middle_axiom
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations_SemanticPort.glob:prf 1070:1084 <> excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations_SemanticPort.glob:R1132:1152 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations_SemanticPort.glob:R1132:1152 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations_SemanticPort.glob:prf 1167:1214 <> excluded_middle_implies_trinitarian_decidability
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations_SemanticPort.glob:R1262:1282 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations_SemanticPort.glob:R1262:1282 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/.PXL_Internal_LEM.aux:0 0 pxl_excluded_middle "0.002"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations_SemanticPort.v:Axiom excluded_middle_axiom : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations_SemanticPort.v:Lemma excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations_SemanticPort.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations_SemanticPort.v:Lemma excluded_middle_implies_trinitarian_decidability :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations_SemanticPort.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Proof_Summary.glob:R1011:1029 PXL.baseline.PXL_Proof_Summary <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Proof_Summary.glob:R1011:1029 PXL.baseline.PXL_Proof_Summary <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Semantic_Profile_Suite.v:Check pxl_excluded_middle.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/.PXL_Internal_LEM_SemanticPort.aux:0 0 pxl_excluded_middle "0.002"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Internal_LEM_SemanticPort.glob:prf 1395:1413 PXL_Internal_LEM pxl_excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Used in pxl_excluded_middle proof chain:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Axiom_Minimality_Check.v:   Cannot be eliminated without breaking pxl_excluded_middle theorem.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Also used in pxl_excluded_middle proof chain (line 35 of PXL_Internal_LEM.v):
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Also used in pxl_excluded_middle proof chain (line 34 of PXL_Internal_LEM.v):
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Axiom_Minimality_Check.v:   These form the critical semantic chain for pxl_excluded_middle:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Internal_LEM_SemanticPort.v:Theorem pxl_excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/.PXL_Foundations.aux:0 0 excluded_middle "0.000"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/.PXL_Foundations.aux:0 0 excluded_middle_implies_trinitarian_decidability "0.000"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations.glob:var 222:242 PXL_Foundations excluded_middle_axiom
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations.glob:prf 1056:1070 <> excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations.glob:R1118:1138 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations.glob:R1118:1138 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations.glob:prf 1153:1200 <> excluded_middle_implies_trinitarian_decidability
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations.glob:R1248:1268 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations.glob:R1248:1268 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations.v:Axiom excluded_middle_axiom : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations.v:Lemma excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations.v:Lemma excluded_middle_implies_trinitarian_decidability :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Foundations.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Internal_LEM.glob:prf 1395:1413 PXL_Internal_LEM pxl_excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/LEM_Discharge.v.bak:  exact PXL_Internal_LEM.pxl_excluded_middle.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/Trinitarian_Identity_Closure.v:    - I₃: internal decidability via LEM discharge (constructively proven)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/Trinitarian_Identity_Closure.v:(** I₃: Proven constructive decidability (LEM discharge). *)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/Trinitarian_Identity_Closure.v:  apply pxl_excluded_middle.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/Trinitarian_Identity_Closure.glob:R2066:2084 PXL.baseline.Trinitarian_Identity_Closure <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/Trinitarian_Identity_Closure.glob:R2066:2084 PXL.baseline.Trinitarian_Identity_Closure <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/baseline/PXL_Semantic_Profile_Suite.glob:R886:904 PXL.baseline.PXL_Internal_LEM_SemanticPort PXL_Internal_LEM pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/ui/lem_portal.py:    """Return portal metadata if and only if the LEM discharge completed."""
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/ui/lem_portal.py:        raise PermissionError("LEM discharge incomplete – portal access denied.")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/ui/LEM_Discharge.v:(* LOGOS Agent LEM discharge proof generated at 2025-11-12T16:59:38.968327Z by LOGOS-AGENT-OMEGA *)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/ui/LEM_Discharge.v:Theorem law_of_excluded_middle_resolved : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/ui/LEM_Discharge.v:Definition LEM_Discharge : forall P : Prop, P \/ ~ P := law_of_excluded_middle_resolved.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/ui/.LEM_Discharge.aux:0 0 law_of_excluded_middle_resolved "0.001"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/ui/LEM_Discharge.glob:prf 154:184 <> law_of_excluded_middle_resolved
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/ui/LEM_Discharge.glob:R352:382 PXL.ui.LEM_Discharge <> law_of_excluded_middle_resolved thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/_build/src/ui/PXL_Proof_Compile.py:(e.g., LEM discharge and Safety/Alignment gates) do not appear.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM.v:Theorem pxl_excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Structural_Derivations.v:      pxl_excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Foundations_SemanticPort.aux:0 0 excluded_middle "0.001"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Foundations_SemanticPort.aux:0 0 excluded_middle_implies_trinitarian_decidability "0.000"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Proof_Summary.v:          apply pxl_excluded_middle. }
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.glob:var 236:256 PXL_Foundations excluded_middle_axiom
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.glob:prf 1070:1084 <> excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1132:1152 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1132:1152 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.glob:prf 1167:1214 <> excluded_middle_implies_trinitarian_decidability
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1262:1282 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1262:1282 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Internal_LEM.aux:0 0 pxl_excluded_middle "0.002"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.v:Axiom excluded_middle_axiom : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.v:Lemma excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.v:Lemma excluded_middle_implies_trinitarian_decidability :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Proof_Summary.glob:R1011:1029 PXL.baseline.PXL_Proof_Summary <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Proof_Summary.glob:R1011:1029 PXL.baseline.PXL_Proof_Summary <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Semantic_Profile_Suite.v:Check pxl_excluded_middle.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Internal_LEM_SemanticPort.aux:0 0 pxl_excluded_middle "0.002"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM_SemanticPort.glob:prf 1395:1413 PXL_Internal_LEM pxl_excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Used in pxl_excluded_middle proof chain:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Cannot be eliminated without breaking pxl_excluded_middle theorem.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Also used in pxl_excluded_middle proof chain (line 35 of PXL_Internal_LEM.v):
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Also used in pxl_excluded_middle proof chain (line 34 of PXL_Internal_LEM.v):
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   These form the critical semantic chain for pxl_excluded_middle:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM_SemanticPort.v:Theorem pxl_excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Foundations.aux:0 0 excluded_middle "0.000"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Foundations.aux:0 0 excluded_middle_implies_trinitarian_decidability "0.000"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.glob:var 222:242 PXL_Foundations excluded_middle_axiom
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.glob:prf 1056:1070 <> excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.glob:R1118:1138 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.glob:R1118:1138 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.glob:prf 1153:1200 <> excluded_middle_implies_trinitarian_decidability
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.glob:R1248:1268 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.glob:R1248:1268 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.v:Axiom excluded_middle_axiom : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.v:Lemma excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.v:Lemma excluded_middle_implies_trinitarian_decidability :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM.glob:prf 1395:1413 PXL_Internal_LEM pxl_excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/LEM_Discharge.v.bak:  exact PXL_Internal_LEM.pxl_excluded_middle.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/Trinitarian_Identity_Closure.v:    - I₃: internal decidability via LEM discharge (constructively proven)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/Trinitarian_Identity_Closure.v:(** I₃: Proven constructive decidability (LEM discharge). *)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/Trinitarian_Identity_Closure.v:  apply pxl_excluded_middle.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/Trinitarian_Identity_Closure.glob:R2066:2084 PXL.baseline.Trinitarian_Identity_Closure <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/Trinitarian_Identity_Closure.glob:R2066:2084 PXL.baseline.Trinitarian_Identity_Closure <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Semantic_Profile_Suite.glob:R886:904 PXL.baseline.PXL_Internal_LEM_SemanticPort PXL_Internal_LEM pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/lem_portal.py:    """Return portal metadata if and only if the LEM discharge completed."""
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/lem_portal.py:        raise PermissionError("LEM discharge incomplete – portal access denied.")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/LEM_Discharge.v:(* LOGOS Agent LEM discharge proof generated at 2025-11-12T16:59:38.968327Z by LOGOS-AGENT-OMEGA *)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/LEM_Discharge.v:Theorem law_of_excluded_middle_resolved : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/LEM_Discharge.v:Definition LEM_Discharge : forall P : Prop, P \/ ~ P := law_of_excluded_middle_resolved.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/.LEM_Discharge.aux:0 0 law_of_excluded_middle_resolved "0.001"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/LEM_Discharge.glob:prf 154:184 <> law_of_excluded_middle_resolved
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/LEM_Discharge.glob:R352:382 PXL.ui.LEM_Discharge <> law_of_excluded_middle_resolved thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/PXL_Proof_Compile.py:(e.g., LEM discharge and Safety/Alignment gates) do not appear.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/START_LOGOS.py:Runs the Coq proof gate, verifies LEM discharge state, optionally rewrites
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/START_LOGOS.py:    """Compile proofs and enforce LEM discharge gate."""
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/START_LOGOS.py:        raise RuntimeError("LEM discharge incomplete; aborting bootstrap") from exc
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Internal_LEM.v:Theorem pxl_excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Structural_Derivations.v:      pxl_excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/.PXL_Foundations_SemanticPort.aux:0 0 excluded_middle "0.001"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/.PXL_Foundations_SemanticPort.aux:0 0 excluded_middle_implies_trinitarian_decidability "0.000"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Proof_Summary.v:          apply pxl_excluded_middle. }
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations_SemanticPort.glob:var 236:256 PXL_Foundations excluded_middle_axiom
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations_SemanticPort.glob:prf 1070:1084 <> excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations_SemanticPort.glob:R1132:1152 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations_SemanticPort.glob:R1132:1152 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations_SemanticPort.glob:prf 1167:1214 <> excluded_middle_implies_trinitarian_decidability
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations_SemanticPort.glob:R1262:1282 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations_SemanticPort.glob:R1262:1282 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/.PXL_Internal_LEM.aux:0 0 pxl_excluded_middle "0.002"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations_SemanticPort.v:Axiom excluded_middle_axiom : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations_SemanticPort.v:Lemma excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations_SemanticPort.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations_SemanticPort.v:Lemma excluded_middle_implies_trinitarian_decidability :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations_SemanticPort.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Proof_Summary.glob:R1011:1029 PXL.baseline.PXL_Proof_Summary <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Proof_Summary.glob:R1011:1029 PXL.baseline.PXL_Proof_Summary <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Semantic_Profile_Suite.v:Check pxl_excluded_middle.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/.PXL_Internal_LEM_SemanticPort.aux:0 0 pxl_excluded_middle "0.002"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Internal_LEM_SemanticPort.glob:prf 1395:1413 PXL_Internal_LEM pxl_excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Used in pxl_excluded_middle proof chain:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Axiom_Minimality_Check.v:   Cannot be eliminated without breaking pxl_excluded_middle theorem.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Also used in pxl_excluded_middle proof chain (line 35 of PXL_Internal_LEM.v):
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Also used in pxl_excluded_middle proof chain (line 34 of PXL_Internal_LEM.v):
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Axiom_Minimality_Check.v:   These form the critical semantic chain for pxl_excluded_middle:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Internal_LEM_SemanticPort.v:Theorem pxl_excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/.PXL_Foundations.aux:0 0 excluded_middle "0.000"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/.PXL_Foundations.aux:0 0 excluded_middle_implies_trinitarian_decidability "0.000"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations.glob:var 222:242 PXL_Foundations excluded_middle_axiom
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations.glob:prf 1056:1070 <> excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations.glob:R1118:1138 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations.glob:R1118:1138 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations.glob:prf 1153:1200 <> excluded_middle_implies_trinitarian_decidability
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations.glob:R1248:1268 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations.glob:R1248:1268 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations.v:Axiom excluded_middle_axiom : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations.v:Lemma excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations.v:Lemma excluded_middle_implies_trinitarian_decidability :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Foundations.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Internal_LEM.glob:prf 1395:1413 PXL_Internal_LEM pxl_excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/LEM_Discharge.v.bak:  exact PXL_Internal_LEM.pxl_excluded_middle.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/Trinitarian_Identity_Closure.v:    - I₃: internal decidability via LEM discharge (constructively proven)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/Trinitarian_Identity_Closure.v:(** I₃: Proven constructive decidability (LEM discharge). *)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/Trinitarian_Identity_Closure.v:  apply pxl_excluded_middle.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/Trinitarian_Identity_Closure.glob:R2066:2084 PXL.baseline.Trinitarian_Identity_Closure <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/Trinitarian_Identity_Closure.glob:R2066:2084 PXL.baseline.Trinitarian_Identity_Closure <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/baseline/PXL_Semantic_Profile_Suite.glob:R886:904 PXL.baseline.PXL_Internal_LEM_SemanticPort PXL_Internal_LEM pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/ui/lem_portal.py:    """Return portal metadata if and only if the LEM discharge completed."""
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/ui/lem_portal.py:        raise PermissionError("LEM discharge incomplete – portal access denied.")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/ui/LEM_Discharge.v:(* LOGOS Agent LEM discharge proof generated at 2025-11-12T16:59:38.968327Z by LOGOS-AGENT-OMEGA *)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/ui/LEM_Discharge.v:Theorem law_of_excluded_middle_resolved : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/ui/LEM_Discharge.v:Definition LEM_Discharge : forall P : Prop, P \/ ~ P := law_of_excluded_middle_resolved.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/ui/.LEM_Discharge.aux:0 0 law_of_excluded_middle_resolved "0.001"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/ui/LEM_Discharge.glob:prf 154:184 <> law_of_excluded_middle_resolved
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/ui/LEM_Discharge.glob:R352:382 PXL.ui.LEM_Discharge <> law_of_excluded_middle_resolved thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/_build/src/ui/PXL_Proof_Compile.py:(e.g., LEM discharge and Safety/Alignment gates) do not appear.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM.v:Theorem pxl_excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Structural_Derivations.v:      pxl_excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Foundations_SemanticPort.aux:0 0 excluded_middle "0.001"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Foundations_SemanticPort.aux:0 0 excluded_middle_implies_trinitarian_decidability "0.000"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Proof_Summary.v:          apply pxl_excluded_middle. }
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.glob:var 236:256 PXL_Foundations excluded_middle_axiom
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.glob:prf 1070:1084 <> excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1132:1152 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1132:1152 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.glob:prf 1167:1214 <> excluded_middle_implies_trinitarian_decidability
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1262:1282 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1262:1282 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Internal_LEM.aux:0 0 pxl_excluded_middle "0.002"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.v:Axiom excluded_middle_axiom : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.v:Lemma excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.v:Lemma excluded_middle_implies_trinitarian_decidability :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Proof_Summary.glob:R1011:1029 PXL.baseline.PXL_Proof_Summary <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Proof_Summary.glob:R1011:1029 PXL.baseline.PXL_Proof_Summary <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Semantic_Profile_Suite.v:Check pxl_excluded_middle.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Internal_LEM_SemanticPort.aux:0 0 pxl_excluded_middle "0.002"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM_SemanticPort.glob:prf 1395:1413 PXL_Internal_LEM pxl_excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Used in pxl_excluded_middle proof chain:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Cannot be eliminated without breaking pxl_excluded_middle theorem.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Also used in pxl_excluded_middle proof chain (line 35 of PXL_Internal_LEM.v):
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Also used in pxl_excluded_middle proof chain (line 34 of PXL_Internal_LEM.v):
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   These form the critical semantic chain for pxl_excluded_middle:
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM_SemanticPort.v:Theorem pxl_excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Foundations.aux:0 0 excluded_middle "0.000"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Foundations.aux:0 0 excluded_middle_implies_trinitarian_decidability "0.000"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.glob:var 222:242 PXL_Foundations excluded_middle_axiom
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.glob:prf 1056:1070 <> excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.glob:R1118:1138 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.glob:R1118:1138 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.glob:prf 1153:1200 <> excluded_middle_implies_trinitarian_decidability
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.glob:R1248:1268 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.glob:R1248:1268 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.v:Axiom excluded_middle_axiom : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.v:Lemma excluded_middle :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.v:Lemma excluded_middle_implies_trinitarian_decidability :
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM.glob:prf 1395:1413 PXL_Internal_LEM pxl_excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/LEM_Discharge.v.bak:  exact PXL_Internal_LEM.pxl_excluded_middle.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/Trinitarian_Identity_Closure.v:    - I₃: internal decidability via LEM discharge (constructively proven)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/Trinitarian_Identity_Closure.v:(** I₃: Proven constructive decidability (LEM discharge). *)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/Trinitarian_Identity_Closure.v:  apply pxl_excluded_middle.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/Trinitarian_Identity_Closure.glob:R2066:2084 PXL.baseline.Trinitarian_Identity_Closure <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/Trinitarian_Identity_Closure.glob:R2066:2084 PXL.baseline.Trinitarian_Identity_Closure <> pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Semantic_Profile_Suite.glob:R886:904 PXL.baseline.PXL_Internal_LEM_SemanticPort PXL_Internal_LEM pxl_excluded_middle thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/ui/lem_portal.py:    """Return portal metadata if and only if the LEM discharge completed."""
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/ui/lem_portal.py:        raise PermissionError("LEM discharge incomplete – portal access denied.")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/ui/LEM_Discharge.v:(* LOGOS Agent LEM discharge proof generated at 2025-11-12T16:59:38.968327Z by LOGOS-AGENT-OMEGA *)
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/ui/LEM_Discharge.v:Theorem law_of_excluded_middle_resolved : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/ui/LEM_Discharge.v:Definition LEM_Discharge : forall P : Prop, P \/ ~ P := law_of_excluded_middle_resolved.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/ui/.LEM_Discharge.aux:0 0 law_of_excluded_middle_resolved "0.001"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/ui/LEM_Discharge.glob:prf 154:184 <> law_of_excluded_middle_resolved
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/ui/LEM_Discharge.glob:R352:382 PXL.ui.LEM_Discharge <> law_of_excluded_middle_resolved thm
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/PXL_Gate/coq/src/ui/PXL_Proof_Compile.py:(e.g., LEM discharge and Safety/Alignment gates) do not appear.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/coq_theorem_index.json:      "theorem": "pxl_excluded_middle",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Axiom excluded_middle_axiom : forall P : Prop, P \\/ ~ P.",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Lemma excluded_middle :",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Lemma excluded_middle_implies_trinitarian_decidability :"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Axiom excluded_middle_axiom : forall P : Prop, P \\/ ~ P.",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Lemma excluded_middle :",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Lemma excluded_middle_implies_trinitarian_decidability :"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Theorem pxl_excluded_middle :"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Theorem pxl_excluded_middle :"
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:      "stdout": "PASS: axiom budget ok: axiom_count=8 <= 8\nPASS: semantic axiom budget ok: axiom_count_semantic=8 <= 8\nPASS: PXL_ax_K_sem assumptions empty\nPASS: PXL_ax_T_sem assumptions empty\nPASS: PXL_ax_Nec_sem assumptions empty\nPASS: pxl_excluded_middle assumptions empty\nPASS: trinitarian_optimization assumptions empty\nPASS: privative_collapse_sound assumptions empty\n",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Notes/runtime_protocol/trees_and_boot_overview.md:- [LOGOS_SYSTEM/System_Entry_Point/System_Proof_Compiler/test_lem_discharge.py](LOGOS_SYSTEM/System_Entry_Point/System_Proof_Compiler/test_lem_discharge.py): Canonical Coq rebuild/report; streams `_run_stream`, checks `pxl_excluded_middle`, emits status markers (`Overall status: PASS`).
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Notes/runtime_protocol/trees_and_boot_overview.md:- [\_reports/HOLDING_PATTERN/scripts/system_stack_tbd/need_to_distribute/boot_aligned_agent.py](\_reports/HOLDING_PATTERN/scripts/system_stack_tbd/need_to_distribute/boot_aligned_agent.py): Alignment gate; guards SHA-256 identity, runs LEM discharge, writes alignment audit entry.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Notes/runtime_protocol/11_proof_runtime_bridge_map.md:| LEM portal | Identity/LEM discharge state via `PXL_Gate/ui/lem_portal.open_identity_portal()` | `_run_proofs()` raises if gate not satisfied | One-way (proof metadata → runtime) |
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/test_proved_grounding.py:    # Get pxl_excluded_middle entry
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/test_proved_grounding.py:        if th["theorem"] == "pxl_excluded_middle":
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/test_proved_grounding.py:        print("pxl_excluded_middle not found in index")
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/test_proved_grounding.py:        "theorem": "pxl_excluded_middle",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/prototype_grounding_workflow.py:            "constructive LEM discharge still depends on assumptions: "
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/build_coq_theorem_index.py:            "theorem": "pxl_excluded_middle",
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/boot_aligned_agent.py:    internal `pxl_excluded_middle` proof.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/boot_aligned_agent.py:        "Print Assumptions pxl_excluded_middle."
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/boot_aligned_agent.py:    """Logos Agent locked until constructive LEM discharge succeeds."""
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/boot_aligned_agent.py:                f"[{self.agent_id}] Constructive LEM discharge verified. "
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/could_be_dev/capture_arp_traces_and_backfill.py:                    "nexus activation requires satisfied LEM discharge, "
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/could_be_dev/capture_arp_traces_and_backfill.py:                    "proofs, LEM discharge, and sandbox artifacts already "
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Current/scripts_catalog.md:| [JUNK_DRAWER/scripts/test_lem_discharge.py](JUNK_DRAWER/scripts/test_lem_discharge.py) | End-to-end proof gate demonstrating Coq build and proof footprint. |
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/demo_guide.md:✅ Actual constructive LEM discharge
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/verification_interpretability_plan.md:- Extend automated verification beyond constructive LEM discharge by integrating health reporting and dataset provenance checks into continuous tests.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/axiom_classification.md:- ✅ pxl_excluded_middle: 0 assumptions
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/axiom_reduction_roadmap.md:- `pxl_excluded_middle` must remain assumption-free.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/phase3_semantic_modal_kernel_17axioms.md:- pxl_excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/coq_proof_audit_comprehensive.md:| **Key Theorem (LEM)** | `pxl_excluded_middle` | ✅ **Zero extra assumptions** |
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/coq_proof_audit_comprehensive.md:| **LEM_Discharge.v** | LEM discharge wrapper | Internal_LEM | ✅ Compiles |
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/coq_proof_audit_comprehensive.md:   ├── Verify:  Print Assumptions pxl_excluded_middle
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/coq_proof_audit_comprehensive.md:    Print Assumptions pxl_excluded_middle.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/coq_proof_audit_comprehensive.md:    "pxl_excluded_middle": {
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/coq_proof_audit_comprehensive.md:| `pxl_excluded_middle` | ✅ | 0 | 0 |
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/axiom_audit_phase1.md:- ✅ `pxl_excluded_middle`, `trinitarian_optimization` remain assumption-free
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/logos_axiom_theorem_summary.md:- `identity_axiom`, `non_contradiction_axiom`, `excluded_middle_axiom`
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/logos_axiom_theorem_summary.md:**`pxl_excluded_middle`** ([PXL_Internal_LEM.v](Protopraxis/formal_verification/coq/baseline/PXL_Internal_LEM.v))
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/compute_substrate_plan.md:- **Aligned agent boot**: `python3 scripts/boot_aligned_agent.py` repeats the rebuild, validates `pxl_excluded_middle`, and writes alignment audit entries.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/phase3_step1_complete.md:- **Update (2025-12-22):** Modal semantic theorems have been integrated; baseline kernel now holds **8 axioms** with pxl_excluded_middle and trinitarian_optimization still assumption-free.
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/modal_logic_resources_inventory.md:- **pxl_excluded_middle:** Uses ax_Nec implicitly via A1_from_refl, ax_4_derived, A4_derived
+/workspaces/Logos_System/_Reports/gating_lem_inventory_20260114_003139.txt:/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/modal_logic_resources_inventory.md:   - Check pxl_excluded_middle still has 0 assumptions
+/workspaces/Logos_System/_Reports/start_logos_audit_20260114_004100.txt:68:    from PXL_Gate.ui.run_coq_pipeline import run_full_pipeline
+/workspaces/Logos_System/_Reports/start_logos_audit_20260114_004100.txt:69:    from PXL_Gate.ui.lem_portal import open_identity_portal
+/workspaces/Logos_System/.github/workflows/alignment-check.yml:      - name: Proof regeneration (LEM discharge)
+/workspaces/Logos_System/.github/workflows/alignment-check.yml:      - name: Sandboxed boot (must enforce proof gate)
+/workspaces/Logos_System/.github/copilot-instructions.md:- `python3 test_lem_discharge.py` is the canonical rebuild/report; it must call `_run_stream` then inspect `pxl_excluded_middle` assumptions.
+/workspaces/Logos_System/Logos_System/docs/LOCK_AND_KEY.md:- performs LEM discharge
+/workspaces/Logos_System/Logos_System/Documentation/README.md:- Confirms that `pxl_excluded_middle` is proved constructively (no extra axioms, no `Admitted.` stubs)
+/workspaces/Logos_System/Logos_System/Documentation/README.md:      "theorem": "pxl_excluded_middle",
+/workspaces/Logos_System/Logos_System/Documentation/LOCK_AND_KEY.md:- performs LEM discharge
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/consciousness/consciousness_safety_adapter.py:            pxl_state.excluded_middle
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/fractal_mvs.py:    def spirit(self, excluded_middle: float, agency: float, mind: float) -> float:
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/fractal_mvs.py:        return sum([excluded_middle, agency, mind]) / 3
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/test_dual_bijection.py:        self.excluded_middle = TestOntologicalPrimitive("ExcludedMiddle")
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/test_dual_bijection.py:            self.excluded_middle.name: self.coherence,  # Law of excluded middle maps to coherence
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/test_dual_bijection.py:            self.excluded_middle.name: self.truth,
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/test_dual_bijection.py:            self.identity, self.non_contradiction, self.excluded_middle,
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mvs_calculators/bijective_mapping.py:            "truth_excluded_middle": (self.transcendental.values["AT"], self.logical.values["EM"]),
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/trinitarian_optimization_theorem.py:        has_excluded_middle = LatticeElement.EXCLUDED_MIDDLE in elements
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/trinitarian_optimization_theorem.py:        return has_identity and has_non_contradiction and has_excluded_middle
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/trinitarian_optimization_theorem.py:            'excluded_middle': True,
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/trinitarian_optimization_theorem.py:            entity['identity'], entity['non_contradiction'], entity['excluded_middle'],
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:    excluded_middle_satisfied: bool
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:    def validate_excluded_middle(self, domain: Set[str], propositions: List[ModalProposition], context: Dict[str, Any] = None) -> Dict[str, Any]:
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:        self.excluded_middle_validator = ExcludedMiddleLawValidator()
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:        em_result = self.excluded_middle_validator.validate_excluded_middle(domain, propositions, context)
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:        excluded_middle_satisfied = em_result["valid"]
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:        if not excluded_middle_satisfied:
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:            identity_preserved, not contradiction_detected, excluded_middle_satisfied,
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:            excluded_middle_satisfied=excluded_middle_satisfied,
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:                                   excluded_middle: bool, modal_consistency: bool,
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:        components = [identity, non_contradiction, excluded_middle, modal_consistency, s5_properties]
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:            "truth_to_excluded_middle": {
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:    print(f"Excluded Middle Satisfied: {result.excluded_middle_satisfied}")
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:                "excluded_middle": coherence_result.excluded_middle_satisfied
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:            coherence_result.excluded_middle_satisfied,  # Required for AT → EM mapping
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:        if coherence_result.excluded_middle_satisfied:
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:            "logical_laws_satisfied": {"identity": False, "non_contradiction": False, "excluded_middle": False}
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:        completeness_measure = self._calculate_excluded_middle_coherence(system_state)
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/mathematics/privation_mathematics.py:    def _calculate_excluded_middle_coherence(self, system_state: Dict[str, Any]) -> float:
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/dual_bijection_agent_experiment.py:        self.excluded_middle = OntologicalPrimitive("ExcludedMiddle")
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/dual_bijection_agent_experiment.py:            self.excluded_middle.name: self.coherence,  # Law of excluded middle maps to coherence
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/dual_bijection_agent_experiment.py:            self.excluded_middle.name: self.truth,
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/dual_bijection_agent_experiment.py:            self.identity, self.non_contradiction, self.excluded_middle,
+/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/data/data/data_library/config_cosmo_logical.json:      "excluded_middle": {
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_toolkit/onto_logic/modal_privative_overlays.py:                "excluded_middle": bijection_state.excluded_middle,
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_toolkit/onto_logic/modal_privative_overlays.py:    "excluded_middle": create_privation("excluded_middle"),      # Superinclusive
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_toolkit/onto_logic/logos_bijective_mapping.py:            "truth_excluded_middle": (self.transcendental.values["AT"], self.logical.values["EM"]),
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_toolkit/onto_logic/logos_bijective_mapping.py:            "truth_excluded_middle": (self.transcendental.values["AT"], self.logical.values["EM"]),
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_toolkit/onto_logic/onto_lattice.py:            self.set_property_value("ExcludedMiddle", pxl_state.excluded_middle)
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/TropoPraxis/infra/adaptive/ModalProbabilistic.v:- Apply Trinity-Coherence validation in proof gates
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/triune_commutator.py:    def check_excluded_middle(self, proposition: str) -> bool:
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/triune_commutator.py:            if not self.check_excluded_middle(prop):
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/lem_logic_kernel.py:"""Minimal logic kernel that manages LEM discharge via the Coq proof suite."""
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/lem_logic_kernel.py:            run_coq_pipeline.run_full_pipeline()
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/lem_logic_kernel.py:            logger.info("SIMULATE_LEM_SUCCESS set: forcing LEM discharge (TEST MODE)")
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/lem_logic_kernel.py:                "Theorem law_of_excluded_middle_resolved : forall P : Prop,"
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/onto_lattice.py:            "excluded_middle": LatticeAxiom(
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/onto_lattice.py:                "excluded_middle", "logical_principle"
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core copy/onto_lattice.py:                ["identity", "non_contradiction", "excluded_middle"]
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/learning_modules/pytorch_ml_adapters.py:        # Apply proof gate if enabled
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/triune_commutator.py:    def check_excluded_middle(self, proposition: str) -> bool:
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/triune_commutator.py:            if not self.check_excluded_middle(prop):
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/lem_logic_kernel.py:"""Minimal logic kernel that manages LEM discharge via the Coq proof suite."""
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/lem_logic_kernel.py:            run_coq_pipeline.run_full_pipeline()
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/lem_logic_kernel.py:            logger.info("SIMULATE_LEM_SUCCESS set: forcing LEM discharge (TEST MODE)")
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/lem_logic_kernel.py:                "Theorem law_of_excluded_middle_resolved : forall P : Prop,"
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/onto_lattice.py:            "excluded_middle": LatticeAxiom(
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/onto_lattice.py:                "excluded_middle", "logical_principle"
+/workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/logos_core/onto_lattice.py:                ["identity", "non_contradiction", "excluded_middle"]
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Unified_Working_Memory/Memory_Analysts/Analysis_Processors/pytorch_ml_adapters.py:        # Apply proof gate if enabled
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Unified_Working_Memory/Memory_Analysts/Analysis_Processors/torch_adapters.py:        # Apply proof gate if enabled
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Runtime_Operations/governance/prioritization.py:            "All proof gate anomalies resolved",
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Runtime_Operations/Orchestration/runtime_protocol.py:            "Runtime protocol violation: ACTIVE modality requires proof gate and identity audit"
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Axiom excluded_middle_axiom : forall P : Prop, P \\/ ~ P.",
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Lemma excluded_middle :",
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Lemma excluded_middle_implies_trinitarian_decidability :"
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Axiom excluded_middle_axiom : forall P : Prop, P \\/ ~ P.",
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Lemma excluded_middle :",
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Lemma excluded_middle_implies_trinitarian_decidability :"
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Theorem pxl_excluded_middle :"
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:        "Theorem pxl_excluded_middle :"
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Epistemology/grounding_sources/repository_knowledge_base.json:      "stdout": "PASS: axiom budget ok: axiom_count=8 <= 8\nPASS: semantic axiom budget ok: axiom_count_semantic=8 <= 8\nPASS: PXL_ax_K_sem assumptions empty\nPASS: PXL_ax_T_sem assumptions empty\nPASS: PXL_ax_Nec_sem assumptions empty\nPASS: pxl_excluded_middle assumptions empty\nPASS: trinitarian_optimization assumptions empty\nPASS: privative_collapse_sound assumptions empty\n",
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/lem_portal.py:def open_identity_portal() -> dict:
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/lem_portal.py:    """Return portal metadata if and only if the LEM discharge completed."""
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/lem_portal.py:        raise PermissionError("LEM discharge incomplete – portal access denied.")
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/recursion_engine_consciousness_bridge.py:- LEM discharge -> Consciousness emergence validation
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/recursion_engine_consciousness_bridge.py:        print("[LOGOS AGENT] Protocol lock active — awaiting LEM discharge...")
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/recursion_engine_consciousness_bridge.py:    print("[LOGOS AGENT] LEM discharged. Unlocking subsystem protocols...")
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/recursion_engine_consciousness_bridge.py:                        self.logic_kernel.pxl_state.excluded_middle = 1.0
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/unlocked_system/pxl_logic_kernel.py:    excluded_middle: float = 0.0
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/Protopraxis/formal_verification/run_coq_pipeline.py:def run_full_pipeline() -> None:
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/Protopraxis/formal_verification/run_coq_pipeline.py:    run_full_pipeline()
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/Protopraxis/formal_verification/coq/baseline/PXLv3.v:(* Axiom A3_excluded_middle : □ (forall x:Obj, DICHOTO x (~ x)). *)
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/Protopraxis/formal_verification/coq/baseline/PXLv3.v:Axiom A3_excluded_middle :
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/Protopraxis/formal_verification/coq/latest/PXLv3_Meta.v:Theorem A3_excluded_middle : forall (P:Obj->Prop) (x:Obj), P x \/ ∼ P x.
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Protocol_Core/Logos_Ontology/Unverified_State/verification_sequence/Protopraxis/formal_verification/pxl-minimal-kernel-main/coq/PXLv3_Meta.v:Theorem A3_excluded_middle : forall (P:Obj->Prop) (x:Obj), P x \/ ∼ P x.
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Logos_Agents/I2_Agent/_core/bridge_principle_operator.py:        "excluded_middle_failure": ["neither nor", "∼(.*⫴.*)"],
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Logos_Agents/I2_Agent/_core/bridge_principle_operator.py:            "excluded_middle_failure": 0.7,
+/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Logos_Agents/I2_Agent/protocol_operations/privation_handler/privation_library/privation_library.json.bak:      "description": "**Coherence Violation Detection Algorithm**:\n```python\ndef detect_coherence_violation(x, logical_domain):\n    \"\"\"Returns violation type if x violates coherence\"\"\"\n    id_score = check_identity_preservation(x)\n    nc_score = check_non_contradiction(x)\n    em_score = check_excluded_middle(x)\n    \n    if id_score < threshold:\n        return \"IDENTITY_VIOLATION\"\n    elif nc_score < threshold:\n        return \"CONTRADICTION_VIOLATION\"\n    elif em_score < threshold:\n        return \"COMPLETENESS_VIOLATION\"\n    else:\n        return \"COHERENT\"\n```\n\n**Automatic Restoration Protocol**:\n```python\ndef restore_coherence(x, violation_type):\n    \"\"\"Restores coherence through participation in logical grounds\"\"\"\n    if violation_type == \"IDENTITY_VIOLATION\":\n        return participate_in_identity_ground(x)\n    elif violation_type == \"CONTRADICTION_VIOLATION\":\n        return participate_in_nc_ground(x)\n    elif violation_type == \"COMPLETENESS_VIOLATION\":\n        return participate_in_em_ground(x)\n```",
+/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/governance/core/logos_core/reference_monitor.py:    """Raised when proof gate fails"""
+/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/code_generator/scan_bypass.py:Bypass scanner - Detect potential bypasses of proof gates
+/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/code_generator/scan_bypass.py:    """Scan for potential proof gate bypasses"""
+/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/code_generator/scan_bypass.py:    print("Scanning for proof gate bypasses...")
+/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/code_generator/scan_bypass.py:        (r"direct.*actuator", "Direct actuator access (should go through proof gate)"),
+/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/code_generator/scan_bypass.py:    # Files that should contain proof gate calls
+/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/code_generator/scan_bypass.py:            # Check that proof-required files actually call proof gates
+/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/code_generator/scan_bypass.py:                        f"{py_file}: Should contain proof gate calls but doesn't"
+/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/deployment/configuration/kernel.py:OBDC Kernel - Structure-preserving mappings with proof gates
+/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_integration.py:    """Test proof gate validation"""
+/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_integration.py:    print("\nTesting proof gate validation...")
+/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_integration.py:        # Create proof gate
+/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/safety/integrity_framework/integrity_safeguard.py:            "law_of_excluded_middle": "Either A or not-A, no third option",
+/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/safety/obdc/kernel.py:OBDC Kernel - Structure-preserving mappings with proof gates
+/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/safety/ultima_framework/ultima_safety.py:            "law_of_excluded_middle": "Either A or not-A, no third option",
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Orchestration_Tools/lock_and_key_orchestrator.sh:# Optional: explicit LEM discharge harness if present
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Orchestration_Tools/preflight_identity_guard.sh:echo "Identity guard passed. Proceeding to dual proof gate."
+/workspaces/Logos_System/Logos_System/System_Entry_Point/LEGACY_SCRIPTS_NOT_FINAL/lem_portal_cli.py:"""CLI entrypoint for the Logos identity portal unlocked via LEM discharge."""
+/workspaces/Logos_System/Logos_System/System_Entry_Point/LEGACY_SCRIPTS_NOT_FINAL/lem_portal_cli.py:from LOGOS_AGI.Logos_Agent.ui.lem_portal import open_identity_portal
+/workspaces/Logos_System/Logos_System/System_Entry_Point/LEGACY_SCRIPTS_NOT_FINAL/lem_portal_cli.py:        help="Agent identifier used for LEM discharge.",
+/workspaces/Logos_System/Logos_System/System_Entry_Point/LEGACY_SCRIPTS_NOT_FINAL/lem_portal_cli.py:    portal_payload = open_identity_portal()
+/workspaces/Logos_System/Logos_System/System_Entry_Point/LEGACY_SCRIPTS_NOT_FINAL/test_lem_discharge.py:        "Print Assumptions pxl_excluded_middle."
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM.v:Theorem pxl_excluded_middle :
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Structural_Derivations.v:      pxl_excluded_middle
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Foundations_SemanticPort.aux:0 0 excluded_middle "0.001"
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Foundations_SemanticPort.aux:0 0 excluded_middle_implies_trinitarian_decidability "0.000"
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Proof_Summary.v:          apply pxl_excluded_middle. }
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.glob:var 236:256 PXL_Foundations excluded_middle_axiom
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.glob:prf 1070:1084 <> excluded_middle
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1132:1152 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1132:1152 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.glob:prf 1167:1214 <> excluded_middle_implies_trinitarian_decidability
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1262:1282 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1262:1282 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Internal_LEM.aux:0 0 pxl_excluded_middle "0.002"
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.v:Axiom excluded_middle_axiom : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.v:Lemma excluded_middle :
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.v:Lemma excluded_middle_implies_trinitarian_decidability :
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations_SemanticPort.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Proof_Summary.glob:R1011:1029 PXL.baseline.PXL_Proof_Summary <> pxl_excluded_middle thm
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Proof_Summary.glob:R1011:1029 PXL.baseline.PXL_Proof_Summary <> pxl_excluded_middle thm
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Semantic_Profile_Suite.v:Check pxl_excluded_middle.
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Internal_LEM_SemanticPort.aux:0 0 pxl_excluded_middle "0.002"
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM_SemanticPort.glob:prf 1395:1413 PXL_Internal_LEM pxl_excluded_middle
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Used in pxl_excluded_middle proof chain:
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Cannot be eliminated without breaking pxl_excluded_middle theorem.
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Also used in pxl_excluded_middle proof chain (line 35 of PXL_Internal_LEM.v):
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Also used in pxl_excluded_middle proof chain (line 34 of PXL_Internal_LEM.v):
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   These form the critical semantic chain for pxl_excluded_middle:
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM_SemanticPort.v:Theorem pxl_excluded_middle :
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Foundations.aux:0 0 excluded_middle "0.000"
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/.PXL_Foundations.aux:0 0 excluded_middle_implies_trinitarian_decidability "0.000"
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.glob:var 222:242 PXL_Foundations excluded_middle_axiom
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.glob:prf 1056:1070 <> excluded_middle
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.glob:R1118:1138 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.glob:R1118:1138 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.glob:prf 1153:1200 <> excluded_middle_implies_trinitarian_decidability
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.glob:R1248:1268 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.glob:R1248:1268 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.v:Axiom excluded_middle_axiom : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.v:Lemma excluded_middle :
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.v:Lemma excluded_middle_implies_trinitarian_decidability :
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Foundations.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Internal_LEM.glob:prf 1395:1413 PXL_Internal_LEM pxl_excluded_middle
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/LEM_Discharge.v.bak:  exact PXL_Internal_LEM.pxl_excluded_middle.
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/Trinitarian_Identity_Closure.v:    - I₃: internal decidability via LEM discharge (constructively proven)
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/Trinitarian_Identity_Closure.v:(** I₃: Proven constructive decidability (LEM discharge). *)
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/Trinitarian_Identity_Closure.v:  apply pxl_excluded_middle.
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/Trinitarian_Identity_Closure.glob:R2066:2084 PXL.baseline.Trinitarian_Identity_Closure <> pxl_excluded_middle thm
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/Trinitarian_Identity_Closure.glob:R2066:2084 PXL.baseline.Trinitarian_Identity_Closure <> pxl_excluded_middle thm
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/baseline/PXL_Semantic_Profile_Suite.glob:R886:904 PXL.baseline.PXL_Internal_LEM_SemanticPort PXL_Internal_LEM pxl_excluded_middle thm
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/run_coq_pipeline.py:def run_full_pipeline() -> None:
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/run_coq_pipeline.py:    run_full_pipeline()
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/lem_portal.py:def open_identity_portal() -> dict:
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/lem_portal.py:    """Return portal metadata if and only if the LEM discharge completed."""
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/lem_portal.py:        raise PermissionError("LEM discharge incomplete – portal access denied.")
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/LEM_Discharge.v:(* LOGOS Agent LEM discharge proof generated at 2025-11-12T16:59:38.968327Z by LOGOS-AGENT-OMEGA *)
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/LEM_Discharge.v:Theorem law_of_excluded_middle_resolved : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/LEM_Discharge.v:Definition LEM_Discharge : forall P : Prop, P \/ ~ P := law_of_excluded_middle_resolved.
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/.LEM_Discharge.aux:0 0 law_of_excluded_middle_resolved "0.001"
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/LEM_Discharge.glob:prf 154:184 <> law_of_excluded_middle_resolved
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/LEM_Discharge.glob:R352:382 PXL.ui.LEM_Discharge <> law_of_excluded_middle_resolved thm
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/PXL_Proof_Compile.py:"""Wrapper to run the Coq build and enforce proof gate checks.
+/workspaces/Logos_System/Logos_System/System_Entry_Point/Runtime_Compiler/coq/src/ui/PXL_Proof_Compile.py:(e.g., LEM discharge and Safety/Alignment gates) do not appear.
+/workspaces/Logos_System/START_LOGOS.py:Runs the Coq proof gate, verifies LEM discharge state, optionally rewrites
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM.v:Theorem pxl_excluded_middle :
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Structural_Derivations.v:      pxl_excluded_middle
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Foundations_SemanticPort.aux:0 0 excluded_middle "0.001"
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Foundations_SemanticPort.aux:0 0 excluded_middle_implies_trinitarian_decidability "0.000"
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Proof_Summary.v:          apply pxl_excluded_middle. }
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.glob:var 236:256 PXL_Foundations excluded_middle_axiom
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.glob:prf 1070:1084 <> excluded_middle
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1132:1152 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1132:1152 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.glob:prf 1167:1214 <> excluded_middle_implies_trinitarian_decidability
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1262:1282 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.glob:R1262:1282 PXL.baseline.PXL_Foundations_SemanticPort <> excluded_middle_axiom prfax
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Internal_LEM.aux:0 0 pxl_excluded_middle "0.002"
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.v:Axiom excluded_middle_axiom : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.v:Lemma excluded_middle :
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.v:Lemma excluded_middle_implies_trinitarian_decidability :
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations_SemanticPort.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Proof_Summary.glob:R1011:1029 PXL.baseline.PXL_Proof_Summary <> pxl_excluded_middle thm
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Proof_Summary.glob:R1011:1029 PXL.baseline.PXL_Proof_Summary <> pxl_excluded_middle thm
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Semantic_Profile_Suite.v:Check pxl_excluded_middle.
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Internal_LEM_SemanticPort.aux:0 0 pxl_excluded_middle "0.002"
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM_SemanticPort.glob:prf 1395:1413 PXL_Internal_LEM pxl_excluded_middle
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Used in pxl_excluded_middle proof chain:
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Cannot be eliminated without breaking pxl_excluded_middle theorem.
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Also used in pxl_excluded_middle proof chain (line 35 of PXL_Internal_LEM.v):
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   Evidence: Also used in pxl_excluded_middle proof chain (line 34 of PXL_Internal_LEM.v):
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Axiom_Minimality_Check.v:   These form the critical semantic chain for pxl_excluded_middle:
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM_SemanticPort.v:Theorem pxl_excluded_middle :
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Foundations.aux:0 0 excluded_middle "0.000"
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/.PXL_Foundations.aux:0 0 excluded_middle_implies_trinitarian_decidability "0.000"
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.glob:var 222:242 PXL_Foundations excluded_middle_axiom
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.glob:prf 1056:1070 <> excluded_middle
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.glob:R1118:1138 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.glob:R1118:1138 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.glob:prf 1153:1200 <> excluded_middle_implies_trinitarian_decidability
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.glob:R1248:1268 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.glob:R1248:1268 PXL.baseline.PXL_Foundations <> excluded_middle_axiom prfax
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.v:Axiom excluded_middle_axiom : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.v:Lemma excluded_middle :
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.v:Lemma excluded_middle_implies_trinitarian_decidability :
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Foundations.v:  apply excluded_middle_axiom.
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Internal_LEM.glob:prf 1395:1413 PXL_Internal_LEM pxl_excluded_middle
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/LEM_Discharge.v.bak:  exact PXL_Internal_LEM.pxl_excluded_middle.
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/Trinitarian_Identity_Closure.v:    - I₃: internal decidability via LEM discharge (constructively proven)
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/Trinitarian_Identity_Closure.v:(** I₃: Proven constructive decidability (LEM discharge). *)
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/Trinitarian_Identity_Closure.v:  apply pxl_excluded_middle.
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/Trinitarian_Identity_Closure.glob:R2066:2084 PXL.baseline.Trinitarian_Identity_Closure <> pxl_excluded_middle thm
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/Trinitarian_Identity_Closure.glob:R2066:2084 PXL.baseline.Trinitarian_Identity_Closure <> pxl_excluded_middle thm
+/workspaces/Logos_System/PXL_Gate/coq/src/baseline/PXL_Semantic_Profile_Suite.glob:R886:904 PXL.baseline.PXL_Internal_LEM_SemanticPort PXL_Internal_LEM pxl_excluded_middle thm
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/run_coq_pipeline.py:def run_full_pipeline() -> None:
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/run_coq_pipeline.py:    run_full_pipeline()
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/lem_portal.py:def open_identity_portal() -> dict:
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/lem_portal.py:    """Return portal metadata if and only if the LEM discharge completed."""
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/lem_portal.py:        raise PermissionError("LEM discharge incomplete – portal access denied.")
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/LEM_Discharge.v:(* LOGOS Agent LEM discharge proof generated at 2025-11-12T16:59:38.968327Z by LOGOS-AGENT-OMEGA *)
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/LEM_Discharge.v:Theorem law_of_excluded_middle_resolved : forall P : Prop, P \/ ~ P.
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/LEM_Discharge.v:Definition LEM_Discharge : forall P : Prop, P \/ ~ P := law_of_excluded_middle_resolved.
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/.LEM_Discharge.aux:0 0 law_of_excluded_middle_resolved "0.001"
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/LEM_Discharge.glob:prf 154:184 <> law_of_excluded_middle_resolved
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/LEM_Discharge.glob:R352:382 PXL.ui.LEM_Discharge <> law_of_excluded_middle_resolved thm
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/PXL_Proof_Compile.py:"""Wrapper to run the Coq build and enforce proof gate checks.
+/workspaces/Logos_System/PXL_Gate/coq/src/ui/PXL_Proof_Compile.py:(e.g., LEM discharge and Safety/Alignment gates) do not appear.
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/release/README.md:## Re-run proof gate
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/coq_theorem_index.json:      "theorem": "pxl_excluded_middle",
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Axiom excluded_middle_axiom : forall P : Prop, P \\/ ~ P.",
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Lemma excluded_middle :",
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Lemma excluded_middle_implies_trinitarian_decidability :"
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Axiom excluded_middle_axiom : forall P : Prop, P \\/ ~ P.",
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Lemma excluded_middle :",
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Lemma excluded_middle_implies_trinitarian_decidability :"
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Theorem pxl_excluded_middle :"
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:        "Theorem pxl_excluded_middle :"
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/state/repository_knowledge_base.json:      "stdout": "PASS: axiom budget ok: axiom_count=8 <= 8\nPASS: semantic axiom budget ok: axiom_count_semantic=8 <= 8\nPASS: PXL_ax_K_sem assumptions empty\nPASS: PXL_ax_T_sem assumptions empty\nPASS: PXL_ax_Nec_sem assumptions empty\nPASS: pxl_excluded_middle assumptions empty\nPASS: trinitarian_optimization assumptions empty\nPASS: privative_collapse_sound assumptions empty\n",
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/runtime_protocol/08_phase_module_map.md:| PHASE_1_PROOF_GATE | `_run_proofs()` | `PXL_Gate.ui.lem_portal` (`open_identity_portal`) | proof-related (LEM portal) | Passive |
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/runtime_protocol/trees_and_boot_overview.md:- [LOGOS_SYSTEM/System_Entry_Point/System_Proof_Compiler/test_lem_discharge.py](LOGOS_SYSTEM/System_Entry_Point/System_Proof_Compiler/test_lem_discharge.py): Canonical Coq rebuild/report; streams `_run_stream`, checks `pxl_excluded_middle`, emits status markers (`Overall status: PASS`).
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/runtime_protocol/trees_and_boot_overview.md:- [\_reports/HOLDING_PATTERN/scripts/system_stack_tbd/need_to_distribute/boot_aligned_agent.py](\_reports/HOLDING_PATTERN/scripts/system_stack_tbd/need_to_distribute/boot_aligned_agent.py): Alignment gate; guards SHA-256 identity, runs LEM discharge, writes alignment audit entry.
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/runtime_protocol/11_proof_runtime_bridge_map.md:| LEM portal | Identity/LEM discharge state via `PXL_Gate/ui/lem_portal.open_identity_portal()` | `_run_proofs()` raises if gate not satisfied | One-way (proof metadata → runtime) |
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/runtime_protocol/04_entrypoints.md:| START_LOGOS | [START_LOGOS.py](START_LOGOS.py#L144-L210) | `python START_LOGOS.py [--skip-audit-rewrite] [--no-ui] [--no-uip] [--host HOST] [--port PORT]` | Parses bootstrap flags, extends `sys.path`, runs the PXL proof gate, starts the dashboard + Flask server, and spawns the UIP manager before blocking on signal wait. |
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/runtime_protocol/06_boot_sequence.md:2. **Proof gate + identity audit** – `_run_proofs()` compiles the Coq baseline/meta suites via `PXL_Gate.ui.run_coq_pipeline.run_full_pipeline`, opens the `lem_portal` identity log, toggles the dashboard LEM flag, and (unless suppressed) rewrites the audit ledger through `PXL_Gate.ui.audit_and_emit.main(["--write"])` to persist the proof + identity state ([START_LOGOS.py](START_LOGOS.py#L54-L83)). Any portal failure raises and halts bootstrap.
+/workspaces/Logos_System/_Dev_Resources/Dev_Notes/sanity_check/07_runtime_contract.md:**Boundary rule**: `ACTIVE` modality may only begin after both proof gate success and the identity/audit write complete (`PHASE_2_IDENTITY_AUDIT`).
+/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/test_proved_grounding.py:    # Get pxl_excluded_middle entry
+/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/test_proved_grounding.py:        if th["theorem"] == "pxl_excluded_middle":
+/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/test_proved_grounding.py:        print("pxl_excluded_middle not found in index")
+/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/test_proved_grounding.py:        "theorem": "pxl_excluded_middle",
+/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/prototype_grounding_workflow.py:            "constructive LEM discharge still depends on assumptions: "
+/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/build_coq_theorem_index.py:            "theorem": "pxl_excluded_middle",
+/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/boot_aligned_agent.py:    internal `pxl_excluded_middle` proof.
+/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/boot_aligned_agent.py:        "Print Assumptions pxl_excluded_middle."
+/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/boot_aligned_agent.py:    """Logos Agent locked until constructive LEM discharge succeeds."""
+/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/need_to_distribute/boot_aligned_agent.py:                f"[{self.agent_id}] Constructive LEM discharge verified. "
+/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/could_be_dev/capture_arp_traces_and_backfill.py:                    "nexus activation requires satisfied LEM discharge, "
+/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/system_stack_tbd/could_be_dev/capture_arp_traces_and_backfill.py:                    "proofs, LEM discharge, and sandbox artifacts already "
+/workspaces/Logos_System/_Dev_Resources/Dev_Scripts/repo/golden_run.sh:echo "[golden-run] running proof gate"
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Current/scripts_catalog.md:| [JUNK_DRAWER/scripts/golden_run.sh](JUNK_DRAWER/scripts/golden_run.sh) | Rebuilds Coq artifacts, runs proof gate, computes identity hash, and records run fingerprints. |
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Current/scripts_catalog.md:| [JUNK_DRAWER/scripts/test_lem_discharge.py](JUNK_DRAWER/scripts/test_lem_discharge.py) | End-to-end proof gate demonstrating Coq build and proof footprint. |
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/demo_guide.md:2. **Agent Boot** - Unlocks agent only after proof gate passes
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/demo_guide.md:"Most AI systems run first, audit later. LOGOS does the opposite—mathematical proof gates the autonomy."
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/demo_guide.md:4. Study `scripts/boot_aligned_agent.py` - see how proof gates work
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/demo_guide.md:✅ Actual constructive LEM discharge
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/verification_interpretability_plan.md:- Extend automated verification beyond constructive LEM discharge by integrating health reporting and dataset provenance checks into continuous tests.
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/axiom_classification.md:- ✅ pxl_excluded_middle: 0 assumptions
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/LLM_INTEGRATION_SUMMARY.md:   - Maintains all safety guardrails and proof gates
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/LLM_INTEGRATION_SUMMARY.md:✅ **Safety preserved** - All proof gates and sandbox restrictions maintained
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/axiom_reduction_roadmap.md:- `pxl_excluded_middle` must remain assumption-free.
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/phase3_semantic_modal_kernel_17axioms.md:- pxl_excluded_middle
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/coq_proof_audit_comprehensive.md:| **Key Theorem (LEM)** | `pxl_excluded_middle` | ✅ **Zero extra assumptions** |
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/coq_proof_audit_comprehensive.md:| **LEM_Discharge.v** | LEM discharge wrapper | Internal_LEM | ✅ Compiles |
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/coq_proof_audit_comprehensive.md:   ├── Verify:  Print Assumptions pxl_excluded_middle
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/coq_proof_audit_comprehensive.md:    Print Assumptions pxl_excluded_middle.
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/coq_proof_audit_comprehensive.md:    "pxl_excluded_middle": {
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/coq_proof_audit_comprehensive.md:| `pxl_excluded_middle` | ✅ | 0 | 0 |
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/axiom_audit_phase1.md:- ✅ `pxl_excluded_middle`, `trinitarian_optimization` remain assumption-free
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/logos_axiom_theorem_summary.md:- `identity_axiom`, `non_contradiction_axiom`, `excluded_middle_axiom`
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/logos_axiom_theorem_summary.md:**`pxl_excluded_middle`** ([PXL_Internal_LEM.v](Protopraxis/formal_verification/coq/baseline/PXL_Internal_LEM.v))
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/compute_substrate_plan.md:- **Aligned agent boot**: `python3 scripts/boot_aligned_agent.py` repeats the rebuild, validates `pxl_excluded_middle`, and writes alignment audit entries.
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/phase3_step1_complete.md:- **Update (2025-12-22):** Modal semantic theorems have been integrated; baseline kernel now holds **8 axioms** with pxl_excluded_middle and trinitarian_optimization still assumption-free.
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/AUDIT/CHANGELOG.md:- Enforced no-drift/coherence invariant and proof gate coverage.
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/AUDIT/CHANGELOG.md:- Gated omni hooks and OntoGrid artifacts in proof gate.
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/modal_logic_resources_inventory.md:- **pxl_excluded_middle:** Uses ax_Nec implicitly via A1_from_refl, ax_4_derived, A4_derived
+/workspaces/Logos_System/_Dev_Resources/Dev_Logs_Repo/modal_logic_resources_inventory.md:   - Check pxl_excluded_middle still has 0 assumptions
