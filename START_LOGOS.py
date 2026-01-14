@@ -7,10 +7,9 @@ boots the UIP manager. All paths are relative to the repository root so this
 can be invoked from any terminal.
 """
 
-from __future__ import annotations
-
 import argparse
 import asyncio
+import json
 import os
 import signal
 import sys
@@ -18,11 +17,45 @@ import threading
 import time
 from pathlib import Path
 
-from System_Stack.Logos_Protocol.Runtime_Operations.Orchestration import runtime_protocol
-
 REPO_ROOT = Path(__file__).resolve().parent
+MONO_ROOT = REPO_ROOT / "Logos_System"
+SYSTEM_STACK_ROOT = MONO_ROOT / "System_Stack"
+
+for path in (MONO_ROOT, SYSTEM_STACK_ROOT, REPO_ROOT):
+    path_str = str(path)
+    if path_str not in sys.path:
+        sys.path.append(path_str)
+
+from System_Stack.Logos_Protocol.Runtime_Operations.Orchestration import runtime_protocol
 PXL_ROOT = REPO_ROOT / "PXL_Gate"
-LOGOS_ROOT = REPO_ROOT / "System_Stack" / "Logos_AGI"
+LOGOS_ROOT = SYSTEM_STACK_ROOT
+
+# --- LOCK AND KEY ATTESTATION GATE ---
+ATTESTATION_PATH = Path("/workspaces/Logos_System/Logos_System/System_Entry_Point/Proof_Logs/attestations/proof_gate_attestation.json")
+
+if not ATTESTATION_PATH.exists():
+    raise RuntimeError(
+        "Missing proof-gate attestation. "
+        "Run lock_and_key_orchestrator.sh before starting LOGOS."
+    )
+
+try:
+    att = json.loads(ATTESTATION_PATH.read_text(encoding="utf-8"))
+except Exception as exc:
+    raise RuntimeError("Invalid attestation JSON") from exc
+
+if not att.get("commute", False):
+    raise RuntimeError("Attestation does not authorize activation (commute=false)")
+
+unlock = att.get("unlock_hash")
+agents = att.get("agent_ids")
+
+if not isinstance(unlock, str) or not unlock:
+    raise RuntimeError("Missing or invalid unlock_hash in attestation")
+
+if not isinstance(agents, dict) or not all(k in agents for k in ("I1", "I2", "I3")):
+    raise RuntimeError("Missing agent IDs in attestation")
+# --- END ATTESTATION GATE ---
 
 
 def _maybe_set_boot_phase(phase: str) -> None:
@@ -47,30 +80,11 @@ def _set_gate_lem(flag: bool) -> None:
 
 def _extend_sys_path() -> None:
     """Add repo-local roots so imports work when run from any cwd."""
-    for path in (REPO_ROOT, PXL_ROOT, LOGOS_ROOT):
+    for path in (REPO_ROOT, PXL_ROOT, MONO_ROOT, SYSTEM_STACK_ROOT, LOGOS_ROOT):
         path_str = str(path)
         if path_str not in sys.path:
             sys.path.append(path_str)
 
-
-def _run_proofs(skip_audit_rewrite: bool) -> None:
-    """Compile proofs and enforce LEM discharge gate."""
-    _maybe_set_boot_phase("proofs")
-    from PXL_Gate.ui.run_coq_pipeline import run_full_pipeline
-    from PXL_Gate.ui.lem_portal import open_identity_portal
-    from PXL_Gate.ui.audit_and_emit import main as audit_stub
-
-    run_full_pipeline()
-
-    try:
-        portal_state = open_identity_portal()
-        print("LEM portal state loaded:", portal_state)
-        _set_gate_lem(True)
-    except PermissionError as exc:
-        raise RuntimeError("LEM discharge incomplete; aborting bootstrap") from exc
-
-    if not skip_audit_rewrite:
-        audit_stub(["--write"])
 
 
 def _start_flask(host: str, port: int) -> threading.Thread:
@@ -161,7 +175,7 @@ def main(argv: list[str] | None = None) -> int:
     _maybe_set_boot_phase("init")
 
     runtime_protocol.mark_phase(runtime_protocol.PHASE_1_PROOF_GATE)
-    _run_proofs(skip_audit_rewrite=args.skip_audit_rewrite)
+    print("Proofs already verified via lock-and-key attestation")
     runtime_protocol.mark_phase(runtime_protocol.PHASE_2_IDENTITY_AUDIT)
 
     runtime_protocol.mark_phase(runtime_protocol.PHASE_3_TELEMETRY_DASHBOARD)
