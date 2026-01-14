@@ -20,7 +20,7 @@ def test_pai():
     # Test 1: Create agent identity module
     print("1. Testing AgentIdentity module...")
     try:
-        from logos_core.governance.agent_identity import (
+        from Logos_Protocol.logos_core.governance.agent_identity import (
             load_or_create_identity,
             validate_identity,
             update_identity,

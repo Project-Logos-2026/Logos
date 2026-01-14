@@ -11,7 +11,7 @@ from typing import Any
 # Add parent directory to path for imports
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from logos_core.reference_monitor import ProofGateError, ReferenceMonitor
+from Logos_Protocol.logos_core.reference_monitor import ProofGateError, ReferenceMonitor
 
 
 class OBDCKernel:

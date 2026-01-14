@@ -37,7 +37,7 @@ def register_uip_handler(step, dependencies=None, timeout=30):
 
 # Import from LOGOS core system
 try:
-    from ...Logos_Protocol.logos_core import IELOverlay as BaseIELOverlay
+    from ...Logos_Protocol.Logos_Core import IELOverlay as BaseIELOverlay
     BASE_IELOVERLAY_AVAILABLE = True
 except ImportError:
     BASE_IELOVERLAY_AVAILABLE = False

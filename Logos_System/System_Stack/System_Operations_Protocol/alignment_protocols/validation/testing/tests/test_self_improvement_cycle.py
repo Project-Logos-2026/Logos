@@ -471,7 +471,7 @@ class TestEndToEndCycle:
 def test_multi_cycle_stability():
     """Quick stability test for CI/CD pipeline"""
     # Fast test that can run in CI environment
-    from logos_core.meta_reasoning.iel_evaluator import IELQualityMetrics
+    from Logos_Protocol.logos_core.meta_reasoning.iel_evaluator import IELQualityMetrics
 
     metrics = IELQualityMetrics()
 

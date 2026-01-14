@@ -42,10 +42,10 @@ except ImportError as e:
 
 # LOGOS Core imports (assuming these exist from v0.6)
 try:
-    from logos_core.proof_gates import ProofGate
-    from logos_core.reference_monitor import ReferenceMonitor
-    from logos_core.trinity_coherence import TrinityCoherenceValidator
-    from logos_core.verification import VerificationContext
+    from Logos_Protocol.logos_core.proof_gates import ProofGate
+    from Logos_Protocol.logos_core.reference_monitor import ReferenceMonitor
+    from Logos_Protocol.logos_core.trinity_coherence import TrinityCoherenceValidator
+    from Logos_Protocol.logos_core.verification import VerificationContext
 except ImportError:
     # Mock implementations for development
     class ProofGate:

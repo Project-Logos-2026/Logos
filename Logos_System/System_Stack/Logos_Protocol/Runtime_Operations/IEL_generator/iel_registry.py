@@ -775,7 +775,7 @@ def main():
         elif args.prune:
             # Prune underperforming IELs
             try:
-                from logos_core.meta_reasoning.iel_evaluator import IELEvaluator
+                from Logos_Protocol.logos_core.meta_reasoning.iel_evaluator import IELEvaluator
 
                 print(f"Pruning IELs below quality threshold: {args.below}")
 
