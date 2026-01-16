@@ -37,6 +37,533 @@
     "invoked_by": "list[string]"
   },
   "modules": {
+    "ORX-001": {
+      "module_id": "ORX-001",
+      "layer": "ORCHESTRATION",
+      "role": "Canonical system bootstrap and early runtime gating pipeline",
+      "phase_origin": "PHASE_SYSTEM_BOOTSTRAP",
+      "description": "Orchestration pipeline defined in Canonical_System_Bootstrap_Pipeline.py.",
+      "contracts": [],
+      "allowed_imports": [
+        "SEMANTIC_AXIOMS",
+        "SEMANTIC_CONTEXTS"
+      ],
+      "prohibited_behaviors": [
+        "NETWORK",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "GLOBAL",
+      "runtime_spine_binding": "SYSTEM_ENTRY_PRE_AGENT",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Logos_System_Entry_Point"
+      ]
+    },
+    "ORX-002": {
+      "module_id": "ORX-002",
+      "layer": "ORCHESTRATION",
+      "role": "Primary external system entry point and process initializer",
+      "phase_origin": "PHASE_SYSTEM_ENTRY",
+      "description": "Orchestration entry defined in Logos_System_Entry_Point.py.",
+      "contracts": [],
+      "allowed_imports": [
+        "SEMANTIC_AXIOMS",
+        "SEMANTIC_CONTEXTS",
+        "ORCHESTRATION"
+      ],
+      "prohibited_behaviors": [
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "main"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "GLOBAL",
+      "runtime_spine_binding": "SYSTEM_ENTRY",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "OS_CLI"
+      ]
+    },
+    "SCM-001": {
+      "module_id": "SCM-001",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "TRINITARIAN_LOGIC_AXIOM_CORE",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Foundational trinitarian logical axioms defined in Trinitarian_Logic_Core.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-002": {
+      "module_id": "SCM-002",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "TRINITARIAN_ALIGNMENT_AXIOM_CORE",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Axioms governing trinitarian alignment and coherence defined in Trinitarian_Alignment_Core.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-003": {
+      "module_id": "SCM-003",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "NECESSARY_EXISTENCE_AXIOM_CORE",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Axioms governing necessary existence defined in Necessary_Existence_Core.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-004": {
+      "module_id": "SCM-004",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "GLOBAL_BIJECTIVE_RECURSION_AXIOM",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Axioms defining global bijective recursion defined in Global_Bijective_Recursion_Core.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-005": {
+      "module_id": "SCM-005",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "THREE_PART_DISTINCTION_NON_COLLAPSE",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "3PDN constraint axioms defined in 3PDN_Constraint.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-006": {
+      "module_id": "SCM-006",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "THREE_PART_DISTINCTION_VALIDATION",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Validation axioms for 3PDN defined in 3PDN_Validator.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-007": {
+      "module_id": "SCM-007",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "AGENT_ACTIVATION_GATE_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Axioms governing agent activation defined in Agent_Activation_Gate.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-008": {
+      "module_id": "SCM-008",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "EVIDENCE_CHAIN_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Evidence chain axioms defined in Evidence_Chain.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-009": {
+      "module_id": "SCM-009",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "INVARIANT_CONSTRAINT_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Invariant constraint axioms defined in Invariant_Constraints.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-010": {
+      "module_id": "SCM-010",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "HYPSTATIC_IDENTITY_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Hypostatic identity axioms defined in Hypostatic_ID_Validator.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-011": {
+      "module_id": "SCM-011",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "TEMPORAL_SUPERSESSION_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Temporal supersession axioms defined in Temporal_Supersession.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-012": {
+      "module_id": "SCM-012",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "SEMANTIC_CAPABILITY_GATING_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Semantic capability gating axioms defined in Semantic_Capability_Gate.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-013": {
+      "module_id": "SCM-013",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "RUNTIME_MODE_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Runtime mode axioms defined in Runtime_Mode_Controller.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-014": {
+      "module_id": "SCM-014",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "RUNTIME_CONTEXT_INITIALIZATION_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Runtime context initialization axioms defined in Runtime_Context_Initializer.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-015": {
+      "module_id": "SCM-015",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "RUNTIME_INPUT_SANITIZATION_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Runtime input sanitization axioms defined in Runtime_Input_Sanitizer.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-016": {
+      "module_id": "SCM-016",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "READ_ONLY_AGENT_INTERFACE_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Read-only agent interface axioms defined in Read_Only_Agent_Interface.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-017": {
+      "module_id": "SCM-017",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "UWM_INGESTION_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "UWM ingestion axioms defined in UWM_Ingestion.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-018": {
+      "module_id": "SCM-018",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "UWM_VALIDATION_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "UWM validation axioms defined in UWM_Validator.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-019": {
+      "module_id": "SCM-019",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "MONOLITH_RUNTIME_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Monolithic runtime axioms defined in Monolith_Runtime.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
     "SCX-001": {
       "module_id": "SCX-001",
       "layer": "SEMANTIC_CONTEXT",
