@@ -5,6 +5,7 @@ from pathlib import Path
 import ast
 import json
 import re
+import sys
 from typing import Union, Iterable, Optional, Tuple
 
 
@@ -152,6 +153,13 @@ def parse_python_imports(py_file: Union[str, Path], repo: Path | None = None) ->
 
 def normalize_module_to_path(module: str):
     return module.replace(".", "/") + ".py"
+
+
+def looks_like_stdlib(mod: str) -> bool:
+    try:
+        return mod in sys.stdlib_module_names
+    except Exception:
+        return False
 
 def write_json(path: Path, data):
     path.parent.mkdir(parents=True, exist_ok=True)

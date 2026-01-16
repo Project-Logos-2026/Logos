@@ -6,15 +6,19 @@ from collections import defaultdict, deque
 from pathlib import Path
 from typing import Any, Dict, List, Set, Tuple
 
-from _common import iter_files, parse_python_imports, write_json, normalize_module_to_path
+from _common import iter_files, parse_python_imports, write_json, normalize_module_to_path, read_text
+try:
+    from ._diagnostic_record import diag
+except ImportError:  # script execution fallback
+    from _diagnostic_record import diag
 
-def build_import_graph(repo: Path) -> Dict[str, Any]:
+def build_import_graph(repo: Path, targets: List[Path] | None = None) -> Dict[str, Any]:
     imports: List[Dict[str, Any]] = []
     edges: List[Tuple[str, str]] = []
     unresolved: List[Dict[str, Any]] = []
 
     # map file-> module-ish path for local resolution heuristics
-    py_files = list(iter_files(repo, suffix=".py"))
+    py_files = list(targets) if targets else list(iter_files(repo, suffix=".py"))
     file_set = {str(p.relative_to(repo)) for p in py_files}
 
     def resolve_local(mod: str) -> str | None:
@@ -29,7 +33,14 @@ def build_import_graph(repo: Path) -> Dict[str, Any]:
         return None
 
     for p in py_files:
+        src_lines = read_text(p).splitlines()
+
         for imp in parse_python_imports(p, repo):
+            src_line = src_lines[imp.line - 1] if imp.line - 1 < len(src_lines) else ""
+            cs = imp.col or 0
+            ce = cs + len(src_line) if src_line else cs
+            unresolved_flag = bool(imp.level and imp.kind == "from")
+
             rec = {
                 "importer_file": imp.importer_file,
                 "line": imp.line,
@@ -39,7 +50,22 @@ def build_import_graph(repo: Path) -> Dict[str, Any]:
                 "name": imp.name,
                 "level": imp.level,
             }
-            imports.append(rec)
+
+            diag_rec = diag(
+                error_type="ImportError" if unresolved_flag else "Import",
+                line=imp.line,
+                char_start=cs,
+                char_end=ce,
+                details=f"{imp.kind} {imp.name or imp.module}",
+                source="scan_imports",
+            )
+            if unresolved_flag:
+                diag_rec.update({
+                    "file": str(p.relative_to(repo)),
+                    "module": imp.module,
+                    "name": imp.name,
+                })
+                imports.append(diag_rec)
 
             # Edge target: attempt local resolve, else keep module string
             target = resolve_local(imp.module) if imp.level == 0 else None
@@ -107,8 +133,17 @@ def build_import_graph(repo: Path) -> Dict[str, Any]:
         }
     }
 
-def main() -> int:
+def main(argv=None) -> int:
+    import sys
+
+    args = argv if argv is not None else sys.argv[1:]
     repo = Path("/workspaces/Logos_System").resolve()
+    if args:
+        targets = [Path(a).resolve() for a in args]
+        graph = build_import_graph(repo, targets)
+        print(json.dumps(graph.get("unresolved", []), indent=2))
+        return 0
+
     base = Path("/workspaces/Logos_System/_Reports/SYSTEM_AUDIT/01_import_graph")
     graph = build_import_graph(repo)
     write_json(base / "import_graph.json", graph)

@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "packet_name": "archive_planner_digests",
+    "original_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_FAIL_GROUP/archive_planner_digests.py",
+    "legacy_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_FAIL_GROUP/archive_planner_digests.py",
+    "type_cast_name": "Archive_Planner_Digests",
+    "test_template": "default",
+    "file_hash": "pending",
+    "batch_id": "BATCH_SWEEP_INIT",
+    "init_timestamp": "2026-01-15T08:23:53.863561+00:00",
+    "rewrite_output": "_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/Archive_Planner_Digests/Archive_Planner_Digests.py"
+  },
+  "phases": {
+    "phase_1_imports": {
+      "diagnostics": [
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/archive_planner_digests.py",
+          "line": 17,
+          "col": 0,
+          "kind": "from",
+          "module": "__future__",
+          "name": "annotations",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/archive_planner_digests.py",
+          "line": 19,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "argparse",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/archive_planner_digests.py",
+          "line": 20,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "os",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/archive_planner_digests.py",
+          "line": 21,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "sys",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/archive_planner_digests.py",
+          "line": 22,
+          "col": 0,
+          "kind": "from",
+          "module": "pathlib",
+          "name": "Path",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/archive_planner_digests.py",
+          "line": 57,
+          "col": 4,
+          "kind": "from",
+          "module": "Protopraxis.agent_planner",
+          "name": "snapshot_digest_log",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        }
+      ]
+    },
+    "phase_2_symbols": {
+      "diagnostics": []
+    },
+    "phase_2b_dead_code": {
+      "diagnostics": []
+    },
+    "phase_3_dependencies": {
+      "diagnostics": []
+    },
+    "phase_4_side_effects": {
+      "diagnostics": []
+    },
+    "phase_5_rewrite_attempts": [
+      {
+        "attempt": 1,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/archive_planner_digests/archive_planner_digests.py",
+        "rewrite_hash": "sha256:c36d35a5feca74c67eca901a22e6c3fe4bbe815b45f55be8f94d37b01d822ddf",
+        "timestamp": "2026-01-15T08:31:14.334030",
+        "status": "complete"
+      },
+      {
+        "attempt": 2,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/archive_planner_digests/archive_planner_digests.py",
+        "rewrite_hash": "sha256:c36d35a5feca74c67eca901a22e6c3fe4bbe815b45f55be8f94d37b01d822ddf",
+        "timestamp": "2026-01-15T08:31:14.524609",
+        "status": "complete"
+      },
+      {
+        "attempt": 1,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/archive_planner_digests/archive_planner_digests.py",
+        "rewrite_hash": "sha256:d5cc30ea595d2388c489d7eba7b2e98b049381f1b98edc4b971eaf5334230dcd",
+        "timestamp": "2026-01-15T08:42:11.368762+00:00",
+        "status": "complete"
+      },
+      {
+        "attempt": 1,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/archive_planner_digests/archive_planner_digests.py",
+        "rewrite_hash": "sha256:d5cc30ea595d2388c489d7eba7b2e98b049381f1b98edc4b971eaf5334230dcd",
+        "timestamp": "2026-01-15T08:42:11.373318",
+        "status": "complete"
+      },
+      {
+        "attempt": 2,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/archive_planner_digests/archive_planner_digests.py",
+        "rewrite_hash": "sha256:d5cc30ea595d2388c489d7eba7b2e98b049381f1b98edc4b971eaf5334230dcd",
+        "timestamp": "2026-01-15T08:42:11.485157+00:00",
+        "status": "complete"
+      },
+      {
+        "attempt": 2,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/archive_planner_digests/archive_planner_digests.py",
+        "rewrite_hash": "sha256:d5cc30ea595d2388c489d7eba7b2e98b049381f1b98edc4b971eaf5334230dcd",
+        "timestamp": "2026-01-15T08:42:11.489532",
+        "status": "complete"
+      },
+      {
+        "attempt": 1,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/archive_planner_digests/Archive_Planner_Digests.py",
+        "rewrite_hash": "sha256:6d2d0ae8769d6b216ba0563990e56243c3ac56169b66c06a4cd0c8c289789b85",
+        "timestamp": "2026-01-15T08:47:52.984458+00:00",
+        "status": "complete"
+      },
+      {
+        "attempt": 2,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/archive_planner_digests/Archive_Planner_Digests.py",
+        "rewrite_hash": "sha256:76b20d054dd6776a0735d5f3a14d5c7503fa0fea9841a3745ccaf01c9370987d",
+        "timestamp": "2026-01-15T08:48:28.594657+00:00",
+        "status": "complete"
+      }
+    ],
+    "phase_6_semantic_audit": {
+      "diagnostics": [
+        {
+          "error_type": "NamingConventionViolation",
+          "line": 1,
+          "char_start": 0,
+          "char_end": 23,
+          "severity": "medium",
+          "details": "File name must be Title_Case_With_Underscores",
+          "_source": "semantic_naming"
+        },
+        {
+          "error_type": "MissingStandardHeader",
+          "line": 1,
+          "char_start": 0,
+          "char_end": 0,
+          "severity": "medium",
+          "details": "Required LOGOS standard header not found",
+          "_source": "semantic_header"
+        },
+        {
+          "error_type": "AbbreviationExpansionMismatch",
+          "line": 1,
+          "char_start": 0,
+          "char_end": 0,
+          "severity": "medium",
+          "details": "Abbreviation 'notes' missing canonical expansion",
+          "_source": "semantic_abbreviations"
+        }
+      ]
+    },
+    "phase_7_verification": {
+      "attempt_1": null,
+      "attempt_2": null
+    }
+  },
+  "test_results": {
+    "executed": false,
+    "passed": false,
+    "output_log": ""
+  },
+  "finalization": {
+    "status": "UNKNOWN",
+    "sealed_timestamp": "2026-01-15T08:23:53.863561+00:00",
+    "confirmation_hash": "pending"
+  }
+}
