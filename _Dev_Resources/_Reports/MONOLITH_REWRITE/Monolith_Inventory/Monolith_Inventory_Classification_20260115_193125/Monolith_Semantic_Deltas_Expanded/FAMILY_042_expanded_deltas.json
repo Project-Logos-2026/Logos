@@ -1,0 +1,2540 @@
+{
+  "family_id": "FAMILY_042",
+  "shared_semantics": [
+    "GOVERNANCE",
+    "ORCHESTRATION",
+    "TEST_OR_EXAMPLE"
+  ],
+  "shared_spine_phase": null,
+  "shared_execution_role": null,
+  "analysis_coverage": {
+    "members_total": 24,
+    "members_extracted": 22,
+    "members_missing_profile": 0,
+    "members_missing_source": 2,
+    "parse_failures": 0
+  },
+  "members": [
+    {
+      "qualified_name": "DummyNexus._protocol_specific_security_validation",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "91fd811b97e1509861da36eb1a99bf56d8bff68201af66cd74f278c300c62fc5",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "request"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Dict[str, Any]",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 1,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "DummyNexus._protocol_specific_activation",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "1b413dd9142931b00a637f76235f1b066acaeba669e1d4fce555555fd38acc82",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "DummyNexus._protocol_specific_deactivation",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "f7a3f9c0c6ef2b862bbd6d934f618b789f82a56c5b98c54391a2970192ac0909",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "DummyNexus._route_to_protocol_core",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "3e44a615f006b168aa4ef2bb81889339d5b11053fd12fdc9598d63cbd85d8c1f",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "request"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Dict[str, Any]",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "DummyNexus._protocol_specific_smoke_test",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "8620d3eee09321f1293e0cf5b34c0e82ab76762d9c9377f9b53484af80197e9b",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Dict[str, Any]",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "_protocol_specific_security_validation",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "91fd811b97e1509861da36eb1a99bf56d8bff68201af66cd74f278c300c62fc5",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "request"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Dict[str, Any]",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 1,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "_protocol_specific_activation",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "1b413dd9142931b00a637f76235f1b066acaeba669e1d4fce555555fd38acc82",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "_protocol_specific_deactivation",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "f7a3f9c0c6ef2b862bbd6d934f618b789f82a56c5b98c54391a2970192ac0909",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "_route_to_protocol_core",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "3e44a615f006b168aa4ef2bb81889339d5b11053fd12fdc9598d63cbd85d8c1f",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "request"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Dict[str, Any]",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "_protocol_specific_smoke_test",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "8620d3eee09321f1293e0cf5b34c0e82ab76762d9c9377f9b53484af80197e9b",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Dict[str, Any]",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "_require_key_payload",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "99f369fa2f93178d55f3691ff777627968ae018ccf5fd0fd17e402beedb57f92",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "required_key"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 2,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "isinstance"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "_validator",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "507ecd0c8b67cdc00409f964870398dd1a210e6c3f33cfc5600d3ce71823298f",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "payload"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Tuple[bool, str]",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 2,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "isinstance"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "NexusCapabilityGovernanceTest.setUp",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "88248c6fec89e64c7303fc5a0418dc093a678a7fd2c005c8cd9181f1aecc2cb4",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "DummyNexus",
+          "_require_key_payload"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "NexusCapabilityGovernanceTest._run",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "10f62c449d1967a29d4b2d9b24a1a7e86aecdd30e0e13060304e4ad60cc3d1f3",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "request"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": [
+          "asyncio.run"
+        ]
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": true
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "asyncio.run",
+          "self.nexus.process_agent_request"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "2d69271ed09820d60cb024d2695e90cb8b86e28a9916f7506c0bc9f8035b5817",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AgentRequest",
+          "self._run",
+          "self.assertFalse",
+          "self.assertIn"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "NexusCapabilityGovernanceTest.test_invalid_payload_rejected",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "d6fdc4bb9a24eaf8e0bb57437a489883c7c78b900189378169ec4ea32c9b2a26",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AgentRequest",
+          "self._run",
+          "self.assertFalse",
+          "self.assertIn"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "2aec2abc4c9e690d3fe7e8a698a1497ded0afe8314e7abf935d1671aac3a1d79",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AgentRequest",
+          "response.data.get",
+          "self._run",
+          "self.assertEqual",
+          "self.assertTrue"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "setUp",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "88248c6fec89e64c7303fc5a0418dc093a678a7fd2c005c8cd9181f1aecc2cb4",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "DummyNexus",
+          "_require_key_payload"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "UTILITY"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "_run",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "10f62c449d1967a29d4b2d9b24a1a7e86aecdd30e0e13060304e4ad60cc3d1f3",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "request"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": [
+          "asyncio.run"
+        ]
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": true
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "asyncio.run",
+          "self.nexus.process_agent_request"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_disallowed_operation_rejected",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "2d69271ed09820d60cb024d2695e90cb8b86e28a9916f7506c0bc9f8035b5817",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AgentRequest",
+          "self._run",
+          "self.assertFalse",
+          "self.assertIn"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_invalid_payload_rejected",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "d6fdc4bb9a24eaf8e0bb57437a489883c7c78b900189378169ec4ea32c9b2a26",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AgentRequest",
+          "self._run",
+          "self.assertFalse",
+          "self.assertIn"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_allowed_operation_with_valid_payload_routes",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_nexus_capability_governance.py",
+      "source_hash": "2aec2abc4c9e690d3fe7e8a698a1497ded0afe8314e7abf935d1671aac3a1d79",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AgentRequest",
+          "response.data.get",
+          "self._run",
+          "self.assertEqual",
+          "self.assertTrue"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    }
+  ],
+  "invariants": {
+    "signature.varargs": false,
+    "signature.kwargs": false,
+    "signature.decorators": [],
+    "control_flow.has_recursion_self_call": false,
+    "control_flow.loop_counts": {
+      "for": 0,
+      "while": 0
+    },
+    "control_flow.raises": [],
+    "control_flow.except_handlers": [],
+    "nondeterminism_flags.uses_time": false,
+    "nondeterminism_flags.uses_random": false,
+    "nondeterminism_flags.uses_os_env": false,
+    "mutations.writes_globals": false,
+    "mutations.mutates_args_possible": false,
+    "mutations.writes_files_possible": false,
+    "mutations.network_side_effect_possible": false,
+    "observed_calls.fs_calls": [],
+    "observed_calls.net_calls": [],
+    "observed_calls.proc_calls": [],
+    "observed_calls.serial_calls": [],
+    "semantic_profile_overlay.data_role": []
+  },
+  "divergences": {
+    "signature.args": {
+      "DummyNexus._protocol_specific_security_validation": [
+        "request",
+        "self"
+      ],
+      "DummyNexus._protocol_specific_activation": [
+        "self"
+      ],
+      "DummyNexus._protocol_specific_deactivation": [
+        "self"
+      ],
+      "DummyNexus._route_to_protocol_core": [
+        "request",
+        "self"
+      ],
+      "DummyNexus._protocol_specific_smoke_test": [
+        "self"
+      ],
+      "_protocol_specific_security_validation": [
+        "request",
+        "self"
+      ],
+      "_protocol_specific_activation": [
+        "self"
+      ],
+      "_protocol_specific_deactivation": [
+        "self"
+      ],
+      "_route_to_protocol_core": [
+        "request",
+        "self"
+      ],
+      "_protocol_specific_smoke_test": [
+        "self"
+      ],
+      "_require_key_payload": [
+        "required_key"
+      ],
+      "_validator": [
+        "payload"
+      ],
+      "NexusCapabilityGovernanceTest.setUp": [
+        "self"
+      ],
+      "NexusCapabilityGovernanceTest._run": [
+        "request",
+        "self"
+      ],
+      "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected": [
+        "self"
+      ],
+      "NexusCapabilityGovernanceTest.test_invalid_payload_rejected": [
+        "self"
+      ],
+      "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes": [
+        "self"
+      ],
+      "setUp": [
+        "self"
+      ],
+      "_run": [
+        "request",
+        "self"
+      ],
+      "test_disallowed_operation_rejected": [
+        "self"
+      ],
+      "test_invalid_payload_rejected": [
+        "self"
+      ],
+      "test_allowed_operation_with_valid_payload_routes": [
+        "self"
+      ]
+    },
+    "signature.returns_annotation": {
+      "DummyNexus._protocol_specific_security_validation": "Dict[str, Any]",
+      "DummyNexus._protocol_specific_activation": "None",
+      "DummyNexus._protocol_specific_deactivation": "None",
+      "DummyNexus._route_to_protocol_core": "Dict[str, Any]",
+      "DummyNexus._protocol_specific_smoke_test": "Dict[str, Any]",
+      "_protocol_specific_security_validation": "Dict[str, Any]",
+      "_protocol_specific_activation": "None",
+      "_protocol_specific_deactivation": "None",
+      "_route_to_protocol_core": "Dict[str, Any]",
+      "_protocol_specific_smoke_test": "Dict[str, Any]",
+      "_require_key_payload": null,
+      "_validator": "Tuple[bool, str]",
+      "NexusCapabilityGovernanceTest.setUp": "None",
+      "NexusCapabilityGovernanceTest._run": null,
+      "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected": null,
+      "NexusCapabilityGovernanceTest.test_invalid_payload_rejected": null,
+      "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes": null,
+      "setUp": "None",
+      "_run": null,
+      "test_disallowed_operation_rejected": null,
+      "test_invalid_payload_rejected": null,
+      "test_allowed_operation_with_valid_payload_routes": null
+    },
+    "control_flow.max_nesting_depth": {
+      "DummyNexus._protocol_specific_security_validation": 1,
+      "DummyNexus._protocol_specific_activation": 0,
+      "DummyNexus._protocol_specific_deactivation": 0,
+      "DummyNexus._route_to_protocol_core": 0,
+      "DummyNexus._protocol_specific_smoke_test": 0,
+      "_protocol_specific_security_validation": 1,
+      "_protocol_specific_activation": 0,
+      "_protocol_specific_deactivation": 0,
+      "_route_to_protocol_core": 0,
+      "_protocol_specific_smoke_test": 0,
+      "_require_key_payload": 1,
+      "_validator": 1,
+      "NexusCapabilityGovernanceTest.setUp": 0,
+      "NexusCapabilityGovernanceTest._run": 0,
+      "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected": 0,
+      "NexusCapabilityGovernanceTest.test_invalid_payload_rejected": 0,
+      "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes": 0,
+      "setUp": 0,
+      "_run": 0,
+      "test_disallowed_operation_rejected": 0,
+      "test_invalid_payload_rejected": 0,
+      "test_allowed_operation_with_valid_payload_routes": 0
+    },
+    "control_flow.branches": {
+      "DummyNexus._protocol_specific_security_validation": {
+        "if": 1,
+        "match": 0,
+        "try": 0
+      },
+      "DummyNexus._protocol_specific_activation": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "DummyNexus._protocol_specific_deactivation": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "DummyNexus._route_to_protocol_core": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "DummyNexus._protocol_specific_smoke_test": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "_protocol_specific_security_validation": {
+        "if": 1,
+        "match": 0,
+        "try": 0
+      },
+      "_protocol_specific_activation": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "_protocol_specific_deactivation": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "_route_to_protocol_core": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "_protocol_specific_smoke_test": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "_require_key_payload": {
+        "if": 2,
+        "match": 0,
+        "try": 0
+      },
+      "_validator": {
+        "if": 2,
+        "match": 0,
+        "try": 0
+      },
+      "NexusCapabilityGovernanceTest.setUp": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "NexusCapabilityGovernanceTest._run": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "NexusCapabilityGovernanceTest.test_invalid_payload_rejected": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "setUp": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "_run": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_disallowed_operation_rejected": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_invalid_payload_rejected": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_allowed_operation_with_valid_payload_routes": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      }
+    },
+    "nondeterminism_flags.uses_threading_or_async": {
+      "DummyNexus._protocol_specific_security_validation": false,
+      "DummyNexus._protocol_specific_activation": false,
+      "DummyNexus._protocol_specific_deactivation": false,
+      "DummyNexus._route_to_protocol_core": false,
+      "DummyNexus._protocol_specific_smoke_test": false,
+      "_protocol_specific_security_validation": false,
+      "_protocol_specific_activation": false,
+      "_protocol_specific_deactivation": false,
+      "_route_to_protocol_core": false,
+      "_protocol_specific_smoke_test": false,
+      "_require_key_payload": false,
+      "_validator": false,
+      "NexusCapabilityGovernanceTest.setUp": false,
+      "NexusCapabilityGovernanceTest._run": true,
+      "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected": false,
+      "NexusCapabilityGovernanceTest.test_invalid_payload_rejected": false,
+      "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes": false,
+      "setUp": false,
+      "_run": true,
+      "test_disallowed_operation_rejected": false,
+      "test_invalid_payload_rejected": false,
+      "test_allowed_operation_with_valid_payload_routes": false
+    },
+    "mutations.writes_self_attrs": {
+      "DummyNexus._protocol_specific_security_validation": false,
+      "DummyNexus._protocol_specific_activation": false,
+      "DummyNexus._protocol_specific_deactivation": false,
+      "DummyNexus._route_to_protocol_core": true,
+      "DummyNexus._protocol_specific_smoke_test": false,
+      "_protocol_specific_security_validation": false,
+      "_protocol_specific_activation": false,
+      "_protocol_specific_deactivation": false,
+      "_route_to_protocol_core": true,
+      "_protocol_specific_smoke_test": false,
+      "_require_key_payload": false,
+      "_validator": false,
+      "NexusCapabilityGovernanceTest.setUp": true,
+      "NexusCapabilityGovernanceTest._run": false,
+      "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected": false,
+      "NexusCapabilityGovernanceTest.test_invalid_payload_rejected": false,
+      "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes": false,
+      "setUp": true,
+      "_run": false,
+      "test_disallowed_operation_rejected": false,
+      "test_invalid_payload_rejected": false,
+      "test_allowed_operation_with_valid_payload_routes": false
+    },
+    "semantic_profile_overlay.semantic_tags": {
+      "DummyNexus._protocol_specific_security_validation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "DummyNexus._protocol_specific_activation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "DummyNexus._protocol_specific_deactivation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "DummyNexus._route_to_protocol_core": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "DummyNexus._protocol_specific_smoke_test": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_protocol_specific_security_validation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_protocol_specific_activation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_protocol_specific_deactivation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_route_to_protocol_core": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_protocol_specific_smoke_test": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_require_key_payload": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_validator": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "NexusCapabilityGovernanceTest.setUp": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "NexusCapabilityGovernanceTest._run": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "NexusCapabilityGovernanceTest.test_invalid_payload_rejected": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "setUp": [
+        "AGENT_LOGIC",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_run": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_disallowed_operation_rejected": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_invalid_payload_rejected": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_allowed_operation_with_valid_payload_routes": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ]
+    },
+    "semantic_profile_overlay.operation_type": {
+      "DummyNexus._protocol_specific_security_validation": [
+        "TRANSFORMATION"
+      ],
+      "DummyNexus._protocol_specific_activation": [
+        "TRANSFORMATION"
+      ],
+      "DummyNexus._protocol_specific_deactivation": [
+        "TRANSFORMATION"
+      ],
+      "DummyNexus._route_to_protocol_core": [
+        "TRANSFORMATION"
+      ],
+      "DummyNexus._protocol_specific_smoke_test": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_security_validation": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_activation": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_deactivation": [
+        "TRANSFORMATION"
+      ],
+      "_route_to_protocol_core": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_smoke_test": [
+        "TRANSFORMATION"
+      ],
+      "_require_key_payload": [
+        "TRANSFORMATION"
+      ],
+      "_validator": [
+        "TRANSFORMATION"
+      ],
+      "NexusCapabilityGovernanceTest.setUp": [],
+      "NexusCapabilityGovernanceTest._run": [
+        "TRANSFORMATION"
+      ],
+      "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected": [],
+      "NexusCapabilityGovernanceTest.test_invalid_payload_rejected": [],
+      "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes": [],
+      "setUp": [
+        "UTILITY"
+      ],
+      "_run": [
+        "TRANSFORMATION"
+      ],
+      "test_disallowed_operation_rejected": [],
+      "test_invalid_payload_rejected": [],
+      "test_allowed_operation_with_valid_payload_routes": []
+    },
+    "semantic_profile_overlay.control_role": {
+      "DummyNexus._protocol_specific_security_validation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "DummyNexus._protocol_specific_activation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "DummyNexus._protocol_specific_deactivation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "DummyNexus._route_to_protocol_core": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "DummyNexus._protocol_specific_smoke_test": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_security_validation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_activation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_deactivation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_route_to_protocol_core": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_smoke_test": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_require_key_payload": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_validator": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "NexusCapabilityGovernanceTest.setUp": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "NexusCapabilityGovernanceTest._run": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "NexusCapabilityGovernanceTest.test_invalid_payload_rejected": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "setUp": [],
+      "_run": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "test_disallowed_operation_rejected": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "test_invalid_payload_rejected": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "test_allowed_operation_with_valid_payload_routes": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ]
+    },
+    "semantic_profile_overlay.spine_binding": {
+      "DummyNexus._protocol_specific_security_validation": [
+        "UNMAPPED"
+      ],
+      "DummyNexus._protocol_specific_activation": [
+        "UNMAPPED"
+      ],
+      "DummyNexus._protocol_specific_deactivation": [
+        "UNMAPPED"
+      ],
+      "DummyNexus._route_to_protocol_core": [
+        "UNMAPPED"
+      ],
+      "DummyNexus._protocol_specific_smoke_test": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_security_validation": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_activation": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_deactivation": [
+        "UNMAPPED"
+      ],
+      "_route_to_protocol_core": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_smoke_test": [
+        "UNMAPPED"
+      ],
+      "_require_key_payload": [
+        "UNMAPPED"
+      ],
+      "_validator": [
+        "UNMAPPED"
+      ],
+      "NexusCapabilityGovernanceTest.setUp": [
+        "UNMAPPED"
+      ],
+      "NexusCapabilityGovernanceTest._run": [
+        "UNMAPPED"
+      ],
+      "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected": [
+        "UNMAPPED"
+      ],
+      "NexusCapabilityGovernanceTest.test_invalid_payload_rejected": [
+        "UNMAPPED"
+      ],
+      "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes": [
+        "UNMAPPED"
+      ],
+      "setUp": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_run": [
+        "UNMAPPED"
+      ],
+      "test_disallowed_operation_rejected": [
+        "UNMAPPED"
+      ],
+      "test_invalid_payload_rejected": [
+        "UNMAPPED"
+      ],
+      "test_allowed_operation_with_valid_payload_routes": [
+        "UNMAPPED"
+      ]
+    }
+  },
+  "conflicts": {
+    "state_mutation_self": "MIXED"
+  }
+}

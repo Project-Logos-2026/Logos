@@ -1,0 +1,27 @@
+{
+  "family_id": "FAMILY_006",
+  "member_count": 1,
+  "members": [
+    "test_active_mode_initialization"
+  ],
+  "invariant_semantics": {
+    "semantic_tags": [
+      "AGENT_LOGIC",
+      "BOOTSTRAP",
+      "LEGACY_OR_QUARANTINED",
+      "TEST_OR_EXAMPLE"
+    ],
+    "operation_type": [
+      "TRANSFORMATION"
+    ],
+    "data_role": [],
+    "control_role": [
+      "BOOT_CONTROL"
+    ],
+    "spine_binding": [
+      "PASSIVE_RUNTIME_INITIALIZATION",
+      "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+    ]
+  },
+  "divergent_semantics": {}
+}
