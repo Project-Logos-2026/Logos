@@ -1,6 +1,6 @@
 from pathlib import Path
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 PHASE_ID = "phase_2"
@@ -10,7 +10,7 @@ TIMEOUT_SECONDS = 3600  # 1 hour
 
 def run(reports_root: Path) -> dict:
 	"""Build canonical Audit_Input_Index.json from Phase 1 outputs."""
-	ts = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+	ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 	phase1_root = reports_root / "Phase_1"
 	out_dir = reports_root / "Phase_2" / ts
 	out_dir.mkdir(parents=True, exist_ok=True)

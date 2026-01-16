@@ -17,6 +17,7 @@ import logging
 import uuid
 from dataclasses import dataclass
 from datetime import datetime
+from datetime import timezone
 from enum import Enum
 from typing import Any, Dict, List, Optional, Set, Tuple
 
@@ -556,7 +557,7 @@ class AdvancedWorkflowArchitect:
         """Add metadata to the workflow DAG."""
         dag.graph["metadata"] = {
             "goal_description": goal_description,
-            "creation_timestamp": datetime.utcnow().isoformat(),
+            "creation_timestamp": datetime.now(timezone.utc).isoformat(),
             "total_tasks": dag.number_of_nodes(),
             "total_dependencies": dag.number_of_edges(),
             "estimated_total_duration": sum(

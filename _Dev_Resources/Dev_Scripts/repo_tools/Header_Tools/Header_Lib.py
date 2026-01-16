@@ -53,7 +53,7 @@ class ProductionHeader:
     generated_utc: str
 
 def utc_now() -> str:
-    return _dt.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+    return _dt.datetime.now(_dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 def read_text(path: Path, max_bytes: int = 800_000) -> str:
     b = path.read_bytes()

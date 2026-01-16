@@ -77,3 +77,13 @@ Determines and enforces runtime execution modes based on policy, context, and te
 - Temporal_Supersession_Contract — Time-safe mutation rules
 - Semantic_Capability_Admission_Contract — Capability gating
 - UWM_Ingestion_Contract — World model mutation gate
+
+- Semantic Context: `Bootstrap_Runtime_Context.py` (Bootstrap / Initialization)
+
+- Semantic Context: `Runtime_Mode_Context.py` (Runtime mode gating)
+
+- Semantic Context: `Trinitarian_Optimization_Context.py` (Trinitarian optimization / 3OT)
+
+- Semantic Context: `Agent_Policy_Decision_Context.py` (Agent policy decision / governance)
+
+- Semantic Context: `Privation_Handling_Context.py` (Privation / negative-case handling)

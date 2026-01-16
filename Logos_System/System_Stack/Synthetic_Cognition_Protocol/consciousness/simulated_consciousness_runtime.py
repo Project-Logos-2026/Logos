@@ -17,7 +17,7 @@ from __future__ import annotations
 import json
 import logging
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -51,7 +51,7 @@ class SimulatedConsciousness:
 
     def _summarize_cycle(self, cycle_result: Dict[str, Any]) -> Dict[str, Any]:
         # Create a short event summary with salience metrics
-        ts = datetime.utcnow().isoformat() + "Z"
+        ts = datetime.now(timezone.utc).isoformat()
         report = cycle_result.get("consistency_report") if isinstance(cycle_result, dict) else None
         emergence = cycle_result.get("emergence_report") if isinstance(cycle_result, dict) else None
         salience = 0.0

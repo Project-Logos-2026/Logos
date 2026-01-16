@@ -16,7 +16,7 @@ Does NOT do batch collection. This script is called after batch_collector.py.
 
 import shutil, json, subprocess, sys, os, hashlib
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 REPO = Path("/workspaces/Logos_System").resolve()
 SRC = REPO / "_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE"
@@ -100,7 +100,7 @@ def record_rewrite_attempt(file, attempt: int, status: str, rewrite_path: Path |
         "attempt": attempt,
         "rewrite_path": str(rewrite_path) if rewrite_path else "",
         "rewrite_hash": hash_file(rewrite_path) if rewrite_path and rewrite_path.exists() else "",
-        "timestamp": datetime.utcnow().isoformat(),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
         "status": status,
     }
     arr.append(entry)

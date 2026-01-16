@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0.0",
+  "locked_at": "2026-01-16T19:06:06Z",
+  "description": "Authoritative registry for module-level governance metadata referenced by MODULE_META headers.",
+  "schema": {
+    "module_id": "string (unique, non-reusable)",
+    "layer": [
+      "SEMANTIC_AXIOM",
+      "SEMANTIC_CONTEXT",
+      "ORCHESTRATION",
+      "APPLICATION_FUNCTION"
+    ],
+    "role": "string (semantic role, not filename-derived)",
+    "phase_origin": "string (development phase identifier)",
+    "description": "string (single-line semantic description)",
+    "contracts": "list[string]",
+    "allowed_imports": "list[string]",
+    "prohibited_behaviors": [
+      "IO",
+      "NETWORK",
+      "TIME",
+      "RANDOM"
+    ],
+    "entrypoints": "list[string]",
+    "callable_surface": [
+      "INTERNAL",
+      "ORCHESTRATION",
+      "APPLICATION"
+    ],
+    "state_mutation": [
+      "NONE",
+      "CONTEXT_ONLY",
+      "GLOBAL"
+    ],
+    "runtime_spine_binding": "string | NONE",
+    "depends_on_contexts": "list[string]",
+    "invoked_by": "list[string]"
+  },
+  "modules": {
+    "SCX-001": {
+      "module_id": "SCX-001",
+      "layer": "SEMANTIC_CONTEXT",
+      "role": "AGENT_POLICY_DECISION_CONTEXT",
+      "phase_origin": "PHASE_CONTEXTUAL_EMBEDDING",
+      "description": "Semantic context module defined in Agent_Policy_Decision_Context.py.",
+      "contracts": [],
+      "allowed_imports": [
+        "SEMANTIC_AXIOMS"
+      ],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "CONTEXT_ONLY",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCX-002": {
+      "module_id": "SCX-002",
+      "layer": "SEMANTIC_CONTEXT",
+      "role": "BOOTSTRAP_RUNTIME_CONTEXT",
+      "phase_origin": "PHASE_CONTEXTUAL_EMBEDDING",
+      "description": "Semantic context module defined in Bootstrap_Runtime_Context.py.",
+      "contracts": [],
+      "allowed_imports": [
+        "SEMANTIC_AXIOMS"
+      ],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "CONTEXT_ONLY",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCX-003": {
+      "module_id": "SCX-003",
+      "layer": "SEMANTIC_CONTEXT",
+      "role": "PRIVATION_HANDLING_CONTEXT",
+      "phase_origin": "PHASE_CONTEXTUAL_EMBEDDING",
+      "description": "Semantic context module defined in Privation_Handling_Context.py.",
+      "contracts": [],
+      "allowed_imports": [
+        "SEMANTIC_AXIOMS"
+      ],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "CONTEXT_ONLY",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCX-004": {
+      "module_id": "SCX-004",
+      "layer": "SEMANTIC_CONTEXT",
+      "role": "RUNTIME_MODE_CONTEXT",
+      "phase_origin": "PHASE_CONTEXTUAL_EMBEDDING",
+      "description": "Semantic context module defined in Runtime_Mode_Context.py.",
+      "contracts": [],
+      "allowed_imports": [
+        "SEMANTIC_AXIOMS"
+      ],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "CONTEXT_ONLY",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCX-005": {
+      "module_id": "SCX-005",
+      "layer": "SEMANTIC_CONTEXT",
+      "role": "TRINITARIAN_OPTIMIZATION_CONTEXT",
+      "phase_origin": "PHASE_CONTEXTUAL_EMBEDDING",
+      "description": "Semantic context module defined in Trinitarian_Optimization_Context.py.",
+      "contracts": [],
+      "allowed_imports": [
+        "SEMANTIC_AXIOMS"
+      ],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "CONTEXT_ONLY",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    }
+  }
+}

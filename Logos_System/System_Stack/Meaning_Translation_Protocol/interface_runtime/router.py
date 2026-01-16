@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timezone
 import json
 import logging
 import queue
@@ -143,7 +143,7 @@ class InteractionRouter:
         payload: ResponsePayload,
     ) -> None:
         record = {
-            "timestamp": datetime.utcnow().isoformat() + "Z",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
             "prompt": sanitised.cleaned_text,
             "sanitizer_issues": sanitised.issues,
             "metadata": sanitised.metadata,

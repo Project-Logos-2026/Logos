@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Union
 
@@ -117,7 +117,7 @@ def run_BERT_pipeline(
                 priors[data_point["label"]] = {
                     "value": data_point["value"],
                     "confidence": data_point["confidence"],
-                    "timestamp": datetime.utcnow().isoformat(),
+                    "timestamp": datetime.now(timezone.utc).isoformat(),
                     "EGTC_score": data_point["EGTC_score"],
                 }
             save_priors(priors, priors_file)

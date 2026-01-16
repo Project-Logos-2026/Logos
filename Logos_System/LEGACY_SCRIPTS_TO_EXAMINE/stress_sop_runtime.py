@@ -22,7 +22,7 @@ import json
 import sys
 import time
 from collections import deque
-from datetime import datetime
+from datetime import datetime, timezone
 from importlib import import_module
 from importlib.util import find_spec
 from pathlib import Path
@@ -187,7 +187,7 @@ def _load_jsonl_since(path: Path, since: float) -> List[Dict[str, Any]]:
 
 
 def _prepare_run_directory() -> Path:
-    run_id = datetime.utcnow().strftime("%Y%m%dT%H%M%S%fZ")
+    run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
     base = sop_shared_resources.RUNTIME_BASE_DIR
     run_dir = base / f"run-{run_id}"
     sop_shared_resources.configure_runtime_state_dir(run_dir)

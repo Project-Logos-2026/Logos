@@ -17,7 +17,7 @@ import logging
 import re
 from collections import defaultdict
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import datetime, timezone
 from enum import Enum
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -373,7 +373,7 @@ class LanguageProcessor:
             complexity_metrics=self._calculate_complexity(text),
             trinity_vector_mapping=self._extract_trinity_vector(text),
             theological_analysis=self._perform_theological_analysis(text, entities),
-            processing_metadata={"timestamp": datetime.utcnow().isoformat(), "metadata": metadata or {}},
+            processing_metadata={"timestamp": datetime.now(timezone.utc).isoformat(), "metadata": metadata or {}},
         )
         return result
 

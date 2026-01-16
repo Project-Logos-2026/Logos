@@ -10,7 +10,7 @@ wrapping without introducing heavy dependencies.
 import json
 import logging
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, Dict, Optional
 
 import structlog
@@ -82,7 +82,7 @@ REQUEST_LATENCY = Histogram(
 
 def get_current_timestamp() -> str:
     """Return an ISO-8601 UTC timestamp with trailing 'Z'."""
-    return datetime.utcnow().isoformat() + "Z"
+    return datetime.now(timezone.utc).isoformat()
 
 
 def log_uip_event(event_type: str, data: Optional[Dict[str, Any]] = None) -> None:

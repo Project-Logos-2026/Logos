@@ -1,6 +1,6 @@
 from pathlib import Path
 import subprocess
-from datetime import datetime
+from datetime import datetime, timezone
 
 PHASE_ID = "phase_1"
 TIMEOUT_SECONDS = 3600  # 1 hour
@@ -15,7 +15,7 @@ SCAN_TOOLS = [
 
 
 def run(script_path: Path, reports_root: Path) -> dict:
-	ts = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+	ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 	out_dir = reports_root / "Phase_1" / script_path.stem / ts
 	out_dir.mkdir(parents=True, exist_ok=True)
 
