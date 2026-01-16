@@ -26,7 +26,7 @@ def insert_v1(path: Path) -> bool:
     if rest and rest[0].startswith("#!"):
         pre.append(rest.pop(0))
 
-    utc = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+    utc = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     rel = path.as_posix()
 
     block = []

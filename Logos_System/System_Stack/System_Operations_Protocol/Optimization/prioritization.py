@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
@@ -20,7 +20,7 @@ SELECTABLE_STATUSES = {"active", "deferred", "blocked"}
 
 
 def _now_iso() -> str:
-    return datetime.utcnow().replace(microsecond=0).isoformat() + "+00:00"
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 
 def _inherit_constraints(identity: Dict[str, Any]) -> Dict[str, bool]:
@@ -171,7 +171,8 @@ def propose_candidate_commitments(
                 except ValueError:
                     tool_optimizer_stale = True
                 else:
-                    age = datetime.utcnow() - parsed.replace(tzinfo=None)
+                    parsed_utc = parsed.astimezone(timezone.utc) if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
+                    age = datetime.now(timezone.utc) - parsed_utc
                     tool_optimizer_stale = age > timedelta(hours=24)
             else:
                 tool_optimizer_stale = True
@@ -324,7 +325,8 @@ def propose_candidate_commitments(
                 except ValueError:
                     tool_invention_stale = True
                 else:
-                    age = datetime.utcnow() - parsed.replace(tzinfo=None)
+                    parsed_utc = parsed.astimezone(timezone.utc) if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
+                    age = datetime.now(timezone.utc) - parsed_utc
                     tool_invention_stale = age > timedelta(hours=24)
                 tool_invention_report_timestamp = str(invention_timestamp_raw)
             else:

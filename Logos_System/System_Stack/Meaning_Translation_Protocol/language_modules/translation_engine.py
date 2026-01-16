@@ -7,7 +7,7 @@ Replaces legacy t_engine.py and semantic_bridge.py with unified approach.
 """
 
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, Dict, List
 
 logger = logging.getLogger("IEL_ONTO_KIT")
@@ -33,7 +33,7 @@ def convert_to_nl(normalized_data: Dict[str, Any]) -> Dict[str, Any]:
 
         # Initialize translation context
         translation_context = {
-            "timestamp": datetime.utcnow().isoformat(),
+            "timestamp": datetime.now(timezone.utc).isoformat(),
             "source_complexity": normalization_metadata.get("complexity_score", 0.0),
             "translation_mode": _determine_translation_mode(lambda_structures),
             "natural_language_outputs": {},

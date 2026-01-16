@@ -16,7 +16,7 @@ Emits manifest and stops
 import os
 from pathlib import Path
 import shutil
-from datetime import datetime
+from datetime import datetime, timezone
 import json
 import hashlib
 
@@ -92,7 +92,7 @@ def already_collected(path: Path) -> bool:
     return (TARGET / path.name).exists()
 
 def generate_manifest(batch: list[Path], dests: list[Path]) -> Path:
-    ts = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
     manifest = {
         "batch_id": f"BATCH_{ts}",
         "timestamp": ts,

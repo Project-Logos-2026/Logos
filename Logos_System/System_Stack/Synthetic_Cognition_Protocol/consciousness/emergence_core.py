@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict
 
 
@@ -24,5 +24,5 @@ class ConsciousnessEngine:
         return {
             "consciousness_emerged": True,
             "consciousness_level": 0.78,
-            "evaluated_at": datetime.utcnow().isoformat() + "Z",
+            "evaluated_at": datetime.now(timezone.utc).isoformat(),
         }
