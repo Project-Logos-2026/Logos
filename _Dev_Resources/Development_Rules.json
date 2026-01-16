@@ -1,0 +1,11 @@
+{
+  "CANONICAL_FAMILY_ROUTING": {
+    "description": "Defines routing for canonicalized function families",
+    "governance_contract_path": "_Governance/Canonical_Contracts/",
+    "semantic_capability_map": "_Governance/semantic_capability_map_v0.json",
+    "monolith_module_path": "Monolith/",
+    "monolith_runtime_file": "Monolith/Monolith_Runtime.py",
+    "documentation_file": "docs/Canonical_Contracts_Index.md",
+    "enforcement": "fail_closed"
+  }
+}

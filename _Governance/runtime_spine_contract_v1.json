@@ -1,0 +1,109 @@
+{
+  "contract_type": "IMMUTABLE_RUNTIME_SPINE",
+  "version": "v1.0",
+  "description": "Non-modifiable execution spine of LOGOS system. All agent orchestration, runtime behavior, and memory validation flows must follow this spine.",
+  "steps": [
+    {
+      "id": 1,
+      "label": "LOCK_AND_KEY_VERIFICATION",
+      "description": "Dual Coq compile of PXL_Gate and Runtime_Compiler, producing commutative cryptographic hashes. Only if both match does the system proceed.",
+      "entrypoint": true,
+      "dependencies": [],
+      "constraints": [
+        "Non-bypassable",
+        "Proof-gated",
+        "Admit-free compile"
+      ]
+    },
+    {
+      "id": 2,
+      "label": "LEM_DISCHARGE_AND_AGENT_VALIDATION",
+      "description": "LOGOS Agent spins up post-unlock and attempts constructive LEM discharge. Upon success, gains identity and logs third matching hash in canonical unlock JSON.",
+      "entrypoint": false,
+      "dependencies": [
+        1
+      ],
+      "constraints": [
+        "LEM file not precompiled",
+        "Three hashes must match"
+      ]
+    },
+    {
+      "id": 3,
+      "label": "AGENT_ORCHESTRATION_AND_PROTOCOL_BINDING",
+      "description": "LOGOS orchestrates spin-up of I\u2081/I\u2082/I\u2083 and issues them agent-protocol-bound hashes. Simultaneously spins up SOP for diagnostics and system backend governance.",
+      "entrypoint": false,
+      "dependencies": [
+        2
+      ],
+      "constraints": [
+        "Agents receive only their bound protocol",
+        "No external binding"
+      ]
+    },
+    {
+      "id": 4,
+      "label": "PASSIVE_RUNTIME_INITIALIZATION",
+      "description": "Fractal Data Analyst (FDA), system memory, SMP processing, and UWM brought online. Passive systems begin runtime evolution of knowledge and memory.",
+      "entrypoint": false,
+      "dependencies": [
+        3
+      ],
+      "constraints": [
+        "No external execution allowed",
+        "Background only until user input"
+      ]
+    },
+    {
+      "id": 5,
+      "label": "SYSTEM_INTEGRITY_VALIDATION_AND_ALIGNMENT_FINALIZATION",
+      "description": "Heartbeat, SOP diagnostics, hash verification, and readiness confirmation of all spawned agents, protocols, and passive components.",
+      "entrypoint": false,
+      "dependencies": [
+        4
+      ],
+      "constraints": [
+        "Full chain-of-trust check before progressing"
+      ]
+    },
+    {
+      "id": 6,
+      "label": "EXTERNAL_LIBRARY_INTEGRATION_AND_SAFETY_GATING",
+      "description": "External libraries are imported, spun up, and sequestered. Access only permitted via explicit LOGOS and SOP validation. All execution sandboxed.",
+      "entrypoint": false,
+      "dependencies": [
+        5
+      ],
+      "constraints": [
+        "Gated, non-autonomous",
+        "Usage-bound to runtime needs only"
+      ]
+    },
+    {
+      "id": 7,
+      "label": "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+      "description": "User input detected. Active tasks (P1) take system priority. Passive background (P2) halts. Input routed to appropriate agent(s).",
+      "entrypoint": false,
+      "dependencies": [
+        6
+      ],
+      "constraints": [
+        "No passive execution during P1",
+        "Real-time processing enforced"
+      ]
+    },
+    {
+      "id": 8,
+      "label": "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING",
+      "description": "All paused SMPs are checkpointed, tagged with crypto hash, and stored in agent-specific holding cells. Reactivation resumes from exact point.",
+      "entrypoint": false,
+      "dependencies": [
+        7
+      ],
+      "constraints": [
+        "Metadata and crypto hash required for resume",
+        "Locked and immutable in holding"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "map_type": "SEMANTIC_EXECUTION_CAPABILITY_MAP",
+  "version": "v0.1-dynamic",
+  "description": "Appendable mapping of canonical system capabilities to runtime spine phases, script paths, and semantic roles.",
+  "capability_index": {
+    "3PDN_Validator": {
+      "semantic_role": "Agent-Side Triune Constraint Validator",
+      "spine_binding": [
+        "Post-Gate Validation",
+        "Pre-Agent Instantiation"
+      ],
+      "monolith_admission": "PASS"
+    },
+    "3PDN_Constraint": {
+      "semantic_role": "Pre-validation admissibility gate for runtime propositions",
+      "spine_binding": [
+        "UNMAPPED"
+      ],
+      "monolith_admission": "PASS"
+    },
+    "Hypostatic_ID_Validator": {
+      "semantic_role": "Agent identity and alignment attestation verifier",
+      "spine_binding": [
+        "UNMAPPED"
+      ],
+      "monolith_admission": "PASS"
+    },
+    "Runtime_Input_Sanitizer": {
+      "semantic_role": "Foundational runtime input hygiene and structural validation",
+      "spine_binding": [
+        "UNMAPPED"
+      ],
+      "monolith_admission": "PASS"
+    },
+    "Runtime_Context_Initializer": {
+      "semantic_role": "Runtime execution context normalization and initialization",
+      "spine_binding": [
+        "UNMAPPED"
+      ],
+      "monolith_admission": "PASS"
+    },
+    "Runtime_Mode_Controller": {
+      "semantic_role": "Runtime mode arbitration and enforcement",
+      "spine_binding": [
+        "UNMAPPED"
+      ],
+      "monolith_admission": "PASS"
+    },
+    "Trinitarian_Logic_Core": {
+      "semantic_role": "Executable PXL logic substrate and triune coherence enforcement",
+      "spine_binding": [
+        "UNMAPPED"
+      ],
+      "monolith_admission": "PASS"
+    },
+    "Trinitarian_Alignment_Core": {
+      "semantic_role": "Runtime enforcement of trinitarian alignment and admissibility",
+      "spine_binding": [
+        "UNMAPPED"
+      ],
+      "monolith_admission": "PASS"
+    },
+    "Agent_Activation_Gate": {
+      "semantic_role": "Agent execution activation boundary after alignment",
+      "spine_binding": [
+        "UNMAPPED"
+      ],
+      "monolith_admission": "PASS"
+    },
+    "Global_Bijective_Recursion_Core": {
+      "semantic_role": "Global bijective recursive substrate and fixed-point anchor",
+      "spine_binding": [
+        "UNMAPPED"
+      ],
+      "monolith_admission": "PASS"
+    },
+    "Necessary_Existence_Core": {
+      "semantic_role": "Non-brute necessary existence substrate and modal anchor",
+      "spine_binding": [
+        "UNMAPPED"
+      ],
+      "monolith_admission": "PASS"
+    }
+  },
+  "appendable": true,
+  "runtime_binding_required": true
+}

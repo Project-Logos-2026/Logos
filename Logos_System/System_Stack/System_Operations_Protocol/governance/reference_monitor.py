@@ -1,4 +1,4 @@
-﻿"""
+"""
 Reference Monitor - Enforces proof-gated authorization
 All actuator calls and planner edges must pass through here
 """

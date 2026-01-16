@@ -142,6 +142,51 @@
         "Decisions must be explainable via artifacts.",
         "Silence is a failure condition."
       ]
+    },
+    "phase5_rewrite_contract_binding": {
+      "title": "Automated Refactor Workflow (Phase-5 Rewrite Contract)",
+      "binding": true,
+      "attempts": {
+        "attempt_1": {
+          "strategy": "full rewrite",
+          "rules": [
+            "Normalize naming to Title_Case_With_Underscores and enforce ALL-CAPS abbreviations.",
+            "Replace file header with canonical Logos header.",
+            "Fix import errors using audit diagnostics; preserve semantic behavior and function order.",
+            "Validate abbreviations against Abbreviations.json; remove incorrect long-forms and mixed usage.",
+            "Remove legacy or incorrect long-form expansions; deterministic, reproducible output only."
+          ]
+        },
+        "attempt_2": {
+          "strategy": "targeted rewrite",
+          "rules": [
+            "Modify only lines explicitly flagged by diagnostics.",
+            "No header replacement, no structural refactoring, no broad semantic normalization.",
+            "Final minimal attempt before FAIL/UNKNOWN routing."
+          ]
+        }
+      },
+      "mandatory_abbreviation_validation": {
+        "rules": [
+          "On every rewrite attempt, each abbreviation must either stand alone or be followed by the canonical long-form from Abbreviations.json.",
+          "Correct legacy/incorrect/redundant long-forms; enforce ALL-CAPS abbreviations."
+        ]
+      },
+      "outputs": {
+        "rules": [
+          "Rewritten file named using Type_Cast_Correct_Name.",
+          "End-to-End JSON updated with rewrite confirmation, attempt number, and rewrite hash."
+        ]
+      },
+      "non_negotiables": [
+        "No Coq or Coq-adjacent files may be modified.",
+        "No rewrites outside orchestrator control.",
+        "No nondeterministic or heuristic mutations; must be reproducible from identical inputs."
+      ],
+      "trigger_conditions": [
+        "Rewrite invoked only during Phase-5 (Attempt 1) or Phase-5b (Attempt 2) via orchestrator.",
+        "Inputs: packet JSON (Phases 1–4 diagnostics), Abbreviations.json, standard header template, Development Rules (this document)."
+      ]
     }
   }
 }

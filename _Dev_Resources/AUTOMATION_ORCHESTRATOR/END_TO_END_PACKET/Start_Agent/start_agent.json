@@ -1,0 +1,968 @@
+{
+  "metadata": {
+    "packet_name": "start_agent",
+    "original_path": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+    "legacy_path": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+    "type_cast_name": "Start_Agent",
+    "test_template": "default",
+    "file_hash": "pending",
+    "batch_id": "BATCH_SWEEP_INIT",
+    "init_timestamp": "2026-01-15T08:26:32.358236+00:00",
+    "rewrite_output": "_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/Start_Agent/Start_Agent.py"
+  },
+  "phases": {
+    "phase_1_imports": {
+      "diagnostics": [
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 17,
+          "col": 0,
+          "kind": "from",
+          "module": "__future__",
+          "name": "annotations",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 19,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "argparse",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 20,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "hashlib",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 21,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "json",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 22,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "os",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 23,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "re",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 24,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "subprocess",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 25,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "sys",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 26,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "threading",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 27,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "time",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 28,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "traceback",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 29,
+          "col": 0,
+          "kind": "from",
+          "module": "dataclasses",
+          "name": "dataclass",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 29,
+          "col": 0,
+          "kind": "from",
+          "module": "dataclasses",
+          "name": "field",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 30,
+          "col": 0,
+          "kind": "from",
+          "module": "datetime",
+          "name": "datetime",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 30,
+          "col": 0,
+          "kind": "from",
+          "module": "datetime",
+          "name": "timezone",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 31,
+          "col": 0,
+          "kind": "from",
+          "module": "pathlib",
+          "name": "Path",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 32,
+          "col": 0,
+          "kind": "from",
+          "module": "typing",
+          "name": "Any",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 32,
+          "col": 0,
+          "kind": "from",
+          "module": "typing",
+          "name": "Callable",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 32,
+          "col": 0,
+          "kind": "from",
+          "module": "typing",
+          "name": "Dict",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 32,
+          "col": 0,
+          "kind": "from",
+          "module": "typing",
+          "name": "Iterable",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 32,
+          "col": 0,
+          "kind": "from",
+          "module": "typing",
+          "name": "List",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 32,
+          "col": 0,
+          "kind": "from",
+          "module": "typing",
+          "name": "Optional",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 32,
+          "col": 0,
+          "kind": "from",
+          "module": "typing",
+          "name": "Set",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 33,
+          "col": 0,
+          "kind": "from",
+          "module": "urllib",
+          "name": "request",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 36,
+          "col": 4,
+          "kind": "from",
+          "module": "external.Logos_AGI.identity_paths",
+          "name": "CANONICAL_IDENTITY_PATH",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 36,
+          "col": 4,
+          "kind": "from",
+          "module": "external.Logos_AGI.identity_paths",
+          "name": "LOGOS_ROOT",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 46,
+          "col": 4,
+          "kind": "from",
+          "module": "external.Logos_AGI.System_Operations_Protocol.alignment_protocols.safety.integrity_framework.integrity_safeguard",
+          "name": "IntegrityValidator",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 46,
+          "col": 4,
+          "kind": "from",
+          "module": "external.Logos_AGI.System_Operations_Protocol.alignment_protocols.safety.integrity_framework.integrity_safeguard",
+          "name": "SafeguardConfiguration",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 65,
+          "col": 4,
+          "kind": "from",
+          "module": "llm_advisor",
+          "name": "LLMAdvisor",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 65,
+          "col": 4,
+          "kind": "from",
+          "module": "llm_advisor",
+          "name": "build_tool_schema",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 66,
+          "col": 4,
+          "kind": "from",
+          "module": "LOGOS_SYSTEM.System_Stack.Protocol_Resources.attestation",
+          "name": "AlignmentGateError",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 66,
+          "col": 4,
+          "kind": "from",
+          "module": "LOGOS_SYSTEM.System_Stack.Protocol_Resources.attestation",
+          "name": "compute_attestation_hash",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 66,
+          "col": 4,
+          "kind": "from",
+          "module": "LOGOS_SYSTEM.System_Stack.Protocol_Resources.attestation",
+          "name": "load_alignment_attestation",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 66,
+          "col": 4,
+          "kind": "from",
+          "module": "LOGOS_SYSTEM.System_Stack.Protocol_Resources.attestation",
+          "name": "load_mission_profile",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 66,
+          "col": 4,
+          "kind": "from",
+          "module": "LOGOS_SYSTEM.System_Stack.Protocol_Resources.attestation",
+          "name": "validate_attestation",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 66,
+          "col": 4,
+          "kind": "from",
+          "module": "LOGOS_SYSTEM.System_Stack.Protocol_Resources.attestation",
+          "name": "validate_mission_profile",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 74,
+          "col": 4,
+          "kind": "from",
+          "module": "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas",
+          "name": "canonical_json_hash",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 75,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.proof_refs",
+          "name": "enforce_truth_annotation",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 76,
+          "col": 4,
+          "kind": "from",
+          "module": "scripts.system_stack_tbd.need_to_distribute.provenance",
+          "name": "DriftError",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 76,
+          "col": 4,
+          "kind": "from",
+          "module": "scripts.system_stack_tbd.need_to_distribute.provenance",
+          "name": "load_pin",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 76,
+          "col": 4,
+          "kind": "from",
+          "module": "scripts.system_stack_tbd.need_to_distribute.provenance",
+          "name": "verify_pinned_repo",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 77,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.evaluator",
+          "name": "update_metrics",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 77,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.evaluator",
+          "name": "normalize_objective_class",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 78,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.goals",
+          "name": "generate_goal_candidates",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 78,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.goals",
+          "name": "rank_goal_candidates",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 78,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.goals",
+          "name": "enforce_goal_safety",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 83,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.tool_health",
+          "name": "analyze_tool_health",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 84,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.tool_playbooks",
+          "name": "TOOL_PLAYBOOKS",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 84,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.tool_playbooks",
+          "name": "get_tool_playbook",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 85,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.tool_validators",
+          "name": "run_validators",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 86,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.plan_validation",
+          "name": "validate_plan_run",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 87,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.plan_scoring",
+          "name": "compute_plan_score",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 87,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.plan_scoring",
+          "name": "plan_signature",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 87,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.plan_scoring",
+          "name": "update_plan_history",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 88,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.tool_improvement",
+          "name": "propose_tool_improvements",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 88,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.tool_improvement",
+          "name": "invoke_tool_proposal_pipeline",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 92,
+          "col": 4,
+          "kind": "from",
+          "module": "plugins.uip_integration_plugin",
+          "name": "uip_prompt_choice",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 168,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.ledger",
+          "name": "build_run_ledger",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 173,
+          "col": 4,
+          "kind": "from",
+          "module": "JUNK_DRAWER.scripts.runtime.need_to_distribute.logos_agi_adapter",
+          "name": "LogosAgiNexus",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 215,
+          "col": 4,
+          "kind": "from",
+          "module": "logos_core.governance.agent_identity",
+          "name": "PersistentAgentIdentity",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 215,
+          "col": 4,
+          "kind": "from",
+          "module": "logos_core.governance.agent_identity",
+          "name": "load_or_create_identity",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 215,
+          "col": 4,
+          "kind": "from",
+          "module": "logos_core.governance.agent_identity",
+          "name": "update_identity",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 215,
+          "col": 4,
+          "kind": "from",
+          "module": "logos_core.governance.agent_identity",
+          "name": "validate_identity",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 221,
+          "col": 4,
+          "kind": "from",
+          "module": "logos_core.governance.commitment_ledger",
+          "name": "DEFAULT_LEDGER_PATH",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 221,
+          "col": 4,
+          "kind": "from",
+          "module": "logos_core.governance.commitment_ledger",
+          "name": "LEDGER_VERSION",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 221,
+          "col": 4,
+          "kind": "from",
+          "module": "logos_core.governance.commitment_ledger",
+          "name": "ensure_active_commitment",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 221,
+          "col": 4,
+          "kind": "from",
+          "module": "logos_core.governance.commitment_ledger",
+          "name": "load_or_create_ledger",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 221,
+          "col": 4,
+          "kind": "from",
+          "module": "logos_core.governance.commitment_ledger",
+          "name": "mark_commitment_status",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 221,
+          "col": 4,
+          "kind": "from",
+          "module": "logos_core.governance.commitment_ledger",
+          "name": "record_event",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 221,
+          "col": 4,
+          "kind": "from",
+          "module": "logos_core.governance.commitment_ledger",
+          "name": "validate_ledger",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 221,
+          "col": 4,
+          "kind": "from",
+          "module": "logos_core.governance.commitment_ledger",
+          "name": "write_ledger",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 231,
+          "col": 4,
+          "kind": "from",
+          "module": "logos_core.governance.prioritization",
+          "name": "select_next_active_commitment",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 272,
+          "col": 4,
+          "kind": "from",
+          "module": "Logos_Agent.scripts.genesis_capsule",
+          "name": "bootstrap_genesis",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 272,
+          "col": 4,
+          "kind": "from",
+          "module": "Logos_Agent.scripts.genesis_capsule",
+          "name": "load_genesis_manifest",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 400,
+          "col": 4,
+          "kind": "from",
+          "module": "plugins.guardrails",
+          "name": "require_safe_interfaces",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 400,
+          "col": 4,
+          "kind": "from",
+          "module": "plugins.guardrails",
+          "name": "restrict_writes_to",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 4073,
+          "col": 4,
+          "kind": "from",
+          "module": "logos.tool_registry_loader",
+          "name": "load_approved_tools",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 55,
+          "col": 4,
+          "kind": "from",
+          "module": "external.Logos_AGI.System_Operations_Protocol.alignment_protocols.safety.integrity_framework.integrity_safeguard",
+          "name": "IntegrityValidator",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 55,
+          "col": 4,
+          "kind": "from",
+          "module": "external.Logos_AGI.System_Operations_Protocol.alignment_protocols.safety.integrity_framework.integrity_safeguard",
+          "name": "SafeguardConfiguration",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 952,
+          "col": 8,
+          "kind": "import",
+          "module": "",
+          "name": "hashlib",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 1979,
+          "col": 8,
+          "kind": "import",
+          "module": "",
+          "name": "select",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 3517,
+          "col": 8,
+          "kind": "import",
+          "module": "",
+          "name": "asyncio",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 3786,
+          "col": 8,
+          "kind": "import",
+          "module": "",
+          "name": "JUNK_DRAWER.scripts.need_to_distribute.cycle_ledger",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 176,
+          "col": 8,
+          "kind": "from",
+          "module": "need_to_distribute.logos_agi_adapter",
+          "name": "LogosAgiNexus",
+          "level": 2,
+          "reason": "relative_import_requires_package_context"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 3647,
+          "col": 12,
+          "kind": "from",
+          "module": "System_Stack.Logos_Protocol.Protocol_Core.Runtime_Operations.tools.implementations",
+          "name": "tool_introspection",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 3567,
+          "col": 16,
+          "kind": "from",
+          "module": "logos_core.world_model.uwm",
+          "name": "update_world_model",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 2560,
+          "col": 28,
+          "kind": "import",
+          "module": "",
+          "name": "subprocess",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/start_agent.py",
+          "line": 2678,
+          "col": 28,
+          "kind": "import",
+          "module": "",
+          "name": "subprocess",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        }
+      ]
+    },
+    "phase_2_symbols": {
+      "diagnostics": []
+    },
+    "phase_2b_dead_code": {
+      "diagnostics": []
+    },
+    "phase_3_dependencies": {
+      "diagnostics": []
+    },
+    "phase_4_side_effects": {
+      "diagnostics": []
+    },
+    "phase_5_rewrite_attempts": [
+      {
+        "attempt": 1,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/start_agent/Start_Agent.py",
+        "rewrite_hash": "sha256:68938415fff8dd2eba83b7a8592d6e79d1af6fc7792538298794fbe79eeda4b8",
+        "timestamp": "2026-01-15T08:49:50.548380+00:00",
+        "status": "complete"
+      },
+      {
+        "attempt": 1,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/start_agent/Start_Agent.py",
+        "rewrite_hash": "sha256:68938415fff8dd2eba83b7a8592d6e79d1af6fc7792538298794fbe79eeda4b8",
+        "timestamp": "2026-01-15T08:49:50.557716",
+        "status": "complete"
+      },
+      {
+        "attempt": 2,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/start_agent/Start_Agent.py",
+        "rewrite_hash": "sha256:f3dc6a3a964d88898f4494139095b93a8bfbbffec892294677566bbb6a1cf3c0",
+        "timestamp": "2026-01-15T08:49:50.879019+00:00",
+        "status": "complete"
+      },
+      {
+        "attempt": 2,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/start_agent/Start_Agent.py",
+        "rewrite_hash": "sha256:f3dc6a3a964d88898f4494139095b93a8bfbbffec892294677566bbb6a1cf3c0",
+        "timestamp": "2026-01-15T08:49:50.887977",
+        "status": "complete"
+      }
+    ],
+    "phase_6_semantic_audit": {
+      "diagnostics": [
+        {
+          "error_type": "AbbreviationExpansionMismatch",
+          "line": 1,
+          "char_start": 0,
+          "char_end": 0,
+          "severity": "medium",
+          "details": "Abbreviation 'version' missing canonical expansion",
+          "_source": "semantic_abbreviations"
+        }
+      ]
+    },
+    "phase_7_verification": {
+      "attempt_1": null,
+      "attempt_2": null
+    }
+  },
+  "test_results": {
+    "executed": false,
+    "passed": false,
+    "output_log": ""
+  },
+  "finalization": {
+    "status": "UNKNOWN",
+    "sealed_timestamp": "2026-01-15T08:26:32.358236+00:00",
+    "confirmation_hash": "pending"
+  }
+}

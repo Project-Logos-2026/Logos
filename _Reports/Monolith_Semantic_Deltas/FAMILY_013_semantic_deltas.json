@@ -1,0 +1,58 @@
+{
+  "family_id": "FAMILY_013",
+  "member_count": 3,
+  "members": [
+    "PersistentAgentIdentity.__init__",
+    "__init__",
+    "_init_validation_containers"
+  ],
+  "invariant_semantics": {
+    "operation_type": [],
+    "data_role": []
+  },
+  "divergent_semantics": {
+    "semantic_tags": {
+      "PersistentAgentIdentity.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP"
+      ],
+      "__init__": [
+        "BOOTSTRAP",
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "_init_validation_containers": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ]
+    },
+    "control_role": {
+      "PersistentAgentIdentity.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_validation_containers": [
+        "BOOT_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "PersistentAgentIdentity.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "__init__": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "_init_validation_containers": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ]
+    }
+  }
+}
