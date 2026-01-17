@@ -1,0 +1,14 @@
+{
+  "title": "LOGOS GOVERNANCE CONTRACTS",
+  "status": "NORMATIVE",
+  "defines": [
+    "Execution ordering",
+    "Identity issuance",
+    "Access control",
+    "Rewrite constraints"
+  ],
+  "violation": {
+    "type": "system_fault",
+    "note": "Applies even if code executes successfully"
+  }
+}

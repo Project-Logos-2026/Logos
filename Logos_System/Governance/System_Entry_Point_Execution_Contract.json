@@ -1,0 +1,48 @@
+{
+  "name": "System Entry Point — Execution Contract",
+  "status": "AUTHORITATIVE / NON-BYPASSABLE",
+  "canonical_role": [
+    "Authorization-only boundary",
+    "No logic execution",
+    "No authority ownership"
+  ],
+  "invariants": {
+    "fail_closed_existence": true,
+    "no_implicit_execution_on_import": true,
+    "no_proof_execution": true,
+    "no_agent_instantiation": true,
+    "no_protocol_access": true
+  },
+  "ordering_constraint": {
+    "must_execute_before": [
+      "Lock-and-Key",
+      "Runtime Spine",
+      "SOP orchestration",
+      "Any agent activation",
+      "Any protocol activation"
+    ],
+    "reordering_forbidden": true
+  },
+  "output_constraint": {
+    "may_only": [
+      "halt_with_explicit_failure",
+      "handoff_passive_activation_context"
+    ]
+  },
+  "prohibitions": [
+    "execute_logic",
+    "allocate_memory",
+    "issue_identities",
+    "invoke_protocols",
+    "bypass_runtime_spine"
+  ],
+  "failure_semantics": {
+    "any_violation_halts_execution": true,
+    "retries": "forbidden",
+    "degraded_modes": "forbidden"
+  },
+  "binding": {
+    "applies_to": ["all_future_system_operations", "all_rewrites"],
+    "scope": "system_entry_point"
+  }
+}
