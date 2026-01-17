@@ -1,0 +1,468 @@
+[
+  {
+    "file": "logos_agi_adapter.py",
+    "origin_cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "rationale": "Adapter/glue logic tied to pre-Phase-C architecture.",
+    "ts": "2026-01-16T23:20:40Z",
+    "classification": "ARCHIVE",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [
+      "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py"
+    ],
+    "resolution_count": 1
+  },
+  {
+    "file": "test_logos_agi_bootstrap_modes.py",
+    "origin_cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "rationale": "Legacy bootstrap behavior validation.",
+    "ts": "2026-01-16T23:20:40Z",
+    "classification": "ARCHIVE",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [
+      "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_logos_agi_bootstrap_modes.py"
+    ],
+    "resolution_count": 1
+  },
+  {
+    "file": "test_llm_bypass_smoke.py",
+    "origin_cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "rationale": "Governance bypass smoke test.",
+    "ts": "2026-01-16T23:20:40Z",
+    "classification": "ARCHIVE",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [
+      "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_llm_bypass_smoke.py"
+    ],
+    "resolution_count": 1
+  },
+  {
+    "file": "test_tool_pipeline_smoke.py",
+    "origin_cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "rationale": "Toolchain smoke verification.",
+    "ts": "2026-01-16T23:20:40Z",
+    "classification": "ARCHIVE",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [
+      "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_tool_pipeline_smoke.py"
+    ],
+    "resolution_count": 1
+  },
+  {
+    "file": "stress_sop_runtime.py",
+    "origin_cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "archive_tags": [
+      "EDGE_CASE",
+      "HISTORICAL_REFERENCE"
+    ],
+    "rationale": "Stress testing of SOP runtime conditions.",
+    "ts": "2026-01-16T23:20:40Z",
+    "classification": "ARCHIVE",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [
+      "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/stress_sop_runtime.py"
+    ],
+    "resolution_count": 1
+  },
+  {
+    "file": "cycle_ledger.py",
+    "origin_cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "archive_tags": [
+      "EDGE_CASE",
+      "POST_REWRITE_REVISIT"
+    ],
+    "rationale": "Cyclic state reconciliation dependent on finalized SMP/UWM.",
+    "ts": "2026-01-16T23:20:40Z",
+    "classification": "ARCHIVE",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [
+      "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/cycle_ledger.py"
+    ],
+    "resolution_count": 1
+  },
+  {
+    "file": "evidence.py",
+    "origin_cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "archive_tags": [
+      "EXPERIMENTAL_INSIGHT",
+      "POST_REWRITE_REVISIT"
+    ],
+    "rationale": "Early evidence/justification handling; under-specified.",
+    "ts": "2026-01-16T23:20:40Z",
+    "classification": "ARCHIVE",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [
+      "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/evidence.py"
+    ],
+    "resolution_count": 1
+  },
+  {
+    "file": "capture_arp_traces_and_backfill.py",
+    "origin_cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "archive_tags": [
+      "EDGE_CASE",
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "rationale": "ARP trace capture dependent on non-final planning substrate.",
+    "ts": "2026-01-16T23:20:40Z",
+    "classification": "ARCHIVE",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [
+      "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py"
+    ],
+    "resolution_count": 1
+  },
+  {
+    "ts": "2026-01-16T23:27:24Z",
+    "file": "*audit_and_reporting_utilities*",
+    "origin_cluster": "SYSTEM_STACK/Governance_Alignment_Integrity",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "rationale": "Audit and evidence emission logic; supports governance but does not enforce invariants.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-16T23:27:24Z",
+    "file": "*transitional_governance_bridges*",
+    "origin_cluster": "SYSTEM_STACK/Governance_Alignment_Integrity",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "POST_REWRITE_REVISIT"
+    ],
+    "rationale": "Governance logic coupled to pre-Phase-C architecture; expected to collapse post-rewrite.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-16T23:27:24Z",
+    "file": "*redundant_governance_checks*",
+    "origin_cluster": "SYSTEM_STACK/Governance_Alignment_Integrity",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "rationale": "Potentially redundant governance checks; retained to avoid premature loss of defense-in-depth.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-16T23:35:16Z",
+    "file": "*memory_strategy_tunings*",
+    "origin_cluster": "SYSTEM_STACK/Memory_State_SMP_UWM",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "EXPERIMENTAL_INSIGHT",
+      "POST_REWRITE_REVISIT"
+    ],
+    "rationale": "Experimental or heuristic memory policies; intent preserved, implementation provisional.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-16T23:35:16Z",
+    "file": "*memory_persistence_tooling*",
+    "origin_cluster": "SYSTEM_STACK/Memory_State_SMP_UWM",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "rationale": "Tool-specific persistence and replay implementations; invariants promoted elsewhere.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-16T23:35:16Z",
+    "file": "*transitional_memory_glue*",
+    "origin_cluster": "SYSTEM_STACK/Memory_State_SMP_UWM",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "rationale": "Legacy compatibility logic tied to pre-rewrite architecture.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-16T23:41:41Z",
+    "file": "*planning_strategy_variants*",
+    "origin_cluster": "SYSTEM_STACK/Planning_Reasoning_ARP",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "EXPERIMENTAL_INSIGHT",
+      "POST_REWRITE_REVISIT"
+    ],
+    "rationale": "Alternative planning and optimization strategies; not required for baseline ARP operation.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-16T23:41:41Z",
+    "file": "*exploratory_arp_engines*",
+    "origin_cluster": "SYSTEM_STACK/Planning_Reasoning_ARP",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "EXPERIMENTAL_INSIGHT"
+    ],
+    "rationale": "Non-canonical reasoning engines used for comparison or experimentation.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-16T23:41:41Z",
+    "file": "*arp_instrumentation_and_tracing*",
+    "origin_cluster": "SYSTEM_STACK/Planning_Reasoning_ARP",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "rationale": "Diagnostics and observability logic; supports understanding but not reasoning correctness.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-16T23:59:37Z",
+    "file": "*tool_routing_implementations*",
+    "origin_cluster": "SYSTEM_STACK/Tooling_Capabilities_External_Enhancements",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "rationale": "Concrete routing pipelines; safety semantics promoted separately.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-16T23:59:37Z",
+    "file": "*external_tool_wrappers*",
+    "origin_cluster": "SYSTEM_STACK/Tooling_Capabilities_External_Enhancements",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "POST_REWRITE_REVISIT"
+    ],
+    "rationale": "Reference integrations preserved for post-rewrite sandbox/E2E validation against canonical contracts.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-16T23:59:37Z",
+    "file": "*experimental_capabilities*",
+    "origin_cluster": "SYSTEM_STACK/Tooling_Capabilities_External_Enhancements",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "EXPERIMENTAL_INSIGHT"
+    ],
+    "rationale": "Prototype tools and one-off integrations; informative but non-authoritative.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-17T00:04:28Z",
+    "file": "*boot_and_orchestration_implementations*",
+    "origin_cluster": "SYSTEM_STACK/Orchestration_Runtime_Control",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "POST_REWRITE_REVISIT"
+    ],
+    "rationale": "Concrete startup/orchestration scripts and adapters; authorities promoted separately.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-17T00:04:28Z",
+    "file": "*orchestration_health_checks*",
+    "origin_cluster": "SYSTEM_STACK/Orchestration_Runtime_Control",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "rationale": "Readiness and health observability; supports operation but does not define runtime authority.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-17T00:12:30Z",
+    "file": "*interface_implementations*",
+    "origin_cluster": "SYSTEM_STACK/Interface_Translation_MTP",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "POST_REWRITE_REVISIT"
+    ],
+    "rationale": "Concrete UI/CLI/API realizations; semantics promoted separately.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-17T00:12:30Z",
+    "file": "*experimental_translation_logic*",
+    "origin_cluster": "SYSTEM_STACK/Interface_Translation_MTP",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "EXPERIMENTAL_INSIGHT"
+    ],
+    "rationale": "Prototype or transitional translation logic; informative, non-authoritative.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-17T00:15:50Z",
+    "file": "*agent_implementations_and_wiring*",
+    "origin_cluster": "SYSTEM_STACK/Agent_Structure_Roles_Boundaries",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "rationale": "Concrete agent classes and wiring; identity/authority semantics promoted separately.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-17T00:15:50Z",
+    "file": "*experimental_agent_logic*",
+    "origin_cluster": "SYSTEM_STACK/Agent_Structure_Roles_Boundaries",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "EXPERIMENTAL_INSIGHT"
+    ],
+    "rationale": "Prototype or transitional agent behavior; informative, non-authoritative.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-17T00:19:06Z",
+    "file": "*observability_implementations*",
+    "origin_cluster": "SYSTEM_STACK/Diagnostics_Observability_Audit",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "HISTORICAL_REFERENCE",
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "rationale": "Concrete logging/tracing/metrics implementations; audit invariants promoted elsewhere.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-17T00:19:06Z",
+    "file": "*debug_instrumentation*",
+    "origin_cluster": "SYSTEM_STACK/Diagnostics_Observability_Audit",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "rationale": "Developer/debug helpers; non-authoritative.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-17T00:19:06Z",
+    "file": "*experimental_diagnostics*",
+    "origin_cluster": "SYSTEM_STACK/Diagnostics_Observability_Audit",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "EXPERIMENTAL_INSIGHT"
+    ],
+    "rationale": "Prototype or transitional diagnostics.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-17T00:26:32Z",
+    "file": "*concrete_config_instances*",
+    "origin_cluster": "SYSTEM_STACK/Configuration_Schemas_Runtime_Contracts",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "rationale": "Environment- and deployment-specific config instances; contractual invariants promoted separately.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  },
+  {
+    "ts": "2026-01-17T00:26:32Z",
+    "file": "*experimental_schemas*",
+    "origin_cluster": "SYSTEM_STACK/Configuration_Schemas_Runtime_Contracts",
+    "classification": "ARCHIVE",
+    "archive_tags": [
+      "EXPERIMENTAL_INSIGHT"
+    ],
+    "rationale": "Prototype or transitional schemas; informative, non-authoritative.",
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "resolved_paths": [],
+    "resolution_count": 0
+  }
+]

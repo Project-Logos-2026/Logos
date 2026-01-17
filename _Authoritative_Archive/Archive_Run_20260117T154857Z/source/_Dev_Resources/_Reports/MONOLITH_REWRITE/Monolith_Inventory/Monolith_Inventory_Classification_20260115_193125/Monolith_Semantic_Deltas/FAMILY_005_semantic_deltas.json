@@ -1,0 +1,376 @@
+{
+  "family_id": "FAMILY_005",
+  "member_count": 25,
+  "members": [
+    "read_audit_entries",
+    "write_audit_entries",
+    "verify_agent_alignment",
+    "ensure_repo",
+    "repo_commit_sha",
+    "load_cognitive_protocols",
+    "sop_health_snapshot",
+    "env_provenance",
+    "capture",
+    "update_latest_entry",
+    "main",
+    "AdvancedReasoner",
+    "ReasoningBlueprint",
+    "canonical_hash",
+    "instantiate_reasoner",
+    "build_inputs",
+    "run_deterministic_arp",
+    "build_trace",
+    "write_json",
+    "write_trace",
+    "build_modal_fixture",
+    "write_fixture",
+    "find_phase2_fixture_spec",
+    "backfill_fixture_hashes",
+    "capture_traces_and_backfill"
+  ],
+  "invariant_semantics": {},
+  "divergent_semantics": {
+    "semantic_tags": {
+      "read_audit_entries": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "write_audit_entries": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "verify_agent_alignment": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ensure_repo": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "repo_commit_sha": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "load_cognitive_protocols": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "sop_health_snapshot": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "env_provenance": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "capture": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "update_latest_entry": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "main": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "AdvancedReasoner": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT"
+      ],
+      "ReasoningBlueprint": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "canonical_hash": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "instantiate_reasoner": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "build_inputs": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "run_deterministic_arp": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "build_trace": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "write_json": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "write_trace": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "build_modal_fixture": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "write_fixture": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "find_phase2_fixture_spec": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "backfill_fixture_hashes": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "capture_traces_and_backfill": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ]
+    },
+    "operation_type": {
+      "read_audit_entries": [
+        "TRANSFORMATION"
+      ],
+      "write_audit_entries": [
+        "UTILITY"
+      ],
+      "verify_agent_alignment": [
+        "TRANSFORMATION"
+      ],
+      "ensure_repo": [
+        "TRANSFORMATION"
+      ],
+      "repo_commit_sha": [
+        "TRANSFORMATION"
+      ],
+      "load_cognitive_protocols": [
+        "TRANSFORMATION"
+      ],
+      "sop_health_snapshot": [
+        "TRANSFORMATION"
+      ],
+      "env_provenance": [
+        "TRANSFORMATION"
+      ],
+      "capture": [
+        "TRANSFORMATION"
+      ],
+      "update_latest_entry": [
+        "TRANSFORMATION"
+      ],
+      "main": [
+        "TRANSFORMATION"
+      ],
+      "AdvancedReasoner": [
+        "TRANSFORMATION"
+      ],
+      "ReasoningBlueprint": [
+        "UTILITY"
+      ],
+      "canonical_hash": [
+        "TRANSFORMATION"
+      ],
+      "instantiate_reasoner": [
+        "TRANSFORMATION"
+      ],
+      "build_inputs": [
+        "TRANSFORMATION"
+      ],
+      "run_deterministic_arp": [
+        "TRANSFORMATION"
+      ],
+      "build_trace": [
+        "TRANSFORMATION"
+      ],
+      "write_json": [
+        "UTILITY"
+      ],
+      "write_trace": [
+        "TRANSFORMATION"
+      ],
+      "build_modal_fixture": [
+        "TRANSFORMATION"
+      ],
+      "write_fixture": [
+        "TRANSFORMATION"
+      ],
+      "find_phase2_fixture_spec": [
+        "TRANSFORMATION"
+      ],
+      "backfill_fixture_hashes": [],
+      "capture_traces_and_backfill": [
+        "UTILITY"
+      ]
+    },
+    "data_role": {
+      "read_audit_entries": [],
+      "write_audit_entries": [],
+      "verify_agent_alignment": [],
+      "ensure_repo": [],
+      "repo_commit_sha": [],
+      "load_cognitive_protocols": [],
+      "sop_health_snapshot": [],
+      "env_provenance": [],
+      "capture": [],
+      "update_latest_entry": [],
+      "main": [],
+      "AdvancedReasoner": [],
+      "ReasoningBlueprint": [],
+      "canonical_hash": [
+        "CRYPTO_ID"
+      ],
+      "instantiate_reasoner": [],
+      "build_inputs": [],
+      "run_deterministic_arp": [],
+      "build_trace": [],
+      "write_json": [],
+      "write_trace": [],
+      "build_modal_fixture": [],
+      "write_fixture": [],
+      "find_phase2_fixture_spec": [],
+      "backfill_fixture_hashes": [
+        "CRYPTO_ID"
+      ],
+      "capture_traces_and_backfill": []
+    },
+    "control_role": {
+      "read_audit_entries": [],
+      "write_audit_entries": [],
+      "verify_agent_alignment": [],
+      "ensure_repo": [],
+      "repo_commit_sha": [],
+      "load_cognitive_protocols": [],
+      "sop_health_snapshot": [],
+      "env_provenance": [],
+      "capture": [],
+      "update_latest_entry": [],
+      "main": [
+        "BOOT_CONTROL"
+      ],
+      "AdvancedReasoner": [
+        "BOOT_CONTROL"
+      ],
+      "ReasoningBlueprint": [],
+      "canonical_hash": [],
+      "instantiate_reasoner": [],
+      "build_inputs": [],
+      "run_deterministic_arp": [],
+      "build_trace": [],
+      "write_json": [],
+      "write_trace": [],
+      "build_modal_fixture": [],
+      "write_fixture": [],
+      "find_phase2_fixture_spec": [],
+      "backfill_fixture_hashes": [],
+      "capture_traces_and_backfill": []
+    },
+    "spine_binding": {
+      "read_audit_entries": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "write_audit_entries": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "verify_agent_alignment": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ensure_repo": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "repo_commit_sha": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "load_cognitive_protocols": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "sop_health_snapshot": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "env_provenance": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "capture": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "update_latest_entry": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "main": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "AdvancedReasoner": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ReasoningBlueprint": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "canonical_hash": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "instantiate_reasoner": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "build_inputs": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "run_deterministic_arp": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "build_trace": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "write_json": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "write_trace": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "build_modal_fixture": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "write_fixture": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "find_phase2_fixture_spec": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "backfill_fixture_hashes": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "capture_traces_and_backfill": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ]
+    }
+  }
+}

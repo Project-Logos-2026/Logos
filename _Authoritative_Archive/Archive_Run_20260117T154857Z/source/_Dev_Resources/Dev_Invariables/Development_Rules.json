@@ -1,0 +1,85 @@
+{
+  "CANONICAL_FAMILY_ROUTING": {
+    "description": "Defines routing for canonicalized function families",
+    "governance_contract_path": "_Governance/Canonical_Contracts/",
+    "semantic_capability_map": "_Governance/semantic_capability_map_v0.json",
+    "monolith_module_path": "Monolith/",
+    "monolith_runtime_file": "Monolith/Monolith_Runtime.py",
+    "documentation_file": "docs/Canonical_Contracts_Index.md",
+    "enforcement": "fail_closed"
+  },
+  "phases": {
+    "PHASE_CONTEXTUAL_EMBEDDING": {
+      "phase_id": "PHASE_CONTEXTUAL_EMBEDDING",
+      "phase_name": "Contextual Embedding (Semantic Contexts Synthesis)",
+      "status": "ACTIVE",
+      "established_at": "2026-01-16T17:45:31.334985Z",
+      "purpose": "Synthesize unprocessed family deltas into governed semantic context modules without modifying axioms or application logic.",
+      "inputs": [
+        "FAMILY_DELTAS/UNPROCESSED_FAMILIES/*.json"
+      ],
+      "outputs": [
+        "PYTHON_MODULES/SEMANTIC_CONTEXTS/*.py",
+        "SEMANTIC_CONTEXTS/SEMANTIC_CONTEXTS_CATALOG.json"
+      ],
+      "layer_rules": {
+        "SEMANTIC_AXIOMS": "READ_ONLY",
+        "SEMANTIC_CONTEXTS": "WRITE_ALLOWED",
+        "APPLICATION_FUNCTIONS": "DEFERRED"
+      },
+      "classification_outcomes": [
+        "EMBEDDED",
+        "DEFERRED",
+        "RETIRED"
+      ],
+      "embedding_constraints": {
+        "imports_allowed": [
+          "PYTHON_MODULES/SEMANTIC_AXIOMS",
+          "python_standard_library"
+        ],
+        "imports_forbidden": [
+          "APPLICATION_FUNCTIONS",
+          "legacy_scripts",
+          "external_libraries",
+          "direct_UWM_mutation"
+        ],
+        "side_effects": "PROHIBITED"
+      },
+      "context_module_rules": {
+        "one_context_per_family": true,
+        "file_naming": "Title_Case_With_Underscores.py",
+        "public_entrypoint": "run(context: dict) -> dict",
+        "classes_optional": true
+      },
+      "catalog_requirements": [
+        "family_id",
+        "family_delta_file",
+        "status",
+        "context_module",
+        "semantic_tags",
+        "control_role",
+        "data_role",
+        "spine_binding",
+        "axiom_dependencies",
+        "contracts_implicated",
+        "notes"
+      ],
+      "governance_interaction": {
+        "runtime_spine": "READ_ONLY",
+        "semantic_capability_map": "READ_ONLY",
+        "new_capabilities": "NOT_PERMITTED_IN_THIS_PHASE"
+      },
+      "documentation_policy": {
+        "headers": "DEFERRED",
+        "authoritative_metadata": "SEMANTIC_CONTEXTS_CATALOG.json"
+      },
+      "completion_criteria": [
+        "all_unprocessed_families_classified",
+        "all_embedded_families_have_context_modules",
+        "catalog_complete",
+        "no_axiom_changes"
+      ],
+      "fail_closed": true
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "canonical_name": "3PDN_Validator",
+  "semantic_role": "Agent-Side Triune Constraint Validator",
+  "description": "Validates alignment of incoming data or agent state against three core principles of divine necessity — Sign, Mind, and Bridge — each enforced through independently scoped filters. Applies a Mesh Holism check to ensure commutation across principles, performs Trinitarian Optimization to maximize coherence and lawful minimality, and seals the result using the Transcendental Locking Mechanism to produce a signed, cryptographically bound proof of alignment.",
+  "phases": [
+    "I₁ SignConstraint Check",
+    "I₂ MindConstraint Check",
+    "I₃ BridgeConstraint Check",
+    "MeshHolism Commutation",
+    "Trinitarian Optimization",
+    "Transcendental Confirmation (TLM)"
+  ],
+  "guarantees": [
+    "Independent validation under each triune axis",
+    "Coherent behavior under mesh commutation (⩪)",
+    "Global constraint optimization across all three",
+    "Immutable binding via crypto-signed token"
+  ],
+  "inputs": [
+    "Candidate agent state",
+    "Candidate SMPs",
+    "Active constraint schemas (Sign, Mind, Bridge)"
+  ],
+  "outputs": [
+    "Transcendentally sealed validation token",
+    "Optional diagnostic metadata"
+  ],
+  "side_effects": [
+    "Writes cryptographic key to TLMKeyManager",
+    "May log failed constraints (if configured)"
+  ],
+  "non_determinism": [
+    "Time (for timestamped token generation)",
+    "Randomness (for nonce/sealing)"
+  ],
+  "spine_binding": [
+    "Post-Gate Validation",
+    "Pre-Agent Instantiation"
+  ],
+  "monolith_admission": "PASS"
+}

@@ -1,0 +1,738 @@
+{
+  "family_id": "FAMILY_033",
+  "member_count": 63,
+  "members": [
+    "_build_gap_events",
+    "run_once",
+    "main",
+    "_safe_read_text",
+    "_safe_load_json",
+    "_safe_load_jsonl",
+    "EpistemicCore",
+    "EpistemicCore.load",
+    "EpistemicCore.ion_argument",
+    "EpistemicCore.mesh_argument",
+    "EpistemicCore.three_pillars",
+    "EpistemicCore.simulated_consciousness_log",
+    "load",
+    "ion_argument",
+    "mesh_argument",
+    "three_pillars",
+    "simulated_consciousness_log",
+    "AgentSelfReflection",
+    "AgentSelfReflection.bind_note",
+    "bind_note",
+    "AgencyPreconditions",
+    "AgencyPreconditions.is_agency_emergent",
+    "AgencyPreconditions.is_consciousness_emergent",
+    "is_agency_emergent",
+    "is_consciousness_emergent",
+    "PXLState",
+    "GlobalCommutator",
+    "GlobalCommutator.integrate_with_agent",
+    "integrate_with_agent",
+    "boot_identity_from_attestation",
+    "attach_commutator",
+    "now",
+    "canon",
+    "sha256",
+    "strip_volatile",
+    "git_short",
+    "coq_version",
+    "run_make",
+    "emit",
+    "aid",
+    "_timestamp",
+    "_ensure_log_dir",
+    "log_event",
+    "ensure_runtime_roots",
+    "mark_phase",
+    "mark_modality",
+    "assert_can_enter_active",
+    "current_state",
+    "RegulatedLibrary",
+    "RegulatedLibrary.enable",
+    "RegulatedLibrary.__getattr__",
+    "enable",
+    "__getattr__",
+    "_install",
+    "require",
+    "get",
+    "enable_all",
+    "_load_requirements",
+    "preload_libraries",
+    "_current_parent_sha",
+    "_compute_digest",
+    "_write_identity",
+    "_load_identity"
+  ],
+  "invariant_semantics": {
+    "data_role": [],
+    "spine_binding": [
+      "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+    ]
+  },
+  "divergent_semantics": {
+    "semantic_tags": {
+      "_build_gap_events": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "run_once": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "main": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_safe_read_text": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "_safe_load_json": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "_safe_load_jsonl": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "EpistemicCore": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "EpistemicCore.load": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "EpistemicCore.ion_argument": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "EpistemicCore.mesh_argument": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "EpistemicCore.three_pillars": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "EpistemicCore.simulated_consciousness_log": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "load": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "ion_argument": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "mesh_argument": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "three_pillars": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "simulated_consciousness_log": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "AgentSelfReflection": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "AgentSelfReflection.bind_note": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "bind_note": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "AgencyPreconditions": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "AgencyPreconditions.is_agency_emergent": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "AgencyPreconditions.is_consciousness_emergent": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "is_agency_emergent": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "is_consciousness_emergent": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "PXLState": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "GlobalCommutator": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "GlobalCommutator.integrate_with_agent": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "integrate_with_agent": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "boot_identity_from_attestation": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "attach_commutator": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "now": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "canon": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "sha256": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "strip_volatile": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "git_short": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "coq_version": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "run_make": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "emit": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "aid": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "_timestamp": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "_ensure_log_dir": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "log_event": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "ensure_runtime_roots": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "mark_phase": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "mark_modality": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "assert_can_enter_active": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "current_state": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "RegulatedLibrary": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "RegulatedLibrary.enable": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "RegulatedLibrary.__getattr__": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "enable": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "__getattr__": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "_install": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "require": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "get": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "enable_all": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "_load_requirements": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "preload_libraries": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "_current_parent_sha": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "_compute_digest": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "_write_identity": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "_load_identity": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ]
+    },
+    "operation_type": {
+      "_build_gap_events": [
+        "TRANSFORMATION"
+      ],
+      "run_once": [],
+      "main": [
+        "TRANSFORMATION"
+      ],
+      "_safe_read_text": [
+        "TRANSFORMATION"
+      ],
+      "_safe_load_json": [
+        "TRANSFORMATION"
+      ],
+      "_safe_load_jsonl": [
+        "TRANSFORMATION"
+      ],
+      "EpistemicCore": [
+        "TRANSFORMATION"
+      ],
+      "EpistemicCore.load": [
+        "STATE_MUTATION",
+        "TRANSFORMATION"
+      ],
+      "EpistemicCore.ion_argument": [
+        "TRANSFORMATION"
+      ],
+      "EpistemicCore.mesh_argument": [
+        "TRANSFORMATION"
+      ],
+      "EpistemicCore.three_pillars": [
+        "TRANSFORMATION"
+      ],
+      "EpistemicCore.simulated_consciousness_log": [
+        "TRANSFORMATION"
+      ],
+      "load": [
+        "STATE_MUTATION",
+        "TRANSFORMATION"
+      ],
+      "ion_argument": [
+        "TRANSFORMATION"
+      ],
+      "mesh_argument": [
+        "TRANSFORMATION"
+      ],
+      "three_pillars": [
+        "TRANSFORMATION"
+      ],
+      "simulated_consciousness_log": [
+        "TRANSFORMATION"
+      ],
+      "AgentSelfReflection": [],
+      "AgentSelfReflection.bind_note": [],
+      "bind_note": [],
+      "AgencyPreconditions": [
+        "TRANSFORMATION"
+      ],
+      "AgencyPreconditions.is_agency_emergent": [
+        "TRANSFORMATION"
+      ],
+      "AgencyPreconditions.is_consciousness_emergent": [
+        "TRANSFORMATION"
+      ],
+      "is_agency_emergent": [
+        "TRANSFORMATION"
+      ],
+      "is_consciousness_emergent": [
+        "TRANSFORMATION"
+      ],
+      "PXLState": [],
+      "GlobalCommutator": [],
+      "GlobalCommutator.integrate_with_agent": [],
+      "integrate_with_agent": [],
+      "boot_identity_from_attestation": [
+        "TRANSFORMATION"
+      ],
+      "attach_commutator": [
+        "TRANSFORMATION"
+      ],
+      "now": [
+        "TRANSFORMATION"
+      ],
+      "canon": [
+        "TRANSFORMATION"
+      ],
+      "sha256": [
+        "TRANSFORMATION"
+      ],
+      "strip_volatile": [
+        "TRANSFORMATION"
+      ],
+      "git_short": [
+        "TRANSFORMATION"
+      ],
+      "coq_version": [
+        "TRANSFORMATION"
+      ],
+      "run_make": [],
+      "emit": [
+        "TRANSFORMATION"
+      ],
+      "aid": [
+        "TRANSFORMATION"
+      ],
+      "_timestamp": [
+        "TRANSFORMATION"
+      ],
+      "_ensure_log_dir": [],
+      "log_event": [],
+      "ensure_runtime_roots": [
+        "TRANSFORMATION"
+      ],
+      "mark_phase": [],
+      "mark_modality": [],
+      "assert_can_enter_active": [],
+      "current_state": [
+        "TRANSFORMATION"
+      ],
+      "RegulatedLibrary": [
+        "TRANSFORMATION"
+      ],
+      "RegulatedLibrary.enable": [],
+      "RegulatedLibrary.__getattr__": [
+        "TRANSFORMATION"
+      ],
+      "enable": [],
+      "__getattr__": [
+        "TRANSFORMATION"
+      ],
+      "_install": [],
+      "require": [
+        "TRANSFORMATION"
+      ],
+      "get": [
+        "TRANSFORMATION"
+      ],
+      "enable_all": [],
+      "_load_requirements": [
+        "TRANSFORMATION"
+      ],
+      "preload_libraries": [],
+      "_current_parent_sha": [
+        "TRANSFORMATION"
+      ],
+      "_compute_digest": [
+        "TRANSFORMATION"
+      ],
+      "_write_identity": [],
+      "_load_identity": [
+        "TRANSFORMATION"
+      ]
+    },
+    "control_role": {
+      "_build_gap_events": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "run_once": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "main": [
+        "BOOT_CONTROL"
+      ],
+      "_safe_read_text": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_safe_load_json": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_safe_load_jsonl": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "EpistemicCore": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "EpistemicCore.load": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "EpistemicCore.ion_argument": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "EpistemicCore.mesh_argument": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "EpistemicCore.three_pillars": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "EpistemicCore.simulated_consciousness_log": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "load": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ion_argument": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "mesh_argument": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "three_pillars": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "simulated_consciousness_log": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "AgentSelfReflection": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "AgentSelfReflection.bind_note": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "bind_note": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "AgencyPreconditions": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "AgencyPreconditions.is_agency_emergent": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "AgencyPreconditions.is_consciousness_emergent": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "is_agency_emergent": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "is_consciousness_emergent": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "PXLState": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "GlobalCommutator": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "GlobalCommutator.integrate_with_agent": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "integrate_with_agent": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "boot_identity_from_attestation": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "attach_commutator": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "now": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "canon": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "sha256": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "strip_volatile": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "git_short": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "coq_version": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "run_make": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "emit": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "aid": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_timestamp": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_ensure_log_dir": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "log_event": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ensure_runtime_roots": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "mark_phase": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "mark_modality": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "assert_can_enter_active": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "current_state": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "RegulatedLibrary": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "RegulatedLibrary.enable": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "RegulatedLibrary.__getattr__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "enable": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "__getattr__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_install": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "require": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "get": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "enable_all": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_load_requirements": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "preload_libraries": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_current_parent_sha": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_compute_digest": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_write_identity": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_load_identity": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ]
+    }
+  }
+}

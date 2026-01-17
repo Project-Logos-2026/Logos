@@ -1,0 +1,4224 @@
+{
+  "family_id": "FAMILY_025",
+  "member_count": 267,
+  "members": [
+    "SCPMode",
+    "ModalChainType",
+    "CognitiveSystemType",
+    "CognitiveRequest",
+    "CognitiveResult",
+    "SCPNexus",
+    "SCPNexus.process_agent_request",
+    "SCPNexus._handle_process_modal_chains",
+    "SCPNexus._simulate_modal_processing",
+    "SCPNexus._handle_fractal_analysis",
+    "SCPNexus._handle_meta_reasoning",
+    "SCPNexus._handle_enhance_cognition",
+    "SCPNexus._handle_process_todo",
+    "SCPNexus._handle_get_cognitive_status",
+    "SCPNexus._protocol_specific_security_validation",
+    "SCPNexus._protocol_specific_activation",
+    "SCPNexus._protocol_specific_deactivation",
+    "SCPNexus._route_to_protocol_core",
+    "SCPNexus._protocol_specific_smoke_test",
+    "process_agent_request",
+    "_handle_process_modal_chains",
+    "_simulate_modal_processing",
+    "_handle_fractal_analysis",
+    "_handle_meta_reasoning",
+    "_handle_enhance_cognition",
+    "_handle_process_todo",
+    "_handle_get_cognitive_status",
+    "_protocol_specific_security_validation",
+    "_protocol_specific_activation",
+    "_protocol_specific_deactivation",
+    "_route_to_protocol_core",
+    "_protocol_specific_smoke_test",
+    "BaseNexus",
+    "AgentRequest",
+    "NexusResponse",
+    "AgentType",
+    "ReasoningMode",
+    "DataRefinementCycle",
+    "ReasoningRequest",
+    "ReasoningResult",
+    "DataExchangePacket",
+    "DataBuilder",
+    "DataBuilder.create_exchange_packet",
+    "DataBuilder._determine_max_cycles",
+    "DataBuilder.validate_packet",
+    "DataBuilder.detect_convergence",
+    "DataBuilder.evolve_c_values",
+    "DataBuilder.get_cycle_status",
+    "create_exchange_packet",
+    "_determine_max_cycles",
+    "validate_packet",
+    "detect_convergence",
+    "evolve_c_values",
+    "get_cycle_status",
+    "ARPNexus",
+    "ARPNexus.process_reasoning_request",
+    "ARPNexus._process_recursive_refinement",
+    "ARPNexus._send_to_scp",
+    "ARPNexus._send_to_agent",
+    "ARPNexus._process_standard_analysis",
+    "ARPNexus._process_deep_ontological",
+    "ARPNexus._process_formal_verification",
+    "ARPNexus.get_cycle_status",
+    "ARPNexus.set_max_cycles",
+    "ARPNexus.approve_cascade_override",
+    "ARPNexus.receive_request",
+    "ARPNexus.send_response",
+    "ARPNexus.get_status",
+    "process_reasoning_request",
+    "_process_recursive_refinement",
+    "_send_to_scp",
+    "_send_to_agent",
+    "_process_standard_analysis",
+    "_process_deep_ontological",
+    "_process_formal_verification",
+    "set_max_cycles",
+    "approve_cascade_override",
+    "receive_request",
+    "send_response",
+    "get_status",
+    "dispatch_to_scp",
+    "dispatch_to_arp",
+    "RouteDecision",
+    "RouteDecision.to_dict",
+    "to_dict",
+    "decide_route",
+    "ARPWorkOrder",
+    "build_work_order",
+    "PlanPacket",
+    "PlanPacket.to_dict",
+    "emit_plan_packet",
+    "EvaluationPacket",
+    "EvaluationPacket.to_dict",
+    "emit_evaluation_packet",
+    "TaskEnvelope",
+    "load_task",
+    "SCPWorkOrder",
+    "SCPResultPacket",
+    "SCPResultPacket.to_dict",
+    "emit_result_packet",
+    "SMPEnvelope",
+    "load_smp",
+    "load_env",
+    "ReasoningAgent",
+    "ReasoningAgent._execute_tool",
+    "ReasoningAgent._format_tool_results",
+    "ReasoningAgent.ask",
+    "_execute_tool",
+    "_format_tool_results",
+    "ask",
+    "main",
+    "_Readiness",
+    "_evaluate_readiness",
+    "available",
+    "readiness_reason",
+    "readiness_diagnostics",
+    "get_connector_factory",
+    "get_uip_integration_plugin",
+    "uip_prompt_choice",
+    "ConnectorValidationError",
+    "ConnectorMetadata",
+    "ConnectorResponse",
+    "StaticUIPConnector",
+    "StaticUIPConnector.handshake",
+    "StaticUIPConnector.execute",
+    "handshake",
+    "execute",
+    "StaticEnhancedUIPConnector",
+    "StaticEnhancedUIPConnector.collect_telemetry",
+    "StaticEnhancedUIPConnector.execute",
+    "collect_telemetry",
+    "build_standard_connector",
+    "build_enhanced_connector",
+    "get_enhanced_uip_integration_plugin",
+    "UIPMode",
+    "ReasoningComplexity",
+    "UIPNexus",
+    "UIPNexus._validate_dict_payload",
+    "UIPNexus.process_agent_request",
+    "UIPNexus._handle_perform_analysis",
+    "UIPNexus._handle_synthesize_response",
+    "UIPNexus._handle_orchestrate_workflow",
+    "UIPNexus._handle_get_status",
+    "UIPNexus._protocol_specific_security_validation",
+    "UIPNexus._protocol_specific_activation",
+    "UIPNexus._protocol_specific_deactivation",
+    "UIPNexus._route_to_protocol_core",
+    "UIPNexus._protocol_specific_smoke_test",
+    "_validate_dict_payload",
+    "_handle_perform_analysis",
+    "_handle_synthesize_response",
+    "_handle_orchestrate_workflow",
+    "_handle_get_status",
+    "UIPOperations",
+    "UIPOperations._phase_1_gui_systems",
+    "UIPOperations._phase_2_input_processing",
+    "UIPOperations._phase_3_protocol_integration",
+    "UIPOperations._phase_4_response_synthesis",
+    "UIPOperations._execute_component_sequence",
+    "UIPOperations._load_gui_framework",
+    "UIPOperations._load_accessibility_systems",
+    "UIPOperations._load_gesture_recognition",
+    "UIPOperations._establish_arp_channel",
+    "UIPOperations._establish_lap_communication",
+    "UIPOperations._load_message_formatting",
+    "UIPOperations._load_preference_adaptation",
+    "UIPOperations.process_user_interaction",
+    "UIPOperations._step_1_input_capture",
+    "UIPOperations._step_2_input_interpretation",
+    "UIPOperations._step_3_context_enrichment",
+    "UIPOperations._step_4_protocol_routing",
+    "UIPOperations._step_5_response_integration",
+    "UIPOperations._step_6_response_synthesis",
+    "UIPOperations._step_7_output_delivery",
+    "UIPOperations.create_user_session",
+    "UIPOperations.emergency_shutdown",
+    "UIPOperations.health_check",
+    "_phase_1_gui_systems",
+    "_phase_2_input_processing",
+    "_phase_3_protocol_integration",
+    "_phase_4_response_synthesis",
+    "_execute_component_sequence",
+    "_load_gui_framework",
+    "_load_accessibility_systems",
+    "_load_gesture_recognition",
+    "_establish_arp_channel",
+    "_establish_lap_communication",
+    "_load_message_formatting",
+    "_load_preference_adaptation",
+    "process_user_interaction",
+    "_step_1_input_capture",
+    "_step_2_input_interpretation",
+    "_step_3_context_enrichment",
+    "_step_4_protocol_routing",
+    "_step_5_response_integration",
+    "_step_6_response_synthesis",
+    "_step_7_output_delivery",
+    "create_user_session",
+    "emergency_shutdown",
+    "health_check",
+    "ProtocolType",
+    "NexusLifecycle",
+    "AgentRequest.to_dict",
+    "AgentRequest.from_dict",
+    "from_dict",
+    "NexusResponse.to_dict",
+    "BaseNexus.process_agent_request",
+    "BaseNexus._authenticate_and_classify_agent",
+    "BaseNexus._classify_agent_type",
+    "BaseNexus._validate_security_boundaries",
+    "BaseNexus._protocol_specific_security_validation",
+    "BaseNexus._protocol_specific_activation",
+    "BaseNexus._protocol_specific_deactivation",
+    "BaseNexus._route_to_protocol_core",
+    "BaseNexus._calculate_processing_time",
+    "BaseNexus.get_nexus_status",
+    "BaseNexus.run_smoke_test",
+    "BaseNexus._test_basic_functionality",
+    "BaseNexus._test_agent_classification",
+    "BaseNexus._test_security_boundaries",
+    "BaseNexus._protocol_specific_smoke_test",
+    "_authenticate_and_classify_agent",
+    "_classify_agent_type",
+    "_validate_security_boundaries",
+    "_calculate_processing_time",
+    "get_nexus_status",
+    "run_smoke_test",
+    "_test_basic_functionality",
+    "_test_agent_classification",
+    "_test_security_boundaries",
+    "create_agent_request",
+    "validate_nexus_system",
+    "PlanningType",
+    "GapType",
+    "LinguisticOperation",
+    "PlanningRequest",
+    "GapDetectionRequest",
+    "LinguisticRequest",
+    "LOGOSAgentNexus",
+    "LOGOSAgentNexus.process_agent_request",
+    "LOGOSAgentNexus._handle_causal_planning",
+    "LOGOSAgentNexus._handle_strategic_planning",
+    "LOGOSAgentNexus._handle_goal_decomposition",
+    "LOGOSAgentNexus._handle_detect_gaps",
+    "LOGOSAgentNexus._simulate_gap_detection",
+    "LOGOSAgentNexus._handle_process_linguistics",
+    "LOGOSAgentNexus._simulate_linguistic_processing",
+    "LOGOSAgentNexus._handle_coordinate_protocols",
+    "LOGOSAgentNexus._handle_manage_goals",
+    "LOGOSAgentNexus._handle_allocate_resources",
+    "LOGOSAgentNexus._handle_get_agent_status",
+    "LOGOSAgentNexus._protocol_specific_security_validation",
+    "LOGOSAgentNexus._protocol_specific_activation",
+    "LOGOSAgentNexus._protocol_specific_deactivation",
+    "LOGOSAgentNexus._route_to_protocol_core",
+    "LOGOSAgentNexus._protocol_specific_smoke_test",
+    "_handle_causal_planning",
+    "_handle_strategic_planning",
+    "_handle_goal_decomposition",
+    "_handle_detect_gaps",
+    "_simulate_gap_detection",
+    "_handle_process_linguistics",
+    "_simulate_linguistic_processing",
+    "_handle_coordinate_protocols",
+    "_handle_manage_goals",
+    "_handle_allocate_resources",
+    "_handle_get_agent_status"
+  ],
+  "invariant_semantics": {},
+  "divergent_semantics": {
+    "semantic_tags": {
+      "SCPMode": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ModalChainType": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "CognitiveSystemType": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "CognitiveRequest": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "CognitiveResult": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus.process_agent_request": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._handle_process_modal_chains": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._simulate_modal_processing": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._handle_fractal_analysis": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._handle_meta_reasoning": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._handle_enhance_cognition": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._handle_process_todo": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._handle_get_cognitive_status": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._protocol_specific_security_validation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._protocol_specific_activation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._protocol_specific_deactivation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._route_to_protocol_core": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._protocol_specific_smoke_test": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "process_agent_request": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_process_modal_chains": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_simulate_modal_processing": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_fractal_analysis": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_meta_reasoning": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_enhance_cognition": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_process_todo": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_get_cognitive_status": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_protocol_specific_security_validation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_protocol_specific_activation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_protocol_specific_deactivation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_route_to_protocol_core": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_protocol_specific_smoke_test": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "BaseNexus": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "AgentRequest": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "NexusResponse": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "AgentType": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ReasoningMode": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "DataRefinementCycle": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ReasoningRequest": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ReasoningResult": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "DataExchangePacket": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "DataBuilder": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "DataBuilder.create_exchange_packet": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "DataBuilder._determine_max_cycles": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "DataBuilder.validate_packet": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "DataBuilder.detect_convergence": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "DataBuilder.evolve_c_values": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "DataBuilder.get_cycle_status": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "create_exchange_packet": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_determine_max_cycles": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "validate_packet": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "detect_convergence": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "evolve_c_values": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "get_cycle_status": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus.process_reasoning_request": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus._process_recursive_refinement": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus._send_to_scp": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus._send_to_agent": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus._process_standard_analysis": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus._process_deep_ontological": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus._process_formal_verification": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus.get_cycle_status": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus.set_max_cycles": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus.approve_cascade_override": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus.receive_request": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus.send_response": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus.get_status": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "process_reasoning_request": [
+        "UNCLASSIFIED"
+      ],
+      "_process_recursive_refinement": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_send_to_scp": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_send_to_agent": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_process_standard_analysis": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_process_deep_ontological": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_process_formal_verification": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "set_max_cycles": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "approve_cascade_override": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "receive_request": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "send_response": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "get_status": [
+        "ENTRYPOINT"
+      ],
+      "dispatch_to_scp": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "dispatch_to_arp": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "RouteDecision": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "RouteDecision.to_dict": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "to_dict": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "decide_route": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ARPWorkOrder": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "build_work_order": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "PlanPacket": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "PlanPacket.to_dict": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "emit_plan_packet": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "EvaluationPacket": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "EvaluationPacket.to_dict": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "emit_evaluation_packet": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "TaskEnvelope": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "load_task": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPWorkOrder": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPResultPacket": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SCPResultPacket.to_dict": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "emit_result_packet": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SMPEnvelope": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "load_smp": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "load_env": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ReasoningAgent": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ReasoningAgent._execute_tool": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ReasoningAgent._format_tool_results": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ReasoningAgent.ask": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_execute_tool": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_format_tool_results": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ask": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "main": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_Readiness": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_evaluate_readiness": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "available": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "readiness_reason": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "readiness_diagnostics": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "get_connector_factory": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "get_uip_integration_plugin": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "uip_prompt_choice": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ConnectorValidationError": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ConnectorMetadata": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ConnectorResponse": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "StaticUIPConnector": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "StaticUIPConnector.handshake": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "StaticUIPConnector.execute": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "handshake": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "execute": [
+        "UNCLASSIFIED"
+      ],
+      "StaticEnhancedUIPConnector": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "StaticEnhancedUIPConnector.collect_telemetry": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "StaticEnhancedUIPConnector.execute": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "collect_telemetry": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "build_standard_connector": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "build_enhanced_connector": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "get_enhanced_uip_integration_plugin": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPMode": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ReasoningComplexity": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._validate_dict_payload": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus.process_agent_request": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._handle_perform_analysis": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._handle_synthesize_response": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._handle_orchestrate_workflow": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._handle_get_status": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._protocol_specific_security_validation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._protocol_specific_activation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._protocol_specific_deactivation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._route_to_protocol_core": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._protocol_specific_smoke_test": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_validate_dict_payload": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_perform_analysis": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_synthesize_response": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_orchestrate_workflow": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_get_status": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._phase_1_gui_systems": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._phase_2_input_processing": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._phase_3_protocol_integration": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._phase_4_response_synthesis": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._execute_component_sequence": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._load_gui_framework": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._load_accessibility_systems": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._load_gesture_recognition": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._establish_arp_channel": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._establish_lap_communication": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._load_message_formatting": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._load_preference_adaptation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations.process_user_interaction": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._step_1_input_capture": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._step_2_input_interpretation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._step_3_context_enrichment": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._step_4_protocol_routing": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._step_5_response_integration": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._step_6_response_synthesis": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._step_7_output_delivery": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations.create_user_session": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations.emergency_shutdown": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations.health_check": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_phase_1_gui_systems": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_phase_2_input_processing": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_phase_3_protocol_integration": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_phase_4_response_synthesis": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_execute_component_sequence": [
+        "ORCHESTRATION"
+      ],
+      "_load_gui_framework": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_load_accessibility_systems": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_load_gesture_recognition": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_establish_arp_channel": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_establish_lap_communication": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_load_message_formatting": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_load_preference_adaptation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "process_user_interaction": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_step_1_input_capture": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_step_2_input_interpretation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_step_3_context_enrichment": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_step_4_protocol_routing": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_step_5_response_integration": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_step_6_response_synthesis": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_step_7_output_delivery": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "create_user_session": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "emergency_shutdown": [
+        "ENTRYPOINT"
+      ],
+      "health_check": [
+        "ENTRYPOINT"
+      ],
+      "ProtocolType": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "NexusLifecycle": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "AgentRequest.to_dict": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "AgentRequest.from_dict": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "from_dict": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "NexusResponse.to_dict": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus.process_agent_request": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus._authenticate_and_classify_agent": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus._classify_agent_type": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus._validate_security_boundaries": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus._protocol_specific_security_validation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus._protocol_specific_activation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus._protocol_specific_deactivation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus._route_to_protocol_core": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus._calculate_processing_time": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus.get_nexus_status": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus.run_smoke_test": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus._test_basic_functionality": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus._test_agent_classification": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus._test_security_boundaries": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus._protocol_specific_smoke_test": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_authenticate_and_classify_agent": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_classify_agent_type": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_validate_security_boundaries": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_calculate_processing_time": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "get_nexus_status": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "run_smoke_test": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_test_basic_functionality": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_test_agent_classification": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_test_security_boundaries": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "create_agent_request": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "validate_nexus_system": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "PlanningType": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "GapType": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LinguisticOperation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "PlanningRequest": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "GapDetectionRequest": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LinguisticRequest": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus.process_agent_request": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._handle_causal_planning": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._handle_strategic_planning": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._handle_goal_decomposition": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._handle_detect_gaps": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._simulate_gap_detection": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._handle_process_linguistics": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._simulate_linguistic_processing": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._handle_coordinate_protocols": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._handle_manage_goals": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._handle_allocate_resources": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._handle_get_agent_status": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._protocol_specific_security_validation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._protocol_specific_activation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._protocol_specific_deactivation": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._route_to_protocol_core": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._protocol_specific_smoke_test": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_causal_planning": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_strategic_planning": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_goal_decomposition": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_detect_gaps": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_simulate_gap_detection": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_process_linguistics": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_simulate_linguistic_processing": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_coordinate_protocols": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_manage_goals": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_allocate_resources": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_handle_get_agent_status": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ]
+    },
+    "operation_type": {
+      "SCPMode": [],
+      "ModalChainType": [],
+      "CognitiveSystemType": [],
+      "CognitiveRequest": [],
+      "CognitiveResult": [],
+      "SCPNexus": [
+        "TRANSFORMATION"
+      ],
+      "SCPNexus.process_agent_request": [
+        "TRANSFORMATION"
+      ],
+      "SCPNexus._handle_process_modal_chains": [
+        "TRANSFORMATION"
+      ],
+      "SCPNexus._simulate_modal_processing": [
+        "TRANSFORMATION"
+      ],
+      "SCPNexus._handle_fractal_analysis": [
+        "TRANSFORMATION"
+      ],
+      "SCPNexus._handle_meta_reasoning": [
+        "TRANSFORMATION"
+      ],
+      "SCPNexus._handle_enhance_cognition": [
+        "TRANSFORMATION"
+      ],
+      "SCPNexus._handle_process_todo": [
+        "TRANSFORMATION"
+      ],
+      "SCPNexus._handle_get_cognitive_status": [
+        "TRANSFORMATION"
+      ],
+      "SCPNexus._protocol_specific_security_validation": [
+        "TRANSFORMATION"
+      ],
+      "SCPNexus._protocol_specific_activation": [],
+      "SCPNexus._protocol_specific_deactivation": [],
+      "SCPNexus._route_to_protocol_core": [
+        "TRANSFORMATION"
+      ],
+      "SCPNexus._protocol_specific_smoke_test": [
+        "TRANSFORMATION"
+      ],
+      "process_agent_request": [
+        "TRANSFORMATION"
+      ],
+      "_handle_process_modal_chains": [
+        "TRANSFORMATION"
+      ],
+      "_simulate_modal_processing": [
+        "TRANSFORMATION"
+      ],
+      "_handle_fractal_analysis": [
+        "TRANSFORMATION"
+      ],
+      "_handle_meta_reasoning": [
+        "TRANSFORMATION"
+      ],
+      "_handle_enhance_cognition": [
+        "TRANSFORMATION"
+      ],
+      "_handle_process_todo": [
+        "TRANSFORMATION"
+      ],
+      "_handle_get_cognitive_status": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_security_validation": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_activation": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_deactivation": [
+        "TRANSFORMATION"
+      ],
+      "_route_to_protocol_core": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_smoke_test": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus": [
+        "TRANSFORMATION"
+      ],
+      "AgentRequest": [
+        "TRANSFORMATION"
+      ],
+      "NexusResponse": [
+        "TRANSFORMATION"
+      ],
+      "AgentType": [],
+      "ReasoningMode": [],
+      "DataRefinementCycle": [],
+      "ReasoningRequest": [],
+      "ReasoningResult": [],
+      "DataExchangePacket": [],
+      "DataBuilder": [
+        "TRANSFORMATION"
+      ],
+      "DataBuilder.create_exchange_packet": [
+        "TRANSFORMATION"
+      ],
+      "DataBuilder._determine_max_cycles": [
+        "TRANSFORMATION"
+      ],
+      "DataBuilder.validate_packet": [
+        "TRANSFORMATION"
+      ],
+      "DataBuilder.detect_convergence": [
+        "TRANSFORMATION"
+      ],
+      "DataBuilder.evolve_c_values": [
+        "TRANSFORMATION"
+      ],
+      "DataBuilder.get_cycle_status": [
+        "TRANSFORMATION"
+      ],
+      "create_exchange_packet": [
+        "TRANSFORMATION"
+      ],
+      "_determine_max_cycles": [
+        "TRANSFORMATION"
+      ],
+      "validate_packet": [
+        "TRANSFORMATION"
+      ],
+      "detect_convergence": [
+        "TRANSFORMATION"
+      ],
+      "evolve_c_values": [
+        "TRANSFORMATION"
+      ],
+      "get_cycle_status": [
+        "TRANSFORMATION"
+      ],
+      "ARPNexus": [
+        "TRANSFORMATION"
+      ],
+      "ARPNexus.process_reasoning_request": [
+        "TRANSFORMATION"
+      ],
+      "ARPNexus._process_recursive_refinement": [
+        "TRANSFORMATION"
+      ],
+      "ARPNexus._send_to_scp": [
+        "TRANSFORMATION"
+      ],
+      "ARPNexus._send_to_agent": [
+        "TRANSFORMATION"
+      ],
+      "ARPNexus._process_standard_analysis": [
+        "TRANSFORMATION"
+      ],
+      "ARPNexus._process_deep_ontological": [
+        "TRANSFORMATION"
+      ],
+      "ARPNexus._process_formal_verification": [
+        "TRANSFORMATION"
+      ],
+      "ARPNexus.get_cycle_status": [
+        "TRANSFORMATION"
+      ],
+      "ARPNexus.set_max_cycles": [
+        "TRANSFORMATION"
+      ],
+      "ARPNexus.approve_cascade_override": [
+        "TRANSFORMATION"
+      ],
+      "ARPNexus.receive_request": [
+        "TRANSFORMATION"
+      ],
+      "ARPNexus.send_response": [
+        "TRANSFORMATION"
+      ],
+      "ARPNexus.get_status": [
+        "TRANSFORMATION"
+      ],
+      "process_reasoning_request": [
+        "TRANSFORMATION"
+      ],
+      "_process_recursive_refinement": [
+        "TRANSFORMATION"
+      ],
+      "_send_to_scp": [
+        "TRANSFORMATION"
+      ],
+      "_send_to_agent": [
+        "TRANSFORMATION"
+      ],
+      "_process_standard_analysis": [
+        "TRANSFORMATION"
+      ],
+      "_process_deep_ontological": [
+        "TRANSFORMATION"
+      ],
+      "_process_formal_verification": [
+        "TRANSFORMATION"
+      ],
+      "set_max_cycles": [
+        "TRANSFORMATION"
+      ],
+      "approve_cascade_override": [
+        "TRANSFORMATION"
+      ],
+      "receive_request": [
+        "TRANSFORMATION"
+      ],
+      "send_response": [
+        "TRANSFORMATION"
+      ],
+      "get_status": [
+        "TRANSFORMATION"
+      ],
+      "dispatch_to_scp": [
+        "TRANSFORMATION"
+      ],
+      "dispatch_to_arp": [
+        "TRANSFORMATION"
+      ],
+      "RouteDecision": [
+        "TRANSFORMATION"
+      ],
+      "RouteDecision.to_dict": [
+        "TRANSFORMATION"
+      ],
+      "to_dict": [
+        "TRANSFORMATION"
+      ],
+      "decide_route": [
+        "TRANSFORMATION"
+      ],
+      "ARPWorkOrder": [],
+      "build_work_order": [
+        "TRANSFORMATION"
+      ],
+      "PlanPacket": [
+        "TRANSFORMATION"
+      ],
+      "PlanPacket.to_dict": [
+        "TRANSFORMATION"
+      ],
+      "emit_plan_packet": [
+        "TRANSFORMATION"
+      ],
+      "EvaluationPacket": [
+        "TRANSFORMATION"
+      ],
+      "EvaluationPacket.to_dict": [
+        "TRANSFORMATION"
+      ],
+      "emit_evaluation_packet": [
+        "TRANSFORMATION"
+      ],
+      "TaskEnvelope": [],
+      "load_task": [
+        "TRANSFORMATION"
+      ],
+      "SCPWorkOrder": [],
+      "SCPResultPacket": [
+        "TRANSFORMATION"
+      ],
+      "SCPResultPacket.to_dict": [
+        "TRANSFORMATION"
+      ],
+      "emit_result_packet": [
+        "TRANSFORMATION"
+      ],
+      "SMPEnvelope": [],
+      "load_smp": [
+        "TRANSFORMATION"
+      ],
+      "load_env": [],
+      "ReasoningAgent": [
+        "TRANSFORMATION"
+      ],
+      "ReasoningAgent._execute_tool": [
+        "TRANSFORMATION"
+      ],
+      "ReasoningAgent._format_tool_results": [
+        "TRANSFORMATION"
+      ],
+      "ReasoningAgent.ask": [
+        "TRANSFORMATION"
+      ],
+      "_execute_tool": [
+        "TRANSFORMATION"
+      ],
+      "_format_tool_results": [
+        "TRANSFORMATION"
+      ],
+      "ask": [
+        "TRANSFORMATION"
+      ],
+      "main": [
+        "TRANSFORMATION"
+      ],
+      "_Readiness": [],
+      "_evaluate_readiness": [
+        "TRANSFORMATION"
+      ],
+      "available": [
+        "TRANSFORMATION"
+      ],
+      "readiness_reason": [
+        "TRANSFORMATION"
+      ],
+      "readiness_diagnostics": [
+        "TRANSFORMATION"
+      ],
+      "get_connector_factory": [
+        "TRANSFORMATION"
+      ],
+      "get_uip_integration_plugin": [
+        "TRANSFORMATION"
+      ],
+      "uip_prompt_choice": [
+        "TRANSFORMATION"
+      ],
+      "ConnectorValidationError": [],
+      "ConnectorMetadata": [],
+      "ConnectorResponse": [],
+      "StaticUIPConnector": [
+        "TRANSFORMATION"
+      ],
+      "StaticUIPConnector.handshake": [
+        "TRANSFORMATION"
+      ],
+      "StaticUIPConnector.execute": [
+        "TRANSFORMATION"
+      ],
+      "handshake": [
+        "TRANSFORMATION"
+      ],
+      "execute": [
+        "TRANSFORMATION"
+      ],
+      "StaticEnhancedUIPConnector": [
+        "TRANSFORMATION"
+      ],
+      "StaticEnhancedUIPConnector.collect_telemetry": [
+        "TRANSFORMATION"
+      ],
+      "StaticEnhancedUIPConnector.execute": [
+        "TRANSFORMATION"
+      ],
+      "collect_telemetry": [
+        "TRANSFORMATION"
+      ],
+      "build_standard_connector": [
+        "TRANSFORMATION"
+      ],
+      "build_enhanced_connector": [
+        "TRANSFORMATION"
+      ],
+      "get_enhanced_uip_integration_plugin": [
+        "TRANSFORMATION"
+      ],
+      "UIPMode": [],
+      "ReasoningComplexity": [],
+      "UIPNexus": [
+        "TRANSFORMATION"
+      ],
+      "UIPNexus._validate_dict_payload": [
+        "TRANSFORMATION"
+      ],
+      "UIPNexus.process_agent_request": [
+        "TRANSFORMATION"
+      ],
+      "UIPNexus._handle_perform_analysis": [
+        "TRANSFORMATION"
+      ],
+      "UIPNexus._handle_synthesize_response": [
+        "TRANSFORMATION"
+      ],
+      "UIPNexus._handle_orchestrate_workflow": [
+        "TRANSFORMATION"
+      ],
+      "UIPNexus._handle_get_status": [
+        "TRANSFORMATION"
+      ],
+      "UIPNexus._protocol_specific_security_validation": [
+        "TRANSFORMATION"
+      ],
+      "UIPNexus._protocol_specific_activation": [],
+      "UIPNexus._protocol_specific_deactivation": [],
+      "UIPNexus._route_to_protocol_core": [
+        "TRANSFORMATION"
+      ],
+      "UIPNexus._protocol_specific_smoke_test": [
+        "TRANSFORMATION"
+      ],
+      "_validate_dict_payload": [
+        "TRANSFORMATION"
+      ],
+      "_handle_perform_analysis": [
+        "TRANSFORMATION"
+      ],
+      "_handle_synthesize_response": [
+        "TRANSFORMATION"
+      ],
+      "_handle_orchestrate_workflow": [
+        "TRANSFORMATION"
+      ],
+      "_handle_get_status": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._phase_1_gui_systems": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._phase_2_input_processing": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._phase_3_protocol_integration": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._phase_4_response_synthesis": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._execute_component_sequence": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._load_gui_framework": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._load_accessibility_systems": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._load_gesture_recognition": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._establish_arp_channel": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._establish_lap_communication": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._load_message_formatting": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._load_preference_adaptation": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations.process_user_interaction": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._step_1_input_capture": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._step_2_input_interpretation": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._step_3_context_enrichment": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._step_4_protocol_routing": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._step_5_response_integration": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._step_6_response_synthesis": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._step_7_output_delivery": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations.create_user_session": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations.emergency_shutdown": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations.health_check": [
+        "TRANSFORMATION"
+      ],
+      "_phase_1_gui_systems": [
+        "TRANSFORMATION"
+      ],
+      "_phase_2_input_processing": [
+        "TRANSFORMATION"
+      ],
+      "_phase_3_protocol_integration": [
+        "TRANSFORMATION"
+      ],
+      "_phase_4_response_synthesis": [
+        "TRANSFORMATION"
+      ],
+      "_execute_component_sequence": [
+        "TRANSFORMATION"
+      ],
+      "_load_gui_framework": [
+        "TRANSFORMATION"
+      ],
+      "_load_accessibility_systems": [
+        "TRANSFORMATION"
+      ],
+      "_load_gesture_recognition": [
+        "TRANSFORMATION"
+      ],
+      "_establish_arp_channel": [
+        "TRANSFORMATION"
+      ],
+      "_establish_lap_communication": [
+        "TRANSFORMATION"
+      ],
+      "_load_message_formatting": [
+        "TRANSFORMATION"
+      ],
+      "_load_preference_adaptation": [
+        "TRANSFORMATION"
+      ],
+      "process_user_interaction": [
+        "TRANSFORMATION"
+      ],
+      "_step_1_input_capture": [
+        "TRANSFORMATION"
+      ],
+      "_step_2_input_interpretation": [
+        "TRANSFORMATION"
+      ],
+      "_step_3_context_enrichment": [
+        "TRANSFORMATION"
+      ],
+      "_step_4_protocol_routing": [
+        "TRANSFORMATION"
+      ],
+      "_step_5_response_integration": [
+        "TRANSFORMATION"
+      ],
+      "_step_6_response_synthesis": [
+        "TRANSFORMATION"
+      ],
+      "_step_7_output_delivery": [
+        "TRANSFORMATION"
+      ],
+      "create_user_session": [
+        "TRANSFORMATION"
+      ],
+      "emergency_shutdown": [],
+      "health_check": [
+        "TRANSFORMATION"
+      ],
+      "ProtocolType": [],
+      "NexusLifecycle": [],
+      "AgentRequest.to_dict": [
+        "TRANSFORMATION"
+      ],
+      "AgentRequest.from_dict": [
+        "TRANSFORMATION"
+      ],
+      "from_dict": [
+        "TRANSFORMATION"
+      ],
+      "NexusResponse.to_dict": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus.process_agent_request": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus._authenticate_and_classify_agent": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus._classify_agent_type": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus._validate_security_boundaries": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus._protocol_specific_security_validation": [],
+      "BaseNexus._protocol_specific_activation": [],
+      "BaseNexus._protocol_specific_deactivation": [],
+      "BaseNexus._route_to_protocol_core": [],
+      "BaseNexus._calculate_processing_time": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus.get_nexus_status": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus.run_smoke_test": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus._test_basic_functionality": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus._test_agent_classification": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus._test_security_boundaries": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus._protocol_specific_smoke_test": [],
+      "_authenticate_and_classify_agent": [
+        "TRANSFORMATION"
+      ],
+      "_classify_agent_type": [
+        "TRANSFORMATION"
+      ],
+      "_validate_security_boundaries": [
+        "TRANSFORMATION"
+      ],
+      "_calculate_processing_time": [
+        "TRANSFORMATION"
+      ],
+      "get_nexus_status": [
+        "TRANSFORMATION"
+      ],
+      "run_smoke_test": [
+        "TRANSFORMATION"
+      ],
+      "_test_basic_functionality": [
+        "TRANSFORMATION"
+      ],
+      "_test_agent_classification": [
+        "TRANSFORMATION"
+      ],
+      "_test_security_boundaries": [
+        "TRANSFORMATION"
+      ],
+      "create_agent_request": [
+        "TRANSFORMATION"
+      ],
+      "validate_nexus_system": [
+        "TRANSFORMATION"
+      ],
+      "PlanningType": [],
+      "GapType": [],
+      "LinguisticOperation": [],
+      "PlanningRequest": [],
+      "GapDetectionRequest": [],
+      "LinguisticRequest": [],
+      "LOGOSAgentNexus": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus.process_agent_request": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus._handle_causal_planning": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus._handle_strategic_planning": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus._handle_goal_decomposition": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus._handle_detect_gaps": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus._simulate_gap_detection": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus._handle_process_linguistics": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus._simulate_linguistic_processing": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus._handle_coordinate_protocols": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus._handle_manage_goals": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus._handle_allocate_resources": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus._handle_get_agent_status": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus._protocol_specific_security_validation": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus._protocol_specific_activation": [],
+      "LOGOSAgentNexus._protocol_specific_deactivation": [],
+      "LOGOSAgentNexus._route_to_protocol_core": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus._protocol_specific_smoke_test": [
+        "TRANSFORMATION"
+      ],
+      "_handle_causal_planning": [
+        "TRANSFORMATION"
+      ],
+      "_handle_strategic_planning": [
+        "TRANSFORMATION"
+      ],
+      "_handle_goal_decomposition": [
+        "TRANSFORMATION"
+      ],
+      "_handle_detect_gaps": [
+        "TRANSFORMATION"
+      ],
+      "_simulate_gap_detection": [
+        "TRANSFORMATION"
+      ],
+      "_handle_process_linguistics": [
+        "TRANSFORMATION"
+      ],
+      "_simulate_linguistic_processing": [
+        "TRANSFORMATION"
+      ],
+      "_handle_coordinate_protocols": [
+        "TRANSFORMATION"
+      ],
+      "_handle_manage_goals": [
+        "TRANSFORMATION"
+      ],
+      "_handle_allocate_resources": [
+        "TRANSFORMATION"
+      ],
+      "_handle_get_agent_status": [
+        "TRANSFORMATION"
+      ]
+    },
+    "data_role": {
+      "SCPMode": [],
+      "ModalChainType": [],
+      "CognitiveSystemType": [],
+      "CognitiveRequest": [],
+      "CognitiveResult": [],
+      "SCPNexus": [],
+      "SCPNexus.process_agent_request": [],
+      "SCPNexus._handle_process_modal_chains": [],
+      "SCPNexus._simulate_modal_processing": [],
+      "SCPNexus._handle_fractal_analysis": [],
+      "SCPNexus._handle_meta_reasoning": [],
+      "SCPNexus._handle_enhance_cognition": [],
+      "SCPNexus._handle_process_todo": [],
+      "SCPNexus._handle_get_cognitive_status": [],
+      "SCPNexus._protocol_specific_security_validation": [],
+      "SCPNexus._protocol_specific_activation": [],
+      "SCPNexus._protocol_specific_deactivation": [],
+      "SCPNexus._route_to_protocol_core": [],
+      "SCPNexus._protocol_specific_smoke_test": [],
+      "process_agent_request": [],
+      "_handle_process_modal_chains": [],
+      "_simulate_modal_processing": [],
+      "_handle_fractal_analysis": [],
+      "_handle_meta_reasoning": [],
+      "_handle_enhance_cognition": [],
+      "_handle_process_todo": [],
+      "_handle_get_cognitive_status": [],
+      "_protocol_specific_security_validation": [],
+      "_protocol_specific_activation": [],
+      "_protocol_specific_deactivation": [],
+      "_route_to_protocol_core": [],
+      "_protocol_specific_smoke_test": [],
+      "BaseNexus": [],
+      "AgentRequest": [],
+      "NexusResponse": [],
+      "AgentType": [],
+      "ReasoningMode": [],
+      "DataRefinementCycle": [],
+      "ReasoningRequest": [],
+      "ReasoningResult": [],
+      "DataExchangePacket": [
+        "SMP"
+      ],
+      "DataBuilder": [],
+      "DataBuilder.create_exchange_packet": [
+        "SMP"
+      ],
+      "DataBuilder._determine_max_cycles": [],
+      "DataBuilder.validate_packet": [
+        "SMP"
+      ],
+      "DataBuilder.detect_convergence": [],
+      "DataBuilder.evolve_c_values": [],
+      "DataBuilder.get_cycle_status": [],
+      "create_exchange_packet": [
+        "SMP"
+      ],
+      "_determine_max_cycles": [],
+      "validate_packet": [
+        "SMP"
+      ],
+      "detect_convergence": [],
+      "evolve_c_values": [],
+      "get_cycle_status": [],
+      "ARPNexus": [],
+      "ARPNexus.process_reasoning_request": [],
+      "ARPNexus._process_recursive_refinement": [],
+      "ARPNexus._send_to_scp": [],
+      "ARPNexus._send_to_agent": [],
+      "ARPNexus._process_standard_analysis": [],
+      "ARPNexus._process_deep_ontological": [],
+      "ARPNexus._process_formal_verification": [],
+      "ARPNexus.get_cycle_status": [],
+      "ARPNexus.set_max_cycles": [],
+      "ARPNexus.approve_cascade_override": [],
+      "ARPNexus.receive_request": [],
+      "ARPNexus.send_response": [],
+      "ARPNexus.get_status": [],
+      "process_reasoning_request": [],
+      "_process_recursive_refinement": [],
+      "_send_to_scp": [],
+      "_send_to_agent": [],
+      "_process_standard_analysis": [],
+      "_process_deep_ontological": [],
+      "_process_formal_verification": [],
+      "set_max_cycles": [],
+      "approve_cascade_override": [],
+      "receive_request": [],
+      "send_response": [],
+      "get_status": [],
+      "dispatch_to_scp": [],
+      "dispatch_to_arp": [],
+      "RouteDecision": [],
+      "RouteDecision.to_dict": [],
+      "to_dict": [],
+      "decide_route": [],
+      "ARPWorkOrder": [],
+      "build_work_order": [],
+      "PlanPacket": [
+        "SMP"
+      ],
+      "PlanPacket.to_dict": [
+        "SMP"
+      ],
+      "emit_plan_packet": [
+        "SMP"
+      ],
+      "EvaluationPacket": [
+        "SMP"
+      ],
+      "EvaluationPacket.to_dict": [
+        "SMP"
+      ],
+      "emit_evaluation_packet": [
+        "SMP"
+      ],
+      "TaskEnvelope": [],
+      "load_task": [],
+      "SCPWorkOrder": [],
+      "SCPResultPacket": [
+        "SMP"
+      ],
+      "SCPResultPacket.to_dict": [
+        "SMP"
+      ],
+      "emit_result_packet": [
+        "SMP"
+      ],
+      "SMPEnvelope": [
+        "SMP"
+      ],
+      "load_smp": [
+        "SMP"
+      ],
+      "load_env": [],
+      "ReasoningAgent": [],
+      "ReasoningAgent._execute_tool": [],
+      "ReasoningAgent._format_tool_results": [],
+      "ReasoningAgent.ask": [],
+      "_execute_tool": [],
+      "_format_tool_results": [],
+      "ask": [],
+      "main": [],
+      "_Readiness": [],
+      "_evaluate_readiness": [],
+      "available": [],
+      "readiness_reason": [],
+      "readiness_diagnostics": [],
+      "get_connector_factory": [],
+      "get_uip_integration_plugin": [],
+      "uip_prompt_choice": [],
+      "ConnectorValidationError": [],
+      "ConnectorMetadata": [],
+      "ConnectorResponse": [],
+      "StaticUIPConnector": [],
+      "StaticUIPConnector.handshake": [],
+      "StaticUIPConnector.execute": [],
+      "handshake": [],
+      "execute": [],
+      "StaticEnhancedUIPConnector": [],
+      "StaticEnhancedUIPConnector.collect_telemetry": [],
+      "StaticEnhancedUIPConnector.execute": [],
+      "collect_telemetry": [],
+      "build_standard_connector": [],
+      "build_enhanced_connector": [],
+      "get_enhanced_uip_integration_plugin": [],
+      "UIPMode": [],
+      "ReasoningComplexity": [],
+      "UIPNexus": [],
+      "UIPNexus._validate_dict_payload": [],
+      "UIPNexus.process_agent_request": [],
+      "UIPNexus._handle_perform_analysis": [],
+      "UIPNexus._handle_synthesize_response": [],
+      "UIPNexus._handle_orchestrate_workflow": [],
+      "UIPNexus._handle_get_status": [],
+      "UIPNexus._protocol_specific_security_validation": [],
+      "UIPNexus._protocol_specific_activation": [],
+      "UIPNexus._protocol_specific_deactivation": [],
+      "UIPNexus._route_to_protocol_core": [],
+      "UIPNexus._protocol_specific_smoke_test": [],
+      "_validate_dict_payload": [],
+      "_handle_perform_analysis": [],
+      "_handle_synthesize_response": [],
+      "_handle_orchestrate_workflow": [],
+      "_handle_get_status": [],
+      "UIPOperations": [],
+      "UIPOperations._phase_1_gui_systems": [],
+      "UIPOperations._phase_2_input_processing": [],
+      "UIPOperations._phase_3_protocol_integration": [],
+      "UIPOperations._phase_4_response_synthesis": [],
+      "UIPOperations._execute_component_sequence": [],
+      "UIPOperations._load_gui_framework": [],
+      "UIPOperations._load_accessibility_systems": [],
+      "UIPOperations._load_gesture_recognition": [],
+      "UIPOperations._establish_arp_channel": [],
+      "UIPOperations._establish_lap_communication": [],
+      "UIPOperations._load_message_formatting": [],
+      "UIPOperations._load_preference_adaptation": [],
+      "UIPOperations.process_user_interaction": [],
+      "UIPOperations._step_1_input_capture": [],
+      "UIPOperations._step_2_input_interpretation": [],
+      "UIPOperations._step_3_context_enrichment": [],
+      "UIPOperations._step_4_protocol_routing": [],
+      "UIPOperations._step_5_response_integration": [],
+      "UIPOperations._step_6_response_synthesis": [],
+      "UIPOperations._step_7_output_delivery": [],
+      "UIPOperations.create_user_session": [],
+      "UIPOperations.emergency_shutdown": [],
+      "UIPOperations.health_check": [],
+      "_phase_1_gui_systems": [],
+      "_phase_2_input_processing": [],
+      "_phase_3_protocol_integration": [],
+      "_phase_4_response_synthesis": [],
+      "_execute_component_sequence": [],
+      "_load_gui_framework": [],
+      "_load_accessibility_systems": [],
+      "_load_gesture_recognition": [],
+      "_establish_arp_channel": [],
+      "_establish_lap_communication": [],
+      "_load_message_formatting": [],
+      "_load_preference_adaptation": [],
+      "process_user_interaction": [],
+      "_step_1_input_capture": [],
+      "_step_2_input_interpretation": [],
+      "_step_3_context_enrichment": [],
+      "_step_4_protocol_routing": [],
+      "_step_5_response_integration": [],
+      "_step_6_response_synthesis": [],
+      "_step_7_output_delivery": [],
+      "create_user_session": [],
+      "emergency_shutdown": [],
+      "health_check": [],
+      "ProtocolType": [],
+      "NexusLifecycle": [],
+      "AgentRequest.to_dict": [],
+      "AgentRequest.from_dict": [],
+      "from_dict": [],
+      "NexusResponse.to_dict": [],
+      "BaseNexus.process_agent_request": [],
+      "BaseNexus._authenticate_and_classify_agent": [],
+      "BaseNexus._classify_agent_type": [],
+      "BaseNexus._validate_security_boundaries": [],
+      "BaseNexus._protocol_specific_security_validation": [],
+      "BaseNexus._protocol_specific_activation": [],
+      "BaseNexus._protocol_specific_deactivation": [],
+      "BaseNexus._route_to_protocol_core": [],
+      "BaseNexus._calculate_processing_time": [],
+      "BaseNexus.get_nexus_status": [],
+      "BaseNexus.run_smoke_test": [],
+      "BaseNexus._test_basic_functionality": [],
+      "BaseNexus._test_agent_classification": [],
+      "BaseNexus._test_security_boundaries": [],
+      "BaseNexus._protocol_specific_smoke_test": [],
+      "_authenticate_and_classify_agent": [],
+      "_classify_agent_type": [],
+      "_validate_security_boundaries": [],
+      "_calculate_processing_time": [],
+      "get_nexus_status": [],
+      "run_smoke_test": [],
+      "_test_basic_functionality": [],
+      "_test_agent_classification": [],
+      "_test_security_boundaries": [],
+      "create_agent_request": [],
+      "validate_nexus_system": [],
+      "PlanningType": [],
+      "GapType": [],
+      "LinguisticOperation": [],
+      "PlanningRequest": [],
+      "GapDetectionRequest": [],
+      "LinguisticRequest": [],
+      "LOGOSAgentNexus": [],
+      "LOGOSAgentNexus.process_agent_request": [],
+      "LOGOSAgentNexus._handle_causal_planning": [],
+      "LOGOSAgentNexus._handle_strategic_planning": [],
+      "LOGOSAgentNexus._handle_goal_decomposition": [],
+      "LOGOSAgentNexus._handle_detect_gaps": [],
+      "LOGOSAgentNexus._simulate_gap_detection": [],
+      "LOGOSAgentNexus._handle_process_linguistics": [],
+      "LOGOSAgentNexus._simulate_linguistic_processing": [],
+      "LOGOSAgentNexus._handle_coordinate_protocols": [],
+      "LOGOSAgentNexus._handle_manage_goals": [],
+      "LOGOSAgentNexus._handle_allocate_resources": [],
+      "LOGOSAgentNexus._handle_get_agent_status": [],
+      "LOGOSAgentNexus._protocol_specific_security_validation": [],
+      "LOGOSAgentNexus._protocol_specific_activation": [],
+      "LOGOSAgentNexus._protocol_specific_deactivation": [],
+      "LOGOSAgentNexus._route_to_protocol_core": [],
+      "LOGOSAgentNexus._protocol_specific_smoke_test": [],
+      "_handle_causal_planning": [],
+      "_handle_strategic_planning": [],
+      "_handle_goal_decomposition": [],
+      "_handle_detect_gaps": [],
+      "_simulate_gap_detection": [],
+      "_handle_process_linguistics": [],
+      "_simulate_linguistic_processing": [],
+      "_handle_coordinate_protocols": [],
+      "_handle_manage_goals": [],
+      "_handle_allocate_resources": [],
+      "_handle_get_agent_status": []
+    },
+    "control_role": {
+      "SCPMode": [
+        "RUNTIME_CONTROL"
+      ],
+      "ModalChainType": [
+        "RUNTIME_CONTROL"
+      ],
+      "CognitiveSystemType": [
+        "RUNTIME_CONTROL"
+      ],
+      "CognitiveRequest": [
+        "RUNTIME_CONTROL"
+      ],
+      "CognitiveResult": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus.process_agent_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._handle_process_modal_chains": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._simulate_modal_processing": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._handle_fractal_analysis": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._handle_meta_reasoning": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._handle_enhance_cognition": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._handle_process_todo": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._handle_get_cognitive_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._protocol_specific_security_validation": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._protocol_specific_activation": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._protocol_specific_deactivation": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._route_to_protocol_core": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._protocol_specific_smoke_test": [
+        "RUNTIME_CONTROL"
+      ],
+      "process_agent_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_process_modal_chains": [
+        "RUNTIME_CONTROL"
+      ],
+      "_simulate_modal_processing": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_fractal_analysis": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_meta_reasoning": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_enhance_cognition": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_process_todo": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_get_cognitive_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_security_validation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_activation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_deactivation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_route_to_protocol_core": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_smoke_test": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus": [
+        "RUNTIME_CONTROL"
+      ],
+      "AgentRequest": [
+        "RUNTIME_CONTROL"
+      ],
+      "NexusResponse": [
+        "RUNTIME_CONTROL"
+      ],
+      "AgentType": [
+        "RUNTIME_CONTROL"
+      ],
+      "ReasoningMode": [
+        "RUNTIME_CONTROL"
+      ],
+      "DataRefinementCycle": [
+        "RUNTIME_CONTROL"
+      ],
+      "ReasoningRequest": [
+        "RUNTIME_CONTROL"
+      ],
+      "ReasoningResult": [
+        "RUNTIME_CONTROL"
+      ],
+      "DataExchangePacket": [
+        "RUNTIME_CONTROL"
+      ],
+      "DataBuilder": [
+        "RUNTIME_CONTROL"
+      ],
+      "DataBuilder.create_exchange_packet": [
+        "RUNTIME_CONTROL"
+      ],
+      "DataBuilder._determine_max_cycles": [
+        "RUNTIME_CONTROL"
+      ],
+      "DataBuilder.validate_packet": [
+        "RUNTIME_CONTROL"
+      ],
+      "DataBuilder.detect_convergence": [
+        "RUNTIME_CONTROL"
+      ],
+      "DataBuilder.evolve_c_values": [
+        "RUNTIME_CONTROL"
+      ],
+      "DataBuilder.get_cycle_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "create_exchange_packet": [
+        "RUNTIME_CONTROL"
+      ],
+      "_determine_max_cycles": [
+        "RUNTIME_CONTROL"
+      ],
+      "validate_packet": [
+        "RUNTIME_CONTROL"
+      ],
+      "detect_convergence": [
+        "RUNTIME_CONTROL"
+      ],
+      "evolve_c_values": [
+        "RUNTIME_CONTROL"
+      ],
+      "get_cycle_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus": [
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus.process_reasoning_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus._process_recursive_refinement": [
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus._send_to_scp": [
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus._send_to_agent": [
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus._process_standard_analysis": [
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus._process_deep_ontological": [
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus._process_formal_verification": [
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus.get_cycle_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus.set_max_cycles": [
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus.approve_cascade_override": [
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus.receive_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus.send_response": [
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus.get_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "process_reasoning_request": [],
+      "_process_recursive_refinement": [
+        "RUNTIME_CONTROL"
+      ],
+      "_send_to_scp": [
+        "RUNTIME_CONTROL"
+      ],
+      "_send_to_agent": [
+        "RUNTIME_CONTROL"
+      ],
+      "_process_standard_analysis": [
+        "RUNTIME_CONTROL"
+      ],
+      "_process_deep_ontological": [
+        "RUNTIME_CONTROL"
+      ],
+      "_process_formal_verification": [
+        "RUNTIME_CONTROL"
+      ],
+      "set_max_cycles": [
+        "RUNTIME_CONTROL"
+      ],
+      "approve_cascade_override": [
+        "RUNTIME_CONTROL"
+      ],
+      "receive_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "send_response": [
+        "RUNTIME_CONTROL"
+      ],
+      "get_status": [
+        "BOOT_CONTROL"
+      ],
+      "dispatch_to_scp": [
+        "RUNTIME_CONTROL"
+      ],
+      "dispatch_to_arp": [
+        "RUNTIME_CONTROL"
+      ],
+      "RouteDecision": [
+        "RUNTIME_CONTROL"
+      ],
+      "RouteDecision.to_dict": [
+        "RUNTIME_CONTROL"
+      ],
+      "to_dict": [
+        "RUNTIME_CONTROL"
+      ],
+      "decide_route": [
+        "RUNTIME_CONTROL"
+      ],
+      "ARPWorkOrder": [
+        "RUNTIME_CONTROL"
+      ],
+      "build_work_order": [
+        "RUNTIME_CONTROL"
+      ],
+      "PlanPacket": [
+        "RUNTIME_CONTROL"
+      ],
+      "PlanPacket.to_dict": [
+        "RUNTIME_CONTROL"
+      ],
+      "emit_plan_packet": [
+        "RUNTIME_CONTROL"
+      ],
+      "EvaluationPacket": [
+        "RUNTIME_CONTROL"
+      ],
+      "EvaluationPacket.to_dict": [
+        "RUNTIME_CONTROL"
+      ],
+      "emit_evaluation_packet": [
+        "RUNTIME_CONTROL"
+      ],
+      "TaskEnvelope": [
+        "RUNTIME_CONTROL"
+      ],
+      "load_task": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPWorkOrder": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPResultPacket": [
+        "RUNTIME_CONTROL"
+      ],
+      "SCPResultPacket.to_dict": [
+        "RUNTIME_CONTROL"
+      ],
+      "emit_result_packet": [
+        "RUNTIME_CONTROL"
+      ],
+      "SMPEnvelope": [
+        "RUNTIME_CONTROL"
+      ],
+      "load_smp": [
+        "RUNTIME_CONTROL"
+      ],
+      "load_env": [
+        "RUNTIME_CONTROL"
+      ],
+      "ReasoningAgent": [
+        "RUNTIME_CONTROL"
+      ],
+      "ReasoningAgent._execute_tool": [
+        "RUNTIME_CONTROL"
+      ],
+      "ReasoningAgent._format_tool_results": [
+        "RUNTIME_CONTROL"
+      ],
+      "ReasoningAgent.ask": [
+        "RUNTIME_CONTROL"
+      ],
+      "_execute_tool": [
+        "RUNTIME_CONTROL"
+      ],
+      "_format_tool_results": [
+        "RUNTIME_CONTROL"
+      ],
+      "ask": [
+        "RUNTIME_CONTROL"
+      ],
+      "main": [
+        "BOOT_CONTROL"
+      ],
+      "_Readiness": [
+        "RUNTIME_CONTROL"
+      ],
+      "_evaluate_readiness": [
+        "RUNTIME_CONTROL"
+      ],
+      "available": [],
+      "readiness_reason": [
+        "RUNTIME_CONTROL"
+      ],
+      "readiness_diagnostics": [
+        "RUNTIME_CONTROL"
+      ],
+      "get_connector_factory": [
+        "RUNTIME_CONTROL"
+      ],
+      "get_uip_integration_plugin": [
+        "RUNTIME_CONTROL"
+      ],
+      "uip_prompt_choice": [
+        "RUNTIME_CONTROL"
+      ],
+      "ConnectorValidationError": [
+        "RUNTIME_CONTROL"
+      ],
+      "ConnectorMetadata": [
+        "RUNTIME_CONTROL"
+      ],
+      "ConnectorResponse": [
+        "RUNTIME_CONTROL"
+      ],
+      "StaticUIPConnector": [
+        "RUNTIME_CONTROL"
+      ],
+      "StaticUIPConnector.handshake": [
+        "RUNTIME_CONTROL"
+      ],
+      "StaticUIPConnector.execute": [
+        "RUNTIME_CONTROL"
+      ],
+      "handshake": [
+        "RUNTIME_CONTROL"
+      ],
+      "execute": [],
+      "StaticEnhancedUIPConnector": [
+        "RUNTIME_CONTROL"
+      ],
+      "StaticEnhancedUIPConnector.collect_telemetry": [
+        "RUNTIME_CONTROL"
+      ],
+      "StaticEnhancedUIPConnector.execute": [
+        "RUNTIME_CONTROL"
+      ],
+      "collect_telemetry": [
+        "RUNTIME_CONTROL"
+      ],
+      "build_standard_connector": [
+        "RUNTIME_CONTROL"
+      ],
+      "build_enhanced_connector": [
+        "RUNTIME_CONTROL"
+      ],
+      "get_enhanced_uip_integration_plugin": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPMode": [
+        "RUNTIME_CONTROL"
+      ],
+      "ReasoningComplexity": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._validate_dict_payload": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus.process_agent_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._handle_perform_analysis": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._handle_synthesize_response": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._handle_orchestrate_workflow": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._handle_get_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._protocol_specific_security_validation": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._protocol_specific_activation": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._protocol_specific_deactivation": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._route_to_protocol_core": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._protocol_specific_smoke_test": [
+        "RUNTIME_CONTROL"
+      ],
+      "_validate_dict_payload": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_perform_analysis": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_synthesize_response": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_orchestrate_workflow": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_get_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._phase_1_gui_systems": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._phase_2_input_processing": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._phase_3_protocol_integration": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._phase_4_response_synthesis": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._execute_component_sequence": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._load_gui_framework": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._load_accessibility_systems": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._load_gesture_recognition": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._establish_arp_channel": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._establish_lap_communication": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._load_message_formatting": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._load_preference_adaptation": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations.process_user_interaction": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._step_1_input_capture": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._step_2_input_interpretation": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._step_3_context_enrichment": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._step_4_protocol_routing": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._step_5_response_integration": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._step_6_response_synthesis": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._step_7_output_delivery": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations.create_user_session": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations.emergency_shutdown": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations.health_check": [
+        "RUNTIME_CONTROL"
+      ],
+      "_phase_1_gui_systems": [
+        "RUNTIME_CONTROL"
+      ],
+      "_phase_2_input_processing": [
+        "RUNTIME_CONTROL"
+      ],
+      "_phase_3_protocol_integration": [
+        "RUNTIME_CONTROL"
+      ],
+      "_phase_4_response_synthesis": [
+        "RUNTIME_CONTROL"
+      ],
+      "_execute_component_sequence": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_gui_framework": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_accessibility_systems": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_gesture_recognition": [
+        "RUNTIME_CONTROL"
+      ],
+      "_establish_arp_channel": [
+        "RUNTIME_CONTROL"
+      ],
+      "_establish_lap_communication": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_message_formatting": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_preference_adaptation": [
+        "RUNTIME_CONTROL"
+      ],
+      "process_user_interaction": [
+        "RUNTIME_CONTROL"
+      ],
+      "_step_1_input_capture": [
+        "RUNTIME_CONTROL"
+      ],
+      "_step_2_input_interpretation": [
+        "RUNTIME_CONTROL"
+      ],
+      "_step_3_context_enrichment": [
+        "RUNTIME_CONTROL"
+      ],
+      "_step_4_protocol_routing": [
+        "RUNTIME_CONTROL"
+      ],
+      "_step_5_response_integration": [
+        "RUNTIME_CONTROL"
+      ],
+      "_step_6_response_synthesis": [
+        "RUNTIME_CONTROL"
+      ],
+      "_step_7_output_delivery": [
+        "RUNTIME_CONTROL"
+      ],
+      "create_user_session": [
+        "RUNTIME_CONTROL"
+      ],
+      "emergency_shutdown": [
+        "BOOT_CONTROL"
+      ],
+      "health_check": [
+        "BOOT_CONTROL"
+      ],
+      "ProtocolType": [
+        "RUNTIME_CONTROL"
+      ],
+      "NexusLifecycle": [
+        "RUNTIME_CONTROL"
+      ],
+      "AgentRequest.to_dict": [
+        "RUNTIME_CONTROL"
+      ],
+      "AgentRequest.from_dict": [
+        "RUNTIME_CONTROL"
+      ],
+      "from_dict": [
+        "RUNTIME_CONTROL"
+      ],
+      "NexusResponse.to_dict": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus.process_agent_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus._authenticate_and_classify_agent": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus._classify_agent_type": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus._validate_security_boundaries": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus._protocol_specific_security_validation": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus._protocol_specific_activation": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus._protocol_specific_deactivation": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus._route_to_protocol_core": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus._calculate_processing_time": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus.get_nexus_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus.run_smoke_test": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus._test_basic_functionality": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus._test_agent_classification": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus._test_security_boundaries": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus._protocol_specific_smoke_test": [
+        "RUNTIME_CONTROL"
+      ],
+      "_authenticate_and_classify_agent": [
+        "RUNTIME_CONTROL"
+      ],
+      "_classify_agent_type": [
+        "RUNTIME_CONTROL"
+      ],
+      "_validate_security_boundaries": [
+        "RUNTIME_CONTROL"
+      ],
+      "_calculate_processing_time": [
+        "RUNTIME_CONTROL"
+      ],
+      "get_nexus_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "run_smoke_test": [
+        "RUNTIME_CONTROL"
+      ],
+      "_test_basic_functionality": [
+        "RUNTIME_CONTROL"
+      ],
+      "_test_agent_classification": [
+        "RUNTIME_CONTROL"
+      ],
+      "_test_security_boundaries": [
+        "RUNTIME_CONTROL"
+      ],
+      "create_agent_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "validate_nexus_system": [
+        "RUNTIME_CONTROL"
+      ],
+      "PlanningType": [
+        "RUNTIME_CONTROL"
+      ],
+      "GapType": [
+        "RUNTIME_CONTROL"
+      ],
+      "LinguisticOperation": [
+        "RUNTIME_CONTROL"
+      ],
+      "PlanningRequest": [
+        "RUNTIME_CONTROL"
+      ],
+      "GapDetectionRequest": [
+        "RUNTIME_CONTROL"
+      ],
+      "LinguisticRequest": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus.process_agent_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._handle_causal_planning": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._handle_strategic_planning": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._handle_goal_decomposition": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._handle_detect_gaps": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._simulate_gap_detection": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._handle_process_linguistics": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._simulate_linguistic_processing": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._handle_coordinate_protocols": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._handle_manage_goals": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._handle_allocate_resources": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._handle_get_agent_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._protocol_specific_security_validation": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._protocol_specific_activation": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._protocol_specific_deactivation": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._route_to_protocol_core": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._protocol_specific_smoke_test": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_causal_planning": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_strategic_planning": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_goal_decomposition": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_detect_gaps": [
+        "RUNTIME_CONTROL"
+      ],
+      "_simulate_gap_detection": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_process_linguistics": [
+        "RUNTIME_CONTROL"
+      ],
+      "_simulate_linguistic_processing": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_coordinate_protocols": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_manage_goals": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_allocate_resources": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_get_agent_status": [
+        "RUNTIME_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "SCPMode": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ModalChainType": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "CognitiveSystemType": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "CognitiveRequest": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "CognitiveResult": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus.process_agent_request": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._handle_process_modal_chains": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._simulate_modal_processing": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._handle_fractal_analysis": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._handle_meta_reasoning": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._handle_enhance_cognition": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._handle_process_todo": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._handle_get_cognitive_status": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._protocol_specific_security_validation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._protocol_specific_activation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._protocol_specific_deactivation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._route_to_protocol_core": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._protocol_specific_smoke_test": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "process_agent_request": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_process_modal_chains": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_simulate_modal_processing": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_fractal_analysis": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_meta_reasoning": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_enhance_cognition": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_process_todo": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_get_cognitive_status": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_protocol_specific_security_validation": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_activation": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_deactivation": [
+        "UNMAPPED"
+      ],
+      "_route_to_protocol_core": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_smoke_test": [
+        "UNMAPPED"
+      ],
+      "BaseNexus": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "AgentRequest": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "NexusResponse": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "AgentType": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ReasoningMode": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "DataRefinementCycle": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ReasoningRequest": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ReasoningResult": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "DataExchangePacket": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "DataBuilder": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "DataBuilder.create_exchange_packet": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "DataBuilder._determine_max_cycles": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "DataBuilder.validate_packet": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "DataBuilder.detect_convergence": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "DataBuilder.evolve_c_values": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "DataBuilder.get_cycle_status": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "create_exchange_packet": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_determine_max_cycles": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "validate_packet": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "detect_convergence": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "evolve_c_values": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "get_cycle_status": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus.process_reasoning_request": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus._process_recursive_refinement": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus._send_to_scp": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus._send_to_agent": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus._process_standard_analysis": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus._process_deep_ontological": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus._process_formal_verification": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus.get_cycle_status": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus.set_max_cycles": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus.approve_cascade_override": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus.receive_request": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus.send_response": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus.get_status": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "process_reasoning_request": [
+        "UNMAPPED"
+      ],
+      "_process_recursive_refinement": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_send_to_scp": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_send_to_agent": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_process_standard_analysis": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_process_deep_ontological": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_process_formal_verification": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "set_max_cycles": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "approve_cascade_override": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "receive_request": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "send_response": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "get_status": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "dispatch_to_scp": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "dispatch_to_arp": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "RouteDecision": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "RouteDecision.to_dict": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "to_dict": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "decide_route": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPWorkOrder": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "build_work_order": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "PlanPacket": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "PlanPacket.to_dict": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "emit_plan_packet": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "EvaluationPacket": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "EvaluationPacket.to_dict": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "emit_evaluation_packet": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "TaskEnvelope": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "load_task": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPWorkOrder": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPResultPacket": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPResultPacket.to_dict": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "emit_result_packet": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SMPEnvelope": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "load_smp": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "load_env": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ReasoningAgent": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ReasoningAgent._execute_tool": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ReasoningAgent._format_tool_results": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ReasoningAgent.ask": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_execute_tool": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_format_tool_results": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ask": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "main": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "_Readiness": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_evaluate_readiness": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "available": [
+        "UNMAPPED"
+      ],
+      "readiness_reason": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "readiness_diagnostics": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "get_connector_factory": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "get_uip_integration_plugin": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "uip_prompt_choice": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ConnectorValidationError": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ConnectorMetadata": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ConnectorResponse": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "StaticUIPConnector": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "StaticUIPConnector.handshake": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "StaticUIPConnector.execute": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "handshake": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "execute": [
+        "UNMAPPED"
+      ],
+      "StaticEnhancedUIPConnector": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "StaticEnhancedUIPConnector.collect_telemetry": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "StaticEnhancedUIPConnector.execute": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "collect_telemetry": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "build_standard_connector": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "build_enhanced_connector": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "get_enhanced_uip_integration_plugin": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPMode": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ReasoningComplexity": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._validate_dict_payload": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus.process_agent_request": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._handle_perform_analysis": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._handle_synthesize_response": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._handle_orchestrate_workflow": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._handle_get_status": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._protocol_specific_security_validation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._protocol_specific_activation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._protocol_specific_deactivation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._route_to_protocol_core": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._protocol_specific_smoke_test": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_validate_dict_payload": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_perform_analysis": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_synthesize_response": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_orchestrate_workflow": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_get_status": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._phase_1_gui_systems": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._phase_2_input_processing": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._phase_3_protocol_integration": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._phase_4_response_synthesis": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._execute_component_sequence": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._load_gui_framework": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._load_accessibility_systems": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._load_gesture_recognition": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._establish_arp_channel": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._establish_lap_communication": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._load_message_formatting": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._load_preference_adaptation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations.process_user_interaction": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._step_1_input_capture": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._step_2_input_interpretation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._step_3_context_enrichment": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._step_4_protocol_routing": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._step_5_response_integration": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._step_6_response_synthesis": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._step_7_output_delivery": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations.create_user_session": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations.emergency_shutdown": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations.health_check": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_phase_1_gui_systems": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_phase_2_input_processing": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_phase_3_protocol_integration": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_phase_4_response_synthesis": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_execute_component_sequence": [
+        "UNMAPPED"
+      ],
+      "_load_gui_framework": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_load_accessibility_systems": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_load_gesture_recognition": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_establish_arp_channel": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_establish_lap_communication": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_load_message_formatting": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_load_preference_adaptation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "process_user_interaction": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_step_1_input_capture": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_step_2_input_interpretation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_step_3_context_enrichment": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_step_4_protocol_routing": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_step_5_response_integration": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_step_6_response_synthesis": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_step_7_output_delivery": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "create_user_session": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "emergency_shutdown": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "health_check": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ProtocolType": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "NexusLifecycle": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "AgentRequest.to_dict": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "AgentRequest.from_dict": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "from_dict": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "NexusResponse.to_dict": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus.process_agent_request": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus._authenticate_and_classify_agent": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus._classify_agent_type": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus._validate_security_boundaries": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus._protocol_specific_security_validation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus._protocol_specific_activation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus._protocol_specific_deactivation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus._route_to_protocol_core": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus._calculate_processing_time": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus.get_nexus_status": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus.run_smoke_test": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus._test_basic_functionality": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus._test_agent_classification": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus._test_security_boundaries": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus._protocol_specific_smoke_test": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_authenticate_and_classify_agent": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_classify_agent_type": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_validate_security_boundaries": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_calculate_processing_time": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "get_nexus_status": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "run_smoke_test": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_test_basic_functionality": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_test_agent_classification": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_test_security_boundaries": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "create_agent_request": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "validate_nexus_system": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "PlanningType": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "GapType": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LinguisticOperation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "PlanningRequest": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "GapDetectionRequest": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LinguisticRequest": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus.process_agent_request": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._handle_causal_planning": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._handle_strategic_planning": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._handle_goal_decomposition": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._handle_detect_gaps": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._simulate_gap_detection": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._handle_process_linguistics": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._simulate_linguistic_processing": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._handle_coordinate_protocols": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._handle_manage_goals": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._handle_allocate_resources": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._handle_get_agent_status": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._protocol_specific_security_validation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._protocol_specific_activation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._protocol_specific_deactivation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._route_to_protocol_core": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._protocol_specific_smoke_test": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_causal_planning": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_strategic_planning": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_goal_decomposition": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_detect_gaps": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_simulate_gap_detection": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_process_linguistics": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_simulate_linguistic_processing": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_coordinate_protocols": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_manage_goals": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_allocate_resources": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_get_agent_status": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ]
+    }
+  }
+}

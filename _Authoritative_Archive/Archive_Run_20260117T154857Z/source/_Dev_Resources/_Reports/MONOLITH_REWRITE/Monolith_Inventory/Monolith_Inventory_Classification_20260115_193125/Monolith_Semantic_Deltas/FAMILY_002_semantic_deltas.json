@@ -1,0 +1,6912 @@
+{
+  "family_id": "FAMILY_002",
+  "member_count": 527,
+  "members": [
+    "set_mission_profile",
+    "_persist_profile",
+    "_resolve_profile",
+    "_parse_args",
+    "_ensure_scripts_importable",
+    "_load_tools",
+    "_tool_metadata",
+    "_normalize",
+    "_write_json",
+    "_write_markdown",
+    "main",
+    "_as_posix",
+    "validate_evidence_ref",
+    "_sort_key",
+    "normalize_evidence_refs",
+    "evidence_to_citation_string",
+    "is_proved_reference",
+    "_sha256_file",
+    "_normalize_path",
+    "_collect_bundle_hashes",
+    "_sanitize_steps",
+    "_sanitize_outcomes",
+    "write_cycle_ledger",
+    "canonical_json_hash",
+    "normalize_statement",
+    "extract_theorem_statement",
+    "_ensure_repo_on_path",
+    "load_metrics",
+    "choose_best",
+    "normalize_objective_class",
+    "add_memory_item",
+    "decay_and_promote",
+    "recall",
+    "stable_item_id",
+    "load_theorem_index",
+    "enforce_truth_annotation",
+    "validate_truth_annotation",
+    "apply_belief_policy",
+    "consolidate_beliefs",
+    "apply_plan_revision",
+    "get_belief_summary",
+    "StubSCPNexus",
+    "StubSCPNexus.process_agent_request",
+    "process_agent_request",
+    "LogosAgiNexus",
+    "LogosAgiNexus._load_persisted_state",
+    "LogosAgiNexus.refresh_plan_history",
+    "LogosAgiNexus.record_tool_result",
+    "LogosAgiNexus.get_memory_summary",
+    "LogosAgiNexus.observe",
+    "LogosAgiNexus._process_observation_async",
+    "LogosAgiNexus.propose",
+    "LogosAgiNexus.propose_plan",
+    "LogosAgiNexus.persist",
+    "LogosAgiNexus.health",
+    "AgentRequest",
+    "_load_persisted_state",
+    "refresh_plan_history",
+    "record_tool_result",
+    "get_memory_summary",
+    "observe",
+    "_process_observation_async",
+    "propose",
+    "propose_plan",
+    "persist",
+    "health",
+    "ReplayEventType",
+    "ReplayGranularity",
+    "ReplayEvent",
+    "ReplayEvent._generate_event_id",
+    "ReplayEvent._calculate_checksum",
+    "ReplayEvent.to_serializable",
+    "ReplayEvent.from_serializable",
+    "ReplayEvent.verify",
+    "_generate_event_id",
+    "_calculate_checksum",
+    "to_serializable",
+    "from_serializable",
+    "verify",
+    "DeterministicReplayLogger",
+    "DeterministicReplayLogger.log_event",
+    "DeterministicReplayLogger.log_event_async",
+    "DeterministicReplayLogger.create_checkpoint",
+    "DeterministicReplayLogger._flush_batch",
+    "DeterministicReplayLogger._append_to_event_log",
+    "log_event",
+    "log_event_async",
+    "create_checkpoint",
+    "_flush_batch",
+    "_append_to_event_log",
+    "DeterministicReplayEngine",
+    "DeterministicReplayEngine.find_sessions",
+    "DeterministicReplayEngine.replay_session",
+    "DeterministicReplayEngine.rebuild_full_state",
+    "DeterministicReplayEngine._apply_event",
+    "find_sessions",
+    "replay_session",
+    "rebuild_full_state",
+    "_apply_event",
+    "UWMRebuilder",
+    "UWMRebuilder.rehydrate",
+    "UWMRebuilder.apply_event",
+    "rehydrate",
+    "apply_event",
+    "SMPRebuilder",
+    "SMPRebuilder.rehydrate",
+    "MemoryRebuilder",
+    "MemoryRebuilder.rehydrate",
+    "ForensicAnalyzer",
+    "ForensicAnalyzer.analyze_causal_chain",
+    "ForensicAnalyzer.timeline_analysis",
+    "ForensicAnalyzer.compare_sessions",
+    "analyze_causal_chain",
+    "trace_causes",
+    "timeline_analysis",
+    "compare_sessions",
+    "ReplayValidator",
+    "ReplayValidator.validate_replay",
+    "ReplayValidator.create_reference_replay",
+    "validate_replay",
+    "create_reference_replay",
+    "CompleteReplayInfrastructure",
+    "CompleteReplayInfrastructure.start_session",
+    "CompleteReplayInfrastructure.get_logger",
+    "CompleteReplayInfrastructure.log_event",
+    "CompleteReplayInfrastructure.end_session",
+    "CompleteReplayInfrastructure.replay_and_analyze",
+    "CompleteReplayInfrastructure.batch_replay",
+    "CompleteReplayInfrastructure.export_session",
+    "CompleteReplayInfrastructure.cleanup_old_sessions",
+    "CompleteReplayInfrastructure._capture_current_state",
+    "CompleteReplayInfrastructure._identify_key_events",
+    "CompleteReplayInfrastructure._load_all_events",
+    "CompleteReplayInfrastructure._export_events_to_csv",
+    "CompleteReplayInfrastructure._read_session_info",
+    "CompleteReplayInfrastructure._get_system_info",
+    "CompleteReplayInfrastructure._create_archive",
+    "CompleteReplayInfrastructure._archive_session",
+    "CompleteReplayInfrastructure._delete_session",
+    "CompleteReplayInfrastructure.get_statistics",
+    "start_session",
+    "get_logger",
+    "end_session",
+    "replay_and_analyze",
+    "batch_replay",
+    "export_session",
+    "cleanup_old_sessions",
+    "_capture_current_state",
+    "_identify_key_events",
+    "_load_all_events",
+    "_export_events_to_csv",
+    "_read_session_info",
+    "_get_system_info",
+    "_create_archive",
+    "_archive_session",
+    "_delete_session",
+    "get_statistics",
+    "create_replay_infrastructure",
+    "quick_replay_analysis",
+    "progress_callback",
+    "StorageTier",
+    "StorageFormat",
+    "StorageConfiguration",
+    "TieredMemoryStorage",
+    "TieredMemoryStorage.store_memory",
+    "TieredMemoryStorage.retrieve_memory",
+    "TieredMemoryStorage._store_in_tier",
+    "TieredMemoryStorage._store_ephemeral",
+    "TieredMemoryStorage._store_hot",
+    "TieredMemoryStorage._store_warm",
+    "store_memory",
+    "retrieve_memory",
+    "_store_in_tier",
+    "_store_ephemeral",
+    "_store_hot",
+    "_store_warm",
+    "MemoryIndexSystem",
+    "MemoryIndexSystem.index_memory",
+    "MemoryIndexSystem.query_by_similarity",
+    "MemoryIndexSystem.query_by_association",
+    "MemoryIndexSystem.query_by_temporal_context",
+    "index_memory",
+    "query_by_similarity",
+    "query_by_association",
+    "query_by_temporal_context",
+    "MemoryRetrievalEngine",
+    "MemoryRetrievalEngine.retrieve_and_apply",
+    "MemoryRetrievalEngine._execute_retrieval",
+    "MemoryRetrievalEngine._retrieve_by_similarity",
+    "MemoryRetrievalEngine._retrieve_by_association",
+    "MemoryRetrievalEngine._apply_memories",
+    "retrieve_and_apply",
+    "_execute_retrieval",
+    "_retrieve_by_similarity",
+    "_retrieve_by_association",
+    "_apply_memories",
+    "MemoryConsolidationScheduler",
+    "MemoryConsolidationScheduler.schedule_consolidation",
+    "MemoryConsolidationScheduler.run_consolidation_cycle",
+    "schedule_consolidation",
+    "run_consolidation_cycle",
+    "MemoryForgettingManager",
+    "MemoryForgettingManager.update_forgetting_curve",
+    "MemoryForgettingManager.get_memories_for_review",
+    "update_forgetting_curve",
+    "get_memories_for_review",
+    "MetamemorySystem",
+    "MetamemorySystem.monitor_memory_operation",
+    "MetamemorySystem._check_regulation_needs",
+    "monitor_memory_operation",
+    "_check_regulation_needs",
+    "CompleteMemorySystem",
+    "CompleteMemorySystem.store_complete_memory",
+    "CompleteMemorySystem.retrieve_for_application",
+    "CompleteMemorySystem.run_maintenance_cycle",
+    "store_complete_memory",
+    "retrieve_for_application",
+    "run_maintenance_cycle",
+    "CompleteMemorySystem._start_background_processes",
+    "CompleteMemorySystem._background_consolidation",
+    "_start_background_processes",
+    "_background_consolidation",
+    "demonstrate_complete_memory_system",
+    "SMPType",
+    "SMPStatus",
+    "SMPConfidence",
+    "SMPClaim",
+    "SMPClaim.to_dict",
+    "to_dict",
+    "SMPDependencies",
+    "SMPDependencies.is_grounded",
+    "is_grounded",
+    "StructuredMeaningPacket",
+    "StructuredMeaningPacket.id_hash",
+    "StructuredMeaningPacket._score_evidence_quality",
+    "StructuredMeaningPacket.to_canonical_dict",
+    "id_hash",
+    "_score_evidence_quality",
+    "to_canonical_dict",
+    "SMPGenerator",
+    "SMPGenerator.generate_from_uwm_event",
+    "SMPGenerator.generate_from_uwm_state",
+    "SMPGenerator.generate_agent_hypothesis",
+    "SMPGenerator.generate_diagnostic_smps",
+    "SMPGenerator._generate_create_smps",
+    "SMPGenerator._generate_smp_id",
+    "generate_from_uwm_event",
+    "generate_from_uwm_state",
+    "generate_agent_hypothesis",
+    "generate_diagnostic_smps",
+    "_generate_create_smps",
+    "_generate_smp_id",
+    "TetrahedralEnrichment",
+    "TetrahedralEnrichment.enrich_smp",
+    "enrich_smp",
+    "LogicFace",
+    "LogicFace.analyze",
+    "analyze",
+    "ConstraintEnrichment",
+    "ConstraintEnrichment.enrich_smp",
+    "InformationExplosionOrchestrator",
+    "InformationExplosionOrchestrator.process_smp",
+    "InformationExplosionOrchestrator._check_convergence",
+    "InformationExplosionOrchestrator._finalize_smp",
+    "process_smp",
+    "_check_convergence",
+    "_finalize_smp",
+    "SMPEvaluationPipeline",
+    "SMPEvaluationPipeline.evaluate_smp",
+    "SMPEvaluationPipeline._determine_routing",
+    "evaluate_smp",
+    "_determine_routing",
+    "StructuredMeaningSystem",
+    "StructuredMeaningSystem.process_uwm_event",
+    "process_uwm_event",
+    "EvaluationPerspective",
+    "TriuneCommutationResult",
+    "SMPGroundingLevel",
+    "PXLIELSEvaluator",
+    "PXLIELSEvaluator.evaluate_smp",
+    "PXLIELSEvaluator._analyze_pxl_coherence",
+    "PXLIELSEvaluator._analyze_iel_domains",
+    "_analyze_pxl_coherence",
+    "_analyze_iel_domains",
+    "ETGCEvaluator",
+    "ETGCEvaluator.evaluate_smp",
+    "ETGCEvaluator._evaluate_dimension",
+    "ETGCEvaluator._evaluate_existence",
+    "ETGCEvaluator._evaluate_truth",
+    "ETGCEvaluator._evaluate_goodness",
+    "_evaluate_dimension",
+    "_evaluate_existence",
+    "_evaluate_truth",
+    "_evaluate_goodness",
+    "PrivationEvaluator",
+    "PrivationEvaluator.evaluate_smp",
+    "PrivationEvaluator._analyze_privation_category",
+    "PrivationEvaluator._analyze_ontological_gaps",
+    "PrivationEvaluator._analyze_epistemic_absences",
+    "PrivationEvaluator._analyze_completeness_gaps",
+    "_analyze_privation_category",
+    "_analyze_ontological_gaps",
+    "_analyze_epistemic_absences",
+    "_analyze_completeness_gaps",
+    "TriuneCommutationEngine",
+    "TriuneCommutationEngine.evaluate_smp_tripartite",
+    "TriuneCommutationEngine._analyze_triune_commutation",
+    "TriuneCommutationEngine._analyze_convergence",
+    "TriuneCommutationEngine._calculate_epistemic_value",
+    "TriuneCommutationEngine._assess_truth_coherence_grounding",
+    "evaluate_smp_tripartite",
+    "_analyze_triune_commutation",
+    "_analyze_convergence",
+    "_calculate_epistemic_value",
+    "_assess_truth_coherence_grounding",
+    "SystemMemoryRouter",
+    "SystemMemoryRouter.route_to_memory",
+    "route_to_memory",
+    "SMP",
+    "EngineReport",
+    "RefinedSMP",
+    "SMPSynthesizer",
+    "SMPSynthesizer.synthesize",
+    "synthesize",
+    "StabilityCalculator",
+    "StabilityCalculator.calculate",
+    "StabilityCalculator._content_hash",
+    "calculate",
+    "_content_hash",
+    "PXLLogicFace",
+    "PXLLogicFace.analyze",
+    "IELDomainFace",
+    "IELDomainFace.analyze",
+    "ARPMathematicalFace",
+    "ARPMathematicalFace.analyze",
+    "CognitiveResistor",
+    "CognitiveResistor.analyze",
+    "TetrahedralEvaluator",
+    "TetrahedralEvaluator.evaluate",
+    "TetrahedralEvaluator._synthesize_reports",
+    "TetrahedralEvaluator._calculate_stability",
+    "evaluate",
+    "_synthesize_reports",
+    "_calculate_stability",
+    "_test_system_a",
+    "PXLAnalyzer",
+    "PXLAnalyzer.analyze_concept",
+    "PXLAnalyzer._check_i1",
+    "PXLAnalyzer._check_i2",
+    "PXLAnalyzer._check_i3",
+    "PXLAnalyzer._entails_O",
+    "PXLAnalyzer._detect_paradox",
+    "analyze_concept",
+    "_check_i1",
+    "_check_i2",
+    "_check_i3",
+    "_entails_O",
+    "_detect_paradox",
+    "SMPQuality",
+    "FailureMode",
+    "RecoveryAction",
+    "CommitResult",
+    "OrchestrationMetrics",
+    "Enhancement",
+    "Enhancement.name",
+    "Enhancement.pre_process",
+    "Enhancement.post_system_a",
+    "Enhancement.post_system_b",
+    "Enhancement.post_process",
+    "Enhancement.on_failure",
+    "name",
+    "pre_process",
+    "post_system_a",
+    "post_system_b",
+    "post_process",
+    "on_failure",
+    "SystemOrchestrator",
+    "SystemOrchestrator.register_enhancement",
+    "SystemOrchestrator.enable_enhancement",
+    "SystemOrchestrator.disable_enhancement",
+    "SystemOrchestrator.evaluate_and_authorize",
+    "SystemOrchestrator._handle_system_a_failure",
+    "SystemOrchestrator._handle_system_b_failure",
+    "SystemOrchestrator._classify_failure",
+    "SystemOrchestrator._apply_feedback_loops",
+    "SystemOrchestrator._build_commit_result",
+    "SystemOrchestrator._build_error_result",
+    "SystemOrchestrator._update_metrics",
+    "SystemOrchestrator.get_metrics",
+    "SystemOrchestrator.reset_metrics",
+    "SystemOrchestrator._stub_system_a",
+    "SystemOrchestrator._stub_system_b",
+    "SystemOrchestrator._load_all_enhancements",
+    "register_enhancement",
+    "enable_enhancement",
+    "disable_enhancement",
+    "evaluate_and_authorize",
+    "_handle_system_a_failure",
+    "_handle_system_b_failure",
+    "_classify_failure",
+    "_apply_feedback_loops",
+    "_build_commit_result",
+    "_build_error_result",
+    "_update_metrics",
+    "get_metrics",
+    "reset_metrics",
+    "_stub_system_a",
+    "StubRefined",
+    "_stub_system_b",
+    "StubResult",
+    "StubToken",
+    "_load_all_enhancements",
+    "AdaptiveControlEnhancement",
+    "AdaptiveControlEnhancement.name",
+    "AdaptiveControlEnhancement.pre_process",
+    "QualityClassifierEnhancement",
+    "QualityClassifierEnhancement.name",
+    "QualityClassifierEnhancement.post_system_a",
+    "PerformanceMonitorEnhancement",
+    "PerformanceMonitorEnhancement.name",
+    "PerformanceMonitorEnhancement.post_process",
+    "FailureRecoveryEnhancement",
+    "FailureRecoveryEnhancement.name",
+    "FailureRecoveryEnhancement.on_failure",
+    "AuditAggregatorEnhancement",
+    "AuditAggregatorEnhancement.name",
+    "AuditAggregatorEnhancement.post_process",
+    "PatternLearnerEnhancement",
+    "PatternLearnerEnhancement.name",
+    "PatternLearnerEnhancement.post_process",
+    "create_orchestrator",
+    "_test_orchestrator",
+    "TestSMP",
+    "CriticMode",
+    "CriticArchetype",
+    "CriticalChallenge",
+    "CriticalChallenge.to_dict",
+    "CriticalLens",
+    "CriticalLens._determine_mode",
+    "CriticalLens._load_templates",
+    "CriticalLens.generate_challenge",
+    "CriticalLens._identify_vulnerability",
+    "_determine_mode",
+    "_load_templates",
+    "generate_challenge",
+    "_identify_vulnerability",
+    "TetrahedralCritic",
+    "TetrahedralCritic.apply_critique",
+    "TetrahedralCritic._generate_comprehensive_challenges",
+    "TetrahedralCritic._validate_challenges_against_pxl",
+    "TetrahedralCritic._assess_critical_impact",
+    "TetrahedralCritic._generate_dialectical_synthesis",
+    "TetrahedralCritic._perform_triune_synthesis",
+    "apply_critique",
+    "_generate_comprehensive_challenges",
+    "_validate_challenges_against_pxl",
+    "_assess_critical_impact",
+    "_generate_dialectical_synthesis",
+    "_perform_triune_synthesis",
+    "SelfReferentialCritic",
+    "SelfReferentialCritic.critique_pxl_foundations",
+    "SelfReferentialCritic._critique_axiom",
+    "critique_pxl_foundations",
+    "_critique_axiom",
+    "PragmaticEffectivenessValidator",
+    "PragmaticEffectivenessValidator.validate_effectiveness",
+    "validate_effectiveness",
+    "CriticalMemoryIntegrator",
+    "CriticalMemoryIntegrator.integrate_critique",
+    "integrate_critique",
+    "demonstrate_cognitive_resistor",
+    "ModalDimension",
+    "ModalVector",
+    "ModalVector.id",
+    "ModalVector.similarity",
+    "ModalVector.modal_distance",
+    "ModalVector.project_to_pxl",
+    "id",
+    "similarity",
+    "modal_distance",
+    "project_to_pxl",
+    "FractalEmbedding",
+    "FractalEmbedding._validate_scales",
+    "FractalEmbedding.embed_at_scale",
+    "FractalEmbedding._generate_fractal_embedding",
+    "FractalEmbedding.compute_fractal_dimension",
+    "_validate_scales",
+    "embed_at_scale",
+    "_generate_fractal_embedding",
+    "compute_fractal_dimension",
+    "WorldState",
+    "WorldState.state_hash",
+    "WorldState.get_entity_modality",
+    "WorldState.compute_modal_field",
+    "state_hash",
+    "get_entity_modality",
+    "compute_modal_field",
+    "DynamicWorldModel",
+    "DynamicWorldModel.update_entity",
+    "DynamicWorldModel._check_modal_consistency",
+    "DynamicWorldModel._update_fractal_embedding",
+    "DynamicWorldModel.query_modal_space",
+    "DynamicWorldModel.predict_modal_evolution",
+    "DynamicWorldModel.compute_world_entropy",
+    "DynamicWorldModel.add_modal_constraint",
+    "DynamicWorldModel._update_consistency_graph",
+    "DynamicWorldModel.save_state",
+    "DynamicWorldModel.load_state",
+    "DynamicWorldModel.get_diagnostics",
+    "DynamicWorldModel._get_modal_distribution",
+    "DynamicWorldModel._get_fractal_statistics",
+    "update_entity",
+    "_check_modal_consistency",
+    "_update_fractal_embedding",
+    "query_modal_space",
+    "predict_modal_evolution",
+    "compute_world_entropy",
+    "add_modal_constraint",
+    "_update_consistency_graph",
+    "save_state",
+    "load_state",
+    "get_diagnostics",
+    "_get_modal_distribution",
+    "_get_fractal_statistics",
+    "PXLWorldModelBridge",
+    "PXLWorldModelBridge.pxl_proposition_to_modal",
+    "pxl_proposition_to_modal"
+  ],
+  "invariant_semantics": {},
+  "divergent_semantics": {
+    "semantic_tags": {
+      "set_mission_profile": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_persist_profile": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_resolve_profile": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_parse_args": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_ensure_scripts_importable": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_load_tools": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_tool_metadata": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_normalize": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_write_json": [
+        "UNCLASSIFIED"
+      ],
+      "_write_markdown": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "main": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_as_posix": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "validate_evidence_ref": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_sort_key": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "normalize_evidence_refs": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "evidence_to_citation_string": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "is_proved_reference": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_sha256_file": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_normalize_path": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_collect_bundle_hashes": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_sanitize_steps": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_sanitize_outcomes": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "write_cycle_ledger": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "canonical_json_hash": [
+        "AGENT_LOGIC"
+      ],
+      "normalize_statement": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "extract_theorem_statement": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_ensure_repo_on_path": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "load_metrics": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "choose_best": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "normalize_objective_class": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "add_memory_item": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "decay_and_promote": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "recall": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "stable_item_id": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "load_theorem_index": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "enforce_truth_annotation": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "validate_truth_annotation": [
+        "AGENT_LOGIC"
+      ],
+      "apply_belief_policy": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "consolidate_beliefs": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "apply_plan_revision": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "get_belief_summary": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StubSCPNexus": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StubSCPNexus.process_agent_request": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "process_agent_request": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LogosAgiNexus": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "LogosAgiNexus._load_persisted_state": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "LogosAgiNexus.refresh_plan_history": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "LogosAgiNexus.record_tool_result": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "LogosAgiNexus.get_memory_summary": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "LogosAgiNexus.observe": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "LogosAgiNexus._process_observation_async": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "LogosAgiNexus.propose": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "LogosAgiNexus.propose_plan": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "LogosAgiNexus.persist": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "LogosAgiNexus.health": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "AgentRequest": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "_load_persisted_state": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "refresh_plan_history": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "record_tool_result": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "get_memory_summary": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "observe": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_process_observation_async": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "propose": [
+        "ORCHESTRATION"
+      ],
+      "propose_plan": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "persist": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "health": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ReplayEventType": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ReplayGranularity": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ReplayEvent": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ReplayEvent._generate_event_id": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ReplayEvent._calculate_checksum": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ReplayEvent.to_serializable": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ReplayEvent.from_serializable": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ReplayEvent.verify": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_generate_event_id": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_calculate_checksum": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "to_serializable": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "from_serializable": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "verify": [
+        "UNCLASSIFIED"
+      ],
+      "DeterministicReplayLogger": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DeterministicReplayLogger.log_event": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DeterministicReplayLogger.log_event_async": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DeterministicReplayLogger.create_checkpoint": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DeterministicReplayLogger._flush_batch": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DeterministicReplayLogger._append_to_event_log": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "log_event": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "log_event_async": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "create_checkpoint": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_flush_batch": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_append_to_event_log": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DeterministicReplayEngine": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DeterministicReplayEngine.find_sessions": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DeterministicReplayEngine.replay_session": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DeterministicReplayEngine.rebuild_full_state": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DeterministicReplayEngine._apply_event": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "find_sessions": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "replay_session": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "rebuild_full_state": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_apply_event": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "UWMRebuilder": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "UWMRebuilder.rehydrate": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "UWMRebuilder.apply_event": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "rehydrate": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "apply_event": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPRebuilder": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPRebuilder.rehydrate": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryRebuilder": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryRebuilder.rehydrate": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ForensicAnalyzer": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ForensicAnalyzer.analyze_causal_chain": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ForensicAnalyzer.timeline_analysis": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ForensicAnalyzer.compare_sessions": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "analyze_causal_chain": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "trace_causes": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "timeline_analysis": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "compare_sessions": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ReplayValidator": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ReplayValidator.validate_replay": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ReplayValidator.create_reference_replay": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "validate_replay": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "create_reference_replay": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure.start_session": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure.get_logger": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure.log_event": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure.end_session": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure.replay_and_analyze": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure.batch_replay": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure.export_session": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure.cleanup_old_sessions": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure._capture_current_state": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure._identify_key_events": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure._load_all_events": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure._export_events_to_csv": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure._read_session_info": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure._get_system_info": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure._create_archive": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure._archive_session": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure._delete_session": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure.get_statistics": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "start_session": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "get_logger": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "end_session": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "replay_and_analyze": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "batch_replay": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "export_session": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "cleanup_old_sessions": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_capture_current_state": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_identify_key_events": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_load_all_events": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_export_events_to_csv": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_read_session_info": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_get_system_info": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_create_archive": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_archive_session": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_delete_session": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "get_statistics": [
+        "UNCLASSIFIED"
+      ],
+      "create_replay_infrastructure": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "quick_replay_analysis": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "progress_callback": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StorageTier": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StorageFormat": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StorageConfiguration": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TieredMemoryStorage": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TieredMemoryStorage.store_memory": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TieredMemoryStorage.retrieve_memory": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TieredMemoryStorage._store_in_tier": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TieredMemoryStorage._store_ephemeral": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TieredMemoryStorage._store_hot": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TieredMemoryStorage._store_warm": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "store_memory": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "retrieve_memory": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_store_in_tier": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_store_ephemeral": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_store_hot": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_store_warm": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryIndexSystem": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryIndexSystem.index_memory": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryIndexSystem.query_by_similarity": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryIndexSystem.query_by_association": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryIndexSystem.query_by_temporal_context": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "index_memory": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "query_by_similarity": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "query_by_association": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "query_by_temporal_context": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryRetrievalEngine": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryRetrievalEngine.retrieve_and_apply": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryRetrievalEngine._execute_retrieval": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryRetrievalEngine._retrieve_by_similarity": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryRetrievalEngine._retrieve_by_association": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryRetrievalEngine._apply_memories": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "retrieve_and_apply": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_execute_retrieval": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_retrieve_by_similarity": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_retrieve_by_association": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_apply_memories": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryConsolidationScheduler": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryConsolidationScheduler.schedule_consolidation": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryConsolidationScheduler.run_consolidation_cycle": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "schedule_consolidation": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "run_consolidation_cycle": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryForgettingManager": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryForgettingManager.update_forgetting_curve": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryForgettingManager.get_memories_for_review": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "update_forgetting_curve": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "get_memories_for_review": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MetamemorySystem": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MetamemorySystem.monitor_memory_operation": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MetamemorySystem._check_regulation_needs": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "monitor_memory_operation": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_check_regulation_needs": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteMemorySystem": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteMemorySystem.store_complete_memory": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteMemorySystem.retrieve_for_application": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteMemorySystem.run_maintenance_cycle": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "store_complete_memory": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "retrieve_for_application": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "run_maintenance_cycle": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteMemorySystem._start_background_processes": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteMemorySystem._background_consolidation": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_start_background_processes": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_background_consolidation": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "demonstrate_complete_memory_system": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPType": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPStatus": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPConfidence": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPClaim": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPClaim.to_dict": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "to_dict": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SMPDependencies": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPDependencies.is_grounded": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "is_grounded": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StructuredMeaningPacket": [
+        "AGENT_LOGIC"
+      ],
+      "StructuredMeaningPacket.id_hash": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StructuredMeaningPacket._score_evidence_quality": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StructuredMeaningPacket.to_canonical_dict": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "id_hash": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_score_evidence_quality": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "to_canonical_dict": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPGenerator": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPGenerator.generate_from_uwm_event": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPGenerator.generate_from_uwm_state": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPGenerator.generate_agent_hypothesis": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPGenerator.generate_diagnostic_smps": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPGenerator._generate_create_smps": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPGenerator._generate_smp_id": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "generate_from_uwm_event": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "generate_from_uwm_state": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "generate_agent_hypothesis": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "generate_diagnostic_smps": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_generate_create_smps": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_generate_smp_id": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralEnrichment": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralEnrichment.enrich_smp": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "enrich_smp": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "LogicFace": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "LogicFace.analyze": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "analyze": [
+        "AGENT_LOGIC"
+      ],
+      "ConstraintEnrichment": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ConstraintEnrichment.enrich_smp": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "InformationExplosionOrchestrator": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "InformationExplosionOrchestrator.process_smp": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "InformationExplosionOrchestrator._check_convergence": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "InformationExplosionOrchestrator._finalize_smp": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "process_smp": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_check_convergence": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_finalize_smp": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPEvaluationPipeline": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPEvaluationPipeline.evaluate_smp": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPEvaluationPipeline._determine_routing": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "evaluate_smp": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_determine_routing": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StructuredMeaningSystem": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StructuredMeaningSystem.process_uwm_event": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "process_uwm_event": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "EvaluationPerspective": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TriuneCommutationResult": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPGroundingLevel": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLIELSEvaluator": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLIELSEvaluator.evaluate_smp": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLIELSEvaluator._analyze_pxl_coherence": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLIELSEvaluator._analyze_iel_domains": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_analyze_pxl_coherence": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_analyze_iel_domains": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ETGCEvaluator": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ETGCEvaluator.evaluate_smp": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ETGCEvaluator._evaluate_dimension": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ETGCEvaluator._evaluate_existence": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ETGCEvaluator._evaluate_truth": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ETGCEvaluator._evaluate_goodness": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_evaluate_dimension": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_evaluate_existence": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_evaluate_truth": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_evaluate_goodness": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PrivationEvaluator": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PrivationEvaluator.evaluate_smp": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PrivationEvaluator._analyze_privation_category": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PrivationEvaluator._analyze_ontological_gaps": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PrivationEvaluator._analyze_epistemic_absences": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PrivationEvaluator._analyze_completeness_gaps": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_analyze_privation_category": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_analyze_ontological_gaps": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_analyze_epistemic_absences": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_analyze_completeness_gaps": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TriuneCommutationEngine": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TriuneCommutationEngine.evaluate_smp_tripartite": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TriuneCommutationEngine._analyze_triune_commutation": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TriuneCommutationEngine._analyze_convergence": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TriuneCommutationEngine._calculate_epistemic_value": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TriuneCommutationEngine._assess_truth_coherence_grounding": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "evaluate_smp_tripartite": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_analyze_triune_commutation": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_analyze_convergence": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_calculate_epistemic_value": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_assess_truth_coherence_grounding": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemMemoryRouter": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemMemoryRouter.route_to_memory": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "route_to_memory": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMP": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "EngineReport": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "RefinedSMP": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPSynthesizer": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPSynthesizer.synthesize": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "synthesize": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StabilityCalculator": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StabilityCalculator.calculate": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StabilityCalculator._content_hash": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "calculate": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_content_hash": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLLogicFace": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLLogicFace.analyze": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "IELDomainFace": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "IELDomainFace.analyze": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ARPMathematicalFace": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ARPMathematicalFace.analyze": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CognitiveResistor": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CognitiveResistor.analyze": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralEvaluator": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralEvaluator.evaluate": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralEvaluator._synthesize_reports": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralEvaluator._calculate_stability": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "evaluate": [
+        "UNCLASSIFIED"
+      ],
+      "_synthesize_reports": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_calculate_stability": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_test_system_a": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLAnalyzer": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLAnalyzer.analyze_concept": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLAnalyzer._check_i1": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLAnalyzer._check_i2": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLAnalyzer._check_i3": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLAnalyzer._entails_O": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLAnalyzer._detect_paradox": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "analyze_concept": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_check_i1": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_check_i2": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_check_i3": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_entails_O": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_detect_paradox": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPQuality": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "FailureMode": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "RecoveryAction": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CommitResult": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "OrchestrationMetrics": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "Enhancement": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "Enhancement.name": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "Enhancement.pre_process": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "Enhancement.post_system_a": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "Enhancement.post_system_b": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "Enhancement.post_process": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "Enhancement.on_failure": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "name": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "pre_process": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "post_system_a": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "post_system_b": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "post_process": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "on_failure": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator.register_enhancement": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator.enable_enhancement": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator.disable_enhancement": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator.evaluate_and_authorize": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator._handle_system_a_failure": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator._handle_system_b_failure": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator._classify_failure": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator._apply_feedback_loops": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator._build_commit_result": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator._build_error_result": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator._update_metrics": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator.get_metrics": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator.reset_metrics": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator._stub_system_a": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator._stub_system_b": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator._load_all_enhancements": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "register_enhancement": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "enable_enhancement": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "disable_enhancement": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "evaluate_and_authorize": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_handle_system_a_failure": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_handle_system_b_failure": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_classify_failure": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_apply_feedback_loops": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_build_commit_result": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_build_error_result": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_update_metrics": [
+        "ORCHESTRATION"
+      ],
+      "get_metrics": [
+        "GOVERNANCE"
+      ],
+      "reset_metrics": [
+        "UNCLASSIFIED"
+      ],
+      "_stub_system_a": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StubRefined": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_stub_system_b": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StubResult": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StubToken": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_load_all_enhancements": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "AdaptiveControlEnhancement": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "AdaptiveControlEnhancement.name": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "AdaptiveControlEnhancement.pre_process": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "QualityClassifierEnhancement": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "QualityClassifierEnhancement.name": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "QualityClassifierEnhancement.post_system_a": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PerformanceMonitorEnhancement": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PerformanceMonitorEnhancement.name": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PerformanceMonitorEnhancement.post_process": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "FailureRecoveryEnhancement": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "FailureRecoveryEnhancement.name": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "FailureRecoveryEnhancement.on_failure": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "AuditAggregatorEnhancement": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "AuditAggregatorEnhancement.name": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "AuditAggregatorEnhancement.post_process": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PatternLearnerEnhancement": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PatternLearnerEnhancement.name": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PatternLearnerEnhancement.post_process": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "create_orchestrator": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_test_orchestrator": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TestSMP": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CriticMode": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CriticArchetype": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CriticalChallenge": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CriticalChallenge.to_dict": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CriticalLens": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CriticalLens._determine_mode": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CriticalLens._load_templates": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CriticalLens.generate_challenge": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CriticalLens._identify_vulnerability": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_determine_mode": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_load_templates": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "generate_challenge": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_identify_vulnerability": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralCritic": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralCritic.apply_critique": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralCritic._generate_comprehensive_challenges": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralCritic._validate_challenges_against_pxl": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralCritic._assess_critical_impact": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralCritic._generate_dialectical_synthesis": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralCritic._perform_triune_synthesis": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "apply_critique": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_generate_comprehensive_challenges": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_validate_challenges_against_pxl": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_assess_critical_impact": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_generate_dialectical_synthesis": [
+        "UNCLASSIFIED"
+      ],
+      "_perform_triune_synthesis": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SelfReferentialCritic": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SelfReferentialCritic.critique_pxl_foundations": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SelfReferentialCritic._critique_axiom": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "critique_pxl_foundations": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_critique_axiom": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PragmaticEffectivenessValidator": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PragmaticEffectivenessValidator.validate_effectiveness": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "validate_effectiveness": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CriticalMemoryIntegrator": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CriticalMemoryIntegrator.integrate_critique": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "integrate_critique": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "demonstrate_cognitive_resistor": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ModalDimension": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ModalVector": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ModalVector.id": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ModalVector.similarity": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ModalVector.modal_distance": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ModalVector.project_to_pxl": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "id": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "similarity": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "modal_distance": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "project_to_pxl": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "FractalEmbedding": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "FractalEmbedding._validate_scales": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "FractalEmbedding.embed_at_scale": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "FractalEmbedding._generate_fractal_embedding": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "FractalEmbedding.compute_fractal_dimension": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_validate_scales": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "embed_at_scale": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_generate_fractal_embedding": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "compute_fractal_dimension": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "WorldState": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "WorldState.state_hash": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "WorldState.get_entity_modality": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "WorldState.compute_modal_field": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "state_hash": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "get_entity_modality": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "compute_modal_field": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel.update_entity": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel._check_modal_consistency": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel._update_fractal_embedding": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel.query_modal_space": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel.predict_modal_evolution": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel.compute_world_entropy": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel.add_modal_constraint": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel._update_consistency_graph": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel.save_state": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel.load_state": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel.get_diagnostics": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel._get_modal_distribution": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel._get_fractal_statistics": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "update_entity": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_check_modal_consistency": [
+        "UNCLASSIFIED"
+      ],
+      "_update_fractal_embedding": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "query_modal_space": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "predict_modal_evolution": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "compute_world_entropy": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "add_modal_constraint": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_update_consistency_graph": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "save_state": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "load_state": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "get_diagnostics": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_get_modal_distribution": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_get_fractal_statistics": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLWorldModelBridge": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLWorldModelBridge.pxl_proposition_to_modal": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "pxl_proposition_to_modal": [
+        "LEGACY_OR_QUARANTINED"
+      ]
+    },
+    "operation_type": {
+      "set_mission_profile": [
+        "UTILITY"
+      ],
+      "_persist_profile": [
+        "UTILITY"
+      ],
+      "_resolve_profile": [
+        "TRANSFORMATION"
+      ],
+      "_parse_args": [
+        "TRANSFORMATION"
+      ],
+      "_ensure_scripts_importable": [
+        "UTILITY"
+      ],
+      "_load_tools": [
+        "TRANSFORMATION"
+      ],
+      "_tool_metadata": [
+        "TRANSFORMATION"
+      ],
+      "_normalize": [
+        "TRANSFORMATION"
+      ],
+      "_write_json": [
+        "TRANSFORMATION"
+      ],
+      "_write_markdown": [
+        "UTILITY"
+      ],
+      "main": [
+        "TRANSFORMATION"
+      ],
+      "_as_posix": [
+        "TRANSFORMATION"
+      ],
+      "validate_evidence_ref": [
+        "TRANSFORMATION"
+      ],
+      "_sort_key": [
+        "TRANSFORMATION"
+      ],
+      "normalize_evidence_refs": [
+        "TRANSFORMATION"
+      ],
+      "evidence_to_citation_string": [
+        "TRANSFORMATION"
+      ],
+      "is_proved_reference": [
+        "TRANSFORMATION"
+      ],
+      "_sha256_file": [
+        "TRANSFORMATION"
+      ],
+      "_normalize_path": [
+        "TRANSFORMATION"
+      ],
+      "_collect_bundle_hashes": [
+        "TRANSFORMATION"
+      ],
+      "_sanitize_steps": [
+        "TRANSFORMATION"
+      ],
+      "_sanitize_outcomes": [
+        "TRANSFORMATION"
+      ],
+      "write_cycle_ledger": [
+        "TRANSFORMATION"
+      ],
+      "canonical_json_hash": [
+        "TRANSFORMATION"
+      ],
+      "normalize_statement": [
+        "TRANSFORMATION"
+      ],
+      "extract_theorem_statement": [
+        "TRANSFORMATION"
+      ],
+      "_ensure_repo_on_path": [
+        "UTILITY"
+      ],
+      "load_metrics": [
+        "TRANSFORMATION"
+      ],
+      "choose_best": [
+        "TRANSFORMATION"
+      ],
+      "normalize_objective_class": [
+        "TRANSFORMATION"
+      ],
+      "add_memory_item": [
+        "UTILITY"
+      ],
+      "decay_and_promote": [
+        "UTILITY"
+      ],
+      "recall": [
+        "TRANSFORMATION"
+      ],
+      "stable_item_id": [
+        "TRANSFORMATION"
+      ],
+      "load_theorem_index": [
+        "TRANSFORMATION"
+      ],
+      "enforce_truth_annotation": [
+        "TRANSFORMATION"
+      ],
+      "validate_truth_annotation": [
+        "UTILITY"
+      ],
+      "apply_belief_policy": [
+        "TRANSFORMATION"
+      ],
+      "consolidate_beliefs": [
+        "TRANSFORMATION"
+      ],
+      "apply_plan_revision": [
+        "UTILITY"
+      ],
+      "get_belief_summary": [
+        "TRANSFORMATION"
+      ],
+      "StubSCPNexus": [
+        "TRANSFORMATION"
+      ],
+      "StubSCPNexus.process_agent_request": [
+        "TRANSFORMATION"
+      ],
+      "process_agent_request": [
+        "TRANSFORMATION"
+      ],
+      "LogosAgiNexus": [
+        "TRANSFORMATION"
+      ],
+      "LogosAgiNexus._load_persisted_state": [
+        "TRANSFORMATION"
+      ],
+      "LogosAgiNexus.refresh_plan_history": [
+        "TRANSFORMATION"
+      ],
+      "LogosAgiNexus.record_tool_result": [
+        "UTILITY"
+      ],
+      "LogosAgiNexus.get_memory_summary": [
+        "TRANSFORMATION"
+      ],
+      "LogosAgiNexus.observe": [
+        "TRANSFORMATION"
+      ],
+      "LogosAgiNexus._process_observation_async": [
+        "UTILITY"
+      ],
+      "LogosAgiNexus.propose": [
+        "TRANSFORMATION"
+      ],
+      "LogosAgiNexus.propose_plan": [
+        "TRANSFORMATION"
+      ],
+      "LogosAgiNexus.persist": [
+        "STATE_MUTATION",
+        "TRANSFORMATION"
+      ],
+      "LogosAgiNexus.health": [
+        "TRANSFORMATION"
+      ],
+      "AgentRequest": [
+        "TRANSFORMATION"
+      ],
+      "_load_persisted_state": [
+        "TRANSFORMATION"
+      ],
+      "refresh_plan_history": [
+        "TRANSFORMATION"
+      ],
+      "record_tool_result": [
+        "UTILITY"
+      ],
+      "get_memory_summary": [
+        "TRANSFORMATION"
+      ],
+      "observe": [
+        "TRANSFORMATION"
+      ],
+      "_process_observation_async": [
+        "UTILITY"
+      ],
+      "propose": [
+        "TRANSFORMATION"
+      ],
+      "propose_plan": [
+        "TRANSFORMATION"
+      ],
+      "persist": [
+        "STATE_MUTATION",
+        "TRANSFORMATION"
+      ],
+      "health": [
+        "TRANSFORMATION"
+      ],
+      "ReplayEventType": [],
+      "ReplayGranularity": [],
+      "ReplayEvent": [
+        "TRANSFORMATION"
+      ],
+      "ReplayEvent._generate_event_id": [
+        "TRANSFORMATION"
+      ],
+      "ReplayEvent._calculate_checksum": [
+        "TRANSFORMATION"
+      ],
+      "ReplayEvent.to_serializable": [
+        "TRANSFORMATION"
+      ],
+      "ReplayEvent.from_serializable": [
+        "TRANSFORMATION"
+      ],
+      "ReplayEvent.verify": [
+        "TRANSFORMATION",
+        "VALIDATION"
+      ],
+      "_generate_event_id": [
+        "TRANSFORMATION"
+      ],
+      "_calculate_checksum": [
+        "TRANSFORMATION"
+      ],
+      "to_serializable": [
+        "TRANSFORMATION"
+      ],
+      "from_serializable": [
+        "TRANSFORMATION"
+      ],
+      "verify": [
+        "TRANSFORMATION",
+        "VALIDATION"
+      ],
+      "DeterministicReplayLogger": [
+        "TRANSFORMATION"
+      ],
+      "DeterministicReplayLogger.log_event": [
+        "TRANSFORMATION"
+      ],
+      "DeterministicReplayLogger.log_event_async": [
+        "TRANSFORMATION"
+      ],
+      "DeterministicReplayLogger.create_checkpoint": [
+        "TRANSFORMATION"
+      ],
+      "DeterministicReplayLogger._flush_batch": [
+        "TRANSFORMATION"
+      ],
+      "DeterministicReplayLogger._append_to_event_log": [],
+      "log_event": [],
+      "log_event_async": [
+        "TRANSFORMATION"
+      ],
+      "create_checkpoint": [
+        "TRANSFORMATION"
+      ],
+      "_flush_batch": [
+        "TRANSFORMATION"
+      ],
+      "_append_to_event_log": [],
+      "DeterministicReplayEngine": [
+        "TRANSFORMATION"
+      ],
+      "DeterministicReplayEngine.find_sessions": [
+        "TRANSFORMATION"
+      ],
+      "DeterministicReplayEngine.replay_session": [
+        "TRANSFORMATION"
+      ],
+      "DeterministicReplayEngine.rebuild_full_state": [
+        "TRANSFORMATION"
+      ],
+      "DeterministicReplayEngine._apply_event": [
+        "TRANSFORMATION"
+      ],
+      "find_sessions": [
+        "TRANSFORMATION"
+      ],
+      "replay_session": [
+        "TRANSFORMATION"
+      ],
+      "rebuild_full_state": [
+        "TRANSFORMATION"
+      ],
+      "_apply_event": [
+        "TRANSFORMATION"
+      ],
+      "UWMRebuilder": [
+        "TRANSFORMATION"
+      ],
+      "UWMRebuilder.rehydrate": [
+        "TRANSFORMATION"
+      ],
+      "UWMRebuilder.apply_event": [
+        "TRANSFORMATION"
+      ],
+      "rehydrate": [
+        "TRANSFORMATION"
+      ],
+      "apply_event": [
+        "TRANSFORMATION"
+      ],
+      "SMPRebuilder": [
+        "TRANSFORMATION"
+      ],
+      "SMPRebuilder.rehydrate": [
+        "TRANSFORMATION"
+      ],
+      "MemoryRebuilder": [
+        "TRANSFORMATION"
+      ],
+      "MemoryRebuilder.rehydrate": [
+        "TRANSFORMATION"
+      ],
+      "ForensicAnalyzer": [
+        "TRANSFORMATION"
+      ],
+      "ForensicAnalyzer.analyze_causal_chain": [
+        "TRANSFORMATION"
+      ],
+      "ForensicAnalyzer.timeline_analysis": [
+        "TRANSFORMATION"
+      ],
+      "ForensicAnalyzer.compare_sessions": [
+        "TRANSFORMATION"
+      ],
+      "analyze_causal_chain": [
+        "TRANSFORMATION"
+      ],
+      "trace_causes": [
+        "TRANSFORMATION"
+      ],
+      "timeline_analysis": [
+        "TRANSFORMATION"
+      ],
+      "compare_sessions": [
+        "TRANSFORMATION"
+      ],
+      "ReplayValidator": [
+        "TRANSFORMATION"
+      ],
+      "ReplayValidator.validate_replay": [
+        "TRANSFORMATION"
+      ],
+      "ReplayValidator.create_reference_replay": [
+        "TRANSFORMATION"
+      ],
+      "validate_replay": [
+        "TRANSFORMATION"
+      ],
+      "create_reference_replay": [
+        "TRANSFORMATION"
+      ],
+      "CompleteReplayInfrastructure": [
+        "TRANSFORMATION"
+      ],
+      "CompleteReplayInfrastructure.start_session": [
+        "TRANSFORMATION"
+      ],
+      "CompleteReplayInfrastructure.get_logger": [
+        "TRANSFORMATION"
+      ],
+      "CompleteReplayInfrastructure.log_event": [
+        "TRANSFORMATION"
+      ],
+      "CompleteReplayInfrastructure.end_session": [
+        "TRANSFORMATION"
+      ],
+      "CompleteReplayInfrastructure.replay_and_analyze": [
+        "TRANSFORMATION"
+      ],
+      "CompleteReplayInfrastructure.batch_replay": [
+        "TRANSFORMATION"
+      ],
+      "CompleteReplayInfrastructure.export_session": [
+        "TRANSFORMATION"
+      ],
+      "CompleteReplayInfrastructure.cleanup_old_sessions": [],
+      "CompleteReplayInfrastructure._capture_current_state": [
+        "TRANSFORMATION"
+      ],
+      "CompleteReplayInfrastructure._identify_key_events": [
+        "TRANSFORMATION"
+      ],
+      "CompleteReplayInfrastructure._load_all_events": [
+        "TRANSFORMATION"
+      ],
+      "CompleteReplayInfrastructure._export_events_to_csv": [
+        "TRANSFORMATION"
+      ],
+      "CompleteReplayInfrastructure._read_session_info": [
+        "TRANSFORMATION"
+      ],
+      "CompleteReplayInfrastructure._get_system_info": [
+        "TRANSFORMATION"
+      ],
+      "CompleteReplayInfrastructure._create_archive": [],
+      "CompleteReplayInfrastructure._archive_session": [],
+      "CompleteReplayInfrastructure._delete_session": [],
+      "CompleteReplayInfrastructure.get_statistics": [
+        "TRANSFORMATION"
+      ],
+      "start_session": [
+        "TRANSFORMATION"
+      ],
+      "get_logger": [
+        "TRANSFORMATION"
+      ],
+      "end_session": [
+        "TRANSFORMATION"
+      ],
+      "replay_and_analyze": [
+        "TRANSFORMATION"
+      ],
+      "batch_replay": [
+        "TRANSFORMATION"
+      ],
+      "export_session": [
+        "TRANSFORMATION"
+      ],
+      "cleanup_old_sessions": [],
+      "_capture_current_state": [
+        "TRANSFORMATION"
+      ],
+      "_identify_key_events": [
+        "TRANSFORMATION"
+      ],
+      "_load_all_events": [
+        "TRANSFORMATION"
+      ],
+      "_export_events_to_csv": [
+        "TRANSFORMATION"
+      ],
+      "_read_session_info": [
+        "TRANSFORMATION"
+      ],
+      "_get_system_info": [
+        "TRANSFORMATION"
+      ],
+      "_create_archive": [],
+      "_archive_session": [],
+      "_delete_session": [],
+      "get_statistics": [
+        "TRANSFORMATION"
+      ],
+      "create_replay_infrastructure": [
+        "TRANSFORMATION"
+      ],
+      "quick_replay_analysis": [
+        "TRANSFORMATION"
+      ],
+      "progress_callback": [
+        "TRANSFORMATION"
+      ],
+      "StorageTier": [],
+      "StorageFormat": [],
+      "StorageConfiguration": [],
+      "TieredMemoryStorage": [
+        "TRANSFORMATION"
+      ],
+      "TieredMemoryStorage.store_memory": [
+        "TRANSFORMATION"
+      ],
+      "TieredMemoryStorage.retrieve_memory": [
+        "TRANSFORMATION"
+      ],
+      "TieredMemoryStorage._store_in_tier": [
+        "TRANSFORMATION"
+      ],
+      "TieredMemoryStorage._store_ephemeral": [
+        "TRANSFORMATION"
+      ],
+      "TieredMemoryStorage._store_hot": [
+        "TRANSFORMATION"
+      ],
+      "TieredMemoryStorage._store_warm": [
+        "TRANSFORMATION"
+      ],
+      "store_memory": [
+        "TRANSFORMATION"
+      ],
+      "retrieve_memory": [
+        "TRANSFORMATION"
+      ],
+      "_store_in_tier": [
+        "TRANSFORMATION"
+      ],
+      "_store_ephemeral": [
+        "TRANSFORMATION"
+      ],
+      "_store_hot": [
+        "TRANSFORMATION"
+      ],
+      "_store_warm": [
+        "TRANSFORMATION"
+      ],
+      "MemoryIndexSystem": [
+        "TRANSFORMATION"
+      ],
+      "MemoryIndexSystem.index_memory": [],
+      "MemoryIndexSystem.query_by_similarity": [
+        "TRANSFORMATION"
+      ],
+      "MemoryIndexSystem.query_by_association": [
+        "TRANSFORMATION"
+      ],
+      "MemoryIndexSystem.query_by_temporal_context": [
+        "TRANSFORMATION"
+      ],
+      "index_memory": [],
+      "query_by_similarity": [
+        "TRANSFORMATION"
+      ],
+      "query_by_association": [
+        "TRANSFORMATION"
+      ],
+      "query_by_temporal_context": [
+        "TRANSFORMATION"
+      ],
+      "MemoryRetrievalEngine": [
+        "TRANSFORMATION"
+      ],
+      "MemoryRetrievalEngine.retrieve_and_apply": [
+        "TRANSFORMATION"
+      ],
+      "MemoryRetrievalEngine._execute_retrieval": [
+        "TRANSFORMATION"
+      ],
+      "MemoryRetrievalEngine._retrieve_by_similarity": [
+        "TRANSFORMATION"
+      ],
+      "MemoryRetrievalEngine._retrieve_by_association": [
+        "TRANSFORMATION"
+      ],
+      "MemoryRetrievalEngine._apply_memories": [
+        "TRANSFORMATION"
+      ],
+      "retrieve_and_apply": [
+        "TRANSFORMATION"
+      ],
+      "_execute_retrieval": [
+        "TRANSFORMATION"
+      ],
+      "_retrieve_by_similarity": [
+        "TRANSFORMATION"
+      ],
+      "_retrieve_by_association": [
+        "TRANSFORMATION"
+      ],
+      "_apply_memories": [
+        "TRANSFORMATION"
+      ],
+      "MemoryConsolidationScheduler": [
+        "TRANSFORMATION"
+      ],
+      "MemoryConsolidationScheduler.schedule_consolidation": [],
+      "MemoryConsolidationScheduler.run_consolidation_cycle": [
+        "TRANSFORMATION"
+      ],
+      "schedule_consolidation": [],
+      "run_consolidation_cycle": [
+        "TRANSFORMATION"
+      ],
+      "MemoryForgettingManager": [
+        "TRANSFORMATION"
+      ],
+      "MemoryForgettingManager.update_forgetting_curve": [],
+      "MemoryForgettingManager.get_memories_for_review": [
+        "TRANSFORMATION"
+      ],
+      "update_forgetting_curve": [],
+      "get_memories_for_review": [
+        "TRANSFORMATION"
+      ],
+      "MetamemorySystem": [],
+      "MetamemorySystem.monitor_memory_operation": [],
+      "MetamemorySystem._check_regulation_needs": [],
+      "monitor_memory_operation": [],
+      "_check_regulation_needs": [],
+      "CompleteMemorySystem": [
+        "TRANSFORMATION"
+      ],
+      "CompleteMemorySystem.store_complete_memory": [
+        "TRANSFORMATION"
+      ],
+      "CompleteMemorySystem.retrieve_for_application": [
+        "TRANSFORMATION"
+      ],
+      "CompleteMemorySystem.run_maintenance_cycle": [
+        "TRANSFORMATION"
+      ],
+      "store_complete_memory": [
+        "TRANSFORMATION"
+      ],
+      "retrieve_for_application": [
+        "TRANSFORMATION"
+      ],
+      "run_maintenance_cycle": [
+        "TRANSFORMATION"
+      ],
+      "CompleteMemorySystem._start_background_processes": [],
+      "CompleteMemorySystem._background_consolidation": [],
+      "_start_background_processes": [],
+      "_background_consolidation": [],
+      "demonstrate_complete_memory_system": [
+        "TRANSFORMATION"
+      ],
+      "SMPType": [],
+      "SMPStatus": [],
+      "SMPConfidence": [],
+      "SMPClaim": [
+        "TRANSFORMATION"
+      ],
+      "SMPClaim.to_dict": [
+        "TRANSFORMATION"
+      ],
+      "to_dict": [
+        "TRANSFORMATION"
+      ],
+      "SMPDependencies": [
+        "TRANSFORMATION"
+      ],
+      "SMPDependencies.is_grounded": [
+        "TRANSFORMATION"
+      ],
+      "is_grounded": [
+        "TRANSFORMATION"
+      ],
+      "StructuredMeaningPacket": [
+        "TRANSFORMATION"
+      ],
+      "StructuredMeaningPacket.id_hash": [
+        "TRANSFORMATION"
+      ],
+      "StructuredMeaningPacket._score_evidence_quality": [
+        "TRANSFORMATION"
+      ],
+      "StructuredMeaningPacket.to_canonical_dict": [
+        "TRANSFORMATION"
+      ],
+      "id_hash": [
+        "TRANSFORMATION"
+      ],
+      "_score_evidence_quality": [
+        "TRANSFORMATION"
+      ],
+      "to_canonical_dict": [
+        "TRANSFORMATION"
+      ],
+      "SMPGenerator": [
+        "TRANSFORMATION"
+      ],
+      "SMPGenerator.generate_from_uwm_event": [
+        "TRANSFORMATION"
+      ],
+      "SMPGenerator.generate_from_uwm_state": [
+        "TRANSFORMATION"
+      ],
+      "SMPGenerator.generate_agent_hypothesis": [
+        "TRANSFORMATION"
+      ],
+      "SMPGenerator.generate_diagnostic_smps": [
+        "TRANSFORMATION"
+      ],
+      "SMPGenerator._generate_create_smps": [
+        "TRANSFORMATION"
+      ],
+      "SMPGenerator._generate_smp_id": [
+        "TRANSFORMATION"
+      ],
+      "generate_from_uwm_event": [
+        "TRANSFORMATION"
+      ],
+      "generate_from_uwm_state": [
+        "TRANSFORMATION"
+      ],
+      "generate_agent_hypothesis": [
+        "TRANSFORMATION"
+      ],
+      "generate_diagnostic_smps": [
+        "TRANSFORMATION"
+      ],
+      "_generate_create_smps": [
+        "TRANSFORMATION"
+      ],
+      "_generate_smp_id": [
+        "TRANSFORMATION"
+      ],
+      "TetrahedralEnrichment": [
+        "TRANSFORMATION"
+      ],
+      "TetrahedralEnrichment.enrich_smp": [
+        "TRANSFORMATION"
+      ],
+      "enrich_smp": [
+        "TRANSFORMATION"
+      ],
+      "LogicFace": [
+        "TRANSFORMATION"
+      ],
+      "LogicFace.analyze": [
+        "TRANSFORMATION"
+      ],
+      "analyze": [
+        "TRANSFORMATION"
+      ],
+      "ConstraintEnrichment": [
+        "TRANSFORMATION"
+      ],
+      "ConstraintEnrichment.enrich_smp": [
+        "TRANSFORMATION"
+      ],
+      "InformationExplosionOrchestrator": [
+        "TRANSFORMATION"
+      ],
+      "InformationExplosionOrchestrator.process_smp": [
+        "TRANSFORMATION"
+      ],
+      "InformationExplosionOrchestrator._check_convergence": [
+        "TRANSFORMATION"
+      ],
+      "InformationExplosionOrchestrator._finalize_smp": [
+        "TRANSFORMATION"
+      ],
+      "process_smp": [
+        "TRANSFORMATION"
+      ],
+      "_check_convergence": [
+        "TRANSFORMATION"
+      ],
+      "_finalize_smp": [
+        "TRANSFORMATION"
+      ],
+      "SMPEvaluationPipeline": [
+        "TRANSFORMATION"
+      ],
+      "SMPEvaluationPipeline.evaluate_smp": [
+        "TRANSFORMATION"
+      ],
+      "SMPEvaluationPipeline._determine_routing": [
+        "TRANSFORMATION"
+      ],
+      "evaluate_smp": [
+        "TRANSFORMATION"
+      ],
+      "_determine_routing": [
+        "TRANSFORMATION"
+      ],
+      "StructuredMeaningSystem": [
+        "TRANSFORMATION"
+      ],
+      "StructuredMeaningSystem.process_uwm_event": [
+        "TRANSFORMATION"
+      ],
+      "process_uwm_event": [
+        "TRANSFORMATION"
+      ],
+      "EvaluationPerspective": [],
+      "TriuneCommutationResult": [],
+      "SMPGroundingLevel": [],
+      "PXLIELSEvaluator": [
+        "TRANSFORMATION"
+      ],
+      "PXLIELSEvaluator.evaluate_smp": [
+        "TRANSFORMATION"
+      ],
+      "PXLIELSEvaluator._analyze_pxl_coherence": [
+        "TRANSFORMATION"
+      ],
+      "PXLIELSEvaluator._analyze_iel_domains": [
+        "TRANSFORMATION"
+      ],
+      "_analyze_pxl_coherence": [
+        "TRANSFORMATION"
+      ],
+      "_analyze_iel_domains": [
+        "TRANSFORMATION"
+      ],
+      "ETGCEvaluator": [
+        "TRANSFORMATION"
+      ],
+      "ETGCEvaluator.evaluate_smp": [
+        "TRANSFORMATION"
+      ],
+      "ETGCEvaluator._evaluate_dimension": [
+        "TRANSFORMATION"
+      ],
+      "ETGCEvaluator._evaluate_existence": [
+        "TRANSFORMATION"
+      ],
+      "ETGCEvaluator._evaluate_truth": [
+        "TRANSFORMATION"
+      ],
+      "ETGCEvaluator._evaluate_goodness": [
+        "TRANSFORMATION"
+      ],
+      "_evaluate_dimension": [
+        "TRANSFORMATION"
+      ],
+      "_evaluate_existence": [
+        "TRANSFORMATION"
+      ],
+      "_evaluate_truth": [
+        "TRANSFORMATION"
+      ],
+      "_evaluate_goodness": [
+        "TRANSFORMATION"
+      ],
+      "PrivationEvaluator": [
+        "TRANSFORMATION"
+      ],
+      "PrivationEvaluator.evaluate_smp": [
+        "TRANSFORMATION"
+      ],
+      "PrivationEvaluator._analyze_privation_category": [
+        "TRANSFORMATION"
+      ],
+      "PrivationEvaluator._analyze_ontological_gaps": [
+        "TRANSFORMATION"
+      ],
+      "PrivationEvaluator._analyze_epistemic_absences": [
+        "TRANSFORMATION"
+      ],
+      "PrivationEvaluator._analyze_completeness_gaps": [
+        "TRANSFORMATION"
+      ],
+      "_analyze_privation_category": [
+        "TRANSFORMATION"
+      ],
+      "_analyze_ontological_gaps": [
+        "TRANSFORMATION"
+      ],
+      "_analyze_epistemic_absences": [
+        "TRANSFORMATION"
+      ],
+      "_analyze_completeness_gaps": [
+        "TRANSFORMATION"
+      ],
+      "TriuneCommutationEngine": [
+        "TRANSFORMATION"
+      ],
+      "TriuneCommutationEngine.evaluate_smp_tripartite": [
+        "TRANSFORMATION"
+      ],
+      "TriuneCommutationEngine._analyze_triune_commutation": [
+        "TRANSFORMATION"
+      ],
+      "TriuneCommutationEngine._analyze_convergence": [
+        "TRANSFORMATION"
+      ],
+      "TriuneCommutationEngine._calculate_epistemic_value": [
+        "TRANSFORMATION"
+      ],
+      "TriuneCommutationEngine._assess_truth_coherence_grounding": [
+        "TRANSFORMATION"
+      ],
+      "evaluate_smp_tripartite": [
+        "TRANSFORMATION"
+      ],
+      "_analyze_triune_commutation": [
+        "TRANSFORMATION"
+      ],
+      "_analyze_convergence": [
+        "TRANSFORMATION"
+      ],
+      "_calculate_epistemic_value": [
+        "TRANSFORMATION"
+      ],
+      "_assess_truth_coherence_grounding": [
+        "TRANSFORMATION"
+      ],
+      "SystemMemoryRouter": [],
+      "SystemMemoryRouter.route_to_memory": [],
+      "route_to_memory": [],
+      "SMP": [
+        "UTILITY"
+      ],
+      "EngineReport": [
+        "UTILITY"
+      ],
+      "RefinedSMP": [
+        "UTILITY"
+      ],
+      "SMPSynthesizer": [
+        "TRANSFORMATION"
+      ],
+      "SMPSynthesizer.synthesize": [
+        "TRANSFORMATION"
+      ],
+      "synthesize": [
+        "TRANSFORMATION"
+      ],
+      "StabilityCalculator": [
+        "TRANSFORMATION"
+      ],
+      "StabilityCalculator.calculate": [
+        "TRANSFORMATION"
+      ],
+      "StabilityCalculator._content_hash": [
+        "TRANSFORMATION"
+      ],
+      "calculate": [
+        "TRANSFORMATION"
+      ],
+      "_content_hash": [
+        "TRANSFORMATION"
+      ],
+      "PXLLogicFace": [
+        "TRANSFORMATION"
+      ],
+      "PXLLogicFace.analyze": [
+        "TRANSFORMATION"
+      ],
+      "IELDomainFace": [
+        "TRANSFORMATION"
+      ],
+      "IELDomainFace.analyze": [
+        "TRANSFORMATION"
+      ],
+      "ARPMathematicalFace": [
+        "TRANSFORMATION"
+      ],
+      "ARPMathematicalFace.analyze": [
+        "TRANSFORMATION"
+      ],
+      "CognitiveResistor": [
+        "TRANSFORMATION"
+      ],
+      "CognitiveResistor.analyze": [
+        "TRANSFORMATION"
+      ],
+      "TetrahedralEvaluator": [
+        "TRANSFORMATION"
+      ],
+      "TetrahedralEvaluator.evaluate": [
+        "TRANSFORMATION"
+      ],
+      "TetrahedralEvaluator._synthesize_reports": [
+        "TRANSFORMATION"
+      ],
+      "TetrahedralEvaluator._calculate_stability": [
+        "TRANSFORMATION"
+      ],
+      "evaluate": [
+        "UTILITY"
+      ],
+      "_synthesize_reports": [
+        "TRANSFORMATION"
+      ],
+      "_calculate_stability": [
+        "TRANSFORMATION"
+      ],
+      "_test_system_a": [
+        "UTILITY"
+      ],
+      "PXLAnalyzer": [
+        "TRANSFORMATION"
+      ],
+      "PXLAnalyzer.analyze_concept": [
+        "TRANSFORMATION"
+      ],
+      "PXLAnalyzer._check_i1": [
+        "TRANSFORMATION"
+      ],
+      "PXLAnalyzer._check_i2": [
+        "TRANSFORMATION"
+      ],
+      "PXLAnalyzer._check_i3": [
+        "TRANSFORMATION"
+      ],
+      "PXLAnalyzer._entails_O": [
+        "TRANSFORMATION"
+      ],
+      "PXLAnalyzer._detect_paradox": [
+        "TRANSFORMATION"
+      ],
+      "analyze_concept": [
+        "TRANSFORMATION"
+      ],
+      "_check_i1": [
+        "TRANSFORMATION"
+      ],
+      "_check_i2": [
+        "TRANSFORMATION"
+      ],
+      "_check_i3": [
+        "TRANSFORMATION"
+      ],
+      "_entails_O": [
+        "TRANSFORMATION"
+      ],
+      "_detect_paradox": [
+        "TRANSFORMATION"
+      ],
+      "SMPQuality": [],
+      "FailureMode": [],
+      "RecoveryAction": [],
+      "CommitResult": [],
+      "OrchestrationMetrics": [],
+      "Enhancement": [
+        "TRANSFORMATION"
+      ],
+      "Enhancement.name": [],
+      "Enhancement.pre_process": [
+        "TRANSFORMATION"
+      ],
+      "Enhancement.post_system_a": [
+        "TRANSFORMATION"
+      ],
+      "Enhancement.post_system_b": [
+        "TRANSFORMATION"
+      ],
+      "Enhancement.post_process": [
+        "TRANSFORMATION"
+      ],
+      "Enhancement.on_failure": [
+        "TRANSFORMATION"
+      ],
+      "name": [
+        "TRANSFORMATION"
+      ],
+      "pre_process": [
+        "TRANSFORMATION"
+      ],
+      "post_system_a": [
+        "TRANSFORMATION"
+      ],
+      "post_system_b": [
+        "TRANSFORMATION"
+      ],
+      "post_process": [
+        "TRANSFORMATION"
+      ],
+      "on_failure": [
+        "TRANSFORMATION"
+      ],
+      "SystemOrchestrator": [
+        "TRANSFORMATION"
+      ],
+      "SystemOrchestrator.register_enhancement": [],
+      "SystemOrchestrator.enable_enhancement": [
+        "TRANSFORMATION"
+      ],
+      "SystemOrchestrator.disable_enhancement": [],
+      "SystemOrchestrator.evaluate_and_authorize": [
+        "TRANSFORMATION"
+      ],
+      "SystemOrchestrator._handle_system_a_failure": [
+        "TRANSFORMATION"
+      ],
+      "SystemOrchestrator._handle_system_b_failure": [
+        "TRANSFORMATION"
+      ],
+      "SystemOrchestrator._classify_failure": [
+        "TRANSFORMATION"
+      ],
+      "SystemOrchestrator._apply_feedback_loops": [],
+      "SystemOrchestrator._build_commit_result": [
+        "TRANSFORMATION"
+      ],
+      "SystemOrchestrator._build_error_result": [
+        "TRANSFORMATION"
+      ],
+      "SystemOrchestrator._update_metrics": [],
+      "SystemOrchestrator.get_metrics": [
+        "TRANSFORMATION"
+      ],
+      "SystemOrchestrator.reset_metrics": [],
+      "SystemOrchestrator._stub_system_a": [
+        "TRANSFORMATION"
+      ],
+      "SystemOrchestrator._stub_system_b": [
+        "TRANSFORMATION"
+      ],
+      "SystemOrchestrator._load_all_enhancements": [],
+      "register_enhancement": [],
+      "enable_enhancement": [
+        "TRANSFORMATION"
+      ],
+      "disable_enhancement": [],
+      "evaluate_and_authorize": [
+        "TRANSFORMATION"
+      ],
+      "_handle_system_a_failure": [
+        "TRANSFORMATION"
+      ],
+      "_handle_system_b_failure": [
+        "TRANSFORMATION"
+      ],
+      "_classify_failure": [
+        "TRANSFORMATION"
+      ],
+      "_apply_feedback_loops": [],
+      "_build_commit_result": [
+        "TRANSFORMATION"
+      ],
+      "_build_error_result": [
+        "TRANSFORMATION"
+      ],
+      "_update_metrics": [],
+      "get_metrics": [
+        "TRANSFORMATION"
+      ],
+      "reset_metrics": [
+        "UTILITY"
+      ],
+      "_stub_system_a": [
+        "TRANSFORMATION"
+      ],
+      "StubRefined": [],
+      "_stub_system_b": [
+        "TRANSFORMATION"
+      ],
+      "StubResult": [],
+      "StubToken": [],
+      "_load_all_enhancements": [],
+      "AdaptiveControlEnhancement": [
+        "TRANSFORMATION"
+      ],
+      "AdaptiveControlEnhancement.name": [
+        "TRANSFORMATION"
+      ],
+      "AdaptiveControlEnhancement.pre_process": [
+        "TRANSFORMATION"
+      ],
+      "QualityClassifierEnhancement": [
+        "TRANSFORMATION"
+      ],
+      "QualityClassifierEnhancement.name": [
+        "TRANSFORMATION"
+      ],
+      "QualityClassifierEnhancement.post_system_a": [
+        "TRANSFORMATION"
+      ],
+      "PerformanceMonitorEnhancement": [
+        "TRANSFORMATION"
+      ],
+      "PerformanceMonitorEnhancement.name": [
+        "TRANSFORMATION"
+      ],
+      "PerformanceMonitorEnhancement.post_process": [
+        "TRANSFORMATION"
+      ],
+      "FailureRecoveryEnhancement": [
+        "TRANSFORMATION"
+      ],
+      "FailureRecoveryEnhancement.name": [
+        "TRANSFORMATION"
+      ],
+      "FailureRecoveryEnhancement.on_failure": [
+        "TRANSFORMATION"
+      ],
+      "AuditAggregatorEnhancement": [
+        "TRANSFORMATION"
+      ],
+      "AuditAggregatorEnhancement.name": [
+        "TRANSFORMATION"
+      ],
+      "AuditAggregatorEnhancement.post_process": [
+        "TRANSFORMATION"
+      ],
+      "PatternLearnerEnhancement": [
+        "TRANSFORMATION"
+      ],
+      "PatternLearnerEnhancement.name": [
+        "TRANSFORMATION"
+      ],
+      "PatternLearnerEnhancement.post_process": [
+        "TRANSFORMATION"
+      ],
+      "create_orchestrator": [
+        "TRANSFORMATION"
+      ],
+      "_test_orchestrator": [],
+      "TestSMP": [],
+      "CriticMode": [
+        "UTILITY"
+      ],
+      "CriticArchetype": [
+        "UTILITY"
+      ],
+      "CriticalChallenge": [
+        "TRANSFORMATION"
+      ],
+      "CriticalChallenge.to_dict": [
+        "TRANSFORMATION"
+      ],
+      "CriticalLens": [
+        "TRANSFORMATION"
+      ],
+      "CriticalLens._determine_mode": [
+        "TRANSFORMATION"
+      ],
+      "CriticalLens._load_templates": [
+        "TRANSFORMATION"
+      ],
+      "CriticalLens.generate_challenge": [
+        "TRANSFORMATION"
+      ],
+      "CriticalLens._identify_vulnerability": [
+        "TRANSFORMATION"
+      ],
+      "_determine_mode": [
+        "TRANSFORMATION"
+      ],
+      "_load_templates": [
+        "TRANSFORMATION"
+      ],
+      "generate_challenge": [
+        "TRANSFORMATION"
+      ],
+      "_identify_vulnerability": [
+        "TRANSFORMATION"
+      ],
+      "TetrahedralCritic": [
+        "TRANSFORMATION"
+      ],
+      "TetrahedralCritic.apply_critique": [
+        "TRANSFORMATION"
+      ],
+      "TetrahedralCritic._generate_comprehensive_challenges": [
+        "TRANSFORMATION"
+      ],
+      "TetrahedralCritic._validate_challenges_against_pxl": [
+        "TRANSFORMATION"
+      ],
+      "TetrahedralCritic._assess_critical_impact": [
+        "TRANSFORMATION"
+      ],
+      "TetrahedralCritic._generate_dialectical_synthesis": [
+        "TRANSFORMATION"
+      ],
+      "TetrahedralCritic._perform_triune_synthesis": [
+        "TRANSFORMATION"
+      ],
+      "apply_critique": [
+        "TRANSFORMATION"
+      ],
+      "_generate_comprehensive_challenges": [
+        "TRANSFORMATION"
+      ],
+      "_validate_challenges_against_pxl": [
+        "TRANSFORMATION"
+      ],
+      "_assess_critical_impact": [
+        "TRANSFORMATION"
+      ],
+      "_generate_dialectical_synthesis": [
+        "TRANSFORMATION"
+      ],
+      "_perform_triune_synthesis": [
+        "TRANSFORMATION"
+      ],
+      "SelfReferentialCritic": [
+        "TRANSFORMATION"
+      ],
+      "SelfReferentialCritic.critique_pxl_foundations": [
+        "TRANSFORMATION"
+      ],
+      "SelfReferentialCritic._critique_axiom": [
+        "TRANSFORMATION"
+      ],
+      "critique_pxl_foundations": [
+        "TRANSFORMATION"
+      ],
+      "_critique_axiom": [
+        "TRANSFORMATION"
+      ],
+      "PragmaticEffectivenessValidator": [
+        "TRANSFORMATION"
+      ],
+      "PragmaticEffectivenessValidator.validate_effectiveness": [
+        "TRANSFORMATION"
+      ],
+      "validate_effectiveness": [
+        "TRANSFORMATION"
+      ],
+      "CriticalMemoryIntegrator": [
+        "TRANSFORMATION"
+      ],
+      "CriticalMemoryIntegrator.integrate_critique": [
+        "TRANSFORMATION"
+      ],
+      "integrate_critique": [
+        "TRANSFORMATION"
+      ],
+      "demonstrate_cognitive_resistor": [
+        "TRANSFORMATION"
+      ],
+      "ModalDimension": [
+        "UTILITY"
+      ],
+      "ModalVector": [
+        "TRANSFORMATION"
+      ],
+      "ModalVector.id": [
+        "TRANSFORMATION"
+      ],
+      "ModalVector.similarity": [
+        "TRANSFORMATION"
+      ],
+      "ModalVector.modal_distance": [
+        "TRANSFORMATION"
+      ],
+      "ModalVector.project_to_pxl": [
+        "TRANSFORMATION"
+      ],
+      "id": [
+        "TRANSFORMATION"
+      ],
+      "similarity": [
+        "TRANSFORMATION"
+      ],
+      "modal_distance": [
+        "TRANSFORMATION"
+      ],
+      "project_to_pxl": [
+        "TRANSFORMATION"
+      ],
+      "FractalEmbedding": [
+        "TRANSFORMATION"
+      ],
+      "FractalEmbedding._validate_scales": [
+        "UTILITY"
+      ],
+      "FractalEmbedding.embed_at_scale": [
+        "TRANSFORMATION"
+      ],
+      "FractalEmbedding._generate_fractal_embedding": [
+        "TRANSFORMATION"
+      ],
+      "FractalEmbedding.compute_fractal_dimension": [
+        "TRANSFORMATION"
+      ],
+      "_validate_scales": [
+        "UTILITY"
+      ],
+      "embed_at_scale": [
+        "TRANSFORMATION"
+      ],
+      "_generate_fractal_embedding": [
+        "TRANSFORMATION"
+      ],
+      "compute_fractal_dimension": [
+        "TRANSFORMATION"
+      ],
+      "WorldState": [
+        "TRANSFORMATION"
+      ],
+      "WorldState.state_hash": [
+        "TRANSFORMATION"
+      ],
+      "WorldState.get_entity_modality": [
+        "TRANSFORMATION"
+      ],
+      "WorldState.compute_modal_field": [
+        "TRANSFORMATION"
+      ],
+      "state_hash": [
+        "TRANSFORMATION"
+      ],
+      "get_entity_modality": [
+        "TRANSFORMATION"
+      ],
+      "compute_modal_field": [
+        "TRANSFORMATION"
+      ],
+      "DynamicWorldModel": [
+        "TRANSFORMATION"
+      ],
+      "DynamicWorldModel.update_entity": [
+        "TRANSFORMATION"
+      ],
+      "DynamicWorldModel._check_modal_consistency": [
+        "TRANSFORMATION"
+      ],
+      "DynamicWorldModel._update_fractal_embedding": [
+        "TRANSFORMATION"
+      ],
+      "DynamicWorldModel.query_modal_space": [
+        "TRANSFORMATION"
+      ],
+      "DynamicWorldModel.predict_modal_evolution": [
+        "TRANSFORMATION"
+      ],
+      "DynamicWorldModel.compute_world_entropy": [
+        "TRANSFORMATION"
+      ],
+      "DynamicWorldModel.add_modal_constraint": [
+        "UTILITY"
+      ],
+      "DynamicWorldModel._update_consistency_graph": [
+        "UTILITY"
+      ],
+      "DynamicWorldModel.save_state": [
+        "UTILITY"
+      ],
+      "DynamicWorldModel.load_state": [
+        "UTILITY"
+      ],
+      "DynamicWorldModel.get_diagnostics": [
+        "TRANSFORMATION"
+      ],
+      "DynamicWorldModel._get_modal_distribution": [
+        "TRANSFORMATION"
+      ],
+      "DynamicWorldModel._get_fractal_statistics": [
+        "TRANSFORMATION"
+      ],
+      "update_entity": [
+        "TRANSFORMATION"
+      ],
+      "_check_modal_consistency": [
+        "TRANSFORMATION"
+      ],
+      "_update_fractal_embedding": [
+        "TRANSFORMATION"
+      ],
+      "query_modal_space": [
+        "TRANSFORMATION"
+      ],
+      "predict_modal_evolution": [
+        "TRANSFORMATION"
+      ],
+      "compute_world_entropy": [
+        "TRANSFORMATION"
+      ],
+      "add_modal_constraint": [
+        "UTILITY"
+      ],
+      "_update_consistency_graph": [
+        "UTILITY"
+      ],
+      "save_state": [
+        "UTILITY"
+      ],
+      "load_state": [
+        "UTILITY"
+      ],
+      "get_diagnostics": [
+        "TRANSFORMATION"
+      ],
+      "_get_modal_distribution": [
+        "TRANSFORMATION"
+      ],
+      "_get_fractal_statistics": [
+        "TRANSFORMATION"
+      ],
+      "PXLWorldModelBridge": [
+        "TRANSFORMATION"
+      ],
+      "PXLWorldModelBridge.pxl_proposition_to_modal": [
+        "TRANSFORMATION"
+      ],
+      "pxl_proposition_to_modal": [
+        "TRANSFORMATION"
+      ]
+    },
+    "data_role": {
+      "set_mission_profile": [],
+      "_persist_profile": [],
+      "_resolve_profile": [],
+      "_parse_args": [],
+      "_ensure_scripts_importable": [],
+      "_load_tools": [],
+      "_tool_metadata": [],
+      "_normalize": [],
+      "_write_json": [],
+      "_write_markdown": [],
+      "main": [],
+      "_as_posix": [],
+      "validate_evidence_ref": [],
+      "_sort_key": [],
+      "normalize_evidence_refs": [],
+      "evidence_to_citation_string": [],
+      "is_proved_reference": [],
+      "_sha256_file": [],
+      "_normalize_path": [],
+      "_collect_bundle_hashes": [
+        "CRYPTO_ID"
+      ],
+      "_sanitize_steps": [],
+      "_sanitize_outcomes": [],
+      "write_cycle_ledger": [],
+      "canonical_json_hash": [
+        "CRYPTO_ID"
+      ],
+      "normalize_statement": [],
+      "extract_theorem_statement": [],
+      "_ensure_repo_on_path": [],
+      "load_metrics": [],
+      "choose_best": [],
+      "normalize_objective_class": [],
+      "add_memory_item": [],
+      "decay_and_promote": [],
+      "recall": [],
+      "stable_item_id": [],
+      "load_theorem_index": [],
+      "enforce_truth_annotation": [],
+      "validate_truth_annotation": [],
+      "apply_belief_policy": [],
+      "consolidate_beliefs": [],
+      "apply_plan_revision": [],
+      "get_belief_summary": [],
+      "StubSCPNexus": [],
+      "StubSCPNexus.process_agent_request": [],
+      "process_agent_request": [],
+      "LogosAgiNexus": [],
+      "LogosAgiNexus._load_persisted_state": [],
+      "LogosAgiNexus.refresh_plan_history": [],
+      "LogosAgiNexus.record_tool_result": [],
+      "LogosAgiNexus.get_memory_summary": [],
+      "LogosAgiNexus.observe": [],
+      "LogosAgiNexus._process_observation_async": [],
+      "LogosAgiNexus.propose": [],
+      "LogosAgiNexus.propose_plan": [],
+      "LogosAgiNexus.persist": [],
+      "LogosAgiNexus.health": [],
+      "AgentRequest": [],
+      "_load_persisted_state": [],
+      "refresh_plan_history": [],
+      "record_tool_result": [],
+      "get_memory_summary": [],
+      "observe": [],
+      "_process_observation_async": [],
+      "propose": [],
+      "propose_plan": [],
+      "persist": [],
+      "health": [],
+      "ReplayEventType": [
+        "MEMORY"
+      ],
+      "ReplayGranularity": [
+        "MEMORY"
+      ],
+      "ReplayEvent": [
+        "MEMORY"
+      ],
+      "ReplayEvent._generate_event_id": [
+        "MEMORY"
+      ],
+      "ReplayEvent._calculate_checksum": [
+        "MEMORY"
+      ],
+      "ReplayEvent.to_serializable": [
+        "MEMORY"
+      ],
+      "ReplayEvent.from_serializable": [
+        "MEMORY"
+      ],
+      "ReplayEvent.verify": [
+        "MEMORY"
+      ],
+      "_generate_event_id": [
+        "MEMORY"
+      ],
+      "_calculate_checksum": [
+        "MEMORY"
+      ],
+      "to_serializable": [
+        "MEMORY"
+      ],
+      "from_serializable": [
+        "MEMORY"
+      ],
+      "verify": [],
+      "DeterministicReplayLogger": [
+        "MEMORY"
+      ],
+      "DeterministicReplayLogger.log_event": [
+        "MEMORY"
+      ],
+      "DeterministicReplayLogger.log_event_async": [
+        "MEMORY"
+      ],
+      "DeterministicReplayLogger.create_checkpoint": [
+        "MEMORY"
+      ],
+      "DeterministicReplayLogger._flush_batch": [
+        "MEMORY"
+      ],
+      "DeterministicReplayLogger._append_to_event_log": [
+        "MEMORY"
+      ],
+      "log_event": [],
+      "log_event_async": [
+        "MEMORY"
+      ],
+      "create_checkpoint": [
+        "MEMORY"
+      ],
+      "_flush_batch": [
+        "MEMORY"
+      ],
+      "_append_to_event_log": [
+        "MEMORY"
+      ],
+      "DeterministicReplayEngine": [
+        "MEMORY"
+      ],
+      "DeterministicReplayEngine.find_sessions": [
+        "MEMORY"
+      ],
+      "DeterministicReplayEngine.replay_session": [
+        "MEMORY"
+      ],
+      "DeterministicReplayEngine.rebuild_full_state": [
+        "MEMORY"
+      ],
+      "DeterministicReplayEngine._apply_event": [
+        "MEMORY"
+      ],
+      "find_sessions": [
+        "MEMORY"
+      ],
+      "replay_session": [
+        "MEMORY"
+      ],
+      "rebuild_full_state": [
+        "MEMORY"
+      ],
+      "_apply_event": [
+        "MEMORY"
+      ],
+      "UWMRebuilder": [
+        "MEMORY"
+      ],
+      "UWMRebuilder.rehydrate": [
+        "MEMORY"
+      ],
+      "UWMRebuilder.apply_event": [
+        "MEMORY"
+      ],
+      "rehydrate": [
+        "MEMORY"
+      ],
+      "apply_event": [
+        "MEMORY"
+      ],
+      "SMPRebuilder": [
+        "MEMORY"
+      ],
+      "SMPRebuilder.rehydrate": [
+        "MEMORY"
+      ],
+      "MemoryRebuilder": [
+        "MEMORY"
+      ],
+      "MemoryRebuilder.rehydrate": [
+        "MEMORY"
+      ],
+      "ForensicAnalyzer": [
+        "MEMORY"
+      ],
+      "ForensicAnalyzer.analyze_causal_chain": [
+        "MEMORY"
+      ],
+      "ForensicAnalyzer.timeline_analysis": [
+        "MEMORY"
+      ],
+      "ForensicAnalyzer.compare_sessions": [
+        "MEMORY"
+      ],
+      "analyze_causal_chain": [
+        "MEMORY"
+      ],
+      "trace_causes": [
+        "MEMORY"
+      ],
+      "timeline_analysis": [
+        "MEMORY"
+      ],
+      "compare_sessions": [
+        "MEMORY"
+      ],
+      "ReplayValidator": [
+        "MEMORY"
+      ],
+      "ReplayValidator.validate_replay": [
+        "MEMORY"
+      ],
+      "ReplayValidator.create_reference_replay": [
+        "MEMORY"
+      ],
+      "validate_replay": [
+        "MEMORY"
+      ],
+      "create_reference_replay": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure.start_session": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure.get_logger": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure.log_event": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure.end_session": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure.replay_and_analyze": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure.batch_replay": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure.export_session": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure.cleanup_old_sessions": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure._capture_current_state": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure._identify_key_events": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure._load_all_events": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure._export_events_to_csv": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure._read_session_info": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure._get_system_info": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure._create_archive": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure._archive_session": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure._delete_session": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure.get_statistics": [
+        "MEMORY"
+      ],
+      "start_session": [
+        "MEMORY"
+      ],
+      "get_logger": [
+        "MEMORY"
+      ],
+      "end_session": [
+        "MEMORY"
+      ],
+      "replay_and_analyze": [
+        "MEMORY"
+      ],
+      "batch_replay": [
+        "MEMORY"
+      ],
+      "export_session": [
+        "MEMORY"
+      ],
+      "cleanup_old_sessions": [
+        "MEMORY"
+      ],
+      "_capture_current_state": [
+        "MEMORY"
+      ],
+      "_identify_key_events": [
+        "MEMORY"
+      ],
+      "_load_all_events": [
+        "MEMORY"
+      ],
+      "_export_events_to_csv": [
+        "MEMORY"
+      ],
+      "_read_session_info": [
+        "MEMORY"
+      ],
+      "_get_system_info": [
+        "MEMORY"
+      ],
+      "_create_archive": [
+        "MEMORY"
+      ],
+      "_archive_session": [
+        "MEMORY"
+      ],
+      "_delete_session": [
+        "MEMORY"
+      ],
+      "get_statistics": [],
+      "create_replay_infrastructure": [
+        "MEMORY"
+      ],
+      "quick_replay_analysis": [
+        "MEMORY"
+      ],
+      "progress_callback": [
+        "MEMORY"
+      ],
+      "StorageTier": [
+        "MEMORY"
+      ],
+      "StorageFormat": [
+        "MEMORY"
+      ],
+      "StorageConfiguration": [
+        "MEMORY"
+      ],
+      "TieredMemoryStorage": [
+        "MEMORY"
+      ],
+      "TieredMemoryStorage.store_memory": [
+        "MEMORY"
+      ],
+      "TieredMemoryStorage.retrieve_memory": [
+        "MEMORY"
+      ],
+      "TieredMemoryStorage._store_in_tier": [
+        "MEMORY"
+      ],
+      "TieredMemoryStorage._store_ephemeral": [
+        "MEMORY"
+      ],
+      "TieredMemoryStorage._store_hot": [
+        "MEMORY"
+      ],
+      "TieredMemoryStorage._store_warm": [
+        "MEMORY"
+      ],
+      "store_memory": [
+        "MEMORY"
+      ],
+      "retrieve_memory": [
+        "MEMORY"
+      ],
+      "_store_in_tier": [
+        "MEMORY"
+      ],
+      "_store_ephemeral": [
+        "MEMORY"
+      ],
+      "_store_hot": [
+        "MEMORY"
+      ],
+      "_store_warm": [
+        "MEMORY"
+      ],
+      "MemoryIndexSystem": [
+        "MEMORY"
+      ],
+      "MemoryIndexSystem.index_memory": [
+        "MEMORY"
+      ],
+      "MemoryIndexSystem.query_by_similarity": [
+        "MEMORY"
+      ],
+      "MemoryIndexSystem.query_by_association": [
+        "MEMORY"
+      ],
+      "MemoryIndexSystem.query_by_temporal_context": [
+        "MEMORY"
+      ],
+      "index_memory": [
+        "MEMORY"
+      ],
+      "query_by_similarity": [
+        "MEMORY"
+      ],
+      "query_by_association": [
+        "MEMORY"
+      ],
+      "query_by_temporal_context": [
+        "MEMORY"
+      ],
+      "MemoryRetrievalEngine": [
+        "MEMORY"
+      ],
+      "MemoryRetrievalEngine.retrieve_and_apply": [
+        "MEMORY"
+      ],
+      "MemoryRetrievalEngine._execute_retrieval": [
+        "MEMORY"
+      ],
+      "MemoryRetrievalEngine._retrieve_by_similarity": [
+        "MEMORY"
+      ],
+      "MemoryRetrievalEngine._retrieve_by_association": [
+        "MEMORY"
+      ],
+      "MemoryRetrievalEngine._apply_memories": [
+        "MEMORY"
+      ],
+      "retrieve_and_apply": [
+        "MEMORY"
+      ],
+      "_execute_retrieval": [
+        "MEMORY"
+      ],
+      "_retrieve_by_similarity": [
+        "MEMORY"
+      ],
+      "_retrieve_by_association": [
+        "MEMORY"
+      ],
+      "_apply_memories": [
+        "MEMORY"
+      ],
+      "MemoryConsolidationScheduler": [
+        "MEMORY"
+      ],
+      "MemoryConsolidationScheduler.schedule_consolidation": [
+        "MEMORY"
+      ],
+      "MemoryConsolidationScheduler.run_consolidation_cycle": [
+        "MEMORY"
+      ],
+      "schedule_consolidation": [
+        "MEMORY"
+      ],
+      "run_consolidation_cycle": [
+        "MEMORY"
+      ],
+      "MemoryForgettingManager": [
+        "MEMORY"
+      ],
+      "MemoryForgettingManager.update_forgetting_curve": [
+        "MEMORY"
+      ],
+      "MemoryForgettingManager.get_memories_for_review": [
+        "MEMORY"
+      ],
+      "update_forgetting_curve": [
+        "MEMORY"
+      ],
+      "get_memories_for_review": [
+        "MEMORY"
+      ],
+      "MetamemorySystem": [
+        "MEMORY"
+      ],
+      "MetamemorySystem.monitor_memory_operation": [
+        "MEMORY"
+      ],
+      "MetamemorySystem._check_regulation_needs": [
+        "MEMORY"
+      ],
+      "monitor_memory_operation": [
+        "MEMORY"
+      ],
+      "_check_regulation_needs": [
+        "MEMORY"
+      ],
+      "CompleteMemorySystem": [
+        "MEMORY"
+      ],
+      "CompleteMemorySystem.store_complete_memory": [
+        "MEMORY"
+      ],
+      "CompleteMemorySystem.retrieve_for_application": [
+        "MEMORY"
+      ],
+      "CompleteMemorySystem.run_maintenance_cycle": [
+        "MEMORY"
+      ],
+      "store_complete_memory": [
+        "MEMORY"
+      ],
+      "retrieve_for_application": [
+        "MEMORY"
+      ],
+      "run_maintenance_cycle": [
+        "MEMORY"
+      ],
+      "CompleteMemorySystem._start_background_processes": [
+        "MEMORY"
+      ],
+      "CompleteMemorySystem._background_consolidation": [
+        "MEMORY"
+      ],
+      "_start_background_processes": [
+        "MEMORY"
+      ],
+      "_background_consolidation": [
+        "MEMORY"
+      ],
+      "demonstrate_complete_memory_system": [
+        "MEMORY"
+      ],
+      "SMPType": [
+        "SMP"
+      ],
+      "SMPStatus": [
+        "SMP"
+      ],
+      "SMPConfidence": [
+        "SMP"
+      ],
+      "SMPClaim": [
+        "SMP"
+      ],
+      "SMPClaim.to_dict": [
+        "SMP"
+      ],
+      "to_dict": [],
+      "SMPDependencies": [
+        "SMP"
+      ],
+      "SMPDependencies.is_grounded": [
+        "SMP"
+      ],
+      "is_grounded": [
+        "SMP"
+      ],
+      "StructuredMeaningPacket": [
+        "SMP"
+      ],
+      "StructuredMeaningPacket.id_hash": [
+        "CRYPTO_ID",
+        "SMP"
+      ],
+      "StructuredMeaningPacket._score_evidence_quality": [
+        "SMP"
+      ],
+      "StructuredMeaningPacket.to_canonical_dict": [
+        "SMP"
+      ],
+      "id_hash": [
+        "CRYPTO_ID",
+        "SMP"
+      ],
+      "_score_evidence_quality": [
+        "SMP"
+      ],
+      "to_canonical_dict": [
+        "SMP"
+      ],
+      "SMPGenerator": [
+        "SMP"
+      ],
+      "SMPGenerator.generate_from_uwm_event": [
+        "SMP"
+      ],
+      "SMPGenerator.generate_from_uwm_state": [
+        "SMP"
+      ],
+      "SMPGenerator.generate_agent_hypothesis": [
+        "SMP"
+      ],
+      "SMPGenerator.generate_diagnostic_smps": [
+        "SMP"
+      ],
+      "SMPGenerator._generate_create_smps": [
+        "SMP"
+      ],
+      "SMPGenerator._generate_smp_id": [
+        "SMP"
+      ],
+      "generate_from_uwm_event": [
+        "SMP"
+      ],
+      "generate_from_uwm_state": [
+        "SMP"
+      ],
+      "generate_agent_hypothesis": [
+        "SMP"
+      ],
+      "generate_diagnostic_smps": [
+        "SMP"
+      ],
+      "_generate_create_smps": [
+        "SMP"
+      ],
+      "_generate_smp_id": [
+        "SMP"
+      ],
+      "TetrahedralEnrichment": [
+        "SMP"
+      ],
+      "TetrahedralEnrichment.enrich_smp": [
+        "SMP"
+      ],
+      "enrich_smp": [
+        "SMP"
+      ],
+      "LogicFace": [
+        "SMP"
+      ],
+      "LogicFace.analyze": [
+        "SMP"
+      ],
+      "analyze": [],
+      "ConstraintEnrichment": [
+        "SMP"
+      ],
+      "ConstraintEnrichment.enrich_smp": [
+        "SMP"
+      ],
+      "InformationExplosionOrchestrator": [
+        "SMP"
+      ],
+      "InformationExplosionOrchestrator.process_smp": [
+        "SMP"
+      ],
+      "InformationExplosionOrchestrator._check_convergence": [
+        "SMP"
+      ],
+      "InformationExplosionOrchestrator._finalize_smp": [
+        "SMP"
+      ],
+      "process_smp": [
+        "SMP"
+      ],
+      "_check_convergence": [
+        "SMP"
+      ],
+      "_finalize_smp": [
+        "SMP"
+      ],
+      "SMPEvaluationPipeline": [
+        "SMP"
+      ],
+      "SMPEvaluationPipeline.evaluate_smp": [
+        "SMP"
+      ],
+      "SMPEvaluationPipeline._determine_routing": [
+        "SMP"
+      ],
+      "evaluate_smp": [],
+      "_determine_routing": [
+        "SMP"
+      ],
+      "StructuredMeaningSystem": [
+        "SMP"
+      ],
+      "StructuredMeaningSystem.process_uwm_event": [
+        "SMP"
+      ],
+      "process_uwm_event": [
+        "SMP"
+      ],
+      "EvaluationPerspective": [
+        "SMP"
+      ],
+      "TriuneCommutationResult": [
+        "SMP"
+      ],
+      "SMPGroundingLevel": [
+        "SMP"
+      ],
+      "PXLIELSEvaluator": [
+        "SMP"
+      ],
+      "PXLIELSEvaluator.evaluate_smp": [
+        "SMP"
+      ],
+      "PXLIELSEvaluator._analyze_pxl_coherence": [
+        "SMP"
+      ],
+      "PXLIELSEvaluator._analyze_iel_domains": [
+        "SMP"
+      ],
+      "_analyze_pxl_coherence": [
+        "SMP"
+      ],
+      "_analyze_iel_domains": [
+        "SMP"
+      ],
+      "ETGCEvaluator": [
+        "SMP"
+      ],
+      "ETGCEvaluator.evaluate_smp": [
+        "SMP"
+      ],
+      "ETGCEvaluator._evaluate_dimension": [
+        "SMP"
+      ],
+      "ETGCEvaluator._evaluate_existence": [
+        "SMP"
+      ],
+      "ETGCEvaluator._evaluate_truth": [
+        "SMP"
+      ],
+      "ETGCEvaluator._evaluate_goodness": [
+        "SMP"
+      ],
+      "_evaluate_dimension": [
+        "SMP"
+      ],
+      "_evaluate_existence": [
+        "SMP"
+      ],
+      "_evaluate_truth": [
+        "SMP"
+      ],
+      "_evaluate_goodness": [
+        "SMP"
+      ],
+      "PrivationEvaluator": [
+        "SMP"
+      ],
+      "PrivationEvaluator.evaluate_smp": [
+        "SMP"
+      ],
+      "PrivationEvaluator._analyze_privation_category": [
+        "SMP"
+      ],
+      "PrivationEvaluator._analyze_ontological_gaps": [
+        "SMP"
+      ],
+      "PrivationEvaluator._analyze_epistemic_absences": [
+        "SMP"
+      ],
+      "PrivationEvaluator._analyze_completeness_gaps": [
+        "SMP"
+      ],
+      "_analyze_privation_category": [
+        "SMP"
+      ],
+      "_analyze_ontological_gaps": [
+        "SMP"
+      ],
+      "_analyze_epistemic_absences": [
+        "SMP"
+      ],
+      "_analyze_completeness_gaps": [
+        "SMP"
+      ],
+      "TriuneCommutationEngine": [
+        "SMP"
+      ],
+      "TriuneCommutationEngine.evaluate_smp_tripartite": [
+        "SMP"
+      ],
+      "TriuneCommutationEngine._analyze_triune_commutation": [
+        "SMP"
+      ],
+      "TriuneCommutationEngine._analyze_convergence": [
+        "SMP"
+      ],
+      "TriuneCommutationEngine._calculate_epistemic_value": [
+        "SMP"
+      ],
+      "TriuneCommutationEngine._assess_truth_coherence_grounding": [
+        "SMP"
+      ],
+      "evaluate_smp_tripartite": [
+        "SMP"
+      ],
+      "_analyze_triune_commutation": [
+        "SMP"
+      ],
+      "_analyze_convergence": [
+        "SMP"
+      ],
+      "_calculate_epistemic_value": [
+        "SMP"
+      ],
+      "_assess_truth_coherence_grounding": [
+        "SMP"
+      ],
+      "SystemMemoryRouter": [
+        "SMP"
+      ],
+      "SystemMemoryRouter.route_to_memory": [
+        "SMP"
+      ],
+      "route_to_memory": [
+        "SMP"
+      ],
+      "SMP": [],
+      "EngineReport": [],
+      "RefinedSMP": [],
+      "SMPSynthesizer": [],
+      "SMPSynthesizer.synthesize": [],
+      "synthesize": [],
+      "StabilityCalculator": [],
+      "StabilityCalculator.calculate": [],
+      "StabilityCalculator._content_hash": [
+        "CRYPTO_ID"
+      ],
+      "calculate": [],
+      "_content_hash": [
+        "CRYPTO_ID"
+      ],
+      "PXLLogicFace": [],
+      "PXLLogicFace.analyze": [],
+      "IELDomainFace": [],
+      "IELDomainFace.analyze": [],
+      "ARPMathematicalFace": [],
+      "ARPMathematicalFace.analyze": [],
+      "CognitiveResistor": [],
+      "CognitiveResistor.analyze": [],
+      "TetrahedralEvaluator": [],
+      "TetrahedralEvaluator.evaluate": [],
+      "TetrahedralEvaluator._synthesize_reports": [],
+      "TetrahedralEvaluator._calculate_stability": [],
+      "evaluate": [],
+      "_synthesize_reports": [],
+      "_calculate_stability": [],
+      "_test_system_a": [],
+      "PXLAnalyzer": [],
+      "PXLAnalyzer.analyze_concept": [],
+      "PXLAnalyzer._check_i1": [],
+      "PXLAnalyzer._check_i2": [],
+      "PXLAnalyzer._check_i3": [],
+      "PXLAnalyzer._entails_O": [],
+      "PXLAnalyzer._detect_paradox": [],
+      "analyze_concept": [],
+      "_check_i1": [],
+      "_check_i2": [],
+      "_check_i3": [],
+      "_entails_O": [],
+      "_detect_paradox": [],
+      "SMPQuality": [
+        "MEMORY"
+      ],
+      "FailureMode": [
+        "MEMORY"
+      ],
+      "RecoveryAction": [
+        "MEMORY"
+      ],
+      "CommitResult": [
+        "MEMORY"
+      ],
+      "OrchestrationMetrics": [
+        "MEMORY"
+      ],
+      "Enhancement": [
+        "MEMORY"
+      ],
+      "Enhancement.name": [
+        "MEMORY"
+      ],
+      "Enhancement.pre_process": [
+        "MEMORY"
+      ],
+      "Enhancement.post_system_a": [
+        "MEMORY"
+      ],
+      "Enhancement.post_system_b": [
+        "MEMORY"
+      ],
+      "Enhancement.post_process": [
+        "MEMORY"
+      ],
+      "Enhancement.on_failure": [
+        "MEMORY"
+      ],
+      "name": [
+        "MEMORY"
+      ],
+      "pre_process": [
+        "MEMORY"
+      ],
+      "post_system_a": [
+        "MEMORY"
+      ],
+      "post_system_b": [
+        "MEMORY"
+      ],
+      "post_process": [
+        "MEMORY"
+      ],
+      "on_failure": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator.register_enhancement": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator.enable_enhancement": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator.disable_enhancement": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator.evaluate_and_authorize": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator._handle_system_a_failure": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator._handle_system_b_failure": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator._classify_failure": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator._apply_feedback_loops": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator._build_commit_result": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator._build_error_result": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator._update_metrics": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator.get_metrics": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator.reset_metrics": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator._stub_system_a": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator._stub_system_b": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator._load_all_enhancements": [
+        "MEMORY"
+      ],
+      "register_enhancement": [
+        "MEMORY"
+      ],
+      "enable_enhancement": [
+        "MEMORY"
+      ],
+      "disable_enhancement": [
+        "MEMORY"
+      ],
+      "evaluate_and_authorize": [
+        "MEMORY"
+      ],
+      "_handle_system_a_failure": [
+        "MEMORY"
+      ],
+      "_handle_system_b_failure": [
+        "MEMORY"
+      ],
+      "_classify_failure": [
+        "MEMORY"
+      ],
+      "_apply_feedback_loops": [
+        "MEMORY"
+      ],
+      "_build_commit_result": [
+        "MEMORY"
+      ],
+      "_build_error_result": [
+        "MEMORY"
+      ],
+      "_update_metrics": [],
+      "get_metrics": [],
+      "reset_metrics": [],
+      "_stub_system_a": [
+        "MEMORY"
+      ],
+      "StubRefined": [
+        "MEMORY"
+      ],
+      "_stub_system_b": [
+        "MEMORY"
+      ],
+      "StubResult": [
+        "MEMORY"
+      ],
+      "StubToken": [
+        "MEMORY"
+      ],
+      "_load_all_enhancements": [
+        "MEMORY"
+      ],
+      "AdaptiveControlEnhancement": [
+        "MEMORY"
+      ],
+      "AdaptiveControlEnhancement.name": [
+        "MEMORY"
+      ],
+      "AdaptiveControlEnhancement.pre_process": [
+        "MEMORY"
+      ],
+      "QualityClassifierEnhancement": [
+        "MEMORY"
+      ],
+      "QualityClassifierEnhancement.name": [
+        "MEMORY"
+      ],
+      "QualityClassifierEnhancement.post_system_a": [
+        "MEMORY"
+      ],
+      "PerformanceMonitorEnhancement": [
+        "MEMORY"
+      ],
+      "PerformanceMonitorEnhancement.name": [
+        "MEMORY"
+      ],
+      "PerformanceMonitorEnhancement.post_process": [
+        "MEMORY"
+      ],
+      "FailureRecoveryEnhancement": [
+        "MEMORY"
+      ],
+      "FailureRecoveryEnhancement.name": [
+        "MEMORY"
+      ],
+      "FailureRecoveryEnhancement.on_failure": [
+        "MEMORY"
+      ],
+      "AuditAggregatorEnhancement": [
+        "MEMORY"
+      ],
+      "AuditAggregatorEnhancement.name": [
+        "MEMORY"
+      ],
+      "AuditAggregatorEnhancement.post_process": [
+        "MEMORY"
+      ],
+      "PatternLearnerEnhancement": [
+        "MEMORY"
+      ],
+      "PatternLearnerEnhancement.name": [
+        "MEMORY"
+      ],
+      "PatternLearnerEnhancement.post_process": [
+        "MEMORY"
+      ],
+      "create_orchestrator": [
+        "MEMORY"
+      ],
+      "_test_orchestrator": [
+        "MEMORY"
+      ],
+      "TestSMP": [
+        "MEMORY"
+      ],
+      "CriticMode": [],
+      "CriticArchetype": [],
+      "CriticalChallenge": [],
+      "CriticalChallenge.to_dict": [],
+      "CriticalLens": [],
+      "CriticalLens._determine_mode": [],
+      "CriticalLens._load_templates": [],
+      "CriticalLens.generate_challenge": [],
+      "CriticalLens._identify_vulnerability": [],
+      "_determine_mode": [],
+      "_load_templates": [],
+      "generate_challenge": [],
+      "_identify_vulnerability": [],
+      "TetrahedralCritic": [],
+      "TetrahedralCritic.apply_critique": [],
+      "TetrahedralCritic._generate_comprehensive_challenges": [],
+      "TetrahedralCritic._validate_challenges_against_pxl": [],
+      "TetrahedralCritic._assess_critical_impact": [],
+      "TetrahedralCritic._generate_dialectical_synthesis": [],
+      "TetrahedralCritic._perform_triune_synthesis": [],
+      "apply_critique": [],
+      "_generate_comprehensive_challenges": [],
+      "_validate_challenges_against_pxl": [],
+      "_assess_critical_impact": [],
+      "_generate_dialectical_synthesis": [],
+      "_perform_triune_synthesis": [],
+      "SelfReferentialCritic": [],
+      "SelfReferentialCritic.critique_pxl_foundations": [],
+      "SelfReferentialCritic._critique_axiom": [],
+      "critique_pxl_foundations": [],
+      "_critique_axiom": [],
+      "PragmaticEffectivenessValidator": [],
+      "PragmaticEffectivenessValidator.validate_effectiveness": [],
+      "validate_effectiveness": [],
+      "CriticalMemoryIntegrator": [],
+      "CriticalMemoryIntegrator.integrate_critique": [],
+      "integrate_critique": [],
+      "demonstrate_cognitive_resistor": [],
+      "ModalDimension": [],
+      "ModalVector": [],
+      "ModalVector.id": [],
+      "ModalVector.similarity": [],
+      "ModalVector.modal_distance": [],
+      "ModalVector.project_to_pxl": [],
+      "id": [],
+      "similarity": [],
+      "modal_distance": [],
+      "project_to_pxl": [],
+      "FractalEmbedding": [],
+      "FractalEmbedding._validate_scales": [],
+      "FractalEmbedding.embed_at_scale": [],
+      "FractalEmbedding._generate_fractal_embedding": [],
+      "FractalEmbedding.compute_fractal_dimension": [],
+      "_validate_scales": [],
+      "embed_at_scale": [],
+      "_generate_fractal_embedding": [],
+      "compute_fractal_dimension": [],
+      "WorldState": [],
+      "WorldState.state_hash": [
+        "CRYPTO_ID"
+      ],
+      "WorldState.get_entity_modality": [],
+      "WorldState.compute_modal_field": [],
+      "state_hash": [
+        "CRYPTO_ID"
+      ],
+      "get_entity_modality": [],
+      "compute_modal_field": [],
+      "DynamicWorldModel": [],
+      "DynamicWorldModel.update_entity": [],
+      "DynamicWorldModel._check_modal_consistency": [],
+      "DynamicWorldModel._update_fractal_embedding": [],
+      "DynamicWorldModel.query_modal_space": [],
+      "DynamicWorldModel.predict_modal_evolution": [],
+      "DynamicWorldModel.compute_world_entropy": [],
+      "DynamicWorldModel.add_modal_constraint": [],
+      "DynamicWorldModel._update_consistency_graph": [],
+      "DynamicWorldModel.save_state": [],
+      "DynamicWorldModel.load_state": [],
+      "DynamicWorldModel.get_diagnostics": [],
+      "DynamicWorldModel._get_modal_distribution": [],
+      "DynamicWorldModel._get_fractal_statistics": [],
+      "update_entity": [],
+      "_check_modal_consistency": [],
+      "_update_fractal_embedding": [],
+      "query_modal_space": [],
+      "predict_modal_evolution": [],
+      "compute_world_entropy": [],
+      "add_modal_constraint": [],
+      "_update_consistency_graph": [],
+      "save_state": [],
+      "load_state": [],
+      "get_diagnostics": [],
+      "_get_modal_distribution": [],
+      "_get_fractal_statistics": [],
+      "PXLWorldModelBridge": [],
+      "PXLWorldModelBridge.pxl_proposition_to_modal": [],
+      "pxl_proposition_to_modal": []
+    },
+    "control_role": {
+      "set_mission_profile": [],
+      "_persist_profile": [],
+      "_resolve_profile": [],
+      "_parse_args": [],
+      "_ensure_scripts_importable": [],
+      "_load_tools": [],
+      "_tool_metadata": [],
+      "_normalize": [],
+      "_write_json": [],
+      "_write_markdown": [],
+      "main": [
+        "BOOT_CONTROL"
+      ],
+      "_as_posix": [
+        "BOOT_CONTROL"
+      ],
+      "validate_evidence_ref": [],
+      "_sort_key": [],
+      "normalize_evidence_refs": [],
+      "evidence_to_citation_string": [],
+      "is_proved_reference": [],
+      "_sha256_file": [],
+      "_normalize_path": [],
+      "_collect_bundle_hashes": [],
+      "_sanitize_steps": [],
+      "_sanitize_outcomes": [],
+      "write_cycle_ledger": [],
+      "canonical_json_hash": [],
+      "normalize_statement": [],
+      "extract_theorem_statement": [],
+      "_ensure_repo_on_path": [],
+      "load_metrics": [],
+      "choose_best": [],
+      "normalize_objective_class": [],
+      "add_memory_item": [],
+      "decay_and_promote": [],
+      "recall": [],
+      "stable_item_id": [],
+      "load_theorem_index": [],
+      "enforce_truth_annotation": [],
+      "validate_truth_annotation": [],
+      "apply_belief_policy": [],
+      "consolidate_beliefs": [],
+      "apply_plan_revision": [],
+      "get_belief_summary": [],
+      "StubSCPNexus": [],
+      "StubSCPNexus.process_agent_request": [],
+      "process_agent_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "LogosAgiNexus": [],
+      "LogosAgiNexus._load_persisted_state": [],
+      "LogosAgiNexus.refresh_plan_history": [],
+      "LogosAgiNexus.record_tool_result": [],
+      "LogosAgiNexus.get_memory_summary": [],
+      "LogosAgiNexus.observe": [],
+      "LogosAgiNexus._process_observation_async": [],
+      "LogosAgiNexus.propose": [],
+      "LogosAgiNexus.propose_plan": [],
+      "LogosAgiNexus.persist": [],
+      "LogosAgiNexus.health": [],
+      "AgentRequest": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_persisted_state": [],
+      "refresh_plan_history": [],
+      "record_tool_result": [],
+      "get_memory_summary": [],
+      "observe": [],
+      "_process_observation_async": [],
+      "propose": [
+        "RUNTIME_CONTROL"
+      ],
+      "propose_plan": [],
+      "persist": [],
+      "health": [
+        "BOOT_CONTROL"
+      ],
+      "ReplayEventType": [],
+      "ReplayGranularity": [],
+      "ReplayEvent": [],
+      "ReplayEvent._generate_event_id": [],
+      "ReplayEvent._calculate_checksum": [],
+      "ReplayEvent.to_serializable": [],
+      "ReplayEvent.from_serializable": [],
+      "ReplayEvent.verify": [],
+      "_generate_event_id": [],
+      "_calculate_checksum": [],
+      "to_serializable": [],
+      "from_serializable": [],
+      "verify": [],
+      "DeterministicReplayLogger": [],
+      "DeterministicReplayLogger.log_event": [],
+      "DeterministicReplayLogger.log_event_async": [],
+      "DeterministicReplayLogger.create_checkpoint": [],
+      "DeterministicReplayLogger._flush_batch": [],
+      "DeterministicReplayLogger._append_to_event_log": [],
+      "log_event": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "log_event_async": [],
+      "create_checkpoint": [],
+      "_flush_batch": [],
+      "_append_to_event_log": [],
+      "DeterministicReplayEngine": [],
+      "DeterministicReplayEngine.find_sessions": [],
+      "DeterministicReplayEngine.replay_session": [],
+      "DeterministicReplayEngine.rebuild_full_state": [],
+      "DeterministicReplayEngine._apply_event": [],
+      "find_sessions": [],
+      "replay_session": [],
+      "rebuild_full_state": [],
+      "_apply_event": [],
+      "UWMRebuilder": [],
+      "UWMRebuilder.rehydrate": [],
+      "UWMRebuilder.apply_event": [],
+      "rehydrate": [],
+      "apply_event": [],
+      "SMPRebuilder": [],
+      "SMPRebuilder.rehydrate": [],
+      "MemoryRebuilder": [],
+      "MemoryRebuilder.rehydrate": [],
+      "ForensicAnalyzer": [],
+      "ForensicAnalyzer.analyze_causal_chain": [],
+      "ForensicAnalyzer.timeline_analysis": [],
+      "ForensicAnalyzer.compare_sessions": [],
+      "analyze_causal_chain": [],
+      "trace_causes": [],
+      "timeline_analysis": [],
+      "compare_sessions": [],
+      "ReplayValidator": [],
+      "ReplayValidator.validate_replay": [],
+      "ReplayValidator.create_reference_replay": [],
+      "validate_replay": [],
+      "create_reference_replay": [],
+      "CompleteReplayInfrastructure": [],
+      "CompleteReplayInfrastructure.start_session": [],
+      "CompleteReplayInfrastructure.get_logger": [],
+      "CompleteReplayInfrastructure.log_event": [],
+      "CompleteReplayInfrastructure.end_session": [],
+      "CompleteReplayInfrastructure.replay_and_analyze": [],
+      "CompleteReplayInfrastructure.batch_replay": [],
+      "CompleteReplayInfrastructure.export_session": [],
+      "CompleteReplayInfrastructure.cleanup_old_sessions": [],
+      "CompleteReplayInfrastructure._capture_current_state": [],
+      "CompleteReplayInfrastructure._identify_key_events": [],
+      "CompleteReplayInfrastructure._load_all_events": [],
+      "CompleteReplayInfrastructure._export_events_to_csv": [],
+      "CompleteReplayInfrastructure._read_session_info": [],
+      "CompleteReplayInfrastructure._get_system_info": [],
+      "CompleteReplayInfrastructure._create_archive": [],
+      "CompleteReplayInfrastructure._archive_session": [],
+      "CompleteReplayInfrastructure._delete_session": [],
+      "CompleteReplayInfrastructure.get_statistics": [],
+      "start_session": [],
+      "get_logger": [],
+      "end_session": [],
+      "replay_and_analyze": [],
+      "batch_replay": [],
+      "export_session": [],
+      "cleanup_old_sessions": [],
+      "_capture_current_state": [],
+      "_identify_key_events": [],
+      "_load_all_events": [],
+      "_export_events_to_csv": [],
+      "_read_session_info": [],
+      "_get_system_info": [],
+      "_create_archive": [],
+      "_archive_session": [],
+      "_delete_session": [],
+      "get_statistics": [],
+      "create_replay_infrastructure": [],
+      "quick_replay_analysis": [],
+      "progress_callback": [],
+      "StorageTier": [],
+      "StorageFormat": [],
+      "StorageConfiguration": [],
+      "TieredMemoryStorage": [],
+      "TieredMemoryStorage.store_memory": [],
+      "TieredMemoryStorage.retrieve_memory": [],
+      "TieredMemoryStorage._store_in_tier": [],
+      "TieredMemoryStorage._store_ephemeral": [],
+      "TieredMemoryStorage._store_hot": [],
+      "TieredMemoryStorage._store_warm": [],
+      "store_memory": [],
+      "retrieve_memory": [],
+      "_store_in_tier": [],
+      "_store_ephemeral": [],
+      "_store_hot": [],
+      "_store_warm": [],
+      "MemoryIndexSystem": [],
+      "MemoryIndexSystem.index_memory": [],
+      "MemoryIndexSystem.query_by_similarity": [],
+      "MemoryIndexSystem.query_by_association": [],
+      "MemoryIndexSystem.query_by_temporal_context": [],
+      "index_memory": [],
+      "query_by_similarity": [],
+      "query_by_association": [],
+      "query_by_temporal_context": [],
+      "MemoryRetrievalEngine": [],
+      "MemoryRetrievalEngine.retrieve_and_apply": [],
+      "MemoryRetrievalEngine._execute_retrieval": [],
+      "MemoryRetrievalEngine._retrieve_by_similarity": [],
+      "MemoryRetrievalEngine._retrieve_by_association": [],
+      "MemoryRetrievalEngine._apply_memories": [],
+      "retrieve_and_apply": [],
+      "_execute_retrieval": [],
+      "_retrieve_by_similarity": [],
+      "_retrieve_by_association": [],
+      "_apply_memories": [],
+      "MemoryConsolidationScheduler": [],
+      "MemoryConsolidationScheduler.schedule_consolidation": [],
+      "MemoryConsolidationScheduler.run_consolidation_cycle": [],
+      "schedule_consolidation": [],
+      "run_consolidation_cycle": [],
+      "MemoryForgettingManager": [],
+      "MemoryForgettingManager.update_forgetting_curve": [],
+      "MemoryForgettingManager.get_memories_for_review": [],
+      "update_forgetting_curve": [],
+      "get_memories_for_review": [],
+      "MetamemorySystem": [],
+      "MetamemorySystem.monitor_memory_operation": [],
+      "MetamemorySystem._check_regulation_needs": [],
+      "monitor_memory_operation": [],
+      "_check_regulation_needs": [],
+      "CompleteMemorySystem": [],
+      "CompleteMemorySystem.store_complete_memory": [],
+      "CompleteMemorySystem.retrieve_for_application": [],
+      "CompleteMemorySystem.run_maintenance_cycle": [],
+      "store_complete_memory": [],
+      "retrieve_for_application": [],
+      "run_maintenance_cycle": [],
+      "CompleteMemorySystem._start_background_processes": [],
+      "CompleteMemorySystem._background_consolidation": [],
+      "_start_background_processes": [],
+      "_background_consolidation": [],
+      "demonstrate_complete_memory_system": [],
+      "SMPType": [],
+      "SMPStatus": [],
+      "SMPConfidence": [],
+      "SMPClaim": [],
+      "SMPClaim.to_dict": [],
+      "to_dict": [
+        "RUNTIME_CONTROL"
+      ],
+      "SMPDependencies": [],
+      "SMPDependencies.is_grounded": [],
+      "is_grounded": [],
+      "StructuredMeaningPacket": [],
+      "StructuredMeaningPacket.id_hash": [],
+      "StructuredMeaningPacket._score_evidence_quality": [],
+      "StructuredMeaningPacket.to_canonical_dict": [],
+      "id_hash": [],
+      "_score_evidence_quality": [],
+      "to_canonical_dict": [],
+      "SMPGenerator": [],
+      "SMPGenerator.generate_from_uwm_event": [],
+      "SMPGenerator.generate_from_uwm_state": [],
+      "SMPGenerator.generate_agent_hypothesis": [],
+      "SMPGenerator.generate_diagnostic_smps": [],
+      "SMPGenerator._generate_create_smps": [],
+      "SMPGenerator._generate_smp_id": [],
+      "generate_from_uwm_event": [],
+      "generate_from_uwm_state": [],
+      "generate_agent_hypothesis": [],
+      "generate_diagnostic_smps": [],
+      "_generate_create_smps": [],
+      "_generate_smp_id": [],
+      "TetrahedralEnrichment": [],
+      "TetrahedralEnrichment.enrich_smp": [],
+      "enrich_smp": [],
+      "LogicFace": [],
+      "LogicFace.analyze": [],
+      "analyze": [],
+      "ConstraintEnrichment": [],
+      "ConstraintEnrichment.enrich_smp": [],
+      "InformationExplosionOrchestrator": [],
+      "InformationExplosionOrchestrator.process_smp": [],
+      "InformationExplosionOrchestrator._check_convergence": [],
+      "InformationExplosionOrchestrator._finalize_smp": [],
+      "process_smp": [],
+      "_check_convergence": [],
+      "_finalize_smp": [],
+      "SMPEvaluationPipeline": [],
+      "SMPEvaluationPipeline.evaluate_smp": [],
+      "SMPEvaluationPipeline._determine_routing": [],
+      "evaluate_smp": [],
+      "_determine_routing": [],
+      "StructuredMeaningSystem": [],
+      "StructuredMeaningSystem.process_uwm_event": [],
+      "process_uwm_event": [],
+      "EvaluationPerspective": [],
+      "TriuneCommutationResult": [],
+      "SMPGroundingLevel": [],
+      "PXLIELSEvaluator": [],
+      "PXLIELSEvaluator.evaluate_smp": [],
+      "PXLIELSEvaluator._analyze_pxl_coherence": [],
+      "PXLIELSEvaluator._analyze_iel_domains": [],
+      "_analyze_pxl_coherence": [],
+      "_analyze_iel_domains": [],
+      "ETGCEvaluator": [],
+      "ETGCEvaluator.evaluate_smp": [],
+      "ETGCEvaluator._evaluate_dimension": [],
+      "ETGCEvaluator._evaluate_existence": [],
+      "ETGCEvaluator._evaluate_truth": [],
+      "ETGCEvaluator._evaluate_goodness": [],
+      "_evaluate_dimension": [],
+      "_evaluate_existence": [],
+      "_evaluate_truth": [],
+      "_evaluate_goodness": [],
+      "PrivationEvaluator": [],
+      "PrivationEvaluator.evaluate_smp": [],
+      "PrivationEvaluator._analyze_privation_category": [],
+      "PrivationEvaluator._analyze_ontological_gaps": [],
+      "PrivationEvaluator._analyze_epistemic_absences": [],
+      "PrivationEvaluator._analyze_completeness_gaps": [],
+      "_analyze_privation_category": [],
+      "_analyze_ontological_gaps": [],
+      "_analyze_epistemic_absences": [],
+      "_analyze_completeness_gaps": [],
+      "TriuneCommutationEngine": [],
+      "TriuneCommutationEngine.evaluate_smp_tripartite": [],
+      "TriuneCommutationEngine._analyze_triune_commutation": [],
+      "TriuneCommutationEngine._analyze_convergence": [],
+      "TriuneCommutationEngine._calculate_epistemic_value": [],
+      "TriuneCommutationEngine._assess_truth_coherence_grounding": [],
+      "evaluate_smp_tripartite": [],
+      "_analyze_triune_commutation": [],
+      "_analyze_convergence": [],
+      "_calculate_epistemic_value": [],
+      "_assess_truth_coherence_grounding": [],
+      "SystemMemoryRouter": [],
+      "SystemMemoryRouter.route_to_memory": [],
+      "route_to_memory": [],
+      "SMP": [],
+      "EngineReport": [],
+      "RefinedSMP": [],
+      "SMPSynthesizer": [],
+      "SMPSynthesizer.synthesize": [],
+      "synthesize": [],
+      "StabilityCalculator": [],
+      "StabilityCalculator.calculate": [],
+      "StabilityCalculator._content_hash": [],
+      "calculate": [],
+      "_content_hash": [],
+      "PXLLogicFace": [],
+      "PXLLogicFace.analyze": [],
+      "IELDomainFace": [],
+      "IELDomainFace.analyze": [],
+      "ARPMathematicalFace": [],
+      "ARPMathematicalFace.analyze": [],
+      "CognitiveResistor": [],
+      "CognitiveResistor.analyze": [],
+      "TetrahedralEvaluator": [],
+      "TetrahedralEvaluator.evaluate": [],
+      "TetrahedralEvaluator._synthesize_reports": [],
+      "TetrahedralEvaluator._calculate_stability": [],
+      "evaluate": [],
+      "_synthesize_reports": [],
+      "_calculate_stability": [],
+      "_test_system_a": [],
+      "PXLAnalyzer": [],
+      "PXLAnalyzer.analyze_concept": [],
+      "PXLAnalyzer._check_i1": [],
+      "PXLAnalyzer._check_i2": [],
+      "PXLAnalyzer._check_i3": [],
+      "PXLAnalyzer._entails_O": [],
+      "PXLAnalyzer._detect_paradox": [],
+      "analyze_concept": [],
+      "_check_i1": [],
+      "_check_i2": [],
+      "_check_i3": [],
+      "_entails_O": [],
+      "_detect_paradox": [],
+      "SMPQuality": [],
+      "FailureMode": [],
+      "RecoveryAction": [],
+      "CommitResult": [],
+      "OrchestrationMetrics": [],
+      "Enhancement": [],
+      "Enhancement.name": [],
+      "Enhancement.pre_process": [],
+      "Enhancement.post_system_a": [],
+      "Enhancement.post_system_b": [],
+      "Enhancement.post_process": [],
+      "Enhancement.on_failure": [],
+      "name": [],
+      "pre_process": [],
+      "post_system_a": [],
+      "post_system_b": [],
+      "post_process": [],
+      "on_failure": [],
+      "SystemOrchestrator": [],
+      "SystemOrchestrator.register_enhancement": [],
+      "SystemOrchestrator.enable_enhancement": [],
+      "SystemOrchestrator.disable_enhancement": [],
+      "SystemOrchestrator.evaluate_and_authorize": [],
+      "SystemOrchestrator._handle_system_a_failure": [],
+      "SystemOrchestrator._handle_system_b_failure": [],
+      "SystemOrchestrator._classify_failure": [],
+      "SystemOrchestrator._apply_feedback_loops": [],
+      "SystemOrchestrator._build_commit_result": [],
+      "SystemOrchestrator._build_error_result": [],
+      "SystemOrchestrator._update_metrics": [],
+      "SystemOrchestrator.get_metrics": [],
+      "SystemOrchestrator.reset_metrics": [],
+      "SystemOrchestrator._stub_system_a": [],
+      "SystemOrchestrator._stub_system_b": [],
+      "SystemOrchestrator._load_all_enhancements": [],
+      "register_enhancement": [],
+      "enable_enhancement": [],
+      "disable_enhancement": [],
+      "evaluate_and_authorize": [],
+      "_handle_system_a_failure": [],
+      "_handle_system_b_failure": [],
+      "_classify_failure": [],
+      "_apply_feedback_loops": [],
+      "_build_commit_result": [],
+      "_build_error_result": [],
+      "_update_metrics": [
+        "RUNTIME_CONTROL"
+      ],
+      "get_metrics": [
+        "ALIGNMENT_GUARD"
+      ],
+      "reset_metrics": [],
+      "_stub_system_a": [],
+      "StubRefined": [],
+      "_stub_system_b": [],
+      "StubResult": [],
+      "StubToken": [],
+      "_load_all_enhancements": [],
+      "AdaptiveControlEnhancement": [],
+      "AdaptiveControlEnhancement.name": [],
+      "AdaptiveControlEnhancement.pre_process": [],
+      "QualityClassifierEnhancement": [],
+      "QualityClassifierEnhancement.name": [],
+      "QualityClassifierEnhancement.post_system_a": [],
+      "PerformanceMonitorEnhancement": [],
+      "PerformanceMonitorEnhancement.name": [],
+      "PerformanceMonitorEnhancement.post_process": [],
+      "FailureRecoveryEnhancement": [],
+      "FailureRecoveryEnhancement.name": [],
+      "FailureRecoveryEnhancement.on_failure": [],
+      "AuditAggregatorEnhancement": [],
+      "AuditAggregatorEnhancement.name": [],
+      "AuditAggregatorEnhancement.post_process": [],
+      "PatternLearnerEnhancement": [],
+      "PatternLearnerEnhancement.name": [],
+      "PatternLearnerEnhancement.post_process": [],
+      "create_orchestrator": [],
+      "_test_orchestrator": [],
+      "TestSMP": [],
+      "CriticMode": [],
+      "CriticArchetype": [],
+      "CriticalChallenge": [],
+      "CriticalChallenge.to_dict": [],
+      "CriticalLens": [],
+      "CriticalLens._determine_mode": [],
+      "CriticalLens._load_templates": [],
+      "CriticalLens.generate_challenge": [],
+      "CriticalLens._identify_vulnerability": [],
+      "_determine_mode": [],
+      "_load_templates": [],
+      "generate_challenge": [],
+      "_identify_vulnerability": [],
+      "TetrahedralCritic": [],
+      "TetrahedralCritic.apply_critique": [],
+      "TetrahedralCritic._generate_comprehensive_challenges": [],
+      "TetrahedralCritic._validate_challenges_against_pxl": [],
+      "TetrahedralCritic._assess_critical_impact": [],
+      "TetrahedralCritic._generate_dialectical_synthesis": [],
+      "TetrahedralCritic._perform_triune_synthesis": [],
+      "apply_critique": [],
+      "_generate_comprehensive_challenges": [],
+      "_validate_challenges_against_pxl": [],
+      "_assess_critical_impact": [],
+      "_generate_dialectical_synthesis": [],
+      "_perform_triune_synthesis": [],
+      "SelfReferentialCritic": [],
+      "SelfReferentialCritic.critique_pxl_foundations": [],
+      "SelfReferentialCritic._critique_axiom": [],
+      "critique_pxl_foundations": [],
+      "_critique_axiom": [],
+      "PragmaticEffectivenessValidator": [],
+      "PragmaticEffectivenessValidator.validate_effectiveness": [],
+      "validate_effectiveness": [],
+      "CriticalMemoryIntegrator": [],
+      "CriticalMemoryIntegrator.integrate_critique": [],
+      "integrate_critique": [],
+      "demonstrate_cognitive_resistor": [],
+      "ModalDimension": [],
+      "ModalVector": [],
+      "ModalVector.id": [],
+      "ModalVector.similarity": [],
+      "ModalVector.modal_distance": [],
+      "ModalVector.project_to_pxl": [],
+      "id": [],
+      "similarity": [],
+      "modal_distance": [],
+      "project_to_pxl": [],
+      "FractalEmbedding": [],
+      "FractalEmbedding._validate_scales": [],
+      "FractalEmbedding.embed_at_scale": [],
+      "FractalEmbedding._generate_fractal_embedding": [],
+      "FractalEmbedding.compute_fractal_dimension": [],
+      "_validate_scales": [],
+      "embed_at_scale": [],
+      "_generate_fractal_embedding": [],
+      "compute_fractal_dimension": [],
+      "WorldState": [],
+      "WorldState.state_hash": [],
+      "WorldState.get_entity_modality": [],
+      "WorldState.compute_modal_field": [],
+      "state_hash": [],
+      "get_entity_modality": [],
+      "compute_modal_field": [],
+      "DynamicWorldModel": [],
+      "DynamicWorldModel.update_entity": [],
+      "DynamicWorldModel._check_modal_consistency": [],
+      "DynamicWorldModel._update_fractal_embedding": [],
+      "DynamicWorldModel.query_modal_space": [],
+      "DynamicWorldModel.predict_modal_evolution": [],
+      "DynamicWorldModel.compute_world_entropy": [],
+      "DynamicWorldModel.add_modal_constraint": [],
+      "DynamicWorldModel._update_consistency_graph": [],
+      "DynamicWorldModel.save_state": [],
+      "DynamicWorldModel.load_state": [],
+      "DynamicWorldModel.get_diagnostics": [],
+      "DynamicWorldModel._get_modal_distribution": [],
+      "DynamicWorldModel._get_fractal_statistics": [],
+      "update_entity": [],
+      "_check_modal_consistency": [],
+      "_update_fractal_embedding": [],
+      "query_modal_space": [],
+      "predict_modal_evolution": [],
+      "compute_world_entropy": [],
+      "add_modal_constraint": [],
+      "_update_consistency_graph": [],
+      "save_state": [],
+      "load_state": [],
+      "get_diagnostics": [],
+      "_get_modal_distribution": [],
+      "_get_fractal_statistics": [],
+      "PXLWorldModelBridge": [],
+      "PXLWorldModelBridge.pxl_proposition_to_modal": [],
+      "pxl_proposition_to_modal": []
+    },
+    "spine_binding": {
+      "set_mission_profile": [
+        "UNMAPPED"
+      ],
+      "_persist_profile": [
+        "UNMAPPED"
+      ],
+      "_resolve_profile": [
+        "UNMAPPED"
+      ],
+      "_parse_args": [
+        "UNMAPPED"
+      ],
+      "_ensure_scripts_importable": [
+        "UNMAPPED"
+      ],
+      "_load_tools": [
+        "UNMAPPED"
+      ],
+      "_tool_metadata": [
+        "UNMAPPED"
+      ],
+      "_normalize": [
+        "UNMAPPED"
+      ],
+      "_write_json": [
+        "UNMAPPED"
+      ],
+      "_write_markdown": [
+        "UNMAPPED"
+      ],
+      "main": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "_as_posix": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "validate_evidence_ref": [
+        "UNMAPPED"
+      ],
+      "_sort_key": [
+        "UNMAPPED"
+      ],
+      "normalize_evidence_refs": [
+        "UNMAPPED"
+      ],
+      "evidence_to_citation_string": [
+        "UNMAPPED"
+      ],
+      "is_proved_reference": [
+        "UNMAPPED"
+      ],
+      "_sha256_file": [
+        "UNMAPPED"
+      ],
+      "_normalize_path": [
+        "UNMAPPED"
+      ],
+      "_collect_bundle_hashes": [
+        "UNMAPPED"
+      ],
+      "_sanitize_steps": [
+        "UNMAPPED"
+      ],
+      "_sanitize_outcomes": [
+        "UNMAPPED"
+      ],
+      "write_cycle_ledger": [
+        "UNMAPPED"
+      ],
+      "canonical_json_hash": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "normalize_statement": [
+        "UNMAPPED"
+      ],
+      "extract_theorem_statement": [
+        "UNMAPPED"
+      ],
+      "_ensure_repo_on_path": [
+        "UNMAPPED"
+      ],
+      "load_metrics": [
+        "UNMAPPED"
+      ],
+      "choose_best": [
+        "UNMAPPED"
+      ],
+      "normalize_objective_class": [
+        "UNMAPPED"
+      ],
+      "add_memory_item": [
+        "UNMAPPED"
+      ],
+      "decay_and_promote": [
+        "UNMAPPED"
+      ],
+      "recall": [
+        "UNMAPPED"
+      ],
+      "stable_item_id": [
+        "UNMAPPED"
+      ],
+      "load_theorem_index": [
+        "UNMAPPED"
+      ],
+      "enforce_truth_annotation": [
+        "UNMAPPED"
+      ],
+      "validate_truth_annotation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "apply_belief_policy": [
+        "UNMAPPED"
+      ],
+      "consolidate_beliefs": [
+        "UNMAPPED"
+      ],
+      "apply_plan_revision": [
+        "UNMAPPED"
+      ],
+      "get_belief_summary": [
+        "UNMAPPED"
+      ],
+      "StubSCPNexus": [
+        "UNMAPPED"
+      ],
+      "StubSCPNexus.process_agent_request": [
+        "UNMAPPED"
+      ],
+      "process_agent_request": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LogosAgiNexus": [
+        "UNMAPPED"
+      ],
+      "LogosAgiNexus._load_persisted_state": [
+        "UNMAPPED"
+      ],
+      "LogosAgiNexus.refresh_plan_history": [
+        "UNMAPPED"
+      ],
+      "LogosAgiNexus.record_tool_result": [
+        "UNMAPPED"
+      ],
+      "LogosAgiNexus.get_memory_summary": [
+        "UNMAPPED"
+      ],
+      "LogosAgiNexus.observe": [
+        "UNMAPPED"
+      ],
+      "LogosAgiNexus._process_observation_async": [
+        "UNMAPPED"
+      ],
+      "LogosAgiNexus.propose": [
+        "UNMAPPED"
+      ],
+      "LogosAgiNexus.propose_plan": [
+        "UNMAPPED"
+      ],
+      "LogosAgiNexus.persist": [
+        "UNMAPPED"
+      ],
+      "LogosAgiNexus.health": [
+        "UNMAPPED"
+      ],
+      "AgentRequest": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_load_persisted_state": [
+        "UNMAPPED"
+      ],
+      "refresh_plan_history": [
+        "UNMAPPED"
+      ],
+      "record_tool_result": [
+        "UNMAPPED"
+      ],
+      "get_memory_summary": [
+        "UNMAPPED"
+      ],
+      "observe": [
+        "UNMAPPED"
+      ],
+      "_process_observation_async": [
+        "UNMAPPED"
+      ],
+      "propose": [
+        "UNMAPPED"
+      ],
+      "propose_plan": [
+        "UNMAPPED"
+      ],
+      "persist": [
+        "UNMAPPED"
+      ],
+      "health": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ReplayEventType": [
+        "UNMAPPED"
+      ],
+      "ReplayGranularity": [
+        "UNMAPPED"
+      ],
+      "ReplayEvent": [
+        "UNMAPPED"
+      ],
+      "ReplayEvent._generate_event_id": [
+        "UNMAPPED"
+      ],
+      "ReplayEvent._calculate_checksum": [
+        "UNMAPPED"
+      ],
+      "ReplayEvent.to_serializable": [
+        "UNMAPPED"
+      ],
+      "ReplayEvent.from_serializable": [
+        "UNMAPPED"
+      ],
+      "ReplayEvent.verify": [
+        "UNMAPPED"
+      ],
+      "_generate_event_id": [
+        "UNMAPPED"
+      ],
+      "_calculate_checksum": [
+        "UNMAPPED"
+      ],
+      "to_serializable": [
+        "UNMAPPED"
+      ],
+      "from_serializable": [
+        "UNMAPPED"
+      ],
+      "verify": [
+        "UNMAPPED"
+      ],
+      "DeterministicReplayLogger": [
+        "UNMAPPED"
+      ],
+      "DeterministicReplayLogger.log_event": [
+        "UNMAPPED"
+      ],
+      "DeterministicReplayLogger.log_event_async": [
+        "UNMAPPED"
+      ],
+      "DeterministicReplayLogger.create_checkpoint": [
+        "UNMAPPED"
+      ],
+      "DeterministicReplayLogger._flush_batch": [
+        "UNMAPPED"
+      ],
+      "DeterministicReplayLogger._append_to_event_log": [
+        "UNMAPPED"
+      ],
+      "log_event": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "log_event_async": [
+        "UNMAPPED"
+      ],
+      "create_checkpoint": [
+        "UNMAPPED"
+      ],
+      "_flush_batch": [
+        "UNMAPPED"
+      ],
+      "_append_to_event_log": [
+        "UNMAPPED"
+      ],
+      "DeterministicReplayEngine": [
+        "UNMAPPED"
+      ],
+      "DeterministicReplayEngine.find_sessions": [
+        "UNMAPPED"
+      ],
+      "DeterministicReplayEngine.replay_session": [
+        "UNMAPPED"
+      ],
+      "DeterministicReplayEngine.rebuild_full_state": [
+        "UNMAPPED"
+      ],
+      "DeterministicReplayEngine._apply_event": [
+        "UNMAPPED"
+      ],
+      "find_sessions": [
+        "UNMAPPED"
+      ],
+      "replay_session": [
+        "UNMAPPED"
+      ],
+      "rebuild_full_state": [
+        "UNMAPPED"
+      ],
+      "_apply_event": [
+        "UNMAPPED"
+      ],
+      "UWMRebuilder": [
+        "UNMAPPED"
+      ],
+      "UWMRebuilder.rehydrate": [
+        "UNMAPPED"
+      ],
+      "UWMRebuilder.apply_event": [
+        "UNMAPPED"
+      ],
+      "rehydrate": [
+        "UNMAPPED"
+      ],
+      "apply_event": [
+        "UNMAPPED"
+      ],
+      "SMPRebuilder": [
+        "UNMAPPED"
+      ],
+      "SMPRebuilder.rehydrate": [
+        "UNMAPPED"
+      ],
+      "MemoryRebuilder": [
+        "UNMAPPED"
+      ],
+      "MemoryRebuilder.rehydrate": [
+        "UNMAPPED"
+      ],
+      "ForensicAnalyzer": [
+        "UNMAPPED"
+      ],
+      "ForensicAnalyzer.analyze_causal_chain": [
+        "UNMAPPED"
+      ],
+      "ForensicAnalyzer.timeline_analysis": [
+        "UNMAPPED"
+      ],
+      "ForensicAnalyzer.compare_sessions": [
+        "UNMAPPED"
+      ],
+      "analyze_causal_chain": [
+        "UNMAPPED"
+      ],
+      "trace_causes": [
+        "UNMAPPED"
+      ],
+      "timeline_analysis": [
+        "UNMAPPED"
+      ],
+      "compare_sessions": [
+        "UNMAPPED"
+      ],
+      "ReplayValidator": [
+        "UNMAPPED"
+      ],
+      "ReplayValidator.validate_replay": [
+        "UNMAPPED"
+      ],
+      "ReplayValidator.create_reference_replay": [
+        "UNMAPPED"
+      ],
+      "validate_replay": [
+        "UNMAPPED"
+      ],
+      "create_reference_replay": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure.start_session": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure.get_logger": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure.log_event": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure.end_session": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure.replay_and_analyze": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure.batch_replay": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure.export_session": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure.cleanup_old_sessions": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure._capture_current_state": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure._identify_key_events": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure._load_all_events": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure._export_events_to_csv": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure._read_session_info": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure._get_system_info": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure._create_archive": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure._archive_session": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure._delete_session": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure.get_statistics": [
+        "UNMAPPED"
+      ],
+      "start_session": [
+        "UNMAPPED"
+      ],
+      "get_logger": [
+        "UNMAPPED"
+      ],
+      "end_session": [
+        "UNMAPPED"
+      ],
+      "replay_and_analyze": [
+        "UNMAPPED"
+      ],
+      "batch_replay": [
+        "UNMAPPED"
+      ],
+      "export_session": [
+        "UNMAPPED"
+      ],
+      "cleanup_old_sessions": [
+        "UNMAPPED"
+      ],
+      "_capture_current_state": [
+        "UNMAPPED"
+      ],
+      "_identify_key_events": [
+        "UNMAPPED"
+      ],
+      "_load_all_events": [
+        "UNMAPPED"
+      ],
+      "_export_events_to_csv": [
+        "UNMAPPED"
+      ],
+      "_read_session_info": [
+        "UNMAPPED"
+      ],
+      "_get_system_info": [
+        "UNMAPPED"
+      ],
+      "_create_archive": [
+        "UNMAPPED"
+      ],
+      "_archive_session": [
+        "UNMAPPED"
+      ],
+      "_delete_session": [
+        "UNMAPPED"
+      ],
+      "get_statistics": [
+        "UNMAPPED"
+      ],
+      "create_replay_infrastructure": [
+        "UNMAPPED"
+      ],
+      "quick_replay_analysis": [
+        "UNMAPPED"
+      ],
+      "progress_callback": [
+        "UNMAPPED"
+      ],
+      "StorageTier": [
+        "UNMAPPED"
+      ],
+      "StorageFormat": [
+        "UNMAPPED"
+      ],
+      "StorageConfiguration": [
+        "UNMAPPED"
+      ],
+      "TieredMemoryStorage": [
+        "UNMAPPED"
+      ],
+      "TieredMemoryStorage.store_memory": [
+        "UNMAPPED"
+      ],
+      "TieredMemoryStorage.retrieve_memory": [
+        "UNMAPPED"
+      ],
+      "TieredMemoryStorage._store_in_tier": [
+        "UNMAPPED"
+      ],
+      "TieredMemoryStorage._store_ephemeral": [
+        "UNMAPPED"
+      ],
+      "TieredMemoryStorage._store_hot": [
+        "UNMAPPED"
+      ],
+      "TieredMemoryStorage._store_warm": [
+        "UNMAPPED"
+      ],
+      "store_memory": [
+        "UNMAPPED"
+      ],
+      "retrieve_memory": [
+        "UNMAPPED"
+      ],
+      "_store_in_tier": [
+        "UNMAPPED"
+      ],
+      "_store_ephemeral": [
+        "UNMAPPED"
+      ],
+      "_store_hot": [
+        "UNMAPPED"
+      ],
+      "_store_warm": [
+        "UNMAPPED"
+      ],
+      "MemoryIndexSystem": [
+        "UNMAPPED"
+      ],
+      "MemoryIndexSystem.index_memory": [
+        "UNMAPPED"
+      ],
+      "MemoryIndexSystem.query_by_similarity": [
+        "UNMAPPED"
+      ],
+      "MemoryIndexSystem.query_by_association": [
+        "UNMAPPED"
+      ],
+      "MemoryIndexSystem.query_by_temporal_context": [
+        "UNMAPPED"
+      ],
+      "index_memory": [
+        "UNMAPPED"
+      ],
+      "query_by_similarity": [
+        "UNMAPPED"
+      ],
+      "query_by_association": [
+        "UNMAPPED"
+      ],
+      "query_by_temporal_context": [
+        "UNMAPPED"
+      ],
+      "MemoryRetrievalEngine": [
+        "UNMAPPED"
+      ],
+      "MemoryRetrievalEngine.retrieve_and_apply": [
+        "UNMAPPED"
+      ],
+      "MemoryRetrievalEngine._execute_retrieval": [
+        "UNMAPPED"
+      ],
+      "MemoryRetrievalEngine._retrieve_by_similarity": [
+        "UNMAPPED"
+      ],
+      "MemoryRetrievalEngine._retrieve_by_association": [
+        "UNMAPPED"
+      ],
+      "MemoryRetrievalEngine._apply_memories": [
+        "UNMAPPED"
+      ],
+      "retrieve_and_apply": [
+        "UNMAPPED"
+      ],
+      "_execute_retrieval": [
+        "UNMAPPED"
+      ],
+      "_retrieve_by_similarity": [
+        "UNMAPPED"
+      ],
+      "_retrieve_by_association": [
+        "UNMAPPED"
+      ],
+      "_apply_memories": [
+        "UNMAPPED"
+      ],
+      "MemoryConsolidationScheduler": [
+        "UNMAPPED"
+      ],
+      "MemoryConsolidationScheduler.schedule_consolidation": [
+        "UNMAPPED"
+      ],
+      "MemoryConsolidationScheduler.run_consolidation_cycle": [
+        "UNMAPPED"
+      ],
+      "schedule_consolidation": [
+        "UNMAPPED"
+      ],
+      "run_consolidation_cycle": [
+        "UNMAPPED"
+      ],
+      "MemoryForgettingManager": [
+        "UNMAPPED"
+      ],
+      "MemoryForgettingManager.update_forgetting_curve": [
+        "UNMAPPED"
+      ],
+      "MemoryForgettingManager.get_memories_for_review": [
+        "UNMAPPED"
+      ],
+      "update_forgetting_curve": [
+        "UNMAPPED"
+      ],
+      "get_memories_for_review": [
+        "UNMAPPED"
+      ],
+      "MetamemorySystem": [
+        "UNMAPPED"
+      ],
+      "MetamemorySystem.monitor_memory_operation": [
+        "UNMAPPED"
+      ],
+      "MetamemorySystem._check_regulation_needs": [
+        "UNMAPPED"
+      ],
+      "monitor_memory_operation": [
+        "UNMAPPED"
+      ],
+      "_check_regulation_needs": [
+        "UNMAPPED"
+      ],
+      "CompleteMemorySystem": [
+        "UNMAPPED"
+      ],
+      "CompleteMemorySystem.store_complete_memory": [
+        "UNMAPPED"
+      ],
+      "CompleteMemorySystem.retrieve_for_application": [
+        "UNMAPPED"
+      ],
+      "CompleteMemorySystem.run_maintenance_cycle": [
+        "UNMAPPED"
+      ],
+      "store_complete_memory": [
+        "UNMAPPED"
+      ],
+      "retrieve_for_application": [
+        "UNMAPPED"
+      ],
+      "run_maintenance_cycle": [
+        "UNMAPPED"
+      ],
+      "CompleteMemorySystem._start_background_processes": [
+        "UNMAPPED"
+      ],
+      "CompleteMemorySystem._background_consolidation": [
+        "UNMAPPED"
+      ],
+      "_start_background_processes": [
+        "UNMAPPED"
+      ],
+      "_background_consolidation": [
+        "UNMAPPED"
+      ],
+      "demonstrate_complete_memory_system": [
+        "UNMAPPED"
+      ],
+      "SMPType": [
+        "UNMAPPED"
+      ],
+      "SMPStatus": [
+        "UNMAPPED"
+      ],
+      "SMPConfidence": [
+        "UNMAPPED"
+      ],
+      "SMPClaim": [
+        "UNMAPPED"
+      ],
+      "SMPClaim.to_dict": [
+        "UNMAPPED"
+      ],
+      "to_dict": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SMPDependencies": [
+        "UNMAPPED"
+      ],
+      "SMPDependencies.is_grounded": [
+        "UNMAPPED"
+      ],
+      "is_grounded": [
+        "UNMAPPED"
+      ],
+      "StructuredMeaningPacket": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "StructuredMeaningPacket.id_hash": [
+        "UNMAPPED"
+      ],
+      "StructuredMeaningPacket._score_evidence_quality": [
+        "UNMAPPED"
+      ],
+      "StructuredMeaningPacket.to_canonical_dict": [
+        "UNMAPPED"
+      ],
+      "id_hash": [
+        "UNMAPPED"
+      ],
+      "_score_evidence_quality": [
+        "UNMAPPED"
+      ],
+      "to_canonical_dict": [
+        "UNMAPPED"
+      ],
+      "SMPGenerator": [
+        "UNMAPPED"
+      ],
+      "SMPGenerator.generate_from_uwm_event": [
+        "UNMAPPED"
+      ],
+      "SMPGenerator.generate_from_uwm_state": [
+        "UNMAPPED"
+      ],
+      "SMPGenerator.generate_agent_hypothesis": [
+        "UNMAPPED"
+      ],
+      "SMPGenerator.generate_diagnostic_smps": [
+        "UNMAPPED"
+      ],
+      "SMPGenerator._generate_create_smps": [
+        "UNMAPPED"
+      ],
+      "SMPGenerator._generate_smp_id": [
+        "UNMAPPED"
+      ],
+      "generate_from_uwm_event": [
+        "UNMAPPED"
+      ],
+      "generate_from_uwm_state": [
+        "UNMAPPED"
+      ],
+      "generate_agent_hypothesis": [
+        "UNMAPPED"
+      ],
+      "generate_diagnostic_smps": [
+        "UNMAPPED"
+      ],
+      "_generate_create_smps": [
+        "UNMAPPED"
+      ],
+      "_generate_smp_id": [
+        "UNMAPPED"
+      ],
+      "TetrahedralEnrichment": [
+        "UNMAPPED"
+      ],
+      "TetrahedralEnrichment.enrich_smp": [
+        "UNMAPPED"
+      ],
+      "enrich_smp": [
+        "UNMAPPED"
+      ],
+      "LogicFace": [
+        "UNMAPPED"
+      ],
+      "LogicFace.analyze": [
+        "UNMAPPED"
+      ],
+      "analyze": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ConstraintEnrichment": [
+        "UNMAPPED"
+      ],
+      "ConstraintEnrichment.enrich_smp": [
+        "UNMAPPED"
+      ],
+      "InformationExplosionOrchestrator": [
+        "UNMAPPED"
+      ],
+      "InformationExplosionOrchestrator.process_smp": [
+        "UNMAPPED"
+      ],
+      "InformationExplosionOrchestrator._check_convergence": [
+        "UNMAPPED"
+      ],
+      "InformationExplosionOrchestrator._finalize_smp": [
+        "UNMAPPED"
+      ],
+      "process_smp": [
+        "UNMAPPED"
+      ],
+      "_check_convergence": [
+        "UNMAPPED"
+      ],
+      "_finalize_smp": [
+        "UNMAPPED"
+      ],
+      "SMPEvaluationPipeline": [
+        "UNMAPPED"
+      ],
+      "SMPEvaluationPipeline.evaluate_smp": [
+        "UNMAPPED"
+      ],
+      "SMPEvaluationPipeline._determine_routing": [
+        "UNMAPPED"
+      ],
+      "evaluate_smp": [
+        "UNMAPPED"
+      ],
+      "_determine_routing": [
+        "UNMAPPED"
+      ],
+      "StructuredMeaningSystem": [
+        "UNMAPPED"
+      ],
+      "StructuredMeaningSystem.process_uwm_event": [
+        "UNMAPPED"
+      ],
+      "process_uwm_event": [
+        "UNMAPPED"
+      ],
+      "EvaluationPerspective": [
+        "UNMAPPED"
+      ],
+      "TriuneCommutationResult": [
+        "UNMAPPED"
+      ],
+      "SMPGroundingLevel": [
+        "UNMAPPED"
+      ],
+      "PXLIELSEvaluator": [
+        "UNMAPPED"
+      ],
+      "PXLIELSEvaluator.evaluate_smp": [
+        "UNMAPPED"
+      ],
+      "PXLIELSEvaluator._analyze_pxl_coherence": [
+        "UNMAPPED"
+      ],
+      "PXLIELSEvaluator._analyze_iel_domains": [
+        "UNMAPPED"
+      ],
+      "_analyze_pxl_coherence": [
+        "UNMAPPED"
+      ],
+      "_analyze_iel_domains": [
+        "UNMAPPED"
+      ],
+      "ETGCEvaluator": [
+        "UNMAPPED"
+      ],
+      "ETGCEvaluator.evaluate_smp": [
+        "UNMAPPED"
+      ],
+      "ETGCEvaluator._evaluate_dimension": [
+        "UNMAPPED"
+      ],
+      "ETGCEvaluator._evaluate_existence": [
+        "UNMAPPED"
+      ],
+      "ETGCEvaluator._evaluate_truth": [
+        "UNMAPPED"
+      ],
+      "ETGCEvaluator._evaluate_goodness": [
+        "UNMAPPED"
+      ],
+      "_evaluate_dimension": [
+        "UNMAPPED"
+      ],
+      "_evaluate_existence": [
+        "UNMAPPED"
+      ],
+      "_evaluate_truth": [
+        "UNMAPPED"
+      ],
+      "_evaluate_goodness": [
+        "UNMAPPED"
+      ],
+      "PrivationEvaluator": [
+        "UNMAPPED"
+      ],
+      "PrivationEvaluator.evaluate_smp": [
+        "UNMAPPED"
+      ],
+      "PrivationEvaluator._analyze_privation_category": [
+        "UNMAPPED"
+      ],
+      "PrivationEvaluator._analyze_ontological_gaps": [
+        "UNMAPPED"
+      ],
+      "PrivationEvaluator._analyze_epistemic_absences": [
+        "UNMAPPED"
+      ],
+      "PrivationEvaluator._analyze_completeness_gaps": [
+        "UNMAPPED"
+      ],
+      "_analyze_privation_category": [
+        "UNMAPPED"
+      ],
+      "_analyze_ontological_gaps": [
+        "UNMAPPED"
+      ],
+      "_analyze_epistemic_absences": [
+        "UNMAPPED"
+      ],
+      "_analyze_completeness_gaps": [
+        "UNMAPPED"
+      ],
+      "TriuneCommutationEngine": [
+        "UNMAPPED"
+      ],
+      "TriuneCommutationEngine.evaluate_smp_tripartite": [
+        "UNMAPPED"
+      ],
+      "TriuneCommutationEngine._analyze_triune_commutation": [
+        "UNMAPPED"
+      ],
+      "TriuneCommutationEngine._analyze_convergence": [
+        "UNMAPPED"
+      ],
+      "TriuneCommutationEngine._calculate_epistemic_value": [
+        "UNMAPPED"
+      ],
+      "TriuneCommutationEngine._assess_truth_coherence_grounding": [
+        "UNMAPPED"
+      ],
+      "evaluate_smp_tripartite": [
+        "UNMAPPED"
+      ],
+      "_analyze_triune_commutation": [
+        "UNMAPPED"
+      ],
+      "_analyze_convergence": [
+        "UNMAPPED"
+      ],
+      "_calculate_epistemic_value": [
+        "UNMAPPED"
+      ],
+      "_assess_truth_coherence_grounding": [
+        "UNMAPPED"
+      ],
+      "SystemMemoryRouter": [
+        "UNMAPPED"
+      ],
+      "SystemMemoryRouter.route_to_memory": [
+        "UNMAPPED"
+      ],
+      "route_to_memory": [
+        "UNMAPPED"
+      ],
+      "SMP": [
+        "UNMAPPED"
+      ],
+      "EngineReport": [
+        "UNMAPPED"
+      ],
+      "RefinedSMP": [
+        "UNMAPPED"
+      ],
+      "SMPSynthesizer": [
+        "UNMAPPED"
+      ],
+      "SMPSynthesizer.synthesize": [
+        "UNMAPPED"
+      ],
+      "synthesize": [
+        "UNMAPPED"
+      ],
+      "StabilityCalculator": [
+        "UNMAPPED"
+      ],
+      "StabilityCalculator.calculate": [
+        "UNMAPPED"
+      ],
+      "StabilityCalculator._content_hash": [
+        "UNMAPPED"
+      ],
+      "calculate": [
+        "UNMAPPED"
+      ],
+      "_content_hash": [
+        "UNMAPPED"
+      ],
+      "PXLLogicFace": [
+        "UNMAPPED"
+      ],
+      "PXLLogicFace.analyze": [
+        "UNMAPPED"
+      ],
+      "IELDomainFace": [
+        "UNMAPPED"
+      ],
+      "IELDomainFace.analyze": [
+        "UNMAPPED"
+      ],
+      "ARPMathematicalFace": [
+        "UNMAPPED"
+      ],
+      "ARPMathematicalFace.analyze": [
+        "UNMAPPED"
+      ],
+      "CognitiveResistor": [
+        "UNMAPPED"
+      ],
+      "CognitiveResistor.analyze": [
+        "UNMAPPED"
+      ],
+      "TetrahedralEvaluator": [
+        "UNMAPPED"
+      ],
+      "TetrahedralEvaluator.evaluate": [
+        "UNMAPPED"
+      ],
+      "TetrahedralEvaluator._synthesize_reports": [
+        "UNMAPPED"
+      ],
+      "TetrahedralEvaluator._calculate_stability": [
+        "UNMAPPED"
+      ],
+      "evaluate": [
+        "UNMAPPED"
+      ],
+      "_synthesize_reports": [
+        "UNMAPPED"
+      ],
+      "_calculate_stability": [
+        "UNMAPPED"
+      ],
+      "_test_system_a": [
+        "UNMAPPED"
+      ],
+      "PXLAnalyzer": [
+        "UNMAPPED"
+      ],
+      "PXLAnalyzer.analyze_concept": [
+        "UNMAPPED"
+      ],
+      "PXLAnalyzer._check_i1": [
+        "UNMAPPED"
+      ],
+      "PXLAnalyzer._check_i2": [
+        "UNMAPPED"
+      ],
+      "PXLAnalyzer._check_i3": [
+        "UNMAPPED"
+      ],
+      "PXLAnalyzer._entails_O": [
+        "UNMAPPED"
+      ],
+      "PXLAnalyzer._detect_paradox": [
+        "UNMAPPED"
+      ],
+      "analyze_concept": [
+        "UNMAPPED"
+      ],
+      "_check_i1": [
+        "UNMAPPED"
+      ],
+      "_check_i2": [
+        "UNMAPPED"
+      ],
+      "_check_i3": [
+        "UNMAPPED"
+      ],
+      "_entails_O": [
+        "UNMAPPED"
+      ],
+      "_detect_paradox": [
+        "UNMAPPED"
+      ],
+      "SMPQuality": [
+        "UNMAPPED"
+      ],
+      "FailureMode": [
+        "UNMAPPED"
+      ],
+      "RecoveryAction": [
+        "UNMAPPED"
+      ],
+      "CommitResult": [
+        "UNMAPPED"
+      ],
+      "OrchestrationMetrics": [
+        "UNMAPPED"
+      ],
+      "Enhancement": [
+        "UNMAPPED"
+      ],
+      "Enhancement.name": [
+        "UNMAPPED"
+      ],
+      "Enhancement.pre_process": [
+        "UNMAPPED"
+      ],
+      "Enhancement.post_system_a": [
+        "UNMAPPED"
+      ],
+      "Enhancement.post_system_b": [
+        "UNMAPPED"
+      ],
+      "Enhancement.post_process": [
+        "UNMAPPED"
+      ],
+      "Enhancement.on_failure": [
+        "UNMAPPED"
+      ],
+      "name": [
+        "UNMAPPED"
+      ],
+      "pre_process": [
+        "UNMAPPED"
+      ],
+      "post_system_a": [
+        "UNMAPPED"
+      ],
+      "post_system_b": [
+        "UNMAPPED"
+      ],
+      "post_process": [
+        "UNMAPPED"
+      ],
+      "on_failure": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator.register_enhancement": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator.enable_enhancement": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator.disable_enhancement": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator.evaluate_and_authorize": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator._handle_system_a_failure": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator._handle_system_b_failure": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator._classify_failure": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator._apply_feedback_loops": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator._build_commit_result": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator._build_error_result": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator._update_metrics": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator.get_metrics": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator.reset_metrics": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator._stub_system_a": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator._stub_system_b": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator._load_all_enhancements": [
+        "UNMAPPED"
+      ],
+      "register_enhancement": [
+        "UNMAPPED"
+      ],
+      "enable_enhancement": [
+        "UNMAPPED"
+      ],
+      "disable_enhancement": [
+        "UNMAPPED"
+      ],
+      "evaluate_and_authorize": [
+        "UNMAPPED"
+      ],
+      "_handle_system_a_failure": [
+        "UNMAPPED"
+      ],
+      "_handle_system_b_failure": [
+        "UNMAPPED"
+      ],
+      "_classify_failure": [
+        "UNMAPPED"
+      ],
+      "_apply_feedback_loops": [
+        "UNMAPPED"
+      ],
+      "_build_commit_result": [
+        "UNMAPPED"
+      ],
+      "_build_error_result": [
+        "UNMAPPED"
+      ],
+      "_update_metrics": [
+        "UNMAPPED"
+      ],
+      "get_metrics": [
+        "UNMAPPED"
+      ],
+      "reset_metrics": [
+        "UNMAPPED"
+      ],
+      "_stub_system_a": [
+        "UNMAPPED"
+      ],
+      "StubRefined": [
+        "UNMAPPED"
+      ],
+      "_stub_system_b": [
+        "UNMAPPED"
+      ],
+      "StubResult": [
+        "UNMAPPED"
+      ],
+      "StubToken": [
+        "UNMAPPED"
+      ],
+      "_load_all_enhancements": [
+        "UNMAPPED"
+      ],
+      "AdaptiveControlEnhancement": [
+        "UNMAPPED"
+      ],
+      "AdaptiveControlEnhancement.name": [
+        "UNMAPPED"
+      ],
+      "AdaptiveControlEnhancement.pre_process": [
+        "UNMAPPED"
+      ],
+      "QualityClassifierEnhancement": [
+        "UNMAPPED"
+      ],
+      "QualityClassifierEnhancement.name": [
+        "UNMAPPED"
+      ],
+      "QualityClassifierEnhancement.post_system_a": [
+        "UNMAPPED"
+      ],
+      "PerformanceMonitorEnhancement": [
+        "UNMAPPED"
+      ],
+      "PerformanceMonitorEnhancement.name": [
+        "UNMAPPED"
+      ],
+      "PerformanceMonitorEnhancement.post_process": [
+        "UNMAPPED"
+      ],
+      "FailureRecoveryEnhancement": [
+        "UNMAPPED"
+      ],
+      "FailureRecoveryEnhancement.name": [
+        "UNMAPPED"
+      ],
+      "FailureRecoveryEnhancement.on_failure": [
+        "UNMAPPED"
+      ],
+      "AuditAggregatorEnhancement": [
+        "UNMAPPED"
+      ],
+      "AuditAggregatorEnhancement.name": [
+        "UNMAPPED"
+      ],
+      "AuditAggregatorEnhancement.post_process": [
+        "UNMAPPED"
+      ],
+      "PatternLearnerEnhancement": [
+        "UNMAPPED"
+      ],
+      "PatternLearnerEnhancement.name": [
+        "UNMAPPED"
+      ],
+      "PatternLearnerEnhancement.post_process": [
+        "UNMAPPED"
+      ],
+      "create_orchestrator": [
+        "UNMAPPED"
+      ],
+      "_test_orchestrator": [
+        "UNMAPPED"
+      ],
+      "TestSMP": [
+        "UNMAPPED"
+      ],
+      "CriticMode": [
+        "UNMAPPED"
+      ],
+      "CriticArchetype": [
+        "UNMAPPED"
+      ],
+      "CriticalChallenge": [
+        "UNMAPPED"
+      ],
+      "CriticalChallenge.to_dict": [
+        "UNMAPPED"
+      ],
+      "CriticalLens": [
+        "UNMAPPED"
+      ],
+      "CriticalLens._determine_mode": [
+        "UNMAPPED"
+      ],
+      "CriticalLens._load_templates": [
+        "UNMAPPED"
+      ],
+      "CriticalLens.generate_challenge": [
+        "UNMAPPED"
+      ],
+      "CriticalLens._identify_vulnerability": [
+        "UNMAPPED"
+      ],
+      "_determine_mode": [
+        "UNMAPPED"
+      ],
+      "_load_templates": [
+        "UNMAPPED"
+      ],
+      "generate_challenge": [
+        "UNMAPPED"
+      ],
+      "_identify_vulnerability": [
+        "UNMAPPED"
+      ],
+      "TetrahedralCritic": [
+        "UNMAPPED"
+      ],
+      "TetrahedralCritic.apply_critique": [
+        "UNMAPPED"
+      ],
+      "TetrahedralCritic._generate_comprehensive_challenges": [
+        "UNMAPPED"
+      ],
+      "TetrahedralCritic._validate_challenges_against_pxl": [
+        "UNMAPPED"
+      ],
+      "TetrahedralCritic._assess_critical_impact": [
+        "UNMAPPED"
+      ],
+      "TetrahedralCritic._generate_dialectical_synthesis": [
+        "UNMAPPED"
+      ],
+      "TetrahedralCritic._perform_triune_synthesis": [
+        "UNMAPPED"
+      ],
+      "apply_critique": [
+        "UNMAPPED"
+      ],
+      "_generate_comprehensive_challenges": [
+        "UNMAPPED"
+      ],
+      "_validate_challenges_against_pxl": [
+        "UNMAPPED"
+      ],
+      "_assess_critical_impact": [
+        "UNMAPPED"
+      ],
+      "_generate_dialectical_synthesis": [
+        "UNMAPPED"
+      ],
+      "_perform_triune_synthesis": [
+        "UNMAPPED"
+      ],
+      "SelfReferentialCritic": [
+        "UNMAPPED"
+      ],
+      "SelfReferentialCritic.critique_pxl_foundations": [
+        "UNMAPPED"
+      ],
+      "SelfReferentialCritic._critique_axiom": [
+        "UNMAPPED"
+      ],
+      "critique_pxl_foundations": [
+        "UNMAPPED"
+      ],
+      "_critique_axiom": [
+        "UNMAPPED"
+      ],
+      "PragmaticEffectivenessValidator": [
+        "UNMAPPED"
+      ],
+      "PragmaticEffectivenessValidator.validate_effectiveness": [
+        "UNMAPPED"
+      ],
+      "validate_effectiveness": [
+        "UNMAPPED"
+      ],
+      "CriticalMemoryIntegrator": [
+        "UNMAPPED"
+      ],
+      "CriticalMemoryIntegrator.integrate_critique": [
+        "UNMAPPED"
+      ],
+      "integrate_critique": [
+        "UNMAPPED"
+      ],
+      "demonstrate_cognitive_resistor": [
+        "UNMAPPED"
+      ],
+      "ModalDimension": [
+        "UNMAPPED"
+      ],
+      "ModalVector": [
+        "UNMAPPED"
+      ],
+      "ModalVector.id": [
+        "UNMAPPED"
+      ],
+      "ModalVector.similarity": [
+        "UNMAPPED"
+      ],
+      "ModalVector.modal_distance": [
+        "UNMAPPED"
+      ],
+      "ModalVector.project_to_pxl": [
+        "UNMAPPED"
+      ],
+      "id": [
+        "UNMAPPED"
+      ],
+      "similarity": [
+        "UNMAPPED"
+      ],
+      "modal_distance": [
+        "UNMAPPED"
+      ],
+      "project_to_pxl": [
+        "UNMAPPED"
+      ],
+      "FractalEmbedding": [
+        "UNMAPPED"
+      ],
+      "FractalEmbedding._validate_scales": [
+        "UNMAPPED"
+      ],
+      "FractalEmbedding.embed_at_scale": [
+        "UNMAPPED"
+      ],
+      "FractalEmbedding._generate_fractal_embedding": [
+        "UNMAPPED"
+      ],
+      "FractalEmbedding.compute_fractal_dimension": [
+        "UNMAPPED"
+      ],
+      "_validate_scales": [
+        "UNMAPPED"
+      ],
+      "embed_at_scale": [
+        "UNMAPPED"
+      ],
+      "_generate_fractal_embedding": [
+        "UNMAPPED"
+      ],
+      "compute_fractal_dimension": [
+        "UNMAPPED"
+      ],
+      "WorldState": [
+        "UNMAPPED"
+      ],
+      "WorldState.state_hash": [
+        "UNMAPPED"
+      ],
+      "WorldState.get_entity_modality": [
+        "UNMAPPED"
+      ],
+      "WorldState.compute_modal_field": [
+        "UNMAPPED"
+      ],
+      "state_hash": [
+        "UNMAPPED"
+      ],
+      "get_entity_modality": [
+        "UNMAPPED"
+      ],
+      "compute_modal_field": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel.update_entity": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel._check_modal_consistency": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel._update_fractal_embedding": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel.query_modal_space": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel.predict_modal_evolution": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel.compute_world_entropy": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel.add_modal_constraint": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel._update_consistency_graph": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel.save_state": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel.load_state": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel.get_diagnostics": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel._get_modal_distribution": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel._get_fractal_statistics": [
+        "UNMAPPED"
+      ],
+      "update_entity": [
+        "UNMAPPED"
+      ],
+      "_check_modal_consistency": [
+        "UNMAPPED"
+      ],
+      "_update_fractal_embedding": [
+        "UNMAPPED"
+      ],
+      "query_modal_space": [
+        "UNMAPPED"
+      ],
+      "predict_modal_evolution": [
+        "UNMAPPED"
+      ],
+      "compute_world_entropy": [
+        "UNMAPPED"
+      ],
+      "add_modal_constraint": [
+        "UNMAPPED"
+      ],
+      "_update_consistency_graph": [
+        "UNMAPPED"
+      ],
+      "save_state": [
+        "UNMAPPED"
+      ],
+      "load_state": [
+        "UNMAPPED"
+      ],
+      "get_diagnostics": [
+        "UNMAPPED"
+      ],
+      "_get_modal_distribution": [
+        "UNMAPPED"
+      ],
+      "_get_fractal_statistics": [
+        "UNMAPPED"
+      ],
+      "PXLWorldModelBridge": [
+        "UNMAPPED"
+      ],
+      "PXLWorldModelBridge.pxl_proposition_to_modal": [
+        "UNMAPPED"
+      ],
+      "pxl_proposition_to_modal": [
+        "UNMAPPED"
+      ]
+    }
+  }
+}
