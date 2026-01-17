@@ -1,0 +1,511 @@
+{
+  "version": "phase-4-crawl-queue/1",
+  "ts": "2026-01-15T09:10:50Z",
+  "report_dir": "_Reports/Audit_Normalize",
+  "planning_inputs": [
+    "_Reports/Audit_Normalize/Phase_3/20260114T231641Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T233822Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T233907Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T233954Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T234039Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T234124Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T234209Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T234255Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T234341Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T234427Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T234512Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T234728Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T234815Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T234900Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T234946Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T235031Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T235117Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T235203Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T235248Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T235334Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260114T235419Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T000428Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T000514Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T000559Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T000646Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T000731Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T001835Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T001921Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T002006Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T002052Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T002139Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T010138Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T010224Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T010310Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T010449Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T010535Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T010621Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T010706Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T010751Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T024122Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T024208Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T024255Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T024342Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T024428Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T024634Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T024721Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T024808Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T024857Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T024946Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T025543Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T025629Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T025716Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T025803Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T025848Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T030252Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T030339Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T030425Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T030511Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T030558Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T030824Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T030910Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T030957Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T031043Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T031130Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T083832Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T083836Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T083840Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T083845Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T083849Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T091032Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T091037Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T091041Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T091046Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/20260115T091050Z/Resolution_Plan.json",
+    "_Reports/Audit_Normalize/Phase_3/Manifests/export_tool_registry.json",
+    "_Reports/Audit_Normalize/Phase_3/Manifests/run_mvp_acceptance.json",
+    "_Reports/Audit_Normalize/Phase_3/Manifests/scan_repo.json",
+    "_Reports/Audit_Normalize/Phase_3/Manifests/system_mode_initializer.json",
+    "_Reports/Audit_Normalize/Phase_3/Manifests/test_evaluator_learning_smoke.json",
+    "_Reports/Audit_Normalize/Phase_3/Manifests/test_llm_bypass_smoke.json",
+    "_Reports/Audit_Normalize/Phase_3/Manifests/test_logos_runtime_phase2_smoke.json",
+    "_Reports/Audit_Normalize/Phase_3/Manifests/test_stub_beliefs_never_verified.json",
+    "_Reports/Audit_Normalize/Phase_3/Manifests/test_tool_pipeline_smoke.json"
+  ],
+  "tasks": [
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T231641Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T233822Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T233907Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T233954Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T234039Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T234124Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T234209Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T234255Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T234341Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T234427Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T234512Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T234728Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T234815Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T234900Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T234946Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T235031Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T235117Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T235203Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T235248Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T235334Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260114T235419Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T000428Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T000514Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T000559Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T000646Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T000731Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T001835Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T001921Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T002006Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T002052Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T002139Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T010138Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T010224Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T010310Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T010449Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T010535Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T010621Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T010706Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T010751Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T024122Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T024208Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T024255Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T024342Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T024428Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T024634Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T024721Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T024808Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T024857Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T024946Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T025543Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T025629Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T025716Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T025803Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T025848Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T030252Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T030339Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T030425Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T030511Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T030558Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T030824Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T030910Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T030957Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T031043Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T031130Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T083832Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T083836Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T083840Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T083845Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T083849Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T091032Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T091037Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T091041Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T091046Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/20260115T091050Z/Resolution_Plan.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/Manifests/export_tool_registry.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/Manifests/run_mvp_acceptance.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/Manifests/scan_repo.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/Manifests/system_mode_initializer.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/Manifests/test_evaluator_learning_smoke.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/Manifests/test_llm_bypass_smoke.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/Manifests/test_logos_runtime_phase2_smoke.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/Manifests/test_stub_beliefs_never_verified.json",
+      "read_only": true
+    },
+    {
+      "kind": "crawl_planning_artifact",
+      "path": "_Reports/Audit_Normalize/Phase_3/Manifests/test_tool_pipeline_smoke.json",
+      "read_only": true
+    }
+  ],
+  "notes": [
+    "Phase 4 is read-only: this file is a queue stub and may be enriched later.",
+    "No routing is permitted before Phase 5."
+  ]
+}

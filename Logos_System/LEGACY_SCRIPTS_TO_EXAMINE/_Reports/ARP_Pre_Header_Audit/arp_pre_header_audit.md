@@ -1,4 +1,4 @@
-# ARP Pre-Header Audit
+# ARP Pre-Header Governance Audit
 
 ## Reasoning Engines
 - Abductive_Engine
@@ -18,12 +18,13 @@
 - Temporal_Engine
 - Topological_Engine
 
-## Protocol Nexus
+## Protocol Nexus Layers
 - ARP
 - SCP
+- SOP
 - MTP
 - CSP
+- LOGOS
 
-## ERRORS
-- ARP_Nexus should contain exactly one orchestrator, found 6
-- Missing SOP_Nexus directory
+## Status
+PASS — deterministic governance state confirmed.

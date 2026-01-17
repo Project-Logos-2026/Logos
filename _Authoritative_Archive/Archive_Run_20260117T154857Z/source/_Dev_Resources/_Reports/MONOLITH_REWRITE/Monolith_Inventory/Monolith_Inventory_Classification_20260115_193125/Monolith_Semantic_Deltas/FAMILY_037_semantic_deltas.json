@@ -1,0 +1,1147 @@
+{
+  "family_id": "FAMILY_037",
+  "member_count": 89,
+  "members": [
+    "LogosCoreFacade",
+    "LogosCoreFacade.evaluate_modal",
+    "LogosCoreFacade.evaluate_iel",
+    "LogosCoreFacade.get_status",
+    "evaluate_modal",
+    "evaluate_iel",
+    "get_status",
+    "get_logos_core",
+    "start_agent",
+    "ReferenceMonitor",
+    "ReferenceMonitor._stamp",
+    "ReferenceMonitor._build_response",
+    "ReferenceMonitor.evaluate_modal_proposition",
+    "ReferenceMonitor.evaluate_iel_proposition",
+    "ReferenceMonitor.evaluate_batch",
+    "ReferenceMonitor.health_check",
+    "ReferenceMonitor.add_blocked_operation",
+    "ReferenceMonitor.clear_emergency_halt",
+    "_stamp",
+    "_build_response",
+    "evaluate_modal_proposition",
+    "evaluate_iel_proposition",
+    "evaluate_batch",
+    "health_check",
+    "add_blocked_operation",
+    "clear_emergency_halt",
+    "LOGOSCore",
+    "LOGOSCore._setup_logging",
+    "LOGOSCore._handle_safety_violation",
+    "LOGOSCore.monitor",
+    "LOGOSCore.iel",
+    "LOGOSCore.workers",
+    "LOGOSCore.bayesian",
+    "LOGOSCore.semantic",
+    "LOGOSCore.nlp",
+    "LOGOSCore.evaluate_modal_logic",
+    "LOGOSCore.evaluate_iel_logic",
+    "LOGOSCore.evaluate_batch",
+    "LOGOSCore.get_system_status",
+    "LOGOSCore.emergency_shutdown",
+    "LOGOSCore.clear_emergency_state",
+    "LOGOSCore.shutdown",
+    "_setup_logging",
+    "_handle_safety_violation",
+    "monitor",
+    "iel",
+    "workers",
+    "bayesian",
+    "semantic",
+    "nlp",
+    "evaluate_modal_logic",
+    "evaluate_iel_logic",
+    "get_system_status",
+    "emergency_shutdown",
+    "clear_emergency_state",
+    "shutdown",
+    "shutdown_logos_core",
+    "ExtensionsManager",
+    "ExtensionsManager.__new__",
+    "ExtensionsManager._audit_log",
+    "ExtensionsManager.embed_sentence",
+    "ExtensionsManager.kalman_filter",
+    "ExtensionsManager._kalman_filter_backup",
+    "ExtensionsManager.build_graph",
+    "ExtensionsManager.analyze_graph",
+    "ExtensionsManager.pytorch_available",
+    "ExtensionsManager.create_tensor",
+    "ExtensionsManager.sklearn_classify",
+    "ExtensionsManager.voice_input",
+    "ExtensionsManager.tts_output",
+    "ExtensionsManager.file_upload",
+    "ExtensionsManager.get_status",
+    "ExtensionsManager.get_audit_log",
+    "ExtensionsManager.is_available",
+    "__new__",
+    "_audit_log",
+    "embed_sentence",
+    "kalman_filter",
+    "_kalman_filter_backup",
+    "build_graph",
+    "analyze_graph",
+    "pytorch_available",
+    "create_tensor",
+    "sklearn_classify",
+    "voice_input",
+    "tts_output",
+    "file_upload",
+    "get_audit_log",
+    "is_available"
+  ],
+  "invariant_semantics": {
+    "data_role": []
+  },
+  "divergent_semantics": {
+    "semantic_tags": {
+      "LogosCoreFacade": [
+        "ENTRYPOINT"
+      ],
+      "LogosCoreFacade.evaluate_modal": [
+        "ENTRYPOINT"
+      ],
+      "LogosCoreFacade.evaluate_iel": [
+        "ENTRYPOINT"
+      ],
+      "LogosCoreFacade.get_status": [
+        "ENTRYPOINT"
+      ],
+      "evaluate_modal": [
+        "ENTRYPOINT"
+      ],
+      "evaluate_iel": [
+        "ENTRYPOINT"
+      ],
+      "get_status": [
+        "ENTRYPOINT"
+      ],
+      "get_logos_core": [
+        "ENTRYPOINT"
+      ],
+      "start_agent": [
+        "ENTRYPOINT"
+      ],
+      "ReferenceMonitor": [
+        "ENTRYPOINT"
+      ],
+      "ReferenceMonitor._stamp": [
+        "ENTRYPOINT"
+      ],
+      "ReferenceMonitor._build_response": [
+        "ENTRYPOINT"
+      ],
+      "ReferenceMonitor.evaluate_modal_proposition": [
+        "ENTRYPOINT"
+      ],
+      "ReferenceMonitor.evaluate_iel_proposition": [
+        "ENTRYPOINT"
+      ],
+      "ReferenceMonitor.evaluate_batch": [
+        "ENTRYPOINT"
+      ],
+      "ReferenceMonitor.health_check": [
+        "ENTRYPOINT"
+      ],
+      "ReferenceMonitor.add_blocked_operation": [
+        "ENTRYPOINT"
+      ],
+      "ReferenceMonitor.clear_emergency_halt": [
+        "ENTRYPOINT"
+      ],
+      "_stamp": [
+        "ENTRYPOINT"
+      ],
+      "_build_response": [
+        "ENTRYPOINT"
+      ],
+      "evaluate_modal_proposition": [
+        "UNCLASSIFIED"
+      ],
+      "evaluate_iel_proposition": [
+        "UNCLASSIFIED"
+      ],
+      "evaluate_batch": [
+        "ENTRYPOINT"
+      ],
+      "health_check": [
+        "ENTRYPOINT"
+      ],
+      "add_blocked_operation": [
+        "ENTRYPOINT"
+      ],
+      "clear_emergency_halt": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore._setup_logging": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore._handle_safety_violation": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore.monitor": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore.iel": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore.workers": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore.bayesian": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore.semantic": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore.nlp": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore.evaluate_modal_logic": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore.evaluate_iel_logic": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore.evaluate_batch": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore.get_system_status": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore.emergency_shutdown": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore.clear_emergency_state": [
+        "ENTRYPOINT"
+      ],
+      "LOGOSCore.shutdown": [
+        "ENTRYPOINT"
+      ],
+      "_setup_logging": [
+        "GOVERNANCE"
+      ],
+      "_handle_safety_violation": [
+        "ENTRYPOINT"
+      ],
+      "monitor": [
+        "ENTRYPOINT"
+      ],
+      "iel": [
+        "ENTRYPOINT"
+      ],
+      "workers": [
+        "ENTRYPOINT"
+      ],
+      "bayesian": [
+        "ENTRYPOINT"
+      ],
+      "semantic": [
+        "ENTRYPOINT"
+      ],
+      "nlp": [
+        "ENTRYPOINT"
+      ],
+      "evaluate_modal_logic": [
+        "ENTRYPOINT"
+      ],
+      "evaluate_iel_logic": [
+        "ENTRYPOINT"
+      ],
+      "get_system_status": [
+        "ENTRYPOINT"
+      ],
+      "emergency_shutdown": [
+        "ENTRYPOINT"
+      ],
+      "clear_emergency_state": [
+        "ENTRYPOINT"
+      ],
+      "shutdown": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT"
+      ],
+      "shutdown_logos_core": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager.__new__": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager._audit_log": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager.embed_sentence": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager.kalman_filter": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager._kalman_filter_backup": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager.build_graph": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager.analyze_graph": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager.pytorch_available": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager.create_tensor": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager.sklearn_classify": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager.voice_input": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager.tts_output": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager.file_upload": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager.get_status": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager.get_audit_log": [
+        "ENTRYPOINT"
+      ],
+      "ExtensionsManager.is_available": [
+        "ENTRYPOINT"
+      ],
+      "__new__": [
+        "ENTRYPOINT"
+      ],
+      "_audit_log": [
+        "ENTRYPOINT"
+      ],
+      "embed_sentence": [
+        "ENTRYPOINT"
+      ],
+      "kalman_filter": [
+        "ENTRYPOINT"
+      ],
+      "_kalman_filter_backup": [
+        "ENTRYPOINT"
+      ],
+      "build_graph": [
+        "ENTRYPOINT"
+      ],
+      "analyze_graph": [
+        "ENTRYPOINT"
+      ],
+      "pytorch_available": [
+        "ENTRYPOINT"
+      ],
+      "create_tensor": [
+        "ENTRYPOINT"
+      ],
+      "sklearn_classify": [
+        "ENTRYPOINT"
+      ],
+      "voice_input": [
+        "ENTRYPOINT"
+      ],
+      "tts_output": [
+        "ENTRYPOINT"
+      ],
+      "file_upload": [
+        "ENTRYPOINT"
+      ],
+      "get_audit_log": [
+        "ENTRYPOINT"
+      ],
+      "is_available": [
+        "ENTRYPOINT"
+      ]
+    },
+    "operation_type": {
+      "LogosCoreFacade": [
+        "TRANSFORMATION"
+      ],
+      "LogosCoreFacade.evaluate_modal": [
+        "TRANSFORMATION"
+      ],
+      "LogosCoreFacade.evaluate_iel": [
+        "TRANSFORMATION"
+      ],
+      "LogosCoreFacade.get_status": [
+        "TRANSFORMATION"
+      ],
+      "evaluate_modal": [
+        "TRANSFORMATION"
+      ],
+      "evaluate_iel": [
+        "TRANSFORMATION"
+      ],
+      "get_status": [
+        "TRANSFORMATION"
+      ],
+      "get_logos_core": [
+        "TRANSFORMATION"
+      ],
+      "start_agent": [
+        "TRANSFORMATION"
+      ],
+      "ReferenceMonitor": [
+        "TRANSFORMATION"
+      ],
+      "ReferenceMonitor._stamp": [
+        "TRANSFORMATION"
+      ],
+      "ReferenceMonitor._build_response": [
+        "TRANSFORMATION"
+      ],
+      "ReferenceMonitor.evaluate_modal_proposition": [
+        "TRANSFORMATION"
+      ],
+      "ReferenceMonitor.evaluate_iel_proposition": [
+        "TRANSFORMATION"
+      ],
+      "ReferenceMonitor.evaluate_batch": [
+        "TRANSFORMATION"
+      ],
+      "ReferenceMonitor.health_check": [
+        "TRANSFORMATION"
+      ],
+      "ReferenceMonitor.add_blocked_operation": [],
+      "ReferenceMonitor.clear_emergency_halt": [],
+      "_stamp": [
+        "TRANSFORMATION"
+      ],
+      "_build_response": [
+        "TRANSFORMATION"
+      ],
+      "evaluate_modal_proposition": [
+        "TRANSFORMATION"
+      ],
+      "evaluate_iel_proposition": [
+        "TRANSFORMATION"
+      ],
+      "evaluate_batch": [
+        "TRANSFORMATION"
+      ],
+      "health_check": [
+        "TRANSFORMATION"
+      ],
+      "add_blocked_operation": [],
+      "clear_emergency_halt": [],
+      "LOGOSCore": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSCore._setup_logging": [],
+      "LOGOSCore._handle_safety_violation": [],
+      "LOGOSCore.monitor": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSCore.iel": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSCore.workers": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSCore.bayesian": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSCore.semantic": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSCore.nlp": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSCore.evaluate_modal_logic": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSCore.evaluate_iel_logic": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSCore.evaluate_batch": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSCore.get_system_status": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSCore.emergency_shutdown": [],
+      "LOGOSCore.clear_emergency_state": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSCore.shutdown": [],
+      "_setup_logging": [
+        "TRANSFORMATION"
+      ],
+      "_handle_safety_violation": [],
+      "monitor": [
+        "TRANSFORMATION"
+      ],
+      "iel": [
+        "TRANSFORMATION"
+      ],
+      "workers": [
+        "TRANSFORMATION"
+      ],
+      "bayesian": [
+        "TRANSFORMATION"
+      ],
+      "semantic": [
+        "TRANSFORMATION"
+      ],
+      "nlp": [
+        "TRANSFORMATION"
+      ],
+      "evaluate_modal_logic": [
+        "TRANSFORMATION"
+      ],
+      "evaluate_iel_logic": [
+        "TRANSFORMATION"
+      ],
+      "get_system_status": [
+        "TRANSFORMATION"
+      ],
+      "emergency_shutdown": [],
+      "clear_emergency_state": [
+        "TRANSFORMATION"
+      ],
+      "shutdown": [],
+      "shutdown_logos_core": [],
+      "ExtensionsManager": [
+        "TRANSFORMATION"
+      ],
+      "ExtensionsManager.__new__": [
+        "TRANSFORMATION"
+      ],
+      "ExtensionsManager._audit_log": [],
+      "ExtensionsManager.embed_sentence": [
+        "TRANSFORMATION"
+      ],
+      "ExtensionsManager.kalman_filter": [
+        "TRANSFORMATION"
+      ],
+      "ExtensionsManager._kalman_filter_backup": [
+        "TRANSFORMATION"
+      ],
+      "ExtensionsManager.build_graph": [
+        "TRANSFORMATION"
+      ],
+      "ExtensionsManager.analyze_graph": [
+        "TRANSFORMATION"
+      ],
+      "ExtensionsManager.pytorch_available": [
+        "TRANSFORMATION"
+      ],
+      "ExtensionsManager.create_tensor": [
+        "TRANSFORMATION"
+      ],
+      "ExtensionsManager.sklearn_classify": [
+        "TRANSFORMATION"
+      ],
+      "ExtensionsManager.voice_input": [
+        "TRANSFORMATION"
+      ],
+      "ExtensionsManager.tts_output": [
+        "TRANSFORMATION"
+      ],
+      "ExtensionsManager.file_upload": [
+        "TRANSFORMATION"
+      ],
+      "ExtensionsManager.get_status": [
+        "TRANSFORMATION"
+      ],
+      "ExtensionsManager.get_audit_log": [
+        "TRANSFORMATION"
+      ],
+      "ExtensionsManager.is_available": [
+        "TRANSFORMATION"
+      ],
+      "__new__": [
+        "TRANSFORMATION"
+      ],
+      "_audit_log": [],
+      "embed_sentence": [
+        "TRANSFORMATION"
+      ],
+      "kalman_filter": [
+        "TRANSFORMATION"
+      ],
+      "_kalman_filter_backup": [
+        "TRANSFORMATION"
+      ],
+      "build_graph": [
+        "TRANSFORMATION"
+      ],
+      "analyze_graph": [
+        "TRANSFORMATION"
+      ],
+      "pytorch_available": [
+        "TRANSFORMATION"
+      ],
+      "create_tensor": [
+        "TRANSFORMATION"
+      ],
+      "sklearn_classify": [
+        "TRANSFORMATION"
+      ],
+      "voice_input": [
+        "TRANSFORMATION"
+      ],
+      "tts_output": [
+        "TRANSFORMATION"
+      ],
+      "file_upload": [
+        "TRANSFORMATION"
+      ],
+      "get_audit_log": [
+        "TRANSFORMATION"
+      ],
+      "is_available": [
+        "TRANSFORMATION"
+      ]
+    },
+    "control_role": {
+      "LogosCoreFacade": [
+        "BOOT_CONTROL"
+      ],
+      "LogosCoreFacade.evaluate_modal": [
+        "BOOT_CONTROL"
+      ],
+      "LogosCoreFacade.evaluate_iel": [
+        "BOOT_CONTROL"
+      ],
+      "LogosCoreFacade.get_status": [
+        "BOOT_CONTROL"
+      ],
+      "evaluate_modal": [
+        "BOOT_CONTROL"
+      ],
+      "evaluate_iel": [
+        "BOOT_CONTROL"
+      ],
+      "get_status": [
+        "BOOT_CONTROL"
+      ],
+      "get_logos_core": [
+        "BOOT_CONTROL"
+      ],
+      "start_agent": [
+        "BOOT_CONTROL"
+      ],
+      "ReferenceMonitor": [
+        "BOOT_CONTROL"
+      ],
+      "ReferenceMonitor._stamp": [
+        "BOOT_CONTROL"
+      ],
+      "ReferenceMonitor._build_response": [
+        "BOOT_CONTROL"
+      ],
+      "ReferenceMonitor.evaluate_modal_proposition": [
+        "BOOT_CONTROL"
+      ],
+      "ReferenceMonitor.evaluate_iel_proposition": [
+        "BOOT_CONTROL"
+      ],
+      "ReferenceMonitor.evaluate_batch": [
+        "BOOT_CONTROL"
+      ],
+      "ReferenceMonitor.health_check": [
+        "BOOT_CONTROL"
+      ],
+      "ReferenceMonitor.add_blocked_operation": [
+        "BOOT_CONTROL"
+      ],
+      "ReferenceMonitor.clear_emergency_halt": [
+        "BOOT_CONTROL"
+      ],
+      "_stamp": [
+        "BOOT_CONTROL"
+      ],
+      "_build_response": [
+        "BOOT_CONTROL"
+      ],
+      "evaluate_modal_proposition": [],
+      "evaluate_iel_proposition": [],
+      "evaluate_batch": [
+        "BOOT_CONTROL"
+      ],
+      "health_check": [
+        "BOOT_CONTROL"
+      ],
+      "add_blocked_operation": [
+        "BOOT_CONTROL"
+      ],
+      "clear_emergency_halt": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore._setup_logging": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore._handle_safety_violation": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore.monitor": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore.iel": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore.workers": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore.bayesian": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore.semantic": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore.nlp": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore.evaluate_modal_logic": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore.evaluate_iel_logic": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore.evaluate_batch": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore.get_system_status": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore.emergency_shutdown": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore.clear_emergency_state": [
+        "BOOT_CONTROL"
+      ],
+      "LOGOSCore.shutdown": [
+        "BOOT_CONTROL"
+      ],
+      "_setup_logging": [
+        "ALIGNMENT_GUARD"
+      ],
+      "_handle_safety_violation": [
+        "BOOT_CONTROL"
+      ],
+      "monitor": [
+        "BOOT_CONTROL"
+      ],
+      "iel": [
+        "BOOT_CONTROL"
+      ],
+      "workers": [
+        "BOOT_CONTROL"
+      ],
+      "bayesian": [
+        "BOOT_CONTROL"
+      ],
+      "semantic": [
+        "BOOT_CONTROL"
+      ],
+      "nlp": [
+        "BOOT_CONTROL"
+      ],
+      "evaluate_modal_logic": [
+        "BOOT_CONTROL"
+      ],
+      "evaluate_iel_logic": [
+        "BOOT_CONTROL"
+      ],
+      "get_system_status": [
+        "BOOT_CONTROL"
+      ],
+      "emergency_shutdown": [
+        "BOOT_CONTROL"
+      ],
+      "clear_emergency_state": [
+        "BOOT_CONTROL"
+      ],
+      "shutdown": [
+        "BOOT_CONTROL"
+      ],
+      "shutdown_logos_core": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager.__new__": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager._audit_log": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager.embed_sentence": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager.kalman_filter": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager._kalman_filter_backup": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager.build_graph": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager.analyze_graph": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager.pytorch_available": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager.create_tensor": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager.sklearn_classify": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager.voice_input": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager.tts_output": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager.file_upload": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager.get_status": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager.get_audit_log": [
+        "BOOT_CONTROL"
+      ],
+      "ExtensionsManager.is_available": [
+        "BOOT_CONTROL"
+      ],
+      "__new__": [
+        "BOOT_CONTROL"
+      ],
+      "_audit_log": [
+        "BOOT_CONTROL"
+      ],
+      "embed_sentence": [
+        "BOOT_CONTROL"
+      ],
+      "kalman_filter": [
+        "BOOT_CONTROL"
+      ],
+      "_kalman_filter_backup": [
+        "BOOT_CONTROL"
+      ],
+      "build_graph": [
+        "BOOT_CONTROL"
+      ],
+      "analyze_graph": [
+        "BOOT_CONTROL"
+      ],
+      "pytorch_available": [
+        "BOOT_CONTROL"
+      ],
+      "create_tensor": [
+        "BOOT_CONTROL"
+      ],
+      "sklearn_classify": [
+        "BOOT_CONTROL"
+      ],
+      "voice_input": [
+        "BOOT_CONTROL"
+      ],
+      "tts_output": [
+        "BOOT_CONTROL"
+      ],
+      "file_upload": [
+        "BOOT_CONTROL"
+      ],
+      "get_audit_log": [
+        "BOOT_CONTROL"
+      ],
+      "is_available": [
+        "BOOT_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "LogosCoreFacade": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LogosCoreFacade.evaluate_modal": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LogosCoreFacade.evaluate_iel": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LogosCoreFacade.get_status": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "evaluate_modal": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "evaluate_iel": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "get_status": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "get_logos_core": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "start_agent": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ReferenceMonitor": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ReferenceMonitor._stamp": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ReferenceMonitor._build_response": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ReferenceMonitor.evaluate_modal_proposition": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ReferenceMonitor.evaluate_iel_proposition": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ReferenceMonitor.evaluate_batch": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ReferenceMonitor.health_check": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ReferenceMonitor.add_blocked_operation": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ReferenceMonitor.clear_emergency_halt": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "_stamp": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "_build_response": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "evaluate_modal_proposition": [
+        "UNMAPPED"
+      ],
+      "evaluate_iel_proposition": [
+        "UNMAPPED"
+      ],
+      "evaluate_batch": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "health_check": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "add_blocked_operation": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "clear_emergency_halt": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore._setup_logging": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore._handle_safety_violation": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore.monitor": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore.iel": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore.workers": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore.bayesian": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore.semantic": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore.nlp": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore.evaluate_modal_logic": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore.evaluate_iel_logic": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore.evaluate_batch": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore.get_system_status": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore.emergency_shutdown": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore.clear_emergency_state": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LOGOSCore.shutdown": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "_setup_logging": [
+        "UNMAPPED"
+      ],
+      "_handle_safety_violation": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "monitor": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "iel": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "workers": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "bayesian": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "semantic": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "nlp": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "evaluate_modal_logic": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "evaluate_iel_logic": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "get_system_status": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "emergency_shutdown": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "clear_emergency_state": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "shutdown": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "shutdown_logos_core": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager.__new__": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager._audit_log": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager.embed_sentence": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager.kalman_filter": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager._kalman_filter_backup": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager.build_graph": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager.analyze_graph": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager.pytorch_available": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager.create_tensor": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager.sklearn_classify": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager.voice_input": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager.tts_output": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager.file_upload": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager.get_status": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager.get_audit_log": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ExtensionsManager.is_available": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "__new__": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "_audit_log": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "embed_sentence": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "kalman_filter": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "_kalman_filter_backup": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "build_graph": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "analyze_graph": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "pytorch_available": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "create_tensor": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "sklearn_classify": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "voice_input": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "tts_output": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "file_upload": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "get_audit_log": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "is_available": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ]
+    }
+  }
+}

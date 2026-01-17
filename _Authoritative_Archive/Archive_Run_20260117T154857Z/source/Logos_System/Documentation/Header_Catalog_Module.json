@@ -1,0 +1,1807 @@
+{
+  "schema_version": "1.0.0",
+  "locked_at": "2026-01-16T19:06:06Z",
+  "description": "Authoritative registry for module-level governance metadata referenced by MODULE_META headers.",
+  "schema": {
+    "module_id": "string (unique, non-reusable)",
+    "layer": [
+      "SEMANTIC_AXIOM",
+      "SEMANTIC_CONTEXT",
+      "ORCHESTRATION",
+      "APPLICATION_FUNCTION"
+    ],
+    "role": "string (semantic role, not filename-derived)",
+    "phase_origin": "string (development phase identifier)",
+    "description": "string (single-line semantic description)",
+    "contracts": "list[string]",
+    "allowed_imports": "list[string]",
+    "prohibited_behaviors": [
+      "IO",
+      "NETWORK",
+      "TIME",
+      "RANDOM"
+    ],
+    "entrypoints": "list[string]",
+    "callable_surface": [
+      "INTERNAL",
+      "ORCHESTRATION",
+      "APPLICATION"
+    ],
+    "state_mutation": [
+      "NONE",
+      "CONTEXT_ONLY",
+      "GLOBAL"
+    ],
+    "runtime_spine_binding": "string | NONE",
+    "depends_on_contexts": "list[string]",
+    "invoked_by": "list[string]"
+  },
+  "modules": {
+    "ORX-001": {
+      "module_id": "ORX-001",
+      "layer": "ORCHESTRATION",
+      "role": "Canonical system bootstrap and early runtime gating pipeline",
+      "phase_origin": "PHASE_SYSTEM_BOOTSTRAP",
+      "description": "Orchestration pipeline defined in Canonical_System_Bootstrap_Pipeline.py.",
+      "contracts": [],
+      "allowed_imports": [
+        "SEMANTIC_AXIOMS",
+        "SEMANTIC_CONTEXTS"
+      ],
+      "prohibited_behaviors": [
+        "NETWORK",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "GLOBAL",
+      "runtime_spine_binding": "SYSTEM_ENTRY_PRE_AGENT",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Logos_System_Entry_Point"
+      ]
+    },
+    "ORX-002": {
+      "module_id": "ORX-002",
+      "layer": "ORCHESTRATION",
+      "role": "Primary external system entry point and process initializer",
+      "phase_origin": "PHASE_SYSTEM_ENTRY",
+      "description": "Orchestration entry defined in Logos_System_Entry_Point.py.",
+      "contracts": [],
+      "allowed_imports": [
+        "SEMANTIC_AXIOMS",
+        "SEMANTIC_CONTEXTS",
+        "ORCHESTRATION"
+      ],
+      "prohibited_behaviors": [
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "main"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "GLOBAL",
+      "runtime_spine_binding": "SYSTEM_ENTRY",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "OS_CLI"
+      ]
+    },
+    "SCM-001": {
+      "module_id": "SCM-001",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "TRINITARIAN_LOGIC_AXIOM_CORE",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Foundational trinitarian logical axioms defined in Trinitarian_Logic_Core.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-002": {
+      "module_id": "SCM-002",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "TRINITARIAN_ALIGNMENT_AXIOM_CORE",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Axioms governing trinitarian alignment and coherence defined in Trinitarian_Alignment_Core.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-003": {
+      "module_id": "SCM-003",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "NECESSARY_EXISTENCE_AXIOM_CORE",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Axioms governing necessary existence defined in Necessary_Existence_Core.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-004": {
+      "module_id": "SCM-004",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "GLOBAL_BIJECTIVE_RECURSION_AXIOM",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Axioms defining global bijective recursion defined in Global_Bijective_Recursion_Core.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-005": {
+      "module_id": "SCM-005",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "THREE_PART_DISTINCTION_NON_COLLAPSE",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "3PDN constraint axioms defined in 3PDN_Constraint.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-006": {
+      "module_id": "SCM-006",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "THREE_PART_DISTINCTION_VALIDATION",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Validation axioms for 3PDN defined in 3PDN_Validator.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-007": {
+      "module_id": "SCM-007",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "AGENT_ACTIVATION_GATE_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Axioms governing agent activation defined in Agent_Activation_Gate.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-008": {
+      "module_id": "SCM-008",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "EVIDENCE_CHAIN_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Evidence chain axioms defined in Evidence_Chain.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-009": {
+      "module_id": "SCM-009",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "INVARIANT_CONSTRAINT_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Invariant constraint axioms defined in Invariant_Constraints.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-010": {
+      "module_id": "SCM-010",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "HYPSTATIC_IDENTITY_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Hypostatic identity axioms defined in Hypostatic_ID_Validator.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-011": {
+      "module_id": "SCM-011",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "TEMPORAL_SUPERSESSION_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Temporal supersession axioms defined in Temporal_Supersession.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-012": {
+      "module_id": "SCM-012",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "SEMANTIC_CAPABILITY_GATING_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Semantic capability gating axioms defined in Semantic_Capability_Gate.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-013": {
+      "module_id": "SCM-013",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "RUNTIME_MODE_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Runtime mode axioms defined in Runtime_Mode_Controller.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-014": {
+      "module_id": "SCM-014",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "RUNTIME_CONTEXT_INITIALIZATION_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Runtime context initialization axioms defined in Runtime_Context_Initializer.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-015": {
+      "module_id": "SCM-015",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "RUNTIME_INPUT_SANITIZATION_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Runtime input sanitization axioms defined in Runtime_Input_Sanitizer.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-016": {
+      "module_id": "SCM-016",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "READ_ONLY_AGENT_INTERFACE_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Read-only agent interface axioms defined in Read_Only_Agent_Interface.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-017": {
+      "module_id": "SCM-017",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "UWM_INGESTION_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "UWM ingestion axioms defined in UWM_Ingestion.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-018": {
+      "module_id": "SCM-018",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "UWM_VALIDATION_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "UWM validation axioms defined in UWM_Validator.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCM-019": {
+      "module_id": "SCM-019",
+      "layer": "SEMANTIC_AXIOM",
+      "role": "MONOLITH_RUNTIME_AXIOMS",
+      "phase_origin": "PHASE_AXIOMATIZATION",
+      "description": "Monolithic runtime axioms defined in Monolith_Runtime.py.",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCX-001": {
+      "module_id": "SCX-001",
+      "layer": "SEMANTIC_CONTEXT",
+      "role": "AGENT_POLICY_DECISION_CONTEXT",
+      "phase_origin": "PHASE_CONTEXTUAL_EMBEDDING",
+      "description": "Semantic context module defined in Agent_Policy_Decision_Context.py.",
+      "contracts": [],
+      "allowed_imports": [
+        "SEMANTIC_AXIOMS"
+      ],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "CONTEXT_ONLY",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCX-002": {
+      "module_id": "SCX-002",
+      "layer": "SEMANTIC_CONTEXT",
+      "role": "BOOTSTRAP_RUNTIME_CONTEXT",
+      "phase_origin": "PHASE_CONTEXTUAL_EMBEDDING",
+      "description": "Semantic context module defined in Bootstrap_Runtime_Context.py.",
+      "contracts": [],
+      "allowed_imports": [
+        "SEMANTIC_AXIOMS"
+      ],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "CONTEXT_ONLY",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCX-003": {
+      "module_id": "SCX-003",
+      "layer": "SEMANTIC_CONTEXT",
+      "role": "PRIVATION_HANDLING_CONTEXT",
+      "phase_origin": "PHASE_CONTEXTUAL_EMBEDDING",
+      "description": "Semantic context module defined in Privation_Handling_Context.py.",
+      "contracts": [],
+      "allowed_imports": [
+        "SEMANTIC_AXIOMS"
+      ],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "CONTEXT_ONLY",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCX-004": {
+      "module_id": "SCX-004",
+      "layer": "SEMANTIC_CONTEXT",
+      "role": "RUNTIME_MODE_CONTEXT",
+      "phase_origin": "PHASE_CONTEXTUAL_EMBEDDING",
+      "description": "Semantic context module defined in Runtime_Mode_Context.py.",
+      "contracts": [],
+      "allowed_imports": [
+        "SEMANTIC_AXIOMS"
+      ],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "CONTEXT_ONLY",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "SCX-005": {
+      "module_id": "SCX-005",
+      "layer": "SEMANTIC_CONTEXT",
+      "role": "TRINITARIAN_OPTIMIZATION_CONTEXT",
+      "phase_origin": "PHASE_CONTEXTUAL_EMBEDDING",
+      "description": "Semantic context module defined in Trinitarian_Optimization_Context.py.",
+      "contracts": [],
+      "allowed_imports": [
+        "SEMANTIC_AXIOMS"
+      ],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "INTERNAL",
+      "state_mutation": "CONTEXT_ONLY",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": [
+        "Canonical_System_Bootstrap_Pipeline"
+      ]
+    },
+    "ARP_NEXUS_ORCHESTRATOR": {
+      "module_id": "ARP_NEXUS_ORCHESTRATOR",
+      "layer": "ORCHESTRATION",
+      "role": "Advanced Reasoning Protocol nexus orchestrator",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Advanced Reasoning Protocol nexus orchestrator (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "ORCHESTRATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "SCP_NEXUS_ORCHESTRATOR": {
+      "module_id": "SCP_NEXUS_ORCHESTRATOR",
+      "layer": "ORCHESTRATION",
+      "role": "Synthetic Cognition Protocol nexus orchestrator",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Synthetic Cognition Protocol nexus orchestrator (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "ORCHESTRATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "MTP_NEXUS_ORCHESTRATOR": {
+      "module_id": "MTP_NEXUS_ORCHESTRATOR",
+      "layer": "ORCHESTRATION",
+      "role": "Meaning Translation Protocol nexus orchestrator",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Meaning Translation Protocol nexus orchestrator (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "ORCHESTRATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "CSP_NEXUS_ORCHESTRATOR": {
+      "module_id": "CSP_NEXUS_ORCHESTRATOR",
+      "layer": "ORCHESTRATION",
+      "role": "Cognitive State Protocol nexus orchestrator",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Cognitive State Protocol nexus orchestrator (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "ORCHESTRATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "LOGOS_PROTOCOL_NEXUS_ORCHESTRATOR": {
+      "module_id": "LOGOS_PROTOCOL_NEXUS_ORCHESTRATOR",
+      "layer": "ORCHESTRATION",
+      "role": "Logos Protocol nexus orchestrator",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Logos Protocol nexus orchestrator (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "ORCHESTRATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "SOP_NEXUS_ORCHESTRATOR": {
+      "module_id": "SOP_NEXUS_ORCHESTRATOR",
+      "layer": "ORCHESTRATION",
+      "role": "Systems Operations Protocol nexus orchestrator",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Systems Operations Protocol nexus orchestrator (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "ORCHESTRATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "DEDUCTIVE_ENGINE": {
+      "module_id": "DEDUCTIVE_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Deductive reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Deductive reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "INDUCTIVE_ENGINE": {
+      "module_id": "INDUCTIVE_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Inductive reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Inductive reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "ABDUCTIVE_ENGINE": {
+      "module_id": "ABDUCTIVE_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Abductive reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Abductive reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "ANALOGICAL_ENGINE": {
+      "module_id": "ANALOGICAL_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Analogical reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Analogical reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "COUNTERFACTUAL_ENGINE": {
+      "module_id": "COUNTERFACTUAL_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Counterfactual reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Counterfactual reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "MODAL_ENGINE": {
+      "module_id": "MODAL_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Modal reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Modal reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "TEMPORAL_ENGINE": {
+      "module_id": "TEMPORAL_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Temporal reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Temporal reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "ETHICAL_ENGINE": {
+      "module_id": "ETHICAL_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Ethical reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Ethical reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "GAME_THEORETIC_ENGINE": {
+      "module_id": "GAME_THEORETIC_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Game-theoretic reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Game-theoretic reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "HEURISTIC_ENGINE": {
+      "module_id": "HEURISTIC_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Heuristic reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Heuristic reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "OPTIMIZATION_ENGINE": {
+      "module_id": "OPTIMIZATION_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Optimization reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Optimization reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "TOPOLOGICAL_ENGINE": {
+      "module_id": "TOPOLOGICAL_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Topological reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Topological reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "CATEGORY_THEORETIC_ENGINE": {
+      "module_id": "CATEGORY_THEORETIC_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Category-theoretic reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Category-theoretic reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "META_ENGINE": {
+      "module_id": "META_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Meta reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Meta reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "BAYESIAN_ENGINE": {
+      "module_id": "BAYESIAN_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Bayesian reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Bayesian reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "ABDUCTIVE_REASONING_ENGINE": {
+      "module_id": "ABDUCTIVE_REASONING_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Abductive reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Abductive reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "ANALOGICAL_REASONING_ENGINE": {
+      "module_id": "ANALOGICAL_REASONING_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Analogical reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Analogical reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "BAYESIAN_DATA_PARSER": {
+      "module_id": "BAYESIAN_DATA_PARSER",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Bayesian engine data parser",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Bayesian engine data parser (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "BAYESIAN_INFERENCE": {
+      "module_id": "BAYESIAN_INFERENCE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Bayesian inference routine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Bayesian inference routine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "BAYESIAN_INFERENCER": {
+      "module_id": "BAYESIAN_INFERENCER",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Bayesian inferencer",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Bayesian inferencer (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "BAYESIAN_INTERFACE": {
+      "module_id": "BAYESIAN_INTERFACE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Bayesian interface surface",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Bayesian interface surface (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "BAYESIAN_ML": {
+      "module_id": "BAYESIAN_ML",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Bayesian ML routine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Bayesian ML routine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "BAYESIAN_NEXUS": {
+      "module_id": "BAYESIAN_NEXUS",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Bayesian nexus adapter",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Bayesian nexus adapter (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "BAYESIAN_RECURSION": {
+      "module_id": "BAYESIAN_RECURSION",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Bayesian recursion routine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Bayesian recursion routine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "BAYESIAN_UPDATES": {
+      "module_id": "BAYESIAN_UPDATES",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Bayesian update routine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Bayesian update routine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "BAYES_UPDATE_REAL_TIME": {
+      "module_id": "BAYES_UPDATE_REAL_TIME",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Bayesian real-time update routine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Bayesian real-time update routine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "CATEGORY_THEORETIC_REASONING_ENGINE": {
+      "module_id": "CATEGORY_THEORETIC_REASONING_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Category-theoretic reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Category-theoretic reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "COHERENCE": {
+      "module_id": "COHERENCE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Coherence module",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Coherence module (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "COHERENCE_FORMALISM": {
+      "module_id": "COHERENCE_FORMALISM",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Coherence formalism module",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Coherence formalism module (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "COUNTERFACTUAL_REASONING_ENGINE": {
+      "module_id": "COUNTERFACTUAL_REASONING_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Counterfactual reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Counterfactual reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "DEDUCTIVE_REASONING_ENGINE": {
+      "module_id": "DEDUCTIVE_REASONING_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Deductive reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Deductive reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "ETHICAL_REASONING_ENGINE": {
+      "module_id": "ETHICAL_REASONING_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Ethical reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Ethical reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "GAME_THEORETIC_REASONING_ENGINE": {
+      "module_id": "GAME_THEORETIC_REASONING_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Game-theoretic reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Game-theoretic reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "HEURISTIC_REASONING_ENGINE": {
+      "module_id": "HEURISTIC_REASONING_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Heuristic reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Heuristic reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "HIERARCHICAL_BAYES_NETWORK": {
+      "module_id": "HIERARCHICAL_BAYES_NETWORK",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Hierarchical Bayes network module",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Hierarchical Bayes network module (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "INDUCTIVE_REASONING_ENGINE": {
+      "module_id": "INDUCTIVE_REASONING_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Inductive reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Inductive reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "META_REASONING_ENGINE": {
+      "module_id": "META_REASONING_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Meta reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Meta reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "MODAL_REASONING_ENGINE": {
+      "module_id": "MODAL_REASONING_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Modal reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Modal reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "OPTIMIZATION_REASONING_ENGINE": {
+      "module_id": "OPTIMIZATION_REASONING_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Optimization reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Optimization reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "PXL_ENGINE": {
+      "module_id": "PXL_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "PXL engine core",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for PXL engine core (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "TEMPORAL_REASONING_ENGINE": {
+      "module_id": "TEMPORAL_REASONING_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Temporal reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Temporal reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    },
+    "TOPOLOGICAL_REASONING_ENGINE": {
+      "module_id": "TOPOLOGICAL_REASONING_ENGINE",
+      "layer": "APPLICATION_FUNCTION",
+      "role": "Topological reasoning engine",
+      "phase_origin": "PHASE_SCOPING_STUB",
+      "description": "Stub metadata for Topological reasoning engine (header placeholder).",
+      "contracts": [],
+      "allowed_imports": [],
+      "prohibited_behaviors": [
+        "IO",
+        "NETWORK",
+        "TIME",
+        "RANDOM"
+      ],
+      "entrypoints": [
+        "run"
+      ],
+      "callable_surface": "APPLICATION",
+      "state_mutation": "NONE",
+      "runtime_spine_binding": "NONE",
+      "depends_on_contexts": [],
+      "invoked_by": []
+    }
+  }
+}

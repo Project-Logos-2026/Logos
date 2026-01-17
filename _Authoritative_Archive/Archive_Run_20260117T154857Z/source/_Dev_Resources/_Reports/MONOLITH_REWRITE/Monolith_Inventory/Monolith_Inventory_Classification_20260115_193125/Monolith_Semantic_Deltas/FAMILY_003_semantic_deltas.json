@@ -1,0 +1,974 @@
+{
+  "family_id": "FAMILY_003",
+  "member_count": 66,
+  "members": [
+    "initialize",
+    "init_working_memory",
+    "calculate_initial_salience",
+    "init_beliefs_container",
+    "StubSCPNexus.__init__",
+    "StubSCPNexus.initialize",
+    "__init__",
+    "LogosAgiNexus.__init__",
+    "LogosAgiNexus.bootstrap",
+    "LogosAgiNexus._bootstrap_real",
+    "bootstrap",
+    "_bootstrap_real",
+    "AgentRequest.__init__",
+    "ReplayEvent.__post_init__",
+    "__post_init__",
+    "DeterministicReplayLogger.__init__",
+    "DeterministicReplayEngine.__init__",
+    "ForensicAnalyzer.__init__",
+    "ReplayValidator.__init__",
+    "CompleteReplayInfrastructure.__init__",
+    "TieredMemoryStorage.__init__",
+    "TieredMemoryStorage._determine_initial_tier",
+    "_determine_initial_tier",
+    "MemoryIndexSystem.__init__",
+    "MemoryRetrievalEngine.__init__",
+    "MemoryConsolidationScheduler.__init__",
+    "MemoryForgettingManager.__init__",
+    "MetamemorySystem.__init__",
+    "CompleteMemorySystem.__init__",
+    "StructuredMeaningPacket.__post_init__",
+    "StructuredMeaningPacket._compute_initial_confidence",
+    "_compute_initial_confidence",
+    "SMPGenerator.__init__",
+    "TetrahedralEnrichment.__init__",
+    "ConstraintEnrichment.__init__",
+    "InformationExplosionOrchestrator.__init__",
+    "SMPEvaluationPipeline.__init__",
+    "StructuredMeaningSystem.__init__",
+    "PXLIELSEvaluator.__init__",
+    "ETGCEvaluator.__init__",
+    "PrivationEvaluator.__init__",
+    "TriuneCommutationEngine.__init__",
+    "SystemMemoryRouter.__init__",
+    "SMPSynthesizer.__init__",
+    "StabilityCalculator.__init__",
+    "PXLLogicFace.__init__",
+    "IELDomainFace.__init__",
+    "ARPMathematicalFace.__init__",
+    "CognitiveResistor.__init__",
+    "TetrahedralEvaluator.__init__",
+    "initialize_system_a",
+    "PXLAnalyzer.__init__",
+    "Enhancement.__init__",
+    "SystemOrchestrator.__init__",
+    "PatternLearnerEnhancement.__init__",
+    "CriticalLens.__init__",
+    "TetrahedralCritic.__init__",
+    "SelfReferentialCritic.__init__",
+    "PragmaticEffectivenessValidator.__init__",
+    "CriticalMemoryIntegrator.__init__",
+    "ModalVector.__post_init__",
+    "FractalEmbedding.__post_init__",
+    "DynamicWorldModel.__init__",
+    "DynamicWorldModel._create_initial_state",
+    "_create_initial_state",
+    "PXLWorldModelBridge.__init__"
+  ],
+  "invariant_semantics": {},
+  "divergent_semantics": {
+    "semantic_tags": {
+      "initialize": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "init_working_memory": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "calculate_initial_salience": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "init_beliefs_container": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StubSCPNexus.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StubSCPNexus.initialize": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "__init__": [
+        "BOOTSTRAP",
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "LogosAgiNexus.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "LogosAgiNexus.bootstrap": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "LogosAgiNexus._bootstrap_real": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "bootstrap": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_bootstrap_real": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "AgentRequest.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "ReplayEvent.__post_init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "__post_init__": [
+        "BOOTSTRAP"
+      ],
+      "DeterministicReplayLogger.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DeterministicReplayEngine.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ForensicAnalyzer.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ReplayValidator.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteReplayInfrastructure.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TieredMemoryStorage.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TieredMemoryStorage._determine_initial_tier": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_determine_initial_tier": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryIndexSystem.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryRetrievalEngine.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryConsolidationScheduler.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MemoryForgettingManager.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MetamemorySystem.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CompleteMemorySystem.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StructuredMeaningPacket.__post_init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StructuredMeaningPacket._compute_initial_confidence": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_compute_initial_confidence": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPGenerator.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralEnrichment.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ConstraintEnrichment.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "InformationExplosionOrchestrator.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPEvaluationPipeline.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StructuredMeaningSystem.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLIELSEvaluator.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ETGCEvaluator.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PrivationEvaluator.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TriuneCommutationEngine.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemMemoryRouter.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SMPSynthesizer.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "StabilityCalculator.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLLogicFace.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "IELDomainFace.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ARPMathematicalFace.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CognitiveResistor.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralEvaluator.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "initialize_system_a": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLAnalyzer.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "Enhancement.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SystemOrchestrator.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PatternLearnerEnhancement.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CriticalLens.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TetrahedralCritic.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SelfReferentialCritic.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PragmaticEffectivenessValidator.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CriticalMemoryIntegrator.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ModalVector.__post_init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "FractalEmbedding.__post_init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "DynamicWorldModel._create_initial_state": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_create_initial_state": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PXLWorldModelBridge.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ]
+    },
+    "operation_type": {
+      "initialize": [
+        "TRANSFORMATION"
+      ],
+      "init_working_memory": [
+        "TRANSFORMATION"
+      ],
+      "calculate_initial_salience": [
+        "TRANSFORMATION"
+      ],
+      "init_beliefs_container": [],
+      "StubSCPNexus.__init__": [],
+      "StubSCPNexus.initialize": [
+        "TRANSFORMATION"
+      ],
+      "__init__": [],
+      "LogosAgiNexus.__init__": [],
+      "LogosAgiNexus.bootstrap": [
+        "TRANSFORMATION"
+      ],
+      "LogosAgiNexus._bootstrap_real": [],
+      "bootstrap": [
+        "TRANSFORMATION"
+      ],
+      "_bootstrap_real": [],
+      "AgentRequest.__init__": [],
+      "ReplayEvent.__post_init__": [],
+      "__post_init__": [],
+      "DeterministicReplayLogger.__init__": [],
+      "DeterministicReplayEngine.__init__": [],
+      "ForensicAnalyzer.__init__": [],
+      "ReplayValidator.__init__": [],
+      "CompleteReplayInfrastructure.__init__": [],
+      "TieredMemoryStorage.__init__": [],
+      "TieredMemoryStorage._determine_initial_tier": [
+        "TRANSFORMATION"
+      ],
+      "_determine_initial_tier": [
+        "TRANSFORMATION"
+      ],
+      "MemoryIndexSystem.__init__": [],
+      "MemoryRetrievalEngine.__init__": [],
+      "MemoryConsolidationScheduler.__init__": [],
+      "MemoryForgettingManager.__init__": [],
+      "MetamemorySystem.__init__": [],
+      "CompleteMemorySystem.__init__": [],
+      "StructuredMeaningPacket.__post_init__": [],
+      "StructuredMeaningPacket._compute_initial_confidence": [
+        "TRANSFORMATION"
+      ],
+      "_compute_initial_confidence": [
+        "TRANSFORMATION"
+      ],
+      "SMPGenerator.__init__": [],
+      "TetrahedralEnrichment.__init__": [],
+      "ConstraintEnrichment.__init__": [],
+      "InformationExplosionOrchestrator.__init__": [],
+      "SMPEvaluationPipeline.__init__": [],
+      "StructuredMeaningSystem.__init__": [],
+      "PXLIELSEvaluator.__init__": [],
+      "ETGCEvaluator.__init__": [],
+      "PrivationEvaluator.__init__": [],
+      "TriuneCommutationEngine.__init__": [],
+      "SystemMemoryRouter.__init__": [],
+      "SMPSynthesizer.__init__": [],
+      "StabilityCalculator.__init__": [],
+      "PXLLogicFace.__init__": [],
+      "IELDomainFace.__init__": [],
+      "ARPMathematicalFace.__init__": [],
+      "CognitiveResistor.__init__": [],
+      "TetrahedralEvaluator.__init__": [],
+      "initialize_system_a": [
+        "TRANSFORMATION"
+      ],
+      "PXLAnalyzer.__init__": [],
+      "Enhancement.__init__": [],
+      "SystemOrchestrator.__init__": [],
+      "PatternLearnerEnhancement.__init__": [],
+      "CriticalLens.__init__": [],
+      "TetrahedralCritic.__init__": [],
+      "SelfReferentialCritic.__init__": [],
+      "PragmaticEffectivenessValidator.__init__": [],
+      "CriticalMemoryIntegrator.__init__": [],
+      "ModalVector.__post_init__": [],
+      "FractalEmbedding.__post_init__": [],
+      "DynamicWorldModel.__init__": [],
+      "DynamicWorldModel._create_initial_state": [
+        "TRANSFORMATION"
+      ],
+      "_create_initial_state": [
+        "TRANSFORMATION"
+      ],
+      "PXLWorldModelBridge.__init__": []
+    },
+    "data_role": {
+      "initialize": [],
+      "init_working_memory": [],
+      "calculate_initial_salience": [],
+      "init_beliefs_container": [],
+      "StubSCPNexus.__init__": [],
+      "StubSCPNexus.initialize": [],
+      "__init__": [],
+      "LogosAgiNexus.__init__": [],
+      "LogosAgiNexus.bootstrap": [],
+      "LogosAgiNexus._bootstrap_real": [],
+      "bootstrap": [],
+      "_bootstrap_real": [],
+      "AgentRequest.__init__": [],
+      "ReplayEvent.__post_init__": [
+        "MEMORY"
+      ],
+      "__post_init__": [],
+      "DeterministicReplayLogger.__init__": [
+        "MEMORY"
+      ],
+      "DeterministicReplayEngine.__init__": [
+        "MEMORY"
+      ],
+      "ForensicAnalyzer.__init__": [
+        "MEMORY"
+      ],
+      "ReplayValidator.__init__": [
+        "MEMORY"
+      ],
+      "CompleteReplayInfrastructure.__init__": [
+        "MEMORY"
+      ],
+      "TieredMemoryStorage.__init__": [
+        "MEMORY"
+      ],
+      "TieredMemoryStorage._determine_initial_tier": [
+        "MEMORY"
+      ],
+      "_determine_initial_tier": [
+        "MEMORY"
+      ],
+      "MemoryIndexSystem.__init__": [
+        "MEMORY"
+      ],
+      "MemoryRetrievalEngine.__init__": [
+        "MEMORY"
+      ],
+      "MemoryConsolidationScheduler.__init__": [
+        "MEMORY"
+      ],
+      "MemoryForgettingManager.__init__": [
+        "MEMORY"
+      ],
+      "MetamemorySystem.__init__": [
+        "MEMORY"
+      ],
+      "CompleteMemorySystem.__init__": [
+        "MEMORY"
+      ],
+      "StructuredMeaningPacket.__post_init__": [
+        "SMP"
+      ],
+      "StructuredMeaningPacket._compute_initial_confidence": [
+        "SMP"
+      ],
+      "_compute_initial_confidence": [
+        "SMP"
+      ],
+      "SMPGenerator.__init__": [
+        "SMP"
+      ],
+      "TetrahedralEnrichment.__init__": [
+        "SMP"
+      ],
+      "ConstraintEnrichment.__init__": [
+        "SMP"
+      ],
+      "InformationExplosionOrchestrator.__init__": [
+        "SMP"
+      ],
+      "SMPEvaluationPipeline.__init__": [
+        "SMP"
+      ],
+      "StructuredMeaningSystem.__init__": [
+        "SMP"
+      ],
+      "PXLIELSEvaluator.__init__": [
+        "SMP"
+      ],
+      "ETGCEvaluator.__init__": [
+        "SMP"
+      ],
+      "PrivationEvaluator.__init__": [
+        "SMP"
+      ],
+      "TriuneCommutationEngine.__init__": [
+        "SMP"
+      ],
+      "SystemMemoryRouter.__init__": [
+        "SMP"
+      ],
+      "SMPSynthesizer.__init__": [],
+      "StabilityCalculator.__init__": [],
+      "PXLLogicFace.__init__": [],
+      "IELDomainFace.__init__": [],
+      "ARPMathematicalFace.__init__": [],
+      "CognitiveResistor.__init__": [],
+      "TetrahedralEvaluator.__init__": [],
+      "initialize_system_a": [],
+      "PXLAnalyzer.__init__": [],
+      "Enhancement.__init__": [
+        "MEMORY"
+      ],
+      "SystemOrchestrator.__init__": [
+        "MEMORY"
+      ],
+      "PatternLearnerEnhancement.__init__": [
+        "MEMORY"
+      ],
+      "CriticalLens.__init__": [],
+      "TetrahedralCritic.__init__": [],
+      "SelfReferentialCritic.__init__": [],
+      "PragmaticEffectivenessValidator.__init__": [],
+      "CriticalMemoryIntegrator.__init__": [],
+      "ModalVector.__post_init__": [],
+      "FractalEmbedding.__post_init__": [],
+      "DynamicWorldModel.__init__": [],
+      "DynamicWorldModel._create_initial_state": [],
+      "_create_initial_state": [],
+      "PXLWorldModelBridge.__init__": []
+    },
+    "control_role": {
+      "initialize": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "init_working_memory": [
+        "BOOT_CONTROL"
+      ],
+      "calculate_initial_salience": [
+        "BOOT_CONTROL"
+      ],
+      "init_beliefs_container": [
+        "BOOT_CONTROL"
+      ],
+      "StubSCPNexus.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "StubSCPNexus.initialize": [
+        "BOOT_CONTROL"
+      ],
+      "__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "LogosAgiNexus.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "LogosAgiNexus.bootstrap": [
+        "BOOT_CONTROL"
+      ],
+      "LogosAgiNexus._bootstrap_real": [
+        "BOOT_CONTROL"
+      ],
+      "bootstrap": [
+        "BOOT_CONTROL"
+      ],
+      "_bootstrap_real": [
+        "BOOT_CONTROL"
+      ],
+      "AgentRequest.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ReplayEvent.__post_init__": [
+        "BOOT_CONTROL"
+      ],
+      "__post_init__": [
+        "BOOT_CONTROL"
+      ],
+      "DeterministicReplayLogger.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "DeterministicReplayEngine.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "ForensicAnalyzer.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "ReplayValidator.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "CompleteReplayInfrastructure.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "TieredMemoryStorage.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "TieredMemoryStorage._determine_initial_tier": [
+        "BOOT_CONTROL"
+      ],
+      "_determine_initial_tier": [
+        "BOOT_CONTROL"
+      ],
+      "MemoryIndexSystem.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "MemoryRetrievalEngine.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "MemoryConsolidationScheduler.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "MemoryForgettingManager.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "MetamemorySystem.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "CompleteMemorySystem.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "StructuredMeaningPacket.__post_init__": [
+        "BOOT_CONTROL"
+      ],
+      "StructuredMeaningPacket._compute_initial_confidence": [
+        "BOOT_CONTROL"
+      ],
+      "_compute_initial_confidence": [
+        "BOOT_CONTROL"
+      ],
+      "SMPGenerator.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "TetrahedralEnrichment.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "ConstraintEnrichment.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "InformationExplosionOrchestrator.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "SMPEvaluationPipeline.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "StructuredMeaningSystem.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "PXLIELSEvaluator.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "ETGCEvaluator.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "PrivationEvaluator.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "TriuneCommutationEngine.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "SystemMemoryRouter.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "SMPSynthesizer.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "StabilityCalculator.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "PXLLogicFace.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "IELDomainFace.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "ARPMathematicalFace.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "CognitiveResistor.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "TetrahedralEvaluator.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "initialize_system_a": [
+        "BOOT_CONTROL"
+      ],
+      "PXLAnalyzer.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "Enhancement.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "SystemOrchestrator.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "PatternLearnerEnhancement.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "CriticalLens.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "TetrahedralCritic.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "SelfReferentialCritic.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "PragmaticEffectivenessValidator.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "CriticalMemoryIntegrator.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "ModalVector.__post_init__": [
+        "BOOT_CONTROL"
+      ],
+      "FractalEmbedding.__post_init__": [
+        "BOOT_CONTROL"
+      ],
+      "DynamicWorldModel.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "DynamicWorldModel._create_initial_state": [
+        "BOOT_CONTROL"
+      ],
+      "_create_initial_state": [
+        "BOOT_CONTROL"
+      ],
+      "PXLWorldModelBridge.__init__": [
+        "BOOT_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "initialize": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "init_working_memory": [
+        "UNMAPPED"
+      ],
+      "calculate_initial_salience": [
+        "UNMAPPED"
+      ],
+      "init_beliefs_container": [
+        "UNMAPPED"
+      ],
+      "StubSCPNexus.__init__": [
+        "UNMAPPED"
+      ],
+      "StubSCPNexus.initialize": [
+        "UNMAPPED"
+      ],
+      "__init__": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "LogosAgiNexus.__init__": [
+        "UNMAPPED"
+      ],
+      "LogosAgiNexus.bootstrap": [
+        "UNMAPPED"
+      ],
+      "LogosAgiNexus._bootstrap_real": [
+        "UNMAPPED"
+      ],
+      "bootstrap": [
+        "UNMAPPED"
+      ],
+      "_bootstrap_real": [
+        "UNMAPPED"
+      ],
+      "AgentRequest.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ReplayEvent.__post_init__": [
+        "UNMAPPED"
+      ],
+      "__post_init__": [
+        "UNMAPPED"
+      ],
+      "DeterministicReplayLogger.__init__": [
+        "UNMAPPED"
+      ],
+      "DeterministicReplayEngine.__init__": [
+        "UNMAPPED"
+      ],
+      "ForensicAnalyzer.__init__": [
+        "UNMAPPED"
+      ],
+      "ReplayValidator.__init__": [
+        "UNMAPPED"
+      ],
+      "CompleteReplayInfrastructure.__init__": [
+        "UNMAPPED"
+      ],
+      "TieredMemoryStorage.__init__": [
+        "UNMAPPED"
+      ],
+      "TieredMemoryStorage._determine_initial_tier": [
+        "UNMAPPED"
+      ],
+      "_determine_initial_tier": [
+        "UNMAPPED"
+      ],
+      "MemoryIndexSystem.__init__": [
+        "UNMAPPED"
+      ],
+      "MemoryRetrievalEngine.__init__": [
+        "UNMAPPED"
+      ],
+      "MemoryConsolidationScheduler.__init__": [
+        "UNMAPPED"
+      ],
+      "MemoryForgettingManager.__init__": [
+        "UNMAPPED"
+      ],
+      "MetamemorySystem.__init__": [
+        "UNMAPPED"
+      ],
+      "CompleteMemorySystem.__init__": [
+        "UNMAPPED"
+      ],
+      "StructuredMeaningPacket.__post_init__": [
+        "UNMAPPED"
+      ],
+      "StructuredMeaningPacket._compute_initial_confidence": [
+        "UNMAPPED"
+      ],
+      "_compute_initial_confidence": [
+        "UNMAPPED"
+      ],
+      "SMPGenerator.__init__": [
+        "UNMAPPED"
+      ],
+      "TetrahedralEnrichment.__init__": [
+        "UNMAPPED"
+      ],
+      "ConstraintEnrichment.__init__": [
+        "UNMAPPED"
+      ],
+      "InformationExplosionOrchestrator.__init__": [
+        "UNMAPPED"
+      ],
+      "SMPEvaluationPipeline.__init__": [
+        "UNMAPPED"
+      ],
+      "StructuredMeaningSystem.__init__": [
+        "UNMAPPED"
+      ],
+      "PXLIELSEvaluator.__init__": [
+        "UNMAPPED"
+      ],
+      "ETGCEvaluator.__init__": [
+        "UNMAPPED"
+      ],
+      "PrivationEvaluator.__init__": [
+        "UNMAPPED"
+      ],
+      "TriuneCommutationEngine.__init__": [
+        "UNMAPPED"
+      ],
+      "SystemMemoryRouter.__init__": [
+        "UNMAPPED"
+      ],
+      "SMPSynthesizer.__init__": [
+        "UNMAPPED"
+      ],
+      "StabilityCalculator.__init__": [
+        "UNMAPPED"
+      ],
+      "PXLLogicFace.__init__": [
+        "UNMAPPED"
+      ],
+      "IELDomainFace.__init__": [
+        "UNMAPPED"
+      ],
+      "ARPMathematicalFace.__init__": [
+        "UNMAPPED"
+      ],
+      "CognitiveResistor.__init__": [
+        "UNMAPPED"
+      ],
+      "TetrahedralEvaluator.__init__": [
+        "UNMAPPED"
+      ],
+      "initialize_system_a": [
+        "UNMAPPED"
+      ],
+      "PXLAnalyzer.__init__": [
+        "UNMAPPED"
+      ],
+      "Enhancement.__init__": [
+        "UNMAPPED"
+      ],
+      "SystemOrchestrator.__init__": [
+        "UNMAPPED"
+      ],
+      "PatternLearnerEnhancement.__init__": [
+        "UNMAPPED"
+      ],
+      "CriticalLens.__init__": [
+        "UNMAPPED"
+      ],
+      "TetrahedralCritic.__init__": [
+        "UNMAPPED"
+      ],
+      "SelfReferentialCritic.__init__": [
+        "UNMAPPED"
+      ],
+      "PragmaticEffectivenessValidator.__init__": [
+        "UNMAPPED"
+      ],
+      "CriticalMemoryIntegrator.__init__": [
+        "UNMAPPED"
+      ],
+      "ModalVector.__post_init__": [
+        "UNMAPPED"
+      ],
+      "FractalEmbedding.__post_init__": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel.__init__": [
+        "UNMAPPED"
+      ],
+      "DynamicWorldModel._create_initial_state": [
+        "UNMAPPED"
+      ],
+      "_create_initial_state": [
+        "UNMAPPED"
+      ],
+      "PXLWorldModelBridge.__init__": [
+        "UNMAPPED"
+      ]
+    }
+  }
+}

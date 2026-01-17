@@ -1,0 +1,28 @@
+{
+  "canonical_name": "3PDN_Constraint",
+  "semantic_role": "Pre-validation admissibility gate for runtime propositions",
+  "description": "Applies hard policy, boundary, and structural filters to determine whether a proposition or SMP is even eligible for triune evaluation. Blocks malformed or forbidden inputs before they reach the 3PDN_Validator.",
+  "phases": [],
+  "inputs": [
+    "SMP or structured runtime request"
+  ],
+  "outputs": [
+    "ALLOW",
+    "DENY",
+    "Raised constraint failure"
+  ],
+  "guarantees": [
+    "Blocks structurally invalid or unauthorized runtime requests",
+    "Ensures only admissible inputs reach triune evaluation"
+  ],
+  "side_effects": [
+    "none"
+  ],
+  "non_determinism": [
+    "none"
+  ],
+  "spine_binding": [
+    "UNMAPPED"
+  ],
+  "monolith_admission": "PASS"
+}

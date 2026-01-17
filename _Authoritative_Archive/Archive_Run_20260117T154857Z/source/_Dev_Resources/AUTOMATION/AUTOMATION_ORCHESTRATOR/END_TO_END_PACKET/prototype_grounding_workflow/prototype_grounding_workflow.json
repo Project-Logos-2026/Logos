@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "packet_name": "prototype_grounding_workflow",
+    "original_path": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+    "legacy_path": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+    "type_cast_name": "Prototype_Grounding_Workflow",
+    "test_template": "default",
+    "file_hash": "pending",
+    "batch_id": "BATCH_SWEEP_INIT",
+    "init_timestamp": "2026-01-15T08:26:32.354352+00:00",
+    "rewrite_output": "_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/prototype_grounding_workflow/Prototype_Grounding_Workflow.py"
+  },
+  "phases": {
+    "phase_1_imports": {
+      "diagnostics": [
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+          "line": 17,
+          "col": 0,
+          "kind": "from",
+          "module": "__future__",
+          "name": "annotations",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+          "line": 19,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "argparse",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+          "line": 20,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "json",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+          "line": 21,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "sys",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+          "line": 22,
+          "col": 0,
+          "kind": "from",
+          "module": "pathlib",
+          "name": "Path",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+          "line": 23,
+          "col": 0,
+          "kind": "from",
+          "module": "typing",
+          "name": "Any",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+          "line": 23,
+          "col": 0,
+          "kind": "from",
+          "module": "typing",
+          "name": "Dict",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+          "line": 23,
+          "col": 0,
+          "kind": "from",
+          "module": "typing",
+          "name": "List",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+          "line": 34,
+          "col": 4,
+          "kind": "from",
+          "module": "Logos_AGI.Logos_Agent.creator_packet.reflection_builder.perception_ingestors",
+          "name": "ObservationBroker",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+          "line": 35,
+          "col": 4,
+          "kind": "from",
+          "module": "Protopraxis.agent_planner",
+          "name": "AlignmentAwarePlanner",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+          "line": 35,
+          "col": 4,
+          "kind": "from",
+          "module": "Protopraxis.agent_planner",
+          "name": "AlignmentRequiredError",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+          "line": 35,
+          "col": 4,
+          "kind": "from",
+          "module": "Protopraxis.agent_planner",
+          "name": "append_digest_to_log",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+          "line": 35,
+          "col": 4,
+          "kind": "from",
+          "module": "Protopraxis.agent_planner",
+          "name": "snapshot_digest_log",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/prototype_grounding_workflow.py",
+          "line": 35,
+          "col": 4,
+          "kind": "from",
+          "module": "Protopraxis.agent_planner",
+          "name": "latest_digest_archive",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        }
+      ]
+    },
+    "phase_2_symbols": {
+      "diagnostics": []
+    },
+    "phase_2b_dead_code": {
+      "diagnostics": []
+    },
+    "phase_3_dependencies": {
+      "diagnostics": []
+    },
+    "phase_4_side_effects": {
+      "diagnostics": []
+    },
+    "phase_5_rewrite_attempts": [
+      {
+        "attempt": 1,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/prototype_grounding_workflow/Prototype_Grounding_Workflow.py",
+        "rewrite_hash": "sha256:db0ce444f6f63a7cd44874b49144ec6a9379dac50ffed0877b7aaba9e55909ad",
+        "timestamp": "2026-01-15T08:49:44.268458+00:00",
+        "status": "complete"
+      },
+      {
+        "attempt": 1,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/prototype_grounding_workflow/Prototype_Grounding_Workflow.py",
+        "rewrite_hash": "sha256:db0ce444f6f63a7cd44874b49144ec6a9379dac50ffed0877b7aaba9e55909ad",
+        "timestamp": "2026-01-15T08:49:44.275022",
+        "status": "complete"
+      }
+    ],
+    "phase_6_semantic_audit": {
+      "diagnostics": []
+    },
+    "phase_7_verification": {
+      "attempt_1": null,
+      "attempt_2": null
+    }
+  },
+  "test_results": {
+    "executed": false,
+    "passed": false,
+    "output_log": ""
+  },
+  "finalization": {
+    "status": "UNKNOWN",
+    "sealed_timestamp": "2026-01-15T08:26:32.354352+00:00",
+    "confirmation_hash": "pending"
+  }
+}

@@ -1,0 +1,575 @@
+{
+  "family_id": "FAMILY_001",
+  "member_count": 46,
+  "members": [
+    "test_learning",
+    "_run_with_payload",
+    "_load_state",
+    "test_high_impact_requires_uip",
+    "test_proved_downgraded",
+    "test_code_injection_rejected",
+    "main",
+    "run_pipeline_cmd",
+    "test_pipeline",
+    "TestLogosAgiPinDrift",
+    "TestLogosAgiPinDrift.setUp",
+    "TestLogosAgiPinDrift.tearDown",
+    "TestLogosAgiPinDrift.test_missing_pin_file",
+    "TestLogosAgiPinDrift.test_load_pin_valid",
+    "TestLogosAgiPinDrift.test_load_pin_invalid_schema",
+    "TestLogosAgiPinDrift.test_write_pin",
+    "TestLogosAgiPinDrift.test_resolve_ref_head",
+    "TestLogosAgiPinDrift.test_resolve_ref_sha",
+    "TestLogosAgiPinDrift.test_resolve_ref_invalid",
+    "TestLogosAgiPinDrift.test_is_git_dirty_clean",
+    "TestLogosAgiPinDrift.test_is_git_dirty_modified",
+    "TestLogosAgiPinDrift.test_verify_pinned_repo_match",
+    "TestLogosAgiPinDrift.test_verify_pinned_repo_drift",
+    "TestLogosAgiPinDrift.test_verify_pinned_repo_drift_override",
+    "TestLogosAgiPinDrift.test_verify_pinned_repo_dirty_no_override",
+    "TestLogosAgiPinDrift.test_verify_pinned_repo_dirty_override",
+    "setUp",
+    "tearDown",
+    "test_missing_pin_file",
+    "test_load_pin_valid",
+    "test_load_pin_invalid_schema",
+    "test_write_pin",
+    "test_resolve_ref_head",
+    "test_resolve_ref_sha",
+    "test_resolve_ref_invalid",
+    "test_is_git_dirty_clean",
+    "test_is_git_dirty_modified",
+    "test_verify_pinned_repo_match",
+    "test_verify_pinned_repo_drift",
+    "test_verify_pinned_repo_drift_override",
+    "test_verify_pinned_repo_dirty_no_override",
+    "test_verify_pinned_repo_dirty_override",
+    "run_command",
+    "parse_audit_log",
+    "extract_first_proposed_tool",
+    "test_proposal_replay"
+  ],
+  "invariant_semantics": {
+    "data_role": []
+  },
+  "divergent_semantics": {
+    "semantic_tags": {
+      "test_learning": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_run_with_payload": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_load_state": [
+        "ORCHESTRATION"
+      ],
+      "test_high_impact_requires_uip": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_proved_downgraded": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_code_injection_rejected": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "main": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "run_pipeline_cmd": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_pipeline": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.setUp": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.tearDown": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.test_missing_pin_file": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.test_load_pin_valid": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.test_load_pin_invalid_schema": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.test_write_pin": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.test_resolve_ref_head": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.test_resolve_ref_sha": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.test_resolve_ref_invalid": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.test_is_git_dirty_clean": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.test_is_git_dirty_modified": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_match": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_drift": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_drift_override": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_dirty_no_override": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_dirty_override": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "setUp": [
+        "AGENT_LOGIC",
+        "TEST_OR_EXAMPLE"
+      ],
+      "tearDown": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_missing_pin_file": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_load_pin_valid": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_load_pin_invalid_schema": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_write_pin": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_resolve_ref_head": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_resolve_ref_sha": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_resolve_ref_invalid": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_is_git_dirty_clean": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_is_git_dirty_modified": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_verify_pinned_repo_match": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_verify_pinned_repo_drift": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_verify_pinned_repo_drift_override": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_verify_pinned_repo_dirty_no_override": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_verify_pinned_repo_dirty_override": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "run_command": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "parse_audit_log": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "extract_first_proposed_tool": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_proposal_replay": [
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ]
+    },
+    "operation_type": {
+      "test_learning": [
+        "UTILITY"
+      ],
+      "_run_with_payload": [
+        "TRANSFORMATION"
+      ],
+      "_load_state": [
+        "TRANSFORMATION"
+      ],
+      "test_high_impact_requires_uip": [
+        "TRANSFORMATION"
+      ],
+      "test_proved_downgraded": [
+        "TRANSFORMATION"
+      ],
+      "test_code_injection_rejected": [
+        "TRANSFORMATION"
+      ],
+      "main": [
+        "TRANSFORMATION"
+      ],
+      "run_pipeline_cmd": [
+        "TRANSFORMATION"
+      ],
+      "test_pipeline": [
+        "TRANSFORMATION"
+      ],
+      "TestLogosAgiPinDrift": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.setUp": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.tearDown": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.test_missing_pin_file": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.test_load_pin_valid": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.test_load_pin_invalid_schema": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.test_write_pin": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.test_resolve_ref_head": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.test_resolve_ref_sha": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.test_resolve_ref_invalid": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.test_is_git_dirty_clean": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.test_is_git_dirty_modified": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_match": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_drift": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_drift_override": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_dirty_no_override": [
+        "UTILITY"
+      ],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_dirty_override": [
+        "UTILITY"
+      ],
+      "setUp": [
+        "UTILITY"
+      ],
+      "tearDown": [
+        "UTILITY"
+      ],
+      "test_missing_pin_file": [
+        "UTILITY"
+      ],
+      "test_load_pin_valid": [
+        "UTILITY"
+      ],
+      "test_load_pin_invalid_schema": [
+        "UTILITY"
+      ],
+      "test_write_pin": [
+        "UTILITY"
+      ],
+      "test_resolve_ref_head": [
+        "UTILITY"
+      ],
+      "test_resolve_ref_sha": [
+        "UTILITY"
+      ],
+      "test_resolve_ref_invalid": [
+        "UTILITY"
+      ],
+      "test_is_git_dirty_clean": [
+        "UTILITY"
+      ],
+      "test_is_git_dirty_modified": [
+        "UTILITY"
+      ],
+      "test_verify_pinned_repo_match": [
+        "UTILITY"
+      ],
+      "test_verify_pinned_repo_drift": [
+        "UTILITY"
+      ],
+      "test_verify_pinned_repo_drift_override": [
+        "UTILITY"
+      ],
+      "test_verify_pinned_repo_dirty_no_override": [
+        "UTILITY"
+      ],
+      "test_verify_pinned_repo_dirty_override": [
+        "UTILITY"
+      ],
+      "run_command": [
+        "TRANSFORMATION"
+      ],
+      "parse_audit_log": [
+        "TRANSFORMATION"
+      ],
+      "extract_first_proposed_tool": [
+        "TRANSFORMATION"
+      ],
+      "test_proposal_replay": [
+        "TRANSFORMATION"
+      ]
+    },
+    "control_role": {
+      "test_learning": [],
+      "_run_with_payload": [],
+      "_load_state": [
+        "RUNTIME_CONTROL"
+      ],
+      "test_high_impact_requires_uip": [],
+      "test_proved_downgraded": [],
+      "test_code_injection_rejected": [],
+      "main": [
+        "BOOT_CONTROL"
+      ],
+      "run_pipeline_cmd": [],
+      "test_pipeline": [],
+      "TestLogosAgiPinDrift": [],
+      "TestLogosAgiPinDrift.setUp": [],
+      "TestLogosAgiPinDrift.tearDown": [],
+      "TestLogosAgiPinDrift.test_missing_pin_file": [],
+      "TestLogosAgiPinDrift.test_load_pin_valid": [],
+      "TestLogosAgiPinDrift.test_load_pin_invalid_schema": [],
+      "TestLogosAgiPinDrift.test_write_pin": [],
+      "TestLogosAgiPinDrift.test_resolve_ref_head": [],
+      "TestLogosAgiPinDrift.test_resolve_ref_sha": [],
+      "TestLogosAgiPinDrift.test_resolve_ref_invalid": [],
+      "TestLogosAgiPinDrift.test_is_git_dirty_clean": [],
+      "TestLogosAgiPinDrift.test_is_git_dirty_modified": [],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_match": [],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_drift": [],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_drift_override": [],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_dirty_no_override": [],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_dirty_override": [],
+      "setUp": [],
+      "tearDown": [],
+      "test_missing_pin_file": [],
+      "test_load_pin_valid": [],
+      "test_load_pin_invalid_schema": [],
+      "test_write_pin": [],
+      "test_resolve_ref_head": [],
+      "test_resolve_ref_sha": [],
+      "test_resolve_ref_invalid": [],
+      "test_is_git_dirty_clean": [],
+      "test_is_git_dirty_modified": [],
+      "test_verify_pinned_repo_match": [],
+      "test_verify_pinned_repo_drift": [],
+      "test_verify_pinned_repo_drift_override": [],
+      "test_verify_pinned_repo_dirty_no_override": [],
+      "test_verify_pinned_repo_dirty_override": [],
+      "run_command": [],
+      "parse_audit_log": [],
+      "extract_first_proposed_tool": [],
+      "test_proposal_replay": []
+    },
+    "spine_binding": {
+      "test_learning": [
+        "UNMAPPED"
+      ],
+      "_run_with_payload": [
+        "UNMAPPED"
+      ],
+      "_load_state": [
+        "UNMAPPED"
+      ],
+      "test_high_impact_requires_uip": [
+        "UNMAPPED"
+      ],
+      "test_proved_downgraded": [
+        "UNMAPPED"
+      ],
+      "test_code_injection_rejected": [
+        "UNMAPPED"
+      ],
+      "main": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "run_pipeline_cmd": [
+        "UNMAPPED"
+      ],
+      "test_pipeline": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.setUp": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.tearDown": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.test_missing_pin_file": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.test_load_pin_valid": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.test_load_pin_invalid_schema": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.test_write_pin": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.test_resolve_ref_head": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.test_resolve_ref_sha": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.test_resolve_ref_invalid": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.test_is_git_dirty_clean": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.test_is_git_dirty_modified": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_match": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_drift": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_drift_override": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_dirty_no_override": [
+        "UNMAPPED"
+      ],
+      "TestLogosAgiPinDrift.test_verify_pinned_repo_dirty_override": [
+        "UNMAPPED"
+      ],
+      "setUp": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "tearDown": [
+        "UNMAPPED"
+      ],
+      "test_missing_pin_file": [
+        "UNMAPPED"
+      ],
+      "test_load_pin_valid": [
+        "UNMAPPED"
+      ],
+      "test_load_pin_invalid_schema": [
+        "UNMAPPED"
+      ],
+      "test_write_pin": [
+        "UNMAPPED"
+      ],
+      "test_resolve_ref_head": [
+        "UNMAPPED"
+      ],
+      "test_resolve_ref_sha": [
+        "UNMAPPED"
+      ],
+      "test_resolve_ref_invalid": [
+        "UNMAPPED"
+      ],
+      "test_is_git_dirty_clean": [
+        "UNMAPPED"
+      ],
+      "test_is_git_dirty_modified": [
+        "UNMAPPED"
+      ],
+      "test_verify_pinned_repo_match": [
+        "UNMAPPED"
+      ],
+      "test_verify_pinned_repo_drift": [
+        "UNMAPPED"
+      ],
+      "test_verify_pinned_repo_drift_override": [
+        "UNMAPPED"
+      ],
+      "test_verify_pinned_repo_dirty_no_override": [
+        "UNMAPPED"
+      ],
+      "test_verify_pinned_repo_dirty_override": [
+        "UNMAPPED"
+      ],
+      "run_command": [
+        "UNMAPPED"
+      ],
+      "parse_audit_log": [
+        "UNMAPPED"
+      ],
+      "extract_first_proposed_tool": [
+        "UNMAPPED"
+      ],
+      "test_proposal_replay": [
+        "UNMAPPED"
+      ]
+    }
+  }
+}

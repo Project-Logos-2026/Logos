@@ -1,0 +1,29 @@
+{
+  "canonical_name": "Hypostatic_ID_Validator",
+  "semantic_role": "Agent identity and alignment attestation verifier",
+  "description": "Performs structural, cryptographic, and schema validation of agent identity attestations and mission profiles during agent spin-up. Ensures agents have valid alignment provenance before being admitted into the runtime.",
+  "phases": [],
+  "inputs": [
+    "alignment attestation",
+    "mission profile JSON"
+  ],
+  "outputs": [
+    "validation pass",
+    "AlignmentGateError"
+  ],
+  "guarantees": [
+    "Attestation structure is schema-compliant",
+    "Timestamps and IDs are correctly formatted",
+    "Attestation cryptographic hash matches canonical value"
+  ],
+  "side_effects": [
+    "none"
+  ],
+  "non_determinism": [
+    "none"
+  ],
+  "spine_binding": [
+    "UNMAPPED"
+  ],
+  "monolith_admission": "PASS"
+}

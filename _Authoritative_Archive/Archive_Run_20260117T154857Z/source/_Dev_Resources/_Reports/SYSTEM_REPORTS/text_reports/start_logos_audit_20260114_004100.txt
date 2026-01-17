@@ -1,0 +1,43 @@
+START_LOGOS.py Audit Report
+Generated: 2026-01-14T00:41:00Z
+
+=== File Location ===
+/workspaces/Logos_System/START_LOGOS.py
+
+=== Unused Imports (static) ===
+annotations
+
+=== Defined but Unused Functions ===
+_run_proofs
+
+=== Top-Level Side Effects (imports executed at import time) ===
+10:from __future__ import annotations
+12:import argparse
+13:import asyncio
+14:import os
+15:import signal
+16:import sys
+17:import threading
+18:import time
+19:from pathlib import Path
+21:from System_Stack.Logos_Protocol.Runtime_Operations.Orchestration import runtime_protocol
+39:        from logos_dashboard import metrics
+48:        from logos_dashboard import metrics
+49:        from logos_dashboard.app import set_gate_status
+68:    from PXL_Gate.ui.run_coq_pipeline import run_full_pipeline
+69:    from PXL_Gate.ui.lem_portal import open_identity_portal
+70:    from PXL_Gate.ui.audit_and_emit import main as audit_stub
+87:    from PXL_Gate.ui.serve_pxl import app
+110:        from logos_dashboard.app import start_dashboard
+111:        from logos_dashboard.app import mark_agent, mark_protocol
+125:    from System_Operations_Protocol.startup.uip_startup import UIPManager
+201:                    from logos_dashboard.app import mark_protocol
+
+=== Phase / Gate Markers ===
+168:    runtime_protocol.mark_phase(runtime_protocol.PHASE_0_PATH_SETUP)
+172:    runtime_protocol.mark_phase(runtime_protocol.PHASE_1_PROOF_GATE)
+174:    runtime_protocol.mark_phase(runtime_protocol.PHASE_2_IDENTITY_AUDIT)
+176:    runtime_protocol.mark_phase(runtime_protocol.PHASE_3_TELEMETRY_DASHBOARD)
+183:        runtime_protocol.mark_phase(runtime_protocol.PHASE_4_UI_SERVICES)
+193:        runtime_protocol.mark_phase(runtime_protocol.PHASE_5_STACK_LOAD)
+231:    runtime_protocol.mark_phase(runtime_protocol.PHASE_6_SIGNAL_LOOP)
