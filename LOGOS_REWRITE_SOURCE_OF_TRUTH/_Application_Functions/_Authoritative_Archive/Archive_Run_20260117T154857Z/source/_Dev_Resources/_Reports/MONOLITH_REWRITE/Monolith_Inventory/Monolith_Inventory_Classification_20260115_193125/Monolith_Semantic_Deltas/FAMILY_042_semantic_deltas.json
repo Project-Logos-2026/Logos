@@ -1,0 +1,386 @@
+{
+  "family_id": "FAMILY_042",
+  "member_count": 24,
+  "members": [
+    "DummyNexus",
+    "DummyNexus._protocol_specific_security_validation",
+    "DummyNexus._protocol_specific_activation",
+    "DummyNexus._protocol_specific_deactivation",
+    "DummyNexus._route_to_protocol_core",
+    "DummyNexus._protocol_specific_smoke_test",
+    "_protocol_specific_security_validation",
+    "_protocol_specific_activation",
+    "_protocol_specific_deactivation",
+    "_route_to_protocol_core",
+    "_protocol_specific_smoke_test",
+    "_require_key_payload",
+    "_validator",
+    "NexusCapabilityGovernanceTest",
+    "NexusCapabilityGovernanceTest.setUp",
+    "NexusCapabilityGovernanceTest._run",
+    "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected",
+    "NexusCapabilityGovernanceTest.test_invalid_payload_rejected",
+    "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes",
+    "setUp",
+    "_run",
+    "test_disallowed_operation_rejected",
+    "test_invalid_payload_rejected",
+    "test_allowed_operation_with_valid_payload_routes"
+  ],
+  "invariant_semantics": {
+    "data_role": []
+  },
+  "divergent_semantics": {
+    "semantic_tags": {
+      "DummyNexus": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "DummyNexus._protocol_specific_security_validation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "DummyNexus._protocol_specific_activation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "DummyNexus._protocol_specific_deactivation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "DummyNexus._route_to_protocol_core": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "DummyNexus._protocol_specific_smoke_test": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_protocol_specific_security_validation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_protocol_specific_activation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_protocol_specific_deactivation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_route_to_protocol_core": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_protocol_specific_smoke_test": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_require_key_payload": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_validator": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "NexusCapabilityGovernanceTest": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "NexusCapabilityGovernanceTest.setUp": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "NexusCapabilityGovernanceTest._run": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "NexusCapabilityGovernanceTest.test_invalid_payload_rejected": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "setUp": [
+        "AGENT_LOGIC",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_run": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_disallowed_operation_rejected": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_invalid_payload_rejected": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_allowed_operation_with_valid_payload_routes": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ]
+    },
+    "operation_type": {
+      "DummyNexus": [
+        "TRANSFORMATION"
+      ],
+      "DummyNexus._protocol_specific_security_validation": [
+        "TRANSFORMATION"
+      ],
+      "DummyNexus._protocol_specific_activation": [
+        "TRANSFORMATION"
+      ],
+      "DummyNexus._protocol_specific_deactivation": [
+        "TRANSFORMATION"
+      ],
+      "DummyNexus._route_to_protocol_core": [
+        "TRANSFORMATION"
+      ],
+      "DummyNexus._protocol_specific_smoke_test": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_security_validation": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_activation": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_deactivation": [
+        "TRANSFORMATION"
+      ],
+      "_route_to_protocol_core": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_smoke_test": [
+        "TRANSFORMATION"
+      ],
+      "_require_key_payload": [
+        "TRANSFORMATION"
+      ],
+      "_validator": [
+        "TRANSFORMATION"
+      ],
+      "NexusCapabilityGovernanceTest": [
+        "TRANSFORMATION"
+      ],
+      "NexusCapabilityGovernanceTest.setUp": [],
+      "NexusCapabilityGovernanceTest._run": [
+        "TRANSFORMATION"
+      ],
+      "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected": [],
+      "NexusCapabilityGovernanceTest.test_invalid_payload_rejected": [],
+      "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes": [],
+      "setUp": [
+        "UTILITY"
+      ],
+      "_run": [
+        "TRANSFORMATION"
+      ],
+      "test_disallowed_operation_rejected": [],
+      "test_invalid_payload_rejected": [],
+      "test_allowed_operation_with_valid_payload_routes": []
+    },
+    "control_role": {
+      "DummyNexus": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "DummyNexus._protocol_specific_security_validation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "DummyNexus._protocol_specific_activation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "DummyNexus._protocol_specific_deactivation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "DummyNexus._route_to_protocol_core": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "DummyNexus._protocol_specific_smoke_test": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_security_validation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_activation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_deactivation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_route_to_protocol_core": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_smoke_test": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_require_key_payload": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_validator": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "NexusCapabilityGovernanceTest": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "NexusCapabilityGovernanceTest.setUp": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "NexusCapabilityGovernanceTest._run": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "NexusCapabilityGovernanceTest.test_invalid_payload_rejected": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "setUp": [],
+      "_run": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "test_disallowed_operation_rejected": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "test_invalid_payload_rejected": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "test_allowed_operation_with_valid_payload_routes": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "DummyNexus": [
+        "UNMAPPED"
+      ],
+      "DummyNexus._protocol_specific_security_validation": [
+        "UNMAPPED"
+      ],
+      "DummyNexus._protocol_specific_activation": [
+        "UNMAPPED"
+      ],
+      "DummyNexus._protocol_specific_deactivation": [
+        "UNMAPPED"
+      ],
+      "DummyNexus._route_to_protocol_core": [
+        "UNMAPPED"
+      ],
+      "DummyNexus._protocol_specific_smoke_test": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_security_validation": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_activation": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_deactivation": [
+        "UNMAPPED"
+      ],
+      "_route_to_protocol_core": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_smoke_test": [
+        "UNMAPPED"
+      ],
+      "_require_key_payload": [
+        "UNMAPPED"
+      ],
+      "_validator": [
+        "UNMAPPED"
+      ],
+      "NexusCapabilityGovernanceTest": [
+        "UNMAPPED"
+      ],
+      "NexusCapabilityGovernanceTest.setUp": [
+        "UNMAPPED"
+      ],
+      "NexusCapabilityGovernanceTest._run": [
+        "UNMAPPED"
+      ],
+      "NexusCapabilityGovernanceTest.test_disallowed_operation_rejected": [
+        "UNMAPPED"
+      ],
+      "NexusCapabilityGovernanceTest.test_invalid_payload_rejected": [
+        "UNMAPPED"
+      ],
+      "NexusCapabilityGovernanceTest.test_allowed_operation_with_valid_payload_routes": [
+        "UNMAPPED"
+      ],
+      "setUp": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_run": [
+        "UNMAPPED"
+      ],
+      "test_disallowed_operation_rejected": [
+        "UNMAPPED"
+      ],
+      "test_invalid_payload_rejected": [
+        "UNMAPPED"
+      ],
+      "test_allowed_operation_with_valid_payload_routes": [
+        "UNMAPPED"
+      ]
+    }
+  }
+}

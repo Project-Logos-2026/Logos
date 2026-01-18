@@ -1,0 +1,20 @@
+{
+  "contract": "Phase-D Governance Contract",
+  "status": "AUTHORITATIVE · DECLARATIVE",
+  "phase": "Phase-D",
+  "role": "governance_declaration",
+  "enforcement": "non-executable",
+  "scope": "Runtime Spine Assembly and Freeze",
+  "guarantees": [
+    "Runtime spine is assembled before execution phases",
+    "Spine ordering is fixed prior to Phase-E",
+    "No spine mutation after Phase-D declaration",
+    "Governance transitions from declarative to executable at Phase-E"
+  ],
+  "prohibitions": [
+    "Post-assembly spine mutation",
+    "Implicit runtime ordering changes"
+  ],
+  "handoff": "Phase-E Execution Contracts",
+  "failure_semantics": "DECLARATIVE_ONLY"
+}
