@@ -1,0 +1,40 @@
+{
+  "phase": "Phase-D",
+  "name": "Runtime Spine — Constructive Compile",
+  "status": "LOCKED",
+  "lock_type": "boundary_freeze",
+  "guarantees": {
+    "fail_closed": true,
+    "no_execution": true,
+    "no_identity_materialization": true,
+    "no_agent_instantiation": true,
+    "no_protocol_activation": true,
+    "header_governed_existence": true
+  },
+  "ordering_constraints": {
+    "must_follow": ["Phase-C: Lock-And-Key"],
+    "must_precede": ["Phase-E: Agent Orchestration (Executable)"]
+  },
+  "verification": {
+    "tests": {
+      "path": "Logos_System_Rebuild/Runtime_Spine/_Tests/test_phase_d_runtime_spine.py",
+      "result": "PASS",
+      "count": 6
+    },
+    "header_validation": "PASS"
+  },
+  "canonical_commits": {
+    "governance_tooling": "2051121",
+    "constructive_compile_layer": "9558588"
+  },
+  "prohibitions": [
+    "agent_instantiation",
+    "protocol_activation",
+    "sop_activation",
+    "memory_access",
+    "reasoning_execution",
+    "external_library_execution"
+  ],
+  "successor_phase": "Phase-E",
+  "notes": "Phase-D is frozen. Any modification requires explicit versioned replacement and audit review."
+}
