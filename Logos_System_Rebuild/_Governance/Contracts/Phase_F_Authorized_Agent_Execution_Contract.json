@@ -11,6 +11,10 @@
     "must_follow": ["Phase-E: Agent Orchestration — Declarative Binding"],
     "reordering_forbidden": true
   },
+  "ordering_guarantee": [
+    "Phase-F: Authorized Agent Execution",
+    "Phase-G: Agent Initialization and Binding"
+  ],
   "execution_authority": {
     "agents": ["I1", "I2", "I3"],
     "sop": "CONDITIONAL",

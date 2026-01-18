@@ -12,6 +12,10 @@
     "must_precede": ["Phase-F: Authorized Agent Execution"],
     "reordering_forbidden": true
   },
+  "ordering_guarantee": [
+    "Phase-E: Agent Orchestration — Declarative Binding",
+    "Phase-F: Authorized Agent Execution"
+  ],
   "inputs": {
     "required": [
       "logos_agent_id",

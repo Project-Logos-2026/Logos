@@ -37,7 +37,7 @@ except ImportError:
 
 
 try:
-    from ..autonomous_learning import ReasoningGap
+    from .......Logos_System.autonomous_learning import ReasoningGap
 except ImportError:
     from dataclasses import dataclass
 

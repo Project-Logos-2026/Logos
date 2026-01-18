@@ -9,6 +9,14 @@
     "Agent + Protocol ID binding",
     "SOP handoff"
   ],
+  "ordering_guarantee": [
+    "Dual-Site Lock-and-Key (LEM admitted)",
+    "Universal Session ID issuance",
+    "Logos constructive compile (LEM discharged)",
+    "Logos Agent ID issuance",
+    "Agent + Protocol ID binding",
+    "SOP handoff"
+  ],
   "reordering_forbidden": true,
   "identity_semantics": {
     "universal_session_id": {

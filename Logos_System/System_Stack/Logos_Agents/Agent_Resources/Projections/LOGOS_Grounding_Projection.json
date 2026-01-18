@@ -1,0 +1,36 @@
+{
+  "projection_id": "LOGOS_Grounding_Projection_v1",
+  "agent_identity": "LOGOS",
+  "bound_protocol": "LOGOS_PROTOCOL",
+  "semantic_principle": "Mesh Principle",
+  "mvs_axis": "MESH",
+  "governance": {
+    "read_only": false,
+    "mutation": true,
+    "executable": false,
+    "introduces_ontology": false,
+    "introduces_epistemology": false
+  },
+  "canonical_sources": ["ION_Canonical.json", "Three_Pillars_Canonical.json", "MESH_Canonical.json"],
+  "projection_rules": {
+    "include": ["full_system_view", "agent_topology", "protocol_constraints"],
+    "exclude": [],
+    "transformations": ["governance_only"]
+  },
+  "read_constraints": {
+    "mode": "governance_mesh",
+    "allowed_operations": ["read_all", "authorize_mutation"],
+    "forbidden_operations": ["unaudited_execution"]
+  },
+  "shared_protocols_bound": ["Cognitive_State_Protocol", "SOP"],
+  "explicit_prohibitions": [
+    "No silent mutation",
+    "No unlogged governance changes"
+  ],
+  "audit": {
+    "created_phase": "Phase-F",
+    "consumes_frozen_ontology": true,
+    "hash_verified": false,
+    "review_required_for_change": true
+  }
+}
