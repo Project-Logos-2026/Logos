@@ -1,0 +1,65 @@
+{
+  "family_id": "FAMILY_041",
+  "member_count": 3,
+  "members": [
+    "TaskScheduler.__init__",
+    "__init__",
+    "initialize_runtime"
+  ],
+  "invariant_semantics": {
+    "data_role": []
+  },
+  "divergent_semantics": {
+    "semantic_tags": {
+      "TaskScheduler.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ENTRYPOINT"
+      ],
+      "__init__": [
+        "BOOTSTRAP",
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "initialize_runtime": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ENTRYPOINT"
+      ]
+    },
+    "operation_type": {
+      "TaskScheduler.__init__": [],
+      "__init__": [],
+      "initialize_runtime": [
+        "TRANSFORMATION"
+      ]
+    },
+    "control_role": {
+      "TaskScheduler.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "initialize_runtime": [
+        "BOOT_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "TaskScheduler.__init__": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "__init__": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "initialize_runtime": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ]
+    }
+  }
+}

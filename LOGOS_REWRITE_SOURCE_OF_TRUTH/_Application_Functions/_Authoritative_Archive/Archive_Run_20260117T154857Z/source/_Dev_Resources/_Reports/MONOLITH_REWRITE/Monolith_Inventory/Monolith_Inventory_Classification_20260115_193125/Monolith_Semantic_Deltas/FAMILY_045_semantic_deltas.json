@@ -1,0 +1,111 @@
+{
+  "family_id": "FAMILY_045",
+  "member_count": 10,
+  "members": [
+    "main",
+    "compute_kernel_hash",
+    "start_sertop",
+    "send_sertop_command",
+    "translate_box_to_coq",
+    "shutdown_sertop",
+    "signal_handler",
+    "health",
+    "prove",
+    "countermodel"
+  ],
+  "invariant_semantics": {
+    "control_role": [
+      "BOOT_CONTROL"
+    ],
+    "spine_binding": [
+      "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+    ]
+  },
+  "divergent_semantics": {
+    "semantic_tags": {
+      "main": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "compute_kernel_hash": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "start_sertop": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "send_sertop_command": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "translate_box_to_coq": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "shutdown_sertop": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "signal_handler": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "health": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "prove": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "countermodel": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ]
+    },
+    "operation_type": {
+      "main": [
+        "TRANSFORMATION"
+      ],
+      "compute_kernel_hash": [
+        "TRANSFORMATION"
+      ],
+      "start_sertop": [
+        "TRANSFORMATION"
+      ],
+      "send_sertop_command": [
+        "TRANSFORMATION"
+      ],
+      "translate_box_to_coq": [
+        "TRANSFORMATION"
+      ],
+      "shutdown_sertop": [],
+      "signal_handler": [],
+      "health": [
+        "TRANSFORMATION"
+      ],
+      "prove": [
+        "TRANSFORMATION"
+      ],
+      "countermodel": [
+        "TRANSFORMATION"
+      ]
+    },
+    "data_role": {
+      "main": [],
+      "compute_kernel_hash": [
+        "CRYPTO_ID"
+      ],
+      "start_sertop": [],
+      "send_sertop_command": [],
+      "translate_box_to_coq": [],
+      "shutdown_sertop": [],
+      "signal_handler": [],
+      "health": [],
+      "prove": [],
+      "countermodel": []
+    }
+  }
+}

@@ -1,0 +1,421 @@
+{
+  "family_id": "FAMILY_028",
+  "member_count": 30,
+  "members": [
+    "AgentBase.__init__",
+    "__init__",
+    "TrinitarianAgent",
+    "TrinitarianAgent.agent_type",
+    "TrinitarianAgent.validation_scope",
+    "TrinitarianAgent.requires_ontology_validation",
+    "LOGOSValidatorHub.__init__",
+    "OntologicalPropertyValidator.__init__",
+    "BanachNode.__init__",
+    "OntologicalValidator.__init__",
+    "KripkeModel.__post_init__",
+    "__post_init__",
+    "ModalLogicEngine.__init__",
+    "ReferenceMonitor.__init__",
+    "TrinityVector",
+    "TrinityVector.__init__",
+    "ProofGateValidator.__init__",
+    "ProofGateValidator._validate_trinity_vector",
+    "_validate_trinity_vector",
+    "UnifiedRuntimeService.__init__",
+    "UnifiedRuntimeService._initialize_messaging",
+    "_initialize_messaging",
+    "AuditLog.__init__",
+    "LogosAPIServer.__init__",
+    "EnhancedReferenceMonitor.__init__",
+    "initialize_reference_monitor",
+    "CapabilityReporting.__init__",
+    "CapabilityReporting._initialize_capabilities",
+    "_initialize_capabilities",
+    "PolicyManager.__init__"
+  ],
+  "invariant_semantics": {
+    "data_role": []
+  },
+  "divergent_semantics": {
+    "semantic_tags": {
+      "AgentBase.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "__init__": [
+        "BOOTSTRAP",
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "TrinitarianAgent": [
+        "BOOTSTRAP"
+      ],
+      "TrinitarianAgent.agent_type": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "TrinitarianAgent.validation_scope": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "TrinitarianAgent.requires_ontology_validation": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "LOGOSValidatorHub.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "OntologicalPropertyValidator.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "BanachNode.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "OntologicalValidator.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "KripkeModel.__post_init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "__post_init__": [
+        "BOOTSTRAP"
+      ],
+      "ModalLogicEngine.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "ReferenceMonitor.__init__": [
+        "BOOTSTRAP",
+        "ENTRYPOINT"
+      ],
+      "TrinityVector": [
+        "BOOTSTRAP"
+      ],
+      "TrinityVector.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "ProofGateValidator.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "ProofGateValidator._validate_trinity_vector": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "_validate_trinity_vector": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "UnifiedRuntimeService.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "UnifiedRuntimeService._initialize_messaging": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "_initialize_messaging": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "AuditLog.__init__": [
+        "BOOTSTRAP"
+      ],
+      "LogosAPIServer.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "EnhancedReferenceMonitor.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "initialize_reference_monitor": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "CapabilityReporting.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "CapabilityReporting._initialize_capabilities": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "_initialize_capabilities": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ],
+      "PolicyManager.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE"
+      ]
+    },
+    "operation_type": {
+      "AgentBase.__init__": [],
+      "__init__": [],
+      "TrinitarianAgent": [
+        "TRANSFORMATION"
+      ],
+      "TrinitarianAgent.agent_type": [
+        "TRANSFORMATION"
+      ],
+      "TrinitarianAgent.validation_scope": [
+        "TRANSFORMATION"
+      ],
+      "TrinitarianAgent.requires_ontology_validation": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSValidatorHub.__init__": [],
+      "OntologicalPropertyValidator.__init__": [],
+      "BanachNode.__init__": [],
+      "OntologicalValidator.__init__": [],
+      "KripkeModel.__post_init__": [],
+      "__post_init__": [],
+      "ModalLogicEngine.__init__": [],
+      "ReferenceMonitor.__init__": [],
+      "TrinityVector": [
+        "TRANSFORMATION"
+      ],
+      "TrinityVector.__init__": [],
+      "ProofGateValidator.__init__": [],
+      "ProofGateValidator._validate_trinity_vector": [
+        "TRANSFORMATION"
+      ],
+      "_validate_trinity_vector": [
+        "TRANSFORMATION"
+      ],
+      "UnifiedRuntimeService.__init__": [],
+      "UnifiedRuntimeService._initialize_messaging": [
+        "TRANSFORMATION"
+      ],
+      "_initialize_messaging": [
+        "TRANSFORMATION"
+      ],
+      "AuditLog.__init__": [],
+      "LogosAPIServer.__init__": [],
+      "EnhancedReferenceMonitor.__init__": [],
+      "initialize_reference_monitor": [
+        "TRANSFORMATION"
+      ],
+      "CapabilityReporting.__init__": [],
+      "CapabilityReporting._initialize_capabilities": [],
+      "_initialize_capabilities": [],
+      "PolicyManager.__init__": []
+    },
+    "control_role": {
+      "AgentBase.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "TrinitarianAgent": [
+        "BOOT_CONTROL"
+      ],
+      "TrinitarianAgent.agent_type": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "TrinitarianAgent.validation_scope": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "TrinitarianAgent.requires_ontology_validation": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "LOGOSValidatorHub.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "OntologicalPropertyValidator.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "BanachNode.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "OntologicalValidator.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "KripkeModel.__post_init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "__post_init__": [
+        "BOOT_CONTROL"
+      ],
+      "ModalLogicEngine.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "ReferenceMonitor.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "TrinityVector": [
+        "BOOT_CONTROL"
+      ],
+      "TrinityVector.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "ProofGateValidator.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "ProofGateValidator._validate_trinity_vector": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "_validate_trinity_vector": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "UnifiedRuntimeService.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "UnifiedRuntimeService._initialize_messaging": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "_initialize_messaging": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "AuditLog.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "LogosAPIServer.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "EnhancedReferenceMonitor.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "initialize_reference_monitor": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "CapabilityReporting.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "CapabilityReporting._initialize_capabilities": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "_initialize_capabilities": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "PolicyManager.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "AgentBase.__init__": [
+        "UNMAPPED"
+      ],
+      "__init__": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "TrinitarianAgent": [
+        "UNMAPPED"
+      ],
+      "TrinitarianAgent.agent_type": [
+        "UNMAPPED"
+      ],
+      "TrinitarianAgent.validation_scope": [
+        "UNMAPPED"
+      ],
+      "TrinitarianAgent.requires_ontology_validation": [
+        "UNMAPPED"
+      ],
+      "LOGOSValidatorHub.__init__": [
+        "UNMAPPED"
+      ],
+      "OntologicalPropertyValidator.__init__": [
+        "UNMAPPED"
+      ],
+      "BanachNode.__init__": [
+        "UNMAPPED"
+      ],
+      "OntologicalValidator.__init__": [
+        "UNMAPPED"
+      ],
+      "KripkeModel.__post_init__": [
+        "UNMAPPED"
+      ],
+      "__post_init__": [
+        "UNMAPPED"
+      ],
+      "ModalLogicEngine.__init__": [
+        "UNMAPPED"
+      ],
+      "ReferenceMonitor.__init__": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "TrinityVector": [
+        "UNMAPPED"
+      ],
+      "TrinityVector.__init__": [
+        "UNMAPPED"
+      ],
+      "ProofGateValidator.__init__": [
+        "UNMAPPED"
+      ],
+      "ProofGateValidator._validate_trinity_vector": [
+        "UNMAPPED"
+      ],
+      "_validate_trinity_vector": [
+        "UNMAPPED"
+      ],
+      "UnifiedRuntimeService.__init__": [
+        "UNMAPPED"
+      ],
+      "UnifiedRuntimeService._initialize_messaging": [
+        "UNMAPPED"
+      ],
+      "_initialize_messaging": [
+        "UNMAPPED"
+      ],
+      "AuditLog.__init__": [
+        "UNMAPPED"
+      ],
+      "LogosAPIServer.__init__": [
+        "UNMAPPED"
+      ],
+      "EnhancedReferenceMonitor.__init__": [
+        "UNMAPPED"
+      ],
+      "initialize_reference_monitor": [
+        "UNMAPPED"
+      ],
+      "CapabilityReporting.__init__": [
+        "UNMAPPED"
+      ],
+      "CapabilityReporting._initialize_capabilities": [
+        "UNMAPPED"
+      ],
+      "_initialize_capabilities": [
+        "UNMAPPED"
+      ],
+      "PolicyManager.__init__": [
+        "UNMAPPED"
+      ]
+    }
+  }
+}

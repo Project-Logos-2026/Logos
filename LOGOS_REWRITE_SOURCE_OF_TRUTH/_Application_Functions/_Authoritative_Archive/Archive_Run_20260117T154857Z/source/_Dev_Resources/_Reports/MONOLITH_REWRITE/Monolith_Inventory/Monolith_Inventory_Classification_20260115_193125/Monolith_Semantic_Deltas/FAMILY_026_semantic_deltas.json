@@ -1,0 +1,1741 @@
+{
+  "family_id": "FAMILY_026",
+  "member_count": 108,
+  "members": [
+    "SCPNexus.__init__",
+    "SCPNexus.initialize",
+    "SCPNexus._initialize_cognitive_systems",
+    "SCPNexus._initialize_modal_chain_processors",
+    "SCPNexus._initialize_fractal_analysis",
+    "SCPNexus._initialize_meta_reasoning",
+    "SCPNexus._initialize_enhancement_engines",
+    "SCPNexus._handle_activate_mvs",
+    "SCPNexus._handle_activate_bdn",
+    "SCPNexus._handle_infinite_reasoning",
+    "SCPNexus._protocol_specific_initialization",
+    "__init__",
+    "initialize",
+    "_initialize_cognitive_systems",
+    "_initialize_modal_chain_processors",
+    "_initialize_fractal_analysis",
+    "_initialize_meta_reasoning",
+    "_initialize_enhancement_engines",
+    "_handle_activate_mvs",
+    "_handle_activate_bdn",
+    "_handle_infinite_reasoning",
+    "_protocol_specific_initialization",
+    "initialize_scp_nexus",
+    "BaseNexus.__init__",
+    "DataBuilder.__init__",
+    "ARPNexus.__init__",
+    "ARPNexus.initialize",
+    "ARPNexus._initialize_iel_domains",
+    "ARPNexus._initialize_reasoning_engines",
+    "ARPNexus._initialize_mathematical_foundations",
+    "ARPNexus._initialize_protocol_connections",
+    "ARPNexus._initialize_data_builder",
+    "_initialize_iel_domains",
+    "_initialize_reasoning_engines",
+    "_initialize_mathematical_foundations",
+    "_initialize_protocol_connections",
+    "_initialize_data_builder",
+    "ReasoningAgent.__init__",
+    "initialize_uip_integration",
+    "StaticUIPConnector.__init__",
+    "StaticEnhancedUIPConnector.__init__",
+    "initialize_enhanced_uip_integration",
+    "UIPNexus.__init__",
+    "UIPNexus.initialize",
+    "UIPNexus._initialize_reasoning_engines",
+    "UIPNexus._initialize_analysis_tools",
+    "UIPNexus._initialize_synthesis_engines",
+    "UIPNexus._initialize_cognitive_processing",
+    "UIPNexus._handle_activate_reasoning",
+    "UIPNexus._handle_deactivate",
+    "UIPNexus._protocol_specific_initialization",
+    "_initialize_analysis_tools",
+    "_initialize_synthesis_engines",
+    "_initialize_cognitive_processing",
+    "_handle_activate_reasoning",
+    "_handle_deactivate",
+    "initialize_uip_nexus",
+    "UIPOperations.__init__",
+    "UIPOperations.initialize_full_stack",
+    "UIPOperations._init_interface_components",
+    "UIPOperations._activate_session_management",
+    "UIPOperations._init_multimodal_support",
+    "UIPOperations._init_basic_nlp",
+    "UIPOperations._activate_voice_recognition",
+    "UIPOperations._init_text_validators",
+    "UIPOperations._activate_multilang_support",
+    "UIPOperations._init_scp_bridge",
+    "UIPOperations._activate_sop_interface",
+    "UIPOperations._init_response_formatter",
+    "UIPOperations._activate_multimodal_output",
+    "UIPOperations._init_accessibility_output",
+    "UIPOperations._activate_realtime_systems",
+    "initialize_full_stack",
+    "_init_interface_components",
+    "_activate_session_management",
+    "_init_multimodal_support",
+    "_init_basic_nlp",
+    "_activate_voice_recognition",
+    "_init_text_validators",
+    "_activate_multilang_support",
+    "_init_scp_bridge",
+    "_activate_sop_interface",
+    "_init_response_formatter",
+    "_activate_multimodal_output",
+    "_init_accessibility_output",
+    "_activate_realtime_systems",
+    "AgentRequest.__init__",
+    "NexusResponse.__init__",
+    "BaseNexus.initialize",
+    "BaseNexus._protocol_specific_initialization",
+    "BaseNexus._activate_protocol_if_needed",
+    "BaseNexus._deactivate_protocol_if_needed",
+    "_activate_protocol_if_needed",
+    "_deactivate_protocol_if_needed",
+    "LOGOSAgentNexus.__init__",
+    "LOGOSAgentNexus.initialize",
+    "LOGOSAgentNexus._initialize_planning_engines",
+    "LOGOSAgentNexus._initialize_gap_detection",
+    "LOGOSAgentNexus._initialize_linguistic_processors",
+    "LOGOSAgentNexus._initialize_goal_management",
+    "LOGOSAgentNexus._initialize_coordination_systems",
+    "LOGOSAgentNexus._protocol_specific_initialization",
+    "_initialize_planning_engines",
+    "_initialize_gap_detection",
+    "_initialize_linguistic_processors",
+    "_initialize_goal_management",
+    "_initialize_coordination_systems",
+    "initialize_logos_agent_nexus"
+  ],
+  "invariant_semantics": {
+    "data_role": []
+  },
+  "divergent_semantics": {
+    "semantic_tags": {
+      "SCPNexus.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus.initialize": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._initialize_cognitive_systems": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._initialize_modal_chain_processors": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._initialize_fractal_analysis": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._initialize_meta_reasoning": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._initialize_enhancement_engines": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._handle_activate_mvs": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._handle_activate_bdn": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._handle_infinite_reasoning": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SCPNexus._protocol_specific_initialization": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "__init__": [
+        "BOOTSTRAP",
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "initialize": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_cognitive_systems": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_modal_chain_processors": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_fractal_analysis": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_meta_reasoning": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_enhancement_engines": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_handle_activate_mvs": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_handle_activate_bdn": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_handle_infinite_reasoning": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_protocol_specific_initialization": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "initialize_scp_nexus": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "DataBuilder.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus.initialize": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus._initialize_iel_domains": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus._initialize_reasoning_engines": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus._initialize_mathematical_foundations": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus._initialize_protocol_connections": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "ARPNexus._initialize_data_builder": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_iel_domains": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP"
+      ],
+      "_initialize_reasoning_engines": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_mathematical_foundations": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_protocol_connections": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_data_builder": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "ReasoningAgent.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "initialize_uip_integration": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "StaticUIPConnector.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "StaticEnhancedUIPConnector.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "initialize_enhanced_uip_integration": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus.initialize": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._initialize_reasoning_engines": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._initialize_analysis_tools": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._initialize_synthesis_engines": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._initialize_cognitive_processing": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._handle_activate_reasoning": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._handle_deactivate": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPNexus._protocol_specific_initialization": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_analysis_tools": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_synthesis_engines": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_cognitive_processing": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_handle_activate_reasoning": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_handle_deactivate": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "initialize_uip_nexus": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations.initialize_full_stack": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._init_interface_components": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._activate_session_management": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._init_multimodal_support": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._init_basic_nlp": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._activate_voice_recognition": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._init_text_validators": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._activate_multilang_support": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._init_scp_bridge": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._activate_sop_interface": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._init_response_formatter": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._activate_multimodal_output": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._init_accessibility_output": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "UIPOperations._activate_realtime_systems": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "initialize_full_stack": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_interface_components": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_activate_session_management": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_multimodal_support": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_basic_nlp": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_activate_voice_recognition": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_text_validators": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_activate_multilang_support": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_scp_bridge": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_activate_sop_interface": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_response_formatter": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_activate_multimodal_output": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_accessibility_output": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_activate_realtime_systems": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "AgentRequest.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "NexusResponse.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus.initialize": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus._protocol_specific_initialization": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus._activate_protocol_if_needed": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus._deactivate_protocol_if_needed": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_activate_protocol_if_needed": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_deactivate_protocol_if_needed": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus.initialize": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._initialize_planning_engines": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._initialize_gap_detection": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._initialize_linguistic_processors": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._initialize_goal_management": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._initialize_coordination_systems": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "LOGOSAgentNexus._protocol_specific_initialization": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_planning_engines": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_gap_detection": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_linguistic_processors": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_goal_management": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_coordination_systems": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "initialize_logos_agent_nexus": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ]
+    },
+    "operation_type": {
+      "SCPNexus.__init__": [],
+      "SCPNexus.initialize": [
+        "TRANSFORMATION"
+      ],
+      "SCPNexus._initialize_cognitive_systems": [],
+      "SCPNexus._initialize_modal_chain_processors": [],
+      "SCPNexus._initialize_fractal_analysis": [],
+      "SCPNexus._initialize_meta_reasoning": [],
+      "SCPNexus._initialize_enhancement_engines": [],
+      "SCPNexus._handle_activate_mvs": [
+        "TRANSFORMATION"
+      ],
+      "SCPNexus._handle_activate_bdn": [
+        "TRANSFORMATION"
+      ],
+      "SCPNexus._handle_infinite_reasoning": [
+        "TRANSFORMATION"
+      ],
+      "SCPNexus._protocol_specific_initialization": [
+        "TRANSFORMATION"
+      ],
+      "__init__": [],
+      "initialize": [
+        "TRANSFORMATION"
+      ],
+      "_initialize_cognitive_systems": [],
+      "_initialize_modal_chain_processors": [],
+      "_initialize_fractal_analysis": [],
+      "_initialize_meta_reasoning": [],
+      "_initialize_enhancement_engines": [],
+      "_handle_activate_mvs": [
+        "TRANSFORMATION"
+      ],
+      "_handle_activate_bdn": [
+        "TRANSFORMATION"
+      ],
+      "_handle_infinite_reasoning": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_initialization": [
+        "TRANSFORMATION"
+      ],
+      "initialize_scp_nexus": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus.__init__": [],
+      "DataBuilder.__init__": [],
+      "ARPNexus.__init__": [],
+      "ARPNexus.initialize": [
+        "TRANSFORMATION"
+      ],
+      "ARPNexus._initialize_iel_domains": [],
+      "ARPNexus._initialize_reasoning_engines": [],
+      "ARPNexus._initialize_mathematical_foundations": [],
+      "ARPNexus._initialize_protocol_connections": [],
+      "ARPNexus._initialize_data_builder": [],
+      "_initialize_iel_domains": [],
+      "_initialize_reasoning_engines": [],
+      "_initialize_mathematical_foundations": [],
+      "_initialize_protocol_connections": [],
+      "_initialize_data_builder": [],
+      "ReasoningAgent.__init__": [],
+      "initialize_uip_integration": [
+        "TRANSFORMATION"
+      ],
+      "StaticUIPConnector.__init__": [],
+      "StaticEnhancedUIPConnector.__init__": [],
+      "initialize_enhanced_uip_integration": [
+        "TRANSFORMATION"
+      ],
+      "UIPNexus.__init__": [],
+      "UIPNexus.initialize": [
+        "TRANSFORMATION"
+      ],
+      "UIPNexus._initialize_reasoning_engines": [],
+      "UIPNexus._initialize_analysis_tools": [],
+      "UIPNexus._initialize_synthesis_engines": [],
+      "UIPNexus._initialize_cognitive_processing": [],
+      "UIPNexus._handle_activate_reasoning": [
+        "TRANSFORMATION"
+      ],
+      "UIPNexus._handle_deactivate": [
+        "TRANSFORMATION"
+      ],
+      "UIPNexus._protocol_specific_initialization": [
+        "TRANSFORMATION"
+      ],
+      "_initialize_analysis_tools": [],
+      "_initialize_synthesis_engines": [],
+      "_initialize_cognitive_processing": [],
+      "_handle_activate_reasoning": [
+        "TRANSFORMATION"
+      ],
+      "_handle_deactivate": [
+        "TRANSFORMATION"
+      ],
+      "initialize_uip_nexus": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations.__init__": [],
+      "UIPOperations.initialize_full_stack": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._init_interface_components": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._activate_session_management": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._init_multimodal_support": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._init_basic_nlp": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._activate_voice_recognition": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._init_text_validators": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._activate_multilang_support": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._init_scp_bridge": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._activate_sop_interface": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._init_response_formatter": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._activate_multimodal_output": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._init_accessibility_output": [
+        "TRANSFORMATION"
+      ],
+      "UIPOperations._activate_realtime_systems": [
+        "TRANSFORMATION"
+      ],
+      "initialize_full_stack": [
+        "TRANSFORMATION"
+      ],
+      "_init_interface_components": [
+        "TRANSFORMATION"
+      ],
+      "_activate_session_management": [
+        "TRANSFORMATION"
+      ],
+      "_init_multimodal_support": [
+        "TRANSFORMATION"
+      ],
+      "_init_basic_nlp": [
+        "TRANSFORMATION"
+      ],
+      "_activate_voice_recognition": [
+        "TRANSFORMATION"
+      ],
+      "_init_text_validators": [
+        "TRANSFORMATION"
+      ],
+      "_activate_multilang_support": [
+        "TRANSFORMATION"
+      ],
+      "_init_scp_bridge": [
+        "TRANSFORMATION"
+      ],
+      "_activate_sop_interface": [
+        "TRANSFORMATION"
+      ],
+      "_init_response_formatter": [
+        "TRANSFORMATION"
+      ],
+      "_activate_multimodal_output": [
+        "TRANSFORMATION"
+      ],
+      "_init_accessibility_output": [
+        "TRANSFORMATION"
+      ],
+      "_activate_realtime_systems": [
+        "TRANSFORMATION"
+      ],
+      "AgentRequest.__init__": [],
+      "NexusResponse.__init__": [],
+      "BaseNexus.initialize": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus._protocol_specific_initialization": [],
+      "BaseNexus._activate_protocol_if_needed": [],
+      "BaseNexus._deactivate_protocol_if_needed": [],
+      "_activate_protocol_if_needed": [],
+      "_deactivate_protocol_if_needed": [],
+      "LOGOSAgentNexus.__init__": [],
+      "LOGOSAgentNexus.initialize": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSAgentNexus._initialize_planning_engines": [],
+      "LOGOSAgentNexus._initialize_gap_detection": [],
+      "LOGOSAgentNexus._initialize_linguistic_processors": [],
+      "LOGOSAgentNexus._initialize_goal_management": [],
+      "LOGOSAgentNexus._initialize_coordination_systems": [],
+      "LOGOSAgentNexus._protocol_specific_initialization": [
+        "TRANSFORMATION"
+      ],
+      "_initialize_planning_engines": [],
+      "_initialize_gap_detection": [],
+      "_initialize_linguistic_processors": [],
+      "_initialize_goal_management": [],
+      "_initialize_coordination_systems": [],
+      "initialize_logos_agent_nexus": [
+        "TRANSFORMATION"
+      ]
+    },
+    "control_role": {
+      "SCPNexus.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus.initialize": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._initialize_cognitive_systems": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._initialize_modal_chain_processors": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._initialize_fractal_analysis": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._initialize_meta_reasoning": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._initialize_enhancement_engines": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._handle_activate_mvs": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._handle_activate_bdn": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._handle_infinite_reasoning": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SCPNexus._protocol_specific_initialization": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "initialize": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_cognitive_systems": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_modal_chain_processors": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_fractal_analysis": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_meta_reasoning": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_enhancement_engines": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_activate_mvs": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_activate_bdn": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_infinite_reasoning": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_initialization": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "initialize_scp_nexus": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "DataBuilder.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus.initialize": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus._initialize_iel_domains": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus._initialize_reasoning_engines": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus._initialize_mathematical_foundations": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus._initialize_protocol_connections": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ARPNexus._initialize_data_builder": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_iel_domains": [
+        "BOOT_CONTROL"
+      ],
+      "_initialize_reasoning_engines": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_mathematical_foundations": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_protocol_connections": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_data_builder": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ReasoningAgent.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "initialize_uip_integration": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "StaticUIPConnector.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "StaticEnhancedUIPConnector.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "initialize_enhanced_uip_integration": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus.initialize": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._initialize_reasoning_engines": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._initialize_analysis_tools": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._initialize_synthesis_engines": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._initialize_cognitive_processing": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._handle_activate_reasoning": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._handle_deactivate": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPNexus._protocol_specific_initialization": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_analysis_tools": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_synthesis_engines": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_cognitive_processing": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_activate_reasoning": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_deactivate": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "initialize_uip_nexus": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations.initialize_full_stack": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._init_interface_components": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._activate_session_management": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._init_multimodal_support": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._init_basic_nlp": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._activate_voice_recognition": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._init_text_validators": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._activate_multilang_support": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._init_scp_bridge": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._activate_sop_interface": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._init_response_formatter": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._activate_multimodal_output": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._init_accessibility_output": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "UIPOperations._activate_realtime_systems": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "initialize_full_stack": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_interface_components": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_activate_session_management": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_multimodal_support": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_basic_nlp": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_activate_voice_recognition": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_text_validators": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_activate_multilang_support": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_scp_bridge": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_activate_sop_interface": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_response_formatter": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_activate_multimodal_output": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_accessibility_output": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_activate_realtime_systems": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "AgentRequest.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "NexusResponse.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus.initialize": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus._protocol_specific_initialization": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus._activate_protocol_if_needed": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus._deactivate_protocol_if_needed": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_activate_protocol_if_needed": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_deactivate_protocol_if_needed": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus.initialize": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._initialize_planning_engines": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._initialize_gap_detection": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._initialize_linguistic_processors": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._initialize_goal_management": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._initialize_coordination_systems": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSAgentNexus._protocol_specific_initialization": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_planning_engines": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_gap_detection": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_linguistic_processors": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_goal_management": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_coordination_systems": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "initialize_logos_agent_nexus": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "SCPNexus.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus.initialize": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._initialize_cognitive_systems": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._initialize_modal_chain_processors": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._initialize_fractal_analysis": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._initialize_meta_reasoning": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._initialize_enhancement_engines": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._handle_activate_mvs": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._handle_activate_bdn": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._handle_infinite_reasoning": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SCPNexus._protocol_specific_initialization": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "__init__": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "initialize": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_cognitive_systems": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_modal_chain_processors": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_fractal_analysis": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_meta_reasoning": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_enhancement_engines": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_activate_mvs": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_activate_bdn": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_infinite_reasoning": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_protocol_specific_initialization": [
+        "UNMAPPED"
+      ],
+      "initialize_scp_nexus": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "DataBuilder.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus.initialize": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus._initialize_iel_domains": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus._initialize_reasoning_engines": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus._initialize_mathematical_foundations": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus._initialize_protocol_connections": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ARPNexus._initialize_data_builder": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_iel_domains": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_reasoning_engines": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_mathematical_foundations": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_protocol_connections": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_data_builder": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ReasoningAgent.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "initialize_uip_integration": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "StaticUIPConnector.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "StaticEnhancedUIPConnector.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "initialize_enhanced_uip_integration": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus.initialize": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._initialize_reasoning_engines": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._initialize_analysis_tools": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._initialize_synthesis_engines": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._initialize_cognitive_processing": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._handle_activate_reasoning": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._handle_deactivate": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPNexus._protocol_specific_initialization": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_analysis_tools": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_synthesis_engines": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_cognitive_processing": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_activate_reasoning": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_handle_deactivate": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "initialize_uip_nexus": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations.initialize_full_stack": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._init_interface_components": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._activate_session_management": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._init_multimodal_support": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._init_basic_nlp": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._activate_voice_recognition": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._init_text_validators": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._activate_multilang_support": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._init_scp_bridge": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._activate_sop_interface": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._init_response_formatter": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._activate_multimodal_output": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._init_accessibility_output": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "UIPOperations._activate_realtime_systems": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "initialize_full_stack": [
+        "UNMAPPED"
+      ],
+      "_init_interface_components": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_activate_session_management": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_init_multimodal_support": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_init_basic_nlp": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_activate_voice_recognition": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_init_text_validators": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_activate_multilang_support": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_init_scp_bridge": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_activate_sop_interface": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_init_response_formatter": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_activate_multimodal_output": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_init_accessibility_output": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_activate_realtime_systems": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "AgentRequest.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "NexusResponse.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus.initialize": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus._protocol_specific_initialization": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus._activate_protocol_if_needed": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "BaseNexus._deactivate_protocol_if_needed": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_activate_protocol_if_needed": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_deactivate_protocol_if_needed": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus.initialize": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._initialize_planning_engines": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._initialize_gap_detection": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._initialize_linguistic_processors": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._initialize_goal_management": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._initialize_coordination_systems": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LOGOSAgentNexus._protocol_specific_initialization": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_planning_engines": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_gap_detection": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_linguistic_processors": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_goal_management": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_coordination_systems": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "initialize_logos_agent_nexus": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ]
+    }
+  }
+}
