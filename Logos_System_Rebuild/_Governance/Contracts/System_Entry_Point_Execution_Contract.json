@@ -23,6 +23,14 @@
     ],
     "reordering_forbidden": true
   },
+  "ordering_guarantee": [
+    "System Entry Verification",
+    "Lock-and-Key",
+    "Runtime Spine",
+    "SOP orchestration",
+    "Any agent activation",
+    "Any protocol activation"
+  ],
   "output_constraint": {
     "may_only": [
       "halt_with_explicit_failure",
