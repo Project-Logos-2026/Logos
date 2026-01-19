@@ -1,0 +1,384 @@
+IEL_REASONING_PRECURSOR
+========================
+
+Source: Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/README.md (pillars)
+---------------------------------------------------------------------------------------------
+# pillars
+
+## Overview
+This directory contains the pillars implementation within the Internal Emergent Logics (Integrated Experiential Logic) framework.
+
+## Files
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\Core.v
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\docs\AnthroPraxis_OVERVIEW.md
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\modal\FrameSpec.v
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\subdomains\BioPraxis\docs\BioPraxis_OVERVIEW.md
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\subdomains\BioPraxis\modal\FrameSpec.v
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\subdomains\BioPraxis\Smoke.v
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\subdomains\BioPraxis\Spec.v
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\subdomains\BioPraxis\systems\Systems.v
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\subdomains\BioPraxis\tests\BioPraxis_Smoke.v
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\subdomains\BioPraxis\theorems\NormalBase.v
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\subdomains\BioPraxis\Theorems.v
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\subdomains\Life\Smoke.v
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\subdomains\Life\Spec.v
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\subdomains\Life\Theorems.v
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\subdomains\Registry.v
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\systems\Systems.v
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\tests\AnthroPraxis_Smoke.v
+- modules\Internal Emergent Logics\pillars\AnthroPraxis\theorems\NormalBase.v
+- modules\Internal Emergent Logics\pillars\Axiopraxis\Core.v
+- modules\Internal Emergent Logics\pillars\Axiopraxis\docs\Axiopraxis_OVERVIEW.md
+- modules\Internal Emergent Logics\pillars\Axiopraxis\modal\FrameSpec.v
+- modules\Internal Emergent Logics\pillars\Axiopraxis\subdomains\Beauty\Smoke.v
+- modules\Internal Emergent Logics\pillars\Axiopraxis\subdomains\Beauty\Spec.v
+- modules\Internal Emergent Logics\pillars\Axiopraxis\subdomains\Beauty\Theorems.v
+- modules\Internal Emergent Logics\pillars\Axiopraxis\subdomains\Goodness\Smoke.v
+- modules\Internal Emergent Logics\pillars\Axiopraxis\subdomains\Goodness\Spec.v
+- modules\Internal Emergent Logics\pillars\Axiopraxis\subdomains\Goodness\Theorems.v
+- modules\Internal Emergent Logics\pillars\Axiopraxis\subdomains\Registry.v
+- modules\Internal Emergent Logics\pillars\Axiopraxis\subdomains\Truth\Spec.v
+- modules\Internal Emergent Logics\pillars\Axiopraxis\systems\Systems.v
+- modules\Internal Emergent Logics\pillars\Axiopraxis\tests\Axiopraxis_Smoke.v
+- modules\Internal Emergent Logics\pillars\Axiopraxis\theorems\Cross.v
+- modules\Internal Emergent Logics\pillars\Axiopraxis\theorems\NormalBase.v
+- modules\Internal Emergent Logics\pillars\CosmoPraxis\Core.v
+- modules\Internal Emergent Logics\pillars\CosmoPraxis\docs\CosmoPraxis_OVERVIEW.md
+- modules\Internal Emergent Logics\pillars\CosmoPraxis\modal\FrameSpec.v
+- modules\Internal Emergent Logics\pillars\CosmoPraxis\subdomains\Immanence\Smoke.v
+- modules\Internal Emergent Logics\pillars\CosmoPraxis\subdomains\Immanence\Spec.v
+- modules\Internal Emergent Logics\pillars\CosmoPraxis\subdomains\Immanence\Theorems.v
+- modules\Internal Emergent Logics\pillars\CosmoPraxis\subdomains\Registry.v
+- modules\Internal Emergent Logics\pillars\CosmoPraxis\subdomains\Space\Smoke.v
+- modules\Internal Emergent Logics\pillars\CosmoPraxis\subdomains\Space\Spec.v
+- modules\Internal Emergent Logics\pillars\CosmoPraxis\subdomains\Space\Theorems.v
+- modules\Internal Emergent Logics\pillars\CosmoPraxis\systems\Systems.v
+- modules\Internal Emergent Logics\pillars\CosmoPraxis\tests\CosmoPraxis_Smoke.v
+- modules\Internal Emergent Logics\pillars\CosmoPraxis\theorems\NormalBase.v
+- modules\Internal Emergent Logics\pillars\ErgoPraxis\Core.v
+- modules\Internal Emergent Logics\pillars\ErgoPraxis\docs\ErgoPraxis_OVERVIEW.md
+- modules\Internal Emergent Logics\pillars\ErgoPraxis\modal\FrameSpec.v
+- modules\Internal Emergent Logics\pillars\ErgoPraxis\subdomains\Registry.v
+- modules\Internal Emergent Logics\pillars\ErgoPraxis\subdomains\Truth\Smoke.v
+- modules\Internal Emergent Logics\pillars\ErgoPraxis\subdomains\Truth\Spec.v
+- modules\Internal Emergent Logics\pillars\ErgoPraxis\subdomains\Truth\Theorems.v
+- modules\Internal Emergent Logics\pillars\ErgoPraxis\systems\Systems.v
+- modules\Internal Emergent Logics\pillars\ErgoPraxis\tests\ErgoPraxis_Smoke.v
+- modules\Internal Emergent Logics\pillars\ErgoPraxis\theorems\NormalBase.v
+- modules\Internal Emergent Logics\pillars\GnosiPraxis\Core.v
+- modules\Internal Emergent Logics\pillars\GnosiPraxis\modal\FrameSpec.v
+- modules\Internal Emergent Logics\pillars\GnosiPraxis\subdomains\Registry.v
+- modules\Internal Emergent Logics\pillars\GnosiPraxis\subdomains\Truth\Smoke.v
+- modules\Internal Emergent Logics\pillars\GnosiPraxis\subdomains\Truth\Spec.v
+- modules\Internal Emergent Logics\pillars\GnosiPraxis\subdomains\Truth\Theorems.v
+- modules\Internal Emergent Logics\pillars\GnosiPraxis\systems\Systems.v
+- modules\Internal Emergent Logics\pillars\GnosiPraxis\theorems\Conservativity.v
+- modules\Internal Emergent Logics\pillars\GnosiPraxis\theorems\Cross.v
+- modules\Internal Emergent Logics\pillars\GnosiPraxis\theorems\NormalBase.v
+- modules\Internal Emergent Logics\pillars\GnosiPraxis\theorems\Systems.v
+- modules\Internal Emergent Logics\pillars\README.md
+- modules\Internal Emergent Logics\pillars\TeloPraxis\Core.v
+- modules\Internal Emergent Logics\pillars\TeloPraxis\docs\TeloPraxis_OVERVIEW.md
+- modules\Internal Emergent Logics\pillars\TeloPraxis\modal\FrameSpec.v
+- modules\Internal Emergent Logics\pillars\TeloPraxis\subdomains\Registry.v
+- modules\Internal Emergent Logics\pillars\TeloPraxis\subdomains\Will\Smoke.v
+- modules\Internal Emergent Logics\pillars\TeloPraxis\subdomains\Will\Spec.v
+- modules\Internal Emergent Logics\pillars\TeloPraxis\subdomains\Will\Theorems.v
+- modules\Internal Emergent Logics\pillars\TeloPraxis\systems\Systems.v
+- modules\Internal Emergent Logics\pillars\TeloPraxis\tests\TeloPraxis_Smoke.v
+- modules\Internal Emergent Logics\pillars\TeloPraxis\theorems\Cross.v
+- modules\Internal Emergent Logics\pillars\TeloPraxis\theorems\NormalBase.v
+- modules\Internal Emergent Logics\pillars\ThemiPraxis\Core.v
+- modules\Internal Emergent Logics\pillars\ThemiPraxis\modal\FrameSpec.v
+- modules\Internal Emergent Logics\pillars\ThemiPraxis\modal\NormFrames.v
+- modules\Internal Emergent Logics\pillars\ThemiPraxis\subdomains\Registry.v
+- modules\Internal Emergent Logics\pillars\ThemiPraxis\subdomains\Truth\Smoke.v
+- modules\Internal Emergent Logics\pillars\ThemiPraxis\subdomains\Truth\Spec.v
+- modules\Internal Emergent Logics\pillars\ThemiPraxis\subdomains\Truth\Theorems.v
+- modules\Internal Emergent Logics\pillars\ThemiPraxis\systems\Systems.v
+- modules\Internal Emergent Logics\pillars\ThemiPraxis\theorems\Conservativity.v
+- modules\Internal Emergent Logics\pillars\ThemiPraxis\theorems\NormalBase.v
+- modules\Internal Emergent Logics\pillars\ThemiPraxis\theorems\Systems.v
+
+## Development
+This praxis is part of the LOGOS PXL Core system. See the main README for development setup.
+
+
+Source: Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/TopoPraxis/README.md
+----------------------------------------------------------------------------------------------
+# infra_TopoPraxis
+
+## Overview
+This directory contains the infra_TopoPraxis implementation within the Internal Emergent Logics (Integrated Experiential Logic) framework.
+
+## Files
+- modules\Internal Emergent Logics\infra\TopoPraxis\Core.v
+- modules\Internal Emergent Logics\infra\TopoPraxis\docs\TopoPraxis_OVERVIEW.md
+- modules\Internal Emergent Logics\infra\TopoPraxis\modal\FrameSpec.v
+- modules\Internal Emergent Logics\infra\TopoPraxis\README.md
+- modules\Internal Emergent Logics\infra\TopoPraxis\Registry.v
+- modules\Internal Emergent Logics\infra\TopoPraxis\systems\Systems.v
+- modules\Internal Emergent Logics\infra\TopoPraxis\tests\TopoPraxis_Smoke.v
+- modules\Internal Emergent Logics\infra\TopoPraxis\theorems\NormalBase.v
+
+## Development
+This praxis is part of the LOGOS PXL Core system. See the main README for development setup.
+
+
+Source: Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/TopoPraxis/docs/TopoPraxis_OVERVIEW.md
+-----------------------------------------------------------------------------------------------------------------
+# TopoPraxis (Spatial logic)
+Purpose: regions, adjacency, and spatial reasoning.
+Status: v0.1 scaffold, zero admits.
+
+
+Source: Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/ErgoPraxis/README.md
+------------------------------------------------------------------------------------------------
+# ErgoPraxis
+
+## Overview
+This directory contains the ErgoPraxis implementation within the Internal Emergent Logics (Integrated Experiential Logic) framework.
+
+## Files
+- modules\Internal Emergent Logics\ErgoPraxis\README.md
+
+## Development
+This praxis is part of the LOGOS PXL Core system. See the main README for development setup.
+
+
+Source: Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/ChronoPraxis/README.md
+-------------------------------------------------------------------------------------------------
+# infra_ChronoPraxis
+
+## Overview
+This directory contains the infra_ChronoPraxis implementation within the Internal Emergent Logics (Integrated Experiential Logic) framework.
+
+## Files
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Core.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\domains\Compatibilism\CompatibilismTheory.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\domains\Compatibilism\README.md
+- modules\Internal Emergent Logics\infra\ChronoPraxis\domains\Empiricism\README.md
+- modules\Internal Emergent Logics\infra\ChronoPraxis\domains\Empiricism\Relativity.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\domains\Empiricism\UnifiedFieldLogic.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\domains\ModalOntology\ModalCollapse.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\domains\ModalOntology\README.md
+- modules\Internal Emergent Logics\infra\ChronoPraxis\interfaces\ChronoPraxis.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\README.md
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Registry.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Substrate\Bijection.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Substrate\ChronoAgents.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Substrate\ChronoAxioms.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Substrate\ChronoAxioms.vok
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Substrate\ChronoAxioms.vos
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Substrate\ChronoMappings.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Substrate\ChronoModes.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Substrate\ChronoPraxis_PXL_Formal.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Substrate\ChronoPraxis_PXL_Proofs.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Substrate\chronostate\StateTransitions.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Substrate\ChronoZAgents.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Substrate\StateTransitions.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Tactics\ChronoTactics.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Theorems\experimental\ChronoProofs.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Theorems\MetaTheorems.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Theorems\ModalStrength\ModalAxiomsSound.v
+- modules\Internal Emergent Logics\infra\ChronoPraxis\Theorems\ModalStrength\ModalRules.v
+
+## Development
+This praxis is part of the LOGOS PXL Core system. See the main README for development setup.
+
+
+Source: Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/ChronoPraxis/domains/Compatibilism/README.md
+-----------------------------------------------------------------------------------------------------------------------
+# Compatibilism Domain - ChronoPraxis Internal Emergent Logics
+
+## Goal
+Formalize temporal freedom over χ_A with convergence in χ_C
+
+## Scope
+- Free Will Formalization: Agent choice models within A-theory temporal becoming
+- Determinism Reconciliation: Convergence paths from χ_A (becoming) to χ_C (eternal)
+- Temporal Freedom: Choice preservation across modal ontology transformations
+- Causal Compatibility: Bidirectional causation within structural χ_B mediation
+
+## Invariants
+- Identity Preservation: Agent choice identity maintained across temporal modes
+- Policy: Constructive only - no classical axioms
+- Bijective Coherence: All mappings preserve freedom/determinism relationships
+- Convergence Proofs: All temporal freedom paths must converge in χ_C
+
+## Development Status
+Domain branch ready: domain/compatibilism
+Next: Formalize agent choice models and temporal freedom operators
+
+## Internal Emergent Logics Integration
+- Substrate: Extends ChronoAxioms with agent choice axioms
+- Tactics: normalize_freedom, choice_preservation tactics
+- Theorems: Free will compatibility theorems
+- Interface: Compatibilist temporal reasoning API
+
+---
+ChronoPraxis Internal Emergent Logics v1.0 Domain Extension
+
+
+Source: Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/ChronoPraxis/domains/Empiricism/README.md
+--------------------------------------------------------------------------------------------------------------------
+# Empiricism Domain - ChronoPraxis Internal Emergent Logics
+
+## Goal
+Map χ modes to relativistic/QM frames
+
+## Scope
+- Observational Coherence: χ_A (observer-relative) ↔ relativistic reference frames
+- Structural Mapping: χ_B (tenseless ordering) ↔ spacetime manifold structure
+- Quantum Integration: χ_C (atemporal) ↔ quantum measurement collapse
+- Empirical Validation: Experience-based temporal reasoning patterns
+
+## Invariants
+- Observational Coherence: All measurements preserve temporal mode relationships
+- Constructive Derivations: No classical physics assumptions - constructive foundations only
+- Frame Independence: Results invariant under temporal mode transformations
+- Measurement Preservation: Quantum/relativistic measurements consistent across χ modes
+
+## Development Status
+Domain branch ready: domain/empiricism
+Next: Formalize observer-relative temporal frames and measurement operators
+
+## Internal Emergent Logics Integration
+- Substrate: Physics-temporal ontology bridge axioms
+- Tactics: frame_transform, measurement_coherence tactics
+- Theorems: Empirical consistency across temporal modes
+- Interface: Physics-temporal reasoning API
+
+## Research Directions
+- Relativity Bridge: Special/General relativity temporal structure mapping
+- Quantum Temporality: Measurement-collapse temporal interpretation
+- Observational Logic: First-person temporal experience formalization
+- Empirical Verification: Testable predictions from χ mode theory
+
+---
+ChronoPraxis Internal Emergent Logics v1.0 Domain Extension
+
+
+Source: Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/ChronoPraxis/domains/ModalOntology/README.md
+-----------------------------------------------------------------------------------------------------------------------
+# Modal Ontology Domain - ChronoPraxis Internal Emergent Logics
+
+## Goal
+Possible-world accessibility via temporal instantiation paths
+
+## Scope
+- Possible Worlds: Modal accessibility through temporal mode transitions
+- Necessity Preservation: □φ consistency across χ_A → χ_B → χ_C pathways
+- Temporal Instantiation: Possible worlds as temporal mode configurations
+- Modal Collapse: Necessity/possibility convergence in χ_C (atemporal eternal)
+
+## Invariants
+- Necessity Preservation: Modal operators maintain truth across temporal transformations
+- Convergence Proofs: All possible world paths converge in χ_C
+- Accessibility Relations: Temporal mode bijections preserve modal accessibility
+- Constructive Modality: Modal logic without classical completeness assumptions
+
+## Development Status
+Domain branch ready: domain/modal-ontology
+Next: Formalize temporal-modal accessibility relations and necessity operators
+
+## Internal Emergent Logics Integration
+- Substrate: Modal-temporal ontology axioms, possible world definitions
+- Tactics: modal_preserve, necessity_convergence tactics
+- Theorems: Temporal modal completeness, accessibility preservation
+- Interface: Modal-temporal reasoning API
+
+## Key Components
+- Accessibility Relations: R_temporal(w1, w2) via χ mode transitions
+- Necessity Operators: □_χ(φ) - necessity relative to temporal mode χ
+- Convergence Proofs: forall w: accessible(w) -> converges_χ_C(w)
+- Modal Collapse: □φ <-> ◊φ in χ_C (eternal atemporal limit)
+
+## Research Applications
+- Temporal Metaphysics: Temporal mode theory of possible worlds
+- Modal Logic Extensions: Temporal grounding for modal operators
+- Ontological Reduction: Possible worlds as temporal instantiation patterns
+- Necessity Theory: Temporal foundations of modal necessity
+
+---
+ChronoPraxis Internal Emergent Logics v1.0 Domain Extension
+
+
+Source: Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/ModalPraxis/README.md
+------------------------------------------------------------------------------------------------
+# infra_ModalPraxis
+
+## Overview
+This directory contains the infra_ModalPraxis implementation within the Internal Emergent Logics (Integrated Experiential Logic) framework.
+
+## Files
+- modules\Internal Emergent Logics\infra\ModalPraxis\Core.v
+- modules\Internal Emergent Logics\infra\ModalPraxis\ForcesLemmas.v
+- modules\Internal Emergent Logics\infra\ModalPraxis\modal\FrameSpec.v
+- modules\Internal Emergent Logics\infra\ModalPraxis\README.md
+- modules\Internal Emergent Logics\infra\ModalPraxis\Registry.v
+- modules\Internal Emergent Logics\infra\ModalPraxis\theorems\Conservativity.v
+- modules\Internal Emergent Logics\infra\ModalPraxis\theorems\NormalBase.v
+
+## Development
+This praxis is part of the LOGOS PXL Core system. See the main README for development setup.
+
+
+Source: Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/TeloPraxis/README.md
+------------------------------------------------------------------------------------------------
+# TeloPraxis
+
+## Overview
+This directory contains the TeloPraxis implementation within the Internal Emergent Logics (Integrated Experiential Logic) framework.
+
+## Files
+- modules\Internal Emergent Logics\TeloPraxis\README.md
+
+## Development
+This praxis is part of the LOGOS PXL Core system. See the main README for development setup.
+
+
+Source: Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/TheoPraxis/README.md
+------------------------------------------------------------------------------------------------
+# source
+
+## Overview
+This directory contains the source implementation within the Internal Emergent Logics (Integrated Experiential Logic) framework.
+
+## Files
+- modules\Internal Emergent Logics\source\README.md
+- modules\Internal Emergent Logics\source\TheoPraxis\Core.v
+- modules\Internal Emergent Logics\source\TheoPraxis\Props.v
+- modules\Internal Emergent Logics\source\TheoPraxis\Registry.v
+- modules\Internal Emergent Logics\source\TheoPraxis\subdomains\Registry.v
+- modules\Internal Emergent Logics\source\TheoPraxis\subdomains\Unity\Smoke.glob
+- modules\Internal Emergent Logics\source\TheoPraxis\subdomains\Unity\Smoke.v
+- modules\Internal Emergent Logics\source\TheoPraxis\subdomains\Unity\Spec.glob
+- modules\Internal Emergent Logics\source\TheoPraxis\subdomains\Unity\Spec.v
+- modules\Internal Emergent Logics\source\TheoPraxis\subdomains\Unity\Spec.vo
+- modules\Internal Emergent Logics\source\TheoPraxis\subdomains\Unity\Spec.vok
+- modules\Internal Emergent Logics\source\TheoPraxis\subdomains\Unity\Spec.vos
+- modules\Internal Emergent Logics\source\TheoPraxis\subdomains\Unity\Theorems.v
+
+## Development
+This praxis is part of the LOGOS PXL Core system. See the main README for development setup.
+
+
+Source: Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_domains/TropoPraxis/README.md
+------------------------------------------------------------------------------------------------
+# infra_TropoPraxis
+
+## Overview
+This directory contains the infra_TropoPraxis implementation within the Internal Emergent Logics (Integrated Experiential Logic) framework.
+
+## Files
+- modules\Internal Emergent Logics\infra\TropoPraxis\Core.v
+- modules\Internal Emergent Logics\infra\TropoPraxis\modal\FrameSpec.v
+- modules\Internal Emergent Logics\infra\TropoPraxis\README.md
+- modules\Internal Emergent Logics\infra\TropoPraxis\Registry.v
+- modules\Internal Emergent Logics\infra\TropoPraxis\theorems\Conservativity.v
+- modules\Internal Emergent Logics\infra\TropoPraxis\theorems\NormalBase.v
+- modules\Internal Emergent Logics\infra\TropoPraxis\theorems\Systems.v
+
+## Development
+This praxis is part of the LOGOS PXL Core system. See the main README for development setup.

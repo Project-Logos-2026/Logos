@@ -1,0 +1,10 @@
+{
+  "protocol_id": "execution_surface",
+  "declared_purpose": "Perform system action",
+  "declared_inputs": ["command"],
+  "declared_outputs": ["result"],
+  "declared_effects": ["state mutation"],
+  "permission_surface": [],
+  "execution_surface": "internal",
+  "io_surface": { "filesystem": false, "network": false, "device": false }
+}

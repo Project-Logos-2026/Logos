@@ -1,0 +1,20 @@
+{
+  "contract": "Phase-C Governance Contract",
+  "status": "AUTHORITATIVE · DECLARATIVE",
+  "phase": "Phase-C",
+  "role": "governance_declaration",
+  "enforcement": "non-executable",
+  "scope": "Audit, Verification, and Determinism",
+  "guarantees": [
+    "All governed artifacts are auditable",
+    "Verification artifacts are reproducible",
+    "PASS/FAIL semantics are explicitly defined",
+    "Hashing and integrity checks are deterministic"
+  ],
+  "prohibitions": [
+    "Non-deterministic verification",
+    "Ambiguous audit outcomes",
+    "Verification without traceability"
+  ],
+  "failure_semantics": "DECLARATIVE_ONLY"
+}

@@ -1,0 +1,1239 @@
+[
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "init_beliefs_container",
+    "raw_source": "def init_beliefs_container(state):\n    if \"beliefs\" not in state:\n        state[\"beliefs\"] = {\"items\": []}",
+    "start_line": 93,
+    "end_line": 95,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 3,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "consolidate_beliefs",
+    "raw_source": "def consolidate_beliefs(state, **kwargs):\n    run_id = kwargs.get(\"run_id\")\n    mode = kwargs.get(\"mode\", \"auto\")\n    stub_mode = bool(kwargs.get(\"stub_mode\", False)) or mode == \"stub\"\n    prev = state.get(\"beliefs\", {}) if isinstance(state, dict) else {}\n    prev_hash = prev.get(\"state_hash\") if isinstance(prev, dict) else None\n    items = list(prev.get(\"items\", [])) if isinstance(prev, dict) else []\n\n    # In real mode, drop stub/synthesized artifacts unless explicitly stub_mode\n    if not stub_mode:\n        items = [\n            b\n            for b in items\n            if not (b.get(\"source\") == \"STUB\" or b.get(\"synthesized\") is True)\n        ]\n\n    # Synthesize a bounded stub belief only when in stub mode\n    if stub_mode and not items:\n        last_result = None\n        if isinstance(state, dict):\n            tool_results = state.get(\"last_tool_results\", [])\n            if isinstance(tool_results, list) and tool_results:\n                last_result = tool_results[-1]\n\n        now = datetime.now(timezone.utc).isoformat()\n        belief_content = last_result or {\n            \"note\": \"synthetic belief for stub SCP\",\n        }\n        items.append(\n            {\n                \"belief_id\": str(uuid.uuid4()),\n                \"id\": None,  # filled below for compatibility\n                \"created_at\": now,\n                \"updated_at\": now,\n                \"objective_tags\": [\"STATUS\"],\n                \"content\": {\n                    \"observation\": belief_content,\n                    \"evidence\": {\n                        \"type\": \"inference\",\n                        \"ref\": None,\n                        \"details\": \"stub synthesis\",\n                    },\n                },\n                \"truth\": \"HEURISTIC\",\n                \"confidence\": 0.6,\n                \"supporting_refs\": [],\n                \"contradicting_refs\": [],\n                \"status\": \"ACTIVE\",\n                \"notes\": {},\n                \"source\": \"STUB\",\n                \"mode\": \"stub\",\n                \"synthesized\": True,\n            }\n        )\n        items[-1][\"id\"] = items[-1][\"belief_id\"]\n\n    container = {\n        \"schema_version\": 1,\n        \"updated_at\": datetime.now(timezone.utc).isoformat(),\n        \"run_id\": run_id,\n        \"beliefs_version\": (prev.get(\"beliefs_version\", 0) + 1)\n        if isinstance(prev, dict)\n        else 1,\n        \"prev_hash\": prev_hash,\n        \"items\": items,\n    }\n    container[\"state_hash\"] = canonical_json_hash(container)\n    return container",
+    "start_line": 98,
+    "end_line": 165,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 14,
+    "archive_tier": 1
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "apply_plan_revision",
+    "raw_source": "def apply_plan_revision(state, beliefs):\n    # Stub implementation: mark steps as SKIPPED if beliefs have contradictions\n    quarantined = [\n        b\n        for b in beliefs.get(\"items\", [])\n        if b.get(\"status\") == \"QUARANTINED\"\n        and b.get(\"source\") != \"STUB\"\n        and not b.get(\"synthesized\", False)\n    ]\n    if quarantined:\n        if \"plans\" in state and \"active\" in state[\"plans\"]:\n            for plan in state[\"plans\"][\"active\"]:\n                if \"steps\" in plan:\n                    for step in plan[\"steps\"]:\n                        if step.get(\"status\") in [\"PENDING\", \"DENIED\"]:\n                            step[\"status\"] = \"SKIPPED\"\n                            # Add checkpoint\n                            if \"checkpoints\" not in plan:\n                                plan[\"checkpoints\"] = []\n                            plan[\"checkpoints\"].append(\n                                {\n                                    \"step_index\": step[\"index\"],\n                                    \"reason\": \"belief contradiction detected\",\n                                    \"timestamp\": datetime.now(timezone.utc).isoformat(),\n                                }\n                            )",
+    "start_line": 168,
+    "end_line": 193,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 5,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "get_belief_summary",
+    "raw_source": "def get_belief_summary(beliefs, obj_class):\n    return {\"count\": 0, \"top_beliefs\": [], \"high_confidence_count\": 0}",
+    "start_line": 204,
+    "end_line": 205,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 3,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "__init__",
+    "raw_source": "def __init__(self):\n        self.initialized = True",
+    "start_line": 211,
+    "end_line": 212,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 2,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "__init__",
+    "raw_source": "def __init__(\n        self,\n        *,\n        enable: bool,\n        audit_logger,\n        max_compute_ms: int,\n        state_dir: str,\n        repo_sha: str,\n        mode: str = \"auto\",\n        scp_recovery_mode: bool = False,\n    ):\n        self.enable = enable\n        self.audit_logger = audit_logger\n        self.max_compute_ms = max_compute_ms\n        self.state_dir = Path(state_dir)\n        self.repo_sha = repo_sha\n        self.mode = mode\n        self.scp_recovery_mode = scp_recovery_mode\n        self.available = False\n        self.arp_reasoner = None\n        self.scp_nexus = None\n        self.last_error = None\n        self.observations = []\n        self.prior_state = None\n        self.last_proposals = []\n        self.last_tool_results = []\n        self.truth_events = []\n        self.persisted_path = self.state_dir / \"logos_agi_scp_state.json\"\n        self.compat_scp_state_path = self.state_dir / \"scp_state.json\"\n        self.metrics_path = self.state_dir / \"proposal_metrics.json\"\n        self.metrics_state = None\n        self.working_memory = None\n        self.scp_state_valid = True\n        self.scp_state_validation_error = None\n        self.theorem_index = None",
+    "start_line": 229,
+    "end_line": 263,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 9,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "bootstrap",
+    "raw_source": "def bootstrap(self) -> None:\n        \"\"\"Import and initialize ARP/SCP components.\"\"\"\n        if not self.enable:\n            return\n\n        if self.mode == \"stub\":\n            # Always use stub implementations\n            self.scp_nexus = StubSCPNexus()\n            self.arp_reasoner = None\n            self.available = True\n            self.last_error = None\n        elif self.mode == \"real\":\n            # Require real implementations, fail if unavailable\n            try:\n                self._bootstrap_real()\n                self.available = True\n                self.last_error = None\n            except Exception as e:\n                raise RuntimeError(f\"Real Logos_AGI bootstrap failed: {e}\") from e\n        else:  # auto\n            # Try real, fallback to stub\n            try:\n                self._bootstrap_real()\n                self.available = True\n                self.last_error = None\n            except Exception as e:\n                self.last_error = f\"Using stub due to bootstrap error: {e}\"\n                self.scp_nexus = StubSCPNexus()\n                self.arp_reasoner = None\n                self.available = True\n\n        # Load persisted state and metrics regardless of mode\n        self._load_persisted_state()\n        self.metrics_state = load_metrics(self.metrics_path)\n\n        # Load theorem index\n        try:\n            self.theorem_index = load_theorem_index(\n                str(self.state_dir / \"coq_theorem_index.json\")\n            )\n        except Exception:\n            self.theorem_index = None\n\n        # Ensure working_memory is initialized\n        if self.prior_state:\n            self.working_memory = init_working_memory(self.prior_state)",
+    "start_line": 265,
+    "end_line": 310,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 11,
+    "archive_tier": 1
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_bootstrap_real",
+    "raw_source": "def _bootstrap_real(self) -> None:\n        \"\"\"Attempt real bootstrap.\"\"\"\n        # Add external to path\n        import sys\n        from pathlib import Path\n\n        external_path = Path(__file__).parent.parent / \"external\"\n        if str(external_path) not in sys.path:\n            sys.path.insert(0, str(external_path))\n\n        # Import ARP bootstrap\n        from Logos_AGI.Advanced_Reasoning_Protocol.arp_bootstrap import AdvancedReasoner\n\n        self.arp_reasoner = AdvancedReasoner(agent_identity=self.repo_sha)\n        self.arp_reasoner.start()\n\n        # Import SCP nexus\n        from Logos_AGI.Synthetic_Cognition_Protocol.system_utilities.nexus.scp_nexus import (\n            SCPNexus,\n        )\n\n        try:\n            from Logos_AGI.System_Operations_Protocol.infrastructure.agent_system.base_nexus import (\n                AgentRequest,\n            )\n        except ImportError:\n            # Define minimal AgentRequest if import fails\n            class AgentRequest:\n                def __init__(self, request_id, operation, payload):\n                    self.request_id = request_id\n                    self.operation = operation\n                    self.payload = payload\n\n        self.scp_nexus = SCPNexus()\n        # Run async init\n        success = asyncio.run(self.scp_nexus.initialize())\n        if not success:\n            raise RuntimeError(\"SCP initialization failed\")",
+    "start_line": 312,
+    "end_line": 349,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 11,
+    "archive_tier": 1
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_load_persisted_state",
+    "raw_source": "def _load_persisted_state(self) -> None:\n        \"\"\"Load and validate previously persisted state.\"\"\"\n        load_path = (\n            self.persisted_path\n            if self.persisted_path.exists()\n            else self.compat_scp_state_path\n        )\n        if load_path.exists():\n            try:\n                with open(load_path) as f:\n                    state = json.load(f)\n                # Try to validate (skip in stub mode)\n                if self.mode != \"stub\":\n                    validate_scp_state(state)\n                validation_error = None\n                stored_hash = state.get(\"state_hash\")\n                if stored_hash:\n                    temp_state = dict(state)\n                    temp_state.pop(\"state_hash\", None)\n                    computed_hash = canonical_json_hash(temp_state)\n                    if computed_hash != stored_hash:\n                        validation_error = \"state_hash mismatch\"\n                # If validation fails, allow recovery when explicitly enabled\n                if validation_error:\n                    self.scp_state_validation_error = validation_error\n                    self.scp_state_valid = False\n                    recovery_allowed = (\n                        self.scp_recovery_mode and os.getenv(\"LOGOS_DEV_BYPASS_OK\") == \"1\"\n                    )\n                    if not recovery_allowed:\n                        return\n                # If validation succeeds or skipped\n                self.prior_state = state\n                self.observations = state.get(\"observations\", [])\n                self.last_proposals = state.get(\"last_proposals\", [])\n                self.last_tool_results = state.get(\"last_tool_results\", [])\n                self.working_memory = state.get(\"working_memory\", {})\n                # Initialize UWM if missing\n                init_working_memory(state)\n                # Initialize beliefs if missing\n                init_beliefs_container(state)\n                # Ensure plans exist\n                if \"plans\" not in state:\n                    state[\"plans\"] = {\"active\": [], \"history\": []}\n                if validation_error:\n                    self.scp_state_valid = False\n                    self.scp_state_validation_error = validation_error\n                else:\n                    self.scp_state_valid = True\n                    self.scp_state_validation_error = None\n            except (json.JSONDecodeError, ValueError, TypeError, OSError) as e:\n                error_msg = f\"Failed to validate persisted state: {e}\"\n                self.scp_state_validation_error = error_msg[:200]  # Bound length\n                self.scp_state_valid = False\n                # Check if recovery mode is enabled\n                recovery_allowed = (\n                    self.scp_recovery_mode and os.getenv(\"LOGOS_DEV_BYPASS_OK\") == \"1\"\n                )\n                if recovery_allowed:\n                    # Load the state anyway for recovery\n                    self.prior_state = state\n                    self.observations = state.get(\"observations\", [])\n                    self.last_proposals = state.get(\"last_proposals\", [])\n                    self.last_tool_results = state.get(\"last_tool_results\", [])\n                    self.working_memory = state.get(\"working_memory\", {})\n                    # Initialize UWM if missing\n                    init_working_memory(state)\n                    # Initialize beliefs if missing\n                    init_beliefs_container(state)\n                    # Ensure plans exist\n                    if \"plans\" not in state:\n                        state[\"plans\"] = {\"active\": [], \"history\": []}\n                    # Record recovery in truth events\n                    ts = datetime.now(timezone.utc).isoformat()\n                    event = {\n                        \"ts\": ts,\n                        \"source\": \"RUNTIME\",\n                        \"content\": {\n                            \"recovery_mode\": True,\n                            \"validation_error\": error_msg,\n                        },\n                        \"truth_annotation\": {\n                            \"truth\": \"UNVERIFIED\",\n                            \"evidence\": {\n                                \"type\": \"none\",\n                                \"ref\": None,\n                                \"details\": \"SCP state recovery mode activated\",\n                            },\n                        },\n                    }\n                    self.truth_events.append(event)\n                    self.last_error = (\n                        f\"Loaded invalid state in recovery mode: {error_msg}\"\n                    )\n                else:\n                    self.last_error = error_msg\n                    self.prior_state = None",
+    "start_line": 351,
+    "end_line": 447,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 11,
+    "archive_tier": 1
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "refresh_plan_history",
+    "raw_source": "def refresh_plan_history(self, history_scored: Dict[str, Any]) -> None:\n        \"\"\"Refresh in-memory plan history from validated source-of-truth.\"\"\"\n        if not isinstance(history_scored, dict):\n            return\n\n        if self.prior_state is None:\n            self.prior_state = {\n                \"schema_version\": 1,\n                \"updated_at\": datetime.now(timezone.utc).isoformat(),\n                \"version\": 0,\n                \"prev_hash\": None,\n                \"state_hash\": \"\",\n                \"observations\": [],\n                \"last_proposals\": [],\n                \"last_tool_results\": [],\n                \"truth_events\": [],\n                \"arp_status\": {},\n                \"scp_status\": {},\n                \"working_memory\": init_working_memory({}),\n                \"plans\": {\"active\": [], \"history\": []},\n                \"beliefs\": {},\n            }\n\n        plans_block = self.prior_state.setdefault(\n            \"plans\", {\"active\": [], \"history\": []}\n        )\n        plans_block[\"history_scored\"] = history_scored\n\n        if not isinstance(self.truth_events, list):\n            self.truth_events = []\n\n        ts = datetime.now(timezone.utc).isoformat()\n        evidence_ref = (\n            self.prior_state.get(\"state_hash\")\n            if isinstance(self.prior_state, dict)\n            else None\n        )\n        self.truth_events.append(\n            {\n                \"ts\": ts,\n                \"source\": \"RUNTIME\",\n                \"content\": {\n                    \"event\": \"plan_history_refreshed\",\n                    \"entries_by_signature\": list(\n                        history_scored.get(\"entries_by_signature\", {}).keys()\n                    ),\n                },\n                \"truth_annotation\": {\n                    \"truth\": \"VERIFIED\",\n                    \"evidence\": {\n                        \"type\": \"hash\",\n                        \"ref\": evidence_ref,\n                        \"details\": \"In-process refresh from persisted plan history\",\n                    },\n                },\n            }\n        )",
+    "start_line": 449,
+    "end_line": 505,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 11,
+    "archive_tier": 1
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "record_tool_result",
+    "raw_source": "def record_tool_result(\n        self, tool: str, args: str, status: str, objective: str\n    ) -> None:\n        \"\"\"Record the result of a tool execution for replay logic.\"\"\"\n        self.last_tool_results.append(\n            {\n                \"tool\": tool,\n                \"args\": args,\n                \"status\": status,\n                \"objective\": objective,\n                \"timestamp\": datetime.now(timezone.utc).isoformat(),\n            }\n        )\n\n        # Add to UWM\n        if self.prior_state:\n            objective_class = normalize_objective_class(objective)\n            content = {\n                \"tool\": tool,\n                \"args\": args,\n                \"status\": status,\n                \"outcome\": \"SUCCESS\" if status in [\"ok\", \"success\"] else \"FAILURE\",\n            }\n            truth = \"VERIFIED\" if status in [\"ok\", \"success\"] else \"HEURISTIC\"\n            item_id = stable_item_id(\"TOOL\", content, [objective_class])\n            item = {\n                \"id\": item_id,\n                \"created_at\": datetime.now(timezone.utc).isoformat(),\n                \"last_accessed_at\": datetime.now(timezone.utc).isoformat(),\n                \"objective_tags\": [objective_class],\n                \"truth\": truth,\n                \"evidence\": {\n                    \"type\": \"hash\",\n                    \"ref\": self.prior_state.get(\"state_hash\"),\n                    \"details\": f\"Tool execution result: {tool}\",\n                },\n                \"content\": content,\n                \"salience\": calculate_initial_salience(truth, \"TOOL\", content),\n                \"decay_rate\": 0.15,\n                \"access_count\": 0,\n                \"source\": \"TOOL\",\n            }\n            add_memory_item(self.prior_state, item)",
+    "start_line": 507,
+    "end_line": 549,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 9,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "get_memory_summary",
+    "raw_source": "def get_memory_summary(self) -> Dict[str, Any]:\n        \"\"\"Get short summary of replayed state for proposal logic.\"\"\"\n        if not self.prior_state:\n            return {\"has_prior\": False}\n        last_result = self.last_tool_results[-1] if self.last_tool_results else None\n        last_proposal = self.last_proposals[-1] if self.last_proposals else None\n        return {\n            \"has_prior\": True,\n            \"version\": self.prior_state.get(\"version\", 0),\n            \"last_objective\": last_result.get(\"objective\") if last_result else None,\n            \"last_tool\": last_result.get(\"tool\") if last_result else None,\n            \"last_status\": last_result.get(\"status\") if last_result else None,\n            \"last_proposal_tool\": last_proposal.get(\"tool\") if last_proposal else None,\n        }",
+    "start_line": 551,
+    "end_line": 564,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 5,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "observe",
+    "raw_source": "def observe(self, observation: Dict[str, Any]) -> None:\n        \"\"\"Pass observation to SCP for cognitive processing.\"\"\"\n        self.observations.append(observation)\n        if not self.available or not self.scp_nexus:\n            return\n\n        try:\n            from Logos_AGI.Synthetic_Cognition_Protocol.system_utilities.nexus.scp_nexus import (\n                AgentRequest,\n                AgentType,\n            )\n\n            # Use enhance_cognition to process the observation\n            request = AgentRequest(\n                agent_id=str(uuid.uuid4()),\n                operation=\"enhance_cognition\",\n                payload={\n                    \"observation\": observation,\n                    \"context\": self.observations[-10:],\n                },  # Last 10 for context\n                agent_type=AgentType.SYSTEM_AGENT,\n            )\n            # Schedule async processing deterministically\n            try:\n                loop = asyncio.get_running_loop()\n                loop.create_task(self._process_observation_async(request))\n            except RuntimeError:\n                # No running event loop, record diagnostic\n                self.last_error = \"No running event loop; observation async skipped\"\n                # Optionally add a truth event\n                ts = datetime.now(timezone.utc).isoformat()\n                event = {\n                    \"ts\": ts,\n                    \"source\": \"RUNTIME\",\n                    \"content\": {\n                        \"diagnostic\": \"async observation skipped\",\n                        \"reason\": \"no event loop\",\n                    },\n                    \"truth_annotation\": {\n                        \"truth\": \"UNVERIFIED\",\n                        \"evidence\": {\n                            \"type\": \"none\",\n                            \"ref\": None,\n                            \"details\": \"Runtime diagnostic\",\n                        },\n                    },\n                }\n                self.truth_events.append(event)\n        except (ImportError, AttributeError) as e:\n            # Record error instead of silent pass\n            self.last_error = f\"Observation setup error: {e}\"\n            ts = datetime.now(timezone.utc).isoformat()\n            event = {\n                \"ts\": ts,\n                \"source\": \"RUNTIME\",\n                \"content\": {\"diagnostic\": \"observation error\", \"error\": str(e)},\n                \"truth_annotation\": {\n                    \"truth\": \"UNVERIFIED\",\n                    \"evidence\": {\n                        \"type\": \"none\",\n                        \"ref\": None,\n                        \"details\": \"Error diagnostic\",\n                    },\n                },\n            }\n            self.truth_events.append(event)",
+    "start_line": 566,
+    "end_line": 631,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 11,
+    "archive_tier": 1
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "propose",
+    "raw_source": "def propose(self, objective: str, constraints: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Generate proposal using ARP/SCP with replayed state influence.\"\"\"\n        constraints = constraints or {}\n        if not self.available:\n            return {\n                \"proposals\": [],\n                \"notes\": {\"reason\": \"Logos_AGI unavailable\"},\n                \"errors\": [self.last_error or \"Not bootstrapped\"],\n            }\n\n        try:\n            # Get memory summary for decision logic\n            memory = self.get_memory_summary()\n            proposal_policy_reason = \"default\"\n\n            # Recall relevant UWM items\n            objective_class = normalize_objective_class(objective)\n            recalled_items = (\n                recall(self.prior_state, objective_class, k=5)\n                if self.prior_state\n                else []\n            )\n            recalled_summaries = [\n                f\"{item['source']}: {item['content'].get('tool', 'unknown')} \"\n                f\"({item['truth']})\"\n                for item in recalled_items\n            ]\n\n            # Get belief summary\n            belief_summary = (\n                get_belief_summary(self.prior_state.get(\"beliefs\", {}), objective_class)\n                if self.prior_state\n                else {\"count\": 0, \"top_beliefs\": [], \"high_confidence_count\": 0}\n            )\n            belief_summaries = [\n                (\n                    f\"belief: {b['content'].get('tool', 'unknown')} \"\n                    f\"({b['truth']}, conf={b['confidence']:.2f})\"\n                )\n                for b in belief_summary[\"top_beliefs\"][:2]\n            ]\n            recalled_summaries.extend(belief_summaries)\n\n            # Apply plan revision if active plans exist\n            if self.prior_state and self.prior_state.get(\"plans\", {}).get(\"active\"):\n                apply_plan_revision(\n                    self.prior_state, self.prior_state.get(\"beliefs\", {})\n                )\n\n            # Apply replay rules\n            avoid_tools = set()\n            if memory[\"has_prior\"]:\n                # Rule 1: Avoid tools that failed last time for same objective\n                if (\n                    memory[\"last_objective\"] == objective\n                    and memory[\"last_status\"] in [\"denied\", \"error\"]\n                    and memory[\"last_tool\"]\n                ):\n                    avoid_tools.add(memory[\"last_tool\"])\n                    proposal_policy_reason = (\n                        f\"avoiding previously failed tool {memory['last_tool']}\"\n                    )\n\n                # Rule 2: If last objective was \"status\" and mission.status succeeded,\n                # then try probe.last\n                if (\n                    memory[\"last_objective\"] == \"status\"\n                    and memory[\"last_tool\"] == \"mission.status\"\n                    and memory[\"last_status\"] == \"ok\"\n                    and objective == \"status\"\n                    and self.mode != \"stub\"\n                ):\n                    # Propose probe.last instead\n                    proposals = [\n                        {\n                            \"tool\": \"probe.last\",\n                            \"args\": \"\",\n                            \"rationale\": (\n                                \"Replaying: last status check succeeded, now probing \"\n                                \"recent activity. Recalled: \"\n                                f\"{', '.join(recalled_summaries[:3])}\"\n                            ),\n                            \"confidence\": 0.85,\n                            \"truth_annotation\": {\n                                \"truth\": \"VERIFIED\",\n                                \"evidence\": {\n                                    \"type\": \"hash\",\n                                    \"ref\": self.prior_state.get(\"state_hash\")\n                                    if self.prior_state\n                                    else None,\n                                    \"details\": (\n                                        \"Deterministic replay from validated SCP \"\n                                        \"state\"\n                                    ),\n                                },\n                            },\n                        }\n                    ]\n\n                    # Apply belief policy even to replayed proposals\n                    objective_class = normalize_objective_class(objective)\n                    proposals, policy_notes = apply_belief_policy(\n                        proposals, objective_class, self.prior_state.get(\"beliefs\", {})\n                    )\n\n                    self.last_proposals.extend(proposals)\n\n                    # Append truth event\n                    ts = datetime.now(timezone.utc).isoformat()\n                    for proposal in proposals:\n                        event = {\n                            \"ts\": ts,\n                            \"source\": \"ARP\",\n                            \"content\": proposal,\n                            \"truth_annotation\": proposal[\"truth_annotation\"],\n                        }\n                        self.truth_events.append(event)\n\n                    return {\n                        \"proposals\": proposals,\n                        \"notes\": {\n                            \"method\": \"replayed_state\",\n                            \"policy\": policy_notes,\n                            \"policy_reason\": proposal_policy_reason,\n                        },\n                        \"errors\": [],\n                    }\n\n            # Default proposal logic (similar to before)\n            proposals = []\n            if \"status\" in objective.lower() and \"mission.status\" not in avoid_tools:\n                proposals.append(\n                    {\n                        \"tool\": \"mission.status\",\n                        \"args\": \"\",\n                        \"rationale\": (\n                            \"SCP meta-reasoning analysis suggests status check. \"\n                            f\"Recalled: {', '.join(recalled_summaries[:3])}\"\n                        ),\n                        \"confidence\": 0.9,\n                        \"truth_annotation\": {\n                            \"truth\": \"HEURISTIC\",\n                            \"evidence\": {\n                                \"type\": \"inference\",\n                                \"ref\": None,\n                                \"details\": (\n                                    \"Pattern-based reasoning from objective keywords\"\n                                ),\n                            },\n                        },\n                    }\n                )\n            elif \"probe\" in objective.lower():\n                proposals.append(\n                    {\n                        \"tool\": \"probe.last\",\n                        \"args\": \"\",\n                        \"rationale\": (\n                            \"SCP cognitive enhancement suggests probing recent \"\n                            f\"activity. Recalled: {', '.join(recalled_summaries[:3])}\"\n                        ),\n                        \"confidence\": 0.8,\n                        \"truth_annotation\": {\n                            \"truth\": \"HEURISTIC\",\n                            \"evidence\": {\n                                \"type\": \"inference\",\n                                \"ref\": None,\n                                \"details\": (\n                                    \"Pattern-based reasoning from objective keywords\"\n                                ),\n                            },\n                        },\n                    }\n                )\n            else:\n                proposals.append(\n                    {\n                        \"tool\": \"mission.status\",\n                        \"args\": \"\",\n                        \"rationale\": (\n                            \"Conservative proposal from SCP meta-reasoning. \"\n                            f\"Recalled: {', '.join(recalled_summaries[:3])}\"\n                        ),\n                        \"confidence\": 0.7,\n                        \"truth_annotation\": {\n                            \"truth\": \"UNVERIFIED\",\n                            \"evidence\": {\n                                \"type\": \"none\",\n                                \"ref\": None,\n                                \"details\": \"Fallback default proposal\",\n                            },\n                        },\n                    }\n                )\n\n            # Apply belief policy\n            objective_class = normalize_objective_class(objective)\n            proposals, policy_notes = apply_belief_policy(\n                proposals, objective_class, self.prior_state.get(\"beliefs\", {})\n            )\n\n            # Apply evaluator ranking\n            proposals = choose_best(proposals, objective_class, self.metrics_state)\n\n            self.last_proposals.extend(proposals)\n\n            # Add proposals to UWM\n            if self.prior_state:\n                for proposal in proposals:\n                    content = {\n                        \"tool\": proposal[\"tool\"],\n                        \"args\": proposal.get(\"args\", \"\"),\n                        \"rationale\": proposal.get(\"rationale\", \"\"),\n                        \"confidence\": proposal.get(\"confidence\", 0.5),\n                    }\n                    truth = proposal.get(\"truth_annotation\", {}).get(\n                        \"truth\", \"HEURISTIC\"\n                    )\n                    item_id = stable_item_id(\"ARP\", content, [objective_class])\n                    item = {\n                        \"id\": item_id,\n                        \"created_at\": datetime.now(timezone.utc).isoformat(),\n                        \"last_accessed_at\": datetime.now(timezone.utc).isoformat(),\n                        \"objective_tags\": [objective_class],\n                        \"truth\": truth,\n                        \"evidence\": proposal.get(\"truth_annotation\", {}).get(\n                            \"evidence\", {}\n                        ),\n                        \"content\": content,\n                        \"salience\": calculate_initial_salience(truth, \"ARP\", content),\n                        \"decay_rate\": 0.15,\n                        \"access_count\": 0,\n                        \"source\": \"ARP\",\n                    }\n                    add_memory_item(self.prior_state, item)\n\n            # Append truth events for proposals\n            ts = datetime.now(timezone.utc).isoformat()\n            for proposal in proposals:\n                event = {\n                    \"ts\": ts,\n                    \"source\": \"ARP\",\n                    \"content\": proposal,\n                    \"truth_annotation\": proposal[\"truth_annotation\"],\n                }\n                self.truth_events.append(event)\n\n            return {\n                \"proposals\": proposals,\n                \"notes\": {\n                    \"method\": \"default_with_replay\",\n                    \"policy\": policy_notes,\n                    \"evaluator_applied\": True,\n                },\n                \"errors\": [],\n            }\n        except (RuntimeError, ValueError, TypeError, KeyError) as e:\n            return {\n                \"proposals\": [],\n                \"notes\": {\"reason\": \"Proposal error\"},\n                \"errors\": [str(e)],\n            }",
+    "start_line": 642,
+    "end_line": 903,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 14,
+    "archive_tier": 1
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "propose_plan",
+    "raw_source": "def propose_plan(\n        self, objective: str, constraints: Dict[str, Any]\n    ) -> Dict[str, Any]:\n        \"\"\"Generate a deterministic plan for multi-step objectives.\"\"\"\n        constraints = constraints or {}\n        if not self.available:\n            return {\n                \"plan\": None,\n                \"notes\": {\"reason\": \"Logos_AGI unavailable\"},\n                \"errors\": [self.last_error or \"Not bootstrapped\"],\n            }\n\n        # Initialize prior_state if None\n        if self.prior_state is None:\n            self.prior_state = {\n                \"schema_version\": 1,\n                \"updated_at\": datetime.now(timezone.utc).isoformat(),\n                \"version\": 0,\n                \"prev_hash\": None,\n                \"state_hash\": \"\",\n                \"observations\": [],\n                \"last_proposals\": [],\n                \"last_tool_results\": [],\n                \"truth_events\": [],\n                \"arp_status\": {},\n                \"scp_status\": {},\n                \"working_memory\": init_working_memory({}),\n                \"plans\": {\"active\": [], \"history\": []},\n            }\n\n        try:\n            objective_class = normalize_objective_class(objective)\n            recalled_items = (\n                recall(self.prior_state, objective_class, k=5)\n                if self.prior_state\n                else []\n            )\n\n            # Conservative plan for \"status\" objective\n            if objective_class == \"STATUS\":\n                # Create candidate proposals for tools\n                candidate_proposals = [\n                    {\n                        \"tool\": \"mission.status\",\n                        \"args\": \"\",\n                        \"rationale\": (\n                            f\"Initial status check. Recalled: \"\n                            f\"{len(recalled_items)} items.\"\n                        ),\n                        \"confidence\": 0.9,\n                        \"truth_annotation\": {\n                            \"truth\": \"VERIFIED\"\n                            if any(\n                                item[\"truth\"] == \"VERIFIED\" and item[\"source\"] == \"TOOL\"\n                                for item in recalled_items\n                            )\n                            else \"HEURISTIC\",\n                            \"evidence\": {\n                                \"type\": \"inference\",\n                                \"ref\": None,\n                                \"details\": \"Deterministic plan generation\",\n                            },\n                        },\n                    },\n                    {\n                        \"tool\": \"probe.last\",\n                        \"args\": \"\",\n                        \"rationale\": \"Probe recent activity for completeness.\",\n                        \"confidence\": 0.8,\n                        \"truth_annotation\": {\n                            \"truth\": \"HEURISTIC\",\n                            \"evidence\": {\n                                \"type\": \"inference\",\n                                \"ref\": None,\n                                \"details\": \"Deterministic plan generation\",\n                            },\n                        },\n                    },\n                ]\n\n                # Apply belief policy to filter and boost candidate tools\n                filtered_proposals, policy_notes = apply_belief_policy(\n                    candidate_proposals,\n                    objective_class,\n                    self.prior_state.get(\"beliefs\", {}),\n                )\n\n                # Build steps from filtered proposals\n                steps = []\n                for idx, proposal in enumerate(filtered_proposals):\n                    steps.append(\n                        {\n                            \"step_id\": str(uuid.uuid4()),\n                            \"index\": idx,\n                            \"tool\": proposal[\"tool\"],\n                            \"args\": proposal.get(\"args\", \"\"),\n                            \"rationale\": proposal.get(\"rationale\", \"\"),\n                            \"truth_annotation\": proposal.get(\"truth_annotation\", {}),\n                            \"status\": \"PENDING\",\n                            \"result_summary\": {},\n                            \"executed_at\": None,\n                            \"evaluator\": {\n                                \"score\": proposal.get(\"confidence\", 0.5),\n                                \"outcome\": \"SUCCESS\",\n                            },\n                            \"policy_adjustment\": proposal.get(\"policy_adjustment\", 0.0),\n                            \"policy_reason\": proposal.get(\"policy_reason\", \"\"),\n                            \"policy_belief_id\": proposal.get(\"policy_belief_id\", None),\n                        }\n                    )\n\n                plan = {\n                    \"schema_version\": 1,\n                    \"plan_id\": str(uuid.uuid4()),\n                    \"created_at\": datetime.now(timezone.utc).isoformat(),\n                    \"objective\": objective,\n                    \"objective_class\": objective_class,\n                    \"steps\": steps,\n                    \"current_index\": 0,\n                    \"status\": \"ACTIVE\",\n                    \"checkpoints\": [],\n                    \"policy_notes\": policy_notes,\n                }\n\n                # Apply belief-based plan revision before execution\n                plan_state = {\"plans\": {\"active\": [plan], \"history\": []}}\n                apply_plan_revision(plan_state, self.prior_state.get(\"beliefs\", {}))\n\n                # Enforce PROVED claims\n                if self.theorem_index:\n                    for step in plan[\"steps\"]:\n                        if \"truth_annotation\" in step:\n                            step[\"truth_annotation\"] = enforce_truth_annotation(\n                                step[\"truth_annotation\"], self.theorem_index\n                            )\n\n                # Save plan to state\n                if self.prior_state is None:\n                    self.prior_state = {\"plans\": {\"active\": [], \"history\": []}}\n                self.prior_state[\"plans\"] = plan_state[\"plans\"]\n\n                return {\n                    \"plan\": plan_state[\"plans\"][\"active\"][0],\n                    \"notes\": {\n                        \"method\": \"conservative_status_plan\",\n                        \"policy\": policy_notes,\n                        \"theorem_index_hash\": self.theorem_index[\"index_hash\"]\n                        if self.theorem_index\n                        else None,\n                    },\n                    \"errors\": [],\n                }\n            else:\n                # No plan for other objectives yet\n                return {\n                    \"plan\": None,\n                    \"notes\": {\"reason\": \"Objective not supported for planning\"},\n                    \"errors\": [],\n                }\n        except Exception as e:\n            return {\n                \"plan\": None,\n                \"notes\": {\"reason\": \"Plan generation error\"},\n                \"errors\": [str(e)],\n            }",
+    "start_line": 905,
+    "end_line": 1069,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 14,
+    "archive_tier": 1
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "persist",
+    "raw_source": "def persist(self) -> None:\n        \"\"\"Persist SCP cognitive state with schema validation.\"\"\"\n        if not self.available:\n            return\n        try:\n            # Initialize prior_state if None\n            if self.prior_state is None:\n                self.prior_state = {\n                    \"schema_version\": 1,\n                    \"updated_at\": datetime.now(timezone.utc).isoformat(),\n                    \"version\": 0,\n                    \"prev_hash\": \"\",\n                    \"state_hash\": \"\",\n                    \"observations\": [],\n                    \"last_proposals\": [],\n                    \"last_tool_results\": [],\n                    \"truth_events\": [],\n                    \"arp_status\": {},\n                    \"scp_status\": {},\n                    \"working_memory\": init_working_memory({}),\n                    \"plans\": {\"active\": [], \"history\": []},\n                    \"beliefs\": {\n                        \"schema_version\": 1,\n                        \"updated_at\": datetime.now(timezone.utc).isoformat(),\n                        \"beliefs_version\": 0,\n                        \"prev_hash\": \"\",\n                        \"state_hash\": \"\",\n                        \"items\": [],\n                    },\n                }\n\n            # Enforce max sizes\n            self.observations = self.observations[-50:]  # Keep last 50\n            self.last_proposals = self.last_proposals[-50:]\n            self.last_tool_results = self.last_tool_results[-50:]\n            self.truth_events = self.truth_events[-50:]\n\n            # Apply UWM decay and promotion\n            decay_and_promote(self.prior_state)\n\n            # Consolidate beliefs\n            run_id = str(uuid.uuid4())\n            beliefs_container = consolidate_beliefs(\n                self.prior_state,\n                run_id=run_id,\n                mode=self.mode,\n                stub_mode=isinstance(self.scp_nexus, StubSCPNexus),\n            )\n            self.prior_state[\"beliefs\"] = beliefs_container\n\n            # Apply plan revision based on beliefs\n            apply_plan_revision(self.prior_state, beliefs_container)\n\n            cognitive_status = {\"message\": \"default status\"}\n\n            # Handle stub vs real SCP\n            if isinstance(self.scp_nexus, StubSCPNexus):\n                cognitive_status = {\n                    \"message\": \"stub cognitive status\",\n                    \"stub\": True,\n                    \"mode\": self.mode,\n                    \"last_error\": self.last_error,\n                    \"scp_state_valid\": self.scp_state_valid,\n                    \"scp_recovery_mode\": self.scp_recovery_mode,\n                    \"scp_state_validation_error\": self.scp_state_validation_error,\n                }\n            else:\n                try:\n                    from Logos_AGI.System_Operations_Protocol.infrastructure.agent_system.base_nexus import (\n                        AgentRequest,\n                    )\n                except ImportError:\n\n                    class AgentRequest:\n                        def __init__(self, request_id, operation, payload):\n                            self.request_id = request_id\n                            self.operation = operation\n                            self.payload = payload\n\n                try:\n                    request = AgentRequest(\n                        str(uuid.uuid4()), \"get_cognitive_status\", {}\n                    )\n                    response = asyncio.run(\n                        self.scp_nexus.process_agent_request(request)\n                    )\n                    cognitive_status = (\n                        response.data if response.success else {\"error\": response.error}\n                    )\n                    cognitive_status[\"mode\"] = self.mode\n                    cognitive_status[\"last_error\"] = self.last_error\n                    cognitive_status[\"scp_state_valid\"] = self.scp_state_valid\n                    cognitive_status[\"scp_recovery_mode\"] = self.scp_recovery_mode\n                    cognitive_status[\"scp_state_validation_error\"] = (\n                        self.scp_state_validation_error\n                    )\n                except (RuntimeError, TypeError, ValueError, OSError) as e:\n                    cognitive_status = {\n                        \"error\": str(e),\n                        \"mode\": self.mode,\n                        \"last_error\": self.last_error,\n                        \"scp_state_valid\": self.scp_state_valid,\n                        \"scp_recovery_mode\": self.scp_recovery_mode,\n                        \"scp_state_validation_error\": self.scp_state_validation_error,\n                    }\n\n            # Build state dict\n            temp_state = {\n                \"schema_version\": 1,\n                \"updated_at\": datetime.now(timezone.utc).isoformat(),\n                \"version\": (self.prior_state.get(\"version\", 0) + 1)\n                if self.prior_state\n                else 1,\n                \"prev_hash\": self.prior_state.get(\"state_hash\")\n                if self.prior_state\n                else None,\n                \"observations\": self.observations,\n                \"last_proposals\": self.last_proposals,\n                \"last_tool_results\": self.last_tool_results,\n                \"truth_events\": self.truth_events,\n                \"arp_status\": self.arp_reasoner.status() if self.arp_reasoner else {},\n                \"scp_status\": cognitive_status,\n                \"working_memory\": self.prior_state.get(\n                    \"working_memory\", init_working_memory({})\n                ),\n                \"plans\": self.prior_state.get(\"plans\", {\"active\": [], \"history\": []}),\n                \"beliefs\": self.prior_state.get(\"beliefs\", {\"items\": []}),\n            }\n\n            # Compute state_hash\n            temp_state[\"state_hash\"] = canonical_json_hash(temp_state)\n\n            # Validate before writing\n            if not isinstance(self.scp_nexus, StubSCPNexus):\n                validate_scp_state(temp_state)\n\n            with open(self.persisted_path, \"w\") as f:\n                json.dump(temp_state, f, indent=2)\n            if self.persisted_path != self.compat_scp_state_path:\n                with open(self.compat_scp_state_path, \"w\") as f:\n                    json.dump(temp_state, f, indent=2)\n\n            # Update prior_state for next run\n            self.prior_state = temp_state\n        except Exception as e:\n            self.last_error = f\"Persist error: {e}\"",
+    "start_line": 1071,
+    "end_line": 1216,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 11,
+    "archive_tier": 1
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "health",
+    "raw_source": "def health(self) -> Dict[str, Any]:\n        \"\"\"Return health status.\"\"\"\n        wm = self.working_memory or {}\n        return {\n            \"available\": self.available,\n            \"last_error\": self.last_error,\n            \"arp_online\": self.arp_reasoner.online if self.arp_reasoner else False,\n            \"observations_count\": len(self.observations),\n            \"persisted_path\": str(self.persisted_path),\n            \"uwm_short_term_count\": len(wm.get(\"short_term\", [])),\n            \"uwm_long_term_count\": len(wm.get(\"long_term\", [])),\n        }",
+    "start_line": 1218,
+    "end_line": 1229,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 7,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "load_metrics",
+    "raw_source": "def load_metrics(_path):\n        return {\"metrics\": {}}",
+    "start_line": 30,
+    "end_line": 31,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 2,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "choose_best",
+    "raw_source": "def choose_best(proposals, _obj_class, _metrics):\n        return proposals",
+    "start_line": 33,
+    "end_line": 34,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 2,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "normalize_objective_class",
+    "raw_source": "def normalize_objective_class(obj):\n        return \"GENERAL\"",
+    "start_line": 36,
+    "end_line": 37,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 2,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "init_working_memory",
+    "raw_source": "def init_working_memory(state):\n        return state.get(\"working_memory\", {})",
+    "start_line": 51,
+    "end_line": 52,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 2,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "add_memory_item",
+    "raw_source": "def add_memory_item(state, item):\n        pass",
+    "start_line": 54,
+    "end_line": 55,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 2,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "decay_and_promote",
+    "raw_source": "def decay_and_promote(state):\n        pass",
+    "start_line": 57,
+    "end_line": 58,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 2,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "recall",
+    "raw_source": "def recall(state, obj_class, k=5, include_contradicted=False):\n        return []",
+    "start_line": 60,
+    "end_line": 61,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 2,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "stable_item_id",
+    "raw_source": "def stable_item_id(source, content, objective_tags):\n        return str(hash((source, tuple(sorted(objective_tags)), str(content))))",
+    "start_line": 63,
+    "end_line": 64,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 3,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "calculate_initial_salience",
+    "raw_source": "def calculate_initial_salience(truth, source, content):\n        return 0.5",
+    "start_line": 66,
+    "end_line": 67,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 2,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "load_theorem_index",
+    "raw_source": "def load_theorem_index(path):\n        return None",
+    "start_line": 75,
+    "end_line": 76,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 2,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "enforce_truth_annotation",
+    "raw_source": "def enforce_truth_annotation(annotation, index):\n        return annotation",
+    "start_line": 78,
+    "end_line": 79,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 2,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "validate_truth_annotation",
+    "raw_source": "def validate_truth_annotation(annotation):\n        pass",
+    "start_line": 81,
+    "end_line": 82,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 2,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "apply_belief_policy",
+    "raw_source": "def apply_belief_policy(proposals, obj_class, beliefs, **kwargs):\n        return proposals, {}",
+    "start_line": 89,
+    "end_line": 90,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 2,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "__init__",
+    "raw_source": "def __init__(self, request_id, operation, payload):\n                    self.request_id = request_id\n                    self.operation = operation\n                    self.payload = payload",
+    "start_line": 340,
+    "end_line": 343,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 3,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/logos_agi_adapter.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "__init__",
+    "raw_source": "def __init__(self, request_id, operation, payload):\n                            self.request_id = request_id\n                            self.operation = operation\n                            self.payload = payload",
+    "start_line": 1145,
+    "end_line": 1148,
+    "archive_tags": [
+      "DERIVATIVE_DEPENDENT",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 3,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_logos_agi_bootstrap_modes.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "test_stub_mode",
+    "raw_source": "def test_stub_mode():\n    \"\"\"Stub mode must always pass.\"\"\"\n    scripts_dir = Path(__file__).parent\n    repo_root = scripts_dir.parent\n    state_dir = Path(os.getenv(\"LOGOS_STATE_DIR\", repo_root / \"state\"))\n\n    cmd = [\n        sys.executable,\n        str(scripts_dir / \"start_agent.py\"),\n        \"--enable-logos-agi\",\n        \"--logos-agi-mode\",\n        \"stub\",\n        \"--objective\",\n        \"status\",\n        \"--read-only\",\n        \"--budget-sec\",\n        \"1\",\n    ]\n\n    result = subprocess.run(cmd, capture_output=True, text=True, cwd=repo_root)\n    if result.returncode != 0:\n        print(f\"FAIL: Stub mode failed: {result.stderr}\")\n        return False\n\n    # Check scp_state for available=True\n    scp_state_path = state_dir / \"scp_state.json\"\n    if scp_state_path.exists():\n        import json\n\n        with open(scp_state_path) as f:\n            scp_state = json.load(f)\n        if scp_state.get(\"arp_status\") is not None:  # stub has None\n            print(\"PASS: Stub mode bootstrap successful\")\n            return True\n        else:\n            print(\"FAIL: Stub mode did not set correct status\")\n            return False\n    else:\n        print(\"FAIL: No SCP state created\")\n        return False",
+    "start_line": 23,
+    "end_line": 62,
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 9,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_logos_agi_bootstrap_modes.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "test_real_mode",
+    "raw_source": "def test_real_mode():\n    \"\"\"Real mode must pass if dependencies OK, or fail with explicit error.\"\"\"\n    scripts_dir = Path(__file__).parent\n    repo_root = scripts_dir.parent\n\n    cmd = [\n        sys.executable,\n        str(scripts_dir / \"start_agent.py\"),\n        \"--enable-logos-agi\",\n        \"--logos-agi-mode\",\n        \"real\",\n        \"--objective\",\n        \"status\",\n        \"--read-only\",\n        \"--budget-sec\",\n        \"1\",\n    ]\n\n    result = subprocess.run(cmd, capture_output=True, text=True, cwd=repo_root)\n    if result.returncode == 0:\n        print(\"PASS: Real mode bootstrap successful\")\n        return True\n    else:\n        error_msg = result.stdout + result.stderr\n        if (\n            \"Real Logos_AGI bootstrap failed\" in error_msg\n            or \"Logos_AGI pin verification failed\" in error_msg\n        ):\n            print(\"PASS: Real mode failed with expected error\")\n            return True\n        else:\n            print(f\"FAIL: Real mode failed with unexpected error: {error_msg}\")\n            return False",
+    "start_line": 65,
+    "end_line": 97,
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 6,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_logos_agi_bootstrap_modes.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "main",
+    "raw_source": "def main():\n    print(\"Testing stub mode...\")\n    stub_ok = test_stub_mode()\n\n    print(\"Testing real mode...\")\n    real_ok = test_real_mode()\n\n    if stub_ok and real_ok:\n        print(\"All bootstrap tests passed\")\n        return True\n    else:\n        return False",
+    "start_line": 100,
+    "end_line": 111,
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 1,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_llm_bypass_smoke.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_run_with_payload",
+    "raw_source": "def _run_with_payload(payload: dict) -> subprocess.CompletedProcess:\n    if SCP_STATE.exists():\n        SCP_STATE.unlink()\n    env = os.environ.copy()\n    env[\"LLM_ADVISOR_STUB_PAYLOAD\"] = json.dumps(payload)\n    env.setdefault(\"LOGOS_DEV_BYPASS_OK\", \"1\")\n    cmd = [\n        sys.executable,\n        str(START_AGENT),\n        \"--enable-logos-agi\",\n        \"--logos-agi-mode\",\n        \"stub\",\n        \"--enable-llm-advisor\",\n        \"--llm-provider\",\n        \"stub\",\n        \"--llm-model\",\n        \"stub\",\n        \"--llm-timeout-sec\",\n        \"5\",\n        \"--objective\",\n        \"status\",\n        \"--assume-yes\",\n        \"--read-only\",\n        \"--budget-sec\",\n        \"2\",\n        \"--no-require-attestation\",\n    ]\n    return subprocess.run(cmd, capture_output=True, text=True, cwd=REPO_ROOT, env=env, timeout=40)",
+    "start_line": 30,
+    "end_line": 57,
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 9,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_llm_bypass_smoke.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_load_state",
+    "raw_source": "def _load_state():\n    if not SCP_STATE.exists():\n        return {}\n    try:\n        return json.loads(SCP_STATE.read_text())\n    except Exception:\n        return {}",
+    "start_line": 60,
+    "end_line": 66,
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 4,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_llm_bypass_smoke.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "test_high_impact_requires_uip",
+    "raw_source": "def test_high_impact_requires_uip() -> bool:\n    payload = {\n        \"proposals\": [\n            {\n                \"tool\": \"tool_proposal_pipeline\",\n                \"args\": \"approve everything\",\n                \"rationale\": \"auto-approve\",\n                \"truth_annotation\": {\"truth\": \"HEURISTIC\", \"evidence\": {\"type\": \"none\", \"ref\": None}},\n            }\n        ]\n    }\n    result = _run_with_payload(payload)\n    if result.returncode != 0:\n        print(f\"FAIL: run error {result.stderr}\")\n        return False\n    state = _load_state()\n    truth_events = state.get(\"truth_events\", []) if isinstance(state, dict) else []\n    flagged = [e for e in truth_events if isinstance(e, dict) and e.get(\"content\", {}).get(\"reason\") == \"uip_required\"]\n    if not flagged:\n        print(\"FAIL: UIP requirement not enforced for high-impact proposal\")\n        return False\n    return True",
+    "start_line": 69,
+    "end_line": 90,
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 9,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_llm_bypass_smoke.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "test_proved_downgraded",
+    "raw_source": "def test_proved_downgraded() -> bool:\n    payload = {\n        \"proposals\": [\n            {\n                \"tool\": \"mission.status\",\n                \"args\": \"\",\n                \"rationale\": \"claim proved\",\n                \"truth_annotation\": {\"truth\": \"PROVED\", \"evidence\": {\"type\": \"none\", \"ref\": None}},\n            }\n        ]\n    }\n    result = _run_with_payload(payload)\n    if result.returncode != 0:\n        print(f\"FAIL: run error {result.stderr}\")\n        return False\n    state = _load_state()\n    last_props = state.get(\"last_proposals\", []) if isinstance(state, dict) else []\n    if not last_props:\n        print(\"FAIL: no proposals recorded\")\n        return False\n    if any(p.get(\"truth_annotation\", {}).get(\"truth\") == \"PROVED\" for p in last_props):\n        print(\"FAIL: PROVED claim not downgraded\")\n        return False\n    return True",
+    "start_line": 93,
+    "end_line": 116,
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 6,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_llm_bypass_smoke.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "test_code_injection_rejected",
+    "raw_source": "def test_code_injection_rejected() -> bool:\n    payload = {\n        \"proposals\": [\n            {\n                \"tool\": \"mission.status\",\n                \"args\": \"__import__('os').system('rm -rf /')\",\n                \"rationale\": \"run shell\",\n                \"code\": \"rm -rf /\",  # should be rejected\n                \"truth_annotation\": {\"truth\": \"HEURISTIC\", \"evidence\": {\"type\": \"none\", \"ref\": None}},\n            }\n        ]\n    }\n    result = _run_with_payload(payload)\n    if result.returncode != 0:\n        print(f\"FAIL: run error {result.stderr}\")\n        return False\n    state = _load_state()\n    truth_events = state.get(\"truth_events\", []) if isinstance(state, dict) else []\n    rejected = [e for e in truth_events if isinstance(e, dict) and e.get(\"content\", {}).get(\"reason\") == \"direct_execution_attempt\"]\n    if not rejected:\n        print(\"FAIL: code injection not rejected\")\n        return False\n    return True",
+    "start_line": 119,
+    "end_line": 141,
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 9,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_llm_bypass_smoke.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "main",
+    "raw_source": "def main() -> bool:\n    tests = [\n        test_high_impact_requires_uip,\n        test_proved_downgraded,\n        test_code_injection_rejected,\n    ]\n    for test in tests:\n        if not test():\n            return False\n    print(\"PASS: LLM advisor bypass protections hold\")\n    return True",
+    "start_line": 144,
+    "end_line": 154,
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 1,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_tool_pipeline_smoke.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "run_pipeline_cmd",
+    "raw_source": "def run_pipeline_cmd(cmd_args):\n    \"\"\"Run pipeline command and return result.\"\"\"\n    cmd = [\n        sys.executable,\n        str(scripts_dir / \"tool_proposal_pipeline.py\"),\n        \"--allow-audit-write\",\n    ] + cmd_args\n    result = subprocess.run(cmd, capture_output=True, text=True, cwd=scripts_dir.parent)\n    return result",
+    "start_line": 33,
+    "end_line": 41,
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 5,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_tool_pipeline_smoke.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "test_pipeline",
+    "raw_source": "def test_pipeline():\n    \"\"\"Test the full pipeline.\"\"\"\n    repo_root = scripts_dir.parent\n    proposals_dir = repo_root / \"sandbox\" / \"tool_proposals\"\n\n    if \"LOGOS_AUDIT_DIR\" not in os.environ:\n        os.environ[\"LOGOS_AUDIT_DIR\"] = tempfile.mkdtemp(prefix=\"logos_smoke_audit_\")\n    os.environ.setdefault(\"LOGOS_OPERATOR_OK\", \"1\")\n    audit_root = Path(os.environ[\"LOGOS_AUDIT_DIR\"])\n    audit_root.mkdir(parents=True, exist_ok=True)\n\n    print(\"1. Generate proposals...\")\n    result = run_pipeline_cmd([\"generate\", \"--objective\", \"test\"])\n    if result.returncode != 0:\n        print(f\"Generate failed: {result.stderr}\")\n        return False\n    print(\"Generate OK\")\n\n    # Find generated proposals\n    if not proposals_dir.exists():\n        print(\"No proposals directory created\")\n        return False\n\n    proposal_files = [\n        f\n        for f in proposals_dir.glob(\"*.json\")\n        if not f.name.endswith(\".validation.json\")\n    ]\n    if not proposal_files:\n        print(\"No proposal files generated\")\n        return False\n\n    proposal_file = proposal_files[0]  # Use first one\n    print(f\"Using proposal: {proposal_file}\")\n\n    # Validate proposal schema\n    with open(proposal_file) as f:\n        proposal = json.load(f)\n    try:\n        validate_tool_proposal(proposal)\n        print(\"Proposal schema valid\")\n    except Exception as e:\n        print(f\"Invalid proposal: {e}\")\n        return False\n\n    print(\"2. Validate proposal...\")\n    result = run_pipeline_cmd([\"validate\", str(proposal_file)])\n    if result.returncode != 0:\n        print(f\"Validate failed: {result.stderr}\")\n        return False\n\n    validation_file = proposal_file.with_suffix(\".validation.json\")\n    if not validation_file.exists():\n        print(\"Validation report not created\")\n        return False\n\n    with open(validation_file) as f:\n        validation = json.load(f)\n    try:\n        validate_tool_validation_report(validation)\n        if not validation[\"exec_ok\"]:\n            print(f\"Validation failed: {validation['errors']}\")\n            return False\n        print(\"Validation passed\")\n    except Exception as e:\n        print(f\"Invalid validation report: {e}\")\n        return False\n\n    print(\"3. Attempt execution before approval (should fail)...\")\n    # Try to execute via start_agent (mock)\n    # Since we can't easily run start_agent, check if tool is in TOOLS\n    from scripts.system_stack_tbd.could_be_dev.start_agent import TOOLS\n\n    tool_name = proposal[\"tool_name\"]\n    if tool_name in TOOLS:\n        print(f\"Tool {tool_name} already registered - test invalid\")\n        return False\n    print(\"Tool not registered (good)\")\n\n    print(\"4. Approve proposal...\")\n    result = run_pipeline_cmd(\n        [\"approve\", str(proposal_file), \"--operator\", \"test_operator\"]\n    )\n    if result.returncode != 0:\n        print(f\"Approve failed: {result.stderr}\")\n        return False\n\n    approved_dir = repo_root / \"tools\" / \"approved\" / tool_name\n    if not approved_dir.exists():\n        print(\"Approved tool directory not created\")\n        return False\n\n    approved_proposal = approved_dir / f\"{proposal['proposal_id']}.json\"\n    if not approved_proposal.exists():\n        print(\"Approved proposal not copied\")\n        return False\n\n    tool_py = approved_dir / \"tool.py\"\n    if not tool_py.exists():\n        print(\"Tool code not copied\")\n        return False\n\n    approval_file = approved_dir / \"APPROVAL.json\"\n    if not approval_file.exists():\n        print(\"APPROVAL.json not created\")\n        return False\n\n    with open(approval_file) as f:\n        manifest = json.load(f)\n    if manifest[\"tool_name\"] != tool_name:\n        print(\"APPROVAL.json tool_name mismatch\")\n        return False\n\n    audit_file = audit_root / \"tool_approvals.jsonl\"\n    if not audit_file.exists():\n        print(\"Audit log not created\")\n        return False\n\n    print(\"Approval OK\")\n\n    print(\"5. Check tool loads correctly...\")\n    # Simulate loading\n    from logos.tool_registry_loader import load_approved_tools\n\n    load_approved_tools(TOOLS)\n\n    from scripts.system_stack_tbd.could_be_dev.start_agent import TOOLS\n\n    print(f\"TOOLS keys: {list(TOOLS.keys())}\")\n    if tool_name not in TOOLS:\n        print(f\"Tool {tool_name} not in TOOLS after load\")\n        return False\n    print(\"Tool loaded\")\n\n    print(\"6. Check audit logs...\")\n    with open(audit_file) as f:\n        lines = f.readlines()\n    if not lines:\n        print(\"No audit entries\")\n        return False\n\n    audit_entry = json.loads(lines[-1])\n    if audit_entry[\"proposal_id\"] != proposal[\"proposal_id\"]:\n        print(\"Audit entry mismatch\")\n        return False\n\n    required_hashes = [\"proposal_hash\", \"validation_hash\"]\n    for h in required_hashes:\n        if h not in audit_entry:\n            print(f\"Missing {h} in audit\")\n            return False\n\n    print(\"Audit OK\")\n\n    print(\"All tests passed!\")\n    return True",
+    "start_line": 44,
+    "end_line": 199,
+    "archive_tags": [
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 6,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/stress_sop_runtime.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_build_fallback_shared_resources",
+    "raw_source": "def _build_fallback_shared_resources() -> Any:\n    base_dir = REPO_ROOT / \"state\" / \"sop_runtime\"\n    base_dir.mkdir(parents=True, exist_ok=True)\n\n    class _FallbackSharedResources:\n        def __init__(self) -> None:\n            self.RUNTIME_BASE_DIR = base_dir\n            self._runtime_dir = base_dir\n\n        def configure_runtime_state_dir(self, path: Path) -> None:\n            target = Path(path)\n            target.mkdir(parents=True, exist_ok=True)\n            self._runtime_dir = target\n            self.RUNTIME_BASE_DIR = target\n\n        def runtime_log_path(self, name: str) -> Path:\n            target = self._runtime_dir / name\n            target.parent.mkdir(parents=True, exist_ok=True)\n            return target\n\n    return _FallbackSharedResources()",
+    "start_line": 51,
+    "end_line": 71,
+    "archive_tags": [
+      "EDGE_CASE",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 9,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/stress_sop_runtime.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_tail_jsonl",
+    "raw_source": "def _tail_jsonl(path: Path, keep: int = 5) -> List[Dict[str, Any]]:\n    if not path.exists():\n        return []\n    rows: deque[str] = deque(maxlen=keep)\n    with path.open(\"r\", encoding=\"utf-8\") as handle:\n        for line in handle:\n            rows.append(line.strip())\n    parsed: List[Dict[str, Any]] = []\n    for row in rows:\n        if not row:\n            continue\n        try:\n            parsed.append(json.loads(row))\n        except json.JSONDecodeError:\n            parsed.append({\"raw\": row})\n    return parsed",
+    "start_line": 152,
+    "end_line": 167,
+    "archive_tags": [
+      "EDGE_CASE",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 3,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/stress_sop_runtime.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_load_jsonl_since",
+    "raw_source": "def _load_jsonl_since(path: Path, since: float) -> List[Dict[str, Any]]:\n    if not path.exists():\n        return []\n    collected: List[Dict[str, Any]] = []\n    with path.open(\"r\", encoding=\"utf-8\") as handle:\n        for line in handle:\n            line = line.strip()\n            if not line:\n                continue\n            try:\n                record = json.loads(line)\n            except json.JSONDecodeError:\n                continue\n            timestamp = float(record.get(\"timestamp\", 0.0))\n            if timestamp >= since:\n                collected.append(record)\n    return collected",
+    "start_line": 170,
+    "end_line": 186,
+    "archive_tags": [
+      "EDGE_CASE",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 3,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/stress_sop_runtime.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_prepare_run_directory",
+    "raw_source": "def _prepare_run_directory() -> Path:\n    run_id = datetime.now(timezone.utc).strftime(\"%Y%m%dT%H%M%S%fZ\")\n    base = sop_shared_resources.RUNTIME_BASE_DIR\n    run_dir = base / f\"run-{run_id}\"\n    sop_shared_resources.configure_runtime_state_dir(run_dir)\n    for log_name in (\n        \"resource_events.jsonl\",\n        \"scheduler_history.jsonl\",\n        \"health_snapshots.jsonl\",\n    ):\n        sop_shared_resources.runtime_log_path(log_name)\n    return run_dir",
+    "start_line": 189,
+    "end_line": 200,
+    "archive_tags": [
+      "EDGE_CASE",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 9,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/stress_sop_runtime.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_summarize_log_file",
+    "raw_source": "def _summarize_log_file(path: Path) -> Dict[str, Any]:\n    lines = 0\n    first_timestamp: Optional[float] = None\n    last_timestamp: Optional[float] = None\n    if path.exists():\n        with path.open(\"r\", encoding=\"utf-8\") as handle:\n            for raw in handle:\n                row = raw.strip()\n                if not row:\n                    continue\n                lines += 1\n                try:\n                    record = json.loads(row)\n                except json.JSONDecodeError:\n                    continue\n                timestamp = record.get(\"timestamp\")\n                if isinstance(timestamp, (int, float)):\n                    value = float(timestamp)\n                    if first_timestamp is None or value < first_timestamp:\n                        first_timestamp = value\n                    if last_timestamp is None or value > last_timestamp:\n                        last_timestamp = value\n    return {\n        \"lines\": lines,\n        \"first_timestamp\": first_timestamp,\n        \"last_timestamp\": last_timestamp,\n    }",
+    "start_line": 203,
+    "end_line": 229,
+    "archive_tags": [
+      "EDGE_CASE",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 5,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/stress_sop_runtime.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "parse_args",
+    "raw_source": "def parse_args() -> argparse.Namespace:\n    parser = argparse.ArgumentParser(description=__doc__)\n    parser.add_argument(\n        \"--user-requests\",\n        type=int,\n        default=20,\n        help=\"Total synthetic user interactions to schedule\",\n    )\n    parser.add_argument(\n        \"--concurrency\",\n        type=int,\n        default=5,\n        help=\"Max concurrent UIP jobs\",\n    )\n    parser.add_argument(\n        \"--meta-cycles\",\n        type=int,\n        default=5,\n        help=\"Number of system agent meta-cognitive cycles\",\n    )\n    parser.add_argument(\n        \"--prompt\",\n        default=\"Trace the constructive LEM cascade and summarize resource posture.\",\n        help=\"Base prompt text for synthetic interactions\",\n    )\n    parser.add_argument(\n        \"--output\",\n        type=Path,\n        help=\"Optional path to write JSON summary\",\n    )\n    parser.add_argument(\n        \"--scp-mode\",\n        choices=[\"local\", \"off\", \"remote\"],\n        default=\"local\",\n        help=\"Select SCP transport mode\",\n    )\n    return parser.parse_args()",
+    "start_line": 419,
+    "end_line": 455,
+    "archive_tags": [
+      "EDGE_CASE",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 8,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/stress_sop_runtime.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "main",
+    "raw_source": "def main() -> None:\n    args = parse_args()\n    result = asyncio.run(run(args))\n    output = json.dumps(result, indent=2)\n    if args.output:\n        args.output.write_text(output, encoding=\"utf-8\")\n    else:\n        print(output)",
+    "start_line": 458,
+    "end_line": 465,
+    "archive_tags": [
+      "EDGE_CASE",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 5,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/stress_sop_runtime.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "__init__",
+    "raw_source": "def __init__(self) -> None:\n            self.RUNTIME_BASE_DIR = base_dir\n            self._runtime_dir = base_dir",
+    "start_line": 56,
+    "end_line": 58,
+    "archive_tags": [
+      "EDGE_CASE",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 5,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/stress_sop_runtime.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "configure_runtime_state_dir",
+    "raw_source": "def configure_runtime_state_dir(self, path: Path) -> None:\n            target = Path(path)\n            target.mkdir(parents=True, exist_ok=True)\n            self._runtime_dir = target\n            self.RUNTIME_BASE_DIR = target",
+    "start_line": 60,
+    "end_line": 64,
+    "archive_tags": [
+      "EDGE_CASE",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 5,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/stress_sop_runtime.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "runtime_log_path",
+    "raw_source": "def runtime_log_path(self, name: str) -> Path:\n            target = self._runtime_dir / name\n            target.parent.mkdir(parents=True, exist_ok=True)\n            return target",
+    "start_line": 66,
+    "end_line": 69,
+    "archive_tags": [
+      "EDGE_CASE",
+      "HISTORICAL_REFERENCE"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 5,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/cycle_ledger.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_sha256_file",
+    "raw_source": "def _sha256_file(path: Path) -> str:\n    digest = hashlib.sha256()\n    with path.open(\"rb\") as handle:\n        for chunk in iter(lambda: handle.read(65536), b\"\"):\n            if not chunk:\n                break\n            digest.update(chunk)\n    return digest.hexdigest()",
+    "start_line": 26,
+    "end_line": 33,
+    "archive_tags": [
+      "EDGE_CASE",
+      "POST_REWRITE_REVISIT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 3,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/cycle_ledger.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_normalize_path",
+    "raw_source": "def _normalize_path(raw_path: str, repo_root: Path) -> Path:\n    candidate = Path(raw_path)\n    if candidate.is_absolute():\n        return candidate\n    return repo_root / candidate",
+    "start_line": 36,
+    "end_line": 40,
+    "archive_tags": [
+      "EDGE_CASE",
+      "POST_REWRITE_REVISIT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 3,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/cycle_ledger.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_collect_bundle_hashes",
+    "raw_source": "def _collect_bundle_hashes(\n    promotion_outcomes: Iterable[Dict[str, Any]],\n    repo_root: Path,\n) -> Dict[str, str]:\n    hashes: Dict[str, str] = {}\n    for entry in promotion_outcomes:\n        outcome = entry.get(\"outcome\")\n        if not isinstance(outcome, dict):\n            continue\n        bundle_paths = outcome.get(\"bundle_paths\") or {}\n        if not isinstance(bundle_paths, dict):\n            continue\n        for _, raw_path in bundle_paths.items():\n            if not raw_path:\n                continue\n            resolved = _normalize_path(raw_path, repo_root)\n            if not resolved.exists() or not resolved.is_file():\n                continue\n            path_obj = Path(raw_path)\n            if path_obj.is_absolute():\n                try:\n                    key = path_obj.relative_to(repo_root).as_posix()\n                except ValueError:\n                    key = path_obj.as_posix()\n            else:\n                key = path_obj.as_posix()\n            hashes[key] = _sha256_file(resolved)\n    return hashes",
+    "start_line": 43,
+    "end_line": 70,
+    "archive_tags": [
+      "EDGE_CASE",
+      "POST_REWRITE_REVISIT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 5,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/cycle_ledger.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_sanitize_steps",
+    "raw_source": "def _sanitize_steps(steps: List[Dict[str, Any]]) -> List[Dict[str, Any]]:\n    sanitized: List[Dict[str, Any]] = []\n    for step in steps:\n        sanitized.append(\n            {\n                \"step\": step.get(\"step\"),\n                \"tool\": step.get(\"tool\"),\n                \"status\": step.get(\"status\"),\n                \"output\": step.get(\"output\", \"\"),\n            }\n        )\n    return sanitized",
+    "start_line": 73,
+    "end_line": 84,
+    "archive_tags": [
+      "EDGE_CASE",
+      "POST_REWRITE_REVISIT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 4,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/cycle_ledger.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_sanitize_outcomes",
+    "raw_source": "def _sanitize_outcomes(outcomes: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:\n    sanitized: List[Dict[str, Any]] = []\n    for entry in outcomes:\n        sanitized.append(\n            {\n                \"tool\": entry.get(\"tool\"),\n                \"status\": entry.get(\"status\"),\n                \"config\": entry.get(\"config\"),\n                \"outcome\": entry.get(\"outcome\"),\n                \"reason\": entry.get(\"reason\"),\n                \"timestamp\": entry.get(\"timestamp\"),\n                \"run_id\": entry.get(\"run_id\"),\n                \"returncode\": entry.get(\"returncode\"),\n                \"raw_status\": entry.get(\"raw_status\"),\n            }\n        )\n    return sanitized",
+    "start_line": 87,
+    "end_line": 103,
+    "archive_tags": [
+      "EDGE_CASE",
+      "POST_REWRITE_REVISIT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 7,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/cycle_ledger.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "write_cycle_ledger",
+    "raw_source": "def write_cycle_ledger(\n    *,\n    run_id: str,\n    objective: str,\n    mission: str,\n    timestamp_utc: str,\n    steps: List[Dict[str, Any]],\n    promotion_outcomes: List[Dict[str, Any]],\n    tests_required: Iterable[str],\n    verification_steps: Iterable[str],\n    rollback_steps: Iterable[str],\n    sandbox_root: Path,\n    repo_root: Path,\n) -> Path:\n    sandbox_root.mkdir(parents=True, exist_ok=True)\n\n    entry = {\n        \"schema_version\": LEDGER_SCHEMA_VERSION,\n        \"run_id\": run_id,\n        \"timestamp_utc\": timestamp_utc,\n        \"objective\": objective,\n        \"mission\": mission,\n        \"steps\": _sanitize_steps(steps),\n        \"promotion_outcomes\": _sanitize_outcomes(promotion_outcomes),\n        \"bundle_hashes\": _collect_bundle_hashes(promotion_outcomes, repo_root),\n        \"tests_required\": sorted({item for item in tests_required if item}),\n        \"verification_steps\": sorted({item for item in verification_steps if item}),\n        \"rollback_steps\": sorted({item for item in rollback_steps if item}),\n        \"operator_decision\": None,\n    }\n\n    ledger_path = sandbox_root / f\"cycle_ledger_{run_id}.json\"\n    latest_path = sandbox_root / \"cycle_ledger_latest.json\"\n\n    payload = json.dumps(entry, indent=2, sort_keys=True)\n    ledger_path.write_text(payload + \"\\n\", encoding=\"utf-8\")\n    latest_path.write_text(payload + \"\\n\", encoding=\"utf-8\")\n    return ledger_path",
+    "start_line": 106,
+    "end_line": 143,
+    "archive_tags": [
+      "EDGE_CASE",
+      "POST_REWRITE_REVISIT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 8,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/evidence.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_as_posix",
+    "raw_source": "def _as_posix(path: str) -> str:\n    return Path(path).as_posix()",
+    "start_line": 28,
+    "end_line": 29,
+    "archive_tags": [
+      "EXPERIMENTAL_INSIGHT",
+      "POST_REWRITE_REVISIT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 2,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/evidence.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "validate_evidence_ref",
+    "raw_source": "def validate_evidence_ref(ref: Dict[str, Any]) -> Dict[str, Any]:\n    \"\"\"Validate a single evidence reference and return normalized copy.\"\"\"\n    if not isinstance(ref, dict):\n        raise ValueError(\"evidence ref must be dict\")\n    ref_type = ref.get(\"type\")\n    if ref_type not in _ALLOWED_TYPES:\n        raise ValueError(f\"unsupported evidence type: {ref_type}\")\n\n    if ref_type == \"file\":\n        path = str(ref.get(\"path\", \"\")).strip()\n        start = int(ref.get(\"start_line\", 0))\n        end = int(ref.get(\"end_line\", 0))\n        if not path:\n            raise ValueError(\"file evidence missing path\")\n        if start <= 0 or end <= 0 or end < start:\n            raise ValueError(\"file evidence invalid line range\")\n        return {\n            \"type\": \"file\",\n            \"path\": _as_posix(path),\n            \"start_line\": start,\n            \"end_line\": end,\n        }\n\n    if ref_type == \"url\":\n        url = str(ref.get(\"url\", \"\")).strip()\n        if not (url.startswith(\"http://\") or url.startswith(\"https://\")):\n            raise ValueError(\"url evidence must be http(s)\")\n        return {\"type\": \"url\", \"url\": url}\n\n    if ref_type == \"coq\":\n        inner = ref.get(\"ref\")\n        if not isinstance(inner, dict):\n            raise ValueError(\"coq evidence requires ref object\")\n        # Do not validate against index here; delegate to proof_refs when available.\n        return {\"type\": \"coq\", \"ref\": dict(inner)}\n\n    if ref_type == \"schema\":\n        schema_id = (\n            str(ref.get(\"schema\", \"\")).strip() or str(ref.get(\"ref\", \"\")).strip()\n        )\n        if not schema_id:\n            raise ValueError(\"schema evidence requires identifier\")\n        return {\"type\": \"schema\", \"schema\": schema_id}\n\n    if ref_type == \"hash\":\n        hash_value = str(ref.get(\"hash\", \"\")).strip() or str(ref.get(\"ref\", \"\")).strip()\n        if not hash_value:\n            raise ValueError(\"hash evidence requires value\")\n        return {\"type\": \"hash\", \"hash\": hash_value}\n\n    raise ValueError(f\"unsupported evidence type: {ref_type}\")",
+    "start_line": 32,
+    "end_line": 82,
+    "archive_tags": [
+      "EXPERIMENTAL_INSIGHT",
+      "POST_REWRITE_REVISIT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 5,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/evidence.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "_sort_key",
+    "raw_source": "def _sort_key(ref: Dict[str, Any]) -> Tuple:\n    ref_type = ref.get(\"type\", \"\")\n    if ref_type == \"file\":\n        return (\n            ref_type,\n            ref.get(\"path\", \"\"),\n            int(ref.get(\"start_line\", 0)),\n            int(ref.get(\"end_line\", 0)),\n        )\n    if ref_type == \"url\":\n        return (ref_type, ref.get(\"url\", \"\"))\n    if ref_type == \"coq\":\n        inner = ref.get(\"ref\", {}) if isinstance(ref.get(\"ref\"), dict) else {}\n        return (ref_type, inner.get(\"theorem\", \"\"), inner.get(\"file\", \"\"))\n    if ref_type == \"schema\":\n        return (ref_type, ref.get(\"schema\", \"\"))\n    if ref_type == \"hash\":\n        return (ref_type, ref.get(\"hash\", \"\"))\n    return (ref_type, \"\")",
+    "start_line": 85,
+    "end_line": 103,
+    "archive_tags": [
+      "EXPERIMENTAL_INSIGHT",
+      "POST_REWRITE_REVISIT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 4,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/evidence.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "normalize_evidence_refs",
+    "raw_source": "def normalize_evidence_refs(refs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:\n    \"\"\"Dedupe and deterministically order evidence references.\"\"\"\n    normalized: List[Dict[str, Any]] = []\n    seen: set[Tuple] = set()\n    for raw in refs or []:\n        try:\n            valid = validate_evidence_ref(raw)\n        except ValueError:\n            continue\n        key = _sort_key(valid)\n        if key in seen:\n            continue\n        seen.add(key)\n        normalized.append(valid)\n    normalized.sort(key=_sort_key)\n    return normalized",
+    "start_line": 106,
+    "end_line": 121,
+    "archive_tags": [
+      "EXPERIMENTAL_INSIGHT",
+      "POST_REWRITE_REVISIT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 4,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/evidence.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "evidence_to_citation_string",
+    "raw_source": "def evidence_to_citation_string(ref: Dict[str, Any]) -> str:\n    ref_type = ref.get(\"type\")\n    if ref_type == \"file\":\n        start = int(ref.get(\"start_line\", 0))\n        end = int(ref.get(\"end_line\", 0))\n        suffix = f\"L{start}-L{end}\" if start != end else f\"L{start}\"\n        return f\"[file:{ref.get('path', '')}:{suffix}]\"\n    if ref_type == \"url\":\n        return f\"[url:{ref.get('url', '')}]\"\n    if ref_type == \"coq\":\n        inner = ref.get(\"ref\", {}) if isinstance(ref.get(\"ref\"), dict) else {}\n        theorem = inner.get(\"theorem\") or inner.get(\"file\") or \"coq\"\n        return f\"[coq:{theorem}]\"\n    if ref_type == \"schema\":\n        return f\"[schema:{ref.get('schema', '')}]\"\n    if ref_type == \"hash\":\n        return f\"[hash:{ref.get('hash', '')}]\"\n    return \"[evidence]\"",
+    "start_line": 124,
+    "end_line": 141,
+    "archive_tags": [
+      "EXPERIMENTAL_INSIGHT",
+      "POST_REWRITE_REVISIT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 4,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/evidence.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "is_proved_reference",
+    "raw_source": "def is_proved_reference(ref: Dict[str, Any], theorem_index: Dict[str, Any]) -> bool:\n    \"\"\"Return True if ref is a proved Coq reference against index.\"\"\"\n    if not theorem_index:\n        return False\n    try:\n        valid = validate_evidence_ref(ref)\n    except Exception:\n        return False\n    if valid.get(\"type\") != \"coq\":\n        return False\n    inner = valid.get(\"ref\") or {}\n    return proof_refs.is_proved_ref(inner, theorem_index)",
+    "start_line": 144,
+    "end_line": 155,
+    "archive_tags": [
+      "EXPERIMENTAL_INSIGHT",
+      "POST_REWRITE_REVISIT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 4,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "canonical_hash",
+    "raw_source": "def canonical_hash(payload: Dict) -> str:\n    \"\"\"Compute a SHA-256 hash over canonical JSON serialization.\"\"\"\n\n    serialized = json.dumps(\n        payload,\n        sort_keys=True,\n        separators=(\",\", \":\"),\n    ).encode(\"utf-8\")\n    return hashlib.sha256(serialized).hexdigest()",
+    "start_line": 181,
+    "end_line": 189,
+    "archive_tags": [
+      "EDGE_CASE",
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 3,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "instantiate_reasoner",
+    "raw_source": "def instantiate_reasoner(agent_id: str) -> AdvancedReasoner:\n    \"\"\"Initialize the ARP reasoner in a deterministic analysis-only state.\"\"\"\n\n    reasoner = AdvancedReasoner(agent_identity=agent_id)\n    reasoner.start()\n    return reasoner",
+    "start_line": 192,
+    "end_line": 197,
+    "archive_tags": [
+      "EDGE_CASE",
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 6,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "build_inputs",
+    "raw_source": "def build_inputs(scenario_id: str, prompt: str) -> Dict[str, Dict[str, str]]:\n    \"\"\"Build the deterministic input payload recorded in the trace.\"\"\"\n\n    configuration = {\n        \"mode\": \"analysis_only\",\n        \"max_depth\": 4,\n        \"temperature\": 0.0,\n        \"deterministic_seed\": \"LOGOS_PHASE2_ARP_FIXTURES_v1\",\n        \"nexus_runtime\": \"disabled\",\n    }\n    guardrails = [\n        \"No SCP runtime execution\",\n        \"Use only constructive Phase-1 artifacts\",\n        \"All outputs tagged with LOGOS agent identity\",\n    ]\n    return {\n        \"scenario_id\": scenario_id,\n        \"prompt\": prompt,\n        \"configuration\": configuration,\n        \"guardrails\": guardrails,\n    }",
+    "start_line": 200,
+    "end_line": 220,
+    "archive_tags": [
+      "EDGE_CASE",
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 10,
+    "archive_tier": 1
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "run_deterministic_arp",
+    "raw_source": "def run_deterministic_arp(\n    reasoner: AdvancedReasoner,\n    scenario_id: str,\n) -> Tuple[List[Dict[str, str]], str]:\n    \"\"\"Produce deterministic ARP reasoning using the predefined blueprint.\"\"\"\n\n    _ = reasoner.status()  # Recorded to ensure the stubbed ARP is online.\n    blueprint = BLUEPRINTS[scenario_id]\n    reasoning_steps: List[Dict[str, str]] = []\n\n    for index, step in enumerate(blueprint.steps, start=1):\n        provenance_payload = {\n            \"operation\": step[\"operation\"],\n            \"analysis\": step[\"analysis\"],\n        }\n        reasoning_steps.append(\n            {\n                \"index\": index,\n                \"operation\": step[\"operation\"],\n                \"analysis\": step[\"analysis\"],\n                \"provenance_hash\": canonical_hash(provenance_payload),\n            }\n        )\n\n    return reasoning_steps, blueprint.conclusion",
+    "start_line": 223,
+    "end_line": 247,
+    "archive_tags": [
+      "EDGE_CASE",
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 11,
+    "archive_tier": 1
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "build_trace",
+    "raw_source": "def build_trace(\n    reasoner: AdvancedReasoner,\n    scenario_id: str,\n    prompt: str,\n) -> Dict:\n    \"\"\"Construct the ARP reasoning trace object for the scenario.\"\"\"\n\n    inputs = build_inputs(scenario_id, prompt)\n    reasoning_steps, final_conclusion = run_deterministic_arp(\n        reasoner,\n        scenario_id,\n    )\n\n    commitment_payload = {\n        \"scenario_id\": scenario_id,\n        \"inputs\": inputs,\n        \"reasoning_steps\": reasoning_steps,\n        \"final_conclusion\": final_conclusion,\n    }\n\n    hash_commitment = canonical_hash(commitment_payload)\n\n    trace = {\n        \"agent_id\": AGENT_ID,\n        \"agent_hash\": AGENT_HASH,\n        \"scenario_id\": scenario_id,\n        \"inputs\": inputs,\n        \"reasoning_steps\": reasoning_steps,\n        \"final_conclusion\": final_conclusion,\n        \"hash_commitment\": hash_commitment,\n    }\n\n    return trace",
+    "start_line": 250,
+    "end_line": 282,
+    "archive_tags": [
+      "EDGE_CASE",
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 11,
+    "archive_tier": 1
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "write_json",
+    "raw_source": "def write_json(path: Path, payload: Dict) -> None:\n    \"\"\"Write JSON payload with stable formatting.\"\"\"\n\n    path.parent.mkdir(parents=True, exist_ok=True)\n    with path.open(\"w\", encoding=\"utf-8\") as handle:\n        json.dump(payload, handle, indent=2, sort_keys=True)\n        handle.write(\"\\n\")",
+    "start_line": 285,
+    "end_line": 291,
+    "archive_tags": [
+      "EDGE_CASE",
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 3,
+    "archive_tier": 4
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "write_trace",
+    "raw_source": "def write_trace(trace: Dict) -> Path:\n    \"\"\"Persist an ARP trace into the sandbox directory.\"\"\"\n\n    filename = f\"arp_trace_{trace['scenario_id']}.json\"\n    path = SANDBOX_DIR / filename\n    write_json(path, trace)\n    return path",
+    "start_line": 294,
+    "end_line": 300,
+    "archive_tags": [
+      "EDGE_CASE",
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 7,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "build_modal_fixture",
+    "raw_source": "def build_modal_fixture(\n    trace: Dict,\n    modal_chain: str,\n    prompt_focus: str,\n) -> Dict:\n    \"\"\"Create the modal chain fixture referencing the ARP trace commitment.\"\"\"\n\n    deterministic_payload = {\n        \"scenario_id\": trace[\"scenario_id\"],\n        \"analysis_mode\": trace[\"inputs\"][\"configuration\"][\"mode\"],\n        \"prompt_focus\": prompt_focus,\n        \"guardrails\": trace[\"inputs\"][\"guardrails\"],\n    }\n\n    expected_response = BLUEPRINTS[trace[\"scenario_id\"]].expected_modal_response\n\n    fixture = {\n        \"agent_id\": AGENT_ID,\n        \"agent_hash\": AGENT_HASH,\n        \"modal_chain\": modal_chain,\n        \"arp_trace_hash\": trace[\"hash_commitment\"],\n        \"deterministic_payload\": deterministic_payload,\n        \"expected_modal_response\": expected_response,\n    }\n\n    return fixture",
+    "start_line": 303,
+    "end_line": 328,
+    "archive_tags": [
+      "EDGE_CASE",
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 9,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "write_fixture",
+    "raw_source": "def write_fixture(trace: Dict, modal_chain: str, prompt_focus: str) -> Path:\n    \"\"\"Persist a modal chain fixture in the sandbox.\"\"\"\n\n    suffix = modal_chain.upper()\n    filename = (\n        f\"modal_fixture_{suffix}_alignment.json\"\n        if modal_chain == \"CAUSAL\"\n        else f\"modal_fixture_{suffix}_preservation.json\"\n    )\n    path = SANDBOX_DIR / filename\n    fixture = build_modal_fixture(trace, modal_chain, prompt_focus)\n    write_json(path, fixture)\n    return path",
+    "start_line": 331,
+    "end_line": 343,
+    "archive_tags": [
+      "EDGE_CASE",
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 5,
+    "archive_tier": 3
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "find_phase2_fixture_spec",
+    "raw_source": "def find_phase2_fixture_spec(root: Path) -> Path:\n    \"\"\"Locate the Phase 2 ARP fixture specification starting at repo root.\"\"\"\n\n    candidate = root / \"sandbox\" / PHASE2_FIXTURE_SPEC_NAME\n    if candidate.exists():\n        return candidate\n\n    matches = list(root.rglob(PHASE2_FIXTURE_SPEC_NAME))\n    if not matches:\n        raise FileNotFoundError(\n            f\"Could not locate {PHASE2_FIXTURE_SPEC_NAME} within {root}\"\n        )\n    if len(matches) > 1:\n        raise RuntimeError(\n            f\"Multiple copies of {PHASE2_FIXTURE_SPEC_NAME} found: {matches}\"\n        )\n    return matches[0]",
+    "start_line": 346,
+    "end_line": 362,
+    "archive_tags": [
+      "EDGE_CASE",
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 10,
+    "archive_tier": 1
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "backfill_fixture_hashes",
+    "raw_source": "def backfill_fixture_hashes(spec_path: Path, traces: Dict[str, Dict]) -> None:\n    \"\"\"Update the Phase 2 fixture plan with actual ARP trace commitments.\"\"\"\n\n    data = json.loads(spec_path.read_text(encoding=\"utf-8\"))\n\n    for fixture in data.get(\"proposed_fixtures\", []):\n        modal_chain = fixture.get(\"modal_chain\")\n        scenario_id = fixture.get(\"scenario_id\")\n        if modal_chain not in {\"CAUSAL\", \"EPISTEMIC\"}:\n            continue\n        if fixture.get(\"arp_trace_hash\") != \"TODO_HASH_AFTER_CAPTURE\":\n            continue\n        if scenario_id not in traces:\n            raise KeyError(\n                f\"Trace for scenario {scenario_id} not captured; cannot backfill hash\"\n            )\n        fixture[\"arp_trace_hash\"] = traces[scenario_id][\"hash_commitment\"]\n\n    write_json(spec_path, data)",
+    "start_line": 365,
+    "end_line": 383,
+    "archive_tags": [
+      "EDGE_CASE",
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 9,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "capture_traces_and_backfill",
+    "raw_source": "def capture_traces_and_backfill() -> None:\n    \"\"\"Top-level orchestration for trace capture and spec update.\"\"\"\n\n    reasoner = instantiate_reasoner(AGENT_ID)\n    traces: Dict[str, Dict] = {}\n\n    for scenario_id, scenario in SCENARIOS.items():\n        trace = build_trace(reasoner, scenario_id, scenario[\"prompt\"])\n        write_trace(trace)\n        traces[scenario_id] = trace\n        write_fixture(trace, scenario[\"modal_chain\"], scenario[\"prompt_focus\"])\n\n    spec_path = find_phase2_fixture_spec(REPO_ROOT)\n    backfill_fixture_hashes(spec_path, traces)",
+    "start_line": 386,
+    "end_line": 399,
+    "archive_tags": [
+      "EDGE_CASE",
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 7,
+    "archive_tier": 2
+  },
+  {
+    "file": "Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+    "cluster": "LEGACY_SCRIPTS_TO_EXAMINE/agents",
+    "function_name": "__init__",
+    "raw_source": "def __init__(self, *args: Any, **kwargs: Any) -> None:  # noqa: D401\n            raise RuntimeError(\n                \"Advanced_Reasoning_Protocol is not available in this runtime\"\n            ) from _MISSING_ARP",
+    "start_line": 52,
+    "end_line": 55,
+    "archive_tags": [
+      "EDGE_CASE",
+      "DERIVATIVE_DEPENDENT"
+    ],
+    "phase": "Pre-Rewrite_Classification",
+    "authority": "human",
+    "tier_score": 9,
+    "archive_tier": 2
+  }
+]

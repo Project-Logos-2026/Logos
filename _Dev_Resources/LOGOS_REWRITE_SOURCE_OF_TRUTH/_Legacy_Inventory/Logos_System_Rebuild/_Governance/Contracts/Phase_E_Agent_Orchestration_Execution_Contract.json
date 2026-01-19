@@ -1,0 +1,64 @@
+{
+  "phase": "Phase-E",
+  "name": "Agent Orchestration \u2014 Declarative Binding",
+  "status": "AUTHORITATIVE \u00b7 NON-EXECUTABLE",
+  "canonical_role": [
+    "Declarative agent orchestration planning",
+    "Protocol-to-agent binding specification",
+    "Execution prohibition boundary"
+  ],
+  "ordering_constraints": {
+    "must_follow": [
+      "Phase-D: Runtime Spine \u2014 Constructive Compile"
+    ],
+    "must_precede": [
+      "Phase-F: Authorized Agent Execution"
+    ],
+    "reordering_forbidden": true
+  },
+  "ordering_guarantee": [
+    "Phase-E: Agent Orchestration \u2014 Declarative Binding",
+    "Phase-F: Authorized Agent Execution"
+  ],
+  "inputs": {
+    "required": [
+      "logos_agent_id",
+      "universal_session_id",
+      "prepared_bindings"
+    ],
+    "source": "Phase-D Constructive Compile Output"
+  },
+  "outputs": {
+    "allowed": [
+      "orchestration_plan",
+      "agent_role_map",
+      "protocol_binding_map"
+    ],
+    "execution": "FORBIDDEN"
+  },
+  "invariants": {
+    "no_agent_instantiation": true,
+    "no_protocol_activation": true,
+    "no_sop_activation": true,
+    "no_memory_access": true,
+    "no_reasoning_execution": true,
+    "no_external_library_access": true
+  },
+  "failure_semantics": {
+    "any_violation": "immediate_halt",
+    "retries": "forbidden",
+    "degraded_modes": "forbidden"
+  },
+  "governance": {
+    "binding": [
+      "Runtime Module Header Contract",
+      "Runtime Spine Execution Contract"
+    ],
+    "enforcement": "fail_closed"
+  },
+  "successor_phase": "Phase-F",
+  "notes": "Phase-E defines orchestration intent only. No execution authority exists in this phase.",
+  "explicit_prohibitions": [
+    "protocol_activation"
+  ]
+}

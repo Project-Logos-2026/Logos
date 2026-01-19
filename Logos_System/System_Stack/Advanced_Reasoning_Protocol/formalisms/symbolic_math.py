@@ -1,3 +1,35 @@
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
+
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: symbolic_math
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Advanced_Reasoning_Protocol/formalisms/symbolic_math.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
+
 """
 Fractal-Enhanced Symbolic Mathematics Engine
 
@@ -14,7 +46,7 @@ import sympy as sp
 
 # Lambda Engine Integration
 try:
-    from ....intelligence.trinity.thonoc.symbolic_engine.lambda_engine.lambda_engine import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.intelligence.trinity.thonoc.symbolic_engine.lambda_engine.lambda_engine import (
         LambdaEngine,
     )
     LAMBDA_ENGINE_AVAILABLE = True
@@ -23,7 +55,7 @@ except ImportError:
 
 # Fractal Orbital Integration
 try:
-    from ....Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_orbital_predictor import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_orbital_predictor import (
         FractalOrbitalPredictor,
     )
     FRACTAL_ORBITAL_AVAILABLE = True

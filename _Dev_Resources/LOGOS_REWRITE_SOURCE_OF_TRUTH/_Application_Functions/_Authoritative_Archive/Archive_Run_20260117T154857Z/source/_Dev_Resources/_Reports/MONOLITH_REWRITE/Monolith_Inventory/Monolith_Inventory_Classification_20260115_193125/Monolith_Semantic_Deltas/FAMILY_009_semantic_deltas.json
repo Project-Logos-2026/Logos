@@ -1,0 +1,44 @@
+{
+  "family_id": "FAMILY_009",
+  "member_count": 2,
+  "members": [
+    "AdvancedReasoner.__init__",
+    "__init__"
+  ],
+  "invariant_semantics": {
+    "operation_type": [],
+    "data_role": []
+  },
+  "divergent_semantics": {
+    "semantic_tags": {
+      "AdvancedReasoner.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "__init__": [
+        "BOOTSTRAP",
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ]
+    },
+    "control_role": {
+      "AdvancedReasoner.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "AdvancedReasoner.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "__init__": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ]
+    }
+  }
+}

@@ -1,0 +1,6253 @@
+{
+  "family_id": "FAMILY_039",
+  "shared_semantics": [
+    "GOVERNANCE",
+    "TEST_OR_EXAMPLE"
+  ],
+  "shared_spine_phase": null,
+  "shared_execution_role": null,
+  "analysis_coverage": {
+    "members_total": 60,
+    "members_extracted": 54,
+    "members_missing_profile": 0,
+    "members_missing_source": 6,
+    "parse_failures": 0
+  },
+  "members": [
+    {
+      "qualified_name": "TestConsistencyValidator.setUp",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "d7c816ddc138ab31c6377861e295b4b6b78c736d1a5d3aac819be3725691f47d",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "ConsistencyValidator"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestConsistencyValidator.test_contradiction_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "b7be76f47243663da88d61959b1185a6b8bcb5dad03f3227baa575ca554fdbf2",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of logical contradictions",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "any",
+          "issue.lower",
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.validator.validate_proposition_consistency"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestConsistencyValidator.test_tautology_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "744845eb618e09f1623215da878a3d8c4c6cd8687d92891b336ed9bc758f2af3",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of logical tautologies",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "any",
+          "issue.lower",
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.validator.validate_proposition_consistency"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestConsistencyValidator.test_modal_axiom_validation",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "0c112ec398c8961ec0a88331629719a6d0482f1a48c8892d9b40201004904ac0",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test validation of modal logic axioms",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.validator.validate_proposition_consistency"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "setUp",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "d7c816ddc138ab31c6377861e295b4b6b78c736d1a5d3aac819be3725691f47d",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "ConsistencyValidator"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "UTILITY"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_contradiction_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "b7be76f47243663da88d61959b1185a6b8bcb5dad03f3227baa575ca554fdbf2",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of logical contradictions",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "any",
+          "issue.lower",
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.validator.validate_proposition_consistency"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_tautology_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "744845eb618e09f1623215da878a3d8c4c6cd8687d92891b336ed9bc758f2af3",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of logical tautologies",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "any",
+          "issue.lower",
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.validator.validate_proposition_consistency"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_modal_axiom_validation",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "0c112ec398c8961ec0a88331629719a6d0482f1a48c8892d9b40201004904ac0",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test validation of modal logic axioms",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.validator.validate_proposition_consistency"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestAnomalyDetector.setUp",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "b8368d1ffc801f53f8e5b30e71da84dbfdb0209d86a0c9fb1ae6b205ef95d9bc",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AnomalyDetector"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestAnomalyDetector.test_time_anomaly_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "72853760bd38137e66cc5b4943de2bf295733c513bfee2d6dafe3f583a8d255d",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of execution time anomalies",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "time.time"
+        ],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "EvaluationRecord",
+          "history.append",
+          "range",
+          "self.assertIn",
+          "self.detector.analyze_evaluation",
+          "time.time"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestAnomalyDetector.test_error_rate_anomaly_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "ad509144decb2aab715abd34b24f37a92659c2ed852c07ffb5a308ee02e09281",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of high error rates",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "time.time"
+        ],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "EvaluationRecord",
+          "history.append",
+          "range",
+          "self.assertTrue",
+          "self.detector._is_error_rate_anomaly",
+          "time.time"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestAnomalyDetector.test_complexity_anomaly_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "fef0f87f4de58f1441da4a9e1d3a7a9481fb5eaa64a03c7d94b443883aae34ff",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of input complexity anomalies",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "time.time"
+        ],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "EvaluationRecord",
+          "self.assertTrue",
+          "self.detector._is_complexity_anomaly",
+          "time.time"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "setUp",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "b8368d1ffc801f53f8e5b30e71da84dbfdb0209d86a0c9fb1ae6b205ef95d9bc",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "ConsistencyValidator"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "UTILITY"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_time_anomaly_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "72853760bd38137e66cc5b4943de2bf295733c513bfee2d6dafe3f583a8d255d",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of execution time anomalies",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "time.time"
+        ],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "EvaluationRecord",
+          "history.append",
+          "range",
+          "self.assertIn",
+          "self.detector.analyze_evaluation",
+          "time.time"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_error_rate_anomaly_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "ad509144decb2aab715abd34b24f37a92659c2ed852c07ffb5a308ee02e09281",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of high error rates",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "time.time"
+        ],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "EvaluationRecord",
+          "history.append",
+          "range",
+          "self.assertTrue",
+          "self.detector._is_error_rate_anomaly",
+          "time.time"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_complexity_anomaly_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "fef0f87f4de58f1441da4a9e1d3a7a9481fb5eaa64a03c7d94b443883aae34ff",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of input complexity anomalies",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "time.time"
+        ],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "EvaluationRecord",
+          "self.assertTrue",
+          "self.detector._is_complexity_anomaly",
+          "time.time"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestEnhancedReferenceMonitor.setUp",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "5a02d2561358a9013e3aa9149daffe15fd532b2c5b3b096c499bd85b5923685d",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Set up test fixtures",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "EnhancedReferenceMonitor",
+          "Mock",
+          "Path",
+          "mkdir",
+          "patch"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "d9ebaf412f535063990b93251c05b2024717f7fb67e4deb90292692fbb52a2e5",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test pre-evaluation syntax validation",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "any",
+          "issue.lower",
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.monitor._pre_evaluation_validation"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "93e3196708387af955e28b540c442aa310db1467518afe221ab937eac9e5fedd",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of dangerous patterns in propositions",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "any",
+          "issue.lower",
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.monitor._pre_evaluation_validation"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestEnhancedReferenceMonitor.test_operator_nesting_limits",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "a2a9854b62bfcd6fc2a51e88e61ca56119cf9dfe46a667a4c535f60ca56a9a59",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test limits on operator nesting depth",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "any",
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.monitor._pre_evaluation_validation"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestEnhancedReferenceMonitor.test_emergency_halt_functionality",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "93e4a62fc46e0756673ec9caf4a895995c80bf903b5680086241fcf4194cd566",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test emergency halt circuit breaker",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "any",
+          "issue.lower",
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.monitor._pre_evaluation_validation",
+          "self.monitor.clear_emergency_halt"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestEnhancedReferenceMonitor.test_blocked_operations",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "c241de26d84a70beb5e197287808fdafae3c7b886e98d5b656b5a18adaf5e2a5",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test operation blocking functionality",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "any",
+          "issue.lower",
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.monitor._pre_evaluation_validation",
+          "self.monitor.add_blocked_operation",
+          "self.monitor.remove_blocked_operation"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestEnhancedReferenceMonitor.test_evaluation_logging",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "46bda259885f2a5a377ea23bc26d19054a39e26b343bd5d3752635e5013e7074",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test that evaluations are properly logged",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 1,
+        "filesystem_writes": 1,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 1
+      },
+      "observed_calls": {
+        "fs_calls": [
+          "open"
+        ],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [
+          "json.loads"
+        ],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": true,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Path",
+          "json.loads",
+          "len",
+          "open",
+          "self.assertEqual",
+          "self.assertGreater",
+          "self.assertIn",
+          "self.assertTrue",
+          "self.monitor.evaluate_modal_proposition",
+          "telemetry_file.exists"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestEnhancedReferenceMonitor.test_monitor_status_reporting",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "01ea7dd99904a815264bb1362b9d28829c8276e00f20a724d33d4e9a98b11170",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test monitor status reporting",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "self.assertGreaterEqual",
+          "self.assertIn",
+          "self.monitor.evaluate_iel_proposition",
+          "self.monitor.evaluate_modal_proposition",
+          "self.monitor.get_monitor_status"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "cc251395428eb6d881e828ff67b52a41e5e259cb1bf7da209a0193c8b3fcb058",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test monitoring of batch evaluations",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "len",
+          "self.assertEqual",
+          "self.assertGreaterEqual",
+          "self.assertIn",
+          "self.monitor.evaluate_batch"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "setUp",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "5a02d2561358a9013e3aa9149daffe15fd532b2c5b3b096c499bd85b5923685d",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "ConsistencyValidator"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "UTILITY"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_pre_validation_syntax_checking",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "d9ebaf412f535063990b93251c05b2024717f7fb67e4deb90292692fbb52a2e5",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test pre-evaluation syntax validation",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "any",
+          "issue.lower",
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.monitor._pre_evaluation_validation"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_dangerous_pattern_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "93e3196708387af955e28b540c442aa310db1467518afe221ab937eac9e5fedd",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of dangerous patterns in propositions",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "any",
+          "issue.lower",
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.monitor._pre_evaluation_validation"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_operator_nesting_limits",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "a2a9854b62bfcd6fc2a51e88e61ca56119cf9dfe46a667a4c535f60ca56a9a59",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test limits on operator nesting depth",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "any",
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.monitor._pre_evaluation_validation"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_emergency_halt_functionality",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "93e4a62fc46e0756673ec9caf4a895995c80bf903b5680086241fcf4194cd566",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test emergency halt circuit breaker",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "any",
+          "issue.lower",
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.monitor._pre_evaluation_validation",
+          "self.monitor.clear_emergency_halt"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_blocked_operations",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "c241de26d84a70beb5e197287808fdafae3c7b886e98d5b656b5a18adaf5e2a5",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test operation blocking functionality",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "any",
+          "issue.lower",
+          "self.assertFalse",
+          "self.assertTrue",
+          "self.monitor._pre_evaluation_validation",
+          "self.monitor.add_blocked_operation",
+          "self.monitor.remove_blocked_operation"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_evaluation_logging",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "46bda259885f2a5a377ea23bc26d19054a39e26b343bd5d3752635e5013e7074",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test that evaluations are properly logged",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 1,
+        "filesystem_writes": 1,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 1
+      },
+      "observed_calls": {
+        "fs_calls": [
+          "open"
+        ],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [
+          "json.loads"
+        ],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": true,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Path",
+          "json.loads",
+          "len",
+          "open",
+          "self.assertEqual",
+          "self.assertGreater",
+          "self.assertIn",
+          "self.assertTrue",
+          "self.monitor.evaluate_modal_proposition",
+          "telemetry_file.exists"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_monitor_status_reporting",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "01ea7dd99904a815264bb1362b9d28829c8276e00f20a724d33d4e9a98b11170",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test monitor status reporting",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "self.assertGreaterEqual",
+          "self.assertIn",
+          "self.monitor.evaluate_iel_proposition",
+          "self.monitor.evaluate_modal_proposition",
+          "self.monitor.get_monitor_status"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_batch_evaluation_monitoring",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "cc251395428eb6d881e828ff67b52a41e5e259cb1bf7da209a0193c8b3fcb058",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test monitoring of batch evaluations",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "len",
+          "self.assertEqual",
+          "self.assertGreaterEqual",
+          "self.assertIn",
+          "self.monitor.evaluate_batch"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestAnomalyInjection.setUp",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "38a5bd49b31d1f2491154d9111ac2fe9f4d8237251ec6a4f8743a451c3ce936a",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Set up test environment for anomaly injection",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "EnhancedReferenceMonitor",
+          "Mock",
+          "Path",
+          "mkdir",
+          "patch"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestAnomalyInjection.test_error_injection_and_circuit_breaker",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "9130f2061c045ade5320ee718d5c3a364f92f5326bbae70e327b51f024e24b16",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test that injected errors trigger circuit breaker",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "time.time"
+        ],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "EvaluationRecord",
+          "ProofBridgeError",
+          "range",
+          "self.assertTrue",
+          "self.monitor._check_emergency_conditions",
+          "self.monitor.state.recent_evaluations.append",
+          "time.time"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestAnomalyInjection.test_consistency_violation_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "8ccb79ce0bfd82fe5a7c5f2937eafc43bc285469ce34a14538b189fab4f319a7",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of consistency violations",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "self.assertGreater",
+          "self.monitor.evaluate_modal_proposition",
+          "self.monitor.get_monitor_status"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestAnomalyInjection.test_performance_anomaly_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "044956a4ebab22f9dbed30e22a9cb89eb10e04a9db279c049663644e648e861c",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of performance anomalies",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "time.sleep"
+        ],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "patch",
+          "range",
+          "self.monitor.evaluate_modal_proposition",
+          "self.monitor.get_monitor_status",
+          "time.sleep"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestAnomalyInjection.test_recovery_from_emergency_state",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "3bab6b1fbb07692333c95d20ceae6a525ea7ae8ccebbad03a69ce68f4574b7ce",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test recovery from emergency state",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "self.assertFalse",
+          "self.assertRaises",
+          "self.assertTrue",
+          "self.monitor.clear_emergency_halt",
+          "self.monitor.evaluate_modal_proposition"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "setUp",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "38a5bd49b31d1f2491154d9111ac2fe9f4d8237251ec6a4f8743a451c3ce936a",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "ConsistencyValidator"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "UTILITY"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_error_injection_and_circuit_breaker",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "9130f2061c045ade5320ee718d5c3a364f92f5326bbae70e327b51f024e24b16",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test that injected errors trigger circuit breaker",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "time.time"
+        ],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "EvaluationRecord",
+          "ProofBridgeError",
+          "range",
+          "self.assertTrue",
+          "self.monitor._check_emergency_conditions",
+          "self.monitor.state.recent_evaluations.append",
+          "time.time"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_consistency_violation_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "8ccb79ce0bfd82fe5a7c5f2937eafc43bc285469ce34a14538b189fab4f319a7",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of consistency violations",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "self.assertGreater",
+          "self.monitor.evaluate_modal_proposition",
+          "self.monitor.get_monitor_status"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_performance_anomaly_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "044956a4ebab22f9dbed30e22a9cb89eb10e04a9db279c049663644e648e861c",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test detection of performance anomalies",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "time.sleep"
+        ],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "patch",
+          "range",
+          "self.monitor.evaluate_modal_proposition",
+          "self.monitor.get_monitor_status",
+          "time.sleep"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_recovery_from_emergency_state",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "3bab6b1fbb07692333c95d20ceae6a525ea7ae8ccebbad03a69ce68f4574b7ce",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test recovery from emergency state",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "self.assertFalse",
+          "self.assertRaises",
+          "self.assertTrue",
+          "self.monitor.clear_emergency_halt",
+          "self.monitor.evaluate_modal_proposition"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestIntegrationWithEntry.setUp",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "5d3c39da7c766a1b37d29d07c3fff165ac54371afb1265c074554c21a145e472",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Set up integration test environment",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Path",
+          "mkdir"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestIntegrationWithEntry.test_convenience_functions",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "99e5babe8b82f9bd92845a48ff94f27b3daf7e26f2827d676ee55ed344300b5c",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test convenience functions in entry module",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Mock",
+          "evaluate_iel",
+          "evaluate_modal",
+          "get_status",
+          "patch",
+          "self.assertIn",
+          "self.assertTrue"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "setUp",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "5d3c39da7c766a1b37d29d07c3fff165ac54371afb1265c074554c21a145e472",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "ConsistencyValidator"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "UTILITY"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_convenience_functions",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "99e5babe8b82f9bd92845a48ff94f27b3daf7e26f2827d676ee55ed344300b5c",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test convenience functions in entry module",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Mock",
+          "evaluate_iel",
+          "evaluate_modal",
+          "get_status",
+          "patch",
+          "self.assertIn",
+          "self.assertTrue"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestThreadSafety.setUp",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "830963001f704bff63dd411fb65c7d72a74561c83c7287416fd4bb8f48d31cad",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Set up thread safety test environment",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "EnhancedReferenceMonitor",
+          "Mock",
+          "Path",
+          "mkdir",
+          "patch"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestThreadSafety.test_concurrent_evaluations",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "19946324e2f6d5c5cde4b5d102bcf818e1c2a3ed98b839872765bc5ab4262dce",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test concurrent evaluations don't cause race conditions",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 2,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 1,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": [
+          "Exception"
+        ]
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "exceptions.append",
+          "len",
+          "range",
+          "results.append",
+          "self.assertEqual",
+          "self.assertGreaterEqual",
+          "self.monitor.evaluate_modal_proposition",
+          "self.monitor.get_monitor_status",
+          "thread.join",
+          "thread.start",
+          "threading.Thread",
+          "threads.append"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "setUp",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "830963001f704bff63dd411fb65c7d72a74561c83c7287416fd4bb8f48d31cad",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "ConsistencyValidator"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "UTILITY"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_concurrent_evaluations",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "19946324e2f6d5c5cde4b5d102bcf818e1c2a3ed98b839872765bc5ab4262dce",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test concurrent evaluations don't cause race conditions",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 2,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 1,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": [
+          "Exception"
+        ]
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "exceptions.append",
+          "len",
+          "range",
+          "results.append",
+          "self.assertEqual",
+          "self.assertGreaterEqual",
+          "self.monitor.evaluate_modal_proposition",
+          "self.monitor.get_monitor_status",
+          "thread.join",
+          "thread.start",
+          "threading.Thread",
+          "threads.append"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "evaluate_proposition",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "68804e7dc8595b075f9edbac257ce0c2c71f5b50d409a19b99e75210f63823d3",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "prop_id"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 1,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": [
+          "Exception"
+        ]
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "exceptions.append",
+          "results.append",
+          "self.monitor.evaluate_modal_proposition"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "run_safety_tests",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_reference_monitor.py",
+      "source_hash": "c4233a881d5f7d716ab7385566858bcae0119b95b51e082dda14f4e9eeddf186",
+      "kind": "function",
+      "signature": {
+        "args": [],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Run all safety and anomaly tests",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "len",
+          "loader.loadTestsFromTestCase",
+          "result.wasSuccessful",
+          "runner.run",
+          "suite.addTests",
+          "unittest.TestLoader",
+          "unittest.TestSuite",
+          "unittest.TextTestRunner"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "GOVERNANCE",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    }
+  ],
+  "invariants": {
+    "signature.varargs": false,
+    "signature.kwargs": false,
+    "signature.returns_annotation": null,
+    "signature.decorators": [],
+    "control_flow.has_recursion_self_call": false,
+    "control_flow.raises": [],
+    "nondeterminism_flags.uses_random": false,
+    "nondeterminism_flags.uses_os_env": false,
+    "nondeterminism_flags.uses_threading_or_async": false,
+    "mutations.writes_globals": false,
+    "mutations.mutates_args_possible": false,
+    "mutations.network_side_effect_possible": false,
+    "observed_calls.net_calls": [],
+    "observed_calls.proc_calls": [],
+    "semantic_profile_overlay.data_role": []
+  },
+  "divergences": {
+    "signature.args": {
+      "TestConsistencyValidator.setUp": [
+        "self"
+      ],
+      "TestConsistencyValidator.test_contradiction_detection": [
+        "self"
+      ],
+      "TestConsistencyValidator.test_tautology_detection": [
+        "self"
+      ],
+      "TestConsistencyValidator.test_modal_axiom_validation": [
+        "self"
+      ],
+      "setUp": [
+        "self"
+      ],
+      "test_contradiction_detection": [
+        "self"
+      ],
+      "test_tautology_detection": [
+        "self"
+      ],
+      "test_modal_axiom_validation": [
+        "self"
+      ],
+      "TestAnomalyDetector.setUp": [
+        "self"
+      ],
+      "TestAnomalyDetector.test_time_anomaly_detection": [
+        "self"
+      ],
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": [
+        "self"
+      ],
+      "TestAnomalyDetector.test_complexity_anomaly_detection": [
+        "self"
+      ],
+      "test_time_anomaly_detection": [
+        "self"
+      ],
+      "test_error_rate_anomaly_detection": [
+        "self"
+      ],
+      "test_complexity_anomaly_detection": [
+        "self"
+      ],
+      "TestEnhancedReferenceMonitor.setUp": [
+        "self"
+      ],
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": [
+        "self"
+      ],
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": [
+        "self"
+      ],
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": [
+        "self"
+      ],
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": [
+        "self"
+      ],
+      "TestEnhancedReferenceMonitor.test_blocked_operations": [
+        "self"
+      ],
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": [
+        "self"
+      ],
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": [
+        "self"
+      ],
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": [
+        "self"
+      ],
+      "test_pre_validation_syntax_checking": [
+        "self"
+      ],
+      "test_dangerous_pattern_detection": [
+        "self"
+      ],
+      "test_operator_nesting_limits": [
+        "self"
+      ],
+      "test_emergency_halt_functionality": [
+        "self"
+      ],
+      "test_blocked_operations": [
+        "self"
+      ],
+      "test_evaluation_logging": [
+        "self"
+      ],
+      "test_monitor_status_reporting": [
+        "self"
+      ],
+      "test_batch_evaluation_monitoring": [
+        "self"
+      ],
+      "TestAnomalyInjection.setUp": [
+        "self"
+      ],
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": [
+        "self"
+      ],
+      "TestAnomalyInjection.test_consistency_violation_detection": [
+        "self"
+      ],
+      "TestAnomalyInjection.test_performance_anomaly_detection": [
+        "self"
+      ],
+      "TestAnomalyInjection.test_recovery_from_emergency_state": [
+        "self"
+      ],
+      "test_error_injection_and_circuit_breaker": [
+        "self"
+      ],
+      "test_consistency_violation_detection": [
+        "self"
+      ],
+      "test_performance_anomaly_detection": [
+        "self"
+      ],
+      "test_recovery_from_emergency_state": [
+        "self"
+      ],
+      "TestIntegrationWithEntry.setUp": [
+        "self"
+      ],
+      "TestIntegrationWithEntry.test_convenience_functions": [
+        "self"
+      ],
+      "test_convenience_functions": [
+        "self"
+      ],
+      "TestThreadSafety.setUp": [
+        "self"
+      ],
+      "TestThreadSafety.test_concurrent_evaluations": [
+        "self"
+      ],
+      "test_concurrent_evaluations": [
+        "self"
+      ],
+      "evaluate_proposition": [
+        "prop_id"
+      ],
+      "run_safety_tests": []
+    },
+    "control_flow.loop_counts": {
+      "TestConsistencyValidator.setUp": {
+        "for": 0,
+        "while": 0
+      },
+      "TestConsistencyValidator.test_contradiction_detection": {
+        "for": 0,
+        "while": 0
+      },
+      "TestConsistencyValidator.test_tautology_detection": {
+        "for": 0,
+        "while": 0
+      },
+      "TestConsistencyValidator.test_modal_axiom_validation": {
+        "for": 0,
+        "while": 0
+      },
+      "setUp": {
+        "for": 0,
+        "while": 0
+      },
+      "test_contradiction_detection": {
+        "for": 0,
+        "while": 0
+      },
+      "test_tautology_detection": {
+        "for": 0,
+        "while": 0
+      },
+      "test_modal_axiom_validation": {
+        "for": 0,
+        "while": 0
+      },
+      "TestAnomalyDetector.setUp": {
+        "for": 0,
+        "while": 0
+      },
+      "TestAnomalyDetector.test_time_anomaly_detection": {
+        "for": 1,
+        "while": 0
+      },
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": {
+        "for": 1,
+        "while": 0
+      },
+      "TestAnomalyDetector.test_complexity_anomaly_detection": {
+        "for": 0,
+        "while": 0
+      },
+      "test_time_anomaly_detection": {
+        "for": 1,
+        "while": 0
+      },
+      "test_error_rate_anomaly_detection": {
+        "for": 1,
+        "while": 0
+      },
+      "test_complexity_anomaly_detection": {
+        "for": 0,
+        "while": 0
+      },
+      "TestEnhancedReferenceMonitor.setUp": {
+        "for": 0,
+        "while": 0
+      },
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": {
+        "for": 0,
+        "while": 0
+      },
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": {
+        "for": 1,
+        "while": 0
+      },
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": {
+        "for": 0,
+        "while": 0
+      },
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": {
+        "for": 0,
+        "while": 0
+      },
+      "TestEnhancedReferenceMonitor.test_blocked_operations": {
+        "for": 0,
+        "while": 0
+      },
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": {
+        "for": 0,
+        "while": 0
+      },
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": {
+        "for": 0,
+        "while": 0
+      },
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": {
+        "for": 0,
+        "while": 0
+      },
+      "test_pre_validation_syntax_checking": {
+        "for": 0,
+        "while": 0
+      },
+      "test_dangerous_pattern_detection": {
+        "for": 1,
+        "while": 0
+      },
+      "test_operator_nesting_limits": {
+        "for": 0,
+        "while": 0
+      },
+      "test_emergency_halt_functionality": {
+        "for": 0,
+        "while": 0
+      },
+      "test_blocked_operations": {
+        "for": 0,
+        "while": 0
+      },
+      "test_evaluation_logging": {
+        "for": 0,
+        "while": 0
+      },
+      "test_monitor_status_reporting": {
+        "for": 0,
+        "while": 0
+      },
+      "test_batch_evaluation_monitoring": {
+        "for": 0,
+        "while": 0
+      },
+      "TestAnomalyInjection.setUp": {
+        "for": 0,
+        "while": 0
+      },
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": {
+        "for": 1,
+        "while": 0
+      },
+      "TestAnomalyInjection.test_consistency_violation_detection": {
+        "for": 0,
+        "while": 0
+      },
+      "TestAnomalyInjection.test_performance_anomaly_detection": {
+        "for": 1,
+        "while": 0
+      },
+      "TestAnomalyInjection.test_recovery_from_emergency_state": {
+        "for": 0,
+        "while": 0
+      },
+      "test_error_injection_and_circuit_breaker": {
+        "for": 1,
+        "while": 0
+      },
+      "test_consistency_violation_detection": {
+        "for": 0,
+        "while": 0
+      },
+      "test_performance_anomaly_detection": {
+        "for": 1,
+        "while": 0
+      },
+      "test_recovery_from_emergency_state": {
+        "for": 0,
+        "while": 0
+      },
+      "TestIntegrationWithEntry.setUp": {
+        "for": 0,
+        "while": 0
+      },
+      "TestIntegrationWithEntry.test_convenience_functions": {
+        "for": 0,
+        "while": 0
+      },
+      "test_convenience_functions": {
+        "for": 0,
+        "while": 0
+      },
+      "TestThreadSafety.setUp": {
+        "for": 0,
+        "while": 0
+      },
+      "TestThreadSafety.test_concurrent_evaluations": {
+        "for": 2,
+        "while": 0
+      },
+      "test_concurrent_evaluations": {
+        "for": 2,
+        "while": 0
+      },
+      "evaluate_proposition": {
+        "for": 0,
+        "while": 0
+      },
+      "run_safety_tests": {
+        "for": 1,
+        "while": 0
+      }
+    },
+    "control_flow.max_nesting_depth": {
+      "TestConsistencyValidator.setUp": 0,
+      "TestConsistencyValidator.test_contradiction_detection": 0,
+      "TestConsistencyValidator.test_tautology_detection": 0,
+      "TestConsistencyValidator.test_modal_axiom_validation": 0,
+      "setUp": 0,
+      "test_contradiction_detection": 0,
+      "test_tautology_detection": 0,
+      "test_modal_axiom_validation": 0,
+      "TestAnomalyDetector.setUp": 0,
+      "TestAnomalyDetector.test_time_anomaly_detection": 1,
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": 1,
+      "TestAnomalyDetector.test_complexity_anomaly_detection": 0,
+      "test_time_anomaly_detection": 1,
+      "test_error_rate_anomaly_detection": 1,
+      "test_complexity_anomaly_detection": 0,
+      "TestEnhancedReferenceMonitor.setUp": 1,
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": 0,
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": 1,
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": 0,
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": 0,
+      "TestEnhancedReferenceMonitor.test_blocked_operations": 0,
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": 1,
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": 0,
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": 0,
+      "test_pre_validation_syntax_checking": 0,
+      "test_dangerous_pattern_detection": 1,
+      "test_operator_nesting_limits": 0,
+      "test_emergency_halt_functionality": 0,
+      "test_blocked_operations": 0,
+      "test_evaluation_logging": 1,
+      "test_monitor_status_reporting": 0,
+      "test_batch_evaluation_monitoring": 0,
+      "TestAnomalyInjection.setUp": 1,
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": 1,
+      "TestAnomalyInjection.test_consistency_violation_detection": 0,
+      "TestAnomalyInjection.test_performance_anomaly_detection": 1,
+      "TestAnomalyInjection.test_recovery_from_emergency_state": 1,
+      "test_error_injection_and_circuit_breaker": 1,
+      "test_consistency_violation_detection": 0,
+      "test_performance_anomaly_detection": 1,
+      "test_recovery_from_emergency_state": 1,
+      "TestIntegrationWithEntry.setUp": 0,
+      "TestIntegrationWithEntry.test_convenience_functions": 1,
+      "test_convenience_functions": 1,
+      "TestThreadSafety.setUp": 1,
+      "TestThreadSafety.test_concurrent_evaluations": 1,
+      "test_concurrent_evaluations": 1,
+      "evaluate_proposition": 1,
+      "run_safety_tests": 1
+    },
+    "control_flow.branches": {
+      "TestConsistencyValidator.setUp": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestConsistencyValidator.test_contradiction_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestConsistencyValidator.test_tautology_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestConsistencyValidator.test_modal_axiom_validation": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "setUp": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_contradiction_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_tautology_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_modal_axiom_validation": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestAnomalyDetector.setUp": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestAnomalyDetector.test_time_anomaly_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestAnomalyDetector.test_complexity_anomaly_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_time_anomaly_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_error_rate_anomaly_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_complexity_anomaly_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestEnhancedReferenceMonitor.setUp": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestEnhancedReferenceMonitor.test_blocked_operations": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_pre_validation_syntax_checking": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_dangerous_pattern_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_operator_nesting_limits": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_emergency_halt_functionality": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_blocked_operations": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_evaluation_logging": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_monitor_status_reporting": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_batch_evaluation_monitoring": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestAnomalyInjection.setUp": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestAnomalyInjection.test_consistency_violation_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestAnomalyInjection.test_performance_anomaly_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestAnomalyInjection.test_recovery_from_emergency_state": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_error_injection_and_circuit_breaker": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_consistency_violation_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_performance_anomaly_detection": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_recovery_from_emergency_state": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestIntegrationWithEntry.setUp": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestIntegrationWithEntry.test_convenience_functions": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_convenience_functions": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestThreadSafety.setUp": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestThreadSafety.test_concurrent_evaluations": {
+        "if": 0,
+        "match": 0,
+        "try": 1
+      },
+      "test_concurrent_evaluations": {
+        "if": 0,
+        "match": 0,
+        "try": 1
+      },
+      "evaluate_proposition": {
+        "if": 0,
+        "match": 0,
+        "try": 1
+      },
+      "run_safety_tests": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      }
+    },
+    "control_flow.except_handlers": {
+      "TestConsistencyValidator.setUp": [],
+      "TestConsistencyValidator.test_contradiction_detection": [],
+      "TestConsistencyValidator.test_tautology_detection": [],
+      "TestConsistencyValidator.test_modal_axiom_validation": [],
+      "setUp": [],
+      "test_contradiction_detection": [],
+      "test_tautology_detection": [],
+      "test_modal_axiom_validation": [],
+      "TestAnomalyDetector.setUp": [],
+      "TestAnomalyDetector.test_time_anomaly_detection": [],
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": [],
+      "TestAnomalyDetector.test_complexity_anomaly_detection": [],
+      "test_time_anomaly_detection": [],
+      "test_error_rate_anomaly_detection": [],
+      "test_complexity_anomaly_detection": [],
+      "TestEnhancedReferenceMonitor.setUp": [],
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": [],
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": [],
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": [],
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": [],
+      "TestEnhancedReferenceMonitor.test_blocked_operations": [],
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": [],
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": [],
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": [],
+      "test_pre_validation_syntax_checking": [],
+      "test_dangerous_pattern_detection": [],
+      "test_operator_nesting_limits": [],
+      "test_emergency_halt_functionality": [],
+      "test_blocked_operations": [],
+      "test_evaluation_logging": [],
+      "test_monitor_status_reporting": [],
+      "test_batch_evaluation_monitoring": [],
+      "TestAnomalyInjection.setUp": [],
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": [],
+      "TestAnomalyInjection.test_consistency_violation_detection": [],
+      "TestAnomalyInjection.test_performance_anomaly_detection": [],
+      "TestAnomalyInjection.test_recovery_from_emergency_state": [],
+      "test_error_injection_and_circuit_breaker": [],
+      "test_consistency_violation_detection": [],
+      "test_performance_anomaly_detection": [],
+      "test_recovery_from_emergency_state": [],
+      "TestIntegrationWithEntry.setUp": [],
+      "TestIntegrationWithEntry.test_convenience_functions": [],
+      "test_convenience_functions": [],
+      "TestThreadSafety.setUp": [],
+      "TestThreadSafety.test_concurrent_evaluations": [
+        "Exception"
+      ],
+      "test_concurrent_evaluations": [
+        "Exception"
+      ],
+      "evaluate_proposition": [
+        "Exception"
+      ],
+      "run_safety_tests": []
+    },
+    "nondeterminism_flags.uses_time": {
+      "TestConsistencyValidator.setUp": false,
+      "TestConsistencyValidator.test_contradiction_detection": false,
+      "TestConsistencyValidator.test_tautology_detection": false,
+      "TestConsistencyValidator.test_modal_axiom_validation": false,
+      "setUp": false,
+      "test_contradiction_detection": false,
+      "test_tautology_detection": false,
+      "test_modal_axiom_validation": false,
+      "TestAnomalyDetector.setUp": false,
+      "TestAnomalyDetector.test_time_anomaly_detection": true,
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": true,
+      "TestAnomalyDetector.test_complexity_anomaly_detection": true,
+      "test_time_anomaly_detection": true,
+      "test_error_rate_anomaly_detection": true,
+      "test_complexity_anomaly_detection": true,
+      "TestEnhancedReferenceMonitor.setUp": false,
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": false,
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": false,
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": false,
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": false,
+      "TestEnhancedReferenceMonitor.test_blocked_operations": false,
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": false,
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": false,
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": false,
+      "test_pre_validation_syntax_checking": false,
+      "test_dangerous_pattern_detection": false,
+      "test_operator_nesting_limits": false,
+      "test_emergency_halt_functionality": false,
+      "test_blocked_operations": false,
+      "test_evaluation_logging": false,
+      "test_monitor_status_reporting": false,
+      "test_batch_evaluation_monitoring": false,
+      "TestAnomalyInjection.setUp": false,
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": true,
+      "TestAnomalyInjection.test_consistency_violation_detection": false,
+      "TestAnomalyInjection.test_performance_anomaly_detection": true,
+      "TestAnomalyInjection.test_recovery_from_emergency_state": false,
+      "test_error_injection_and_circuit_breaker": true,
+      "test_consistency_violation_detection": false,
+      "test_performance_anomaly_detection": true,
+      "test_recovery_from_emergency_state": false,
+      "TestIntegrationWithEntry.setUp": false,
+      "TestIntegrationWithEntry.test_convenience_functions": false,
+      "test_convenience_functions": false,
+      "TestThreadSafety.setUp": false,
+      "TestThreadSafety.test_concurrent_evaluations": false,
+      "test_concurrent_evaluations": false,
+      "evaluate_proposition": false,
+      "run_safety_tests": false
+    },
+    "mutations.writes_self_attrs": {
+      "TestConsistencyValidator.setUp": true,
+      "TestConsistencyValidator.test_contradiction_detection": false,
+      "TestConsistencyValidator.test_tautology_detection": false,
+      "TestConsistencyValidator.test_modal_axiom_validation": false,
+      "setUp": true,
+      "test_contradiction_detection": false,
+      "test_tautology_detection": false,
+      "test_modal_axiom_validation": false,
+      "TestAnomalyDetector.setUp": true,
+      "TestAnomalyDetector.test_time_anomaly_detection": false,
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": false,
+      "TestAnomalyDetector.test_complexity_anomaly_detection": false,
+      "test_time_anomaly_detection": false,
+      "test_error_rate_anomaly_detection": false,
+      "test_complexity_anomaly_detection": false,
+      "TestEnhancedReferenceMonitor.setUp": true,
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": false,
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": false,
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": false,
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": false,
+      "TestEnhancedReferenceMonitor.test_blocked_operations": false,
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": false,
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": false,
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": false,
+      "test_pre_validation_syntax_checking": false,
+      "test_dangerous_pattern_detection": false,
+      "test_operator_nesting_limits": false,
+      "test_emergency_halt_functionality": false,
+      "test_blocked_operations": false,
+      "test_evaluation_logging": false,
+      "test_monitor_status_reporting": false,
+      "test_batch_evaluation_monitoring": false,
+      "TestAnomalyInjection.setUp": true,
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": false,
+      "TestAnomalyInjection.test_consistency_violation_detection": false,
+      "TestAnomalyInjection.test_performance_anomaly_detection": false,
+      "TestAnomalyInjection.test_recovery_from_emergency_state": false,
+      "test_error_injection_and_circuit_breaker": false,
+      "test_consistency_violation_detection": false,
+      "test_performance_anomaly_detection": false,
+      "test_recovery_from_emergency_state": false,
+      "TestIntegrationWithEntry.setUp": false,
+      "TestIntegrationWithEntry.test_convenience_functions": false,
+      "test_convenience_functions": false,
+      "TestThreadSafety.setUp": true,
+      "TestThreadSafety.test_concurrent_evaluations": false,
+      "test_concurrent_evaluations": false,
+      "evaluate_proposition": false,
+      "run_safety_tests": false
+    },
+    "mutations.writes_files_possible": {
+      "TestConsistencyValidator.setUp": false,
+      "TestConsistencyValidator.test_contradiction_detection": false,
+      "TestConsistencyValidator.test_tautology_detection": false,
+      "TestConsistencyValidator.test_modal_axiom_validation": false,
+      "setUp": false,
+      "test_contradiction_detection": false,
+      "test_tautology_detection": false,
+      "test_modal_axiom_validation": false,
+      "TestAnomalyDetector.setUp": false,
+      "TestAnomalyDetector.test_time_anomaly_detection": false,
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": false,
+      "TestAnomalyDetector.test_complexity_anomaly_detection": false,
+      "test_time_anomaly_detection": false,
+      "test_error_rate_anomaly_detection": false,
+      "test_complexity_anomaly_detection": false,
+      "TestEnhancedReferenceMonitor.setUp": false,
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": false,
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": false,
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": false,
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": false,
+      "TestEnhancedReferenceMonitor.test_blocked_operations": false,
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": true,
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": false,
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": false,
+      "test_pre_validation_syntax_checking": false,
+      "test_dangerous_pattern_detection": false,
+      "test_operator_nesting_limits": false,
+      "test_emergency_halt_functionality": false,
+      "test_blocked_operations": false,
+      "test_evaluation_logging": true,
+      "test_monitor_status_reporting": false,
+      "test_batch_evaluation_monitoring": false,
+      "TestAnomalyInjection.setUp": false,
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": false,
+      "TestAnomalyInjection.test_consistency_violation_detection": false,
+      "TestAnomalyInjection.test_performance_anomaly_detection": false,
+      "TestAnomalyInjection.test_recovery_from_emergency_state": false,
+      "test_error_injection_and_circuit_breaker": false,
+      "test_consistency_violation_detection": false,
+      "test_performance_anomaly_detection": false,
+      "test_recovery_from_emergency_state": false,
+      "TestIntegrationWithEntry.setUp": false,
+      "TestIntegrationWithEntry.test_convenience_functions": false,
+      "test_convenience_functions": false,
+      "TestThreadSafety.setUp": false,
+      "TestThreadSafety.test_concurrent_evaluations": false,
+      "test_concurrent_evaluations": false,
+      "evaluate_proposition": false,
+      "run_safety_tests": false
+    },
+    "observed_calls.fs_calls": {
+      "TestConsistencyValidator.setUp": [],
+      "TestConsistencyValidator.test_contradiction_detection": [],
+      "TestConsistencyValidator.test_tautology_detection": [],
+      "TestConsistencyValidator.test_modal_axiom_validation": [],
+      "setUp": [],
+      "test_contradiction_detection": [],
+      "test_tautology_detection": [],
+      "test_modal_axiom_validation": [],
+      "TestAnomalyDetector.setUp": [],
+      "TestAnomalyDetector.test_time_anomaly_detection": [],
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": [],
+      "TestAnomalyDetector.test_complexity_anomaly_detection": [],
+      "test_time_anomaly_detection": [],
+      "test_error_rate_anomaly_detection": [],
+      "test_complexity_anomaly_detection": [],
+      "TestEnhancedReferenceMonitor.setUp": [],
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": [],
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": [],
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": [],
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": [],
+      "TestEnhancedReferenceMonitor.test_blocked_operations": [],
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": [
+        "open"
+      ],
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": [],
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": [],
+      "test_pre_validation_syntax_checking": [],
+      "test_dangerous_pattern_detection": [],
+      "test_operator_nesting_limits": [],
+      "test_emergency_halt_functionality": [],
+      "test_blocked_operations": [],
+      "test_evaluation_logging": [
+        "open"
+      ],
+      "test_monitor_status_reporting": [],
+      "test_batch_evaluation_monitoring": [],
+      "TestAnomalyInjection.setUp": [],
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": [],
+      "TestAnomalyInjection.test_consistency_violation_detection": [],
+      "TestAnomalyInjection.test_performance_anomaly_detection": [],
+      "TestAnomalyInjection.test_recovery_from_emergency_state": [],
+      "test_error_injection_and_circuit_breaker": [],
+      "test_consistency_violation_detection": [],
+      "test_performance_anomaly_detection": [],
+      "test_recovery_from_emergency_state": [],
+      "TestIntegrationWithEntry.setUp": [],
+      "TestIntegrationWithEntry.test_convenience_functions": [],
+      "test_convenience_functions": [],
+      "TestThreadSafety.setUp": [],
+      "TestThreadSafety.test_concurrent_evaluations": [],
+      "test_concurrent_evaluations": [],
+      "evaluate_proposition": [],
+      "run_safety_tests": []
+    },
+    "observed_calls.serial_calls": {
+      "TestConsistencyValidator.setUp": [],
+      "TestConsistencyValidator.test_contradiction_detection": [],
+      "TestConsistencyValidator.test_tautology_detection": [],
+      "TestConsistencyValidator.test_modal_axiom_validation": [],
+      "setUp": [],
+      "test_contradiction_detection": [],
+      "test_tautology_detection": [],
+      "test_modal_axiom_validation": [],
+      "TestAnomalyDetector.setUp": [],
+      "TestAnomalyDetector.test_time_anomaly_detection": [],
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": [],
+      "TestAnomalyDetector.test_complexity_anomaly_detection": [],
+      "test_time_anomaly_detection": [],
+      "test_error_rate_anomaly_detection": [],
+      "test_complexity_anomaly_detection": [],
+      "TestEnhancedReferenceMonitor.setUp": [],
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": [],
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": [],
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": [],
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": [],
+      "TestEnhancedReferenceMonitor.test_blocked_operations": [],
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": [
+        "json.loads"
+      ],
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": [],
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": [],
+      "test_pre_validation_syntax_checking": [],
+      "test_dangerous_pattern_detection": [],
+      "test_operator_nesting_limits": [],
+      "test_emergency_halt_functionality": [],
+      "test_blocked_operations": [],
+      "test_evaluation_logging": [
+        "json.loads"
+      ],
+      "test_monitor_status_reporting": [],
+      "test_batch_evaluation_monitoring": [],
+      "TestAnomalyInjection.setUp": [],
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": [],
+      "TestAnomalyInjection.test_consistency_violation_detection": [],
+      "TestAnomalyInjection.test_performance_anomaly_detection": [],
+      "TestAnomalyInjection.test_recovery_from_emergency_state": [],
+      "test_error_injection_and_circuit_breaker": [],
+      "test_consistency_violation_detection": [],
+      "test_performance_anomaly_detection": [],
+      "test_recovery_from_emergency_state": [],
+      "TestIntegrationWithEntry.setUp": [],
+      "TestIntegrationWithEntry.test_convenience_functions": [],
+      "test_convenience_functions": [],
+      "TestThreadSafety.setUp": [],
+      "TestThreadSafety.test_concurrent_evaluations": [],
+      "test_concurrent_evaluations": [],
+      "evaluate_proposition": [],
+      "run_safety_tests": []
+    },
+    "semantic_profile_overlay.semantic_tags": {
+      "TestConsistencyValidator.setUp": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestConsistencyValidator.test_contradiction_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestConsistencyValidator.test_tautology_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestConsistencyValidator.test_modal_axiom_validation": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "setUp": [
+        "AGENT_LOGIC",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_contradiction_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_tautology_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_modal_axiom_validation": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyDetector.setUp": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyDetector.test_time_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyDetector.test_complexity_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_time_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_error_rate_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_complexity_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.setUp": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_blocked_operations": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_pre_validation_syntax_checking": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_dangerous_pattern_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_operator_nesting_limits": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_emergency_halt_functionality": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_blocked_operations": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_evaluation_logging": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_monitor_status_reporting": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_batch_evaluation_monitoring": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyInjection.setUp": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyInjection.test_consistency_violation_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyInjection.test_performance_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyInjection.test_recovery_from_emergency_state": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_error_injection_and_circuit_breaker": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_consistency_violation_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_performance_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_recovery_from_emergency_state": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestIntegrationWithEntry.setUp": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestIntegrationWithEntry.test_convenience_functions": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_convenience_functions": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestThreadSafety.setUp": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestThreadSafety.test_concurrent_evaluations": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_concurrent_evaluations": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "evaluate_proposition": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "run_safety_tests": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ]
+    },
+    "semantic_profile_overlay.operation_type": {
+      "TestConsistencyValidator.setUp": [],
+      "TestConsistencyValidator.test_contradiction_detection": [],
+      "TestConsistencyValidator.test_tautology_detection": [],
+      "TestConsistencyValidator.test_modal_axiom_validation": [],
+      "setUp": [
+        "UTILITY"
+      ],
+      "test_contradiction_detection": [],
+      "test_tautology_detection": [],
+      "test_modal_axiom_validation": [],
+      "TestAnomalyDetector.setUp": [],
+      "TestAnomalyDetector.test_time_anomaly_detection": [],
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": [],
+      "TestAnomalyDetector.test_complexity_anomaly_detection": [],
+      "test_time_anomaly_detection": [],
+      "test_error_rate_anomaly_detection": [],
+      "test_complexity_anomaly_detection": [],
+      "TestEnhancedReferenceMonitor.setUp": [],
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": [],
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": [],
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": [],
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": [],
+      "TestEnhancedReferenceMonitor.test_blocked_operations": [],
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": [],
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": [],
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": [],
+      "test_pre_validation_syntax_checking": [],
+      "test_dangerous_pattern_detection": [],
+      "test_operator_nesting_limits": [],
+      "test_emergency_halt_functionality": [],
+      "test_blocked_operations": [],
+      "test_evaluation_logging": [],
+      "test_monitor_status_reporting": [],
+      "test_batch_evaluation_monitoring": [],
+      "TestAnomalyInjection.setUp": [],
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": [
+        "TRANSFORMATION"
+      ],
+      "TestAnomalyInjection.test_consistency_violation_detection": [
+        "TRANSFORMATION"
+      ],
+      "TestAnomalyInjection.test_performance_anomaly_detection": [],
+      "TestAnomalyInjection.test_recovery_from_emergency_state": [],
+      "test_error_injection_and_circuit_breaker": [
+        "TRANSFORMATION"
+      ],
+      "test_consistency_violation_detection": [
+        "TRANSFORMATION"
+      ],
+      "test_performance_anomaly_detection": [],
+      "test_recovery_from_emergency_state": [],
+      "TestIntegrationWithEntry.setUp": [],
+      "TestIntegrationWithEntry.test_convenience_functions": [],
+      "test_convenience_functions": [],
+      "TestThreadSafety.setUp": [],
+      "TestThreadSafety.test_concurrent_evaluations": [],
+      "test_concurrent_evaluations": [],
+      "evaluate_proposition": [],
+      "run_safety_tests": [
+        "TRANSFORMATION"
+      ]
+    },
+    "semantic_profile_overlay.control_role": {
+      "TestConsistencyValidator.setUp": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestConsistencyValidator.test_contradiction_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestConsistencyValidator.test_tautology_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestConsistencyValidator.test_modal_axiom_validation": [
+        "ALIGNMENT_GUARD"
+      ],
+      "setUp": [],
+      "test_contradiction_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_tautology_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_modal_axiom_validation": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyDetector.setUp": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyDetector.test_time_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyDetector.test_complexity_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_time_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_error_rate_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_complexity_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.setUp": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_blocked_operations": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_pre_validation_syntax_checking": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_dangerous_pattern_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_operator_nesting_limits": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_emergency_halt_functionality": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_blocked_operations": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_evaluation_logging": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_monitor_status_reporting": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_batch_evaluation_monitoring": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyInjection.setUp": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyInjection.test_consistency_violation_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyInjection.test_performance_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyInjection.test_recovery_from_emergency_state": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_error_injection_and_circuit_breaker": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_consistency_violation_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_performance_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_recovery_from_emergency_state": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestIntegrationWithEntry.setUp": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestIntegrationWithEntry.test_convenience_functions": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_convenience_functions": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestThreadSafety.setUp": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestThreadSafety.test_concurrent_evaluations": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_concurrent_evaluations": [
+        "ALIGNMENT_GUARD"
+      ],
+      "evaluate_proposition": [
+        "ALIGNMENT_GUARD"
+      ],
+      "run_safety_tests": [
+        "ALIGNMENT_GUARD"
+      ]
+    },
+    "semantic_profile_overlay.spine_binding": {
+      "TestConsistencyValidator.setUp": [
+        "UNMAPPED"
+      ],
+      "TestConsistencyValidator.test_contradiction_detection": [
+        "UNMAPPED"
+      ],
+      "TestConsistencyValidator.test_tautology_detection": [
+        "UNMAPPED"
+      ],
+      "TestConsistencyValidator.test_modal_axiom_validation": [
+        "UNMAPPED"
+      ],
+      "setUp": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "test_contradiction_detection": [
+        "UNMAPPED"
+      ],
+      "test_tautology_detection": [
+        "UNMAPPED"
+      ],
+      "test_modal_axiom_validation": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyDetector.setUp": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyDetector.test_time_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyDetector.test_complexity_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "test_time_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "test_error_rate_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "test_complexity_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.setUp": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_blocked_operations": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": [
+        "UNMAPPED"
+      ],
+      "test_pre_validation_syntax_checking": [
+        "UNMAPPED"
+      ],
+      "test_dangerous_pattern_detection": [
+        "UNMAPPED"
+      ],
+      "test_operator_nesting_limits": [
+        "UNMAPPED"
+      ],
+      "test_emergency_halt_functionality": [
+        "UNMAPPED"
+      ],
+      "test_blocked_operations": [
+        "UNMAPPED"
+      ],
+      "test_evaluation_logging": [
+        "UNMAPPED"
+      ],
+      "test_monitor_status_reporting": [
+        "UNMAPPED"
+      ],
+      "test_batch_evaluation_monitoring": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyInjection.setUp": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyInjection.test_consistency_violation_detection": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyInjection.test_performance_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyInjection.test_recovery_from_emergency_state": [
+        "UNMAPPED"
+      ],
+      "test_error_injection_and_circuit_breaker": [
+        "UNMAPPED"
+      ],
+      "test_consistency_violation_detection": [
+        "UNMAPPED"
+      ],
+      "test_performance_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "test_recovery_from_emergency_state": [
+        "UNMAPPED"
+      ],
+      "TestIntegrationWithEntry.setUp": [
+        "UNMAPPED"
+      ],
+      "TestIntegrationWithEntry.test_convenience_functions": [
+        "UNMAPPED"
+      ],
+      "test_convenience_functions": [
+        "UNMAPPED"
+      ],
+      "TestThreadSafety.setUp": [
+        "UNMAPPED"
+      ],
+      "TestThreadSafety.test_concurrent_evaluations": [
+        "UNMAPPED"
+      ],
+      "test_concurrent_evaluations": [
+        "UNMAPPED"
+      ],
+      "evaluate_proposition": [
+        "UNMAPPED"
+      ],
+      "run_safety_tests": [
+        "UNMAPPED"
+      ]
+    }
+  },
+  "conflicts": {
+    "filesystem_side_effect": "MIXED",
+    "nondeterminism_time": "MIXED",
+    "state_mutation_self": "MIXED"
+  },
+  "runtime_order_id": "FAMILY_001_39",
+  "runtime_spine_phase": "UNASSIGNED"
+}

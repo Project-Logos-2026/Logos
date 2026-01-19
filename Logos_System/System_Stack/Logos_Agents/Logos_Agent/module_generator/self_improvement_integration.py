@@ -1,4 +1,35 @@
-#!/usr/bin/env python3
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
+
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: self_improvement_integration
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Logos_Agents/Logos_Agent/module_generator/self_improvement_integration.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
+
 """
 SOP Self-Improvement Integration
 ================================
@@ -20,12 +51,31 @@ import time
 from datetime import datetime, timezone
 from typing import Dict, List, Any
 
-from development_environment import (
-    SOPCodeEnvironment,
-    CodeGenerationRequest,
-    generate_improvement,
-    get_code_environment_status
-)
+try:
+    from development_environment import (
+        SOPCodeEnvironment,
+        CodeGenerationRequest,
+        generate_improvement,
+        get_code_environment_status,
+    )
+    _DEV_ENV_AVAILABLE = True
+except ImportError:
+    _DEV_ENV_AVAILABLE = False
+
+    # Lightweight stubs so import-time does not fail when the coding environment is absent.
+    class SOPCodeEnvironment:  # type: ignore
+        def __init__(self, *args, **kwargs):
+            raise ImportError("development_environment is not available")
+
+    class CodeGenerationRequest:  # type: ignore
+        def __init__(self, **kwargs):
+            self.__dict__.update(kwargs)
+
+    def generate_improvement(*args, **kwargs):  # type: ignore
+        raise ImportError("development_environment is not available")
+
+    def get_code_environment_status(*args, **kwargs):  # type: ignore
+        return {"error": "development_environment is not available"}
 
 logger = logging.getLogger(__name__)
 
@@ -707,14 +757,19 @@ class SOPSelfImprovementManager:
         }
 
 
-# Global SOP Self-Improvement Manager instance
-sop_improvement_manager = SOPSelfImprovementManager()
+# Global SOP Self-Improvement Manager instance (only when dependency is available)
+if _DEV_ENV_AVAILABLE:
+    sop_improvement_manager = SOPSelfImprovementManager()
+else:
+    sop_improvement_manager = None
 
 
 async def trigger_self_improvement(metrics: Dict[str, Any], allow_enhancements: bool = False) -> Dict[str, Any]:
     """
     API endpoint to trigger self-improvement analysis with policy controls
     """
+    if sop_improvement_manager is None:
+        return {"error": "development_environment is not available"}
     return await sop_improvement_manager.analyze_and_improve(metrics, allow_enhancements)
 
 
@@ -722,6 +777,8 @@ def get_self_improvement_status() -> Dict[str, Any]:
     """
     Get status of self-improvement system
     """
+    if sop_improvement_manager is None:
+        return {"error": "development_environment is not available"}
     return sop_improvement_manager.get_improvement_status()
 
 
@@ -750,4 +807,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    if sop_improvement_manager is None:
+        print("[WARN] development_environment is not available; skipping demo run.")
+    else:
+        asyncio.run(main())

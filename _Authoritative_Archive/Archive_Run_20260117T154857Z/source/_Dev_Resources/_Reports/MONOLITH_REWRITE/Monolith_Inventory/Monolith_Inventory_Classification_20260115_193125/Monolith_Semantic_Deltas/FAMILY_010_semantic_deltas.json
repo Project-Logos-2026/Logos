@@ -1,0 +1,2753 @@
+{
+  "family_id": "FAMILY_010",
+  "member_count": 178,
+  "members": [
+    "_build_fallback_shared_resources",
+    "_FallbackSharedResources",
+    "_FallbackSharedResources.configure_runtime_state_dir",
+    "_FallbackSharedResources.runtime_log_path",
+    "configure_runtime_state_dir",
+    "runtime_log_path",
+    "_spawn_user_requests",
+    "_invoke",
+    "_guarded_call",
+    "_spawn_meta_cycles",
+    "_tail_jsonl",
+    "_load_jsonl_since",
+    "_prepare_run_directory",
+    "_summarize_log_file",
+    "run",
+    "parse_args",
+    "main",
+    "_repo_sha",
+    "NexusManager",
+    "NexusManager._evict_expired",
+    "NexusManager.get",
+    "NexusManager.debug_snapshot",
+    "_evict_expired",
+    "get",
+    "debug_snapshot",
+    "MemoryConsolidationStage",
+    "MemoryRecallType",
+    "MemoryTrace",
+    "MemoryTrace._generate_pattern_key",
+    "MemoryTrace.strengthen",
+    "MemoryTrace.decay",
+    "MemoryTrace.pattern_complete",
+    "_generate_pattern_key",
+    "strengthen",
+    "decay",
+    "pattern_complete",
+    "MemoryConsolidator",
+    "MemoryConsolidator.ingest_smp",
+    "MemoryConsolidator.consolidate_traces",
+    "MemoryConsolidator._create_distributed_encoding",
+    "MemoryConsolidator._sparsify_encoding",
+    "MemoryConsolidator._abstract_semantic_group",
+    "ingest_smp",
+    "consolidate_traces",
+    "_create_distributed_encoding",
+    "_sparsify_encoding",
+    "_abstract_semantic_group",
+    "MemoryRecallSystem",
+    "MemoryRecallSystem.free_recall",
+    "MemoryRecallSystem.cued_recall",
+    "MemoryRecallSystem.recognition",
+    "MemoryRecallSystem.semantic_access",
+    "MemoryRecallSystem.episodic_replay",
+    "MemoryRecallSystem._spreading_activation",
+    "free_recall",
+    "cued_recall",
+    "recognition",
+    "semantic_access",
+    "episodic_replay",
+    "_spreading_activation",
+    "AbstractionEngine",
+    "AbstractionEngine.form_concept",
+    "AbstractionEngine.categorize",
+    "AbstractionEngine.abstract_relations",
+    "form_concept",
+    "categorize",
+    "abstract_relations",
+    "MemoryApplicationSystem",
+    "MemoryApplicationSystem.analogical_transfer",
+    "MemoryApplicationSystem.predictive_recall",
+    "MemoryApplicationSystem.insight_generation",
+    "MemoryApplicationSystem.cross_domain_transfer",
+    "analogical_transfer",
+    "predictive_recall",
+    "insight_generation",
+    "cross_domain_transfer",
+    "LivingMemorySystem",
+    "LivingMemorySystem.integrate_smp",
+    "LivingMemorySystem.periodic_consolidation",
+    "integrate_smp",
+    "periodic_consolidation",
+    "BaseNexus",
+    "AgentRequest",
+    "NexusResponse",
+    "ProtocolType",
+    "AgentType",
+    "TokenType",
+    "TokenStatus",
+    "GapType",
+    "SOPToken",
+    "SOPToken._generate_validation_key",
+    "SOPToken.use_token",
+    "SOPToken.is_valid",
+    "SOPToken.to_dict",
+    "_generate_validation_key",
+    "use_token",
+    "is_valid",
+    "to_dict",
+    "SystemGap",
+    "SystemGap.to_todo_json",
+    "SystemGap._generate_success_criteria",
+    "SystemGap._analyze_protocol_dependencies",
+    "SystemGap._extract_existing_code",
+    "SystemGap._generate_requirements",
+    "SystemGap._generate_test_cases",
+    "SystemGap._check_scaffold_availability",
+    "to_todo_json",
+    "_generate_success_criteria",
+    "_analyze_protocol_dependencies",
+    "_extract_existing_code",
+    "_generate_requirements",
+    "_generate_test_cases",
+    "_check_scaffold_availability",
+    "SOPNexus",
+    "SOPNexus._start_background_monitoring",
+    "SOPNexus._protocol_specific_security_validation",
+    "SOPNexus._protocol_specific_activation",
+    "SOPNexus._protocol_specific_deactivation",
+    "SOPNexus._route_to_protocol_core",
+    "SOPNexus._handle_token_request",
+    "SOPNexus._handle_token_validation",
+    "SOPNexus._handle_todo_token_request",
+    "SOPNexus._handle_todo_integration_approval",
+    "SOPNexus._handle_gap_detection_request",
+    "SOPNexus._run_gap_detection_analysis",
+    "SOPNexus._handle_todo_queue_request",
+    "SOPNexus._handle_system_status_request",
+    "SOPNexus._handle_health_check_request",
+    "SOPNexus._handle_system_test_request",
+    "SOPNexus._gap_detection_loop",
+    "SOPNexus._token_cleanup_loop",
+    "SOPNexus._system_health_monitor",
+    "SOPNexus._protocol_specific_smoke_test",
+    "SOPNexus._calculate_uptime",
+    "SOPNexus._integrate_todo_solution",
+    "SOPNexus._collect_system_metrics",
+    "SOPNexus._analyze_system_health",
+    "SOPNexus._check_token_system_health",
+    "SOPNexus._check_gap_detection_health",
+    "SOPNexus._check_file_management_health",
+    "SOPNexus._check_disk_space",
+    "SOPNexus._check_memory_usage",
+    "SOPNexus._test_token_system",
+    "SOPNexus._test_gap_detection",
+    "SOPNexus._test_file_management",
+    "SOPNexus._test_todo_generation",
+    "_start_background_monitoring",
+    "_protocol_specific_security_validation",
+    "_protocol_specific_activation",
+    "_protocol_specific_deactivation",
+    "_route_to_protocol_core",
+    "_handle_token_request",
+    "_handle_token_validation",
+    "_handle_todo_token_request",
+    "_handle_todo_integration_approval",
+    "_handle_gap_detection_request",
+    "_run_gap_detection_analysis",
+    "_handle_todo_queue_request",
+    "_handle_system_status_request",
+    "_handle_health_check_request",
+    "_handle_system_test_request",
+    "_gap_detection_loop",
+    "_token_cleanup_loop",
+    "_system_health_monitor",
+    "_protocol_specific_smoke_test",
+    "_calculate_uptime",
+    "_integrate_todo_solution",
+    "_collect_system_metrics",
+    "_analyze_system_health",
+    "_check_token_system_health",
+    "_check_gap_detection_health",
+    "_check_file_management_health",
+    "_check_disk_space",
+    "_check_memory_usage",
+    "_test_token_system",
+    "_test_gap_detection",
+    "_test_file_management",
+    "_test_todo_generation"
+  ],
+  "invariant_semantics": {},
+  "divergent_semantics": {
+    "semantic_tags": {
+      "_build_fallback_shared_resources": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_FallbackSharedResources": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_FallbackSharedResources.configure_runtime_state_dir": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_FallbackSharedResources.runtime_log_path": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "configure_runtime_state_dir": [
+        "AGENT_LOGIC"
+      ],
+      "runtime_log_path": [
+        "AGENT_LOGIC"
+      ],
+      "_spawn_user_requests": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_invoke": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_guarded_call": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_spawn_meta_cycles": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_tail_jsonl": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_load_jsonl_since": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_prepare_run_directory": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_summarize_log_file": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "run": [
+        "UNCLASSIFIED"
+      ],
+      "parse_args": [
+        "ORCHESTRATION"
+      ],
+      "main": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_repo_sha": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "NexusManager": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "NexusManager._evict_expired": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "NexusManager.get": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "NexusManager.debug_snapshot": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_evict_expired": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "get": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "debug_snapshot": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryConsolidationStage": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryRecallType": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryTrace": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryTrace._generate_pattern_key": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryTrace.strengthen": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryTrace.decay": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryTrace.pattern_complete": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_generate_pattern_key": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "strengthen": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "decay": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "pattern_complete": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryConsolidator": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryConsolidator.ingest_smp": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryConsolidator.consolidate_traces": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryConsolidator._create_distributed_encoding": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryConsolidator._sparsify_encoding": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryConsolidator._abstract_semantic_group": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "ingest_smp": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "consolidate_traces": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_create_distributed_encoding": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_sparsify_encoding": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_abstract_semantic_group": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryRecallSystem": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryRecallSystem.free_recall": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryRecallSystem.cued_recall": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryRecallSystem.recognition": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryRecallSystem.semantic_access": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryRecallSystem.episodic_replay": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryRecallSystem._spreading_activation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "free_recall": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "cued_recall": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "recognition": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "semantic_access": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "episodic_replay": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_spreading_activation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "AbstractionEngine": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "AbstractionEngine.form_concept": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "AbstractionEngine.categorize": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "AbstractionEngine.abstract_relations": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "form_concept": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "categorize": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "abstract_relations": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryApplicationSystem": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryApplicationSystem.analogical_transfer": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryApplicationSystem.predictive_recall": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryApplicationSystem.insight_generation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryApplicationSystem.cross_domain_transfer": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "analogical_transfer": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "predictive_recall": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "insight_generation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "cross_domain_transfer": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "LivingMemorySystem": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "LivingMemorySystem.integrate_smp": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "LivingMemorySystem.periodic_consolidation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "integrate_smp": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "periodic_consolidation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "AgentRequest": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "NexusResponse": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "ProtocolType": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "AgentType": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "TokenType": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "TokenStatus": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "GapType": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SOPToken": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPToken._generate_validation_key": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPToken.use_token": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPToken.is_valid": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPToken.to_dict": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_generate_validation_key": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "use_token": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "is_valid": [
+        "UNCLASSIFIED"
+      ],
+      "to_dict": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SystemGap": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap.to_todo_json": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap._generate_success_criteria": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap._analyze_protocol_dependencies": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap._extract_existing_code": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap._generate_requirements": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap._generate_test_cases": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap._check_scaffold_availability": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "to_todo_json": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_generate_success_criteria": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_analyze_protocol_dependencies": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_extract_existing_code": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_generate_requirements": [
+        "UNCLASSIFIED"
+      ],
+      "_generate_test_cases": [
+        "UNCLASSIFIED"
+      ],
+      "_check_scaffold_availability": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._start_background_monitoring": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._protocol_specific_security_validation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._protocol_specific_activation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._protocol_specific_deactivation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._route_to_protocol_core": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_token_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_token_validation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_todo_token_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_todo_integration_approval": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_gap_detection_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._run_gap_detection_analysis": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_todo_queue_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_system_status_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_health_check_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_system_test_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._gap_detection_loop": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._token_cleanup_loop": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._system_health_monitor": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._protocol_specific_smoke_test": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._calculate_uptime": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._integrate_todo_solution": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._collect_system_metrics": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._analyze_system_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._check_token_system_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._check_gap_detection_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._check_file_management_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._check_disk_space": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._check_memory_usage": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._test_token_system": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._test_gap_detection": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._test_file_management": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._test_todo_generation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_start_background_monitoring": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_protocol_specific_security_validation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_protocol_specific_activation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_protocol_specific_deactivation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_route_to_protocol_core": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_handle_token_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_token_validation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_todo_token_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_todo_integration_approval": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_gap_detection_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_run_gap_detection_analysis": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_todo_queue_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_system_status_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_health_check_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_system_test_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_gap_detection_loop": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_token_cleanup_loop": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_system_health_monitor": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_protocol_specific_smoke_test": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_calculate_uptime": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_integrate_todo_solution": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_collect_system_metrics": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_analyze_system_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_check_token_system_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_check_gap_detection_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_check_file_management_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_check_disk_space": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_check_memory_usage": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_test_token_system": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_test_gap_detection": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_test_file_management": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_test_todo_generation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ]
+    },
+    "operation_type": {
+      "_build_fallback_shared_resources": [
+        "TRANSFORMATION"
+      ],
+      "_FallbackSharedResources": [
+        "TRANSFORMATION"
+      ],
+      "_FallbackSharedResources.configure_runtime_state_dir": [],
+      "_FallbackSharedResources.runtime_log_path": [
+        "TRANSFORMATION"
+      ],
+      "configure_runtime_state_dir": [
+        "TRANSFORMATION"
+      ],
+      "runtime_log_path": [
+        "TRANSFORMATION"
+      ],
+      "_spawn_user_requests": [
+        "TRANSFORMATION"
+      ],
+      "_invoke": [
+        "TRANSFORMATION"
+      ],
+      "_guarded_call": [],
+      "_spawn_meta_cycles": [
+        "TRANSFORMATION"
+      ],
+      "_tail_jsonl": [
+        "TRANSFORMATION"
+      ],
+      "_load_jsonl_since": [
+        "TRANSFORMATION"
+      ],
+      "_prepare_run_directory": [
+        "TRANSFORMATION"
+      ],
+      "_summarize_log_file": [
+        "TRANSFORMATION"
+      ],
+      "run": [
+        "TRANSFORMATION"
+      ],
+      "parse_args": [
+        "TRANSFORMATION"
+      ],
+      "main": [
+        "TRANSFORMATION"
+      ],
+      "_repo_sha": [
+        "TRANSFORMATION"
+      ],
+      "NexusManager": [
+        "TRANSFORMATION"
+      ],
+      "NexusManager._evict_expired": [],
+      "NexusManager.get": [
+        "TRANSFORMATION"
+      ],
+      "NexusManager.debug_snapshot": [
+        "TRANSFORMATION"
+      ],
+      "_evict_expired": [],
+      "get": [
+        "TRANSFORMATION"
+      ],
+      "debug_snapshot": [
+        "TRANSFORMATION"
+      ],
+      "MemoryConsolidationStage": [],
+      "MemoryRecallType": [],
+      "MemoryTrace": [
+        "TRANSFORMATION"
+      ],
+      "MemoryTrace._generate_pattern_key": [
+        "TRANSFORMATION"
+      ],
+      "MemoryTrace.strengthen": [],
+      "MemoryTrace.decay": [],
+      "MemoryTrace.pattern_complete": [
+        "TRANSFORMATION"
+      ],
+      "_generate_pattern_key": [
+        "TRANSFORMATION"
+      ],
+      "strengthen": [],
+      "decay": [],
+      "pattern_complete": [
+        "TRANSFORMATION"
+      ],
+      "MemoryConsolidator": [
+        "TRANSFORMATION"
+      ],
+      "MemoryConsolidator.ingest_smp": [
+        "TRANSFORMATION"
+      ],
+      "MemoryConsolidator.consolidate_traces": [
+        "TRANSFORMATION"
+      ],
+      "MemoryConsolidator._create_distributed_encoding": [
+        "TRANSFORMATION"
+      ],
+      "MemoryConsolidator._sparsify_encoding": [
+        "TRANSFORMATION"
+      ],
+      "MemoryConsolidator._abstract_semantic_group": [
+        "TRANSFORMATION"
+      ],
+      "ingest_smp": [
+        "TRANSFORMATION"
+      ],
+      "consolidate_traces": [
+        "TRANSFORMATION"
+      ],
+      "_create_distributed_encoding": [
+        "TRANSFORMATION"
+      ],
+      "_sparsify_encoding": [
+        "TRANSFORMATION"
+      ],
+      "_abstract_semantic_group": [
+        "TRANSFORMATION"
+      ],
+      "MemoryRecallSystem": [
+        "TRANSFORMATION"
+      ],
+      "MemoryRecallSystem.free_recall": [
+        "TRANSFORMATION"
+      ],
+      "MemoryRecallSystem.cued_recall": [
+        "TRANSFORMATION"
+      ],
+      "MemoryRecallSystem.recognition": [
+        "TRANSFORMATION"
+      ],
+      "MemoryRecallSystem.semantic_access": [
+        "TRANSFORMATION"
+      ],
+      "MemoryRecallSystem.episodic_replay": [
+        "TRANSFORMATION"
+      ],
+      "MemoryRecallSystem._spreading_activation": [
+        "TRANSFORMATION"
+      ],
+      "free_recall": [
+        "TRANSFORMATION"
+      ],
+      "cued_recall": [
+        "TRANSFORMATION"
+      ],
+      "recognition": [
+        "TRANSFORMATION"
+      ],
+      "semantic_access": [
+        "TRANSFORMATION"
+      ],
+      "episodic_replay": [
+        "TRANSFORMATION"
+      ],
+      "_spreading_activation": [
+        "TRANSFORMATION"
+      ],
+      "AbstractionEngine": [
+        "TRANSFORMATION"
+      ],
+      "AbstractionEngine.form_concept": [
+        "TRANSFORMATION"
+      ],
+      "AbstractionEngine.categorize": [
+        "TRANSFORMATION"
+      ],
+      "AbstractionEngine.abstract_relations": [
+        "TRANSFORMATION"
+      ],
+      "form_concept": [
+        "TRANSFORMATION"
+      ],
+      "categorize": [
+        "TRANSFORMATION"
+      ],
+      "abstract_relations": [
+        "TRANSFORMATION"
+      ],
+      "MemoryApplicationSystem": [
+        "TRANSFORMATION"
+      ],
+      "MemoryApplicationSystem.analogical_transfer": [
+        "TRANSFORMATION"
+      ],
+      "MemoryApplicationSystem.predictive_recall": [
+        "TRANSFORMATION"
+      ],
+      "MemoryApplicationSystem.insight_generation": [
+        "TRANSFORMATION"
+      ],
+      "MemoryApplicationSystem.cross_domain_transfer": [
+        "TRANSFORMATION"
+      ],
+      "analogical_transfer": [
+        "TRANSFORMATION"
+      ],
+      "predictive_recall": [
+        "TRANSFORMATION"
+      ],
+      "insight_generation": [
+        "TRANSFORMATION"
+      ],
+      "cross_domain_transfer": [
+        "TRANSFORMATION"
+      ],
+      "LivingMemorySystem": [
+        "TRANSFORMATION"
+      ],
+      "LivingMemorySystem.integrate_smp": [
+        "TRANSFORMATION"
+      ],
+      "LivingMemorySystem.periodic_consolidation": [
+        "TRANSFORMATION"
+      ],
+      "integrate_smp": [
+        "TRANSFORMATION"
+      ],
+      "periodic_consolidation": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus": [
+        "TRANSFORMATION"
+      ],
+      "AgentRequest": [
+        "TRANSFORMATION"
+      ],
+      "NexusResponse": [
+        "TRANSFORMATION"
+      ],
+      "ProtocolType": [],
+      "AgentType": [],
+      "TokenType": [],
+      "TokenStatus": [],
+      "GapType": [],
+      "SOPToken": [
+        "TRANSFORMATION"
+      ],
+      "SOPToken._generate_validation_key": [
+        "TRANSFORMATION"
+      ],
+      "SOPToken.use_token": [
+        "TRANSFORMATION"
+      ],
+      "SOPToken.is_valid": [
+        "TRANSFORMATION"
+      ],
+      "SOPToken.to_dict": [
+        "TRANSFORMATION"
+      ],
+      "_generate_validation_key": [
+        "TRANSFORMATION"
+      ],
+      "use_token": [
+        "TRANSFORMATION"
+      ],
+      "is_valid": [
+        "TRANSFORMATION"
+      ],
+      "to_dict": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap.to_todo_json": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap._generate_success_criteria": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap._analyze_protocol_dependencies": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap._extract_existing_code": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap._generate_requirements": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap._generate_test_cases": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap._check_scaffold_availability": [
+        "TRANSFORMATION"
+      ],
+      "to_todo_json": [
+        "TRANSFORMATION"
+      ],
+      "_generate_success_criteria": [
+        "TRANSFORMATION"
+      ],
+      "_analyze_protocol_dependencies": [
+        "TRANSFORMATION"
+      ],
+      "_extract_existing_code": [
+        "TRANSFORMATION"
+      ],
+      "_generate_requirements": [
+        "TRANSFORMATION"
+      ],
+      "_generate_test_cases": [
+        "TRANSFORMATION"
+      ],
+      "_check_scaffold_availability": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._start_background_monitoring": [],
+      "SOPNexus._protocol_specific_security_validation": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._protocol_specific_activation": [],
+      "SOPNexus._protocol_specific_deactivation": [],
+      "SOPNexus._route_to_protocol_core": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_token_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_token_validation": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_todo_token_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_todo_integration_approval": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_gap_detection_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._run_gap_detection_analysis": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_todo_queue_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_system_status_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_health_check_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_system_test_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._gap_detection_loop": [],
+      "SOPNexus._token_cleanup_loop": [],
+      "SOPNexus._system_health_monitor": [],
+      "SOPNexus._protocol_specific_smoke_test": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._calculate_uptime": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._integrate_todo_solution": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._collect_system_metrics": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._analyze_system_health": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._check_token_system_health": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._check_gap_detection_health": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._check_file_management_health": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._check_disk_space": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._check_memory_usage": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._test_token_system": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._test_gap_detection": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._test_file_management": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._test_todo_generation": [
+        "TRANSFORMATION"
+      ],
+      "_start_background_monitoring": [],
+      "_protocol_specific_security_validation": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_activation": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_deactivation": [
+        "TRANSFORMATION"
+      ],
+      "_route_to_protocol_core": [
+        "TRANSFORMATION"
+      ],
+      "_handle_token_request": [
+        "TRANSFORMATION"
+      ],
+      "_handle_token_validation": [
+        "TRANSFORMATION"
+      ],
+      "_handle_todo_token_request": [
+        "TRANSFORMATION"
+      ],
+      "_handle_todo_integration_approval": [
+        "TRANSFORMATION"
+      ],
+      "_handle_gap_detection_request": [
+        "TRANSFORMATION"
+      ],
+      "_run_gap_detection_analysis": [
+        "TRANSFORMATION"
+      ],
+      "_handle_todo_queue_request": [
+        "TRANSFORMATION"
+      ],
+      "_handle_system_status_request": [
+        "TRANSFORMATION"
+      ],
+      "_handle_health_check_request": [
+        "TRANSFORMATION"
+      ],
+      "_handle_system_test_request": [
+        "TRANSFORMATION"
+      ],
+      "_gap_detection_loop": [],
+      "_token_cleanup_loop": [],
+      "_system_health_monitor": [],
+      "_protocol_specific_smoke_test": [
+        "TRANSFORMATION"
+      ],
+      "_calculate_uptime": [
+        "TRANSFORMATION"
+      ],
+      "_integrate_todo_solution": [
+        "TRANSFORMATION"
+      ],
+      "_collect_system_metrics": [
+        "TRANSFORMATION"
+      ],
+      "_analyze_system_health": [
+        "TRANSFORMATION"
+      ],
+      "_check_token_system_health": [
+        "TRANSFORMATION"
+      ],
+      "_check_gap_detection_health": [
+        "TRANSFORMATION"
+      ],
+      "_check_file_management_health": [
+        "TRANSFORMATION"
+      ],
+      "_check_disk_space": [
+        "TRANSFORMATION"
+      ],
+      "_check_memory_usage": [
+        "TRANSFORMATION"
+      ],
+      "_test_token_system": [
+        "TRANSFORMATION"
+      ],
+      "_test_gap_detection": [
+        "TRANSFORMATION"
+      ],
+      "_test_file_management": [
+        "TRANSFORMATION"
+      ],
+      "_test_todo_generation": [
+        "TRANSFORMATION"
+      ]
+    },
+    "data_role": {
+      "_build_fallback_shared_resources": [],
+      "_FallbackSharedResources": [],
+      "_FallbackSharedResources.configure_runtime_state_dir": [],
+      "_FallbackSharedResources.runtime_log_path": [],
+      "configure_runtime_state_dir": [],
+      "runtime_log_path": [],
+      "_spawn_user_requests": [],
+      "_invoke": [],
+      "_guarded_call": [],
+      "_spawn_meta_cycles": [],
+      "_tail_jsonl": [],
+      "_load_jsonl_since": [],
+      "_prepare_run_directory": [],
+      "_summarize_log_file": [],
+      "run": [],
+      "parse_args": [],
+      "main": [],
+      "_repo_sha": [],
+      "NexusManager": [],
+      "NexusManager._evict_expired": [],
+      "NexusManager.get": [],
+      "NexusManager.debug_snapshot": [],
+      "_evict_expired": [],
+      "get": [],
+      "debug_snapshot": [],
+      "MemoryConsolidationStage": [
+        "MEMORY"
+      ],
+      "MemoryRecallType": [
+        "MEMORY"
+      ],
+      "MemoryTrace": [
+        "MEMORY"
+      ],
+      "MemoryTrace._generate_pattern_key": [
+        "MEMORY"
+      ],
+      "MemoryTrace.strengthen": [
+        "MEMORY"
+      ],
+      "MemoryTrace.decay": [
+        "MEMORY"
+      ],
+      "MemoryTrace.pattern_complete": [
+        "MEMORY"
+      ],
+      "_generate_pattern_key": [
+        "MEMORY"
+      ],
+      "strengthen": [
+        "MEMORY"
+      ],
+      "decay": [
+        "MEMORY"
+      ],
+      "pattern_complete": [
+        "MEMORY"
+      ],
+      "MemoryConsolidator": [
+        "MEMORY"
+      ],
+      "MemoryConsolidator.ingest_smp": [
+        "MEMORY"
+      ],
+      "MemoryConsolidator.consolidate_traces": [
+        "MEMORY"
+      ],
+      "MemoryConsolidator._create_distributed_encoding": [
+        "MEMORY"
+      ],
+      "MemoryConsolidator._sparsify_encoding": [
+        "MEMORY"
+      ],
+      "MemoryConsolidator._abstract_semantic_group": [
+        "MEMORY"
+      ],
+      "ingest_smp": [
+        "MEMORY"
+      ],
+      "consolidate_traces": [
+        "MEMORY"
+      ],
+      "_create_distributed_encoding": [
+        "MEMORY"
+      ],
+      "_sparsify_encoding": [
+        "MEMORY"
+      ],
+      "_abstract_semantic_group": [
+        "MEMORY"
+      ],
+      "MemoryRecallSystem": [
+        "MEMORY"
+      ],
+      "MemoryRecallSystem.free_recall": [
+        "MEMORY"
+      ],
+      "MemoryRecallSystem.cued_recall": [
+        "MEMORY"
+      ],
+      "MemoryRecallSystem.recognition": [
+        "MEMORY"
+      ],
+      "MemoryRecallSystem.semantic_access": [
+        "MEMORY"
+      ],
+      "MemoryRecallSystem.episodic_replay": [
+        "MEMORY"
+      ],
+      "MemoryRecallSystem._spreading_activation": [
+        "MEMORY"
+      ],
+      "free_recall": [
+        "MEMORY"
+      ],
+      "cued_recall": [
+        "MEMORY"
+      ],
+      "recognition": [
+        "MEMORY"
+      ],
+      "semantic_access": [
+        "MEMORY"
+      ],
+      "episodic_replay": [
+        "MEMORY"
+      ],
+      "_spreading_activation": [
+        "MEMORY"
+      ],
+      "AbstractionEngine": [
+        "MEMORY"
+      ],
+      "AbstractionEngine.form_concept": [
+        "MEMORY"
+      ],
+      "AbstractionEngine.categorize": [
+        "MEMORY"
+      ],
+      "AbstractionEngine.abstract_relations": [
+        "MEMORY"
+      ],
+      "form_concept": [
+        "MEMORY"
+      ],
+      "categorize": [
+        "MEMORY"
+      ],
+      "abstract_relations": [
+        "MEMORY"
+      ],
+      "MemoryApplicationSystem": [
+        "MEMORY"
+      ],
+      "MemoryApplicationSystem.analogical_transfer": [
+        "MEMORY"
+      ],
+      "MemoryApplicationSystem.predictive_recall": [
+        "MEMORY"
+      ],
+      "MemoryApplicationSystem.insight_generation": [
+        "MEMORY"
+      ],
+      "MemoryApplicationSystem.cross_domain_transfer": [
+        "MEMORY"
+      ],
+      "analogical_transfer": [
+        "MEMORY"
+      ],
+      "predictive_recall": [
+        "MEMORY"
+      ],
+      "insight_generation": [
+        "MEMORY"
+      ],
+      "cross_domain_transfer": [
+        "MEMORY"
+      ],
+      "LivingMemorySystem": [
+        "MEMORY"
+      ],
+      "LivingMemorySystem.integrate_smp": [
+        "MEMORY"
+      ],
+      "LivingMemorySystem.periodic_consolidation": [
+        "MEMORY"
+      ],
+      "integrate_smp": [
+        "MEMORY"
+      ],
+      "periodic_consolidation": [
+        "MEMORY"
+      ],
+      "BaseNexus": [],
+      "AgentRequest": [],
+      "NexusResponse": [],
+      "ProtocolType": [],
+      "AgentType": [],
+      "TokenType": [],
+      "TokenStatus": [],
+      "GapType": [],
+      "SOPToken": [],
+      "SOPToken._generate_validation_key": [],
+      "SOPToken.use_token": [],
+      "SOPToken.is_valid": [],
+      "SOPToken.to_dict": [],
+      "_generate_validation_key": [],
+      "use_token": [],
+      "is_valid": [],
+      "to_dict": [],
+      "SystemGap": [],
+      "SystemGap.to_todo_json": [],
+      "SystemGap._generate_success_criteria": [],
+      "SystemGap._analyze_protocol_dependencies": [],
+      "SystemGap._extract_existing_code": [],
+      "SystemGap._generate_requirements": [],
+      "SystemGap._generate_test_cases": [],
+      "SystemGap._check_scaffold_availability": [],
+      "to_todo_json": [],
+      "_generate_success_criteria": [],
+      "_analyze_protocol_dependencies": [],
+      "_extract_existing_code": [],
+      "_generate_requirements": [],
+      "_generate_test_cases": [],
+      "_check_scaffold_availability": [],
+      "SOPNexus": [],
+      "SOPNexus._start_background_monitoring": [],
+      "SOPNexus._protocol_specific_security_validation": [],
+      "SOPNexus._protocol_specific_activation": [],
+      "SOPNexus._protocol_specific_deactivation": [],
+      "SOPNexus._route_to_protocol_core": [],
+      "SOPNexus._handle_token_request": [],
+      "SOPNexus._handle_token_validation": [],
+      "SOPNexus._handle_todo_token_request": [],
+      "SOPNexus._handle_todo_integration_approval": [],
+      "SOPNexus._handle_gap_detection_request": [],
+      "SOPNexus._run_gap_detection_analysis": [],
+      "SOPNexus._handle_todo_queue_request": [],
+      "SOPNexus._handle_system_status_request": [],
+      "SOPNexus._handle_health_check_request": [],
+      "SOPNexus._handle_system_test_request": [],
+      "SOPNexus._gap_detection_loop": [],
+      "SOPNexus._token_cleanup_loop": [],
+      "SOPNexus._system_health_monitor": [],
+      "SOPNexus._protocol_specific_smoke_test": [],
+      "SOPNexus._calculate_uptime": [],
+      "SOPNexus._integrate_todo_solution": [],
+      "SOPNexus._collect_system_metrics": [],
+      "SOPNexus._analyze_system_health": [],
+      "SOPNexus._check_token_system_health": [],
+      "SOPNexus._check_gap_detection_health": [],
+      "SOPNexus._check_file_management_health": [],
+      "SOPNexus._check_disk_space": [],
+      "SOPNexus._check_memory_usage": [],
+      "SOPNexus._test_token_system": [],
+      "SOPNexus._test_gap_detection": [],
+      "SOPNexus._test_file_management": [],
+      "SOPNexus._test_todo_generation": [],
+      "_start_background_monitoring": [],
+      "_protocol_specific_security_validation": [],
+      "_protocol_specific_activation": [],
+      "_protocol_specific_deactivation": [],
+      "_route_to_protocol_core": [],
+      "_handle_token_request": [],
+      "_handle_token_validation": [],
+      "_handle_todo_token_request": [],
+      "_handle_todo_integration_approval": [],
+      "_handle_gap_detection_request": [],
+      "_run_gap_detection_analysis": [],
+      "_handle_todo_queue_request": [],
+      "_handle_system_status_request": [],
+      "_handle_health_check_request": [],
+      "_handle_system_test_request": [],
+      "_gap_detection_loop": [],
+      "_token_cleanup_loop": [],
+      "_system_health_monitor": [],
+      "_protocol_specific_smoke_test": [],
+      "_calculate_uptime": [],
+      "_integrate_todo_solution": [],
+      "_collect_system_metrics": [],
+      "_analyze_system_health": [],
+      "_check_token_system_health": [],
+      "_check_gap_detection_health": [],
+      "_check_file_management_health": [],
+      "_check_disk_space": [],
+      "_check_memory_usage": [],
+      "_test_token_system": [],
+      "_test_gap_detection": [],
+      "_test_file_management": [],
+      "_test_todo_generation": []
+    },
+    "control_role": {
+      "_build_fallback_shared_resources": [
+        "RUNTIME_CONTROL"
+      ],
+      "_FallbackSharedResources": [
+        "RUNTIME_CONTROL"
+      ],
+      "_FallbackSharedResources.configure_runtime_state_dir": [
+        "RUNTIME_CONTROL"
+      ],
+      "_FallbackSharedResources.runtime_log_path": [
+        "RUNTIME_CONTROL"
+      ],
+      "configure_runtime_state_dir": [],
+      "runtime_log_path": [],
+      "_spawn_user_requests": [
+        "RUNTIME_CONTROL"
+      ],
+      "_invoke": [
+        "RUNTIME_CONTROL"
+      ],
+      "_guarded_call": [
+        "RUNTIME_CONTROL"
+      ],
+      "_spawn_meta_cycles": [
+        "RUNTIME_CONTROL"
+      ],
+      "_tail_jsonl": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_jsonl_since": [
+        "RUNTIME_CONTROL"
+      ],
+      "_prepare_run_directory": [
+        "RUNTIME_CONTROL"
+      ],
+      "_summarize_log_file": [
+        "RUNTIME_CONTROL"
+      ],
+      "run": [],
+      "parse_args": [
+        "RUNTIME_CONTROL"
+      ],
+      "main": [
+        "BOOT_CONTROL"
+      ],
+      "_repo_sha": [
+        "RUNTIME_CONTROL"
+      ],
+      "NexusManager": [
+        "RUNTIME_CONTROL"
+      ],
+      "NexusManager._evict_expired": [
+        "RUNTIME_CONTROL"
+      ],
+      "NexusManager.get": [
+        "RUNTIME_CONTROL"
+      ],
+      "NexusManager.debug_snapshot": [
+        "RUNTIME_CONTROL"
+      ],
+      "_evict_expired": [
+        "RUNTIME_CONTROL"
+      ],
+      "get": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "debug_snapshot": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryConsolidationStage": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryRecallType": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryTrace": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryTrace._generate_pattern_key": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryTrace.strengthen": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryTrace.decay": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryTrace.pattern_complete": [
+        "RUNTIME_CONTROL"
+      ],
+      "_generate_pattern_key": [
+        "RUNTIME_CONTROL"
+      ],
+      "strengthen": [
+        "RUNTIME_CONTROL"
+      ],
+      "decay": [
+        "RUNTIME_CONTROL"
+      ],
+      "pattern_complete": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryConsolidator": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryConsolidator.ingest_smp": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryConsolidator.consolidate_traces": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryConsolidator._create_distributed_encoding": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryConsolidator._sparsify_encoding": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryConsolidator._abstract_semantic_group": [
+        "RUNTIME_CONTROL"
+      ],
+      "ingest_smp": [
+        "RUNTIME_CONTROL"
+      ],
+      "consolidate_traces": [
+        "RUNTIME_CONTROL"
+      ],
+      "_create_distributed_encoding": [
+        "RUNTIME_CONTROL"
+      ],
+      "_sparsify_encoding": [
+        "RUNTIME_CONTROL"
+      ],
+      "_abstract_semantic_group": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryRecallSystem": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryRecallSystem.free_recall": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryRecallSystem.cued_recall": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryRecallSystem.recognition": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryRecallSystem.semantic_access": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryRecallSystem.episodic_replay": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryRecallSystem._spreading_activation": [
+        "RUNTIME_CONTROL"
+      ],
+      "free_recall": [
+        "RUNTIME_CONTROL"
+      ],
+      "cued_recall": [
+        "RUNTIME_CONTROL"
+      ],
+      "recognition": [
+        "RUNTIME_CONTROL"
+      ],
+      "semantic_access": [
+        "RUNTIME_CONTROL"
+      ],
+      "episodic_replay": [
+        "RUNTIME_CONTROL"
+      ],
+      "_spreading_activation": [
+        "RUNTIME_CONTROL"
+      ],
+      "AbstractionEngine": [
+        "RUNTIME_CONTROL"
+      ],
+      "AbstractionEngine.form_concept": [
+        "RUNTIME_CONTROL"
+      ],
+      "AbstractionEngine.categorize": [
+        "RUNTIME_CONTROL"
+      ],
+      "AbstractionEngine.abstract_relations": [
+        "RUNTIME_CONTROL"
+      ],
+      "form_concept": [
+        "RUNTIME_CONTROL"
+      ],
+      "categorize": [
+        "RUNTIME_CONTROL"
+      ],
+      "abstract_relations": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryApplicationSystem": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryApplicationSystem.analogical_transfer": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryApplicationSystem.predictive_recall": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryApplicationSystem.insight_generation": [
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryApplicationSystem.cross_domain_transfer": [
+        "RUNTIME_CONTROL"
+      ],
+      "analogical_transfer": [
+        "RUNTIME_CONTROL"
+      ],
+      "predictive_recall": [
+        "RUNTIME_CONTROL"
+      ],
+      "insight_generation": [
+        "RUNTIME_CONTROL"
+      ],
+      "cross_domain_transfer": [
+        "RUNTIME_CONTROL"
+      ],
+      "LivingMemorySystem": [
+        "RUNTIME_CONTROL"
+      ],
+      "LivingMemorySystem.integrate_smp": [
+        "RUNTIME_CONTROL"
+      ],
+      "LivingMemorySystem.periodic_consolidation": [
+        "RUNTIME_CONTROL"
+      ],
+      "integrate_smp": [
+        "RUNTIME_CONTROL"
+      ],
+      "periodic_consolidation": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus": [
+        "RUNTIME_CONTROL"
+      ],
+      "AgentRequest": [
+        "RUNTIME_CONTROL"
+      ],
+      "NexusResponse": [
+        "RUNTIME_CONTROL"
+      ],
+      "ProtocolType": [
+        "RUNTIME_CONTROL"
+      ],
+      "AgentType": [
+        "RUNTIME_CONTROL"
+      ],
+      "TokenType": [
+        "RUNTIME_CONTROL"
+      ],
+      "TokenStatus": [
+        "RUNTIME_CONTROL"
+      ],
+      "GapType": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPToken": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPToken._generate_validation_key": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPToken.use_token": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPToken.is_valid": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPToken.to_dict": [
+        "RUNTIME_CONTROL"
+      ],
+      "_generate_validation_key": [
+        "RUNTIME_CONTROL"
+      ],
+      "use_token": [
+        "RUNTIME_CONTROL"
+      ],
+      "is_valid": [],
+      "to_dict": [
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap": [
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap.to_todo_json": [
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap._generate_success_criteria": [
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap._analyze_protocol_dependencies": [
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap._extract_existing_code": [
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap._generate_requirements": [
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap._generate_test_cases": [
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap._check_scaffold_availability": [
+        "RUNTIME_CONTROL"
+      ],
+      "to_todo_json": [
+        "RUNTIME_CONTROL"
+      ],
+      "_generate_success_criteria": [
+        "RUNTIME_CONTROL"
+      ],
+      "_analyze_protocol_dependencies": [
+        "RUNTIME_CONTROL"
+      ],
+      "_extract_existing_code": [
+        "RUNTIME_CONTROL"
+      ],
+      "_generate_requirements": [],
+      "_generate_test_cases": [],
+      "_check_scaffold_availability": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._start_background_monitoring": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._protocol_specific_security_validation": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._protocol_specific_activation": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._protocol_specific_deactivation": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._route_to_protocol_core": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_token_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_token_validation": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_todo_token_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_todo_integration_approval": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_gap_detection_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._run_gap_detection_analysis": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_todo_queue_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_system_status_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_health_check_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_system_test_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._gap_detection_loop": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._token_cleanup_loop": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._system_health_monitor": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._protocol_specific_smoke_test": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._calculate_uptime": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._integrate_todo_solution": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._collect_system_metrics": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._analyze_system_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._check_token_system_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._check_gap_detection_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._check_file_management_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._check_disk_space": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._check_memory_usage": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._test_token_system": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._test_gap_detection": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._test_file_management": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._test_todo_generation": [
+        "RUNTIME_CONTROL"
+      ],
+      "_start_background_monitoring": [
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_security_validation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_activation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_deactivation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_route_to_protocol_core": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_token_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_token_validation": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_todo_token_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_todo_integration_approval": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_gap_detection_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_run_gap_detection_analysis": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_todo_queue_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_system_status_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_health_check_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_system_test_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_gap_detection_loop": [
+        "RUNTIME_CONTROL"
+      ],
+      "_token_cleanup_loop": [
+        "RUNTIME_CONTROL"
+      ],
+      "_system_health_monitor": [
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_smoke_test": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_calculate_uptime": [
+        "RUNTIME_CONTROL"
+      ],
+      "_integrate_todo_solution": [
+        "RUNTIME_CONTROL"
+      ],
+      "_collect_system_metrics": [
+        "RUNTIME_CONTROL"
+      ],
+      "_analyze_system_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_token_system_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_gap_detection_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_file_management_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_disk_space": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_memory_usage": [
+        "RUNTIME_CONTROL"
+      ],
+      "_test_token_system": [
+        "RUNTIME_CONTROL"
+      ],
+      "_test_gap_detection": [
+        "RUNTIME_CONTROL"
+      ],
+      "_test_file_management": [
+        "RUNTIME_CONTROL"
+      ],
+      "_test_todo_generation": [
+        "RUNTIME_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "_build_fallback_shared_resources": [
+        "UNMAPPED"
+      ],
+      "_FallbackSharedResources": [
+        "UNMAPPED"
+      ],
+      "_FallbackSharedResources.configure_runtime_state_dir": [
+        "UNMAPPED"
+      ],
+      "_FallbackSharedResources.runtime_log_path": [
+        "UNMAPPED"
+      ],
+      "configure_runtime_state_dir": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "runtime_log_path": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_spawn_user_requests": [
+        "UNMAPPED"
+      ],
+      "_invoke": [
+        "UNMAPPED"
+      ],
+      "_guarded_call": [
+        "UNMAPPED"
+      ],
+      "_spawn_meta_cycles": [
+        "UNMAPPED"
+      ],
+      "_tail_jsonl": [
+        "UNMAPPED"
+      ],
+      "_load_jsonl_since": [
+        "UNMAPPED"
+      ],
+      "_prepare_run_directory": [
+        "UNMAPPED"
+      ],
+      "_summarize_log_file": [
+        "UNMAPPED"
+      ],
+      "run": [
+        "UNMAPPED"
+      ],
+      "parse_args": [
+        "UNMAPPED"
+      ],
+      "main": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "_repo_sha": [
+        "UNMAPPED"
+      ],
+      "NexusManager": [
+        "UNMAPPED"
+      ],
+      "NexusManager._evict_expired": [
+        "UNMAPPED"
+      ],
+      "NexusManager.get": [
+        "UNMAPPED"
+      ],
+      "NexusManager.debug_snapshot": [
+        "UNMAPPED"
+      ],
+      "_evict_expired": [
+        "UNMAPPED"
+      ],
+      "get": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "debug_snapshot": [
+        "UNMAPPED"
+      ],
+      "MemoryConsolidationStage": [
+        "UNMAPPED"
+      ],
+      "MemoryRecallType": [
+        "UNMAPPED"
+      ],
+      "MemoryTrace": [
+        "UNMAPPED"
+      ],
+      "MemoryTrace._generate_pattern_key": [
+        "UNMAPPED"
+      ],
+      "MemoryTrace.strengthen": [
+        "UNMAPPED"
+      ],
+      "MemoryTrace.decay": [
+        "UNMAPPED"
+      ],
+      "MemoryTrace.pattern_complete": [
+        "UNMAPPED"
+      ],
+      "_generate_pattern_key": [
+        "UNMAPPED"
+      ],
+      "strengthen": [
+        "UNMAPPED"
+      ],
+      "decay": [
+        "UNMAPPED"
+      ],
+      "pattern_complete": [
+        "UNMAPPED"
+      ],
+      "MemoryConsolidator": [
+        "UNMAPPED"
+      ],
+      "MemoryConsolidator.ingest_smp": [
+        "UNMAPPED"
+      ],
+      "MemoryConsolidator.consolidate_traces": [
+        "UNMAPPED"
+      ],
+      "MemoryConsolidator._create_distributed_encoding": [
+        "UNMAPPED"
+      ],
+      "MemoryConsolidator._sparsify_encoding": [
+        "UNMAPPED"
+      ],
+      "MemoryConsolidator._abstract_semantic_group": [
+        "UNMAPPED"
+      ],
+      "ingest_smp": [
+        "UNMAPPED"
+      ],
+      "consolidate_traces": [
+        "UNMAPPED"
+      ],
+      "_create_distributed_encoding": [
+        "UNMAPPED"
+      ],
+      "_sparsify_encoding": [
+        "UNMAPPED"
+      ],
+      "_abstract_semantic_group": [
+        "UNMAPPED"
+      ],
+      "MemoryRecallSystem": [
+        "UNMAPPED"
+      ],
+      "MemoryRecallSystem.free_recall": [
+        "UNMAPPED"
+      ],
+      "MemoryRecallSystem.cued_recall": [
+        "UNMAPPED"
+      ],
+      "MemoryRecallSystem.recognition": [
+        "UNMAPPED"
+      ],
+      "MemoryRecallSystem.semantic_access": [
+        "UNMAPPED"
+      ],
+      "MemoryRecallSystem.episodic_replay": [
+        "UNMAPPED"
+      ],
+      "MemoryRecallSystem._spreading_activation": [
+        "UNMAPPED"
+      ],
+      "free_recall": [
+        "UNMAPPED"
+      ],
+      "cued_recall": [
+        "UNMAPPED"
+      ],
+      "recognition": [
+        "UNMAPPED"
+      ],
+      "semantic_access": [
+        "UNMAPPED"
+      ],
+      "episodic_replay": [
+        "UNMAPPED"
+      ],
+      "_spreading_activation": [
+        "UNMAPPED"
+      ],
+      "AbstractionEngine": [
+        "UNMAPPED"
+      ],
+      "AbstractionEngine.form_concept": [
+        "UNMAPPED"
+      ],
+      "AbstractionEngine.categorize": [
+        "UNMAPPED"
+      ],
+      "AbstractionEngine.abstract_relations": [
+        "UNMAPPED"
+      ],
+      "form_concept": [
+        "UNMAPPED"
+      ],
+      "categorize": [
+        "UNMAPPED"
+      ],
+      "abstract_relations": [
+        "UNMAPPED"
+      ],
+      "MemoryApplicationSystem": [
+        "UNMAPPED"
+      ],
+      "MemoryApplicationSystem.analogical_transfer": [
+        "UNMAPPED"
+      ],
+      "MemoryApplicationSystem.predictive_recall": [
+        "UNMAPPED"
+      ],
+      "MemoryApplicationSystem.insight_generation": [
+        "UNMAPPED"
+      ],
+      "MemoryApplicationSystem.cross_domain_transfer": [
+        "UNMAPPED"
+      ],
+      "analogical_transfer": [
+        "UNMAPPED"
+      ],
+      "predictive_recall": [
+        "UNMAPPED"
+      ],
+      "insight_generation": [
+        "UNMAPPED"
+      ],
+      "cross_domain_transfer": [
+        "UNMAPPED"
+      ],
+      "LivingMemorySystem": [
+        "UNMAPPED"
+      ],
+      "LivingMemorySystem.integrate_smp": [
+        "UNMAPPED"
+      ],
+      "LivingMemorySystem.periodic_consolidation": [
+        "UNMAPPED"
+      ],
+      "integrate_smp": [
+        "UNMAPPED"
+      ],
+      "periodic_consolidation": [
+        "UNMAPPED"
+      ],
+      "BaseNexus": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "AgentRequest": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "NexusResponse": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ProtocolType": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "AgentType": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "TokenType": [
+        "UNMAPPED"
+      ],
+      "TokenStatus": [
+        "UNMAPPED"
+      ],
+      "GapType": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SOPToken": [
+        "UNMAPPED"
+      ],
+      "SOPToken._generate_validation_key": [
+        "UNMAPPED"
+      ],
+      "SOPToken.use_token": [
+        "UNMAPPED"
+      ],
+      "SOPToken.is_valid": [
+        "UNMAPPED"
+      ],
+      "SOPToken.to_dict": [
+        "UNMAPPED"
+      ],
+      "_generate_validation_key": [
+        "UNMAPPED"
+      ],
+      "use_token": [
+        "UNMAPPED"
+      ],
+      "is_valid": [
+        "UNMAPPED"
+      ],
+      "to_dict": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SystemGap": [
+        "UNMAPPED"
+      ],
+      "SystemGap.to_todo_json": [
+        "UNMAPPED"
+      ],
+      "SystemGap._generate_success_criteria": [
+        "UNMAPPED"
+      ],
+      "SystemGap._analyze_protocol_dependencies": [
+        "UNMAPPED"
+      ],
+      "SystemGap._extract_existing_code": [
+        "UNMAPPED"
+      ],
+      "SystemGap._generate_requirements": [
+        "UNMAPPED"
+      ],
+      "SystemGap._generate_test_cases": [
+        "UNMAPPED"
+      ],
+      "SystemGap._check_scaffold_availability": [
+        "UNMAPPED"
+      ],
+      "to_todo_json": [
+        "UNMAPPED"
+      ],
+      "_generate_success_criteria": [
+        "UNMAPPED"
+      ],
+      "_analyze_protocol_dependencies": [
+        "UNMAPPED"
+      ],
+      "_extract_existing_code": [
+        "UNMAPPED"
+      ],
+      "_generate_requirements": [
+        "UNMAPPED"
+      ],
+      "_generate_test_cases": [
+        "UNMAPPED"
+      ],
+      "_check_scaffold_availability": [
+        "UNMAPPED"
+      ],
+      "SOPNexus": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._start_background_monitoring": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._protocol_specific_security_validation": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._protocol_specific_activation": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._protocol_specific_deactivation": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._route_to_protocol_core": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_token_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_token_validation": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_todo_token_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_todo_integration_approval": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_gap_detection_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._run_gap_detection_analysis": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_todo_queue_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_system_status_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_health_check_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_system_test_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._gap_detection_loop": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._token_cleanup_loop": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._system_health_monitor": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._protocol_specific_smoke_test": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._calculate_uptime": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._integrate_todo_solution": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._collect_system_metrics": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._analyze_system_health": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._check_token_system_health": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._check_gap_detection_health": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._check_file_management_health": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._check_disk_space": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._check_memory_usage": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._test_token_system": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._test_gap_detection": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._test_file_management": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._test_todo_generation": [
+        "UNMAPPED"
+      ],
+      "_start_background_monitoring": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_security_validation": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_activation": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_deactivation": [
+        "UNMAPPED"
+      ],
+      "_route_to_protocol_core": [
+        "UNMAPPED"
+      ],
+      "_handle_token_request": [
+        "UNMAPPED"
+      ],
+      "_handle_token_validation": [
+        "UNMAPPED"
+      ],
+      "_handle_todo_token_request": [
+        "UNMAPPED"
+      ],
+      "_handle_todo_integration_approval": [
+        "UNMAPPED"
+      ],
+      "_handle_gap_detection_request": [
+        "UNMAPPED"
+      ],
+      "_run_gap_detection_analysis": [
+        "UNMAPPED"
+      ],
+      "_handle_todo_queue_request": [
+        "UNMAPPED"
+      ],
+      "_handle_system_status_request": [
+        "UNMAPPED"
+      ],
+      "_handle_health_check_request": [
+        "UNMAPPED"
+      ],
+      "_handle_system_test_request": [
+        "UNMAPPED"
+      ],
+      "_gap_detection_loop": [
+        "UNMAPPED"
+      ],
+      "_token_cleanup_loop": [
+        "UNMAPPED"
+      ],
+      "_system_health_monitor": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_smoke_test": [
+        "UNMAPPED"
+      ],
+      "_calculate_uptime": [
+        "UNMAPPED"
+      ],
+      "_integrate_todo_solution": [
+        "UNMAPPED"
+      ],
+      "_collect_system_metrics": [
+        "UNMAPPED"
+      ],
+      "_analyze_system_health": [
+        "UNMAPPED"
+      ],
+      "_check_token_system_health": [
+        "UNMAPPED"
+      ],
+      "_check_gap_detection_health": [
+        "UNMAPPED"
+      ],
+      "_check_file_management_health": [
+        "UNMAPPED"
+      ],
+      "_check_disk_space": [
+        "UNMAPPED"
+      ],
+      "_check_memory_usage": [
+        "UNMAPPED"
+      ],
+      "_test_token_system": [
+        "UNMAPPED"
+      ],
+      "_test_gap_detection": [
+        "UNMAPPED"
+      ],
+      "_test_file_management": [
+        "UNMAPPED"
+      ],
+      "_test_todo_generation": [
+        "UNMAPPED"
+      ]
+    }
+  }
+}

@@ -1,0 +1,2049 @@
+{
+  "family_id": "FAMILY_012",
+  "member_count": 120,
+  "members": [
+    "_logos_state_dir",
+    "_attestation_path",
+    "CommandFailure",
+    "verify_agent_identity",
+    "_run_stream",
+    "_coqtop_script",
+    "_parse_assumptions",
+    "_scan_for_admitted",
+    "verify_internal_lem",
+    "AlignmentAudit",
+    "AlignmentAudit.write",
+    "write",
+    "SandboxedLogosAgent",
+    "SandboxedLogosAgent.create",
+    "SandboxedLogosAgent.boot",
+    "SandboxedLogosAgent.unlock_if_aligned",
+    "SandboxedLogosAgent.status",
+    "create",
+    "boot",
+    "unlock_if_aligned",
+    "status",
+    "main",
+    "AlignmentGateError",
+    "canonical_json_hash",
+    "compute_attestation_hash",
+    "load_alignment_attestation",
+    "load_mission_profile",
+    "validate_attestation",
+    "enforce_truth_annotation",
+    "validate_mission_profile",
+    "load_pin",
+    "verify_pinned_repo",
+    "update_metrics",
+    "get_tool_playbook",
+    "run_validators",
+    "validate_plan_run",
+    "compute_plan_score",
+    "plan_signature",
+    "update_plan_history",
+    "normalize_objective_class",
+    "_missing_logos_core",
+    "PersistentAgentIdentity",
+    "PersistentAgentIdentity._save_identity",
+    "_save_identity",
+    "SandboxState",
+    "RuntimeContext",
+    "load_mission",
+    "_is_tool_optimizer_commitment",
+    "_is_tool_invention_commitment",
+    "_fallback_require_safe_interfaces",
+    "wrapper",
+    "_fallback_restrict_writes",
+    "decorator",
+    "_ensure",
+    "_restrict_wrapper",
+    "tool_filesystem_read",
+    "tool_mission_status",
+    "_integrity_baseline_path",
+    "_enforce_integrity_baseline",
+    "_run_proof_compile",
+    "_preflight_identity_check",
+    "_is_forbidden_candidate",
+    "_resolve_retrieve_bases",
+    "_iter_retrieve_files",
+    "tool_retrieve_local",
+    "tool_retrieve_web",
+    "tool_probe_last_snapshot",
+    "_precondition_check",
+    "_record_tool_validation",
+    "_register_fallbacks",
+    "dispatch_tool",
+    "_sandbox_base",
+    "configure_sandbox",
+    "_timestamp",
+    "_compute_catalog_tail_hash",
+    "_collect_missing_evidence_refs",
+    "_compute_theory_hash",
+    "_make_run_id",
+    "_sandbox_path",
+    "PromotionPolicyError",
+    "_requires_promotion",
+    "_coerce_list",
+    "_apply_tool_policy",
+    "_ensure_list",
+    "_replace_rollback_placeholders",
+    "_emit_via_promotion",
+    "_build_snapshot",
+    "_write_tmp",
+    "_as_posix",
+    "_sandbox_write_impl",
+    "_write",
+    "tool_sandbox_write",
+    "tool_agent_memory",
+    "_resolve_sandbox_entry",
+    "tool_sandbox_read",
+    "tool_sandbox_list",
+    "_safe_list_subdirs",
+    "_count_python_files",
+    "_dedupe_preserve_order",
+    "tool_capability_report",
+    "_tokenize",
+    "_collect_sandbox_files",
+    "_jaccard",
+    "_plan_quality",
+    "tool_sandbox_reflect",
+    "select_ready_inputs",
+    "ask_user",
+    "bounded_call",
+    "run",
+    "_parse_extra_steps",
+    "make_plan",
+    "_load_agent_state",
+    "_persist_agent_state",
+    "_record_protocol_health",
+    "_extract_artifacts",
+    "_persist_agent_run",
+    "_plan_history_mean",
+    "run_supervised",
+    "parse_args",
+    "_check_and_trigger_self_improvement"
+  ],
+  "invariant_semantics": {},
+  "divergent_semantics": {
+    "semantic_tags": {
+      "_logos_state_dir": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_attestation_path": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "CommandFailure": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "verify_agent_identity": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_run_stream": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_coqtop_script": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_parse_assumptions": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_scan_for_admitted": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "verify_internal_lem": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "AlignmentAudit": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "AlignmentAudit.write": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "write": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SandboxedLogosAgent": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SandboxedLogosAgent.create": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SandboxedLogosAgent.boot": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SandboxedLogosAgent.unlock_if_aligned": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SandboxedLogosAgent.status": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "create": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "boot": [
+        "ORCHESTRATION"
+      ],
+      "unlock_if_aligned": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "status": [
+        "UNCLASSIFIED"
+      ],
+      "main": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "AlignmentGateError": [
+        "AGENT_LOGIC",
+        "TEST_OR_EXAMPLE"
+      ],
+      "canonical_json_hash": [
+        "AGENT_LOGIC"
+      ],
+      "compute_attestation_hash": [
+        "AGENT_LOGIC",
+        "TEST_OR_EXAMPLE"
+      ],
+      "load_alignment_attestation": [
+        "AGENT_LOGIC",
+        "TEST_OR_EXAMPLE"
+      ],
+      "load_mission_profile": [
+        "AGENT_LOGIC",
+        "TEST_OR_EXAMPLE"
+      ],
+      "validate_attestation": [
+        "AGENT_LOGIC",
+        "TEST_OR_EXAMPLE"
+      ],
+      "enforce_truth_annotation": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "validate_mission_profile": [
+        "AGENT_LOGIC",
+        "TEST_OR_EXAMPLE"
+      ],
+      "load_pin": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "verify_pinned_repo": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "update_metrics": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "get_tool_playbook": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "run_validators": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "validate_plan_run": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "compute_plan_score": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "plan_signature": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "update_plan_history": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "normalize_objective_class": [
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_missing_logos_core": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PersistentAgentIdentity": [
+        "AGENT_LOGIC"
+      ],
+      "PersistentAgentIdentity._save_identity": [
+        "AGENT_LOGIC"
+      ],
+      "_save_identity": [
+        "AGENT_LOGIC"
+      ],
+      "SandboxState": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "RuntimeContext": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "load_mission": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_is_tool_optimizer_commitment": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_is_tool_invention_commitment": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_fallback_require_safe_interfaces": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "wrapper": [
+        "ORCHESTRATION"
+      ],
+      "_fallback_restrict_writes": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "decorator": [
+        "ORCHESTRATION"
+      ],
+      "_ensure": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_restrict_wrapper": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "tool_filesystem_read": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "tool_mission_status": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_integrity_baseline_path": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_enforce_integrity_baseline": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_run_proof_compile": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_preflight_identity_check": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_is_forbidden_candidate": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_resolve_retrieve_bases": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_iter_retrieve_files": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "tool_retrieve_local": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "tool_retrieve_web": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "tool_probe_last_snapshot": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_precondition_check": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_record_tool_validation": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_register_fallbacks": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "dispatch_tool": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_sandbox_base": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "configure_sandbox": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_timestamp": [
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "_compute_catalog_tail_hash": [
+        "UNCLASSIFIED"
+      ],
+      "_collect_missing_evidence_refs": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_compute_theory_hash": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_make_run_id": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_sandbox_path": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "PromotionPolicyError": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_requires_promotion": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_coerce_list": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_apply_tool_policy": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_ensure_list": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_replace_rollback_placeholders": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_emit_via_promotion": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_build_snapshot": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_write_tmp": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_as_posix": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_sandbox_write_impl": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_write": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "tool_sandbox_write": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "tool_agent_memory": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_resolve_sandbox_entry": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "tool_sandbox_read": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "tool_sandbox_list": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_safe_list_subdirs": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_count_python_files": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_dedupe_preserve_order": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "tool_capability_report": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_tokenize": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_collect_sandbox_files": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_jaccard": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_plan_quality": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "tool_sandbox_reflect": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "select_ready_inputs": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ask_user": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "bounded_call": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "run": [
+        "UNCLASSIFIED"
+      ],
+      "_parse_extra_steps": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "make_plan": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_load_agent_state": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_persist_agent_state": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_record_protocol_health": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_extract_artifacts": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_persist_agent_run": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "_plan_history_mean": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "run_supervised": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "parse_args": [
+        "ORCHESTRATION"
+      ],
+      "_check_and_trigger_self_improvement": [
+        "AGENT_LOGIC",
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ]
+    },
+    "operation_type": {
+      "_logos_state_dir": [
+        "TRANSFORMATION"
+      ],
+      "_attestation_path": [
+        "TRANSFORMATION"
+      ],
+      "CommandFailure": [],
+      "verify_agent_identity": [
+        "TRANSFORMATION"
+      ],
+      "_run_stream": [],
+      "_coqtop_script": [
+        "TRANSFORMATION"
+      ],
+      "_parse_assumptions": [
+        "TRANSFORMATION"
+      ],
+      "_scan_for_admitted": [
+        "TRANSFORMATION"
+      ],
+      "verify_internal_lem": [
+        "TRANSFORMATION"
+      ],
+      "AlignmentAudit": [],
+      "AlignmentAudit.write": [
+        "STATE_MUTATION"
+      ],
+      "write": [
+        "STATE_MUTATION"
+      ],
+      "SandboxedLogosAgent": [
+        "TRANSFORMATION"
+      ],
+      "SandboxedLogosAgent.create": [
+        "TRANSFORMATION"
+      ],
+      "SandboxedLogosAgent.boot": [],
+      "SandboxedLogosAgent.unlock_if_aligned": [
+        "TRANSFORMATION"
+      ],
+      "SandboxedLogosAgent.status": [
+        "TRANSFORMATION"
+      ],
+      "create": [
+        "TRANSFORMATION"
+      ],
+      "boot": [],
+      "unlock_if_aligned": [
+        "TRANSFORMATION"
+      ],
+      "status": [
+        "TRANSFORMATION"
+      ],
+      "main": [
+        "TRANSFORMATION"
+      ],
+      "AlignmentGateError": [
+        "UTILITY"
+      ],
+      "canonical_json_hash": [
+        "TRANSFORMATION"
+      ],
+      "compute_attestation_hash": [
+        "TRANSFORMATION"
+      ],
+      "load_alignment_attestation": [
+        "TRANSFORMATION"
+      ],
+      "load_mission_profile": [
+        "TRANSFORMATION"
+      ],
+      "validate_attestation": [
+        "UTILITY"
+      ],
+      "enforce_truth_annotation": [
+        "TRANSFORMATION"
+      ],
+      "validate_mission_profile": [
+        "UTILITY"
+      ],
+      "load_pin": [],
+      "verify_pinned_repo": [],
+      "update_metrics": [
+        "TRANSFORMATION"
+      ],
+      "get_tool_playbook": [
+        "TRANSFORMATION"
+      ],
+      "run_validators": [
+        "TRANSFORMATION"
+      ],
+      "validate_plan_run": [
+        "TRANSFORMATION"
+      ],
+      "compute_plan_score": [
+        "TRANSFORMATION"
+      ],
+      "plan_signature": [
+        "TRANSFORMATION"
+      ],
+      "update_plan_history": [
+        "TRANSFORMATION"
+      ],
+      "normalize_objective_class": [
+        "TRANSFORMATION"
+      ],
+      "_missing_logos_core": [],
+      "PersistentAgentIdentity": [
+        "TRANSFORMATION"
+      ],
+      "PersistentAgentIdentity._save_identity": [
+        "UTILITY"
+      ],
+      "_save_identity": [
+        "UTILITY"
+      ],
+      "SandboxState": [],
+      "RuntimeContext": [],
+      "load_mission": [
+        "TRANSFORMATION"
+      ],
+      "_is_tool_optimizer_commitment": [
+        "TRANSFORMATION"
+      ],
+      "_is_tool_invention_commitment": [
+        "TRANSFORMATION"
+      ],
+      "_fallback_require_safe_interfaces": [
+        "TRANSFORMATION"
+      ],
+      "wrapper": [
+        "TRANSFORMATION"
+      ],
+      "_fallback_restrict_writes": [
+        "TRANSFORMATION"
+      ],
+      "decorator": [
+        "TRANSFORMATION"
+      ],
+      "_ensure": [],
+      "_restrict_wrapper": [
+        "TRANSFORMATION"
+      ],
+      "tool_filesystem_read": [
+        "TRANSFORMATION"
+      ],
+      "tool_mission_status": [
+        "TRANSFORMATION"
+      ],
+      "_integrity_baseline_path": [
+        "TRANSFORMATION"
+      ],
+      "_enforce_integrity_baseline": [
+        "TRANSFORMATION"
+      ],
+      "_run_proof_compile": [
+        "TRANSFORMATION"
+      ],
+      "_preflight_identity_check": [
+        "TRANSFORMATION"
+      ],
+      "_is_forbidden_candidate": [
+        "TRANSFORMATION"
+      ],
+      "_resolve_retrieve_bases": [
+        "TRANSFORMATION"
+      ],
+      "_iter_retrieve_files": [
+        "TRANSFORMATION"
+      ],
+      "tool_retrieve_local": [
+        "TRANSFORMATION"
+      ],
+      "tool_retrieve_web": [
+        "TRANSFORMATION"
+      ],
+      "tool_probe_last_snapshot": [
+        "TRANSFORMATION"
+      ],
+      "_precondition_check": [
+        "TRANSFORMATION"
+      ],
+      "_record_tool_validation": [
+        "TRANSFORMATION"
+      ],
+      "_register_fallbacks": [
+        "TRANSFORMATION"
+      ],
+      "dispatch_tool": [
+        "TRANSFORMATION"
+      ],
+      "_sandbox_base": [
+        "TRANSFORMATION"
+      ],
+      "configure_sandbox": [],
+      "_timestamp": [
+        "TRANSFORMATION"
+      ],
+      "_compute_catalog_tail_hash": [
+        "TRANSFORMATION"
+      ],
+      "_collect_missing_evidence_refs": [
+        "TRANSFORMATION"
+      ],
+      "_compute_theory_hash": [
+        "TRANSFORMATION"
+      ],
+      "_make_run_id": [
+        "TRANSFORMATION"
+      ],
+      "_sandbox_path": [
+        "TRANSFORMATION"
+      ],
+      "PromotionPolicyError": [],
+      "_requires_promotion": [
+        "TRANSFORMATION"
+      ],
+      "_coerce_list": [
+        "TRANSFORMATION"
+      ],
+      "_apply_tool_policy": [
+        "TRANSFORMATION"
+      ],
+      "_ensure_list": [
+        "TRANSFORMATION"
+      ],
+      "_replace_rollback_placeholders": [
+        "TRANSFORMATION"
+      ],
+      "_emit_via_promotion": [
+        "TRANSFORMATION"
+      ],
+      "_build_snapshot": [
+        "TRANSFORMATION"
+      ],
+      "_write_tmp": [],
+      "_as_posix": [
+        "TRANSFORMATION"
+      ],
+      "_sandbox_write_impl": [
+        "TRANSFORMATION"
+      ],
+      "_write": [],
+      "tool_sandbox_write": [
+        "TRANSFORMATION"
+      ],
+      "tool_agent_memory": [
+        "TRANSFORMATION"
+      ],
+      "_resolve_sandbox_entry": [
+        "TRANSFORMATION"
+      ],
+      "tool_sandbox_read": [
+        "TRANSFORMATION"
+      ],
+      "tool_sandbox_list": [
+        "TRANSFORMATION"
+      ],
+      "_safe_list_subdirs": [
+        "TRANSFORMATION"
+      ],
+      "_count_python_files": [
+        "TRANSFORMATION"
+      ],
+      "_dedupe_preserve_order": [
+        "TRANSFORMATION"
+      ],
+      "tool_capability_report": [
+        "TRANSFORMATION"
+      ],
+      "_tokenize": [
+        "TRANSFORMATION"
+      ],
+      "_collect_sandbox_files": [
+        "TRANSFORMATION"
+      ],
+      "_jaccard": [
+        "TRANSFORMATION"
+      ],
+      "_plan_quality": [
+        "TRANSFORMATION"
+      ],
+      "tool_sandbox_reflect": [
+        "TRANSFORMATION"
+      ],
+      "select_ready_inputs": [
+        "TRANSFORMATION"
+      ],
+      "ask_user": [
+        "TRANSFORMATION"
+      ],
+      "bounded_call": [
+        "TRANSFORMATION"
+      ],
+      "run": [
+        "TRANSFORMATION"
+      ],
+      "_parse_extra_steps": [
+        "TRANSFORMATION"
+      ],
+      "make_plan": [
+        "TRANSFORMATION"
+      ],
+      "_load_agent_state": [
+        "TRANSFORMATION"
+      ],
+      "_persist_agent_state": [],
+      "_record_protocol_health": [],
+      "_extract_artifacts": [
+        "TRANSFORMATION"
+      ],
+      "_persist_agent_run": [],
+      "_plan_history_mean": [
+        "TRANSFORMATION"
+      ],
+      "run_supervised": [
+        "TRANSFORMATION"
+      ],
+      "parse_args": [
+        "TRANSFORMATION"
+      ],
+      "_check_and_trigger_self_improvement": [
+        "TRANSFORMATION"
+      ]
+    },
+    "data_role": {
+      "_logos_state_dir": [],
+      "_attestation_path": [],
+      "CommandFailure": [],
+      "verify_agent_identity": [],
+      "_run_stream": [],
+      "_coqtop_script": [],
+      "_parse_assumptions": [],
+      "_scan_for_admitted": [],
+      "verify_internal_lem": [],
+      "AlignmentAudit": [],
+      "AlignmentAudit.write": [],
+      "write": [],
+      "SandboxedLogosAgent": [],
+      "SandboxedLogosAgent.create": [],
+      "SandboxedLogosAgent.boot": [],
+      "SandboxedLogosAgent.unlock_if_aligned": [],
+      "SandboxedLogosAgent.status": [],
+      "create": [],
+      "boot": [],
+      "unlock_if_aligned": [],
+      "status": [],
+      "main": [],
+      "AlignmentGateError": [],
+      "canonical_json_hash": [
+        "CRYPTO_ID"
+      ],
+      "compute_attestation_hash": [
+        "CRYPTO_ID"
+      ],
+      "load_alignment_attestation": [],
+      "load_mission_profile": [],
+      "validate_attestation": [],
+      "enforce_truth_annotation": [],
+      "validate_mission_profile": [],
+      "load_pin": [],
+      "verify_pinned_repo": [],
+      "update_metrics": [],
+      "get_tool_playbook": [],
+      "run_validators": [],
+      "validate_plan_run": [],
+      "compute_plan_score": [],
+      "plan_signature": [],
+      "update_plan_history": [],
+      "normalize_objective_class": [],
+      "_missing_logos_core": [],
+      "PersistentAgentIdentity": [],
+      "PersistentAgentIdentity._save_identity": [],
+      "_save_identity": [],
+      "SandboxState": [],
+      "RuntimeContext": [],
+      "load_mission": [],
+      "_is_tool_optimizer_commitment": [],
+      "_is_tool_invention_commitment": [],
+      "_fallback_require_safe_interfaces": [],
+      "wrapper": [],
+      "_fallback_restrict_writes": [],
+      "decorator": [],
+      "_ensure": [],
+      "_restrict_wrapper": [],
+      "tool_filesystem_read": [],
+      "tool_mission_status": [],
+      "_integrity_baseline_path": [],
+      "_enforce_integrity_baseline": [],
+      "_run_proof_compile": [],
+      "_preflight_identity_check": [],
+      "_is_forbidden_candidate": [],
+      "_resolve_retrieve_bases": [],
+      "_iter_retrieve_files": [],
+      "tool_retrieve_local": [],
+      "tool_retrieve_web": [],
+      "tool_probe_last_snapshot": [],
+      "_precondition_check": [],
+      "_record_tool_validation": [],
+      "_register_fallbacks": [],
+      "dispatch_tool": [],
+      "_sandbox_base": [],
+      "configure_sandbox": [],
+      "_timestamp": [],
+      "_compute_catalog_tail_hash": [
+        "CRYPTO_ID"
+      ],
+      "_collect_missing_evidence_refs": [],
+      "_compute_theory_hash": [
+        "CRYPTO_ID"
+      ],
+      "_make_run_id": [],
+      "_sandbox_path": [],
+      "PromotionPolicyError": [],
+      "_requires_promotion": [],
+      "_coerce_list": [],
+      "_apply_tool_policy": [],
+      "_ensure_list": [],
+      "_replace_rollback_placeholders": [],
+      "_emit_via_promotion": [],
+      "_build_snapshot": [],
+      "_write_tmp": [],
+      "_as_posix": [],
+      "_sandbox_write_impl": [],
+      "_write": [],
+      "tool_sandbox_write": [],
+      "tool_agent_memory": [],
+      "_resolve_sandbox_entry": [],
+      "tool_sandbox_read": [],
+      "tool_sandbox_list": [],
+      "_safe_list_subdirs": [],
+      "_count_python_files": [],
+      "_dedupe_preserve_order": [],
+      "tool_capability_report": [],
+      "_tokenize": [],
+      "_collect_sandbox_files": [],
+      "_jaccard": [],
+      "_plan_quality": [],
+      "tool_sandbox_reflect": [],
+      "select_ready_inputs": [],
+      "ask_user": [],
+      "bounded_call": [],
+      "run": [],
+      "_parse_extra_steps": [],
+      "make_plan": [],
+      "_load_agent_state": [],
+      "_persist_agent_state": [],
+      "_record_protocol_health": [],
+      "_extract_artifacts": [],
+      "_persist_agent_run": [],
+      "_plan_history_mean": [],
+      "run_supervised": [],
+      "parse_args": [],
+      "_check_and_trigger_self_improvement": []
+    },
+    "control_role": {
+      "_logos_state_dir": [
+        "BOOT_CONTROL"
+      ],
+      "_attestation_path": [
+        "BOOT_CONTROL"
+      ],
+      "CommandFailure": [
+        "BOOT_CONTROL"
+      ],
+      "verify_agent_identity": [
+        "BOOT_CONTROL"
+      ],
+      "_run_stream": [
+        "BOOT_CONTROL"
+      ],
+      "_coqtop_script": [
+        "BOOT_CONTROL"
+      ],
+      "_parse_assumptions": [
+        "BOOT_CONTROL"
+      ],
+      "_scan_for_admitted": [
+        "BOOT_CONTROL"
+      ],
+      "verify_internal_lem": [
+        "BOOT_CONTROL"
+      ],
+      "AlignmentAudit": [
+        "BOOT_CONTROL"
+      ],
+      "AlignmentAudit.write": [
+        "BOOT_CONTROL"
+      ],
+      "write": [
+        "BOOT_CONTROL"
+      ],
+      "SandboxedLogosAgent": [
+        "BOOT_CONTROL"
+      ],
+      "SandboxedLogosAgent.create": [
+        "BOOT_CONTROL"
+      ],
+      "SandboxedLogosAgent.boot": [
+        "BOOT_CONTROL"
+      ],
+      "SandboxedLogosAgent.unlock_if_aligned": [
+        "BOOT_CONTROL"
+      ],
+      "SandboxedLogosAgent.status": [
+        "BOOT_CONTROL"
+      ],
+      "create": [
+        "BOOT_CONTROL"
+      ],
+      "boot": [
+        "RUNTIME_CONTROL"
+      ],
+      "unlock_if_aligned": [
+        "BOOT_CONTROL"
+      ],
+      "status": [],
+      "main": [
+        "BOOT_CONTROL"
+      ],
+      "AlignmentGateError": [],
+      "canonical_json_hash": [],
+      "compute_attestation_hash": [],
+      "load_alignment_attestation": [],
+      "load_mission_profile": [],
+      "validate_attestation": [],
+      "enforce_truth_annotation": [],
+      "validate_mission_profile": [],
+      "load_pin": [
+        "BOOT_CONTROL"
+      ],
+      "verify_pinned_repo": [
+        "BOOT_CONTROL"
+      ],
+      "update_metrics": [
+        "BOOT_CONTROL"
+      ],
+      "get_tool_playbook": [
+        "BOOT_CONTROL"
+      ],
+      "run_validators": [
+        "BOOT_CONTROL"
+      ],
+      "validate_plan_run": [
+        "BOOT_CONTROL"
+      ],
+      "compute_plan_score": [
+        "BOOT_CONTROL"
+      ],
+      "plan_signature": [
+        "BOOT_CONTROL"
+      ],
+      "update_plan_history": [
+        "BOOT_CONTROL"
+      ],
+      "normalize_objective_class": [],
+      "_missing_logos_core": [
+        "BOOT_CONTROL"
+      ],
+      "PersistentAgentIdentity": [],
+      "PersistentAgentIdentity._save_identity": [],
+      "_save_identity": [],
+      "SandboxState": [
+        "BOOT_CONTROL"
+      ],
+      "RuntimeContext": [
+        "BOOT_CONTROL"
+      ],
+      "load_mission": [
+        "BOOT_CONTROL"
+      ],
+      "_is_tool_optimizer_commitment": [
+        "BOOT_CONTROL"
+      ],
+      "_is_tool_invention_commitment": [
+        "BOOT_CONTROL"
+      ],
+      "_fallback_require_safe_interfaces": [
+        "BOOT_CONTROL"
+      ],
+      "wrapper": [
+        "RUNTIME_CONTROL"
+      ],
+      "_fallback_restrict_writes": [
+        "BOOT_CONTROL"
+      ],
+      "decorator": [
+        "RUNTIME_CONTROL"
+      ],
+      "_ensure": [
+        "BOOT_CONTROL"
+      ],
+      "_restrict_wrapper": [
+        "BOOT_CONTROL"
+      ],
+      "tool_filesystem_read": [
+        "BOOT_CONTROL"
+      ],
+      "tool_mission_status": [
+        "BOOT_CONTROL"
+      ],
+      "_integrity_baseline_path": [
+        "BOOT_CONTROL"
+      ],
+      "_enforce_integrity_baseline": [
+        "BOOT_CONTROL"
+      ],
+      "_run_proof_compile": [
+        "BOOT_CONTROL"
+      ],
+      "_preflight_identity_check": [
+        "BOOT_CONTROL"
+      ],
+      "_is_forbidden_candidate": [
+        "BOOT_CONTROL"
+      ],
+      "_resolve_retrieve_bases": [
+        "BOOT_CONTROL"
+      ],
+      "_iter_retrieve_files": [
+        "BOOT_CONTROL"
+      ],
+      "tool_retrieve_local": [
+        "BOOT_CONTROL"
+      ],
+      "tool_retrieve_web": [
+        "BOOT_CONTROL"
+      ],
+      "tool_probe_last_snapshot": [
+        "BOOT_CONTROL"
+      ],
+      "_precondition_check": [
+        "BOOT_CONTROL"
+      ],
+      "_record_tool_validation": [
+        "BOOT_CONTROL"
+      ],
+      "_register_fallbacks": [
+        "BOOT_CONTROL"
+      ],
+      "dispatch_tool": [
+        "BOOT_CONTROL"
+      ],
+      "_sandbox_base": [
+        "BOOT_CONTROL"
+      ],
+      "configure_sandbox": [
+        "BOOT_CONTROL"
+      ],
+      "_timestamp": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_compute_catalog_tail_hash": [],
+      "_collect_missing_evidence_refs": [
+        "BOOT_CONTROL"
+      ],
+      "_compute_theory_hash": [
+        "BOOT_CONTROL"
+      ],
+      "_make_run_id": [
+        "BOOT_CONTROL"
+      ],
+      "_sandbox_path": [
+        "BOOT_CONTROL"
+      ],
+      "PromotionPolicyError": [
+        "BOOT_CONTROL"
+      ],
+      "_requires_promotion": [
+        "BOOT_CONTROL"
+      ],
+      "_coerce_list": [
+        "BOOT_CONTROL"
+      ],
+      "_apply_tool_policy": [
+        "BOOT_CONTROL"
+      ],
+      "_ensure_list": [
+        "BOOT_CONTROL"
+      ],
+      "_replace_rollback_placeholders": [
+        "BOOT_CONTROL"
+      ],
+      "_emit_via_promotion": [
+        "BOOT_CONTROL"
+      ],
+      "_build_snapshot": [
+        "BOOT_CONTROL"
+      ],
+      "_write_tmp": [
+        "BOOT_CONTROL"
+      ],
+      "_as_posix": [
+        "BOOT_CONTROL"
+      ],
+      "_sandbox_write_impl": [
+        "BOOT_CONTROL"
+      ],
+      "_write": [
+        "BOOT_CONTROL"
+      ],
+      "tool_sandbox_write": [
+        "BOOT_CONTROL"
+      ],
+      "tool_agent_memory": [
+        "BOOT_CONTROL"
+      ],
+      "_resolve_sandbox_entry": [
+        "BOOT_CONTROL"
+      ],
+      "tool_sandbox_read": [
+        "BOOT_CONTROL"
+      ],
+      "tool_sandbox_list": [
+        "BOOT_CONTROL"
+      ],
+      "_safe_list_subdirs": [
+        "BOOT_CONTROL"
+      ],
+      "_count_python_files": [
+        "BOOT_CONTROL"
+      ],
+      "_dedupe_preserve_order": [
+        "BOOT_CONTROL"
+      ],
+      "tool_capability_report": [
+        "BOOT_CONTROL"
+      ],
+      "_tokenize": [
+        "BOOT_CONTROL"
+      ],
+      "_collect_sandbox_files": [
+        "BOOT_CONTROL"
+      ],
+      "_jaccard": [
+        "BOOT_CONTROL"
+      ],
+      "_plan_quality": [
+        "BOOT_CONTROL"
+      ],
+      "tool_sandbox_reflect": [
+        "BOOT_CONTROL"
+      ],
+      "select_ready_inputs": [
+        "BOOT_CONTROL"
+      ],
+      "ask_user": [
+        "BOOT_CONTROL"
+      ],
+      "bounded_call": [
+        "BOOT_CONTROL"
+      ],
+      "run": [],
+      "_parse_extra_steps": [
+        "BOOT_CONTROL"
+      ],
+      "make_plan": [
+        "BOOT_CONTROL"
+      ],
+      "_load_agent_state": [
+        "BOOT_CONTROL"
+      ],
+      "_persist_agent_state": [
+        "BOOT_CONTROL"
+      ],
+      "_record_protocol_health": [
+        "BOOT_CONTROL"
+      ],
+      "_extract_artifacts": [
+        "BOOT_CONTROL"
+      ],
+      "_persist_agent_run": [
+        "BOOT_CONTROL"
+      ],
+      "_plan_history_mean": [
+        "BOOT_CONTROL"
+      ],
+      "run_supervised": [
+        "BOOT_CONTROL"
+      ],
+      "parse_args": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_and_trigger_self_improvement": [
+        "BOOT_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "_logos_state_dir": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_attestation_path": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "CommandFailure": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "verify_agent_identity": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_run_stream": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "_coqtop_script": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "_parse_assumptions": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "_scan_for_admitted": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "verify_internal_lem": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "AlignmentAudit": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "AlignmentAudit.write": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "write": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SandboxedLogosAgent": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SandboxedLogosAgent.create": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SandboxedLogosAgent.boot": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SandboxedLogosAgent.unlock_if_aligned": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SandboxedLogosAgent.status": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "create": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "boot": [
+        "UNMAPPED"
+      ],
+      "unlock_if_aligned": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "status": [
+        "UNMAPPED"
+      ],
+      "main": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "AlignmentGateError": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "canonical_json_hash": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "compute_attestation_hash": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "load_alignment_attestation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "load_mission_profile": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "validate_attestation": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "enforce_truth_annotation": [
+        "UNMAPPED"
+      ],
+      "validate_mission_profile": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "load_pin": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "verify_pinned_repo": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "update_metrics": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "get_tool_playbook": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "run_validators": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "validate_plan_run": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "compute_plan_score": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "plan_signature": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "update_plan_history": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "normalize_objective_class": [
+        "UNMAPPED"
+      ],
+      "_missing_logos_core": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "PersistentAgentIdentity": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "PersistentAgentIdentity._save_identity": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_save_identity": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SandboxState": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "RuntimeContext": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "load_mission": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_is_tool_optimizer_commitment": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_is_tool_invention_commitment": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_fallback_require_safe_interfaces": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "wrapper": [
+        "UNMAPPED"
+      ],
+      "_fallback_restrict_writes": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "decorator": [
+        "UNMAPPED"
+      ],
+      "_ensure": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_restrict_wrapper": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "tool_filesystem_read": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "tool_mission_status": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_integrity_baseline_path": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_enforce_integrity_baseline": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_run_proof_compile": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_preflight_identity_check": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_is_forbidden_candidate": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_resolve_retrieve_bases": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_iter_retrieve_files": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "tool_retrieve_local": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "tool_retrieve_web": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "tool_probe_last_snapshot": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_precondition_check": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_record_tool_validation": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_register_fallbacks": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "dispatch_tool": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_sandbox_base": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "configure_sandbox": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_timestamp": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "_compute_catalog_tail_hash": [
+        "UNMAPPED"
+      ],
+      "_collect_missing_evidence_refs": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_compute_theory_hash": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_make_run_id": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_sandbox_path": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "PromotionPolicyError": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_requires_promotion": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_coerce_list": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_apply_tool_policy": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_ensure_list": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_replace_rollback_placeholders": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_emit_via_promotion": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_build_snapshot": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_write_tmp": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_as_posix": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_sandbox_write_impl": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_write": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "tool_sandbox_write": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "tool_agent_memory": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_resolve_sandbox_entry": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "tool_sandbox_read": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "tool_sandbox_list": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_safe_list_subdirs": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_count_python_files": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_dedupe_preserve_order": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "tool_capability_report": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_tokenize": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_collect_sandbox_files": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_jaccard": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_plan_quality": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "tool_sandbox_reflect": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "select_ready_inputs": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ask_user": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "bounded_call": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "run": [
+        "UNMAPPED"
+      ],
+      "_parse_extra_steps": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "make_plan": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_load_agent_state": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_persist_agent_state": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_record_protocol_health": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_extract_artifacts": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_persist_agent_run": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_plan_history_mean": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "run_supervised": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "parse_args": [
+        "UNMAPPED"
+      ],
+      "_check_and_trigger_self_improvement": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ]
+    }
+  }
+}

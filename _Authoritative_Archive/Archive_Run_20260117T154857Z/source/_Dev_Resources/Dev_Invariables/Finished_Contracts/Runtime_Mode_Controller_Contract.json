@@ -1,0 +1,33 @@
+{
+  "canonical_name": "Runtime_Mode_Controller",
+  "semantic_role": "Runtime mode arbitration and enforcement",
+  "description": "Determines, transitions, and enforces runtime execution modes based on policy, context, and telemetry. Applies fail-closed gating for invalid or unsafe transitions and records auditable mode decisions.",
+  "phases": [],
+  "inputs": [
+    "runtime context",
+    "mode configuration",
+    "policy constraints",
+    "telemetry and status signals"
+  ],
+  "outputs": [
+    "mode decision",
+    "transition result",
+    "denial reason"
+  ],
+  "guarantees": [
+    "Mode transitions comply with configured policy",
+    "Unsafe or disallowed transitions are rejected",
+    "Resulting mode state is consistent and auditable"
+  ],
+  "side_effects": [
+    "updates runtime mode state",
+    "may emit audit records"
+  ],
+  "non_determinism": [
+    "none"
+  ],
+  "spine_binding": [
+    "UNMAPPED"
+  ],
+  "monolith_admission": "PASS"
+}

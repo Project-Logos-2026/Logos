@@ -1,3 +1,35 @@
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
+
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: logos_bridge
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Synthetic_Cognition_Protocol/BDN_System/integration/logos_bridge.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
+
 """
 LOGOS Integration Bridge for Singularity AGI System
 ==================================================
@@ -33,7 +65,7 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from typing import Any, Callable, Dict, List, Optional
 
-from ..core.trinity_hyperstructure import TrinityVector, Trinity_Hyperstructure
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.core.trinity_hyperstructure import TrinityVector, Trinity_Hyperstructure
 
 # LOGOS V2 Core Imports (maintain existing integrations)
 try:
@@ -76,16 +108,16 @@ except ImportError as e:
             return {"compliance_validated": True}
 
 
-from ..core.banach_data_nodes import BanachDataNode, BanachNodeNetwork
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.core.banach_data_nodes import BanachDataNode, BanachNodeNetwork
 
 # MVS/BDN System Imports (updated for singularity)
-from ...MVS_System.data_c_values.data_structures import (
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.data_c_values.data_structures import (
     CreativeHypothesis,
     MVSCoordinate,
     MVSRegionType,
     NovelProblem,
 )
-from ..mathematics.fractal_mvs import FractalModalVectorSpace
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.mathematics.fractal_mvs import FractalModalVectorSpace
 
 logger = logging.getLogger(__name__)
 

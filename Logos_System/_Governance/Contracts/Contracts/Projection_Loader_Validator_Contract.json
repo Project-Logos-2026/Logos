@@ -1,0 +1,54 @@
+{
+  "contract_name": "Projection_Loader_Validator_Contract",
+  "contract_version": "v1.0",
+  "phase": "Phase-F-2",
+  "status": "AUTHORITATIVE",
+  "scope": [
+    "Agent boot sequence",
+    "Projection loading",
+    "Runtime governance enforcement"
+  ],
+  "description": "Defines mandatory loader and validator requirements for agent grounding projections with fail-closed semantics.",
+  "loader_requirements": {
+    "invocation_required": true,
+    "single_projection_enforced": true,
+    "bypass_forbidden": true
+  },
+  "validation_pipeline": [
+    "projection_exists",
+    "schema_validation",
+    "hash_verification",
+    "agent_protocol_binding_check",
+    "authority_check",
+    "governance_constraints_check"
+  ],
+  "authority_rules": {
+    "mutation_allowed_only_for": ["LOGOS"],
+    "sop_write_allowed_only_for": ["LOGOS"],
+    "iel_authoring_allowed_only_for": ["LOGOS"]
+  },
+  "failure_semantics": {
+    "missing_projection": "hard_fail",
+    "schema_violation": "hard_fail",
+    "hash_mismatch": "hard_fail",
+    "binding_mismatch": "hard_fail",
+    "unauthorized_authority": "system_fault"
+  },
+  "hash_verification_semantics": {
+    "hash_source": "Agent_Projection_Integrity_Index.json",
+    "hash_algorithm": "sha256",
+    "verified_flag_meaning": "verified_by_runtime_loader"
+  },
+  "prohibitions": [
+    "Agents may not self-load projections",
+    "Agents may not bypass validation",
+    "Loader may not mutate projections",
+    "Silent failure is forbidden"
+  ],
+  "audit": {
+    "loader_events_logged": true,
+    "failure_events_logged": true,
+    "logs_to": "_reports/",
+    "review_required": true
+  }
+}

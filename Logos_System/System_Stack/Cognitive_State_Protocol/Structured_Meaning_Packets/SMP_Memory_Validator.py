@@ -1,3 +1,36 @@
+from __future__ import annotations
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
+
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: SMP_Memory_Validator
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Cognitive_State_Protocol/Structured_Meaning_Packets/SMP_Memory_Validator.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
+
 """
 System B: Constraint Pipeline Module
 LOGOS Passive Runtime - SMP Authorization and Memory Commitment
@@ -7,7 +40,6 @@ meta-constraint evaluation (Mesh Holism), optimization (TOT), and
 authorization (TLM) for memory commitment.
 """
 
-from __future__ import annotations
 
 import hashlib
 import json

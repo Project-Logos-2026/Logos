@@ -1,4 +1,35 @@
-# fractal_nexus.py
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
+
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: fractal_nexus
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Synthetic_Cognition_Protocol/MVS_System/predictors/fractal_nexus.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
+
 """
 fractal_nexus.py
 
@@ -8,30 +39,59 @@ import json
 import traceback
 from typing import Dict, List, Tuple
 
-from LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.predictors.class_fractal_orbital_predictor import (
-    TrinityPredictionEngine,
-)
-from LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.predictors.divergence_calculator import (
-    DivergenceEngine,
-)
+# Optional dependency guard: LOGOS_AGI may be absent in minimal environments.
+try:
+    from LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.predictors.class_fractal_orbital_predictor import (  # type: ignore
+        TrinityPredictionEngine,
+    )
+    from LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.predictors.divergence_calculator import (  # type: ignore
+        DivergenceEngine,
+    )
+except ImportError:
+    class TrinityPredictionEngine:  # pragma: no cover - stub placeholder
+        def __init__(self, *_args, **_kwargs):
+            raise ImportError("LOGOS_AGI is not available in this environment")
+
+        def predict(self, *_args, **_kwargs):
+            raise ImportError("LOGOS_AGI is not available in this environment")
+
+    class DivergenceEngine:  # pragma: no cover - stub placeholder
+        def analyze_divergence(self, *_args, **_kwargs):
+            raise ImportError("LOGOS_AGI is not available in this environment")
 
 try:
     from LOGOS_AGI.Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator import (
         FractalNodeGenerator,
     )
 except ImportError:  # pragma: no cover - fallback to sibling import when package path absent
-    from Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator import (
-        FractalNodeGenerator,
-    )
+    try:
+        from Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator import (
+            FractalNodeGenerator,
+        )
+    except ImportError:
+        class FractalNodeGenerator:  # pragma: no cover - stub placeholder
+            def __init__(self, *_args, **_kwargs):
+                raise ImportError("FractalNodeGenerator is not available")
+
+            def generate(self, *_args, **_kwargs):
+                raise ImportError("FractalNodeGenerator is not available")
 
 try:
     from LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine import (
         OntologicalSpace,
     )
 except ImportError:  # pragma: no cover - fallback to relative import when executed as script
-    from Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine import (
-        OntologicalSpace,
-    )
+    try:
+        from Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine import (
+            OntologicalSpace,
+        )
+    except ImportError:
+        class OntologicalSpace:  # pragma: no cover - stub placeholder
+            def __init__(self, *_args, **_kwargs):
+                raise ImportError("OntologicalSpace is not available")
+
+            def compute_fractal_position(self, *_args, **_kwargs):
+                raise ImportError("OntologicalSpace is not available")
 
 class FractalNexus:
     def __init__(self, prior_path: str):

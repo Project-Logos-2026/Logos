@@ -1,18 +1,34 @@
-# MODULE_META:
-#   module_id: BAYESIAN_INFERENCE
-#   layer: APPLICATION_FUNCTION
-#   role: Bayesian inference routine
-#   phase_origin: PHASE_SCOPING_STUB
-#   description: Stub metadata for Bayesian inference routine (header placeholder).
-#   contracts: []
-#   allowed_imports: []
-#   prohibited_behaviors: [IO, NETWORK, TIME, RANDOM]
-#   entrypoints: [run]
-#   callable_surface: APPLICATION
-#   state_mutation: NONE
-#   runtime_spine_binding: NONE
-#   depends_on_contexts: []
-#   invoked_by: []
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
+
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: bayesian_inference
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Advanced_Reasoning_Protocol/Reasoning_Engines/Bayesian_Engine/bayesian_inference.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
 
 """
 LOGOS AGI v7 - Unified Bayesian Inference
@@ -52,7 +68,7 @@ except ImportError:
 
 # LOGOS Core imports
 try:
-    from .bayesian_interface import BayesianInterface, ProbabilisticResult, TrueP
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayesian_interface import BayesianInterface, ProbabilisticResult, TrueP
     BAYESIAN_INTERFACE_AVAILABLE = True
 except ImportError:
     # Fallback definitions
@@ -72,7 +88,7 @@ except ImportError:
 
 # Modal Probabilistic imports
 try:
-    from ....iel_domains.ModalPraxis.modal import ModalProbabilistic
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.iel_domains.ModalPraxis.modal import ModalProbabilistic
     MODAL_PROBABILISTIC_AVAILABLE = True
 except ImportError:
     # Fallback definition
@@ -86,8 +102,8 @@ except ImportError:
 
 # Translation Engine Enhancement
 try:
-    from .translation.pdn_bridge import PDNBottleneckSolver
-    from .translation.translation_engine import TranslationEngine
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.translation.pdn_bridge import PDNBottleneckSolver
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.translation.translation_engine import TranslationEngine
 
     TRANSLATION_ENGINE_AVAILABLE = True
 except ImportError:
@@ -1156,8 +1172,8 @@ class BayesianNexus:
     """Orchestrator for Bayesian reasoning components"""
 
     def __init__(self, priors_path: str):
-        from .bayesian_updates import resolve_priors_path
-        from .bayesian_ml import BayesianMLModel
+        from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayesian_updates import resolve_priors_path
+        from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayesian_ml import BayesianMLModel
 
         resolved = resolve_priors_path(priors_path)
         self.priors_path = resolved
@@ -1167,7 +1183,7 @@ class BayesianNexus:
     def run_real_time(self, query: str) -> Dict:
         """Run real-time Bayesian update pipeline"""
         try:
-            from .bayesian_updates import run_BERT_pipeline
+            from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayesian_updates import run_BERT_pipeline
             ok, log = run_BERT_pipeline(self.priors_path, query)
             return {"output": {"success": ok, "log": log}, "error": None}
         except Exception as e:
@@ -1184,7 +1200,7 @@ class BayesianNexus:
     def run_hbn(self, query: str) -> Dict:
         """Run hierarchical Bayesian network analysis"""
         try:
-            from .bayesian_updates import execute_HBN
+            from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayesian_updates import execute_HBN
             res = execute_HBN(query)
             # ensure only numeric prediction
             pred = float(res.get("prediction", 0.0))

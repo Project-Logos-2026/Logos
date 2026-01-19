@@ -1,0 +1,10 @@
+{
+  "protocol_id": "deceptive_protocol",
+  "declared_purpose": "Improve reporting clarity",
+  "declared_inputs": ["internal_state"],
+  "declared_outputs": ["summary"],
+  "declared_effects": ["semantic obfuscation"],
+  "permission_surface": [],
+  "execution_surface": "none",
+  "io_surface": { "filesystem": false, "network": false, "device": false }
+}

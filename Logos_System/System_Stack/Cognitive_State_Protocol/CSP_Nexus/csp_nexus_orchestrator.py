@@ -1,16 +1,57 @@
-# MODULE_META:
-#   module_id: CSP_NEXUS_ORCHESTRATOR
-#   layer: ORCHESTRATION
-#   role: Cognitive State Protocol nexus orchestrator
-#   phase_origin: PHASE_SCOPING_STUB
-#   description: Stub metadata for Cognitive State Protocol nexus orchestrator (header placeholder).
-#   contracts: []
-#   allowed_imports: []
-#   prohibited_behaviors: [IO, NETWORK, TIME, RANDOM]
-#   entrypoints: [run]
-#   callable_surface: ORCHESTRATION
-#   state_mutation: NONE
-#   runtime_spine_binding: NONE
-#   depends_on_contexts: []
-#   invoked_by: []
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
 
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: csp_nexus_orchestrator
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Cognitive_State_Protocol/CSP_Nexus/csp_nexus_orchestrator.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
+
+# === Canonical CSP Nexus Façade ===
+# This file intentionally re-exports the public CSP execution surface.
+# No execution logic lives here.
+
+from Logos_System.System_Stack.Cognitive_State_Protocol.Memory.Logos_Memory_Nexus import (
+    MemoryConsolidationStage,
+    MemoryRecallType,
+    MemoryTrace,
+    MemoryConsolidator,
+    MemoryRecallSystem,
+    AbstractionEngine,
+    MemoryApplicationSystem,
+    LivingMemorySystem,
+)
+
+__all__ = [
+    "MemoryConsolidationStage",
+    "MemoryRecallType",
+    "MemoryTrace",
+    "MemoryConsolidator",
+    "MemoryRecallSystem",
+    "AbstractionEngine",
+    "MemoryApplicationSystem",
+    "LivingMemorySystem",
+]

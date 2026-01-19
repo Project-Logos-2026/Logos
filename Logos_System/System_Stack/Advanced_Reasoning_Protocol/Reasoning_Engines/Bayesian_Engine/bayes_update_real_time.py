@@ -1,22 +1,38 @@
-# MODULE_META:
-#   module_id: BAYES_UPDATE_REAL_TIME
-#   layer: APPLICATION_FUNCTION
-#   role: Bayesian real-time update routine
-#   phase_origin: PHASE_SCOPING_STUB
-#   description: Stub metadata for Bayesian real-time update routine (header placeholder).
-#   contracts: []
-#   allowed_imports: []
-#   prohibited_behaviors: [IO, NETWORK, TIME, RANDOM]
-#   entrypoints: [run]
-#   callable_surface: APPLICATION
-#   state_mutation: NONE
-#   runtime_spine_binding: NONE
-#   depends_on_contexts: []
-#   invoked_by: []
+from __future__ import annotations
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
+
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: bayes_update_real_time
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Advanced_Reasoning_Protocol/Reasoning_Engines/Bayesian_Engine/bayes_update_real_time.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
 
 """Real-time Bayesian update pipeline used by the Bayesian nexus."""
 
-from __future__ import annotations
 
 import json
 from datetime import datetime, timezone

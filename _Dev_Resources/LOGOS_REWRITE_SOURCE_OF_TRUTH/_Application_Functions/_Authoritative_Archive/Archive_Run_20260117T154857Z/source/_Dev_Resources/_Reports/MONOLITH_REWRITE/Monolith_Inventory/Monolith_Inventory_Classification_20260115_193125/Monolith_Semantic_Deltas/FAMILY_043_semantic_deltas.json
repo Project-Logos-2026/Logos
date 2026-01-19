@@ -1,0 +1,85 @@
+{
+  "family_id": "FAMILY_043",
+  "member_count": 4,
+  "members": [
+    "DummyNexus.__init__",
+    "DummyNexus._protocol_specific_initialization",
+    "__init__",
+    "_protocol_specific_initialization"
+  ],
+  "invariant_semantics": {
+    "data_role": []
+  },
+  "divergent_semantics": {
+    "semantic_tags": {
+      "DummyNexus.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "DummyNexus._protocol_specific_initialization": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "__init__": [
+        "BOOTSTRAP",
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "_protocol_specific_initialization": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ]
+    },
+    "operation_type": {
+      "DummyNexus.__init__": [],
+      "DummyNexus._protocol_specific_initialization": [
+        "TRANSFORMATION"
+      ],
+      "__init__": [],
+      "_protocol_specific_initialization": [
+        "TRANSFORMATION"
+      ]
+    },
+    "control_role": {
+      "DummyNexus.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "DummyNexus._protocol_specific_initialization": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_initialization": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "DummyNexus.__init__": [
+        "UNMAPPED"
+      ],
+      "DummyNexus._protocol_specific_initialization": [
+        "UNMAPPED"
+      ],
+      "__init__": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "_protocol_specific_initialization": [
+        "UNMAPPED"
+      ]
+    }
+  }
+}

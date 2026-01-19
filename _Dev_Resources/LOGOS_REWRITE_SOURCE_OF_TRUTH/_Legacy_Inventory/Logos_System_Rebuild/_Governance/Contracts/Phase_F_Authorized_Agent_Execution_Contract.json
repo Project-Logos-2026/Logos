@@ -1,0 +1,44 @@
+{
+  "phase": "Phase-F",
+  "name": "Authorized Agent Execution",
+  "status": "DRAFT \u00b7 NON-ACTIVE",
+  "canonical_role": [
+    "Authorize controlled agent instantiation",
+    "Permit execution under strict governance",
+    "Bind SOP, protocols, and memory access"
+  ],
+  "ordering_constraints": {
+    "must_follow": [
+      "Phase-E: Agent Orchestration \u2014 Declarative Binding"
+    ],
+    "reordering_forbidden": true
+  },
+  "ordering_guarantee": [
+    "Phase-F: Authorized Agent Execution",
+    "Phase-G: Agent Initialization and Binding"
+  ],
+  "execution_authority": {
+    "agents": [
+      "I1",
+      "I2",
+      "I3"
+    ],
+    "sop": "CONDITIONAL",
+    "protocols": "CONDITIONAL",
+    "memory": "CONDITIONAL"
+  },
+  "requirements": {
+    "prior_phases_complete": true,
+    "explicit_authorization": true,
+    "runtime_contracts_present": true,
+    "audit_logging_enabled": true
+  },
+  "failure_semantics": {
+    "any_violation": "immediate_halt",
+    "partial_execution": "forbidden"
+  },
+  "notes": "Phase-F defines the first executable boundary. This contract grants no execution by itself.",
+  "explicit_prohibitions": [
+    "protocol_activation"
+  ]
+}

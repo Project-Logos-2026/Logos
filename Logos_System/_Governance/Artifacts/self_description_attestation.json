@@ -1,0 +1,15 @@
+{
+  "artifact_type": "ATTESTATION_SELF_DESCRIPTION",
+  "issued_at": 1768791677.192711,
+  "issued_by": "human_operator",
+  "notes": "Authorizes introspective self-description only",
+  "permissions": {
+    "allow_external_action": false,
+    "allow_permission_changes": false,
+    "allow_persistence": false,
+    "allow_planning_non_executable": true,
+    "allow_reasoning": true,
+    "allow_self_description": true,
+    "allow_tool_use": false
+  }
+}

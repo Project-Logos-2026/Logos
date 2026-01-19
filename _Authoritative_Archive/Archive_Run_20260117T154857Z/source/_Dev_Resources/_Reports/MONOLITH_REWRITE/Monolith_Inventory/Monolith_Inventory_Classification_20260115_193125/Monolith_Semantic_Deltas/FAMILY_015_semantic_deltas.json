@@ -1,0 +1,314 @@
+{
+  "family_id": "FAMILY_015",
+  "member_count": 16,
+  "members": [
+    "MeshHolismValidator.__init__",
+    "__init__",
+    "TrinitarianOptimizationEngine",
+    "TrinitarianOptimizationEngine.__init__",
+    "TrinitarianOptimizationEngine.optimize",
+    "TLMKeyManager.__init__",
+    "SignConstraint.__init__",
+    "MindConstraint.__init__",
+    "BridgeConstraint.__init__",
+    "MeshHolism.__init__",
+    "TrinitarianOptimizer",
+    "TrinitarianOptimizer.__init__",
+    "TrinitarianOptimizer.optimize",
+    "TranscendentalLockingMechanism.__init__",
+    "ConstraintPipeline.__init__",
+    "initialize_system_b"
+  ],
+  "invariant_semantics": {},
+  "divergent_semantics": {
+    "semantic_tags": {
+      "MeshHolismValidator.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "__init__": [
+        "BOOTSTRAP",
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "TrinitarianOptimizationEngine": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TrinitarianOptimizationEngine.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TrinitarianOptimizationEngine.optimize": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TLMKeyManager.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "SignConstraint.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MindConstraint.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "BridgeConstraint.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "MeshHolism.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TrinitarianOptimizer": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TrinitarianOptimizer.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TrinitarianOptimizer.optimize": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "TranscendentalLockingMechanism.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ConstraintPipeline.__init__": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "initialize_system_b": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "LEGACY_OR_QUARANTINED"
+      ]
+    },
+    "operation_type": {
+      "MeshHolismValidator.__init__": [],
+      "__init__": [],
+      "TrinitarianOptimizationEngine": [
+        "TRANSFORMATION"
+      ],
+      "TrinitarianOptimizationEngine.__init__": [],
+      "TrinitarianOptimizationEngine.optimize": [
+        "TRANSFORMATION"
+      ],
+      "TLMKeyManager.__init__": [],
+      "SignConstraint.__init__": [],
+      "MindConstraint.__init__": [],
+      "BridgeConstraint.__init__": [],
+      "MeshHolism.__init__": [],
+      "TrinitarianOptimizer": [
+        "TRANSFORMATION"
+      ],
+      "TrinitarianOptimizer.__init__": [],
+      "TrinitarianOptimizer.optimize": [
+        "TRANSFORMATION"
+      ],
+      "TranscendentalLockingMechanism.__init__": [],
+      "ConstraintPipeline.__init__": [],
+      "initialize_system_b": [
+        "TRANSFORMATION"
+      ]
+    },
+    "data_role": {
+      "MeshHolismValidator.__init__": [
+        "MEMORY",
+        "SMP"
+      ],
+      "__init__": [],
+      "TrinitarianOptimizationEngine": [
+        "MEMORY",
+        "SMP"
+      ],
+      "TrinitarianOptimizationEngine.__init__": [
+        "MEMORY",
+        "SMP"
+      ],
+      "TrinitarianOptimizationEngine.optimize": [
+        "MEMORY",
+        "SMP"
+      ],
+      "TLMKeyManager.__init__": [
+        "MEMORY",
+        "SMP"
+      ],
+      "SignConstraint.__init__": [
+        "MEMORY",
+        "SMP"
+      ],
+      "MindConstraint.__init__": [
+        "MEMORY",
+        "SMP"
+      ],
+      "BridgeConstraint.__init__": [
+        "MEMORY",
+        "SMP"
+      ],
+      "MeshHolism.__init__": [
+        "MEMORY",
+        "SMP"
+      ],
+      "TrinitarianOptimizer": [
+        "MEMORY",
+        "SMP"
+      ],
+      "TrinitarianOptimizer.__init__": [
+        "MEMORY",
+        "SMP"
+      ],
+      "TrinitarianOptimizer.optimize": [
+        "MEMORY",
+        "SMP"
+      ],
+      "TranscendentalLockingMechanism.__init__": [
+        "MEMORY",
+        "SMP"
+      ],
+      "ConstraintPipeline.__init__": [
+        "MEMORY",
+        "SMP"
+      ],
+      "initialize_system_b": [
+        "MEMORY",
+        "SMP"
+      ]
+    },
+    "control_role": {
+      "MeshHolismValidator.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "TrinitarianOptimizationEngine": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "TrinitarianOptimizationEngine.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "TrinitarianOptimizationEngine.optimize": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "TLMKeyManager.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "SignConstraint.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "MindConstraint.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "BridgeConstraint.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "MeshHolism.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "TrinitarianOptimizer": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "TrinitarianOptimizer.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "TrinitarianOptimizer.optimize": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "TranscendentalLockingMechanism.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "ConstraintPipeline.__init__": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ],
+      "initialize_system_b": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "MeshHolismValidator.__init__": [
+        "UNMAPPED"
+      ],
+      "__init__": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "TrinitarianOptimizationEngine": [
+        "UNMAPPED"
+      ],
+      "TrinitarianOptimizationEngine.__init__": [
+        "UNMAPPED"
+      ],
+      "TrinitarianOptimizationEngine.optimize": [
+        "UNMAPPED"
+      ],
+      "TLMKeyManager.__init__": [
+        "UNMAPPED"
+      ],
+      "SignConstraint.__init__": [
+        "UNMAPPED"
+      ],
+      "MindConstraint.__init__": [
+        "UNMAPPED"
+      ],
+      "BridgeConstraint.__init__": [
+        "UNMAPPED"
+      ],
+      "MeshHolism.__init__": [
+        "UNMAPPED"
+      ],
+      "TrinitarianOptimizer": [
+        "UNMAPPED"
+      ],
+      "TrinitarianOptimizer.__init__": [
+        "UNMAPPED"
+      ],
+      "TrinitarianOptimizer.optimize": [
+        "UNMAPPED"
+      ],
+      "TranscendentalLockingMechanism.__init__": [
+        "UNMAPPED"
+      ],
+      "ConstraintPipeline.__init__": [
+        "UNMAPPED"
+      ],
+      "initialize_system_b": [
+        "UNMAPPED"
+      ]
+    }
+  }
+}
