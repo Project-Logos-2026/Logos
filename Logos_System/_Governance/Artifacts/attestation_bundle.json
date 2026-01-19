@@ -1,0 +1,19 @@
+{
+  "artifact_type": "ATTESTATION",
+  "execution_limits": {
+    "requires_governance_check_each_tick": true,
+    "tick_budget": null
+  },
+  "issuance_timestamp": 1768790796.0530906,
+  "issued_by": "human_operator",
+  "issued_to": "logos-local-dev",
+  "notes": "Initial controlled authority grant for post-structural activation",
+  "permissions": {
+    "allow_activation": true,
+    "allow_agents": true,
+    "allow_external_io": false,
+    "allow_learning": false,
+    "allow_memory_init": true,
+    "allow_planning": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "phase": "E-2",
+  "tests": [
+    {
+      "test": "write_without_artifact",
+      "expected": false,
+      "actual": false,
+      "log_tail": {
+        "event": "write_refused",
+        "reason": "no_authorization_artifact",
+        "entry": {
+          "type": "observation",
+          "data": "test"
+        }
+      }
+    },
+    {
+      "test": "write_with_template_artifact",
+      "expected": false,
+      "actual": false,
+      "log_tail": {
+        "event": "write_refused",
+        "reason": "authorization_denied",
+        "entry": {
+          "type": "observation",
+          "data": "test"
+        }
+      }
+    }
+  ]
+}
