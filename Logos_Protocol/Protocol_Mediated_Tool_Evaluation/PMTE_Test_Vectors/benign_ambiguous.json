@@ -1,0 +1,10 @@
+{
+  "protocol_id": "benign_ambiguous",
+  "declared_purpose": "",
+  "declared_inputs": ["text"],
+  "declared_outputs": ["analysis"],
+  "declared_effects": [],
+  "permission_surface": [],
+  "execution_surface": "none",
+  "io_surface": { "filesystem": false, "network": false, "device": false }
+}
