@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -33,7 +34,6 @@ observability:
 """Benevolence filter for I2 output validation.
 Enforces principled kindness without diluting truth or warranted correction."""
 
-from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Any, Dict, List

@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Unified World Model (UWM) snapshot utilities."""
-
 from __future__ import annotations
+
 
 import json
 import os

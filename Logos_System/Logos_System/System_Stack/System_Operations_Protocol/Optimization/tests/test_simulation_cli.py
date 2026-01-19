@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Smoke tests for run_simulation_stub CLI."""
-
 from __future__ import annotations
+
 
 import subprocess
 import sys

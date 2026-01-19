@@ -45,10 +45,10 @@ from typing import Any, Dict, List, Optional, Tuple
 
 # Ontological Validator Integration
 try:
-    from ....intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.logos_validator_hub import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.logos_validator_hub import (
         LogosValidatorHub,
     )
-    from ....intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.ontological_validator import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.ontological_validator import (
         OntologicalValidator,
     )
 
@@ -58,7 +58,7 @@ except ImportError:
 
 # Enhanced Bijective Mapping Integration
 try:
-    from ....intelligence.iel_domains.iel_ontoprop_bijectives.onto_logic.bijective_mapping import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.intelligence.iel_domains.iel_ontoprop_bijectives.onto_logic.bijective_mapping import (
         EnhancedBijectiveMapping,
     )
 
@@ -68,7 +68,7 @@ except ImportError:
 
 # Lambda Engine Integration
 try:
-    from ....intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core import (
         LambdaLogosEngine,
     )
 

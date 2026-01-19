@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -49,7 +50,6 @@ Only standard-library modules are used so the surrounding orchestration keeps
 its zero-dependency story intact.
 """
 
-from __future__ import annotations
 
 import asyncio
 import json

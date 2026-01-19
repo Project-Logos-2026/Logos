@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Deterministic commitment prioritization for LOGOS AGI."""
-
 from __future__ import annotations
+
 
 import json
 from datetime import datetime, timedelta, timezone

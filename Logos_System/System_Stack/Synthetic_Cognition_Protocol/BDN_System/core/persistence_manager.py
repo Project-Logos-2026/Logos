@@ -32,7 +32,7 @@ observability:
 
 import json
 import os
-from ..mvf_node_operator import FractalDB
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.mvf_node_operator import FractalDB
 
 class PersistenceManager:
     """Handles auto-saving and auto-loading of the knowledge graph."""

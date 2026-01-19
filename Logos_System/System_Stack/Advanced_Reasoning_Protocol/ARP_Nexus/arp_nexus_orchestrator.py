@@ -21,7 +21,8 @@ failure_mode:
   type: unknown
   notes: ""
 rewrite_provenance:
-  source: System_Stack/Advanced_Reasoning_Protocol/ARP_Nexus/arp_nexus_orchestrator.py
+  source: >-
+   System_Stack/Advanced_Reasoning_Protocol/ARP_Nexus/arp_nexus_orchestrator.py
   rewrite_phase: Phase_B
   rewrite_timestamp: 2026-01-18T23:03:31.726474
 observability:
@@ -30,4 +31,12 @@ observability:
 ---------------------
 """
 
+# === Canonical ARP Nexus Façade ===
+# This file intentionally re-exports the public ARP execution surface.
+# No execution logic lives here.
 
+from Logos_System.System_Stack.Advanced_Reasoning_Protocol.Reasoning_Engines.Bayesian_Engine.bayesian_nexus import BayesianNexus
+
+__all__ = [
+    "BayesianNexus",
+]

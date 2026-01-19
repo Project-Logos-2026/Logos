@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Deterministic local Synthetic Cognition Protocol transport."""
-
 from __future__ import annotations
+
 
 import asyncio
 import time

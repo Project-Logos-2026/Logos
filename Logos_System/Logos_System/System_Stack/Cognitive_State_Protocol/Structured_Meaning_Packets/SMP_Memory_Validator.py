@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -12,7 +13,6 @@ meta-constraint evaluation (Mesh Holism), optimization (TOT), and
 authorization (TLM) for memory commitment.
 """
 
-from __future__ import annotations
 
 import hashlib
 import json

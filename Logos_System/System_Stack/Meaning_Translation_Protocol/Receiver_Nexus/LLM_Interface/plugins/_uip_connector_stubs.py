@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -32,7 +33,6 @@ observability:
 
 """Deterministic UIP connector implementations for sandbox integrations."""
 
-from __future__ import annotations
 
 import time
 from dataclasses import dataclass, field

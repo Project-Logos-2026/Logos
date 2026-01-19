@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -32,7 +33,6 @@ observability:
 
 """FastAPI surface for LOGOS-GPT (advisor-only, UIP gated)."""
 
-from __future__ import annotations
 
 import argparse
 import json

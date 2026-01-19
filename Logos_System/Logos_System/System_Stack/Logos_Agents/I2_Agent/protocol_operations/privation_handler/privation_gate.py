@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Fast, non-authoritative privation gate for I2 privation handler."""
-
 from __future__ import annotations
+
 
 from dataclasses import dataclass
 from typing import Any, Dict, Optional

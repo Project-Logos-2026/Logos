@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -38,7 +39,6 @@ Modules that need a stable formal identity should call
 when present. This avoids multiple components generating different
 identities on each run.
 """
-from __future__ import annotations
 
 import json
 from pathlib import Path

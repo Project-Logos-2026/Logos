@@ -33,6 +33,17 @@ observability:
 import shutil
 import sys
 
-src, out = sys.argv[1], sys.argv[2]
-shutil.copy(src, out)
-print(f"[OK] Copied {src} to {out}")
+
+def main(argv=None):
+    argv = list(argv or sys.argv[1:])
+    if len(argv) < 2:
+        print("[WARN] gen_ontoprops_dedup expects: <src> <out>")
+        return
+
+    src, out = argv[0], argv[1]
+    shutil.copy(src, out)
+    print(f"[OK] Copied {src} to {out}")
+
+
+if __name__ == '__main__':
+    main()

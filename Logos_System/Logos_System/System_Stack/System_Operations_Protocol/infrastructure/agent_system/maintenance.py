@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Background maintenance loops for the SOP runtime."""
-
 from __future__ import annotations
+
 
 import asyncio
 import json

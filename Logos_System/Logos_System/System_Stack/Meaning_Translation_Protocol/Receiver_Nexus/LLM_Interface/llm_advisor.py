@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -11,7 +12,6 @@ Supports a stub mode (default if OPENAI_API_KEY missing) and an OpenAI
 Responses API mode using stdlib urllib.
 """
 
-from __future__ import annotations
 
 import json
 import os

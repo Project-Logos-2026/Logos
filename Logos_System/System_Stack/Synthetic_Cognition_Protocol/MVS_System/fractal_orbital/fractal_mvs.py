@@ -64,7 +64,7 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 
 import numpy as np
 
-from ..core.trinity_hyperstructure import TrinityVector, Trinity_Hyperstructure
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.core.trinity_hyperstructure import TrinityVector, Trinity_Hyperstructure
 
 # Import LOGOS V2 components (maintain existing integrations)
 try:
@@ -95,7 +95,7 @@ except ImportError:
 
 
 # Import MVS/BDN data structures (updated for singularity)
-from ..core.data_structures import (
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.core.data_structures import (
     MVSCoordinate,
     MVSRegionType,
 )

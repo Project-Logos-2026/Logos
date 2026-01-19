@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -17,7 +18,6 @@ Features:
 
 Use for experimentation and visualization. Keep it lightweight and safe.
 """
-from __future__ import annotations
 
 import json
 import logging

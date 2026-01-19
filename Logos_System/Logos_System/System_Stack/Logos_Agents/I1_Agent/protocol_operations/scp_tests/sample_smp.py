@@ -1,9 +1,9 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
 # ORIGIN: SYSTEMATIC_REWRITE
 
-from __future__ import annotations
 
 import time
 import uuid

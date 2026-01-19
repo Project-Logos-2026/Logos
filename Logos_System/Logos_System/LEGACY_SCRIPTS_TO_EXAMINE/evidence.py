@@ -18,8 +18,8 @@
 # END_LOGOS_HEADER
 
 """Evidence reference helpers for grounded replies."""
-
 from __future__ import annotations
+
 
 from pathlib import Path
 from typing import Any, Dict, List, Tuple

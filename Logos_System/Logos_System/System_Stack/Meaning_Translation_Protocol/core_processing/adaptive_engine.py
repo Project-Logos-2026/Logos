@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -11,7 +12,6 @@ Simplifies and consolidates the legacy adaptive processing layer while preservin
 per-session personalisation, context analysis, and refinement hooks.
 """
 
-from __future__ import annotations
 
 import logging
 import time

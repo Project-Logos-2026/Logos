@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -38,7 +39,6 @@ scenarios without pulling in the heavy historical implementation. It should be
 considered a compatibility layer until the full safety subsystem is restored.
 """
 
-from __future__ import annotations
 
 import json
 import re

@@ -61,7 +61,7 @@ from LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports impor
 
 # Import PXL schema components
 try:
-    from .pxl_schema import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.pxl_schema import (
         ConsistencyReport,
         ConsistencyViolation,
         ModalProperties,

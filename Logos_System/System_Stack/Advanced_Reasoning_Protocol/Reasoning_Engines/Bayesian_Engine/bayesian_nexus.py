@@ -39,11 +39,51 @@ import json
 import traceback
 from typing import Dict, List
 
-from .bayes_update_real_time import resolve_priors_path, run_BERT_pipeline
-from .bayesian_inferencer import BayesianTrinityInferencer
-from .bayesian_recursion import BayesianMLModel
-from .hierarchical_bayes_network import execute_HBN
-# from .mcmc_engine import example_model, run_mcmc_model
+# Optional dependency guards for ARP Bayesian stack.
+try:
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayes_update_real_time import (  # type: ignore
+        resolve_priors_path,
+        run_BERT_pipeline,
+    )
+except ImportError:  # pragma: no cover - stub for import hygiene
+    def resolve_priors_path(*_args, **_kwargs):
+        raise ImportError("bayes_update_real_time is not available")
+
+    def run_BERT_pipeline(*_args, **_kwargs):
+        raise ImportError("bayes_update_real_time is not available")
+
+try:
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayesian_inferencer import (  # type: ignore
+        BayesianTrinityInferencer,
+    )
+except ImportError:  # pragma: no cover - stub for import hygiene
+    class BayesianTrinityInferencer:  # minimal placeholder
+        def __init__(self, *_args, **_kwargs):
+            raise ImportError("bayesian_inferencer is not available")
+
+        def infer(self, *_args, **_kwargs):
+            raise ImportError("bayesian_inferencer is not available")
+
+try:
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayesian_recursion import (  # type: ignore
+        BayesianMLModel,
+    )
+except ImportError:  # pragma: no cover - stub for import hygiene
+    class BayesianMLModel:  # minimal placeholder
+        def __init__(self, *_args, **_kwargs):
+            raise ImportError("bayesian_recursion is not available")
+
+        def update_belief(self, *_args, **_kwargs):
+            raise ImportError("bayesian_recursion is not available")
+
+try:
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.hierarchical_bayes_network import (  # type: ignore
+        execute_HBN,
+    )
+except ImportError:  # pragma: no cover - stub for import hygiene
+    def execute_HBN(*_args, **_kwargs):
+        raise ImportError("hierarchical_bayes_network is not available")
+# from Logos_System.System_Stack.Advanced_Reasoning_Protocol.mcmc_engine import example_model, run_mcmc_model
 
 
 class BayesianNexus:

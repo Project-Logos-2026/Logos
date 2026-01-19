@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -39,7 +40,6 @@ meta-constraint evaluation (Mesh Holism), optimization (TOT), and
 authorization (TLM) for memory commitment.
 """
 
-from __future__ import annotations
 
 import hashlib
 import json

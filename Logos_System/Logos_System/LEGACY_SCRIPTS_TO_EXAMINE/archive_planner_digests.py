@@ -18,8 +18,8 @@
 # END_LOGOS_HEADER
 
 """Create a compressed snapshot of the planner digest log."""
-
 from __future__ import annotations
+
 
 import argparse
 import os

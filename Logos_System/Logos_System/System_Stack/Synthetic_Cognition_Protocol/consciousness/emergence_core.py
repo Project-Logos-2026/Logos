@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Stub consciousness engine providing deterministic emergence assessment."""
-
 from __future__ import annotations
+
 
 from dataclasses import dataclass
 from datetime import datetime, timezone

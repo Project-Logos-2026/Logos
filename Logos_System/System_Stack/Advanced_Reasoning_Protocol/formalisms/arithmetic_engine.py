@@ -51,10 +51,10 @@ getcontext().prec = 50
 
 # Lambda Engine Integration
 try:
-    from ....intelligence.trinity.thonoc.symbolic_engine.lambda_engine.lambda_engine import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.intelligence.trinity.thonoc.symbolic_engine.lambda_engine.lambda_engine import (
         LambdaEngine,
     )
-    from ....intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core import (
         LambdaLogosEngine,
         OntologicalType,
     )
@@ -65,7 +65,7 @@ except ImportError:
 
 # Ontological Validator Integration
 try:
-    from ....intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.ontological_validator import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.ontological_validator import (
         OntologicalValidator,
     )
 

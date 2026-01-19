@@ -49,7 +49,7 @@ except ImportError:  # pragma: no cover - fallback to direct relative path
         OntologicalNode,
     )
 
-from .modal_support import get_thonoc_verifier
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.modal_support import get_thonoc_verifier
 
 ThonocVerifier = get_thonoc_verifier()
 import time

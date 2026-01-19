@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -31,7 +32,6 @@ Constraints enforced here match the operator instructions:
 * The workflow avoids timestamps inside committed payloads.
 """
 
-from __future__ import annotations
 
 import hashlib
 import json

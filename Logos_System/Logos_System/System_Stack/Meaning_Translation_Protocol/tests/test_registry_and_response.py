@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Smoke tests for UIP registry and response formatter."""
-
 from __future__ import annotations
+
 
 import pytest
 

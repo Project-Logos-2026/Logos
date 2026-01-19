@@ -17,8 +17,8 @@
 # END_LOGOS_HEADER
 
 """Ledger utilities for supervised promotion cycles."""
-
 from __future__ import annotations
+
 
 import hashlib
 import json

@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Tests for Logos_AGI adapter persistence and integration."""
-
 from __future__ import annotations
+
 
 import json
 import unittest

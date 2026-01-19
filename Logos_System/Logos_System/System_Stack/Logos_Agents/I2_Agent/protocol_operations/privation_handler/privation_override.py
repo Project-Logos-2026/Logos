@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Stateless privation override validator for I2 privation handler."""
-
 from __future__ import annotations
+
 
 from dataclasses import dataclass, field
 from typing import Any, Dict, Optional

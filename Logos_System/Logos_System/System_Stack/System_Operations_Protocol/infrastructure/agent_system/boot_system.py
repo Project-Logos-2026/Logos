@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Bootstraps the SOP runtime stack with concrete services."""
-
 from __future__ import annotations
+
 
 import asyncio
 import json

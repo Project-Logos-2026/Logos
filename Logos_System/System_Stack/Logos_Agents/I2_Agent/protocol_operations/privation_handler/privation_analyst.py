@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -45,7 +46,6 @@ Role:
 Stateless by design. Does not persist or mutate shared state.
 """
 
-from __future__ import annotations
 
 import importlib
 import json

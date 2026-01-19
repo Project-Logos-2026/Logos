@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Tests for observation ingestor health reporting and simulation ingestion."""
-
 from __future__ import annotations
+
 
 import json
 import unittest

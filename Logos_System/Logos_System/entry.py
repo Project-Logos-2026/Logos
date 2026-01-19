@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Compatibility facade for initializing the lightweight LOGOS core."""
-
 from __future__ import annotations
+
 
 from typing import Any, Dict, Optional
 

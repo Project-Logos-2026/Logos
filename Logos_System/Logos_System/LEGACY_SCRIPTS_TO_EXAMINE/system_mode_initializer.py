@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -23,7 +24,6 @@ experimental agentic track. Execute it before launching probes or agent
 loops so downstream modules can read the selected profile.
 """
 
-from __future__ import annotations
 
 import argparse
 import json

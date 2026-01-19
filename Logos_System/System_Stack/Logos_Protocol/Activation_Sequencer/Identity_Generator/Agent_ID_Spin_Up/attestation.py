@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -31,7 +32,6 @@ observability:
 """
 
 """Attestation helpers and mission profile validators for LOGOS agents."""
-from __future__ import annotations
 
 import json
 from datetime import datetime

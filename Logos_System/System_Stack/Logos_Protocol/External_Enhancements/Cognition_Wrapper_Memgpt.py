@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -30,7 +31,6 @@ observability:
 ---------------------
 """
 
-from __future__ import annotations
 
 # __LOGOS_WRAPPER__ metadata
 __LOGOS_WRAPPER__ = True
