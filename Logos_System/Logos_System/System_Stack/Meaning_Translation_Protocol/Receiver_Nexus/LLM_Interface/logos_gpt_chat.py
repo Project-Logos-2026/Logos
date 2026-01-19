@@ -5,8 +5,8 @@
 
 #!/usr/bin/env python3
 """Minimal UIP chat loop for LOGOS-GPT (advisor-only, gated execution)."""
-
 from __future__ import annotations
+
 
 import argparse
 import json

@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -32,7 +33,6 @@ observability:
 
 """Lightweight tests for AlignmentAwarePlanner agenda and planning behavior."""
 
-from __future__ import annotations
 
 import gzip
 import unittest

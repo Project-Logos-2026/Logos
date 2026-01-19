@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -32,7 +33,6 @@ observability:
 
 """Real-time Bayesian update pipeline used by the Bayesian nexus."""
 
-from __future__ import annotations
 
 import json
 from datetime import datetime, timezone

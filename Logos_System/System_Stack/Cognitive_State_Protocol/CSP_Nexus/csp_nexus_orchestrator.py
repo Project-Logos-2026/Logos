@@ -30,4 +30,28 @@ observability:
 ---------------------
 """
 
+# === Canonical CSP Nexus Façade ===
+# This file intentionally re-exports the public CSP execution surface.
+# No execution logic lives here.
 
+from Logos_System.System_Stack.Cognitive_State_Protocol.Memory.Logos_Memory_Nexus import (
+    MemoryConsolidationStage,
+    MemoryRecallType,
+    MemoryTrace,
+    MemoryConsolidator,
+    MemoryRecallSystem,
+    AbstractionEngine,
+    MemoryApplicationSystem,
+    LivingMemorySystem,
+)
+
+__all__ = [
+    "MemoryConsolidationStage",
+    "MemoryRecallType",
+    "MemoryTrace",
+    "MemoryConsolidator",
+    "MemoryRecallSystem",
+    "AbstractionEngine",
+    "MemoryApplicationSystem",
+    "LivingMemorySystem",
+]

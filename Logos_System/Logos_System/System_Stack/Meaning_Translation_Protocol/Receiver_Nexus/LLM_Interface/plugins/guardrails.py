@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Reusable guardrails tied to the active mission profile."""
-
 from __future__ import annotations
+
 
 import json
 import os

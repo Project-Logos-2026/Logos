@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -42,7 +43,6 @@ Interpretation of Omnipresence in-system:
 - Not metaphysical claims; operational: "context span" coverage across available inputs.
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional

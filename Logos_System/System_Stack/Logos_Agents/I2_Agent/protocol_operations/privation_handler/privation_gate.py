@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -32,7 +33,6 @@ observability:
 
 """Fast, non-authoritative privation gate for I2 privation handler."""
 
-from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Any, Dict, Optional

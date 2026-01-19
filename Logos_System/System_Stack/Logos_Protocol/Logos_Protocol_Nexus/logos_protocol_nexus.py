@@ -30,4 +30,70 @@ observability:
 ---------------------
 """
 
+# === Canonical Logos Protocol Nexus Façade ===
+# This file aggregates protocol-level Nexus façades into a single governed surface.
+# No execution logic lives here.
 
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.SCP_Nexus.scp_nexus_orchestrator import FractalNexus
+from Logos_System.System_Stack.Advanced_Reasoning_Protocol.ARP_Nexus.arp_nexus_orchestrator import BayesianNexus
+from Logos_System.System_Stack.Cognitive_State_Protocol.CSP_Nexus.csp_nexus_orchestrator import (
+    MemoryConsolidationStage,
+    MemoryRecallType,
+    MemoryTrace,
+    MemoryConsolidator,
+    MemoryRecallSystem,
+    AbstractionEngine,
+    MemoryApplicationSystem,
+    LivingMemorySystem,
+)
+from Logos_System.System_Stack.Meaning_Translation_Protocol.MTP_Nexus.mtp_nexus_orchestrator import *
+from Logos_System.System_Stack.System_Operations_Protocol.SOP_Nexus.sop_nexus_orchestrator import (
+    AgentType,
+    ProtocolType,
+    NexusLifecycle,
+    AgentRequest,
+    NexusResponse,
+    BaseNexus,
+    create_agent_request,
+    PlanningType,
+    GapType,
+    LinguisticOperation,
+    PlanningRequest,
+    GapDetectionRequest,
+    LinguisticRequest,
+    LOGOSAgentNexus,
+)
+
+__all__ = [
+    # SCP
+    "FractalNexus",
+
+    # ARP
+    "BayesianNexus",
+
+    # CSP
+    "MemoryConsolidationStage",
+    "MemoryRecallType",
+    "MemoryTrace",
+    "MemoryConsolidator",
+    "MemoryRecallSystem",
+    "AbstractionEngine",
+    "MemoryApplicationSystem",
+    "LivingMemorySystem",
+
+    # SOP
+    "AgentType",
+    "ProtocolType",
+    "NexusLifecycle",
+    "AgentRequest",
+    "NexusResponse",
+    "BaseNexus",
+    "create_agent_request",
+    "PlanningType",
+    "GapType",
+    "LinguisticOperation",
+    "PlanningRequest",
+    "GapDetectionRequest",
+    "LinguisticRequest",
+    "LOGOSAgentNexus",
+]

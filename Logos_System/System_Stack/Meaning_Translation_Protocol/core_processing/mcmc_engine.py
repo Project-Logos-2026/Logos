@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -38,7 +39,6 @@ available; otherwise falls back to deterministic placeholder traces so the
 pipeline can continue operating in reduced capability mode.
 """
 
-from __future__ import annotations
 
 import logging
 from typing import Any, Callable

@@ -30,4 +30,9 @@ observability:
 ---------------------
 """
 
+# === Canonical MTP Nexus Façade ===
+# This protocol currently exposes no public execution surface.
+# This façade is intentionally empty.
+# Downstream systems must not assume MTP capabilities until explicitly wired.
 
+__all__ = []

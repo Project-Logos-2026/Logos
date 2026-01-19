@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -18,7 +19,6 @@ Role:
 Stateless by design. Does not persist or mutate shared state.
 """
 
-from __future__ import annotations
 
 import importlib
 import json

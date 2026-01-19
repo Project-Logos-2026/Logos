@@ -5,8 +5,8 @@
 
 #!/usr/bin/env python3
 """Ensure failed tools surface fallback proposals without execution."""
-
 from __future__ import annotations
+
 
 import json
 import os

@@ -18,8 +18,8 @@
 # END_LOGOS_HEADER
 
 """Bounded in-memory manager for LogosAgiNexus instances."""
-
 from __future__ import annotations
+
 
 import time
 from pathlib import Path

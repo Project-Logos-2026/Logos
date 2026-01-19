@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -10,7 +11,6 @@ Builds capability records from the authoritative TOOLS registry, approved
 manifests, and run ledgers. No tool execution is performed.
 """
 
-from __future__ import annotations
 
 import json
 import os

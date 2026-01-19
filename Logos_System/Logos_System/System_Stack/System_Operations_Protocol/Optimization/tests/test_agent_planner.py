@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Lightweight tests for AlignmentAwarePlanner agenda and planning behavior."""
-
 from __future__ import annotations
+
 
 import gzip
 import unittest

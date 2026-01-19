@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -38,7 +39,6 @@ Simplifies and consolidates the legacy adaptive processing layer while preservin
 per-session personalisation, context analysis, and refinement hooks.
 """
 
-from __future__ import annotations
 
 import logging
 import time

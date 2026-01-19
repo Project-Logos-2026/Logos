@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Stub MVS module exposing a simple modal vector synchronisation surface."""
-
 from __future__ import annotations
+
 
 from dataclasses import dataclass
 from typing import Dict

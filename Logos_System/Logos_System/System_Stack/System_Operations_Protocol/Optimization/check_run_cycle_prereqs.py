@@ -5,8 +5,8 @@
 
 #!/usr/bin/env python3
 """Quick diagnostic for tooling required by tools/run_cycle.sh."""
-
 from __future__ import annotations
+
 
 import importlib
 import sys

@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Stub advanced reasoning bootstrapper used for gated protocol unlocks."""
-
 from __future__ import annotations
+
 
 from dataclasses import dataclass
 from typing import Dict

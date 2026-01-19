@@ -33,38 +33,50 @@ observability:
 import json
 import sys
 
-src, out = sys.argv[1], sys.argv[2]
-with open(src, "r", encoding="utf-8") as f:
-    data = json.load(f)
 
-props = data.get("properties", {})
-gc = data.get("group_classifications", {})
+def main(argv=None):
+    argv = list(argv or sys.argv[1:])
+    if len(argv) < 2:
+        print("[WARN] ontoprops_remap expects: <src> <out>")
+        return
 
-# Remap: Will -> Volitional
-if "Will" in props:
-    props["Will"]["group"] = "Volitional"
+    src, out = argv[0], argv[1]
 
-# Ensure group_classifications reflect the move
-# Remove Will from Causal list if present
-causal = gc.get("Causal", {}).get("properties", [])
-if "Will" in causal:
-    causal = [x for x in causal if x != "Will"]
-    gc["Causal"]["properties"] = causal
+    with open(src, "r", encoding="utf-8") as f:
+        data = json.load(f)
 
-# Add Will to Volitional list
-vol = gc.setdefault(
-    "Volitional",
-    {
-        "description": "Attributes related to will, choice, and freedom",
-        "properties": [],
-        "characteristic_goodness_weight": "high",
-    },
-)
-if "Will" not in vol["properties"]:
-    vol["properties"].append("Will")
+    props = data.get("properties", {})
+    gc = data.get("group_classifications", {})
 
-# Keep Immanence under Spatial (no change)
+    # Remap: Will -> Volitional
+    if "Will" in props:
+        props["Will"]["group"] = "Volitional"
 
-with open(out, "w", encoding="utf-8") as f:
-    json.dump(data, f, indent=2)
-print("[OK] Remapped Will→Volitional in", out)
+    # Ensure group_classifications reflect the move
+    # Remove Will from Causal list if present
+    causal = gc.get("Causal", {}).get("properties", [])
+    if "Will" in causal:
+        causal = [x for x in causal if x != "Will"]
+        gc.setdefault("Causal", {})["properties"] = causal
+
+    # Add Will to Volitional list
+    vol = gc.setdefault(
+        "Volitional",
+        {
+            "description": "Attributes related to will, choice, and freedom",
+            "properties": [],
+            "characteristic_goodness_weight": "high",
+        },
+    )
+    if "Will" not in vol.get("properties", []):
+        vol.setdefault("properties", []).append("Will")
+
+    # Keep Immanence under Spatial (no change)
+
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+    print("[OK] Remapped Will→Volitional in", out)
+
+
+if __name__ == '__main__':
+    main()

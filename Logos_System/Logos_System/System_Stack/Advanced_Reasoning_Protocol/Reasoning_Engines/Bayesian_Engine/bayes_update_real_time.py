@@ -20,8 +20,8 @@
 #   invoked_by: []
 
 """Real-time Bayesian update pipeline used by the Bayesian nexus."""
-
 from __future__ import annotations
+
 
 import json
 from datetime import datetime, timezone

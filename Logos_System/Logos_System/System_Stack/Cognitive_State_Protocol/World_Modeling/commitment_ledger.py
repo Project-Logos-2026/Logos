@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Commitment ledger management for LOGOS AGI."""
-
 from __future__ import annotations
+
 
 import json
 import os

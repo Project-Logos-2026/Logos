@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -32,7 +33,6 @@ observability:
 
 """Deterministic enhanced UIP integration plugin with telemetry checks."""
 
-from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Any, Dict

@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -32,7 +33,6 @@ observability:
 
 """Deterministic commitment prioritization for LOGOS AGI."""
 
-from __future__ import annotations
 
 import json
 from datetime import datetime, timedelta, timezone

@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -14,7 +15,6 @@ Constraints:
 This operator should be invoked only with explicit objectives and constraints.
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional

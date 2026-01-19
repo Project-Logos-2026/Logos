@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -11,7 +12,6 @@ available; otherwise falls back to deterministic placeholder traces so the
 pipeline can continue operating in reduced capability mode.
 """
 
-from __future__ import annotations
 
 import logging
 from typing import Any, Callable

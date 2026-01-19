@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Trinitarian mediator for I2 arbitration across subsystem assessments."""
-
 from __future__ import annotations
+
 
 from dataclasses import dataclass
 from typing import Any, Dict, List

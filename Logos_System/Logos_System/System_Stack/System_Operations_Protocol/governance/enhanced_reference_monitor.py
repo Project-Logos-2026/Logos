@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -11,7 +12,6 @@ scenarios without pulling in the heavy historical implementation. It should be
 considered a compatibility layer until the full safety subsystem is restored.
 """
 
-from __future__ import annotations
 
 import json
 import re

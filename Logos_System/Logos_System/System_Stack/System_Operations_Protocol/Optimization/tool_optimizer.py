@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Runtime-governed tooling optimizer for LOGOS self-improvement cycles."""
-
 from __future__ import annotations
+
 
 import ast
 import gzip

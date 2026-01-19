@@ -55,10 +55,10 @@ from sympy import (
 
 # Fractal Orbital Predictor Integration
 try:
-    from ....interfaces.services.workers.fractal_orbital.divergence_calculator import (
+    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.interfaces.services.workers.fractal_orbital.divergence_calculator import (
         DivergenceEngine,
     )
-    from ....interfaces.services.workers.fractal_orbital.trinity_vector import (
+    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.interfaces.services.workers.fractal_orbital.trinity_vector import (
         TrinityVector,
     )
 
@@ -68,7 +68,7 @@ except ImportError:
 
 # Lambda Engine Integration
 try:
-    from ....intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core import (
+    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core import (
         LambdaLogosEngine,
     )
 

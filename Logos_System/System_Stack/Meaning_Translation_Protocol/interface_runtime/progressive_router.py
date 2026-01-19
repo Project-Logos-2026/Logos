@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -38,7 +39,6 @@ session intake, registry orchestration, synthesis, and metrics into a cohesive
 router with robust validation and telemetry hooks.
 """
 
-from __future__ import annotations
 
 import json
 import logging

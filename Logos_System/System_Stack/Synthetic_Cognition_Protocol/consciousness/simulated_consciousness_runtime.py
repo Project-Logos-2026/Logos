@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -43,7 +44,6 @@ Features:
 
 Use for experimentation and visualization. Keep it lightweight and safe.
 """
-from __future__ import annotations
 
 import json
 import logging

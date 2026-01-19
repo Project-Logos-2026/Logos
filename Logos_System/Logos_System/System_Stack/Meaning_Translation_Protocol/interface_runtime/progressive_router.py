@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -11,7 +12,6 @@ session intake, registry orchestration, synthesis, and metrics into a cohesive
 router with robust validation and telemetry hooks.
 """
 
-from __future__ import annotations
 
 import json
 import logging

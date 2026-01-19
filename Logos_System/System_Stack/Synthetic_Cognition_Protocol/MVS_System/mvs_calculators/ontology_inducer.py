@@ -30,9 +30,9 @@ observability:
 ---------------------
 """
 
-from .logos_validator_hub import validator_gate
-from .async_workers import submit_async
-from .config_loader import Config
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.logos_validator_hub import validator_gate
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.async_workers import submit_async
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.config_loader import Config
 
 class OntologyInducer:
     """

@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -26,7 +27,6 @@ Consolidated Bayesian updates and hierarchical network analysis.
 Combines real-time Bayesian updates with hierarchical Bayesian network functionality.
 """
 
-from __future__ import annotations
 
 import json
 import re

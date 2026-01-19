@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -11,7 +12,6 @@ registry implementation into a compact, auditable coordinator that tracks step
 handlers, enforces dependency ordering, and records a detailed audit trail.
 """
 
-from __future__ import annotations
 
 import asyncio
 import logging

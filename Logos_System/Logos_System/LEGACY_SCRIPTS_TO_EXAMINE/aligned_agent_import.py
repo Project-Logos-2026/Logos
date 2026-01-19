@@ -18,8 +18,8 @@
 # END_LOGOS_HEADER
 
 """Alignment-gated Logos_AGI importer with drift guard and optional probing."""
-
 from __future__ import annotations
+
 
 import argparse
 import json

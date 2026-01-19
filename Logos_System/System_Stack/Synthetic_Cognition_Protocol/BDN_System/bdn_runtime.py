@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -32,7 +33,6 @@ observability:
 
 """Minimal BDN runtime stub used for gated protocol initialization."""
 
-from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Dict

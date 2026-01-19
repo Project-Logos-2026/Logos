@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -30,7 +31,6 @@ observability:
 ---------------------
 """
 
-from __future__ import annotations
 
 # Stable constants used across agent cores (testing)
 AGENT_I1 = "I1"

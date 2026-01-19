@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -32,7 +33,6 @@ observability:
 
 """Helpers for loading modal verification components with safe fallbacks."""
 
-from __future__ import annotations
 
 from typing import Dict, Tuple, Type
 

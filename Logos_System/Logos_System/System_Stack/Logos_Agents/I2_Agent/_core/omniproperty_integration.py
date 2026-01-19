@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -6,7 +7,6 @@
 """Benevolence filter for I2 output validation.
 Enforces principled kindness without diluting truth or warranted correction."""
 
-from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Any, Dict, List

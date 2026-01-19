@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -16,7 +17,6 @@
 # notes: 
 # END_LOGOS_HEADER
 
-from __future__ import annotations
 
 import json
 from dataclasses import asdict, is_dataclass

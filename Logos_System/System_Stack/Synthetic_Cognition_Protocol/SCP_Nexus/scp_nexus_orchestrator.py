@@ -30,4 +30,12 @@ observability:
 ---------------------
 """
 
+# === Canonical SCP Nexus Façade ===
+# This file intentionally re-exports the public SCP execution surface.
+# No execution logic lives here.
 
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.predictors.fractal_nexus import FractalNexus
+
+__all__ = [
+    "FractalNexus",
+]

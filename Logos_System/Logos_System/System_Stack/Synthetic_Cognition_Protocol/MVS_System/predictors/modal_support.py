@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Helpers for loading modal verification components with safe fallbacks."""
-
 from __future__ import annotations
+
 
 from typing import Dict, Tuple, Type
 

@@ -5,8 +5,8 @@
 
 #!/usr/bin/env python3
 """Run LOGOS-GPT acceptance: MVP + advisor boundary smokes."""
-
 from __future__ import annotations
+
 
 import hashlib
 import json

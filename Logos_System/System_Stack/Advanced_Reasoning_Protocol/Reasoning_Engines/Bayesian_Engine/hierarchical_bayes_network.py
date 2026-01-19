@@ -43,7 +43,7 @@ import numpy as np
 from sklearn.linear_model import BayesianRidge
 from sklearn.preprocessing import StandardScaler
 
-from .bayes_update_real_time import resolve_priors_path
+from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayes_update_real_time import resolve_priors_path
 
 
 def load_static_priors(path: str = "config/bayes_priors.json") -> dict:

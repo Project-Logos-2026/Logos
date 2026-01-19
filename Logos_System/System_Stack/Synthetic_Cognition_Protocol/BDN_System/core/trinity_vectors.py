@@ -32,7 +32,7 @@ observability:
 
 """Temporary bridge module exposing the Trinity_Hyperstructure stub."""
 
-from .trinity_hyperstructure import (
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.trinity_hyperstructure import (
 	HyperstructureOrbitalSignature,
 	TrinityVector,
 	Trinity_Hyperstructure,

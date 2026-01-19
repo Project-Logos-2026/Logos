@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Minimal BDN runtime stub used for gated protocol initialization."""
-
 from __future__ import annotations
+
 
 from dataclasses import dataclass
 from typing import Dict

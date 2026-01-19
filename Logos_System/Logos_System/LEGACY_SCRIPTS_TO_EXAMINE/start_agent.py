@@ -18,8 +18,8 @@
 # END_LOGOS_HEADER
 
 """Bounded supervised loop honoring the active mission profile."""
-
 from __future__ import annotations
+
 
 import argparse
 import hashlib

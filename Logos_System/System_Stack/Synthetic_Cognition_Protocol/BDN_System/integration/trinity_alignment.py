@@ -70,7 +70,7 @@ from typing import Any, Dict
 
 import numpy as np
 
-from ..core.trinity_hyperstructure import Trinity_Hyperstructure, TrinityVector
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.core.trinity_hyperstructure import Trinity_Hyperstructure, TrinityVector
 
 # LOGOS V2 Core Imports (maintain existing integrations)
 try:
@@ -92,7 +92,7 @@ except ImportError as e:
             return {"compliance_validated": True}
 
 # MVS/BDN System Imports (updated for singularity)
-from ...MVS_System.data_c_values.data_structures import MVSCoordinate
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.data_c_values.data_structures import MVSCoordinate
 
 logger = logging.getLogger(__name__)
 

@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -32,7 +33,6 @@ observability:
 
 """Runtime-governed tooling optimizer for LOGOS self-improvement cycles."""
 
-from __future__ import annotations
 
 import ast
 import gzip

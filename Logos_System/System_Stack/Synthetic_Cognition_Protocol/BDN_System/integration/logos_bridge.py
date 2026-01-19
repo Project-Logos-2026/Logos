@@ -65,7 +65,7 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from typing import Any, Callable, Dict, List, Optional
 
-from ..core.trinity_hyperstructure import TrinityVector, Trinity_Hyperstructure
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.core.trinity_hyperstructure import TrinityVector, Trinity_Hyperstructure
 
 # LOGOS V2 Core Imports (maintain existing integrations)
 try:
@@ -108,16 +108,16 @@ except ImportError as e:
             return {"compliance_validated": True}
 
 
-from ..core.banach_data_nodes import BanachDataNode, BanachNodeNetwork
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.core.banach_data_nodes import BanachDataNode, BanachNodeNetwork
 
 # MVS/BDN System Imports (updated for singularity)
-from ...MVS_System.data_c_values.data_structures import (
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.data_c_values.data_structures import (
     CreativeHypothesis,
     MVSCoordinate,
     MVSRegionType,
     NovelProblem,
 )
-from ..mathematics.fractal_mvs import FractalModalVectorSpace
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.mathematics.fractal_mvs import FractalModalVectorSpace
 
 logger = logging.getLogger(__name__)
 

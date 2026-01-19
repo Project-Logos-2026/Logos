@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -22,7 +23,6 @@ Only standard-library modules are used so the surrounding orchestration keeps
 its zero-dependency story intact.
 """
 
-from __future__ import annotations
 
 import asyncio
 import json

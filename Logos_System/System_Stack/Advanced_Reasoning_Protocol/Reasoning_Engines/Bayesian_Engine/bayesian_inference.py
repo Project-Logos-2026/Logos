@@ -68,7 +68,7 @@ except ImportError:
 
 # LOGOS Core imports
 try:
-    from .bayesian_interface import BayesianInterface, ProbabilisticResult, TrueP
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayesian_interface import BayesianInterface, ProbabilisticResult, TrueP
     BAYESIAN_INTERFACE_AVAILABLE = True
 except ImportError:
     # Fallback definitions
@@ -88,7 +88,7 @@ except ImportError:
 
 # Modal Probabilistic imports
 try:
-    from ....iel_domains.ModalPraxis.modal import ModalProbabilistic
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.iel_domains.ModalPraxis.modal import ModalProbabilistic
     MODAL_PROBABILISTIC_AVAILABLE = True
 except ImportError:
     # Fallback definition
@@ -102,8 +102,8 @@ except ImportError:
 
 # Translation Engine Enhancement
 try:
-    from .translation.pdn_bridge import PDNBottleneckSolver
-    from .translation.translation_engine import TranslationEngine
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.translation.pdn_bridge import PDNBottleneckSolver
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.translation.translation_engine import TranslationEngine
 
     TRANSLATION_ENGINE_AVAILABLE = True
 except ImportError:
@@ -1172,8 +1172,8 @@ class BayesianNexus:
     """Orchestrator for Bayesian reasoning components"""
 
     def __init__(self, priors_path: str):
-        from .bayesian_updates import resolve_priors_path
-        from .bayesian_ml import BayesianMLModel
+        from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayesian_updates import resolve_priors_path
+        from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayesian_ml import BayesianMLModel
 
         resolved = resolve_priors_path(priors_path)
         self.priors_path = resolved
@@ -1183,7 +1183,7 @@ class BayesianNexus:
     def run_real_time(self, query: str) -> Dict:
         """Run real-time Bayesian update pipeline"""
         try:
-            from .bayesian_updates import run_BERT_pipeline
+            from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayesian_updates import run_BERT_pipeline
             ok, log = run_BERT_pipeline(self.priors_path, query)
             return {"output": {"success": ok, "log": log}, "error": None}
         except Exception as e:
@@ -1200,7 +1200,7 @@ class BayesianNexus:
     def run_hbn(self, query: str) -> Dict:
         """Run hierarchical Bayesian network analysis"""
         try:
-            from .bayesian_updates import execute_HBN
+            from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayesian_updates import execute_HBN
             res = execute_HBN(query)
             # ensure only numeric prediction
             pred = float(res.get("prediction", 0.0))

@@ -18,8 +18,8 @@
 # END_LOGOS_HEADER
 
 """Stress test for the SOP runtime scheduler and telemetry pipeline."""
-
 from __future__ import annotations
+
 
 import argparse
 import asyncio

@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Stub UIP runtime exposing a narrow interface for protocol bootstrapping."""
-
 from __future__ import annotations
+
 
 from dataclasses import dataclass
 from typing import Dict

@@ -4,8 +4,8 @@
 # ORIGIN: SYSTEMATIC_REWRITE
 
 """Safe, non-destructive privation transformer for I2 privation handler."""
-
 from __future__ import annotations
+
 
 from dataclasses import dataclass
 from typing import Any, Dict

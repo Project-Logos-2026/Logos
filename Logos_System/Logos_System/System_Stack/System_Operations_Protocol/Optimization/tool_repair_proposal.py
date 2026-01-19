@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -11,7 +12,6 @@ DEGRADED/BROKEN tools. No code execution is performed. UIP approval is
 explicitly required via CLI decision flags.
 """
 
-from __future__ import annotations
 
 import argparse
 import json

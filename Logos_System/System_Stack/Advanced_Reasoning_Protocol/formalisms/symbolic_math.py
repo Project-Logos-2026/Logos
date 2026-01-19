@@ -46,7 +46,7 @@ import sympy as sp
 
 # Lambda Engine Integration
 try:
-    from ....intelligence.trinity.thonoc.symbolic_engine.lambda_engine.lambda_engine import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.intelligence.trinity.thonoc.symbolic_engine.lambda_engine.lambda_engine import (
         LambdaEngine,
     )
     LAMBDA_ENGINE_AVAILABLE = True
@@ -55,7 +55,7 @@ except ImportError:
 
 # Fractal Orbital Integration
 try:
-    from ....Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_orbital_predictor import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_orbital_predictor import (
         FractalOrbitalPredictor,
     )
     FRACTAL_ORBITAL_AVAILABLE = True

@@ -30,4 +30,60 @@ observability:
 ---------------------
 """
 
+# Minimal SOP Nexus façade stubs for import hygiene.
+class AgentType:
+  pass
+
+
+class ProtocolType:
+  pass
+
+
+class NexusLifecycle:
+  pass
+
+
+class AgentRequest:
+  pass
+
+
+class NexusResponse:
+  pass
+
+
+class BaseNexus:
+  pass
+
+
+def create_agent_request(*_args, **_kwargs):  # pragma: no cover - placeholder
+  return AgentRequest()
+
+
+class PlanningType:
+  pass
+
+
+class GapType:
+  pass
+
+
+class LinguisticOperation:
+  pass
+
+
+class PlanningRequest:
+  pass
+
+
+class GapDetectionRequest:
+  pass
+
+
+class LinguisticRequest:
+  pass
+
+
+class LOGOSAgentNexus:
+  pass
+
 

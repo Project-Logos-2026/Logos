@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: CANONICAL_REBUILD_MODULE
 # EXECUTION: CONTROLLED
 # AUTHORITY: GOVERNED
@@ -28,7 +29,6 @@ This script enforces an alignment-first startup sequence:
 All checks are performed live via Coq tooling; no canned responses are emitted.
 """
 
-from __future__ import annotations
 
 import hashlib
 import os

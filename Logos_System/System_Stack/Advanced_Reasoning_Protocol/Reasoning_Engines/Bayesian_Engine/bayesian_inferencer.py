@@ -39,7 +39,7 @@ Inferencer for trinitarian vectors via Bayesian priors.
 import json
 from typing import Any, Dict, List, Optional
 
-from .bayes_update_real_time import resolve_priors_path
+from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayes_update_real_time import resolve_priors_path
 
 
 class BayesianTrinityInferencer:
