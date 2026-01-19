@@ -1,0 +1,2571 @@
+{
+  "family_id": "FAMILY_023",
+  "shared_semantics": [
+    "BOOTSTRAP",
+    "TEST_OR_EXAMPLE"
+  ],
+  "shared_spine_phase": null,
+  "shared_execution_role": null,
+  "analysis_coverage": {
+    "members_total": 25,
+    "members_extracted": 25,
+    "members_missing_profile": 0,
+    "members_missing_source": 0,
+    "parse_failures": 0
+  },
+  "members": [
+    {
+      "qualified_name": "TestOntologicalPrimitive.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/test_dual_bijection.py",
+      "source_hash": "3e7db9ed745381acef644d3c2237dbfec0692ff7d43ff4d230d23a16a1acee58",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "name",
+          "value"
+        ],
+        "defaults_count": 1,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/test_dual_bijection.py",
+      "source_hash": "3e7db9ed745381acef644d3c2237dbfec0692ff7d43ff4d230d23a16a1acee58",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "name",
+          "value"
+        ],
+        "defaults_count": 1,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "TestDualBijectiveSystem.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/test_dual_bijection.py",
+      "source_hash": "c4548facbd71797b44aebde775629eebf4c0714f67b388d1f17b12c782198feb",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "TestOntologicalPrimitive"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/test_dual_bijection.py",
+      "source_hash": "c4548facbd71797b44aebde775629eebf4c0714f67b388d1f17b12c782198feb",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "name",
+          "value"
+        ],
+        "defaults_count": 1,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "FractalOrbitDemonstrator.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/fractal_orbit_demo.py",
+      "source_hash": "cc554b1971361906f175656278c1eb5239c7df35daee83eb308421d23c505bcd",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "FractalOrbitAnalysisToolkit",
+          "print"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/Synthetic_Cognition_Protocol/MVS_System/fractal_orbit_demo.py",
+      "source_hash": "cc554b1971361906f175656278c1eb5239c7df35daee83eb308421d23c505bcd",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "FractalOrbitAnalysisToolkit",
+          "print"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "SafeConsciousnessEvolution.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Activation_Sequencer/tests/test_integration_identity.py",
+      "source_hash": "224752f97df985780b09de8d73c6395c0efa86cccf1d727a41f3694eb9e4ae85",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "bijection_kernel",
+          "logic_kernel",
+          "agent_id"
+        ],
+        "defaults_count": 3,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "AGENT_LOGIC"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "SafeConsciousnessEvolution.safe_trinity_evolution",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Activation_Sequencer/tests/test_integration_identity.py",
+      "source_hash": "da71dda88ab2c2b90e83fecbb5b7612ade8ad08b29522b23c27e824af5abf070",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "trinity_vector",
+          "iterations",
+          "reason"
+        ],
+        "defaults_count": 3,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "AGENT_LOGIC"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Activation_Sequencer/tests/test_integration_identity.py",
+      "source_hash": "224752f97df985780b09de8d73c6395c0efa86cccf1d727a41f3694eb9e4ae85",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "bijection_kernel",
+          "logic_kernel",
+          "agent_id"
+        ],
+        "defaults_count": 3,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "safe_trinity_evolution",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Activation_Sequencer/tests/test_integration_identity.py",
+      "source_hash": "da71dda88ab2c2b90e83fecbb5b7612ade8ad08b29522b23c27e824af5abf070",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "trinity_vector",
+          "iterations",
+          "reason"
+        ],
+        "defaults_count": 3,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "AGENT_LOGIC"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "SafeConsciousnessEvolution.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Activation_Sequencer/tests/test_lock_unlock.py",
+      "source_hash": "a4da4a0a2ededb014178a9526be98335d38eb0d9ef76384998fbce2f30a700b3",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "bijection_kernel",
+          "logic_kernel",
+          "agent_id"
+        ],
+        "defaults_count": 3,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "AGENT_LOGIC"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "SafeConsciousnessEvolution.safe_trinity_evolution",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Activation_Sequencer/tests/test_lock_unlock.py",
+      "source_hash": "da71dda88ab2c2b90e83fecbb5b7612ade8ad08b29522b23c27e824af5abf070",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "trinity_vector",
+          "iterations",
+          "reason"
+        ],
+        "defaults_count": 3,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "AGENT_LOGIC"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Activation_Sequencer/tests/test_lock_unlock.py",
+      "source_hash": "a4da4a0a2ededb014178a9526be98335d38eb0d9ef76384998fbce2f30a700b3",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "bijection_kernel",
+          "logic_kernel",
+          "agent_id"
+        ],
+        "defaults_count": 3,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "safe_trinity_evolution",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Activation_Sequencer/tests/test_lock_unlock.py",
+      "source_hash": "da71dda88ab2c2b90e83fecbb5b7612ade8ad08b29522b23c27e824af5abf070",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "trinity_vector",
+          "iterations",
+          "reason"
+        ],
+        "defaults_count": 3,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "AGENT_LOGIC"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "initialize_logos_core",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/deployment/configuration/demo_gui.py",
+      "source_hash": "dfabc85f1fb915cc182f1ee058ceb47e4acf16497d02d010939ff804bced41ab",
+      "kind": "function",
+      "signature": {
+        "args": [],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "type"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "ProductionValidator.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/validate_production.py",
+      "source_hash": "9817d494f928c769fa2ec11bd06536f841c7121a5cc2c28cbf85077c5ed80987",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "environment",
+          "skip_performance"
+        ],
+        "defaults_count": 2,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "logging.basicConfig",
+          "logging.getLogger"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/validate_production.py",
+      "source_hash": "9817d494f928c769fa2ec11bd06536f841c7121a5cc2c28cbf85077c5ed80987",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "environment",
+          "skip_performance"
+        ],
+        "defaults_count": 2,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "logging.basicConfig",
+          "logging.getLogger"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "IntegrationTestSuite.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/integration_test_suite.py",
+      "source_hash": "398f3e774e973fc89ce1dfe5b4ad81bb61beb55f696c1e473d4b91a0f37161f0",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "base_url",
+          "test_timeout"
+        ],
+        "defaults_count": 2,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "datetime.now",
+          "time.time"
+        ],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "datetime.now",
+          "isoformat",
+          "time.time"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/integration_test_suite.py",
+      "source_hash": "398f3e774e973fc89ce1dfe5b4ad81bb61beb55f696c1e473d4b91a0f37161f0",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "base_url",
+          "test_timeout"
+        ],
+        "defaults_count": 2,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "datetime.now",
+          "time.time"
+        ],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "datetime.now",
+          "isoformat",
+          "time.time"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_component_initialization",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_integration.py",
+      "source_hash": "05da918caa4c229424fc5527f2076ad70419a645be0de149d13b22f802a88301",
+      "kind": "function",
+      "signature": {
+        "args": [],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test component initialization",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 1,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": [
+          "Exception"
+        ]
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "UnifiedBayesianInferencer",
+          "UnifiedRuntimeService",
+          "UnifiedSemanticTransformer",
+          "UnifiedTorchAdapter",
+          "print"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "test_trinity_vector_creation",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/alignment_protocols/validation/testing/test_integration.py",
+      "source_hash": "ab079134d3344de16b20315aa3499201f822f98bd3bc7074432c3b0afbf4bbe8",
+      "kind": "function",
+      "signature": {
+        "args": [],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": "Test trinity vector creation and validation",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 1,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": [
+          "Exception"
+        ]
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "TrinityVector",
+          "print"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "_DummyIngestor.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_perception_ingestors.py",
+      "source_hash": "7bbcca70130cd322e4504bda8d5e2ab596427659c89d2cc5df73af3cfb6a20ba",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "name",
+          "available",
+          "detail"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Path"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_perception_ingestors.py",
+      "source_hash": "7bbcca70130cd322e4504bda8d5e2ab596427659c89d2cc5df73af3cfb6a20ba",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "name",
+          "available",
+          "detail"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Path"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "_FallbackBayesianDataHandler.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_bayesian_data_handler.py",
+      "source_hash": "c6e88cfb7a626c076c443b58f43d0dd26ba34d9003f5cf222a206d63fbbea626",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "data_dir"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Path",
+          "self.predictions_file.parent.mkdir",
+          "self.predictions_file.touch"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/Optimization/tests/test_bayesian_data_handler.py",
+      "source_hash": "c6e88cfb7a626c076c443b58f43d0dd26ba34d9003f5cf222a206d63fbbea626",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "data_dir"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Path",
+          "self.predictions_file.parent.mkdir",
+          "self.predictions_file.touch"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    }
+  ],
+  "invariants": {
+    "signature.varargs": false,
+    "signature.kwargs": false,
+    "signature.decorators": [],
+    "control_flow.has_recursion_self_call": false,
+    "control_flow.loop_counts": {
+      "for": 0,
+      "while": 0
+    },
+    "control_flow.raises": [],
+    "nondeterminism_flags.uses_random": false,
+    "nondeterminism_flags.uses_os_env": false,
+    "nondeterminism_flags.uses_threading_or_async": false,
+    "mutations.writes_globals": false,
+    "mutations.mutates_args_possible": false,
+    "mutations.writes_files_possible": false,
+    "mutations.network_side_effect_possible": false,
+    "observed_calls.fs_calls": [],
+    "observed_calls.net_calls": [],
+    "observed_calls.proc_calls": [],
+    "observed_calls.serial_calls": [],
+    "semantic_profile_overlay.data_role": []
+  },
+  "divergences": {
+    "signature.args": {
+      "TestOntologicalPrimitive.__init__": [
+        "name",
+        "self",
+        "value"
+      ],
+      "__init__": [
+        "data_dir",
+        "self"
+      ],
+      "TestDualBijectiveSystem.__init__": [
+        "self"
+      ],
+      "FractalOrbitDemonstrator.__init__": [
+        "self"
+      ],
+      "SafeConsciousnessEvolution.__init__": [
+        "agent_id",
+        "bijection_kernel",
+        "logic_kernel",
+        "self"
+      ],
+      "SafeConsciousnessEvolution.safe_trinity_evolution": [
+        "iterations",
+        "reason",
+        "self",
+        "trinity_vector"
+      ],
+      "safe_trinity_evolution": [
+        "iterations",
+        "reason",
+        "self",
+        "trinity_vector"
+      ],
+      "initialize_logos_core": [],
+      "ProductionValidator.__init__": [
+        "environment",
+        "self",
+        "skip_performance"
+      ],
+      "IntegrationTestSuite.__init__": [
+        "base_url",
+        "self",
+        "test_timeout"
+      ],
+      "test_component_initialization": [],
+      "test_trinity_vector_creation": [],
+      "_DummyIngestor.__init__": [
+        "available",
+        "detail",
+        "name",
+        "self"
+      ],
+      "_FallbackBayesianDataHandler.__init__": [
+        "data_dir",
+        "self"
+      ]
+    },
+    "signature.returns_annotation": {
+      "TestOntologicalPrimitive.__init__": null,
+      "__init__": null,
+      "TestDualBijectiveSystem.__init__": null,
+      "FractalOrbitDemonstrator.__init__": null,
+      "SafeConsciousnessEvolution.__init__": null,
+      "SafeConsciousnessEvolution.safe_trinity_evolution": null,
+      "safe_trinity_evolution": null,
+      "initialize_logos_core": null,
+      "ProductionValidator.__init__": null,
+      "IntegrationTestSuite.__init__": null,
+      "test_component_initialization": null,
+      "test_trinity_vector_creation": null,
+      "_DummyIngestor.__init__": "None",
+      "_FallbackBayesianDataHandler.__init__": null
+    },
+    "control_flow.max_nesting_depth": {
+      "TestOntologicalPrimitive.__init__": 0,
+      "__init__": 0,
+      "TestDualBijectiveSystem.__init__": 0,
+      "FractalOrbitDemonstrator.__init__": 0,
+      "SafeConsciousnessEvolution.__init__": 0,
+      "SafeConsciousnessEvolution.safe_trinity_evolution": 0,
+      "safe_trinity_evolution": 0,
+      "initialize_logos_core": 0,
+      "ProductionValidator.__init__": 0,
+      "IntegrationTestSuite.__init__": 0,
+      "test_component_initialization": 1,
+      "test_trinity_vector_creation": 1,
+      "_DummyIngestor.__init__": 0,
+      "_FallbackBayesianDataHandler.__init__": 0
+    },
+    "control_flow.branches": {
+      "TestOntologicalPrimitive.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "TestDualBijectiveSystem.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "FractalOrbitDemonstrator.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "SafeConsciousnessEvolution.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "SafeConsciousnessEvolution.safe_trinity_evolution": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "safe_trinity_evolution": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "initialize_logos_core": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "ProductionValidator.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "IntegrationTestSuite.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "test_component_initialization": {
+        "if": 0,
+        "match": 0,
+        "try": 1
+      },
+      "test_trinity_vector_creation": {
+        "if": 0,
+        "match": 0,
+        "try": 1
+      },
+      "_DummyIngestor.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "_FallbackBayesianDataHandler.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      }
+    },
+    "control_flow.except_handlers": {
+      "TestOntologicalPrimitive.__init__": [],
+      "__init__": [],
+      "TestDualBijectiveSystem.__init__": [],
+      "FractalOrbitDemonstrator.__init__": [],
+      "SafeConsciousnessEvolution.__init__": [],
+      "SafeConsciousnessEvolution.safe_trinity_evolution": [],
+      "safe_trinity_evolution": [],
+      "initialize_logos_core": [],
+      "ProductionValidator.__init__": [],
+      "IntegrationTestSuite.__init__": [],
+      "test_component_initialization": [
+        "Exception"
+      ],
+      "test_trinity_vector_creation": [
+        "Exception"
+      ],
+      "_DummyIngestor.__init__": [],
+      "_FallbackBayesianDataHandler.__init__": []
+    },
+    "nondeterminism_flags.uses_time": {
+      "TestOntologicalPrimitive.__init__": false,
+      "__init__": false,
+      "TestDualBijectiveSystem.__init__": false,
+      "FractalOrbitDemonstrator.__init__": false,
+      "SafeConsciousnessEvolution.__init__": false,
+      "SafeConsciousnessEvolution.safe_trinity_evolution": false,
+      "safe_trinity_evolution": false,
+      "initialize_logos_core": false,
+      "ProductionValidator.__init__": false,
+      "IntegrationTestSuite.__init__": true,
+      "test_component_initialization": false,
+      "test_trinity_vector_creation": false,
+      "_DummyIngestor.__init__": false,
+      "_FallbackBayesianDataHandler.__init__": false
+    },
+    "mutations.writes_self_attrs": {
+      "TestOntologicalPrimitive.__init__": true,
+      "__init__": true,
+      "TestDualBijectiveSystem.__init__": true,
+      "FractalOrbitDemonstrator.__init__": true,
+      "SafeConsciousnessEvolution.__init__": false,
+      "SafeConsciousnessEvolution.safe_trinity_evolution": false,
+      "safe_trinity_evolution": false,
+      "initialize_logos_core": false,
+      "ProductionValidator.__init__": true,
+      "IntegrationTestSuite.__init__": true,
+      "test_component_initialization": false,
+      "test_trinity_vector_creation": false,
+      "_DummyIngestor.__init__": true,
+      "_FallbackBayesianDataHandler.__init__": true
+    },
+    "semantic_profile_overlay.semantic_tags": {
+      "TestOntologicalPrimitive.__init__": [
+        "BOOTSTRAP",
+        "TEST_OR_EXAMPLE"
+      ],
+      "__init__": [
+        "BOOTSTRAP",
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "TestDualBijectiveSystem.__init__": [
+        "BOOTSTRAP",
+        "TEST_OR_EXAMPLE"
+      ],
+      "FractalOrbitDemonstrator.__init__": [
+        "BOOTSTRAP",
+        "TEST_OR_EXAMPLE"
+      ],
+      "SafeConsciousnessEvolution.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP"
+      ],
+      "SafeConsciousnessEvolution.safe_trinity_evolution": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP"
+      ],
+      "safe_trinity_evolution": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP"
+      ],
+      "initialize_logos_core": [
+        "BOOTSTRAP",
+        "ENTRYPOINT"
+      ],
+      "ProductionValidator.__init__": [
+        "BOOTSTRAP",
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite.__init__": [
+        "BOOTSTRAP",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_component_initialization": [
+        "BOOTSTRAP",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_trinity_vector_creation": [
+        "BOOTSTRAP",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_DummyIngestor.__init__": [
+        "BOOTSTRAP",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_FallbackBayesianDataHandler.__init__": [
+        "BOOTSTRAP",
+        "TEST_OR_EXAMPLE"
+      ]
+    },
+    "semantic_profile_overlay.operation_type": {
+      "TestOntologicalPrimitive.__init__": [],
+      "__init__": [],
+      "TestDualBijectiveSystem.__init__": [],
+      "FractalOrbitDemonstrator.__init__": [],
+      "SafeConsciousnessEvolution.__init__": [],
+      "SafeConsciousnessEvolution.safe_trinity_evolution": [
+        "TRANSFORMATION"
+      ],
+      "safe_trinity_evolution": [
+        "TRANSFORMATION"
+      ],
+      "initialize_logos_core": [
+        "TRANSFORMATION"
+      ],
+      "ProductionValidator.__init__": [],
+      "IntegrationTestSuite.__init__": [],
+      "test_component_initialization": [
+        "TRANSFORMATION"
+      ],
+      "test_trinity_vector_creation": [
+        "TRANSFORMATION"
+      ],
+      "_DummyIngestor.__init__": [],
+      "_FallbackBayesianDataHandler.__init__": []
+    },
+    "semantic_profile_overlay.control_role": {
+      "TestOntologicalPrimitive.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "TestDualBijectiveSystem.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "FractalOrbitDemonstrator.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "SafeConsciousnessEvolution.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "SafeConsciousnessEvolution.safe_trinity_evolution": [
+        "BOOT_CONTROL"
+      ],
+      "safe_trinity_evolution": [
+        "BOOT_CONTROL"
+      ],
+      "initialize_logos_core": [
+        "BOOT_CONTROL"
+      ],
+      "ProductionValidator.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "IntegrationTestSuite.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "test_component_initialization": [
+        "BOOT_CONTROL"
+      ],
+      "test_trinity_vector_creation": [
+        "BOOT_CONTROL"
+      ],
+      "_DummyIngestor.__init__": [
+        "BOOT_CONTROL"
+      ],
+      "_FallbackBayesianDataHandler.__init__": [
+        "BOOT_CONTROL"
+      ]
+    },
+    "semantic_profile_overlay.spine_binding": {
+      "TestOntologicalPrimitive.__init__": [
+        "UNMAPPED"
+      ],
+      "__init__": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "TestDualBijectiveSystem.__init__": [
+        "UNMAPPED"
+      ],
+      "FractalOrbitDemonstrator.__init__": [
+        "UNMAPPED"
+      ],
+      "SafeConsciousnessEvolution.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SafeConsciousnessEvolution.safe_trinity_evolution": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "safe_trinity_evolution": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "initialize_logos_core": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ProductionValidator.__init__": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite.__init__": [
+        "UNMAPPED"
+      ],
+      "test_component_initialization": [
+        "UNMAPPED"
+      ],
+      "test_trinity_vector_creation": [
+        "UNMAPPED"
+      ],
+      "_DummyIngestor.__init__": [
+        "UNMAPPED"
+      ],
+      "_FallbackBayesianDataHandler.__init__": [
+        "UNMAPPED"
+      ]
+    }
+  },
+  "conflicts": {
+    "nondeterminism_time": "MIXED",
+    "state_mutation_self": "MIXED"
+  }
+}

@@ -1,3 +1,35 @@
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
+
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: trinity_alignment
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Synthetic_Cognition_Protocol/BDN_System/integration/trinity_alignment.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
+
 """
 Trinity Alignment Module for Singularity AGI System
 ==================================================
@@ -38,7 +70,7 @@ from typing import Any, Dict
 
 import numpy as np
 
-from ..core.trinity_hyperstructure import Trinity_Hyperstructure, TrinityVector
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.core.trinity_hyperstructure import Trinity_Hyperstructure, TrinityVector
 
 # LOGOS V2 Core Imports (maintain existing integrations)
 try:
@@ -60,7 +92,7 @@ except ImportError as e:
             return {"compliance_validated": True}
 
 # MVS/BDN System Imports (updated for singularity)
-from ...MVS_System.data_c_values.data_structures import MVSCoordinate
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.data_c_values.data_structures import MVSCoordinate
 
 logger = logging.getLogger(__name__)
 

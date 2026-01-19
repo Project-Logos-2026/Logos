@@ -1,0 +1,28 @@
+{
+  "name": "Three_Pillars",
+  "status": "AUTHORITATIVE \u00b7 PRE-EXECUTION",
+  "scope": [
+    "Ontology",
+    "Epistemology"
+  ],
+  "source_file": "Logos_System/System_Stack/Logos_Agents/Agent_Resources/Three Pillars of Divine Necessity.json",
+  "agent_applicability": [
+    "I1",
+    "I2",
+    "I3"
+  ],
+  "modal_framework": "S5",
+  "inference_types": [
+    "AX",
+    "DED",
+    "IBE",
+    "DEF"
+  ],
+  "execution": "FORBIDDEN",
+  "immutability": "READ_ONLY",
+  "notes": "Three Pillars grounding requires BOTH sources: the metaphysical narrative and the axiomatic/computational formalization. Agents must satisfy constraints defined in the formal source.",
+  "sources": {
+    "metaphysical_narrative": "Logos_System/System_Stack/Logos_Agents/Agent_Resources/Three Pillars of Divine Necessity.json",
+    "axiomatic_computational_framework": "Logos_System/System_Stack/Logos_Agents/Agent_Resources/Three Pillars Formalization Axiomatic and Computational Framework.json"
+  }
+}

@@ -1,3 +1,35 @@
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
+
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: Logos_Memory_Nexus
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Cognitive_State_Protocol/Memory/Logos_Memory_Nexus.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
+
 """
 SYSTEM MEMORY ARCHITECTURE
 Consolidates SMPs, UWM, and Epistemic integrations to converge into a synthetic memory substrate complimenting other Logos System cognitive functions
@@ -6,17 +38,59 @@ Consolidates SMPs, UWM, and Epistemic integrations to converge into a synthetic 
 from typing import Dict, List, Optional, Set, Tuple, Any, Union
 from dataclasses import dataclass, field
 from enum import Enum, auto
-import numpy as np
 import json
 import hashlib
 from datetime import datetime, timezone, timedelta
 from collections import defaultdict, deque
-import networkx as nx
-from scipy import sparse, spatial, stats
 import heapq
 import pickle
 import zlib
-from datasketch import MinHash, MinHashLSH
+
+# Optional dependency guards for heavy scientific stack.
+try:
+    import numpy as np  # type: ignore
+except ImportError:  # pragma: no cover - stub for import hygiene
+    class _NumpyStub:
+        def __getattr__(self, _name):
+            def _missing(*_args, **_kwargs):
+                raise RuntimeError("numpy is not available in this environment")
+            return _missing
+
+    np = _NumpyStub()
+
+try:
+    import networkx as nx  # type: ignore
+except ImportError:  # pragma: no cover - stub for import hygiene
+    class _NetworkXStub:
+        def __getattr__(self, _name):
+            def _missing(*_args, **_kwargs):
+                raise RuntimeError("networkx is not available in this environment")
+            return _missing
+
+    nx = _NetworkXStub()
+
+try:
+    from scipy import sparse, spatial, stats  # type: ignore
+except ImportError:  # pragma: no cover - stub for import hygiene
+    class _ScipyStub:
+        def __getattr__(self, _name):
+            def _missing(*_args, **_kwargs):
+                raise RuntimeError("scipy is not available in this environment")
+            return _missing
+
+    sparse = spatial = stats = _ScipyStub()
+
+try:
+    from datasketch import MinHash, MinHashLSH  # type: ignore
+except ImportError:  # pragma: no cover - stub for import hygiene
+    class MinHash:  # minimal placeholder
+        def __init__(self, *_, **__):
+            raise RuntimeError("datasketch is not available in this environment")
+
+    class MinHashLSH:  # minimal placeholder
+        def __init__(self, *_, **__):
+            raise RuntimeError("datasketch is not available in this environment")
+
 import hashlib
 
 # ==================== MEMORY PRIMITIVES ====================

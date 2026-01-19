@@ -1,3 +1,35 @@
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
+
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: proof_engine
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Advanced_Reasoning_Protocol/formalisms/proof_engine.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
+
 """
 Enhanced ProofEngine with Ontological Validation
 
@@ -13,10 +45,10 @@ from typing import Any, Dict, List, Optional, Tuple
 
 # Ontological Validator Integration
 try:
-    from ....intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.logos_validator_hub import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.logos_validator_hub import (
         LogosValidatorHub,
     )
-    from ....intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.ontological_validator import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.ontological_validator import (
         OntologicalValidator,
     )
 
@@ -26,7 +58,7 @@ except ImportError:
 
 # Enhanced Bijective Mapping Integration
 try:
-    from ....intelligence.iel_domains.iel_ontoprop_bijectives.onto_logic.bijective_mapping import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.intelligence.iel_domains.iel_ontoprop_bijectives.onto_logic.bijective_mapping import (
         EnhancedBijectiveMapping,
     )
 
@@ -36,7 +68,7 @@ except ImportError:
 
 # Lambda Engine Integration
 try:
-    from ....intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core import (
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core import (
         LambdaLogosEngine,
     )
 

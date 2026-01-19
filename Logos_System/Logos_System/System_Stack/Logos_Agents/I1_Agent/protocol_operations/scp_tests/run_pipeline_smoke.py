@@ -1,0 +1,26 @@
+from __future__ import annotations
+# HEADER_TYPE: CANONICAL_REBUILD_MODULE
+# EXECUTION: CONTROLLED
+# AUTHORITY: GOVERNED
+# ORIGIN: SYSTEMATIC_REWRITE
+
+
+import json
+import sys
+from typing import Any, Dict
+
+from .sample_smp import make_sample_smp
+from I1_Agent.protocol_operations.scp_integrations.pipeline_runner import run_scp_pipeline
+
+
+def main() -> int:
+    smp = make_sample_smp()
+    result = run_scp_pipeline(smp=smp, payload_ref={"opaque": True, "input_hash": smp["input_reference"]["input_hash"]})
+
+    out = result.to_dict() if hasattr(result, "to_dict") else result
+    print(json.dumps(out, indent=2, ensure_ascii=False, sort_keys=False))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

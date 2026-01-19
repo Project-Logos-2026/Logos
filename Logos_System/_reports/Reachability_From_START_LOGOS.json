@@ -1,0 +1,21 @@
+{
+  "artifact": "Reachability_From_START_LOGOS",
+  "timestamp": "2026-01-17T21:12:59.130754+00:00",
+  "entry": "START_LOGOS.py",
+  "reachable_count": 3,
+  "reachable_files": [
+    "Logos_System/LOGOS_SYSTEM.py",
+    "Logos_System_Rebuild/System_Entry_Point/System_Entry_Point.py",
+    "START_LOGOS.py"
+  ],
+  "edges": [
+    [
+      "START_LOGOS.py",
+      "Logos_System/LOGOS_SYSTEM.py"
+    ],
+    [
+      "Logos_System/LOGOS_SYSTEM.py",
+      "Logos_System_Rebuild/System_Entry_Point/System_Entry_Point.py"
+    ]
+  ]
+}

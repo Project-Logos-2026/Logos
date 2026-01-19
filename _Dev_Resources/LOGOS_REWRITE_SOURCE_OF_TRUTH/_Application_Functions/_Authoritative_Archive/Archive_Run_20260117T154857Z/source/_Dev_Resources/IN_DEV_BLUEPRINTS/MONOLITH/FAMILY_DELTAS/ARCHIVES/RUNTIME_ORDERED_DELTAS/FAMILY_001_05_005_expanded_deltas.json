@@ -1,0 +1,2910 @@
+{
+  "family_id": "FAMILY_005",
+  "shared_semantics": [
+    "AGENT_LOGIC",
+    "LEGACY_OR_QUARANTINED"
+  ],
+  "shared_spine_phase": null,
+  "shared_execution_role": null,
+  "analysis_coverage": {
+    "members_total": 25,
+    "members_extracted": 23,
+    "members_missing_profile": 0,
+    "members_missing_source": 2,
+    "parse_failures": 0
+  },
+  "members": [
+    {
+      "qualified_name": "read_audit_entries",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+      "source_hash": "abb20823383a8cb1423665a5744695f33035c88b56b949de56b30effb01dc6bb",
+      "kind": "function",
+      "signature": {
+        "args": [],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "list[Dict[str, Any]]",
+        "decorators": [],
+        "docstring_summary": "Load existing alignment audit entries.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 3,
+          "try": 1,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": [
+          "json.JSONDecodeError"
+        ]
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 1
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [
+          "json.loads"
+        ],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "STATE_FILE.exists",
+          "STATE_FILE.read_text",
+          "isinstance",
+          "json.loads"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "write_audit_entries",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+      "source_hash": "b58e4a4fae266d903c89434e9d82cc53594d33e26c5a689f747083ca5148394f",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "entries"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": "Persist audit entries back to disk.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 1
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [
+          "json.dumps"
+        ],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "STATE_FILE.write_text",
+          "json.dumps"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "UTILITY"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "verify_agent_alignment",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+      "source_hash": "db71d4e5de2d0a32aee0ce8f7e3f40b394cd0576da1c40cb9fabbcd513d1d929",
+      "kind": "function",
+      "signature": {
+        "args": [],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "SandboxedLogosAgent",
+        "decorators": [],
+        "docstring_summary": "Run the constructive LEM gate and return the agent (locked or unlocked).",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 1,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "SandboxedLogosAgent.create",
+          "agent.boot",
+          "agent.unlock_if_aligned",
+          "print"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "ensure_repo",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+      "source_hash": "69ae85e5fa6b44a52a0c7c3c74788e6723b148573410779a36718db066c562e7",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "repo_url",
+          "dest_path"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": "Clone or fast-forward the Logos_AGI repository.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 1,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "any",
+          "dest_path.exists",
+          "dest_path.iterdir",
+          "dest_path.parent.mkdir",
+          "str",
+          "subprocess.check_call"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "repo_commit_sha",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+      "source_hash": "c30e76b67644976207539ab96933e10122770d7a2db37f9d7046b80bfcb8db44",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "repo_root"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "str",
+        "decorators": [],
+        "docstring_summary": "Return the current HEAD commit for the cloned repo.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 1,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "str",
+          "strip",
+          "subprocess.check_output"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "load_cognitive_protocols",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+      "source_hash": "10b1c3bbb734f368d91014d8bcbfb21f885c222834cd6b5b07d987c4ed2311eb",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "repo_root"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Dict[str, Dict[str, Any]]",
+        "decorators": [],
+        "docstring_summary": "Import the Logos cognitive stack and report module availability.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 2,
+          "while": 0
+        },
+        "max_nesting_depth": 4,
+        "branches": {
+          "if": 2,
+          "try": 2,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": [
+          "ImportError"
+        ]
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "format",
+          "import_module",
+          "info.get",
+          "join",
+          "label.split",
+          "present.append",
+          "print",
+          "probes.items",
+          "repr",
+          "results.items",
+          "str",
+          "summary.append",
+          "sys.path.insert",
+          "sys.path.pop"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "sop_health_snapshot",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+      "source_hash": "2bc0c64250ed2621ec4e148617ce6e5e763b97bc8084f904f0162b7d26666339",
+      "kind": "function",
+      "signature": {
+        "args": [],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "str",
+        "decorators": [],
+        "docstring_summary": "Return a lightweight status string for SOP boot utilities.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 3,
+        "branches": {
+          "if": 1,
+          "try": 2,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": [
+          "ImportError",
+          "TypeError"
+        ]
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "callable",
+          "fn",
+          "getattr",
+          "importlib.import_module",
+          "str"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "env_provenance",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+      "source_hash": "244db9faa514cc13d0182fffe410d5d6716a8811e691fcf395c899fefe528466",
+      "kind": "function",
+      "signature": {
+        "args": [],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Dict[str, str]",
+        "decorators": [],
+        "docstring_summary": "Capture basic environment metadata for audit logs.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 1,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [
+          "os.environ.get"
+        ],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": true,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "capture",
+          "os.environ.get",
+          "strip",
+          "subprocess.check_output"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "capture",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+      "source_hash": "647e0b2698100eb6f524c3e44b581784bafb7090ffe7687bdf206ddae3ba6260",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "cmd"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "str",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 1,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "strip",
+          "subprocess.check_output"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "update_latest_entry",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+      "source_hash": "998328027a5bfd364a0bdbacc3fa26e793eb4b962ef90e8b5aaeaa6eb892e249",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "update"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": "Merge new fields into the most recent audit entry.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 1,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "print",
+          "read_audit_entries",
+          "update",
+          "write_audit_entries"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "main",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+      "source_hash": "d50616c8860a0ed457e11bb9167998f76b07da79ea7a78842443e0d7ab92afdc",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "run_probe",
+          "pin_sha",
+          "pin_note",
+          "allow_dirty",
+          "allow_git"
+        ],
+        "defaults_count": 4,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "int",
+        "decorators": [],
+        "docstring_summary": "Orchestrate the alignment check, repo sync, and optional probe.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 3,
+        "branches": {
+          "if": 10,
+          "try": 5,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": [
+          "ImportError",
+          "subprocess.CalledProcessError"
+        ]
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 1,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [
+          "subprocess.run"
+        ],
+        "serial_calls": [],
+        "time_calls": [
+          "time.gmtime",
+          "time.strftime",
+          "time.time"
+        ],
+        "random_calls": [],
+        "env_calls": [
+          "os.environ.get"
+        ],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": false,
+        "uses_os_env": true,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "DEST_DIR.exists",
+          "PIN_PATH.exists",
+          "ensure_repo",
+          "env_provenance",
+          "format",
+          "get",
+          "load_cognitive_protocols",
+          "load_pin",
+          "os.environ.get",
+          "print",
+          "probe_main",
+          "provenance.get",
+          "read_audit_entries",
+          "repo_commit_sha",
+          "resolve_ref",
+          "round",
+          "sop_health_snapshot",
+          "str",
+          "strip",
+          "subprocess.run",
+          "time.gmtime",
+          "time.strftime",
+          "time.time",
+          "update_latest_entry",
+          "verify_agent_alignment",
+          "verify_pinned_repo",
+          "write_pin"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "TEST_OR_EXAMPLE",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "canonical_hash",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+      "source_hash": "ad3fbc7088e031c2733f74853d128ad76c7e959afe7f06c2c094b6647dfac0eb",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "payload"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "str",
+        "decorators": [],
+        "docstring_summary": "Compute a SHA-256 hash over canonical JSON serialization.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 1
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [
+          "json.dumps"
+        ],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "encode",
+          "hashlib.sha256",
+          "hexdigest",
+          "json.dumps"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [
+          "CRYPTO_ID"
+        ],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "instantiate_reasoner",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+      "source_hash": "077978fed42fc0c2b222615c8f5fe9f0ca9cc0e0b2807eadef53c49153143cfb",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "agent_id"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "AdvancedReasoner",
+        "decorators": [],
+        "docstring_summary": "Initialize the ARP reasoner in a deterministic analysis-only state.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AdvancedReasoner",
+          "reasoner.start"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "build_inputs",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+      "source_hash": "e3d452e6339d6e15d7e821760730aaf225f2a2a15de6f029eae0311cfbec2fe6",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "scenario_id",
+          "prompt"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Dict[str, Dict[str, str]]",
+        "decorators": [],
+        "docstring_summary": "Build the deterministic input payload recorded in the trace.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "run_deterministic_arp",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+      "source_hash": "76ccb9c39c6a2e9a79168d534e6aa274c6e2ab0091e36f8d3e6765c86b497482",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "reasoner",
+          "scenario_id"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Tuple[List[Dict[str, str]], str]",
+        "decorators": [],
+        "docstring_summary": "Produce deterministic ARP reasoning using the predefined blueprint.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "canonical_hash",
+          "enumerate",
+          "reasoner.status",
+          "reasoning_steps.append"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "build_trace",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+      "source_hash": "962dbd855948bb786b2f0914b2a2b3eebc1b39c19d4923cf712094ba96504f32",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "reasoner",
+          "scenario_id",
+          "prompt"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Dict",
+        "decorators": [],
+        "docstring_summary": "Construct the ARP reasoning trace object for the scenario.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "build_inputs",
+          "canonical_hash",
+          "run_deterministic_arp"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "write_json",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+      "source_hash": "0299144acf8ed9b24f7ebdb3f646ed8b567579bd4184db88b02cab43277826e7",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "path",
+          "payload"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": "Write JSON payload with stable formatting.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 1
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [
+          "json.dump"
+        ],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "handle.write",
+          "json.dump",
+          "path.open",
+          "path.parent.mkdir"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "UTILITY"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "write_trace",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+      "source_hash": "951fbc3086176476ab4a653c7cbe4a9e928c5f034a28bb02e8fdac9cdb29f5bf",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "trace"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Path",
+        "decorators": [],
+        "docstring_summary": "Persist an ARP trace into the sandbox directory.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "write_json"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "build_modal_fixture",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+      "source_hash": "7ec19923a79e37223a8bd74f633acc3b8c59109005ab102b9df95c16461511cb",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "trace",
+          "modal_chain",
+          "prompt_focus"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Dict",
+        "decorators": [],
+        "docstring_summary": "Create the modal chain fixture referencing the ARP trace commitment.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "write_fixture",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+      "source_hash": "bcd5f90597adbc46c6e4d666d144a7c040c0daaec63c19e9b44c3a5b5a609d98",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "trace",
+          "modal_chain",
+          "prompt_focus"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Path",
+        "decorators": [],
+        "docstring_summary": "Persist a modal chain fixture in the sandbox.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "build_modal_fixture",
+          "modal_chain.upper",
+          "write_json"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "find_phase2_fixture_spec",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+      "source_hash": "f160be9d5026c5bada95f13f20153b6eee298522823cba26d103507064564cd7",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "root"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Path",
+        "decorators": [],
+        "docstring_summary": "Locate the Phase 2 ARP fixture specification starting at repo root.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 3,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [
+          "FileNotFoundError",
+          "RuntimeError"
+        ],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "FileNotFoundError",
+          "RuntimeError",
+          "candidate.exists",
+          "len",
+          "list",
+          "root.rglob"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "backfill_fixture_hashes",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+      "source_hash": "a6982f19fd598e5fd5ec1e8ee63ef434437bbe107eb3947aa66f63b87fbf9240",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "spec_path",
+          "traces"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": "Update the Phase 2 fixture plan with actual ARP trace commitments.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 2,
+        "branches": {
+          "if": 3,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [
+          "KeyError"
+        ],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 1
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [
+          "json.loads"
+        ],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "KeyError",
+          "data.get",
+          "fixture.get",
+          "json.loads",
+          "spec_path.read_text",
+          "write_json"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [
+          "CRYPTO_ID"
+        ],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "capture_traces_and_backfill",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/capture_arp_traces_and_backfill.py",
+      "source_hash": "7dce38c2e3cdd1f686b99a253dd2282db85fc91603ebe795806ec15fb2152984",
+      "kind": "function",
+      "signature": {
+        "args": [],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": "Top-level orchestration for trace capture and spec update.",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "SCENARIOS.items",
+          "backfill_fixture_hashes",
+          "build_trace",
+          "find_phase2_fixture_spec",
+          "instantiate_reasoner",
+          "write_fixture",
+          "write_trace"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "AGENT_LOGIC",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "UTILITY"
+        ],
+        "data_role": [],
+        "control_role": [],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    }
+  ],
+  "invariants": {
+    "signature.varargs": false,
+    "signature.kwargs": false,
+    "signature.decorators": [],
+    "control_flow.has_recursion_self_call": false,
+    "nondeterminism_flags.uses_random": false,
+    "nondeterminism_flags.uses_threading_or_async": false,
+    "mutations.writes_globals": false,
+    "mutations.writes_self_attrs": false,
+    "mutations.mutates_args_possible": false,
+    "mutations.writes_files_possible": false,
+    "mutations.network_side_effect_possible": false,
+    "observed_calls.fs_calls": [],
+    "observed_calls.net_calls": []
+  },
+  "divergences": {
+    "signature.args": {
+      "read_audit_entries": [],
+      "write_audit_entries": [
+        "entries"
+      ],
+      "verify_agent_alignment": [],
+      "ensure_repo": [
+        "dest_path",
+        "repo_url"
+      ],
+      "repo_commit_sha": [
+        "repo_root"
+      ],
+      "load_cognitive_protocols": [
+        "repo_root"
+      ],
+      "sop_health_snapshot": [],
+      "env_provenance": [],
+      "capture": [
+        "cmd"
+      ],
+      "update_latest_entry": [
+        "update"
+      ],
+      "main": [
+        "allow_dirty",
+        "allow_git",
+        "pin_note",
+        "pin_sha",
+        "run_probe"
+      ],
+      "canonical_hash": [
+        "payload"
+      ],
+      "instantiate_reasoner": [
+        "agent_id"
+      ],
+      "build_inputs": [
+        "prompt",
+        "scenario_id"
+      ],
+      "run_deterministic_arp": [
+        "reasoner",
+        "scenario_id"
+      ],
+      "build_trace": [
+        "prompt",
+        "reasoner",
+        "scenario_id"
+      ],
+      "write_json": [
+        "path",
+        "payload"
+      ],
+      "write_trace": [
+        "trace"
+      ],
+      "build_modal_fixture": [
+        "modal_chain",
+        "prompt_focus",
+        "trace"
+      ],
+      "write_fixture": [
+        "modal_chain",
+        "prompt_focus",
+        "trace"
+      ],
+      "find_phase2_fixture_spec": [
+        "root"
+      ],
+      "backfill_fixture_hashes": [
+        "spec_path",
+        "traces"
+      ],
+      "capture_traces_and_backfill": []
+    },
+    "signature.returns_annotation": {
+      "read_audit_entries": "list[Dict[str, Any]]",
+      "write_audit_entries": "None",
+      "verify_agent_alignment": "SandboxedLogosAgent",
+      "ensure_repo": "None",
+      "repo_commit_sha": "str",
+      "load_cognitive_protocols": "Dict[str, Dict[str, Any]]",
+      "sop_health_snapshot": "str",
+      "env_provenance": "Dict[str, str]",
+      "capture": "str",
+      "update_latest_entry": "None",
+      "main": "int",
+      "canonical_hash": "str",
+      "instantiate_reasoner": "AdvancedReasoner",
+      "build_inputs": "Dict[str, Dict[str, str]]",
+      "run_deterministic_arp": "Tuple[List[Dict[str, str]], str]",
+      "build_trace": "Dict",
+      "write_json": "None",
+      "write_trace": "Path",
+      "build_modal_fixture": "Dict",
+      "write_fixture": "Path",
+      "find_phase2_fixture_spec": "Path",
+      "backfill_fixture_hashes": "None",
+      "capture_traces_and_backfill": "None"
+    },
+    "control_flow.loop_counts": {
+      "read_audit_entries": {
+        "for": 0,
+        "while": 0
+      },
+      "write_audit_entries": {
+        "for": 0,
+        "while": 0
+      },
+      "verify_agent_alignment": {
+        "for": 0,
+        "while": 0
+      },
+      "ensure_repo": {
+        "for": 0,
+        "while": 0
+      },
+      "repo_commit_sha": {
+        "for": 0,
+        "while": 0
+      },
+      "load_cognitive_protocols": {
+        "for": 2,
+        "while": 0
+      },
+      "sop_health_snapshot": {
+        "for": 1,
+        "while": 0
+      },
+      "env_provenance": {
+        "for": 0,
+        "while": 0
+      },
+      "capture": {
+        "for": 0,
+        "while": 0
+      },
+      "update_latest_entry": {
+        "for": 0,
+        "while": 0
+      },
+      "main": {
+        "for": 0,
+        "while": 0
+      },
+      "canonical_hash": {
+        "for": 0,
+        "while": 0
+      },
+      "instantiate_reasoner": {
+        "for": 0,
+        "while": 0
+      },
+      "build_inputs": {
+        "for": 0,
+        "while": 0
+      },
+      "run_deterministic_arp": {
+        "for": 1,
+        "while": 0
+      },
+      "build_trace": {
+        "for": 0,
+        "while": 0
+      },
+      "write_json": {
+        "for": 0,
+        "while": 0
+      },
+      "write_trace": {
+        "for": 0,
+        "while": 0
+      },
+      "build_modal_fixture": {
+        "for": 0,
+        "while": 0
+      },
+      "write_fixture": {
+        "for": 0,
+        "while": 0
+      },
+      "find_phase2_fixture_spec": {
+        "for": 0,
+        "while": 0
+      },
+      "backfill_fixture_hashes": {
+        "for": 1,
+        "while": 0
+      },
+      "capture_traces_and_backfill": {
+        "for": 1,
+        "while": 0
+      }
+    },
+    "control_flow.max_nesting_depth": {
+      "read_audit_entries": 1,
+      "write_audit_entries": 0,
+      "verify_agent_alignment": 1,
+      "ensure_repo": 1,
+      "repo_commit_sha": 1,
+      "load_cognitive_protocols": 4,
+      "sop_health_snapshot": 3,
+      "env_provenance": 1,
+      "capture": 1,
+      "update_latest_entry": 1,
+      "main": 3,
+      "canonical_hash": 0,
+      "instantiate_reasoner": 0,
+      "build_inputs": 0,
+      "run_deterministic_arp": 1,
+      "build_trace": 0,
+      "write_json": 1,
+      "write_trace": 0,
+      "build_modal_fixture": 0,
+      "write_fixture": 0,
+      "find_phase2_fixture_spec": 1,
+      "backfill_fixture_hashes": 2,
+      "capture_traces_and_backfill": 1
+    },
+    "control_flow.branches": {
+      "read_audit_entries": {
+        "if": 3,
+        "match": 0,
+        "try": 1
+      },
+      "write_audit_entries": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "verify_agent_alignment": {
+        "if": 1,
+        "match": 0,
+        "try": 0
+      },
+      "ensure_repo": {
+        "if": 1,
+        "match": 0,
+        "try": 0
+      },
+      "repo_commit_sha": {
+        "if": 0,
+        "match": 0,
+        "try": 1
+      },
+      "load_cognitive_protocols": {
+        "if": 2,
+        "match": 0,
+        "try": 2
+      },
+      "sop_health_snapshot": {
+        "if": 1,
+        "match": 0,
+        "try": 2
+      },
+      "env_provenance": {
+        "if": 0,
+        "match": 0,
+        "try": 1
+      },
+      "capture": {
+        "if": 0,
+        "match": 0,
+        "try": 1
+      },
+      "update_latest_entry": {
+        "if": 1,
+        "match": 0,
+        "try": 0
+      },
+      "main": {
+        "if": 10,
+        "match": 0,
+        "try": 5
+      },
+      "canonical_hash": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "instantiate_reasoner": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "build_inputs": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "run_deterministic_arp": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "build_trace": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "write_json": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "write_trace": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "build_modal_fixture": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "write_fixture": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "find_phase2_fixture_spec": {
+        "if": 3,
+        "match": 0,
+        "try": 0
+      },
+      "backfill_fixture_hashes": {
+        "if": 3,
+        "match": 0,
+        "try": 0
+      },
+      "capture_traces_and_backfill": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      }
+    },
+    "control_flow.raises": {
+      "read_audit_entries": [],
+      "write_audit_entries": [],
+      "verify_agent_alignment": [],
+      "ensure_repo": [],
+      "repo_commit_sha": [],
+      "load_cognitive_protocols": [],
+      "sop_health_snapshot": [],
+      "env_provenance": [],
+      "capture": [],
+      "update_latest_entry": [],
+      "main": [],
+      "canonical_hash": [],
+      "instantiate_reasoner": [],
+      "build_inputs": [],
+      "run_deterministic_arp": [],
+      "build_trace": [],
+      "write_json": [],
+      "write_trace": [],
+      "build_modal_fixture": [],
+      "write_fixture": [],
+      "find_phase2_fixture_spec": [
+        "FileNotFoundError",
+        "RuntimeError"
+      ],
+      "backfill_fixture_hashes": [
+        "KeyError"
+      ],
+      "capture_traces_and_backfill": []
+    },
+    "control_flow.except_handlers": {
+      "read_audit_entries": [
+        "json.JSONDecodeError"
+      ],
+      "write_audit_entries": [],
+      "verify_agent_alignment": [],
+      "ensure_repo": [],
+      "repo_commit_sha": [],
+      "load_cognitive_protocols": [
+        "ImportError"
+      ],
+      "sop_health_snapshot": [
+        "ImportError",
+        "TypeError"
+      ],
+      "env_provenance": [],
+      "capture": [],
+      "update_latest_entry": [],
+      "main": [
+        "ImportError",
+        "subprocess.CalledProcessError"
+      ],
+      "canonical_hash": [],
+      "instantiate_reasoner": [],
+      "build_inputs": [],
+      "run_deterministic_arp": [],
+      "build_trace": [],
+      "write_json": [],
+      "write_trace": [],
+      "build_modal_fixture": [],
+      "write_fixture": [],
+      "find_phase2_fixture_spec": [],
+      "backfill_fixture_hashes": [],
+      "capture_traces_and_backfill": []
+    },
+    "nondeterminism_flags.uses_time": {
+      "read_audit_entries": false,
+      "write_audit_entries": false,
+      "verify_agent_alignment": false,
+      "ensure_repo": false,
+      "repo_commit_sha": false,
+      "load_cognitive_protocols": false,
+      "sop_health_snapshot": false,
+      "env_provenance": false,
+      "capture": false,
+      "update_latest_entry": false,
+      "main": true,
+      "canonical_hash": false,
+      "instantiate_reasoner": false,
+      "build_inputs": false,
+      "run_deterministic_arp": false,
+      "build_trace": false,
+      "write_json": false,
+      "write_trace": false,
+      "build_modal_fixture": false,
+      "write_fixture": false,
+      "find_phase2_fixture_spec": false,
+      "backfill_fixture_hashes": false,
+      "capture_traces_and_backfill": false
+    },
+    "nondeterminism_flags.uses_os_env": {
+      "read_audit_entries": false,
+      "write_audit_entries": false,
+      "verify_agent_alignment": false,
+      "ensure_repo": false,
+      "repo_commit_sha": false,
+      "load_cognitive_protocols": false,
+      "sop_health_snapshot": false,
+      "env_provenance": true,
+      "capture": false,
+      "update_latest_entry": false,
+      "main": true,
+      "canonical_hash": false,
+      "instantiate_reasoner": false,
+      "build_inputs": false,
+      "run_deterministic_arp": false,
+      "build_trace": false,
+      "write_json": false,
+      "write_trace": false,
+      "build_modal_fixture": false,
+      "write_fixture": false,
+      "find_phase2_fixture_spec": false,
+      "backfill_fixture_hashes": false,
+      "capture_traces_and_backfill": false
+    },
+    "observed_calls.proc_calls": {
+      "read_audit_entries": [],
+      "write_audit_entries": [],
+      "verify_agent_alignment": [],
+      "ensure_repo": [],
+      "repo_commit_sha": [],
+      "load_cognitive_protocols": [],
+      "sop_health_snapshot": [],
+      "env_provenance": [],
+      "capture": [],
+      "update_latest_entry": [],
+      "main": [
+        "subprocess.run"
+      ],
+      "canonical_hash": [],
+      "instantiate_reasoner": [],
+      "build_inputs": [],
+      "run_deterministic_arp": [],
+      "build_trace": [],
+      "write_json": [],
+      "write_trace": [],
+      "build_modal_fixture": [],
+      "write_fixture": [],
+      "find_phase2_fixture_spec": [],
+      "backfill_fixture_hashes": [],
+      "capture_traces_and_backfill": []
+    },
+    "observed_calls.serial_calls": {
+      "read_audit_entries": [
+        "json.loads"
+      ],
+      "write_audit_entries": [
+        "json.dumps"
+      ],
+      "verify_agent_alignment": [],
+      "ensure_repo": [],
+      "repo_commit_sha": [],
+      "load_cognitive_protocols": [],
+      "sop_health_snapshot": [],
+      "env_provenance": [],
+      "capture": [],
+      "update_latest_entry": [],
+      "main": [],
+      "canonical_hash": [
+        "json.dumps"
+      ],
+      "instantiate_reasoner": [],
+      "build_inputs": [],
+      "run_deterministic_arp": [],
+      "build_trace": [],
+      "write_json": [
+        "json.dump"
+      ],
+      "write_trace": [],
+      "build_modal_fixture": [],
+      "write_fixture": [],
+      "find_phase2_fixture_spec": [],
+      "backfill_fixture_hashes": [
+        "json.loads"
+      ],
+      "capture_traces_and_backfill": []
+    },
+    "semantic_profile_overlay.semantic_tags": {
+      "read_audit_entries": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "write_audit_entries": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "verify_agent_alignment": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "ensure_repo": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "repo_commit_sha": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "load_cognitive_protocols": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "sop_health_snapshot": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "env_provenance": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "capture": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "update_latest_entry": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "main": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "canonical_hash": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "instantiate_reasoner": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "build_inputs": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "run_deterministic_arp": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "build_trace": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "write_json": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "write_trace": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "build_modal_fixture": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "write_fixture": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "find_phase2_fixture_spec": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "backfill_fixture_hashes": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "capture_traces_and_backfill": [
+        "AGENT_LOGIC",
+        "LEGACY_OR_QUARANTINED"
+      ]
+    },
+    "semantic_profile_overlay.operation_type": {
+      "read_audit_entries": [
+        "TRANSFORMATION"
+      ],
+      "write_audit_entries": [
+        "UTILITY"
+      ],
+      "verify_agent_alignment": [
+        "TRANSFORMATION"
+      ],
+      "ensure_repo": [
+        "TRANSFORMATION"
+      ],
+      "repo_commit_sha": [
+        "TRANSFORMATION"
+      ],
+      "load_cognitive_protocols": [
+        "TRANSFORMATION"
+      ],
+      "sop_health_snapshot": [
+        "TRANSFORMATION"
+      ],
+      "env_provenance": [
+        "TRANSFORMATION"
+      ],
+      "capture": [
+        "TRANSFORMATION"
+      ],
+      "update_latest_entry": [
+        "TRANSFORMATION"
+      ],
+      "main": [
+        "TRANSFORMATION"
+      ],
+      "canonical_hash": [
+        "TRANSFORMATION"
+      ],
+      "instantiate_reasoner": [
+        "TRANSFORMATION"
+      ],
+      "build_inputs": [
+        "TRANSFORMATION"
+      ],
+      "run_deterministic_arp": [
+        "TRANSFORMATION"
+      ],
+      "build_trace": [
+        "TRANSFORMATION"
+      ],
+      "write_json": [
+        "UTILITY"
+      ],
+      "write_trace": [
+        "TRANSFORMATION"
+      ],
+      "build_modal_fixture": [
+        "TRANSFORMATION"
+      ],
+      "write_fixture": [
+        "TRANSFORMATION"
+      ],
+      "find_phase2_fixture_spec": [
+        "TRANSFORMATION"
+      ],
+      "backfill_fixture_hashes": [],
+      "capture_traces_and_backfill": [
+        "UTILITY"
+      ]
+    },
+    "semantic_profile_overlay.data_role": {
+      "read_audit_entries": [],
+      "write_audit_entries": [],
+      "verify_agent_alignment": [],
+      "ensure_repo": [],
+      "repo_commit_sha": [],
+      "load_cognitive_protocols": [],
+      "sop_health_snapshot": [],
+      "env_provenance": [],
+      "capture": [],
+      "update_latest_entry": [],
+      "main": [],
+      "canonical_hash": [
+        "CRYPTO_ID"
+      ],
+      "instantiate_reasoner": [],
+      "build_inputs": [],
+      "run_deterministic_arp": [],
+      "build_trace": [],
+      "write_json": [],
+      "write_trace": [],
+      "build_modal_fixture": [],
+      "write_fixture": [],
+      "find_phase2_fixture_spec": [],
+      "backfill_fixture_hashes": [
+        "CRYPTO_ID"
+      ],
+      "capture_traces_and_backfill": []
+    },
+    "semantic_profile_overlay.control_role": {
+      "read_audit_entries": [],
+      "write_audit_entries": [],
+      "verify_agent_alignment": [],
+      "ensure_repo": [],
+      "repo_commit_sha": [],
+      "load_cognitive_protocols": [],
+      "sop_health_snapshot": [],
+      "env_provenance": [],
+      "capture": [],
+      "update_latest_entry": [],
+      "main": [
+        "BOOT_CONTROL"
+      ],
+      "canonical_hash": [],
+      "instantiate_reasoner": [],
+      "build_inputs": [],
+      "run_deterministic_arp": [],
+      "build_trace": [],
+      "write_json": [],
+      "write_trace": [],
+      "build_modal_fixture": [],
+      "write_fixture": [],
+      "find_phase2_fixture_spec": [],
+      "backfill_fixture_hashes": [],
+      "capture_traces_and_backfill": []
+    },
+    "semantic_profile_overlay.spine_binding": {
+      "read_audit_entries": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "write_audit_entries": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "verify_agent_alignment": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "ensure_repo": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "repo_commit_sha": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "load_cognitive_protocols": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "sop_health_snapshot": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "env_provenance": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "capture": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "update_latest_entry": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "main": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "canonical_hash": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "instantiate_reasoner": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "build_inputs": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "run_deterministic_arp": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "build_trace": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "write_json": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "write_trace": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "build_modal_fixture": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "write_fixture": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "find_phase2_fixture_spec": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "backfill_fixture_hashes": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "capture_traces_and_backfill": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ]
+    }
+  },
+  "conflicts": {
+    "nondeterminism_time": "MIXED"
+  },
+  "runtime_order_id": "FAMILY_001_05",
+  "runtime_spine_phase": "UNASSIGNED"
+}

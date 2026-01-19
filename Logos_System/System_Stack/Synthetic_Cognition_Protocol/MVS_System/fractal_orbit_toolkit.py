@@ -1,3 +1,35 @@
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
+
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: fractal_orbit_toolkit
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Synthetic_Cognition_Protocol/MVS_System/fractal_orbit_toolkit.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
+
 """
 Fractal Orbit Prediction & Analysis Toolkit
 ===========================================
@@ -85,10 +117,10 @@ except ImportError:
 
 # Import existing fractal components
 try:
-    from .fractal_orbital.symbolic_math import SymbolicMath
-    from .predictors.fractal_mapping import FractalNavigator as OrbitalNavigator
-    from .modal_inference import ThonocModalInference, ModalFormula
-    from .data_c_values.data_structures import MVSCoordinate, ModalInferenceResult
+    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.fractal_orbital.symbolic_math import SymbolicMath
+    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.predictors.fractal_mapping import FractalNavigator as OrbitalNavigator
+    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.modal_inference import ThonocModalInference, ModalFormula
+    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.data_c_values.data_structures import MVSCoordinate, ModalInferenceResult
 except ImportError:
     try:  # pragma: no cover - allow execution as loose script
         from fractal_orbital.symbolic_math import SymbolicMath

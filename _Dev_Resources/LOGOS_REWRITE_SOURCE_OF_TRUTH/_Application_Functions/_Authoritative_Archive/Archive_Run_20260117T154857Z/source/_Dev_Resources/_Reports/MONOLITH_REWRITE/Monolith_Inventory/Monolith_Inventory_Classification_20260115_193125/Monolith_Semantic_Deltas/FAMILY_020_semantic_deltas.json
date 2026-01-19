@@ -1,0 +1,1235 @@
+{
+  "family_id": "FAMILY_020",
+  "member_count": 78,
+  "members": [
+    "SimulatedConsciousness.__init__",
+    "__init__",
+    "FractalNexus.__init__",
+    "BayesianNexus.__init__",
+    "ForecastingNexus.__init__",
+    "ProtocolBridge.__init__",
+    "SelfDiagnosisTool.__init__",
+    "SelfDiagnosisTool._initialize_diagnostic_rules",
+    "_initialize_diagnostic_rules",
+    "InteractionRouter.__init__",
+    "InteractionRouter.ensure_initialized",
+    "ensure_initialized",
+    "ProgressiveRouter.__init__",
+    "LLMAdvisor.__init__",
+    "LOGOSInterface.__init__",
+    "LLMBackend.__init__",
+    "create_tool_definitions",
+    "BaseNexus.__init__",
+    "SOPToken.__init__",
+    "SOPToken.activate",
+    "activate",
+    "SystemGap.__init__",
+    "SOPNexus.__init__",
+    "SOPNexus._initialize_directories",
+    "SOPNexus._protocol_specific_initialization",
+    "SOPNexus._initialize_token_system",
+    "SOPNexus._initialize_gap_detection",
+    "SOPNexus._initialize_file_management",
+    "SOPNexus._initialize_coding_environment",
+    "_initialize_directories",
+    "_protocol_specific_initialization",
+    "_initialize_token_system",
+    "_initialize_gap_detection",
+    "_initialize_file_management",
+    "_initialize_coding_environment",
+    "initialize_sop_nexus",
+    "SOPOperations.__init__",
+    "SOPOperations.initialize_full_stack",
+    "SOPOperations._init_config_manager",
+    "SOPOperations._activate_process_monitoring",
+    "SOPOperations._init_security_auth",
+    "SOPOperations._init_governance_core",
+    "SOPOperations._activate_compliance_monitoring",
+    "SOPOperations._init_audit_trail",
+    "SOPOperations._activate_authorization",
+    "SOPOperations._init_service_discovery",
+    "SOPOperations._activate_load_balancing",
+    "SOPOperations._init_backup_recovery",
+    "SOPOperations._activate_performance_optimization",
+    "SOPOperations._init_dependency_resolution",
+    "SOPOperations._activate_lifecycle_management",
+    "SOPOperations._init_cross_protocol_comm",
+    "SOPOperations._init_validation_framework",
+    "SOPOperations._activate_integration_testing",
+    "SOPOperations._init_security_testing",
+    "SOPOperations._activate_continuous_monitoring",
+    "initialize_full_stack",
+    "_init_config_manager",
+    "_activate_process_monitoring",
+    "_init_security_auth",
+    "_init_governance_core",
+    "_activate_compliance_monitoring",
+    "_init_audit_trail",
+    "_activate_authorization",
+    "_init_service_discovery",
+    "_activate_load_balancing",
+    "_init_backup_recovery",
+    "_activate_performance_optimization",
+    "_init_dependency_resolution",
+    "_activate_lifecycle_management",
+    "_init_cross_protocol_comm",
+    "_init_validation_framework",
+    "_activate_integration_testing",
+    "_init_security_testing",
+    "_activate_continuous_monitoring",
+    "ModalLogicEvaluator.__init__",
+    "ModalLogicEvaluator._initialize_bridge",
+    "_initialize_bridge"
+  ],
+  "invariant_semantics": {},
+  "divergent_semantics": {
+    "semantic_tags": {
+      "SimulatedConsciousness.__init__": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "__init__": [
+        "BOOTSTRAP",
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "FractalNexus.__init__": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "BayesianNexus.__init__": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "ForecastingNexus.__init__": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "ProtocolBridge.__init__": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SelfDiagnosisTool.__init__": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SelfDiagnosisTool._initialize_diagnostic_rules": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_diagnostic_rules": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "InteractionRouter.__init__": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "InteractionRouter.ensure_initialized": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "ensure_initialized": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "ProgressiveRouter.__init__": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "LLMAdvisor.__init__": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "LOGOSInterface.__init__": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "LLMBackend.__init__": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "create_tool_definitions": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "BaseNexus.__init__": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPToken.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPToken.activate": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "activate": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._initialize_directories": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._protocol_specific_initialization": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._initialize_token_system": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._initialize_gap_detection": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._initialize_file_management": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._initialize_coding_environment": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_directories": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_protocol_specific_initialization": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_initialize_token_system": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_initialize_gap_detection": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_file_management": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_initialize_coding_environment": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "initialize_sop_nexus": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations.__init__": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations.initialize_full_stack": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._init_config_manager": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._activate_process_monitoring": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._init_security_auth": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._init_governance_core": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._activate_compliance_monitoring": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._init_audit_trail": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._activate_authorization": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._init_service_discovery": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._activate_load_balancing": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._init_backup_recovery": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._activate_performance_optimization": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._init_dependency_resolution": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._activate_lifecycle_management": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._init_cross_protocol_comm": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._init_validation_framework": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._activate_integration_testing": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._init_security_testing": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._activate_continuous_monitoring": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "initialize_full_stack": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_config_manager": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_activate_process_monitoring": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_security_auth": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_governance_core": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_activate_compliance_monitoring": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_audit_trail": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_activate_authorization": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_service_discovery": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_activate_load_balancing": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_backup_recovery": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_activate_performance_optimization": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_dependency_resolution": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_activate_lifecycle_management": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_cross_protocol_comm": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_validation_framework": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_activate_integration_testing": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_init_security_testing": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_activate_continuous_monitoring": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "ModalLogicEvaluator.__init__": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "ModalLogicEvaluator._initialize_bridge": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_bridge": [
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ]
+    },
+    "operation_type": {
+      "SimulatedConsciousness.__init__": [],
+      "__init__": [],
+      "FractalNexus.__init__": [],
+      "BayesianNexus.__init__": [],
+      "ForecastingNexus.__init__": [],
+      "ProtocolBridge.__init__": [],
+      "SelfDiagnosisTool.__init__": [],
+      "SelfDiagnosisTool._initialize_diagnostic_rules": [],
+      "_initialize_diagnostic_rules": [],
+      "InteractionRouter.__init__": [],
+      "InteractionRouter.ensure_initialized": [
+        "TRANSFORMATION"
+      ],
+      "ensure_initialized": [
+        "TRANSFORMATION"
+      ],
+      "ProgressiveRouter.__init__": [],
+      "LLMAdvisor.__init__": [],
+      "LOGOSInterface.__init__": [],
+      "LLMBackend.__init__": [],
+      "create_tool_definitions": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus.__init__": [],
+      "SOPToken.__init__": [],
+      "SOPToken.activate": [
+        "TRANSFORMATION"
+      ],
+      "activate": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap.__init__": [],
+      "SOPNexus.__init__": [],
+      "SOPNexus._initialize_directories": [],
+      "SOPNexus._protocol_specific_initialization": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._initialize_token_system": [],
+      "SOPNexus._initialize_gap_detection": [],
+      "SOPNexus._initialize_file_management": [],
+      "SOPNexus._initialize_coding_environment": [
+        "TRANSFORMATION"
+      ],
+      "_initialize_directories": [],
+      "_protocol_specific_initialization": [
+        "TRANSFORMATION"
+      ],
+      "_initialize_token_system": [],
+      "_initialize_gap_detection": [],
+      "_initialize_file_management": [],
+      "_initialize_coding_environment": [
+        "TRANSFORMATION"
+      ],
+      "initialize_sop_nexus": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations.__init__": [],
+      "SOPOperations.initialize_full_stack": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._init_config_manager": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._activate_process_monitoring": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._init_security_auth": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._init_governance_core": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._activate_compliance_monitoring": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._init_audit_trail": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._activate_authorization": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._init_service_discovery": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._activate_load_balancing": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._init_backup_recovery": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._activate_performance_optimization": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._init_dependency_resolution": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._activate_lifecycle_management": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._init_cross_protocol_comm": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._init_validation_framework": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._activate_integration_testing": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._init_security_testing": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._activate_continuous_monitoring": [
+        "TRANSFORMATION"
+      ],
+      "initialize_full_stack": [
+        "TRANSFORMATION"
+      ],
+      "_init_config_manager": [
+        "TRANSFORMATION"
+      ],
+      "_activate_process_monitoring": [
+        "TRANSFORMATION"
+      ],
+      "_init_security_auth": [
+        "TRANSFORMATION"
+      ],
+      "_init_governance_core": [
+        "TRANSFORMATION"
+      ],
+      "_activate_compliance_monitoring": [
+        "TRANSFORMATION"
+      ],
+      "_init_audit_trail": [
+        "TRANSFORMATION"
+      ],
+      "_activate_authorization": [
+        "TRANSFORMATION"
+      ],
+      "_init_service_discovery": [
+        "TRANSFORMATION"
+      ],
+      "_activate_load_balancing": [
+        "TRANSFORMATION"
+      ],
+      "_init_backup_recovery": [
+        "TRANSFORMATION"
+      ],
+      "_activate_performance_optimization": [
+        "TRANSFORMATION"
+      ],
+      "_init_dependency_resolution": [
+        "TRANSFORMATION"
+      ],
+      "_activate_lifecycle_management": [
+        "TRANSFORMATION"
+      ],
+      "_init_cross_protocol_comm": [
+        "TRANSFORMATION"
+      ],
+      "_init_validation_framework": [
+        "TRANSFORMATION"
+      ],
+      "_activate_integration_testing": [
+        "TRANSFORMATION"
+      ],
+      "_init_security_testing": [
+        "TRANSFORMATION"
+      ],
+      "_activate_continuous_monitoring": [
+        "TRANSFORMATION"
+      ],
+      "ModalLogicEvaluator.__init__": [],
+      "ModalLogicEvaluator._initialize_bridge": [
+        "TRANSFORMATION"
+      ],
+      "_initialize_bridge": [
+        "TRANSFORMATION"
+      ]
+    },
+    "data_role": {
+      "SimulatedConsciousness.__init__": [],
+      "__init__": [],
+      "FractalNexus.__init__": [],
+      "BayesianNexus.__init__": [],
+      "ForecastingNexus.__init__": [
+        "MEMORY"
+      ],
+      "ProtocolBridge.__init__": [],
+      "SelfDiagnosisTool.__init__": [],
+      "SelfDiagnosisTool._initialize_diagnostic_rules": [],
+      "_initialize_diagnostic_rules": [],
+      "InteractionRouter.__init__": [],
+      "InteractionRouter.ensure_initialized": [],
+      "ensure_initialized": [],
+      "ProgressiveRouter.__init__": [],
+      "LLMAdvisor.__init__": [],
+      "LOGOSInterface.__init__": [],
+      "LLMBackend.__init__": [],
+      "create_tool_definitions": [],
+      "BaseNexus.__init__": [],
+      "SOPToken.__init__": [],
+      "SOPToken.activate": [],
+      "activate": [],
+      "SystemGap.__init__": [],
+      "SOPNexus.__init__": [],
+      "SOPNexus._initialize_directories": [],
+      "SOPNexus._protocol_specific_initialization": [],
+      "SOPNexus._initialize_token_system": [],
+      "SOPNexus._initialize_gap_detection": [],
+      "SOPNexus._initialize_file_management": [],
+      "SOPNexus._initialize_coding_environment": [],
+      "_initialize_directories": [],
+      "_protocol_specific_initialization": [],
+      "_initialize_token_system": [],
+      "_initialize_gap_detection": [],
+      "_initialize_file_management": [],
+      "_initialize_coding_environment": [],
+      "initialize_sop_nexus": [],
+      "SOPOperations.__init__": [],
+      "SOPOperations.initialize_full_stack": [],
+      "SOPOperations._init_config_manager": [],
+      "SOPOperations._activate_process_monitoring": [],
+      "SOPOperations._init_security_auth": [],
+      "SOPOperations._init_governance_core": [],
+      "SOPOperations._activate_compliance_monitoring": [],
+      "SOPOperations._init_audit_trail": [],
+      "SOPOperations._activate_authorization": [],
+      "SOPOperations._init_service_discovery": [],
+      "SOPOperations._activate_load_balancing": [],
+      "SOPOperations._init_backup_recovery": [],
+      "SOPOperations._activate_performance_optimization": [],
+      "SOPOperations._init_dependency_resolution": [],
+      "SOPOperations._activate_lifecycle_management": [],
+      "SOPOperations._init_cross_protocol_comm": [],
+      "SOPOperations._init_validation_framework": [],
+      "SOPOperations._activate_integration_testing": [],
+      "SOPOperations._init_security_testing": [],
+      "SOPOperations._activate_continuous_monitoring": [],
+      "initialize_full_stack": [],
+      "_init_config_manager": [],
+      "_activate_process_monitoring": [],
+      "_init_security_auth": [],
+      "_init_governance_core": [],
+      "_activate_compliance_monitoring": [],
+      "_init_audit_trail": [],
+      "_activate_authorization": [],
+      "_init_service_discovery": [],
+      "_activate_load_balancing": [],
+      "_init_backup_recovery": [],
+      "_activate_performance_optimization": [],
+      "_init_dependency_resolution": [],
+      "_activate_lifecycle_management": [],
+      "_init_cross_protocol_comm": [],
+      "_init_validation_framework": [],
+      "_activate_integration_testing": [],
+      "_init_security_testing": [],
+      "_activate_continuous_monitoring": [],
+      "ModalLogicEvaluator.__init__": [],
+      "ModalLogicEvaluator._initialize_bridge": [],
+      "_initialize_bridge": []
+    },
+    "control_role": {
+      "SimulatedConsciousness.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "FractalNexus.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "BayesianNexus.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ForecastingNexus.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ProtocolBridge.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SelfDiagnosisTool.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SelfDiagnosisTool._initialize_diagnostic_rules": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_diagnostic_rules": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "InteractionRouter.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "InteractionRouter.ensure_initialized": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ensure_initialized": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ProgressiveRouter.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "LLMAdvisor.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSInterface.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "LLMBackend.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "create_tool_definitions": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPToken.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPToken.activate": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "activate": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._initialize_directories": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._protocol_specific_initialization": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._initialize_token_system": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._initialize_gap_detection": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._initialize_file_management": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._initialize_coding_environment": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_directories": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_initialization": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_token_system": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_gap_detection": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_file_management": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_coding_environment": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "initialize_sop_nexus": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations.initialize_full_stack": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._init_config_manager": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._activate_process_monitoring": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._init_security_auth": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._init_governance_core": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._activate_compliance_monitoring": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._init_audit_trail": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._activate_authorization": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._init_service_discovery": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._activate_load_balancing": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._init_backup_recovery": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._activate_performance_optimization": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._init_dependency_resolution": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._activate_lifecycle_management": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._init_cross_protocol_comm": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._init_validation_framework": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._activate_integration_testing": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._init_security_testing": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._activate_continuous_monitoring": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "initialize_full_stack": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_config_manager": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_activate_process_monitoring": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_security_auth": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_governance_core": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_activate_compliance_monitoring": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_audit_trail": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_activate_authorization": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_service_discovery": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_activate_load_balancing": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_backup_recovery": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_activate_performance_optimization": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_dependency_resolution": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_activate_lifecycle_management": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_cross_protocol_comm": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_validation_framework": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_activate_integration_testing": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_init_security_testing": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_activate_continuous_monitoring": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ModalLogicEvaluator.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "ModalLogicEvaluator._initialize_bridge": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_bridge": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "SimulatedConsciousness.__init__": [
+        "UNMAPPED"
+      ],
+      "__init__": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "FractalNexus.__init__": [
+        "UNMAPPED"
+      ],
+      "BayesianNexus.__init__": [
+        "UNMAPPED"
+      ],
+      "ForecastingNexus.__init__": [
+        "UNMAPPED"
+      ],
+      "ProtocolBridge.__init__": [
+        "UNMAPPED"
+      ],
+      "SelfDiagnosisTool.__init__": [
+        "UNMAPPED"
+      ],
+      "SelfDiagnosisTool._initialize_diagnostic_rules": [
+        "UNMAPPED"
+      ],
+      "_initialize_diagnostic_rules": [
+        "UNMAPPED"
+      ],
+      "InteractionRouter.__init__": [
+        "UNMAPPED"
+      ],
+      "InteractionRouter.ensure_initialized": [
+        "UNMAPPED"
+      ],
+      "ensure_initialized": [
+        "UNMAPPED"
+      ],
+      "ProgressiveRouter.__init__": [
+        "UNMAPPED"
+      ],
+      "LLMAdvisor.__init__": [
+        "UNMAPPED"
+      ],
+      "LOGOSInterface.__init__": [
+        "UNMAPPED"
+      ],
+      "LLMBackend.__init__": [
+        "UNMAPPED"
+      ],
+      "create_tool_definitions": [
+        "UNMAPPED"
+      ],
+      "BaseNexus.__init__": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SOPToken.__init__": [
+        "UNMAPPED"
+      ],
+      "SOPToken.activate": [
+        "UNMAPPED"
+      ],
+      "activate": [
+        "UNMAPPED"
+      ],
+      "SystemGap.__init__": [
+        "UNMAPPED"
+      ],
+      "SOPNexus.__init__": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._initialize_directories": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._protocol_specific_initialization": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._initialize_token_system": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._initialize_gap_detection": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._initialize_file_management": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._initialize_coding_environment": [
+        "UNMAPPED"
+      ],
+      "_initialize_directories": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_initialization": [
+        "UNMAPPED"
+      ],
+      "_initialize_token_system": [
+        "UNMAPPED"
+      ],
+      "_initialize_gap_detection": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_file_management": [
+        "UNMAPPED"
+      ],
+      "_initialize_coding_environment": [
+        "UNMAPPED"
+      ],
+      "initialize_sop_nexus": [
+        "UNMAPPED"
+      ],
+      "SOPOperations.__init__": [
+        "UNMAPPED"
+      ],
+      "SOPOperations.initialize_full_stack": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._init_config_manager": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._activate_process_monitoring": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._init_security_auth": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._init_governance_core": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._activate_compliance_monitoring": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._init_audit_trail": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._activate_authorization": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._init_service_discovery": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._activate_load_balancing": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._init_backup_recovery": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._activate_performance_optimization": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._init_dependency_resolution": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._activate_lifecycle_management": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._init_cross_protocol_comm": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._init_validation_framework": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._activate_integration_testing": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._init_security_testing": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._activate_continuous_monitoring": [
+        "UNMAPPED"
+      ],
+      "initialize_full_stack": [
+        "UNMAPPED"
+      ],
+      "_init_config_manager": [
+        "UNMAPPED"
+      ],
+      "_activate_process_monitoring": [
+        "UNMAPPED"
+      ],
+      "_init_security_auth": [
+        "UNMAPPED"
+      ],
+      "_init_governance_core": [
+        "UNMAPPED"
+      ],
+      "_activate_compliance_monitoring": [
+        "UNMAPPED"
+      ],
+      "_init_audit_trail": [
+        "UNMAPPED"
+      ],
+      "_activate_authorization": [
+        "UNMAPPED"
+      ],
+      "_init_service_discovery": [
+        "UNMAPPED"
+      ],
+      "_activate_load_balancing": [
+        "UNMAPPED"
+      ],
+      "_init_backup_recovery": [
+        "UNMAPPED"
+      ],
+      "_activate_performance_optimization": [
+        "UNMAPPED"
+      ],
+      "_init_dependency_resolution": [
+        "UNMAPPED"
+      ],
+      "_activate_lifecycle_management": [
+        "UNMAPPED"
+      ],
+      "_init_cross_protocol_comm": [
+        "UNMAPPED"
+      ],
+      "_init_validation_framework": [
+        "UNMAPPED"
+      ],
+      "_activate_integration_testing": [
+        "UNMAPPED"
+      ],
+      "_init_security_testing": [
+        "UNMAPPED"
+      ],
+      "_activate_continuous_monitoring": [
+        "UNMAPPED"
+      ],
+      "ModalLogicEvaluator.__init__": [
+        "UNMAPPED"
+      ],
+      "ModalLogicEvaluator._initialize_bridge": [
+        "UNMAPPED"
+      ],
+      "_initialize_bridge": [
+        "UNMAPPED"
+      ]
+    }
+  }
+}

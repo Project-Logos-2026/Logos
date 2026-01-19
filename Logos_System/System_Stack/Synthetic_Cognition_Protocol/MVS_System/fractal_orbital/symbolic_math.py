@@ -1,3 +1,35 @@
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
+
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: symbolic_math
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Synthetic_Cognition_Protocol/MVS_System/fractal_orbital/symbolic_math.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
+
 """
 Enhanced SymbolicMath Framework with Fractal Integration
 
@@ -23,10 +55,10 @@ from sympy import (
 
 # Fractal Orbital Predictor Integration
 try:
-    from ....interfaces.services.workers.fractal_orbital.divergence_calculator import (
+    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.interfaces.services.workers.fractal_orbital.divergence_calculator import (
         DivergenceEngine,
     )
-    from ....interfaces.services.workers.fractal_orbital.trinity_vector import (
+    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.interfaces.services.workers.fractal_orbital.trinity_vector import (
         TrinityVector,
     )
 
@@ -36,7 +68,7 @@ except ImportError:
 
 # Lambda Engine Integration
 try:
-    from ....intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core import (
+    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core import (
         LambdaLogosEngine,
     )
 

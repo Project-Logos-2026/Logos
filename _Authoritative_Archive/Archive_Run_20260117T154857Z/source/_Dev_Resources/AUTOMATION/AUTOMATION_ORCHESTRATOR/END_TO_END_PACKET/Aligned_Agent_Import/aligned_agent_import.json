@@ -1,0 +1,329 @@
+{
+  "metadata": {
+    "packet_name": "aligned_agent_import",
+    "original_path": "unknown",
+    "legacy_path": "unknown",
+    "type_cast_name": "aligned_agent_import",
+    "test_template": "default",
+    "file_hash": "pending",
+    "batch_id": "BATCH_SWEEP_INIT",
+    "init_timestamp": "2026-01-15T08:23:53.861835+00:00",
+    "rewrite_output": "_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/Aligned_Agent_Import/aligned_agent_import.py"
+  },
+  "phases": {
+    "phase_1_imports": {
+      "diagnostics": [
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 17,
+          "col": 0,
+          "kind": "from",
+          "module": "__future__",
+          "name": "annotations",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 19,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "argparse",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 20,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "json",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 21,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "os",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 22,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "subprocess",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 23,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "sys",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 24,
+          "col": 0,
+          "kind": "import",
+          "module": "",
+          "name": "time",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 25,
+          "col": 0,
+          "kind": "from",
+          "module": "importlib",
+          "name": "import_module",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 26,
+          "col": 0,
+          "kind": "from",
+          "module": "pathlib",
+          "name": "Path",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 27,
+          "col": 0,
+          "kind": "from",
+          "module": "typing",
+          "name": "Any",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 27,
+          "col": 0,
+          "kind": "from",
+          "module": "typing",
+          "name": "Dict",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 29,
+          "col": 0,
+          "kind": "from",
+          "module": "JUNK_DRAWER.scripts.need_to_distribute.boot_aligned_agent",
+          "name": "SandboxedLogosAgent",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 30,
+          "col": 0,
+          "kind": "from",
+          "module": "JUNK_DRAWER.scripts.runtime.need_to_distribute.provenance",
+          "name": "DriftError",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 30,
+          "col": 0,
+          "kind": "from",
+          "module": "JUNK_DRAWER.scripts.runtime.need_to_distribute.provenance",
+          "name": "PinConfigError",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 30,
+          "col": 0,
+          "kind": "from",
+          "module": "JUNK_DRAWER.scripts.runtime.need_to_distribute.provenance",
+          "name": "load_pin",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 30,
+          "col": 0,
+          "kind": "from",
+          "module": "JUNK_DRAWER.scripts.runtime.need_to_distribute.provenance",
+          "name": "resolve_ref",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 30,
+          "col": 0,
+          "kind": "from",
+          "module": "JUNK_DRAWER.scripts.runtime.need_to_distribute.provenance",
+          "name": "verify_pinned_repo",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 30,
+          "col": 0,
+          "kind": "from",
+          "module": "JUNK_DRAWER.scripts.runtime.need_to_distribute.provenance",
+          "name": "write_pin",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 240,
+          "col": 4,
+          "kind": "import",
+          "module": "",
+          "name": "importlib",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        },
+        {
+          "importer_file": "/workspaces/Logos_System/_Dev_Resources/LEGACY_SCRIPTS_TO_EXAMINE/aligned_agent_import.py",
+          "line": 420,
+          "col": 12,
+          "kind": "from",
+          "module": "JUNK_DRAWER.scripts.runtime.need_to_distribute.protocol_probe",
+          "name": "main",
+          "level": 0,
+          "reason": "unresolved_to_local_path"
+        }
+      ]
+    },
+    "phase_2_symbols": {
+      "diagnostics": []
+    },
+    "phase_2b_dead_code": {
+      "diagnostics": []
+    },
+    "phase_3_dependencies": {
+      "diagnostics": []
+    },
+    "phase_4_side_effects": {
+      "diagnostics": []
+    },
+    "phase_5_rewrite_attempts": [
+      {
+        "attempt": 1,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/aligned_agent_import/aligned_agent_import.py",
+        "rewrite_hash": "sha256:1db0532834d52e2297561cbf41a202b5ae22d3f14438475f4cbd34ab3f373957",
+        "timestamp": "2026-01-15T08:31:13.665114",
+        "status": "complete"
+      },
+      {
+        "attempt": 2,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/aligned_agent_import/aligned_agent_import.py",
+        "rewrite_hash": "sha256:1db0532834d52e2297561cbf41a202b5ae22d3f14438475f4cbd34ab3f373957",
+        "timestamp": "2026-01-15T08:31:13.819465",
+        "status": "complete"
+      },
+      {
+        "attempt": 1,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/aligned_agent_import/aligned_agent_import.py",
+        "rewrite_hash": "sha256:9eb054b66c6953871834661f1330dc7c75a2c9545482ef00502e65aedef1435f",
+        "timestamp": "2026-01-15T08:42:10.943352+00:00",
+        "status": "complete"
+      },
+      {
+        "attempt": 1,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/aligned_agent_import/aligned_agent_import.py",
+        "rewrite_hash": "sha256:9eb054b66c6953871834661f1330dc7c75a2c9545482ef00502e65aedef1435f",
+        "timestamp": "2026-01-15T08:42:10.950772",
+        "status": "complete"
+      },
+      {
+        "attempt": 2,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/aligned_agent_import/aligned_agent_import.py",
+        "rewrite_hash": "sha256:9eb054b66c6953871834661f1330dc7c75a2c9545482ef00502e65aedef1435f",
+        "timestamp": "2026-01-15T08:42:11.084027+00:00",
+        "status": "complete"
+      },
+      {
+        "attempt": 2,
+        "rewrite_path": "/workspaces/Logos_System/_Dev_Resources/AUTOMATION_ORCHESTRATOR/END_TO_END_PACKET/aligned_agent_import/aligned_agent_import.py",
+        "rewrite_hash": "sha256:9eb054b66c6953871834661f1330dc7c75a2c9545482ef00502e65aedef1435f",
+        "timestamp": "2026-01-15T08:42:11.088873",
+        "status": "complete"
+      }
+    ],
+    "phase_6_semantic_audit": {
+      "diagnostics": [
+        {
+          "error_type": "NamingConventionViolation",
+          "line": 1,
+          "char_start": 0,
+          "char_end": 20,
+          "severity": "medium",
+          "details": "File name must be Title_Case_With_Underscores",
+          "_source": "semantic_naming"
+        },
+        {
+          "error_type": "MissingStandardHeader",
+          "line": 1,
+          "char_start": 0,
+          "char_end": 0,
+          "severity": "medium",
+          "details": "Required LOGOS standard header not found",
+          "_source": "semantic_header"
+        },
+        {
+          "error_type": "AbbreviationExpansionMismatch",
+          "line": 1,
+          "char_start": 0,
+          "char_end": 0,
+          "severity": "medium",
+          "details": "Abbreviation 'version' missing canonical expansion",
+          "_source": "semantic_abbreviations"
+        },
+        {
+          "error_type": "AbbreviationExpansionMismatch",
+          "line": 1,
+          "char_start": 0,
+          "char_end": 0,
+          "severity": "medium",
+          "details": "Abbreviation 'notes' missing canonical expansion",
+          "_source": "semantic_abbreviations"
+        }
+      ]
+    },
+    "phase_7_verification": {
+      "attempt_1": null,
+      "attempt_2": null
+    }
+  },
+  "test_results": {
+    "executed": false,
+    "passed": false,
+    "output_log": ""
+  },
+  "finalization": {
+    "status": "UNKNOWN",
+    "sealed_timestamp": "2026-01-15T08:23:53.861835+00:00",
+    "confirmation_hash": "pending"
+  }
+}

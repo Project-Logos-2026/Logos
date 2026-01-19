@@ -1,0 +1,84 @@
+{
+  "family_id": "FAMILY_031",
+  "member_count": 5,
+  "members": [
+    "test_data_builder",
+    "test_reasoning_request",
+    "test_recursive_processing",
+    "test_cycle_management",
+    "main"
+  ],
+  "invariant_semantics": {
+    "operation_type": [
+      "TRANSFORMATION"
+    ],
+    "data_role": []
+  },
+  "divergent_semantics": {
+    "semantic_tags": {
+      "test_data_builder": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_reasoning_request": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_recursive_processing": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_cycle_management": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "main": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ]
+    },
+    "control_role": {
+      "test_data_builder": [
+        "RUNTIME_CONTROL"
+      ],
+      "test_reasoning_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "test_recursive_processing": [
+        "RUNTIME_CONTROL"
+      ],
+      "test_cycle_management": [
+        "RUNTIME_CONTROL"
+      ],
+      "main": [
+        "BOOT_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "test_data_builder": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "test_reasoning_request": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "test_recursive_processing": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "test_cycle_management": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "main": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ]
+    }
+  }
+}

@@ -1,0 +1,2909 @@
+{
+  "family_id": "FAMILY_022",
+  "member_count": 239,
+  "members": [
+    "f",
+    "f_inv",
+    "g",
+    "g_inv",
+    "TestOntologicalPrimitive",
+    "TestOntologicalPrimitive.__repr__",
+    "TestOntologicalPrimitive.__eq__",
+    "TestOntologicalPrimitive.__hash__",
+    "__repr__",
+    "__eq__",
+    "__hash__",
+    "TestDualBijectiveSystem",
+    "TestDualBijectiveSystem.biject_A",
+    "TestDualBijectiveSystem.biject_B",
+    "TestDualBijectiveSystem.commute",
+    "TestDualBijectiveSystem.validate_ontological_consistency",
+    "TestDualBijectiveSystem.get_concept_strength",
+    "TestDualBijectiveSystem.compute_ontological_distance",
+    "TestDualBijectiveSystem.find_related_concepts",
+    "biject_A",
+    "biject_B",
+    "commute",
+    "validate_ontological_consistency",
+    "get_concept_strength",
+    "compute_ontological_distance",
+    "find_related_concepts",
+    "test_dual_bijection_system",
+    "FractalOrbitDemonstrator",
+    "FractalOrbitDemonstrator.run_full_demonstration",
+    "FractalOrbitDemonstrator.demonstrate_stable_prediction",
+    "FractalOrbitDemonstrator.demonstrate_chaotic_analysis",
+    "FractalOrbitDemonstrator.demonstrate_pattern_recognition",
+    "FractalOrbitDemonstrator.demonstrate_cross_domain_prediction",
+    "FractalOrbitDemonstrator.demonstrate_real_time_analysis",
+    "FractalOrbitDemonstrator._create_domain_pattern",
+    "run_full_demonstration",
+    "demonstrate_stable_prediction",
+    "demonstrate_chaotic_analysis",
+    "demonstrate_pattern_recognition",
+    "demonstrate_cross_domain_prediction",
+    "demonstrate_real_time_analysis",
+    "_create_domain_pattern",
+    "main",
+    "demonstrate_resurrection_s2_operator",
+    "_write_persisted_identity",
+    "_make_fake_consciousness_module",
+    "SafeConsciousnessEvolution",
+    "SafeConsciousnessEvolution.compute_consciousness_vector",
+    "SafeConsciousnessEvolution.evaluate_consciousness_emergence",
+    "compute_consciousness_vector",
+    "evaluate_consciousness_emergence",
+    "test_emergence_uses_persisted_identity",
+    "_clear_connector_log",
+    "_clear_persisted_identity",
+    "_read_connector_log",
+    "_import_bridge",
+    "test_connectors_blocked_when_no_identity",
+    "test_connectors_allowed_after_identity",
+    "test_registry_process_step_success",
+    "dummy_handler",
+    "test_response_formatter_basic",
+    "get_logos_core",
+    "evaluate_modal",
+    "chat_with_logos",
+    "voice_to_text",
+    "get_system_diagnostics",
+    "create_demo_gui",
+    "respond",
+    "clear_chat",
+    "process_voice",
+    "update_monitor",
+    "demo_ml_integration",
+    "demo_nlp_embeddings",
+    "cosine_similarity",
+    "demo_graph_reasoning",
+    "demo_kalman_filtering",
+    "demo_pytorch_tensors",
+    "demo_integrated_system",
+    "ProductionValidator",
+    "ProductionValidator.log_test",
+    "ProductionValidator.test_docker_services",
+    "ProductionValidator.test_service_health",
+    "ProductionValidator.test_api_endpoints",
+    "ProductionValidator.test_configuration_files",
+    "ProductionValidator.test_performance_basic",
+    "ProductionValidator.test_monitoring_stack",
+    "ProductionValidator.test_security_basics",
+    "ProductionValidator.generate_report",
+    "ProductionValidator.run_validation",
+    "log_test",
+    "test_docker_services",
+    "test_service_health",
+    "test_api_endpoints",
+    "test_configuration_files",
+    "test_performance_basic",
+    "test_monitoring_stack",
+    "test_security_basics",
+    "generate_report",
+    "run_validation",
+    "TestSelfImprovementCycle",
+    "TestSelfImprovementCycle.temp_workspace",
+    "TestSelfImprovementCycle._create_mock_iels",
+    "TestSelfImprovementCycle.registry_config",
+    "TestSelfImprovementCycle.daemon_config",
+    "TestSelfImprovementCycle.test_multi_cycle_stability",
+    "TestSelfImprovementCycle.test_quality_improvement_cycle",
+    "TestSelfImprovementCycle.test_pruning_mechanism",
+    "TestSelfImprovementCycle.test_telemetry_aggregation",
+    "TestSelfImprovementCycle.test_error_recovery",
+    "TestSelfImprovementCycle.test_resource_bounds",
+    "TestSelfImprovementCycle._register_test_iels",
+    "TestSelfImprovementCycle._create_candidate",
+    "temp_workspace",
+    "_create_mock_iels",
+    "registry_config",
+    "daemon_config",
+    "test_multi_cycle_stability",
+    "test_quality_improvement_cycle",
+    "test_pruning_mechanism",
+    "test_telemetry_aggregation",
+    "test_error_recovery",
+    "test_resource_bounds",
+    "_register_test_iels",
+    "_create_candidate",
+    "TestEndToEndCycle",
+    "TestEndToEndCycle.test_complete_autonomous_cycle",
+    "test_complete_autonomous_cycle",
+    "test_end_to_end_pipeline",
+    "test_component_interfaces",
+    "test_artifacts_validation",
+    "IntegrationTestSuite",
+    "IntegrationTestSuite.log_test_result",
+    "IntegrationTestSuite.test_server_availability",
+    "IntegrationTestSuite.test_pxl_proof_engine",
+    "IntegrationTestSuite.test_performance_monitoring",
+    "IntegrationTestSuite._send_performance_request",
+    "IntegrationTestSuite.test_cache_optimization",
+    "IntegrationTestSuite.test_interoperability_layers",
+    "IntegrationTestSuite._test_pxl_serapi_integration",
+    "IntegrationTestSuite._test_health_endpoint_integration",
+    "IntegrationTestSuite._test_cross_layer_error_handling",
+    "IntegrationTestSuite.test_security_hardening",
+    "IntegrationTestSuite._test_security_configuration",
+    "IntegrationTestSuite._test_input_validation",
+    "IntegrationTestSuite._test_rate_limiting_behavior",
+    "IntegrationTestSuite.calculate_verification_ratio",
+    "IntegrationTestSuite.run_full_integration_suite",
+    "IntegrationTestSuite.save_results",
+    "log_test_result",
+    "test_server_availability",
+    "test_pxl_proof_engine",
+    "test_performance_monitoring",
+    "_send_performance_request",
+    "test_cache_optimization",
+    "test_interoperability_layers",
+    "_test_pxl_serapi_integration",
+    "_test_health_endpoint_integration",
+    "_test_cross_layer_error_handling",
+    "test_security_hardening",
+    "_test_security_configuration",
+    "_test_input_validation",
+    "_test_rate_limiting_behavior",
+    "calculate_verification_ratio",
+    "run_full_integration_suite",
+    "save_results",
+    "test_imports",
+    "test_unified_interface",
+    "test_proof_gate_validation",
+    "run_integration_tests",
+    "_DummyIngestor",
+    "_DummyIngestor.available",
+    "_DummyIngestor.collect",
+    "_DummyIngestor.status_detail",
+    "_DummyIngestor.trace_digest",
+    "available",
+    "collect",
+    "status_detail",
+    "trace_digest",
+    "_write_events",
+    "SimulationEventIngestorTests",
+    "SimulationEventIngestorTests.test_collects_events_into_observation",
+    "test_collects_events_into_observation",
+    "ObservationBrokerHealthTests",
+    "ObservationBrokerHealthTests.test_health_report_returns_status_objects",
+    "ObservationBrokerHealthTests.test_trace_digest_returns_entries",
+    "test_health_report_returns_status_objects",
+    "test_trace_digest_returns_entries",
+    "RuntimeTelemetryIngestorTests",
+    "RuntimeTelemetryIngestorTests.setUp",
+    "RuntimeTelemetryIngestorTests.test_collect_summarizes_resource_statistics",
+    "RuntimeTelemetryIngestorTests.test_trace_digest_exposes_summary_metadata",
+    "RuntimeTelemetryIngestorTests.test_status_detail_reports_last_update",
+    "setUp",
+    "test_collect_summarizes_resource_statistics",
+    "test_trace_digest_exposes_summary_metadata",
+    "test_status_detail_reports_last_update",
+    "test_hardening",
+    "LogosAgiAdapterTests",
+    "LogosAgiAdapterTests.setUp",
+    "LogosAgiAdapterTests.tearDown",
+    "LogosAgiAdapterTests.test_persistence_verification",
+    "LogosAgiAdapterTests.test_adapter_health_reporting",
+    "LogosAgiAdapterTests.test_real_api_integration",
+    "tearDown",
+    "test_persistence_verification",
+    "test_adapter_health_reporting",
+    "test_real_api_integration",
+    "_FallbackBayesianDataHandler",
+    "_FallbackBayesianDataHandler._load_dataframe",
+    "_FallbackBayesianDataHandler.regression_analysis",
+    "_FallbackBayesianDataHandler.partial_correlation_analysis",
+    "_load_dataframe",
+    "regression_analysis",
+    "partial_correlation_analysis",
+    "StatsInterfaceUnavailable",
+    "linear_regression",
+    "logistic_regression",
+    "partial_correlation",
+    "TestBayesianDataHandler",
+    "TestBayesianDataHandler.setUp",
+    "TestBayesianDataHandler.tearDown",
+    "TestBayesianDataHandler._seed_predictions",
+    "TestBayesianDataHandler.test_linear_regression_analysis",
+    "TestBayesianDataHandler.test_logistic_regression_analysis",
+    "TestBayesianDataHandler.test_partial_correlation_analysis",
+    "TestBayesianDataHandler.test_missing_columns_raise",
+    "_seed_predictions",
+    "test_linear_regression_analysis",
+    "test_logistic_regression_analysis",
+    "test_partial_correlation_analysis",
+    "test_missing_columns_raise",
+    "test_pai",
+    "run_test",
+    "test_run_simulation_stub_writes_to_custom_log_dir",
+    "test_fresh_start",
+    "test_continuity",
+    "test_capability_updates",
+    "test_policy_blocking",
+    "run_all_tests"
+  ],
+  "invariant_semantics": {},
+  "divergent_semantics": {
+    "semantic_tags": {
+      "f": [
+        "UNCLASSIFIED"
+      ],
+      "f_inv": [
+        "UNCLASSIFIED"
+      ],
+      "g": [
+        "UNCLASSIFIED"
+      ],
+      "g_inv": [
+        "UNCLASSIFIED"
+      ],
+      "TestOntologicalPrimitive": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestOntologicalPrimitive.__repr__": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestOntologicalPrimitive.__eq__": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestOntologicalPrimitive.__hash__": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "__repr__": [
+        "UNCLASSIFIED"
+      ],
+      "__eq__": [
+        "UNCLASSIFIED"
+      ],
+      "__hash__": [
+        "UNCLASSIFIED"
+      ],
+      "TestDualBijectiveSystem": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestDualBijectiveSystem.biject_A": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestDualBijectiveSystem.biject_B": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestDualBijectiveSystem.commute": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestDualBijectiveSystem.validate_ontological_consistency": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestDualBijectiveSystem.get_concept_strength": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestDualBijectiveSystem.compute_ontological_distance": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestDualBijectiveSystem.find_related_concepts": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "biject_A": [
+        "AGENT_LOGIC"
+      ],
+      "biject_B": [
+        "AGENT_LOGIC"
+      ],
+      "commute": [
+        "UNCLASSIFIED"
+      ],
+      "validate_ontological_consistency": [
+        "AGENT_LOGIC"
+      ],
+      "get_concept_strength": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "compute_ontological_distance": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "find_related_concepts": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_dual_bijection_system": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "FractalOrbitDemonstrator": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "FractalOrbitDemonstrator.run_full_demonstration": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "FractalOrbitDemonstrator.demonstrate_stable_prediction": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "FractalOrbitDemonstrator.demonstrate_chaotic_analysis": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "FractalOrbitDemonstrator.demonstrate_pattern_recognition": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "FractalOrbitDemonstrator.demonstrate_cross_domain_prediction": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "FractalOrbitDemonstrator.demonstrate_real_time_analysis": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "FractalOrbitDemonstrator._create_domain_pattern": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "run_full_demonstration": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "demonstrate_stable_prediction": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "demonstrate_chaotic_analysis": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "demonstrate_pattern_recognition": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "demonstrate_cross_domain_prediction": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "demonstrate_real_time_analysis": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_create_domain_pattern": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "main": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "demonstrate_resurrection_s2_operator": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_write_persisted_identity": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_make_fake_consciousness_module": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "SafeConsciousnessEvolution": [
+        "AGENT_LOGIC"
+      ],
+      "SafeConsciousnessEvolution.compute_consciousness_vector": [
+        "AGENT_LOGIC"
+      ],
+      "SafeConsciousnessEvolution.evaluate_consciousness_emergence": [
+        "AGENT_LOGIC"
+      ],
+      "compute_consciousness_vector": [
+        "AGENT_LOGIC"
+      ],
+      "evaluate_consciousness_emergence": [
+        "AGENT_LOGIC"
+      ],
+      "test_emergence_uses_persisted_identity": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_clear_connector_log": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_clear_persisted_identity": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_read_connector_log": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_import_bridge": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_connectors_blocked_when_no_identity": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_connectors_allowed_after_identity": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_registry_process_step_success": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "dummy_handler": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_response_formatter_basic": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "get_logos_core": [
+        "ENTRYPOINT"
+      ],
+      "evaluate_modal": [
+        "ENTRYPOINT"
+      ],
+      "chat_with_logos": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "voice_to_text": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "get_system_diagnostics": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "create_demo_gui": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "respond": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "clear_chat": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "process_voice": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "update_monitor": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "demo_ml_integration": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "demo_nlp_embeddings": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "cosine_similarity": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "demo_graph_reasoning": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "demo_kalman_filtering": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "demo_pytorch_tensors": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "demo_integrated_system": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "ProductionValidator": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "ProductionValidator.log_test": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "ProductionValidator.test_docker_services": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "ProductionValidator.test_service_health": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "ProductionValidator.test_api_endpoints": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "ProductionValidator.test_configuration_files": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "ProductionValidator.test_performance_basic": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "ProductionValidator.test_monitoring_stack": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "ProductionValidator.test_security_basics": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "ProductionValidator.generate_report": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "ProductionValidator.run_validation": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "log_test": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_docker_services": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_service_health": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_api_endpoints": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_configuration_files": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_performance_basic": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_monitoring_stack": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_security_basics": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "generate_report": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "run_validation": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestSelfImprovementCycle": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestSelfImprovementCycle.temp_workspace": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestSelfImprovementCycle._create_mock_iels": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestSelfImprovementCycle.registry_config": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestSelfImprovementCycle.daemon_config": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestSelfImprovementCycle.test_multi_cycle_stability": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestSelfImprovementCycle.test_quality_improvement_cycle": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestSelfImprovementCycle.test_pruning_mechanism": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestSelfImprovementCycle.test_telemetry_aggregation": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestSelfImprovementCycle.test_error_recovery": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestSelfImprovementCycle.test_resource_bounds": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestSelfImprovementCycle._register_test_iels": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestSelfImprovementCycle._create_candidate": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "temp_workspace": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_create_mock_iels": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "registry_config": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "daemon_config": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_multi_cycle_stability": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_quality_improvement_cycle": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_pruning_mechanism": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_telemetry_aggregation": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_error_recovery": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_resource_bounds": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_register_test_iels": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_create_candidate": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEndToEndCycle": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEndToEndCycle.test_complete_autonomous_cycle": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_complete_autonomous_cycle": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_end_to_end_pipeline": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_component_interfaces": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_artifacts_validation": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite.log_test_result": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite.test_server_availability": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite.test_pxl_proof_engine": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite.test_performance_monitoring": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite._send_performance_request": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite.test_cache_optimization": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite.test_interoperability_layers": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite._test_pxl_serapi_integration": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite._test_health_endpoint_integration": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite._test_cross_layer_error_handling": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite.test_security_hardening": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite._test_security_configuration": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite._test_input_validation": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite._test_rate_limiting_behavior": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite.calculate_verification_ratio": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite.run_full_integration_suite": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "IntegrationTestSuite.save_results": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "log_test_result": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_server_availability": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_pxl_proof_engine": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_performance_monitoring": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_send_performance_request": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_cache_optimization": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_interoperability_layers": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_test_pxl_serapi_integration": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_test_health_endpoint_integration": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_test_cross_layer_error_handling": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_security_hardening": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_test_security_configuration": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_test_input_validation": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_test_rate_limiting_behavior": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "calculate_verification_ratio": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "run_full_integration_suite": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "save_results": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_imports": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_unified_interface": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_proof_gate_validation": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "run_integration_tests": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_DummyIngestor": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_DummyIngestor.available": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_DummyIngestor.collect": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_DummyIngestor.status_detail": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_DummyIngestor.trace_digest": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "available": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "collect": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "status_detail": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "trace_digest": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_write_events": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "SimulationEventIngestorTests": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "SimulationEventIngestorTests.test_collects_events_into_observation": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_collects_events_into_observation": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "ObservationBrokerHealthTests": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "ObservationBrokerHealthTests.test_health_report_returns_status_objects": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "ObservationBrokerHealthTests.test_trace_digest_returns_entries": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_health_report_returns_status_objects": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_trace_digest_returns_entries": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "RuntimeTelemetryIngestorTests": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "RuntimeTelemetryIngestorTests.setUp": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "RuntimeTelemetryIngestorTests.test_collect_summarizes_resource_statistics": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "RuntimeTelemetryIngestorTests.test_trace_digest_exposes_summary_metadata": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "RuntimeTelemetryIngestorTests.test_status_detail_reports_last_update": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "setUp": [
+        "AGENT_LOGIC",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_collect_summarizes_resource_statistics": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_trace_digest_exposes_summary_metadata": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_status_detail_reports_last_update": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_hardening": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "LogosAgiAdapterTests": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "LogosAgiAdapterTests.setUp": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "LogosAgiAdapterTests.tearDown": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "LogosAgiAdapterTests.test_persistence_verification": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "LogosAgiAdapterTests.test_adapter_health_reporting": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "LogosAgiAdapterTests.test_real_api_integration": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "tearDown": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_persistence_verification": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_adapter_health_reporting": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_real_api_integration": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_FallbackBayesianDataHandler": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_FallbackBayesianDataHandler._load_dataframe": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_FallbackBayesianDataHandler.regression_analysis": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_FallbackBayesianDataHandler.partial_correlation_analysis": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_load_dataframe": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "regression_analysis": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "partial_correlation_analysis": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "StatsInterfaceUnavailable": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "linear_regression": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "logistic_regression": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "partial_correlation": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestBayesianDataHandler": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestBayesianDataHandler.setUp": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestBayesianDataHandler.tearDown": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestBayesianDataHandler._seed_predictions": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestBayesianDataHandler.test_linear_regression_analysis": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestBayesianDataHandler.test_logistic_regression_analysis": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestBayesianDataHandler.test_partial_correlation_analysis": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestBayesianDataHandler.test_missing_columns_raise": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "_seed_predictions": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_linear_regression_analysis": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_logistic_regression_analysis": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_partial_correlation_analysis": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_missing_columns_raise": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_pai": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "run_test": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_run_simulation_stub_writes_to_custom_log_dir": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_fresh_start": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_continuity": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_capability_updates": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_policy_blocking": [
+        "TEST_OR_EXAMPLE"
+      ],
+      "run_all_tests": [
+        "TEST_OR_EXAMPLE"
+      ]
+    },
+    "operation_type": {
+      "f": [
+        "TRANSFORMATION"
+      ],
+      "f_inv": [
+        "TRANSFORMATION"
+      ],
+      "g": [
+        "TRANSFORMATION"
+      ],
+      "g_inv": [
+        "TRANSFORMATION"
+      ],
+      "TestOntologicalPrimitive": [
+        "TRANSFORMATION"
+      ],
+      "TestOntologicalPrimitive.__repr__": [
+        "TRANSFORMATION"
+      ],
+      "TestOntologicalPrimitive.__eq__": [
+        "TRANSFORMATION"
+      ],
+      "TestOntologicalPrimitive.__hash__": [
+        "TRANSFORMATION"
+      ],
+      "__repr__": [
+        "TRANSFORMATION"
+      ],
+      "__eq__": [
+        "TRANSFORMATION"
+      ],
+      "__hash__": [
+        "TRANSFORMATION"
+      ],
+      "TestDualBijectiveSystem": [
+        "TRANSFORMATION"
+      ],
+      "TestDualBijectiveSystem.biject_A": [
+        "TRANSFORMATION"
+      ],
+      "TestDualBijectiveSystem.biject_B": [
+        "TRANSFORMATION"
+      ],
+      "TestDualBijectiveSystem.commute": [
+        "TRANSFORMATION"
+      ],
+      "TestDualBijectiveSystem.validate_ontological_consistency": [
+        "TRANSFORMATION"
+      ],
+      "TestDualBijectiveSystem.get_concept_strength": [
+        "TRANSFORMATION"
+      ],
+      "TestDualBijectiveSystem.compute_ontological_distance": [
+        "TRANSFORMATION"
+      ],
+      "TestDualBijectiveSystem.find_related_concepts": [
+        "TRANSFORMATION"
+      ],
+      "biject_A": [
+        "TRANSFORMATION"
+      ],
+      "biject_B": [
+        "TRANSFORMATION"
+      ],
+      "commute": [
+        "TRANSFORMATION"
+      ],
+      "validate_ontological_consistency": [
+        "TRANSFORMATION"
+      ],
+      "get_concept_strength": [
+        "TRANSFORMATION"
+      ],
+      "compute_ontological_distance": [
+        "TRANSFORMATION"
+      ],
+      "find_related_concepts": [
+        "TRANSFORMATION"
+      ],
+      "test_dual_bijection_system": [
+        "TRANSFORMATION"
+      ],
+      "FractalOrbitDemonstrator": [
+        "TRANSFORMATION"
+      ],
+      "FractalOrbitDemonstrator.run_full_demonstration": [
+        "UTILITY"
+      ],
+      "FractalOrbitDemonstrator.demonstrate_stable_prediction": [
+        "UTILITY"
+      ],
+      "FractalOrbitDemonstrator.demonstrate_chaotic_analysis": [
+        "UTILITY"
+      ],
+      "FractalOrbitDemonstrator.demonstrate_pattern_recognition": [
+        "UTILITY"
+      ],
+      "FractalOrbitDemonstrator.demonstrate_cross_domain_prediction": [
+        "UTILITY"
+      ],
+      "FractalOrbitDemonstrator.demonstrate_real_time_analysis": [
+        "UTILITY"
+      ],
+      "FractalOrbitDemonstrator._create_domain_pattern": [
+        "TRANSFORMATION"
+      ],
+      "run_full_demonstration": [
+        "UTILITY"
+      ],
+      "demonstrate_stable_prediction": [
+        "UTILITY"
+      ],
+      "demonstrate_chaotic_analysis": [
+        "UTILITY"
+      ],
+      "demonstrate_pattern_recognition": [
+        "UTILITY"
+      ],
+      "demonstrate_cross_domain_prediction": [
+        "UTILITY"
+      ],
+      "demonstrate_real_time_analysis": [
+        "UTILITY"
+      ],
+      "_create_domain_pattern": [
+        "TRANSFORMATION"
+      ],
+      "main": [
+        "TRANSFORMATION"
+      ],
+      "demonstrate_resurrection_s2_operator": [
+        "TRANSFORMATION"
+      ],
+      "_write_persisted_identity": [
+        "UTILITY"
+      ],
+      "_make_fake_consciousness_module": [
+        "TRANSFORMATION"
+      ],
+      "SafeConsciousnessEvolution": [
+        "TRANSFORMATION"
+      ],
+      "SafeConsciousnessEvolution.compute_consciousness_vector": [
+        "TRANSFORMATION"
+      ],
+      "SafeConsciousnessEvolution.evaluate_consciousness_emergence": [
+        "TRANSFORMATION"
+      ],
+      "compute_consciousness_vector": [
+        "TRANSFORMATION"
+      ],
+      "evaluate_consciousness_emergence": [
+        "TRANSFORMATION"
+      ],
+      "test_emergence_uses_persisted_identity": [
+        "UTILITY"
+      ],
+      "_clear_connector_log": [
+        "UTILITY"
+      ],
+      "_clear_persisted_identity": [
+        "UTILITY"
+      ],
+      "_read_connector_log": [
+        "TRANSFORMATION"
+      ],
+      "_import_bridge": [
+        "TRANSFORMATION"
+      ],
+      "test_connectors_blocked_when_no_identity": [
+        "UTILITY"
+      ],
+      "test_connectors_allowed_after_identity": [
+        "UTILITY"
+      ],
+      "test_registry_process_step_success": [
+        "TRANSFORMATION"
+      ],
+      "dummy_handler": [
+        "TRANSFORMATION"
+      ],
+      "test_response_formatter_basic": [
+        "UTILITY"
+      ],
+      "get_logos_core": [
+        "TRANSFORMATION"
+      ],
+      "evaluate_modal": [
+        "TRANSFORMATION"
+      ],
+      "chat_with_logos": [
+        "TRANSFORMATION"
+      ],
+      "voice_to_text": [
+        "TRANSFORMATION"
+      ],
+      "get_system_diagnostics": [
+        "TRANSFORMATION"
+      ],
+      "create_demo_gui": [
+        "TRANSFORMATION"
+      ],
+      "respond": [
+        "TRANSFORMATION"
+      ],
+      "clear_chat": [
+        "TRANSFORMATION"
+      ],
+      "process_voice": [
+        "TRANSFORMATION"
+      ],
+      "update_monitor": [
+        "TRANSFORMATION"
+      ],
+      "demo_ml_integration": [
+        "TRANSFORMATION"
+      ],
+      "demo_nlp_embeddings": [
+        "TRANSFORMATION"
+      ],
+      "cosine_similarity": [
+        "TRANSFORMATION"
+      ],
+      "demo_graph_reasoning": [
+        "TRANSFORMATION"
+      ],
+      "demo_kalman_filtering": [
+        "TRANSFORMATION"
+      ],
+      "demo_pytorch_tensors": [
+        "TRANSFORMATION"
+      ],
+      "demo_integrated_system": [
+        "TRANSFORMATION"
+      ],
+      "ProductionValidator": [
+        "TRANSFORMATION"
+      ],
+      "ProductionValidator.log_test": [
+        "UTILITY"
+      ],
+      "ProductionValidator.test_docker_services": [
+        "TRANSFORMATION"
+      ],
+      "ProductionValidator.test_service_health": [
+        "TRANSFORMATION"
+      ],
+      "ProductionValidator.test_api_endpoints": [
+        "TRANSFORMATION"
+      ],
+      "ProductionValidator.test_configuration_files": [
+        "TRANSFORMATION"
+      ],
+      "ProductionValidator.test_performance_basic": [
+        "TRANSFORMATION"
+      ],
+      "ProductionValidator.test_monitoring_stack": [
+        "TRANSFORMATION"
+      ],
+      "ProductionValidator.test_security_basics": [
+        "TRANSFORMATION"
+      ],
+      "ProductionValidator.generate_report": [
+        "TRANSFORMATION"
+      ],
+      "ProductionValidator.run_validation": [
+        "TRANSFORMATION"
+      ],
+      "log_test": [
+        "UTILITY"
+      ],
+      "test_docker_services": [
+        "TRANSFORMATION"
+      ],
+      "test_service_health": [
+        "TRANSFORMATION"
+      ],
+      "test_api_endpoints": [
+        "TRANSFORMATION"
+      ],
+      "test_configuration_files": [
+        "TRANSFORMATION"
+      ],
+      "test_performance_basic": [
+        "TRANSFORMATION"
+      ],
+      "test_monitoring_stack": [
+        "TRANSFORMATION"
+      ],
+      "test_security_basics": [
+        "TRANSFORMATION"
+      ],
+      "generate_report": [
+        "TRANSFORMATION"
+      ],
+      "run_validation": [
+        "TRANSFORMATION"
+      ],
+      "TestSelfImprovementCycle": [
+        "TRANSFORMATION"
+      ],
+      "TestSelfImprovementCycle.temp_workspace": [
+        "TRANSFORMATION"
+      ],
+      "TestSelfImprovementCycle._create_mock_iels": [
+        "UTILITY"
+      ],
+      "TestSelfImprovementCycle.registry_config": [
+        "TRANSFORMATION"
+      ],
+      "TestSelfImprovementCycle.daemon_config": [
+        "TRANSFORMATION"
+      ],
+      "TestSelfImprovementCycle.test_multi_cycle_stability": [
+        "UTILITY"
+      ],
+      "TestSelfImprovementCycle.test_quality_improvement_cycle": [
+        "UTILITY"
+      ],
+      "TestSelfImprovementCycle.test_pruning_mechanism": [
+        "UTILITY"
+      ],
+      "TestSelfImprovementCycle.test_telemetry_aggregation": [
+        "UTILITY"
+      ],
+      "TestSelfImprovementCycle.test_error_recovery": [
+        "UTILITY"
+      ],
+      "TestSelfImprovementCycle.test_resource_bounds": [
+        "UTILITY"
+      ],
+      "TestSelfImprovementCycle._register_test_iels": [
+        "TRANSFORMATION"
+      ],
+      "TestSelfImprovementCycle._create_candidate": [
+        "TRANSFORMATION"
+      ],
+      "temp_workspace": [
+        "TRANSFORMATION"
+      ],
+      "_create_mock_iels": [
+        "UTILITY"
+      ],
+      "registry_config": [
+        "TRANSFORMATION"
+      ],
+      "daemon_config": [
+        "TRANSFORMATION"
+      ],
+      "test_multi_cycle_stability": [
+        "UTILITY"
+      ],
+      "test_quality_improvement_cycle": [
+        "UTILITY"
+      ],
+      "test_pruning_mechanism": [
+        "UTILITY"
+      ],
+      "test_telemetry_aggregation": [
+        "UTILITY"
+      ],
+      "test_error_recovery": [
+        "UTILITY"
+      ],
+      "test_resource_bounds": [
+        "UTILITY"
+      ],
+      "_register_test_iels": [
+        "TRANSFORMATION"
+      ],
+      "_create_candidate": [
+        "TRANSFORMATION"
+      ],
+      "TestEndToEndCycle": [
+        "UTILITY"
+      ],
+      "TestEndToEndCycle.test_complete_autonomous_cycle": [
+        "UTILITY"
+      ],
+      "test_complete_autonomous_cycle": [
+        "UTILITY"
+      ],
+      "test_end_to_end_pipeline": [
+        "TRANSFORMATION"
+      ],
+      "test_component_interfaces": [
+        "TRANSFORMATION"
+      ],
+      "test_artifacts_validation": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite.log_test_result": [
+        "UTILITY"
+      ],
+      "IntegrationTestSuite.test_server_availability": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite.test_pxl_proof_engine": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite.test_performance_monitoring": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite._send_performance_request": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite.test_cache_optimization": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite.test_interoperability_layers": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite._test_pxl_serapi_integration": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite._test_health_endpoint_integration": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite._test_cross_layer_error_handling": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite.test_security_hardening": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite._test_security_configuration": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite._test_input_validation": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite._test_rate_limiting_behavior": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite.calculate_verification_ratio": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite.run_full_integration_suite": [
+        "TRANSFORMATION"
+      ],
+      "IntegrationTestSuite.save_results": [
+        "UTILITY"
+      ],
+      "log_test_result": [
+        "UTILITY"
+      ],
+      "test_server_availability": [
+        "TRANSFORMATION"
+      ],
+      "test_pxl_proof_engine": [
+        "TRANSFORMATION"
+      ],
+      "test_performance_monitoring": [
+        "TRANSFORMATION"
+      ],
+      "_send_performance_request": [
+        "TRANSFORMATION"
+      ],
+      "test_cache_optimization": [
+        "TRANSFORMATION"
+      ],
+      "test_interoperability_layers": [
+        "TRANSFORMATION"
+      ],
+      "_test_pxl_serapi_integration": [
+        "TRANSFORMATION"
+      ],
+      "_test_health_endpoint_integration": [
+        "TRANSFORMATION"
+      ],
+      "_test_cross_layer_error_handling": [
+        "TRANSFORMATION"
+      ],
+      "test_security_hardening": [
+        "TRANSFORMATION"
+      ],
+      "_test_security_configuration": [
+        "TRANSFORMATION"
+      ],
+      "_test_input_validation": [
+        "TRANSFORMATION"
+      ],
+      "_test_rate_limiting_behavior": [
+        "TRANSFORMATION"
+      ],
+      "calculate_verification_ratio": [
+        "TRANSFORMATION"
+      ],
+      "run_full_integration_suite": [
+        "TRANSFORMATION"
+      ],
+      "save_results": [
+        "UTILITY"
+      ],
+      "test_imports": [
+        "TRANSFORMATION"
+      ],
+      "test_unified_interface": [
+        "TRANSFORMATION"
+      ],
+      "test_proof_gate_validation": [
+        "TRANSFORMATION"
+      ],
+      "run_integration_tests": [
+        "TRANSFORMATION"
+      ],
+      "_DummyIngestor": [
+        "TRANSFORMATION"
+      ],
+      "_DummyIngestor.available": [
+        "TRANSFORMATION"
+      ],
+      "_DummyIngestor.collect": [
+        "TRANSFORMATION"
+      ],
+      "_DummyIngestor.status_detail": [
+        "TRANSFORMATION"
+      ],
+      "_DummyIngestor.trace_digest": [
+        "TRANSFORMATION"
+      ],
+      "available": [
+        "TRANSFORMATION"
+      ],
+      "collect": [
+        "TRANSFORMATION"
+      ],
+      "status_detail": [
+        "TRANSFORMATION"
+      ],
+      "trace_digest": [
+        "TRANSFORMATION"
+      ],
+      "_write_events": [
+        "UTILITY"
+      ],
+      "SimulationEventIngestorTests": [
+        "UTILITY"
+      ],
+      "SimulationEventIngestorTests.test_collects_events_into_observation": [
+        "UTILITY"
+      ],
+      "test_collects_events_into_observation": [
+        "UTILITY"
+      ],
+      "ObservationBrokerHealthTests": [
+        "UTILITY"
+      ],
+      "ObservationBrokerHealthTests.test_health_report_returns_status_objects": [
+        "UTILITY"
+      ],
+      "ObservationBrokerHealthTests.test_trace_digest_returns_entries": [
+        "UTILITY"
+      ],
+      "test_health_report_returns_status_objects": [
+        "UTILITY"
+      ],
+      "test_trace_digest_returns_entries": [
+        "UTILITY"
+      ],
+      "RuntimeTelemetryIngestorTests": [
+        "UTILITY"
+      ],
+      "RuntimeTelemetryIngestorTests.setUp": [
+        "UTILITY"
+      ],
+      "RuntimeTelemetryIngestorTests.test_collect_summarizes_resource_statistics": [
+        "UTILITY"
+      ],
+      "RuntimeTelemetryIngestorTests.test_trace_digest_exposes_summary_metadata": [
+        "UTILITY"
+      ],
+      "RuntimeTelemetryIngestorTests.test_status_detail_reports_last_update": [
+        "UTILITY"
+      ],
+      "setUp": [
+        "UTILITY"
+      ],
+      "test_collect_summarizes_resource_statistics": [
+        "UTILITY"
+      ],
+      "test_trace_digest_exposes_summary_metadata": [
+        "UTILITY"
+      ],
+      "test_status_detail_reports_last_update": [
+        "UTILITY"
+      ],
+      "test_hardening": [
+        "TRANSFORMATION"
+      ],
+      "LogosAgiAdapterTests": [
+        "UTILITY"
+      ],
+      "LogosAgiAdapterTests.setUp": [
+        "UTILITY"
+      ],
+      "LogosAgiAdapterTests.tearDown": [
+        "UTILITY"
+      ],
+      "LogosAgiAdapterTests.test_persistence_verification": [
+        "UTILITY"
+      ],
+      "LogosAgiAdapterTests.test_adapter_health_reporting": [
+        "UTILITY"
+      ],
+      "LogosAgiAdapterTests.test_real_api_integration": [
+        "UTILITY"
+      ],
+      "tearDown": [
+        "UTILITY"
+      ],
+      "test_persistence_verification": [
+        "UTILITY"
+      ],
+      "test_adapter_health_reporting": [
+        "UTILITY"
+      ],
+      "test_real_api_integration": [
+        "UTILITY"
+      ],
+      "_FallbackBayesianDataHandler": [
+        "TRANSFORMATION"
+      ],
+      "_FallbackBayesianDataHandler._load_dataframe": [
+        "TRANSFORMATION"
+      ],
+      "_FallbackBayesianDataHandler.regression_analysis": [
+        "TRANSFORMATION"
+      ],
+      "_FallbackBayesianDataHandler.partial_correlation_analysis": [
+        "TRANSFORMATION"
+      ],
+      "_load_dataframe": [
+        "TRANSFORMATION"
+      ],
+      "regression_analysis": [
+        "TRANSFORMATION"
+      ],
+      "partial_correlation_analysis": [
+        "TRANSFORMATION"
+      ],
+      "StatsInterfaceUnavailable": [
+        "UTILITY"
+      ],
+      "linear_regression": [
+        "TRANSFORMATION"
+      ],
+      "logistic_regression": [
+        "TRANSFORMATION"
+      ],
+      "partial_correlation": [
+        "TRANSFORMATION"
+      ],
+      "TestBayesianDataHandler": [
+        "UTILITY"
+      ],
+      "TestBayesianDataHandler.setUp": [
+        "UTILITY"
+      ],
+      "TestBayesianDataHandler.tearDown": [
+        "UTILITY"
+      ],
+      "TestBayesianDataHandler._seed_predictions": [
+        "UTILITY"
+      ],
+      "TestBayesianDataHandler.test_linear_regression_analysis": [
+        "UTILITY"
+      ],
+      "TestBayesianDataHandler.test_logistic_regression_analysis": [
+        "UTILITY"
+      ],
+      "TestBayesianDataHandler.test_partial_correlation_analysis": [
+        "UTILITY"
+      ],
+      "TestBayesianDataHandler.test_missing_columns_raise": [
+        "UTILITY"
+      ],
+      "_seed_predictions": [
+        "UTILITY"
+      ],
+      "test_linear_regression_analysis": [
+        "UTILITY"
+      ],
+      "test_logistic_regression_analysis": [
+        "UTILITY"
+      ],
+      "test_partial_correlation_analysis": [
+        "UTILITY"
+      ],
+      "test_missing_columns_raise": [
+        "UTILITY"
+      ],
+      "test_pai": [
+        "TRANSFORMATION"
+      ],
+      "run_test": [
+        "TRANSFORMATION"
+      ],
+      "test_run_simulation_stub_writes_to_custom_log_dir": [
+        "UTILITY"
+      ],
+      "test_fresh_start": [
+        "TRANSFORMATION"
+      ],
+      "test_continuity": [
+        "TRANSFORMATION"
+      ],
+      "test_capability_updates": [
+        "TRANSFORMATION"
+      ],
+      "test_policy_blocking": [
+        "TRANSFORMATION"
+      ],
+      "run_all_tests": [
+        "TRANSFORMATION"
+      ]
+    },
+    "data_role": {
+      "f": [],
+      "f_inv": [],
+      "g": [],
+      "g_inv": [],
+      "TestOntologicalPrimitive": [],
+      "TestOntologicalPrimitive.__repr__": [],
+      "TestOntologicalPrimitive.__eq__": [],
+      "TestOntologicalPrimitive.__hash__": [
+        "CRYPTO_ID"
+      ],
+      "__repr__": [],
+      "__eq__": [],
+      "__hash__": [
+        "CRYPTO_ID"
+      ],
+      "TestDualBijectiveSystem": [],
+      "TestDualBijectiveSystem.biject_A": [],
+      "TestDualBijectiveSystem.biject_B": [],
+      "TestDualBijectiveSystem.commute": [],
+      "TestDualBijectiveSystem.validate_ontological_consistency": [],
+      "TestDualBijectiveSystem.get_concept_strength": [],
+      "TestDualBijectiveSystem.compute_ontological_distance": [],
+      "TestDualBijectiveSystem.find_related_concepts": [],
+      "biject_A": [],
+      "biject_B": [],
+      "commute": [],
+      "validate_ontological_consistency": [],
+      "get_concept_strength": [],
+      "compute_ontological_distance": [],
+      "find_related_concepts": [],
+      "test_dual_bijection_system": [],
+      "FractalOrbitDemonstrator": [],
+      "FractalOrbitDemonstrator.run_full_demonstration": [],
+      "FractalOrbitDemonstrator.demonstrate_stable_prediction": [],
+      "FractalOrbitDemonstrator.demonstrate_chaotic_analysis": [],
+      "FractalOrbitDemonstrator.demonstrate_pattern_recognition": [],
+      "FractalOrbitDemonstrator.demonstrate_cross_domain_prediction": [],
+      "FractalOrbitDemonstrator.demonstrate_real_time_analysis": [],
+      "FractalOrbitDemonstrator._create_domain_pattern": [],
+      "run_full_demonstration": [],
+      "demonstrate_stable_prediction": [],
+      "demonstrate_chaotic_analysis": [],
+      "demonstrate_pattern_recognition": [],
+      "demonstrate_cross_domain_prediction": [],
+      "demonstrate_real_time_analysis": [],
+      "_create_domain_pattern": [],
+      "main": [],
+      "demonstrate_resurrection_s2_operator": [],
+      "_write_persisted_identity": [],
+      "_make_fake_consciousness_module": [],
+      "SafeConsciousnessEvolution": [],
+      "SafeConsciousnessEvolution.compute_consciousness_vector": [],
+      "SafeConsciousnessEvolution.evaluate_consciousness_emergence": [],
+      "compute_consciousness_vector": [],
+      "evaluate_consciousness_emergence": [],
+      "test_emergence_uses_persisted_identity": [],
+      "_clear_connector_log": [],
+      "_clear_persisted_identity": [],
+      "_read_connector_log": [],
+      "_import_bridge": [],
+      "test_connectors_blocked_when_no_identity": [],
+      "test_connectors_allowed_after_identity": [],
+      "test_registry_process_step_success": [],
+      "dummy_handler": [],
+      "test_response_formatter_basic": [],
+      "get_logos_core": [],
+      "evaluate_modal": [],
+      "chat_with_logos": [],
+      "voice_to_text": [],
+      "get_system_diagnostics": [],
+      "create_demo_gui": [],
+      "respond": [],
+      "clear_chat": [],
+      "process_voice": [],
+      "update_monitor": [],
+      "demo_ml_integration": [],
+      "demo_nlp_embeddings": [],
+      "cosine_similarity": [],
+      "demo_graph_reasoning": [],
+      "demo_kalman_filtering": [],
+      "demo_pytorch_tensors": [],
+      "demo_integrated_system": [],
+      "ProductionValidator": [],
+      "ProductionValidator.log_test": [],
+      "ProductionValidator.test_docker_services": [],
+      "ProductionValidator.test_service_health": [],
+      "ProductionValidator.test_api_endpoints": [],
+      "ProductionValidator.test_configuration_files": [],
+      "ProductionValidator.test_performance_basic": [],
+      "ProductionValidator.test_monitoring_stack": [],
+      "ProductionValidator.test_security_basics": [],
+      "ProductionValidator.generate_report": [],
+      "ProductionValidator.run_validation": [],
+      "log_test": [],
+      "test_docker_services": [],
+      "test_service_health": [],
+      "test_api_endpoints": [],
+      "test_configuration_files": [],
+      "test_performance_basic": [],
+      "test_monitoring_stack": [],
+      "test_security_basics": [],
+      "generate_report": [],
+      "run_validation": [],
+      "TestSelfImprovementCycle": [],
+      "TestSelfImprovementCycle.temp_workspace": [],
+      "TestSelfImprovementCycle._create_mock_iels": [],
+      "TestSelfImprovementCycle.registry_config": [],
+      "TestSelfImprovementCycle.daemon_config": [],
+      "TestSelfImprovementCycle.test_multi_cycle_stability": [],
+      "TestSelfImprovementCycle.test_quality_improvement_cycle": [],
+      "TestSelfImprovementCycle.test_pruning_mechanism": [],
+      "TestSelfImprovementCycle.test_telemetry_aggregation": [],
+      "TestSelfImprovementCycle.test_error_recovery": [],
+      "TestSelfImprovementCycle.test_resource_bounds": [],
+      "TestSelfImprovementCycle._register_test_iels": [],
+      "TestSelfImprovementCycle._create_candidate": [],
+      "temp_workspace": [],
+      "_create_mock_iels": [],
+      "registry_config": [],
+      "daemon_config": [],
+      "test_multi_cycle_stability": [],
+      "test_quality_improvement_cycle": [],
+      "test_pruning_mechanism": [],
+      "test_telemetry_aggregation": [],
+      "test_error_recovery": [],
+      "test_resource_bounds": [],
+      "_register_test_iels": [],
+      "_create_candidate": [],
+      "TestEndToEndCycle": [],
+      "TestEndToEndCycle.test_complete_autonomous_cycle": [],
+      "test_complete_autonomous_cycle": [],
+      "test_end_to_end_pipeline": [],
+      "test_component_interfaces": [],
+      "test_artifacts_validation": [],
+      "IntegrationTestSuite": [],
+      "IntegrationTestSuite.log_test_result": [],
+      "IntegrationTestSuite.test_server_availability": [],
+      "IntegrationTestSuite.test_pxl_proof_engine": [],
+      "IntegrationTestSuite.test_performance_monitoring": [],
+      "IntegrationTestSuite._send_performance_request": [],
+      "IntegrationTestSuite.test_cache_optimization": [],
+      "IntegrationTestSuite.test_interoperability_layers": [],
+      "IntegrationTestSuite._test_pxl_serapi_integration": [],
+      "IntegrationTestSuite._test_health_endpoint_integration": [],
+      "IntegrationTestSuite._test_cross_layer_error_handling": [],
+      "IntegrationTestSuite.test_security_hardening": [],
+      "IntegrationTestSuite._test_security_configuration": [],
+      "IntegrationTestSuite._test_input_validation": [],
+      "IntegrationTestSuite._test_rate_limiting_behavior": [],
+      "IntegrationTestSuite.calculate_verification_ratio": [],
+      "IntegrationTestSuite.run_full_integration_suite": [],
+      "IntegrationTestSuite.save_results": [],
+      "log_test_result": [],
+      "test_server_availability": [],
+      "test_pxl_proof_engine": [],
+      "test_performance_monitoring": [],
+      "_send_performance_request": [],
+      "test_cache_optimization": [],
+      "test_interoperability_layers": [],
+      "_test_pxl_serapi_integration": [],
+      "_test_health_endpoint_integration": [],
+      "_test_cross_layer_error_handling": [],
+      "test_security_hardening": [],
+      "_test_security_configuration": [],
+      "_test_input_validation": [],
+      "_test_rate_limiting_behavior": [],
+      "calculate_verification_ratio": [],
+      "run_full_integration_suite": [],
+      "save_results": [],
+      "test_imports": [],
+      "test_unified_interface": [],
+      "test_proof_gate_validation": [],
+      "run_integration_tests": [],
+      "_DummyIngestor": [],
+      "_DummyIngestor.available": [],
+      "_DummyIngestor.collect": [],
+      "_DummyIngestor.status_detail": [],
+      "_DummyIngestor.trace_digest": [],
+      "available": [],
+      "collect": [],
+      "status_detail": [],
+      "trace_digest": [],
+      "_write_events": [],
+      "SimulationEventIngestorTests": [],
+      "SimulationEventIngestorTests.test_collects_events_into_observation": [],
+      "test_collects_events_into_observation": [],
+      "ObservationBrokerHealthTests": [],
+      "ObservationBrokerHealthTests.test_health_report_returns_status_objects": [],
+      "ObservationBrokerHealthTests.test_trace_digest_returns_entries": [],
+      "test_health_report_returns_status_objects": [],
+      "test_trace_digest_returns_entries": [],
+      "RuntimeTelemetryIngestorTests": [],
+      "RuntimeTelemetryIngestorTests.setUp": [],
+      "RuntimeTelemetryIngestorTests.test_collect_summarizes_resource_statistics": [],
+      "RuntimeTelemetryIngestorTests.test_trace_digest_exposes_summary_metadata": [],
+      "RuntimeTelemetryIngestorTests.test_status_detail_reports_last_update": [],
+      "setUp": [],
+      "test_collect_summarizes_resource_statistics": [],
+      "test_trace_digest_exposes_summary_metadata": [],
+      "test_status_detail_reports_last_update": [],
+      "test_hardening": [],
+      "LogosAgiAdapterTests": [],
+      "LogosAgiAdapterTests.setUp": [],
+      "LogosAgiAdapterTests.tearDown": [],
+      "LogosAgiAdapterTests.test_persistence_verification": [],
+      "LogosAgiAdapterTests.test_adapter_health_reporting": [],
+      "LogosAgiAdapterTests.test_real_api_integration": [],
+      "tearDown": [],
+      "test_persistence_verification": [],
+      "test_adapter_health_reporting": [],
+      "test_real_api_integration": [],
+      "_FallbackBayesianDataHandler": [],
+      "_FallbackBayesianDataHandler._load_dataframe": [],
+      "_FallbackBayesianDataHandler.regression_analysis": [],
+      "_FallbackBayesianDataHandler.partial_correlation_analysis": [],
+      "_load_dataframe": [],
+      "regression_analysis": [],
+      "partial_correlation_analysis": [],
+      "StatsInterfaceUnavailable": [],
+      "linear_regression": [],
+      "logistic_regression": [],
+      "partial_correlation": [],
+      "TestBayesianDataHandler": [],
+      "TestBayesianDataHandler.setUp": [],
+      "TestBayesianDataHandler.tearDown": [],
+      "TestBayesianDataHandler._seed_predictions": [],
+      "TestBayesianDataHandler.test_linear_regression_analysis": [],
+      "TestBayesianDataHandler.test_logistic_regression_analysis": [],
+      "TestBayesianDataHandler.test_partial_correlation_analysis": [],
+      "TestBayesianDataHandler.test_missing_columns_raise": [],
+      "_seed_predictions": [],
+      "test_linear_regression_analysis": [],
+      "test_logistic_regression_analysis": [],
+      "test_partial_correlation_analysis": [],
+      "test_missing_columns_raise": [],
+      "test_pai": [],
+      "run_test": [],
+      "test_run_simulation_stub_writes_to_custom_log_dir": [],
+      "test_fresh_start": [],
+      "test_continuity": [],
+      "test_capability_updates": [],
+      "test_policy_blocking": [],
+      "run_all_tests": []
+    },
+    "control_role": {
+      "f": [],
+      "f_inv": [],
+      "g": [],
+      "g_inv": [],
+      "TestOntologicalPrimitive": [],
+      "TestOntologicalPrimitive.__repr__": [],
+      "TestOntologicalPrimitive.__eq__": [],
+      "TestOntologicalPrimitive.__hash__": [],
+      "__repr__": [],
+      "__eq__": [],
+      "__hash__": [],
+      "TestDualBijectiveSystem": [],
+      "TestDualBijectiveSystem.biject_A": [],
+      "TestDualBijectiveSystem.biject_B": [],
+      "TestDualBijectiveSystem.commute": [],
+      "TestDualBijectiveSystem.validate_ontological_consistency": [],
+      "TestDualBijectiveSystem.get_concept_strength": [],
+      "TestDualBijectiveSystem.compute_ontological_distance": [],
+      "TestDualBijectiveSystem.find_related_concepts": [],
+      "biject_A": [],
+      "biject_B": [],
+      "commute": [],
+      "validate_ontological_consistency": [],
+      "get_concept_strength": [],
+      "compute_ontological_distance": [],
+      "find_related_concepts": [],
+      "test_dual_bijection_system": [],
+      "FractalOrbitDemonstrator": [],
+      "FractalOrbitDemonstrator.run_full_demonstration": [],
+      "FractalOrbitDemonstrator.demonstrate_stable_prediction": [],
+      "FractalOrbitDemonstrator.demonstrate_chaotic_analysis": [],
+      "FractalOrbitDemonstrator.demonstrate_pattern_recognition": [],
+      "FractalOrbitDemonstrator.demonstrate_cross_domain_prediction": [],
+      "FractalOrbitDemonstrator.demonstrate_real_time_analysis": [],
+      "FractalOrbitDemonstrator._create_domain_pattern": [],
+      "run_full_demonstration": [],
+      "demonstrate_stable_prediction": [],
+      "demonstrate_chaotic_analysis": [],
+      "demonstrate_pattern_recognition": [],
+      "demonstrate_cross_domain_prediction": [],
+      "demonstrate_real_time_analysis": [],
+      "_create_domain_pattern": [],
+      "main": [
+        "BOOT_CONTROL"
+      ],
+      "demonstrate_resurrection_s2_operator": [],
+      "_write_persisted_identity": [],
+      "_make_fake_consciousness_module": [],
+      "SafeConsciousnessEvolution": [],
+      "SafeConsciousnessEvolution.compute_consciousness_vector": [],
+      "SafeConsciousnessEvolution.evaluate_consciousness_emergence": [],
+      "compute_consciousness_vector": [],
+      "evaluate_consciousness_emergence": [],
+      "test_emergence_uses_persisted_identity": [],
+      "_clear_connector_log": [],
+      "_clear_persisted_identity": [],
+      "_read_connector_log": [],
+      "_import_bridge": [],
+      "test_connectors_blocked_when_no_identity": [],
+      "test_connectors_allowed_after_identity": [],
+      "test_registry_process_step_success": [],
+      "dummy_handler": [],
+      "test_response_formatter_basic": [],
+      "get_logos_core": [
+        "BOOT_CONTROL"
+      ],
+      "evaluate_modal": [
+        "BOOT_CONTROL"
+      ],
+      "chat_with_logos": [],
+      "voice_to_text": [],
+      "get_system_diagnostics": [],
+      "create_demo_gui": [],
+      "respond": [],
+      "clear_chat": [],
+      "process_voice": [],
+      "update_monitor": [],
+      "demo_ml_integration": [],
+      "demo_nlp_embeddings": [],
+      "cosine_similarity": [],
+      "demo_graph_reasoning": [],
+      "demo_kalman_filtering": [],
+      "demo_pytorch_tensors": [],
+      "demo_integrated_system": [],
+      "ProductionValidator": [],
+      "ProductionValidator.log_test": [],
+      "ProductionValidator.test_docker_services": [],
+      "ProductionValidator.test_service_health": [],
+      "ProductionValidator.test_api_endpoints": [],
+      "ProductionValidator.test_configuration_files": [],
+      "ProductionValidator.test_performance_basic": [],
+      "ProductionValidator.test_monitoring_stack": [],
+      "ProductionValidator.test_security_basics": [],
+      "ProductionValidator.generate_report": [],
+      "ProductionValidator.run_validation": [],
+      "log_test": [],
+      "test_docker_services": [],
+      "test_service_health": [],
+      "test_api_endpoints": [],
+      "test_configuration_files": [],
+      "test_performance_basic": [],
+      "test_monitoring_stack": [],
+      "test_security_basics": [],
+      "generate_report": [],
+      "run_validation": [],
+      "TestSelfImprovementCycle": [],
+      "TestSelfImprovementCycle.temp_workspace": [],
+      "TestSelfImprovementCycle._create_mock_iels": [],
+      "TestSelfImprovementCycle.registry_config": [],
+      "TestSelfImprovementCycle.daemon_config": [],
+      "TestSelfImprovementCycle.test_multi_cycle_stability": [],
+      "TestSelfImprovementCycle.test_quality_improvement_cycle": [],
+      "TestSelfImprovementCycle.test_pruning_mechanism": [],
+      "TestSelfImprovementCycle.test_telemetry_aggregation": [],
+      "TestSelfImprovementCycle.test_error_recovery": [],
+      "TestSelfImprovementCycle.test_resource_bounds": [],
+      "TestSelfImprovementCycle._register_test_iels": [],
+      "TestSelfImprovementCycle._create_candidate": [],
+      "temp_workspace": [],
+      "_create_mock_iels": [],
+      "registry_config": [],
+      "daemon_config": [],
+      "test_multi_cycle_stability": [],
+      "test_quality_improvement_cycle": [],
+      "test_pruning_mechanism": [],
+      "test_telemetry_aggregation": [],
+      "test_error_recovery": [],
+      "test_resource_bounds": [],
+      "_register_test_iels": [],
+      "_create_candidate": [],
+      "TestEndToEndCycle": [],
+      "TestEndToEndCycle.test_complete_autonomous_cycle": [],
+      "test_complete_autonomous_cycle": [],
+      "test_end_to_end_pipeline": [],
+      "test_component_interfaces": [],
+      "test_artifacts_validation": [],
+      "IntegrationTestSuite": [],
+      "IntegrationTestSuite.log_test_result": [],
+      "IntegrationTestSuite.test_server_availability": [],
+      "IntegrationTestSuite.test_pxl_proof_engine": [],
+      "IntegrationTestSuite.test_performance_monitoring": [],
+      "IntegrationTestSuite._send_performance_request": [],
+      "IntegrationTestSuite.test_cache_optimization": [],
+      "IntegrationTestSuite.test_interoperability_layers": [],
+      "IntegrationTestSuite._test_pxl_serapi_integration": [],
+      "IntegrationTestSuite._test_health_endpoint_integration": [],
+      "IntegrationTestSuite._test_cross_layer_error_handling": [],
+      "IntegrationTestSuite.test_security_hardening": [],
+      "IntegrationTestSuite._test_security_configuration": [],
+      "IntegrationTestSuite._test_input_validation": [],
+      "IntegrationTestSuite._test_rate_limiting_behavior": [],
+      "IntegrationTestSuite.calculate_verification_ratio": [],
+      "IntegrationTestSuite.run_full_integration_suite": [],
+      "IntegrationTestSuite.save_results": [],
+      "log_test_result": [],
+      "test_server_availability": [],
+      "test_pxl_proof_engine": [],
+      "test_performance_monitoring": [],
+      "_send_performance_request": [],
+      "test_cache_optimization": [],
+      "test_interoperability_layers": [],
+      "_test_pxl_serapi_integration": [],
+      "_test_health_endpoint_integration": [],
+      "_test_cross_layer_error_handling": [],
+      "test_security_hardening": [],
+      "_test_security_configuration": [],
+      "_test_input_validation": [],
+      "_test_rate_limiting_behavior": [],
+      "calculate_verification_ratio": [],
+      "run_full_integration_suite": [],
+      "save_results": [],
+      "test_imports": [],
+      "test_unified_interface": [],
+      "test_proof_gate_validation": [],
+      "run_integration_tests": [],
+      "_DummyIngestor": [],
+      "_DummyIngestor.available": [],
+      "_DummyIngestor.collect": [],
+      "_DummyIngestor.status_detail": [],
+      "_DummyIngestor.trace_digest": [],
+      "available": [],
+      "collect": [],
+      "status_detail": [],
+      "trace_digest": [],
+      "_write_events": [],
+      "SimulationEventIngestorTests": [],
+      "SimulationEventIngestorTests.test_collects_events_into_observation": [],
+      "test_collects_events_into_observation": [],
+      "ObservationBrokerHealthTests": [],
+      "ObservationBrokerHealthTests.test_health_report_returns_status_objects": [],
+      "ObservationBrokerHealthTests.test_trace_digest_returns_entries": [],
+      "test_health_report_returns_status_objects": [],
+      "test_trace_digest_returns_entries": [],
+      "RuntimeTelemetryIngestorTests": [],
+      "RuntimeTelemetryIngestorTests.setUp": [],
+      "RuntimeTelemetryIngestorTests.test_collect_summarizes_resource_statistics": [],
+      "RuntimeTelemetryIngestorTests.test_trace_digest_exposes_summary_metadata": [],
+      "RuntimeTelemetryIngestorTests.test_status_detail_reports_last_update": [],
+      "setUp": [],
+      "test_collect_summarizes_resource_statistics": [],
+      "test_trace_digest_exposes_summary_metadata": [],
+      "test_status_detail_reports_last_update": [],
+      "test_hardening": [],
+      "LogosAgiAdapterTests": [],
+      "LogosAgiAdapterTests.setUp": [],
+      "LogosAgiAdapterTests.tearDown": [],
+      "LogosAgiAdapterTests.test_persistence_verification": [],
+      "LogosAgiAdapterTests.test_adapter_health_reporting": [],
+      "LogosAgiAdapterTests.test_real_api_integration": [],
+      "tearDown": [],
+      "test_persistence_verification": [],
+      "test_adapter_health_reporting": [],
+      "test_real_api_integration": [],
+      "_FallbackBayesianDataHandler": [],
+      "_FallbackBayesianDataHandler._load_dataframe": [],
+      "_FallbackBayesianDataHandler.regression_analysis": [],
+      "_FallbackBayesianDataHandler.partial_correlation_analysis": [],
+      "_load_dataframe": [],
+      "regression_analysis": [],
+      "partial_correlation_analysis": [],
+      "StatsInterfaceUnavailable": [],
+      "linear_regression": [],
+      "logistic_regression": [],
+      "partial_correlation": [],
+      "TestBayesianDataHandler": [],
+      "TestBayesianDataHandler.setUp": [],
+      "TestBayesianDataHandler.tearDown": [],
+      "TestBayesianDataHandler._seed_predictions": [],
+      "TestBayesianDataHandler.test_linear_regression_analysis": [],
+      "TestBayesianDataHandler.test_logistic_regression_analysis": [],
+      "TestBayesianDataHandler.test_partial_correlation_analysis": [],
+      "TestBayesianDataHandler.test_missing_columns_raise": [],
+      "_seed_predictions": [],
+      "test_linear_regression_analysis": [],
+      "test_logistic_regression_analysis": [],
+      "test_partial_correlation_analysis": [],
+      "test_missing_columns_raise": [],
+      "test_pai": [],
+      "run_test": [],
+      "test_run_simulation_stub_writes_to_custom_log_dir": [],
+      "test_fresh_start": [],
+      "test_continuity": [],
+      "test_capability_updates": [],
+      "test_policy_blocking": [],
+      "run_all_tests": []
+    },
+    "spine_binding": {
+      "f": [
+        "UNMAPPED"
+      ],
+      "f_inv": [
+        "UNMAPPED"
+      ],
+      "g": [
+        "UNMAPPED"
+      ],
+      "g_inv": [
+        "UNMAPPED"
+      ],
+      "TestOntologicalPrimitive": [
+        "UNMAPPED"
+      ],
+      "TestOntologicalPrimitive.__repr__": [
+        "UNMAPPED"
+      ],
+      "TestOntologicalPrimitive.__eq__": [
+        "UNMAPPED"
+      ],
+      "TestOntologicalPrimitive.__hash__": [
+        "UNMAPPED"
+      ],
+      "__repr__": [
+        "UNMAPPED"
+      ],
+      "__eq__": [
+        "UNMAPPED"
+      ],
+      "__hash__": [
+        "UNMAPPED"
+      ],
+      "TestDualBijectiveSystem": [
+        "UNMAPPED"
+      ],
+      "TestDualBijectiveSystem.biject_A": [
+        "UNMAPPED"
+      ],
+      "TestDualBijectiveSystem.biject_B": [
+        "UNMAPPED"
+      ],
+      "TestDualBijectiveSystem.commute": [
+        "UNMAPPED"
+      ],
+      "TestDualBijectiveSystem.validate_ontological_consistency": [
+        "UNMAPPED"
+      ],
+      "TestDualBijectiveSystem.get_concept_strength": [
+        "UNMAPPED"
+      ],
+      "TestDualBijectiveSystem.compute_ontological_distance": [
+        "UNMAPPED"
+      ],
+      "TestDualBijectiveSystem.find_related_concepts": [
+        "UNMAPPED"
+      ],
+      "biject_A": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "biject_B": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "commute": [
+        "UNMAPPED"
+      ],
+      "validate_ontological_consistency": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "get_concept_strength": [
+        "UNMAPPED"
+      ],
+      "compute_ontological_distance": [
+        "UNMAPPED"
+      ],
+      "find_related_concepts": [
+        "UNMAPPED"
+      ],
+      "test_dual_bijection_system": [
+        "UNMAPPED"
+      ],
+      "FractalOrbitDemonstrator": [
+        "UNMAPPED"
+      ],
+      "FractalOrbitDemonstrator.run_full_demonstration": [
+        "UNMAPPED"
+      ],
+      "FractalOrbitDemonstrator.demonstrate_stable_prediction": [
+        "UNMAPPED"
+      ],
+      "FractalOrbitDemonstrator.demonstrate_chaotic_analysis": [
+        "UNMAPPED"
+      ],
+      "FractalOrbitDemonstrator.demonstrate_pattern_recognition": [
+        "UNMAPPED"
+      ],
+      "FractalOrbitDemonstrator.demonstrate_cross_domain_prediction": [
+        "UNMAPPED"
+      ],
+      "FractalOrbitDemonstrator.demonstrate_real_time_analysis": [
+        "UNMAPPED"
+      ],
+      "FractalOrbitDemonstrator._create_domain_pattern": [
+        "UNMAPPED"
+      ],
+      "run_full_demonstration": [
+        "UNMAPPED"
+      ],
+      "demonstrate_stable_prediction": [
+        "UNMAPPED"
+      ],
+      "demonstrate_chaotic_analysis": [
+        "UNMAPPED"
+      ],
+      "demonstrate_pattern_recognition": [
+        "UNMAPPED"
+      ],
+      "demonstrate_cross_domain_prediction": [
+        "UNMAPPED"
+      ],
+      "demonstrate_real_time_analysis": [
+        "UNMAPPED"
+      ],
+      "_create_domain_pattern": [
+        "UNMAPPED"
+      ],
+      "main": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "demonstrate_resurrection_s2_operator": [
+        "UNMAPPED"
+      ],
+      "_write_persisted_identity": [
+        "UNMAPPED"
+      ],
+      "_make_fake_consciousness_module": [
+        "UNMAPPED"
+      ],
+      "SafeConsciousnessEvolution": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SafeConsciousnessEvolution.compute_consciousness_vector": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SafeConsciousnessEvolution.evaluate_consciousness_emergence": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "compute_consciousness_vector": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "evaluate_consciousness_emergence": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "test_emergence_uses_persisted_identity": [
+        "UNMAPPED"
+      ],
+      "_clear_connector_log": [
+        "UNMAPPED"
+      ],
+      "_clear_persisted_identity": [
+        "UNMAPPED"
+      ],
+      "_read_connector_log": [
+        "UNMAPPED"
+      ],
+      "_import_bridge": [
+        "UNMAPPED"
+      ],
+      "test_connectors_blocked_when_no_identity": [
+        "UNMAPPED"
+      ],
+      "test_connectors_allowed_after_identity": [
+        "UNMAPPED"
+      ],
+      "test_registry_process_step_success": [
+        "UNMAPPED"
+      ],
+      "dummy_handler": [
+        "UNMAPPED"
+      ],
+      "test_response_formatter_basic": [
+        "UNMAPPED"
+      ],
+      "get_logos_core": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "evaluate_modal": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "chat_with_logos": [
+        "UNMAPPED"
+      ],
+      "voice_to_text": [
+        "UNMAPPED"
+      ],
+      "get_system_diagnostics": [
+        "UNMAPPED"
+      ],
+      "create_demo_gui": [
+        "UNMAPPED"
+      ],
+      "respond": [
+        "UNMAPPED"
+      ],
+      "clear_chat": [
+        "UNMAPPED"
+      ],
+      "process_voice": [
+        "UNMAPPED"
+      ],
+      "update_monitor": [
+        "UNMAPPED"
+      ],
+      "demo_ml_integration": [
+        "UNMAPPED"
+      ],
+      "demo_nlp_embeddings": [
+        "UNMAPPED"
+      ],
+      "cosine_similarity": [
+        "UNMAPPED"
+      ],
+      "demo_graph_reasoning": [
+        "UNMAPPED"
+      ],
+      "demo_kalman_filtering": [
+        "UNMAPPED"
+      ],
+      "demo_pytorch_tensors": [
+        "UNMAPPED"
+      ],
+      "demo_integrated_system": [
+        "UNMAPPED"
+      ],
+      "ProductionValidator": [
+        "UNMAPPED"
+      ],
+      "ProductionValidator.log_test": [
+        "UNMAPPED"
+      ],
+      "ProductionValidator.test_docker_services": [
+        "UNMAPPED"
+      ],
+      "ProductionValidator.test_service_health": [
+        "UNMAPPED"
+      ],
+      "ProductionValidator.test_api_endpoints": [
+        "UNMAPPED"
+      ],
+      "ProductionValidator.test_configuration_files": [
+        "UNMAPPED"
+      ],
+      "ProductionValidator.test_performance_basic": [
+        "UNMAPPED"
+      ],
+      "ProductionValidator.test_monitoring_stack": [
+        "UNMAPPED"
+      ],
+      "ProductionValidator.test_security_basics": [
+        "UNMAPPED"
+      ],
+      "ProductionValidator.generate_report": [
+        "UNMAPPED"
+      ],
+      "ProductionValidator.run_validation": [
+        "UNMAPPED"
+      ],
+      "log_test": [
+        "UNMAPPED"
+      ],
+      "test_docker_services": [
+        "UNMAPPED"
+      ],
+      "test_service_health": [
+        "UNMAPPED"
+      ],
+      "test_api_endpoints": [
+        "UNMAPPED"
+      ],
+      "test_configuration_files": [
+        "UNMAPPED"
+      ],
+      "test_performance_basic": [
+        "UNMAPPED"
+      ],
+      "test_monitoring_stack": [
+        "UNMAPPED"
+      ],
+      "test_security_basics": [
+        "UNMAPPED"
+      ],
+      "generate_report": [
+        "UNMAPPED"
+      ],
+      "run_validation": [
+        "UNMAPPED"
+      ],
+      "TestSelfImprovementCycle": [
+        "UNMAPPED"
+      ],
+      "TestSelfImprovementCycle.temp_workspace": [
+        "UNMAPPED"
+      ],
+      "TestSelfImprovementCycle._create_mock_iels": [
+        "UNMAPPED"
+      ],
+      "TestSelfImprovementCycle.registry_config": [
+        "UNMAPPED"
+      ],
+      "TestSelfImprovementCycle.daemon_config": [
+        "UNMAPPED"
+      ],
+      "TestSelfImprovementCycle.test_multi_cycle_stability": [
+        "UNMAPPED"
+      ],
+      "TestSelfImprovementCycle.test_quality_improvement_cycle": [
+        "UNMAPPED"
+      ],
+      "TestSelfImprovementCycle.test_pruning_mechanism": [
+        "UNMAPPED"
+      ],
+      "TestSelfImprovementCycle.test_telemetry_aggregation": [
+        "UNMAPPED"
+      ],
+      "TestSelfImprovementCycle.test_error_recovery": [
+        "UNMAPPED"
+      ],
+      "TestSelfImprovementCycle.test_resource_bounds": [
+        "UNMAPPED"
+      ],
+      "TestSelfImprovementCycle._register_test_iels": [
+        "UNMAPPED"
+      ],
+      "TestSelfImprovementCycle._create_candidate": [
+        "UNMAPPED"
+      ],
+      "temp_workspace": [
+        "UNMAPPED"
+      ],
+      "_create_mock_iels": [
+        "UNMAPPED"
+      ],
+      "registry_config": [
+        "UNMAPPED"
+      ],
+      "daemon_config": [
+        "UNMAPPED"
+      ],
+      "test_multi_cycle_stability": [
+        "UNMAPPED"
+      ],
+      "test_quality_improvement_cycle": [
+        "UNMAPPED"
+      ],
+      "test_pruning_mechanism": [
+        "UNMAPPED"
+      ],
+      "test_telemetry_aggregation": [
+        "UNMAPPED"
+      ],
+      "test_error_recovery": [
+        "UNMAPPED"
+      ],
+      "test_resource_bounds": [
+        "UNMAPPED"
+      ],
+      "_register_test_iels": [
+        "UNMAPPED"
+      ],
+      "_create_candidate": [
+        "UNMAPPED"
+      ],
+      "TestEndToEndCycle": [
+        "UNMAPPED"
+      ],
+      "TestEndToEndCycle.test_complete_autonomous_cycle": [
+        "UNMAPPED"
+      ],
+      "test_complete_autonomous_cycle": [
+        "UNMAPPED"
+      ],
+      "test_end_to_end_pipeline": [
+        "UNMAPPED"
+      ],
+      "test_component_interfaces": [
+        "UNMAPPED"
+      ],
+      "test_artifacts_validation": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite.log_test_result": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite.test_server_availability": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite.test_pxl_proof_engine": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite.test_performance_monitoring": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite._send_performance_request": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite.test_cache_optimization": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite.test_interoperability_layers": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite._test_pxl_serapi_integration": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite._test_health_endpoint_integration": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite._test_cross_layer_error_handling": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite.test_security_hardening": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite._test_security_configuration": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite._test_input_validation": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite._test_rate_limiting_behavior": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite.calculate_verification_ratio": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite.run_full_integration_suite": [
+        "UNMAPPED"
+      ],
+      "IntegrationTestSuite.save_results": [
+        "UNMAPPED"
+      ],
+      "log_test_result": [
+        "UNMAPPED"
+      ],
+      "test_server_availability": [
+        "UNMAPPED"
+      ],
+      "test_pxl_proof_engine": [
+        "UNMAPPED"
+      ],
+      "test_performance_monitoring": [
+        "UNMAPPED"
+      ],
+      "_send_performance_request": [
+        "UNMAPPED"
+      ],
+      "test_cache_optimization": [
+        "UNMAPPED"
+      ],
+      "test_interoperability_layers": [
+        "UNMAPPED"
+      ],
+      "_test_pxl_serapi_integration": [
+        "UNMAPPED"
+      ],
+      "_test_health_endpoint_integration": [
+        "UNMAPPED"
+      ],
+      "_test_cross_layer_error_handling": [
+        "UNMAPPED"
+      ],
+      "test_security_hardening": [
+        "UNMAPPED"
+      ],
+      "_test_security_configuration": [
+        "UNMAPPED"
+      ],
+      "_test_input_validation": [
+        "UNMAPPED"
+      ],
+      "_test_rate_limiting_behavior": [
+        "UNMAPPED"
+      ],
+      "calculate_verification_ratio": [
+        "UNMAPPED"
+      ],
+      "run_full_integration_suite": [
+        "UNMAPPED"
+      ],
+      "save_results": [
+        "UNMAPPED"
+      ],
+      "test_imports": [
+        "UNMAPPED"
+      ],
+      "test_unified_interface": [
+        "UNMAPPED"
+      ],
+      "test_proof_gate_validation": [
+        "UNMAPPED"
+      ],
+      "run_integration_tests": [
+        "UNMAPPED"
+      ],
+      "_DummyIngestor": [
+        "UNMAPPED"
+      ],
+      "_DummyIngestor.available": [
+        "UNMAPPED"
+      ],
+      "_DummyIngestor.collect": [
+        "UNMAPPED"
+      ],
+      "_DummyIngestor.status_detail": [
+        "UNMAPPED"
+      ],
+      "_DummyIngestor.trace_digest": [
+        "UNMAPPED"
+      ],
+      "available": [
+        "UNMAPPED"
+      ],
+      "collect": [
+        "UNMAPPED"
+      ],
+      "status_detail": [
+        "UNMAPPED"
+      ],
+      "trace_digest": [
+        "UNMAPPED"
+      ],
+      "_write_events": [
+        "UNMAPPED"
+      ],
+      "SimulationEventIngestorTests": [
+        "UNMAPPED"
+      ],
+      "SimulationEventIngestorTests.test_collects_events_into_observation": [
+        "UNMAPPED"
+      ],
+      "test_collects_events_into_observation": [
+        "UNMAPPED"
+      ],
+      "ObservationBrokerHealthTests": [
+        "UNMAPPED"
+      ],
+      "ObservationBrokerHealthTests.test_health_report_returns_status_objects": [
+        "UNMAPPED"
+      ],
+      "ObservationBrokerHealthTests.test_trace_digest_returns_entries": [
+        "UNMAPPED"
+      ],
+      "test_health_report_returns_status_objects": [
+        "UNMAPPED"
+      ],
+      "test_trace_digest_returns_entries": [
+        "UNMAPPED"
+      ],
+      "RuntimeTelemetryIngestorTests": [
+        "UNMAPPED"
+      ],
+      "RuntimeTelemetryIngestorTests.setUp": [
+        "UNMAPPED"
+      ],
+      "RuntimeTelemetryIngestorTests.test_collect_summarizes_resource_statistics": [
+        "UNMAPPED"
+      ],
+      "RuntimeTelemetryIngestorTests.test_trace_digest_exposes_summary_metadata": [
+        "UNMAPPED"
+      ],
+      "RuntimeTelemetryIngestorTests.test_status_detail_reports_last_update": [
+        "UNMAPPED"
+      ],
+      "setUp": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "test_collect_summarizes_resource_statistics": [
+        "UNMAPPED"
+      ],
+      "test_trace_digest_exposes_summary_metadata": [
+        "UNMAPPED"
+      ],
+      "test_status_detail_reports_last_update": [
+        "UNMAPPED"
+      ],
+      "test_hardening": [
+        "UNMAPPED"
+      ],
+      "LogosAgiAdapterTests": [
+        "UNMAPPED"
+      ],
+      "LogosAgiAdapterTests.setUp": [
+        "UNMAPPED"
+      ],
+      "LogosAgiAdapterTests.tearDown": [
+        "UNMAPPED"
+      ],
+      "LogosAgiAdapterTests.test_persistence_verification": [
+        "UNMAPPED"
+      ],
+      "LogosAgiAdapterTests.test_adapter_health_reporting": [
+        "UNMAPPED"
+      ],
+      "LogosAgiAdapterTests.test_real_api_integration": [
+        "UNMAPPED"
+      ],
+      "tearDown": [
+        "UNMAPPED"
+      ],
+      "test_persistence_verification": [
+        "UNMAPPED"
+      ],
+      "test_adapter_health_reporting": [
+        "UNMAPPED"
+      ],
+      "test_real_api_integration": [
+        "UNMAPPED"
+      ],
+      "_FallbackBayesianDataHandler": [
+        "UNMAPPED"
+      ],
+      "_FallbackBayesianDataHandler._load_dataframe": [
+        "UNMAPPED"
+      ],
+      "_FallbackBayesianDataHandler.regression_analysis": [
+        "UNMAPPED"
+      ],
+      "_FallbackBayesianDataHandler.partial_correlation_analysis": [
+        "UNMAPPED"
+      ],
+      "_load_dataframe": [
+        "UNMAPPED"
+      ],
+      "regression_analysis": [
+        "UNMAPPED"
+      ],
+      "partial_correlation_analysis": [
+        "UNMAPPED"
+      ],
+      "StatsInterfaceUnavailable": [
+        "UNMAPPED"
+      ],
+      "linear_regression": [
+        "UNMAPPED"
+      ],
+      "logistic_regression": [
+        "UNMAPPED"
+      ],
+      "partial_correlation": [
+        "UNMAPPED"
+      ],
+      "TestBayesianDataHandler": [
+        "UNMAPPED"
+      ],
+      "TestBayesianDataHandler.setUp": [
+        "UNMAPPED"
+      ],
+      "TestBayesianDataHandler.tearDown": [
+        "UNMAPPED"
+      ],
+      "TestBayesianDataHandler._seed_predictions": [
+        "UNMAPPED"
+      ],
+      "TestBayesianDataHandler.test_linear_regression_analysis": [
+        "UNMAPPED"
+      ],
+      "TestBayesianDataHandler.test_logistic_regression_analysis": [
+        "UNMAPPED"
+      ],
+      "TestBayesianDataHandler.test_partial_correlation_analysis": [
+        "UNMAPPED"
+      ],
+      "TestBayesianDataHandler.test_missing_columns_raise": [
+        "UNMAPPED"
+      ],
+      "_seed_predictions": [
+        "UNMAPPED"
+      ],
+      "test_linear_regression_analysis": [
+        "UNMAPPED"
+      ],
+      "test_logistic_regression_analysis": [
+        "UNMAPPED"
+      ],
+      "test_partial_correlation_analysis": [
+        "UNMAPPED"
+      ],
+      "test_missing_columns_raise": [
+        "UNMAPPED"
+      ],
+      "test_pai": [
+        "UNMAPPED"
+      ],
+      "run_test": [
+        "UNMAPPED"
+      ],
+      "test_run_simulation_stub_writes_to_custom_log_dir": [
+        "UNMAPPED"
+      ],
+      "test_fresh_start": [
+        "UNMAPPED"
+      ],
+      "test_continuity": [
+        "UNMAPPED"
+      ],
+      "test_capability_updates": [
+        "UNMAPPED"
+      ],
+      "test_policy_blocking": [
+        "UNMAPPED"
+      ],
+      "run_all_tests": [
+        "UNMAPPED"
+      ]
+    }
+  }
+}

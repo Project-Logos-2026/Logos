@@ -1,0 +1,90 @@
+{
+  "contract": "Priority-1 Active Interaction Execution Contract",
+  "status": "AUTHORITATIVE \u00b7 NON-BYPASSABLE",
+  "spine_step": "P1_ACTIVE_INTERACTION",
+  "priority": "P1",
+  "scope": "User-facing, bounded interaction mode",
+  "ordering_guarantee": [
+    "LOGOS_AGENT_READY",
+    "PASSIVE_RUNTIME_INITIALIZATION_COMPLETE",
+    "P1_ACTIVE_INTERACTION_AVAILABLE"
+  ],
+  "mode_semantics": {
+    "P1_active": {
+      "user_input": "allowed",
+      "external_io": "allowed_via_logos_only",
+      "priority": "highest",
+      "preempts": [
+        "P2_passive"
+      ],
+      "bounded": true
+    }
+  },
+  "identity_invariants": {
+    "identity_state": "FROZEN",
+    "explicit_prohibitions": [
+      "identity_issuance",
+      "identity_derivation",
+      "identity_rebinding",
+      "hash_rotation",
+      "authority_escalation"
+    ]
+  },
+  "permissions": {
+    "LOGOS_AGENT": [
+      "accept_user_input",
+      "invoke_routing_surfaces (Phase-I)",
+      "invoke_enrichment_protocols via routing",
+      "read_write Cognitive_State_Protocol",
+      "emit_user_facing_output",
+      "emit_audit_events"
+    ],
+    "I1_I2_I3": [
+      "produce_enrichment_deltas when invoked by LOGOS only",
+      "read_only Cognitive_State_Protocol"
+    ],
+    "SOP": [
+      "diagnostics_only",
+      "no_user_io",
+      "no_memory_access"
+    ]
+  },
+  "explicit_prohibitions": [
+    "protocol_activation",
+    "passive_task_execution",
+    "background_jobs",
+    "learning",
+    "long_running_tasks",
+    "agent_autonomy",
+    "agent_to_agent_communication",
+    "external_io_bypass"
+  ],
+  "smp_alignment": {
+    "governing_schema": "SMP_Pipeline_Governance_Addendum.schema.json",
+    "governing_policy": "SMP_Pipeline_Governance_Addendum.policy.json",
+    "rule": "All P1 artifacts must pass SMP verification before output."
+  },
+  "interaction_bounds": {
+    "single_user_turn": true,
+    "no_reentrancy": true,
+    "must_terminate": true,
+    "termination_triggers": [
+      "response_emitted",
+      "policy_violation",
+      "timeout"
+    ]
+  },
+  "filesystem_constraints": {
+    "write_scope": "Logos_System_Rebuild",
+    "violation": "immediate_halt"
+  },
+  "failure_semantics": {
+    "mode": "FAIL_CLOSED",
+    "on_violation": [
+      "halt_interaction",
+      "emit_audit_event",
+      "return_error_to_user"
+    ]
+  },
+  "p2_pause_requirement": "Passive operations must be paused before P1 begins."
+}

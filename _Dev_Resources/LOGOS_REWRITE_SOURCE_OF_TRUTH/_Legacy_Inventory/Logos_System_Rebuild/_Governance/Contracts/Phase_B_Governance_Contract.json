@@ -1,0 +1,20 @@
+{
+  "contract": "Phase-B Governance Contract",
+  "status": "AUTHORITATIVE · DECLARATIVE",
+  "phase": "Phase-B",
+  "role": "governance_declaration",
+  "enforcement": "non-executable",
+  "scope": "Normalization and Canonicalization",
+  "guarantees": [
+    "All rewritten files follow canonical naming conventions",
+    "All rewritten files include required module headers",
+    "No silent mutation of semantics during normalization",
+    "All changes are auditable and attributable"
+  ],
+  "prohibitions": [
+    "Headerless rewritten modules",
+    "Implicit or undocumented rewrites",
+    "Non-canonical naming in governed code"
+  ],
+  "failure_semantics": "DECLARATIVE_ONLY"
+}

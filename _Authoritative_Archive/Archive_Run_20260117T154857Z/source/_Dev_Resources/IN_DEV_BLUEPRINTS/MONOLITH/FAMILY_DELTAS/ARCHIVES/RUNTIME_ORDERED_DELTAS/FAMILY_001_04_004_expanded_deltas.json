@@ -1,0 +1,327 @@
+{
+  "family_id": "FAMILY_004",
+  "shared_semantics": [
+    "LEGACY_OR_QUARANTINED",
+    "ORCHESTRATION",
+    "TEST_OR_EXAMPLE"
+  ],
+  "shared_spine_phase": null,
+  "shared_execution_role": null,
+  "analysis_coverage": {
+    "members_total": 2,
+    "members_extracted": 2,
+    "members_missing_profile": 0,
+    "members_missing_source": 0,
+    "parse_failures": 0
+  },
+  "members": [
+    {
+      "qualified_name": "_jsonable",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_logos_runtime_phase2_smoke.py",
+      "source_hash": "4eea30b91e3abae84b27088e35fe35fac4e8a901173ce793cd2256e8578c29a6",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "x"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "Any",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": true,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 3,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "_jsonable",
+          "asdict",
+          "is_dataclass",
+          "isinstance",
+          "x.items"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "main",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/test_logos_runtime_phase2_smoke.py",
+      "source_hash": "9645cfb2816af4e3ebbeb0dbb78fa677c1ed896ae2120d8d26fae85738cbe8f8",
+      "kind": "function",
+      "signature": {
+        "args": [],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "int",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 4,
+        "branches": {
+          "if": 16,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [
+          "SystemExit"
+        ],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 1
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [
+          "json.dumps"
+        ],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [
+          "os.environ.get"
+        ],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": true,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "DefaultSOPPolicyEngine",
+          "SOPContext",
+          "SystemExit",
+          "_jsonable",
+          "any",
+          "asdict",
+          "build_smp",
+          "d.get",
+          "engine.evaluate",
+          "getattr",
+          "hasattr",
+          "is_dataclass",
+          "isinstance",
+          "json.dumps",
+          "list",
+          "os.environ.get",
+          "print",
+          "rs.get",
+          "run_logos_cycle",
+          "smp.to_dict",
+          "str"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "TEST_OR_EXAMPLE",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    }
+  ],
+  "invariants": {
+    "signature.varargs": false,
+    "signature.kwargs": false,
+    "signature.decorators": [],
+    "control_flow.except_handlers": [],
+    "nondeterminism_flags.uses_time": false,
+    "nondeterminism_flags.uses_random": false,
+    "nondeterminism_flags.uses_threading_or_async": false,
+    "mutations.writes_globals": false,
+    "mutations.writes_self_attrs": false,
+    "mutations.mutates_args_possible": false,
+    "mutations.writes_files_possible": false,
+    "mutations.network_side_effect_possible": false,
+    "observed_calls.fs_calls": [],
+    "observed_calls.net_calls": [],
+    "observed_calls.proc_calls": [],
+    "semantic_profile_overlay.operation_type": [
+      "TRANSFORMATION"
+    ],
+    "semantic_profile_overlay.data_role": []
+  },
+  "divergences": {
+    "signature.args": {
+      "_jsonable": [
+        "x"
+      ],
+      "main": []
+    },
+    "signature.returns_annotation": {
+      "_jsonable": "Any",
+      "main": "int"
+    },
+    "control_flow.has_recursion_self_call": {
+      "_jsonable": true,
+      "main": false
+    },
+    "control_flow.loop_counts": {
+      "_jsonable": {
+        "for": 0,
+        "while": 0
+      },
+      "main": {
+        "for": 1,
+        "while": 0
+      }
+    },
+    "control_flow.max_nesting_depth": {
+      "_jsonable": 1,
+      "main": 4
+    },
+    "control_flow.branches": {
+      "_jsonable": {
+        "if": 3,
+        "match": 0,
+        "try": 0
+      },
+      "main": {
+        "if": 16,
+        "match": 0,
+        "try": 0
+      }
+    },
+    "control_flow.raises": {
+      "_jsonable": [],
+      "main": [
+        "SystemExit"
+      ]
+    },
+    "nondeterminism_flags.uses_os_env": {
+      "_jsonable": false,
+      "main": true
+    },
+    "observed_calls.serial_calls": {
+      "_jsonable": [],
+      "main": [
+        "json.dumps"
+      ]
+    },
+    "semantic_profile_overlay.semantic_tags": {
+      "_jsonable": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "main": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ]
+    },
+    "semantic_profile_overlay.control_role": {
+      "_jsonable": [
+        "RUNTIME_CONTROL"
+      ],
+      "main": [
+        "BOOT_CONTROL"
+      ]
+    },
+    "semantic_profile_overlay.spine_binding": {
+      "_jsonable": [
+        "UNMAPPED"
+      ],
+      "main": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ]
+    }
+  },
+  "conflicts": {},
+  "runtime_order_id": "FAMILY_001_04",
+  "runtime_spine_phase": "UNASSIGNED"
+}

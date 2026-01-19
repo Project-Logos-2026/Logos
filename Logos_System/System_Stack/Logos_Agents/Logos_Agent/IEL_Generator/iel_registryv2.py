@@ -1,18 +1,34 @@
-#!/usr/bin/env python3
-# LOGOS SYSTEM FILE HEADER
-# LOGOS_HEADER: v1
-# updated_utc: 2026-01-15T07:28:00Z
-# path: /workspaces/Logos_System/Logos_System/System_Stack/Advanced_Reasoning_Protocol/iel_toolkit/iel_registry.py
-# role: dev_tool
-# phase: audit_normalize
-# origin: ARP_IEL
-# intended_bucket: REWRITE_PROMOTE
-# side_effects: none
-# entrypoints: module
-# depends_on: os
-# abbreviations: IEL=Internal Emergent Logic
-# notes: Header added for semantic audit; filename kept as-is to avoid import breakage.
-# END_LOGOS_HEADER
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
+
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: iel_registryv2
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Logos_Agents/Logos_Agent/IEL_Generator/iel_registryv2.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
 
 """
 

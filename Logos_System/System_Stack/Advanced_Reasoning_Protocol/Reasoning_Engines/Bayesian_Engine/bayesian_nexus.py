@@ -1,20 +1,35 @@
-# MODULE_META:
-#   module_id: BAYESIAN_NEXUS
-#   layer: APPLICATION_FUNCTION
-#   role: Bayesian nexus adapter
-#   phase_origin: PHASE_SCOPING_STUB
-#   description: Stub metadata for Bayesian nexus adapter (header placeholder).
-#   contracts: []
-#   allowed_imports: []
-#   prohibited_behaviors: [IO, NETWORK, TIME, RANDOM]
-#   entrypoints: [run]
-#   callable_surface: APPLICATION
-#   state_mutation: NONE
-#   runtime_spine_binding: NONE
-#   depends_on_contexts: []
-#   invoked_by: []
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
 
-# bayesian_nexus.py
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: bayesian_nexus
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Advanced_Reasoning_Protocol/Reasoning_Engines/Bayesian_Engine/bayesian_nexus.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
+
 """
 bayesian_nexus.py
 
@@ -24,11 +39,51 @@ import json
 import traceback
 from typing import Dict, List
 
-from .bayes_update_real_time import resolve_priors_path, run_BERT_pipeline
-from .bayesian_inferencer import BayesianTrinityInferencer
-from .bayesian_recursion import BayesianMLModel
-from .hierarchical_bayes_network import execute_HBN
-# from .mcmc_engine import example_model, run_mcmc_model
+# Optional dependency guards for ARP Bayesian stack.
+try:
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayes_update_real_time import (  # type: ignore
+        resolve_priors_path,
+        run_BERT_pipeline,
+    )
+except ImportError:  # pragma: no cover - stub for import hygiene
+    def resolve_priors_path(*_args, **_kwargs):
+        raise ImportError("bayes_update_real_time is not available")
+
+    def run_BERT_pipeline(*_args, **_kwargs):
+        raise ImportError("bayes_update_real_time is not available")
+
+try:
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayesian_inferencer import (  # type: ignore
+        BayesianTrinityInferencer,
+    )
+except ImportError:  # pragma: no cover - stub for import hygiene
+    class BayesianTrinityInferencer:  # minimal placeholder
+        def __init__(self, *_args, **_kwargs):
+            raise ImportError("bayesian_inferencer is not available")
+
+        def infer(self, *_args, **_kwargs):
+            raise ImportError("bayesian_inferencer is not available")
+
+try:
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.bayesian_recursion import (  # type: ignore
+        BayesianMLModel,
+    )
+except ImportError:  # pragma: no cover - stub for import hygiene
+    class BayesianMLModel:  # minimal placeholder
+        def __init__(self, *_args, **_kwargs):
+            raise ImportError("bayesian_recursion is not available")
+
+        def update_belief(self, *_args, **_kwargs):
+            raise ImportError("bayesian_recursion is not available")
+
+try:
+    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.hierarchical_bayes_network import (  # type: ignore
+        execute_HBN,
+    )
+except ImportError:  # pragma: no cover - stub for import hygiene
+    def execute_HBN(*_args, **_kwargs):
+        raise ImportError("hierarchical_bayes_network is not available")
+# from Logos_System.System_Stack.Advanced_Reasoning_Protocol.mcmc_engine import example_model, run_mcmc_model
 
 
 class BayesianNexus:

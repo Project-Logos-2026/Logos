@@ -1,0 +1,49 @@
+{
+  "contract_name": "Agent_Grounding_Projection_Contract",
+  "contract_version": "v1.0",
+  "phase": "Phase-F",
+  "status": "AUTHORITATIVE",
+  "scope": [
+    "All agents",
+    "All agent boot sequences",
+    "All projection loaders",
+    "All SOP governance enforcement"
+  ],
+  "description": "System-wide governance contract defining mandatory agent grounding projections, authority boundaries, and fail-closed enforcement rules.",
+  "requirements": {
+    "projection_required": true,
+    "single_projection_per_agent": true,
+    "schema_enforced": "Agent_Projection_Schema.json",
+    "hash_verification_required": true,
+    "audit_index_required": true
+  },
+  "authority_rules": {
+    "I1": { "protocol": "SCP", "mutation": false },
+    "I2": { "protocol": "MTP", "mutation": false },
+    "I3": { "protocol": "ARP", "mutation": false },
+    "LOGOS": {
+      "protocol": "LOGOS_PROTOCOL",
+      "mutation": true,
+      "sop_access": "read_write",
+      "iel_authoring": true,
+      "system_module_authoring": true
+    }
+  },
+  "prohibitions": [
+    "Agents may not operate without a projection",
+    "Agents may not modify projections",
+    "Projections may not introduce ontology or epistemology",
+    "Silent authority escalation is forbidden"
+  ],
+  "failure_semantics": {
+    "missing_projection": "hard_fail",
+    "hash_mismatch": "hard_fail",
+    "schema_violation": "hard_fail",
+    "unauthorized_mutation": "system_fault"
+  },
+  "audit": {
+    "change_control": "versioned_only",
+    "review_required": true,
+    "logs_to": "_reports/"
+  }
+}

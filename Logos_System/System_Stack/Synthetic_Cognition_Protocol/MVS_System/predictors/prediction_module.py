@@ -1,4 +1,34 @@
-# prediction_module.py
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
+
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: prediction_module
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: System_Stack/Synthetic_Cognition_Protocol/MVS_System/predictors/prediction_module.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
 
 from typing import List, Optional, Dict, Any
 try:
@@ -19,7 +49,7 @@ except ImportError:  # pragma: no cover - fallback to direct relative path
         OntologicalNode,
     )
 
-from .modal_support import get_thonoc_verifier
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.modal_support import get_thonoc_verifier
 
 ThonocVerifier = get_thonoc_verifier()
 import time

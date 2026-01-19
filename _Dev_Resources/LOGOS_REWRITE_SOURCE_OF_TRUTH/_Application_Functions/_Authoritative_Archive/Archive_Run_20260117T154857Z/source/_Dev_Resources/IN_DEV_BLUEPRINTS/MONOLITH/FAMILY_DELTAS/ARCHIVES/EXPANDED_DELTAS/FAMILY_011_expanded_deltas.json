@@ -1,0 +1,4215 @@
+{
+  "family_id": "FAMILY_011",
+  "shared_semantics": [
+    "BOOTSTRAP",
+    "LEGACY_OR_QUARANTINED",
+    "ORCHESTRATION"
+  ],
+  "shared_spine_phase": null,
+  "shared_execution_role": null,
+  "analysis_coverage": {
+    "members_total": 35,
+    "members_extracted": 35,
+    "members_missing_profile": 0,
+    "members_missing_source": 0,
+    "parse_failures": 0
+  },
+  "members": [
+    {
+      "qualified_name": "_FallbackSharedResources.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/stress_sop_runtime.py",
+      "source_hash": "aa808a41a740efcafd41f597081c39353f8b8d7434b414036f61cee30e556627",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/stress_sop_runtime.py",
+      "source_hash": "aa808a41a740efcafd41f597081c39353f8b8d7434b414036f61cee30e556627",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "NexusManager.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/nexus_manager.py",
+      "source_hash": "f78c16d589363dce7c1e6c435df7bd27965583ac4eadab4af9e5665f62c959dc",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "max_sessions",
+          "ttl_seconds"
+        ],
+        "defaults_count": 2,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/LEGACY_SCRIPTS_TO_EXAMINE/nexus_manager.py",
+      "source_hash": "f78c16d589363dce7c1e6c435df7bd27965583ac4eadab4af9e5665f62c959dc",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "max_sessions",
+          "ttl_seconds"
+        ],
+        "defaults_count": 2,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "MemoryTrace.__post_init__",
+      "file": "/workspaces/Logos_System/Logos_System/TO_BE_INTEGRATED/memory/Logos_Memory_Nexus.py",
+      "source_hash": "acedf81d730f0307655781a7fa9a1157bc30738dc49ea0a9fd128a59b305073b",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 1,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "self._generate_pattern_key"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [
+          "MEMORY"
+        ],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__post_init__",
+      "file": "/workspaces/Logos_System/Logos_System/TO_BE_INTEGRATED/memory/Logos_Memory_Nexus.py",
+      "source_hash": "acedf81d730f0307655781a7fa9a1157bc30738dc49ea0a9fd128a59b305073b",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 1,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "self._generate_pattern_key"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "MemoryConsolidator.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/TO_BE_INTEGRATED/memory/Logos_Memory_Nexus.py",
+      "source_hash": "1ad1b6de666848ad305d634507bc774a86a70f405dc845757797e755632a064a",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "compression_ratio"
+        ],
+        "defaults_count": 1,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AbstractionEngine",
+          "EpisodicCompressor",
+          "MemoryIndex",
+          "SemanticCompressor",
+          "deque"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [
+          "MEMORY"
+        ],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/TO_BE_INTEGRATED/memory/Logos_Memory_Nexus.py",
+      "source_hash": "1ad1b6de666848ad305d634507bc774a86a70f405dc845757797e755632a064a",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "compression_ratio"
+        ],
+        "defaults_count": 1,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AbstractionEngine",
+          "EpisodicCompressor",
+          "MemoryIndex",
+          "SemanticCompressor",
+          "deque"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "MemoryRecallSystem.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/TO_BE_INTEGRATED/memory/Logos_Memory_Nexus.py",
+      "source_hash": "540402d7c354a9d2feab19dd7714ecfb5f61efb3061c413739bcdddaf63bf109",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "memory_store"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "MemoryReconstructor",
+          "deque"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [
+          "MEMORY"
+        ],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/TO_BE_INTEGRATED/memory/Logos_Memory_Nexus.py",
+      "source_hash": "540402d7c354a9d2feab19dd7714ecfb5f61efb3061c413739bcdddaf63bf109",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "compression_ratio"
+        ],
+        "defaults_count": 1,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AbstractionEngine",
+          "EpisodicCompressor",
+          "MemoryIndex",
+          "SemanticCompressor",
+          "deque"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "AbstractionEngine.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/TO_BE_INTEGRATED/memory/Logos_Memory_Nexus.py",
+      "source_hash": "237aeb3efc6f2b4f038eb285972e11a7915df659ed019090c620007f88b0515a",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "defaultdict"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [
+          "MEMORY"
+        ],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/TO_BE_INTEGRATED/memory/Logos_Memory_Nexus.py",
+      "source_hash": "237aeb3efc6f2b4f038eb285972e11a7915df659ed019090c620007f88b0515a",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "compression_ratio"
+        ],
+        "defaults_count": 1,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AbstractionEngine",
+          "EpisodicCompressor",
+          "MemoryIndex",
+          "SemanticCompressor",
+          "deque"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "MemoryApplicationSystem.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/TO_BE_INTEGRATED/memory/Logos_Memory_Nexus.py",
+      "source_hash": "6696ee21b0861f5d960f9a610b1bfe13a5dbe3eee5e5e3cc93560a3cafb2c45d",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "memory_store",
+          "abstraction_engine"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AnalogyEngine",
+          "MemoryBasedInference"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [
+          "MEMORY"
+        ],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/TO_BE_INTEGRATED/memory/Logos_Memory_Nexus.py",
+      "source_hash": "6696ee21b0861f5d960f9a610b1bfe13a5dbe3eee5e5e3cc93560a3cafb2c45d",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "compression_ratio"
+        ],
+        "defaults_count": 1,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AbstractionEngine",
+          "EpisodicCompressor",
+          "MemoryIndex",
+          "SemanticCompressor",
+          "deque"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "LivingMemorySystem.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/TO_BE_INTEGRATED/memory/Logos_Memory_Nexus.py",
+      "source_hash": "cc64bc58fe8b8d143b8987eb36231ef0569230215443e73895597dbdb73f4e50",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AbstractionEngine",
+          "ForgettingCurveManager",
+          "MemoryApplicationSystem",
+          "MemoryConsolidationScheduler",
+          "MemoryConsolidator",
+          "MemoryRecallSystem",
+          "MetamemorySystem"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [
+          "MEMORY"
+        ],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/TO_BE_INTEGRATED/memory/Logos_Memory_Nexus.py",
+      "source_hash": "cc64bc58fe8b8d143b8987eb36231ef0569230215443e73895597dbdb73f4e50",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "compression_ratio"
+        ],
+        "defaults_count": 1,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "AbstractionEngine",
+          "EpisodicCompressor",
+          "MemoryIndex",
+          "SemanticCompressor",
+          "deque"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "SOPToken.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "f56c3be92d6906d9a1fc40cf1e5c605a7b265f29c9ff26efb9cf7147e7737044",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "token_type",
+          "protocol",
+          "operation",
+          "requester",
+          "expiration_hours"
+        ],
+        "defaults_count": 1,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "datetime.now"
+        ],
+        "random_calls": [
+          "uuid.uuid4"
+        ],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": true,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "datetime.now",
+          "self._generate_validation_key",
+          "self.created_at.replace",
+          "str",
+          "uuid.uuid4"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "SOPToken.activate",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "4dbc770048007f363c32e683ce27642c0129ed04b34936bcfc338af98184aa30",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "bool",
+        "decorators": [],
+        "docstring_summary": "Activate the token for use",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 1,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "f56c3be92d6906d9a1fc40cf1e5c605a7b265f29c9ff26efb9cf7147e7737044",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "token_type",
+          "protocol",
+          "operation",
+          "requester",
+          "expiration_hours"
+        ],
+        "defaults_count": 1,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "datetime.now"
+        ],
+        "random_calls": [
+          "uuid.uuid4"
+        ],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": true,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "datetime.now",
+          "self._generate_validation_key",
+          "self.created_at.replace",
+          "str",
+          "uuid.uuid4"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "activate",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "4dbc770048007f363c32e683ce27642c0129ed04b34936bcfc338af98184aa30",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "bool",
+        "decorators": [],
+        "docstring_summary": "Activate the token for use",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 1,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": []
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "SystemGap.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "189904b720425d4c922da89a15d634be579075d88b96da85071279333758fd74",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self",
+          "gap_type",
+          "description",
+          "target_file",
+          "priority"
+        ],
+        "defaults_count": 2,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "datetime.now"
+        ],
+        "random_calls": [
+          "uuid.uuid4"
+        ],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": true,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "datetime.now",
+          "str",
+          "uuid.uuid4"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "189904b720425d4c922da89a15d634be579075d88b96da85071279333758fd74",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "token_type",
+          "protocol",
+          "operation",
+          "requester",
+          "expiration_hours"
+        ],
+        "defaults_count": 1,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "datetime.now"
+        ],
+        "random_calls": [
+          "uuid.uuid4"
+        ],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": true,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "datetime.now",
+          "self._generate_validation_key",
+          "self.created_at.replace",
+          "str",
+          "uuid.uuid4"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "SOPNexus.__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "26d1dc6dbcc164b2a9eee17f6186fea2009287f21fda7f3eba0a09d31f23fa68",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": true,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Path",
+          "__init__",
+          "self._initialize_directories",
+          "super"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "SOPNexus._initialize_directories",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "d9e0c2eda41956f687d37e2db659ccd7f030ef92fe8c40071d2dc248d21bfd18",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": "Initialize SOP directory structure",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Path",
+          "directory.mkdir"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "SOPNexus._protocol_specific_initialization",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "b62c3679e8f1005b2337bb3506bd705afc1cd2a3f9033c68078501af09853b2c",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "bool",
+        "decorators": [],
+        "docstring_summary": "SOP-specific initialization",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 1,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": [
+          "Exception"
+        ]
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "logger.error",
+          "logger.info",
+          "self._initialize_file_management",
+          "self._initialize_gap_detection",
+          "self._initialize_token_system",
+          "self._start_background_monitoring"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "SOPNexus._initialize_token_system",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "d1804aa154e75671d26993b0fdb720bcd31444adf8c817858cf1c59f8844d4aa",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": "Initialize token management system",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 3,
+        "branches": {
+          "if": 1,
+          "try": 1,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": [
+          "Exception"
+        ]
+      },
+      "io": {
+        "filesystem_reads": 1,
+        "filesystem_writes": 1,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 1
+      },
+      "observed_calls": {
+        "fs_calls": [
+          "open"
+        ],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [
+          "json.load"
+        ],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": true,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Path",
+          "json.load",
+          "len",
+          "logger.info",
+          "logger.warning",
+          "open",
+          "token_file.exists"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "SOPNexus._initialize_gap_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "8f654db53fa4a030e63ac6f1787c7d1e5e47c0382b6b9811d9cf3cbeccb5d7b6",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": "Initialize gap detection system",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 3,
+        "branches": {
+          "if": 2,
+          "try": 2,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": [
+          "Exception"
+        ]
+      },
+      "io": {
+        "filesystem_reads": 2,
+        "filesystem_writes": 2,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 2
+      },
+      "observed_calls": {
+        "fs_calls": [
+          "open"
+        ],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [
+          "json.load"
+        ],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": true,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Path",
+          "gaps_file.exists",
+          "json.load",
+          "len",
+          "logger.info",
+          "logger.warning",
+          "open",
+          "todo_file.exists"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "SOPNexus._initialize_file_management",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "2072dc51f24b9d217452868a273e90a6d6eb114f40054a38155da3b7fb6f3523",
+      "kind": "method",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": "Initialize file management system",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "len",
+          "list",
+          "logger.info",
+          "self.backup_storage_path.glob",
+          "self.scaffold_library_path.glob"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "__init__",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "26d1dc6dbcc164b2a9eee17f6186fea2009287f21fda7f3eba0a09d31f23fa68",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self",
+          "token_type",
+          "protocol",
+          "operation",
+          "requester",
+          "expiration_hours"
+        ],
+        "defaults_count": 1,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": null,
+        "decorators": [],
+        "docstring_summary": null,
+        "docstring_raw_present": false
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [
+          "datetime.now"
+        ],
+        "random_calls": [
+          "uuid.uuid4"
+        ],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": true,
+        "uses_random": true,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "datetime.now",
+          "self._generate_validation_key",
+          "self.created_at.replace",
+          "str",
+          "uuid.uuid4"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "ENTRYPOINT",
+          "BOOTSTRAP",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+        ]
+      }
+    },
+    {
+      "qualified_name": "_initialize_directories",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "d9e0c2eda41956f687d37e2db659ccd7f030ef92fe8c40071d2dc248d21bfd18",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": "Initialize SOP directory structure",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 1,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Path",
+          "directory.mkdir"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "_protocol_specific_initialization",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "b62c3679e8f1005b2337bb3506bd705afc1cd2a3f9033c68078501af09853b2c",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "bool",
+        "decorators": [],
+        "docstring_summary": "SOP-specific initialization",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 0,
+          "try": 1,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": [
+          "Exception"
+        ]
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "logger.error",
+          "logger.info",
+          "self._initialize_file_management",
+          "self._initialize_gap_detection",
+          "self._initialize_token_system",
+          "self._start_background_monitoring"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "GOVERNANCE",
+          "ORCHESTRATION",
+          "TEST_OR_EXAMPLE"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL",
+          "ALIGNMENT_GUARD"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "_initialize_token_system",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "d1804aa154e75671d26993b0fdb720bcd31444adf8c817858cf1c59f8844d4aa",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": "Initialize token management system",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 3,
+        "branches": {
+          "if": 1,
+          "try": 1,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": [
+          "Exception"
+        ]
+      },
+      "io": {
+        "filesystem_reads": 1,
+        "filesystem_writes": 1,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 1
+      },
+      "observed_calls": {
+        "fs_calls": [
+          "open"
+        ],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [
+          "json.load"
+        ],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": true,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Path",
+          "json.load",
+          "len",
+          "logger.info",
+          "logger.warning",
+          "open",
+          "token_file.exists"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "_initialize_gap_detection",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "8f654db53fa4a030e63ac6f1787c7d1e5e47c0382b6b9811d9cf3cbeccb5d7b6",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": "Initialize gap detection system",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 3,
+        "branches": {
+          "if": 2,
+          "try": 2,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": [
+          "Exception"
+        ]
+      },
+      "io": {
+        "filesystem_reads": 2,
+        "filesystem_writes": 2,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 2
+      },
+      "observed_calls": {
+        "fs_calls": [
+          "open"
+        ],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [
+          "json.load"
+        ],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": true,
+        "mutates_args_possible": false,
+        "writes_files_possible": true,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "Path",
+          "gaps_file.exists",
+          "json.load",
+          "len",
+          "logger.info",
+          "logger.warning",
+          "open",
+          "todo_file.exists"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "AGENT_LOGIC",
+          "ORCHESTRATION"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "PASSIVE_RUNTIME_INITIALIZATION",
+          "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+        ]
+      }
+    },
+    {
+      "qualified_name": "_initialize_file_management",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "2072dc51f24b9d217452868a273e90a6d6eb114f40054a38155da3b7fb6f3523",
+      "kind": "function",
+      "signature": {
+        "args": [
+          "self"
+        ],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "None",
+        "decorators": [],
+        "docstring_summary": "Initialize file management system",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 0,
+        "branches": {
+          "if": 0,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "len",
+          "list",
+          "logger.info",
+          "self.backup_storage_path.glob",
+          "self.scaffold_library_path.glob"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    },
+    {
+      "qualified_name": "initialize_sop_nexus",
+      "file": "/workspaces/Logos_System/Logos_System/System_Stack/System_Operations_Protocol/nexus/legacy_sop_nexus.py",
+      "source_hash": "01885eab819b0a19ddb2307a9f202e57c0d3f9321decaf0f917d2f205f4e4da5",
+      "kind": "function",
+      "signature": {
+        "args": [],
+        "defaults_count": 0,
+        "varargs": false,
+        "kwargs": false,
+        "returns_annotation": "SOPNexus",
+        "decorators": [],
+        "docstring_summary": "Initialize and return SOP Nexus instance",
+        "docstring_raw_present": true
+      },
+      "control_flow": {
+        "has_recursion_self_call": false,
+        "loop_counts": {
+          "for": 0,
+          "while": 0
+        },
+        "max_nesting_depth": 1,
+        "branches": {
+          "if": 1,
+          "try": 0,
+          "match": 0
+        },
+        "raises": [],
+        "except_handlers": []
+      },
+      "io": {
+        "filesystem_reads": 0,
+        "filesystem_writes": 0,
+        "network_calls": 0,
+        "process_calls": 0,
+        "serialization_calls": 0
+      },
+      "observed_calls": {
+        "fs_calls": [],
+        "net_calls": [],
+        "proc_calls": [],
+        "serial_calls": [],
+        "time_calls": [],
+        "random_calls": [],
+        "env_calls": [],
+        "async_calls": []
+      },
+      "nondeterminism_flags": {
+        "uses_time": false,
+        "uses_random": false,
+        "uses_os_env": false,
+        "uses_threading_or_async": false
+      },
+      "mutations": {
+        "writes_globals": false,
+        "writes_self_attrs": false,
+        "mutates_args_possible": false,
+        "writes_files_possible": false,
+        "network_side_effect_possible": false
+      },
+      "dependency_surface": {
+        "external_calls": [
+          "SOPNexus",
+          "logger.error",
+          "logger.info",
+          "sop_nexus.initialize"
+        ]
+      },
+      "semantic_profile_overlay": {
+        "semantic_tags": [
+          "BOOTSTRAP",
+          "ORCHESTRATION",
+          "LEGACY_OR_QUARANTINED"
+        ],
+        "operation_type": [
+          "TRANSFORMATION"
+        ],
+        "data_role": [],
+        "control_role": [
+          "BOOT_CONTROL",
+          "RUNTIME_CONTROL"
+        ],
+        "spine_binding": [
+          "UNMAPPED"
+        ]
+      }
+    }
+  ],
+  "invariants": {
+    "signature.varargs": false,
+    "signature.kwargs": false,
+    "signature.decorators": [],
+    "control_flow.raises": [],
+    "nondeterminism_flags.uses_os_env": false,
+    "nondeterminism_flags.uses_threading_or_async": false,
+    "mutations.writes_globals": false,
+    "mutations.mutates_args_possible": false,
+    "mutations.network_side_effect_possible": false,
+    "observed_calls.net_calls": [],
+    "observed_calls.proc_calls": []
+  },
+  "divergences": {
+    "signature.args": {
+      "_FallbackSharedResources.__init__": [
+        "self"
+      ],
+      "__init__": [
+        "expiration_hours",
+        "operation",
+        "protocol",
+        "requester",
+        "self",
+        "token_type"
+      ],
+      "NexusManager.__init__": [
+        "max_sessions",
+        "self",
+        "ttl_seconds"
+      ],
+      "MemoryTrace.__post_init__": [
+        "self"
+      ],
+      "__post_init__": [
+        "self"
+      ],
+      "MemoryConsolidator.__init__": [
+        "compression_ratio",
+        "self"
+      ],
+      "MemoryRecallSystem.__init__": [
+        "memory_store",
+        "self"
+      ],
+      "AbstractionEngine.__init__": [
+        "self"
+      ],
+      "MemoryApplicationSystem.__init__": [
+        "abstraction_engine",
+        "memory_store",
+        "self"
+      ],
+      "LivingMemorySystem.__init__": [
+        "self"
+      ],
+      "SOPToken.__init__": [
+        "expiration_hours",
+        "operation",
+        "protocol",
+        "requester",
+        "self",
+        "token_type"
+      ],
+      "SOPToken.activate": [
+        "self"
+      ],
+      "activate": [
+        "self"
+      ],
+      "SystemGap.__init__": [
+        "description",
+        "gap_type",
+        "priority",
+        "self",
+        "target_file"
+      ],
+      "SOPNexus.__init__": [
+        "self"
+      ],
+      "SOPNexus._initialize_directories": [
+        "self"
+      ],
+      "SOPNexus._protocol_specific_initialization": [
+        "self"
+      ],
+      "SOPNexus._initialize_token_system": [
+        "self"
+      ],
+      "SOPNexus._initialize_gap_detection": [
+        "self"
+      ],
+      "SOPNexus._initialize_file_management": [
+        "self"
+      ],
+      "_initialize_directories": [
+        "self"
+      ],
+      "_protocol_specific_initialization": [
+        "self"
+      ],
+      "_initialize_token_system": [
+        "self"
+      ],
+      "_initialize_gap_detection": [
+        "self"
+      ],
+      "_initialize_file_management": [
+        "self"
+      ],
+      "initialize_sop_nexus": []
+    },
+    "signature.returns_annotation": {
+      "_FallbackSharedResources.__init__": "None",
+      "__init__": null,
+      "NexusManager.__init__": null,
+      "MemoryTrace.__post_init__": null,
+      "__post_init__": null,
+      "MemoryConsolidator.__init__": null,
+      "MemoryRecallSystem.__init__": null,
+      "AbstractionEngine.__init__": null,
+      "MemoryApplicationSystem.__init__": null,
+      "LivingMemorySystem.__init__": null,
+      "SOPToken.__init__": null,
+      "SOPToken.activate": "bool",
+      "activate": "bool",
+      "SystemGap.__init__": null,
+      "SOPNexus.__init__": null,
+      "SOPNexus._initialize_directories": "None",
+      "SOPNexus._protocol_specific_initialization": "bool",
+      "SOPNexus._initialize_token_system": "None",
+      "SOPNexus._initialize_gap_detection": "None",
+      "SOPNexus._initialize_file_management": "None",
+      "_initialize_directories": "None",
+      "_protocol_specific_initialization": "bool",
+      "_initialize_token_system": "None",
+      "_initialize_gap_detection": "None",
+      "_initialize_file_management": "None",
+      "initialize_sop_nexus": "SOPNexus"
+    },
+    "control_flow.has_recursion_self_call": {
+      "_FallbackSharedResources.__init__": false,
+      "__init__": false,
+      "NexusManager.__init__": false,
+      "MemoryTrace.__post_init__": false,
+      "__post_init__": false,
+      "MemoryConsolidator.__init__": false,
+      "MemoryRecallSystem.__init__": false,
+      "AbstractionEngine.__init__": false,
+      "MemoryApplicationSystem.__init__": false,
+      "LivingMemorySystem.__init__": false,
+      "SOPToken.__init__": false,
+      "SOPToken.activate": false,
+      "activate": false,
+      "SystemGap.__init__": false,
+      "SOPNexus.__init__": true,
+      "SOPNexus._initialize_directories": false,
+      "SOPNexus._protocol_specific_initialization": false,
+      "SOPNexus._initialize_token_system": false,
+      "SOPNexus._initialize_gap_detection": false,
+      "SOPNexus._initialize_file_management": false,
+      "_initialize_directories": false,
+      "_protocol_specific_initialization": false,
+      "_initialize_token_system": false,
+      "_initialize_gap_detection": false,
+      "_initialize_file_management": false,
+      "initialize_sop_nexus": false
+    },
+    "control_flow.loop_counts": {
+      "_FallbackSharedResources.__init__": {
+        "for": 0,
+        "while": 0
+      },
+      "__init__": {
+        "for": 0,
+        "while": 0
+      },
+      "NexusManager.__init__": {
+        "for": 0,
+        "while": 0
+      },
+      "MemoryTrace.__post_init__": {
+        "for": 0,
+        "while": 0
+      },
+      "__post_init__": {
+        "for": 0,
+        "while": 0
+      },
+      "MemoryConsolidator.__init__": {
+        "for": 0,
+        "while": 0
+      },
+      "MemoryRecallSystem.__init__": {
+        "for": 0,
+        "while": 0
+      },
+      "AbstractionEngine.__init__": {
+        "for": 0,
+        "while": 0
+      },
+      "MemoryApplicationSystem.__init__": {
+        "for": 0,
+        "while": 0
+      },
+      "LivingMemorySystem.__init__": {
+        "for": 0,
+        "while": 0
+      },
+      "SOPToken.__init__": {
+        "for": 0,
+        "while": 0
+      },
+      "SOPToken.activate": {
+        "for": 0,
+        "while": 0
+      },
+      "activate": {
+        "for": 0,
+        "while": 0
+      },
+      "SystemGap.__init__": {
+        "for": 0,
+        "while": 0
+      },
+      "SOPNexus.__init__": {
+        "for": 0,
+        "while": 0
+      },
+      "SOPNexus._initialize_directories": {
+        "for": 1,
+        "while": 0
+      },
+      "SOPNexus._protocol_specific_initialization": {
+        "for": 0,
+        "while": 0
+      },
+      "SOPNexus._initialize_token_system": {
+        "for": 0,
+        "while": 0
+      },
+      "SOPNexus._initialize_gap_detection": {
+        "for": 0,
+        "while": 0
+      },
+      "SOPNexus._initialize_file_management": {
+        "for": 0,
+        "while": 0
+      },
+      "_initialize_directories": {
+        "for": 1,
+        "while": 0
+      },
+      "_protocol_specific_initialization": {
+        "for": 0,
+        "while": 0
+      },
+      "_initialize_token_system": {
+        "for": 0,
+        "while": 0
+      },
+      "_initialize_gap_detection": {
+        "for": 0,
+        "while": 0
+      },
+      "_initialize_file_management": {
+        "for": 0,
+        "while": 0
+      },
+      "initialize_sop_nexus": {
+        "for": 0,
+        "while": 0
+      }
+    },
+    "control_flow.max_nesting_depth": {
+      "_FallbackSharedResources.__init__": 0,
+      "__init__": 0,
+      "NexusManager.__init__": 0,
+      "MemoryTrace.__post_init__": 1,
+      "__post_init__": 1,
+      "MemoryConsolidator.__init__": 0,
+      "MemoryRecallSystem.__init__": 0,
+      "AbstractionEngine.__init__": 0,
+      "MemoryApplicationSystem.__init__": 0,
+      "LivingMemorySystem.__init__": 0,
+      "SOPToken.__init__": 0,
+      "SOPToken.activate": 1,
+      "activate": 1,
+      "SystemGap.__init__": 0,
+      "SOPNexus.__init__": 0,
+      "SOPNexus._initialize_directories": 1,
+      "SOPNexus._protocol_specific_initialization": 1,
+      "SOPNexus._initialize_token_system": 3,
+      "SOPNexus._initialize_gap_detection": 3,
+      "SOPNexus._initialize_file_management": 0,
+      "_initialize_directories": 1,
+      "_protocol_specific_initialization": 1,
+      "_initialize_token_system": 3,
+      "_initialize_gap_detection": 3,
+      "_initialize_file_management": 0,
+      "initialize_sop_nexus": 1
+    },
+    "control_flow.branches": {
+      "_FallbackSharedResources.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "NexusManager.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "MemoryTrace.__post_init__": {
+        "if": 1,
+        "match": 0,
+        "try": 0
+      },
+      "__post_init__": {
+        "if": 1,
+        "match": 0,
+        "try": 0
+      },
+      "MemoryConsolidator.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "MemoryRecallSystem.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "AbstractionEngine.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "MemoryApplicationSystem.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "LivingMemorySystem.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "SOPToken.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "SOPToken.activate": {
+        "if": 1,
+        "match": 0,
+        "try": 0
+      },
+      "activate": {
+        "if": 1,
+        "match": 0,
+        "try": 0
+      },
+      "SystemGap.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "SOPNexus.__init__": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "SOPNexus._initialize_directories": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "SOPNexus._protocol_specific_initialization": {
+        "if": 0,
+        "match": 0,
+        "try": 1
+      },
+      "SOPNexus._initialize_token_system": {
+        "if": 1,
+        "match": 0,
+        "try": 1
+      },
+      "SOPNexus._initialize_gap_detection": {
+        "if": 2,
+        "match": 0,
+        "try": 2
+      },
+      "SOPNexus._initialize_file_management": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "_initialize_directories": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "_protocol_specific_initialization": {
+        "if": 0,
+        "match": 0,
+        "try": 1
+      },
+      "_initialize_token_system": {
+        "if": 1,
+        "match": 0,
+        "try": 1
+      },
+      "_initialize_gap_detection": {
+        "if": 2,
+        "match": 0,
+        "try": 2
+      },
+      "_initialize_file_management": {
+        "if": 0,
+        "match": 0,
+        "try": 0
+      },
+      "initialize_sop_nexus": {
+        "if": 1,
+        "match": 0,
+        "try": 0
+      }
+    },
+    "control_flow.except_handlers": {
+      "_FallbackSharedResources.__init__": [],
+      "__init__": [],
+      "NexusManager.__init__": [],
+      "MemoryTrace.__post_init__": [],
+      "__post_init__": [],
+      "MemoryConsolidator.__init__": [],
+      "MemoryRecallSystem.__init__": [],
+      "AbstractionEngine.__init__": [],
+      "MemoryApplicationSystem.__init__": [],
+      "LivingMemorySystem.__init__": [],
+      "SOPToken.__init__": [],
+      "SOPToken.activate": [],
+      "activate": [],
+      "SystemGap.__init__": [],
+      "SOPNexus.__init__": [],
+      "SOPNexus._initialize_directories": [],
+      "SOPNexus._protocol_specific_initialization": [
+        "Exception"
+      ],
+      "SOPNexus._initialize_token_system": [
+        "Exception"
+      ],
+      "SOPNexus._initialize_gap_detection": [
+        "Exception"
+      ],
+      "SOPNexus._initialize_file_management": [],
+      "_initialize_directories": [],
+      "_protocol_specific_initialization": [
+        "Exception"
+      ],
+      "_initialize_token_system": [
+        "Exception"
+      ],
+      "_initialize_gap_detection": [
+        "Exception"
+      ],
+      "_initialize_file_management": [],
+      "initialize_sop_nexus": []
+    },
+    "nondeterminism_flags.uses_time": {
+      "_FallbackSharedResources.__init__": false,
+      "__init__": true,
+      "NexusManager.__init__": false,
+      "MemoryTrace.__post_init__": false,
+      "__post_init__": false,
+      "MemoryConsolidator.__init__": false,
+      "MemoryRecallSystem.__init__": false,
+      "AbstractionEngine.__init__": false,
+      "MemoryApplicationSystem.__init__": false,
+      "LivingMemorySystem.__init__": false,
+      "SOPToken.__init__": true,
+      "SOPToken.activate": false,
+      "activate": false,
+      "SystemGap.__init__": true,
+      "SOPNexus.__init__": false,
+      "SOPNexus._initialize_directories": false,
+      "SOPNexus._protocol_specific_initialization": false,
+      "SOPNexus._initialize_token_system": false,
+      "SOPNexus._initialize_gap_detection": false,
+      "SOPNexus._initialize_file_management": false,
+      "_initialize_directories": false,
+      "_protocol_specific_initialization": false,
+      "_initialize_token_system": false,
+      "_initialize_gap_detection": false,
+      "_initialize_file_management": false,
+      "initialize_sop_nexus": false
+    },
+    "nondeterminism_flags.uses_random": {
+      "_FallbackSharedResources.__init__": false,
+      "__init__": true,
+      "NexusManager.__init__": false,
+      "MemoryTrace.__post_init__": false,
+      "__post_init__": false,
+      "MemoryConsolidator.__init__": false,
+      "MemoryRecallSystem.__init__": false,
+      "AbstractionEngine.__init__": false,
+      "MemoryApplicationSystem.__init__": false,
+      "LivingMemorySystem.__init__": false,
+      "SOPToken.__init__": true,
+      "SOPToken.activate": false,
+      "activate": false,
+      "SystemGap.__init__": true,
+      "SOPNexus.__init__": false,
+      "SOPNexus._initialize_directories": false,
+      "SOPNexus._protocol_specific_initialization": false,
+      "SOPNexus._initialize_token_system": false,
+      "SOPNexus._initialize_gap_detection": false,
+      "SOPNexus._initialize_file_management": false,
+      "_initialize_directories": false,
+      "_protocol_specific_initialization": false,
+      "_initialize_token_system": false,
+      "_initialize_gap_detection": false,
+      "_initialize_file_management": false,
+      "initialize_sop_nexus": false
+    },
+    "mutations.writes_self_attrs": {
+      "_FallbackSharedResources.__init__": true,
+      "__init__": true,
+      "NexusManager.__init__": true,
+      "MemoryTrace.__post_init__": true,
+      "__post_init__": true,
+      "MemoryConsolidator.__init__": true,
+      "MemoryRecallSystem.__init__": true,
+      "AbstractionEngine.__init__": true,
+      "MemoryApplicationSystem.__init__": true,
+      "LivingMemorySystem.__init__": true,
+      "SOPToken.__init__": true,
+      "SOPToken.activate": true,
+      "activate": true,
+      "SystemGap.__init__": true,
+      "SOPNexus.__init__": true,
+      "SOPNexus._initialize_directories": false,
+      "SOPNexus._protocol_specific_initialization": false,
+      "SOPNexus._initialize_token_system": false,
+      "SOPNexus._initialize_gap_detection": true,
+      "SOPNexus._initialize_file_management": false,
+      "_initialize_directories": false,
+      "_protocol_specific_initialization": false,
+      "_initialize_token_system": false,
+      "_initialize_gap_detection": true,
+      "_initialize_file_management": false,
+      "initialize_sop_nexus": false
+    },
+    "mutations.writes_files_possible": {
+      "_FallbackSharedResources.__init__": false,
+      "__init__": false,
+      "NexusManager.__init__": false,
+      "MemoryTrace.__post_init__": false,
+      "__post_init__": false,
+      "MemoryConsolidator.__init__": false,
+      "MemoryRecallSystem.__init__": false,
+      "AbstractionEngine.__init__": false,
+      "MemoryApplicationSystem.__init__": false,
+      "LivingMemorySystem.__init__": false,
+      "SOPToken.__init__": false,
+      "SOPToken.activate": false,
+      "activate": false,
+      "SystemGap.__init__": false,
+      "SOPNexus.__init__": false,
+      "SOPNexus._initialize_directories": false,
+      "SOPNexus._protocol_specific_initialization": false,
+      "SOPNexus._initialize_token_system": true,
+      "SOPNexus._initialize_gap_detection": true,
+      "SOPNexus._initialize_file_management": false,
+      "_initialize_directories": false,
+      "_protocol_specific_initialization": false,
+      "_initialize_token_system": true,
+      "_initialize_gap_detection": true,
+      "_initialize_file_management": false,
+      "initialize_sop_nexus": false
+    },
+    "observed_calls.fs_calls": {
+      "_FallbackSharedResources.__init__": [],
+      "__init__": [],
+      "NexusManager.__init__": [],
+      "MemoryTrace.__post_init__": [],
+      "__post_init__": [],
+      "MemoryConsolidator.__init__": [],
+      "MemoryRecallSystem.__init__": [],
+      "AbstractionEngine.__init__": [],
+      "MemoryApplicationSystem.__init__": [],
+      "LivingMemorySystem.__init__": [],
+      "SOPToken.__init__": [],
+      "SOPToken.activate": [],
+      "activate": [],
+      "SystemGap.__init__": [],
+      "SOPNexus.__init__": [],
+      "SOPNexus._initialize_directories": [],
+      "SOPNexus._protocol_specific_initialization": [],
+      "SOPNexus._initialize_token_system": [
+        "open"
+      ],
+      "SOPNexus._initialize_gap_detection": [
+        "open"
+      ],
+      "SOPNexus._initialize_file_management": [],
+      "_initialize_directories": [],
+      "_protocol_specific_initialization": [],
+      "_initialize_token_system": [
+        "open"
+      ],
+      "_initialize_gap_detection": [
+        "open"
+      ],
+      "_initialize_file_management": [],
+      "initialize_sop_nexus": []
+    },
+    "observed_calls.serial_calls": {
+      "_FallbackSharedResources.__init__": [],
+      "__init__": [],
+      "NexusManager.__init__": [],
+      "MemoryTrace.__post_init__": [],
+      "__post_init__": [],
+      "MemoryConsolidator.__init__": [],
+      "MemoryRecallSystem.__init__": [],
+      "AbstractionEngine.__init__": [],
+      "MemoryApplicationSystem.__init__": [],
+      "LivingMemorySystem.__init__": [],
+      "SOPToken.__init__": [],
+      "SOPToken.activate": [],
+      "activate": [],
+      "SystemGap.__init__": [],
+      "SOPNexus.__init__": [],
+      "SOPNexus._initialize_directories": [],
+      "SOPNexus._protocol_specific_initialization": [],
+      "SOPNexus._initialize_token_system": [
+        "json.load"
+      ],
+      "SOPNexus._initialize_gap_detection": [
+        "json.load"
+      ],
+      "SOPNexus._initialize_file_management": [],
+      "_initialize_directories": [],
+      "_protocol_specific_initialization": [],
+      "_initialize_token_system": [
+        "json.load"
+      ],
+      "_initialize_gap_detection": [
+        "json.load"
+      ],
+      "_initialize_file_management": [],
+      "initialize_sop_nexus": []
+    },
+    "semantic_profile_overlay.semantic_tags": {
+      "_FallbackSharedResources.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "__init__": [
+        "BOOTSTRAP",
+        "ENTRYPOINT",
+        "ORCHESTRATION"
+      ],
+      "NexusManager.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryTrace.__post_init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "__post_init__": [
+        "BOOTSTRAP"
+      ],
+      "MemoryConsolidator.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryRecallSystem.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "AbstractionEngine.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "MemoryApplicationSystem.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "LivingMemorySystem.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPToken.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPToken.activate": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "activate": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus.__init__": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._initialize_directories": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._protocol_specific_initialization": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._initialize_token_system": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._initialize_gap_detection": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._initialize_file_management": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_initialize_directories": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_protocol_specific_initialization": [
+        "BOOTSTRAP",
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_initialize_token_system": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_initialize_gap_detection": [
+        "AGENT_LOGIC",
+        "BOOTSTRAP",
+        "ORCHESTRATION"
+      ],
+      "_initialize_file_management": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "initialize_sop_nexus": [
+        "BOOTSTRAP",
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ]
+    },
+    "semantic_profile_overlay.operation_type": {
+      "_FallbackSharedResources.__init__": [],
+      "__init__": [],
+      "NexusManager.__init__": [],
+      "MemoryTrace.__post_init__": [],
+      "__post_init__": [],
+      "MemoryConsolidator.__init__": [],
+      "MemoryRecallSystem.__init__": [],
+      "AbstractionEngine.__init__": [],
+      "MemoryApplicationSystem.__init__": [],
+      "LivingMemorySystem.__init__": [],
+      "SOPToken.__init__": [],
+      "SOPToken.activate": [
+        "TRANSFORMATION"
+      ],
+      "activate": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap.__init__": [],
+      "SOPNexus.__init__": [],
+      "SOPNexus._initialize_directories": [],
+      "SOPNexus._protocol_specific_initialization": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._initialize_token_system": [],
+      "SOPNexus._initialize_gap_detection": [],
+      "SOPNexus._initialize_file_management": [],
+      "_initialize_directories": [],
+      "_protocol_specific_initialization": [
+        "TRANSFORMATION"
+      ],
+      "_initialize_token_system": [],
+      "_initialize_gap_detection": [],
+      "_initialize_file_management": [],
+      "initialize_sop_nexus": [
+        "TRANSFORMATION"
+      ]
+    },
+    "semantic_profile_overlay.data_role": {
+      "_FallbackSharedResources.__init__": [],
+      "__init__": [],
+      "NexusManager.__init__": [],
+      "MemoryTrace.__post_init__": [
+        "MEMORY"
+      ],
+      "__post_init__": [],
+      "MemoryConsolidator.__init__": [
+        "MEMORY"
+      ],
+      "MemoryRecallSystem.__init__": [
+        "MEMORY"
+      ],
+      "AbstractionEngine.__init__": [
+        "MEMORY"
+      ],
+      "MemoryApplicationSystem.__init__": [
+        "MEMORY"
+      ],
+      "LivingMemorySystem.__init__": [
+        "MEMORY"
+      ],
+      "SOPToken.__init__": [],
+      "SOPToken.activate": [],
+      "activate": [],
+      "SystemGap.__init__": [],
+      "SOPNexus.__init__": [],
+      "SOPNexus._initialize_directories": [],
+      "SOPNexus._protocol_specific_initialization": [],
+      "SOPNexus._initialize_token_system": [],
+      "SOPNexus._initialize_gap_detection": [],
+      "SOPNexus._initialize_file_management": [],
+      "_initialize_directories": [],
+      "_protocol_specific_initialization": [],
+      "_initialize_token_system": [],
+      "_initialize_gap_detection": [],
+      "_initialize_file_management": [],
+      "initialize_sop_nexus": []
+    },
+    "semantic_profile_overlay.control_role": {
+      "_FallbackSharedResources.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "NexusManager.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryTrace.__post_init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "__post_init__": [
+        "BOOT_CONTROL"
+      ],
+      "MemoryConsolidator.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryRecallSystem.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "AbstractionEngine.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "MemoryApplicationSystem.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "LivingMemorySystem.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPToken.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPToken.activate": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "activate": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus.__init__": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._initialize_directories": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._protocol_specific_initialization": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._initialize_token_system": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._initialize_gap_detection": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._initialize_file_management": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_directories": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_initialization": [
+        "ALIGNMENT_GUARD",
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_token_system": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_gap_detection": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "_initialize_file_management": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ],
+      "initialize_sop_nexus": [
+        "BOOT_CONTROL",
+        "RUNTIME_CONTROL"
+      ]
+    },
+    "semantic_profile_overlay.spine_binding": {
+      "_FallbackSharedResources.__init__": [
+        "UNMAPPED"
+      ],
+      "__init__": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "NexusManager.__init__": [
+        "UNMAPPED"
+      ],
+      "MemoryTrace.__post_init__": [
+        "UNMAPPED"
+      ],
+      "__post_init__": [
+        "UNMAPPED"
+      ],
+      "MemoryConsolidator.__init__": [
+        "UNMAPPED"
+      ],
+      "MemoryRecallSystem.__init__": [
+        "UNMAPPED"
+      ],
+      "AbstractionEngine.__init__": [
+        "UNMAPPED"
+      ],
+      "MemoryApplicationSystem.__init__": [
+        "UNMAPPED"
+      ],
+      "LivingMemorySystem.__init__": [
+        "UNMAPPED"
+      ],
+      "SOPToken.__init__": [
+        "UNMAPPED"
+      ],
+      "SOPToken.activate": [
+        "UNMAPPED"
+      ],
+      "activate": [
+        "UNMAPPED"
+      ],
+      "SystemGap.__init__": [
+        "UNMAPPED"
+      ],
+      "SOPNexus.__init__": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._initialize_directories": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._protocol_specific_initialization": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._initialize_token_system": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._initialize_gap_detection": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._initialize_file_management": [
+        "UNMAPPED"
+      ],
+      "_initialize_directories": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_initialization": [
+        "UNMAPPED"
+      ],
+      "_initialize_token_system": [
+        "UNMAPPED"
+      ],
+      "_initialize_gap_detection": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "_initialize_file_management": [
+        "UNMAPPED"
+      ],
+      "initialize_sop_nexus": [
+        "UNMAPPED"
+      ]
+    }
+  },
+  "conflicts": {
+    "filesystem_side_effect": "MIXED",
+    "nondeterminism_time": "MIXED",
+    "nondeterminism_random": "MIXED",
+    "state_mutation_self": "MIXED"
+  }
+}
