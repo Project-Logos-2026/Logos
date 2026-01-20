@@ -1,9 +1,9 @@
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 from Test_Suite.Tests.common import run_module_tests
 
-MODULE_PATH = "Logos_System.Agent_Safety_Shims.Phase_E_Agent_Lifecycle"
+MODULE_PATH = "Logos_System.Agent_Safety_Shims.Tick_Engine"
 PUBLIC_FUNCTIONS = []
-PUBLIC_CLASSES = ['Agent']
+PUBLIC_CLASSES = ['TickEngine']
 ENTRY_POINTS = []
 
 def run_tests():
