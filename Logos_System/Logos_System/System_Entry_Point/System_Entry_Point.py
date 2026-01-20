@@ -6,7 +6,7 @@
 """
 ===============================================================================
 FILE: System_Entry_Point.py
-PATH: Logos_System_Rebuild/System_Entry_Point/System_Entry_Point.py
+PATH: Logos_System/Logos_System/System_Entry_Point/System_Entry_Point.py
 PROJECT: LOGOS System
 PHASE: Phase-D
 STEP: 2.1 — System Entry Point

@@ -35,8 +35,8 @@ Any invariant failure halts progression immediately (fail-closed).
 ===============================================================================
 """
 
-from Logos_System_Rebuild.System_Entry_Point.System_Entry_Point import START_LOGOS, StartupHalt
-from Logos_System.Runtime_Governance.lock_and_key import execute_lock_and_key, LockAndKeyFailure
+from Logos_System.System_Entry_Point.System_Entry_Point import START_LOGOS, StartupHalt
+from Logos_System.Runtime_Spine.Lock_And_Key.lock_and_key import execute_lock_and_key, LockAndKeyFailure
 
 
 class RuntimeHalt(Exception):

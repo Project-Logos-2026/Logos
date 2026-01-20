@@ -6,7 +6,7 @@
 """
 ===============================================================================
 FILE: Start_Logos_Agent.py
-PATH: Logos_System_Rebuild/System_Stack/Logos_Agents/Start_Logos_Agent.py
+PATH: Logos_System/Logos_System/System_Stack/Logos_Agents/Start_Logos_Agent.py
 PROJECT: LOGOS System
 PHASE: Phase-F
 STEP: LOGOS Agent Startup Boundary
