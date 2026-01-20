@@ -67,7 +67,7 @@ def _hash_compile_artifact(artifact: bytes) -> str:
 def execute_lock_and_key(
     external_compile_artifact: bytes,
     internal_compile_artifact: bytes,
-    audit_log_path: str = "boot_sequence_log.json",
+    audit_log_path: str = "/workspaces/Logos_System/System_Audit_Logs/Boot_Sequence_Log.jsonl",
 ) -> Dict[str, Any]:
     """
     Execute Lock-and-Key dual-site validation.

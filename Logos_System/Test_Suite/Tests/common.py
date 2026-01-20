@@ -62,7 +62,7 @@ def _invoke_entry_point(module: ModuleType, func_name: str) -> Any:
     func = getattr(module, func_name)
 
     if func_name == "execute_lock_and_key":
-        audit_path = os.path.join(LOGS_DIR, "lock_and_key_audit.log")
+        audit_path = "/workspaces/Logos_System/System_Audit_Logs/Boot_Sequence_Log.jsonl"
         return func(b"STUB_COMPILE_ARTIFACT", b"STUB_COMPILE_ARTIFACT", audit_log_path=audit_path)
 
     if func_name == "start_logos_agent":
