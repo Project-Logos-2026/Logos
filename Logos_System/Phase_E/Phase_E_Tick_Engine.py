@@ -1,3 +1,4 @@
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 """
 Tick Engine — Phase E Component
 - Manages time and tick cycle limits

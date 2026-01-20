@@ -1,3 +1,4 @@
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 """
 Memory Substrate — Phase E Component
 - Stores proposed state with provenance

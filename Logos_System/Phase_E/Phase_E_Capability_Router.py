@@ -1,3 +1,4 @@
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 """
 Capability Router — Phase E Component
 - All requests denied by default

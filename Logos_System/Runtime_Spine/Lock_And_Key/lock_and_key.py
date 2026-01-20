@@ -1,3 +1,4 @@
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 """
 ===============================================================================
 FILE: lock_and_key.py
