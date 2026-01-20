@@ -1,3 +1,4 @@
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 """
 Agent Lifecycle — Phase E Component
 - Agents are spawnable shells with no permission by default
