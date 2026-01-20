@@ -59,9 +59,9 @@ Delegates fail-closed behavior to the underlying module.
 
 from typing import Dict, Any
 
-from Logos_System_Rebuild.Runtime_Spine.Agent_Orchestration.agent_orchestration import (
-    prepare_agent_orchestration as _prepare_agent_orchestration,
-    OrchestrationHalt,
+from Logos_System.Runtime_Spine.Agent_Orchestration.agent_orchestration import (
+  prepare_agent_orchestration as _prepare_agent_orchestration,
+  OrchestrationHalt,
 )
 
 

@@ -33,7 +33,7 @@ observability:
 """
 ===============================================================================
 FILE: LOGOS_SYSTEM.py
-PATH: Logos_System_Rebuild/LOGOS_SYSTEM.py
+PATH: Logos_System/LOGOS_SYSTEM.py
 PROJECT: LOGOS System
 PHASE: Phase-F
 STEP: Runtime Spine Wiring → LOGOS Agent Startup → LEM Discharge
@@ -57,19 +57,19 @@ No degraded modes or retries.
 
 from typing import Dict, Any, Literal, Optional
 
-from Logos_System_Rebuild.Logos_System.System_Entry_Point.System_Entry_Point import (
+from Logos_System.System_Entry_Point.System_Entry_Point import (
     START_LOGOS,
     StartupHalt,
 )
-from Logos_System_Rebuild.Logos_System.Runtime_Governance.lock_and_key import (
+from Logos_System.Runtime_Spine.Lock_And_Key.lock_and_key import (
     execute_lock_and_key,
     LockAndKeyFailure,
 )
-from Logos_System_Rebuild.Logos_System.System_Stack.Logos_Agents.Logos_Agent.Start_Logos_Agent import (
+from Logos_System.System_Stack.Logos_Agents.Logos_Agent.Start_Logos_Agent import (
     LogosAgentStartupHalt,
     start_logos_agent,
 )
-from Logos_System_Rebuild.Logos_System.System_Stack.Logos_Agents.Logos_Agent.Lem_Discharge import (
+from Logos_System.System_Stack.Logos_Agents.Logos_Agent.Lem_Discharge import (
     LemDischargeHalt,
     discharge_lem,
 )

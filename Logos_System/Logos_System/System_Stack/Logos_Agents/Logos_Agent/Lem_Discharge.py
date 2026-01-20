@@ -6,7 +6,7 @@
 """
 ===============================================================================
 FILE: Lem_Discharge.py
-PATH: Logos_System_Rebuild/System_Stack/Logos_Agents/Lem_Discharge.py
+PATH: Logos_System/Logos_System/System_Stack/Logos_Agents/Lem_Discharge.py
 PROJECT: LOGOS System
 PHASE: Phase-F
 STEP: LOGOS Agent LEM Discharge
