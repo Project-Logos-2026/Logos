@@ -1,0 +1,23 @@
+{
+  "name": "Agent_Deployment_Mode",
+  "status": "ACTIVE",
+  "definition": "Agents are deployed as governed executors only.",
+  "allowed": [
+    "policy_validated_execution",
+    "bounded_single_tick_execution",
+    "bounded_multi_tick_execution",
+    "full audit and provenance recording"
+  ],
+  "explicitly_forbidden": [
+    "autonomous planning",
+    "goal generation",
+    "self-authorization",
+    "unbounded execution",
+    "execution without policy"
+  ],
+  "invariants": [
+    "Agents never decide scope",
+    "Agents never expand authority",
+    "All authority is external and explicit"
+  ]
+}
