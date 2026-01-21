@@ -28,7 +28,6 @@ def test_multi_tick_denied_without_explicit_policy():
         raise GovernanceDenied("Multi-tick execution not authorized")
 
 
-@pytest.mark.skip(reason="Multi-tick governance not yet implemented")
 def test_multi_tick_with_budget_and_attestation():
     """
     Expected future behavior:
@@ -37,13 +36,40 @@ def test_multi_tick_with_budget_and_attestation():
     - Each tick audited
     - UWM commits append-only per tick
     """
-    pass
+    from Logos_System.Governance.policy_checks import require_multi_tick_policy
+    from Logos_System.System_Stack.Logos_Protocol.Phase_E_Tick_Engine import PhaseETickEngine
+
+    policy = {"authorized": True, "max_ticks": 2}
+    budget = require_multi_tick_policy(policy)
+
+    engine = PhaseETickEngine(budget)
+    log = engine.run_multi_tick(budget, lambda: None)
+
+    ticks = [e for e in log if e["event"] == "TICK"]
+    assert len(ticks) == budget
 
 
-@pytest.mark.skip(reason="Multi-tick governance not yet implemented")
 def test_tick_budget_exhaustion_fails_closed():
     """
     When tick budget is exhausted, execution must halt
     and no further commits are allowed.
     """
-    pass
+    from Logos_System.System_Stack.Logos_Protocol.Phase_E_Tick_Engine import PhaseETickEngine
+
+    calls = {"count": 0}
+
+    def fn():
+        calls["count"] += 1
+
+    engine = PhaseETickEngine(max_ticks=2)
+    engine.start()
+
+    log = engine.run_multi_tick(2, fn)
+
+    # Exactly 2 ticks executed
+    ticks = [e for e in log if e["event"] == "TICK"]
+    assert len(ticks) == 2
+    assert calls["count"] == 2
+
+    # Engine must be inactive after halt
+    assert engine.active is False

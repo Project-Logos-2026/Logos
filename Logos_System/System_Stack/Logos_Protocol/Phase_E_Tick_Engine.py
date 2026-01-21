@@ -26,6 +26,8 @@ class PhaseETickEngine:
         self.remaining = max_ticks
         self.active = False
         self.audit_log = []
+        self.policy_context = None
+        self.plan_context = None
 
     # -----------------------------
     # Lifecycle
@@ -47,7 +49,11 @@ class PhaseETickEngine:
         try:
             fn()
             self.remaining -= 1
-            self._audit("TICK", {"remaining": self.remaining})
+            self._audit("TICK", {
+                "remaining": self.remaining,
+                "policy": self.policy_context,
+                "plan": self.plan_context,
+            })
         except Exception as e:
             self._audit("ERROR", {"error": repr(e)})
             self.halt("EXCEPTION")
@@ -56,6 +62,60 @@ class PhaseETickEngine:
         self._audit("HALT", {"reason": reason})
         self.active = False
         raise TickHalt(reason)
+
+    def run_multi_tick(self, max_ticks: int, fn: Callable[[], None]):
+        """
+        Phase-J (controlled): Run multiple ticks under an explicit tick budget.
+
+        Preconditions:
+        - max_ticks > 0
+        - Caller has already passed governance authorization
+        - No planning, no reentry, no autonomy
+
+        This method is opt-in and introduces no behavior change unless invoked.
+        """
+        from Logos_System.Governance.exceptions import GovernanceDenied
+
+        if not isinstance(max_ticks, int) or max_ticks <= 0:
+            raise GovernanceDenied("Invalid multi-tick budget")
+
+        # Reset budget for this controlled run.
+        self.max_ticks = max_ticks
+        self.remaining = max_ticks
+
+        if not self.active:
+            self.start()
+
+        try:
+            while True:
+                self.tick(fn)
+        except TickHalt:
+            return self.audit_log
+
+    # -----------------------------
+    # Governance (Audit-Only)
+    # -----------------------------
+    def attach_policy_context(self, policy: dict):
+        """
+        Attach policy provenance for audit purposes only.
+
+        This does not authorize execution or alter tick behavior.
+        Caller must already have passed governance checks.
+        """
+
+        self.policy_context = policy
+        self._audit("POLICY_ATTACHED", {"policy": policy})
+
+    def attach_plan_context(self, plan: dict):
+        """
+        Attach planning provenance for audit purposes only.
+
+        This does not authorize execution or alter tick behavior.
+        Caller must already have passed governance checks.
+        """
+
+        self.plan_context = plan
+        self._audit("PLAN_ATTACHED", {"plan": plan})
 
     # -----------------------------
     # Audit
