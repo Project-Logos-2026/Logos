@@ -160,7 +160,7 @@ class ProbabilisticResult:
         }
 
 
-def TrueP(probability, threshold=0.5):
+def TrueP_predicate(probability, threshold=0.5):
     """
     Truth predicate for probabilistic values
 
@@ -201,6 +201,11 @@ def UncertainP(probability, lower_threshold=0.3, upper_threshold=0.7):
         bool: True if probability is in uncertainty region
     """
     return lower_threshold <= float(probability) <= upper_threshold
+
+
+# Preserve class export while keeping predicate helper available
+PredicateTrueP = TrueP_predicate
+TruePClass = TrueP
 
 
 class BayesianNetwork:

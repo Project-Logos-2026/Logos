@@ -40,47 +40,60 @@ import json
 from pathlib import Path
 import sys
 
-ROOT = Path.cwd()
-DISCHARGE = ROOT / "Logos_Agent" / "state" / "lem_discharge_state.json"
-if not DISCHARGE.exists():
-    print("No discharge state found at", DISCHARGE)
-    sys.exit(1)
 
-with open(DISCHARGE, "r", encoding="utf-8") as fh:
-    data = json.load(fh)
+def persist_identity(root: Path | None = None) -> None:
+    """Persist the resolved identity JSON to expected targets."""
 
-# Try to derive the canonical formal identity. The bridge/engine writes a formatted
-# token as `formal_identity` in some reports, but the discharge record may only have
-# agent_id/resolved_at. We'll create a deterministic identity if not present.
-formal_identity = data.get("formal_identity") or data.get("generated_identity")
-if not formal_identity:
-    # fallback deterministic composition
-    import hashlib
-    raw = f"{data.get('agent_id','')}-{data.get('resolved_at','')}-{data.get('proof_file','')}"
-    formal_identity = "LOGOS_AGENT_IDENTITY::" + data.get("agent_id","UNKNOWN") + "::" + hashlib.sha256(raw.encode()).hexdigest()
+    root = Path(root) if root else Path.cwd()
+    discharge = root / "Logos_Agent" / "state" / "lem_discharge_state.json"
+    if not discharge.exists():
+        print("No discharge state found at", discharge)
+        sys.exit(1)
 
-payload = {
-    "formal_identity": formal_identity,
-    "agent_id": data.get("agent_id"),
-    "resolved_at": data.get("resolved_at"),
-    "proof_file": data.get("proof_file"),
-}
+    with open(discharge, "r", encoding="utf-8") as fh:
+        data = json.load(fh)
 
-# Target files (user requested):
-targets = [
-    ROOT / "Synthetic_Cognition_Protocol" / "consciousness" / "agent_identity.json",
-    ROOT / "Advanced_Reasoning_Protocol" / "logos_core copy" / "agent_identity.json",
-    ROOT / "Logos_Agent" / "state" / "agent_identity.json",
-]
+    formal_identity = data.get("formal_identity") or data.get("generated_identity")
+    if not formal_identity:
+        import hashlib
 
-for t in targets:
-    try:
-        t.parent.mkdir(parents=True, exist_ok=True)
-        with open(t, "w", encoding="utf-8") as fh:
-            json.dump(payload, fh, indent=2)
-        print("Wrote identity to", t)
-    except Exception as exc:
-        print("Failed to write to", t, exc)
+        raw = (
+            f"{data.get('agent_id','')}-"
+            f"{data.get('resolved_at','')}-"
+            f"{data.get('proof_file','')}"
+        )
+        formal_identity = (
+            "LOGOS_AGENT_IDENTITY::"
+            + data.get("agent_id", "UNKNOWN")
+            + "::"
+            + hashlib.sha256(raw.encode()).hexdigest()
+        )
 
-print("Completed. Formal identity:")
-print(formal_identity)
+    payload = {
+        "formal_identity": formal_identity,
+        "agent_id": data.get("agent_id"),
+        "resolved_at": data.get("resolved_at"),
+        "proof_file": data.get("proof_file"),
+    }
+
+    targets = [
+        root / "Synthetic_Cognition_Protocol" / "consciousness" / "agent_identity.json",
+        root / "Advanced_Reasoning_Protocol" / "logos_core copy" / "agent_identity.json",
+        root / "Logos_Agent" / "state" / "agent_identity.json",
+    ]
+
+    for t in targets:
+        try:
+            t.parent.mkdir(parents=True, exist_ok=True)
+            with open(t, "w", encoding="utf-8") as fh:
+                json.dump(payload, fh, indent=2)
+            print("Wrote identity to", t)
+        except Exception as exc:
+            print("Failed to write to", t, exc)
+
+    print("Completed. Formal identity:")
+    print(formal_identity)
+
+
+if __name__ == "__main__":
+    persist_identity()

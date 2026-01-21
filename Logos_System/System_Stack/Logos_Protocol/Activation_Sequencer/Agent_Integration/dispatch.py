@@ -39,6 +39,9 @@ from typing import Any, Dict, Optional
 from ..I1.scp_pipeline.pipeline_runner import run_scp_pipeline
 # I3 ARP cycle
 from ..I3.arp_cycle.cycle_runner import run_arp_cycle
+from Logos_System.System_Stack.Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger import (
+  commit,
+)
 
 
 def dispatch_to_scp(*, smp: Dict[str, Any], payload_ref: Any = None) -> Dict[str, Any]:
@@ -55,3 +58,12 @@ def dispatch_to_arp(*, task: Dict[str, Any]) -> Dict[str, Any]:
     """
     out = run_arp_cycle(task=task)
     return out
+
+
+# Phase-E dispatch: commit activation result to UWM
+def dispatch(result: Dict[str, Any]) -> Dict[str, Any]:
+  if not isinstance(result, dict):
+    raise TypeError("result must be a dict")
+
+  cid = commit(payload=result, justification="Phase-E activation execution")
+  return {"commit_id": cid, "status": "COMMITTED"}

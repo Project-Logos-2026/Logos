@@ -46,7 +46,7 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any, Dict, List, Optional, Set, Tuple, Union
 
-from LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports import *
+from Logos_System.System_Stack.System_Operations_Protocol.deployment.configuration.system_imports import *
 
 
 class ModalOperator(Enum):

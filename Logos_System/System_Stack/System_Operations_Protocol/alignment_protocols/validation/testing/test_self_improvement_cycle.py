@@ -59,7 +59,7 @@ from typing import List
 
 import pytest
 
-# Import system components
+missing_deps = None
 try:
     from core.logos_core.daemon.logos_daemon import DaemonConfig, LogosDaemon
     from core.logos_core.governance.iel_signer import IELSigner
@@ -75,7 +75,24 @@ try:
     )
     from scripts.update_telemetry import AggregatedMetrics, TelemetryAggregator
 except ImportError as e:
-    pytest.skip(f"Required modules not available: {e}", allow_module_level=True)
+    missing_deps = e
+    # Minimal placeholders so import succeeds and the runner can record a skip.
+    class _Missing:
+        pass
+
+    DaemonConfig = LogosDaemon = IELSigner = IELEvaluator = IELQualityMetrics = IELGenerator = IELCandidate = IELRegistry = RegistryConfig = AggregatedMetrics = TelemetryAggregator = _Missing
+
+
+if missing_deps:
+    def test_multi_cycle_stability():
+        pytest.skip(f"Required modules not available: {missing_deps}")
+
+    class TestSelfImprovementCycle:
+        pass
+
+    class TestEndToEndCycle:
+        pass
+
 
 
 class TestSelfImprovementCycle:

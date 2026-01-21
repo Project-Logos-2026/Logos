@@ -33,11 +33,26 @@ observability:
 """
 LOGOS normalization stub.
 
-This package initializer is intentionally minimal.
-- No imports
-- No side effects
-- No runtime logic
-
-Repopulation of exports/import paths will occur after normalization.
+This package initializer re-exports governed symbols from the sibling
+bayesian_ml.py module (one directory up) so test imports resolve cleanly
+while the ARP stack is being rebuilt.
 """
+
+from importlib import util as _importlib_util
+from pathlib import Path as _Path
+
+_MODULE_PATH = _Path(__file__).resolve().parent.parent / "bayesian_ml.py"
+
 __all__ = []
+
+if _MODULE_PATH.exists():
+  _spec = _importlib_util.spec_from_file_location(
+    f"{__name__}_impl", str(_MODULE_PATH)
+  )
+  if _spec and _spec.loader:
+    _mod = _importlib_util.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)  # type: ignore[arg-type]
+    for _name in getattr(_mod, "__all__", []):
+      if hasattr(_mod, _name):
+        globals()[_name] = getattr(_mod, _name)
+        __all__.append(_name)

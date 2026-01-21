@@ -50,6 +50,7 @@ from typing import (
     Dict,
     List,
     Optional,
+    Protocol,
     Set,
     Tuple,
     Type,
@@ -59,7 +60,7 @@ from typing import (
 )
 
 import numpy as np
-from LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports import *
+from Logos_System.System_Stack.System_Operations_Protocol.deployment.configuration.system_imports import *
 from pydantic import BaseModel, Field, model_validator, validator
 
 # Import from other IEL components for type consistency

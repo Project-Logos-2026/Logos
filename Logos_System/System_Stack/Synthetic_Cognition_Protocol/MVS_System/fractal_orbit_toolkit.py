@@ -69,7 +69,17 @@ from enum import Enum
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-import numpy as np
+try:
+    import numpy as np
+except ImportError as exc:
+    print("❌ Import Error: No module named 'numpy'")
+    print("Make sure the fractal_orbit_toolkit.py is available")
+
+    class _NumpyStub:
+        def __getattr__(self, name):
+            raise ImportError("numpy is required for fractal_orbit_toolkit operations") from exc
+
+    np = _NumpyStub()  # type: ignore
 
 
 _MODULE_DIR = Path(__file__).resolve().parent

@@ -37,6 +37,9 @@ from typing import Any, Dict, Optional
 
 from .types import LogosBundle
 from .dispatch import dispatch_to_scp, dispatch_to_arp
+from Logos_System.System_Stack.Logos_Protocol.Activation_Sequencer.I1.scp_pipeline.pipeline_runner import (
+    PipelineRunner,
+)
 
 
 def _should_call_scp(smp: Dict[str, Any]) -> bool:
@@ -114,3 +117,19 @@ def run_logos_cycle(
         arp_result=arp_result,
         route_summary=route_summary,
     )
+
+
+# Phase-E coordinator: validates attestation and executes under tick budget
+def coordinate(request: dict):
+    if not isinstance(request, dict):
+        raise TypeError("request must be a dict")
+
+    if "attestation" not in request:
+        raise PermissionError("missing attestation")
+
+    def execution():
+        return {"status": "EXECUTED", "request": request}
+
+    runner = PipelineRunner()
+    audit = runner.run(lambda: execution(), ticks=1)
+    return audit

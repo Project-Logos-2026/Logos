@@ -49,7 +49,7 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 
 import networkx as nx
 import numpy as np
-from LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports import *
+from Logos_System.System_Stack.System_Operations_Protocol.deployment.configuration.system_imports import *
 
 
 class RelationType(Enum):
