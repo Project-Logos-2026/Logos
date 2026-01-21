@@ -57,7 +57,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import numpy as np
 from jinja2 import Environment, FileSystemLoader, Template
-from LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports import *
+from Logos_System.System_Stack.System_Operations_Protocol.deployment.configuration.system_imports import *
 
 # Import PXL schema components
 try:

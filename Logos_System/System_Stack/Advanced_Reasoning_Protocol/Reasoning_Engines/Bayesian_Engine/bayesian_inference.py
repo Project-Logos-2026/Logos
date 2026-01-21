@@ -96,9 +96,6 @@ except ImportError:
         pass
     MODAL_PROBABILISTIC_AVAILABLE = False
 
-    def TrueP(p, threshold):
-        return True
-
 
 # Translation Engine Enhancement
 try:
@@ -961,20 +958,6 @@ class ProbabilisticResult:
             "error": self.error,
             "timestamp": self.timestamp,
         }
-
-
-def TrueP(probability, threshold=0.5):
-    """
-    Truth predicate for probabilistic values
-
-    Args:
-        probability: Float probability value [0,1]
-        threshold: Minimum threshold for truth (default 0.5)
-
-    Returns:
-        bool: True if probability exceeds threshold
-    """
-    return float(probability) >= float(threshold)
 
 
 def FalseP(probability, threshold=0.5):

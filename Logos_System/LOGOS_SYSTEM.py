@@ -61,6 +61,10 @@ from Logos_System.System_Entry_Point.System_Entry_Point import (
     START_LOGOS,
     StartupHalt,
 )
+from Logos_System.System_Entry_Point.Agent_Orchestration.agent_orchestration import (
+    OrchestrationHalt,
+    prepare_agent_orchestration,
+)
 from Logos_System.Runtime_Spine.Lock_And_Key.lock_and_key import (
     execute_lock_and_key,
     LockAndKeyFailure,
@@ -120,8 +124,28 @@ def RUN_LOGOS_SYSTEM(
     except LemDischargeHalt as exc:
         raise RuntimeHalt(f"LEM discharge failed: {exc}")
 
+    constructive_compile_output = {
+        "logos_agent_id": logos_identity.get("logos_agent_id"),
+        "universal_session_id": logos_identity.get("session_id"),
+        "prepared_bindings": {
+            "issued_agents": logos_identity.get("issued_agents", {}),
+            "issued_protocols": logos_identity.get("issued_protocols", {}),
+            "authority": logos_identity.get("authority", {}),
+        },
+    }
+
+    if not constructive_compile_output["logos_agent_id"] or not constructive_compile_output["universal_session_id"]:
+        raise RuntimeHalt("Missing identity context for orchestration")
+
+    try:
+        orchestration_plan = prepare_agent_orchestration(constructive_compile_output)
+    except OrchestrationHalt as exc:
+        raise RuntimeHalt(f"Agent orchestration failed: {exc}")
+
     return {
         "status": "LOGOS_AGENT_READY",
         "logos_identity": logos_identity,
         "logos_session": logos_session,
+        "constructive_compile_output": constructive_compile_output,
+        "agent_orchestration_plan": orchestration_plan,
     }

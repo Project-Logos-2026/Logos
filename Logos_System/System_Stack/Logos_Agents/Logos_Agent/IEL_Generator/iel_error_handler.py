@@ -49,7 +49,7 @@ from enum import Enum
 from functools import wraps
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
-from LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports import *
+from Logos_System.System_Stack.System_Operations_Protocol.deployment.configuration.system_imports import *
 
 
 class IELErrorType(Enum):

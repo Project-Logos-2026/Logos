@@ -55,7 +55,7 @@ from typing import (
 )
 
 import numpy as np
-from LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports import *
+from Logos_System.System_Stack.System_Operations_Protocol.deployment.configuration.system_imports import *
 from pydantic import BaseModel, Field, validator
 
 # ========================= CORE ENUMERATIONS =========================
@@ -305,13 +305,13 @@ class ValidationIssue:
 
     severity: ValidationSeverity
     message: str
-    field: Optional[str] = None
+    field_name: Optional[str] = None
     code: Optional[str] = None
     context: Dict[str, Any] = field(default_factory=dict)
 
     def __str__(self) -> str:
         prefix = f"[{self.severity.value.upper()}]"
-        field_info = f" {self.field}:" if self.field else ""
+        field_info = f" {self.field_name}:" if self.field_name else ""
         return f"{prefix}{field_info} {self.message}"
 
 
@@ -327,7 +327,7 @@ class ValidationResult:
         self,
         severity: ValidationSeverity,
         message: str,
-        field: Optional[str] = None,
+        field_name: Optional[str] = None,
         code: Optional[str] = None,
         context: Optional[Dict[str, Any]] = None,
     ):
@@ -335,13 +335,12 @@ class ValidationResult:
         issue = ValidationIssue(
             severity=severity,
             message=message,
-            field=field,
+            field_name=field_name,
             code=code,
             context=context or {},
         )
         self.issues.append(issue)
 
-        # Mark as invalid if error severity
         if severity == ValidationSeverity.ERROR:
             self.valid = False
 
@@ -677,8 +676,8 @@ class PXLAnalysisResult:
                         issue.severity,
                         f"Relation {i}: {issue.message}",
                         (
-                            f"relations[{i}].{issue.field}"
-                            if issue.field
+                            f"relations[{i}].{issue.field_name}"
+                            if issue.field_name
                             else f"relations[{i}]"
                         ),
                     )
@@ -691,8 +690,8 @@ class PXLAnalysisResult:
                     issue.severity,
                     f"Consistency report: {issue.message}",
                     (
-                        f"consistency_report.{issue.field}"
-                        if issue.field
+                        f"consistency_report.{issue.field_name}"
+                        if issue.field_name
                         else "consistency_report"
                     ),
                 )
@@ -705,8 +704,8 @@ class PXLAnalysisResult:
                     issue.severity,
                     f"Analysis config: {issue.message}",
                     (
-                        f"analysis_config.{issue.field}"
-                        if issue.field
+                        f"analysis_config.{issue.field_name}"
+                        if issue.field_name
                         else "analysis_config"
                     ),
                 )

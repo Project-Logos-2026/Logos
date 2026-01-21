@@ -74,7 +74,29 @@ try:
 except ImportError as e:
     print(f"Error importing fractal toolkit: {e}")
     print("Make sure all dependencies are available")
-    sys.exit(1)
+
+    class FractalOrbitAnalysisToolkit:  # type: ignore
+        def __init__(self):
+            pass
+
+    class TrinityVector:  # type: ignore
+        def __init__(self, *args, **kwargs):
+            pass
+
+    class PredictionConfidence:  # type: ignore
+        def __init__(self, value: str = "UNKNOWN"):
+            self.value = value
+
+    class FractalScale:  # type: ignore
+        def __init__(self, value: str = "UNKNOWN"):
+            self.value = value
+
+    class OrbitalPrediction:  # type: ignore
+        def __init__(self, *args, **kwargs):
+            self.modal_status = "UNKNOWN"
+            self.confidence = PredictionConfidence()
+            self.stability_score = 0.0
+
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)

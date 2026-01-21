@@ -1,0 +1,19 @@
+{
+  "name": "Multi_Tick_Execution_Policy",
+  "status": "DESIGN_ONLY",
+  "description": "Explicit opt-in policy required to authorize multi-tick agent execution.",
+  "required_fields": {
+    "policy_id": "string",
+    "max_ticks": "integer (>0)",
+    "allow_reentry": "boolean",
+    "require_attestation": true,
+    "audit_per_tick": true
+  },
+  "defaults": {
+    "authorized": false
+  },
+  "notes": [
+    "Absence of this policy MUST result in denial.",
+    "Presence does not imply enablement until runtime support exists."
+  ]
+}

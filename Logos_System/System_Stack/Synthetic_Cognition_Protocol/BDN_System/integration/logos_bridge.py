@@ -87,7 +87,7 @@ try:
     )
 
     # Protocol and communication systems
-    from LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports import *
+    from Logos_System.System_Stack.System_Operations_Protocol.deployment.configuration.system_imports import *
 
 except ImportError as e:
     logging.warning(f"LOGOS V2 imports not fully available: {e}")

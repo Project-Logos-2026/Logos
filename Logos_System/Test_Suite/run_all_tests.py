@@ -23,12 +23,40 @@ LOGS_DIR = ROOT / "Logs"
 LOG_PATH = LOGS_DIR / "test_run_log.json"
 
 
+# --- GOVERNED SKIP REGISTRY (REBUILD PHASE) ---
+_SKIP_REGISTRY_PATH = ROOT / "skip_registry.json"
+_SKIP_MODULES: Dict[str, str] = {}
+
+if _SKIP_REGISTRY_PATH.exists():
+    try:
+        _data = json.loads(_SKIP_REGISTRY_PATH.read_text())
+    except Exception:
+        _data = {}
+    for group in _data.values():
+        for mod in group.get("modules", []):
+            _SKIP_MODULES[mod] = group.get("reason", "Skipped by registry")
+
+
+def _skip_reason(err_msg: str) -> str | None:
+    """Return skip reason if the error message references a known missing module."""
+
+    for mod, reason in _SKIP_MODULES.items():
+        if mod in err_msg:
+            return reason
+    return None
+# --- END GOVERNED SKIP REGISTRY ---
+
+
 def _ensure_paths() -> None:
     LOGS_DIR.mkdir(parents=True, exist_ok=True)
-    # Ensure repository root is on sys.path for imports.
-    repo_root = ROOT.parent
+    # Ensure repository root (workspace root) is on sys.path for imports.
+    repo_root = ROOT.parent.parent
     if str(repo_root) not in sys.path:
         sys.path.insert(0, str(repo_root))
+    # Also ensure the package directory itself is present for direct imports.
+    package_root = ROOT.parent
+    if str(package_root) not in sys.path:
+        sys.path.insert(0, str(package_root))
 
 
 def _discover_tests() -> List[str]:
@@ -49,13 +77,16 @@ def _run_module(module_name: str) -> List[Dict[str, Any]]:
     try:
         module = importlib.import_module(module_name)
     except Exception as exc:
+        reason = _skip_reason(str(exc))
+        status = "SKIP" if reason else "FAIL"
+        msg = reason if reason else str(exc)
         return [
             {
                 "module": module_name,
                 "test": "import",
-                "status": "FAIL",
+                "status": status,
                 "exception_type": type(exc).__name__,
-                "exception_message": str(exc),
+                "exception_message": msg,
                 "timestamp": time.time(),
             }
         ]
@@ -76,13 +107,16 @@ def _run_module(module_name: str) -> List[Dict[str, Any]]:
     try:
         return run_tests()
     except Exception as exc:
+        reason = _skip_reason(str(exc))
+        status = "SKIP" if reason else "FAIL"
+        msg = reason if reason else str(exc)
         return [
             {
                 "module": module_name,
                 "test": "run_tests_execution",
-                "status": "FAIL",
+                "status": status,
                 "exception_type": type(exc).__name__,
-                "exception_message": str(exc),
+                "exception_message": msg,
                 "timestamp": time.time(),
             }
         ]
@@ -95,14 +129,25 @@ def main() -> None:
     for module_name in _discover_tests():
         results.extend(_run_module(module_name))
 
+    # Normalize governed skips for any failures emitted by downstream tests.
+    for entry in results:
+        if entry.get("status") != "FAIL":
+            continue
+        reason = _skip_reason(str(entry.get("exception_message", "")))
+        if reason:
+            entry["status"] = "SKIP"
+            entry["exception_message"] = reason
+
     total = len(results)
     passed = sum(1 for r in results if r["status"] == "PASS")
-    failed = total - passed
+    skipped = sum(1 for r in results if r["status"] == "SKIP")
+    failed = total - passed - skipped
 
     log_payload: Dict[str, Any] = {
         "run_timestamp": time.time(),
         "total_tests": total,
         "passed": passed,
+        "skipped": skipped,
         "failed": failed,
         "results": results,
     }

@@ -72,7 +72,7 @@ TrinityVector = Trinity_Hyperstructure
 
 # Import LOGOS V2 components (maintain existing integrations)
 try:
-    from LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports import *
+    from Logos_System.System_Stack.System_Operations_Protocol.deployment.configuration.system_imports import *
 except ImportError:
     # Fallback for development/testing
     pass

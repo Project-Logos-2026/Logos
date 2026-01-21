@@ -34,31 +34,14 @@ Fail-closed on proof or identity failure.
 """
 
 from typing import Dict, Any
-import hashlib
 
-
-class LemDischargeHalt(Exception):
-    """Raised when LOGOS Agent LEM discharge invariants fail."""
-    pass
+from Logos_System.System_Stack.Logos_Agents.Logos_Agent.Lem_Discharge import (
+    LemDischargeHalt,
+    discharge_lem as _discharge_lem,
+)
 
 
 def discharge_lem(logos_session: Dict[str, Any]) -> Dict[str, Any]:
-    """
-    Placeholder LEM discharge envelope; non-executing beyond invariant checks
-    and deterministic identity derivation.
-    """
+    """Governed alias for LOGOS Agent LEM discharge."""
 
-    if logos_session.get("status") != "LOGOS_SESSION_ESTABLISHED":
-        raise LemDischargeHalt("Invalid LOGOS session state")
-
-    sid = logos_session.get("session_id")
-    if not isinstance(sid, str):
-        raise LemDischargeHalt("Missing session_id")
-
-    logos_agent_id = hashlib.sha256(sid.encode()).hexdigest()
-
-    return {
-        "status": "LOGOS_AGENT_ID_ESTABLISHED",
-        "logos_agent_id": logos_agent_id,
-        "session_id": sid,
-    }
+    return _discharge_lem(logos_session)
