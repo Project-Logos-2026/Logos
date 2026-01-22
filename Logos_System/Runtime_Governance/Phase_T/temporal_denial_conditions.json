@@ -1,0 +1,18 @@
+{
+  "phase": "Phase-T",
+  "type": "TEMPORAL_DENIAL_CONDITIONS",
+  "absolute_denials": [
+    "missing_temporal_artifact",
+    "malformed_temporal_artifact",
+    "ledger_inconsistency",
+    "phase_boundary_violation",
+    "implicit_time_progression",
+    "clock_or_timer_reference",
+    "scheduling_reference",
+    "looping_reference",
+    "persistence_reference",
+    "negative_capability_breach"
+  ],
+  "default": "DENY",
+  "status": "INERT"
+}

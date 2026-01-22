@@ -1,0 +1,12 @@
+{
+  "phase": "Phase-V",
+  "status": "INERT",
+  "description": "Declarative schema placeholder for goal authority and persistence semantics",
+  "explicit_non_effects": [
+    "does not execute goals",
+    "does not persist goals",
+    "does not enable planning",
+    "does not grant autonomy"
+  ],
+  "default": "DENY"
+}

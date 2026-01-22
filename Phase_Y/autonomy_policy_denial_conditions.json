@@ -1,0 +1,21 @@
+{
+  "phase": "Phase-Y",
+  "type": "AUTONOMY_POLICY_DENIAL_CONDITIONS",
+  "absolute_denials": [
+    "implicit_autonomy",
+    "autonomy_without_explicit_scope",
+    "autonomy_without_time_bounds",
+    "autonomy_without_revocation",
+    "implicit_continuation",
+    "tick_creation",
+    "scheduling_reference",
+    "goal_execution_reference",
+    "state_persistence_reference",
+    "override_of_emergency_halt",
+    "ledger_inconsistency",
+    "phase_boundary_violation",
+    "negative_capability_breach"
+  ],
+  "default": "DENY",
+  "status": "INERT"
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "phase": "Phase-M",
+    "artifact": "Phase_M_Audit_Checklist.json",
+    "status": "DESIGN_ONLY",
+    "recorded_at": "2026-01-22T15:33:28.939910+00:00",
+    "notes": "Phase-M audit checklist recorded. Phase-M remains open; implementation blocked pending explicit exit authorization."
+  },
+  {
+    "phase": "Phase-M",
+    "artifact": "PHASE_M_EXIT_AUTHORIZATION_DRAFT.json",
+    "status": "PROPOSED_ONLY",
+    "recorded_at": "2026-01-22T15:42:51.249435+00:00",
+    "notes": "Phase-M exit authorization draft recorded. This artifact is non-authorizing and does not constitute a Phase-M exit."
+  },
+  {
+    "phase": "Phase-M",
+    "artifact": "PHASE_M_EXIT.json",
+    "status": "CLOSED",
+    "recorded_at": "2026-01-22T15:52:30.489381+00:00",
+    "notes": "Phase-M formally closed. Design-only planning runtime completed. Implementation remains blocked pending Phase-N authorization."
+  },
+  {
+    "phase": "Phase-N",
+    "artifact": "PHASE_N_ENTRY.json",
+    "status": "AUTHORIZATION_ONLY",
+    "recorded_at": "2026-01-22T15:58:38.203410+00:00",
+    "notes": "Phase-N entered in authorization-only mode. No implementation or execution is permitted without explicit authorization."
+  },
+  {
+    "phase": "Phase-N",
+    "artifact": "Phase_N_Audit_Checklist.json",
+    "status": "AUTHORIZATION_ONLY",
+    "recorded_at": "2026-01-22T16:02:25.209878+00:00",
+    "notes": "Phase-N audit checklist recorded. Defines criteria for possible implementation authorization; no authority granted."
+  },
+  {
+    "phase": "Phase-N",
+    "artifact": "PHASE_N_IMPLEMENTATION_AUTHORIZATION_DRAFT.json",
+    "status": "PROPOSED_ONLY",
+    "recorded_at": "2026-01-22T16:04:29.519289+00:00",
+    "notes": "Phase-N implementation authorization draft recorded. Non-authorizing; no implementation or execution permitted."
+  },
+  {
+    "phase": "Phase-O",
+    "artifact": "PHASE_O_ENTRY.json",
+    "status": "IMPLEMENTATION_ONLY",
+    "recorded_at": "2026-01-22T16:08:40.023068+00:00",
+    "notes": "Phase-O entered in implementation-only mode. Execution, autonomy, and activation remain prohibited."
+  }
+]

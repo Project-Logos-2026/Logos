@@ -1,0 +1,17 @@
+{
+  "phase": "Phase-R",
+  "type": "ACTIVATION_DENIAL_CONDITIONS",
+  "absolute_denials": [
+    "missing_artifact",
+    "malformed_artifact",
+    "ledger_inconsistency",
+    "phase_boundary_violation",
+    "expired_authorization",
+    "scope_mismatch",
+    "authority_ambiguity",
+    "implicit_inference",
+    "negative_capability_breach"
+  ],
+  "default": "DENY",
+  "status": "INERT"
+}
