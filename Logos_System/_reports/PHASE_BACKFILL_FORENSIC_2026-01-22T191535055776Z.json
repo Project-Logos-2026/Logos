@@ -1,0 +1,481 @@
+{
+  "timestamp": "2026-01-22T19:15:35.055776Z",
+  "empty_phases": [
+    "Phase_I",
+    "Phase_D",
+    "Phase_O",
+    "Phase_A",
+    "Phase_F",
+    "Phase_J",
+    "Phase_G",
+    "Phase_B",
+    "Phase_K",
+    "Phase_P",
+    "Phase_E",
+    "Phase_C"
+  ],
+  "phase_dirs": {
+    "Phase_I": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_I",
+    "Phase_X": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X",
+    "Phase_M_Planning_Runtime": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_M_Planning_Runtime",
+    "Phase_H_Multi_Tick": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_H_Multi_Tick",
+    "Phase_L_Planning": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_L_Planning",
+    "Phase_D": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_D",
+    "Phase_O": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_O",
+    "Phase_U": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U",
+    "Phase_M_Planning": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_M_Planning",
+    "Phase_V": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V",
+    "Phase_R": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R",
+    "Phase_A": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_A",
+    "Phase_F": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_F",
+    "Phase_S": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S",
+    "Phase_Y": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y",
+    "Phase_J": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_J",
+    "Phase_G": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_G",
+    "Phase_B": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_B",
+    "Phase_K": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_K",
+    "Phase_T": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T",
+    "Phase_P": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_P",
+    "Phase_E": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_E",
+    "Phase_W": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W",
+    "Phase_C": "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_C"
+  },
+  "artifact_locations": {
+    "PHASE_N_IMPLEMENTATION_AUTHORIZATION.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_N_IMPLEMENTATION_AUTHORIZATION.json"
+    ],
+    "PHASE_Q_FINALIZATION_AUTHORIZATION.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_Q_FINALIZATION_AUTHORIZATION.json"
+    ],
+    "PHASE_N_AUDIT_CHECKLIST.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_N_Audit_Checklist.json"
+    ],
+    "PHASE_N_IMPLEMENTATION_AUTHORIZATION_DRAFT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_N_IMPLEMENTATION_AUTHORIZATION_DRAFT.json"
+    ],
+    "PHASE_P_FINALIZATION_AUTHORIZATION.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_P_FINALIZATION_AUTHORIZATION.json"
+    ],
+    "PHASE_O_ENTRY.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_ENTRY.json"
+    ],
+    "PHASE_Q_ENTRY.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_Q_ENTRY.json"
+    ],
+    "INDEX.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/INDEX.json"
+    ],
+    "PHASE_N_ENTRY.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_N_ENTRY.json"
+    ],
+    "PHASE_O_IMPLEMENTATION_CHECKLIST.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_O_Implementation_Checklist.json"
+    ],
+    "PHASE_L_EXIT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_L_EXIT.json"
+    ],
+    "PHASE_K_EXIT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_K_EXIT.json"
+    ],
+    "PHASE_P_ENTRY.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_P_ENTRY.json"
+    ],
+    "PHASE_M_AUTHORIZATION.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_M_AUTHORIZATION.json"
+    ],
+    "PHASE_O_FINALIZATION_AUTHORIZATION.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_FINALIZATION_AUTHORIZATION.json"
+    ],
+    "PHASE_O_IMPLEMENTATION_ORDER.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_IMPLEMENTATION_ORDER.json"
+    ],
+    "PHASE_N_EXIT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_N_EXIT.json"
+    ],
+    "PHASE_O_EXIT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_EXIT.json"
+    ],
+    "PHASE_O_INITIAL_MODULE_BOUNDARY.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_INITIAL_MODULE_BOUNDARY.json"
+    ],
+    "PHASE_P_EXIT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_P_EXIT.json"
+    ],
+    "__INIT__.PY": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/__init__.py"
+    ],
+    "PHASE_Q_EXIT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_Q_EXIT.json"
+    ],
+    "PHASE_X_ENTRY.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/PHASE_X_ENTRY.json"
+    ],
+    "HALT_OVERRIDE_DENIAL_CONDITIONS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/halt_override_denial_conditions.json"
+    ],
+    "PHASE_X_FINALIZATION_AUTHORIZATION.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/PHASE_X_FINALIZATION_AUTHORIZATION.json"
+    ],
+    "PHASE_X_EXIT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/PHASE_X_EXIT.json"
+    ],
+    "PHASE_X_AUDIT_CLOSURE_CRITERIA.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/PHASE_X_AUDIT_CLOSURE_CRITERIA.md"
+    ],
+    "PHASE_X_README.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/PHASE_X_README.md"
+    ],
+    "HALT_OVERRIDE_INVARIANTS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/halt_override_invariants.json"
+    ],
+    "HALT_OVERRIDE_SEMANTICS_SCHEMA.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/halt_override_semantics_schema.json"
+    ],
+    "PHASE_M_AUDIT_CHECKLIST.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_M_Planning_Runtime/Phase_M_Audit_Checklist.json"
+    ],
+    "TICK_BUDGET_CONTRACT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_H_Multi_Tick/Tick_Budget_Contract.json"
+    ],
+    "README.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_H_Multi_Tick/README.md",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_L_Planning/README.md"
+    ],
+    "GOVERNANCE_DENIAL_SPEC.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_H_Multi_Tick/Governance_Denial_Spec.json"
+    ],
+    "MULTI_TICK_POLICY_SCHEMA.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_H_Multi_Tick/Multi_Tick_Policy_Schema.json"
+    ],
+    "PHASE_L_AUDIT_CHECKLIST.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_L_Planning/Phase_L_Audit_Checklist.json"
+    ],
+    "PLAN_LIFECYCLE_CONTRACT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_L_Planning/Plan_Lifecycle_Contract.json"
+    ],
+    "PLANNING_ELIGIBILITY_MANIFEST.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_L_Planning/Planning_Eligibility_Manifest.json"
+    ],
+    "PHASE_L_EXIT_CRITERIA.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_L_Planning/Phase_L_Exit_Criteria.json"
+    ],
+    "PLANNER_ROLE_BOUNDARY.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_L_Planning/Planner_Role_Boundary.json"
+    ],
+    "PHASE_U_README.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/PHASE_U_README.md"
+    ],
+    "PHASE_U_FINALIZATION_AUTHORIZATION.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/PHASE_U_FINALIZATION_AUTHORIZATION.json"
+    ],
+    "PHASE_U_ENTRY.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/PHASE_U_ENTRY.json"
+    ],
+    "PHASE_U_AUDIT_CLOSURE_CRITERIA.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/PHASE_U_AUDIT_CLOSURE_CRITERIA.md"
+    ],
+    "PHASE_U_EXIT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/PHASE_U_EXIT.json"
+    ],
+    "CONTINUATION_SEMANTICS_SCHEMA.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/continuation_semantics_schema.json"
+    ],
+    "CONTINUATION_DENIAL_CONDITIONS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/continuation_denial_conditions.json"
+    ],
+    "CONTINUATION_INVARIANTS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/continuation_invariants.json"
+    ],
+    "PHASE_M_DESIGN_FREEZE.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_M_Planning/PHASE_M_DESIGN_FREEZE.json"
+    ],
+    "PHASE_M_DESIGN_SCOPE_AND_ARCHITECTURE.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_M_Planning/Phase_M_Design_Scope_and_Architecture.md"
+    ],
+    "PHASE_M_EXIT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_M_Planning/PHASE_M_EXIT.json"
+    ],
+    "PHASE_M_EXIT_AUTHORIZATION_DRAFT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_M_Planning/PHASE_M_EXIT_AUTHORIZATION_DRAFT.json"
+    ],
+    "GOAL_SEMANTICS_SCHEMA.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/goal_semantics_schema.json"
+    ],
+    "PHASE_V_README.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/PHASE_V_README.md"
+    ],
+    "GOAL_INVARIANTS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/goal_invariants.json"
+    ],
+    "PHASE_V_FINALIZATION_AUTHORIZATION.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/PHASE_V_FINALIZATION_AUTHORIZATION.json"
+    ],
+    "PHASE_V_AUDIT_CLOSURE_CRITERIA.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/PHASE_V_AUDIT_CLOSURE_CRITERIA.md"
+    ],
+    "PHASE_V_ENTRY.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/PHASE_V_ENTRY.json"
+    ],
+    "GOAL_DENIAL_CONDITIONS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/goal_denial_conditions.json"
+    ],
+    "PHASE_V_EXIT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/PHASE_V_EXIT.json"
+    ],
+    "PHASE_R_ENTRY.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/PHASE_R_ENTRY.json"
+    ],
+    "ENABLEMENT_INVARIANTS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/enablement_invariants.json"
+    ],
+    "PHASE_R_EXIT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/PHASE_R_EXIT.json"
+    ],
+    "ENABLEMENT_SEMANTICS_SCHEMA.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/enablement_semantics_schema.json"
+    ],
+    "ACTIVATION_DENIAL_CONDITIONS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/activation_denial_conditions.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/activation_denial_conditions.json"
+    ],
+    "PHASE_R_README.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/PHASE_R_README.md"
+    ],
+    "PHASE_R_FINALIZATION_AUTHORIZATION.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/PHASE_R_FINALIZATION_AUTHORIZATION.json"
+    ],
+    "AUTHORIZATION_SEMANTICS.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/authorization_semantics.md"
+    ],
+    "PHASE_S_AUDIT_CLOSURE_CRITERIA.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/PHASE_S_AUDIT_CLOSURE_CRITERIA.md"
+    ],
+    "PHASE_S_EXIT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/PHASE_S_EXIT.json"
+    ],
+    "ACTIVATION_SEMANTICS_SCHEMA.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/activation_semantics_schema.json"
+    ],
+    "PHASE_S_FINALIZATION_AUTHORIZATION.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/PHASE_S_FINALIZATION_AUTHORIZATION.json"
+    ],
+    "PHASE_S_README.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/PHASE_S_README.md"
+    ],
+    "ACTIVATION_INVARIANTS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/activation_invariants.json"
+    ],
+    "PHASE_S_ENTRY.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/PHASE_S_ENTRY.json"
+    ],
+    "__INIT__.CPYTHON-312.PYC": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/__pycache__/__init__.cpython-312.pyc"
+    ],
+    "PHASE_Y_AUDIT_CLOSURE_CRITERIA.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/PHASE_Y_AUDIT_CLOSURE_CRITERIA.md"
+    ],
+    "AUTONOMY_CLASSES.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/autonomy_classes.json"
+    ],
+    "AUTONOMY_POLICY_SCHEMA.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/autonomy_policy_schema.json"
+    ],
+    "PHASE_Y_ENTRY.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/PHASE_Y_ENTRY.json"
+    ],
+    "PHASE_Y_README.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/PHASE_Y_README.md"
+    ],
+    "PHASE_Y_FINALIZATION_AUTHORIZATION.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/PHASE_Y_FINALIZATION_AUTHORIZATION.json"
+    ],
+    "PHASE_Y_EXIT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/PHASE_Y_EXIT.json"
+    ],
+    "AUTONOMY_POLICY_INVARIANTS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/autonomy_policy_invariants.json"
+    ],
+    "REVOCATION_CONDITIONS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/revocation_conditions.json"
+    ],
+    "AUTONOMY_POLICY_DENIAL_CONDITIONS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/autonomy_policy_denial_conditions.json"
+    ],
+    "MEDIATION_RULES.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/mediation_rules.json"
+    ],
+    "TEMPORAL_SEMANTICS_SCHEMA.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/temporal_semantics_schema.json"
+    ],
+    "PHASE_T_AUDIT_CLOSURE_CRITERIA.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/PHASE_T_AUDIT_CLOSURE_CRITERIA.md"
+    ],
+    "TEMPORAL_INVARIANTS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/temporal_invariants.json"
+    ],
+    "PHASE_T_EXIT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/PHASE_T_EXIT.json"
+    ],
+    "PHASE_T_README.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/PHASE_T_README.md"
+    ],
+    "PHASE_T_FINALIZATION_AUTHORIZATION.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/PHASE_T_FINALIZATION_AUTHORIZATION.json"
+    ],
+    "PHASE_T_ENTRY.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/PHASE_T_ENTRY.json"
+    ],
+    "TEMPORAL_DENIAL_CONDITIONS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/temporal_denial_conditions.json"
+    ],
+    "PHASE_W_README.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/PHASE_W_README.md"
+    ],
+    "PHASE_W_AUDIT_CLOSURE_CRITERIA.MD": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/PHASE_W_AUDIT_CLOSURE_CRITERIA.md"
+    ],
+    "PLANNING_INVARIANTS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/planning_invariants.json"
+    ],
+    "PHASE_W_EXIT.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/PHASE_W_EXIT.json"
+    ],
+    "PLANNING_LOOP_SEMANTICS_SCHEMA.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/planning_loop_semantics_schema.json"
+    ],
+    "PHASE_W_FINALIZATION_AUTHORIZATION.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/PHASE_W_FINALIZATION_AUTHORIZATION.json"
+    ],
+    "PHASE_W_ENTRY.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/PHASE_W_ENTRY.json"
+    ],
+    "PLANNING_DENIAL_CONDITIONS.JSON": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/planning_denial_conditions.json"
+    ]
+  },
+  "phase_keyword_hits": {
+    "Phase_P": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_P_FINALIZATION_AUTHORIZATION.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_P_ENTRY.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_P_EXIT.json"
+    ],
+    "Phase_O": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_ENTRY.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_O_Implementation_Checklist.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_FINALIZATION_AUTHORIZATION.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_IMPLEMENTATION_ORDER.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_EXIT.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_INITIAL_MODULE_BOUNDARY.json"
+    ],
+    "Phase_K": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_K_EXIT.json"
+    ],
+    "Phase_X": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/PHASE_X_ENTRY.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/PHASE_X_FINALIZATION_AUTHORIZATION.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/PHASE_X_EXIT.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/PHASE_X_AUDIT_CLOSURE_CRITERIA.md",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/PHASE_X_README.md"
+    ],
+    "Phase_U": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/PHASE_U_README.md",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/PHASE_U_FINALIZATION_AUTHORIZATION.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/PHASE_U_ENTRY.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/PHASE_U_AUDIT_CLOSURE_CRITERIA.md",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/PHASE_U_EXIT.json"
+    ],
+    "Phase_V": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/PHASE_V_README.md",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/PHASE_V_FINALIZATION_AUTHORIZATION.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/PHASE_V_AUDIT_CLOSURE_CRITERIA.md",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/PHASE_V_ENTRY.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/PHASE_V_EXIT.json"
+    ],
+    "Phase_R": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/PHASE_R_ENTRY.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/PHASE_R_EXIT.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/PHASE_R_README.md",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/PHASE_R_FINALIZATION_AUTHORIZATION.json"
+    ],
+    "Phase_S": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/PHASE_S_AUDIT_CLOSURE_CRITERIA.md",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/PHASE_S_EXIT.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/PHASE_S_FINALIZATION_AUTHORIZATION.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/PHASE_S_README.md",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/PHASE_S_ENTRY.json"
+    ],
+    "Phase_Y": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/PHASE_Y_AUDIT_CLOSURE_CRITERIA.md",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/PHASE_Y_ENTRY.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/PHASE_Y_README.md",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/PHASE_Y_FINALIZATION_AUTHORIZATION.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/PHASE_Y_EXIT.json"
+    ],
+    "Phase_T": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/PHASE_T_AUDIT_CLOSURE_CRITERIA.md",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/PHASE_T_EXIT.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/PHASE_T_README.md",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/PHASE_T_FINALIZATION_AUTHORIZATION.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/PHASE_T_ENTRY.json"
+    ],
+    "Phase_W": [
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/PHASE_W_README.md",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/PHASE_W_AUDIT_CLOSURE_CRITERIA.md",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/PHASE_W_EXIT.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/PHASE_W_FINALIZATION_AUTHORIZATION.json",
+      "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/PHASE_W_ENTRY.json"
+    ]
+  },
+  "suspected_issues": {
+    "misrouted_artifacts": {
+      "Phase_P": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_P_FINALIZATION_AUTHORIZATION.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_P_ENTRY.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_P_EXIT.json"
+      ],
+      "Phase_O": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_ENTRY.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_O_Implementation_Checklist.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_FINALIZATION_AUTHORIZATION.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_IMPLEMENTATION_ORDER.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_EXIT.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_INITIAL_MODULE_BOUNDARY.json"
+      ],
+      "Phase_K": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_K_EXIT.json"
+      ]
+    },
+    "possible_typo_dirs": [
+      "Phase_I",
+      "Phase_X",
+      "Phase_M_Planning_Runtime",
+      "Phase_H_Multi_Tick",
+      "Phase_L_Planning",
+      "Phase_D",
+      "Phase_O",
+      "Phase_U",
+      "Phase_M_Planning",
+      "Phase_V",
+      "Phase_R",
+      "Phase_A",
+      "Phase_F",
+      "Phase_S",
+      "Phase_Y",
+      "Phase_J",
+      "Phase_G",
+      "Phase_B",
+      "Phase_K",
+      "Phase_T",
+      "Phase_P",
+      "Phase_E",
+      "Phase_W",
+      "Phase_C"
+    ]
+  },
+  "analysis_notes": [
+    "No files were moved or created.",
+    "Empty phases listed explicitly.",
+    "Artifacts containing phase identifiers but stored elsewhere are flagged as misrouted.",
+    "Results determine whether backfill requires moves, indexing, or generation."
+  ]
+}

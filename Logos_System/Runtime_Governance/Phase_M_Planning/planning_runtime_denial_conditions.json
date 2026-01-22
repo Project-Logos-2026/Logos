@@ -1,0 +1,10 @@
+{
+  "phase": "Phase_M_Planning",
+  "deny_if": [
+    "any execution or scheduling is implied",
+    "design freeze is bypassed",
+    "required planning artifacts are missing"
+  ],
+  "default": "DENY",
+  "timestamp": "2026-01-22T19:28:03.596723Z"
+}
