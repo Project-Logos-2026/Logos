@@ -1,0 +1,13 @@
+{
+  "phase": "Phase-S",
+  "status": "INERT",
+  "description": "Declarative schema placeholder for controlled activation semantics",
+  "explicit_non_effects": [
+    "does not activate runtime",
+    "does not execute code",
+    "does not grant autonomy",
+    "does not introduce ticks",
+    "does not persist state"
+  ],
+  "default": "DENY"
+}

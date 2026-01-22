@@ -1,0 +1,44 @@
+{
+  "phase": "Phase-T",
+  "type": "TEMPORAL_INVARIANTS",
+  "authority": "Protopraxic Logic (PXL)",
+  "invariants": {
+    "temporal_semantics": [
+      "time_is_conceptual_only",
+      "tick_is_symbolic_only",
+      "no_implicit_time_progression"
+    ],
+    "tick_budgeting": [
+      "non_consumable",
+      "non_progressing",
+      "bounded_only_by_declaration",
+      "revocable"
+    ],
+    "negative_capabilities": [
+      "no_time_creation",
+      "no_clocks",
+      "no_timers",
+      "no_tick_creation",
+      "no_tick_consumption",
+      "no_tick_continuation",
+      "no_scheduling",
+      "no_loops",
+      "no_state_persistence",
+      "no_execution",
+      "no_autonomy",
+      "no_plan_advancement",
+      "no_external_io"
+    ],
+    "structural": [
+      "declarative_only",
+      "inert",
+      "serializable",
+      "auditable",
+      "deterministic",
+      "no_runtime_references",
+      "no_hooks",
+      "no_callbacks"
+    ]
+  },
+  "status": "INERT"
+}
