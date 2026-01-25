@@ -1,0 +1,60 @@
+{
+  "artifact": "ARP_Reasoning_Runtime_Integration",
+  "timestamp_utc": "2026-01-24T23:37:11.110061+00:00",
+  "posture": "DESIGN_ONLY",
+  "autonomy": "DENIED",
+  "proof_projection": "BLOCKED",
+  "status": "PASS",
+  "modules": [
+    {
+      "module": "pxl_engine.py",
+      "status": "INTEGRATED",
+      "classified_application_functions": [
+        "AF-PXL-VALIDATE",
+        "AF-PXL-CACHE-POLICY"
+      ],
+      "epistemic_status": "heuristic_only",
+      "runtime_semantics": "ARP-governed",
+      "autonomy_effect": "none"
+    },
+    {
+      "module": "iel_engine.py",
+      "status": "INTEGRATED",
+      "classified_application_functions": [
+        "AF-IEL-DOMAIN-SELECT",
+        "AF-IEL-SYNTHESIZE"
+      ],
+      "epistemic_status": "heuristic_only",
+      "runtime_semantics": "ARP-governed",
+      "autonomy_effect": "none"
+    },
+    {
+      "module": "math_engine.py",
+      "status": "INTEGRATED",
+      "classified_application_functions": [
+        "AF-MATH-SIMILARITY"
+      ],
+      "epistemic_status": "heuristic_only",
+      "runtime_semantics": "ARP-governed",
+      "autonomy_effect": "none"
+    },
+    {
+      "module": "unified_reasoning.py",
+      "status": "INTEGRATED",
+      "classified_application_functions": [
+        "AF-UNIFIED-AGGREGATE",
+        "AF-EPISTEMIC-DOWNGRADE"
+      ],
+      "epistemic_status": "heuristic_only",
+      "runtime_semantics": "ARP-governed",
+      "autonomy_effect": "none"
+    }
+  ],
+  "notes": [
+    "Reasoning engines classified using existing AF bifurcation machinery",
+    "All logic remains heuristic and downgrade-enforced",
+    "Modules now recognized as valid ARP runtime semantics",
+    "No autonomy, execution, or proof projection enabled",
+    "System is now eligible for re-running autonomy argument probe"
+  ]
+}

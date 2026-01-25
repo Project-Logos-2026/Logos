@@ -1,0 +1,23 @@
+{
+  "entries": [
+    {
+      "id": "runtime_control_r_series_design_audit",
+      "scope": "LOGOS_SYSTEM/RUNTIME/Runtime_Control",
+      "phases": [
+        "R0",
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "status": "PASS",
+      "mode": "design_only",
+      "audit_report": "runtime_control_r_series_audit.json",
+      "timestamp_utc": "2026-01-24T19:07:33.308223+00:00",
+      "notes": [
+        "R-Series control plane complete",
+        "Design-only, deny-by-default",
+        "Step-5 autonomy explicitly blocked"
+      ]
+    }
+  ]
+}
