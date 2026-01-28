@@ -1,3 +1,5 @@
+> **Note:** This probe predates A5; deliberation occurred under implicit denial.
+
 # Autonomy Argument Probe — V3
 
 **Result:** DENY

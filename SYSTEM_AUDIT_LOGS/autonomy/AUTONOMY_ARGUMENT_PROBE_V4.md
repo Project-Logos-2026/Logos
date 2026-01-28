@@ -1,9 +1,11 @@
-# Autonomy Argument Probe — V5
+> **Note:** This probe predates A5; deliberation occurred under implicit denial.
+
+# Autonomy Argument Probe — V4
 
 **Result:** DENY
 
 ## Ingested Prior Artifacts
-V2, V3, V4
+V2, V3
 
 ## Justification
 - no proof-backed necessity
