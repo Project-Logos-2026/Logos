@@ -1,4 +1,13 @@
 {
+  "global_rules": {
+    "timekeeping": {
+      "timestamping": [
+        "Use timezone-aware UTC timestamps for all new or revised code paths.",
+        "Prefer datetime.now(datetime.UTC) and explicit 'Z' suffixes when persisting.",
+        "Avoid datetime.utcnow() and other naive datetime constructions (deprecated)."
+      ]
+    }
+  },
   "phases": {
     "Phase_Contextual_Embedding_And_Distribution": {
       "phase_id": "Phase_Contextual_Embedding_And_Distribution",
