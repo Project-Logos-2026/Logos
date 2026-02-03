@@ -1,0 +1,14 @@
+{
+  "phase": "Phase_O",
+  "mode": "DESIGN_ONLY",
+  "authority": "Protopraxic Logic (PXL)",
+  "description": "Defines implementation-order and module-boundary semantics for Phase_O. No execution, activation, autonomy, or continuation is permitted.",
+  "explicit_non_effects": [
+    "no execution",
+    "no activation",
+    "no autonomy",
+    "no scheduling",
+    "no persistence"
+  ],
+  "timestamp": "2026-01-22T19:20:47.166370Z"
+}

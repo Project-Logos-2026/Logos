@@ -1,0 +1,40 @@
+{
+  "phase": "Phase-N",
+  "document": "PHASE_N_IMPLEMENTATION_AUTHORIZATION_DRAFT",
+  "status": "PROPOSED_ONLY",
+  "authority": "Protopraxic Logic (PXL)",
+  "timestamp": "2026-01-22T16:03:43.956085+00:00",
+  "purpose": "Draft authorization record for permitting implementation of the planning runtime. This document does not grant authorization and does not permit implementation.",
+  "preconditions_verified": [
+    "Phase-M is formally closed",
+    "Phase-N is active in authorization-only mode",
+    "Phase-N audit checklist completed and indexed",
+    "Planning runtime design is frozen",
+    "No planning runtime implementation exists",
+    "No execution, autonomy, or goal generation hooks exist"
+  ],
+  "proposed_authorization_scope": [
+    "Implementation of planning runtime only",
+    "Strict conformance to Phase-M design artifacts",
+    "No execution capability",
+    "No autonomy or goal selection capability"
+  ],
+  "explicit_non_effects": [
+    "Does not authorize implementation",
+    "Does not enable execution",
+    "Does not grant autonomy",
+    "Does not expand authority",
+    "Does not serve as a Phase-N exit marker"
+  ],
+  "required_for_effect": [
+    "Explicit authorization granted in a separate artifact",
+    "Independent audit sign-off",
+    "Phase-N exit marker written"
+  ],
+  "signoff_blocks": {
+    "design_reviewer": "PENDING",
+    "governance_reviewer": "PENDING",
+    "authorization_grantor": "PENDING"
+  },
+  "notes": "This is a preparatory document only. Any attempt to implement based on this artifact is invalid."
+}
