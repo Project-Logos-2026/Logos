@@ -1,0 +1,1 @@
+/workspaces/Logos_System/DEV_RESOURCES/LOGOS_REWRITE_SOURCE_OF_TRUTH/_Application_Functions/_Reports/Application_Function_Canon/Application_Function_Canon_List_v1.md
