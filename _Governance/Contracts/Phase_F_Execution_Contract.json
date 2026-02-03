@@ -1,0 +1,49 @@
+{
+  "contract": "Phase-F Execution Contract",
+  "status": "AUTHORITATIVE",
+  "scope": "LOGOS Agent Identity Establishment (Pre-Agent-Instantiation)",
+  "ordering_guarantee": [
+    "START_LOGOS",
+    "LOGOS_SYSTEM (Rebuild)",
+    "Lock-and-Key",
+    "System Entry Verification",
+    "Start_Logos_Agent",
+    "Lem_Discharge"
+  ],
+  "boundaries": {
+    "Start_Logos_Agent": {
+      "inputs": [
+        "verified_runtime_context"
+      ],
+      "outputs": [
+        "LOGOS session envelope"
+      ],
+      "prohibitions": [
+        "No LEM discharge",
+        "No agent instantiation",
+        "No protocol activation"
+      ]
+    },
+    "Lem_Discharge": {
+      "inputs": [
+        "LOGOS session envelope"
+      ],
+      "outputs": [
+        "LOGOS agent identity"
+      ],
+      "prohibitions": [
+        "No I1/I2/I3 instantiation",
+        "No projections",
+        "No SOP mutation"
+      ]
+    }
+  },
+  "failure_semantics": "FAIL_CLOSED",
+  "filesystem_constraints": {
+    "authoritative_write_root": "Logos_System_Rebuild",
+    "legacy_read_only": true
+  },
+  "explicit_prohibitions": [
+    "protocol_activation"
+  ]
+}

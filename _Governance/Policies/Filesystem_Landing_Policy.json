@@ -1,0 +1,19 @@
+{
+  "policy": "Phase-F Filesystem Landing Lock",
+  "authoritative_write_root": "Logos_System_Rebuild",
+  "legacy_read_only_root": "Logos_System",
+  "rewrite_markers": [
+    "Phase-F",
+    "GOVERNED",
+    "NON-BYPASSABLE",
+    "Lock-and-Key",
+    "Projection",
+    "LEM",
+    "LOGOS Agent"
+  ],
+  "rules": {
+    "rewrite_files_must_land_in_rebuild": true,
+    "legacy_tree_is_read_only": true,
+    "fail_closed_on_violation": true
+  }
+}
