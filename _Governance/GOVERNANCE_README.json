@@ -1,0 +1,33 @@
+{
+  "title": "LOGOS GOVERNANCE CONTRACTS",
+  "status": "NORMATIVE",
+  "defines": [
+    "Execution ordering",
+    "Identity issuance",
+    "Access control",
+    "Rewrite constraints"
+  ],
+  "violation": {
+    "type": "system_fault",
+    "note": "Applies even if code executes successfully"
+  },
+  "phase_contracts": [
+    {
+      "phase": "Phase-E",
+      "name": "Agent Orchestration \u2014 Declarative Binding",
+      "status": "AUTHORITATIVE \u00b7 NON-EXECUTABLE",
+      "contract": "Logos_System/Governance/Phase_E_Agent_Orchestration_Execution_Contract.json",
+      "must_follow": "Phase-D",
+      "must_precede": "Phase-F",
+      "execution": "FORBIDDEN"
+    },
+    {
+      "phase": "Phase-F",
+      "name": "Authorized Agent Execution",
+      "status": "DRAFT \u00b7 NON-ACTIVE",
+      "contract": "Logos_System/Governance/Phase_F_Authorized_Agent_Execution_Contract.json",
+      "must_follow": "Phase-E",
+      "execution": "CONDITIONAL"
+    }
+  ]
+}
