@@ -1,0 +1,82 @@
+# PHASE_5_FAILURE_AND_ROLLBACK_CONSTRAINTS.md
+Status: CANONICAL | DESIGN-ONLY | AUTHORITATIVE
+Authority: NONE
+Execution: STRICTLY FORBIDDEN
+Phase: Phase 5 — Substage 5.4
+Scope: Failure constraint definition only
+
+---
+
+## Semantic Synopsis (GPT Handoff)
+
+Enumerates failure classes and rollback constraints governing any future realization consideration.  
+Defines constraints only; no recovery or execution logic.
+
+---
+
+## 1. Purpose
+
+This document defines the **complete failure mode registry for Phase 5 scope** and the rollback constraints that govern any future, separately authorized realization.
+
+---
+
+## 2. Failure Mode Registry (Complete for Phase 5)
+
+### 2.1 Governance Failures
+- Implicit authority inference
+- Boundary collapse (design ↔ execution)
+- Phase reinterpretation or backfill
+
+### 2.2 Semantic Failures
+- TRACE violations
+- Unauthorized DERIVE
+- Shadow semantics introduction
+
+### 2.3 Execution-Adjacent Failures
+- Partial activation
+- Non-determinism
+- Persistence leakage
+
+This registry is **complete for Phase 5**.
+
+---
+
+## 3. Extension Protocol (Future Phases Only)
+
+- New failure modes may be added **only in later phases**
+- No retroactive modification permitted
+- Extensions require explicit authorization and audit
+
+---
+
+## 4. Rollback Constraints
+
+Any future authorized state change must be:
+- Fully reversible to a known safe baseline
+- Logged with complete provenance
+- Manual, explicit, and total
+
+Explicit prohibitions:
+- No automatic retries
+- No self-healing
+- No silent mutation
+
+---
+
+## 5. Halt Supremacy
+
+HALT overrides:
+- execution
+- orchestration
+- persistence
+- optimization
+
+HALT is immediate and non-recoverable without reauthorization.
+
+---
+
+## 6. Fail-Closed Rule
+
+Any ambiguity or validation failure results in **STOP**, not revision.
+
+---
