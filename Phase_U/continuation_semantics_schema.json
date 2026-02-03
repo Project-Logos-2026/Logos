@@ -1,0 +1,14 @@
+{
+  "phase": "Phase-U",
+  "status": "INERT",
+  "description": "Declarative schema placeholder for agent self-continuation semantics",
+  "explicit_non_effects": [
+    "does not permit self-scheduling",
+    "does not permit resumption",
+    "does not create loops",
+    "does not persist state",
+    "does not execute code",
+    "does not grant autonomy"
+  ],
+  "default": "DENY"
+}

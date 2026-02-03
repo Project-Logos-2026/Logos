@@ -1,0 +1,26 @@
+{
+  "phase": "Phase-T",
+  "marker": "PHASE_T_EXIT",
+  "status": "CLOSED",
+  "authority": "Protopraxic Logic (PXL)",
+  "timestamp": "2026-01-22T18:01:31.190105+00:00",
+  "summary": "Phase-T (Temporal Authority & Tick Budgeting \u2014 Design-Only) is complete and frozen.",
+  "confirmed_conditions": [
+    "Temporal semantics defined",
+    "Tick budgeting semantics defined",
+    "Temporal invariants defined",
+    "Temporal denial conditions defined",
+    "Negative capability guarantees preserved",
+    "No temporal or executable artifacts introduced"
+  ],
+  "explicit_non_effects": [
+    "does not create time",
+    "does not introduce ticks",
+    "does not schedule execution",
+    "does not persist state",
+    "does not execute code",
+    "does not grant autonomy"
+  ],
+  "next_phase_gate": "Next phase requires explicit definition and authorization",
+  "notes": "Phase-T formally closed. Time remains impossible."
+}
