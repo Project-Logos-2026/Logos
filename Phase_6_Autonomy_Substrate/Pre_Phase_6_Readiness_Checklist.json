@@ -1,0 +1,56 @@
+{
+  "phase": "Pre-Phase-6",
+  "status": "DESIGN_ONLY",
+  "authority": "DENY",
+  "description": "Checklist gating whether Phase-6 may even be proposed. Satisfying this checklist does not grant authorization.",
+  "requirements": {
+    "governance_integrity": [
+      "All Phases A–Z present and closed",
+      "Phase-Z CLOSED_DESIGN_ONLY",
+      "INDEX.json append-only and audited"
+    ],
+    "memory_and_knowledge_safety": [
+      "SMP canonical schema finalized",
+      "Read-only memory semantics enforced",
+      "Privation dominance defined",
+      "No write or learning paths"
+    ],
+    "planning_safety": [
+      "Planning substrate inert",
+      "Validation-only planning",
+      "No execution or scheduling"
+    ],
+    "external_boundary": [
+      "External systems untrusted by default",
+      "Intake-only with provenance and privation gating"
+    ],
+    "policy_derivation": [
+      "Markdown is sole normative authority",
+      "Deterministic IR defined",
+      "Proof-of-equivalence framework complete"
+    ],
+    "authorization_semantics": [
+      "Authorization object model defined",
+      "Revocation supremacy absolute",
+      "No authorization instances exist"
+    ],
+    "execution_envelopes": [
+      "Execution envelopes defined conceptually",
+      "No envelopes instantiated",
+      "Phase-5 closure recorded"
+    ],
+    "halt_and_override": [
+      "Phase-X emergency halt supremacy unconditional",
+      "No bypass paths"
+    ],
+    "explicit_non_allowances": [
+      "No execution",
+      "No autonomy",
+      "No ticks",
+      "No scheduling",
+      "No persistence",
+      "No continuation"
+    ]
+  },
+  "note": "All items must be satisfied before Phase-6 can be proposed. Any ambiguity resolves to denial."
+}
