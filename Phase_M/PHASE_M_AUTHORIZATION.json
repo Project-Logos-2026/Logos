@@ -1,0 +1,33 @@
+{
+  "phase": "Phase-M",
+  "name": "Planning_Runtime_Authorization",
+  "status": "AUTHORIZED_FOR_DESIGN_ONLY",
+  "timestamp": "2026-01-22T15:18:14.283935+00:00",
+  "authority": "Protopraxic Logic (PXL)",
+  "scope": {
+    "allowed": [
+      "Design of planning runtime architecture",
+      "Specification of planner interfaces",
+      "Definition of governance hooks for planning",
+      "Design of plan validation and review flow"
+    ],
+    "explicitly_forbidden": [
+      "Implementation of executable planning runtime",
+      "Invocation of execution from planner",
+      "Autonomous goal selection",
+      "Bypassing policy or tick governance"
+    ]
+  },
+  "inherited_constraints": [
+    "Phase-K Trust Boundary",
+    "Phase-L Planning Admissibility Gates",
+    "Separation of planning and execution",
+    "Non-autonomy invariant"
+  ],
+  "preconditions_for_implementation": [
+    "Phase-M design audit checklist completed",
+    "New governance tests defined",
+    "Explicit authorization to implement runtime recorded"
+  ],
+  "notes": "This authorization permits design work only. Any runtime implementation requires a separate Phase-M implementation authorization."
+}

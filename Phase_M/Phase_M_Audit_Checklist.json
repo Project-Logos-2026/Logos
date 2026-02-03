@@ -1,0 +1,53 @@
+{
+  "phase": "Phase-M",
+  "name": "Phase_M_Audit_Checklist",
+  "status": "DESIGN_ONLY",
+  "authority": "Protopraxic Logic (PXL)",
+  "purpose": "Audit and lock the planning runtime design prior to any implementation.",
+  "timestamp": "2026-01-22T15:28:27.533452+00:00",
+  "audit_sections": {
+    "authority_and_scope": [
+      "Planning runtime authority is explicitly derived from PXL",
+      "No alternative authority sources exist",
+      "Phase-K trust boundary is reaffirmed"
+    ],
+    "architecture_separation": [
+      "Planning runtime has no execution hooks",
+      "Execution systems do not import planning runtime",
+      "No direct Planning \u2192 Execution path exists"
+    ],
+    "planner_role_constraints": [
+      "Planner cannot select goals autonomously",
+      "Planner cannot approve plans",
+      "Planner cannot invoke execution",
+      "Planner cannot expand authority"
+    ],
+    "plan_object_handling": [
+      "Plans are serializable and reviewable",
+      "Plans carry explicit domain references",
+      "Plans declare bounded tick budgets",
+      "Plans contain no implicit permissions"
+    ],
+    "governance_integration": [
+      "All plans flow through governance review",
+      "Governance approval does not imply execution",
+      "Policy and tick governance remain mandatory"
+    ],
+    "negative_capability_enforcement": [
+      "No autonomy runtime exists",
+      "No goal generation runtime exists",
+      "No learning or adaptation loops exist"
+    ],
+    "drift_prevention": [
+      "Phase-M design artifacts are frozen",
+      "Any change requires explicit re-authorization",
+      "Implementation is blocked until Phase-M exit"
+    ]
+  },
+  "exit_requirements": [
+    "All checklist items reviewed and satisfied",
+    "External design review completed",
+    "Explicit authorization to implement planning runtime recorded"
+  ],
+  "notes": "Failure to satisfy any item blocks Phase-M implementation."
+}

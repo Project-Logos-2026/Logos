@@ -1,0 +1,9 @@
+{
+  "exception": "GovernanceDenied",
+  "used_for": [
+    "multi-tick without explicit policy",
+    "tick budget exhaustion",
+    "policy/attestation mismatch"
+  ],
+  "semantics": "Deterministic, non-recoverable denial"
+}
