@@ -1,0 +1,92 @@
+{
+  "phase": "Phase_Z",
+  "mode": "DESIGN_ONLY",
+  "default_authority": "DENY",
+  "classes": [
+    {
+      "name": "OBSERVATION_ONLY",
+      "description": "Read-only inspection of non-sensitive state representations.",
+      "explicit_allows": [
+        "read-only access to declared artifacts"
+      ],
+      "explicit_denials": [
+        "no execution",
+        "no planning",
+        "no ticks",
+        "no continuation",
+        "no persistence",
+        "no autonomy"
+      ],
+      "requires": [
+        "Phase-Y mediation",
+        "explicit revocation semantics"
+      ]
+    },
+    {
+      "name": "PLANNING_INERT",
+      "description": "Construction of inert plans or proposals with no execution or persistence.",
+      "explicit_allows": [
+        "plan construction",
+        "plan validation"
+      ],
+      "explicit_denials": [
+        "no execution",
+        "no scheduling",
+        "no ticks",
+        "no persistence",
+        "no autonomy"
+      ],
+      "requires": [
+        "Phase-Y mediation",
+        "Phase-L and Phase-M invariants",
+        "explicit revocation semantics"
+      ]
+    },
+    {
+      "name": "EVALUATION_ONLY",
+      "description": "Bounded evaluation or analysis without action or side effects.",
+      "explicit_allows": [
+        "bounded analysis",
+        "non-persistent evaluation"
+      ],
+      "explicit_denials": [
+        "no execution",
+        "no continuation",
+        "no scheduling",
+        "no persistence",
+        "no autonomy"
+      ],
+      "requires": [
+        "Phase-Y mediation",
+        "explicit scope limits",
+        "explicit revocation semantics"
+      ]
+    },
+    {
+      "name": "SIMULATION_SANDBOX",
+      "description": "Isolated simulation with no external effects or persistence.",
+      "explicit_allows": [
+        "isolated simulation",
+        "discard-on-exit results"
+      ],
+      "explicit_denials": [
+        "no real-world execution",
+        "no persistence",
+        "no continuation",
+        "no autonomy"
+      ],
+      "requires": [
+        "Phase-Y mediation",
+        "hard isolation guarantees",
+        "explicit revocation semantics"
+      ]
+    }
+  ],
+  "global_denials": [
+    "No class implies execution authority",
+    "No class implies autonomy",
+    "No class bypasses Phase-Y mediation",
+    "Phase-X halt supremacy applies to all classes"
+  ],
+  "timestamp": "2026-01-22T19:45:17.044279Z"
+}

@@ -1,0 +1,39 @@
+{
+  "phase": "Phase-W",
+  "type": "PLANNING_LOOP_INVARIANTS",
+  "authority": "Protopraxic Logic (PXL)",
+  "invariants": {
+    "planning_loop_semantics": [
+      "generate_evaluate_discard_only",
+      "no_execution_path",
+      "no_continuation_across_steps"
+    ],
+    "safety_bounds": [
+      "fail_closed_by_default",
+      "evaluation_confers_no_authority",
+      "discard_is_terminal"
+    ],
+    "negative_capabilities": [
+      "no_plan_execution",
+      "no_plan_persistence",
+      "no_plan_scheduling",
+      "no_goal_binding",
+      "no_autonomy",
+      "no_ticks",
+      "no_time",
+      "no_state_memory",
+      "no_external_io"
+    ],
+    "structural": [
+      "declarative_only",
+      "inert",
+      "serializable",
+      "auditable",
+      "deterministic",
+      "no_runtime_references",
+      "no_hooks",
+      "no_callbacks"
+    ]
+  },
+  "status": "INERT"
+}
