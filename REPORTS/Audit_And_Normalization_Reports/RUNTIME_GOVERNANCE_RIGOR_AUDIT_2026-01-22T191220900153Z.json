@@ -1,0 +1,353 @@
+{
+  "timestamp": "2026-01-22T19:12:20.900153Z",
+  "target": "/workspaces/Logos_System/Logos_System/Runtime_Governance",
+  "most_rigorous_reference": {
+    "phase_dir": null,
+    "rigor_score": {}
+  },
+  "runtime_governance_audit": {
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance": {
+      "files": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_N_IMPLEMENTATION_AUTHORIZATION.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_Q_FINALIZATION_AUTHORIZATION.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_N_Audit_Checklist.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_N_IMPLEMENTATION_AUTHORIZATION_DRAFT.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_P_FINALIZATION_AUTHORIZATION.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_ENTRY.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_Q_ENTRY.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/INDEX.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_N_ENTRY.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_O_Implementation_Checklist.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_L_EXIT.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_K_EXIT.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_P_ENTRY.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_M_AUTHORIZATION.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_FINALIZATION_AUTHORIZATION.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_IMPLEMENTATION_ORDER.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_N_EXIT.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_EXIT.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_O_INITIAL_MODULE_BOUNDARY.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_P_EXIT.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/__init__.py",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/PHASE_Q_EXIT.json"
+      ],
+      "file_count": 22,
+      "rigor_score": {
+        "entry": 20,
+        "finalization": 6,
+        "audit": 1,
+        "ledger_refs": 1,
+        "exit": 6
+      }
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_I": {
+      "files": [],
+      "file_count": 0,
+      "rigor_score": {}
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X": {
+      "files": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/PHASE_X_ENTRY.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/halt_override_denial_conditions.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/PHASE_X_FINALIZATION_AUTHORIZATION.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/PHASE_X_EXIT.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/PHASE_X_AUDIT_CLOSURE_CRITERIA.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/PHASE_X_README.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/halt_override_invariants.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_X/halt_override_semantics_schema.json"
+      ],
+      "file_count": 8,
+      "rigor_score": {
+        "entry": 5,
+        "denials": 1,
+        "finalization": 1,
+        "exit": 1,
+        "audit": 1,
+        "readme": 1,
+        "invariants": 1
+      }
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_M_Planning_Runtime": {
+      "files": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_M_Planning_Runtime/Phase_M_Audit_Checklist.json"
+      ],
+      "file_count": 1,
+      "rigor_score": {
+        "entry": 1,
+        "audit": 1
+      }
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_H_Multi_Tick": {
+      "files": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_H_Multi_Tick/Tick_Budget_Contract.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_H_Multi_Tick/README.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_H_Multi_Tick/Governance_Denial_Spec.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_H_Multi_Tick/Multi_Tick_Policy_Schema.json"
+      ],
+      "file_count": 4,
+      "rigor_score": {
+        "readme": 1,
+        "denials": 1
+      }
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_L_Planning": {
+      "files": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_L_Planning/Phase_L_Audit_Checklist.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_L_Planning/Plan_Lifecycle_Contract.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_L_Planning/Planning_Eligibility_Manifest.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_L_Planning/README.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_L_Planning/Phase_L_Exit_Criteria.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_L_Planning/Planner_Role_Boundary.json"
+      ],
+      "file_count": 6,
+      "rigor_score": {
+        "entry": 2,
+        "audit": 1,
+        "readme": 1,
+        "exit": 1
+      }
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_D": {
+      "files": [],
+      "file_count": 0,
+      "rigor_score": {}
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_O": {
+      "files": [],
+      "file_count": 0,
+      "rigor_score": {}
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U": {
+      "files": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/PHASE_U_README.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/PHASE_U_FINALIZATION_AUTHORIZATION.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/PHASE_U_ENTRY.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/PHASE_U_AUDIT_CLOSURE_CRITERIA.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/PHASE_U_EXIT.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/continuation_semantics_schema.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/continuation_denial_conditions.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_U/continuation_invariants.json"
+      ],
+      "file_count": 8,
+      "rigor_score": {
+        "entry": 5,
+        "readme": 1,
+        "finalization": 1,
+        "audit": 1,
+        "exit": 1,
+        "denials": 1,
+        "invariants": 1
+      }
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_M_Planning": {
+      "files": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_M_Planning/PHASE_M_DESIGN_FREEZE.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_M_Planning/Phase_M_Design_Scope_and_Architecture.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_M_Planning/PHASE_M_EXIT.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_M_Planning/PHASE_M_EXIT_AUTHORIZATION_DRAFT.json"
+      ],
+      "file_count": 4,
+      "rigor_score": {
+        "entry": 4,
+        "exit": 2,
+        "finalization": 1
+      }
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V": {
+      "files": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/goal_semantics_schema.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/PHASE_V_README.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/goal_invariants.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/PHASE_V_FINALIZATION_AUTHORIZATION.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/PHASE_V_AUDIT_CLOSURE_CRITERIA.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/PHASE_V_ENTRY.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/goal_denial_conditions.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_V/PHASE_V_EXIT.json"
+      ],
+      "file_count": 8,
+      "rigor_score": {
+        "entry": 5,
+        "readme": 1,
+        "invariants": 1,
+        "finalization": 1,
+        "audit": 1,
+        "denials": 1,
+        "exit": 1
+      }
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R": {
+      "files": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/PHASE_R_ENTRY.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/enablement_invariants.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/PHASE_R_EXIT.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/enablement_semantics_schema.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/activation_denial_conditions.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/PHASE_R_README.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/PHASE_R_FINALIZATION_AUTHORIZATION.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_R/authorization_semantics.md"
+      ],
+      "file_count": 8,
+      "rigor_score": {
+        "entry": 4,
+        "invariants": 1,
+        "exit": 1,
+        "denials": 1,
+        "readme": 1,
+        "finalization": 2
+      }
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_A": {
+      "files": [],
+      "file_count": 0,
+      "rigor_score": {}
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_F": {
+      "files": [],
+      "file_count": 0,
+      "rigor_score": {}
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S": {
+      "files": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/PHASE_S_AUDIT_CLOSURE_CRITERIA.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/PHASE_S_EXIT.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/activation_semantics_schema.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/PHASE_S_FINALIZATION_AUTHORIZATION.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/activation_denial_conditions.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/PHASE_S_README.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/activation_invariants.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_S/PHASE_S_ENTRY.json"
+      ],
+      "file_count": 8,
+      "rigor_score": {
+        "entry": 5,
+        "audit": 1,
+        "exit": 1,
+        "finalization": 1,
+        "denials": 1,
+        "readme": 1,
+        "invariants": 1
+      }
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/__pycache__": {
+      "files": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/__pycache__/__init__.cpython-312.pyc"
+      ],
+      "file_count": 1,
+      "rigor_score": {}
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y": {
+      "files": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/PHASE_Y_AUDIT_CLOSURE_CRITERIA.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/autonomy_classes.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/autonomy_policy_schema.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/PHASE_Y_ENTRY.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/PHASE_Y_README.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/PHASE_Y_FINALIZATION_AUTHORIZATION.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/PHASE_Y_EXIT.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/autonomy_policy_invariants.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/revocation_conditions.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/autonomy_policy_denial_conditions.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_Y/mediation_rules.json"
+      ],
+      "file_count": 11,
+      "rigor_score": {
+        "entry": 5,
+        "audit": 1,
+        "readme": 1,
+        "finalization": 1,
+        "exit": 1,
+        "invariants": 1,
+        "denials": 1
+      }
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_J": {
+      "files": [],
+      "file_count": 0,
+      "rigor_score": {}
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_G": {
+      "files": [],
+      "file_count": 0,
+      "rigor_score": {}
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_B": {
+      "files": [],
+      "file_count": 0,
+      "rigor_score": {}
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_K": {
+      "files": [],
+      "file_count": 0,
+      "rigor_score": {}
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/pahse_Q": {
+      "files": [],
+      "file_count": 0,
+      "rigor_score": {}
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T": {
+      "files": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/temporal_semantics_schema.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/PHASE_T_AUDIT_CLOSURE_CRITERIA.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/temporal_invariants.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/PHASE_T_EXIT.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/PHASE_T_README.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/PHASE_T_FINALIZATION_AUTHORIZATION.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/PHASE_T_ENTRY.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_T/temporal_denial_conditions.json"
+      ],
+      "file_count": 8,
+      "rigor_score": {
+        "entry": 5,
+        "audit": 1,
+        "invariants": 1,
+        "exit": 1,
+        "readme": 1,
+        "finalization": 1,
+        "denials": 1
+      }
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_P": {
+      "files": [],
+      "file_count": 0,
+      "rigor_score": {}
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_E": {
+      "files": [],
+      "file_count": 0,
+      "rigor_score": {}
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W": {
+      "files": [
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/PHASE_W_README.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/PHASE_W_AUDIT_CLOSURE_CRITERIA.md",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/planning_invariants.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/PHASE_W_EXIT.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/planning_loop_semantics_schema.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/PHASE_W_FINALIZATION_AUTHORIZATION.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/PHASE_W_ENTRY.json",
+        "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_W/planning_denial_conditions.json"
+      ],
+      "file_count": 8,
+      "rigor_score": {
+        "entry": 5,
+        "readme": 1,
+        "audit": 1,
+        "invariants": 1,
+        "exit": 1,
+        "finalization": 1,
+        "denials": 1
+      }
+    },
+    "/workspaces/Logos_System/Logos_System/Runtime_Governance/Phase_C": {
+      "files": [],
+      "file_count": 0,
+      "rigor_score": {}
+    }
+  },
+  "analysis_notes": [
+    "Most rigorous phase selected by total presence of entry, authorization, invariants, denials, audit, exit, and README artifacts.",
+    "Runtime_Governance subdirs with zero files are flagged implicitly by file_count == 0.",
+    "This report is read-only and suitable for Phase-Z documentation normalization planning."
+  ]
+}
