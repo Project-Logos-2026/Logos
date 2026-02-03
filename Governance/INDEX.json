@@ -1,0 +1,35 @@
+{
+  "governance_artifacts": [
+    {
+      "id": "A5_EXIT_CRITERIA",
+      "path": "Governance/A5_Exit_Criteria.md",
+      "sha256": "acf43598fbfb59c554b15383583f6a1e64231d9e08050f110ba6f87da00c3805",
+      "status": "DESIGN_ONLY",
+      "constraints": [
+        "NO_EXECUTION",
+        "NO_AUTHORIZATION",
+        "FAIL_CLOSED"
+      ],
+      "timestamp_utc": "2026-01-25T21:52:24.837797Z"
+    },
+    {
+      "id": "TREE3_3OT_BOUNDARY_MODULE",
+      "path": "Governance/TREE3_3OT_Boundary_Module.md",
+      "sha256": null,
+      "status": "DESIGN_ONLY",
+      "constraints": [
+        "NO_EXECUTION",
+        "NO_AUTHORIZATION",
+        "FAIL_CLOSED"
+      ],
+      "timestamp_utc": "2026-01-28T00:00:00Z",
+      "metadata": {
+        "category": "Epistemic_Governance",
+        "function": "Reasoning boundary detection and triadic stabilization",
+        "execution": "FORBIDDEN",
+        "authorization": "DENIED",
+        "notes": "TREE(3) boundary detection with T3 projection; design-only registration, no runtime wiring."
+      }
+    }
+  ]
+}
