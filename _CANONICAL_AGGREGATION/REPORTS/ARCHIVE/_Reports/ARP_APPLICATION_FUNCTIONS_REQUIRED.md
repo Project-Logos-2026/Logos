@@ -1,1 +1,0 @@
-/workspaces/Logos_System/ARCHIVE/_Reports/ARP_APPLICATION_FUNCTIONS_REQUIRED.md
