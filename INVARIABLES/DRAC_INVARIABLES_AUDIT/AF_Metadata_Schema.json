@@ -1,0 +1,27 @@
+{
+  "af_id": "string",
+  "name": "string",
+  "description": "string",
+  "cluster": "enum",
+  "compatible_cores": [
+    "SAxCE_id"
+  ],
+  "forbidden_cores": [
+    "SAxCE_id"
+  ],
+  "protocol_scope": [
+    "SCP",
+    "ARP",
+    "MTP",
+    "CSP"
+  ],
+  "runtime_modes": [
+    "P1",
+    "P2"
+  ],
+  "determinism": "boolean",
+  "idempotent": "boolean",
+  "side_effects": "none | declared",
+  "cost_class": "cheap | moderate | expensive",
+  "status": "canonical | conditional | deprecated"
+}
