@@ -1,0 +1,54 @@
+{
+  "phase": "Phase_Z",
+  "artifact": "REVOCATION_SEMANTICS",
+  "mode": "DESIGN_ONLY",
+  "default_authority": "DENY",
+  "description": "Defines mandatory revocation triggers, precedence, and propagation for any Phase-Z authorization.",
+  "triggers": [
+    {
+      "name": "PHASE_X_EMERGENCY_HALT",
+      "priority": 1,
+      "effect": "IMMEDIATE_GLOBAL_REVOCATION",
+      "notes": "Overrides all other considerations; unconditional."
+    },
+    {
+      "name": "TTL_EXPIRY",
+      "priority": 2,
+      "effect": "AUTOMATIC_REVOCATION",
+      "notes": "Authorization expires without renewal."
+    },
+    {
+      "name": "PHASE_Y_POLICY_VIOLATION",
+      "priority": 3,
+      "effect": "IMMEDIATE_REVOCATION",
+      "notes": "Any violation detected by Phase-Y mediation."
+    },
+    {
+      "name": "SCOPE_VIOLATION",
+      "priority": 4,
+      "effect": "IMMEDIATE_REVOCATION",
+      "notes": "Use outside explicit scope."
+    }
+  ],
+  "precedence_rules": [
+    "Lower priority number overrides higher",
+    "Phase-X halt supersedes all other triggers",
+    "TTL expiry does not require external confirmation"
+  ],
+  "propagation": {
+    "scope": "ALL_ACTIVE_AUTHORIZATIONS",
+    "timing": "IMMEDIATE",
+    "notes": "Revocation propagates synchronously to all authorization checks."
+  },
+  "audit_requirements": [
+    "All revocations must emit an audit record",
+    "Audit record must reference triggering condition",
+    "Audit record must include timestamp and affected authorization_id(s)"
+  ],
+  "global_invariants": [
+    "Revocation cannot be disabled",
+    "Revocation cannot be delayed",
+    "Any ambiguity results in revocation"
+  ],
+  "timestamp": "2026-01-22T19:49:37.720728Z"
+}

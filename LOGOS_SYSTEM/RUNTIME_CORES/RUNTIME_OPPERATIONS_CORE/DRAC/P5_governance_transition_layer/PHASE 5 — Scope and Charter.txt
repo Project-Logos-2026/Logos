@@ -1,0 +1,114 @@
+# PHASE 5 — Scope and Charter
+**Status:** DESIGN-ONLY  
+**Authority:** NONE  
+**Execution:** FORBIDDEN  
+**Layer:** Governance / Orchestration  
+**Invariants:** G1 (Deny-by-Default), G7 (Monotonic Authority)  
+
+---
+
+## 1. Purpose
+
+Phase 5 exists to govern the **transition boundary** between:
+- fully formal, design-only artifacts (Phases 1–4), and
+- any potential future realization or execution.
+
+Phase 5 does **not** authorize execution.
+Phase 5 defines **how execution could ever be authorized**, if at all.
+
+---
+
+## 2. Phase 5 Scope (What This Phase Covers)
+
+Phase 5 is responsible for:
+
+1. Declaring **decision prerequisites** for realization.
+2. Defining **governance gates** that must be passed before any execution.
+3. Establishing **traceability rules** from Phase 4 artifacts to any future implementation.
+4. Separating:
+   - governance decisions,
+   - implementation planning,
+   - and executable realization into explicitly distinct tracks.
+
+Phase 5 may produce:
+- governance documents,
+- roadmaps,
+- grounding rules,
+- authorization schemas,
+- audit and validation frameworks.
+
+---
+
+## 3. Explicit Non-Scope (What Phase 5 Does NOT Do)
+
+Phase 5 does **not**:
+
+- implement runtime logic
+- generate executable code
+- bind Coq proofs to runtime
+- enable persistence
+- authorize autonomy
+- reinterpret or modify Phase 4 artifacts
+- backfill missing semantics
+
+All such actions remain **forbidden unless explicitly authorized in a later phase**.
+
+---
+
+## 4. Relationship to Phase 4 Artifacts
+
+Phase 4 artifacts are:
+
+- **Canonical**
+- **Immutable**
+- **Consumed, not extended**
+
+Phase 5 artifacts may:
+- reference Phase 4,
+- trace to Phase 4,
+- gate future use of Phase 4 artifacts,
+
+but may **never reinterpret or revise them**.
+
+---
+
+## 5. Authority and Governance Posture
+
+- Default posture: **DENY**
+- Authority is:
+  - explicit,
+  - scoped,
+  - monotonic,
+  - non-inferable.
+
+Any future execution authority must:
+- be separately granted,
+- pass explicit audit gates,
+- and be revocable.
+
+---
+
+## 6. Success Criteria for Phase 5 Closure
+
+Phase 5 is complete when:
+
+- All realization pathways are explicitly defined and gated.
+- No ambiguity remains about:
+  - what may be implemented,
+  - under what authority,
+  - under which constraints.
+- Governance documents are internally consistent and auditable.
+- No execution authority has been implicitly introduced.
+
+---
+
+## 7. Closure Declaration
+
+Phase 5 closure does **not** imply:
+- readiness for execution,
+- approval of realization,
+- or transition to a runtime phase.
+
+It implies **governance completeness only**.
+
+---

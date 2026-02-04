@@ -1,0 +1,25 @@
+{
+  "phase": "Phase-U",
+  "marker": "PHASE_U_EXIT",
+  "status": "CLOSED",
+  "authority": "Protopraxic Logic (PXL)",
+  "timestamp": "2026-01-22T18:17:22.814284+00:00",
+  "summary": "Phase-U (Agent Self-Continuation Authority \u2014 Design-Only) is complete and frozen.",
+  "confirmed_conditions": [
+    "Self-continuation semantics defined",
+    "Continuation invariants defined",
+    "Continuation denial conditions defined",
+    "Negative capability guarantees preserved",
+    "No executable or autonomous artifacts introduced"
+  ],
+  "explicit_non_effects": [
+    "does not permit self-continuation",
+    "does not schedule agents",
+    "does not resume agents",
+    "does not execute code",
+    "does not grant autonomy",
+    "does not introduce time, ticks, or persistence"
+  ],
+  "next_phase_gate": "Next phase requires explicit definition and authorization",
+  "notes": "Phase-U formally closed. Agent self-continuation remains impossible."
+}

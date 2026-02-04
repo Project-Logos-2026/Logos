@@ -1,0 +1,20 @@
+{
+  "phase": "Phase-N",
+  "document": "PHASE_N_IMPLEMENTATION_AUTHORIZATION",
+  "status": "AUTHORIZED",
+  "authority": "Protopraxic Logic (PXL)",
+  "timestamp": "2026-01-22T16:07:07.773731+00:00",
+  "authorization_scope": [
+    "Implementation of planning runtime only",
+    "Strict conformance to Phase-M design artifacts",
+    "No execution capability",
+    "No autonomy or goal selection capability"
+  ],
+  "explicit_non_effects": [
+    "Does not enable execution",
+    "Does not grant autonomy",
+    "Does not grant goal authority",
+    "Does not authorize runtime activation"
+  ],
+  "notes": "Formal internal authorization granted to proceed to implementation phase only. All execution remains denied by default."
+}

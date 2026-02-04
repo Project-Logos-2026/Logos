@@ -1,0 +1,22 @@
+{
+  "catalog_version": "v1.0",
+  "generated_at": "2026-01-16T00:00:00Z",
+  "orchestration": [
+    {
+      "id": "Canonical_System_Bootstrap_Pipeline",
+      "module": "PYTHON_MODULES.ORCHESTRATION_AND_ENTRYPOINTS.BOOTSTRAP_PIPELINES.Canonical_System_Bootstrap_Pipeline",
+      "entry": "system_bootstrap",
+      "status": "ACTIVE",
+      "notes": "Authoritative orchestration sequence for LOGOS startup."
+    }
+  ],
+  "entrypoints": [
+    {
+      "id": "Logos_System_Entry_Point",
+      "module": "PYTHON_MODULES.ORCHESTRATION_AND_ENTRYPOINTS.ENTRYPOINTS.Logos_System_Entry_Point",
+      "entry": "main",
+      "status": "ACTIVE",
+      "notes": "Sole public entrypoint for system startup; delegates to canonical bootstrap pipeline."
+    }
+  ]
+}
