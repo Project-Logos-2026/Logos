@@ -1,0 +1,17 @@
+{
+  "phase": "Phase-X",
+  "type": "HALT_OVERRIDE_DENIAL_CONDITIONS",
+  "absolute_denials": [
+    "halt_requires_authorization",
+    "halt_is_revocable_by_lower_authority",
+    "halt_is_time_bounded",
+    "halt_is_overridable",
+    "halt_triggers_execution",
+    "halt_enables_continuation",
+    "ledger_inconsistency",
+    "phase_boundary_violation",
+    "negative_capability_breach"
+  ],
+  "default": "DENY",
+  "status": "INERT"
+}

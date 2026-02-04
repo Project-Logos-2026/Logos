@@ -1,0 +1,20 @@
+{
+  "autonomy_framework": "LOGOS",
+  "default_state": "DENIED",
+  "axioms": {
+    "A3": {
+      "name": "Delegated Autonomy Authorization",
+      "status": "ACTIVE_PERMISSION_ONLY",
+      "default": "DENIED",
+      "document": "Governance/Autonomy/A3_Delegated_Authorization/A3_Delegated_Autonomy_Authorization.md",
+      "requires": [
+        "A1",
+        "A2"
+      ],
+      "authorization_required": true,
+      "self_authorization": false,
+      "revocable": true,
+      "runtime_enabled": false
+    }
+  }
+}

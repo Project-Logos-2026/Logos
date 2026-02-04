@@ -1,0 +1,21 @@
+{
+  "phase": "Phase-N",
+  "marker": "PHASE_N_ENTRY",
+  "status": "AUTHORIZATION_ONLY",
+  "authority": "Protopraxic Logic (PXL)",
+  "timestamp": "2026-01-22T15:55:38.374048+00:00",
+  "purpose": "Phase-N governs authorization for planning runtime implementation. This phase does not implement, execute, or enable autonomy.",
+  "preconditions_confirmed": [
+    "Phase-M is formally closed",
+    "Planning runtime design is frozen",
+    "No planning runtime implementation exists",
+    "No execution or autonomy hooks exist"
+  ],
+  "explicit_constraints": [
+    "No implementation permitted without explicit authorization",
+    "No execution hooks permitted",
+    "No autonomy or goal generation permitted",
+    "All changes remain governance-gated"
+  ],
+  "notes": "Phase-N entered in authorization-only mode. Any implementation requires a separate, explicit authorization artifact."
+}

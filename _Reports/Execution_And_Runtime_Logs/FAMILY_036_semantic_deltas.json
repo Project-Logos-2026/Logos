@@ -1,0 +1,32 @@
+{
+  "family_id": "FAMILY_036",
+  "member_count": 3,
+  "members": [
+    "ARPPolicyDecision",
+    "decide_policy",
+    "SCPPolicyDecision"
+  ],
+  "invariant_semantics": {
+    "semantic_tags": [
+      "AGENT_LOGIC",
+      "GOVERNANCE"
+    ],
+    "data_role": [],
+    "control_role": [
+      "ALIGNMENT_GUARD"
+    ],
+    "spine_binding": [
+      "PASSIVE_RUNTIME_INITIALIZATION",
+      "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+    ]
+  },
+  "divergent_semantics": {
+    "operation_type": {
+      "ARPPolicyDecision": [],
+      "decide_policy": [
+        "TRANSFORMATION"
+      ],
+      "SCPPolicyDecision": []
+    }
+  }
+}

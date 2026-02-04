@@ -1,0 +1,31 @@
+{
+  "canonical_family": "Agent_Activation_Gate",
+  "origin_family_id": "FAMILY_001_32_032",
+  "status": "CANONICAL",
+  "category": "runtime_boundary_gate",
+  "foundational": true,
+  "runtime_required": true,
+  "fail_closed": true,
+  "semantic_role": [
+    "Agent execution entry boundary",
+    "Activation gating after alignment",
+    "Readiness and admissibility check",
+    "Transition from validated to active state"
+  ],
+  "governance": {
+    "admission": "approved",
+    "mutation_policy": "none",
+    "side_effects": "none",
+    "nondeterminism": "none",
+    "failure_mode": "explicit_fail_closed"
+  },
+  "dependencies": [
+    "Trinitarian_Logic_Core",
+    "Trinitarian_Alignment_Core"
+  ],
+  "dependents": [
+    "Advanced_Reasoning_Protocol",
+    "Agent_Runtime_Orchestration",
+    "Execution_Lifecycle_Manager"
+  ]
+}

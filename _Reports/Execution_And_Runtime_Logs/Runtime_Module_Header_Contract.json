@@ -1,0 +1,44 @@
+{
+  "name": "Runtime Module Header Contract",
+  "status": "AUTHORITATIVE · NON-BYPASSABLE",
+  "scope": [
+    "all_rewritten_modules",
+    "all_runtime_modules",
+    "all_governance_modules",
+    "all_package_initializers (__init__.py)",
+    "all_future_rewrites"
+  ],
+  "ontological_rule": "No header = no existence",
+  "required_header_fields": [
+    "FILE",
+    "PATH",
+    "PROJECT",
+    "PHASE",
+    "STEP",
+    "STATUS",
+    "CLASSIFICATION",
+    "GOVERNANCE",
+    "ROLE",
+    "ORDERING GUARANTEE",
+    "PROHIBITIONS",
+    "FAILURE SEMANTICS"
+  ],
+  "governance_binding": "Every header must reference governing execution contracts that apply to the module.",
+  "enforcement": [
+    "rewrite-time header injection",
+    "rewrite-time validation",
+    "pre-commit hooks",
+    "CI / audit scans"
+  ],
+  "violations": {
+    "result": "immediate_failure"
+  },
+  "versioning": {
+    "change_control": ["explicit_versioned_replacement", "repo_commit", "audit_review"],
+    "silent_modification": "forbidden"
+  },
+  "authority": {
+    "supersedes": ["comments", "READMEs", "inline_documentation", "developer_intent"],
+    "override": "only_explicit_versioned_contracts"
+  }
+}

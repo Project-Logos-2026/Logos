@@ -1,0 +1,84 @@
+# PHASE 5 — Grounding Rule
+**Status:** DESIGN-ONLY  
+**Authority:** NONE  
+**Execution:** FORBIDDEN  
+
+---
+
+## 1. Purpose
+
+This document extends Phase 4 grounding discipline into Phase 5.
+
+It governs **how Phase 5 artifacts may reference or enable future realization** without violating Phase 4.
+
+---
+
+## 2. Trace vs Derive (Preserved)
+
+Phase 5 inherits Phase 4 grounding discipline:
+
+- **TRACE**  
+  - Allowed for referencing Phase 4 artifacts
+  - Does not add semantics
+
+- **DERIVE**  
+  - Forbidden unless explicitly authorized
+  - Never retroactive
+  - Never reinterpretive
+
+---
+
+## 3. Authority Inheritance Rules
+
+No Phase 5 artifact may:
+- inherit execution authority,
+- infer runtime semantics,
+- or bind Phase 4 types to implementation.
+
+Authority must be **explicitly granted per component**, not per phase.
+
+---
+
+## 4. Prohibited Actions
+
+Phase 5 artifacts must not:
+
+- reinterpret Phase 4 schemas
+- consolidate Phase 4 types
+- introduce shadow semantics
+- backfill missing structure
+- introduce implicit derivation classes
+
+---
+
+## 5. Conditional Derivation Extensions
+
+If Phase 5 introduces new derivation patterns, they must:
+
+- be explicitly declared,
+- be non-overlapping with Phase 4,
+- be audited independently,
+- default to DENY.
+
+---
+
+## 6. Validation Protocol
+
+All Phase 5 artifacts must pass:
+
+1. Traceability audit
+2. Authority audit
+3. Non-execution verification
+4. Boundary integrity check
+
+Failure at any step results in rejection, not revision.
+
+---
+
+## 7. Grounding Closure
+
+Grounding compliance is a **hard gate**.
+
+Non-compliant artifacts may not be integrated, revised, or conditionally accepted.
+
+---

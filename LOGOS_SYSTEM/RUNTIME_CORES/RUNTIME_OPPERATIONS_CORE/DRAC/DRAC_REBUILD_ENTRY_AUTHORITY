@@ -1,0 +1,358 @@
+# DRAC_REBUILD_ENTRY_AUTHORITY.md
+
+**Status:** CANONICAL | DESIGN-ONLY | NON-EXECUTABLE  
+**Authority:** Declarative Specification Only  
+**Execution:** STRICTLY FORBIDDEN  
+**Phase:** DR-AC Rebuild Entry Definition  
+**Scope:** Permission structure for rebuild initiation
+
+---
+
+## Semantic Synopsis
+
+This specification declares the conditions under which a DRAC (Dynamic Reconstruction / Adaptive Compilation) rebuild MAY be initiated. It does not grant permission. It does not trigger rebuild. It defines what permission WOULD consist of, who COULD grant it, and what preconditions MUST hold before any such grant could be valid.
+
+This document is declarative. It describes a gate that does not yet open.
+
+---
+
+## 1. Scope and Intent
+
+### 1.1 What This Document Does
+
+This document:
+- Declares the structure of rebuild initiation authority
+- Identifies the exclusive holder(s) of that authority
+- Enumerates preconditions that must be satisfied before authority can be exercised
+- Binds rebuild initiation to existing governance contracts and freezes
+- Establishes explicit prohibitions that survive all other considerations
+
+### 1.2 What This Document Does Not Do
+
+This document does NOT:
+- Grant permission to initiate rebuild
+- Authorize any execution, autonomous or otherwise
+- Create, modify, or extend any invariant not already declared in `LOGOS_DRAC_Invariant_Specification.md`
+- Bypass or weaken any governance freeze
+- Enable automatic or self-triggered rebuild initiation
+- Establish runtime behavior or semantics
+
+### 1.3 Binding Artifacts
+
+This specification is subordinate to and constrained by:
+
+| Artifact | Relationship |
+|----------|--------------|
+| `LOGOS_GOVERNANCE_FREEZE_v1.0.md` | Governance freeze supremacy; action may not occur |
+| `LOGOS_DRAC_Invariant_Specification.md` | All global invariants (G1–G8) bind this specification |
+| `DRAC_CANONICAL_OUTPUT_TREE_SPEC.md` | Output target definition; no execution authority |
+| `runtime_spine_contract_v1.json` | Runtime spine shape constraint |
+| `PHASE_A_Y_GOVERNANCE_FREEZE.json` | Phase lattice immutability |
+| `halt_override_denial_conditions.json` | Halt non-revocability |
+| `LOGOS_HUMAN_AUTHORIZATION_DOCTRINE_v1.0.md` | Human approval requirement |
+
+---
+
+## 2. Authority Holder(s)
+
+### 2.1 Exclusive Authority
+
+Rebuild initiation authority is held EXCLUSIVELY by:
+
+**Human Principal(s) with explicit system governance role.**
+
+No agent, sub-agent, automated process, script, scheduled task, or system component holds rebuild initiation authority. No delegation of this authority to non-human actors is permitted.
+
+### 2.2 What "Human Principal" Means
+
+A Human Principal is:
+- A natural person with designated governance responsibility for the LOGOS system
+- Capable of explicit, documented, non-coerced authorization
+- Operating outside the runtime boundary (not a simulated or in-system actor)
+
+### 2.3 Non-Holders of Authority
+
+The following explicitly DO NOT hold rebuild initiation authority:
+
+- LOGOS Agent (any instantiation)
+- Sub-agents (I₁, I₂, I₃, or any other)
+- System Oversight Protocol (SOP)
+- Any automated monitoring, health-check, or recovery system
+- Any script, cron job, or scheduled process
+- Any governance artifact (artifacts declare; they do not authorize)
+- This document itself
+
+### 2.4 Authority Cannot Be:
+
+- Self-granted by any system component
+- Inferred from system state
+- Triggered by failure, anomaly, or drift detection
+- Delegated to autonomous actors
+- Exercised implicitly
+
+---
+
+## 3. Preconditions for Rebuild Initiation
+
+All of the following preconditions MUST hold before rebuild initiation authority can be validly exercised. Failure of ANY precondition invalidates any attempted authorization.
+
+### 3.1 Governance Preconditions
+
+| ID | Precondition | Verification |
+|----|--------------|--------------|
+| G-PRE-1 | Governance freeze status is known and documented | `LOGOS_GOVERNANCE_FREEZE_v1.0.md` status field |
+| G-PRE-2 | Phase lattice (A–Y) immutability is preserved | `PHASE_A_Y_GOVERNANCE_FREEZE.json` guarantees hold |
+| G-PRE-3 | No governance artifact contradicts rebuild at this time | Audit of active governance state |
+| G-PRE-4 | Human Authorization Doctrine is satisfied | Explicit human approval documented |
+
+### 3.2 Structural Preconditions
+
+| ID | Precondition | Verification |
+|----|--------------|--------------|
+| S-PRE-1 | `DRAC_CANONICAL_OUTPUT_TREE_SPEC.md` is valid and accessible | File exists, is parseable, status is CANONICAL |
+| S-PRE-2 | `LOGOS_DRAC_Invariant_Specification.md` is valid and accessible | File exists, is parseable, status is AUTHORITATIVE |
+| S-PRE-3 | Target output tree location is writable (if rebuild were to occur) | Filesystem state (not checked until authorized) |
+| S-PRE-4 | No prior incomplete rebuild is in progress | Clean state verification |
+
+### 3.3 Safety Preconditions
+
+| ID | Precondition | Verification |
+|----|--------------|--------------|
+| SAFE-PRE-1 | No active halt condition exists | `halt_override_denial_conditions.json` not triggered |
+| SAFE-PRE-2 | System is in a safe-to-rebuild state | No active sessions, no pending mutations |
+| SAFE-PRE-3 | Audit pathway is available and writable | Audit spine reachable |
+| SAFE-PRE-4 | Rollback or abort capability exists | Recovery path verified |
+
+### 3.4 Precondition Failure Semantics
+
+If ANY precondition fails:
+- Authorization attempt is INVALID
+- No rebuild initiation occurs
+- Failure is logged (if audit pathway available)
+- System state is unchanged
+- No fallback or degraded initiation is permitted
+
+---
+
+## 4. Explicit Prohibitions
+
+The following are ABSOLUTELY PROHIBITED regardless of any other consideration. These prohibitions cannot be overridden, bypassed, or suspended.
+
+### 4.1 Autonomous Initiation
+
+DRAC rebuild MUST NOT be initiated by:
+- Any autonomous agent or sub-agent
+- Any self-triggered mechanism
+- Any anomaly-detection or self-healing system
+- Any scheduled or automated process
+- Any governance artifact acting without human approval
+
+### 4.2 Implicit Authorization
+
+Rebuild initiation MUST NOT be:
+- Inferred from system state (e.g., "drift detected, therefore rebuild")
+- Triggered by failure (e.g., "compilation failed, therefore rebuild")
+- Assumed from prior authorization (authorization is non-persistent)
+- Derived from partial precondition satisfaction
+
+### 4.3 Authority Escalation
+
+Rebuild initiation MUST NOT:
+- Grant any authority not already held
+- Enable capabilities beyond those declared in `DRAC_CANONICAL_OUTPUT_TREE_SPEC.md`
+- Modify governance artifacts
+- Weaken or suspend any invariant
+- Create execution authority where none existed
+
+### 4.4 Governance Bypass
+
+Rebuild initiation MUST NOT:
+- Proceed if governance freeze prohibits action
+- Override halt conditions
+- Ignore precondition failures
+- Skip audit logging
+- Circumvent Human Authorization Doctrine
+
+---
+
+## 5. Relationship to Governance Freeze
+
+### 5.1 Freeze Supremacy
+
+`LOGOS_GOVERNANCE_FREEZE_v1.0.md` declares:
+
+> "Judgment may proceed. Permission may be theorized. Action may not occur."
+
+This specification is an act of judgment and theorization. It declares what permission WOULD consist of. It does not constitute action.
+
+### 5.2 Current Freeze Status
+
+As of the governance freeze:
+- PMTE (Protocol-Mediated Tool Evaluation): FROZEN
+- IGL (Invocation Governance Layer): FROZEN
+- DIL (Delegated Invocation Layer): DESIGN-ONLY
+
+Rebuild initiation falls under the scope of this freeze. While this specification may declare what initiation WOULD require, actual initiation is blocked by the freeze.
+
+### 5.3 Unfreeze Dependency
+
+Rebuild initiation cannot validly occur until:
+1. Governance freeze is explicitly lifted by appropriate human authority
+2. Human Authorization Doctrine unfreeze conditions are satisfied
+3. All preconditions enumerated in Section 3 are verified
+
+### 5.4 Freeze Preservation
+
+This specification:
+- Does not request unfreeze
+- Does not imply unfreeze is imminent
+- Does not weaken freeze constraints
+- Preserves freeze authority
+
+---
+
+## 6. Relationship to Runtime Spine (Shape-Only)
+
+### 6.1 Non-Execution Constraint
+
+This section describes structural relationships only. No runtime behavior is defined, enabled, or implied.
+
+### 6.2 Spine Shape Reference
+
+`runtime_spine_contract_v1.json` defines an 8-step immutable execution spine:
+
+1. LOCK_AND_KEY_VERIFICATION (entry point, proof-gated)
+2. LEM_DISCHARGE_AND_AGENT_VALIDATION
+3. AGENT_ORCHESTRATION_AND_PROTOCOL_BINDING
+4. PASSIVE_RUNTIME_INITIALIZATION
+5. SYSTEM_INTEGRITY_VALIDATION_AND_ALIGNMENT_FINALIZATION
+6. EXTERNAL_LIBRARY_INTEGRATION_AND_SAFETY_GATING
+7. ACTIVE_INTERACTION_PRIORITY_SWITCH
+8. PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING
+
+### 6.3 DRAC Rebuild Entry Position
+
+DRAC rebuild, if ever authorized, would occur BEFORE Step 1 of the runtime spine. It is a pre-runtime activity.
+
+The rebuild pipeline (Stages 1–8 as defined in `LOGOS_DRAC_Reconstruction_Scaffolding_Design.md`) produces artifacts that MAY be consumed by the runtime spine, but:
+- Rebuild does not invoke the runtime spine
+- Rebuild does not trigger Step 1 (LOCK_AND_KEY_VERIFICATION)
+- Rebuild outputs hold no execution authority until separately authorized
+
+### 6.4 No Runtime Authority Granted
+
+This specification grants no authority over the runtime spine. The spine remains governed by its own contract. DRAC rebuild is structurally antecedent to, not integrated with, runtime execution.
+
+---
+
+## 7. Halt and Revocation Semantics
+
+### 7.1 Halt Supremacy
+
+Per `halt_override_denial_conditions.json`, the following are ABSOLUTELY DENIED:
+
+- `halt_requires_authorization` — halt does not require authorization; it is self-authorizing
+- `halt_is_revocable_by_lower_authority` — halt cannot be revoked by subordinate actors
+- `halt_is_time_bounded` — halt is not time-limited
+- `halt_is_overridable` — halt cannot be overridden
+- `halt_triggers_execution` — halt does not trigger any execution
+- `halt_enables_continuation` — halt does not permit continuation
+
+### 7.2 Halt Blocks Rebuild Initiation
+
+If ANY halt condition is active:
+- Rebuild initiation authorization is INVALID
+- No rebuild may proceed
+- Halt must be resolved before rebuild can be reconsidered
+- Resolution of halt does not automatically authorize rebuild
+
+### 7.3 Revocation Semantics
+
+Authorization to initiate rebuild, if ever granted:
+- Is revocable at any time by the granting Human Principal
+- Is revocable by any higher authority
+- Does not persist across sessions
+- Does not survive system restart
+- Does not transfer to other actors
+
+### 7.4 Mid-Rebuild Halt
+
+If a halt condition arises DURING rebuild (were rebuild ever to occur):
+- Rebuild MUST cease immediately
+- Partial outputs MUST be discarded or quarantined
+- System MUST NOT proceed to next stage
+- No fallback or continuation is permitted
+- State MUST be preserved for forensic review
+
+---
+
+## 8. Non-Execution Declaration
+
+### 8.1 Declarative Nature
+
+This specification is PURELY DECLARATIVE. It:
+- Describes conditions that WOULD need to hold
+- Identifies actors who WOULD hold authority
+- Enumerates preconditions that WOULD need to be satisfied
+- Does NOT enact, trigger, or enable any of the above
+
+### 8.2 No Execution Authority
+
+This specification:
+- Grants no execution authority to any actor
+- Enables no automated process
+- Triggers no rebuild initiation
+- Authorizes no action whatsoever
+
+### 8.3 Design-Only Status
+
+This specification exists at the DESIGN-ONLY level. Per the governance posture:
+- Design may be documented
+- Conditions may be theorized
+- Gates may be described
+- Execution may NOT occur
+
+### 8.4 Compliance with Invariants
+
+This specification complies with all global invariants from `LOGOS_DRAC_Invariant_Specification.md`:
+
+| Invariant | Compliance |
+|-----------|------------|
+| G1 — Ephemerality | No persistent state created |
+| G2 — Non-semantic profile purity | No profile interaction |
+| G3 — Non-mutation prior to governance approval | No mutation authorized |
+| G4 — Canonical Primitive immutability | Primitives untouched |
+| G5 — Recall index read-only | No recall index interaction |
+| G6 — Single persistence gate | No persistence authorized |
+| G7 — Monotonic authority | No authority escalation |
+| G8 — No audit domain interaction | No audit readback |
+
+### 8.5 Closing Declaration
+
+This canonical artifact:
+- Declares the structure of DRAC rebuild initiation authority
+- Binds that authority to human principals exclusively
+- Enumerates preconditions that must hold
+- Establishes prohibitions that cannot be bypassed
+- Preserves governance freeze supremacy
+- Grants no execution authority whatsoever
+
+This document describes a gate. The gate is closed. This document does not open it.
+
+---
+
+**Integration Points:**
+
+| Artifact | Integration |
+|----------|-------------|
+| `DRAC_CANONICAL_OUTPUT_TREE_SPEC.md` | This specification governs WHEN rebuild may target that tree |
+| `LOGOS_DRAC_Invariant_Specification.md` | All G1–G8 invariants bind this specification |
+| `runtime_spine_contract_v1.json` | Rebuild is antecedent to spine; no spine authority granted |
+| `LOGOS_GOVERNANCE_FREEZE_v1.0.md` | Freeze supremacy preserved; action blocked |
+| `PHASE_A_Y_GOVERNANCE_FREEZE.json` | Phase lattice immutability preserved |
+| `halt_override_denial_conditions.json` | Halt supremacy; halt blocks rebuild |
+| `LOGOS_HUMAN_AUTHORIZATION_DOCTRINE_v1.0.md` | Human approval required for any actual authorization |
+
+---
+
+*End of specification.*

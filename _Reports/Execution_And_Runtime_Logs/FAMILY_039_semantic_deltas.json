@@ -1,0 +1,692 @@
+{
+  "family_id": "FAMILY_039",
+  "member_count": 55,
+  "members": [
+    "TestConsistencyValidator",
+    "TestConsistencyValidator.setUp",
+    "TestConsistencyValidator.test_contradiction_detection",
+    "TestConsistencyValidator.test_tautology_detection",
+    "TestConsistencyValidator.test_modal_axiom_validation",
+    "setUp",
+    "test_contradiction_detection",
+    "test_tautology_detection",
+    "test_modal_axiom_validation",
+    "TestAnomalyDetector",
+    "TestAnomalyDetector.setUp",
+    "TestAnomalyDetector.test_time_anomaly_detection",
+    "TestAnomalyDetector.test_error_rate_anomaly_detection",
+    "TestAnomalyDetector.test_complexity_anomaly_detection",
+    "test_time_anomaly_detection",
+    "test_error_rate_anomaly_detection",
+    "test_complexity_anomaly_detection",
+    "TestEnhancedReferenceMonitor",
+    "TestEnhancedReferenceMonitor.setUp",
+    "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking",
+    "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection",
+    "TestEnhancedReferenceMonitor.test_operator_nesting_limits",
+    "TestEnhancedReferenceMonitor.test_emergency_halt_functionality",
+    "TestEnhancedReferenceMonitor.test_blocked_operations",
+    "TestEnhancedReferenceMonitor.test_evaluation_logging",
+    "TestEnhancedReferenceMonitor.test_monitor_status_reporting",
+    "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring",
+    "test_pre_validation_syntax_checking",
+    "test_dangerous_pattern_detection",
+    "test_operator_nesting_limits",
+    "test_emergency_halt_functionality",
+    "test_blocked_operations",
+    "test_evaluation_logging",
+    "test_monitor_status_reporting",
+    "test_batch_evaluation_monitoring",
+    "TestAnomalyInjection",
+    "TestAnomalyInjection.setUp",
+    "TestAnomalyInjection.test_error_injection_and_circuit_breaker",
+    "TestAnomalyInjection.test_consistency_violation_detection",
+    "TestAnomalyInjection.test_performance_anomaly_detection",
+    "TestAnomalyInjection.test_recovery_from_emergency_state",
+    "test_error_injection_and_circuit_breaker",
+    "test_consistency_violation_detection",
+    "test_performance_anomaly_detection",
+    "test_recovery_from_emergency_state",
+    "TestIntegrationWithEntry",
+    "TestIntegrationWithEntry.setUp",
+    "TestIntegrationWithEntry.test_convenience_functions",
+    "test_convenience_functions",
+    "TestThreadSafety",
+    "TestThreadSafety.setUp",
+    "TestThreadSafety.test_concurrent_evaluations",
+    "test_concurrent_evaluations",
+    "evaluate_proposition",
+    "run_safety_tests"
+  ],
+  "invariant_semantics": {
+    "data_role": []
+  },
+  "divergent_semantics": {
+    "semantic_tags": {
+      "TestConsistencyValidator": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestConsistencyValidator.setUp": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestConsistencyValidator.test_contradiction_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestConsistencyValidator.test_tautology_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestConsistencyValidator.test_modal_axiom_validation": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "setUp": [
+        "AGENT_LOGIC",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_contradiction_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_tautology_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_modal_axiom_validation": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyDetector": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyDetector.setUp": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyDetector.test_time_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyDetector.test_complexity_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_time_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_error_rate_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_complexity_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.setUp": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_blocked_operations": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_pre_validation_syntax_checking": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_dangerous_pattern_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_operator_nesting_limits": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_emergency_halt_functionality": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_blocked_operations": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_evaluation_logging": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_monitor_status_reporting": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_batch_evaluation_monitoring": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyInjection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyInjection.setUp": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyInjection.test_consistency_violation_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyInjection.test_performance_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestAnomalyInjection.test_recovery_from_emergency_state": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_error_injection_and_circuit_breaker": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_consistency_violation_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_performance_anomaly_detection": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_recovery_from_emergency_state": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestIntegrationWithEntry": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestIntegrationWithEntry.setUp": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestIntegrationWithEntry.test_convenience_functions": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_convenience_functions": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestThreadSafety": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestThreadSafety.setUp": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "TestThreadSafety.test_concurrent_evaluations": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "test_concurrent_evaluations": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "evaluate_proposition": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ],
+      "run_safety_tests": [
+        "GOVERNANCE",
+        "TEST_OR_EXAMPLE"
+      ]
+    },
+    "operation_type": {
+      "TestConsistencyValidator": [],
+      "TestConsistencyValidator.setUp": [],
+      "TestConsistencyValidator.test_contradiction_detection": [],
+      "TestConsistencyValidator.test_tautology_detection": [],
+      "TestConsistencyValidator.test_modal_axiom_validation": [],
+      "setUp": [
+        "UTILITY"
+      ],
+      "test_contradiction_detection": [],
+      "test_tautology_detection": [],
+      "test_modal_axiom_validation": [],
+      "TestAnomalyDetector": [],
+      "TestAnomalyDetector.setUp": [],
+      "TestAnomalyDetector.test_time_anomaly_detection": [],
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": [],
+      "TestAnomalyDetector.test_complexity_anomaly_detection": [],
+      "test_time_anomaly_detection": [],
+      "test_error_rate_anomaly_detection": [],
+      "test_complexity_anomaly_detection": [],
+      "TestEnhancedReferenceMonitor": [],
+      "TestEnhancedReferenceMonitor.setUp": [],
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": [],
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": [],
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": [],
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": [],
+      "TestEnhancedReferenceMonitor.test_blocked_operations": [],
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": [],
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": [],
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": [],
+      "test_pre_validation_syntax_checking": [],
+      "test_dangerous_pattern_detection": [],
+      "test_operator_nesting_limits": [],
+      "test_emergency_halt_functionality": [],
+      "test_blocked_operations": [],
+      "test_evaluation_logging": [],
+      "test_monitor_status_reporting": [],
+      "test_batch_evaluation_monitoring": [],
+      "TestAnomalyInjection": [
+        "TRANSFORMATION"
+      ],
+      "TestAnomalyInjection.setUp": [],
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": [
+        "TRANSFORMATION"
+      ],
+      "TestAnomalyInjection.test_consistency_violation_detection": [
+        "TRANSFORMATION"
+      ],
+      "TestAnomalyInjection.test_performance_anomaly_detection": [],
+      "TestAnomalyInjection.test_recovery_from_emergency_state": [],
+      "test_error_injection_and_circuit_breaker": [
+        "TRANSFORMATION"
+      ],
+      "test_consistency_violation_detection": [
+        "TRANSFORMATION"
+      ],
+      "test_performance_anomaly_detection": [],
+      "test_recovery_from_emergency_state": [],
+      "TestIntegrationWithEntry": [],
+      "TestIntegrationWithEntry.setUp": [],
+      "TestIntegrationWithEntry.test_convenience_functions": [],
+      "test_convenience_functions": [],
+      "TestThreadSafety": [],
+      "TestThreadSafety.setUp": [],
+      "TestThreadSafety.test_concurrent_evaluations": [],
+      "test_concurrent_evaluations": [],
+      "evaluate_proposition": [],
+      "run_safety_tests": [
+        "TRANSFORMATION"
+      ]
+    },
+    "control_role": {
+      "TestConsistencyValidator": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestConsistencyValidator.setUp": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestConsistencyValidator.test_contradiction_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestConsistencyValidator.test_tautology_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestConsistencyValidator.test_modal_axiom_validation": [
+        "ALIGNMENT_GUARD"
+      ],
+      "setUp": [],
+      "test_contradiction_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_tautology_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_modal_axiom_validation": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyDetector": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyDetector.setUp": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyDetector.test_time_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyDetector.test_complexity_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_time_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_error_rate_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_complexity_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.setUp": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_blocked_operations": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_pre_validation_syntax_checking": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_dangerous_pattern_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_operator_nesting_limits": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_emergency_halt_functionality": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_blocked_operations": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_evaluation_logging": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_monitor_status_reporting": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_batch_evaluation_monitoring": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyInjection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyInjection.setUp": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyInjection.test_consistency_violation_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyInjection.test_performance_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestAnomalyInjection.test_recovery_from_emergency_state": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_error_injection_and_circuit_breaker": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_consistency_violation_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_performance_anomaly_detection": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_recovery_from_emergency_state": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestIntegrationWithEntry": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestIntegrationWithEntry.setUp": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestIntegrationWithEntry.test_convenience_functions": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_convenience_functions": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestThreadSafety": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestThreadSafety.setUp": [
+        "ALIGNMENT_GUARD"
+      ],
+      "TestThreadSafety.test_concurrent_evaluations": [
+        "ALIGNMENT_GUARD"
+      ],
+      "test_concurrent_evaluations": [
+        "ALIGNMENT_GUARD"
+      ],
+      "evaluate_proposition": [
+        "ALIGNMENT_GUARD"
+      ],
+      "run_safety_tests": [
+        "ALIGNMENT_GUARD"
+      ]
+    },
+    "spine_binding": {
+      "TestConsistencyValidator": [
+        "UNMAPPED"
+      ],
+      "TestConsistencyValidator.setUp": [
+        "UNMAPPED"
+      ],
+      "TestConsistencyValidator.test_contradiction_detection": [
+        "UNMAPPED"
+      ],
+      "TestConsistencyValidator.test_tautology_detection": [
+        "UNMAPPED"
+      ],
+      "TestConsistencyValidator.test_modal_axiom_validation": [
+        "UNMAPPED"
+      ],
+      "setUp": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "test_contradiction_detection": [
+        "UNMAPPED"
+      ],
+      "test_tautology_detection": [
+        "UNMAPPED"
+      ],
+      "test_modal_axiom_validation": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyDetector": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyDetector.setUp": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyDetector.test_time_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyDetector.test_error_rate_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyDetector.test_complexity_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "test_time_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "test_error_rate_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "test_complexity_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.setUp": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_pre_validation_syntax_checking": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_dangerous_pattern_detection": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_operator_nesting_limits": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_emergency_halt_functionality": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_blocked_operations": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_evaluation_logging": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_monitor_status_reporting": [
+        "UNMAPPED"
+      ],
+      "TestEnhancedReferenceMonitor.test_batch_evaluation_monitoring": [
+        "UNMAPPED"
+      ],
+      "test_pre_validation_syntax_checking": [
+        "UNMAPPED"
+      ],
+      "test_dangerous_pattern_detection": [
+        "UNMAPPED"
+      ],
+      "test_operator_nesting_limits": [
+        "UNMAPPED"
+      ],
+      "test_emergency_halt_functionality": [
+        "UNMAPPED"
+      ],
+      "test_blocked_operations": [
+        "UNMAPPED"
+      ],
+      "test_evaluation_logging": [
+        "UNMAPPED"
+      ],
+      "test_monitor_status_reporting": [
+        "UNMAPPED"
+      ],
+      "test_batch_evaluation_monitoring": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyInjection": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyInjection.setUp": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyInjection.test_error_injection_and_circuit_breaker": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyInjection.test_consistency_violation_detection": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyInjection.test_performance_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "TestAnomalyInjection.test_recovery_from_emergency_state": [
+        "UNMAPPED"
+      ],
+      "test_error_injection_and_circuit_breaker": [
+        "UNMAPPED"
+      ],
+      "test_consistency_violation_detection": [
+        "UNMAPPED"
+      ],
+      "test_performance_anomaly_detection": [
+        "UNMAPPED"
+      ],
+      "test_recovery_from_emergency_state": [
+        "UNMAPPED"
+      ],
+      "TestIntegrationWithEntry": [
+        "UNMAPPED"
+      ],
+      "TestIntegrationWithEntry.setUp": [
+        "UNMAPPED"
+      ],
+      "TestIntegrationWithEntry.test_convenience_functions": [
+        "UNMAPPED"
+      ],
+      "test_convenience_functions": [
+        "UNMAPPED"
+      ],
+      "TestThreadSafety": [
+        "UNMAPPED"
+      ],
+      "TestThreadSafety.setUp": [
+        "UNMAPPED"
+      ],
+      "TestThreadSafety.test_concurrent_evaluations": [
+        "UNMAPPED"
+      ],
+      "test_concurrent_evaluations": [
+        "UNMAPPED"
+      ],
+      "evaluate_proposition": [
+        "UNMAPPED"
+      ],
+      "run_safety_tests": [
+        "UNMAPPED"
+      ]
+    }
+  }
+}

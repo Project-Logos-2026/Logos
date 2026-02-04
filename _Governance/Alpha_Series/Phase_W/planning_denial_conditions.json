@@ -1,0 +1,18 @@
+{
+  "phase": "Phase-W",
+  "type": "PLANNING_LOOP_DENIAL_CONDITIONS",
+  "absolute_denials": [
+    "plan_execution_reference",
+    "plan_persistence_reference",
+    "plan_scheduling_reference",
+    "goal_binding_reference",
+    "loop_or_continuation_reference",
+    "tick_or_time_reference",
+    "state_memory_reference",
+    "ledger_inconsistency",
+    "phase_boundary_violation",
+    "negative_capability_breach"
+  ],
+  "default": "DENY",
+  "status": "INERT"
+}

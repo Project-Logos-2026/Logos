@@ -1,0 +1,44 @@
+{
+  "phase": "Phase-V",
+  "type": "GOAL_AUTHORITY_INVARIANTS",
+  "authority": "Protopraxic Logic (PXL)",
+  "invariants": {
+    "goal_semantics": [
+      "goal_is_conceptual_only",
+      "goal_definition_confers_no_authority",
+      "goal_existence_does_not_imply_execution"
+    ],
+    "persistence_semantics": [
+      "no_goal_retention",
+      "no_cross_step_persistence",
+      "no_default_goals"
+    ],
+    "authority_constraints": [
+      "explicit_only",
+      "scoped",
+      "revocable",
+      "absence_equals_denial"
+    ],
+    "negative_capabilities": [
+      "no_goal_execution",
+      "no_goal_persistence",
+      "no_planning",
+      "no_scheduling",
+      "no_autonomy",
+      "no_ticks",
+      "no_state_memory",
+      "no_external_io"
+    ],
+    "structural": [
+      "declarative_only",
+      "inert",
+      "serializable",
+      "auditable",
+      "deterministic",
+      "no_runtime_references",
+      "no_hooks",
+      "no_callbacks"
+    ]
+  },
+  "status": "INERT"
+}

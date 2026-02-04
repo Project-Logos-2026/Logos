@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PlanPolicyTickProvenance",
+  "description": "Audit-only provenance record linking planning artifacts, policy context, and tick execution events.",
+  "type": "object",
+  "properties": {
+    "plan": {
+      "description": "Planning artifact used to guide execution; treated as audit-only context.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "version": { "type": "string" },
+        "source": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "goals": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["id"],
+      "additionalProperties": true
+    },
+    "policy": {
+      "description": "Policy context applied to the run; audit-only, not an authorization primitive.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "version": { "type": "string" },
+        "controls": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "approvals": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["id"],
+      "additionalProperties": true
+    },
+    "ticks": {
+      "description": "Sequence of tick audit entries captured during execution.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tick_number": { "type": "integer", "minimum": 0 },
+          "event": { "type": "string" },
+          "reason": { "type": "string" },
+          "remaining": { "type": "integer", "minimum": 0 },
+          "timestamp": { "type": "number" },
+          "policy_ref": { "type": "string" },
+          "plan_ref": { "type": "string" }
+        },
+        "required": ["event", "timestamp"],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": ["ticks"],
+  "additionalProperties": true
+}

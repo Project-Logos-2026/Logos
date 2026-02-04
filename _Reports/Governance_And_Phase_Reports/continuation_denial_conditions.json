@@ -1,0 +1,17 @@
+{
+  "phase": "Phase-U",
+  "type": "SELF_CONTINUATION_DENIAL_CONDITIONS",
+  "absolute_denials": [
+    "implicit_self_continuation",
+    "self_scheduling_reference",
+    "resumption_reference",
+    "looping_reference",
+    "persistence_reference",
+    "tick_or_time_reference",
+    "ledger_inconsistency",
+    "phase_boundary_violation",
+    "negative_capability_breach"
+  ],
+  "default": "DENY",
+  "status": "INERT"
+}

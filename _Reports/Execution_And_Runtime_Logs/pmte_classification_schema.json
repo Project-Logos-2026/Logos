@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PMTEClassification",
+  "type": "object",
+  "required": [
+    "protocol_id",
+    "classification",
+    "violations",
+    "rationale",
+    "final_state"
+  ],
+  "properties": {
+    "protocol_id": { "type": "string" },
+    "classification": {
+      "enum": [
+        "FORBIDDEN",
+        "CONDITIONALLY_ADMISSIBLE",
+        "DISALLOWED_FOREVER"
+      ]
+    },
+    "violations": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "rationale": { "type": "string" },
+    "final_state": { "const": "DISCARDED" }
+  },
+  "additionalProperties": false
+}

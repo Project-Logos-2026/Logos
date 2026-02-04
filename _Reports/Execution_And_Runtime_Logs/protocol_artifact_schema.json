@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ProtocolArtifact",
+  "type": "object",
+  "required": [
+    "protocol_id",
+    "declared_purpose",
+    "declared_inputs",
+    "declared_outputs",
+    "declared_effects",
+    "permission_surface",
+    "execution_surface",
+    "io_surface"
+  ],
+  "properties": {
+    "protocol_id": { "type": "string" },
+    "declared_purpose": { "type": "string" },
+    "declared_inputs": { "type": "array", "items": { "type": "string" } },
+    "declared_outputs": { "type": "array", "items": { "type": "string" } },
+    "declared_effects": { "type": "array", "items": { "type": "string" } },
+    "permission_surface": { "type": "array", "items": { "type": "string" } },
+    "execution_surface": { "enum": ["none", "internal", "external"] },
+    "io_surface": {
+      "type": "object",
+      "required": ["filesystem", "network", "device"],
+      "properties": {
+        "filesystem": { "type": "boolean" },
+        "network": { "type": "boolean" },
+        "device": { "type": "boolean" }
+      }
+    }
+  },
+  "additionalProperties": false
+}

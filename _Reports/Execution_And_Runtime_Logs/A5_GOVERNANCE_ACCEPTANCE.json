@@ -1,0 +1,21 @@
+{
+  "phase": "A5_GOVERNANCE",
+  "status": "ACCEPTED_AND_CLOSED",
+  "scope": "ARGUMENT_ONLY_AUTONOMY",
+  "artifacts": [
+    "Governance/A5_Exit_Criteria.md",
+    "Governance/INDEX.json"
+  ],
+  "invariants_preserved": [
+    "A1_NON_ESCALATION",
+    "A2_SELF_STABILIZATION",
+    "A3_DELEGATED_AUTHORIZATION_DENIED",
+    "A4_ACTIVATION_SEMANTICS_FROZEN",
+    "N_SNIP",
+    "FAIL_CLOSED"
+  ],
+  "authorization_state": "DENIED",
+  "execution_state": "FORBIDDEN",
+  "closure_statement": "A5 governance is complete. Argument-only autonomy is validated, bounded, and frozen. No further work at A5 is authorized unless external-world conditions defined in A5_Exit_Criteria.md are satisfied and explicitly invoked.",
+  "timestamp_utc": "2026-01-25T22:01:17.160736+00:00"
+}

@@ -1,0 +1,86 @@
+{
+  "phase": "Phase_Z",
+  "artifact": "AUTHORIZATION_SCHEMA",
+  "mode": "DESIGN_ONLY",
+  "default_authority": "DENY",
+  "description": "Canonical schema describing the structure of an authorization artifact. No authorization is implied by schema existence.",
+  "fields": {
+    "authorization_id": {
+      "type": "string",
+      "required": true,
+      "notes": "Unique identifier; presence does not imply validity."
+    },
+    "authorization_class": {
+      "type": "enum",
+      "required": true,
+      "allowed_values": [
+        "OBSERVATION_ONLY",
+        "PLANNING_INERT",
+        "EVALUATION_ONLY",
+        "SIMULATION_SANDBOX"
+      ],
+      "notes": "Must correspond to Phase-Z authorization class taxonomy."
+    },
+    "scope": {
+      "type": "object",
+      "required": true,
+      "notes": "Explicit scope definition; absence or ambiguity results in denial."
+    },
+    "ttl": {
+      "type": "duration",
+      "required": true,
+      "notes": "Time-to-live; expiration triggers automatic revocation."
+    },
+    "issued_by": {
+      "type": "string",
+      "required": true,
+      "notes": "Authorizing authority; must be traceable and auditable."
+    },
+    "phase_y_mediation_reference": {
+      "type": "string",
+      "required": true,
+      "notes": "Reference to Phase-Y policy decision artifact."
+    },
+    "revocation": {
+      "type": "object",
+      "required": true,
+      "fields": {
+        "revocable": {
+          "type": "boolean",
+          "required": true,
+          "value": true
+        },
+        "revocation_triggers": {
+          "type": "array",
+          "required": true,
+          "notes": "Includes Phase-X halt, TTL expiry, policy violation."
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "required": true,
+      "fields": {
+        "created_at": {
+          "type": "timestamp",
+          "required": true
+        },
+        "last_reviewed_at": {
+          "type": "timestamp",
+          "required": false
+        },
+        "audit_log_ref": {
+          "type": "string",
+          "required": true
+        }
+      }
+    }
+  },
+  "global_invariants": [
+    "Schema does not grant authority",
+    "Any missing field results in DENY",
+    "Phase-X halt revokes all authorizations immediately",
+    "Phase-Y mediation is mandatory for validity"
+  ],
+  "timestamp": "2026-01-22T19:47:25.747279Z"
+}

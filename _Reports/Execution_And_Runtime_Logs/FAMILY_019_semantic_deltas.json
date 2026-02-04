@@ -1,0 +1,6079 @@
+{
+  "family_id": "FAMILY_019",
+  "member_count": 432,
+  "members": [
+    "SimulatedConsciousness",
+    "SimulatedConsciousness._summarize_cycle",
+    "SimulatedConsciousness._update_memory",
+    "SimulatedConsciousness._compute_affect_and_attention",
+    "SimulatedConsciousness._compose_narrative",
+    "SimulatedConsciousness._persist_event",
+    "SimulatedConsciousness.step",
+    "SimulatedConsciousness.run",
+    "_summarize_cycle",
+    "_update_memory",
+    "_compute_affect_and_attention",
+    "_compose_narrative",
+    "_persist_event",
+    "step",
+    "run",
+    "BDNEngine",
+    "BDNEngine.boot",
+    "BDNEngine.status",
+    "boot",
+    "status",
+    "FractalNexus",
+    "FractalNexus.run_predict",
+    "FractalNexus.run_divergence",
+    "FractalNexus.run_generate",
+    "FractalNexus.run_map",
+    "FractalNexus.run_pipeline",
+    "run_predict",
+    "run_divergence",
+    "run_generate",
+    "run_map",
+    "run_pipeline",
+    "BayesianNexus",
+    "BayesianNexus.run_real_time",
+    "BayesianNexus.run_inferencer",
+    "BayesianNexus.run_hbn",
+    "BayesianNexus.run_recursion",
+    "BayesianNexus.run_pipeline",
+    "run_real_time",
+    "run_inferencer",
+    "run_hbn",
+    "run_recursion",
+    "ForecastingNexus",
+    "ForecastingNexus.run_arima",
+    "ForecastingNexus.run_garch",
+    "ForecastingNexus.run_kalman",
+    "ForecastingNexus.run_state_space",
+    "ForecastingNexus.run_ts_kalman",
+    "ForecastingNexus.ensemble",
+    "ForecastingNexus.run_pipeline",
+    "run_arima",
+    "run_garch",
+    "run_kalman",
+    "run_state_space",
+    "run_ts_kalman",
+    "ensemble",
+    "ProtocolType",
+    "Message",
+    "ProtocolBridge",
+    "ProtocolBridge.register_handler",
+    "ProtocolBridge.send_message",
+    "ProtocolBridge._route_message",
+    "ProtocolBridge.get_bridge_status",
+    "register_handler",
+    "send_message",
+    "_route_message",
+    "get_bridge_status",
+    "bridge_status",
+    "RegressionChecker",
+    "RegressionChecker.compare",
+    "RegressionChecker.report",
+    "compare",
+    "report",
+    "compare_tool_outputs",
+    "HealthStatus",
+    "HealthCheck",
+    "SelfDiagnosisTool",
+    "SelfDiagnosisTool._establish_baseline",
+    "SelfDiagnosisTool.perform_full_diagnosis",
+    "SelfDiagnosisTool._check_cpu_health",
+    "SelfDiagnosisTool._check_memory_health",
+    "SelfDiagnosisTool._check_disk_health",
+    "SelfDiagnosisTool._check_network_health",
+    "SelfDiagnosisTool._check_process_health",
+    "SelfDiagnosisTool._check_filesystem_health",
+    "SelfDiagnosisTool._calculate_overall_health",
+    "SelfDiagnosisTool._generate_diagnosis_summary",
+    "SelfDiagnosisTool.get_health_history",
+    "_establish_baseline",
+    "perform_full_diagnosis",
+    "_check_cpu_health",
+    "_check_memory_health",
+    "_check_disk_health",
+    "_check_network_health",
+    "_check_process_health",
+    "_check_filesystem_health",
+    "_calculate_overall_health",
+    "_generate_diagnosis_summary",
+    "get_health_history",
+    "perform_system_diagnosis",
+    "get_system_diagnosis",
+    "UserInterfaceEngine",
+    "UserInterfaceEngine.status",
+    "InteractionConfig",
+    "InteractionRouter",
+    "InteractionRouter.is_active",
+    "InteractionRouter.start_prompt_loop",
+    "InteractionRouter.enqueue_prompt",
+    "InteractionRouter.process_prompt",
+    "InteractionRouter._stdin_prompt_source",
+    "InteractionRouter._prompt_loop",
+    "InteractionRouter._handle_prompt",
+    "InteractionRouter._log_interaction",
+    "InteractionRouter._ensure_log_directory",
+    "is_active",
+    "start_prompt_loop",
+    "enqueue_prompt",
+    "process_prompt",
+    "_stdin_prompt_source",
+    "_prompt_loop",
+    "_handle_prompt",
+    "_log_interaction",
+    "_ensure_log_directory",
+    "UIPResponse",
+    "MessageValidator",
+    "MessageValidator.validate_uip_request",
+    "validate_uip_request",
+    "ProgressiveRouter",
+    "ProgressiveRouter.route_user_input",
+    "ProgressiveRouter._extract_adaptive_profile",
+    "ProgressiveRouter._construct_synthesis_context",
+    "ProgressiveRouter._serialise_step_result",
+    "ProgressiveRouter._create_response_from_context",
+    "ProgressiveRouter._create_error_response",
+    "ProgressiveRouter._update_metrics",
+    "route_user_input",
+    "_extract_adaptive_profile",
+    "_construct_synthesis_context",
+    "_serialise_step_result",
+    "_create_response_from_context",
+    "_create_error_response",
+    "_update_metrics",
+    "after_request",
+    "index",
+    "static_files",
+    "analyze_proposition",
+    "quick_analysis",
+    "full_coq_analysis",
+    "check_coq_available",
+    "parse_args",
+    "main",
+    "AdvisorNotes",
+    "AdvisorNotes.to_dict",
+    "to_dict",
+    "LLMAdvisor",
+    "LLMAdvisor._stub_response",
+    "LLMAdvisor._call_openai",
+    "LLMAdvisor._call_anthropic",
+    "LLMAdvisor._sanitize_proposals",
+    "LLMAdvisor._sanitize_claims",
+    "LLMAdvisor._stream_single_shot",
+    "LLMAdvisor._openai_stream",
+    "LLMAdvisor.propose_stream",
+    "LLMAdvisor.propose",
+    "_stub_response",
+    "_call_openai",
+    "_call_anthropic",
+    "_sanitize_proposals",
+    "_sanitize_claims",
+    "_stream_single_shot",
+    "_gen",
+    "_openai_stream",
+    "propose_stream",
+    "propose",
+    "build_tool_schema",
+    "load_env",
+    "execute_operation",
+    "LOGOSInterface",
+    "LOGOSInterface.route_request",
+    "LOGOSInterface.synthesize_answer",
+    "LOGOSInterface.process_request",
+    "route_request",
+    "synthesize_answer",
+    "process_request",
+    "interactive_mode",
+    "single_request",
+    "_now",
+    "_default_state",
+    "_load_state",
+    "_persist_state",
+    "_make_wm_item",
+    "_downgrade_proved",
+    "_tool_summary",
+    "_approve_tool",
+    "SessionData",
+    "_resolve_session_id",
+    "_resolve_ws_session_id",
+    "_ensure_session",
+    "_bump_metric",
+    "_sanitize_claims_for_runtime",
+    "_citation_markers",
+    "_claim_truth_counts",
+    "_perform_local_retrieval",
+    "_proposal_hash",
+    "_expires_at",
+    "_approval_expired",
+    "_record_provider_status",
+    "_check_ledger_writable",
+    "_attestation",
+    "_advisor",
+    "_pending_or_execute",
+    "_session_tag",
+    "_get_nexus",
+    "_build_ledger",
+    "_finalize_turn",
+    "health",
+    "chat",
+    "websocket_chat",
+    "get_session",
+    "debug_nexus",
+    "approve",
+    "_tail",
+    "_maybe_write_audit",
+    "get_mission_profile",
+    "require_safe_interfaces",
+    "wrapper",
+    "restrict_writes_to",
+    "decorator",
+    "_validate",
+    "LLMConfig",
+    "LLMBackend",
+    "LLMBackend._load_config",
+    "LLMBackend._validate_config",
+    "LLMBackend.complete",
+    "LLMBackend._complete_openai",
+    "LLMBackend._complete_anthropic",
+    "LLMBackend._complete_groq",
+    "LLMBackend._complete_mock",
+    "_load_config",
+    "_validate_config",
+    "complete",
+    "_complete_openai",
+    "_complete_anthropic",
+    "_complete_groq",
+    "_complete_mock",
+    "BaseNexus",
+    "AgentRequest",
+    "NexusResponse",
+    "AgentType",
+    "TokenType",
+    "TokenStatus",
+    "GapType",
+    "SOPToken",
+    "SOPToken._generate_validation_key",
+    "SOPToken.use_token",
+    "SOPToken.is_valid",
+    "SOPToken.to_dict",
+    "_generate_validation_key",
+    "use_token",
+    "is_valid",
+    "SystemGap",
+    "SystemGap.to_todo_json",
+    "SystemGap._generate_success_criteria",
+    "SystemGap._analyze_protocol_dependencies",
+    "SystemGap._extract_existing_code",
+    "SystemGap._generate_requirements",
+    "SystemGap._generate_test_cases",
+    "SystemGap._check_scaffold_availability",
+    "to_todo_json",
+    "_generate_success_criteria",
+    "_analyze_protocol_dependencies",
+    "_extract_existing_code",
+    "_generate_requirements",
+    "_generate_test_cases",
+    "_check_scaffold_availability",
+    "SOPNexus",
+    "SOPNexus._start_background_monitoring",
+    "SOPNexus._protocol_specific_security_validation",
+    "SOPNexus._protocol_specific_activation",
+    "SOPNexus._protocol_specific_deactivation",
+    "SOPNexus._route_to_protocol_core",
+    "SOPNexus._handle_token_request",
+    "SOPNexus._handle_token_validation",
+    "SOPNexus._handle_todo_token_request",
+    "SOPNexus._handle_todo_integration_approval",
+    "SOPNexus._handle_gap_detection_request",
+    "SOPNexus._run_gap_detection_analysis",
+    "SOPNexus._handle_todo_queue_request",
+    "SOPNexus._handle_system_status_request",
+    "SOPNexus._handle_health_check_request",
+    "SOPNexus._handle_system_test_request",
+    "SOPNexus._handle_self_improvement_request",
+    "SOPNexus._handle_self_improvement_status_request",
+    "SOPNexus._handle_code_generation_request",
+    "SOPNexus._handle_code_environment_status_request",
+    "SOPNexus._gap_detection_loop",
+    "SOPNexus._token_cleanup_loop",
+    "SOPNexus._system_health_monitor",
+    "SOPNexus._protocol_specific_smoke_test",
+    "SOPNexus._calculate_uptime",
+    "SOPNexus._integrate_todo_solution",
+    "SOPNexus._collect_system_metrics",
+    "SOPNexus._analyze_system_health",
+    "SOPNexus._check_token_system_health",
+    "SOPNexus._check_gap_detection_health",
+    "SOPNexus._check_file_management_health",
+    "SOPNexus._check_disk_space",
+    "SOPNexus._check_memory_usage",
+    "SOPNexus._test_token_system",
+    "SOPNexus._test_gap_detection",
+    "SOPNexus._test_file_management",
+    "SOPNexus._test_todo_generation",
+    "_start_background_monitoring",
+    "_protocol_specific_security_validation",
+    "_protocol_specific_activation",
+    "_protocol_specific_deactivation",
+    "_route_to_protocol_core",
+    "_handle_token_request",
+    "_handle_token_validation",
+    "_handle_todo_token_request",
+    "_handle_todo_integration_approval",
+    "_handle_gap_detection_request",
+    "_run_gap_detection_analysis",
+    "_handle_todo_queue_request",
+    "_handle_system_status_request",
+    "_handle_health_check_request",
+    "_handle_system_test_request",
+    "_handle_self_improvement_request",
+    "_handle_self_improvement_status_request",
+    "_handle_code_generation_request",
+    "_handle_code_environment_status_request",
+    "_gap_detection_loop",
+    "_token_cleanup_loop",
+    "_system_health_monitor",
+    "_protocol_specific_smoke_test",
+    "_calculate_uptime",
+    "_integrate_todo_solution",
+    "_collect_system_metrics",
+    "_analyze_system_health",
+    "_check_token_system_health",
+    "_check_gap_detection_health",
+    "_check_file_management_health",
+    "_check_disk_space",
+    "_check_memory_usage",
+    "_test_token_system",
+    "_test_gap_detection",
+    "_test_file_management",
+    "_test_todo_generation",
+    "SOPOperations",
+    "SOPOperations._phase_1_core_system",
+    "SOPOperations._phase_2_governance_systems",
+    "SOPOperations._phase_3_operational_services",
+    "SOPOperations._phase_4_protocol_startup",
+    "SOPOperations._phase_5_validation_testing",
+    "SOPOperations._execute_component_sequence",
+    "SOPOperations._load_resource_allocation",
+    "SOPOperations._load_diagnostics_framework",
+    "SOPOperations._load_policy_enforcement",
+    "SOPOperations._load_health_monitoring",
+    "SOPOperations._load_startup_orchestrator",
+    "SOPOperations._load_protocol_health_monitoring",
+    "SOPOperations._load_performance_testing",
+    "SOPOperations.orchestrate_system_startup",
+    "SOPOperations._start_protocol",
+    "SOPOperations.allocate_resources",
+    "SOPOperations._check_resource_availability",
+    "SOPOperations._get_available_resources",
+    "SOPOperations.get_system_status",
+    "SOPOperations._get_disk_usage",
+    "SOPOperations._start_monitoring",
+    "SOPOperations._monitor_system_health",
+    "SOPOperations.emergency_shutdown",
+    "SOPOperations.health_check",
+    "_phase_1_core_system",
+    "_phase_2_governance_systems",
+    "_phase_3_operational_services",
+    "_phase_4_protocol_startup",
+    "_phase_5_validation_testing",
+    "_execute_component_sequence",
+    "_load_resource_allocation",
+    "_load_diagnostics_framework",
+    "_load_policy_enforcement",
+    "_load_health_monitoring",
+    "_load_startup_orchestrator",
+    "_load_protocol_health_monitoring",
+    "_load_performance_testing",
+    "orchestrate_system_startup",
+    "_start_protocol",
+    "allocate_resources",
+    "_check_resource_availability",
+    "_get_available_resources",
+    "get_system_status",
+    "_get_disk_usage",
+    "_start_monitoring",
+    "monitor_loop",
+    "_monitor_system_health",
+    "emergency_shutdown",
+    "health_check",
+    "ProofBridgeError",
+    "ModalLogicEvaluator",
+    "ModalLogicEvaluator._get_default_bridge_path",
+    "ModalLogicEvaluator.evaluate_modal_proposition",
+    "ModalLogicEvaluator._evaluate_via_library",
+    "ModalLogicEvaluator._evaluate_via_subprocess",
+    "ModalLogicEvaluator._generate_countermodel",
+    "ModalLogicEvaluator._extract_atomic_propositions",
+    "ModalLogicEvaluator._generate_accessibility_relation",
+    "ModalLogicEvaluator._generate_valuation_space",
+    "ModalLogicEvaluator._generate_modal_countermodel",
+    "ModalLogicEvaluator.evaluate_batch",
+    "ModalLogicEvaluator.validate_syntax",
+    "_get_default_bridge_path",
+    "evaluate_modal_proposition",
+    "_evaluate_via_library",
+    "_evaluate_via_subprocess",
+    "_generate_countermodel",
+    "_extract_atomic_propositions",
+    "_generate_accessibility_relation",
+    "_generate_valuation_space",
+    "_generate_modal_countermodel",
+    "evaluate_batch",
+    "validate_syntax",
+    "IELEvaluator",
+    "IELEvaluator.evaluate_iel_proposition",
+    "IELEvaluator._transform_iel_to_modal",
+    "IELEvaluator._analyze_identity_falsification",
+    "IELEvaluator._analyze_experience_falsification",
+    "evaluate_iel_proposition",
+    "_transform_iel_to_modal",
+    "_analyze_identity_falsification",
+    "_analyze_experience_falsification",
+    "create_evaluator",
+    "verify_bridge_consistency"
+  ],
+  "invariant_semantics": {},
+  "divergent_semantics": {
+    "semantic_tags": {
+      "SimulatedConsciousness": [
+        "ORCHESTRATION"
+      ],
+      "SimulatedConsciousness._summarize_cycle": [
+        "ORCHESTRATION"
+      ],
+      "SimulatedConsciousness._update_memory": [
+        "ORCHESTRATION"
+      ],
+      "SimulatedConsciousness._compute_affect_and_attention": [
+        "ORCHESTRATION"
+      ],
+      "SimulatedConsciousness._compose_narrative": [
+        "ORCHESTRATION"
+      ],
+      "SimulatedConsciousness._persist_event": [
+        "ORCHESTRATION"
+      ],
+      "SimulatedConsciousness.step": [
+        "ORCHESTRATION"
+      ],
+      "SimulatedConsciousness.run": [
+        "ORCHESTRATION"
+      ],
+      "_summarize_cycle": [
+        "ORCHESTRATION"
+      ],
+      "_update_memory": [
+        "ORCHESTRATION"
+      ],
+      "_compute_affect_and_attention": [
+        "ORCHESTRATION"
+      ],
+      "_compose_narrative": [
+        "ORCHESTRATION"
+      ],
+      "_persist_event": [
+        "ORCHESTRATION"
+      ],
+      "step": [
+        "ORCHESTRATION"
+      ],
+      "run": [
+        "UNCLASSIFIED"
+      ],
+      "BDNEngine": [
+        "ORCHESTRATION"
+      ],
+      "BDNEngine.boot": [
+        "ORCHESTRATION"
+      ],
+      "BDNEngine.status": [
+        "ORCHESTRATION"
+      ],
+      "boot": [
+        "ORCHESTRATION"
+      ],
+      "status": [
+        "UNCLASSIFIED"
+      ],
+      "FractalNexus": [
+        "ORCHESTRATION"
+      ],
+      "FractalNexus.run_predict": [
+        "ORCHESTRATION"
+      ],
+      "FractalNexus.run_divergence": [
+        "ORCHESTRATION"
+      ],
+      "FractalNexus.run_generate": [
+        "ORCHESTRATION"
+      ],
+      "FractalNexus.run_map": [
+        "ORCHESTRATION"
+      ],
+      "FractalNexus.run_pipeline": [
+        "ORCHESTRATION"
+      ],
+      "run_predict": [
+        "ORCHESTRATION"
+      ],
+      "run_divergence": [
+        "ORCHESTRATION"
+      ],
+      "run_generate": [
+        "ORCHESTRATION"
+      ],
+      "run_map": [
+        "ORCHESTRATION"
+      ],
+      "run_pipeline": [
+        "ORCHESTRATION"
+      ],
+      "BayesianNexus": [
+        "ORCHESTRATION"
+      ],
+      "BayesianNexus.run_real_time": [
+        "ORCHESTRATION"
+      ],
+      "BayesianNexus.run_inferencer": [
+        "ORCHESTRATION"
+      ],
+      "BayesianNexus.run_hbn": [
+        "ORCHESTRATION"
+      ],
+      "BayesianNexus.run_recursion": [
+        "ORCHESTRATION"
+      ],
+      "BayesianNexus.run_pipeline": [
+        "ORCHESTRATION"
+      ],
+      "run_real_time": [
+        "ORCHESTRATION"
+      ],
+      "run_inferencer": [
+        "ORCHESTRATION"
+      ],
+      "run_hbn": [
+        "ORCHESTRATION"
+      ],
+      "run_recursion": [
+        "ORCHESTRATION"
+      ],
+      "ForecastingNexus": [
+        "ORCHESTRATION"
+      ],
+      "ForecastingNexus.run_arima": [
+        "ORCHESTRATION"
+      ],
+      "ForecastingNexus.run_garch": [
+        "ORCHESTRATION"
+      ],
+      "ForecastingNexus.run_kalman": [
+        "ORCHESTRATION"
+      ],
+      "ForecastingNexus.run_state_space": [
+        "ORCHESTRATION"
+      ],
+      "ForecastingNexus.run_ts_kalman": [
+        "ORCHESTRATION"
+      ],
+      "ForecastingNexus.ensemble": [
+        "ORCHESTRATION"
+      ],
+      "ForecastingNexus.run_pipeline": [
+        "ORCHESTRATION"
+      ],
+      "run_arima": [
+        "ORCHESTRATION"
+      ],
+      "run_garch": [
+        "ORCHESTRATION"
+      ],
+      "run_kalman": [
+        "ORCHESTRATION"
+      ],
+      "run_state_space": [
+        "ORCHESTRATION"
+      ],
+      "run_ts_kalman": [
+        "ORCHESTRATION"
+      ],
+      "ensemble": [
+        "ORCHESTRATION"
+      ],
+      "ProtocolType": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "Message": [
+        "ORCHESTRATION"
+      ],
+      "ProtocolBridge": [
+        "ORCHESTRATION"
+      ],
+      "ProtocolBridge.register_handler": [
+        "ORCHESTRATION"
+      ],
+      "ProtocolBridge.send_message": [
+        "ORCHESTRATION"
+      ],
+      "ProtocolBridge._route_message": [
+        "ORCHESTRATION"
+      ],
+      "ProtocolBridge.get_bridge_status": [
+        "ORCHESTRATION"
+      ],
+      "register_handler": [
+        "UNCLASSIFIED"
+      ],
+      "send_message": [
+        "ORCHESTRATION"
+      ],
+      "_route_message": [
+        "ORCHESTRATION"
+      ],
+      "get_bridge_status": [
+        "ORCHESTRATION"
+      ],
+      "bridge_status": [
+        "ORCHESTRATION"
+      ],
+      "RegressionChecker": [
+        "ORCHESTRATION"
+      ],
+      "RegressionChecker.compare": [
+        "ORCHESTRATION"
+      ],
+      "RegressionChecker.report": [
+        "ORCHESTRATION"
+      ],
+      "compare": [
+        "ORCHESTRATION"
+      ],
+      "report": [
+        "ORCHESTRATION"
+      ],
+      "compare_tool_outputs": [
+        "ORCHESTRATION"
+      ],
+      "HealthStatus": [
+        "ORCHESTRATION"
+      ],
+      "HealthCheck": [
+        "ORCHESTRATION"
+      ],
+      "SelfDiagnosisTool": [
+        "ORCHESTRATION"
+      ],
+      "SelfDiagnosisTool._establish_baseline": [
+        "ORCHESTRATION"
+      ],
+      "SelfDiagnosisTool.perform_full_diagnosis": [
+        "ORCHESTRATION"
+      ],
+      "SelfDiagnosisTool._check_cpu_health": [
+        "ORCHESTRATION"
+      ],
+      "SelfDiagnosisTool._check_memory_health": [
+        "ORCHESTRATION"
+      ],
+      "SelfDiagnosisTool._check_disk_health": [
+        "ORCHESTRATION"
+      ],
+      "SelfDiagnosisTool._check_network_health": [
+        "ORCHESTRATION"
+      ],
+      "SelfDiagnosisTool._check_process_health": [
+        "ORCHESTRATION"
+      ],
+      "SelfDiagnosisTool._check_filesystem_health": [
+        "ORCHESTRATION"
+      ],
+      "SelfDiagnosisTool._calculate_overall_health": [
+        "ORCHESTRATION"
+      ],
+      "SelfDiagnosisTool._generate_diagnosis_summary": [
+        "ORCHESTRATION"
+      ],
+      "SelfDiagnosisTool.get_health_history": [
+        "ORCHESTRATION"
+      ],
+      "_establish_baseline": [
+        "ORCHESTRATION"
+      ],
+      "perform_full_diagnosis": [
+        "ORCHESTRATION"
+      ],
+      "_check_cpu_health": [
+        "ORCHESTRATION"
+      ],
+      "_check_memory_health": [
+        "ORCHESTRATION"
+      ],
+      "_check_disk_health": [
+        "ORCHESTRATION"
+      ],
+      "_check_network_health": [
+        "ORCHESTRATION"
+      ],
+      "_check_process_health": [
+        "ORCHESTRATION"
+      ],
+      "_check_filesystem_health": [
+        "ORCHESTRATION"
+      ],
+      "_calculate_overall_health": [
+        "ORCHESTRATION"
+      ],
+      "_generate_diagnosis_summary": [
+        "ORCHESTRATION"
+      ],
+      "get_health_history": [
+        "ORCHESTRATION"
+      ],
+      "perform_system_diagnosis": [
+        "ORCHESTRATION"
+      ],
+      "get_system_diagnosis": [
+        "ORCHESTRATION"
+      ],
+      "UserInterfaceEngine": [
+        "ORCHESTRATION"
+      ],
+      "UserInterfaceEngine.status": [
+        "ORCHESTRATION"
+      ],
+      "InteractionConfig": [
+        "ORCHESTRATION"
+      ],
+      "InteractionRouter": [
+        "ORCHESTRATION"
+      ],
+      "InteractionRouter.is_active": [
+        "ORCHESTRATION"
+      ],
+      "InteractionRouter.start_prompt_loop": [
+        "ORCHESTRATION"
+      ],
+      "InteractionRouter.enqueue_prompt": [
+        "ORCHESTRATION"
+      ],
+      "InteractionRouter.process_prompt": [
+        "ORCHESTRATION"
+      ],
+      "InteractionRouter._stdin_prompt_source": [
+        "ORCHESTRATION"
+      ],
+      "InteractionRouter._prompt_loop": [
+        "ORCHESTRATION"
+      ],
+      "InteractionRouter._handle_prompt": [
+        "ORCHESTRATION"
+      ],
+      "InteractionRouter._log_interaction": [
+        "ORCHESTRATION"
+      ],
+      "InteractionRouter._ensure_log_directory": [
+        "ORCHESTRATION"
+      ],
+      "is_active": [
+        "ORCHESTRATION"
+      ],
+      "start_prompt_loop": [
+        "ORCHESTRATION"
+      ],
+      "enqueue_prompt": [
+        "ORCHESTRATION"
+      ],
+      "process_prompt": [
+        "ORCHESTRATION"
+      ],
+      "_stdin_prompt_source": [
+        "ORCHESTRATION"
+      ],
+      "_prompt_loop": [
+        "ORCHESTRATION"
+      ],
+      "_handle_prompt": [
+        "ORCHESTRATION"
+      ],
+      "_log_interaction": [
+        "ORCHESTRATION"
+      ],
+      "_ensure_log_directory": [
+        "ORCHESTRATION"
+      ],
+      "UIPResponse": [
+        "UNCLASSIFIED"
+      ],
+      "MessageValidator": [
+        "UNCLASSIFIED"
+      ],
+      "MessageValidator.validate_uip_request": [
+        "UNCLASSIFIED"
+      ],
+      "validate_uip_request": [
+        "UNCLASSIFIED"
+      ],
+      "ProgressiveRouter": [
+        "ORCHESTRATION"
+      ],
+      "ProgressiveRouter.route_user_input": [
+        "ORCHESTRATION"
+      ],
+      "ProgressiveRouter._extract_adaptive_profile": [
+        "ORCHESTRATION"
+      ],
+      "ProgressiveRouter._construct_synthesis_context": [
+        "ORCHESTRATION"
+      ],
+      "ProgressiveRouter._serialise_step_result": [
+        "ORCHESTRATION"
+      ],
+      "ProgressiveRouter._create_response_from_context": [
+        "ORCHESTRATION"
+      ],
+      "ProgressiveRouter._create_error_response": [
+        "ORCHESTRATION"
+      ],
+      "ProgressiveRouter._update_metrics": [
+        "ORCHESTRATION"
+      ],
+      "route_user_input": [
+        "ORCHESTRATION"
+      ],
+      "_extract_adaptive_profile": [
+        "ORCHESTRATION"
+      ],
+      "_construct_synthesis_context": [
+        "ORCHESTRATION"
+      ],
+      "_serialise_step_result": [
+        "ORCHESTRATION"
+      ],
+      "_create_response_from_context": [
+        "ORCHESTRATION"
+      ],
+      "_create_error_response": [
+        "ORCHESTRATION"
+      ],
+      "_update_metrics": [
+        "ORCHESTRATION"
+      ],
+      "after_request": [
+        "ORCHESTRATION"
+      ],
+      "index": [
+        "ORCHESTRATION"
+      ],
+      "static_files": [
+        "ORCHESTRATION"
+      ],
+      "analyze_proposition": [
+        "ORCHESTRATION"
+      ],
+      "quick_analysis": [
+        "ORCHESTRATION"
+      ],
+      "full_coq_analysis": [
+        "ORCHESTRATION"
+      ],
+      "check_coq_available": [
+        "ORCHESTRATION"
+      ],
+      "parse_args": [
+        "ORCHESTRATION"
+      ],
+      "main": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED",
+        "TEST_OR_EXAMPLE"
+      ],
+      "AdvisorNotes": [
+        "ORCHESTRATION"
+      ],
+      "AdvisorNotes.to_dict": [
+        "ORCHESTRATION"
+      ],
+      "to_dict": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "LLMAdvisor": [
+        "ORCHESTRATION"
+      ],
+      "LLMAdvisor._stub_response": [
+        "ORCHESTRATION"
+      ],
+      "LLMAdvisor._call_openai": [
+        "ORCHESTRATION"
+      ],
+      "LLMAdvisor._call_anthropic": [
+        "ORCHESTRATION"
+      ],
+      "LLMAdvisor._sanitize_proposals": [
+        "ORCHESTRATION"
+      ],
+      "LLMAdvisor._sanitize_claims": [
+        "ORCHESTRATION"
+      ],
+      "LLMAdvisor._stream_single_shot": [
+        "ORCHESTRATION"
+      ],
+      "LLMAdvisor._openai_stream": [
+        "ORCHESTRATION"
+      ],
+      "LLMAdvisor.propose_stream": [
+        "ORCHESTRATION"
+      ],
+      "LLMAdvisor.propose": [
+        "ORCHESTRATION"
+      ],
+      "_stub_response": [
+        "ORCHESTRATION"
+      ],
+      "_call_openai": [
+        "ORCHESTRATION"
+      ],
+      "_call_anthropic": [
+        "ORCHESTRATION"
+      ],
+      "_sanitize_proposals": [
+        "ORCHESTRATION"
+      ],
+      "_sanitize_claims": [
+        "ORCHESTRATION"
+      ],
+      "_stream_single_shot": [
+        "ORCHESTRATION"
+      ],
+      "_gen": [
+        "ORCHESTRATION"
+      ],
+      "_openai_stream": [
+        "ORCHESTRATION"
+      ],
+      "propose_stream": [
+        "ORCHESTRATION"
+      ],
+      "propose": [
+        "ORCHESTRATION"
+      ],
+      "build_tool_schema": [
+        "ORCHESTRATION"
+      ],
+      "load_env": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "execute_operation": [
+        "ORCHESTRATION"
+      ],
+      "LOGOSInterface": [
+        "ORCHESTRATION"
+      ],
+      "LOGOSInterface.route_request": [
+        "ORCHESTRATION"
+      ],
+      "LOGOSInterface.synthesize_answer": [
+        "ORCHESTRATION"
+      ],
+      "LOGOSInterface.process_request": [
+        "ORCHESTRATION"
+      ],
+      "route_request": [
+        "ORCHESTRATION"
+      ],
+      "synthesize_answer": [
+        "ORCHESTRATION"
+      ],
+      "process_request": [
+        "AGENT_LOGIC"
+      ],
+      "interactive_mode": [
+        "ORCHESTRATION"
+      ],
+      "single_request": [
+        "ORCHESTRATION"
+      ],
+      "_now": [
+        "ORCHESTRATION"
+      ],
+      "_default_state": [
+        "ORCHESTRATION"
+      ],
+      "_load_state": [
+        "ORCHESTRATION"
+      ],
+      "_persist_state": [
+        "ORCHESTRATION"
+      ],
+      "_make_wm_item": [
+        "ORCHESTRATION"
+      ],
+      "_downgrade_proved": [
+        "ORCHESTRATION"
+      ],
+      "_tool_summary": [
+        "ORCHESTRATION"
+      ],
+      "_approve_tool": [
+        "ORCHESTRATION"
+      ],
+      "SessionData": [
+        "ORCHESTRATION"
+      ],
+      "_resolve_session_id": [
+        "ORCHESTRATION"
+      ],
+      "_resolve_ws_session_id": [
+        "ORCHESTRATION"
+      ],
+      "_ensure_session": [
+        "ORCHESTRATION"
+      ],
+      "_bump_metric": [
+        "ORCHESTRATION"
+      ],
+      "_sanitize_claims_for_runtime": [
+        "ORCHESTRATION"
+      ],
+      "_citation_markers": [
+        "ORCHESTRATION"
+      ],
+      "_claim_truth_counts": [
+        "ORCHESTRATION"
+      ],
+      "_perform_local_retrieval": [
+        "ORCHESTRATION"
+      ],
+      "_proposal_hash": [
+        "ORCHESTRATION"
+      ],
+      "_expires_at": [
+        "ORCHESTRATION"
+      ],
+      "_approval_expired": [
+        "ORCHESTRATION"
+      ],
+      "_record_provider_status": [
+        "ORCHESTRATION"
+      ],
+      "_check_ledger_writable": [
+        "ORCHESTRATION"
+      ],
+      "_attestation": [
+        "ORCHESTRATION"
+      ],
+      "_advisor": [
+        "ORCHESTRATION"
+      ],
+      "_pending_or_execute": [
+        "ORCHESTRATION"
+      ],
+      "_session_tag": [
+        "ORCHESTRATION"
+      ],
+      "_get_nexus": [
+        "ORCHESTRATION"
+      ],
+      "_build_ledger": [
+        "ORCHESTRATION"
+      ],
+      "_finalize_turn": [
+        "ORCHESTRATION"
+      ],
+      "health": [
+        "ENTRYPOINT",
+        "LEGACY_OR_QUARANTINED"
+      ],
+      "chat": [
+        "ORCHESTRATION"
+      ],
+      "websocket_chat": [
+        "ORCHESTRATION"
+      ],
+      "get_session": [
+        "ORCHESTRATION"
+      ],
+      "debug_nexus": [
+        "ORCHESTRATION"
+      ],
+      "approve": [
+        "ORCHESTRATION"
+      ],
+      "_tail": [
+        "ORCHESTRATION"
+      ],
+      "_maybe_write_audit": [
+        "ORCHESTRATION"
+      ],
+      "get_mission_profile": [
+        "ORCHESTRATION"
+      ],
+      "require_safe_interfaces": [
+        "ORCHESTRATION"
+      ],
+      "wrapper": [
+        "ORCHESTRATION"
+      ],
+      "restrict_writes_to": [
+        "ORCHESTRATION"
+      ],
+      "decorator": [
+        "ORCHESTRATION"
+      ],
+      "_validate": [
+        "ORCHESTRATION"
+      ],
+      "LLMConfig": [
+        "ORCHESTRATION"
+      ],
+      "LLMBackend": [
+        "ORCHESTRATION"
+      ],
+      "LLMBackend._load_config": [
+        "ORCHESTRATION"
+      ],
+      "LLMBackend._validate_config": [
+        "ORCHESTRATION"
+      ],
+      "LLMBackend.complete": [
+        "ORCHESTRATION"
+      ],
+      "LLMBackend._complete_openai": [
+        "ORCHESTRATION"
+      ],
+      "LLMBackend._complete_anthropic": [
+        "ORCHESTRATION"
+      ],
+      "LLMBackend._complete_groq": [
+        "ORCHESTRATION"
+      ],
+      "LLMBackend._complete_mock": [
+        "ORCHESTRATION"
+      ],
+      "_load_config": [
+        "UNCLASSIFIED"
+      ],
+      "_validate_config": [
+        "ORCHESTRATION"
+      ],
+      "complete": [
+        "ORCHESTRATION"
+      ],
+      "_complete_openai": [
+        "ORCHESTRATION"
+      ],
+      "_complete_anthropic": [
+        "ORCHESTRATION"
+      ],
+      "_complete_groq": [
+        "ORCHESTRATION"
+      ],
+      "_complete_mock": [
+        "ORCHESTRATION"
+      ],
+      "BaseNexus": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "AgentRequest": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "NexusResponse": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "AgentType": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "TokenType": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "TokenStatus": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "GapType": [
+        "AGENT_LOGIC",
+        "ORCHESTRATION"
+      ],
+      "SOPToken": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPToken._generate_validation_key": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPToken.use_token": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPToken.is_valid": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPToken.to_dict": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_generate_validation_key": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "use_token": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "is_valid": [
+        "UNCLASSIFIED"
+      ],
+      "SystemGap": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap.to_todo_json": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap._generate_success_criteria": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap._analyze_protocol_dependencies": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap._extract_existing_code": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap._generate_requirements": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap._generate_test_cases": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SystemGap._check_scaffold_availability": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "to_todo_json": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_generate_success_criteria": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_analyze_protocol_dependencies": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_extract_existing_code": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_generate_requirements": [
+        "UNCLASSIFIED"
+      ],
+      "_generate_test_cases": [
+        "UNCLASSIFIED"
+      ],
+      "_check_scaffold_availability": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._start_background_monitoring": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._protocol_specific_security_validation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._protocol_specific_activation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._protocol_specific_deactivation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._route_to_protocol_core": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_token_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_token_validation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_todo_token_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_todo_integration_approval": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_gap_detection_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._run_gap_detection_analysis": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_todo_queue_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_system_status_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_health_check_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_system_test_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_self_improvement_request": [
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_self_improvement_status_request": [
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_code_generation_request": [
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._handle_code_environment_status_request": [
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._gap_detection_loop": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._token_cleanup_loop": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._system_health_monitor": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._protocol_specific_smoke_test": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._calculate_uptime": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._integrate_todo_solution": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._collect_system_metrics": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._analyze_system_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._check_token_system_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._check_gap_detection_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._check_file_management_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._check_disk_space": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._check_memory_usage": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._test_token_system": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._test_gap_detection": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._test_file_management": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPNexus._test_todo_generation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_start_background_monitoring": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_protocol_specific_security_validation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_protocol_specific_activation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_protocol_specific_deactivation": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_route_to_protocol_core": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_handle_token_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_token_validation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_todo_token_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_todo_integration_approval": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_gap_detection_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_run_gap_detection_analysis": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_todo_queue_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_system_status_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_health_check_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_system_test_request": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_handle_self_improvement_request": [
+        "ORCHESTRATION"
+      ],
+      "_handle_self_improvement_status_request": [
+        "ORCHESTRATION"
+      ],
+      "_handle_code_generation_request": [
+        "ORCHESTRATION"
+      ],
+      "_handle_code_environment_status_request": [
+        "ORCHESTRATION"
+      ],
+      "_gap_detection_loop": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_token_cleanup_loop": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_system_health_monitor": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_protocol_specific_smoke_test": [
+        "GOVERNANCE",
+        "ORCHESTRATION",
+        "TEST_OR_EXAMPLE"
+      ],
+      "_calculate_uptime": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_integrate_todo_solution": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_collect_system_metrics": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_analyze_system_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_check_token_system_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_check_gap_detection_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_check_file_management_health": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_check_disk_space": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_check_memory_usage": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_test_token_system": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_test_gap_detection": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_test_file_management": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "_test_todo_generation": [
+        "LEGACY_OR_QUARANTINED",
+        "ORCHESTRATION"
+      ],
+      "SOPOperations": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._phase_1_core_system": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._phase_2_governance_systems": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._phase_3_operational_services": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._phase_4_protocol_startup": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._phase_5_validation_testing": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._execute_component_sequence": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._load_resource_allocation": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._load_diagnostics_framework": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._load_policy_enforcement": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._load_health_monitoring": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._load_startup_orchestrator": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._load_protocol_health_monitoring": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._load_performance_testing": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations.orchestrate_system_startup": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._start_protocol": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations.allocate_resources": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._check_resource_availability": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._get_available_resources": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations.get_system_status": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._get_disk_usage": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._start_monitoring": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations._monitor_system_health": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations.emergency_shutdown": [
+        "ORCHESTRATION"
+      ],
+      "SOPOperations.health_check": [
+        "ORCHESTRATION"
+      ],
+      "_phase_1_core_system": [
+        "ORCHESTRATION"
+      ],
+      "_phase_2_governance_systems": [
+        "ORCHESTRATION"
+      ],
+      "_phase_3_operational_services": [
+        "ORCHESTRATION"
+      ],
+      "_phase_4_protocol_startup": [
+        "ORCHESTRATION"
+      ],
+      "_phase_5_validation_testing": [
+        "ORCHESTRATION"
+      ],
+      "_execute_component_sequence": [
+        "ORCHESTRATION"
+      ],
+      "_load_resource_allocation": [
+        "ORCHESTRATION"
+      ],
+      "_load_diagnostics_framework": [
+        "ORCHESTRATION"
+      ],
+      "_load_policy_enforcement": [
+        "ORCHESTRATION"
+      ],
+      "_load_health_monitoring": [
+        "ORCHESTRATION"
+      ],
+      "_load_startup_orchestrator": [
+        "ORCHESTRATION"
+      ],
+      "_load_protocol_health_monitoring": [
+        "ORCHESTRATION"
+      ],
+      "_load_performance_testing": [
+        "ORCHESTRATION"
+      ],
+      "orchestrate_system_startup": [
+        "ORCHESTRATION"
+      ],
+      "_start_protocol": [
+        "ORCHESTRATION"
+      ],
+      "allocate_resources": [
+        "ORCHESTRATION"
+      ],
+      "_check_resource_availability": [
+        "ORCHESTRATION"
+      ],
+      "_get_available_resources": [
+        "ORCHESTRATION"
+      ],
+      "get_system_status": [
+        "ENTRYPOINT"
+      ],
+      "_get_disk_usage": [
+        "ORCHESTRATION"
+      ],
+      "_start_monitoring": [
+        "ORCHESTRATION"
+      ],
+      "monitor_loop": [
+        "ORCHESTRATION"
+      ],
+      "_monitor_system_health": [
+        "AGENT_LOGIC"
+      ],
+      "emergency_shutdown": [
+        "ENTRYPOINT"
+      ],
+      "health_check": [
+        "ENTRYPOINT"
+      ],
+      "ProofBridgeError": [
+        "ORCHESTRATION"
+      ],
+      "ModalLogicEvaluator": [
+        "ORCHESTRATION"
+      ],
+      "ModalLogicEvaluator._get_default_bridge_path": [
+        "ORCHESTRATION"
+      ],
+      "ModalLogicEvaluator.evaluate_modal_proposition": [
+        "ORCHESTRATION"
+      ],
+      "ModalLogicEvaluator._evaluate_via_library": [
+        "ORCHESTRATION"
+      ],
+      "ModalLogicEvaluator._evaluate_via_subprocess": [
+        "ORCHESTRATION"
+      ],
+      "ModalLogicEvaluator._generate_countermodel": [
+        "ORCHESTRATION"
+      ],
+      "ModalLogicEvaluator._extract_atomic_propositions": [
+        "ORCHESTRATION"
+      ],
+      "ModalLogicEvaluator._generate_accessibility_relation": [
+        "ORCHESTRATION"
+      ],
+      "ModalLogicEvaluator._generate_valuation_space": [
+        "ORCHESTRATION"
+      ],
+      "ModalLogicEvaluator._generate_modal_countermodel": [
+        "ORCHESTRATION"
+      ],
+      "ModalLogicEvaluator.evaluate_batch": [
+        "ORCHESTRATION"
+      ],
+      "ModalLogicEvaluator.validate_syntax": [
+        "ORCHESTRATION"
+      ],
+      "_get_default_bridge_path": [
+        "ORCHESTRATION"
+      ],
+      "evaluate_modal_proposition": [
+        "UNCLASSIFIED"
+      ],
+      "_evaluate_via_library": [
+        "ORCHESTRATION"
+      ],
+      "_evaluate_via_subprocess": [
+        "ORCHESTRATION"
+      ],
+      "_generate_countermodel": [
+        "ORCHESTRATION"
+      ],
+      "_extract_atomic_propositions": [
+        "ORCHESTRATION"
+      ],
+      "_generate_accessibility_relation": [
+        "ORCHESTRATION"
+      ],
+      "_generate_valuation_space": [
+        "ORCHESTRATION"
+      ],
+      "_generate_modal_countermodel": [
+        "ORCHESTRATION"
+      ],
+      "evaluate_batch": [
+        "ENTRYPOINT"
+      ],
+      "validate_syntax": [
+        "ORCHESTRATION"
+      ],
+      "IELEvaluator": [
+        "UNCLASSIFIED"
+      ],
+      "IELEvaluator.evaluate_iel_proposition": [
+        "ORCHESTRATION"
+      ],
+      "IELEvaluator._transform_iel_to_modal": [
+        "ORCHESTRATION"
+      ],
+      "IELEvaluator._analyze_identity_falsification": [
+        "ORCHESTRATION"
+      ],
+      "IELEvaluator._analyze_experience_falsification": [
+        "ORCHESTRATION"
+      ],
+      "evaluate_iel_proposition": [
+        "UNCLASSIFIED"
+      ],
+      "_transform_iel_to_modal": [
+        "ORCHESTRATION"
+      ],
+      "_analyze_identity_falsification": [
+        "ORCHESTRATION"
+      ],
+      "_analyze_experience_falsification": [
+        "ORCHESTRATION"
+      ],
+      "create_evaluator": [
+        "ORCHESTRATION"
+      ],
+      "verify_bridge_consistency": [
+        "ORCHESTRATION"
+      ]
+    },
+    "operation_type": {
+      "SimulatedConsciousness": [
+        "TRANSFORMATION"
+      ],
+      "SimulatedConsciousness._summarize_cycle": [
+        "TRANSFORMATION"
+      ],
+      "SimulatedConsciousness._update_memory": [],
+      "SimulatedConsciousness._compute_affect_and_attention": [
+        "TRANSFORMATION"
+      ],
+      "SimulatedConsciousness._compose_narrative": [
+        "TRANSFORMATION"
+      ],
+      "SimulatedConsciousness._persist_event": [],
+      "SimulatedConsciousness.step": [
+        "TRANSFORMATION"
+      ],
+      "SimulatedConsciousness.run": [],
+      "_summarize_cycle": [
+        "TRANSFORMATION"
+      ],
+      "_update_memory": [],
+      "_compute_affect_and_attention": [
+        "TRANSFORMATION"
+      ],
+      "_compose_narrative": [
+        "TRANSFORMATION"
+      ],
+      "_persist_event": [],
+      "step": [
+        "TRANSFORMATION"
+      ],
+      "run": [
+        "TRANSFORMATION"
+      ],
+      "BDNEngine": [
+        "TRANSFORMATION"
+      ],
+      "BDNEngine.boot": [],
+      "BDNEngine.status": [
+        "TRANSFORMATION"
+      ],
+      "boot": [],
+      "status": [
+        "TRANSFORMATION"
+      ],
+      "FractalNexus": [
+        "TRANSFORMATION"
+      ],
+      "FractalNexus.run_predict": [
+        "TRANSFORMATION"
+      ],
+      "FractalNexus.run_divergence": [
+        "TRANSFORMATION"
+      ],
+      "FractalNexus.run_generate": [
+        "TRANSFORMATION"
+      ],
+      "FractalNexus.run_map": [
+        "TRANSFORMATION"
+      ],
+      "FractalNexus.run_pipeline": [
+        "TRANSFORMATION"
+      ],
+      "run_predict": [
+        "TRANSFORMATION"
+      ],
+      "run_divergence": [
+        "TRANSFORMATION"
+      ],
+      "run_generate": [
+        "TRANSFORMATION"
+      ],
+      "run_map": [
+        "TRANSFORMATION"
+      ],
+      "run_pipeline": [
+        "TRANSFORMATION"
+      ],
+      "BayesianNexus": [
+        "TRANSFORMATION"
+      ],
+      "BayesianNexus.run_real_time": [
+        "TRANSFORMATION"
+      ],
+      "BayesianNexus.run_inferencer": [
+        "TRANSFORMATION"
+      ],
+      "BayesianNexus.run_hbn": [
+        "TRANSFORMATION"
+      ],
+      "BayesianNexus.run_recursion": [
+        "TRANSFORMATION"
+      ],
+      "BayesianNexus.run_pipeline": [
+        "TRANSFORMATION"
+      ],
+      "run_real_time": [
+        "TRANSFORMATION"
+      ],
+      "run_inferencer": [
+        "TRANSFORMATION"
+      ],
+      "run_hbn": [
+        "TRANSFORMATION"
+      ],
+      "run_recursion": [
+        "TRANSFORMATION"
+      ],
+      "ForecastingNexus": [
+        "TRANSFORMATION"
+      ],
+      "ForecastingNexus.run_arima": [
+        "TRANSFORMATION"
+      ],
+      "ForecastingNexus.run_garch": [
+        "TRANSFORMATION"
+      ],
+      "ForecastingNexus.run_kalman": [
+        "TRANSFORMATION"
+      ],
+      "ForecastingNexus.run_state_space": [
+        "TRANSFORMATION"
+      ],
+      "ForecastingNexus.run_ts_kalman": [
+        "TRANSFORMATION"
+      ],
+      "ForecastingNexus.ensemble": [
+        "TRANSFORMATION"
+      ],
+      "ForecastingNexus.run_pipeline": [
+        "TRANSFORMATION"
+      ],
+      "run_arima": [
+        "TRANSFORMATION"
+      ],
+      "run_garch": [
+        "TRANSFORMATION"
+      ],
+      "run_kalman": [
+        "TRANSFORMATION"
+      ],
+      "run_state_space": [
+        "TRANSFORMATION"
+      ],
+      "run_ts_kalman": [
+        "TRANSFORMATION"
+      ],
+      "ensemble": [
+        "TRANSFORMATION"
+      ],
+      "ProtocolType": [],
+      "Message": [],
+      "ProtocolBridge": [
+        "TRANSFORMATION"
+      ],
+      "ProtocolBridge.register_handler": [],
+      "ProtocolBridge.send_message": [
+        "TRANSFORMATION"
+      ],
+      "ProtocolBridge._route_message": [
+        "TRANSFORMATION"
+      ],
+      "ProtocolBridge.get_bridge_status": [
+        "TRANSFORMATION"
+      ],
+      "register_handler": [
+        "UTILITY"
+      ],
+      "send_message": [
+        "TRANSFORMATION"
+      ],
+      "_route_message": [
+        "TRANSFORMATION"
+      ],
+      "get_bridge_status": [
+        "TRANSFORMATION"
+      ],
+      "bridge_status": [
+        "TRANSFORMATION"
+      ],
+      "RegressionChecker": [
+        "TRANSFORMATION"
+      ],
+      "RegressionChecker.compare": [
+        "TRANSFORMATION"
+      ],
+      "RegressionChecker.report": [
+        "TRANSFORMATION"
+      ],
+      "compare": [
+        "TRANSFORMATION"
+      ],
+      "report": [
+        "TRANSFORMATION"
+      ],
+      "compare_tool_outputs": [
+        "TRANSFORMATION"
+      ],
+      "HealthStatus": [],
+      "HealthCheck": [],
+      "SelfDiagnosisTool": [
+        "TRANSFORMATION"
+      ],
+      "SelfDiagnosisTool._establish_baseline": [],
+      "SelfDiagnosisTool.perform_full_diagnosis": [
+        "TRANSFORMATION"
+      ],
+      "SelfDiagnosisTool._check_cpu_health": [
+        "TRANSFORMATION"
+      ],
+      "SelfDiagnosisTool._check_memory_health": [
+        "TRANSFORMATION"
+      ],
+      "SelfDiagnosisTool._check_disk_health": [
+        "TRANSFORMATION"
+      ],
+      "SelfDiagnosisTool._check_network_health": [
+        "TRANSFORMATION"
+      ],
+      "SelfDiagnosisTool._check_process_health": [
+        "TRANSFORMATION"
+      ],
+      "SelfDiagnosisTool._check_filesystem_health": [
+        "TRANSFORMATION"
+      ],
+      "SelfDiagnosisTool._calculate_overall_health": [
+        "TRANSFORMATION"
+      ],
+      "SelfDiagnosisTool._generate_diagnosis_summary": [
+        "TRANSFORMATION"
+      ],
+      "SelfDiagnosisTool.get_health_history": [
+        "TRANSFORMATION"
+      ],
+      "_establish_baseline": [],
+      "perform_full_diagnosis": [
+        "TRANSFORMATION"
+      ],
+      "_check_cpu_health": [
+        "TRANSFORMATION"
+      ],
+      "_check_memory_health": [
+        "TRANSFORMATION"
+      ],
+      "_check_disk_health": [
+        "TRANSFORMATION"
+      ],
+      "_check_network_health": [
+        "TRANSFORMATION"
+      ],
+      "_check_process_health": [
+        "TRANSFORMATION"
+      ],
+      "_check_filesystem_health": [
+        "TRANSFORMATION"
+      ],
+      "_calculate_overall_health": [
+        "TRANSFORMATION"
+      ],
+      "_generate_diagnosis_summary": [
+        "TRANSFORMATION"
+      ],
+      "get_health_history": [
+        "TRANSFORMATION"
+      ],
+      "perform_system_diagnosis": [
+        "TRANSFORMATION"
+      ],
+      "get_system_diagnosis": [
+        "TRANSFORMATION"
+      ],
+      "UserInterfaceEngine": [
+        "TRANSFORMATION"
+      ],
+      "UserInterfaceEngine.status": [
+        "TRANSFORMATION"
+      ],
+      "InteractionConfig": [],
+      "InteractionRouter": [
+        "TRANSFORMATION"
+      ],
+      "InteractionRouter.is_active": [
+        "TRANSFORMATION"
+      ],
+      "InteractionRouter.start_prompt_loop": [
+        "TRANSFORMATION"
+      ],
+      "InteractionRouter.enqueue_prompt": [
+        "TRANSFORMATION"
+      ],
+      "InteractionRouter.process_prompt": [
+        "TRANSFORMATION"
+      ],
+      "InteractionRouter._stdin_prompt_source": [
+        "TRANSFORMATION"
+      ],
+      "InteractionRouter._prompt_loop": [],
+      "InteractionRouter._handle_prompt": [
+        "TRANSFORMATION"
+      ],
+      "InteractionRouter._log_interaction": [],
+      "InteractionRouter._ensure_log_directory": [],
+      "is_active": [
+        "TRANSFORMATION"
+      ],
+      "start_prompt_loop": [
+        "TRANSFORMATION"
+      ],
+      "enqueue_prompt": [
+        "TRANSFORMATION"
+      ],
+      "process_prompt": [
+        "TRANSFORMATION"
+      ],
+      "_stdin_prompt_source": [
+        "TRANSFORMATION"
+      ],
+      "_prompt_loop": [],
+      "_handle_prompt": [
+        "TRANSFORMATION"
+      ],
+      "_log_interaction": [],
+      "_ensure_log_directory": [],
+      "UIPResponse": [
+        "UTILITY"
+      ],
+      "MessageValidator": [
+        "TRANSFORMATION"
+      ],
+      "MessageValidator.validate_uip_request": [
+        "TRANSFORMATION"
+      ],
+      "validate_uip_request": [
+        "TRANSFORMATION"
+      ],
+      "ProgressiveRouter": [
+        "TRANSFORMATION"
+      ],
+      "ProgressiveRouter.route_user_input": [
+        "TRANSFORMATION"
+      ],
+      "ProgressiveRouter._extract_adaptive_profile": [
+        "TRANSFORMATION"
+      ],
+      "ProgressiveRouter._construct_synthesis_context": [
+        "TRANSFORMATION"
+      ],
+      "ProgressiveRouter._serialise_step_result": [
+        "TRANSFORMATION"
+      ],
+      "ProgressiveRouter._create_response_from_context": [
+        "TRANSFORMATION"
+      ],
+      "ProgressiveRouter._create_error_response": [
+        "TRANSFORMATION"
+      ],
+      "ProgressiveRouter._update_metrics": [],
+      "route_user_input": [
+        "TRANSFORMATION"
+      ],
+      "_extract_adaptive_profile": [
+        "TRANSFORMATION"
+      ],
+      "_construct_synthesis_context": [
+        "TRANSFORMATION"
+      ],
+      "_serialise_step_result": [
+        "TRANSFORMATION"
+      ],
+      "_create_response_from_context": [
+        "TRANSFORMATION"
+      ],
+      "_create_error_response": [
+        "TRANSFORMATION"
+      ],
+      "_update_metrics": [],
+      "after_request": [
+        "TRANSFORMATION"
+      ],
+      "index": [
+        "TRANSFORMATION"
+      ],
+      "static_files": [
+        "TRANSFORMATION"
+      ],
+      "analyze_proposition": [
+        "TRANSFORMATION"
+      ],
+      "quick_analysis": [
+        "TRANSFORMATION"
+      ],
+      "full_coq_analysis": [
+        "TRANSFORMATION"
+      ],
+      "check_coq_available": [
+        "TRANSFORMATION"
+      ],
+      "parse_args": [
+        "TRANSFORMATION"
+      ],
+      "main": [
+        "TRANSFORMATION"
+      ],
+      "AdvisorNotes": [
+        "TRANSFORMATION"
+      ],
+      "AdvisorNotes.to_dict": [
+        "TRANSFORMATION"
+      ],
+      "to_dict": [
+        "TRANSFORMATION"
+      ],
+      "LLMAdvisor": [
+        "TRANSFORMATION"
+      ],
+      "LLMAdvisor._stub_response": [
+        "TRANSFORMATION"
+      ],
+      "LLMAdvisor._call_openai": [
+        "TRANSFORMATION"
+      ],
+      "LLMAdvisor._call_anthropic": [
+        "TRANSFORMATION"
+      ],
+      "LLMAdvisor._sanitize_proposals": [
+        "TRANSFORMATION"
+      ],
+      "LLMAdvisor._sanitize_claims": [
+        "TRANSFORMATION"
+      ],
+      "LLMAdvisor._stream_single_shot": [
+        "TRANSFORMATION"
+      ],
+      "LLMAdvisor._openai_stream": [
+        "TRANSFORMATION"
+      ],
+      "LLMAdvisor.propose_stream": [
+        "TRANSFORMATION"
+      ],
+      "LLMAdvisor.propose": [
+        "TRANSFORMATION"
+      ],
+      "_stub_response": [
+        "TRANSFORMATION"
+      ],
+      "_call_openai": [
+        "TRANSFORMATION"
+      ],
+      "_call_anthropic": [
+        "TRANSFORMATION"
+      ],
+      "_sanitize_proposals": [
+        "TRANSFORMATION"
+      ],
+      "_sanitize_claims": [
+        "TRANSFORMATION"
+      ],
+      "_stream_single_shot": [
+        "TRANSFORMATION"
+      ],
+      "_gen": [
+        "TRANSFORMATION"
+      ],
+      "_openai_stream": [
+        "TRANSFORMATION"
+      ],
+      "propose_stream": [
+        "TRANSFORMATION"
+      ],
+      "propose": [
+        "TRANSFORMATION"
+      ],
+      "build_tool_schema": [
+        "TRANSFORMATION"
+      ],
+      "load_env": [],
+      "execute_operation": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSInterface": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSInterface.route_request": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSInterface.synthesize_answer": [
+        "TRANSFORMATION"
+      ],
+      "LOGOSInterface.process_request": [
+        "TRANSFORMATION"
+      ],
+      "route_request": [
+        "TRANSFORMATION"
+      ],
+      "synthesize_answer": [
+        "TRANSFORMATION"
+      ],
+      "process_request": [
+        "TRANSFORMATION"
+      ],
+      "interactive_mode": [],
+      "single_request": [],
+      "_now": [
+        "TRANSFORMATION"
+      ],
+      "_default_state": [
+        "TRANSFORMATION"
+      ],
+      "_load_state": [
+        "TRANSFORMATION"
+      ],
+      "_persist_state": [],
+      "_make_wm_item": [
+        "TRANSFORMATION"
+      ],
+      "_downgrade_proved": [
+        "TRANSFORMATION"
+      ],
+      "_tool_summary": [
+        "TRANSFORMATION"
+      ],
+      "_approve_tool": [
+        "TRANSFORMATION"
+      ],
+      "SessionData": [],
+      "_resolve_session_id": [
+        "TRANSFORMATION"
+      ],
+      "_resolve_ws_session_id": [
+        "TRANSFORMATION"
+      ],
+      "_ensure_session": [
+        "TRANSFORMATION"
+      ],
+      "_bump_metric": [
+        "TRANSFORMATION"
+      ],
+      "_sanitize_claims_for_runtime": [
+        "TRANSFORMATION"
+      ],
+      "_citation_markers": [
+        "TRANSFORMATION"
+      ],
+      "_claim_truth_counts": [
+        "TRANSFORMATION"
+      ],
+      "_perform_local_retrieval": [
+        "TRANSFORMATION"
+      ],
+      "_proposal_hash": [
+        "TRANSFORMATION"
+      ],
+      "_expires_at": [
+        "TRANSFORMATION"
+      ],
+      "_approval_expired": [
+        "TRANSFORMATION"
+      ],
+      "_record_provider_status": [],
+      "_check_ledger_writable": [
+        "TRANSFORMATION"
+      ],
+      "_attestation": [
+        "TRANSFORMATION"
+      ],
+      "_advisor": [
+        "TRANSFORMATION"
+      ],
+      "_pending_or_execute": [
+        "TRANSFORMATION"
+      ],
+      "_session_tag": [
+        "TRANSFORMATION"
+      ],
+      "_get_nexus": [
+        "TRANSFORMATION"
+      ],
+      "_build_ledger": [
+        "TRANSFORMATION"
+      ],
+      "_finalize_turn": [
+        "TRANSFORMATION"
+      ],
+      "health": [
+        "TRANSFORMATION"
+      ],
+      "chat": [
+        "TRANSFORMATION"
+      ],
+      "websocket_chat": [
+        "TRANSFORMATION"
+      ],
+      "get_session": [
+        "TRANSFORMATION"
+      ],
+      "debug_nexus": [
+        "TRANSFORMATION"
+      ],
+      "approve": [
+        "TRANSFORMATION"
+      ],
+      "_tail": [
+        "TRANSFORMATION"
+      ],
+      "_maybe_write_audit": [],
+      "get_mission_profile": [
+        "TRANSFORMATION"
+      ],
+      "require_safe_interfaces": [
+        "TRANSFORMATION"
+      ],
+      "wrapper": [
+        "TRANSFORMATION"
+      ],
+      "restrict_writes_to": [
+        "TRANSFORMATION"
+      ],
+      "decorator": [
+        "TRANSFORMATION"
+      ],
+      "_validate": [
+        "TRANSFORMATION"
+      ],
+      "LLMConfig": [],
+      "LLMBackend": [
+        "TRANSFORMATION"
+      ],
+      "LLMBackend._load_config": [
+        "TRANSFORMATION"
+      ],
+      "LLMBackend._validate_config": [],
+      "LLMBackend.complete": [
+        "TRANSFORMATION"
+      ],
+      "LLMBackend._complete_openai": [
+        "TRANSFORMATION"
+      ],
+      "LLMBackend._complete_anthropic": [
+        "TRANSFORMATION"
+      ],
+      "LLMBackend._complete_groq": [
+        "TRANSFORMATION"
+      ],
+      "LLMBackend._complete_mock": [
+        "TRANSFORMATION"
+      ],
+      "_load_config": [
+        "TRANSFORMATION"
+      ],
+      "_validate_config": [],
+      "complete": [
+        "TRANSFORMATION"
+      ],
+      "_complete_openai": [
+        "TRANSFORMATION"
+      ],
+      "_complete_anthropic": [
+        "TRANSFORMATION"
+      ],
+      "_complete_groq": [
+        "TRANSFORMATION"
+      ],
+      "_complete_mock": [
+        "TRANSFORMATION"
+      ],
+      "BaseNexus": [
+        "TRANSFORMATION"
+      ],
+      "AgentRequest": [
+        "TRANSFORMATION"
+      ],
+      "NexusResponse": [
+        "TRANSFORMATION"
+      ],
+      "AgentType": [],
+      "TokenType": [],
+      "TokenStatus": [],
+      "GapType": [],
+      "SOPToken": [
+        "TRANSFORMATION"
+      ],
+      "SOPToken._generate_validation_key": [
+        "TRANSFORMATION"
+      ],
+      "SOPToken.use_token": [
+        "TRANSFORMATION"
+      ],
+      "SOPToken.is_valid": [
+        "TRANSFORMATION"
+      ],
+      "SOPToken.to_dict": [
+        "TRANSFORMATION"
+      ],
+      "_generate_validation_key": [
+        "TRANSFORMATION"
+      ],
+      "use_token": [
+        "TRANSFORMATION"
+      ],
+      "is_valid": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap.to_todo_json": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap._generate_success_criteria": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap._analyze_protocol_dependencies": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap._extract_existing_code": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap._generate_requirements": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap._generate_test_cases": [
+        "TRANSFORMATION"
+      ],
+      "SystemGap._check_scaffold_availability": [
+        "TRANSFORMATION"
+      ],
+      "to_todo_json": [
+        "TRANSFORMATION"
+      ],
+      "_generate_success_criteria": [
+        "TRANSFORMATION"
+      ],
+      "_analyze_protocol_dependencies": [
+        "TRANSFORMATION"
+      ],
+      "_extract_existing_code": [
+        "TRANSFORMATION"
+      ],
+      "_generate_requirements": [
+        "TRANSFORMATION"
+      ],
+      "_generate_test_cases": [
+        "TRANSFORMATION"
+      ],
+      "_check_scaffold_availability": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._start_background_monitoring": [],
+      "SOPNexus._protocol_specific_security_validation": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._protocol_specific_activation": [],
+      "SOPNexus._protocol_specific_deactivation": [],
+      "SOPNexus._route_to_protocol_core": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_token_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_token_validation": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_todo_token_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_todo_integration_approval": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_gap_detection_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._run_gap_detection_analysis": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_todo_queue_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_system_status_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_health_check_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_system_test_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_self_improvement_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_self_improvement_status_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_code_generation_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._handle_code_environment_status_request": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._gap_detection_loop": [],
+      "SOPNexus._token_cleanup_loop": [],
+      "SOPNexus._system_health_monitor": [],
+      "SOPNexus._protocol_specific_smoke_test": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._calculate_uptime": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._integrate_todo_solution": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._collect_system_metrics": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._analyze_system_health": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._check_token_system_health": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._check_gap_detection_health": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._check_file_management_health": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._check_disk_space": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._check_memory_usage": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._test_token_system": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._test_gap_detection": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._test_file_management": [
+        "TRANSFORMATION"
+      ],
+      "SOPNexus._test_todo_generation": [
+        "TRANSFORMATION"
+      ],
+      "_start_background_monitoring": [],
+      "_protocol_specific_security_validation": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_activation": [
+        "TRANSFORMATION"
+      ],
+      "_protocol_specific_deactivation": [
+        "TRANSFORMATION"
+      ],
+      "_route_to_protocol_core": [
+        "TRANSFORMATION"
+      ],
+      "_handle_token_request": [
+        "TRANSFORMATION"
+      ],
+      "_handle_token_validation": [
+        "TRANSFORMATION"
+      ],
+      "_handle_todo_token_request": [
+        "TRANSFORMATION"
+      ],
+      "_handle_todo_integration_approval": [
+        "TRANSFORMATION"
+      ],
+      "_handle_gap_detection_request": [
+        "TRANSFORMATION"
+      ],
+      "_run_gap_detection_analysis": [
+        "TRANSFORMATION"
+      ],
+      "_handle_todo_queue_request": [
+        "TRANSFORMATION"
+      ],
+      "_handle_system_status_request": [
+        "TRANSFORMATION"
+      ],
+      "_handle_health_check_request": [
+        "TRANSFORMATION"
+      ],
+      "_handle_system_test_request": [
+        "TRANSFORMATION"
+      ],
+      "_handle_self_improvement_request": [
+        "TRANSFORMATION"
+      ],
+      "_handle_self_improvement_status_request": [
+        "TRANSFORMATION"
+      ],
+      "_handle_code_generation_request": [
+        "TRANSFORMATION"
+      ],
+      "_handle_code_environment_status_request": [
+        "TRANSFORMATION"
+      ],
+      "_gap_detection_loop": [],
+      "_token_cleanup_loop": [],
+      "_system_health_monitor": [],
+      "_protocol_specific_smoke_test": [
+        "TRANSFORMATION"
+      ],
+      "_calculate_uptime": [
+        "TRANSFORMATION"
+      ],
+      "_integrate_todo_solution": [
+        "TRANSFORMATION"
+      ],
+      "_collect_system_metrics": [
+        "TRANSFORMATION"
+      ],
+      "_analyze_system_health": [
+        "TRANSFORMATION"
+      ],
+      "_check_token_system_health": [
+        "TRANSFORMATION"
+      ],
+      "_check_gap_detection_health": [
+        "TRANSFORMATION"
+      ],
+      "_check_file_management_health": [
+        "TRANSFORMATION"
+      ],
+      "_check_disk_space": [
+        "TRANSFORMATION"
+      ],
+      "_check_memory_usage": [
+        "TRANSFORMATION"
+      ],
+      "_test_token_system": [
+        "TRANSFORMATION"
+      ],
+      "_test_gap_detection": [
+        "TRANSFORMATION"
+      ],
+      "_test_file_management": [
+        "TRANSFORMATION"
+      ],
+      "_test_todo_generation": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._phase_1_core_system": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._phase_2_governance_systems": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._phase_3_operational_services": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._phase_4_protocol_startup": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._phase_5_validation_testing": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._execute_component_sequence": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._load_resource_allocation": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._load_diagnostics_framework": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._load_policy_enforcement": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._load_health_monitoring": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._load_startup_orchestrator": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._load_protocol_health_monitoring": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._load_performance_testing": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations.orchestrate_system_startup": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._start_protocol": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations.allocate_resources": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._check_resource_availability": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._get_available_resources": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations.get_system_status": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._get_disk_usage": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations._start_monitoring": [],
+      "SOPOperations._monitor_system_health": [],
+      "SOPOperations.emergency_shutdown": [
+        "TRANSFORMATION"
+      ],
+      "SOPOperations.health_check": [
+        "TRANSFORMATION"
+      ],
+      "_phase_1_core_system": [
+        "TRANSFORMATION"
+      ],
+      "_phase_2_governance_systems": [
+        "TRANSFORMATION"
+      ],
+      "_phase_3_operational_services": [
+        "TRANSFORMATION"
+      ],
+      "_phase_4_protocol_startup": [
+        "TRANSFORMATION"
+      ],
+      "_phase_5_validation_testing": [
+        "TRANSFORMATION"
+      ],
+      "_execute_component_sequence": [
+        "TRANSFORMATION"
+      ],
+      "_load_resource_allocation": [
+        "TRANSFORMATION"
+      ],
+      "_load_diagnostics_framework": [
+        "TRANSFORMATION"
+      ],
+      "_load_policy_enforcement": [
+        "TRANSFORMATION"
+      ],
+      "_load_health_monitoring": [
+        "TRANSFORMATION"
+      ],
+      "_load_startup_orchestrator": [
+        "TRANSFORMATION"
+      ],
+      "_load_protocol_health_monitoring": [
+        "TRANSFORMATION"
+      ],
+      "_load_performance_testing": [
+        "TRANSFORMATION"
+      ],
+      "orchestrate_system_startup": [
+        "TRANSFORMATION"
+      ],
+      "_start_protocol": [
+        "TRANSFORMATION"
+      ],
+      "allocate_resources": [
+        "TRANSFORMATION"
+      ],
+      "_check_resource_availability": [
+        "TRANSFORMATION"
+      ],
+      "_get_available_resources": [
+        "TRANSFORMATION"
+      ],
+      "get_system_status": [
+        "TRANSFORMATION"
+      ],
+      "_get_disk_usage": [
+        "TRANSFORMATION"
+      ],
+      "_start_monitoring": [],
+      "monitor_loop": [],
+      "_monitor_system_health": [
+        "UTILITY"
+      ],
+      "emergency_shutdown": [],
+      "health_check": [
+        "TRANSFORMATION"
+      ],
+      "ProofBridgeError": [],
+      "ModalLogicEvaluator": [
+        "TRANSFORMATION"
+      ],
+      "ModalLogicEvaluator._get_default_bridge_path": [
+        "TRANSFORMATION"
+      ],
+      "ModalLogicEvaluator.evaluate_modal_proposition": [
+        "TRANSFORMATION"
+      ],
+      "ModalLogicEvaluator._evaluate_via_library": [
+        "TRANSFORMATION"
+      ],
+      "ModalLogicEvaluator._evaluate_via_subprocess": [
+        "TRANSFORMATION"
+      ],
+      "ModalLogicEvaluator._generate_countermodel": [
+        "TRANSFORMATION"
+      ],
+      "ModalLogicEvaluator._extract_atomic_propositions": [
+        "TRANSFORMATION"
+      ],
+      "ModalLogicEvaluator._generate_accessibility_relation": [
+        "TRANSFORMATION"
+      ],
+      "ModalLogicEvaluator._generate_valuation_space": [
+        "TRANSFORMATION"
+      ],
+      "ModalLogicEvaluator._generate_modal_countermodel": [
+        "TRANSFORMATION"
+      ],
+      "ModalLogicEvaluator.evaluate_batch": [
+        "TRANSFORMATION"
+      ],
+      "ModalLogicEvaluator.validate_syntax": [
+        "TRANSFORMATION"
+      ],
+      "_get_default_bridge_path": [
+        "TRANSFORMATION"
+      ],
+      "evaluate_modal_proposition": [
+        "TRANSFORMATION"
+      ],
+      "_evaluate_via_library": [
+        "TRANSFORMATION"
+      ],
+      "_evaluate_via_subprocess": [
+        "TRANSFORMATION"
+      ],
+      "_generate_countermodel": [
+        "TRANSFORMATION"
+      ],
+      "_extract_atomic_propositions": [
+        "TRANSFORMATION"
+      ],
+      "_generate_accessibility_relation": [
+        "TRANSFORMATION"
+      ],
+      "_generate_valuation_space": [
+        "TRANSFORMATION"
+      ],
+      "_generate_modal_countermodel": [
+        "TRANSFORMATION"
+      ],
+      "evaluate_batch": [
+        "TRANSFORMATION"
+      ],
+      "validate_syntax": [
+        "TRANSFORMATION"
+      ],
+      "IELEvaluator": [
+        "TRANSFORMATION"
+      ],
+      "IELEvaluator.evaluate_iel_proposition": [
+        "TRANSFORMATION"
+      ],
+      "IELEvaluator._transform_iel_to_modal": [
+        "TRANSFORMATION"
+      ],
+      "IELEvaluator._analyze_identity_falsification": [
+        "TRANSFORMATION"
+      ],
+      "IELEvaluator._analyze_experience_falsification": [
+        "TRANSFORMATION"
+      ],
+      "evaluate_iel_proposition": [
+        "TRANSFORMATION"
+      ],
+      "_transform_iel_to_modal": [
+        "TRANSFORMATION"
+      ],
+      "_analyze_identity_falsification": [
+        "TRANSFORMATION"
+      ],
+      "_analyze_experience_falsification": [
+        "TRANSFORMATION"
+      ],
+      "create_evaluator": [
+        "TRANSFORMATION"
+      ],
+      "verify_bridge_consistency": [
+        "TRANSFORMATION"
+      ]
+    },
+    "data_role": {
+      "SimulatedConsciousness": [],
+      "SimulatedConsciousness._summarize_cycle": [],
+      "SimulatedConsciousness._update_memory": [],
+      "SimulatedConsciousness._compute_affect_and_attention": [],
+      "SimulatedConsciousness._compose_narrative": [],
+      "SimulatedConsciousness._persist_event": [],
+      "SimulatedConsciousness.step": [],
+      "SimulatedConsciousness.run": [],
+      "_summarize_cycle": [],
+      "_update_memory": [],
+      "_compute_affect_and_attention": [],
+      "_compose_narrative": [],
+      "_persist_event": [],
+      "step": [],
+      "run": [],
+      "BDNEngine": [],
+      "BDNEngine.boot": [],
+      "BDNEngine.status": [],
+      "boot": [],
+      "status": [],
+      "FractalNexus": [],
+      "FractalNexus.run_predict": [],
+      "FractalNexus.run_divergence": [],
+      "FractalNexus.run_generate": [],
+      "FractalNexus.run_map": [],
+      "FractalNexus.run_pipeline": [],
+      "run_predict": [],
+      "run_divergence": [],
+      "run_generate": [],
+      "run_map": [],
+      "run_pipeline": [
+        "MEMORY"
+      ],
+      "BayesianNexus": [],
+      "BayesianNexus.run_real_time": [],
+      "BayesianNexus.run_inferencer": [],
+      "BayesianNexus.run_hbn": [],
+      "BayesianNexus.run_recursion": [],
+      "BayesianNexus.run_pipeline": [],
+      "run_real_time": [],
+      "run_inferencer": [],
+      "run_hbn": [],
+      "run_recursion": [],
+      "ForecastingNexus": [
+        "MEMORY"
+      ],
+      "ForecastingNexus.run_arima": [
+        "MEMORY"
+      ],
+      "ForecastingNexus.run_garch": [
+        "MEMORY"
+      ],
+      "ForecastingNexus.run_kalman": [
+        "MEMORY"
+      ],
+      "ForecastingNexus.run_state_space": [
+        "MEMORY"
+      ],
+      "ForecastingNexus.run_ts_kalman": [
+        "MEMORY"
+      ],
+      "ForecastingNexus.ensemble": [
+        "MEMORY"
+      ],
+      "ForecastingNexus.run_pipeline": [
+        "MEMORY"
+      ],
+      "run_arima": [
+        "MEMORY"
+      ],
+      "run_garch": [
+        "MEMORY"
+      ],
+      "run_kalman": [
+        "MEMORY"
+      ],
+      "run_state_space": [
+        "MEMORY"
+      ],
+      "run_ts_kalman": [
+        "MEMORY"
+      ],
+      "ensemble": [
+        "MEMORY"
+      ],
+      "ProtocolType": [],
+      "Message": [],
+      "ProtocolBridge": [],
+      "ProtocolBridge.register_handler": [],
+      "ProtocolBridge.send_message": [],
+      "ProtocolBridge._route_message": [],
+      "ProtocolBridge.get_bridge_status": [],
+      "register_handler": [],
+      "send_message": [],
+      "_route_message": [],
+      "get_bridge_status": [],
+      "bridge_status": [],
+      "RegressionChecker": [],
+      "RegressionChecker.compare": [],
+      "RegressionChecker.report": [],
+      "compare": [],
+      "report": [],
+      "compare_tool_outputs": [],
+      "HealthStatus": [],
+      "HealthCheck": [],
+      "SelfDiagnosisTool": [],
+      "SelfDiagnosisTool._establish_baseline": [],
+      "SelfDiagnosisTool.perform_full_diagnosis": [],
+      "SelfDiagnosisTool._check_cpu_health": [],
+      "SelfDiagnosisTool._check_memory_health": [],
+      "SelfDiagnosisTool._check_disk_health": [],
+      "SelfDiagnosisTool._check_network_health": [],
+      "SelfDiagnosisTool._check_process_health": [],
+      "SelfDiagnosisTool._check_filesystem_health": [],
+      "SelfDiagnosisTool._calculate_overall_health": [],
+      "SelfDiagnosisTool._generate_diagnosis_summary": [],
+      "SelfDiagnosisTool.get_health_history": [],
+      "_establish_baseline": [],
+      "perform_full_diagnosis": [],
+      "_check_cpu_health": [],
+      "_check_memory_health": [],
+      "_check_disk_health": [],
+      "_check_network_health": [],
+      "_check_process_health": [],
+      "_check_filesystem_health": [],
+      "_calculate_overall_health": [],
+      "_generate_diagnosis_summary": [],
+      "get_health_history": [],
+      "perform_system_diagnosis": [],
+      "get_system_diagnosis": [],
+      "UserInterfaceEngine": [],
+      "UserInterfaceEngine.status": [],
+      "InteractionConfig": [],
+      "InteractionRouter": [],
+      "InteractionRouter.is_active": [],
+      "InteractionRouter.start_prompt_loop": [],
+      "InteractionRouter.enqueue_prompt": [],
+      "InteractionRouter.process_prompt": [],
+      "InteractionRouter._stdin_prompt_source": [],
+      "InteractionRouter._prompt_loop": [],
+      "InteractionRouter._handle_prompt": [],
+      "InteractionRouter._log_interaction": [],
+      "InteractionRouter._ensure_log_directory": [],
+      "is_active": [],
+      "start_prompt_loop": [],
+      "enqueue_prompt": [],
+      "process_prompt": [],
+      "_stdin_prompt_source": [],
+      "_prompt_loop": [],
+      "_handle_prompt": [],
+      "_log_interaction": [],
+      "_ensure_log_directory": [],
+      "UIPResponse": [],
+      "MessageValidator": [],
+      "MessageValidator.validate_uip_request": [],
+      "validate_uip_request": [],
+      "ProgressiveRouter": [],
+      "ProgressiveRouter.route_user_input": [],
+      "ProgressiveRouter._extract_adaptive_profile": [],
+      "ProgressiveRouter._construct_synthesis_context": [],
+      "ProgressiveRouter._serialise_step_result": [],
+      "ProgressiveRouter._create_response_from_context": [],
+      "ProgressiveRouter._create_error_response": [],
+      "ProgressiveRouter._update_metrics": [],
+      "route_user_input": [],
+      "_extract_adaptive_profile": [],
+      "_construct_synthesis_context": [],
+      "_serialise_step_result": [],
+      "_create_response_from_context": [],
+      "_create_error_response": [],
+      "_update_metrics": [],
+      "after_request": [],
+      "index": [],
+      "static_files": [],
+      "analyze_proposition": [],
+      "quick_analysis": [],
+      "full_coq_analysis": [],
+      "check_coq_available": [],
+      "parse_args": [],
+      "main": [],
+      "AdvisorNotes": [],
+      "AdvisorNotes.to_dict": [],
+      "to_dict": [],
+      "LLMAdvisor": [],
+      "LLMAdvisor._stub_response": [],
+      "LLMAdvisor._call_openai": [],
+      "LLMAdvisor._call_anthropic": [],
+      "LLMAdvisor._sanitize_proposals": [],
+      "LLMAdvisor._sanitize_claims": [],
+      "LLMAdvisor._stream_single_shot": [],
+      "LLMAdvisor._openai_stream": [],
+      "LLMAdvisor.propose_stream": [],
+      "LLMAdvisor.propose": [],
+      "_stub_response": [],
+      "_call_openai": [],
+      "_call_anthropic": [],
+      "_sanitize_proposals": [],
+      "_sanitize_claims": [],
+      "_stream_single_shot": [],
+      "_gen": [],
+      "_openai_stream": [],
+      "propose_stream": [],
+      "propose": [],
+      "build_tool_schema": [],
+      "load_env": [],
+      "execute_operation": [],
+      "LOGOSInterface": [],
+      "LOGOSInterface.route_request": [],
+      "LOGOSInterface.synthesize_answer": [],
+      "LOGOSInterface.process_request": [],
+      "route_request": [],
+      "synthesize_answer": [],
+      "process_request": [],
+      "interactive_mode": [],
+      "single_request": [],
+      "_now": [],
+      "_default_state": [],
+      "_load_state": [],
+      "_persist_state": [],
+      "_make_wm_item": [],
+      "_downgrade_proved": [],
+      "_tool_summary": [],
+      "_approve_tool": [],
+      "SessionData": [],
+      "_resolve_session_id": [],
+      "_resolve_ws_session_id": [],
+      "_ensure_session": [],
+      "_bump_metric": [],
+      "_sanitize_claims_for_runtime": [],
+      "_citation_markers": [],
+      "_claim_truth_counts": [],
+      "_perform_local_retrieval": [],
+      "_proposal_hash": [
+        "CRYPTO_ID"
+      ],
+      "_expires_at": [],
+      "_approval_expired": [],
+      "_record_provider_status": [],
+      "_check_ledger_writable": [],
+      "_attestation": [],
+      "_advisor": [],
+      "_pending_or_execute": [],
+      "_session_tag": [],
+      "_get_nexus": [],
+      "_build_ledger": [],
+      "_finalize_turn": [],
+      "health": [],
+      "chat": [],
+      "websocket_chat": [],
+      "get_session": [],
+      "debug_nexus": [],
+      "approve": [],
+      "_tail": [],
+      "_maybe_write_audit": [],
+      "get_mission_profile": [],
+      "require_safe_interfaces": [],
+      "wrapper": [],
+      "restrict_writes_to": [],
+      "decorator": [],
+      "_validate": [],
+      "LLMConfig": [],
+      "LLMBackend": [],
+      "LLMBackend._load_config": [],
+      "LLMBackend._validate_config": [],
+      "LLMBackend.complete": [],
+      "LLMBackend._complete_openai": [],
+      "LLMBackend._complete_anthropic": [],
+      "LLMBackend._complete_groq": [],
+      "LLMBackend._complete_mock": [],
+      "_load_config": [],
+      "_validate_config": [],
+      "complete": [],
+      "_complete_openai": [],
+      "_complete_anthropic": [],
+      "_complete_groq": [],
+      "_complete_mock": [],
+      "BaseNexus": [],
+      "AgentRequest": [],
+      "NexusResponse": [],
+      "AgentType": [],
+      "TokenType": [],
+      "TokenStatus": [],
+      "GapType": [],
+      "SOPToken": [],
+      "SOPToken._generate_validation_key": [],
+      "SOPToken.use_token": [],
+      "SOPToken.is_valid": [],
+      "SOPToken.to_dict": [],
+      "_generate_validation_key": [],
+      "use_token": [],
+      "is_valid": [],
+      "SystemGap": [],
+      "SystemGap.to_todo_json": [],
+      "SystemGap._generate_success_criteria": [],
+      "SystemGap._analyze_protocol_dependencies": [],
+      "SystemGap._extract_existing_code": [],
+      "SystemGap._generate_requirements": [],
+      "SystemGap._generate_test_cases": [],
+      "SystemGap._check_scaffold_availability": [],
+      "to_todo_json": [],
+      "_generate_success_criteria": [],
+      "_analyze_protocol_dependencies": [],
+      "_extract_existing_code": [],
+      "_generate_requirements": [],
+      "_generate_test_cases": [],
+      "_check_scaffold_availability": [],
+      "SOPNexus": [],
+      "SOPNexus._start_background_monitoring": [],
+      "SOPNexus._protocol_specific_security_validation": [],
+      "SOPNexus._protocol_specific_activation": [],
+      "SOPNexus._protocol_specific_deactivation": [],
+      "SOPNexus._route_to_protocol_core": [],
+      "SOPNexus._handle_token_request": [],
+      "SOPNexus._handle_token_validation": [],
+      "SOPNexus._handle_todo_token_request": [],
+      "SOPNexus._handle_todo_integration_approval": [],
+      "SOPNexus._handle_gap_detection_request": [],
+      "SOPNexus._run_gap_detection_analysis": [],
+      "SOPNexus._handle_todo_queue_request": [],
+      "SOPNexus._handle_system_status_request": [],
+      "SOPNexus._handle_health_check_request": [],
+      "SOPNexus._handle_system_test_request": [],
+      "SOPNexus._handle_self_improvement_request": [],
+      "SOPNexus._handle_self_improvement_status_request": [],
+      "SOPNexus._handle_code_generation_request": [],
+      "SOPNexus._handle_code_environment_status_request": [],
+      "SOPNexus._gap_detection_loop": [],
+      "SOPNexus._token_cleanup_loop": [],
+      "SOPNexus._system_health_monitor": [],
+      "SOPNexus._protocol_specific_smoke_test": [],
+      "SOPNexus._calculate_uptime": [],
+      "SOPNexus._integrate_todo_solution": [],
+      "SOPNexus._collect_system_metrics": [],
+      "SOPNexus._analyze_system_health": [],
+      "SOPNexus._check_token_system_health": [],
+      "SOPNexus._check_gap_detection_health": [],
+      "SOPNexus._check_file_management_health": [],
+      "SOPNexus._check_disk_space": [],
+      "SOPNexus._check_memory_usage": [],
+      "SOPNexus._test_token_system": [],
+      "SOPNexus._test_gap_detection": [],
+      "SOPNexus._test_file_management": [],
+      "SOPNexus._test_todo_generation": [],
+      "_start_background_monitoring": [],
+      "_protocol_specific_security_validation": [],
+      "_protocol_specific_activation": [],
+      "_protocol_specific_deactivation": [],
+      "_route_to_protocol_core": [],
+      "_handle_token_request": [],
+      "_handle_token_validation": [],
+      "_handle_todo_token_request": [],
+      "_handle_todo_integration_approval": [],
+      "_handle_gap_detection_request": [],
+      "_run_gap_detection_analysis": [],
+      "_handle_todo_queue_request": [],
+      "_handle_system_status_request": [],
+      "_handle_health_check_request": [],
+      "_handle_system_test_request": [],
+      "_handle_self_improvement_request": [],
+      "_handle_self_improvement_status_request": [],
+      "_handle_code_generation_request": [],
+      "_handle_code_environment_status_request": [],
+      "_gap_detection_loop": [],
+      "_token_cleanup_loop": [],
+      "_system_health_monitor": [],
+      "_protocol_specific_smoke_test": [],
+      "_calculate_uptime": [],
+      "_integrate_todo_solution": [],
+      "_collect_system_metrics": [],
+      "_analyze_system_health": [],
+      "_check_token_system_health": [],
+      "_check_gap_detection_health": [],
+      "_check_file_management_health": [],
+      "_check_disk_space": [],
+      "_check_memory_usage": [],
+      "_test_token_system": [],
+      "_test_gap_detection": [],
+      "_test_file_management": [],
+      "_test_todo_generation": [],
+      "SOPOperations": [],
+      "SOPOperations._phase_1_core_system": [],
+      "SOPOperations._phase_2_governance_systems": [],
+      "SOPOperations._phase_3_operational_services": [],
+      "SOPOperations._phase_4_protocol_startup": [],
+      "SOPOperations._phase_5_validation_testing": [],
+      "SOPOperations._execute_component_sequence": [],
+      "SOPOperations._load_resource_allocation": [],
+      "SOPOperations._load_diagnostics_framework": [],
+      "SOPOperations._load_policy_enforcement": [],
+      "SOPOperations._load_health_monitoring": [],
+      "SOPOperations._load_startup_orchestrator": [],
+      "SOPOperations._load_protocol_health_monitoring": [],
+      "SOPOperations._load_performance_testing": [],
+      "SOPOperations.orchestrate_system_startup": [],
+      "SOPOperations._start_protocol": [],
+      "SOPOperations.allocate_resources": [],
+      "SOPOperations._check_resource_availability": [],
+      "SOPOperations._get_available_resources": [],
+      "SOPOperations.get_system_status": [],
+      "SOPOperations._get_disk_usage": [],
+      "SOPOperations._start_monitoring": [],
+      "SOPOperations._monitor_system_health": [],
+      "SOPOperations.emergency_shutdown": [],
+      "SOPOperations.health_check": [],
+      "_phase_1_core_system": [],
+      "_phase_2_governance_systems": [],
+      "_phase_3_operational_services": [],
+      "_phase_4_protocol_startup": [],
+      "_phase_5_validation_testing": [],
+      "_execute_component_sequence": [],
+      "_load_resource_allocation": [],
+      "_load_diagnostics_framework": [],
+      "_load_policy_enforcement": [],
+      "_load_health_monitoring": [],
+      "_load_startup_orchestrator": [],
+      "_load_protocol_health_monitoring": [],
+      "_load_performance_testing": [],
+      "orchestrate_system_startup": [],
+      "_start_protocol": [],
+      "allocate_resources": [],
+      "_check_resource_availability": [],
+      "_get_available_resources": [],
+      "get_system_status": [],
+      "_get_disk_usage": [],
+      "_start_monitoring": [],
+      "monitor_loop": [],
+      "_monitor_system_health": [],
+      "emergency_shutdown": [],
+      "health_check": [],
+      "ProofBridgeError": [],
+      "ModalLogicEvaluator": [],
+      "ModalLogicEvaluator._get_default_bridge_path": [],
+      "ModalLogicEvaluator.evaluate_modal_proposition": [],
+      "ModalLogicEvaluator._evaluate_via_library": [],
+      "ModalLogicEvaluator._evaluate_via_subprocess": [],
+      "ModalLogicEvaluator._generate_countermodel": [],
+      "ModalLogicEvaluator._extract_atomic_propositions": [],
+      "ModalLogicEvaluator._generate_accessibility_relation": [],
+      "ModalLogicEvaluator._generate_valuation_space": [],
+      "ModalLogicEvaluator._generate_modal_countermodel": [],
+      "ModalLogicEvaluator.evaluate_batch": [],
+      "ModalLogicEvaluator.validate_syntax": [],
+      "_get_default_bridge_path": [],
+      "evaluate_modal_proposition": [],
+      "_evaluate_via_library": [],
+      "_evaluate_via_subprocess": [],
+      "_generate_countermodel": [],
+      "_extract_atomic_propositions": [],
+      "_generate_accessibility_relation": [],
+      "_generate_valuation_space": [],
+      "_generate_modal_countermodel": [],
+      "evaluate_batch": [],
+      "validate_syntax": [],
+      "IELEvaluator": [],
+      "IELEvaluator.evaluate_iel_proposition": [],
+      "IELEvaluator._transform_iel_to_modal": [],
+      "IELEvaluator._analyze_identity_falsification": [],
+      "IELEvaluator._analyze_experience_falsification": [],
+      "evaluate_iel_proposition": [],
+      "_transform_iel_to_modal": [],
+      "_analyze_identity_falsification": [],
+      "_analyze_experience_falsification": [],
+      "create_evaluator": [],
+      "verify_bridge_consistency": []
+    },
+    "control_role": {
+      "SimulatedConsciousness": [
+        "RUNTIME_CONTROL"
+      ],
+      "SimulatedConsciousness._summarize_cycle": [
+        "RUNTIME_CONTROL"
+      ],
+      "SimulatedConsciousness._update_memory": [
+        "RUNTIME_CONTROL"
+      ],
+      "SimulatedConsciousness._compute_affect_and_attention": [
+        "RUNTIME_CONTROL"
+      ],
+      "SimulatedConsciousness._compose_narrative": [
+        "RUNTIME_CONTROL"
+      ],
+      "SimulatedConsciousness._persist_event": [
+        "RUNTIME_CONTROL"
+      ],
+      "SimulatedConsciousness.step": [
+        "RUNTIME_CONTROL"
+      ],
+      "SimulatedConsciousness.run": [
+        "RUNTIME_CONTROL"
+      ],
+      "_summarize_cycle": [
+        "RUNTIME_CONTROL"
+      ],
+      "_update_memory": [
+        "RUNTIME_CONTROL"
+      ],
+      "_compute_affect_and_attention": [
+        "RUNTIME_CONTROL"
+      ],
+      "_compose_narrative": [
+        "RUNTIME_CONTROL"
+      ],
+      "_persist_event": [
+        "RUNTIME_CONTROL"
+      ],
+      "step": [
+        "RUNTIME_CONTROL"
+      ],
+      "run": [],
+      "BDNEngine": [
+        "RUNTIME_CONTROL"
+      ],
+      "BDNEngine.boot": [
+        "RUNTIME_CONTROL"
+      ],
+      "BDNEngine.status": [
+        "RUNTIME_CONTROL"
+      ],
+      "boot": [
+        "RUNTIME_CONTROL"
+      ],
+      "status": [],
+      "FractalNexus": [
+        "RUNTIME_CONTROL"
+      ],
+      "FractalNexus.run_predict": [
+        "RUNTIME_CONTROL"
+      ],
+      "FractalNexus.run_divergence": [
+        "RUNTIME_CONTROL"
+      ],
+      "FractalNexus.run_generate": [
+        "RUNTIME_CONTROL"
+      ],
+      "FractalNexus.run_map": [
+        "RUNTIME_CONTROL"
+      ],
+      "FractalNexus.run_pipeline": [
+        "RUNTIME_CONTROL"
+      ],
+      "run_predict": [
+        "RUNTIME_CONTROL"
+      ],
+      "run_divergence": [
+        "RUNTIME_CONTROL"
+      ],
+      "run_generate": [
+        "RUNTIME_CONTROL"
+      ],
+      "run_map": [
+        "RUNTIME_CONTROL"
+      ],
+      "run_pipeline": [
+        "RUNTIME_CONTROL"
+      ],
+      "BayesianNexus": [
+        "RUNTIME_CONTROL"
+      ],
+      "BayesianNexus.run_real_time": [
+        "RUNTIME_CONTROL"
+      ],
+      "BayesianNexus.run_inferencer": [
+        "RUNTIME_CONTROL"
+      ],
+      "BayesianNexus.run_hbn": [
+        "RUNTIME_CONTROL"
+      ],
+      "BayesianNexus.run_recursion": [
+        "RUNTIME_CONTROL"
+      ],
+      "BayesianNexus.run_pipeline": [
+        "RUNTIME_CONTROL"
+      ],
+      "run_real_time": [
+        "RUNTIME_CONTROL"
+      ],
+      "run_inferencer": [
+        "RUNTIME_CONTROL"
+      ],
+      "run_hbn": [
+        "RUNTIME_CONTROL"
+      ],
+      "run_recursion": [
+        "RUNTIME_CONTROL"
+      ],
+      "ForecastingNexus": [
+        "RUNTIME_CONTROL"
+      ],
+      "ForecastingNexus.run_arima": [
+        "RUNTIME_CONTROL"
+      ],
+      "ForecastingNexus.run_garch": [
+        "RUNTIME_CONTROL"
+      ],
+      "ForecastingNexus.run_kalman": [
+        "RUNTIME_CONTROL"
+      ],
+      "ForecastingNexus.run_state_space": [
+        "RUNTIME_CONTROL"
+      ],
+      "ForecastingNexus.run_ts_kalman": [
+        "RUNTIME_CONTROL"
+      ],
+      "ForecastingNexus.ensemble": [
+        "RUNTIME_CONTROL"
+      ],
+      "ForecastingNexus.run_pipeline": [
+        "RUNTIME_CONTROL"
+      ],
+      "run_arima": [
+        "RUNTIME_CONTROL"
+      ],
+      "run_garch": [
+        "RUNTIME_CONTROL"
+      ],
+      "run_kalman": [
+        "RUNTIME_CONTROL"
+      ],
+      "run_state_space": [
+        "RUNTIME_CONTROL"
+      ],
+      "run_ts_kalman": [
+        "RUNTIME_CONTROL"
+      ],
+      "ensemble": [
+        "RUNTIME_CONTROL"
+      ],
+      "ProtocolType": [
+        "RUNTIME_CONTROL"
+      ],
+      "Message": [
+        "RUNTIME_CONTROL"
+      ],
+      "ProtocolBridge": [
+        "RUNTIME_CONTROL"
+      ],
+      "ProtocolBridge.register_handler": [
+        "RUNTIME_CONTROL"
+      ],
+      "ProtocolBridge.send_message": [
+        "RUNTIME_CONTROL"
+      ],
+      "ProtocolBridge._route_message": [
+        "RUNTIME_CONTROL"
+      ],
+      "ProtocolBridge.get_bridge_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "register_handler": [],
+      "send_message": [
+        "RUNTIME_CONTROL"
+      ],
+      "_route_message": [
+        "RUNTIME_CONTROL"
+      ],
+      "get_bridge_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "bridge_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "RegressionChecker": [
+        "RUNTIME_CONTROL"
+      ],
+      "RegressionChecker.compare": [
+        "RUNTIME_CONTROL"
+      ],
+      "RegressionChecker.report": [
+        "RUNTIME_CONTROL"
+      ],
+      "compare": [
+        "RUNTIME_CONTROL"
+      ],
+      "report": [
+        "RUNTIME_CONTROL"
+      ],
+      "compare_tool_outputs": [
+        "RUNTIME_CONTROL"
+      ],
+      "HealthStatus": [
+        "RUNTIME_CONTROL"
+      ],
+      "HealthCheck": [
+        "RUNTIME_CONTROL"
+      ],
+      "SelfDiagnosisTool": [
+        "RUNTIME_CONTROL"
+      ],
+      "SelfDiagnosisTool._establish_baseline": [
+        "RUNTIME_CONTROL"
+      ],
+      "SelfDiagnosisTool.perform_full_diagnosis": [
+        "RUNTIME_CONTROL"
+      ],
+      "SelfDiagnosisTool._check_cpu_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SelfDiagnosisTool._check_memory_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SelfDiagnosisTool._check_disk_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SelfDiagnosisTool._check_network_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SelfDiagnosisTool._check_process_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SelfDiagnosisTool._check_filesystem_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SelfDiagnosisTool._calculate_overall_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SelfDiagnosisTool._generate_diagnosis_summary": [
+        "RUNTIME_CONTROL"
+      ],
+      "SelfDiagnosisTool.get_health_history": [
+        "RUNTIME_CONTROL"
+      ],
+      "_establish_baseline": [
+        "RUNTIME_CONTROL"
+      ],
+      "perform_full_diagnosis": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_cpu_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_memory_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_disk_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_network_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_process_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_filesystem_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "_calculate_overall_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "_generate_diagnosis_summary": [
+        "RUNTIME_CONTROL"
+      ],
+      "get_health_history": [
+        "RUNTIME_CONTROL"
+      ],
+      "perform_system_diagnosis": [
+        "RUNTIME_CONTROL"
+      ],
+      "get_system_diagnosis": [
+        "RUNTIME_CONTROL"
+      ],
+      "UserInterfaceEngine": [
+        "RUNTIME_CONTROL"
+      ],
+      "UserInterfaceEngine.status": [
+        "RUNTIME_CONTROL"
+      ],
+      "InteractionConfig": [
+        "RUNTIME_CONTROL"
+      ],
+      "InteractionRouter": [
+        "RUNTIME_CONTROL"
+      ],
+      "InteractionRouter.is_active": [
+        "RUNTIME_CONTROL"
+      ],
+      "InteractionRouter.start_prompt_loop": [
+        "RUNTIME_CONTROL"
+      ],
+      "InteractionRouter.enqueue_prompt": [
+        "RUNTIME_CONTROL"
+      ],
+      "InteractionRouter.process_prompt": [
+        "RUNTIME_CONTROL"
+      ],
+      "InteractionRouter._stdin_prompt_source": [
+        "RUNTIME_CONTROL"
+      ],
+      "InteractionRouter._prompt_loop": [
+        "RUNTIME_CONTROL"
+      ],
+      "InteractionRouter._handle_prompt": [
+        "RUNTIME_CONTROL"
+      ],
+      "InteractionRouter._log_interaction": [
+        "RUNTIME_CONTROL"
+      ],
+      "InteractionRouter._ensure_log_directory": [
+        "RUNTIME_CONTROL"
+      ],
+      "is_active": [
+        "RUNTIME_CONTROL"
+      ],
+      "start_prompt_loop": [
+        "RUNTIME_CONTROL"
+      ],
+      "enqueue_prompt": [
+        "RUNTIME_CONTROL"
+      ],
+      "process_prompt": [
+        "RUNTIME_CONTROL"
+      ],
+      "_stdin_prompt_source": [
+        "RUNTIME_CONTROL"
+      ],
+      "_prompt_loop": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_prompt": [
+        "RUNTIME_CONTROL"
+      ],
+      "_log_interaction": [
+        "RUNTIME_CONTROL"
+      ],
+      "_ensure_log_directory": [
+        "RUNTIME_CONTROL"
+      ],
+      "UIPResponse": [],
+      "MessageValidator": [],
+      "MessageValidator.validate_uip_request": [],
+      "validate_uip_request": [],
+      "ProgressiveRouter": [
+        "RUNTIME_CONTROL"
+      ],
+      "ProgressiveRouter.route_user_input": [
+        "RUNTIME_CONTROL"
+      ],
+      "ProgressiveRouter._extract_adaptive_profile": [
+        "RUNTIME_CONTROL"
+      ],
+      "ProgressiveRouter._construct_synthesis_context": [
+        "RUNTIME_CONTROL"
+      ],
+      "ProgressiveRouter._serialise_step_result": [
+        "RUNTIME_CONTROL"
+      ],
+      "ProgressiveRouter._create_response_from_context": [
+        "RUNTIME_CONTROL"
+      ],
+      "ProgressiveRouter._create_error_response": [
+        "RUNTIME_CONTROL"
+      ],
+      "ProgressiveRouter._update_metrics": [
+        "RUNTIME_CONTROL"
+      ],
+      "route_user_input": [
+        "RUNTIME_CONTROL"
+      ],
+      "_extract_adaptive_profile": [
+        "RUNTIME_CONTROL"
+      ],
+      "_construct_synthesis_context": [
+        "RUNTIME_CONTROL"
+      ],
+      "_serialise_step_result": [
+        "RUNTIME_CONTROL"
+      ],
+      "_create_response_from_context": [
+        "RUNTIME_CONTROL"
+      ],
+      "_create_error_response": [
+        "RUNTIME_CONTROL"
+      ],
+      "_update_metrics": [
+        "RUNTIME_CONTROL"
+      ],
+      "after_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "index": [
+        "RUNTIME_CONTROL"
+      ],
+      "static_files": [
+        "RUNTIME_CONTROL"
+      ],
+      "analyze_proposition": [
+        "RUNTIME_CONTROL"
+      ],
+      "quick_analysis": [
+        "RUNTIME_CONTROL"
+      ],
+      "full_coq_analysis": [
+        "RUNTIME_CONTROL"
+      ],
+      "check_coq_available": [
+        "RUNTIME_CONTROL"
+      ],
+      "parse_args": [
+        "RUNTIME_CONTROL"
+      ],
+      "main": [
+        "BOOT_CONTROL"
+      ],
+      "AdvisorNotes": [
+        "RUNTIME_CONTROL"
+      ],
+      "AdvisorNotes.to_dict": [
+        "RUNTIME_CONTROL"
+      ],
+      "to_dict": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMAdvisor": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMAdvisor._stub_response": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMAdvisor._call_openai": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMAdvisor._call_anthropic": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMAdvisor._sanitize_proposals": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMAdvisor._sanitize_claims": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMAdvisor._stream_single_shot": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMAdvisor._openai_stream": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMAdvisor.propose_stream": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMAdvisor.propose": [
+        "RUNTIME_CONTROL"
+      ],
+      "_stub_response": [
+        "RUNTIME_CONTROL"
+      ],
+      "_call_openai": [
+        "RUNTIME_CONTROL"
+      ],
+      "_call_anthropic": [
+        "RUNTIME_CONTROL"
+      ],
+      "_sanitize_proposals": [
+        "RUNTIME_CONTROL"
+      ],
+      "_sanitize_claims": [
+        "RUNTIME_CONTROL"
+      ],
+      "_stream_single_shot": [
+        "RUNTIME_CONTROL"
+      ],
+      "_gen": [
+        "RUNTIME_CONTROL"
+      ],
+      "_openai_stream": [
+        "RUNTIME_CONTROL"
+      ],
+      "propose_stream": [
+        "RUNTIME_CONTROL"
+      ],
+      "propose": [
+        "RUNTIME_CONTROL"
+      ],
+      "build_tool_schema": [
+        "RUNTIME_CONTROL"
+      ],
+      "load_env": [
+        "RUNTIME_CONTROL"
+      ],
+      "execute_operation": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSInterface": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSInterface.route_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSInterface.synthesize_answer": [
+        "RUNTIME_CONTROL"
+      ],
+      "LOGOSInterface.process_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "route_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "synthesize_answer": [
+        "RUNTIME_CONTROL"
+      ],
+      "process_request": [],
+      "interactive_mode": [
+        "RUNTIME_CONTROL"
+      ],
+      "single_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_now": [
+        "RUNTIME_CONTROL"
+      ],
+      "_default_state": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_state": [
+        "RUNTIME_CONTROL"
+      ],
+      "_persist_state": [
+        "RUNTIME_CONTROL"
+      ],
+      "_make_wm_item": [
+        "RUNTIME_CONTROL"
+      ],
+      "_downgrade_proved": [
+        "RUNTIME_CONTROL"
+      ],
+      "_tool_summary": [
+        "RUNTIME_CONTROL"
+      ],
+      "_approve_tool": [
+        "RUNTIME_CONTROL"
+      ],
+      "SessionData": [
+        "RUNTIME_CONTROL"
+      ],
+      "_resolve_session_id": [
+        "RUNTIME_CONTROL"
+      ],
+      "_resolve_ws_session_id": [
+        "RUNTIME_CONTROL"
+      ],
+      "_ensure_session": [
+        "RUNTIME_CONTROL"
+      ],
+      "_bump_metric": [
+        "RUNTIME_CONTROL"
+      ],
+      "_sanitize_claims_for_runtime": [
+        "RUNTIME_CONTROL"
+      ],
+      "_citation_markers": [
+        "RUNTIME_CONTROL"
+      ],
+      "_claim_truth_counts": [
+        "RUNTIME_CONTROL"
+      ],
+      "_perform_local_retrieval": [
+        "RUNTIME_CONTROL"
+      ],
+      "_proposal_hash": [
+        "RUNTIME_CONTROL"
+      ],
+      "_expires_at": [
+        "RUNTIME_CONTROL"
+      ],
+      "_approval_expired": [
+        "RUNTIME_CONTROL"
+      ],
+      "_record_provider_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_ledger_writable": [
+        "RUNTIME_CONTROL"
+      ],
+      "_attestation": [
+        "RUNTIME_CONTROL"
+      ],
+      "_advisor": [
+        "RUNTIME_CONTROL"
+      ],
+      "_pending_or_execute": [
+        "RUNTIME_CONTROL"
+      ],
+      "_session_tag": [
+        "RUNTIME_CONTROL"
+      ],
+      "_get_nexus": [
+        "RUNTIME_CONTROL"
+      ],
+      "_build_ledger": [
+        "RUNTIME_CONTROL"
+      ],
+      "_finalize_turn": [
+        "RUNTIME_CONTROL"
+      ],
+      "health": [
+        "BOOT_CONTROL"
+      ],
+      "chat": [
+        "RUNTIME_CONTROL"
+      ],
+      "websocket_chat": [
+        "RUNTIME_CONTROL"
+      ],
+      "get_session": [
+        "RUNTIME_CONTROL"
+      ],
+      "debug_nexus": [
+        "RUNTIME_CONTROL"
+      ],
+      "approve": [
+        "RUNTIME_CONTROL"
+      ],
+      "_tail": [
+        "RUNTIME_CONTROL"
+      ],
+      "_maybe_write_audit": [
+        "RUNTIME_CONTROL"
+      ],
+      "get_mission_profile": [
+        "RUNTIME_CONTROL"
+      ],
+      "require_safe_interfaces": [
+        "RUNTIME_CONTROL"
+      ],
+      "wrapper": [
+        "RUNTIME_CONTROL"
+      ],
+      "restrict_writes_to": [
+        "RUNTIME_CONTROL"
+      ],
+      "decorator": [
+        "RUNTIME_CONTROL"
+      ],
+      "_validate": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMConfig": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMBackend": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMBackend._load_config": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMBackend._validate_config": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMBackend.complete": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMBackend._complete_openai": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMBackend._complete_anthropic": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMBackend._complete_groq": [
+        "RUNTIME_CONTROL"
+      ],
+      "LLMBackend._complete_mock": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_config": [],
+      "_validate_config": [
+        "RUNTIME_CONTROL"
+      ],
+      "complete": [
+        "RUNTIME_CONTROL"
+      ],
+      "_complete_openai": [
+        "RUNTIME_CONTROL"
+      ],
+      "_complete_anthropic": [
+        "RUNTIME_CONTROL"
+      ],
+      "_complete_groq": [
+        "RUNTIME_CONTROL"
+      ],
+      "_complete_mock": [
+        "RUNTIME_CONTROL"
+      ],
+      "BaseNexus": [
+        "RUNTIME_CONTROL"
+      ],
+      "AgentRequest": [
+        "RUNTIME_CONTROL"
+      ],
+      "NexusResponse": [
+        "RUNTIME_CONTROL"
+      ],
+      "AgentType": [
+        "RUNTIME_CONTROL"
+      ],
+      "TokenType": [
+        "RUNTIME_CONTROL"
+      ],
+      "TokenStatus": [
+        "RUNTIME_CONTROL"
+      ],
+      "GapType": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPToken": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPToken._generate_validation_key": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPToken.use_token": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPToken.is_valid": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPToken.to_dict": [
+        "RUNTIME_CONTROL"
+      ],
+      "_generate_validation_key": [
+        "RUNTIME_CONTROL"
+      ],
+      "use_token": [
+        "RUNTIME_CONTROL"
+      ],
+      "is_valid": [],
+      "SystemGap": [
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap.to_todo_json": [
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap._generate_success_criteria": [
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap._analyze_protocol_dependencies": [
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap._extract_existing_code": [
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap._generate_requirements": [
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap._generate_test_cases": [
+        "RUNTIME_CONTROL"
+      ],
+      "SystemGap._check_scaffold_availability": [
+        "RUNTIME_CONTROL"
+      ],
+      "to_todo_json": [
+        "RUNTIME_CONTROL"
+      ],
+      "_generate_success_criteria": [
+        "RUNTIME_CONTROL"
+      ],
+      "_analyze_protocol_dependencies": [
+        "RUNTIME_CONTROL"
+      ],
+      "_extract_existing_code": [
+        "RUNTIME_CONTROL"
+      ],
+      "_generate_requirements": [],
+      "_generate_test_cases": [],
+      "_check_scaffold_availability": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._start_background_monitoring": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._protocol_specific_security_validation": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._protocol_specific_activation": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._protocol_specific_deactivation": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._route_to_protocol_core": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_token_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_token_validation": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_todo_token_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_todo_integration_approval": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_gap_detection_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._run_gap_detection_analysis": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_todo_queue_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_system_status_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_health_check_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_system_test_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_self_improvement_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_self_improvement_status_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_code_generation_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._handle_code_environment_status_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._gap_detection_loop": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._token_cleanup_loop": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._system_health_monitor": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._protocol_specific_smoke_test": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._calculate_uptime": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._integrate_todo_solution": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._collect_system_metrics": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._analyze_system_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._check_token_system_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._check_gap_detection_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._check_file_management_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._check_disk_space": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._check_memory_usage": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._test_token_system": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._test_gap_detection": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._test_file_management": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPNexus._test_todo_generation": [
+        "RUNTIME_CONTROL"
+      ],
+      "_start_background_monitoring": [
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_security_validation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_activation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_deactivation": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_route_to_protocol_core": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_token_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_token_validation": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_todo_token_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_todo_integration_approval": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_gap_detection_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_run_gap_detection_analysis": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_todo_queue_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_system_status_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_health_check_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_system_test_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_self_improvement_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_self_improvement_status_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_code_generation_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_handle_code_environment_status_request": [
+        "RUNTIME_CONTROL"
+      ],
+      "_gap_detection_loop": [
+        "RUNTIME_CONTROL"
+      ],
+      "_token_cleanup_loop": [
+        "RUNTIME_CONTROL"
+      ],
+      "_system_health_monitor": [
+        "RUNTIME_CONTROL"
+      ],
+      "_protocol_specific_smoke_test": [
+        "ALIGNMENT_GUARD",
+        "RUNTIME_CONTROL"
+      ],
+      "_calculate_uptime": [
+        "RUNTIME_CONTROL"
+      ],
+      "_integrate_todo_solution": [
+        "RUNTIME_CONTROL"
+      ],
+      "_collect_system_metrics": [
+        "RUNTIME_CONTROL"
+      ],
+      "_analyze_system_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_token_system_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_gap_detection_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_file_management_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_disk_space": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_memory_usage": [
+        "RUNTIME_CONTROL"
+      ],
+      "_test_token_system": [
+        "RUNTIME_CONTROL"
+      ],
+      "_test_gap_detection": [
+        "RUNTIME_CONTROL"
+      ],
+      "_test_file_management": [
+        "RUNTIME_CONTROL"
+      ],
+      "_test_todo_generation": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._phase_1_core_system": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._phase_2_governance_systems": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._phase_3_operational_services": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._phase_4_protocol_startup": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._phase_5_validation_testing": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._execute_component_sequence": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._load_resource_allocation": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._load_diagnostics_framework": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._load_policy_enforcement": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._load_health_monitoring": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._load_startup_orchestrator": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._load_protocol_health_monitoring": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._load_performance_testing": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations.orchestrate_system_startup": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._start_protocol": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations.allocate_resources": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._check_resource_availability": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._get_available_resources": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations.get_system_status": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._get_disk_usage": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._start_monitoring": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations._monitor_system_health": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations.emergency_shutdown": [
+        "RUNTIME_CONTROL"
+      ],
+      "SOPOperations.health_check": [
+        "RUNTIME_CONTROL"
+      ],
+      "_phase_1_core_system": [
+        "RUNTIME_CONTROL"
+      ],
+      "_phase_2_governance_systems": [
+        "RUNTIME_CONTROL"
+      ],
+      "_phase_3_operational_services": [
+        "RUNTIME_CONTROL"
+      ],
+      "_phase_4_protocol_startup": [
+        "RUNTIME_CONTROL"
+      ],
+      "_phase_5_validation_testing": [
+        "RUNTIME_CONTROL"
+      ],
+      "_execute_component_sequence": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_resource_allocation": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_diagnostics_framework": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_policy_enforcement": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_health_monitoring": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_startup_orchestrator": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_protocol_health_monitoring": [
+        "RUNTIME_CONTROL"
+      ],
+      "_load_performance_testing": [
+        "RUNTIME_CONTROL"
+      ],
+      "orchestrate_system_startup": [
+        "RUNTIME_CONTROL"
+      ],
+      "_start_protocol": [
+        "RUNTIME_CONTROL"
+      ],
+      "allocate_resources": [
+        "RUNTIME_CONTROL"
+      ],
+      "_check_resource_availability": [
+        "RUNTIME_CONTROL"
+      ],
+      "_get_available_resources": [
+        "RUNTIME_CONTROL"
+      ],
+      "get_system_status": [
+        "BOOT_CONTROL"
+      ],
+      "_get_disk_usage": [
+        "RUNTIME_CONTROL"
+      ],
+      "_start_monitoring": [
+        "RUNTIME_CONTROL"
+      ],
+      "monitor_loop": [
+        "RUNTIME_CONTROL"
+      ],
+      "_monitor_system_health": [],
+      "emergency_shutdown": [
+        "BOOT_CONTROL"
+      ],
+      "health_check": [
+        "BOOT_CONTROL"
+      ],
+      "ProofBridgeError": [
+        "RUNTIME_CONTROL"
+      ],
+      "ModalLogicEvaluator": [
+        "RUNTIME_CONTROL"
+      ],
+      "ModalLogicEvaluator._get_default_bridge_path": [
+        "RUNTIME_CONTROL"
+      ],
+      "ModalLogicEvaluator.evaluate_modal_proposition": [
+        "RUNTIME_CONTROL"
+      ],
+      "ModalLogicEvaluator._evaluate_via_library": [
+        "RUNTIME_CONTROL"
+      ],
+      "ModalLogicEvaluator._evaluate_via_subprocess": [
+        "RUNTIME_CONTROL"
+      ],
+      "ModalLogicEvaluator._generate_countermodel": [
+        "RUNTIME_CONTROL"
+      ],
+      "ModalLogicEvaluator._extract_atomic_propositions": [
+        "RUNTIME_CONTROL"
+      ],
+      "ModalLogicEvaluator._generate_accessibility_relation": [
+        "RUNTIME_CONTROL"
+      ],
+      "ModalLogicEvaluator._generate_valuation_space": [
+        "RUNTIME_CONTROL"
+      ],
+      "ModalLogicEvaluator._generate_modal_countermodel": [
+        "RUNTIME_CONTROL"
+      ],
+      "ModalLogicEvaluator.evaluate_batch": [
+        "RUNTIME_CONTROL"
+      ],
+      "ModalLogicEvaluator.validate_syntax": [
+        "RUNTIME_CONTROL"
+      ],
+      "_get_default_bridge_path": [
+        "RUNTIME_CONTROL"
+      ],
+      "evaluate_modal_proposition": [],
+      "_evaluate_via_library": [
+        "RUNTIME_CONTROL"
+      ],
+      "_evaluate_via_subprocess": [
+        "RUNTIME_CONTROL"
+      ],
+      "_generate_countermodel": [
+        "RUNTIME_CONTROL"
+      ],
+      "_extract_atomic_propositions": [
+        "RUNTIME_CONTROL"
+      ],
+      "_generate_accessibility_relation": [
+        "RUNTIME_CONTROL"
+      ],
+      "_generate_valuation_space": [
+        "RUNTIME_CONTROL"
+      ],
+      "_generate_modal_countermodel": [
+        "RUNTIME_CONTROL"
+      ],
+      "evaluate_batch": [
+        "BOOT_CONTROL"
+      ],
+      "validate_syntax": [
+        "RUNTIME_CONTROL"
+      ],
+      "IELEvaluator": [],
+      "IELEvaluator.evaluate_iel_proposition": [
+        "RUNTIME_CONTROL"
+      ],
+      "IELEvaluator._transform_iel_to_modal": [
+        "RUNTIME_CONTROL"
+      ],
+      "IELEvaluator._analyze_identity_falsification": [
+        "RUNTIME_CONTROL"
+      ],
+      "IELEvaluator._analyze_experience_falsification": [
+        "RUNTIME_CONTROL"
+      ],
+      "evaluate_iel_proposition": [],
+      "_transform_iel_to_modal": [
+        "RUNTIME_CONTROL"
+      ],
+      "_analyze_identity_falsification": [
+        "RUNTIME_CONTROL"
+      ],
+      "_analyze_experience_falsification": [
+        "RUNTIME_CONTROL"
+      ],
+      "create_evaluator": [
+        "RUNTIME_CONTROL"
+      ],
+      "verify_bridge_consistency": [
+        "RUNTIME_CONTROL"
+      ]
+    },
+    "spine_binding": {
+      "SimulatedConsciousness": [
+        "UNMAPPED"
+      ],
+      "SimulatedConsciousness._summarize_cycle": [
+        "UNMAPPED"
+      ],
+      "SimulatedConsciousness._update_memory": [
+        "UNMAPPED"
+      ],
+      "SimulatedConsciousness._compute_affect_and_attention": [
+        "UNMAPPED"
+      ],
+      "SimulatedConsciousness._compose_narrative": [
+        "UNMAPPED"
+      ],
+      "SimulatedConsciousness._persist_event": [
+        "UNMAPPED"
+      ],
+      "SimulatedConsciousness.step": [
+        "UNMAPPED"
+      ],
+      "SimulatedConsciousness.run": [
+        "UNMAPPED"
+      ],
+      "_summarize_cycle": [
+        "UNMAPPED"
+      ],
+      "_update_memory": [
+        "UNMAPPED"
+      ],
+      "_compute_affect_and_attention": [
+        "UNMAPPED"
+      ],
+      "_compose_narrative": [
+        "UNMAPPED"
+      ],
+      "_persist_event": [
+        "UNMAPPED"
+      ],
+      "step": [
+        "UNMAPPED"
+      ],
+      "run": [
+        "UNMAPPED"
+      ],
+      "BDNEngine": [
+        "UNMAPPED"
+      ],
+      "BDNEngine.boot": [
+        "UNMAPPED"
+      ],
+      "BDNEngine.status": [
+        "UNMAPPED"
+      ],
+      "boot": [
+        "UNMAPPED"
+      ],
+      "status": [
+        "UNMAPPED"
+      ],
+      "FractalNexus": [
+        "UNMAPPED"
+      ],
+      "FractalNexus.run_predict": [
+        "UNMAPPED"
+      ],
+      "FractalNexus.run_divergence": [
+        "UNMAPPED"
+      ],
+      "FractalNexus.run_generate": [
+        "UNMAPPED"
+      ],
+      "FractalNexus.run_map": [
+        "UNMAPPED"
+      ],
+      "FractalNexus.run_pipeline": [
+        "UNMAPPED"
+      ],
+      "run_predict": [
+        "UNMAPPED"
+      ],
+      "run_divergence": [
+        "UNMAPPED"
+      ],
+      "run_generate": [
+        "UNMAPPED"
+      ],
+      "run_map": [
+        "UNMAPPED"
+      ],
+      "run_pipeline": [
+        "UNMAPPED"
+      ],
+      "BayesianNexus": [
+        "UNMAPPED"
+      ],
+      "BayesianNexus.run_real_time": [
+        "UNMAPPED"
+      ],
+      "BayesianNexus.run_inferencer": [
+        "UNMAPPED"
+      ],
+      "BayesianNexus.run_hbn": [
+        "UNMAPPED"
+      ],
+      "BayesianNexus.run_recursion": [
+        "UNMAPPED"
+      ],
+      "BayesianNexus.run_pipeline": [
+        "UNMAPPED"
+      ],
+      "run_real_time": [
+        "UNMAPPED"
+      ],
+      "run_inferencer": [
+        "UNMAPPED"
+      ],
+      "run_hbn": [
+        "UNMAPPED"
+      ],
+      "run_recursion": [
+        "UNMAPPED"
+      ],
+      "ForecastingNexus": [
+        "UNMAPPED"
+      ],
+      "ForecastingNexus.run_arima": [
+        "UNMAPPED"
+      ],
+      "ForecastingNexus.run_garch": [
+        "UNMAPPED"
+      ],
+      "ForecastingNexus.run_kalman": [
+        "UNMAPPED"
+      ],
+      "ForecastingNexus.run_state_space": [
+        "UNMAPPED"
+      ],
+      "ForecastingNexus.run_ts_kalman": [
+        "UNMAPPED"
+      ],
+      "ForecastingNexus.ensemble": [
+        "UNMAPPED"
+      ],
+      "ForecastingNexus.run_pipeline": [
+        "UNMAPPED"
+      ],
+      "run_arima": [
+        "UNMAPPED"
+      ],
+      "run_garch": [
+        "UNMAPPED"
+      ],
+      "run_kalman": [
+        "UNMAPPED"
+      ],
+      "run_state_space": [
+        "UNMAPPED"
+      ],
+      "run_ts_kalman": [
+        "UNMAPPED"
+      ],
+      "ensemble": [
+        "UNMAPPED"
+      ],
+      "ProtocolType": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "Message": [
+        "UNMAPPED"
+      ],
+      "ProtocolBridge": [
+        "UNMAPPED"
+      ],
+      "ProtocolBridge.register_handler": [
+        "UNMAPPED"
+      ],
+      "ProtocolBridge.send_message": [
+        "UNMAPPED"
+      ],
+      "ProtocolBridge._route_message": [
+        "UNMAPPED"
+      ],
+      "ProtocolBridge.get_bridge_status": [
+        "UNMAPPED"
+      ],
+      "register_handler": [
+        "UNMAPPED"
+      ],
+      "send_message": [
+        "UNMAPPED"
+      ],
+      "_route_message": [
+        "UNMAPPED"
+      ],
+      "get_bridge_status": [
+        "UNMAPPED"
+      ],
+      "bridge_status": [
+        "UNMAPPED"
+      ],
+      "RegressionChecker": [
+        "UNMAPPED"
+      ],
+      "RegressionChecker.compare": [
+        "UNMAPPED"
+      ],
+      "RegressionChecker.report": [
+        "UNMAPPED"
+      ],
+      "compare": [
+        "UNMAPPED"
+      ],
+      "report": [
+        "UNMAPPED"
+      ],
+      "compare_tool_outputs": [
+        "UNMAPPED"
+      ],
+      "HealthStatus": [
+        "UNMAPPED"
+      ],
+      "HealthCheck": [
+        "UNMAPPED"
+      ],
+      "SelfDiagnosisTool": [
+        "UNMAPPED"
+      ],
+      "SelfDiagnosisTool._establish_baseline": [
+        "UNMAPPED"
+      ],
+      "SelfDiagnosisTool.perform_full_diagnosis": [
+        "UNMAPPED"
+      ],
+      "SelfDiagnosisTool._check_cpu_health": [
+        "UNMAPPED"
+      ],
+      "SelfDiagnosisTool._check_memory_health": [
+        "UNMAPPED"
+      ],
+      "SelfDiagnosisTool._check_disk_health": [
+        "UNMAPPED"
+      ],
+      "SelfDiagnosisTool._check_network_health": [
+        "UNMAPPED"
+      ],
+      "SelfDiagnosisTool._check_process_health": [
+        "UNMAPPED"
+      ],
+      "SelfDiagnosisTool._check_filesystem_health": [
+        "UNMAPPED"
+      ],
+      "SelfDiagnosisTool._calculate_overall_health": [
+        "UNMAPPED"
+      ],
+      "SelfDiagnosisTool._generate_diagnosis_summary": [
+        "UNMAPPED"
+      ],
+      "SelfDiagnosisTool.get_health_history": [
+        "UNMAPPED"
+      ],
+      "_establish_baseline": [
+        "UNMAPPED"
+      ],
+      "perform_full_diagnosis": [
+        "UNMAPPED"
+      ],
+      "_check_cpu_health": [
+        "UNMAPPED"
+      ],
+      "_check_memory_health": [
+        "UNMAPPED"
+      ],
+      "_check_disk_health": [
+        "UNMAPPED"
+      ],
+      "_check_network_health": [
+        "UNMAPPED"
+      ],
+      "_check_process_health": [
+        "UNMAPPED"
+      ],
+      "_check_filesystem_health": [
+        "UNMAPPED"
+      ],
+      "_calculate_overall_health": [
+        "UNMAPPED"
+      ],
+      "_generate_diagnosis_summary": [
+        "UNMAPPED"
+      ],
+      "get_health_history": [
+        "UNMAPPED"
+      ],
+      "perform_system_diagnosis": [
+        "UNMAPPED"
+      ],
+      "get_system_diagnosis": [
+        "UNMAPPED"
+      ],
+      "UserInterfaceEngine": [
+        "UNMAPPED"
+      ],
+      "UserInterfaceEngine.status": [
+        "UNMAPPED"
+      ],
+      "InteractionConfig": [
+        "UNMAPPED"
+      ],
+      "InteractionRouter": [
+        "UNMAPPED"
+      ],
+      "InteractionRouter.is_active": [
+        "UNMAPPED"
+      ],
+      "InteractionRouter.start_prompt_loop": [
+        "UNMAPPED"
+      ],
+      "InteractionRouter.enqueue_prompt": [
+        "UNMAPPED"
+      ],
+      "InteractionRouter.process_prompt": [
+        "UNMAPPED"
+      ],
+      "InteractionRouter._stdin_prompt_source": [
+        "UNMAPPED"
+      ],
+      "InteractionRouter._prompt_loop": [
+        "UNMAPPED"
+      ],
+      "InteractionRouter._handle_prompt": [
+        "UNMAPPED"
+      ],
+      "InteractionRouter._log_interaction": [
+        "UNMAPPED"
+      ],
+      "InteractionRouter._ensure_log_directory": [
+        "UNMAPPED"
+      ],
+      "is_active": [
+        "UNMAPPED"
+      ],
+      "start_prompt_loop": [
+        "UNMAPPED"
+      ],
+      "enqueue_prompt": [
+        "UNMAPPED"
+      ],
+      "process_prompt": [
+        "UNMAPPED"
+      ],
+      "_stdin_prompt_source": [
+        "UNMAPPED"
+      ],
+      "_prompt_loop": [
+        "UNMAPPED"
+      ],
+      "_handle_prompt": [
+        "UNMAPPED"
+      ],
+      "_log_interaction": [
+        "UNMAPPED"
+      ],
+      "_ensure_log_directory": [
+        "UNMAPPED"
+      ],
+      "UIPResponse": [
+        "UNMAPPED"
+      ],
+      "MessageValidator": [
+        "UNMAPPED"
+      ],
+      "MessageValidator.validate_uip_request": [
+        "UNMAPPED"
+      ],
+      "validate_uip_request": [
+        "UNMAPPED"
+      ],
+      "ProgressiveRouter": [
+        "UNMAPPED"
+      ],
+      "ProgressiveRouter.route_user_input": [
+        "UNMAPPED"
+      ],
+      "ProgressiveRouter._extract_adaptive_profile": [
+        "UNMAPPED"
+      ],
+      "ProgressiveRouter._construct_synthesis_context": [
+        "UNMAPPED"
+      ],
+      "ProgressiveRouter._serialise_step_result": [
+        "UNMAPPED"
+      ],
+      "ProgressiveRouter._create_response_from_context": [
+        "UNMAPPED"
+      ],
+      "ProgressiveRouter._create_error_response": [
+        "UNMAPPED"
+      ],
+      "ProgressiveRouter._update_metrics": [
+        "UNMAPPED"
+      ],
+      "route_user_input": [
+        "UNMAPPED"
+      ],
+      "_extract_adaptive_profile": [
+        "UNMAPPED"
+      ],
+      "_construct_synthesis_context": [
+        "UNMAPPED"
+      ],
+      "_serialise_step_result": [
+        "UNMAPPED"
+      ],
+      "_create_response_from_context": [
+        "UNMAPPED"
+      ],
+      "_create_error_response": [
+        "UNMAPPED"
+      ],
+      "_update_metrics": [
+        "UNMAPPED"
+      ],
+      "after_request": [
+        "UNMAPPED"
+      ],
+      "index": [
+        "UNMAPPED"
+      ],
+      "static_files": [
+        "UNMAPPED"
+      ],
+      "analyze_proposition": [
+        "UNMAPPED"
+      ],
+      "quick_analysis": [
+        "UNMAPPED"
+      ],
+      "full_coq_analysis": [
+        "UNMAPPED"
+      ],
+      "check_coq_available": [
+        "UNMAPPED"
+      ],
+      "parse_args": [
+        "UNMAPPED"
+      ],
+      "main": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "AdvisorNotes": [
+        "UNMAPPED"
+      ],
+      "AdvisorNotes.to_dict": [
+        "UNMAPPED"
+      ],
+      "to_dict": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "LLMAdvisor": [
+        "UNMAPPED"
+      ],
+      "LLMAdvisor._stub_response": [
+        "UNMAPPED"
+      ],
+      "LLMAdvisor._call_openai": [
+        "UNMAPPED"
+      ],
+      "LLMAdvisor._call_anthropic": [
+        "UNMAPPED"
+      ],
+      "LLMAdvisor._sanitize_proposals": [
+        "UNMAPPED"
+      ],
+      "LLMAdvisor._sanitize_claims": [
+        "UNMAPPED"
+      ],
+      "LLMAdvisor._stream_single_shot": [
+        "UNMAPPED"
+      ],
+      "LLMAdvisor._openai_stream": [
+        "UNMAPPED"
+      ],
+      "LLMAdvisor.propose_stream": [
+        "UNMAPPED"
+      ],
+      "LLMAdvisor.propose": [
+        "UNMAPPED"
+      ],
+      "_stub_response": [
+        "UNMAPPED"
+      ],
+      "_call_openai": [
+        "UNMAPPED"
+      ],
+      "_call_anthropic": [
+        "UNMAPPED"
+      ],
+      "_sanitize_proposals": [
+        "UNMAPPED"
+      ],
+      "_sanitize_claims": [
+        "UNMAPPED"
+      ],
+      "_stream_single_shot": [
+        "UNMAPPED"
+      ],
+      "_gen": [
+        "UNMAPPED"
+      ],
+      "_openai_stream": [
+        "UNMAPPED"
+      ],
+      "propose_stream": [
+        "UNMAPPED"
+      ],
+      "propose": [
+        "UNMAPPED"
+      ],
+      "build_tool_schema": [
+        "UNMAPPED"
+      ],
+      "load_env": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "execute_operation": [
+        "UNMAPPED"
+      ],
+      "LOGOSInterface": [
+        "UNMAPPED"
+      ],
+      "LOGOSInterface.route_request": [
+        "UNMAPPED"
+      ],
+      "LOGOSInterface.synthesize_answer": [
+        "UNMAPPED"
+      ],
+      "LOGOSInterface.process_request": [
+        "UNMAPPED"
+      ],
+      "route_request": [
+        "UNMAPPED"
+      ],
+      "synthesize_answer": [
+        "UNMAPPED"
+      ],
+      "process_request": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "interactive_mode": [
+        "UNMAPPED"
+      ],
+      "single_request": [
+        "UNMAPPED"
+      ],
+      "_now": [
+        "UNMAPPED"
+      ],
+      "_default_state": [
+        "UNMAPPED"
+      ],
+      "_load_state": [
+        "UNMAPPED"
+      ],
+      "_persist_state": [
+        "UNMAPPED"
+      ],
+      "_make_wm_item": [
+        "UNMAPPED"
+      ],
+      "_downgrade_proved": [
+        "UNMAPPED"
+      ],
+      "_tool_summary": [
+        "UNMAPPED"
+      ],
+      "_approve_tool": [
+        "UNMAPPED"
+      ],
+      "SessionData": [
+        "UNMAPPED"
+      ],
+      "_resolve_session_id": [
+        "UNMAPPED"
+      ],
+      "_resolve_ws_session_id": [
+        "UNMAPPED"
+      ],
+      "_ensure_session": [
+        "UNMAPPED"
+      ],
+      "_bump_metric": [
+        "UNMAPPED"
+      ],
+      "_sanitize_claims_for_runtime": [
+        "UNMAPPED"
+      ],
+      "_citation_markers": [
+        "UNMAPPED"
+      ],
+      "_claim_truth_counts": [
+        "UNMAPPED"
+      ],
+      "_perform_local_retrieval": [
+        "UNMAPPED"
+      ],
+      "_proposal_hash": [
+        "UNMAPPED"
+      ],
+      "_expires_at": [
+        "UNMAPPED"
+      ],
+      "_approval_expired": [
+        "UNMAPPED"
+      ],
+      "_record_provider_status": [
+        "UNMAPPED"
+      ],
+      "_check_ledger_writable": [
+        "UNMAPPED"
+      ],
+      "_attestation": [
+        "UNMAPPED"
+      ],
+      "_advisor": [
+        "UNMAPPED"
+      ],
+      "_pending_or_execute": [
+        "UNMAPPED"
+      ],
+      "_session_tag": [
+        "UNMAPPED"
+      ],
+      "_get_nexus": [
+        "UNMAPPED"
+      ],
+      "_build_ledger": [
+        "UNMAPPED"
+      ],
+      "_finalize_turn": [
+        "UNMAPPED"
+      ],
+      "health": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "chat": [
+        "UNMAPPED"
+      ],
+      "websocket_chat": [
+        "UNMAPPED"
+      ],
+      "get_session": [
+        "UNMAPPED"
+      ],
+      "debug_nexus": [
+        "UNMAPPED"
+      ],
+      "approve": [
+        "UNMAPPED"
+      ],
+      "_tail": [
+        "UNMAPPED"
+      ],
+      "_maybe_write_audit": [
+        "UNMAPPED"
+      ],
+      "get_mission_profile": [
+        "UNMAPPED"
+      ],
+      "require_safe_interfaces": [
+        "UNMAPPED"
+      ],
+      "wrapper": [
+        "UNMAPPED"
+      ],
+      "restrict_writes_to": [
+        "UNMAPPED"
+      ],
+      "decorator": [
+        "UNMAPPED"
+      ],
+      "_validate": [
+        "UNMAPPED"
+      ],
+      "LLMConfig": [
+        "UNMAPPED"
+      ],
+      "LLMBackend": [
+        "UNMAPPED"
+      ],
+      "LLMBackend._load_config": [
+        "UNMAPPED"
+      ],
+      "LLMBackend._validate_config": [
+        "UNMAPPED"
+      ],
+      "LLMBackend.complete": [
+        "UNMAPPED"
+      ],
+      "LLMBackend._complete_openai": [
+        "UNMAPPED"
+      ],
+      "LLMBackend._complete_anthropic": [
+        "UNMAPPED"
+      ],
+      "LLMBackend._complete_groq": [
+        "UNMAPPED"
+      ],
+      "LLMBackend._complete_mock": [
+        "UNMAPPED"
+      ],
+      "_load_config": [
+        "UNMAPPED"
+      ],
+      "_validate_config": [
+        "UNMAPPED"
+      ],
+      "complete": [
+        "UNMAPPED"
+      ],
+      "_complete_openai": [
+        "UNMAPPED"
+      ],
+      "_complete_anthropic": [
+        "UNMAPPED"
+      ],
+      "_complete_groq": [
+        "UNMAPPED"
+      ],
+      "_complete_mock": [
+        "UNMAPPED"
+      ],
+      "BaseNexus": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "AgentRequest": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "NexusResponse": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "AgentType": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "TokenType": [
+        "UNMAPPED"
+      ],
+      "TokenStatus": [
+        "UNMAPPED"
+      ],
+      "GapType": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "SOPToken": [
+        "UNMAPPED"
+      ],
+      "SOPToken._generate_validation_key": [
+        "UNMAPPED"
+      ],
+      "SOPToken.use_token": [
+        "UNMAPPED"
+      ],
+      "SOPToken.is_valid": [
+        "UNMAPPED"
+      ],
+      "SOPToken.to_dict": [
+        "UNMAPPED"
+      ],
+      "_generate_validation_key": [
+        "UNMAPPED"
+      ],
+      "use_token": [
+        "UNMAPPED"
+      ],
+      "is_valid": [
+        "UNMAPPED"
+      ],
+      "SystemGap": [
+        "UNMAPPED"
+      ],
+      "SystemGap.to_todo_json": [
+        "UNMAPPED"
+      ],
+      "SystemGap._generate_success_criteria": [
+        "UNMAPPED"
+      ],
+      "SystemGap._analyze_protocol_dependencies": [
+        "UNMAPPED"
+      ],
+      "SystemGap._extract_existing_code": [
+        "UNMAPPED"
+      ],
+      "SystemGap._generate_requirements": [
+        "UNMAPPED"
+      ],
+      "SystemGap._generate_test_cases": [
+        "UNMAPPED"
+      ],
+      "SystemGap._check_scaffold_availability": [
+        "UNMAPPED"
+      ],
+      "to_todo_json": [
+        "UNMAPPED"
+      ],
+      "_generate_success_criteria": [
+        "UNMAPPED"
+      ],
+      "_analyze_protocol_dependencies": [
+        "UNMAPPED"
+      ],
+      "_extract_existing_code": [
+        "UNMAPPED"
+      ],
+      "_generate_requirements": [
+        "UNMAPPED"
+      ],
+      "_generate_test_cases": [
+        "UNMAPPED"
+      ],
+      "_check_scaffold_availability": [
+        "UNMAPPED"
+      ],
+      "SOPNexus": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._start_background_monitoring": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._protocol_specific_security_validation": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._protocol_specific_activation": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._protocol_specific_deactivation": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._route_to_protocol_core": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_token_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_token_validation": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_todo_token_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_todo_integration_approval": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_gap_detection_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._run_gap_detection_analysis": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_todo_queue_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_system_status_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_health_check_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_system_test_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_self_improvement_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_self_improvement_status_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_code_generation_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._handle_code_environment_status_request": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._gap_detection_loop": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._token_cleanup_loop": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._system_health_monitor": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._protocol_specific_smoke_test": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._calculate_uptime": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._integrate_todo_solution": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._collect_system_metrics": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._analyze_system_health": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._check_token_system_health": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._check_gap_detection_health": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._check_file_management_health": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._check_disk_space": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._check_memory_usage": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._test_token_system": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._test_gap_detection": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._test_file_management": [
+        "UNMAPPED"
+      ],
+      "SOPNexus._test_todo_generation": [
+        "UNMAPPED"
+      ],
+      "_start_background_monitoring": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_security_validation": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_activation": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_deactivation": [
+        "UNMAPPED"
+      ],
+      "_route_to_protocol_core": [
+        "UNMAPPED"
+      ],
+      "_handle_token_request": [
+        "UNMAPPED"
+      ],
+      "_handle_token_validation": [
+        "UNMAPPED"
+      ],
+      "_handle_todo_token_request": [
+        "UNMAPPED"
+      ],
+      "_handle_todo_integration_approval": [
+        "UNMAPPED"
+      ],
+      "_handle_gap_detection_request": [
+        "UNMAPPED"
+      ],
+      "_run_gap_detection_analysis": [
+        "UNMAPPED"
+      ],
+      "_handle_todo_queue_request": [
+        "UNMAPPED"
+      ],
+      "_handle_system_status_request": [
+        "UNMAPPED"
+      ],
+      "_handle_health_check_request": [
+        "UNMAPPED"
+      ],
+      "_handle_system_test_request": [
+        "UNMAPPED"
+      ],
+      "_handle_self_improvement_request": [
+        "UNMAPPED"
+      ],
+      "_handle_self_improvement_status_request": [
+        "UNMAPPED"
+      ],
+      "_handle_code_generation_request": [
+        "UNMAPPED"
+      ],
+      "_handle_code_environment_status_request": [
+        "UNMAPPED"
+      ],
+      "_gap_detection_loop": [
+        "UNMAPPED"
+      ],
+      "_token_cleanup_loop": [
+        "UNMAPPED"
+      ],
+      "_system_health_monitor": [
+        "UNMAPPED"
+      ],
+      "_protocol_specific_smoke_test": [
+        "UNMAPPED"
+      ],
+      "_calculate_uptime": [
+        "UNMAPPED"
+      ],
+      "_integrate_todo_solution": [
+        "UNMAPPED"
+      ],
+      "_collect_system_metrics": [
+        "UNMAPPED"
+      ],
+      "_analyze_system_health": [
+        "UNMAPPED"
+      ],
+      "_check_token_system_health": [
+        "UNMAPPED"
+      ],
+      "_check_gap_detection_health": [
+        "UNMAPPED"
+      ],
+      "_check_file_management_health": [
+        "UNMAPPED"
+      ],
+      "_check_disk_space": [
+        "UNMAPPED"
+      ],
+      "_check_memory_usage": [
+        "UNMAPPED"
+      ],
+      "_test_token_system": [
+        "UNMAPPED"
+      ],
+      "_test_gap_detection": [
+        "UNMAPPED"
+      ],
+      "_test_file_management": [
+        "UNMAPPED"
+      ],
+      "_test_todo_generation": [
+        "UNMAPPED"
+      ],
+      "SOPOperations": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._phase_1_core_system": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._phase_2_governance_systems": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._phase_3_operational_services": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._phase_4_protocol_startup": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._phase_5_validation_testing": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._execute_component_sequence": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._load_resource_allocation": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._load_diagnostics_framework": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._load_policy_enforcement": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._load_health_monitoring": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._load_startup_orchestrator": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._load_protocol_health_monitoring": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._load_performance_testing": [
+        "UNMAPPED"
+      ],
+      "SOPOperations.orchestrate_system_startup": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._start_protocol": [
+        "UNMAPPED"
+      ],
+      "SOPOperations.allocate_resources": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._check_resource_availability": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._get_available_resources": [
+        "UNMAPPED"
+      ],
+      "SOPOperations.get_system_status": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._get_disk_usage": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._start_monitoring": [
+        "UNMAPPED"
+      ],
+      "SOPOperations._monitor_system_health": [
+        "UNMAPPED"
+      ],
+      "SOPOperations.emergency_shutdown": [
+        "UNMAPPED"
+      ],
+      "SOPOperations.health_check": [
+        "UNMAPPED"
+      ],
+      "_phase_1_core_system": [
+        "UNMAPPED"
+      ],
+      "_phase_2_governance_systems": [
+        "UNMAPPED"
+      ],
+      "_phase_3_operational_services": [
+        "UNMAPPED"
+      ],
+      "_phase_4_protocol_startup": [
+        "UNMAPPED"
+      ],
+      "_phase_5_validation_testing": [
+        "UNMAPPED"
+      ],
+      "_execute_component_sequence": [
+        "UNMAPPED"
+      ],
+      "_load_resource_allocation": [
+        "UNMAPPED"
+      ],
+      "_load_diagnostics_framework": [
+        "UNMAPPED"
+      ],
+      "_load_policy_enforcement": [
+        "UNMAPPED"
+      ],
+      "_load_health_monitoring": [
+        "UNMAPPED"
+      ],
+      "_load_startup_orchestrator": [
+        "UNMAPPED"
+      ],
+      "_load_protocol_health_monitoring": [
+        "UNMAPPED"
+      ],
+      "_load_performance_testing": [
+        "UNMAPPED"
+      ],
+      "orchestrate_system_startup": [
+        "UNMAPPED"
+      ],
+      "_start_protocol": [
+        "UNMAPPED"
+      ],
+      "allocate_resources": [
+        "UNMAPPED"
+      ],
+      "_check_resource_availability": [
+        "UNMAPPED"
+      ],
+      "_get_available_resources": [
+        "UNMAPPED"
+      ],
+      "get_system_status": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "_get_disk_usage": [
+        "UNMAPPED"
+      ],
+      "_start_monitoring": [
+        "UNMAPPED"
+      ],
+      "monitor_loop": [
+        "UNMAPPED"
+      ],
+      "_monitor_system_health": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "emergency_shutdown": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "health_check": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "ProofBridgeError": [
+        "UNMAPPED"
+      ],
+      "ModalLogicEvaluator": [
+        "UNMAPPED"
+      ],
+      "ModalLogicEvaluator._get_default_bridge_path": [
+        "UNMAPPED"
+      ],
+      "ModalLogicEvaluator.evaluate_modal_proposition": [
+        "UNMAPPED"
+      ],
+      "ModalLogicEvaluator._evaluate_via_library": [
+        "UNMAPPED"
+      ],
+      "ModalLogicEvaluator._evaluate_via_subprocess": [
+        "UNMAPPED"
+      ],
+      "ModalLogicEvaluator._generate_countermodel": [
+        "UNMAPPED"
+      ],
+      "ModalLogicEvaluator._extract_atomic_propositions": [
+        "UNMAPPED"
+      ],
+      "ModalLogicEvaluator._generate_accessibility_relation": [
+        "UNMAPPED"
+      ],
+      "ModalLogicEvaluator._generate_valuation_space": [
+        "UNMAPPED"
+      ],
+      "ModalLogicEvaluator._generate_modal_countermodel": [
+        "UNMAPPED"
+      ],
+      "ModalLogicEvaluator.evaluate_batch": [
+        "UNMAPPED"
+      ],
+      "ModalLogicEvaluator.validate_syntax": [
+        "UNMAPPED"
+      ],
+      "_get_default_bridge_path": [
+        "UNMAPPED"
+      ],
+      "evaluate_modal_proposition": [
+        "UNMAPPED"
+      ],
+      "_evaluate_via_library": [
+        "UNMAPPED"
+      ],
+      "_evaluate_via_subprocess": [
+        "UNMAPPED"
+      ],
+      "_generate_countermodel": [
+        "UNMAPPED"
+      ],
+      "_extract_atomic_propositions": [
+        "UNMAPPED"
+      ],
+      "_generate_accessibility_relation": [
+        "UNMAPPED"
+      ],
+      "_generate_valuation_space": [
+        "UNMAPPED"
+      ],
+      "_generate_modal_countermodel": [
+        "UNMAPPED"
+      ],
+      "evaluate_batch": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "validate_syntax": [
+        "UNMAPPED"
+      ],
+      "IELEvaluator": [
+        "UNMAPPED"
+      ],
+      "IELEvaluator.evaluate_iel_proposition": [
+        "UNMAPPED"
+      ],
+      "IELEvaluator._transform_iel_to_modal": [
+        "UNMAPPED"
+      ],
+      "IELEvaluator._analyze_identity_falsification": [
+        "UNMAPPED"
+      ],
+      "IELEvaluator._analyze_experience_falsification": [
+        "UNMAPPED"
+      ],
+      "evaluate_iel_proposition": [
+        "UNMAPPED"
+      ],
+      "_transform_iel_to_modal": [
+        "UNMAPPED"
+      ],
+      "_analyze_identity_falsification": [
+        "UNMAPPED"
+      ],
+      "_analyze_experience_falsification": [
+        "UNMAPPED"
+      ],
+      "create_evaluator": [
+        "UNMAPPED"
+      ],
+      "verify_bridge_consistency": [
+        "UNMAPPED"
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Plan_Validation_Contract",
+  "status": "DESIGN_ONLY",
+  "description": "Rules governing whether a plan could ever be executed.",
+  "checks": [
+    "Explicit authorization via policy",
+    "Tick budget within allowed bounds",
+    "No forbidden action classes",
+    "All steps are auditable"
+  ],
+  "failure_mode": "GovernanceDenied"
+}
