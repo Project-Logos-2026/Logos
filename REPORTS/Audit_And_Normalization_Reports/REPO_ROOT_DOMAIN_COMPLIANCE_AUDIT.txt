@@ -1,0 +1,33 @@
+LOGOS SYSTEM — REPOSITORY ROOT DOMAIN COMPLIANCE AUDIT
+Generated at: 2026-01-23T23:55:05.396694+00:00
+
+Canonical ALL-CAPS Domains:
+  - ARCHIVE
+  - DEV_RESOURCES
+  - LOGOS_SYSTEM
+  - STARTUP
+  - SYSTEM_AUDIT_LOGS
+
+Detected ALL-CAPS Directories at Repo Root:
+  - ARCHIVE
+  - DEV_RESOURCES
+  - LOGOS_SYSTEM
+  - STARTUP
+  - SYSTEM_AUDIT_LOGS
+
+Detected Non-ALL-CAPS Directories at Repo Root:
+  - .git
+  - .github
+  - .pytest_cache
+  - .venv
+  - .vscode
+  - __pycache__
+  - _reports
+
+PASS: No unauthorized ALL-CAPS directories detected.
+
+PASS: All canonical domains present.
+
+NOTE:
+This is a read-only audit. No files were modified.
+Violations indicate structural non-compliance, not stylistic issues.
