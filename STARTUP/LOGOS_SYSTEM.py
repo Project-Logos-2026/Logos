@@ -1,22 +1,151 @@
+# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
+# AUTHORITY: LOGOS_SYSTEM
+# GOVERNANCE: ENABLED
+# EXECUTION: CONTROLLED
+# MUTABILITY: IMMUTABLE_LOGIC
+# VERSION: 1.0.0
+
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: LOGOS_SYSTEM
+runtime_layer: inferred
+role: inferred
+agent_binding: None
+protocol_binding: None
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: LOGOS_SYSTEM.py
+  rewrite_phase: Phase_B
+  rewrite_timestamp: 2026-01-18T23:03:31.726474
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
+
 """
 ===============================================================================
 FILE: LOGOS_SYSTEM.py
-PATH: LOGOS_SYSTEM.py (root)
+PATH: Logos_System/LOGOS_SYSTEM.py
 PROJECT: LOGOS System
-PHASE: Phase-F (Prelude)
-STEP: Runtime Spine Compatibility Wrapper
-STATUS: GOVERNED - NON-BYPASSABLE
+PHASE: Phase-F
+STEP: Runtime Spine Wiring → LOGOS Agent Startup → LEM Discharge
+STATUS: GOVERNED — NON-BYPASSABLE
 
 ROLE:
-Compatibility shim that delegates to the canonical runtime spine at
-Logos_System/LOGOS_SYSTEM.py. Contains no independent runtime logic.
+- Receives the governed handoff from System Entry Point
+- Executes Lock-and-Key to derive the universal session id
+- Starts the LOGOS agent session envelope
+- Discharges LEM to derive the LOGOS agent identity
+
+ORDERING GUARANTEE:
+Executes strictly after System_Entry_Point.START_LOGOS and immediately before
+any LOGOS agent execution or protocol activation.
 
 FAILURE SEMANTICS:
-Delegates fail-closed behavior to the canonical runtime spine.
+Any invariant failure raises RuntimeHalt and halts progression (fail-closed).
+No degraded modes or retries.
 ===============================================================================
 """
 
-# LEGACY / COMPATIBILITY: Use Logos_System.LOGOS_SYSTEM as canonical runtime spine
-from Logos_System.LOGOS_SYSTEM import RUN_LOGOS_SYSTEM, RuntimeHalt  # re-export
+from typing import Dict, Any, Literal, Optional
 
-__all__ = ["RUN_LOGOS_SYSTEM", "RuntimeHalt"]
+from Logos_System.System_Entry_Point.System_Entry_Point import (
+    START_LOGOS,
+    StartupHalt,
+)
+from Logos_System.System_Entry_Point.Agent_Orchestration.agent_orchestration import (
+    OrchestrationHalt,
+    prepare_agent_orchestration,
+)
+from Logos_System.Runtime_Spine.Lock_And_Key.lock_and_key import (
+    execute_lock_and_key,
+    LockAndKeyFailure,
+)
+from Logos_System.System_Stack.Logos_Agents.Logos_Agent.Start_Logos_Agent import (
+    LogosAgentStartupHalt,
+    start_logos_agent,
+)
+from Logos_System.System_Stack.Logos_Agents.Logos_Agent.Lem_Discharge import (
+    LemDischargeHalt,
+    discharge_lem,
+)
+
+
+class RuntimeHalt(Exception):
+    """Raised when the runtime spine fails an invariant."""
+
+
+def RUN_LOGOS_SYSTEM(
+    config_path: Optional[str] = None,
+    mode: Literal["headless", "interactive"] = "headless",
+    diagnostic: bool = False,
+) -> Dict[str, Any]:
+    """Canonical runtime spine entry receiving handoff from START_LOGOS."""
+
+    try:
+        handoff = START_LOGOS(
+            config_path=config_path,
+            mode=mode,
+            diagnostic=diagnostic,
+        )
+    except StartupHalt as exc:
+        raise RuntimeHalt(f"Startup halted: {exc}")
+
+    try:
+        lock_and_key_result = execute_lock_and_key(
+            external_compile_artifact=b"STUB_COMPILE_ARTIFACT",
+            internal_compile_artifact=b"STUB_COMPILE_ARTIFACT",
+        )
+    except LockAndKeyFailure as exc:
+        raise RuntimeHalt(f"Lock-and-Key failed: {exc}")
+
+    verified_context = dict(handoff)
+    verified_context["session_id"] = lock_and_key_result.get("session_id")
+    verified_context["lock_and_key_status"] = lock_and_key_result.get("status")
+
+    if not isinstance(verified_context["session_id"], str):
+        raise RuntimeHalt("Derived session_id is missing or invalid")
+
+    try:
+        logos_session = start_logos_agent(verified_context)
+    except LogosAgentStartupHalt as exc:
+        raise RuntimeHalt(f"LOGOS agent startup failed: {exc}")
+
+    try:
+        logos_identity = discharge_lem(logos_session)
+    except LemDischargeHalt as exc:
+        raise RuntimeHalt(f"LEM discharge failed: {exc}")
+
+    constructive_compile_output = {
+        "logos_agent_id": logos_identity.get("logos_agent_id"),
+        "universal_session_id": logos_identity.get("session_id"),
+        "prepared_bindings": {
+            "issued_agents": logos_identity.get("issued_agents", {}),
+            "issued_protocols": logos_identity.get("issued_protocols", {}),
+            "authority": logos_identity.get("authority", {}),
+        },
+    }
+
+    if not constructive_compile_output["logos_agent_id"] or not constructive_compile_output["universal_session_id"]:
+        raise RuntimeHalt("Missing identity context for orchestration")
+
+    try:
+        orchestration_plan = prepare_agent_orchestration(constructive_compile_output)
+    except OrchestrationHalt as exc:
+        raise RuntimeHalt(f"Agent orchestration failed: {exc}")
+
+    return {
+        "status": "LOGOS_AGENT_READY",
+        "logos_identity": logos_identity,
+        "logos_session": logos_session,
+        "constructive_compile_output": constructive_compile_output,
+        "agent_orchestration_plan": orchestration_plan,
+    }
