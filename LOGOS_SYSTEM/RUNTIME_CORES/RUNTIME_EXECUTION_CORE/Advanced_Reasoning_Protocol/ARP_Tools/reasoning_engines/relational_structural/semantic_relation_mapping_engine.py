@@ -32,14 +32,21 @@ class SemanticRelationMappingEngine:
         trinity_vectors: Optional[Dict[str, Tuple[float, float, float]]],
     ) -> float:
         if not trinity_vectors:
-            return 0.0
+            return self._token_overlap(left, right)
         left_vec = trinity_vectors.get(left)
         right_vec = trinity_vectors.get(right)
         if not left_vec or not right_vec:
-            return 0.0
+            return self._token_overlap(left, right)
         dot = sum(l * r for l, r in zip(left_vec, right_vec))
         norm_left = sum(l * l for l in left_vec) ** 0.5
         norm_right = sum(r * r for r in right_vec) ** 0.5
         if not norm_left or not norm_right:
             return 0.0
         return round(dot / (norm_left * norm_right), 4)
+
+    def _token_overlap(self, left: str, right: str) -> float:
+        lset = set(left.lower().split())
+        rset = set(right.lower().split())
+        if not lset or not rset:
+            return 0.0
+        return len(lset.intersection(rset)) / max(len(lset), len(rset))

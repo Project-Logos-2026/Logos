@@ -36,7 +36,7 @@ observability:
 from dataclasses import dataclass
 from typing import Any, Dict
 
-from .constants import PRIORITY_HIGH, PRIORITY_NORMAL
+from ..config.constants import PRIORITY_HIGH, PRIORITY_NORMAL
 
 
 @dataclass(frozen=True)
