@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from enum import Enum
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Tuple
 
 
 class ProofStatus(Enum):
@@ -31,7 +31,7 @@ class ProofAttestationEngine:
         }
 
     def verify_proof(self, premises: List[str], conclusion: str) -> ProofResult:
-        normalized = [p.strip() for p in premises]
+        normalized = [p.strip() for p in premises if p.strip()]
         conclusion = conclusion.strip()
         steps: List[str] = []
 
@@ -39,17 +39,30 @@ class ProofAttestationEngine:
             steps.append("Conclusion appears directly in premises")
             return ProofResult(ProofStatus.PROVEN, steps, 0.9, premises, conclusion)
 
-        for premise in normalized:
+        derived = set(normalized)
+        implications = self._extract_implications(normalized)
+        changed = True
+
+        while changed:
+            changed = False
+            for left, right in implications:
+                if left in derived and right not in derived:
+                    derived.add(right)
+                    steps.append(f"Applied implication: {left} -> {right}")
+                    changed = True
+                    if right == conclusion:
+                        return ProofResult(ProofStatus.PROVEN, steps, 0.75, premises, conclusion)
+
+        steps.append("No derivation reached conclusion")
+        return ProofResult(ProofStatus.UNKNOWN, steps, 0.4, premises, conclusion)
+
+    def _extract_implications(self, premises: List[str]) -> List[Tuple[str, str]]:
+        implications: List[Tuple[str, str]] = []
+        for premise in premises:
             if "->" in premise:
                 left, right = [part.strip() for part in premise.split("->", 1)]
-                if left in normalized and right == conclusion:
-                    steps.append(f"Applied implication: {premise}")
-                    return ProofResult(ProofStatus.PROVEN, steps, 0.75, premises, conclusion)
-            if "implies" in premise:
+                implications.append((left, right))
+            elif "implies" in premise:
                 left, right = [part.strip() for part in premise.split("implies", 1)]
-                if left in normalized and right == conclusion:
-                    steps.append(f"Applied implication: {premise}")
-                    return ProofResult(ProofStatus.PROVEN, steps, 0.7, premises, conclusion)
-
-        steps.append("No direct implication found")
-        return ProofResult(ProofStatus.UNKNOWN, steps, 0.4, premises, conclusion)
+                implications.append((left, right))
+        return implications

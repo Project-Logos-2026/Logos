@@ -5,6 +5,17 @@ from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
 
 
+def _load_eternity_enforcer() -> Optional[Any]:
+    try:
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.privation_mathematics import (
+            EternityTemporalEnforcer,
+        )
+
+        return EternityTemporalEnforcer()
+    except Exception:
+        return None
+
+
 @dataclass
 class TemporalEvent:
     timestamp: datetime
@@ -17,6 +28,7 @@ class TemporalEngine:
     def __init__(self) -> None:
         self.events: List[TemporalEvent] = []
         self.patterns: Dict[str, Any] = {}
+        self.eternity_enforcer = _load_eternity_enforcer()
 
     def record(self, event_type: str, data: Dict[str, Any], confidence: float = 1.0) -> None:
         self.events.append(
@@ -27,6 +39,17 @@ class TemporalEngine:
                 confidence=confidence,
             )
         )
+
+    def gate_event(self, event_type: str, temporal_context: Optional[Any] = None) -> Dict[str, Any]:
+        if event_type == "time_travel":
+            return {"allowed": False, "reason": "temporal_paradox"}
+        if self.eternity_enforcer and temporal_context is not None:
+            try:
+                result = self.eternity_enforcer.validate_temporal_operation(event_type, temporal_context)
+                return {"allowed": True, "details": result}
+            except Exception:
+                return {"allowed": True, "details": "eternity_enforcer_error"}
+        return {"allowed": True}
 
     def analyze_patterns(self) -> Dict[str, Any]:
         if len(self.events) < 2:

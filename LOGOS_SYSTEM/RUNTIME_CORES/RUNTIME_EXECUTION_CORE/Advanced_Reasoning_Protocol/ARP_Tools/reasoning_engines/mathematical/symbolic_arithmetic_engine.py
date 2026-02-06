@@ -1,7 +1,18 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Any, Dict, List, Optional, Union
+from typing import Any, Dict, List, Optional, Tuple, Union
+
+
+def _load_fractal_symbolic_math() -> Optional[Any]:
+    try:
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.fractal_orbital.symbolic_math import (
+            FractalSymbolicMath,
+        )
+
+        return FractalSymbolicMath()
+    except Exception:
+        return None
 
 
 @dataclass
@@ -60,10 +71,46 @@ class SymbolicMath:
             trinity_coherence=0.5,
         )
 
+    def integrate(self, expression: Union[str, Any], variable: str) -> SymbolicResult:
+        sp = self._get_sympy()
+        expr = self.parse_expression(expression) if isinstance(expression, str) else expression
+        if sp:
+            integral = sp.integrate(expr, sp.Symbol(variable))
+        else:
+            integral = expr
+        return SymbolicResult(
+            expression=f"int({expr}) d{variable}",
+            simplified=str(integral),
+            variables=[variable],
+            trinity_coherence=0.5,
+        )
+
+    def solve_equation(self, equation: str, variable: str) -> List[SymbolicResult]:
+        sp = self._get_sympy()
+        if not sp:
+            return []
+        if "=" in equation:
+            left, right = equation.split("=", 1)
+            expr = self.parse_expression(left) - self.parse_expression(right)
+        else:
+            expr = self.parse_expression(equation)
+        var = sp.Symbol(variable)
+        solutions = sp.solve(expr, var)
+        return [
+            SymbolicResult(
+                expression=f"solution {idx + 1}",
+                simplified=str(sol),
+                variables=[variable],
+                trinity_coherence=0.6,
+            )
+            for idx, sol in enumerate(solutions)
+        ]
+
 
 class SymbolicArithmeticEngine:
     def __init__(self) -> None:
         self.engine = SymbolicMath()
+        self.fractal_engine = _load_fractal_symbolic_math()
 
     def simplify(self, expression: str) -> Dict[str, Any]:
         result = self.engine.simplify(expression)
@@ -82,3 +129,40 @@ class SymbolicArithmeticEngine:
             "variables": result.variables,
             "trinity_coherence": result.trinity_coherence,
         }
+
+    def integrate(self, expression: str, variable: str) -> Dict[str, Any]:
+        result = self.engine.integrate(expression, variable)
+        return {
+            "expression": result.expression,
+            "simplified": result.simplified,
+            "variables": result.variables,
+            "trinity_coherence": result.trinity_coherence,
+        }
+
+    def solve_equation(self, equation: str, variable: str) -> Dict[str, Any]:
+        solutions = self.engine.solve_equation(equation, variable)
+        return {
+            "equation": equation,
+            "variable": variable,
+            "solutions": [s.simplified for s in solutions],
+        }
+
+    def optimize_with_fractal(
+        self,
+        expression: str,
+        trinity_context: Optional[Tuple[float, float, float]] = None,
+        optimization_depth: int = 5,
+    ) -> Dict[str, Any]:
+        if not self.fractal_engine:
+            return {
+                "expression": expression,
+                "fractal_enhanced": False,
+                "error": "fractal_engine_unavailable",
+            }
+        result = self.fractal_engine.optimize_symbolic_expression(
+            expression,
+            trinity_context=trinity_context,
+            optimization_depth=optimization_depth,
+        )
+        result["expression"] = expression
+        return result

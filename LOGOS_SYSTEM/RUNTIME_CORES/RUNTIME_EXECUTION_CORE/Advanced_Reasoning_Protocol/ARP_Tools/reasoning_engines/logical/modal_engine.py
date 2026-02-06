@@ -102,6 +102,7 @@ class ModalLogicEngine:
 
     def _parse_formula(self, formula_str: str) -> ModalFormula:
         text = formula_str.strip()
+
         if text.startswith("[]"):
             return ModalFormula(ModalOperator.NECESSITY, text[2:].strip())
         if text.startswith("<>"):
@@ -118,8 +119,22 @@ class ModalLogicEngine:
             return ModalFormula(ModalOperator.TEMPORAL_ALWAYS, text[2:].strip())
         if text.startswith("F:"):
             return ModalFormula(ModalOperator.TEMPORAL_EVENTUALLY, text[2:].strip())
+
+        if "<->" in text:
+            left, right = [part.strip() for part in text.split("<->", 1)]
+            return ModalFormula(None, [self._parse_formula(left), self._parse_formula(right)], LogicalConnective.BICONDITIONAL)
+        if "->" in text:
+            left, right = [part.strip() for part in text.split("->", 1)]
+            return ModalFormula(None, [self._parse_formula(left), self._parse_formula(right)], LogicalConnective.IMPLIES)
+        if " and " in text:
+            left, right = [part.strip() for part in text.split(" and ", 1)]
+            return ModalFormula(None, [self._parse_formula(left), self._parse_formula(right)], LogicalConnective.AND)
+        if " or " in text:
+            left, right = [part.strip() for part in text.split(" or ", 1)]
+            return ModalFormula(None, [self._parse_formula(left), self._parse_formula(right)], LogicalConnective.OR)
         if text.startswith("not "):
-            return ModalFormula(None, text[4:].strip(), LogicalConnective.NOT)
+            return ModalFormula(None, self._parse_formula(text[4:].strip()), LogicalConnective.NOT)
+
         return ModalFormula(None, text)
 
     def _evaluate_formula(
@@ -130,9 +145,34 @@ class ModalLogicEngine:
         trace: List[str],
     ) -> Tuple[bool, List[str]]:
         if formula.connective == LogicalConnective.NOT:
-            inner = ModalFormula(None, formula.content)
+            inner = formula.content if isinstance(formula.content, ModalFormula) else ModalFormula(None, formula.content)
             value, worlds = self._evaluate_formula(inner, model, world, trace)
             return (not value), [w for w in model.worlds if w not in worlds]
+
+        if formula.connective == LogicalConnective.AND:
+            left, right = formula.content
+            left_value, left_worlds = self._evaluate_formula(left, model, world, trace)
+            right_value, right_worlds = self._evaluate_formula(right, model, world, trace)
+            return left_value and right_value, list(set(left_worlds).intersection(right_worlds))
+
+        if formula.connective == LogicalConnective.OR:
+            left, right = formula.content
+            left_value, left_worlds = self._evaluate_formula(left, model, world, trace)
+            right_value, right_worlds = self._evaluate_formula(right, model, world, trace)
+            return left_value or right_value, list(set(left_worlds).union(right_worlds))
+
+        if formula.connective == LogicalConnective.IMPLIES:
+            left, right = formula.content
+            left_value, _ = self._evaluate_formula(left, model, world, trace)
+            right_value, right_worlds = self._evaluate_formula(right, model, world, trace)
+            return (not left_value) or right_value, right_worlds
+
+        if formula.connective == LogicalConnective.BICONDITIONAL:
+            left, right = formula.content
+            left_value, left_worlds = self._evaluate_formula(left, model, world, trace)
+            right_value, right_worlds = self._evaluate_formula(right, model, world, trace)
+            value = (left_value and right_value) or (not left_value and not right_value)
+            return value, list(set(left_worlds).intersection(right_worlds))
 
         if formula.operator is None:
             proposition = str(formula.content)
