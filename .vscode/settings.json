@@ -1,0 +1,17 @@
+{
+  "files.watcherExclude": {
+    "**/_Reports/**": true,
+    "**/_Dev_Resources/**": true,
+    "**/SYSTEM_AUDIT_LOGS/**": true,
+    "**/LOGOS_REWRITE_SOURCE_OF_TRUTH/**": true
+  },
+  "search.exclude": {
+    "**/_Reports/**": true,
+    "**/_Dev_Resources/**": true,
+    "**/SYSTEM_AUDIT_LOGS/**": true,
+    "**/LOGOS_REWRITE_SOURCE_OF_TRUTH/**": true
+  },
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.indexing": false
+}
