@@ -56,7 +56,10 @@ from collections import defaultdict
 import heapq
 from dataclasses import dataclass, field, asdict
 
-from Logos_System.System_Stack.Synthetic_Cognition_Protocol.core.trinity_hyperstructure import TrinityVector, Trinity_Hyperstructure
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import (
+    TrinityVector,
+    Trinity_Hyperstructure,
+)
 
 T = TypeVar('T')
 

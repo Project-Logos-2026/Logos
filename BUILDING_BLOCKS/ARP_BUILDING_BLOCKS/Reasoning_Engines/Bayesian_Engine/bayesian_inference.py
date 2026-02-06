@@ -53,6 +53,10 @@ from typing import Any, Dict, List, Optional
 
 import numpy as np
 
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import (
+    TrinityVector as BaseTrinityVector,
+)
+
 # Safe imports with fallback handling
 try:
     import arviz as az
@@ -122,6 +126,33 @@ class TrinityVector:
     source_terms: List[str]  # Terms used for inference
     inference_id: str  # Unique inference identifier
     timestamp: datetime
+
+    @property
+    def existence(self) -> float:
+        return self.e_identity
+
+    @existence.setter
+    def existence(self, value: float) -> None:
+        self.e_identity = value
+
+    @property
+    def goodness(self) -> float:
+        return self.g_experience
+
+    @goodness.setter
+    def goodness(self, value: float) -> None:
+        self.g_experience = value
+
+    @property
+    def truth(self) -> float:
+        return self.t_logos
+
+    @truth.setter
+    def truth(self, value: float) -> None:
+        self.t_logos = value
+
+    def to_base(self) -> BaseTrinityVector:
+        return BaseTrinityVector(self.e_identity, self.g_experience, self.t_logos)
 
 
 @dataclass

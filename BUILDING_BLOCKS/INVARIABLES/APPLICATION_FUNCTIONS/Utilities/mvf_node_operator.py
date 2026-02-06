@@ -31,7 +31,7 @@ from collections import defaultdict
 import heapq
 from dataclasses import dataclass, field, asdict
 
-from .core.trinity_hyperstructure import TrinityVector, Trinity_Hyperstructure
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_mvs import TrinityVector, Trinity_Hyperstructure
 
 T = TypeVar('T')
 

@@ -55,10 +55,10 @@ from sympy import (
 
 # Fractal Orbital Predictor Integration
 try:
-    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.interfaces.services.workers.fractal_orbital.divergence_calculator import (
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.divergence_calculator import (
         DivergenceEngine,
     )
-    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.interfaces.services.workers.fractal_orbital.trinity_vector import (
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import (
         TrinityVector,
     )
 

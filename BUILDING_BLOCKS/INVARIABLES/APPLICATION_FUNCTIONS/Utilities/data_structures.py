@@ -28,7 +28,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 
-from ..BDN_System.core.trinity_hyperstructure import TrinityVector
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_mvs import TrinityVector
 
 
 class MVSRegionType(Enum):

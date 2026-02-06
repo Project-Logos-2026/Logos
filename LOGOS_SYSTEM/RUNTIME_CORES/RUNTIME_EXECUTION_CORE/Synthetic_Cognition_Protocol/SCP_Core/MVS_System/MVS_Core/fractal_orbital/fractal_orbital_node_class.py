@@ -93,7 +93,9 @@ class OntologicalNode:
         return {"depth": i, "in_set": (i == max_iter - 1)}
 
     def _calc_trinity_vector(self):
-        from Synthetic_Cognition_Protocol.BDN_System.core.trinity_vectors import TrinityVector
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import (
+            TrinityVector,
+        )
 
         depth = self.orbit_properties["depth"]
         e = 0.3 + (depth / 100) * 0.7

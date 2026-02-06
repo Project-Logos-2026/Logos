@@ -98,6 +98,18 @@
     },
     "governance_rule": "evidence_is_non_authoritative"
   },
+  "append_artifacts": {
+    "catalog": {
+      "append_only": true,
+      "hash_reference_only": true,
+      "aa_required_for_semantic_mutation": true
+    },
+    "storage": {
+      "canonical_smp": "CSP",
+      "non_canonical_smp": "MTP_CORE",
+      "aa": "MTP_CORE"
+    }
+  },
   "logos_synthesis_authority": {
     "decision_maker": "LOGOS",
     "enrichment_role": "informational_only",

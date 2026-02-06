@@ -1,0 +1,118 @@
+
+---
+
+## Master list: the 18 IEL domains
+
+1. **AestheticoPraxis**
+   Domain: aesthetics / beauty-as-experience.
+   Role: aesthetic evaluation and taste-like constraints (distinct from “value” in AxioPraxis).
+
+2. **AnthroPraxis**
+   Domain: anthropology (personhood, social roles, normed interaction).
+   Repo note: has subdomains including **BioPraxis** and **Life**.
+
+3. **AxioPraxis**
+   Domain: axiology (value / goodness / beauty-value constraints).
+   Role: value-weighting overlay and “ought-weight” constraints.
+
+4. **ChronoPraxis**
+   Domain: time / temporal structure.
+   Role: temporal ordering, sequence constraints, temporal consistency.
+
+5. **CosmoPraxis**
+   Domain: cosmology (explicitly described as unifying Chrono + Topo).
+   Role: spatiotemporal worldview structure (time + space coherence).
+
+6. **ErgoPraxis**
+   Domain: work/efficiency/optimization-in-action (ergonomic action constraints).
+   Role: practicality/efficiency overlays on plans and operations.
+
+7. **GlorioPraxis**
+   Domain: “glory” / honor / worship-shaped valuation.
+   Role: a specialized valuation axis distinct from generic axiology (likely theological/teleological emphasis).
+
+8. **GnosiPraxis**
+   Domain: knowledge / epistemic structure (epistemology-like overlay).
+   Role: belief/knowledge constraints, conservativity/cross-checking motifs.
+
+9. **MakarPraxis**
+   Domain: “makarios” / blessedness / flourishing.
+   Role: flourishing-oriented evaluation (often: wellbeing + virtue + telos alignment).
+
+10. **ModalPraxis**
+    Domain: modality (modal structure and modal reasoning overlay).
+    Repo note: your project mapping says **ModalPraxis is equivalent to TopoPraxis** (legacy alias), but **both folders exist** in this snapshot, so treat them as *distinct code artifacts until explicitly consolidated*.
+
+11. **PraxeoPraxis**
+    Domain: praxeology (action theory / action structures).
+    Role: action primitives, action composition, action justification scaffolding.
+
+12. **RelatioPraxis**
+    Domain: relations / relational structure.
+    Role: relation-typing, relation consistency, relational inference constraints.
+
+13. **TeloPraxis**
+    Domain: teleology (ends, purposes, goal-structure).
+    Role: goal formation and purpose constraints; “why” structure in planning.
+
+14. **ThemiPraxis**
+    Domain: themis / law / justice / norm frames.
+    Role: normative/legal constraint overlay; “permitted/forbidden/required” structure.
+
+15. **TheoPraxis**
+    Domain: theology.
+    Role: theological constraints and doctrine-shaped overlays (as encoded in your system design).
+
+16. **TopoPraxis**
+    Domain: space / spatial logic (“regions, adjacency, spatial reasoning” in the overview doc).
+    Role: spatial constraints for world models, navigation, adjacency, containment, etc.
+
+17. **TropoPraxis**
+    Domain: tropes / modes-of-expression / rhetoric / linguistic form.
+    Role: style/representation constraints (how meaning is expressed, not just what is true).
+
+18. **ZelosPraxis**
+    Domain: zeal / motivation / drive / intensity-of-will.
+    Role: motivational dynamics as constraints or weights in planning and commitment.
+
+---
+
+## How they tie into PXO (conceptual integration)
+
+Your request uses “PXO” as the integration target. The repo snapshot you provided does not contain the literal string “PXO” in the ARP/IEL subtree, so the safest accurate framing is **architectural** rather than claiming a concrete module name.
+
+In LOGOS terms, the IELs tie into PXO like this:
+
+* **PXL** supplies the **core modal/constructive logic gate** and the “allowed inference skeleton.”
+* **PXO** (as you’re using it) is the **praxis-shaped ontology layer**: the structured “what exists / what kinds / what relations / what constraints” layer that ARP reasoners consume when producing or validating SMPs.
+* **IEL domains** are the **domain-specific ontology+constraint overlays** that:
+
+  1. define *domain vocabularies* (types/kinds/relations),
+  2. define *domain constraints* (what counts as coherent within that domain),
+  3. provide *domain tests/theorems* (eventually proof-carrying guarantees),
+  4. feed ARP with domain-labeled structures so PXO isn’t a flat ontology, but a **typed lattice of praxis domains**.
+
+A practical way to think of it:
+
+* **PXO is the shared “world-structure substrate.”**
+* **IELs are the domain modules that populate and constrain PXO** so ARP can reason “as biology,” “as time,” “as justice,” “as teleology,” etc., without mixing rules improperly.
+
+---
+
+## Quick mapping: what each IEL contributes to PXO
+
+* **ChronoPraxis →** temporal entities/relations (before/after, duration, sequence)
+* **TopoPraxis →** spatial entities/relations (region, adjacency, containment)
+* **CosmoPraxis →** spatiotemporal synthesis constraints (space–time coherence)
+* **GnosiPraxis →** epistemic objects (belief/knowledge status, justification constraints)
+* **AxioPraxis / AestheticoPraxis / MakarPraxis →** valuation layers (value, beauty-experience, flourishing)
+* **ThemiPraxis →** normative/legal objects (obligation/permission/prohibition frames)
+* **TeloPraxis →** goal/telos objects (ends, purposes, goal coherence)
+* **AnthroPraxis →** personhood/social-role objects (agents, roles, normed interaction)
+* **PraxeoPraxis / ErgoPraxis →** action primitives + efficiency constraints
+* **RelatioPraxis →** relation typing/consistency across the ontology graph
+* **TheoPraxis / GlorioPraxis / ZelosPraxis →** theological/motivational overlays (specialized constraints/weights)
+* **TropoPraxis →** representation/communication-form constraints (how SMPs are expressed)
+
+---
+

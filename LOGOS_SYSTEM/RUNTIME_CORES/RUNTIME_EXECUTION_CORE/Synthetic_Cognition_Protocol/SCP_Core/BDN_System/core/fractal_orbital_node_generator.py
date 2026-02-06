@@ -38,7 +38,7 @@ Scaffold + operational code
 import importlib
 from typing import Any, Dict
 
-from Logos_System.System_Stack.Synthetic_Cognition_Protocol.trinity_vectors import TrinityVector
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import TrinityVector
 
 
 class FractalNodeGenerator:

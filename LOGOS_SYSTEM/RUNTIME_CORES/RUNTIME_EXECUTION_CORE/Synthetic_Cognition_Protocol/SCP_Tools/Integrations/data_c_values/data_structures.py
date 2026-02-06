@@ -53,7 +53,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 
-from Logos_System.System_Stack.Synthetic_Cognition_Protocol.BDN_System.core.trinity_hyperstructure import TrinityVector
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import TrinityVector
 
 
 class MVSRegionType(Enum):

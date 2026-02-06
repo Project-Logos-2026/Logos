@@ -33,7 +33,7 @@ try:
     from ....interfaces.services.workers.fractal_orbital.divergence_calculator import (
         DivergenceEngine,
     )
-    from ....interfaces.services.workers.fractal_orbital.trinity_vector import (
+    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_mvs import (
         TrinityVector,
     )
 

@@ -91,39 +91,29 @@ for _path in (_SCP_DIR, _REPO_ROOT, _MODULE_DIR):
         sys.path.append(str_path)
 
 try:
-    from LOGOS_AGI.Synthetic_Cognition_Protocol.BDN_System.core.trinity_hyperstructure import (
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import (
         TrinityVector,
         Trinity_Hyperstructure,
     )
 except ImportError:
-    try:
-        from Synthetic_Cognition_Protocol.BDN_System.core.trinity_hyperstructure import (
-            TrinityVector,
-            Trinity_Hyperstructure,
-        )
-    except ImportError:
-        try:
-            from BDN_System.core.trinity_hyperstructure import (
-                TrinityVector,
-                Trinity_Hyperstructure,
-            )
-        except ImportError:
 
-            @dataclass
-            class TrinityVector:  # type: ignore[override]
-                e: float
-                g: float
-                t: float
+    @dataclass
+    class TrinityVector:  # type: ignore[override]
+        existence: float
+        goodness: float
+        truth: float
 
-                @classmethod
-                def from_complex(cls, value: complex) -> "TrinityVector":
-                    return cls(value.real, abs(value.imag), value.real)
+        @classmethod
+        def from_complex(cls, value: complex) -> "TrinityVector":
+            return cls(abs(value.real), abs(value.imag), abs(value.real))
 
-                def to_tuple(self) -> Tuple[float, float, float]:
-                    return (self.e, self.g, self.t)
+        def to_tuple(self) -> Tuple[float, float, float]:
+            return (self.existence, self.goodness, self.truth)
 
+        def to_complex(self) -> complex:
+            return complex(self.existence * self.truth, self.goodness)
 
-            Trinity_Hyperstructure = TrinityVector
+    Trinity_Hyperstructure = TrinityVector
 
 # Import existing fractal components
 try:

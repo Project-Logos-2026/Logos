@@ -58,6 +58,10 @@ import numpy as np
 from Logos_System.System_Stack.System_Operations_Protocol.deployment.configuration.system_imports import *
 from pydantic import BaseModel, Field, validator
 
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import (
+    TrinityVector as BaseTrinityVector,
+)
+
 # ========================= CORE ENUMERATIONS =========================
 
 
@@ -207,6 +211,33 @@ class TrinityVector:
     def __post_init__(self):
         """Validate Trinity vector"""
         self._validate_bounds()
+
+    @property
+    def existence(self) -> float:
+        return self.essence
+
+    @existence.setter
+    def existence(self, value: float) -> None:
+        self.essence = value
+
+    @property
+    def goodness(self) -> float:
+        return self.generation
+
+    @goodness.setter
+    def goodness(self, value: float) -> None:
+        self.generation = value
+
+    @property
+    def truth(self) -> float:
+        return self.temporal
+
+    @truth.setter
+    def truth(self, value: float) -> None:
+        self.temporal = value
+
+    def to_base(self) -> BaseTrinityVector:
+        return BaseTrinityVector(self.essence, self.generation, self.temporal)
 
     def _validate_bounds(self):
         """Ensure all dimensions are in [0,1] range"""

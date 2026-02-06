@@ -7,6 +7,7 @@ Authority: Protopraxic Logic (PXL)
 - Governance roles may read SMP metadata and payload only after provenance verification.
 - Observability roles may read redacted payload views according to privation_compatibility flags.
 - Audit roles may read full SMP plus provenance for compliance review.
+- AA catalog visibility is limited to AA hash references; AA content reads require separate governed authorization.
 - No other roles are permitted by default; all non-listed roles are denied.
 
 ## Provenance-Aware Access Requirements
@@ -18,6 +19,7 @@ Authority: Protopraxic Logic (PXL)
 - No implicit aggregation, inference, or cross-SMP joins without explicit governed approval.
 - No caching, persistence, or replication of SMP contents outside governed storage.
 - No transformation or enrichment steps; reads are non-mutating and non-persistent.
+- No implicit AA expansion or inline AA content injection during SMP reads.
 - No escalation to execution, autonomy, scheduling, or continuation.
 
 All semantics are inert and declarative. No runtime code is introduced.
