@@ -1,0 +1,22 @@
+{
+  "AF_Catalog_Schema": {
+    "af_id": "string",
+    "family": "string",
+    "cluster": "string",
+    "core_binding": "core_id",
+    "inputs": [],
+    "outputs": [],
+    "constraints": [],
+    "provenance": "hash",
+    "scope": "global | user"
+  },
+  "CE_Catalog_Schema": {
+    "ce_id": "string",
+    "family": "string",
+    "cluster": "string",
+    "axiom_binding": "axiom_id",
+    "context_layers": [],
+    "granularity_level": "int",
+    "scope": "global | user"
+  }
+}

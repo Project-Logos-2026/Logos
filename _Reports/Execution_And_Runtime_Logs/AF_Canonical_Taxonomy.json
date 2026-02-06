@@ -1,0 +1,1754 @@
+{
+  "3OT_mediator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "AF-EPISTEMIC-DOWNGRADE": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "AF-IEL-DOMAIN-SELECT": {
+    "cluster": "Selectors",
+    "family": "Control"
+  },
+  "AF-IEL-SYNTHESIZE": {
+    "cluster": "Transformers",
+    "family": "Transformation"
+  },
+  "AF-MATH-SIMILARITY": {
+    "cluster": "Scorers",
+    "family": "Scoring"
+  },
+  "AF-PXL-CACHE-POLICY": {
+    "cluster": "Guards",
+    "family": "Control"
+  },
+  "AF-PXL-VALIDATE": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "AF-UNIFIED-AGGREGATE": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "AF_DRAC_Compose_Runtime": {
+    "cluster": "Transformers",
+    "family": "Transformation"
+  },
+  "AF_DRAC_Validate_Invariables": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "AF_EMS_Tag_Epistemic_State": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "AF_FAM_Attest_Formal_Property": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "Cognition_Wrapper_Memgpt": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Cognition_Wrapper_Micropsi": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Cognition_Wrapper_Openai": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Cognition_Wrapper_Pgmpy": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Cognition_Wrapper_Pydantic": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Cognition_Wrapper_Sympy": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Cognitive_Resistor": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Constraint_Context": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Constraint_Result": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Constraint_Stubs": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "ETGC_Validator": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "External_Enhancements_Registry": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Fractal_Data_Analyzer": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Fractal_Memory_Orchestrator": {
+    "cluster": "Schedulers",
+    "family": "Control"
+  },
+  "Graph_Wrapper_Networkx": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Graph_Wrapper_Pyvis": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Graph_Wrapper_Rdflib": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "LOGOS": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "Logos_Memory_Nexus": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "ML_Wrapper_Arch": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "ML_Wrapper_Prophet": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "ML_Wrapper_Sklearn": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "ML_Wrapper_Statsmodels": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "ML_Wrapper_Torch": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Memory_Access_Point": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Memory_Recall_Integration": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Memory_State_Persistence": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Mind_Principal_Operator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "NLP_Wrapper_Nltk": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "NLP_Wrapper_Sentence_Transformers": {
+    "cluster": "Transformers",
+    "family": "Transformation"
+  },
+  "NLP_Wrapper_Spacy": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "NLP_Wrapper_Transformers": {
+    "cluster": "Transformers",
+    "family": "Transformation"
+  },
+  "OmniProperty_Integration": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Omni_Property_Integration": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "PXL_Tetra_Analyst": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "PXL_World_Model": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Privation_Filter": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Register_All_Wrappers": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "SMP_Evaluator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "SMP_Generator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "SMP_Memory_Validator": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "Sign_Principal_Operator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "TLM_Confirmation": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Temporal_Flow_Analyzer": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Trinitarian_Optimizer": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Triune_Principal_Validator": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "Visualization_Wrapper_Matplotlib": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Visualization_Wrapper_Plotly": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "Visualization_Wrapper_Seaborn": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "__init__": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "_bootstrap_real": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "_init__": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "_load_persisted_state": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "_uip_connector_stubs": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "abductive_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "abductive_reasoning_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "action_system": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "adapter": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "adaptive_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "advanced_fractal_analyzer": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "agent_identity": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "agent_nexus": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "agent_planner": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "agentic_consciousness_core": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "aligned_agent_import": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "analogical_engine": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "analogical_reasoning_engine": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "analysis_runner": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "api_server": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "archive_planner_digests": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "arithmetic_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "arp_bootstrap": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "arp_nexus": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "arp_nexus_orchestrator": {
+    "cluster": "Schedulers",
+    "family": "Control"
+  },
+  "arp_operations": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "arp_stack_compiler": {
+    "cluster": "Transformers",
+    "family": "Transformation"
+  },
+  "attestation": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "audit_and_emit": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "autonomous_learning": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "axiom_systems": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "banach_data_nodes": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "base_nexus": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "baseline_planner": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bayes_update_real_time": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bayesian_data_parser": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bayesian_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bayesian_inference": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bayesian_inferencer": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bayesian_interface": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bayesian_ml": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bayesian_nexus": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bayesian_recursion": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bayesian_updates": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bdn_adapter": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bdn_runtime": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bdn_types": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "belief_network": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bijective_mapping": {
+    "cluster": "Transformers",
+    "family": "Transformation"
+  },
+  "boot_aligned_agent": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "boot_system": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bootstrap": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bridge": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bridge_principle_operator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "bugfix": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "build_coq_theorem_index": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "build_inputs": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "build_trace": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "capabilities": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "capture_arp_traces_and_backfill": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "category_theoretic_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "category_theoretic_reasoning_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "causal_chain_node_predictor": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "causal_trace_operator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "check_imports": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "check_run_cycle_prereqs": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "class_extrapolator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "class_fractal_orbital_predictor": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "client": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "coherence": {
+    "cluster": "Scorers",
+    "family": "Scoring"
+  },
+  "coherence_formalism": {
+    "cluster": "Scorers",
+    "family": "Scoring"
+  },
+  "coherence_metrics": {
+    "cluster": "Scorers",
+    "family": "Scoring"
+  },
+  "coherence_optimizer": {
+    "cluster": "Scorers",
+    "family": "Scoring"
+  },
+  "collaboration": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "commitment_ledger": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "comprehensive_fractal_analysis": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "config": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "consciousness_fractal_analysis": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "consciousness_safety_adapter": {
+    "cluster": "Guards",
+    "family": "Control"
+  },
+  "consistency_checker": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "consolidate_beliefs": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "constants": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "coordinator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "core_service": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "cosmic_systems": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "counterfactual_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "counterfactual_reasoning_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "csp_nexus_orchestrator": {
+    "cluster": "Schedulers",
+    "family": "Control"
+  },
+  "cycle_ledger": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "cycle_runner": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "data_structures": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "deductive_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "deductive_reasoning_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "demo_gui": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "demo_integrated_ml": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "deploy_core_services": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "deploy_full_stack": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "development_environment": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "dispatch": {
+    "cluster": "Selectors",
+    "family": "Control"
+  },
+  "divergence_calculator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "divergence_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "dual_bijection_agent_experiment": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "dual_bijection_coherence_analysis": {
+    "cluster": "Scorers",
+    "family": "Scoring"
+  },
+  "dual_bijection_demo": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "emergence_core": {
+    "cluster": "Reducers",
+    "family": "Transformation"
+  },
+  "enhanced_reference_monitor": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "enhanced_uip_integration_plugin": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "entry": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "epistemological_framework": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "ergonomic_optimizer": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "errors": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "etgc_prior_checker": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "etgc_validator": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "ethical_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "ethical_reasoning_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "ethics": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "evaluation_packet": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "evidence": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "example_usage": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "export_tool_registry": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "exports": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "extensions_loader": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "find_phase2_fixture_spec": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "foundational_logic": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "fractal_consciousness_core": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "fractal_mapping": {
+    "cluster": "Transformers",
+    "family": "Transformation"
+  },
+  "fractal_mvs": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "fractal_navigator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "fractal_nexus": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "fractal_orbit_cli": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "fractal_orbit_demo": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "fractal_orbit_toolkit": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "fractal_orbital_node_class": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "fractal_orbital_node_generator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "game_theoretic_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "game_theoretic_reasoning_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "gen_ontoprops_dedup": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "gen_worldview_ontoprops": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "guardrails": {
+    "cluster": "Guards",
+    "family": "Control"
+  },
+  "hashing": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "health": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "health_server": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "heuristic_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "heuristic_reasoning_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "hierarchical_bayes_network": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "id_handler": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "identity_loader": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "iel_error_handler": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "iel_evaluator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "iel_generator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "iel_integration": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "iel_overlay": {
+    "cluster": "Transformers",
+    "family": "Transformation"
+  },
+  "iel_overlays": {
+    "cluster": "Transformers",
+    "family": "Transformation"
+  },
+  "iel_registryv1": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "iel_registryv2": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "iel_schema": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "iel_signer": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "iel_synthesizer": {
+    "cluster": "Transformers",
+    "family": "Transformation"
+  },
+  "inductive_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "inductive_reasoning_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "initialize_agent_system": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "integration_harmonizer": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "integration_test": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "integration_test_suite": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "integrity_safeguard": {
+    "cluster": "Guards",
+    "family": "Control"
+  },
+  "interaction_models": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "interface_runtime": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "io_normalizer": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "iterative_loop": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "kernel": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "knowledge_catalog": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "knowledge_system": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "lambda_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "lambda_engine_definitions": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "lambda_onto_calculus_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "lambda_parser": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "language_processor": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "legacy_sop_nexus": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "llm_advisor": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "llm_backend": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "local_scp": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "logging_utils": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "logos_agent_system": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "logos_agi_adapter": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "logos_bridge": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "logos_core_foundations": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "logos_daemon": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "logos_gpt_chat": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "logos_gpt_server": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "logos_interface": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "logos_lambda_core": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "logos_lambda_integration": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "logos_mathematical_core": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "logos_monitor": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "logos_nodes_connections": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "logos_protocol_nexus": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "maintenance": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "mcmc_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "message_formats": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "meta_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "meta_reasoning_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "modal_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "modal_logic": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "modal_reasoner": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "modal_reasoning_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "modal_support": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "modal_validator": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "modal_vector_sync": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "mtp_nexus_orchestrator": {
+    "cluster": "Schedulers",
+    "family": "Control"
+  },
+  "multi_modal_system": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "mvf_node_operator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "mvs_adapter": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "mvs_types": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "natural_language_processor": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "nexus_manager": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "observe": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "omniproperty_integration": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "onto_lattice": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "ontological_validator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "ontology_inducer": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "ontoprops_remap": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "optimization_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "optimization_reasoning_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "orbital_prediction_log_cli": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "orbital_recursion_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "packet_types": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "persist": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "persist_identity": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "persistence": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "persistence_manager": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "pipeline_runner": {
+    "cluster": "Schedulers",
+    "family": "Control"
+  },
+  "plan_evaluator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "plan_packet": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "policy": {
+    "cluster": "Guards",
+    "family": "Control"
+  },
+  "predict_integration": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "prediction_analyzer_exporter": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "prediction_module": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "prioritization": {
+    "cluster": "Scorers",
+    "family": "Scoring"
+  },
+  "privation_analyst": {
+    "cluster": "Guards",
+    "family": "Control"
+  },
+  "privation_classifier": {
+    "cluster": "Guards",
+    "family": "Control"
+  },
+  "privation_gate": {
+    "cluster": "Guards",
+    "family": "Control"
+  },
+  "privation_mathematics": {
+    "cluster": "Guards",
+    "family": "Control"
+  },
+  "privation_override": {
+    "cluster": "Guards",
+    "family": "Control"
+  },
+  "privation_transformer": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "privative_policies": {
+    "cluster": "Guards",
+    "family": "Control"
+  },
+  "progressive_router": {
+    "cluster": "Selectors",
+    "family": "Control"
+  },
+  "proof_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "propose": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "propose_plan": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "protocol_integration": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "providers_llama": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "providers_openai": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "pxl_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "pxl_fractal_orbital_analysis": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "pxl_modal_fractal_boundary_analysis": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "pxl_postprocessor": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "pxl_schema": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "reasoning_agent": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "reference_monitor": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "reflexive_evaluator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "refresh_plan_history": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "registry": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "regression_checker": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "relation_mapper": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "resource_manager": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "result_packet": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "resurrection_s2_demo": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "risk_estimator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "router": {
+    "cluster": "Selectors",
+    "family": "Control"
+  },
+  "run_cycle_smoke": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "run_deterministic_arp": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "run_logos_gpt_acceptance": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "run_pipeline_smoke": {
+    "cluster": "Schedulers",
+    "family": "Control"
+  },
+  "safety_formalisms": {
+    "cluster": "Guards",
+    "family": "Control"
+  },
+  "sample_smp": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "sample_task": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "sanitizer": {
+    "cluster": "Guards",
+    "family": "Control"
+  },
+  "scan_bypass": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "schema_utils": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "schemas": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "scp_nexus": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "scp_nexus_orchestrator": {
+    "cluster": "Schedulers",
+    "family": "Control"
+  },
+  "self_diagnosis": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "self_improvement_integration": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "semantic_transformers": {
+    "cluster": "Transformers",
+    "family": "Transformation"
+  },
+  "sequence_analysis": {
+    "cluster": "Schedulers",
+    "family": "Control"
+  },
+  "server": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "shared_resources": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "simple_julia": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "simulated_consciousness_runtime": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "skill_acquisition": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "smp": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "smp_intake": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "sop_nexus": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "sop_nexus_orchestrator": {
+    "cluster": "Schedulers",
+    "family": "Control"
+  },
+  "sop_operations": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "space_time_framework": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "start_agent": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "stress_sop_runtime": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "symbolic_math": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "system_imports": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "system_memory": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "system_mode_initializer": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "system_utils": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "task_intake": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "temporal_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "temporal_logic": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "temporal_predictor": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "temporal_reasoning_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_agent_planner": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_arp_modes": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_arp_nexus": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_bayesian_data_handler": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_determinism": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_dual_bijection": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_end_to_end_pipeline": {
+    "cluster": "Schedulers",
+    "family": "Control"
+  },
+  "test_evaluator_learning_smoke": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_hardening": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_integration": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_integration_identity": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_llm_bypass_smoke": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_lock_unlock": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_logos_agi_adapter": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "test_logos_agi_bootstrap_modes": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "test_logos_agi_persistence_smoke": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "test_logos_agi_pin_drift": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "test_logos_agi_replay_proposals": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "test_logos_runtime_phase2_smoke": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "test_nexus_capability_governance": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_pai": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_perception_ingestors": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_plan_revision_on_contradiction": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_proved_grounding": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_reference_monitor": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_registry_and_response": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_scp_recovery_mode_gate": {
+    "cluster": "Guards",
+    "family": "Control"
+  },
+  "test_self_improvement_cycle": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_simulation_cli": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_stub_beliefs_never_verified": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "test_tool_fallback_proposal": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "test_tool_pipeline_smoke": {
+    "cluster": "Schedulers",
+    "family": "Control"
+  },
+  "test_verify_pai": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "three_pillars_alt": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "three_pillars_framework": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "time_modeling": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "time_utils": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "tool_chain_executor": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "tool_introspection": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "tool_invention": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "tool_optimizer": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "tool_proposal_pipeline": {
+    "cluster": "Schedulers",
+    "family": "Control"
+  },
+  "tool_repair_proposal": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "topological_engine": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "topological_reasoning_engine": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "trajectory_types": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "tranlsation_bridge": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "transform_registry": {
+    "cluster": "Transformers",
+    "family": "Transformation"
+  },
+  "transform_types": {
+    "cluster": "Transformers",
+    "family": "Transformation"
+  },
+  "translation_engine": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "trinitarian_optimization_theorem": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "trinity_alignment": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "trinity_framework": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "trinity_vectors": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "triune_commutator": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "types": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "uip_integration_plugin": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "uip_nexus": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "uip_operations": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "ultima_safety": {
+    "cluster": "Guards",
+    "family": "Control"
+  },
+  "unified_classes": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "universal_logic": {
+    "cluster": "Annotators",
+    "family": "Transformation"
+  },
+  "uwm": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "validate_production": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "validation_schemas_system": {
+    "cluster": "Validators",
+    "family": "Control"
+  },
+  "work_order": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "worker_kernel": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  },
+  "world_model": {
+    "cluster": "AMBIGUOUS",
+    "family": "AMBIGUOUS"
+  }
+}

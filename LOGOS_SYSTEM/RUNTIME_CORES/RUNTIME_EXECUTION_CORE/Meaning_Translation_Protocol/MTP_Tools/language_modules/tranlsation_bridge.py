@@ -43,6 +43,10 @@ import logging
 import re
 from typing import Any, Dict, List, Optional, Tuple
 
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import (
+    TrinityVector as BaseTrinityVector,
+)
+
 # Prefer consolidated UIP locations with fallbacks to legacy ARP paths
 try:
     from ..symbolic_translation.lambda_engine import (
@@ -67,25 +71,23 @@ except ImportError:
         OntologicalType,
     )
 
-try:
-    from Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inference import (
-        TrinityVector,
-    )
-except ImportError:
-    class TrinityVector:
-        """Fallback trinity vector when bayesian module is unavailable."""
+class TrinityVector(BaseTrinityVector):
+    """Trinity vector adapter for translation bridge."""
 
-        def __init__(self, **kwargs: Any):
-            self.e_identity = kwargs.get("e_identity", 0.5)
-            self.g_experience = kwargs.get("g_experience", 0.5)
-            self.t_logos = kwargs.get("t_logos", 0.5)
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "existence": self.existence,
+            "goodness": self.goodness,
+            "truth": self.truth,
+        }
 
-        def to_dict(self) -> Dict[str, Any]:
-            return {
-                "e_identity": self.e_identity,
-                "g_experience": self.g_experience,
-                "t_logos": self.t_logos,
-            }
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "TrinityVector":
+        return cls(
+            data.get("existence", 0.5),
+            data.get("goodness", 0.5),
+            data.get("truth", 0.5),
+        )
 
 logger = logging.getLogger(__name__)
 

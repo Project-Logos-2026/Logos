@@ -45,11 +45,15 @@ Combines:
 """
 
 import logging
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Any, Dict, List, Tuple
 
 import numpy as np
+
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import (
+    TrinityVector as BaseTrinityVector,
+)
 
 # Safe imports with fallback handling
 try:
@@ -67,21 +71,45 @@ except ImportError:
 # LOGOS V2 imports
 try:
     from Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inference import (
-        TrinityVector,
         UnifiedBayesianInferencer,
     )
 except ImportError:
-    # Mock for development
-    class TrinityVector:
-        def __init__(self, **kwargs):
-            self.e_identity = kwargs.get("e_identity", 0.5)
-            self.g_experience = kwargs.get("g_experience", 0.5)
-            self.t_logos = kwargs.get("t_logos", 0.5)
-            self.confidence = kwargs.get("confidence", 0.5)
-
     class UnifiedBayesianInferencer:
         def __init__(self):
             pass
+
+
+@dataclass
+class TrinityVector:
+    existence: float = 0.5
+    goodness: float = 0.5
+    truth: float = 0.5
+    confidence: float = 0.5
+    complex_repr: complex = complex(0.0, 0.0)
+    source_terms: List[str] = field(default_factory=list)
+    inference_id: str = ""
+    timestamp: datetime = field(default_factory=datetime.now)
+
+    def __post_init__(self) -> None:
+        if self.complex_repr == complex(0.0, 0.0):
+            self.complex_repr = BaseTrinityVector(
+                self.existence, self.goodness, self.truth
+            ).to_complex()
+
+    @property
+    def e_identity(self) -> float:
+        return self.existence
+
+    @property
+    def g_experience(self) -> float:
+        return self.goodness
+
+    @property
+    def t_logos(self) -> float:
+        return self.truth
+
+    def to_base(self) -> BaseTrinityVector:
+        return BaseTrinityVector(self.existence, self.goodness, self.truth)
 
 
 @dataclass
@@ -326,9 +354,9 @@ class UnifiedSemanticTransformer:
     def _default_trinity_vector(self, embedding_id: str) -> TrinityVector:
         """Create default trinity vector when inference fails"""
         return TrinityVector(
-            e_identity=0.5,
-            g_experience=0.5,
-            t_logos=0.5,
+            existence=0.5,
+            goodness=0.5,
+            truth=0.5,
             confidence=0.3,
             complex_repr=complex(0.25, 0.5),
             source_terms=["default"],

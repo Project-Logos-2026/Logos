@@ -17,7 +17,7 @@ try:
     from ontological_node_class import OntologicalNode
 except ImportError:
     from ..fractal_orbital.fractal_orbital_node_class import OntologicalNode
-from Synthetic_Cognition_Protocol.BDN_System.core.trinity_vectors import TrinityVector
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_mvs import TrinityVector
 
 logger = logging.getLogger(__name__)
 

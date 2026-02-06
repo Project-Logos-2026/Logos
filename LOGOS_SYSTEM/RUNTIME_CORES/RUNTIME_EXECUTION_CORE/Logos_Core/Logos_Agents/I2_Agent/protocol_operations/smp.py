@@ -95,6 +95,10 @@ class StructuredMeaningPacket:
     violations: List[str]
     route_to: str
 
+    # Classification and AA catalog
+    classification_state: Optional[str] = None
+    append_artifacts: Dict[str, Any] = field(default_factory=dict)
+
     # Orientation overlay
     triage_vector: Optional[TriageVector] = None
     delta_profile: Dict[str, Any] = field(default_factory=dict)
@@ -122,6 +126,12 @@ class StructuredMeaningPacket:
             "provenance": self.provenance,
         }
 
+        if self.classification_state:
+            packet["classification_state"] = self.classification_state
+
+        if self.append_artifacts:
+            packet["append_artifacts"] = self.append_artifacts
+
         if self.triage_vector:
             packet["triage_vector"] = self.triage_vector.to_dict()
             if not self.delta_profile:
@@ -145,10 +155,12 @@ def build_smp(
     final_decision: str,
     violations: List[str],
     route_to: str,
+    classification_state: Optional[str] = None,
     triage_vector: Optional[TriageVector] = None,
     delta_profile: Optional[Dict[str, Any]] = None,
     parent_id: Optional[str] = None,
     provenance: Optional[Dict[str, Any]] = None,
+    append_artifacts: Optional[Dict[str, Any]] = None,
 ) -> StructuredMeaningPacket:
     """
     Package downstream-ready SMP metadata without altering or inferring content.
@@ -169,7 +181,9 @@ def build_smp(
         final_decision=final_decision,
         violations=violations,
         route_to=route_to,
+        classification_state=classification_state,
         triage_vector=triage_vector,
         delta_profile=delta_profile or (triage_vector.delta_profile if triage_vector else {}),
         provenance=provenance or {},
+        append_artifacts=append_artifacts or {},
     )

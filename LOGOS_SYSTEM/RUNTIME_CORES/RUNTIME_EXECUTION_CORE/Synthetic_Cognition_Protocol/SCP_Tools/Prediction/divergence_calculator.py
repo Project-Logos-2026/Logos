@@ -42,7 +42,7 @@ try:
     from ontological_node_class import OntologicalNode
 except ImportError:
     from Logos_System.System_Stack.Synthetic_Cognition_Protocol.fractal_orbital.fractal_orbital_node_class import OntologicalNode
-from Synthetic_Cognition_Protocol.BDN_System.core.trinity_vectors import TrinityVector
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import TrinityVector
 
 logger = logging.getLogger(__name__)
 

@@ -40,7 +40,7 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from typing import Any, Callable, Dict, List, Optional
 
-from ..core.trinity_hyperstructure import TrinityVector, Trinity_Hyperstructure
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_mvs import TrinityVector, Trinity_Hyperstructure
 
 # LOGOS V2 Core Imports (maintain existing integrations)
 try:

@@ -37,6 +37,13 @@
     "abstain_allowed": true,
     "promotion_rule": "logos_only_decision"
   },
+  "append_artifact_policy": {
+    "append_only": true,
+    "no_deletion": true,
+    "aa_only_semantic_mutation": true,
+    "catalog_must_track_hashes": true,
+    "aa_content_is_non_authoritative": true
+  },
   "governance_clarification": [
     "Enrichment protocols do not gate admissibility",
     "No enrichment protocol is mandatory",

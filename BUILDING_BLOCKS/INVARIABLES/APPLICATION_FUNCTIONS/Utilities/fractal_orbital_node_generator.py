@@ -13,7 +13,7 @@ Scaffold + operational code
 import importlib
 from typing import Any, Dict
 
-from .trinity_vectors import TrinityVector
+from Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_mvs import TrinityVector
 
 
 class FractalNodeGenerator:

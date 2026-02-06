@@ -16,4 +16,19 @@ Authority: Protopraxic Logic (PXL)
 - All legacy or conflicting artifacts are classified as deprecated or informational; they must not be used as schema sources.
 - Any future SMP-related work must reference the canonical spec and invariants in this Phase-2.1.1 folder.
 
+## Authoritative SMP-AA Governance (Design-Only)
+- SMP_AA_Session_Epistemic_Substrate.md
+- SMP_AA_Shared_Schema_Appendix.md
+- SMP_AA_Cataloging_Concept.md
+- SMP_AA_Definition_Hashing.md
+- SMP_Agent_AA_Schemas.md
+- SMP_Logos_Promotion_Schema.md
+- SMP_Non_Deletion_Principle.md
+- SMP_Classification_Ladder.md
+- SMP_Copy_Distinction.md
+- SMP_Storage_Stratification.md
+
+## Design Packet Provenance (Non-Governance Source)
+- BUILDING_BLOCKS/SMP-AA-Complete_design_packet/* provides design-only source material; governance authority is established by the documents in this Phase-2.1.1 folder.
+
 No runtime behavior is introduced; this map is declarative only.

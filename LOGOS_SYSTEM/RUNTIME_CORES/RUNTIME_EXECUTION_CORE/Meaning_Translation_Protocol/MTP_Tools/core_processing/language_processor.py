@@ -53,6 +53,10 @@ from datetime import datetime, timezone
 from enum import Enum
 from typing import Any, Dict, List, Optional, Tuple
 
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import (
+    TrinityVector as BaseTrinityVector,
+)
+
 # Optional dependencies; fall back to light-weight mocks when missing.
 try:  # pragma: no cover - runtime optional dependency
     import spacy
@@ -139,6 +143,9 @@ class TrinityVector:
     goodness: float = 0.5
     truth: float = 0.5
     confidence: float = 0.5
+
+    def to_base(self) -> BaseTrinityVector:
+        return BaseTrinityVector(self.existence, self.goodness, self.truth)
 
     def to_dict(self) -> Dict[str, float]:
         return {

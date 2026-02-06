@@ -70,7 +70,10 @@ from typing import Any, Dict
 
 import numpy as np
 
-from Logos_System.System_Stack.Synthetic_Cognition_Protocol.core.trinity_hyperstructure import Trinity_Hyperstructure, TrinityVector
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import (
+    TrinityVector,
+    Trinity_Hyperstructure,
+)
 
 # LOGOS V2 Core Imports (maintain existing integrations)
 try:

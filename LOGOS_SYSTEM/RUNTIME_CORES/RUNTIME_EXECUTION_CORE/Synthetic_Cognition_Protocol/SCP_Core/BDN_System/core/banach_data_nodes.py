@@ -86,12 +86,14 @@ except ImportError:
 
 
 # Import MVS/BDN data structures (updated for singularity)
-from Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.data_c_values.data_structures import (
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures import (
     BDNGenealogy,
     BDNTransformationType,
     MVSCoordinate,
 )
-from Logos_System.System_Stack.Synthetic_Cognition_Protocol.trinity_vectors import EnhancedTrinityVector
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import (
+    EnhancedTrinityVector,
+)
 
 logger = logging.getLogger(__name__)
 

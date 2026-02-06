@@ -33,6 +33,10 @@ observability:
 import math
 from typing import Tuple, List
 
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import TrinityVector
+
+Trinity_Hyperstructure = TrinityVector
+
 # OptimizationKernel: Core logical and symbolic transformations
 class OptimizationKernel:
     def ISIGN(self, x: float) -> float:
