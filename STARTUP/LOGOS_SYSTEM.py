@@ -55,6 +55,9 @@ No degraded modes or retries.
 ===============================================================================
 """
 
+import subprocess
+import sys
+from pathlib import Path
 from typing import Dict, Any, Literal, Optional
 
 from LOGOS_SYSTEM.System_Entry_Point.System_Entry_Point import (
@@ -81,6 +84,29 @@ from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.L
 
 class RuntimeHalt(Exception):
     """Raised when the runtime spine fails an invariant."""
+
+
+def _launch_gui() -> None:
+    candidates = [Path.cwd(), Path(__file__).resolve().parent]
+    gui_dir: Optional[Path] = None
+    for base in candidates:
+        for parent in [base, *base.parents]:
+            candidate = parent / "LOGOS_GUI"
+            if candidate.is_dir():
+                gui_dir = candidate
+                break
+        if gui_dir is not None:
+            break
+
+    if gui_dir is None:
+        raise RuntimeHalt("LOGOS_GUI directory not found for GUI launch")
+
+    subprocess.Popen(
+        ["npm", "run", "dev"],
+        cwd=str(gui_dir),
+        stdout=sys.stdout,
+        stderr=sys.stderr,
+    )
 
 
 def RUN_LOGOS_SYSTEM(
@@ -141,6 +167,9 @@ def RUN_LOGOS_SYSTEM(
         orchestration_plan = prepare_agent_orchestration(constructive_compile_output)
     except OrchestrationHalt as exc:
         raise RuntimeHalt(f"Agent orchestration failed: {exc}")
+
+    if mode == "interactive":
+        _launch_gui()
 
     return {
         "status": "LOGOS_AGENT_READY",
