@@ -51,10 +51,11 @@ except ImportError as exc:  # pragma: no cover - configuration error
         "'pip install flask'."
     ) from exc
 
-# Add parent directory to path for imports
+# Add parent directory to path for imports when invoked as a script
 DEMOS_DIR = Path(__file__).parent
 REPO_ROOT = DEMOS_DIR.parent.parent
-sys.path.insert(0, str(REPO_ROOT))
+if __name__ == "__main__":
+    sys.path.insert(0, str(REPO_ROOT))
 
 BASELINE_DIR = REPO_ROOT / "Protopraxis" / "formal_verification" / "coq" / "baseline"
 

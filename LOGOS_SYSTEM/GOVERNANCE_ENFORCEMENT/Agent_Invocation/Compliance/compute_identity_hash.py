@@ -5,6 +5,33 @@
 # DESTINATION: Logos_System_Rebuild
 # ARCHIVE_AFTER_REWRITE: REQUIRED
 
+"""
+LOGOS_MODULE_METADATA
+---------------------
+module_name: compute_identity_hash
+runtime_layer: inferred
+role: Runtime module
+responsibility: Provides runtime logic for LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Agent_Invocation/Compliance/compute_identity_hash.py.
+agent_binding: None
+protocol_binding: None
+runtime_classification: runtime_module
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Agent_Invocation/Compliance/compute_identity_hash.py
+  rewrite_phase: Header_Injection
+  rewrite_timestamp: 2026-02-07T00:00:00Z
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
+
 """Compute or verify a canonical identity hash over gated artifacts.
 
 Hash input ordering and formatting are fixed:

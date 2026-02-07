@@ -60,8 +60,9 @@ import sys
 from pathlib import Path
 from typing import List
 
-# Add parent directory to path for imports
-sys.path.insert(0, str(Path(__file__).parent))
+# Add parent directory to path for imports when invoked as a script
+if __name__ == "__main__":
+    sys.path.insert(0, str(Path(__file__).parent))
 
 try:
     from LOGOS_SYSTEM.SYSTEM.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.fractal_orbit_toolkit import (
@@ -72,8 +73,9 @@ try:
         OrbitalPrediction
     )
 except ImportError as e:
-    print(f"Error importing fractal toolkit: {e}")
-    print("Make sure all dependencies are available")
+    if __name__ == "__main__":
+        print(f"Error importing fractal toolkit: {e}")
+        print("Make sure all dependencies are available")
 
     class FractalOrbitAnalysisToolkit:  # type: ignore
         def __init__(self):
@@ -98,7 +100,11 @@ except ImportError as e:
             self.stability_score = 0.0
 
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+if __name__ == "__main__":
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s - %(levelname)s - %(message)s",
+    )
 logger = logging.getLogger(__name__)
 
 

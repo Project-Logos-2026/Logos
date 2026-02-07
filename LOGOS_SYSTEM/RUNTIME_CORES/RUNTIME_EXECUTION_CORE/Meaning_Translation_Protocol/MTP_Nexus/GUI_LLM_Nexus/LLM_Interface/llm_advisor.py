@@ -51,11 +51,15 @@ from urllib import request
 
 try:
     from scripts.evidence import normalize_evidence_refs
-except ImportError:
-    REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-    if str(REPO_ROOT) not in sys.path:
-        sys.path.insert(0, str(REPO_ROOT))
-    from scripts.evidence import normalize_evidence_refs
+except ImportError as exc:
+    try:
+        normalize_evidence_refs = importlib.import_module(
+            "scripts.evidence"
+        ).normalize_evidence_refs
+    except ImportError as import_exc:
+        raise ImportError(
+            "scripts.evidence is required for LLM advisor evidence handling"
+        ) from import_exc
 
 
 @dataclass

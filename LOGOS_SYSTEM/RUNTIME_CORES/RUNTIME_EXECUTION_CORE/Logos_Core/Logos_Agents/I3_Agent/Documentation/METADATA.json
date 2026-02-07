@@ -1,0 +1,16 @@
+{
+  "entity_name": "I3_Agent",
+  "entity_type": "Agent",
+  "runtime_domain": "Execution",
+  "structural_layers": ["CORE", "NEXUS", "CONFIG", "DIAGNOSTICS", "CONNECTIONS", "PROTOCOL_OPERATIONS", "DOCUMENTATION"],
+  "governance_layers": ["LOGOS", "UNSPECIFIED"],
+  "bridge_interaction": {
+    "has_runtime_bridge": false,
+    "direction": "UNSPECIFIED"
+  },
+  "audit": {
+    "documentation_complete": true,
+    "structure_verified": true,
+    "ready_for_deployment": false
+  }
+}

@@ -30,6 +30,21 @@
         "authorization": "DENIED",
         "notes": "TREE(3) boundary detection with T3 projection; design-only registration, no runtime wiring."
       }
+    },
+    {
+      "id": "RUNTIME_BRIDGE_CONTRACT",
+      "path": "LOGOS_SYSTEM/GOVERNANCE/RUNTIME_BRIDGE/RUNTIME_BRIDGE_CONTRACT.md",
+      "sha256": "3230cadf43284073fd6afa635a0638abc6867a7c6db9a3cfdcb4102d3a4e8e84",
+      "status": "GOVERNANCE_BINDING",
+      "constraints": [
+        "NO_EXECUTION",
+        "NO_AUTHORIZATION",
+        "FAIL_CLOSED"
+      ],
+      "timestamp_utc": "2026-02-07T00:00:00Z",
+      "metadata": {
+        "scope": "Runtime ↔ Operations Boundary"
+      }
     }
   ]
 }

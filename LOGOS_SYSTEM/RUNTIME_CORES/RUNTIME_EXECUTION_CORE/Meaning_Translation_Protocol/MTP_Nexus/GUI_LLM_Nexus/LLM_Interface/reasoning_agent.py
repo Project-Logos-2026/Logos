@@ -63,9 +63,10 @@ def load_env(override_cli: bool = False) -> None:
                     os.environ[key.strip()] = value.strip()
 
 
-# Add parent directory to path for imports
+# Add parent directory to path for imports when invoked as a script
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-sys.path.insert(0, str(REPO_ROOT))
+if __name__ == "__main__":
+    sys.path.insert(0, str(REPO_ROOT))
 
 if TYPE_CHECKING:
     from .plugins.llm_backend import LLMBackend

@@ -54,8 +54,9 @@ from dataclasses import dataclass
 from enum import Enum
 import matplotlib.pyplot as plt
 
-# Add LOGOS paths
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', 'Logos_Agent'))
+# Add LOGOS paths when invoked as a script
+if __name__ == "__main__":
+    sys.path.append(os.path.join(os.path.dirname(__file__), "..", "..", "Logos_Agent"))
 
 class ModalOperator(Enum):
     """Modal operators for S5 logic."""

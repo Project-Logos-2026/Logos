@@ -1,0 +1,26 @@
+{
+  "manifest_version": "1.0",
+  "description": "Heuristic semantic projection families for clustering and epistemic recomposition. Non-truth-bearing.",
+  "families": {
+    "METAPHYSICS": {
+      "description": "Ontological and modal claims about existence, necessity, and being."
+    },
+    "EPISTEMOLOGY": {
+      "description": "Claims about knowledge, justification, belief, and truth conditions."
+    },
+    "ETHICS": {
+      "description": "Normative and moral reasoning domains."
+    },
+    "LOGIC_FORMAL": {
+      "description": "Purely formal logical structures and transformations."
+    },
+    "LANGUAGE_SEMANTICS": {
+      "description": "Meaning, reference, interpretation, and linguistic structure."
+    }
+  },
+  "rules": {
+    "extensible": true,
+    "runtime_additions_require_manifest_update": true,
+    "semantic_projection_is_non_authoritative": true
+  }
+}

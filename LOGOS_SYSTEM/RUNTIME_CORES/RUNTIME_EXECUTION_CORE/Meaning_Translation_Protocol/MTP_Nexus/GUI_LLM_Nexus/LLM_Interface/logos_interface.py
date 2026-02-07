@@ -55,8 +55,9 @@ from typing import Any, Dict
 # Setup paths
 REPO_ROOT = Path(__file__).resolve().parent.parent
 STATE_DIR = Path(os.getenv("LOGOS_STATE_DIR", REPO_ROOT / "state"))
-if str(REPO_ROOT) not in sys.path:
-    sys.path.insert(0, str(REPO_ROOT))
+if __name__ == "__main__":
+    if str(REPO_ROOT) not in sys.path:
+        sys.path.insert(0, str(REPO_ROOT))
 
 # Load .env
 
@@ -70,9 +71,6 @@ def load_env() -> None:
                 if line and not line.startswith("#") and "=" in line:
                     key, value = line.split("=", 1)
                     os.environ[key.strip()] = value.strip()
-
-
-load_env()
 
 
 # LOGOS Protocol Operations - All return REAL output
@@ -673,6 +671,7 @@ def single_request(request: str, synthesize: bool = True):
 
 
 if __name__ == "__main__":
+    load_env()
     parser = argparse.ArgumentParser(
         description="LOGOS Protocol Interface - LLM as Natural Language Router",
         formatter_class=argparse.RawDescriptionHelpFormatter,

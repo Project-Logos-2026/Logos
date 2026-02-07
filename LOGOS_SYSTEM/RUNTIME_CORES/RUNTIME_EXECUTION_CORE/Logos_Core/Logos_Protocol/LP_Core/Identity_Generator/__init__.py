@@ -21,7 +21,7 @@ failure_mode:
   type: unknown
   notes: ""
 rewrite_provenance:
-  source: System_Stack/Logos_Protocol/Activation_Sequencer/Identity_Generator/__init__.py
+  source: System_Stack/Logos_Protocol/Activation_Sequencer/Identity_Generator/Agent_ID_Spin_Up/__init__.py
   rewrite_phase: Phase_B
   rewrite_timestamp: 2026-01-18T23:03:31.726474
 observability:

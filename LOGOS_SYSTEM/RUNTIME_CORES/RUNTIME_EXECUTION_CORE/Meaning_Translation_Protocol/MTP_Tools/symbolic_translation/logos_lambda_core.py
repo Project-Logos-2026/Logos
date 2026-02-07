@@ -43,9 +43,11 @@ from sklearn.pipeline import make_pipeline
 
 # --- End Imports ---
 
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - TETRAGNOS_CORE - %(message)s"
-)
+if __name__ == "__main__":
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s - %(levelname)s - TETRAGNOS_CORE - %(message)s",
+    )
 
 
 class LambdaMLCore:

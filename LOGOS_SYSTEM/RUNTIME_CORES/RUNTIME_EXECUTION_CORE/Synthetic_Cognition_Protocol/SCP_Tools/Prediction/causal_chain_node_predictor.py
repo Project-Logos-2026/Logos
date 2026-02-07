@@ -36,7 +36,8 @@ from causallearn.utils.cit import fisherz
 import numpy as np
 import logging
 
-logging.basicConfig(level=logging.INFO)
+if __name__ == "__main__":
+  logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 def run_pc_causal_discovery(data, alpha=0.05):

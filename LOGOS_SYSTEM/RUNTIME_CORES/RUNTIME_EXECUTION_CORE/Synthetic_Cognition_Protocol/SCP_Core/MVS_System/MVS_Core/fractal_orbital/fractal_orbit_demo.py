@@ -55,9 +55,10 @@ import logging
 import time
 from pathlib import Path
 
-# Add parent directory to path
+# Add parent directory to path when invoked as a script
 import sys
-sys.path.insert(0, str(Path(__file__).parent))
+if __name__ == "__main__":
+    sys.path.insert(0, str(Path(__file__).parent))
 
 try:
     from LOGOS_SYSTEM.SYSTEM.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.fractal_orbit_toolkit import (
@@ -67,11 +68,14 @@ try:
         PredictionConfidence
     )
 except ImportError as e:
-    print(f"❌ Import Error: {e}")
-    print("Make sure the fractal_orbit_toolkit.py is available")
-    sys.exit(1)
+    if __name__ == "__main__":
+        print(f"❌ Import Error: {e}")
+        print("Make sure the fractal_orbit_toolkit.py is available")
+        sys.exit(1)
+    raise
 
-logging.basicConfig(level=logging.INFO)
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
