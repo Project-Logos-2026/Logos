@@ -1,0 +1,16 @@
+{
+  "entity_name": "Cognitive_State_Protocol",
+  "entity_type": "Protocol",
+  "runtime_domain": "Operations",
+  "structural_layers": ["CORE", "NEXUS", "DOCUMENTATION"],
+  "governance_layers": ["LOGOS", "UNSPECIFIED"],
+  "bridge_interaction": {
+    "has_runtime_bridge": false,
+    "direction": "UNSPECIFIED"
+  },
+  "audit": {
+    "documentation_complete": true,
+    "structure_verified": true,
+    "ready_for_deployment": false
+  }
+}

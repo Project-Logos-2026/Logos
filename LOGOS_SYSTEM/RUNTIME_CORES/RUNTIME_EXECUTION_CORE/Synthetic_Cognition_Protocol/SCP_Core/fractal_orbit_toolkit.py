@@ -72,8 +72,9 @@ from typing import Any, Dict, List, Optional, Tuple
 try:
     import numpy as np
 except ImportError as exc:
-    print("❌ Import Error: No module named 'numpy'")
-    print("Make sure the fractal_orbit_toolkit.py is available")
+    if __name__ == "__main__":
+        print("❌ Import Error: No module named 'numpy'")
+        print("Make sure the fractal_orbit_toolkit.py is available")
 
     class _NumpyStub:
         def __getattr__(self, name):
@@ -85,10 +86,11 @@ except ImportError as exc:
 _MODULE_DIR = Path(__file__).resolve().parent
 _SCP_DIR = _MODULE_DIR.parent
 _REPO_ROOT = _SCP_DIR.parent.parent
-for _path in (_SCP_DIR, _REPO_ROOT, _MODULE_DIR):
-    str_path = str(_path)
-    if str_path not in sys.path:
-        sys.path.append(str_path)
+if __name__ == "__main__":
+    for _path in (_SCP_DIR, _REPO_ROOT, _MODULE_DIR):
+        str_path = str(_path)
+        if str_path not in sys.path:
+            sys.path.append(str_path)
 
 try:
     from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import (
@@ -128,7 +130,8 @@ except ImportError:
         from modal_inference import ThonocModalInference, ModalFormula
         from data_c_values.data_structures import MVSCoordinate, ModalInferenceResult
     except ImportError:
-        logging.warning("Some fractal components not available, using fallbacks")
+        if __name__ == "__main__":
+            logging.warning("Some fractal components not available, using fallbacks")
 
         # Define fallback classes
         TrinityVector = Trinity_Hyperstructure

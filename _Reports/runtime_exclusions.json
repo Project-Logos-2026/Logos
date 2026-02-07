@@ -1,0 +1,2261 @@
+{
+  "generated": "2026-02-07T00:00:00Z",
+  "excluded": [
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Cognitive_State_Protocol_Memory_Memory_Access_Point.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_check_run_cycle_prereqs.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_deployment_configuration_LOGOS.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_Receiver_Nexus_LLM_Interface_logos_interface.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_diagnostics_health.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_mathematics_privation_mathematics.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_predictors_prediction_analyzer_exporter.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Agent_Resources/math_categories/logos_mathematical_core.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_config_packet_types.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Runtime_Spine_Agent_Orchestration_agent_orchestration.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_mvs_adapter_mvs_adapter.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Agent_Safety_Shims_Phase_E_Memory_Substrate.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Analogical_Engine__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_arp_stack_compiler_arp_stack_compiler.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_Receiver_Nexus_LLM_Interface_plugins_uip_integration_plugin.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_protocol_operations_smp.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_math_categories_logos_mathematical_core.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Meta_Engine_meta_reasoning_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_interface_runtime_interface_runtime.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Deductive_Engine_deductive_reasoning_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Agent_Resources/Cognition_Normalized/logos_core_foundations.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_consciousness_reflexive_evaluator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_validation_testing_test_end_to_end_pipeline.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_connections_id_handler.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_fractal_orbit_demo.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Temporal_Engine__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_formalisms_pxl_postprocessor.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/core_processing/mcmc_engine.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Agent_Safety_Shims_Agent_Lifecycle.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_coherence_coherence_metrics.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Entry_Point_Agent_Orchestration_Lem_Discharge.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Agent_Invocation/Projection_Loader.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Orchestration_Tools/proof_gate_tools.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Tools/IEL_Generator/iel_registryv1.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_coherence_coherence_optimizer.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_Visualization_Wrapper_Plotly.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_Receiver_Nexus_LLM_Interface_plugins__uip_connector_stubs.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Agent_Safety_Shims_Tick_Engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_consciousness_agentic_consciousness_core.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/integration/logos_bridge.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Phase_E_Phase_E_Memory_Substrate.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tool_chain_executor.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Topological_Engine__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_formalisms_safety_formalisms.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_Cognition_Wrapper_Pydantic.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Tools/module_generator/gen_ontoprops_dedup.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Bayesian_Engine_bayesian_recursion.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_config_constants.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_formalisms_symbolic_math.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tool_introspection.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Cognitive_State_Protocol_Structured_Meaning_Packets_SMP_Memory_Validator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_pxl_modal_fractal_boundary_analysis.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_protocol_operations_privation_handler_privation_transformer.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_transform_iterative_loop.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/core_processing/sanitizer.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Phase_E_Phase_E_Agent_Lifecycle.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Meta_Engine_meta_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Activation_Sequencer_Agent_Integration_types.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_BDN_System_integration_trinity_alignment.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_safety_integrity_framework_integrity_safeguard.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Category_Theoretic_Engine__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_ML_Wrapper_Torch.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_infrastructure_agent_system_shared_resources.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Activation_Sequencer_Agent_Integration_dispatch.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_validation_examples_demo_integrated_ml.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_protocol_operations_arp_cycle_policy.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/System_Operations_Protocol/SOP_Core/scan_bypass.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_predict_risk_estimator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Cognitive_State_Protocol_World_Modeling_PXL_World_Model.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Category_Theoretic_Engine_category_theoretic_reasoning_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/fractal_orbital/fractal_orbit_demo.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/symbolic_translation/lambda_parser.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/GUI_LLM_Nexus/LLM_Interface/plugins/enhanced_uip_integration_plugin.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_predictors_prediction_module.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_ML_Wrapper_Prophet.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/math_engine.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Agent_Safety_Shims_Memory_Substrate.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "STARTUP/START_LOGOS.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Identity_Generator/commitment_ledger.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_core_processing_registry.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_formalisms_three_pillars_alt.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_language_modules_natural_language_processor.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_core_processing_mcmc_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_fractal_orbit_cli.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tests_test_perception_ingestors.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_interface_runtime_router.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Optimization_Engine__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Cognitive_State_Protocol_Memory_Memory_Recall_Integration.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_diagnostics_errors.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Integrations/simple_julia.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_protocol_operations_arp_cycle_cycle_runner.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_protocol_operations_ui_io_adapter.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_data_c_values_data_structures.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_protocol_operations_privation_handler_privation_override.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/fractal_orbital/fractal_orbital_node_class.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_arp_stack_compiler_arp_bootstrap.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_Receiver_Nexus_LLM_Interface_run_logos_gpt_acceptance.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Activation_Sequencer_Identity_Generator_Agent_ID_Spin_Up_consciousness_safety_adapter.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Agent_Invocation/Compliance/tools/runtime_control_r_series_audit.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_language_modules_semantic_transformers.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/core_processing/registry.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/ui_io/adapter.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/protocol_operations/scp_tests/run_pipeline_smoke.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_predictors_causal_chain_node_predictor.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_IEL_Generator_iel_registryv1.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_mathematics_fractal_mvs.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tests_test_verify_pai.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Agent_Safety_Shims_Phase_E_Capability_Router.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tool_invention.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_simple_julia.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_BRIDGE/execution_to_operations_exchanger.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Tools/module_generator/development_environment.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_ML_Wrapper_Statsmodels.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Activation_Sequencer_tests_test_integration_identity.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_data_storage_system_memory.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_consciousness_consciousness_safety_adapter.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_IEL_Generator_iel_registryv2.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_symbolic_translation_lambda_engine_definitions.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_infrastructure_agent_system_logos_agent_system.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent__core_Omni_Property_Integration.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/run_all_tests.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Agent_Resources/Cognition_Normalized/Agent_Memory_Integrations.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Identity_Generator/consciousness_safety_adapter.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_SCP_Nexus_scp_nexus_orchestrator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Inductive_Engine_inductive_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_fractal_orbital_orbital_prediction_log_cli.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/DOCUMENTATION/__init__.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_protocol_operations_arp_tests_run_cycle_smoke.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_formalisms_three_pillars_framework.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_code_generator_skill_acquisition.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/ui_io/server.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_protocol_operations_arp_tests_sample_task.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_infrastructure_agent_system_maintenance.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_protocol_operations_privation_handler_privation_analyst.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Activation_Sequencer_Identity_Generator_Agent_ID_Spin_Up_audit_and_emit.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/common.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_Graph_Wrapper_Pyvis.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_Cognition_Wrapper_Micropsi.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_formalisms_consistency_checker.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Analysts/consciousness_fractal_analysis.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_protocol_operations_ui_io_server.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Abductive_Engine__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_predictors_causal_trace_operator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_BDN_System_core_fractal_orbital_node_generator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/core/fractal_orbital_node_generator.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_formalisms_pxl_schema.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/GUI_LLM_Nexus/LLM_Interface/run_logos_gpt_acceptance.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_arp_stack_compiler_arp_operations.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_formalisms_trinity_framework.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent__core_Sign_Principal_Operator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_Cognition_Wrapper_Sympy.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_formalisms_relation_mapper.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Bayesian_Engine_bayesian_updates.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_GnosiPraxis_knowledge_system.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/interface_runtime/progressive_router.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_protocol_operations_llm_io_providers_openai.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_consciousness_simulated_consciousness_runtime.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_ModalPraxis_modal_logic.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Analysts/comprehensive_fractal_analysis.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Modal_Engine_modal_reasoning_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Bayesian_Engine_hierarchical_bayes_network.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Bayesian_Engine_bayesian_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/mathematics/fractal_mvs.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_config_hashing.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_comprehensive_fractal_analysis.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_deployment_monitoring_deploy_full_stack.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_protocol_operations_arp_runtime_plan_packet.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_deployment_configuration_check_imports.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Integrations/prediction_analyzer_exporter.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/language_modules/semantic_transformers.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Tools/IEL_Generator/iel_overlay.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_connections_router.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Agent_Orchestration/agent_planner.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_PXL_Engine_coherence.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_Receiver_Nexus_LLM_Interface_plugins_llm_backend.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Activation_Sequencer_Identity_Generator_Agent_ID_Spin_Up_uwm.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Identity_Generator/agent_identity.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_deployment_configuration_demo_gui.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Inductive_Engine__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_deployment_configuration_logos_monitor.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_BDN_System_core_class_extrapolator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_module_generator_scan_bypass.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_mvs_adapter_mvs_types.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_BDN_System_core_logos_nodes_connections.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_code_generator_self_improvement_integration.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_mvs_calculators_ontological_validator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Game_Theoretic_Engine_game_theoretic_reasoning_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_protocol_operations_privation_handler_privation_gate.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_BDN_System_core_banach_data_nodes.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_ChronoPraxis_chronopraxis_time_modeling.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_mvs_calculators_validation_schemas_system.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_policies_privative_policies.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Identity_Generator/persist_identity.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_infrastructure_agent_system_protocol_integration.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_AnthroPraxis_interaction_models.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/__init__.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_AxioPraxis_consistency_checker.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Bayesian_Engine_bayesian_interface.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_deployment_configuration_worker_kernel.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent__core_bridge_principle_operator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_prioritization.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Temporal_Engine_temporal_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_diagnostics_health.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/language_modules/translation_engine.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Optimization_Engine_optimization_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Tools/module_generator/gen_worldview_ontoprops.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Cognitive_State_Protocol_Memory_Memory_State_Persistence.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_predictors_class_fractal_orbital_predictor.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_deployment_monitoring_deploy_core_services.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_persistence_persistence.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_deployment_configuration_system_imports.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Activation_Sequencer_Identity_Generator_Agent_ID_Spin_Up_attestation.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_mvs_calculators_etgc_validator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_governance_enhanced_reference_monitor.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Tetra_Conscious/Fractal_Data_Analyzer.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_symbolic_translation_logos_lambda_core.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_mathematics_trinitarian_optimization_theorem.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_mvs_calculators_bijective_mapping.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_AnthroPraxis_ethics.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_predictors_divergence_calculator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_ErgoPraxis_action_system.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Bayesian_Engine_bayes_update_real_time.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Counterfactual_Engine__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/pxl_engine.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_Cognition_Wrapper_Openai.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Core/Memory/Memory_State_Persistence.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_GnosiPraxis_epistemological_framework.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Agent_Resources/Cognition_Normalized/reflexive_evaluator.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Modal_Engine__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/protocol_operations/arp_tests/run_cycle_smoke.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Infra/config/schema_utils.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/GUI_LLM_Nexus/LLM_Interface/plugins/uip_integration_plugin.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_Graph_Wrapper_Networkx.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Agent_Resources/Cognition_Normalized/consciousness_safety_adapter.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_integrations_iterative_loop.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_coherence_policy.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tool_proposal_pipeline.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/mvf_node_operator.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_Start_Logos_Agent.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tool_repair_proposal.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Analysts/advanced_fractal_analyzer.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Cognitive_State_Protocol_Structured_Meaning_Packets_SMP_Evaluator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_modal_vector_sync.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_consciousness_logos_core_foundations.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/divergence_engine.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Analysts/pxl_fractal_orbital_analysis.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Heuristic_Engine_heuristic_reasoning_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_tests_test_registry_and_response.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Tools/module_generator/self_improvement_integration.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Logos_Protocol_Nexus_logos_protocol_nexus.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_validation_testing_test_reference_monitor.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Bayesian_Engine__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Heuristic_Engine_heuristic_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_governance_capabilities.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/core/banach_data_nodes.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_deployment_configuration_kernel.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_deployment_configuration_iel_integration.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/mathematics/trinity_alignment.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Cognitive_State_Protocol_World_Modeling_world_model.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Agent_Invocation/Compliance/tools/step5_autonomy_argument_probe.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_config_packet_types.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/reasoning_demo.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_safety_privative_policies.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/fractal_orbit_cli.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_consciousness_fractal_analysis.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Deductive_Engine__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Agent_Resources/Cognition_Normalized/agentic_consciousness_core.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_predictors_fractal_nexus.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_deployment_boot_extensions_loader.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_Visualization_Wrapper_Seaborn.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/GUI_LLM_Nexus/LLM_Interface/plugins/guardrails.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_core_processing_sanitizer.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_module_generator_ontoprops_remap.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Tetra_Conscious/PXL_Tetra_Analyst.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_IEL_Generator_iel_schema.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_AnthroPraxis_collaboration.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_ErgoPraxis_ergonomic_optimizer.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_fractal_orbital_integration_harmonizer.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_Receiver_Nexus_Custom_GUI_server.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Cognitive_State_Protocol_CSP_Nexus_csp_nexus_orchestrator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_BDN_System_core_trinity_vectors.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_fractal_orbital_fractal_mvs.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/fractal_orbit_toolkit.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_PXL_Engine_pxl_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tests_test_simulation_cli.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_validation_testing_validate_production.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_entry.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tool_optimizer.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_config_schema_utils.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_protocol_operations_llm_io_client.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent__core_3OT_mediator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_SOP_Nexus_sop_nexus_orchestrator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_mvs_calculators_fractal_mvs.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_protocol_operations_arp_runtime_task_intake.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_infrastructure_agent_system_agent_nexus.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/prediction_module.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_deployment_monitoring_health_server.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/GUI_LLM_Nexus/LLM_Interface/logos_gpt_server.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Activation_Sequencer_Identity_Generator_Agent_ID_Spin_Up_schemas.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Phase_E_Phase_E_Tick_Engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_resurrection_s2_demo.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_mvs_calculators_ontology_inducer.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Activation_Sequencer_Identity_Generator_Agent_ID_Spin_Up_agent_planner.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Tetra_Conscious/Fractal_Memory_Orchestrator.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_config_logging_utils.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/language_modules/translation_bridge.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Cognitive_State_Protocol_Memory_Logos_Memory_Nexus.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_module_generator_development_environment.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_module_generator_knowledge_catalog.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_runtime_smp_intake.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Analogical_Engine_analogical_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_diagnostics_health.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Activation_Sequencer_Identity_Generator_Agent_ID_Spin_Up_agent_identity.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Abductive_Engine_abductive_reasoning_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_PXL_Engine_coherence_formalism.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_AxioPraxis_axiom_systems.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_Cognition_Wrapper_Pgmpy.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Core/bridge_principle_operator.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/fractal_orbital/orbital_prediction_log_cli.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Phase_E_Phase_E_Capability_Router.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_Receiver_Nexus_LLM_Interface_reasoning_agent.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Topological_Engine_topological_reasoning_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_config_logging_utils.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Activation_Sequencer_Identity_Generator_Agent_ID_Spin_Up_identity_loader.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_validation_testing_tests_test_self_improvement_cycle.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/fractal_mvs.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Modal_Engine_modal_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/core/logos_nodes_connections.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_ModalPraxis_multi_modal_system.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_infrastructure_agent_system_boot_system.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_predictors_fractal_mapping.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Agent_Orchestration/coordinator.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_GnosiPraxis_belief_network.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_symbolic_translation_logos_lambda_integration.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_formalisms_proof_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_ErgoPraxis_resource_manager.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Ethical_Engine__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_Cognition_Wrapper_Memgpt.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_safety_obdc_kernel.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_CosmoPraxis_universal_logic.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_fractal_orbital_symbolic_math.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_io_normalizer.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_tests_run_pipeline_smoke.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Identity_Generator/identity_loader.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_protocol_operations_arp_runtime_work_order.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Core/Memory/Logos_Memory_Nexus.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Bayesian_Engine_bayesian_nexus.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/symbolic_translation/lambda_engine_definitions.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Activation_Sequencer_Identity_Generator_Agent_ID_Spin_Up_persist_identity.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tests_test_bayesian_data_handler.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_Register_All_Wrappers.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_bdn_adapter_bdn_types.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent__core_Mind_Principal_Operator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_predict_predict_integration.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Game_Theoretic_Engine__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/fractal_orbital/fractal_navigator.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Validation/bijective_mapping.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/GUI_LLM_Nexus/LLM_Interface/llm_advisor.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_Receiver_Nexus_LLM_Interface_llm_advisor.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_fractal_orbit_toolkit.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_transform_transform_types.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_formalisms_Temporal_Flow_Analyzer.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent__core_omniproperty_integration.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Entry_Point_Agent_Orchestration_agent_orchestration.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_infrastructure_agent_system_base_nexus.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_deployment_configuration_entry.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/interface_runtime/router.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Validation/validation_schemas_system.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_NLP_Wrapper_Nltk.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_ML_Wrapper_Arch.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_formalisms_temporal_predictor.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_module_generator_gen_worldview_ontoprops.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_config_time_utils.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/symbolic_translation/logos_lambda_integration.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_transform_transform_registry.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_Receiver_Nexus_LLM_Interface_logos_gpt_chat.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_validation_testing_test_self_improvement_cycle.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_IEL_Generator_iel_synthesizer.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_governance_reference_monitor.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_consciousness_emergence_core.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Bayesian_Engine_bayesian_data_parser.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_protocol_operations_arp_runtime_evaluation_packet.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Analysts/pxl_modal_fractal_boundary_analysis.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_Graph_Wrapper_Rdflib.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_protocol_operations_llm_io_config.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_CosmoPraxis_space_time_framework.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Analogical_Engine_analogical_reasoning_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_symbolic_translation_lambda_parser.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Tools/IEL_Generator/iel_schema.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_formalisms_bugfix.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_core_processing_language_processor.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_ChronoPraxis_chronopraxis_sequence_analysis.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_safety_ultima_framework_ultima_safety.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Core/self_improvement_integration.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/GUI_LLM_Nexus/Custom_GUI/server.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_cycle_policy.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "STARTUP/Runtime_Compiler/coq/src/ui/run_coq_pipeline.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Ethical_Engine_ethical_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Tetra_Conscious/Fractal_Data_Verifier.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_interface_runtime_progressive_router.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/core_processing/adaptive_engine.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Topological_Engine_topological_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/causal_chain_node_predictor.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_IEL_Generator_iel_error_handler.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_predictors_etgc_prior_checker.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Activation_Sequencer_Agent_Integration_test_determinism.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_connections_id_handler.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_governance_server.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_predictors_modal_support.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_connections_router.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tests_test_logos_agi_persistence_smoke.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_runtime_result_packet.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Entry_Point_System_Entry_Point.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Core/privation_handler/privation_analyst.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Activation_Sequencer_Agent_Integration_coordinator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "STARTUP/Runtime_Compiler/coq/src/ui/lem_portal.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_compliance_integration_harmonizer.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Documentation_tools_header_injector.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Cognitive_State_Protocol_World_Modeling_commitment_ledger.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tests_test_nexus_capability_governance.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_config_constants.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Agent_Resources/Cognition_Normalized/fractal_consciousness_core.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_governance_core_service.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Ethical_Engine_ethical_reasoning_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_runtime_work_order.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Deductive_Engine_deductive_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_test_dual_bijection.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_infrastructure_agent_system_initialize_agent_system.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_code_generator_development_environment.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_IEL_Generator_iel_generator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_formalisms_arithmetic_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tests_test_logos_agi_adapter.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_LOGOS_SYSTEM.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_ModalPraxis_modal_reasoner.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Validation/ontological_validator.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_formalisms_modal_validator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_deployment_configuration_unified_classes.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_predictors_divergence_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_consciousness_fractal_consciousness_core.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Agent_Resources/Cognition_Normalized/simulated_consciousness_runtime.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tests_test_pai.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_symbolic_translation_lambda_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_config_packet_types.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_validation_testing_test_integration.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Integrations/fractal_nexus.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "STARTUP/Runtime_Compiler/coq/src/ui/serve_pxl.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Cognitive_State_Protocol_Structured_Meaning_Packets_SMP_Generator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/math_categories/logos_mathematical_core.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_fractal_orbital_fractal_orbital_node_class.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_BDN_System_mvf_node_operator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_config_time_utils.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_protocol_operations_arp_planner_plan_evaluator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/compiler/arp_compiler_core.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tests_test_agent_planner.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_ChronoPraxis_chronopraxis_temporal_logic.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Core/SMP_Generator/SMP_Memory_Validator.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/core_processing/language_processor.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_ARP_Nexus_arp_nexus_orchestrator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Documentation_tools_header_validator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_dual_bijection_coherence_analysis.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_BDN_System_integration_logos_bridge.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_config_hashing.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_Visualization_Wrapper_Matplotlib.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_ML_Wrapper_Sklearn.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_advanced_fractal_analyzer.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Tools/Recursion_Grounding/recursion_identity_runtime.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Bayesian_Engine_bayesian_ml.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "STARTUP/Runtime_Compiler/coq/src/ui/audit_and_emit.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_protocol_operations_privation_handler_privation_classifier.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_config_constants.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Agent_Safety_Shims_Phase_E_Agent_Lifecycle.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_bdn_adapter_bdn_adapter.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_module_generator_gen_ontoprops_dedup.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Counterfactual_Engine_counterfactual_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_symbolic_translation_lambda_onto_calculus_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "STARTUP/Runtime_Compiler/coq/src/ui/PXL_Proof_Compile.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_dual_bijection_demo.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/symbolic_translation/logos_lambda_core.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/unified_reasoning.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_NLP_Wrapper_Spacy.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Orchestration_Tools/runtime_protocol.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Category_Theoretic_Engine_category_theoretic_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_protocol_operations_llm_io_types.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Agent_Safety_Shims_Capability_Router.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_config_schema_utils.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_Activation_Sequencer_tests_test_lock_unlock.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_infrastructure_agent_system_local_scp.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Bayesian_Engine_bayesian_inference.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Counterfactual_Engine_counterfactual_reasoning_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_NLP_Wrapper_Transformers.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Inductive_Engine_inductive_reasoning_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Agent_Invocation/Compliance/compute_identity_hash.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/class_fractal_orbital_predictor.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_alignment_protocols_validation_testing_integration_test_suite.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_AxioPraxis_foundational_logic.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_pxl_fractal_orbital_analysis.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_predictors_orbital_recursion_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent__core_OmniProperty_Integration.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_mathematics_trinity_alignment.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Heuristic_Engine__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_BDN_System_bdn_runtime.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Identity_Generator/audit_and_emit.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/iel_engine.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_protocol_operations_llm_io_providers_llama.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_protocol_operations_llm_io_exports.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Meta_Engine__init__.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_fractal_mvs.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Tetra_Conscious/Cognitive_Resistor.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_dual_bijection_agent_experiment.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_IEL_Generator_iel_overlay.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_tests_test_hardening.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/GUI_LLM_Nexus/LLM_Interface/reasoning_agent.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_integrations_pipeline_runner.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Game_Theoretic_Engine_game_theoretic_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_module_generator_self_improvement_integration.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_Receiver_Nexus_LLM_Interface_plugins_guardrails.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Agent_Resources_iel_domains_CosmoPraxis_cosmic_systems.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_config_hashing.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_analysis_trajectory_types.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_MVS_System_fractal_orbital_fractal_navigator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_connections_router.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Core/Memory/Memory_Recall_Integration.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_deployment_monitoring_api_server.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Temporal_Engine_temporal_reasoning_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_Constraint_Stubs.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_protocol_operations_arp_planner_baseline_planner.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_IEL_Generator_iel_signer.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Runtime_Spine_Lock_And_Key_lock_and_key.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/PXL_Core.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_Receiver_Nexus_LLM_Interface_logos_gpt_server.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Abductive_Engine_abductive_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Bayesian_Engine_bayesian_inferencer.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_IEL_Generator_iel_evaluator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/integration/trinity_alignment.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_analysis_analysis_runner.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/GUI_LLM_Nexus/LLM_Interface/logos_gpt_chat.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/fractal_orbital/integration_harmonizer.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_Agent_Safety_Shims_Phase_E_Tick_Engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_config_logging_utils.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_Optimization_test_tool_fallback_proposal.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_diagnostics_errors.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_language_modules_translation_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_language_modules_tranlsation_bridge.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Synthetic_Cognition_Protocol_BDN_System_core_persistence_manager.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_System_Operations_Protocol_governance_persistence.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_NLP_Wrapper_Sentence_Transformers.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Advanced_Reasoning_Protocol_Reasoning_Engines_Optimization_Engine_optimization_reasoning_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_config_schema_utils.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/GUI_LLM_Nexus/LLM_Interface/logos_interface.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_Receiver_Nexus_LLM_Interface_plugins_enhanced_uip_integration_plugin.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_MTP_Nexus_mtp_nexus_orchestrator.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_Logos_Agent_Lem_Discharge.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I2_Agent_connections_id_handler.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_cycle_cycle_runner.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_config_time_utils.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I1_Agent_protocol_operations_scp_tests_sample_smp.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Meaning_Translation_Protocol_core_processing_adaptive_engine.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Core/Unified_Working_Memory/World_Modeling/world_model.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Cognition_Normalized/Agent_Memory_Integrations.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Expirements/dual_bijection_agent_experiment.py",
+      "reason": "Not imported by runtime and excluded to avoid expanding runtime surface."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Protocol_External_Enhancements_External_Enhancements_Registry.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    },
+    {
+      "path": "LOGOS_SYSTEM/TEST_SUITE/Tests/test_System_Stack_Logos_Agents_I3_Agent_diagnostics_errors.py",
+      "reason": "Located under TEST_SUITE and not part of runtime execution."
+    }
+  ]
+}

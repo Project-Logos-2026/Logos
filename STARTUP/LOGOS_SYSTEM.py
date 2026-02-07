@@ -57,23 +57,23 @@ No degraded modes or retries.
 
 from typing import Dict, Any, Literal, Optional
 
-from Logos_System.System_Entry_Point.System_Entry_Point import (
+from LOGOS_SYSTEM.System_Entry_Point.System_Entry_Point import (
     START_LOGOS,
     StartupHalt,
 )
-from Logos_System.System_Entry_Point.Agent_Orchestration.agent_orchestration import (
+from LOGOS_SYSTEM.System_Entry_Point.Agent_Orchestration.agent_orchestration import (
     OrchestrationHalt,
     prepare_agent_orchestration,
 )
-from Logos_System.Runtime_Spine.Lock_And_Key.lock_and_key import (
+from LOGOS_SYSTEM.Runtime_Spine.Lock_And_Key.lock_and_key import (
     execute_lock_and_key,
     LockAndKeyFailure,
 )
-from Logos_System.System_Stack.Logos_Agents.Logos_Agent.Start_Logos_Agent import (
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Start_Logos_Agent import (
     LogosAgentStartupHalt,
     start_logos_agent,
 )
-from Logos_System.System_Stack.Logos_Agents.Logos_Agent.Lem_Discharge import (
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Lem_Discharge import (
     LemDischargeHalt,
     discharge_lem,
 )

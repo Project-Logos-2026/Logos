@@ -1,0 +1,27 @@
+{
+	"module": "Meaning_Translation_Protocol",
+	"role": "Authoritative SMP entry-point (non-canonical)",
+	"scope": [
+		"SMP construction window",
+		"Tri-modal enrichment surfaces",
+		"Schema enforcement and immutability sealing"
+	],
+	"authority_boundaries": [
+		"No canonical promotion",
+		"No AA generation",
+		"No post-seal mutation"
+	],
+	"governance": {
+		"fail_closed": true,
+		"non_executing": true,
+		"no_proof_or_admissibility": true
+	},
+	"interfaces": {
+		"inbound": ["I2 Agent"],
+		"outbound": ["I2 Agent"],
+		"nexus": ["MTP_Nexus"]
+	},
+	"version": "1.0.0",
+	"schema_version": "MTP-SMP-0.1",
+	"last_updated": "2026-02-06"
+}

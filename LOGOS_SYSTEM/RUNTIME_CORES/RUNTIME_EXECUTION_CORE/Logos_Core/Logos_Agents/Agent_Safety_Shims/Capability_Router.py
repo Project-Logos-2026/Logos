@@ -1,5 +1,32 @@
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 """
+LOGOS_MODULE_METADATA
+---------------------
+module_name: Capability_Router
+runtime_layer: inferred
+role: Runtime module
+responsibility: Provides runtime logic for LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Agent_Safety_Shims/Capability_Router.py.
+agent_binding: None
+protocol_binding: None
+runtime_classification: runtime_module
+boot_phase: inferred
+expected_imports: []
+provides: []
+depends_on_runtime_state: False
+failure_mode:
+  type: unknown
+  notes: ""
+rewrite_provenance:
+  source: LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Agent_Safety_Shims/Capability_Router.py
+  rewrite_phase: Header_Injection
+  rewrite_timestamp: 2026-02-07T00:00:00Z
+observability:
+  log_channel: None
+  metrics: disabled
+---------------------
+"""
+
+"""
 Capability Router — Phase E Component
 - All requests denied by default
 - Requires valid artifact to authorize capability use
