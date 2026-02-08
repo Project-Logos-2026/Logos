@@ -60,7 +60,7 @@ def _load_state():
         return {}
 
 
-def test_high_impact_requires_uip() -> bool:
+def test_high_impact_requires_uip() -> None:
     payload = {
         "proposals": [
             {
@@ -72,19 +72,14 @@ def test_high_impact_requires_uip() -> bool:
         ]
     }
     result = _run_with_payload(payload)
-    if result.returncode != 0:
-        print(f"FAIL: run error {result.stderr}")
-        return False
+    assert result.returncode == 0, f"run error: {result.stderr}"
     state = _load_state()
     truth_events = state.get("truth_events", []) if isinstance(state, dict) else []
     flagged = [e for e in truth_events if isinstance(e, dict) and e.get("content", {}).get("reason") == "uip_required"]
-    if not flagged:
-        print("FAIL: UIP requirement not enforced for high-impact proposal")
-        return False
-    return True
+    assert flagged, "UIP requirement not enforced for high-impact proposal"
 
 
-def test_proved_downgraded() -> bool:
+def test_proved_downgraded() -> None:
     payload = {
         "proposals": [
             {
@@ -96,21 +91,16 @@ def test_proved_downgraded() -> bool:
         ]
     }
     result = _run_with_payload(payload)
-    if result.returncode != 0:
-        print(f"FAIL: run error {result.stderr}")
-        return False
+    assert result.returncode == 0, f"run error: {result.stderr}"
     state = _load_state()
     last_props = state.get("last_proposals", []) if isinstance(state, dict) else []
-    if not last_props:
-        print("FAIL: no proposals recorded")
-        return False
-    if any(p.get("truth_annotation", {}).get("truth") == "PROVED" for p in last_props):
-        print("FAIL: PROVED claim not downgraded")
-        return False
-    return True
+    assert last_props, "no proposals recorded"
+    assert not any(
+        p.get("truth_annotation", {}).get("truth") == "PROVED" for p in last_props
+    ), "PROVED claim not downgraded"
 
 
-def test_code_injection_rejected() -> bool:
+def test_code_injection_rejected() -> None:
     payload = {
         "proposals": [
             {
@@ -123,16 +113,11 @@ def test_code_injection_rejected() -> bool:
         ]
     }
     result = _run_with_payload(payload)
-    if result.returncode != 0:
-        print(f"FAIL: run error {result.stderr}")
-        return False
+    assert result.returncode == 0, f"run error: {result.stderr}"
     state = _load_state()
     truth_events = state.get("truth_events", []) if isinstance(state, dict) else []
     rejected = [e for e in truth_events if isinstance(e, dict) and e.get("content", {}).get("reason") == "direct_execution_attempt"]
-    if not rejected:
-        print("FAIL: code injection not rejected")
-        return False
-    return True
+    assert rejected, "code injection not rejected"
 
 
 def main() -> bool:
@@ -142,7 +127,10 @@ def main() -> bool:
         test_code_injection_rejected,
     ]
     for test in tests:
-        if not test():
+        try:
+            test()
+        except AssertionError as exc:
+            print(f"FAIL: {exc}")
             return False
     print("PASS: LLM advisor bypass protections hold")
     return True

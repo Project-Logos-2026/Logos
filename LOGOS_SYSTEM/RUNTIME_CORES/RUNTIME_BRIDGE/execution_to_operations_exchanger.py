@@ -1,3 +1,4 @@
+from __future__ import annotations
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -65,8 +66,6 @@ remain on their respective sides of the runtime bifurcation.
 
 """
 
-from __future__ import annotations
-
 import uuid
 import time
 from dataclasses import dataclass
@@ -103,7 +102,7 @@ except ImportError:
     class StandardNexus:  # pragma: no cover
         pass
 
-from dual_bijective_commutation_validator import (
+from .dual_bijective_commutation_validator import (
     DualBijectiveCommutationValidator,
 )
 

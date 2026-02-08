@@ -13,9 +13,12 @@ class EMP_Meta_Reasoner:
 
     def analyze(self, artifact):
         self._use()
-        if artifact.get("proof_state") == "complete":
-            artifact["epistemic_state"] = "canonical_candidate"
+        # Return a new dict to avoid mutating the caller's artifact.
+        # Mutation of shared state violates the immutability governance invariant.
+        result = dict(artifact)
+        if result.get("proof_state") == "complete":
+            result["epistemic_state"] = "canonical_candidate"
         else:
-            artifact["epistemic_state"] = "provisional"
-        artifact["reasoning_steps_used"] = self.steps
-        return artifact
+            result["epistemic_state"] = "provisional"
+        result["reasoning_steps_used"] = self.steps
+        return result
