@@ -72,7 +72,8 @@ Any failure results in immediate halt. No retries. No bypass. No continuation.
 ===============================================================================
 """
 
-from typing import Dict, Any
+from pathlib import Path
+from typing import Dict, Any, Optional
 import hashlib
 import json
 import time
@@ -94,7 +95,7 @@ def _hash_compile_artifact(artifact: bytes) -> str:
 def execute_lock_and_key(
     external_compile_artifact: bytes,
     internal_compile_artifact: bytes,
-    audit_log_path: str = "/workspaces/Logos_System/System_Audit_Logs/Boot_Sequence_Log.jsonl",
+    audit_log_path: Optional[str] = None,
 ) -> Dict[str, Any]:
     """
     Execute Lock-and-Key dual-site validation.
@@ -124,8 +125,17 @@ def execute_lock_and_key(
         "timestamp": time.time(),
     }
 
+    resolved_audit_log_path = audit_log_path
+    if resolved_audit_log_path is None:
+        repo_root = Path(__file__).resolve().parents[5]
+        resolved_audit_log_path = str(
+            repo_root / "SYSTEM_AUDIT_LOGS" / "Boot_Sequence_Log.jsonl"
+        )
+
     try:
-        with open(audit_log_path, "a", encoding="utf-8") as f:
+        audit_parent = Path(resolved_audit_log_path).parent
+        audit_parent.mkdir(parents=True, exist_ok=True)
+        with open(resolved_audit_log_path, "a", encoding="utf-8") as f:
             f.write(json.dumps(audit_entry) + "\n")
     except Exception as exc:
         raise LockAndKeyFailure(f"Audit logging failed: {exc}")

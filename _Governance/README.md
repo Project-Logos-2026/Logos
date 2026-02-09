@@ -10,3 +10,7 @@ These files are:
 - authoritative by declaration
 
 Modifying or bypassing these artifacts constitutes a governance breach.
+
+## Language Governance and Epistemic Grounding
+
+Language is a governed subsystem of LOGOS, not a cognitive authority. Linguistic output is constrained by formal meaning and epistemic invariants. See _Governance/Policies/I1_EPISTEMIC_GROUNDING_SPEC.md and _Governance/Policies/LANGUAGE_GOVERNANCE_CHARTER.md. I₁ defines epistemic preconditions for all reasoning, language, and runtime admissibility.

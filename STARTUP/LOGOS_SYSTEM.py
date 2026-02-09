@@ -55,6 +55,7 @@ No degraded modes or retries.
 ===============================================================================
 """
 
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -87,7 +88,12 @@ class RuntimeHalt(Exception):
 
 
 def _launch_gui() -> None:
+    repo_root = Path(__file__).resolve().parents[1]
     candidates = [Path.cwd(), Path(__file__).resolve().parent]
+    explicit_paths = [
+        repo_root / "LOGOS_GUI",
+        repo_root / "LOGOS_SYSTEM" / "INTERFACES" / "LOGOS_GUI" / "LOGOS_GUI",
+    ]
     gui_dir: Optional[Path] = None
     for base in candidates:
         for parent in [base, *base.parents]:
@@ -99,13 +105,24 @@ def _launch_gui() -> None:
             break
 
     if gui_dir is None:
+        for candidate in explicit_paths:
+            if candidate.is_dir():
+                gui_dir = candidate
+                break
+
+    if gui_dir is None:
         raise RuntimeHalt("LOGOS_GUI directory not found for GUI launch")
+
+    env = dict(os.environ)
+    env.setdefault("CI", "1")
+    env.setdefault("NG_CLI_ANALYTICS", "ci")
 
     subprocess.Popen(
         ["npm", "run", "dev"],
         cwd=str(gui_dir),
         stdout=sys.stdout,
         stderr=sys.stderr,
+        env=env,
     )
 
 
