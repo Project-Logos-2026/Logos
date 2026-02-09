@@ -45,6 +45,22 @@
       "metadata": {
         "scope": "Runtime ↔ Operations Boundary"
       }
+    },
+    {
+      "id": "RUNTIME_CONTROL_R_SERIES_INDEX",
+      "path": "LOGOS_SYSTEM/RUNTIME/Runtime_Control/README.md",
+      "sha256": "ac89c2c162881552b02aa10de61bf6c5e4939be4c4b5f9fa3603bebb9173c0f1",
+      "status": "DESIGN_ONLY",
+      "constraints": [
+        "NO_EXECUTION",
+        "NO_AUTHORIZATION",
+        "FAIL_CLOSED"
+      ],
+      "timestamp_utc": "2026-02-09T00:00:00Z",
+      "metadata": {
+        "scope": "Runtime Control (R-Series)",
+        "notes": "Design-only index for runtime control scaffolding."
+      }
     }
   ]
 }

@@ -25,6 +25,9 @@ Absence of permission should be interpreted as denial.
 - `/Frameworks/`  
   Logical and philosophical substrates (e.g., PXL, IEL)
 
+- `/LOGOS_SYSTEM/`  
+  System runtime scaffolding and governance-bound structures
+
 - `/Simulations/`  
   Descriptive simulation contracts and examples
 
