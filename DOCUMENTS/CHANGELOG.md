@@ -9,11 +9,13 @@ documentation and constraint changes are recorded before any capability changes.
 
 ## [Unreleased]
 
-- Documentation and design artifacts under active refinement.
 
----
 
 ## Versioning Philosophy
+
+- Added Runtime_Artifact_Ingress_Contract.md to governance artifacts.
+	Purpose: Documentation of already-enforced runtime ingress behavior.
+	Note: No runtime or tooling changes introduced.
 
 LOGOS versions reflect:
 - Governance changes
