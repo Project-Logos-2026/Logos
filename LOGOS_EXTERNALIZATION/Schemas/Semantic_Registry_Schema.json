@@ -1,6 +1,7 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Semantic Registry Schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Semantic_Registry_Schema",
+  "description": "Authoritative schema governing the Semantic Lexicon Registry for LOGOS Externalization. Enforces cross-domain consistency between templates, registries, and generated artifacts.",
   "type": "object",
   "required": [
     "registry_name",
@@ -14,18 +15,18 @@
   "properties": {
     "registry_name": {
       "type": "string",
-      "pattern": "^[A-Z0-9_]+$"
+      "const": "SEMANTIC_REGISTRY"
     },
     "phase": {
       "type": "integer",
-      "const": 5
+      "minimum": 1
     },
     "layer": {
-      "type": "string",
-      "const": "Natural_Language_Externalization"
+      "type": "string"
     },
     "version": {
-      "type": "string"
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
     },
     "generated_at": {
       "type": "string",
@@ -36,6 +37,7 @@
     },
     "entries": {
       "type": "array",
+      "minItems": 1,
       "items": {
         "type": "object",
         "required": [
@@ -46,6 +48,7 @@
           "usage_constraints",
           "lambda_signature",
           "lambda_role",
+          "lambda_notes",
           "pxl_grounding",
           "pxl_constraints",
           "status",
@@ -56,12 +59,17 @@
             "type": "string"
           },
           "term_id": {
-            "type": "string",
-            "pattern": "^[A-Z0-9_]+$"
+            "type": "string"
           },
           "part_of_speech": {
             "type": "string",
-            "enum": ["noun", "verb", "adjective", "operator", "state"]
+            "enum": [
+              "state",
+              "operator",
+              "function",
+              "constant",
+              "noun"
+            ]
           },
           "natural_language_definition": {
             "type": "string"
@@ -73,24 +81,26 @@
             "type": "string"
           },
           "lambda_role": {
-            "type": "string",
-            "enum": ["predicate", "function", "relation", "constant", "state"]
+            "type": "string"
           },
           "lambda_notes": {
             "type": "string"
           },
           "pxl_grounding": {
-            "type": "string"
+            "type": "string",
+            "description": "Formal PXL grounding expression associated with this semantic entry. Informational, not evaluated."
           },
           "pxl_constraints": {
-            "type": "string"
+            "type": "string",
+            "description": "Formal PXL constraint expression governing valid usage of this semantic entry. Informational, not evaluated."
           },
           "status": {
             "type": "string",
-            "enum": ["canonical", "deprecated", "reserved"]
+            "enum": ["canonical"]
           },
           "introduced_in_version": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
           }
         },
         "additionalProperties": false

@@ -1,0 +1,64 @@
+{
+  "Registry_Name": "Modifier_Function_Registry",
+  "Artifact_Type": "Externalization_Registry",
+  "Authority_Level": "Canonical",
+  "Runtime_Visible": true,
+  "Schema_Version": "1.0",
+  "Description": "Canonical registry defining the closed set of modifier functions for the LOGOS externalization system. Each function qualifies AXIOM output without altering truth value or introducing new assertions.",
+
+  "Functions": {
+    "EPISTEMIC_QUALIFICATION": {
+      "Definition": "Qualifies the rendered output with an explicit epistemic status marker indicating the certainty or knowledge state of the assertion. Driven by Proof/Compile Status and Semantic State Condition classification from the upstream Resolved Output Packet.",
+      "Required_Slots": ["EPISTEMIC_STATUS", "CONFIDENCE_BASIS"],
+      "Applicable_Categories": ["Assertion", "Conditional", "Proof"],
+      "Semantic_Constraint": "Must not alter the truth value of the target AXIOM. Qualifies certainty of rendering only. The epistemic status is determined upstream; this modifier makes it explicit in the NL surface.",
+      "PXL_Anchor": "Perfect_self_knowledge: grounded_in p x → K x p (PXL_Kernel_Axioms.v)"
+    },
+    "SCOPE_RESTRICTION": {
+      "Definition": "Narrows the rendered scope of an assertion by making explicit the scope boundaries already determined by the upstream meaning state. Driven by SP-11 (Scope) configuration in the Resolved Output Packet.",
+      "Required_Slots": ["RESTRICTION_SCOPE", "RESTRICTION_BASIS"],
+      "Applicable_Categories": ["Assertion", "Conditional", "Proof", "Dependency", "Constraint"],
+      "Semantic_Constraint": "Must not alter the truth value or introduce scope not present in the meaning state. Renders existing scope bounds, does not create them.",
+      "PXL_Anchor": "modus_groundens: □ (x ⧟ y) → entails x P → entails y P (PXL_Kernel_Axioms.v)"
+    },
+    "TEMPORAL_QUALIFICATION": {
+      "Definition": "Marks the rendered output with a temporal validity reference indicating when the semantic state was resolved. In PXL terms, projects the modal status of the entailment as a temporal frame.",
+      "Required_Slots": ["TEMPORAL_MARKER", "TEMPORAL_CONSTRAINT"],
+      "Applicable_Categories": ["Assertion", "Conditional", "Proof", "Scope", "Dependency", "Constraint", "Audit"],
+      "Semantic_Constraint": "Must not alter truth value. The temporal marker frames when the state was established, not whether it is true. Modal status (necessary vs. contingent) is determined upstream.",
+      "PXL_Anchor": "S5 modal operators: □ p (necessity), ◇ p (possibility) (PXL_Modal_Axioms_Semantic.v)"
+    },
+    "STRENGTH_MODULATION": {
+      "Definition": "Adjusts the assertoric force of the rendered output from necessary through provisional to indicated-but-unestablished. Driven by SSC classification: COMPLETE maps to strong assertion, PARTIAL to provisional, UNRESOLVED to indicated.",
+      "Required_Slots": ["STRENGTH_LEVEL", "STRENGTH_BASIS"],
+      "Applicable_Categories": ["Assertion", "Conditional", "Proof"],
+      "Semantic_Constraint": "Must not alter truth value. Strength modulation selects among pre-authored surface variants expressing different assertoric force. The underlying entailment is preserved.",
+      "PXL_Anchor": "coherence_lifts_entailment: coherence 𝕆 → entails x P → entails 𝕆 P (PXL_Kernel_Axioms.v)"
+    },
+    "DEPENDENCY_QUALIFICATION": {
+      "Definition": "Renders explicit dependency conditions on the modified axiom, making visible the dependency relationships already present in the upstream meaning state. Driven by SP-05 (Dependency) configuration.",
+      "Required_Slots": ["DEPENDENCY_CONDITION", "DEPENDENCY_STATUS"],
+      "Applicable_Categories": ["Assertion", "Conditional", "Proof"],
+      "Semantic_Constraint": "Must not alter truth value or introduce dependencies not present in the meaning state. Renders existing dependency relationships, does not create them.",
+      "PXL_Anchor": "modus_groundens: □ (x ⧟ y) → entails x P → entails y P; grounding_yields_entails: grounded_in P x → entails x P (PXL_Kernel_Axioms.v)"
+    },
+    "REMEDIATION_ATTACHMENT": {
+      "Definition": "Attaches remediation or resolution guidance to failure-state axioms. Applicable only to primitives representing failed, violated, unsatisfied, or unmet states. Driven by the coherence restoration path available in the meaning state.",
+      "Required_Slots": ["REMEDIATION_PATH", "REMEDIATION_PRIORITY"],
+      "Applicable_Categories": ["Proof", "Scope", "Dependency", "Constraint", "Audit"],
+      "Applicability_Restriction": "Within applicable categories, targets only failure-state primitives: PROOF_FAILED, SCOPE_VIOLATION, DEPENDENCY_UNSATISFIED, PRECONDITIONS_UNMET, CONSTRAINT_VIOLATED, AUDIT_FAILED.",
+      "Semantic_Constraint": "Must not alter the failure state's truth value. Renders a resolution path without claiming resolution has occurred. The remediation is descriptive, not prescriptive.",
+      "PXL_Anchor": "NB_modal_power: □ (∀φ : Prop, ∼ (incoherent φ) → ◇ (entails 𝕆 φ)); privative_collapse: ∼ (◇ (entails 𝕆 P)) → incoherent P (PXL_Kernel_Axioms.v)"
+    }
+  },
+
+  "Invariants": [
+    "Function set is closed and finite",
+    "No function may introduce new semantic primitives",
+    "No function may alter the truth value of any AXIOM output",
+    "No function may stand alone or be compiled without a parent AXIOM",
+    "Each function declares exactly the slots it requires; no implicit slot inheritance",
+    "Function semantics are qualification-only; they project upstream state, they do not create it",
+    "Existing AXIOM registries and templates are not modified by this registry"
+  ]
+}

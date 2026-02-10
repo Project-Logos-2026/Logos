@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Modifier_Template_Header_Schema",
+  "description": "Canonical runtime header schema for modifier templates. Governs allowed metadata and explicitly forbids development-phase contamination.",
+  "type": "object",
+  "required": [
+    "Template_File",
+    "Modifier_Function",
+    "Target_AXIOM_Category",
+    "Governing_Contract",
+    "Governing_Registry",
+    "Compatibility_Map",
+    "Authority_Level",
+    "Runtime_Class"
+  ],
+  "properties": {
+    "Template_File": { "type": "string" },
+    "Modifier_Function": { "type": "string" },
+    "Target_AXIOM_Category": { "type": "string" },
+    "Governing_Contract": { "type": "string" },
+    "Governing_Registry": { "type": "string" },
+    "Compatibility_Map": { "type": "string" },
+    "Authority_Level": {
+      "type": "string",
+      "enum": ["Canonical"]
+    },
+    "Runtime_Class": {
+      "type": "string",
+      "const": "Externalization_Modifier"
+    }
+  },
+  "additionalProperties": false
+}
