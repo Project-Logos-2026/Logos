@@ -1,0 +1,51 @@
+{
+  "Schema_Name": "Externalization_Header_Schema",
+  "Artifact_Type": "Schema",
+  "Authority_Level": "Canonical",
+  "Applies_To": "LOGOS_EXTERNALIZATION/Templates/**",
+  "Runtime_Visible": true,
+  "Schema_Version": "1.0",
+  "Description": "Defines the mandatory machine-readable header for all externalization templates. This schema provides a stable compiler anchor and prevents future normalization passes.",
+  "Required_Fields": {
+    "Artifact_Type": {
+      "Type": "string",
+      "Fixed_Value": "Externalization_Template"
+    },
+    "Template_Type": {
+      "Type": "string",
+      "Allowed_Values": [
+        "AXIOM",
+        "MODIFIER",
+        "CONTEXTUAL",
+        "EXPLANATORY"
+      ]
+    },
+    "Primitive": {
+      "Type": "string",
+      "Description": "Canonical primitive identifier defined in the semantic lexicon registry."
+    },
+    "Slots": {
+      "Type": "array",
+      "Items": "string",
+      "Description": "Ordered list of slot identifiers required by the template body."
+    },
+    "Projection_Mode": {
+      "Type": "string",
+      "Fixed_Value": "Projection_Only"
+    },
+    "Runtime_Eligible": {
+      "Type": "boolean"
+    },
+    "Schema_Version": {
+      "Type": "string",
+      "Fixed_Value": "1.0"
+    }
+  },
+  "Invariants": [
+    "All fields are mandatory",
+    "No additional fields are permitted",
+    "No development-phase identifiers may appear",
+    "Header content is declarative only",
+    "Runtime behavior is external to this schema"
+  ]
+}

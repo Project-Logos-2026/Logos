@@ -1,0 +1,260 @@
+{
+  "Registry_Name": "Slot_Registry",
+  "Artifact_Type": "Externalization_Registry",
+  "Authority_Level": "Canonical",
+  "Runtime_Visible": true,
+  "Mutation_Policy": "Append_Only",
+  "Schema_Version": "1.0",
+  "Description": "Canonical registry defining all semantic slots used by externalization templates. This registry is cumulative and append-only, supporting current and future template layers.",
+
+  "Slots": {
+    "ASSERTION_CONTENT": {
+      "Slot_Type": "Text",
+      "Description": "Primary assertion or claim being evaluated or referenced."
+    },
+    "PROOF_REFERENCE": {
+      "Slot_Type": "Identifier",
+      "Description": "Reference to a formal proof, derivation, or verification artifact."
+    },
+    "PROOF_GAP": {
+      "Slot_Type": "Identifier",
+      "Description": "Identifier describing a missing or incomplete proof element."
+    },
+    "CONDITIONAL_STATEMENT": {
+      "Slot_Type": "Text",
+      "Description": "Conditional expression whose satisfaction state is being evaluated."
+    },
+    "PRECONDITION_VERIFICATION": {
+      "Slot_Type": "Identifier",
+      "Description": "Verification evidence that required preconditions have been satisfied."
+    },
+    "PRECONDITION_FAILURES": {
+      "Slot_Type": "List",
+      "Description": "List of unmet or failed preconditions."
+    },
+    "PROOF_IDENTIFIER": {
+      "Slot_Type": "Identifier",
+      "Description": "Canonical identifier for a proof artifact."
+    },
+    "VALIDATION_PROCESS": {
+      "Slot_Type": "Identifier",
+      "Description": "Process or method used to validate a proof or assertion."
+    },
+    "VALIDATION_ERRORS": {
+      "Slot_Type": "List",
+      "Description": "Errors encountered during validation."
+    },
+    "VALIDATION_TARGET": {
+      "Slot_Type": "Identifier",
+      "Description": "Entity or artifact undergoing validation."
+    },
+    "COMPLETION_CRITERIA": {
+      "Slot_Type": "Text",
+      "Description": "Conditions required to complete a validation process."
+    },
+    "BOUNDARY_IDENTIFIER": {
+      "Slot_Type": "Identifier",
+      "Description": "Identifier for a defined scope or boundary."
+    },
+    "INCLUSION_CRITERIA": {
+      "Slot_Type": "Text",
+      "Description": "Criteria defining what is included within a boundary."
+    },
+    "EXCLUSION_CRITERIA": {
+      "Slot_Type": "Text",
+      "Description": "Criteria defining what is excluded from a boundary."
+    },
+    "OPERATION_IDENTIFIER": {
+      "Slot_Type": "Identifier",
+      "Description": "Identifier for an operation or process."
+    },
+    "VIOLATION_DETAILS": {
+      "Slot_Type": "Text",
+      "Description": "Details describing how a boundary or constraint was violated."
+    },
+    "DEPENDENCY_LIST": {
+      "Slot_Type": "List",
+      "Description": "List of dependencies required for an operation."
+    },
+    "AVAILABILITY_STATUS": {
+      "Slot_Type": "Status",
+      "Description": "Availability state of required dependencies."
+    },
+    "MISSING_DEPENDENCIES": {
+      "Slot_Type": "List",
+      "Description": "Dependencies that are missing or unavailable."
+    },
+    "RESOLUTION_REQUIREMENTS": {
+      "Slot_Type": "Text",
+      "Description": "Requirements necessary to resolve missing dependencies."
+    },
+    "PRECONDITION_SET": {
+      "Slot_Type": "List",
+      "Description": "Set of required preconditions."
+    },
+    "VERIFICATION_METHOD": {
+      "Slot_Type": "Identifier",
+      "Description": "Method used to verify preconditions."
+    },
+    "UNMET_PRECONDITIONS": {
+      "Slot_Type": "List",
+      "Description": "Preconditions that have not been met."
+    },
+    "SATISFACTION_REQUIREMENTS": {
+      "Slot_Type": "Text",
+      "Description": "Requirements needed to satisfy unmet preconditions."
+    },
+    "CONSTRAINT_IDENTIFIER": {
+      "Slot_Type": "Identifier",
+      "Description": "Identifier for a constraint."
+    },
+    "CONSTRAINT_SCOPE": {
+      "Slot_Type": "Text",
+      "Description": "Scope within which a constraint applies."
+    },
+    "ENFORCEMENT_MECHANISM": {
+      "Slot_Type": "Text",
+      "Description": "Mechanism enforcing a constraint."
+    },
+    "VIOLATION_DETECTION": {
+      "Slot_Type": "Identifier",
+      "Description": "Method or signal used to detect a constraint violation."
+    },
+    "REMEDIATION_ACTION": {
+      "Slot_Type": "Text",
+      "Description": "Action required to remediate a violation."
+    },
+    "AUDIT_TARGET": {
+      "Slot_Type": "Identifier",
+      "Description": "Entity or artifact subject to audit."
+    },
+    "COMPLIANCE_DOCUMENTATION": {
+      "Slot_Type": "Identifier",
+      "Description": "Documentation evidencing compliance."
+    },
+    "COMPLIANCE_FAILURES": {
+      "Slot_Type": "List",
+      "Description": "Identified compliance failures."
+    },
+    "REMEDIATION_REQUIREMENTS": {
+      "Slot_Type": "Text",
+      "Description": "Requirements to remediate compliance failures."
+    },
+    "ARTIFACT_IDENTIFIER": {
+      "Slot_Type": "Identifier",
+      "Description": "Identifier for a referenced artifact."
+    },
+    "IDENTIFYING_INFORMATION": {
+      "Slot_Type": "Text",
+      "Description": "Information sufficient to uniquely identify an artifact."
+    },
+    "ARTIFACT_LOCATION": {
+      "Slot_Type": "Path",
+      "Description": "Location of an artifact within the system."
+    },
+    "TECHNICAL_SUBJECT": {
+      "Slot_Type": "Text",
+      "Description": "Subject of a technical explanation."
+    },
+    "IMPLEMENTATION_DETAILS": {
+      "Slot_Type": "Text",
+      "Description": "Details describing implementation specifics."
+    },
+    "TECHNICAL_SPECIFICATIONS": {
+      "Slot_Type": "Text",
+      "Description": "Formal technical specifications."
+    },
+    "FACTUAL_SUBJECT": {
+      "Slot_Type": "Text",
+      "Description": "Subject of a declarative factual statement."
+    },
+    "FACTUAL_INFORMATION": {
+      "Slot_Type": "Text",
+      "Description": "Factual information being conveyed."
+    },
+    "EDUCATIONAL_SUBJECT": {
+      "Slot_Type": "Text",
+      "Description": "Subject matter intended for instructional use."
+    },
+    "COMPREHENSION_GOALS": {
+      "Slot_Type": "Text",
+      "Description": "Learning or comprehension objectives."
+    }
+  },
+
+  "Primitive_Map": {
+    "ASSERTION_CONFIRMED": {
+      "Slots": ["ASSERTION_CONTENT", "PROOF_REFERENCE"]
+    },
+    "ASSERTION_NEGATED": {
+      "Slots": ["ASSERTION_CONTENT", "PROOF_REFERENCE"]
+    },
+    "ASSERTION_UNPROVEN": {
+      "Slots": ["ASSERTION_CONTENT", "PROOF_GAP"]
+    },
+    "CONDITIONAL_SATISFIED": {
+      "Slots": ["CONDITIONAL_STATEMENT", "PRECONDITION_VERIFICATION"]
+    },
+    "CONDITIONAL_UNSATISFIED": {
+      "Slots": ["CONDITIONAL_STATEMENT", "PRECONDITION_FAILURES"]
+    },
+    "PROOF_CONFIRMED": {
+      "Slots": ["PROOF_IDENTIFIER", "VALIDATION_PROCESS"]
+    },
+    "PROOF_FAILED": {
+      "Slots": ["PROOF_IDENTIFIER", "VALIDATION_ERRORS"]
+    },
+    "VALIDATION_INCOMPLETE": {
+      "Slots": ["VALIDATION_TARGET", "COMPLETION_CRITERIA"]
+    },
+    "SCOPE_LIMITATION": {
+      "Slots": ["BOUNDARY_IDENTIFIER", "INCLUSION_CRITERIA", "EXCLUSION_CRITERIA"]
+    },
+    "SCOPE_VIOLATION": {
+      "Slots": ["OPERATION_IDENTIFIER", "BOUNDARY_IDENTIFIER", "VIOLATION_DETAILS"]
+    },
+    "DEPENDENCY_DISCLOSURE": {
+      "Slots": ["OPERATION_IDENTIFIER", "DEPENDENCY_LIST", "AVAILABILITY_STATUS"]
+    },
+    "DEPENDENCY_UNSATISFIED": {
+      "Slots": ["OPERATION_IDENTIFIER", "MISSING_DEPENDENCIES", "RESOLUTION_REQUIREMENTS"]
+    },
+    "PRECONDITIONS_REQUIRED": {
+      "Slots": ["OPERATION_IDENTIFIER", "PRECONDITION_SET", "VERIFICATION_METHOD"]
+    },
+    "PRECONDITIONS_UNMET": {
+      "Slots": ["OPERATION_IDENTIFIER", "UNMET_PRECONDITIONS", "SATISFACTION_REQUIREMENTS"]
+    },
+    "CONSTRAINT_DISCLOSURE": {
+      "Slots": ["CONSTRAINT_IDENTIFIER", "CONSTRAINT_SCOPE", "ENFORCEMENT_MECHANISM"]
+    },
+    "CONSTRAINT_VIOLATED": {
+      "Slots": ["CONSTRAINT_IDENTIFIER", "VIOLATION_DETECTION", "REMEDIATION_ACTION"]
+    },
+    "AUDIT_PASSED": {
+      "Slots": ["AUDIT_TARGET", "COMPLIANCE_DOCUMENTATION"]
+    },
+    "AUDIT_FAILED": {
+      "Slots": ["AUDIT_TARGET", "COMPLIANCE_FAILURES", "REMEDIATION_REQUIREMENTS"]
+    },
+    "ARTIFACT_REFERENCE": {
+      "Slots": ["ARTIFACT_IDENTIFIER", "IDENTIFYING_INFORMATION", "ARTIFACT_LOCATION"]
+    },
+    "TECHNICAL_EXPLANATION": {
+      "Slots": ["TECHNICAL_SUBJECT", "IMPLEMENTATION_DETAILS", "TECHNICAL_SPECIFICATIONS"]
+    },
+    "DECLARATIVE_EXPLANATION": {
+      "Slots": ["FACTUAL_SUBJECT", "FACTUAL_INFORMATION"]
+    },
+    "PEDAGOGICAL_EXPLANATION": {
+      "Slots": ["EDUCATIONAL_SUBJECT", "COMPREHENSION_GOALS"]
+    }
+  },
+
+  "Invariants": [
+    "Slots are semantic interface points and must not encode logic",
+    "Registry is append-only; existing slots must not be modified or removed",
+    "All slot references in templates and manifests must resolve here",
+    "Slot names are canonical and case-sensitive"
+  ]
+}

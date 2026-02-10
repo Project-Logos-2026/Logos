@@ -1,0 +1,232 @@
+# AXIOM Manifest Slot Update Report
+
+## Before Update (Slots Summary)
+```json
+{
+  "Template_ID": "AXIOM_01_ASSERTION_CONFIRMED",
+  "Primitive": "ASSERTION_CONFIRMED",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_02_ASSERTION_NEGATED",
+  "Primitive": "ASSERTION_NEGATED",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_03_ASSERTION_UNPROVEN",
+  "Primitive": "ASSERTION_UNPROVEN",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_04_CONDITIONAL_SATISFIED",
+  "Primitive": "CONDITIONAL_SATISFIED",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_05_CONDITIONAL_UNSATISFIED",
+  "Primitive": "CONDITIONAL_UNSATISFIED",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_06_PROOF_CONFIRMED",
+  "Primitive": "PROOF_CONFIRMED",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_07_PROOF_FAILED",
+  "Primitive": "PROOF_FAILED",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_08_VALIDATION_INCOMPLETE",
+  "Primitive": "VALIDATION_INCOMPLETE",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_09_SCOPE_LIMITATION",
+  "Primitive": "SCOPE_LIMITATION",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_10_SCOPE_VIOLATION",
+  "Primitive": "SCOPE_VIOLATION",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_11_DEPENDENCY_DISCLOSURE",
+  "Primitive": "DEPENDENCY_DISCLOSURE",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_12_DEPENDENCY_UNSATISFIED",
+  "Primitive": "DEPENDENCY_UNSATISFIED",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_13_PRECONDITIONS_REQUIRED",
+  "Primitive": "PRECONDITIONS_REQUIRED",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_14_PRECONDITIONS_UNMET",
+  "Primitive": "PRECONDITIONS_UNMET",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_15_CONSTRAINT_DISCLOSURE",
+  "Primitive": "CONSTRAINT_DISCLOSURE",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_16_CONSTRAINT_VIOLATED",
+  "Primitive": "CONSTRAINT_VIOLATED",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_17_AUDIT_PASSED",
+  "Primitive": "AUDIT_PASSED",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_18_AUDIT_FAILED",
+  "Primitive": "AUDIT_FAILED",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_19_ARTIFACT_REFERENCE",
+  "Primitive": "ARTIFACT_REFERENCE",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_20_TECHNICAL_EXPLANATION",
+  "Primitive": "TECHNICAL_EXPLANATION",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_21_DECLARATIVE_EXPLANATION",
+  "Primitive": "DECLARATIVE_EXPLANATION",
+  "Slots": []
+}
+{
+  "Template_ID": "AXIOM_22_PEDAGOGICAL_EXPLANATION",
+  "Primitive": "PEDAGOGICAL_EXPLANATION",
+  "Slots": []
+}
+```
+
+## After Update (Slots Summary)
+```json
+{
+  "Template_ID": "AXIOM_01_ASSERTION_CONFIRMED",
+  "Primitive": "ASSERTION_CONFIRMED",
+  "Slots": ["ASSERTION_CONTENT", "PROOF_REFERENCE"]
+}
+{
+  "Template_ID": "AXIOM_02_ASSERTION_NEGATED",
+  "Primitive": "ASSERTION_NEGATED",
+  "Slots": ["ASSERTION_CONTENT", "PROOF_REFERENCE"]
+}
+{
+  "Template_ID": "AXIOM_03_ASSERTION_UNPROVEN",
+  "Primitive": "ASSERTION_UNPROVEN",
+  "Slots": ["ASSERTION_CONTENT", "PROOF_GAP"]
+}
+{
+  "Template_ID": "AXIOM_04_CONDITIONAL_SATISFIED",
+  "Primitive": "CONDITIONAL_SATISFIED",
+  "Slots": ["CONDITIONAL_STATEMENT", "PRECONDITION_VERIFICATION"]
+}
+{
+  "Template_ID": "AXIOM_05_CONDITIONAL_UNSATISFIED",
+  "Primitive": "CONDITIONAL_UNSATISFIED",
+  "Slots": ["CONDITIONAL_STATEMENT", "PRECONDITION_FAILURES"]
+}
+{
+  "Template_ID": "AXIOM_06_PROOF_CONFIRMED",
+  "Primitive": "PROOF_CONFIRMED",
+  "Slots": ["PROOF_IDENTIFIER", "VALIDATION_PROCESS"]
+}
+{
+  "Template_ID": "AXIOM_07_PROOF_FAILED",
+  "Primitive": "PROOF_FAILED",
+  "Slots": ["PROOF_IDENTIFIER", "VALIDATION_ERRORS"]
+}
+{
+  "Template_ID": "AXIOM_08_VALIDATION_INCOMPLETE",
+  "Primitive": "VALIDATION_INCOMPLETE",
+  "Slots": ["VALIDATION_TARGET", "COMPLETION_CRITERIA"]
+}
+{
+  "Template_ID": "AXIOM_09_SCOPE_LIMITATION",
+  "Primitive": "SCOPE_LIMITATION",
+  "Slots": ["BOUNDARY_IDENTIFIER", "INCLUSION_CRITERIA", "EXCLUSION_CRITERIA"]
+}
+{
+  "Template_ID": "AXIOM_10_SCOPE_VIOLATION",
+  "Primitive": "SCOPE_VIOLATION",
+  "Slots": ["OPERATION_IDENTIFIER", "BOUNDARY_IDENTIFIER", "VIOLATION_DETAILS"]
+}
+{
+  "Template_ID": "AXIOM_11_DEPENDENCY_DISCLOSURE",
+  "Primitive": "DEPENDENCY_DISCLOSURE",
+  "Slots": ["OPERATION_IDENTIFIER", "DEPENDENCY_LIST", "AVAILABILITY_STATUS"]
+}
+{
+  "Template_ID": "AXIOM_12_DEPENDENCY_UNSATISFIED",
+  "Primitive": "DEPENDENCY_UNSATISFIED",
+  "Slots": ["OPERATION_IDENTIFIER", "MISSING_DEPENDENCIES", "RESOLUTION_REQUIREMENTS"]
+}
+{
+  "Template_ID": "AXIOM_13_PRECONDITIONS_REQUIRED",
+  "Primitive": "PRECONDITIONS_REQUIRED",
+  "Slots": ["OPERATION_IDENTIFIER", "PRECONDITION_SET", "VERIFICATION_METHOD"]
+}
+{
+  "Template_ID": "AXIOM_14_PRECONDITIONS_UNMET",
+  "Primitive": "PRECONDITIONS_UNMET",
+  "Slots": ["OPERATION_IDENTIFIER", "UNMET_PRECONDITIONS", "SATISFACTION_REQUIREMENTS"]
+}
+{
+  "Template_ID": "AXIOM_15_CONSTRAINT_DISCLOSURE",
+  "Primitive": "CONSTRAINT_DISCLOSURE",
+  "Slots": ["CONSTRAINT_IDENTIFIER", "CONSTRAINT_SCOPE", "ENFORCEMENT_MECHANISM"]
+}
+{
+  "Template_ID": "AXIOM_16_CONSTRAINT_VIOLATED",
+  "Primitive": "CONSTRAINT_VIOLATED",
+  "Slots": ["CONSTRAINT_IDENTIFIER", "VIOLATION_DETECTION", "REMEDIATION_ACTION"]
+}
+{
+  "Template_ID": "AXIOM_17_AUDIT_PASSED",
+  "Primitive": "AUDIT_PASSED",
+  "Slots": ["AUDIT_TARGET", "COMPLIANCE_DOCUMENTATION"]
+}
+{
+  "Template_ID": "AXIOM_18_AUDIT_FAILED",
+  "Primitive": "AUDIT_FAILED",
+  "Slots": ["AUDIT_TARGET", "COMPLIANCE_FAILURES", "REMEDIATION_REQUIREMENTS"]
+}
+{
+  "Template_ID": "AXIOM_19_ARTIFACT_REFERENCE",
+  "Primitive": "ARTIFACT_REFERENCE",
+  "Slots": ["ARTIFACT_IDENTIFIER", "IDENTIFYING_INFORMATION", "ARTIFACT_LOCATION"]
+}
+{
+  "Template_ID": "AXIOM_20_TECHNICAL_EXPLANATION",
+  "Primitive": "TECHNICAL_EXPLANATION",
+  "Slots": ["TECHNICAL_SUBJECT", "IMPLEMENTATION_DETAILS", "TECHNICAL_SPECIFICATIONS"]
+}
+{
+  "Template_ID": "AXIOM_21_DECLARATIVE_EXPLANATION",
+  "Primitive": "DECLARATIVE_EXPLANATION",
+  "Slots": ["FACTUAL_SUBJECT", "FACTUAL_INFORMATION"]
+}
+{
+  "Template_ID": "AXIOM_22_PEDAGOGICAL_EXPLANATION",
+  "Primitive": "PEDAGOGICAL_EXPLANATION",
+  "Slots": ["EDUCATIONAL_SUBJECT", "COMPREHENSION_GOALS"]
+}
+```
+
+## Result
+**Slots populated from Slot_Registry.json.**
