@@ -1,0 +1,94 @@
+{
+  "Contract_Name": "Modifier_Binding_Contract",
+  "Artifact_Type": "Externalization_Contract",
+  "Authority_Level": "Canonical",
+  "Schema_Version": "1.0",
+  "Description": "Defines the structural rules governing how MODIFIER templates attach to AXIOM templates. Authoritative source for binding legality in the LOGOS externalization system.",
+
+  "Binding_Rules": {
+    "Modifier_Target_Type": "AXIOM",
+    "Binding_Granularity": "Category",
+    "Binding_Granularity_Note": "Modifiers bind to AXIOM categories, not individual AXIOM primitives. The compiler resolves the specific AXIOM primitive at runtime.",
+    "Stacking_Permitted": true,
+    "Stacking_Constraint": "Max_One_Per_Function_Type",
+    "Max_Modifiers_Per_Function_Type": 1,
+    "Conflict_Resolution": "Fail_Closed",
+    "Conflict_Resolution_Note": "If two modifiers of the same function type are requested for a single AXIOM invocation, externalization halts. No fallback, no priority ordering, no silent discard.",
+    "Compilation_Order": "Post_AXIOM_Pre_CONTEXTUAL",
+    "Compilation_Order_Note": "Modifiers are applied after AXIOM template loading and slot binding, before any CONTEXTUAL templates (Step-3). This ordering is invariant."
+  },
+
+  "AXIOM_Categories": {
+    "Assertion": {
+      "Primitives": ["ASSERTION_CONFIRMED", "ASSERTION_NEGATED", "ASSERTION_UNPROVEN"]
+    },
+    "Conditional": {
+      "Primitives": ["CONDITIONAL_SATISFIED", "CONDITIONAL_UNSATISFIED"]
+    },
+    "Proof": {
+      "Primitives": ["PROOF_CONFIRMED", "PROOF_FAILED", "VALIDATION_INCOMPLETE"]
+    },
+    "Scope": {
+      "Primitives": ["SCOPE_LIMITATION", "SCOPE_VIOLATION"]
+    },
+    "Dependency": {
+      "Primitives": ["DEPENDENCY_DISCLOSURE", "DEPENDENCY_UNSATISFIED", "PRECONDITIONS_REQUIRED", "PRECONDITIONS_UNMET"]
+    },
+    "Constraint": {
+      "Primitives": ["CONSTRAINT_DISCLOSURE", "CONSTRAINT_VIOLATED"]
+    },
+    "Audit": {
+      "Primitives": ["AUDIT_PASSED", "AUDIT_FAILED"]
+    }
+  },
+
+  "Excluded_Targets": {
+    "Primitives": [
+      "TECHNICAL_EXPLANATION",
+      "DECLARATIVE_EXPLANATION",
+      "PEDAGOGICAL_EXPLANATION",
+      "ARTIFACT_REFERENCE"
+    ],
+    "Exclusion_Reason": "Explanation primitives are terminal and non-composable. ARTIFACT_REFERENCE is a pointer, not a truth claim. Modifying either is semantically incoherent."
+  },
+
+  "Modifier_Functions": [
+    "EPISTEMIC_QUALIFICATION",
+    "SCOPE_RESTRICTION",
+    "TEMPORAL_QUALIFICATION",
+    "STRENGTH_MODULATION",
+    "DEPENDENCY_QUALIFICATION",
+    "REMEDIATION_ATTACHMENT"
+  ],
+
+  "Function_To_Category_Bindings": {
+    "EPISTEMIC_QUALIFICATION": ["Assertion", "Conditional", "Proof"],
+    "SCOPE_RESTRICTION": ["Assertion", "Conditional", "Proof", "Dependency", "Constraint"],
+    "TEMPORAL_QUALIFICATION": ["Assertion", "Conditional", "Proof", "Scope", "Dependency", "Constraint", "Audit"],
+    "STRENGTH_MODULATION": ["Assertion", "Conditional", "Proof"],
+    "DEPENDENCY_QUALIFICATION": ["Assertion", "Conditional", "Proof"],
+    "REMEDIATION_ATTACHMENT": ["Proof", "Scope", "Dependency", "Constraint", "Audit"]
+  },
+
+  "REMEDIATION_ATTACHMENT_Applicability": {
+    "Note": "REMEDIATION_ATTACHMENT targets failure-state primitives within each category. The compiler must restrict application to the following primitives at runtime.",
+    "Applicable_Primitives": {
+      "Proof": ["PROOF_FAILED"],
+      "Scope": ["SCOPE_VIOLATION"],
+      "Dependency": ["DEPENDENCY_UNSATISFIED", "PRECONDITIONS_UNMET"],
+      "Constraint": ["CONSTRAINT_VIOLATED"],
+      "Audit": ["AUDIT_FAILED"]
+    }
+  },
+
+  "Invariants": [
+    "Modifiers must not alter the truth value of the target AXIOM",
+    "Modifiers must not introduce new semantic primitives",
+    "Modifiers must not stand alone; compilation without a parent AXIOM is invalid",
+    "Binding is at category level; individual primitive resolution occurs at compile time",
+    "Stacking of distinct modifier functions is permitted; stacking of identical functions is fatal",
+    "No modifier may trigger sequencing, advance meaning, or produce inward signals",
+    "On any binding violation, externalization halts — no fallback rendering permitted",
+    "This contract does not govern CONTEXTUAL or DISCOURSE bindings"
+  ]
+}

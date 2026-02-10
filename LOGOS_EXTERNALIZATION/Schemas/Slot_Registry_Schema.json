@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Slot_Registry_Schema",
+  "description": "Schema governing the canonical Slot Registry used by LOGOS Externalization. Enforces append-only semantics and slot structural consistency.",
+  "type": "object",
+  "required": [
+    "Registry_Name",
+    "Artifact_Type",
+    "Authority_Level",
+    "Mutation_Policy",
+    "Schema_Version",
+    "Slots",
+    "Invariants"
+  ],
+  "properties": {
+    "Registry_Name": {
+      "type": "string",
+      "const": "Slot_Registry"
+    },
+    "Artifact_Type": {
+      "type": "string"
+    },
+    "Authority_Level": {
+      "type": "string",
+      "enum": ["Canonical"]
+    },
+    "Runtime_Visible": {
+      "type": "boolean"
+    },
+    "Mutation_Policy": {
+      "type": "string",
+      "const": "Append_Only"
+    },
+    "Schema_Version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Slots": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["Slot_Type", "Description"],
+        "properties": {
+          "Slot_Type": {
+            "type": "string",
+            "enum": [
+              "Text",
+              "Identifier",
+              "List",
+              "Status",
+              "Path"
+            ]
+          },
+          "Description": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "Primitive_Map": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["Slots"],
+        "properties": {
+          "Slots": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "Invariants": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false
+}

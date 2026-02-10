@@ -1,0 +1,16 @@
+{
+  "Manifest_Metadata": {
+    "Manifest_Name": "Modifier_Template_Manifest",
+    "Manifest_Type": "Template_Manifest",
+    "Template_Type": "MODIFIER",
+    "Description": "Enumerates all MODIFIER-type templates available for discovery and metadata lookup. Populated during Step-2 template authoring phase.",
+    "Source_Contracts": {
+      "Header_Schema": "Externalization_Header_Schema.json",
+      "Template_Type_Registry": "Template_Type_Registry.json",
+      "Semantic_Registry": "Semantic_Lexicon_Registry.json",
+      "Binding_Contract": "Modifier_Binding_Contract.json",
+      "Function_Registry": "Modifier_Function_Registry.json"
+    }
+  },
+  "Templates": []
+}

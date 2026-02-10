@@ -1,0 +1,230 @@
+{
+  "Map_Name": "Modifier_Compatibility_Map",
+  "Artifact_Type": "Externalization_Contract",
+  "Authority_Level": "Derived",
+  "Schema_Version": "1.0",
+  "Description": "Explicit cross-reference of modifier functions to AXIOM categories, producing the complete list of composite modifier primitives and their required templates. Derived from Modifier_Binding_Contract and Modifier_Function_Registry.",
+
+  "Entries": [
+    {
+      "Modifier_Function": "EPISTEMIC_QUALIFICATION",
+      "Target_Category": "Assertion",
+      "Target_Primitives": ["ASSERTION_CONFIRMED", "ASSERTION_NEGATED", "ASSERTION_UNPROVEN"],
+      "Composite_Primitive_ID": "MOD_EPISTEMIC_ASSERTION",
+      "Required_Slots": ["EPISTEMIC_STATUS", "CONFIDENCE_BASIS"],
+      "Template_File": "MOD_EPISTEMIC_ASSERTION.md"
+    },
+    {
+      "Modifier_Function": "EPISTEMIC_QUALIFICATION",
+      "Target_Category": "Conditional",
+      "Target_Primitives": ["CONDITIONAL_SATISFIED", "CONDITIONAL_UNSATISFIED"],
+      "Composite_Primitive_ID": "MOD_EPISTEMIC_CONDITIONAL",
+      "Required_Slots": ["EPISTEMIC_STATUS", "CONFIDENCE_BASIS"],
+      "Template_File": "MOD_EPISTEMIC_CONDITIONAL.md"
+    },
+    {
+      "Modifier_Function": "EPISTEMIC_QUALIFICATION",
+      "Target_Category": "Proof",
+      "Target_Primitives": ["PROOF_CONFIRMED", "PROOF_FAILED", "VALIDATION_INCOMPLETE"],
+      "Composite_Primitive_ID": "MOD_EPISTEMIC_PROOF",
+      "Required_Slots": ["EPISTEMIC_STATUS", "CONFIDENCE_BASIS"],
+      "Template_File": "MOD_EPISTEMIC_PROOF.md"
+    },
+    {
+      "Modifier_Function": "SCOPE_RESTRICTION",
+      "Target_Category": "Assertion",
+      "Target_Primitives": ["ASSERTION_CONFIRMED", "ASSERTION_NEGATED", "ASSERTION_UNPROVEN"],
+      "Composite_Primitive_ID": "MOD_SCOPE_ASSERTION",
+      "Required_Slots": ["RESTRICTION_SCOPE", "RESTRICTION_BASIS"],
+      "Template_File": "MOD_SCOPE_ASSERTION.md"
+    },
+    {
+      "Modifier_Function": "SCOPE_RESTRICTION",
+      "Target_Category": "Conditional",
+      "Target_Primitives": ["CONDITIONAL_SATISFIED", "CONDITIONAL_UNSATISFIED"],
+      "Composite_Primitive_ID": "MOD_SCOPE_CONDITIONAL",
+      "Required_Slots": ["RESTRICTION_SCOPE", "RESTRICTION_BASIS"],
+      "Template_File": "MOD_SCOPE_CONDITIONAL.md"
+    },
+    {
+      "Modifier_Function": "SCOPE_RESTRICTION",
+      "Target_Category": "Proof",
+      "Target_Primitives": ["PROOF_CONFIRMED", "PROOF_FAILED", "VALIDATION_INCOMPLETE"],
+      "Composite_Primitive_ID": "MOD_SCOPE_PROOF",
+      "Required_Slots": ["RESTRICTION_SCOPE", "RESTRICTION_BASIS"],
+      "Template_File": "MOD_SCOPE_PROOF.md"
+    },
+    {
+      "Modifier_Function": "SCOPE_RESTRICTION",
+      "Target_Category": "Dependency",
+      "Target_Primitives": ["DEPENDENCY_DISCLOSURE", "DEPENDENCY_UNSATISFIED", "PRECONDITIONS_REQUIRED", "PRECONDITIONS_UNMET"],
+      "Composite_Primitive_ID": "MOD_SCOPE_DEPENDENCY",
+      "Required_Slots": ["RESTRICTION_SCOPE", "RESTRICTION_BASIS"],
+      "Template_File": "MOD_SCOPE_DEPENDENCY.md"
+    },
+    {
+      "Modifier_Function": "SCOPE_RESTRICTION",
+      "Target_Category": "Constraint",
+      "Target_Primitives": ["CONSTRAINT_DISCLOSURE", "CONSTRAINT_VIOLATED"],
+      "Composite_Primitive_ID": "MOD_SCOPE_CONSTRAINT",
+      "Required_Slots": ["RESTRICTION_SCOPE", "RESTRICTION_BASIS"],
+      "Template_File": "MOD_SCOPE_CONSTRAINT.md"
+    },
+    {
+      "Modifier_Function": "TEMPORAL_QUALIFICATION",
+      "Target_Category": "Assertion",
+      "Target_Primitives": ["ASSERTION_CONFIRMED", "ASSERTION_NEGATED", "ASSERTION_UNPROVEN"],
+      "Composite_Primitive_ID": "MOD_TEMPORAL_ASSERTION",
+      "Required_Slots": ["TEMPORAL_MARKER", "TEMPORAL_CONSTRAINT"],
+      "Template_File": "MOD_TEMPORAL_ASSERTION.md"
+    },
+    {
+      "Modifier_Function": "TEMPORAL_QUALIFICATION",
+      "Target_Category": "Conditional",
+      "Target_Primitives": ["CONDITIONAL_SATISFIED", "CONDITIONAL_UNSATISFIED"],
+      "Composite_Primitive_ID": "MOD_TEMPORAL_CONDITIONAL",
+      "Required_Slots": ["TEMPORAL_MARKER", "TEMPORAL_CONSTRAINT"],
+      "Template_File": "MOD_TEMPORAL_CONDITIONAL.md"
+    },
+    {
+      "Modifier_Function": "TEMPORAL_QUALIFICATION",
+      "Target_Category": "Proof",
+      "Target_Primitives": ["PROOF_CONFIRMED", "PROOF_FAILED", "VALIDATION_INCOMPLETE"],
+      "Composite_Primitive_ID": "MOD_TEMPORAL_PROOF",
+      "Required_Slots": ["TEMPORAL_MARKER", "TEMPORAL_CONSTRAINT"],
+      "Template_File": "MOD_TEMPORAL_PROOF.md"
+    },
+    {
+      "Modifier_Function": "TEMPORAL_QUALIFICATION",
+      "Target_Category": "Scope",
+      "Target_Primitives": ["SCOPE_LIMITATION", "SCOPE_VIOLATION"],
+      "Composite_Primitive_ID": "MOD_TEMPORAL_SCOPE",
+      "Required_Slots": ["TEMPORAL_MARKER", "TEMPORAL_CONSTRAINT"],
+      "Template_File": "MOD_TEMPORAL_SCOPE.md"
+    },
+    {
+      "Modifier_Function": "TEMPORAL_QUALIFICATION",
+      "Target_Category": "Dependency",
+      "Target_Primitives": ["DEPENDENCY_DISCLOSURE", "DEPENDENCY_UNSATISFIED", "PRECONDITIONS_REQUIRED", "PRECONDITIONS_UNMET"],
+      "Composite_Primitive_ID": "MOD_TEMPORAL_DEPENDENCY",
+      "Required_Slots": ["TEMPORAL_MARKER", "TEMPORAL_CONSTRAINT"],
+      "Template_File": "MOD_TEMPORAL_DEPENDENCY.md"
+    },
+    {
+      "Modifier_Function": "TEMPORAL_QUALIFICATION",
+      "Target_Category": "Constraint",
+      "Target_Primitives": ["CONSTRAINT_DISCLOSURE", "CONSTRAINT_VIOLATED"],
+      "Composite_Primitive_ID": "MOD_TEMPORAL_CONSTRAINT",
+      "Required_Slots": ["TEMPORAL_MARKER", "TEMPORAL_CONSTRAINT"],
+      "Template_File": "MOD_TEMPORAL_CONSTRAINT.md"
+    },
+    {
+      "Modifier_Function": "TEMPORAL_QUALIFICATION",
+      "Target_Category": "Audit",
+      "Target_Primitives": ["AUDIT_PASSED", "AUDIT_FAILED"],
+      "Composite_Primitive_ID": "MOD_TEMPORAL_AUDIT",
+      "Required_Slots": ["TEMPORAL_MARKER", "TEMPORAL_CONSTRAINT"],
+      "Template_File": "MOD_TEMPORAL_AUDIT.md"
+    },
+    {
+      "Modifier_Function": "STRENGTH_MODULATION",
+      "Target_Category": "Assertion",
+      "Target_Primitives": ["ASSERTION_CONFIRMED", "ASSERTION_NEGATED", "ASSERTION_UNPROVEN"],
+      "Composite_Primitive_ID": "MOD_STRENGTH_ASSERTION",
+      "Required_Slots": ["STRENGTH_LEVEL", "STRENGTH_BASIS"],
+      "Template_File": "MOD_STRENGTH_ASSERTION.md"
+    },
+    {
+      "Modifier_Function": "STRENGTH_MODULATION",
+      "Target_Category": "Conditional",
+      "Target_Primitives": ["CONDITIONAL_SATISFIED", "CONDITIONAL_UNSATISFIED"],
+      "Composite_Primitive_ID": "MOD_STRENGTH_CONDITIONAL",
+      "Required_Slots": ["STRENGTH_LEVEL", "STRENGTH_BASIS"],
+      "Template_File": "MOD_STRENGTH_CONDITIONAL.md"
+    },
+    {
+      "Modifier_Function": "STRENGTH_MODULATION",
+      "Target_Category": "Proof",
+      "Target_Primitives": ["PROOF_CONFIRMED", "PROOF_FAILED", "VALIDATION_INCOMPLETE"],
+      "Composite_Primitive_ID": "MOD_STRENGTH_PROOF",
+      "Required_Slots": ["STRENGTH_LEVEL", "STRENGTH_BASIS"],
+      "Template_File": "MOD_STRENGTH_PROOF.md"
+    },
+    {
+      "Modifier_Function": "DEPENDENCY_QUALIFICATION",
+      "Target_Category": "Assertion",
+      "Target_Primitives": ["ASSERTION_CONFIRMED", "ASSERTION_NEGATED", "ASSERTION_UNPROVEN"],
+      "Composite_Primitive_ID": "MOD_DEPENDENCY_ASSERTION",
+      "Required_Slots": ["DEPENDENCY_CONDITION", "DEPENDENCY_STATUS"],
+      "Template_File": "MOD_DEPENDENCY_ASSERTION.md"
+    },
+    {
+      "Modifier_Function": "DEPENDENCY_QUALIFICATION",
+      "Target_Category": "Conditional",
+      "Target_Primitives": ["CONDITIONAL_SATISFIED", "CONDITIONAL_UNSATISFIED"],
+      "Composite_Primitive_ID": "MOD_DEPENDENCY_CONDITIONAL",
+      "Required_Slots": ["DEPENDENCY_CONDITION", "DEPENDENCY_STATUS"],
+      "Template_File": "MOD_DEPENDENCY_CONDITIONAL.md"
+    },
+    {
+      "Modifier_Function": "DEPENDENCY_QUALIFICATION",
+      "Target_Category": "Proof",
+      "Target_Primitives": ["PROOF_CONFIRMED", "PROOF_FAILED", "VALIDATION_INCOMPLETE"],
+      "Composite_Primitive_ID": "MOD_DEPENDENCY_PROOF",
+      "Required_Slots": ["DEPENDENCY_CONDITION", "DEPENDENCY_STATUS"],
+      "Template_File": "MOD_DEPENDENCY_PROOF.md"
+    },
+    {
+      "Modifier_Function": "REMEDIATION_ATTACHMENT",
+      "Target_Category": "Proof",
+      "Target_Primitives": ["PROOF_FAILED"],
+      "Composite_Primitive_ID": "MOD_REMEDIATION_PROOF",
+      "Required_Slots": ["REMEDIATION_PATH", "REMEDIATION_PRIORITY"],
+      "Template_File": "MOD_REMEDIATION_PROOF.md"
+    },
+    {
+      "Modifier_Function": "REMEDIATION_ATTACHMENT",
+      "Target_Category": "Scope",
+      "Target_Primitives": ["SCOPE_VIOLATION"],
+      "Composite_Primitive_ID": "MOD_REMEDIATION_SCOPE",
+      "Required_Slots": ["REMEDIATION_PATH", "REMEDIATION_PRIORITY"],
+      "Template_File": "MOD_REMEDIATION_SCOPE.md"
+    },
+    {
+      "Modifier_Function": "REMEDIATION_ATTACHMENT",
+      "Target_Category": "Dependency",
+      "Target_Primitives": ["DEPENDENCY_UNSATISFIED", "PRECONDITIONS_UNMET"],
+      "Composite_Primitive_ID": "MOD_REMEDIATION_DEPENDENCY",
+      "Required_Slots": ["REMEDIATION_PATH", "REMEDIATION_PRIORITY"],
+      "Template_File": "MOD_REMEDIATION_DEPENDENCY.md"
+    },
+    {
+      "Modifier_Function": "REMEDIATION_ATTACHMENT",
+      "Target_Category": "Constraint",
+      "Target_Primitives": ["CONSTRAINT_VIOLATED"],
+      "Composite_Primitive_ID": "MOD_REMEDIATION_CONSTRAINT",
+      "Required_Slots": ["REMEDIATION_PATH", "REMEDIATION_PRIORITY"],
+      "Template_File": "MOD_REMEDIATION_CONSTRAINT.md"
+    },
+    {
+      "Modifier_Function": "REMEDIATION_ATTACHMENT",
+      "Target_Category": "Audit",
+      "Target_Primitives": ["AUDIT_FAILED"],
+      "Composite_Primitive_ID": "MOD_REMEDIATION_AUDIT",
+      "Required_Slots": ["REMEDIATION_PATH", "REMEDIATION_PRIORITY"],
+      "Template_File": "MOD_REMEDIATION_AUDIT.md"
+    }
+  ],
+
+  "Summary": {
+    "Total_Composite_Primitives": 26,
+    "By_Function": {
+      "EPISTEMIC_QUALIFICATION": 3,
+      "SCOPE_RESTRICTION": 5,
+      "TEMPORAL_QUALIFICATION": 7,
+      "STRENGTH_MODULATION": 3,
+      "DEPENDENCY_QUALIFICATION": 3,
+      "REMEDIATION_ATTACHMENT": 5
+    }
+  }
+}

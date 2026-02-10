@@ -179,6 +179,54 @@
     "COMPREHENSION_GOALS": {
       "Slot_Type": "Text",
       "Description": "Learning or comprehension objectives."
+    },
+    "EPISTEMIC_STATUS": {
+      "Slot_Type": "Text",
+      "Description": "Certainty classification of the modified assertion, reflecting the upstream epistemic state."
+    },
+    "CONFIDENCE_BASIS": {
+      "Slot_Type": "Identifier",
+      "Description": "Reference to the basis for the stated confidence level, typically a proof status or grounding artifact."
+    },
+    "RESTRICTION_SCOPE": {
+      "Slot_Type": "Text",
+      "Description": "Scope boundary to which the modified assertion is restricted, as determined by the upstream meaning state."
+    },
+    "RESTRICTION_BASIS": {
+      "Slot_Type": "Identifier",
+      "Description": "Reference to the justification for scope restriction, typically a scope declaration or boundary artifact."
+    },
+    "TEMPORAL_MARKER": {
+      "Slot_Type": "Text",
+      "Description": "Temporal reference point indicating when the semantic state was resolved or established."
+    },
+    "TEMPORAL_CONSTRAINT": {
+      "Slot_Type": "Text",
+      "Description": "Conditions bounding the temporal validity of the rendered assertion."
+    },
+    "STRENGTH_LEVEL": {
+      "Slot_Type": "Text",
+      "Description": "Assertoric force classification: necessary, provisional, or indicated. Determined by SSC classification."
+    },
+    "STRENGTH_BASIS": {
+      "Slot_Type": "Identifier",
+      "Description": "Reference to the basis for strength modulation, typically a Semantic State Condition classification."
+    },
+    "DEPENDENCY_CONDITION": {
+      "Slot_Type": "Text",
+      "Description": "Dependency relationship on which the modified assertion is contingent."
+    },
+    "DEPENDENCY_STATUS": {
+      "Slot_Type": "Status",
+      "Description": "Current status of the stated dependency condition."
+    },
+    "REMEDIATION_PATH": {
+      "Slot_Type": "Text",
+      "Description": "Prescribed resolution path for a failure state, rendered without claiming resolution has occurred."
+    },
+    "REMEDIATION_PRIORITY": {
+      "Slot_Type": "Text",
+      "Description": "Priority classification for remediation, determined by the upstream governance state."
     }
   },
 
