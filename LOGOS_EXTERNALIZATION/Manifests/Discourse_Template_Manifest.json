@@ -1,0 +1,49 @@
+{
+  "Manifest_Metadata": {
+    "Manifest_Name": "Discourse_Template_Manifest",
+    "Manifest_Type": "Template_Manifest",
+    "Template_Type": "DISCOURSE",
+    "Description": "Enumerates all DISCOURSE-type templates available for discovery and metadata lookup. Each entry corresponds to one discourse function in the closed set.",
+    "Source_Contracts": {
+      "Header_Schema": "Externalization_Header_Schema.json",
+      "Template_Type_Registry": "Template_Type_Registry.json",
+      "Semantic_Registry": "Semantic_Lexicon_Registry.json",
+      "Assembly_Constraint_Schema": "Discourse_Assembly_Constraint_Schema.json",
+      "Function_Registry": "Discourse_Function_Registry.json"
+    }
+  },
+  "Templates": [
+    {
+      "Template_ID": "DISCOURSE_01_EXPLANATION_CHAIN",
+      "File_Name": "DISCOURSE_01_EXPLANATION_CHAIN.md",
+      "Template_Type": "DISCOURSE",
+      "Primitive": "EXPLANATION_CHAIN",
+      "Slots": ["DISCOURSE_FUNCTION_ID", "ASSEMBLY_STATEMENT_COUNT", "ORDERING_SOURCE"],
+      "Runtime_Eligible": true
+    },
+    {
+      "Template_ID": "DISCOURSE_02_ARGUMENT_FLOW",
+      "File_Name": "DISCOURSE_02_ARGUMENT_FLOW.md",
+      "Template_Type": "DISCOURSE",
+      "Primitive": "ARGUMENT_FLOW",
+      "Slots": ["DISCOURSE_FUNCTION_ID", "ASSEMBLY_STATEMENT_COUNT", "ORDERING_SOURCE"],
+      "Runtime_Eligible": true
+    },
+    {
+      "Template_ID": "DISCOURSE_03_PEDAGOGICAL_PROGRESSION",
+      "File_Name": "DISCOURSE_03_PEDAGOGICAL_PROGRESSION.md",
+      "Template_Type": "DISCOURSE",
+      "Primitive": "PEDAGOGICAL_PROGRESSION",
+      "Slots": ["DISCOURSE_FUNCTION_ID", "ASSEMBLY_STATEMENT_COUNT", "ORDERING_SOURCE"],
+      "Runtime_Eligible": true
+    },
+    {
+      "Template_ID": "DISCOURSE_04_CONTRASTIVE_STRUCTURE",
+      "File_Name": "DISCOURSE_04_CONTRASTIVE_STRUCTURE.md",
+      "Template_Type": "DISCOURSE",
+      "Primitive": "CONTRASTIVE_STRUCTURE",
+      "Slots": ["DISCOURSE_FUNCTION_ID", "ASSEMBLY_STATEMENT_COUNT", "ORDERING_SOURCE"],
+      "Runtime_Eligible": true
+    }
+  ]
+}

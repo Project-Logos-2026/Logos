@@ -1,0 +1,133 @@
+{
+  "Table_Name": "Discourse_Marker_Selection_Table",
+  "Artifact_Type": "Externalization_Registry",
+  "Authority_Level": "Canonical",
+  "Runtime_Visible": true,
+  "Schema_Version": "1.0",
+  "Description": "Defines the total deterministic function from (discourse_function, position_context) to structural marker. Every valid assembly position has exactly one entry. No gaps permitted.",
+
+  "Selection_Rules": {
+
+    "EXPLANATION_CHAIN": {
+      "between_statements": {
+        "rule": "Select marker based on the semantic relation linking the preceding CS source element to the following CS source element",
+        "conditions": [
+          {
+            "condition": "SR-01 (grounds) relation exists between preceding and following source elements",
+            "marker": "GROUNDING_TRANSITION",
+            "priority": 1
+          },
+          {
+            "condition": "SR-04 (depends_on) relation exists between preceding and following source elements",
+            "marker": "DEPENDENCY_TRANSITION",
+            "priority": 2
+          },
+          {
+            "condition": "No direct SR-01 or SR-04 relation (independent nodes ordered by tie-breaking)",
+            "marker": "DEPENDENCY_TRANSITION",
+            "priority": 3
+          }
+        ],
+        "determinism": "Priority ordering resolves all ambiguity. SR-01 takes precedence over SR-04. DEPENDENCY_TRANSITION is the default."
+      },
+      "before_explanatory": {
+        "condition": "EXPLANATORY template is attached",
+        "marker": "EXPLANATORY_BOUNDARY",
+        "placement": "After final CS, before EXPLANATORY output"
+      }
+    },
+
+    "ARGUMENT_FLOW": {
+      "before_first_statement": {
+        "condition": "Always",
+        "marker": "PREMISE_BOUNDARY",
+        "placement": "Before the first CS in the assembly"
+      },
+      "between_statements": {
+        "rule": "Select marker based on position relative to conclusion",
+        "conditions": [
+          {
+            "condition": "Following CS is the conclusion (its source element corresponds to Sequencing_Termination_Reason)",
+            "marker": "CONCLUSION_BOUNDARY",
+            "priority": 1
+          },
+          {
+            "condition": "Both preceding and following CSs are non-conclusion statements",
+            "marker": "INFERENCE_STEP_TRANSITION",
+            "priority": 2
+          }
+        ],
+        "determinism": "Conclusion identification is deterministic via Sequencing_Termination_Reason. All other transitions are inference steps."
+      },
+      "before_explanatory": {
+        "condition": "EXPLANATORY template is attached",
+        "marker": "EXPLANATORY_BOUNDARY",
+        "placement": "After final CS (conclusion), before EXPLANATORY output"
+      }
+    },
+
+    "PEDAGOGICAL_PROGRESSION": {
+      "between_statements_same_tier": {
+        "rule": "Select marker based on semantic relation within the same dependency depth",
+        "conditions": [
+          {
+            "condition": "SR-01 (grounds) relation exists between preceding and following source elements",
+            "marker": "GROUNDING_TRANSITION",
+            "priority": 1
+          },
+          {
+            "condition": "No SR-01 relation (co-tier nodes ordered by tie-breaking)",
+            "marker": "PEDAGOGICAL_TRANSITION",
+            "priority": 2
+          }
+        ],
+        "determinism": "SR-01 takes precedence. PEDAGOGICAL_TRANSITION is the default within a tier."
+      },
+      "between_tiers": {
+        "condition": "Following CS has dependency depth > preceding CS dependency depth",
+        "marker": "TIER_BOUNDARY",
+        "placement": "Inserted exactly once at each depth increment",
+        "determinism": "Depth comparison is a deterministic integer comparison"
+      },
+      "before_explanatory": {
+        "condition": "EXPLANATORY template is attached",
+        "marker": "EXPLANATORY_BOUNDARY",
+        "placement": "After final CS, before EXPLANATORY output"
+      }
+    },
+
+    "CONTRASTIVE_STRUCTURE": {
+      "within_pair": {
+        "condition": "Between the affirmed and contrasted CS within a single contrastive pair",
+        "marker": "CONTRASTIVE_CONNECTIVE",
+        "determinism": "Exactly one per pair. Affirmed CS always precedes contrasted CS."
+      },
+      "between_pairs": {
+        "condition": "Between two distinct contrastive pairs",
+        "marker": "PAIR_SEPARATOR",
+        "determinism": "Pair ordering is by differentiating attribute enumeration order"
+      },
+      "scope_transition": {
+        "condition": "Differentiating attribute is scope (SP-11) and a new scope context begins",
+        "marker": "SCOPE_BOUNDARY_MARKER",
+        "placement": "Before the first CS in a scope-differentiated pair",
+        "determinism": "Present only when scope is the differentiating attribute. Scope ordering is lexicographic on BOUNDARY_IDENTIFIER."
+      },
+      "before_explanatory": {
+        "condition": "EXPLANATORY template is attached",
+        "marker": "EXPLANATORY_BOUNDARY",
+        "placement": "After final contrastive pair, before EXPLANATORY output"
+      }
+    }
+  },
+
+  "Completeness_Declaration": "Every valid assembly position for every discourse function has exactly one marker selection rule. The selection function is total: no position in any well-formed assembly lacks a defined marker. Positions not between CSs (e.g., before first CS in EXPLANATION_CHAIN, after last CS without EXPLANATORY) receive no marker.",
+
+  "Invariants": [
+    "Marker selection is a total deterministic function",
+    "Priority ordering resolves all ambiguity without heuristics",
+    "No marker carries semantic content",
+    "EXPLANATORY_BOUNDARY is the only marker that appears after the final CS",
+    "All markers referenced here must exist in the Structural_Marker_Registry of the Discourse_Assembly_Constraint_Schema"
+  ]
+}

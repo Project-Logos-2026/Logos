@@ -82,5 +82,47 @@
       "minItems": 1
     }
   },
-  "additionalProperties": false
+"additionalProperties": false,
+"Artifact_Type": "Registry_Addendum",
+  "Authority_Level": "Canonical",
+  "Target_Registry": "Slot_Registry",
+  "Mutation_Type": "Append_Only",
+  "Description": "Defines the slot additions and Primitive_Map extensions required for Layer 4 (DISCOURSE) templates. To be merged into the canonical Slot Registry via append-only operation.",
+
+  "New_Slots": {
+    "DISCOURSE_FUNCTION_ID": {
+      "Slot_Type": "Identifier",
+      "Description": "Canonical identifier of the discourse function applied to the assembly. Must resolve in the Discourse Function Registry."
+    },
+    "ASSEMBLY_STATEMENT_COUNT": {
+      "Slot_Type": "Text",
+      "Description": "Count of compiled statements included in the discourse assembly. Derived from the Resolved Output Packet semantic element count within the discourse function scope."
+    },
+    "ORDERING_SOURCE": {
+      "Slot_Type": "Identifier",
+      "Description": "Identifier of the ordering authority used for the assembly. Must match the Ordering_Source field for the active discourse function in the Discourse Assembly Constraint Schema."
+    }
+  },
+
+  "New_Primitive_Map_Entries": {
+    "EXPLANATION_CHAIN": {
+      "Slots": ["DISCOURSE_FUNCTION_ID", "ASSEMBLY_STATEMENT_COUNT", "ORDERING_SOURCE"]
+    },
+    "ARGUMENT_FLOW": {
+      "Slots": ["DISCOURSE_FUNCTION_ID", "ASSEMBLY_STATEMENT_COUNT", "ORDERING_SOURCE"]
+    },
+    "PEDAGOGICAL_PROGRESSION": {
+      "Slots": ["DISCOURSE_FUNCTION_ID", "ASSEMBLY_STATEMENT_COUNT", "ORDERING_SOURCE"]
+    },
+    "CONTRASTIVE_STRUCTURE": {
+      "Slots": ["DISCOURSE_FUNCTION_ID", "ASSEMBLY_STATEMENT_COUNT", "ORDERING_SOURCE"]
+    }
+  },
+
+  "Verification": {
+    "No_Existing_Slots_Modified": true,
+    "No_Existing_Primitive_Map_Entries_Modified": true,
+    "New_Slot_Count": 3,
+    "New_Primitive_Map_Entry_Count": 4
+  }
 }

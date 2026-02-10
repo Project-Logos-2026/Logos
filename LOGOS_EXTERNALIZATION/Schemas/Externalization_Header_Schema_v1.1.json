@@ -4,8 +4,18 @@
   "Authority_Level": "Canonical",
   "Applies_To": "LOGOS_EXTERNALIZATION/Templates/**",
   "Runtime_Visible": true,
-  "Schema_Version": "1.0",
+  "Schema_Version": "1.1",
   "Description": "Defines the mandatory machine-readable header for all externalization templates. This schema provides a stable compiler anchor and prevents future normalization passes.",
+  "Schema_Change_Log": [
+    {
+      "From_Version": "1.0",
+      "To_Version": "1.1",
+      "Reason": "Introduction of Layer 4 (DISCOURSE) templates",
+      "Scope": "Enumerated value extension only — Template_Type.Allowed_Values extended with DISCOURSE",
+      "Backward_Compatibility": "Preserved — no breaking changes, no field additions, no field removals",
+      "Authorization": "Step 4 Phase B governance decision"
+    }
+  ],
   "Required_Fields": {
     "Artifact_Type": {
       "Type": "string",
@@ -17,7 +27,8 @@
         "AXIOM",
         "MODIFIER",
         "CONTEXTUAL",
-        "EXPLANATORY"
+        "EXPLANATORY",
+        "DISCOURSE"
       ]
     },
     "Primitive": {
@@ -38,7 +49,7 @@
     },
     "Schema_Version": {
       "Type": "string",
-      "Fixed_Value": "1.0"
+      "Fixed_Value": "1.1"
     }
   },
   "Invariants": [
