@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": ["text", "linkage", "provenance"],
+  "properties": {
+    "text": {
+      "type": "string",
+      "description": "Rendered natural language output"
+    },
+    "linkage": {
+      "type": "array",
+      "description": "Sentence to artifact linkage records",
+      "items": {
+        "type": "object",
+        "required": ["sentence_id", "template_id", "artifact_refs"],
+        "properties": {
+          "sentence_id": { "type": "string" },
+          "template_id": { "type": "string" },
+          "artifact_refs": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Rendering provenance and validation status"
+    }
+  },
+  "additionalProperties": false
+}

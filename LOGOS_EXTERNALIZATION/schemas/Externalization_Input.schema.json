@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": ["artifacts", "controls", "provenance"],
+  "properties": {
+    "artifacts": {
+      "type": "object",
+      "description": "Finalized LOGOS artifacts including math, PXL, and audits"
+    },
+    "controls": {
+      "type": "object",
+      "properties": {
+        "verbosity": {
+          "type": "string",
+          "enum": ["terse", "standard", "expanded"]
+        },
+        "tone": {
+          "type": "string",
+          "enum": ["neutral", "explanatory", "warm"]
+        },
+        "mode": {
+          "type": "string",
+          "enum": ["technical", "declarative", "pedagogical"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Audit lineage and artifact identifiers"
+    }
+  },
+  "additionalProperties": false
+}

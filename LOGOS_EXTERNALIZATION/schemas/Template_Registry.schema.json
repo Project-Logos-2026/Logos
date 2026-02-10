@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "patternProperties": {
+    "^[A-Z0-9_]+$": {
+      "type": "object",
+      "required": ["description", "slots", "allowed_modes"],
+      "properties": {
+        "description": { "type": "string" },
+        "slots": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "allowed_modes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["technical", "declarative", "pedagogical"]
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
