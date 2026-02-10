@@ -1,0 +1,42 @@
+{
+  "Schema_Name": "Template_Manifest_Schema",
+  "Artifact_Type": "Schema",
+  "Authority_Level": "Non_Authoritative",
+  "Runtime_Visible": true,
+  "Schema_Version": "1.0",
+  "Description": "Defines the structure for non-authoritative manifests that enumerate templates for discovery and metadata lookup.",
+
+  "Manifest_Metadata": {
+    "Manifest_Name": "string",
+    "Manifest_Type": "Template_Manifest",
+    "Template_Type": "string",
+    "Description": "string",
+    "Source_Contracts": {
+      "Header_Schema": "string",
+      "Template_Type_Registry": "string",
+      "Semantic_Registry": "string"
+    }
+  },
+
+  "Templates": [
+    {
+      "Template_ID": "string",
+      "File_Name": "string",
+      "Template_Type": "string",
+      "Primitive": "string",
+      "Slots": [
+        "string"
+      ],
+      "Runtime_Eligible": true
+    }
+  ],
+
+  "Invariants": [
+    "Manifest entries must correspond to existing template files",
+    "Manifest entries must not introduce new primitives",
+    "Manifest entries must not introduce new template types",
+    "Manifest entries must not redefine slot semantics",
+    "Manifest is declarative and non-authoritative",
+    "Ordering must be deterministic"
+  ]
+}

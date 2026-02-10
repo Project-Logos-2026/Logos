@@ -1,0 +1,79 @@
+{
+  "Registry_Name": "Template_Type_Registry",
+  "Artifact_Type": "Externalization_Registry",
+  "Authority_Level": "Canonical",
+  "Runtime_Visible": true,
+  "Schema_Version": "1.0",
+  "Description": "Canonical registry defining template roles used by the LOGOS externalization system. This registry is authoritative for tooling, runtime compilation, and external collaborators.",
+  "Template_Types": {
+    "AXIOM": {
+      "Category": "Foundational",
+      "Runtime_Priority": 1,
+      "Composable": true,
+      "Sequence_Class": "Base",
+      "Definition": "A foundational declarative template expressing a truth-bearing logical or semantic state.",
+      "Runtime_Semantics": [
+        "Always eligible for compilation",
+        "Loaded before all other template types",
+        "May appear alone or as the anchor for composite sentences"
+      ],
+      "Constraints": [
+        "Must bind to exactly one canonical primitive",
+        "Must be slot-complete",
+        "Must not encode interpretation or intent"
+      ]
+    },
+    "MODIFIER": {
+      "Category": "Qualifying",
+      "Runtime_Priority": 2,
+      "Composable": true,
+      "Sequence_Class": "Dependent",
+      "Definition": "A template that qualifies, constrains, or adjusts an AXIOM without standing independently.",
+      "Runtime_Semantics": [
+        "Never compiled alone",
+        "Must attach to an AXIOM",
+        "Applied after AXIOM loading"
+      ],
+      "Constraints": [
+        "Must reference a parent AXIOM",
+        "Must not introduce new primitives"
+      ]
+    },
+    "CONTEXTUAL": {
+      "Category": "Situational",
+      "Runtime_Priority": 3,
+      "Composable": true,
+      "Sequence_Class": "Context",
+      "Definition": "A template that introduces scope, boundary, or situational context into a compiled sentence.",
+      "Runtime_Semantics": [
+        "Applied after AXIOM and MODIFIER templates",
+        "May stack with other CONTEXTUAL templates"
+      ],
+      "Constraints": [
+        "Must not alter logical truth",
+        "Context only, no validation or negation"
+      ]
+    },
+    "EXPLANATORY": {
+      "Category": "Human_Facing",
+      "Runtime_Priority": 4,
+      "Composable": false,
+      "Sequence_Class": "Terminal",
+      "Definition": "A human-oriented explanatory template that does not participate in logical composition.",
+      "Runtime_Semantics": [
+        "Never used in logical inference",
+        "Appended last if present",
+        "Optional in compiled output"
+      ],
+      "Constraints": [
+        "Must not affect runtime decision logic"
+      ]
+    }
+  },
+  "Invariants": [
+    "Template types are closed and finite",
+    "Runtime sequencing is determined by Runtime_Priority",
+    "No template may declare an undefined Template_Type",
+    "Existing template types must not be redefined"
+  ]
+}

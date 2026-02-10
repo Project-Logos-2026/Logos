@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Semantic Registry Schema",
+  "type": "object",
+  "required": [
+    "registry_name",
+    "phase",
+    "layer",
+    "version",
+    "generated_at",
+    "governed_by_schema",
+    "entries"
+  ],
+  "properties": {
+    "registry_name": {
+      "type": "string",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "phase": {
+      "type": "integer",
+      "const": 5
+    },
+    "layer": {
+      "type": "string",
+      "const": "Natural_Language_Externalization"
+    },
+    "version": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "governed_by_schema": {
+      "type": "string"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "term",
+          "term_id",
+          "part_of_speech",
+          "natural_language_definition",
+          "usage_constraints",
+          "lambda_signature",
+          "lambda_role",
+          "pxl_grounding",
+          "pxl_constraints",
+          "status",
+          "introduced_in_version"
+        ],
+        "properties": {
+          "term": {
+            "type": "string"
+          },
+          "term_id": {
+            "type": "string",
+            "pattern": "^[A-Z0-9_]+$"
+          },
+          "part_of_speech": {
+            "type": "string",
+            "enum": ["noun", "verb", "adjective", "operator", "state"]
+          },
+          "natural_language_definition": {
+            "type": "string"
+          },
+          "usage_constraints": {
+            "type": "string"
+          },
+          "lambda_signature": {
+            "type": "string"
+          },
+          "lambda_role": {
+            "type": "string",
+            "enum": ["predicate", "function", "relation", "constant", "state"]
+          },
+          "lambda_notes": {
+            "type": "string"
+          },
+          "pxl_grounding": {
+            "type": "string"
+          },
+          "pxl_constraints": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["canonical", "deprecated", "reserved"]
+          },
+          "introduced_in_version": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
