@@ -1,5 +1,5 @@
 # FILE: I2_Triune_Fractal_Binding.py
-# PATH: LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/_core/I2_Triune_Fractal_Binding.py
+# PATH: LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Core/I2_Triune_Fractal_Binding.py
 # PROJECT: LOGOS System
 # PHASE: Phase-G
 # STEP: TRI-CORE Agent Binding (I2)
@@ -48,7 +48,7 @@ observability:
 
 from typing import Any, Dict, List, Tuple
 
-from Common.Recursive_Cognition.Triune_Sierpinski_Core import (
+from Cognition_Normalized.Triune_Sierpinski_Core import (
     TriuneSierpinskiCore,
     TriuneSummary,
 )

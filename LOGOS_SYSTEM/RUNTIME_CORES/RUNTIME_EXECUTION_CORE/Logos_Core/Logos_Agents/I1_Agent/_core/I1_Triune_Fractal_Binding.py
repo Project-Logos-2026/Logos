@@ -48,7 +48,7 @@ observability:
 
 from typing import Any, Dict, List, Tuple
 
-from Common.Recursive_Cognition.Triune_Sierpinski_Core import (
+from Cognition_Normalized.Triune_Sierpinski_Core import (
     TriuneSierpinskiCore,
     TriuneSummary,
 )
