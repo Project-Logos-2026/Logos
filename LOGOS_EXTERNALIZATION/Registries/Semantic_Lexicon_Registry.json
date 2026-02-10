@@ -677,6 +677,62 @@
       "pxl_constraints": "Audit failure: either grounding-entailment gap or coherence failure. NB_modal_power: non-incoherent content has possible global entailment. A7_triune_necessity (□ (coherence 𝕆)) anchors that coherence is necessarily attainable. Preserves audit failure state.",
       "status": "canonical",
       "introduced_in_version": "1.1.0"
+    },
+    {
+      "term": "CTX_TEMPORAL_COMPILED",
+      "term_id": "CTX_TEMPORAL_COMPILED",
+      "part_of_speech": "operator",
+      "natural_language_definition": "A non-assertive contextual operator that frames a compiled semantic statement with the temporal reference at which the statement was resolved, without altering its truth content.",
+      "usage_constraints": "Non-assertive contextual framing; applies to compiled statements only.",
+      "lambda_signature": "CompiledStatement → ContextFrame → CompiledStatement",
+      "lambda_role": "function",
+      "lambda_notes": "Higher-order contextual wrapper. Applies temporal framing derived from audit and sequencing fields to a compiled statement. Preserves truth and does not inspect or modify internal logical structure.",
+      "pxl_grounding": "Audit-positioned entailment projection",
+      "pxl_constraints": "Truth-preserving; no modal or epistemic modification.",
+      "status": "canonical",
+      "introduced_in_version": "1.2.0"
+    },
+    {
+      "term": "CTX_EPISTEMIC_COMPILED",
+      "term_id": "CTX_EPISTEMIC_COMPILED",
+      "part_of_speech": "operator",
+      "natural_language_definition": "A non-assertive contextual operator that frames a compiled semantic statement with its epistemic grounding basis and evidential support, without qualifying certainty or asserting new claims.",
+      "usage_constraints": "Non-assertive epistemic framing; grounding description only.",
+      "lambda_signature": "CompiledStatement → ContextFrame → CompiledStatement",
+      "lambda_role": "function",
+      "lambda_notes": "Higher-order contextual wrapper. Renders grounding and evidential relations from packet fields around a compiled statement. Truth-preserving and non-qualificatory.",
+      "pxl_grounding": "grounded_in relation (PXL kernel)",
+      "pxl_constraints": "Truth-preserving; no certainty qualification.",
+      "status": "canonical",
+      "introduced_in_version": "1.2.0"
+    },
+    {
+      "term": "CTX_DOMAIN_COMPILED",
+      "term_id": "CTX_DOMAIN_COMPILED",
+      "part_of_speech": "operator",
+      "natural_language_definition": "A non-assertive contextual operator that frames a compiled semantic statement within the operational domain and boundary in which it was produced, without restricting or modifying scope.",
+      "usage_constraints": "Non-assertive domain framing; scope declaration only.",
+      "lambda_signature": "CompiledStatement → ContextFrame → CompiledStatement",
+      "lambda_role": "function",
+      "lambda_notes": "Higher-order contextual wrapper. Declares domain provenance for a compiled statement using packet-derived scope descriptors. Does not impose scope limitations or alter entailments.",
+      "pxl_grounding": "coherence-bounded entailment domain",
+      "pxl_constraints": "Truth-preserving; no scope restriction.",
+      "status": "canonical",
+      "introduced_in_version": "1.2.0"
+    },
+    {
+      "term": "CTX_OPERATIONAL_COMPILED",
+      "term_id": "CTX_OPERATIONAL_COMPILED",
+      "part_of_speech": "operator",
+      "natural_language_definition": "A non-assertive contextual operator that frames a compiled semantic statement with the operational process and termination context by which it was produced, without evaluating outcomes.",
+      "usage_constraints": "Non-assertive operational framing; transformation provenance only.",
+      "lambda_signature": "CompiledStatement → ContextFrame → CompiledStatement",
+      "lambda_role": "function",
+      "lambda_notes": "Higher-order contextual wrapper. Projects transformation provenance and termination status onto a compiled statement. Preserves truth and avoids any operational judgment.",
+      "pxl_grounding": "sequencing termination classification",
+      "pxl_constraints": "Truth-preserving; no evaluation of outcome.",
+      "status": "canonical",
+      "introduced_in_version": "1.2.0"
     }
   ]
 }

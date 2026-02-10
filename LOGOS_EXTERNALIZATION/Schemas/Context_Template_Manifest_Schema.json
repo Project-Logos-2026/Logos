@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Context_Template_Manifest_Schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["Artifact_Type", "Schema_Version", "Templates"],
+  "properties": {
+    "Artifact_Type": { "type": "string", "const": "Context_Template_Manifest" },
+    "Schema_Version": { "type": "string", "const": "1.0" },
+    "Templates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["template_id", "template_type", "status"],
+        "properties": {
+          "template_id": { "type": "string" },
+          "template_type": { "type": "string", "const": "CONTEXTUAL" },
+          "status": { "type": "string", "enum": ["canonical", "deprecated"] }
+        }
+      }
+    }
+  }
+}

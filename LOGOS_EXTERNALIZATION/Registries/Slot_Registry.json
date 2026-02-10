@@ -227,6 +227,38 @@
     "REMEDIATION_PRIORITY": {
       "Slot_Type": "Text",
       "Description": "Priority classification for remediation, determined by the upstream governance state."
+    },
+    "TEMPORAL_REFERENCE_POINT": {
+      "Slot_Type": "Text",
+      "Description": "Temporal reference point for when the compiled semantic state was resolved (audit timestamp or equivalent marker). Used by CTX_TEMPORAL_COMPILED."
+    },
+    "TEMPORAL_RESOLUTION_CONTEXT": {
+      "Slot_Type": "Text",
+      "Description": "Temporal resolution context describing the establishment window or sequencing/audit context under which the statement was resolved. Used by CTX_TEMPORAL_COMPILED."
+    },
+    "GROUNDING_BASIS": {
+      "Slot_Type": "Text",
+      "Description": "Grounding basis descriptor for the compiled statement, traceable to Meaning_State_Reference grounding relations. Used by CTX_EPISTEMIC_COMPILED."
+    },
+    "EVIDENTIAL_CHAIN": {
+      "Slot_Type": "Text",
+      "Description": "Evidential/dependency chain descriptor supporting the compiled statement, traceable to Meaning_State_Reference and/or PXL_Formalization. Used by CTX_EPISTEMIC_COMPILED."
+    },
+    "DOMAIN_IDENTIFIER": {
+      "Slot_Type": "Identifier",
+      "Description": "Identifier naming the operational domain within which the compiled statement was produced (domain label). Used by CTX_DOMAIN_COMPILED."
+    },
+    "DOMAIN_BOUNDARY": {
+      "Slot_Type": "Text",
+      "Description": "Boundary descriptor stating the domain limits applicable to the compiled statement (declarative framing, not a restriction operator). Used by CTX_DOMAIN_COMPILED."
+    },
+    "TRANSFORMATION_REFERENCE": {
+      "Slot_Type": "Identifier",
+      "Description": "Reference identifier for the applied transformation/process that produced the compiled statement (Applied_Transformation_ID or equivalent). Used by CTX_OPERATIONAL_COMPILED."
+    },
+    "TERMINATION_CONTEXT": {
+      "Slot_Type": "Status",
+      "Description": "Sequencing termination status/context describing how resolution concluded (Sequencing_Termination_Reason). Used by CTX_OPERATIONAL_COMPILED."
     }
   },
 
