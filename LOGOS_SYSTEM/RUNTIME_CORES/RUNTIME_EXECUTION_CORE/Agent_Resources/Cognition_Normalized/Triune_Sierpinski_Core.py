@@ -1,5 +1,5 @@
 # FILE: Triune_Sierpinski_Core.py
-# PATH: LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Common/Recursive_Cognition/Triune_Sierpinski_Core.py
+# PATH: LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Agent_Resources/Cognition_Normalized/Triune_Sierpinski_Core.py
 # PROJECT: LOGOS System
 # PHASE: Phase-G
 # STEP: TRI-CORE Shared Substrate
