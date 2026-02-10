@@ -68,6 +68,22 @@
       "Constraints": [
         "Must not affect runtime decision logic"
       ]
+    },
+    "DISCOURSE": {
+      "Category": "Human_Facing",
+      "Runtime_Priority": 5,
+      "Composable": true,
+      "Sequence_Class": "NonTerminal",
+      "Definition": "A multi-statement compositional template for discourse assembly.",
+      "Runtime_Semantics": [
+        "Supports multi-statement composition",
+        "May wrap or aggregate multiple statements",
+        "Not used in logical inference"
+      ],
+      "Constraints": [
+        "Must not alter logical truth",
+        "Must not affect runtime decision logic"
+      ]
     }
   },
   "Invariants": [
