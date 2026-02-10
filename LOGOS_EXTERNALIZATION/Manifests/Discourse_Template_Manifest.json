@@ -13,36 +13,77 @@
     }
   },
   "Templates": [
+  
     {
-      "Template_ID": "DISCOURSE_01_EXPLANATION_CHAIN",
-      "File_Name": "DISCOURSE_01_EXPLANATION_CHAIN.md",
+      "Template_ID": "EXPLANATION_CHAIN__DEPENDENCY_ORDERED",
+      "File_Name": "EXPLANATION_CHAIN__DEPENDENCY_ORDERED.template",
       "Template_Type": "DISCOURSE",
       "Primitive": "EXPLANATION_CHAIN",
-      "Slots": ["DISCOURSE_FUNCTION_ID", "ASSEMBLY_STATEMENT_COUNT", "ORDERING_SOURCE"],
+      "Slots": [],
       "Runtime_Eligible": true
     },
     {
-      "Template_ID": "DISCOURSE_02_ARGUMENT_FLOW",
-      "File_Name": "DISCOURSE_02_ARGUMENT_FLOW.md",
+      "Template_ID": "EXPLANATION_CHAIN__GROUNDING_PRIORITY",
+      "File_Name": "EXPLANATION_CHAIN__GROUNDING_PRIORITY.template",
+      "Template_Type": "DISCOURSE",
+      "Primitive": "EXPLANATION_CHAIN",
+      "Slots": [],
+      "Runtime_Eligible": true
+    },
+    {
+      "Template_ID": "ARGUMENT_FLOW__PREMISES_TO_CONCLUSION",
+      "File_Name": "ARGUMENT_FLOW__PREMISES_TO_CONCLUSION.template",
       "Template_Type": "DISCOURSE",
       "Primitive": "ARGUMENT_FLOW",
-      "Slots": ["DISCOURSE_FUNCTION_ID", "ASSEMBLY_STATEMENT_COUNT", "ORDERING_SOURCE"],
+      "Slots": [],
       "Runtime_Eligible": true
     },
     {
-      "Template_ID": "DISCOURSE_03_PEDAGOGICAL_PROGRESSION",
-      "File_Name": "DISCOURSE_03_PEDAGOGICAL_PROGRESSION.md",
+      "Template_ID": "ARGUMENT_FLOW__SINGLE_INFERENCE",
+      "File_Name": "ARGUMENT_FLOW__SINGLE_INFERENCE.template",
+      "Template_Type": "DISCOURSE",
+      "Primitive": "ARGUMENT_FLOW",
+      "Slots": [],
+      "Runtime_Eligible": true
+    },
+    {
+      "Template_ID": "PEDAGOGICAL_PROGRESSION__TIER_STRUCTURED",
+      "File_Name": "PEDAGOGICAL_PROGRESSION__TIER_STRUCTURED.template",
       "Template_Type": "DISCOURSE",
       "Primitive": "PEDAGOGICAL_PROGRESSION",
-      "Slots": ["DISCOURSE_FUNCTION_ID", "ASSEMBLY_STATEMENT_COUNT", "ORDERING_SOURCE"],
+      "Slots": [],
       "Runtime_Eligible": true
     },
     {
-      "Template_ID": "DISCOURSE_04_CONTRASTIVE_STRUCTURE",
-      "File_Name": "DISCOURSE_04_CONTRASTIVE_STRUCTURE.md",
+      "Template_ID": "PEDAGOGICAL_PROGRESSION__GROUNDING_FIRST",
+      "File_Name": "PEDAGOGICAL_PROGRESSION__GROUNDING_FIRST.template",
+      "Template_Type": "DISCOURSE",
+      "Primitive": "PEDAGOGICAL_PROGRESSION",
+      "Slots": [],
+      "Runtime_Eligible": true
+    },
+    {
+      "Template_ID": "CONTRASTIVE_STRUCTURE__SINGLE_PAIR",
+      "File_Name": "CONTRASTIVE_STRUCTURE__SINGLE_PAIR.template",
       "Template_Type": "DISCOURSE",
       "Primitive": "CONTRASTIVE_STRUCTURE",
-      "Slots": ["DISCOURSE_FUNCTION_ID", "ASSEMBLY_STATEMENT_COUNT", "ORDERING_SOURCE"],
+      "Slots": [],
+      "Runtime_Eligible": true
+    },
+    {
+      "Template_ID": "CONTRASTIVE_STRUCTURE__MULTIPLE_PAIRS",
+      "File_Name": "CONTRASTIVE_STRUCTURE__MULTIPLE_PAIRS.template",
+      "Template_Type": "DISCOURSE",
+      "Primitive": "CONTRASTIVE_STRUCTURE",
+      "Slots": [],
+      "Runtime_Eligible": true
+    },
+    {
+      "Template_ID": "CONTRASTIVE_STRUCTURE__SCOPE_DIFFERENTIATED",
+      "File_Name": "CONTRASTIVE_STRUCTURE__SCOPE_DIFFERENTIATED.template",
+      "Template_Type": "DISCOURSE",
+      "Primitive": "CONTRASTIVE_STRUCTURE",
+      "Slots": [],
       "Runtime_Eligible": true
     }
   ]
