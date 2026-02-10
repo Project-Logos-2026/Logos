@@ -1,0 +1,190 @@
+{
+  "Schema_Name": "Discourse_Assembly_Constraint_Schema",
+  "Artifact_Type": "Schema",
+  "Authority_Level": "Canonical",
+  "Runtime_Visible": true,
+  "Schema_Version": "1.0",
+  "Description": "Defines the structural constraints governing Layer 4 discourse assembly. Authoritative for compiler implementation of multi-statement output composition.",
+
+  "Discourse_Functions": {
+    "EXPLANATION_CHAIN": {
+      "Function_ID": "EXPLANATION_CHAIN",
+      "Min_Statements": 2,
+      "Ordering_Source": "dependency_graph_topological_sort",
+      "Tie_Breaking": "lexicographic_term_id",
+      "Allows_Explanatory_Attachment": true,
+      "Required_Packet_Fields": [
+        "dependency_graph",
+        "grounding_chain",
+        "proof_compile_status"
+      ],
+      "Structural_Markers": [
+        "DEPENDENCY_TRANSITION",
+        "GROUNDING_TRANSITION",
+        "EXPLANATORY_BOUNDARY"
+      ]
+    },
+    "ARGUMENT_FLOW": {
+      "Function_ID": "ARGUMENT_FLOW",
+      "Min_Statements": 2,
+      "Ordering_Source": "audit_trail_transformation_sequence",
+      "Tie_Breaking": "not_applicable",
+      "Allows_Explanatory_Attachment": true,
+      "Required_Packet_Fields": [
+        "applied_transformation_id_sequence",
+        "transformation_type_per_step",
+        "pxl_anchors_per_step",
+        "sequencing_termination_reason"
+      ],
+      "Structural_Markers": [
+        "PREMISE_BOUNDARY",
+        "INFERENCE_STEP_TRANSITION",
+        "CONCLUSION_BOUNDARY",
+        "EXPLANATORY_BOUNDARY"
+      ]
+    },
+    "PEDAGOGICAL_PROGRESSION": {
+      "Function_ID": "PEDAGOGICAL_PROGRESSION",
+      "Min_Statements": 2,
+      "Ordering_Source": "dependency_graph_topological_sort",
+      "Tie_Breaking": "lexicographic_term_id",
+      "Allows_Explanatory_Attachment": true,
+      "Required_Packet_Fields": [
+        "dependency_graph",
+        "grounding_chain",
+        "proof_compile_status"
+      ],
+      "Structural_Markers": [
+        "TIER_BOUNDARY",
+        "PEDAGOGICAL_TRANSITION",
+        "GROUNDING_TRANSITION",
+        "EXPLANATORY_BOUNDARY"
+      ]
+    },
+    "CONTRASTIVE_STRUCTURE": {
+      "Function_ID": "CONTRASTIVE_STRUCTURE",
+      "Min_Statements": 2,
+      "Ordering_Source": "contrastive_pair_enumeration",
+      "Tie_Breaking": "lexicographic_boundary_identifier",
+      "Allows_Explanatory_Attachment": true,
+      "Required_Packet_Fields": [
+        "semantic_elements_with_differentiating_attributes",
+        "scope_identifiers",
+        "exclusion_relations",
+        "compatibility_relations"
+      ],
+      "Structural_Markers": [
+        "CONTRASTIVE_CONNECTIVE",
+        "SCOPE_BOUNDARY_MARKER",
+        "PAIR_SEPARATOR",
+        "EXPLANATORY_BOUNDARY"
+      ]
+    }
+  },
+
+  "Assembly_Rules": {
+    "Homogeneity": "All compiled statements must originate from the same Resolved Output Packet",
+    "Completeness": "All compiled statements within the discourse function scope must be included",
+    "Non_Duplication": "Each compiled statement appears exactly once",
+    "Immutability": "Compiled statement content is not modified by discourse assembly",
+    "Single_Function": "Each discourse block applies exactly one discourse function",
+    "Total_Order": "Assembly output is a totally ordered sequence",
+    "Acyclicity_Preservation": "Total order must be consistent with source partial order",
+    "No_Post_Assembly_Reorder": "Ordering is final after assembly"
+  },
+
+  "Structural_Marker_Registry": {
+    "DEPENDENCY_TRANSITION": {
+      "Category": "Sequencing",
+      "Applicable_Functions": ["EXPLANATION_CHAIN", "PEDAGOGICAL_PROGRESSION"],
+      "Semantic_Content": false,
+      "Description": "Inserted between compiled statements linked by dependency relation (SR-04 depends_on)"
+    },
+    "GROUNDING_TRANSITION": {
+      "Category": "Sequencing",
+      "Applicable_Functions": ["EXPLANATION_CHAIN", "PEDAGOGICAL_PROGRESSION"],
+      "Semantic_Content": false,
+      "Description": "Inserted between compiled statements linked by grounding relation (SR-01 grounds). Takes precedence over DEPENDENCY_TRANSITION when both relations hold."
+    },
+    "PREMISE_BOUNDARY": {
+      "Category": "Argument_Structure",
+      "Applicable_Functions": ["ARGUMENT_FLOW"],
+      "Semantic_Content": false,
+      "Description": "Demarcates the premise section of an argument flow. Precedes the first compiled statement."
+    },
+    "INFERENCE_STEP_TRANSITION": {
+      "Category": "Argument_Structure",
+      "Applicable_Functions": ["ARGUMENT_FLOW"],
+      "Semantic_Content": false,
+      "Description": "Inserted between inference steps in an argument flow"
+    },
+    "CONCLUSION_BOUNDARY": {
+      "Category": "Argument_Structure",
+      "Applicable_Functions": ["ARGUMENT_FLOW"],
+      "Semantic_Content": false,
+      "Description": "Demarcates the conclusion of an argument flow. Precedes the final compiled statement."
+    },
+    "TIER_BOUNDARY": {
+      "Category": "Pedagogical",
+      "Applicable_Functions": ["PEDAGOGICAL_PROGRESSION"],
+      "Semantic_Content": false,
+      "Description": "Inserted exactly once at each transition from dependency depth N to depth N+1"
+    },
+    "PEDAGOGICAL_TRANSITION": {
+      "Category": "Pedagogical",
+      "Applicable_Functions": ["PEDAGOGICAL_PROGRESSION"],
+      "Semantic_Content": false,
+      "Description": "Inserted between compiled statements within the same dependency depth tier"
+    },
+    "CONTRASTIVE_CONNECTIVE": {
+      "Category": "Contrastive",
+      "Applicable_Functions": ["CONTRASTIVE_STRUCTURE"],
+      "Semantic_Content": false,
+      "Description": "Connects contrasted compiled statements within a pair"
+    },
+    "SCOPE_BOUNDARY_MARKER": {
+      "Category": "Contrastive",
+      "Applicable_Functions": ["CONTRASTIVE_STRUCTURE"],
+      "Semantic_Content": false,
+      "Description": "Demarcates scope transition in scope-differentiated contrasts. Present only when differentiating attribute is scope (SP-11)."
+    },
+    "PAIR_SEPARATOR": {
+      "Category": "Contrastive",
+      "Applicable_Functions": ["CONTRASTIVE_STRUCTURE"],
+      "Semantic_Content": false,
+      "Description": "Separates distinct contrastive pairs within the same assembly"
+    },
+    "EXPLANATORY_BOUNDARY": {
+      "Category": "Terminal",
+      "Applicable_Functions": [
+        "EXPLANATION_CHAIN",
+        "ARGUMENT_FLOW",
+        "PEDAGOGICAL_PROGRESSION",
+        "CONTRASTIVE_STRUCTURE"
+      ],
+      "Semantic_Content": false,
+      "Description": "Demarcates the boundary before a terminal EXPLANATORY attachment. Exactly one per assembly if EXPLANATORY is present."
+    }
+  },
+
+  "Marker_Selection_Rule": "For each tuple (discourse_function, position_in_sequence, preceding_CS_type, following_CS_type), marker selection is a total deterministic function defined in the Discourse Marker Selection Table",
+
+  "Prohibitions": [
+    "No heuristic ordering",
+    "No probabilistic selection",
+    "No semantic inference at Layer 4",
+    "No cross-packet assembly",
+    "No compiled statement mutation",
+    "No elision or summarization",
+    "No anaphoric binding",
+    "No implicit discourse function selection"
+  ],
+
+  "Invariants": [
+    "Discourse functions are a closed set",
+    "All assembly rules are total functions",
+    "Structural markers carry no semantic content",
+    "EXPLANATORY attachment is always terminal and non-composable",
+    "Assembly output preserves full traceability to source compiled statements"
+  ]
+}

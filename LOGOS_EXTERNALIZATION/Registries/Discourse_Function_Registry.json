@@ -1,0 +1,105 @@
+{
+  "Registry_Name": "Discourse_Function_Registry",
+  "Artifact_Type": "Externalization_Registry",
+  "Authority_Level": "Canonical",
+  "Runtime_Visible": true,
+  "Schema_Version": "1.0",
+  "Description": "Canonical registry defining the closed set of discourse functions for the LOGOS externalization system. Each function governs deterministic multi-statement assembly over compiled statements without semantic inference or mutation.",
+
+  "Functions": {
+    "EXPLANATION_CHAIN": {
+      "Function_ID": "EXPLANATION_CHAIN",
+      "Definition": "Assembles an ordered sequence of compiled statements mirroring the dependency structure of the underlying meaning state. Ordering is the unique topological sort of the acyclic dependency graph with lexicographic tie-breaking on primitive term_id.",
+      "Min_Statements": 2,
+      "Ordering_Source": "dependency_graph_topological_sort",
+      "Tie_Breaking": "lexicographic_term_id",
+      "Allows_Explanatory_Attachment": true,
+      "Required_Packet_Fields": [
+        "dependency_graph",
+        "grounding_chain",
+        "proof_compile_status"
+      ],
+      "Structural_Markers": [
+        "DEPENDENCY_TRANSITION",
+        "GROUNDING_TRANSITION",
+        "EXPLANATORY_BOUNDARY"
+      ],
+      "Semantic_Constraint": "Does not derive, infer, or alter meaning. Arranges compiled statements by dependency order only.",
+      "PXL_Anchor": "SI-05 Dependency Acyclicity; SR-04 depends_on; SR-01 grounds"
+    },
+    "ARGUMENT_FLOW": {
+      "Function_ID": "ARGUMENT_FLOW",
+      "Definition": "Presents compiled statements as a structured argument: premises, inference steps, and conclusion. Driven by the transformation chain recorded in the audit trail. Each step corresponds to a specific Transformation Type application with its PXL anchor.",
+      "Min_Statements": 2,
+      "Ordering_Source": "audit_trail_transformation_sequence",
+      "Tie_Breaking": "not_applicable",
+      "Allows_Explanatory_Attachment": true,
+      "Required_Packet_Fields": [
+        "applied_transformation_id_sequence",
+        "transformation_type_per_step",
+        "pxl_anchors_per_step",
+        "sequencing_termination_reason"
+      ],
+      "Structural_Markers": [
+        "PREMISE_BOUNDARY",
+        "INFERENCE_STEP_TRANSITION",
+        "CONCLUSION_BOUNDARY",
+        "EXPLANATORY_BOUNDARY"
+      ],
+      "Semantic_Constraint": "Does not derive, infer, or alter meaning. Orders compiled statements by audit trail transformation sequence only.",
+      "PXL_Anchor": "TT-01 through TT-10 transformation types; audit trail total order"
+    },
+    "PEDAGOGICAL_PROGRESSION": {
+      "Function_ID": "PEDAGOGICAL_PROGRESSION",
+      "Definition": "Graduated presentation of compiled statements in dependency order with explicit tier demarcation between dependency depth levels. Introduces concepts from foundational to derived with inserted boundary markers at each depth increment.",
+      "Min_Statements": 2,
+      "Ordering_Source": "dependency_graph_topological_sort",
+      "Tie_Breaking": "lexicographic_term_id",
+      "Allows_Explanatory_Attachment": true,
+      "Required_Packet_Fields": [
+        "dependency_graph",
+        "grounding_chain",
+        "proof_compile_status"
+      ],
+      "Structural_Markers": [
+        "TIER_BOUNDARY",
+        "PEDAGOGICAL_TRANSITION",
+        "GROUNDING_TRANSITION",
+        "EXPLANATORY_BOUNDARY"
+      ],
+      "Semantic_Constraint": "Does not derive, infer, or alter meaning. Arranges compiled statements by dependency depth tiers only.",
+      "PXL_Anchor": "SI-05 Dependency Acyclicity; SR-04 depends_on; SR-01 grounds"
+    },
+    "CONTRASTIVE_STRUCTURE": {
+      "Function_ID": "CONTRASTIVE_STRUCTURE",
+      "Definition": "Juxtaposes compiled statements representing differentiated semantic states. Enumerates contrastive pairs by differentiating attribute (truth value, scope, SSC classification, or proof status). Within pairs, affirmed/stronger/higher-SSC statement precedes negated/weaker/lower-SSC statement.",
+      "Min_Statements": 2,
+      "Ordering_Source": "contrastive_pair_enumeration",
+      "Tie_Breaking": "lexicographic_boundary_identifier",
+      "Allows_Explanatory_Attachment": true,
+      "Required_Packet_Fields": [
+        "semantic_elements_with_differentiating_attributes",
+        "scope_identifiers",
+        "exclusion_relations",
+        "compatibility_relations"
+      ],
+      "Structural_Markers": [
+        "CONTRASTIVE_CONNECTIVE",
+        "SCOPE_BOUNDARY_MARKER",
+        "PAIR_SEPARATOR",
+        "EXPLANATORY_BOUNDARY"
+      ],
+      "Semantic_Constraint": "Does not derive, infer, or alter meaning. Arranges compiled statements by contrastive pairing only.",
+      "PXL_Anchor": "SR-05 excludes; SR-06 compatible_with; SP-11 Scope; SI-06 Scope Boundedness"
+    }
+  },
+
+  "Invariants": [
+    "Discourse functions are a closed and finite set",
+    "No function may derive, infer, or alter meaning",
+    "No function may mutate compiled statement content",
+    "All ordering rules are total deterministic functions",
+    "EXPLANATORY attachment is always terminal and non-composable",
+    "No additional discourse functions are permitted without reopening Layer 4 governance"
+  ]
+}
