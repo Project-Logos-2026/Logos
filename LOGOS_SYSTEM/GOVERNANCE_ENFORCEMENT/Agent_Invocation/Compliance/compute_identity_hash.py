@@ -41,7 +41,6 @@ Hash input ordering and formatting are fixed:
   \n--\n
 """
 
-from __future__ import annotations
 
 import argparse
 import hashlib

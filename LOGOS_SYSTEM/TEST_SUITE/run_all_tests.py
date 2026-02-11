@@ -32,7 +32,6 @@ Discovers test_*.py modules under Test_Suite/Tests, executes their run_tests()
 function, aggregates results, and writes machine-readable JSON to Logs/.
 """
 
-from __future__ import annotations
 
 import importlib
 import json

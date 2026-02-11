@@ -42,7 +42,6 @@ Design-only runtime helper. No external side effects unless injected
 handlers are provided by the caller.
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass
 import hashlib

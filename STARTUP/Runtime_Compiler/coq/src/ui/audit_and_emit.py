@@ -41,7 +41,6 @@ rewrite it with identical contents, exercising the determinism check without
 altering repository state.
 """
 
-from __future__ import annotations
 
 import argparse
 from pathlib import Path

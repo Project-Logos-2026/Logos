@@ -41,7 +41,6 @@ meta-constraint evaluation (Mesh Holism), optimization (TOT), and
 authorization (TLM) for memory commitment.
 """
 
-from __future__ import annotations
 
 import hashlib
 import json
