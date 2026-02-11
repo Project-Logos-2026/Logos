@@ -1,7 +1,7 @@
 """
-Radial_Genesis_Engine - Mode_Controller
-Authoritative runtime mode management.
-Only Logos Core should invoke mode transitions.
+Runtime_Bridge - Mode_Controller
+Placeholder interface surface for runtime mode checks.
+References: MODE_CONTROLLER_INTERFACE_SPEC.md, RGE_SOVEREIGNTY_CONTRACT.md
 """
 
 from enum import Enum
@@ -15,11 +15,19 @@ class RuntimeMode(Enum):
 
 
 class ModeController:
-    def __init__(self) -> None:
-        self.current_mode = RuntimeMode.P1_INTERACTIVE_RADIAL
+    """
+    Minimal mode query surface.
+    References: MODE_CONTROLLER_INTERFACE_SPEC.md
+    """
+
+    def __init__(self, initial_mode: RuntimeMode = RuntimeMode.P1_INTERACTIVE_RADIAL) -> None:
+        self._current_mode = initial_mode
 
     def set_mode(self, new_mode: RuntimeMode) -> None:
-        self.current_mode = new_mode
+        self._current_mode = new_mode
 
     def get_mode(self) -> RuntimeMode:
-        return self.current_mode
+        return self._current_mode
+
+    def is_activation_allowed(self) -> bool:
+        return True

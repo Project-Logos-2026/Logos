@@ -11,7 +11,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[4]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
-from LOGOS_SYSTEM.Runtime_Bridge.Radial_Genesis_Engine.Core.Topology_State import (
+from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State import (
     TopologyState,
 )
 

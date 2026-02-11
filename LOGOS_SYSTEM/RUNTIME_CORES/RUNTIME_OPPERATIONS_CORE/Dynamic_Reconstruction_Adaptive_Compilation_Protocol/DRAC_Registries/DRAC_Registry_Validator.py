@@ -2,7 +2,8 @@ import json
 import os
 import sys
 
-REGISTRY_PATH = os.path.join("LOGOS_SYSTEM", "DRAC", "Registries")
+BASE_PATH = os.path.dirname(os.path.dirname(__file__))
+REGISTRY_PATH = os.path.join(BASE_PATH, "DRAC_Registries")
 
 FILES = [
     "DRAC_Meta_Registry.json",
