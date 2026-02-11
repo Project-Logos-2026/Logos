@@ -41,7 +41,6 @@ optimizes ordering, and produces a deterministic packet for compilation.
 Design-only runtime helper. No external side effects.
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 import hashlib

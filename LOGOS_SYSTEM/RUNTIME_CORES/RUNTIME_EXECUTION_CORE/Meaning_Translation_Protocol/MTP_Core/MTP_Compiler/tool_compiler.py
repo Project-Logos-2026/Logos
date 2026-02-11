@@ -41,7 +41,6 @@ with a metadata-formatted header, and emits a deterministic compile packet.
 Design-only runtime helper. No external side effects.
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 import hashlib

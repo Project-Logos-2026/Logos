@@ -42,7 +42,6 @@ LOGOS — Runtime Identity + Epistemic Bootstrap Capsule (Post-Attestation)
 Canonical Shared_Resources location:
   /workspaces/Logos_System/Logos_System/System_Stack/Logos_Protocol/Agent_Resources/Shared_Resources
 """
-from __future__ import annotations
 
 import json
 from dataclasses import dataclass, field
