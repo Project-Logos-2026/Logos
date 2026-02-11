@@ -11,9 +11,22 @@
     "**/SYSTEM_AUDIT_LOGS/**": true,
     "**/LOGOS_REWRITE_SOURCE_OF_TRUTH/**": true
   },
-  "python.analysis.diagnosticMode": "openFilesOnly",
-  "python.analysis.typeCheckingMode": "off",
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never",
+    "source.fixAll": "never"
+  },
+  "python.formatting.provider": "none",
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.typeCheckingMode": "strict",
   "python.analysis.indexing": false,
+  "python.linting.enabled": true,
+  "python.linting.ruffEnabled": true,
+  "ruff.lint.enable": true,
+  "ruff.format.enable": false,
+  "[python]": {
+    "editor.defaultFormatter": null
+  },
   "python.testing.pytestArgs": [
     "."
   ],
