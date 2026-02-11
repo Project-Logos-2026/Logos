@@ -56,7 +56,7 @@ class DRACPhaseState:
 # DRAC Core
 # =============================================================================
 
-class DRACCore:
+class DRAC_Core:
     """
     Deterministic assembly orchestrator.
     """
@@ -120,3 +120,9 @@ class DRACCore:
             ],
             "phases_total": len(self._phases),
         }
+
+    # -------------------------------------------------------------------------
+    # -------------------------------------------------------------------------
+
+        return "DRAC_INJECTION_ACTIVE"
+
