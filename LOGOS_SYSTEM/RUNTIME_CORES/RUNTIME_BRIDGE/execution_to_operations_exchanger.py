@@ -65,7 +65,6 @@ remain on their respective sides of the runtime bifurcation.
 
 """
 
-from __future__ import annotations
 
 import uuid
 import time

@@ -40,7 +40,6 @@ This module performs recursive multi-engine analysis of Structured Meaning Packe
 using four evaluation faces: PXL Logic, IEL Domains, ARP Mathematics, and Cognitive Resistor.
 """
 
-from __future__ import annotations
 
 import asyncio
 import json

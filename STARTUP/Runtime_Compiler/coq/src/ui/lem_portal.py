@@ -34,7 +34,6 @@ observability:
 
 """UI hook that only unlocks after the Law of Excluded Middle is discharged."""
 
-from __future__ import annotations
 
 import json
 from pathlib import Path

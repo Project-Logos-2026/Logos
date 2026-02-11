@@ -699,6 +699,11 @@ class ConsistencyChecker:
 
     def _format_iel_candidate(self, candidate: IELCandidate) -> str:
         """Format refined IEL candidate as Coq code"""
+        premises_expr = " /\\ ".join(candidate.premises)
+        obligations_block = "\n".join(
+            f"  (* - {obligation} *)" for obligation in candidate.proof_obligations
+        )
+
         return f'''(* Refined IEL Candidate *)
 (* Original ID refined: {candidate.id} *)
 (* Domain: {candidate.domain} *)
@@ -711,10 +716,10 @@ Require Import Coq.Arith.Arith.
 
 (* Refined theorem with improved structure *)
 Theorem {candidate.rule_name} :
-  {" /\\ ".join(candidate.premises)} -> {candidate.conclusion}.
+  {premises_expr} -> {candidate.conclusion}.
 Proof.
   (* Refined proof structure: *)
-  {chr(10).join(f"  (* - {obligation} *)" for obligation in candidate.proof_obligations)}
+  {obligations_block}
 
   (* Improved proof strategy: *)
   intros H.
@@ -799,7 +804,7 @@ Lemma {candidate.rule_name} :
   {" -> ".join(candidate.premises)} -> {candidate.conclusion}.
 Proof.
   (* Proof obligations: *)
-  {chr(10).join(f"  (* - {obligation} *)" for obligation in candidate.proof_obligations)}
+  {obligations_block}
   (* Auto-generated - requires manual verification *)
   Admitted.
 """
