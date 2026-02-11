@@ -38,7 +38,6 @@ This module records boot phases, modality transitions, and basic runtime
 contract enforcement. It intentionally stays stdlib-only so it can be imported
 from the earliest startup code.
 """
-from __future__ import annotations
 
 import json
 from datetime import datetime, timezone

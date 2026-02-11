@@ -53,7 +53,6 @@ Outputs:
 - _reports/step5_autonomy_argument_probe.md
 """
 
-from __future__ import annotations
 
 import json
 import os

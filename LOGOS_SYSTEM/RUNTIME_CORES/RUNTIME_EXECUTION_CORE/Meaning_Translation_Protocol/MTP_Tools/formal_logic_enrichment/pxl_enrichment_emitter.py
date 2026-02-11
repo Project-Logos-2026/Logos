@@ -40,7 +40,6 @@ non-executing and does not perform proofs, validation, or admissibility checks.
 Ambiguity is explicit and preserved.
 """
 
-from __future__ import annotations
 
 from typing import Any, Dict, List, Mapping, Optional
 

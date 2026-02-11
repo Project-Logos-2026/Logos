@@ -45,7 +45,6 @@ This helper raises `RuntimeError` on failure and is safe to import from the
 logic kernel to gate runtime behaviour.
 """
 
-from __future__ import annotations
 
 import subprocess
 from pathlib import Path

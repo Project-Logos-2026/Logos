@@ -32,7 +32,6 @@ This helper keeps tests deterministic, read-only (writes only under Logs/),
 and standardizes result formatting for the custom runner.
 """
 
-from __future__ import annotations
 
 import contextlib
 import importlib

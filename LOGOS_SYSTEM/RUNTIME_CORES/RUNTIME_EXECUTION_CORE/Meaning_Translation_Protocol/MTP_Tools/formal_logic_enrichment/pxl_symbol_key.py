@@ -39,7 +39,6 @@ Provides minimal primitives and operators for enrichment-only emission.
 No proof, no validation, no admissibility checks.
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Dict

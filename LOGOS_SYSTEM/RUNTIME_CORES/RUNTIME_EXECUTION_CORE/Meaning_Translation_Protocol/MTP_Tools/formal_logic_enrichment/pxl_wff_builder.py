@@ -39,7 +39,6 @@ Enrichment-only builder that preserves ambiguity. It constructs a minimal
 syntax tree without validation or admissibility checks.
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional
