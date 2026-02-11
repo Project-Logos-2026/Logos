@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "Registry_Version": { "type": "string" },
+    "Last_Updated": { "type": "string" },
+    "Registries": { "type": "object" },
+    "Global_Invariants": { "type": "object" }
+  },
+  "required": ["Registry_Version", "Registries", "Global_Invariants"]
+}

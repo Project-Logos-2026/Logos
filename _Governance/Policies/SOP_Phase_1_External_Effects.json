@@ -1,0 +1,22 @@
+{
+  "Policy_Name": "SOP_Phase_1_External_Effects",
+  "Version": "0.1.0",
+  "Scope": "LOGOS_SYSTEM/SYSTEM_OPERATIONS_PROTOCOL",
+  "Allowed_External_Effects": [
+    {
+      "Type": "File_Write",
+      "Target": "_Reports/SOP_Audit_Log.jsonl",
+      "Purpose": "Audit logging",
+      "Fail_Closed": true
+    },
+    {
+      "Type": "Network_Listen",
+      "Target": "HTTPServer",
+      "Port_Default": 8000,
+      "Purpose": "Prometheus metrics export",
+      "Fail_Closed": true
+    }
+  ],
+  "Authorization": "Governance_Control",
+  "Notes": "Control-plane only; no domain logic."
+}

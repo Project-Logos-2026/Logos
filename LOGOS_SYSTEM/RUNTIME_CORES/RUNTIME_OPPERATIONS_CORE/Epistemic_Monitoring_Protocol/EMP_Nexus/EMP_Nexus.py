@@ -3,10 +3,55 @@
 # GOVERNANCE: ENABLED
 # EXECUTION: CONTROLLED
 # MUTABILITY: IMMUTABLE_LOGIC
-# VERSION: 1.0.0
+# VERSION: 2.0.0
 
 """
-CSP / EXECUTION-SIDE STANDARD NEXUS
+LOGOS_MODULE_METADATA
+---------------------
+module_name: EMP_Nexus
+runtime_layer: operations
+role: Runtime module
+responsibility: EMP execution-side Standard Nexus with explicit Pre/Post Process
+    Gates, mesh enforcement, MRE integration, state routing and isolation.
+    PostProcessGate enhanced with Coq-backed proof tagging via EMP_Meta_Reasoner.
+    Backward-compatible keyword fast-path for non-proof payloads preserved.
+agent_binding: None
+protocol_binding: Epistemic_Monitoring_Protocol
+runtime_classification: runtime_module
+boot_phase: E4
+expected_imports:
+  - typing
+  - dataclasses
+  - time
+provides:
+  - NexusViolation
+  - MeshRejection
+  - MREHalt
+  - StatePacket
+  - PreProcessGate
+  - PostProcessGate
+  - MeshEnforcer
+  - MREGovernor
+  - NexusParticipant
+  - NexusHandle
+  - StandardNexus
+depends_on_runtime_state: False
+failure_mode:
+  type: fail_closed
+  notes: Invalid packets rejected. MRE RED halts. Coq verification errors
+    fall through to UNVERIFIED tagging with 0.00 uplift.
+rewrite_provenance:
+  source: EMP_NATIVE_COQ_PROOF_ENGINE_BLUEPRINT_AND_ROADMAP.md
+  rewrite_phase: Phase_E4
+  rewrite_timestamp: 2026-02-11T00:00:00Z
+observability:
+  log_channel: EMP
+  metrics: disabled
+---------------------
+"""
+
+"""
+EMP EXECUTION-SIDE STANDARD NEXUS
 
 Responsibilities:
 - Participant registration
@@ -15,6 +60,7 @@ Responsibilities:
 - Mesh enforcement (structural only)
 - MRE (Metered Reasoning Enforcer) integration
 - State routing and isolation
+- Coq-backed proof tagging (PostProcessGate v2)
 
 NO AGENT REASONING LIVES HERE.
 """
@@ -31,8 +77,10 @@ import time
 class NexusViolation(Exception):
     pass
 
+
 class MeshRejection(Exception):
     pass
+
 
 class MREHalt(Exception):
     pass
@@ -48,6 +96,107 @@ class StatePacket:
     payload: Dict[str, Any]
     timestamp: float
     causal_intent: Optional[str] = None
+
+
+# =============================================================================
+# Proof Content Detection — Two-Stage (EGRESS ONLY)
+#
+# Stage 1: Keyword fast-path (cheap string scan)
+# Stage 2: Structural confirmation (Coq .v syntax patterns)
+#
+# Both stages must pass to trigger Coq verification. This prevents false
+# positives on payloads that merely discuss proofs without containing
+# verifiable content.
+# =============================================================================
+
+PROVISIONAL_STATUS = "PROVISIONAL"
+PROVISIONAL_DISCLAIMER = "Requires EMP compilation"
+
+PXL_KEYWORDS = ("pxl", "proof", "axiom", "wff", "coq_source", "proof_content")
+
+COQ_STRUCTURAL_MARKERS = (
+    "Theorem ", "Lemma ", "Corollary ", "Proposition ", "Definition ",
+    "Proof.", "Qed.", "Defined.", "Admitted.",
+    "Require Import", "Require Export",
+    "From PXL Require",
+    "Axiom ", "Parameter ", "Hypothesis ",
+    "forall ", "exists ",
+)
+
+
+def _payload_contains_proof_content(payload: Dict[str, Any]) -> bool:
+    if "coq_source" in payload or "proof_content" in payload:
+        return True
+    return False
+
+
+def _payload_contains_pxl_keywords(payload: Dict[str, Any]) -> bool:
+    text = str(payload).lower()
+    return any(t in text for t in PXL_KEYWORDS)
+
+
+def _payload_contains_coq_structure(payload: Dict[str, Any]) -> bool:
+    source = payload.get("coq_source") or payload.get("proof_content") or ""
+    if not source:
+        source = str(payload)
+    return any(marker in source for marker in COQ_STRUCTURAL_MARKERS)
+
+
+def _payload_is_verifiable(payload: Dict[str, Any]) -> bool:
+    if _payload_contains_proof_content(payload):
+        return _payload_contains_coq_structure(payload)
+    if _payload_contains_pxl_keywords(payload):
+        return _payload_contains_coq_structure(payload)
+    return False
+
+
+def _apply_provisional_proof_tagging(payload: Dict[str, Any]) -> Dict[str, Any]:
+    if not isinstance(payload, dict):
+        return payload
+
+    if "PROVISIONAL_PROOF_TAG" in payload:
+        return payload
+
+    if "EMP_PROOF_RESULT" in payload:
+        return payload
+
+    if not _payload_contains_pxl_keywords(payload):
+        return payload
+
+    payload["PROVISIONAL_PROOF_TAG"] = {
+        "status": PROVISIONAL_STATUS,
+        "disclaimer": PROVISIONAL_DISCLAIMER,
+        "confidence_uplift": 0.05,
+    }
+    return payload
+
+
+# =============================================================================
+# Enhanced Proof Tagging — Coq-Backed (EGRESS ONLY)
+# =============================================================================
+
+def _apply_coq_proof_tagging(
+    payload: Dict[str, Any], meta_reasoner=None
+) -> Dict[str, Any]:
+    if not isinstance(payload, dict):
+        return payload
+
+    if "EMP_PROOF_RESULT" in payload:
+        return payload
+
+    if not _payload_is_verifiable(payload):
+        return _apply_provisional_proof_tagging(payload)
+
+    if meta_reasoner is None:
+        return _apply_provisional_proof_tagging(payload)
+
+    try:
+        meta_reasoner.analyze(payload)
+    except Exception:
+        if "EMP_PROOF_RESULT" not in payload:
+            return _apply_provisional_proof_tagging(payload)
+
+    return payload
 
 
 # =============================================================================
@@ -72,43 +221,28 @@ class PostProcessGate:
     Egress gate.
     Tagging, redaction, classification ONLY.
     No routing. No feedback.
+
+    v2: Coq-backed proof tagging when meta_reasoner is available.
+    Falls back to keyword-based provisional tagging otherwise.
     """
+
+    def __init__(self, meta_reasoner=None):
+        self._meta_reasoner = meta_reasoner
 
     def apply(self, packet: StatePacket) -> StatePacket:
         payload = packet.payload
-        payload = _apply_provisional_proof_tagging(payload)
+
+        if self._meta_reasoner is not None:
+            payload = _apply_coq_proof_tagging(payload, self._meta_reasoner)
+        else:
+            payload = _apply_provisional_proof_tagging(payload)
+
         return StatePacket(
             source_id=packet.source_id,
             payload=payload,
             timestamp=packet.timestamp,
             causal_intent=packet.causal_intent,
         )
-
-
-# =============================================================================
-# Provisional PXL Proof Tagging (EGRESS ONLY)
-# =============================================================================
-
-PROVISIONAL_STATUS = "PROVISIONAL"
-PROVISIONAL_DISCLAIMER = "Requires EMP compilation"
-
-def _apply_provisional_proof_tagging(payload: Dict[str, Any]) -> Dict[str, Any]:
-    if not isinstance(payload, dict):
-        return payload
-
-    if "PROVISIONAL_PROOF_TAG" in payload:
-        return payload
-
-    text = str(payload).lower()
-    if not any(t in text for t in ("pxl", "proof", "axiom", "wff")):
-        return payload
-
-    payload["PROVISIONAL_PROOF_TAG"] = {
-        "status": PROVISIONAL_STATUS,
-        "disclaimer": PROVISIONAL_DISCLAIMER,
-        "confidence_uplift": 0.05,
-    }
-    return payload
 
 
 # =============================================================================

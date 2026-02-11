@@ -1,33 +1,33 @@
-# Meaning and Translation Protocol (MTP) — Manifest
+# MTP Egress Enhancement — File Manifest
 
-## Scope
-MTP is the authoritative SMP entry-point for non-canonical meaning within the
-execution core. It constructs SMPs during the allowed mutation window and
-provides enrichment surfaces only.
+## Runtime Modules (7 .py files)
 
-## Authority Boundaries
-- Authorized to build and seal SMPs during the construction window only.
-- Not authorized to promote SMPs or mutate SMPs after sealing.
-- Not authorized to persist canonical memory or issue Append Artifacts (AA).
+| File | Path | Classification |
+|------|------|---------------|
+| MTP_Projection_Engine.py | MTP_Core/ | PRODUCTION_RUNTIME_MODULE |
+| MTP_Semantic_Linearizer.py | MTP_Core/ | PRODUCTION_RUNTIME_MODULE |
+| MTP_Fractal_Evaluator.py | MTP_Core/ | PRODUCTION_RUNTIME_MODULE |
+| MTP_Output_Renderer.py | MTP_Core/ | PRODUCTION_RUNTIME_MODULE |
+| MTP_Validation_Gate.py | MTP_Core/ | PRODUCTION_RUNTIME_MODULE |
+| I2_Egress_Critique.py | I2_Integration/ | PRODUCTION_RUNTIME_MODULE |
+| MTP_Nexus.py | MTP_Nexus/ | PRODUCTION_RUNTIME_MODULE |
 
-## Core Responsibilities
-- Receive pre-gated raw input from I2.
-- Construct SMP metadata header and preserve raw input.
-- Perform tri-modal enrichment:
-  - Natural Language
-  - Symbolic Mathematics
-  - Formal Logic (PXL surface)
-- Aggregate enrichment outputs into SMP layers.
-- Enforce SMP schema and seal immutability.
-- Return SMP to I2 for routing and downstream preparation.
+## Package Inits (4 files)
 
-## Governance Constraints
-- Fail-closed if schema enforcement fails.
-- No proof, validation, or admissibility checks.
-- No runtime execution claims beyond enrichment.
+| File | Path |
+|------|------|
+| __init__.py | Meaning_Translation_Protocol/ |
+| __init__.py | MTP_Core/ |
+| __init__.py | MTP_Nexus/ |
+| __init__.py | I2_Integration/ |
 
-## Explicit Non-Responsibilities
-- No proof validation or formal admissibility.
-- No canonical promotion or truth assertion.
-- No AA creation or persistence decisions.
-- No mutation after immutability seal.
+## Documentation (4 files)
+
+| File | Path |
+|------|------|
+| README.md | Documentation/ |
+| MANIFEST.md | Documentation/ |
+| METADATA.json | Documentation/ |
+| ORDER_OF_OPERATIONS.md | Documentation/ |
+
+## Total: 15 files

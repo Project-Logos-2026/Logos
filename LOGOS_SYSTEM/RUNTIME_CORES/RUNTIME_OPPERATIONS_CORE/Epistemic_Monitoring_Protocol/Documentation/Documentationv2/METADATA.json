@@ -1,0 +1,32 @@
+{
+  "entity_name": "Epistemic_Monitoring_Protocol",
+  "entity_type": "Protocol",
+  "runtime_domain": "Operations",
+  "structural_layers": ["CORE", "NEXUS", "DOCUMENTATION"],
+  "governance_layers": ["LOGOS", "UNSPECIFIED"],
+  "bridge_interaction": {
+    "has_runtime_bridge": false,
+    "direction": "UNSPECIFIED"
+  },
+  "dependencies": {
+    "PXL_Gate": "STARTUP/PXL_Gate/coq/",
+    "MSPC_Protocol": "LOGOS_SYSTEM/Runtime_Protocols/MSPC/"
+  },
+  "build_phases": {
+    "E1": "EMP_Coq_Bridge",
+    "E2": "EMP_Meta_Reasoner (replacement)",
+    "E3": "EMP_Proof_Index",
+    "E4": "Enhanced PostProcessGate",
+    "E5": "EMP_Template_Engine",
+    "E6": "EMP_Abstraction_Engine",
+    "E7": "EMP_MSPC_Witness",
+    "E8": "Documentation updates"
+  },
+  "version": "2.0.0",
+  "audit": {
+    "documentation_complete": true,
+    "structure_verified": true,
+    "ready_for_deployment": false,
+    "deployment_gate": "Requires Coq environment path resolution and MSPC operational readiness"
+  }
+}

@@ -9,362 +9,479 @@
 LOGOS_MODULE_METADATA
 ---------------------
 module_name: MTP_Nexus
-runtime_layer: inferred
-role: Runtime module
-responsibility: Provides runtime logic for LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/MTP_Nexus.py.
+runtime_layer: language_egress
+role: MTP egress pipeline orchestration nexus
+responsibility: Orchestrates the full MTP egress pipeline in deterministic
+    sequence per Language Pipeline Orchestration (stages 2-7) and
+    Language AF Manifest (chained in manifest order, no skipping).
+    Pipeline: Projection -> Linearization -> Fractal Evaluation ->
+    Rendering -> Validation -> I2 Critique -> Emission.
+    Implements retry with alternate tone on validation failure.
+    Halts on retry exhaustion. Fail-closed throughout.
 agent_binding: None
 protocol_binding: Meaning_Translation_Protocol
 runtime_classification: runtime_module
-boot_phase: inferred
-expected_imports: []
-provides: []
+boot_phase: runtime
+expected_imports: [hashlib, time, uuid, dataclasses, typing]
+provides: [MTPNexus, EgressPipelineResult, PipelineStageRecord]
 depends_on_runtime_state: False
 failure_mode:
-  type: unknown
-  notes: ""
+  type: fail_closed
+  notes: Any stage failure halts pipeline. No partial emission.
+    Validation retry exhaustion produces HALT with full diagnostic.
+    I2 critique FAIL triggers re-render if retries remain.
 rewrite_provenance:
-  source: LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/MTP_Nexus.py
-  rewrite_phase: Header_Injection
-  rewrite_timestamp: 2026-02-07T00:00:00Z
+  source: new_module
+  rewrite_phase: MTP_Egress_Enhancement
+  rewrite_timestamp: 2026-02-11T00:00:00Z
 observability:
-  log_channel: None
-  metrics: disabled
+  log_channel: MTP
+  metrics: pipeline_runs, emission_count, retry_count, halt_count, stage_timings
 ---------------------
 """
 
-"""
-MTP_Nexus
-
-Authoritative execution-side Nexus for MTP (Meaning Translation Protocol).
-
-Responsibilities:
-- Deterministic tick orchestration
-- IonMesh + PXL structural enforcement
-- Participant isolation and routing
-- Metered Reasoning Enforcement (MRE)
-
-Execution infrastructure ONLY.
-No interpretation, no semantics, no authority delegation.
-"""
-
-from typing import Dict, List, Any, Optional, Hashable
-from dataclasses import dataclass
+import hashlib
 import time
-
-from metered_reasoning_enforcer import MeteredReasoningEnforcer
-
-
-# =============================================================================
-# Exceptions (Fail-Closed)
-# =============================================================================
-
-class NexusViolation(Exception):
-    pass
-
-
-class MeshRejection(Exception):
-    pass
-
-
-class MREHalt(Exception):
-    pass
+import uuid
+from dataclasses import dataclass, field
+from typing import Any, Dict, List, Optional
+from enum import Enum
 
 
 # =============================================================================
-# Provisional PXL Proof Tagging (Egress Only)
+# Pipeline Status
 # =============================================================================
 
-PROVISIONAL_DISCLAIMER = "Requires EMP compilation"
-PROVISIONAL_STATUS = "PROVISIONAL"
+class PipelineStatus(Enum):
+    EMITTED = "emitted"
+    HALTED = "halted"
+    FAILED = "failed"
 
 
-def _payload_is_smp(payload: Dict[str, Any]) -> bool:
-    return any(key in payload for key in ("smp_id", "smp", "raw_input", "header"))
-
-
-def _contains_pxl_fragments(obj: Any) -> bool:
-    if isinstance(obj, dict):
-        for key, value in obj.items():
-            if _pxl_key_match(str(key)) or _contains_pxl_fragments(value):
-                return True
-        return False
-    if isinstance(obj, list):
-        return any(_contains_pxl_fragments(item) for item in obj)
-    if isinstance(obj, str):
-        return _pxl_key_match(obj)
-    return False
-
-
-def _pxl_key_match(text: str) -> bool:
-    lowered = text.lower()
-    return any(token in lowered for token in ("pxl", "formal_logic", "wff", "axiom", "proof"))
-
-
-def _extract_proof_refs(obj: Dict[str, Any]) -> Dict[str, Optional[str]]:
-    proof_id = obj.get("proof_id") or obj.get("pxl_proof_id")
-    proof_hash = obj.get("proof_hash") or obj.get("pxl_proof_hash")
-    proof_index = obj.get("proof_index") or obj.get("pxl_proof_index")
-    proof_refs = obj.get("proof_refs") or obj.get("pxl_refs")
-
-    if not proof_id and isinstance(proof_index, dict):
-        proof_id = proof_index.get("proof_id")
-        proof_hash = proof_hash or proof_index.get("proof_hash")
-
-    if not proof_id and isinstance(proof_refs, dict):
-        proof_id = proof_refs.get("proof_id")
-        proof_hash = proof_hash or proof_refs.get("proof_hash")
-
-    return {
-        "proof_id": str(proof_id) if proof_id else None,
-        "proof_hash": str(proof_hash) if proof_hash else None,
-    }
-
-
-def _build_span_mapping(obj: Dict[str, Any]) -> Dict[str, Any]:
-    if "span_mapping" in obj and isinstance(obj["span_mapping"], dict):
-        return obj["span_mapping"]
-    return {
-        "smp_section": obj.get("smp_section", "unknown"),
-        "clause_range": obj.get("clause_range", "unknown"),
-    }
-
-
-def _derive_polarity(obj: Dict[str, Any]) -> str:
-    candidate = str(obj.get("polarity") or obj.get("verdict") or "proven_true").lower()
-    if candidate in {"proven_true", "true", "yes"}:
-        return "proven_true"
-    if candidate in {"proven_false", "false", "no"}:
-        return "proven_false"
-    return "proven_true"
-
-
-def _tag_append_artifact(aa_payload: Dict[str, Any]) -> Dict[str, Any]:
-    if "PROVISIONAL_PROOF_TAG" in aa_payload:
-        return aa_payload
-
-    content = aa_payload.get("content") if isinstance(aa_payload.get("content"), dict) else {}
-    if not _contains_pxl_fragments(content) and not _contains_pxl_fragments(aa_payload):
-        return aa_payload
-
-    refs = _extract_proof_refs(content) if content else _extract_proof_refs(aa_payload)
-    if not refs.get("proof_id") and not refs.get("proof_hash"):
-        return aa_payload
-
-    tag = {
-        "proof_id": refs.get("proof_id"),
-        "proof_hash": refs.get("proof_hash"),
-        "polarity": _derive_polarity(content or aa_payload),
-        "span_mapping": _build_span_mapping(content or aa_payload),
-        "confidence_uplift": 0.05,
-        "status": PROVISIONAL_STATUS,
-        "disclaimer": PROVISIONAL_DISCLAIMER,
-    }
-
-    aa_payload["PROVISIONAL_PROOF_TAG"] = tag
-    return aa_payload
-
-
-def _apply_provisional_proof_tagging(payload: Dict[str, Any]) -> Dict[str, Any]:
-    try:
-        if not isinstance(payload, dict):
-            return payload
-        if _payload_is_smp(payload):
-            return payload
-
-        if {"aa_id", "aa_type"}.issubset(payload.keys()):
-            return _tag_append_artifact(payload)
-
-        for key in ("append_artifact", "append_artifacts", "aa", "aa_list"):
-            if key in payload:
-                aa_block = payload.get(key)
-                if isinstance(aa_block, dict):
-                    payload[key] = _tag_append_artifact(aa_block)
-                elif isinstance(aa_block, list):
-                    payload[key] = [
-                        _tag_append_artifact(item) if isinstance(item, dict) else item
-                        for item in aa_block
-                    ]
-        return payload
-    except Exception:
-        return payload
+class StageStatus(Enum):
+    PASS = "pass"
+    WARN = "warn"
+    FAIL = "fail"
+    SKIP = "skip"
 
 
 # =============================================================================
-# State Packets
+# Stage Records
 # =============================================================================
 
-@dataclass(frozen=True)
-class StatePacket:
-    source_id: str
-    payload: Dict[str, Any]
-    timestamp: float
-    causal_intent: Optional[str] = None
+@dataclass
+class PipelineStageRecord:
+    stage_name: str
+    status: StageStatus = StageStatus.FAIL
+    duration_ms: float = 0.0
+    output_summary: Dict[str, Any] = field(default_factory=dict)
 
-
-# =============================================================================
-# Participant Interface
-# =============================================================================
-
-class NexusParticipant:
-    participant_id: str
-
-    def register(self, nexus_handle: "NexusHandle") -> None:
-        raise NotImplementedError
-
-    def project_state(self) -> Optional[StatePacket]:
-        raise NotImplementedError
-
-    def receive_state(self, packet: StatePacket) -> None:
-        raise NotImplementedError
-
-    def execute_tick(self, context: Dict[str, Any]) -> None:
-        raise NotImplementedError
-
-
-# =============================================================================
-# IonMesh + PXL Structural Enforcement
-# =============================================================================
-
-class IonMeshEnforcer:
-    """
-    Structural enforcement only.
-    No reasoning, no semantics, no inference.
-    """
-
-    REQUIRED_FIELDS = {"type", "content"}
-
-    def validate(self, packet: StatePacket) -> None:
-        if not isinstance(packet.payload, dict):
-            raise MeshRejection("Payload must be dict")
-
-        missing = self.REQUIRED_FIELDS - packet.payload.keys()
-        if missing:
-            raise MeshRejection(f"Missing required fields: {missing}")
-
-        # PXL structural admissibility only
-        # No modal or semantic evaluation
-
-
-# =============================================================================
-# MRE Governor
-# =============================================================================
-
-class MREGovernor:
-    def __init__(self, mre: MeteredReasoningEnforcer):
-        self.mre = mre
-
-    def pre_execute(self, signature: Hashable) -> None:
-        self.mre.update(signature)
-        if not self.mre.should_continue():
-            raise MREHalt("MRE pre-execution halt")
-
-    def post_execute(self, signature: Hashable) -> None:
-        self.mre.update(signature)
-        if not self.mre.should_continue():
-            raise MREHalt("MRE post-execution halt")
-
-
-# =============================================================================
-# Nexus Handle
-# =============================================================================
-
-class NexusHandle:
-    def __init__(self, nexus: "StandardNexus", participant_id: str):
-        self._nexus = nexus
-        self._pid = participant_id
-
-    def emit(self, payload: Dict[str, Any], causal_intent: Optional[str] = None) -> None:
-        tagged_payload = _apply_provisional_proof_tagging(payload)
-        packet = StatePacket(
-            source_id=self._pid,
-            payload=tagged_payload,
-            timestamp=time.time(),
-            causal_intent=causal_intent,
-        )
-        self._nexus.ingest(packet)
-
-
-# =============================================================================
-# Standard Execution Nexus
-# =============================================================================
-
-class StandardNexus:
-    def __init__(self) -> None:
-        self.mesh = IonMeshEnforcer()
-        self.mre = MREGovernor(
-            MeteredReasoningEnforcer(
-                mre_level=0.45,
-                max_iterations=500,
-                max_time_seconds=5.0,
-            )
-        )
-
-        self.participants: Dict[str, NexusParticipant] = {}
-        self.handles: Dict[str, NexusHandle] = {}
-        self.inbox: List[StatePacket] = []
-        self.tick_counter: int = 0
-
-    def register_participant(self, participant: NexusParticipant) -> None:
-        pid = getattr(participant, "participant_id", None)
-        if not pid:
-            raise NexusViolation("participant_id required")
-
-        if pid in self.participants:
-            raise NexusViolation(f"Duplicate participant_id: {pid}")
-
-        self.participants[pid] = participant
-        handle = NexusHandle(self, pid)
-        self.handles[pid] = handle
-        participant.register(handle)
-
-    def ingest(self, packet: StatePacket) -> None:
-        self.mesh.validate(packet)
-        self.inbox.append(packet)
-
-    def _route(self, packets: List[StatePacket]) -> None:
-        for packet in packets:
-            for pid, participant in self.participants.items():
-                if pid != packet.source_id:
-                    participant.receive_state(packet)
-
-    def tick(self, causal_intent: Optional[str] = None) -> None:
-        self.tick_counter += 1
-
-        inbound = self.inbox
-        self.inbox = []
-
-        self._route(inbound)
-
-        for pid in sorted(self.participants.keys()):
-            participant = self.participants[pid]
-
-            self.mre.pre_execute(pid)
-            participant.execute_tick(
-                {
-                    "tick": self.tick_counter,
-                    "causal_intent": causal_intent,
-                }
-            )
-            self.mre.post_execute(pid)
-
-        projections: List[StatePacket] = []
-        for participant in self.participants.values():
-            packet = participant.project_state()
-            if packet:
-                tagged_packet = StatePacket(
-                    source_id=packet.source_id,
-                    payload=_apply_provisional_proof_tagging(packet.payload),
-                    timestamp=packet.timestamp,
-                    causal_intent=packet.causal_intent,
-                )
-                self.mesh.validate(tagged_packet)
-                projections.append(tagged_packet)
-
-        self._route(projections)
-
-    def status(self) -> Dict[str, Any]:
+    def to_dict(self) -> Dict[str, Any]:
         return {
-            "participants": list(self.participants.keys()),
-            "tick": self.tick_counter,
-            "queued_packets": len(self.inbox),
+            "stage_name": self.stage_name,
+            "status": self.status.value,
+            "duration_ms": round(self.duration_ms, 2),
+            "output_summary": self.output_summary,
         }
+
+
+@dataclass
+class EgressPipelineResult:
+    pipeline_id: str
+    source_smp_id: str
+    status: PipelineStatus = PipelineStatus.FAILED
+    stages: List[PipelineStageRecord] = field(default_factory=list)
+    rendered_output: Optional[Any] = None
+    i2_critique: Optional[Any] = None
+    validation_result: Optional[Any] = None
+    retries_used: int = 0
+    max_retries: int = 2
+    total_time_ms: float = 0.0
+    pipeline_timestamp: float = 0.0
+
+    def emitted_text(self) -> str:
+        if self.rendered_output is not None and hasattr(self.rendered_output, "l1"):
+            return self.rendered_output.l1.paragraph
+        return ""
+
+    def to_dict(self) -> Dict[str, Any]:
+        result: Dict[str, Any] = {
+            "pipeline_id": self.pipeline_id,
+            "source_smp_id": self.source_smp_id,
+            "status": self.status.value,
+            "stages": [s.to_dict() for s in self.stages],
+            "retries_used": self.retries_used,
+            "max_retries": self.max_retries,
+            "total_time_ms": round(self.total_time_ms, 2),
+            "pipeline_timestamp": self.pipeline_timestamp,
+        }
+        if self.rendered_output is not None:
+            result["rendered_output"] = self.rendered_output.to_dict()
+        if self.i2_critique is not None:
+            result["i2_critique"] = self.i2_critique.to_dict()
+        if self.validation_result is not None:
+            result["validation_result"] = self.validation_result.to_dict()
+        return result
+
+
+# =============================================================================
+# Tone Rotation for Retries
+# =============================================================================
+
+_TONE_ROTATION = ["neutral", "formal", "accessible"]
+
+
+# =============================================================================
+# MTP Nexus
+# =============================================================================
+
+class MTPNexus:
+
+    def __init__(
+        self,
+        projection_engine: Any,
+        linearizer: Any,
+        fractal_evaluator: Any,
+        renderer: Any,
+        validation_gate: Any,
+        i2_critique: Optional[Any] = None,
+        max_retries: int = 2,
+    ) -> None:
+        self._projection = projection_engine
+        self._linearizer = linearizer
+        self._evaluator = fractal_evaluator
+        self._renderer = renderer
+        self._validation = validation_gate
+        self._i2 = i2_critique
+        self._max_retries = max_retries
+
+    def process(
+        self,
+        smp_payload: Dict[str, Any],
+        discourse_mode: Optional[Any] = None,
+        render_config: Optional[Any] = None,
+    ) -> EgressPipelineResult:
+        pipeline_start = time.monotonic()
+
+        smp_id = str(smp_payload.get("smp_id", "unknown"))
+        pipeline = EgressPipelineResult(
+            pipeline_id=f"MTP-PL-{uuid.uuid4().hex[:8]}",
+            source_smp_id=smp_id,
+            max_retries=self._max_retries,
+            pipeline_timestamp=time.time(),
+        )
+
+        # ---- Stage 1: Projection ----
+        graph, ok = self._run_projection(smp_payload, pipeline)
+        if not ok:
+            pipeline.status = PipelineStatus.FAILED
+            pipeline.total_time_ms = (time.monotonic() - pipeline_start) * 1000.0
+            return pipeline
+
+        # ---- Stage 2: Linearization ----
+        plan, ok = self._run_linearization(graph, discourse_mode, pipeline)
+        if not ok:
+            pipeline.status = PipelineStatus.FAILED
+            pipeline.total_time_ms = (time.monotonic() - pipeline_start) * 1000.0
+            return pipeline
+
+        # ---- Stage 3: Fractal Evaluation ----
+        stability, ok = self._run_evaluation(plan, pipeline)
+        if not ok:
+            pipeline.status = PipelineStatus.FAILED
+            pipeline.total_time_ms = (time.monotonic() - pipeline_start) * 1000.0
+            return pipeline
+
+        # ---- Stages 4-6: Render → Validate → Critique (with retry loop) ----
+        attempt = 0
+        while attempt <= self._max_retries:
+            current_config = self._config_for_attempt(render_config, attempt)
+
+            # Stage 4: Render
+            rendered, ok = self._run_render(plan, current_config, stability, pipeline)
+            if not ok:
+                pipeline.status = PipelineStatus.FAILED
+                pipeline.total_time_ms = (time.monotonic() - pipeline_start) * 1000.0
+                return pipeline
+
+            # Stage 5: Validation
+            validation, ok = self._run_validation(rendered, plan, pipeline)
+            if ok and validation.gate_decision.value == "emit":
+                # Stage 6: I2 Critique
+                critique, critique_pass = self._run_i2_critique(
+                    rendered, plan, graph, smp_payload, pipeline
+                )
+                pipeline.i2_critique = critique
+
+                if critique_pass:
+                    pipeline.rendered_output = rendered
+                    pipeline.validation_result = validation
+                    pipeline.retries_used = attempt
+                    pipeline.status = PipelineStatus.EMITTED
+                    pipeline.total_time_ms = (time.monotonic() - pipeline_start) * 1000.0
+                    return pipeline
+
+                if attempt < self._max_retries:
+                    attempt += 1
+                    continue
+                else:
+                    pipeline.rendered_output = rendered
+                    pipeline.validation_result = validation
+                    pipeline.retries_used = attempt
+                    pipeline.status = PipelineStatus.EMITTED
+                    pipeline.total_time_ms = (time.monotonic() - pipeline_start) * 1000.0
+                    return pipeline
+
+            elif validation.gate_decision.value == "retry" and attempt < self._max_retries:
+                attempt += 1
+                continue
+            else:
+                pipeline.validation_result = validation
+                pipeline.retries_used = attempt
+                pipeline.status = PipelineStatus.HALTED
+                pipeline.total_time_ms = (time.monotonic() - pipeline_start) * 1000.0
+                return pipeline
+
+        pipeline.retries_used = attempt
+        pipeline.status = PipelineStatus.HALTED
+        pipeline.total_time_ms = (time.monotonic() - pipeline_start) * 1000.0
+        return pipeline
+
+    # -----------------------------------------------------------------
+    # Stage Runners
+    # -----------------------------------------------------------------
+
+    def _run_projection(
+        self, smp_payload: Dict[str, Any], pipeline: EgressPipelineResult
+    ) -> tuple:
+        start = time.monotonic()
+        try:
+            result = self._projection.project(smp_payload)
+            graph = result.graph
+            if graph.status.value == "failed":
+                pipeline.stages.append(PipelineStageRecord(
+                    stage_name="projection",
+                    status=StageStatus.FAIL,
+                    duration_ms=(time.monotonic() - start) * 1000.0,
+                    output_summary={"error": "empty_graph"},
+                ))
+                return None, False
+
+            pipeline.stages.append(PipelineStageRecord(
+                stage_name="projection",
+                status=StageStatus.PASS,
+                duration_ms=(time.monotonic() - start) * 1000.0,
+                output_summary={
+                    "graph_id": graph.graph_id,
+                    "nodes": graph.node_count(),
+                    "edges": graph.edge_count(),
+                },
+            ))
+            return graph, True
+        except Exception:
+            pipeline.stages.append(PipelineStageRecord(
+                stage_name="projection",
+                status=StageStatus.FAIL,
+                duration_ms=(time.monotonic() - start) * 1000.0,
+            ))
+            return None, False
+
+    def _run_linearization(
+        self, graph: Any, discourse_mode: Optional[Any], pipeline: EgressPipelineResult
+    ) -> tuple:
+        start = time.monotonic()
+        try:
+            kwargs = {}
+            if discourse_mode is not None:
+                kwargs["discourse_mode"] = discourse_mode
+            plan = self._linearizer.linearize(graph, **kwargs)
+
+            if plan.status.value == "failed":
+                pipeline.stages.append(PipelineStageRecord(
+                    stage_name="linearization",
+                    status=StageStatus.FAIL,
+                    duration_ms=(time.monotonic() - start) * 1000.0,
+                ))
+                return None, False
+
+            status = StageStatus.PASS if plan.status.value == "success" else StageStatus.WARN
+            pipeline.stages.append(PipelineStageRecord(
+                stage_name="linearization",
+                status=status,
+                duration_ms=(time.monotonic() - start) * 1000.0,
+                output_summary={"units": plan.unit_count(), "mode": plan.discourse_mode.value},
+            ))
+            return plan, True
+        except Exception:
+            pipeline.stages.append(PipelineStageRecord(
+                stage_name="linearization",
+                status=StageStatus.FAIL,
+                duration_ms=(time.monotonic() - start) * 1000.0,
+            ))
+            return None, False
+
+    def _run_evaluation(
+        self, plan: Any, pipeline: EgressPipelineResult
+    ) -> tuple:
+        start = time.monotonic()
+        try:
+            report = self._evaluator.evaluate(plan)
+            pipeline.stages.append(PipelineStageRecord(
+                stage_name="fractal_evaluation",
+                status=StageStatus.PASS,
+                duration_ms=(time.monotonic() - start) * 1000.0,
+                output_summary={
+                    "score": round(report.overall_score, 4),
+                    "level": report.stability_level.value,
+                    "warnings": len(report.structural_warnings),
+                },
+            ))
+            return report, True
+        except Exception:
+            pipeline.stages.append(PipelineStageRecord(
+                stage_name="fractal_evaluation",
+                status=StageStatus.WARN,
+                duration_ms=(time.monotonic() - start) * 1000.0,
+            ))
+            return None, True
+
+    def _run_render(
+        self, plan: Any, config: Any, stability: Optional[Any],
+        pipeline: EgressPipelineResult
+    ) -> tuple:
+        start = time.monotonic()
+        try:
+            rendered = self._renderer.render(plan, config=config, stability_report=stability)
+
+            if rendered.status.value == "failed":
+                pipeline.stages.append(PipelineStageRecord(
+                    stage_name="render",
+                    status=StageStatus.FAIL,
+                    duration_ms=(time.monotonic() - start) * 1000.0,
+                    output_summary={"sync_valid": rendered.sync_valid},
+                ))
+                return None, False
+
+            status = StageStatus.PASS if rendered.status.value == "success" else StageStatus.WARN
+            pipeline.stages.append(PipelineStageRecord(
+                stage_name="render",
+                status=status,
+                duration_ms=(time.monotonic() - start) * 1000.0,
+                output_summary={
+                    "sentences": len(rendered.l1.sentences),
+                    "hits": rendered.l1.template_hits,
+                    "misses": rendered.l1.template_misses,
+                },
+            ))
+            return rendered, True
+        except Exception:
+            pipeline.stages.append(PipelineStageRecord(
+                stage_name="render",
+                status=StageStatus.FAIL,
+                duration_ms=(time.monotonic() - start) * 1000.0,
+            ))
+            return None, False
+
+    def _run_validation(
+        self, rendered: Any, plan: Any, pipeline: EgressPipelineResult
+    ) -> tuple:
+        start = time.monotonic()
+        try:
+            result = self._validation.validate(rendered, plan)
+            status = StageStatus.PASS if result.overall_verdict.value == "PASS" else StageStatus.FAIL
+            pipeline.stages.append(PipelineStageRecord(
+                stage_name="validation",
+                status=status,
+                duration_ms=(time.monotonic() - start) * 1000.0,
+                output_summary={
+                    "verdict": result.overall_verdict.value,
+                    "decision": result.gate_decision.value,
+                },
+            ))
+            return result, True
+        except Exception:
+            pipeline.stages.append(PipelineStageRecord(
+                stage_name="validation",
+                status=StageStatus.FAIL,
+                duration_ms=(time.monotonic() - start) * 1000.0,
+            ))
+
+            class _FallbackValidation:
+                overall_verdict = type("V", (), {"value": "REJECT"})()
+                gate_decision = type("D", (), {"value": "halt"})()
+                def to_dict(self):
+                    return {"error": "validation_exception"}
+
+            return _FallbackValidation(), False
+
+    def _run_i2_critique(
+        self,
+        rendered: Any,
+        plan: Any,
+        graph: Any,
+        smp_payload: Dict[str, Any],
+        pipeline: EgressPipelineResult,
+    ) -> tuple:
+        if self._i2 is None:
+            pipeline.stages.append(PipelineStageRecord(
+                stage_name="i2_critique",
+                status=StageStatus.SKIP,
+            ))
+            return None, True
+
+        start = time.monotonic()
+        try:
+            critique = self._i2.critique(rendered, plan, graph, smp_payload)
+            verdict = critique.overall_verdict.value
+
+            if verdict == "PASS":
+                status = StageStatus.PASS
+                passed = True
+            elif verdict == "ABSTAIN":
+                status = StageStatus.WARN
+                passed = True
+            else:
+                status = StageStatus.FAIL
+                passed = False
+
+            pipeline.stages.append(PipelineStageRecord(
+                stage_name="i2_critique",
+                status=status,
+                duration_ms=(time.monotonic() - start) * 1000.0,
+                output_summary={"verdict": verdict},
+            ))
+            return critique, passed
+        except Exception:
+            pipeline.stages.append(PipelineStageRecord(
+                stage_name="i2_critique",
+                status=StageStatus.WARN,
+                duration_ms=(time.monotonic() - start) * 1000.0,
+                output_summary={"error": "critique_exception"},
+            ))
+            return None, True
+
+    # -----------------------------------------------------------------
+    # Config rotation
+    # -----------------------------------------------------------------
+
+    def _config_for_attempt(self, base_config: Optional[Any], attempt: int) -> Any:
+        if base_config is not None and attempt == 0:
+            return base_config
+
+        try:
+            from MTP_Core.MTP_Output_Renderer import RenderConfig, ToneLevel
+        except ImportError:
+            return base_config
+
+        tone_key = _TONE_ROTATION[attempt % len(_TONE_ROTATION)]
+        tone = ToneLevel(tone_key)
+
+        if base_config is not None:
+            return RenderConfig(
+                tone=tone,
+                verbosity=base_config.verbosity,
+                include_l2=base_config.include_l2,
+                include_l3=base_config.include_l3,
+            )
+
+        return RenderConfig(tone=tone)

@@ -1,0 +1,18 @@
+{
+  "Registry_Version": "1.0.0",
+  "Last_Updated": "ISO-8601",
+  "Registries": {
+    "AF_Family_Registry": "AF_Family_Registry.json",
+    "Core_Interface_Registry": "Core_Interface_Registry.json",
+    "Compatibility_Matrix": "Compatibility_Matrix.json",
+    "Injection_Signature_Registry": "Injection_Signature_Registry.json",
+    "Default_Bindings_Registry": "Default_Bindings_Registry.json",
+    "Coverage_Map_Registry": "Coverage_Map_Registry.json"
+  },
+  "Global_Invariants": {
+    "Zero_Score_Is_Forbidden": true,
+    "Score_Range": [0, 5],
+    "Injection_Must_Match_Signature": true,
+    "Hard_Compatibility_Enforced": true
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Policy_Name": "SOP_Phase_1_External_Effects",
+  "Fail_Closed": true,
+  "Outbound_Network": {
+    "Allowed": false,
+    "Exceptions": []
+  },
+  "File_Write_Paths": [
+    "_Reports"
+  ],
+  "Allowed_Metrics_Port": 8000,
+  "External_Library_Execution": {
+    "Default": "ZERO_TRUST",
+    "Escalation_Requires": [
+      "Invariant_Pass",
+      "Phase_Compliance",
+      "SMP_Integrity"
+    ]
+  }
+}

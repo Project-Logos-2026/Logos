@@ -1,16 +1,40 @@
 {
-  "entity_name": "Epistemic_Monitoring_Protocol",
-  "entity_type": "Protocol",
-  "runtime_domain": "Operations",
-  "structural_layers": ["CORE", "NEXUS", "DOCUMENTATION"],
-  "governance_layers": ["LOGOS", "UNSPECIFIED"],
-  "bridge_interaction": {
-    "has_runtime_bridge": false,
-    "direction": "UNSPECIFIED"
+  "package_name": "MTP_Egress_Enhancement",
+  "version": "1.0.0",
+  "protocol": "Meaning_Translation_Protocol",
+  "authority": "LOGOS_SYSTEM",
+  "status": "ready_for_review",
+  "ready_for_deployment": false,
+  "deployment_pending": [
+    "MTP directory structure alignment with repo canonical path",
+    "I2 Agent runtime binding confirmation",
+    "Logos Agent approval of I2 critique integration",
+    "Integration test with live SMP pipeline output"
+  ],
+  "build_phases": [
+    {"phase": "M1", "module": "MTP_Projection_Engine", "status": "complete"},
+    {"phase": "M2", "module": "MTP_Semantic_Linearizer", "status": "complete"},
+    {"phase": "M3", "module": "MTP_Fractal_Evaluator", "status": "complete"},
+    {"phase": "M4", "module": "MTP_Output_Renderer", "status": "complete"},
+    {"phase": "M5", "module": "MTP_Validation_Gate", "status": "complete"},
+    {"phase": "M6", "module": "I2_Egress_Critique", "status": "complete"},
+    {"phase": "M7", "module": "MTP_Nexus", "status": "complete"},
+    {"phase": "M8", "module": "Documentation", "status": "complete"}
+  ],
+  "governance_references": [
+    "LANGUAGE_PIPELINE_ORCHESTRATION.md",
+    "LANGUAGE_APPLICATION_FUNCTIONS_MANIFEST.md",
+    "OUTPUT_SYNCHRONIZATION_MODEL.md",
+    "LANGUAGE_GOVERNANCE_CHARTER.md",
+    "SMP_Pipeline_Governance_Addendum.schema.json",
+    "LANGUAGE_BACKEND_AUDIT_ATTESTATION.md"
+  ],
+  "dependencies": {
+    "upstream": ["Logos_Protocol", "Logos_Agent", "TetraConscious"],
+    "agent": ["I2_Agent (MTP-bound, Bridge Principle)"],
+    "downstream": ["User output emission"]
   },
-  "audit": {
-    "documentation_complete": true,
-    "structure_verified": true,
-    "ready_for_deployment": false
-  }
+  "file_count": 15,
+  "runtime_module_count": 7,
+  "total_estimated_lines": 2250
 }

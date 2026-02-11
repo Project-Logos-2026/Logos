@@ -1,0 +1,19 @@
+{
+  "Cores": {
+    "SCP_Core_01": {
+      "Protocol": "SCP",
+      "Interfaces_Exposed": ["Vector_Interface"],
+      "Max_Total_Injections": 2
+    },
+    "ARP_Core_01": {
+      "Protocol": "ARP",
+      "Interfaces_Exposed": ["Modal_Interface"],
+      "Max_Total_Injections": 2
+    },
+    "MTP_Core_01": {
+      "Protocol": "MTP",
+      "Interfaces_Exposed": ["Graph_Interface"],
+      "Max_Total_Injections": 1
+    }
+  }
+}

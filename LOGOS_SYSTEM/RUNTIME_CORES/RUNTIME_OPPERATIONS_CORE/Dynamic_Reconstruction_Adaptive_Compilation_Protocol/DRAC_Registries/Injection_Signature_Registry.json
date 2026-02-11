@@ -1,0 +1,13 @@
+{
+  "Injection_Signatures": {
+    "Vector_Interface": {
+      "Required_Methods": ["initialize", "execute", "terminate"]
+    },
+    "Modal_Interface": {
+      "Required_Methods": ["evaluate_modal", "validate_constraint"]
+    },
+    "Graph_Interface": {
+      "Required_Methods": ["build_graph", "analyze_graph"]
+    }
+  }
+}

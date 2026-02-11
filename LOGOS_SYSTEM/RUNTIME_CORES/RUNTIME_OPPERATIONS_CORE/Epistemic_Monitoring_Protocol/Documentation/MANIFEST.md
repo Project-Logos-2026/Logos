@@ -1,19 +1,33 @@
-# Epistemic_Monitoring_Protocol Documentation Manifest
+# MTP Egress Enhancement — File Manifest
 
-Entity: Epistemic_Monitoring_Protocol (EMP)
-Type: Protocol
-Domain: Operations
-Canonical Root: LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Epistemic_Monitoring_Protocol
+## Runtime Modules (7 .py files)
 
-Directory inventory (files only):
-- EMP_Core/EMP_Meta_Reasoner.py
-- EMP_Nexus/EMP_Nexus.py
-- EMP_Nexus/Library_Manifest.py
-- EMP_Documentation/EMP_TO_SOP_CONTRACT_SCHEMA.md
+| File | Path | Classification |
+|------|------|---------------|
+| MTP_Projection_Engine.py | MTP_Core/ | PRODUCTION_RUNTIME_MODULE |
+| MTP_Semantic_Linearizer.py | MTP_Core/ | PRODUCTION_RUNTIME_MODULE |
+| MTP_Fractal_Evaluator.py | MTP_Core/ | PRODUCTION_RUNTIME_MODULE |
+| MTP_Output_Renderer.py | MTP_Core/ | PRODUCTION_RUNTIME_MODULE |
+| MTP_Validation_Gate.py | MTP_Core/ | PRODUCTION_RUNTIME_MODULE |
+| I2_Egress_Critique.py | I2_Integration/ | PRODUCTION_RUNTIME_MODULE |
+| MTP_Nexus.py | MTP_Nexus/ | PRODUCTION_RUNTIME_MODULE |
 
-Scope boundaries:
-- Covers EMP meta-reasoner utilities and EMP Nexus routing/gates.
-- Excludes agent reasoning and external orchestration.
-- EMP_Documentation and Documentation are descriptive only.
+## Package Inits (4 files)
 
-No undocumented interfaces.
+| File | Path |
+|------|------|
+| __init__.py | Meaning_Translation_Protocol/ |
+| __init__.py | MTP_Core/ |
+| __init__.py | MTP_Nexus/ |
+| __init__.py | I2_Integration/ |
+
+## Documentation (4 files)
+
+| File | Path |
+|------|------|
+| README.md | Documentation/ |
+| MANIFEST.md | Documentation/ |
+| METADATA.json | Documentation/ |
+| ORDER_OF_OPERATIONS.md | Documentation/ |
+
+## Total: 15 files

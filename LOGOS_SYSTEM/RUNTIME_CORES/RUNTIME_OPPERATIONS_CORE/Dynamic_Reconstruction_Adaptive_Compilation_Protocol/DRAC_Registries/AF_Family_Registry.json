@@ -1,0 +1,39 @@
+{
+  "AF_Families": {
+    "Cluster_001": {
+      "Hash_ID": "0xCausal001",
+      "Taxonomy": "Causal_Inference",
+      "Description": "Deterministic causal reasoning primitives",
+      "Interfaces_Provided": ["Vector_Interface"],
+      "Max_Injection_Count": 1
+    },
+    "Cluster_002": {
+      "Hash_ID": "0xModal002",
+      "Taxonomy": "Modal_Constraint",
+      "Description": "Modal evaluation and constraint validation",
+      "Interfaces_Provided": ["Modal_Interface"],
+      "Max_Injection_Count": 2
+    },
+    "Cluster_003": {
+      "Hash_ID": "0xGraph003",
+      "Taxonomy": "Graph_Analysis",
+      "Description": "Graph traversal and structural evaluation",
+      "Interfaces_Provided": ["Graph_Interface"],
+      "Max_Injection_Count": 1
+    },
+    "Cluster_004": {
+      "Hash_ID": "0xConsistency004",
+      "Taxonomy": "Consistency_Check",
+      "Description": "Logical and structural consistency validation",
+      "Interfaces_Provided": ["Vector_Interface", "Modal_Interface"],
+      "Max_Injection_Count": 1
+    },
+    "Cluster_005": {
+      "Hash_ID": "0xHeuristic005",
+      "Taxonomy": "Heuristic_Fallback",
+      "Description": "Low-cost heuristic fallback reasoning",
+      "Interfaces_Provided": ["Vector_Interface"],
+      "Max_Injection_Count": 1
+    }
+  }
+}
