@@ -33,7 +33,9 @@ function, aggregates results, and writes machine-readable JSON to Logs/.
 """
 
 
-import importlib
+from . import test_agent_deployment_safety
+from . import test_phase_d_runtime_spine
+from . import common
 import json
 import os
 import pkgutil
@@ -75,14 +77,7 @@ def _skip_reason(err_msg: str) -> str | None:
 
 def _ensure_paths() -> None:
     LOGS_DIR.mkdir(parents=True, exist_ok=True)
-    # Ensure repository root (workspace root) is on sys.path for imports.
-    repo_root = ROOT.parent.parent
-    if str(repo_root) not in sys.path:
-        sys.path.insert(0, str(repo_root))
-    # Also ensure the package directory itself is present for direct imports.
-    package_root = ROOT.parent
-    if str(package_root) not in sys.path:
-        sys.path.insert(0, str(package_root))
+    # assume canonical imports; no sys.path manipulation
 
 
 def _discover_tests() -> List[str]:
@@ -99,24 +94,21 @@ def _discover_tests() -> List[str]:
 
 def _run_module(module_name: str) -> List[Dict[str, Any]]:
     """Import a test module and execute its run_tests() function."""
-
-    try:
-        module = importlib.import_module(module_name)
-    except Exception as exc:
-        reason = _skip_reason(str(exc))
-        status = "SKIP" if reason else "FAIL"
-        msg = reason if reason else str(exc)
-        return [
-            {
-                "module": module_name,
-                "test": "import",
-                "status": status,
-                "exception_type": type(exc).__name__,
-                "exception_message": msg,
-                "timestamp": time.time(),
-            }
-        ]
-
+    static_registry = {
+        "Test_Suite.Tests.test_agent_deployment_safety": test_agent_deployment_safety,
+        "Test_Suite.Tests.test_phase_d_runtime_spine": test_phase_d_runtime_spine,
+        "Test_Suite.Tests.common": common,
+    }
+    module = static_registry.get(module_name)
+    if module is None:
+        return [{
+            "module": module_name,
+            "test": "import",
+            "status": "SKIP",
+            "exception_type": "ModuleNotFoundError",
+            "exception_message": f"Module {module_name} not found in static registry.",
+            "timestamp": time.time(),
+        }]
     run_tests = getattr(module, "run_tests", None)
     if not callable(run_tests):
         return [

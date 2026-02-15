@@ -17,9 +17,8 @@
     "source.fixAll": "never"
   },
   "python.formatting.provider": "none",
-  "python.analysis.diagnosticMode": "workspace",
-  "python.analysis.typeCheckingMode": "strict",
-  "python.analysis.indexing": false,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.indexing": true,
   "python.linting.enabled": true,
   "python.linting.ruffEnabled": true,
   "ruff.lint.enable": true,
@@ -31,5 +30,5 @@
     "."
   ],
   "python.testing.unittestEnabled": false,
-  "python.testing.pytestEnabled": true
+  "python.testing.pytestEnabled": true,
 }

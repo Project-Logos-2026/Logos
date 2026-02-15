@@ -58,7 +58,7 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 from enum import Enum
 
 # PXL Core Components
-from Logos_System.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema import (
+from LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema import (
     PXLRelationType,
     PXLRelation,
     TrinityVector,
@@ -68,7 +68,7 @@ from Logos_System.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema
     ValidationSeverity
 )
 
-from Logos_System.System_Stack.Advanced_Reasoning_Protocol.formalisms.relation_mapper import (
+from LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.relation_mapper import (
     PXLRelationMapper,
     RelationMappingResult,
     TrinityRelationAnalyzer

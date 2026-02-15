@@ -36,7 +36,7 @@ Memory Substrate — Phase E Component
 import json
 import time
 
-from Logos_System.Agent_Safety_Shims.Capability_Router import (
+from LOGOS_SYSTEM.Agent_Safety_Shims.Capability_Router import (
     CapabilityRouter,
     validate_authz_memory_bounded,
     router_allows_memory_write,

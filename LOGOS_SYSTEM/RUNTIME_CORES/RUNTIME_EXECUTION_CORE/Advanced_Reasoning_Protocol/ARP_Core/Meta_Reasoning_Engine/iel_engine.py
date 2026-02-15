@@ -67,34 +67,34 @@ from pxl_engine import (
     get_pxl_engine
 )
 
-from Logos_System.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema import (
+from LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema import (
     TrinityVector,
     PXLRelation
 )
 
 # IEL Domain Imports
 try:
-    from Logos_System.System_Stack.Logos_Agents.Agent_Resources.iel_domains.AxioPraxis.axiom_systems import AxiomSystem
-    from Logos_System.System_Stack.Logos_Agents.Agent_Resources.iel_domains.AxioPraxis.consistency_checker import ConsistencyChecker
+    from LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.AxioPraxis.axiom_systems import AxiomSystem
+    from LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.AxioPraxis.consistency_checker import ConsistencyChecker
     AXIOPRAXIS_AVAILABLE = True
 except ImportError:
     AXIOPRAXIS_AVAILABLE = False
 
 try:
-    from Logos_System.System_Stack.Logos_Agents.Agent_Resources.iel_domains.GnosiPraxis.knowledge_system import KnowledgeSystem
-    from Logos_System.System_Stack.Logos_Agents.Agent_Resources.iel_domains.GnosiPraxis.belief_network import BeliefNetwork
+    from LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.GnosiPraxis.knowledge_system import KnowledgeSystem
+    from LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.GnosiPraxis.belief_network import BeliefNetwork
     GNOSIPRAXIS_AVAILABLE = True
 except ImportError:
     GNOSIPRAXIS_AVAILABLE = False
 
 try:
-    from Logos_System.System_Stack.Logos_Agents.Agent_Resources.iel_domains.ChronoPraxis.chronopraxis.temporal_logic import TemporalLogic
+    from LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.ChronoPraxis.chronopraxis.temporal_logic import TemporalLogic
     CHRONOPRAXIS_AVAILABLE = True
 except ImportError:
     CHRONOPRAXIS_AVAILABLE = False
 
 try:
-    from Logos_System.System_Stack.Logos_Agents.Agent_Resources.iel_domains.ModalPraxis.modal_logic import ModalLogic, ModalSystem
+    from LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.ModalPraxis.modal_logic import ModalLogic, ModalSystem
     MODALPRAXIS_AVAILABLE = True
 except ImportError:
     MODALPRAXIS_AVAILABLE = False

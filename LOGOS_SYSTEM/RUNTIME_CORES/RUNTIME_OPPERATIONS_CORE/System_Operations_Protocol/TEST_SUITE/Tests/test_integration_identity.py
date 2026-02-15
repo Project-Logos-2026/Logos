@@ -75,9 +75,7 @@ def _make_fake_consciousness_module():
 
 
 def test_emergence_uses_persisted_identity(tmp_path, monkeypatch):
-    # ensure workspace root on sys.path
-    if str(ROOT) not in sys.path:
-        sys.path.insert(0, str(ROOT))
+    # assume canonical imports; no sys.path manipulation
 
     # write a canonical persisted identity
     canonical = "LOGOS_AGENT_IDENTITY::LOGOS-AGENT-OMEGA::TEST_HASH"

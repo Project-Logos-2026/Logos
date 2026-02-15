@@ -39,7 +39,7 @@ PURPOSE:
 - Enforce fail-closed behavior
 """
 
-from Logos_System.System_Stack.Logos_Agents.Logos_Agent.runtime import (
+from LOGOS_SYSTEM.System_Stack.Logos_Agents.Logos_Agent.runtime import (
     LogosAgentRuntime,
 )
 

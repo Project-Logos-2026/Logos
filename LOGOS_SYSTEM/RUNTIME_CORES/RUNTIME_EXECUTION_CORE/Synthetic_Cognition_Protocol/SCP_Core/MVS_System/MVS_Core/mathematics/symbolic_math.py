@@ -68,7 +68,7 @@ except ImportError:
 
 # Lambda Engine Integration
 try:
-    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core import (
+    from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core import (
         LambdaLogosEngine,
     )
 

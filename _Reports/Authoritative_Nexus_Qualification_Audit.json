@@ -1,0 +1,166 @@
+{
+  "rule": "STRICT_RULE_A",
+  "results": [
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Nexus/I1_Nexus.py",
+      "has_boundary_class": true,
+      "has_tick": false,
+      "has_process": false,
+      "has_participant_registry": false,
+      "has_mesh_enforcement": false,
+      "has_mre_integration": false,
+      "has_fail_closed": true,
+      "classification": "INVALID_NEXUS_NAME"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Nexus/I2_Nexus.py",
+      "has_boundary_class": true,
+      "has_tick": false,
+      "has_process": false,
+      "has_participant_registry": false,
+      "has_mesh_enforcement": false,
+      "has_mre_integration": false,
+      "has_fail_closed": true,
+      "classification": "INVALID_NEXUS_NAME"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Nexus/I3_Nexus.py",
+      "has_boundary_class": true,
+      "has_tick": false,
+      "has_process": false,
+      "has_participant_registry": false,
+      "has_mesh_enforcement": false,
+      "has_mre_integration": false,
+      "has_fail_closed": true,
+      "classification": "INVALID_NEXUS_NAME"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Nexus/Logos_Agent_Nexus.py",
+      "has_boundary_class": true,
+      "has_tick": false,
+      "has_process": false,
+      "has_participant_registry": false,
+      "has_mesh_enforcement": false,
+      "has_mre_integration": false,
+      "has_fail_closed": true,
+      "classification": "INVALID_NEXUS_NAME"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Nexus/Logos_Protocol_Nexus.py",
+      "has_boundary_class": true,
+      "has_tick": false,
+      "has_process": false,
+      "has_participant_registry": false,
+      "has_mesh_enforcement": false,
+      "has_mre_integration": false,
+      "has_fail_closed": true,
+      "classification": "INVALID_NEXUS_NAME"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/MTP_Nexus.py",
+      "has_boundary_class": true,
+      "has_tick": false,
+      "has_process": true,
+      "has_participant_registry": false,
+      "has_mesh_enforcement": false,
+      "has_mre_integration": false,
+      "has_fail_closed": true,
+      "classification": "TIER_1_PIPELINE"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Nexus/ARP_Nexus.py",
+      "has_boundary_class": true,
+      "has_tick": false,
+      "has_process": false,
+      "has_participant_registry": false,
+      "has_mesh_enforcement": true,
+      "has_mre_integration": true,
+      "has_fail_closed": true,
+      "classification": "PARTIAL_BOUNDARY"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Nexus/SCP_Nexus.py",
+      "has_boundary_class": true,
+      "has_tick": false,
+      "has_process": false,
+      "has_participant_registry": false,
+      "has_mesh_enforcement": true,
+      "has_mre_integration": true,
+      "has_fail_closed": true,
+      "classification": "PARTIAL_BOUNDARY"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/System_Operations_Protocol/SOP_Nexus/SOP_Nexus.py",
+      "has_boundary_class": true,
+      "has_tick": false,
+      "has_process": false,
+      "has_participant_registry": false,
+      "has_mesh_enforcement": false,
+      "has_mre_integration": false,
+      "has_fail_closed": true,
+      "classification": "INVALID_NEXUS_NAME"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Epistemic_Monitoring_Protocol/EMP_Nexus/EMP_Nexus.py",
+      "has_boundary_class": true,
+      "has_tick": false,
+      "has_process": false,
+      "has_participant_registry": false,
+      "has_mesh_enforcement": false,
+      "has_mre_integration": false,
+      "has_fail_closed": true,
+      "classification": "INVALID_NEXUS_NAME"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Nexus/DRAC_Nexus.py",
+      "has_boundary_class": true,
+      "has_tick": false,
+      "has_process": false,
+      "has_participant_registry": false,
+      "has_mesh_enforcement": false,
+      "has_mre_integration": false,
+      "has_fail_closed": true,
+      "classification": "INVALID_NEXUS_NAME"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Nexus/CSP_Nexus.py",
+      "has_boundary_class": true,
+      "has_tick": false,
+      "has_process": false,
+      "has_participant_registry": false,
+      "has_mesh_enforcement": false,
+      "has_mre_integration": false,
+      "has_fail_closed": true,
+      "classification": "INVALID_NEXUS_NAME"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/APPLICATION_FUNCTIONS/Memory/Logos_Memory_Nexus.py",
+      "has_boundary_class": false,
+      "has_tick": false,
+      "has_process": false,
+      "has_participant_registry": false,
+      "has_mesh_enforcement": false,
+      "has_mre_integration": false,
+      "has_fail_closed": false,
+      "classification": "INVALID_NEXUS_NAME"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Core/Memory/Logos_Memory_Nexus.py",
+      "has_boundary_class": false,
+      "has_tick": false,
+      "has_process": false,
+      "has_participant_registry": false,
+      "has_mesh_enforcement": false,
+      "has_mre_integration": false,
+      "has_fail_closed": false,
+      "classification": "INVALID_NEXUS_NAME"
+    }
+  ],
+  "summary": {
+    "total_nexus_files_found": 14,
+    "tier_1_execution": 0,
+    "tier_1_pipeline": 1,
+    "partial_boundary": 2,
+    "invalid_nexus_name": 11
+  }
+}

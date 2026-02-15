@@ -1,0 +1,15 @@
+{
+  "files_modified": [
+    "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Agent_Safety_Shims/Tick_Engine.py"
+  ],
+  "import_rewrites": [
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Agent_Safety_Shims/Tick_Engine.py",
+      "original": "from Logos_System.System_Stack.Logos_Protocol.Logos_Protocol_Nexus.logos_protocol_nexus import LogosProtocolNexus",
+      "rewritten": "from LOGOS_SYSTEM.System_Stack.Logos_Protocol.Logos_Protocol_Nexus.logos_protocol_nexus import LogosProtocolNexus",
+      "rule": 1
+    }
+  ],
+  "total_files_modified": 1,
+  "total_imports_rewritten": 1
+}

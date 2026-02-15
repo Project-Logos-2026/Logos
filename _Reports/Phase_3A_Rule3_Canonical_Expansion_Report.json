@@ -1,0 +1,373 @@
+{
+  "phase": "Phase_3A_Rule3_Canonical_Expansion",
+  "total_files_modified": 23,
+  "total_imports_rewritten": 61,
+  "rewrite_records": [
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/fractal_mvs.py",
+      "original": "Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inferencer",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inferencer",
+      "line": 38
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Integrations/fractal_nexus.py",
+      "original": "Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator",
+      "line": 158
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Integrations/fractal_nexus.py",
+      "original": "Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine",
+      "line": 173
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/divergence_engine.py",
+      "original": "Synthetic_Cognition_Protocol.MVS_System.fractal_orbital",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital",
+      "line": 41
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/prediction_module.py",
+      "original": "Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inferencer",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inferencer",
+      "line": 29
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/prediction_module.py",
+      "original": "Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_orbital_node_class",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_orbital_node_class",
+      "line": 33
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/class_fractal_orbital_predictor.py",
+      "original": "Synthetic_Cognition_Protocol.MVS_System.fractal_orbital",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital",
+      "line": 65
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Identity_Generator/consciousness_safety_adapter.py",
+      "original": "Synthetic_Cognition_Protocol.consciousness.consciousness_safety_adapter",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.consciousness.consciousness_safety_adapter",
+      "line": 41
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Core/fractal_trinity_engine/fractal_trinity_reasoner.py",
+      "original": "Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.pxl_engine",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.pxl_engine",
+      "line": 53
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Core/fractal_trinity_engine/fractal_trinity_reasoner.py",
+      "original": "Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine",
+      "line": 56
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Core/fractal_trinity_engine/fractal_trinity_reasoner.py",
+      "original": "Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.math_engine",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.math_engine",
+      "line": 59
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Core/fractal_trinity_engine/fractal_trinity_reasoner.py",
+      "original": "Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.unified_reasoning",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.unified_reasoning",
+      "line": 62
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Core/fractal_trinity_engine/fractal_trinity_reasoner.py",
+      "original": "Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine",
+      "line": 557
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Core/fractal_trinity_engine/fractal_trinity_reasoner.py",
+      "original": "Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.math_engine",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.math_engine",
+      "line": 576
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_mvs_adapter/bdn_adapter_real.py",
+      "original": "Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core",
+      "line": 45
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_mvs_adapter/bdn_adapter_real.py",
+      "original": "Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge",
+      "line": 46
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_mvs_adapter/bdn_adapter_real.py",
+      "original": "Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+      "line": 47
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_mvs_adapter/mvs_adapter_real.py",
+      "original": "Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core",
+      "line": 45
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_mvs_adapter/mvs_adapter_real.py",
+      "original": "Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge",
+      "line": 46
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_mvs_adapter/mvs_adapter_real.py",
+      "original": "Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "line": 47
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_mvs_adapter/mvs_adapter_real.py",
+      "original": "Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+      "line": 48
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/language_modules/semantic_transformers.py",
+      "original": "Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inference",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inference",
+      "line": 73
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/language_modules/translation_bridge.py",
+      "original": "Advanced_Reasoning_Protocol.reasoning_engines.lambda_calculus.lambda_engine",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.reasoning_engines.lambda_calculus.lambda_engine",
+      "line": 62
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/language_modules/translation_bridge.py",
+      "original": "Advanced_Reasoning_Protocol.reasoning_engines.lambda_calculus.lambda_onto_calculus_engine",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.reasoning_engines.lambda_calculus.lambda_onto_calculus_engine",
+      "line": 70
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Runtime.py",
+      "original": "Multi_Process_Signal_Compiler.MSPC_Config",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_Config",
+      "line": 25
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Runtime.py",
+      "original": "Multi_Process_Signal_Compiler.MSPC_State",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_State",
+      "line": 30
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Runtime.py",
+      "original": "Multi_Process_Signal_Compiler.MSPC_Pipeline",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_Pipeline",
+      "line": 31
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Runtime.py",
+      "original": "Multi_Process_Signal_Compiler.MSPC_Scheduler",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_Scheduler",
+      "line": 32
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Runtime.py",
+      "original": "Multi_Process_Signal_Compiler.Signals.Signal_Ingress",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Ingress",
+      "line": 33
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Runtime.py",
+      "original": "Multi_Process_Signal_Compiler.Signals.Signal_Registry",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Registry",
+      "line": 34
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Runtime.py",
+      "original": "Multi_Process_Signal_Compiler.Resolution.Conflict_Resolver",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Resolution.Conflict_Resolver",
+      "line": 35
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Runtime.py",
+      "original": "Multi_Process_Signal_Compiler.Compilation.Dependency_Graph",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Dependency_Graph",
+      "line": 36
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Runtime.py",
+      "original": "Multi_Process_Signal_Compiler.Compilation.Incremental_Compiler",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Incremental_Compiler",
+      "line": 37
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Runtime.py",
+      "original": "Multi_Process_Signal_Compiler.Compilation.Artifact_Emitter",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Artifact_Emitter",
+      "line": 40
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Runtime.py",
+      "original": "Multi_Process_Signal_Compiler.Contracts.MSPC_Subscription_API",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Contracts.MSPC_Subscription_API",
+      "line": 41
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Runtime.py",
+      "original": "Multi_Process_Signal_Compiler.Diagnostics.MSPC_Telemetry",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Diagnostics.MSPC_Telemetry",
+      "line": 44
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Runtime.py",
+      "original": "Multi_Process_Signal_Compiler.Diagnostics.MSPC_Audit_Log",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Diagnostics.MSPC_Audit_Log",
+      "line": 45
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Pipeline.py",
+      "original": "Multi_Process_Signal_Compiler.MSPC_State",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_State",
+      "line": 25
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Pipeline.py",
+      "original": "Multi_Process_Signal_Compiler.Signals.Signal_Ingress",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Ingress",
+      "line": 26
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Pipeline.py",
+      "original": "Multi_Process_Signal_Compiler.Signals.Signal_Registry",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Registry",
+      "line": 27
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Pipeline.py",
+      "original": "Multi_Process_Signal_Compiler.Resolution.Conflict_Resolver",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Resolution.Conflict_Resolver",
+      "line": 28
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Pipeline.py",
+      "original": "Multi_Process_Signal_Compiler.Compilation.Dependency_Graph",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Dependency_Graph",
+      "line": 32
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Pipeline.py",
+      "original": "Multi_Process_Signal_Compiler.Compilation.Incremental_Compiler",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Incremental_Compiler",
+      "line": 33
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Pipeline.py",
+      "original": "Multi_Process_Signal_Compiler.Compilation.Artifact_Emitter",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Artifact_Emitter",
+      "line": 37
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Pipeline.py",
+      "original": "Multi_Process_Signal_Compiler.Contracts.MSPC_Subscription_API",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Contracts.MSPC_Subscription_API",
+      "line": 41
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Pipeline.py",
+      "original": "Multi_Process_Signal_Compiler.Diagnostics.MSPC_Telemetry",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Diagnostics.MSPC_Telemetry",
+      "line": 44
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Pipeline.py",
+      "original": "Multi_Process_Signal_Compiler.Diagnostics.MSPC_Audit_Log",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Diagnostics.MSPC_Audit_Log",
+      "line": 45
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Scheduler.py",
+      "original": "Multi_Process_Signal_Compiler.MSPC_Config",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_Config",
+      "line": 23
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Scheduler.py",
+      "original": "Multi_Process_Signal_Compiler.MSPC_State",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_State",
+      "line": 24
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Scheduler.py",
+      "original": "Multi_Process_Signal_Compiler.MSPC_Pipeline",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_Pipeline",
+      "line": 25
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/Contracts/MSPC_Output_Contract.py",
+      "original": "Multi_Process_Signal_Compiler.Compilation.Artifact_Emitter",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Artifact_Emitter",
+      "line": 25
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/Contracts/MSPC_Subscription_API.py",
+      "original": "Multi_Process_Signal_Compiler.Compilation.Artifact_Emitter",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Artifact_Emitter",
+      "line": 24
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/Signals/Signal_Registry.py",
+      "original": "Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "line": 23
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/Signals/Signal_Ingress.py",
+      "original": "Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "line": 23
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/Compilation/Incremental_Compiler.py",
+      "original": "Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "line": 27
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/Compilation/Incremental_Compiler.py",
+      "original": "Multi_Process_Signal_Compiler.Compilation.Dependency_Graph",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Dependency_Graph",
+      "line": 28
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/Compilation/Artifact_Emitter.py",
+      "original": "Multi_Process_Signal_Compiler.Compilation.Incremental_Compiler",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Incremental_Compiler",
+      "line": 26
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/Compilation/Dependency_Graph.py",
+      "original": "Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "line": 25
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/Resolution/Conflict_Resolver.py",
+      "original": "Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "line": 24
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/Resolution/Conflict_Resolver.py",
+      "original": "Multi_Process_Signal_Compiler.Resolution.Precedence_Rules",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Resolution.Precedence_Rules",
+      "line": 25
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/Resolution/Precedence_Rules.py",
+      "original": "Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "line": 21
+    }
+  ]
+}

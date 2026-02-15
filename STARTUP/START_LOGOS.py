@@ -71,31 +71,9 @@ Any failure halts immediately with no side effects.
 ===============================================================================
 """
 
-import importlib.util
-import sys
-from pathlib import Path
-
-
-_repo_root = Path(__file__).resolve().parents[1]
-if str(_repo_root) not in sys.path:
-    sys.path.insert(0, str(_repo_root))
-
-_spec = importlib.util.spec_from_file_location(
-    "startup_logos_system",
-    Path(__file__).resolve().parent / "LOGOS_SYSTEM.py",
-)
-if _spec is None or _spec.loader is None:
-    raise RuntimeError("Unable to load STARTUP/LOGOS_SYSTEM.py")
-
-_module = importlib.util.module_from_spec(_spec)
-sys.modules.setdefault(_spec.name, _module)
-_spec.loader.exec_module(_module)
-
-RUN_LOGOS_SYSTEM = _module.RUN_LOGOS_SYSTEM
-
-
 def main() -> None:
     """Canonical ignition for LOGOS."""
+    from STARTUP.LOGOS_SYSTEM import RUN_LOGOS_SYSTEM
     RUN_LOGOS_SYSTEM()
 
 

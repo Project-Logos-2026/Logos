@@ -39,7 +39,7 @@ Read-only helpers to validate explicit authorization.
 No runtime enablement occurs here.
 """
 
-from Logos_System.Governance.exceptions import GovernanceDenied
+from LOGOS_SYSTEM.Governance.exceptions import GovernanceDenied
 
 
 def require_multi_tick_policy(policy: dict):

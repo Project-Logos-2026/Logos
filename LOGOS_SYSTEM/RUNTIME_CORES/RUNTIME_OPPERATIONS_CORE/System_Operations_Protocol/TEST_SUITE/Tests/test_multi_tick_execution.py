@@ -53,7 +53,7 @@ def test_multi_tick_denied_without_explicit_policy():
     - Otherwise, this test is expected to fail until such a type is introduced.
     """
     try:
-        from Logos_System.Governance.exceptions import GovernanceDenied
+        from LOGOS_SYSTEM.Governance.exceptions import GovernanceDenied
     except Exception:
         pytest.xfail("Typed governance denial not yet implemented")
         raise
@@ -70,8 +70,8 @@ def test_multi_tick_with_budget_and_attestation():
     - Each tick audited
     - UWM commits append-only per tick
     """
-    from Logos_System.Governance.policy_checks import require_multi_tick_policy
-    from Logos_System.System_Stack.Logos_Protocol.Phase_E_Tick_Engine import PhaseETickEngine
+    from LOGOS_SYSTEM.Governance.policy_checks import require_multi_tick_policy
+    from LOGOS_SYSTEM.System_Stack.Logos_Protocol.Phase_E_Tick_Engine import PhaseETickEngine
 
     policy = {"authorized": True, "max_ticks": 2}
     budget = require_multi_tick_policy(policy)
@@ -88,7 +88,7 @@ def test_tick_budget_exhaustion_fails_closed():
     When tick budget is exhausted, execution must halt
     and no further commits are allowed.
     """
-    from Logos_System.System_Stack.Logos_Protocol.Phase_E_Tick_Engine import PhaseETickEngine
+    from LOGOS_SYSTEM.System_Stack.Logos_Protocol.Phase_E_Tick_Engine import PhaseETickEngine
 
     calls = {"count": 0}
 

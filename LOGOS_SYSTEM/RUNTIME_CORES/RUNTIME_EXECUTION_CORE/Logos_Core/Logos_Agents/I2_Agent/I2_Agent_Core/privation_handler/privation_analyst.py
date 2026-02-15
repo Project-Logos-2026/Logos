@@ -160,23 +160,26 @@ def analyze(
 
     overlay_notes = None
     if overlay_module:
-        try:
-            mod = importlib.import_module(overlay_module)
-            if hasattr(mod, "refine_analysis"):
-                result = mod.refine_analysis(classification)
-                if isinstance(result, dict):
-                    action = result.get("action", action)
-                    new_severity = result.get("severity")
-                    if isinstance(new_severity, (int, float)):
-                        severity = float(new_severity)
-                    iel_candidate = result.get("iel_module")
-                    if isinstance(iel_candidate, str):
-                        iel_module = iel_candidate
-                overlay_notes = "overlay_applied"
+        overlay_notes = None
+        OVERLAY_REGISTRY = {}
+        if overlay_module:
+            mod = OVERLAY_REGISTRY.get(overlay_module)
+            if mod is not None:
+                if hasattr(mod, "refine_analysis"):
+                    result = mod.refine_analysis(classification)
+                    if isinstance(result, dict):
+                        action = result.get("action", action)
+                        new_severity = result.get("severity")
+                        if isinstance(new_severity, (int, float)):
+                            severity = float(new_severity)
+                        iel_candidate = result.get("iel_module")
+                        if isinstance(iel_candidate, str):
+                            iel_module = iel_candidate
+                    overlay_notes = "overlay_applied"
+                else:
+                    overlay_notes = "overlay_loaded_noop"
             else:
-                overlay_notes = "overlay_loaded_noop"
-        except Exception as exc:
-            overlay_notes = f"overlay_error:{type(exc).__name__}"
+                overlay_notes = f"overlay_error:ModuleNotFound"
 
     notes = overlay_notes or "baseline"
     rationale = {

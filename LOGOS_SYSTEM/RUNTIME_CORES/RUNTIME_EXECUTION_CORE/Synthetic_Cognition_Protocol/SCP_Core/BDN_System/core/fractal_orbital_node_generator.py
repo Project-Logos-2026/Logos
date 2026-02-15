@@ -65,14 +65,14 @@ class FractalNodeGenerator:
             ),
         ]
         OntologicalNode = None
-        for module_path in module_paths:
-            try:
-                module = importlib.import_module(module_path)
-            except ImportError:
-                continue
-            OntologicalNode = getattr(module, "OntologicalNode", None)
-            if OntologicalNode is not None:
-                break
+            MODULE_REGISTRY = {}
+            for module_path in module_paths:
+                module = MODULE_REGISTRY.get(module_path)
+                if module is None:
+                    continue
+                OntologicalNode = getattr(module, "OntologicalNode", None)
+                if OntologicalNode is not None:
+                    break
 
         if OntologicalNode is None:
             # Fallback OntologicalNode class when real implementation is unavailable

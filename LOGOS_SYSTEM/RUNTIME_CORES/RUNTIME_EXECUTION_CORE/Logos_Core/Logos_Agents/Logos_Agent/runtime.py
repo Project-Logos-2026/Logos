@@ -47,13 +47,13 @@ NON-GOALS:
 
 from typing import Any, Dict
 
-from Logos_System.System_Stack.System_Operations_Protocol.governance.reference_monitor import (
+from LOGOS_SYSTEM.System_Stack.System_Operations_Protocol.governance.reference_monitor import (
     ReferenceMonitor,
 )
-from Logos_System.System_Stack.Logos_Protocol.Activation_Sequencer.Agent_Integration.coordinator import (
+from LOGOS_SYSTEM.System_Stack.Logos_Protocol.Activation_Sequencer.Agent_Integration.coordinator import (
     coordinate,
 )
-from Logos_System.System_Stack.Logos_Protocol.Activation_Sequencer.Agent_Integration.dispatch import (
+from LOGOS_SYSTEM.System_Stack.Logos_Protocol.Activation_Sequencer.Agent_Integration.dispatch import (
     dispatch,
 )
 

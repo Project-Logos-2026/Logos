@@ -40,7 +40,7 @@ FAIL-CLOSED GUARANTEE:
 
 import time
 import uuid
-from Logos_System.System_Stack.Logos_Protocol.Logos_Protocol_Nexus.logos_protocol_nexus import LogosProtocolNexus
+from LOGOS_SYSTEM.System_Stack.Logos_Protocol.Logos_Protocol_Nexus.logos_protocol_nexus import LogosProtocolNexus
 
 
 class TickEngine:

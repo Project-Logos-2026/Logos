@@ -78,7 +78,7 @@ from math_engine import (
     get_math_engine
 )
 
-from Logos_System.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema import (
+from LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema import (
     TrinityVector,
     PXLRelation
 )

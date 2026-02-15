@@ -1,0 +1,111 @@
+{
+  "tier1_expected_count": 11,
+  "tier1_verified_count": 10,
+  "nexus_details": [
+    {
+      "name": "ARP_Nexus",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Nexus/ARP_Nexus.py",
+      "header_present": true,
+      "has_boundary_method": true,
+      "has_participant_registry": true,
+      "has_fail_closed": true,
+      "mre_integrated": true,
+      "rule_4_clean": true
+    },
+    {
+      "name": "SCP_Nexus",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Nexus/SCP_Nexus.py",
+      "header_present": true,
+      "has_boundary_method": true,
+      "has_participant_registry": true,
+      "has_fail_closed": true,
+      "mre_integrated": true,
+      "rule_4_clean": true
+    },
+    {
+      "name": "MTP_Nexus",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/MTP_Nexus.py",
+      "header_present": true,
+      "has_boundary_method": true,
+      "has_participant_registry": false,
+      "has_fail_closed": true,
+      "mre_integrated": false,
+      "rule_4_clean": true
+    },
+    {
+      "name": "I1_Nexus",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Nexus/I1_Nexus.py",
+      "header_present": true,
+      "has_boundary_method": true,
+      "has_participant_registry": true,
+      "has_fail_closed": true,
+      "mre_integrated": true,
+      "rule_4_clean": true
+    },
+    {
+      "name": "I2_Nexus",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Nexus/I2_Nexus.py",
+      "header_present": true,
+      "has_boundary_method": true,
+      "has_participant_registry": true,
+      "has_fail_closed": true,
+      "mre_integrated": true,
+      "rule_4_clean": true
+    },
+    {
+      "name": "I3_Nexus",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Nexus/I3_Nexus.py",
+      "header_present": true,
+      "has_boundary_method": true,
+      "has_participant_registry": true,
+      "has_fail_closed": true,
+      "mre_integrated": true,
+      "rule_4_clean": true
+    },
+    {
+      "name": "Logos_Agent_Nexus",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Nexus/Logos_Agent_Nexus.py",
+      "header_present": true,
+      "has_boundary_method": true,
+      "has_participant_registry": true,
+      "has_fail_closed": true,
+      "mre_integrated": true,
+      "rule_4_clean": true
+    },
+    {
+      "name": "SOP_Nexus",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/System_Operations_Protocol/SOP_Nexus/SOP_Nexus.py",
+      "header_present": true,
+      "has_boundary_method": true,
+      "has_participant_registry": true,
+      "has_fail_closed": true,
+      "mre_integrated": true,
+      "rule_4_clean": true
+    },
+    {
+      "name": "EMP_Nexus",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Epistemic_Monitoring_Protocol/EMP_Nexus/EMP_Nexus.py",
+      "header_present": true,
+      "has_boundary_method": true,
+      "has_participant_registry": true,
+      "has_fail_closed": true,
+      "mre_integrated": true,
+      "rule_4_clean": true
+    },
+    {
+      "name": "CSP_Nexus",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Nexus/CSP_Nexus.py",
+      "header_present": true,
+      "has_boundary_method": true,
+      "has_participant_registry": true,
+      "has_fail_closed": true,
+      "mre_integrated": true,
+      "rule_4_clean": true
+    }
+    // DRAC_Nexus missing
+  ],
+  "orchestration_outside_nexus": [],
+  "runtime_bridge_role": "infrastructure",
+  "logos_memory_role": "subordinate",
+  "structural_integrity": "FAIL"
+}

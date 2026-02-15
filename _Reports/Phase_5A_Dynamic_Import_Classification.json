@@ -1,0 +1,49 @@
+{
+  "phase": "Phase_5A_Dynamic_Import_Classification",
+  "total_dynamic_imports": 7,
+  "entries": [
+    {
+      "file": "LOGOS_SYSTEM/__init__.py",
+      "line": 49,
+      "classification": "D",
+      "justification": "Legacy namespace aliasing for backward compatibility."
+    },
+    {
+      "file": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/__init__.py",
+      "line": 49,
+      "classification": "D",
+      "justification": "Legacy namespace aliasing for governance module."
+    },
+    {
+      "file": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Agent_Invocation/Compliance/tests/test_agent_deployment_safety.py",
+      "line": 42,
+      "classification": "B",
+      "justification": "Test ensures forbidden module is not importable."
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/System_Operations_Protocol/TEST_SUITE/Tests/run_all_tests.py",
+      "line": 104,
+      "classification": "B",
+      "justification": "Dynamically loads test modules for test execution."
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/System_Operations_Protocol/TEST_SUITE/Tests/common.py",
+      "line": 144,
+      "classification": "B",
+      "justification": "Test utility to import test modules dynamically."
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/core/fractal_orbital_node_generator.py",
+      "line": 70,
+      "classification": "A",
+      "justification": "Dynamically loads modules as plugins/extensions."
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Core/privation_handler/privation_analyst.py",
+      "line": 164,
+      "classification": "A",
+      "justification": "Loads optional overlay modules for extensibility."
+    },
+    }
+  ]
+}

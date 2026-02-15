@@ -52,7 +52,7 @@ It defines structure ONLY.
 
 from dataclasses import dataclass
 from typing import Dict, Any
-from Logos_System.Planning_Runtime.Plan_Objects.plan_schema import PlanObject
+from LOGOS_SYSTEM.Planning_Runtime.Plan_Objects.plan_schema import PlanObject
 
 
 class SubmissionEnvelopeError(ValueError):

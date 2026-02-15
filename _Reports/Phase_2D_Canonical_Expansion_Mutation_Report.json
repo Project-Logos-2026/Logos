@@ -1,0 +1,147 @@
+{
+  "phase": "Phase_2D_Canonical_Root_Expansion",
+  "branch": "pre-import-repair-stabilization",
+  "total_files_modified": 11,
+  "total_imports_rewritten": 23,
+  "rewrite_records": [
+    {
+      "file": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Agent_Invocation/Compliance/tests/test_phase_d_runtime_spine.py",
+      "original": "from Logos_System_Rebuild.Runtime_Spine.Logos_Constructive_Compile.logos_constructive_compile import ...",
+      "rewritten": "from LOGOS_SYSTEM.Runtime_Spine.Logos_Constructive_Compile.logos_constructive_compile import ...",
+      "line": 80
+    },
+    {
+      "file": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Agent_Invocation/Compliance/tests/test_phase_d_runtime_spine.py",
+      "original": "from Logos_System_Rebuild.Runtime_Spine.Agent_Orchestration.agent_orchestration import ...",
+      "rewritten": "from LOGOS_SYSTEM.Runtime_Spine.Agent_Orchestration.agent_orchestration import ...",
+      "line": 85
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/fractal_mvs.py",
+      "original": "from LOGOS_AGI.Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inferencer import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inferencer import ...",
+      "line": 44
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/mathematics/fractal_mvs.py",
+      "original": "from intelligence.trinity.trinity_vector_processor import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.trinity.trinity_vector_processor import ...",
+      "line": 82
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/mathematics/fractal_mvs.py",
+      "original": "from mathematics.pxl.arithmopraxis.trinity_arithmetic_engine import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.pxl.arithmopraxis.trinity_arithmetic_engine import ...",
+      "line": 93
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/mathematics/trinity_alignment.py",
+      "original": "from intelligence.trinity.trinity_vector_processor import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.trinity.trinity_vector_processor import ...",
+      "line": 80
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/mathematics/trinity_alignment.py",
+      "original": "from mathematics.pxl.arithmopraxis.trinity_arithmetic_engine import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.pxl.arithmopraxis.trinity_arithmetic_engine import ...",
+      "line": 83
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/integration/logos_bridge.py",
+      "original": "from intelligence.trinity.trinity_vector_processor import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.trinity.trinity_vector_processor import ...",
+      "line": 76
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/integration/logos_bridge.py",
+      "original": "from intelligence.uip.uip_step4_enhancement import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.uip.uip_step4_enhancement import ...",
+      "line": 80
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/integration/logos_bridge.py",
+      "original": "from mathematics.pxl.arithmopraxis.trinity_arithmetic_engine import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.pxl.arithmopraxis.trinity_arithmetic_engine import ...",
+      "line": 88
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/integration/trinity_alignment.py",
+      "original": "from intelligence.trinity.trinity_vector_processor import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.trinity.trinity_vector_processor import ...",
+      "line": 80
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/integration/trinity_alignment.py",
+      "original": "from mathematics.pxl.arithmopraxis.trinity_arithmetic_engine import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.pxl.arithmopraxis.trinity_arithmetic_engine import ...",
+      "line": 83
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/core/banach_data_nodes.py",
+      "original": "from mathematics.pxl.arithmopraxis.trinity_arithmetic_engine import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.pxl.arithmopraxis.trinity_arithmetic_engine import ...",
+      "line": 78
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Integrations/fractal_nexus.py",
+      "original": "from LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.predictors.class_fractal_orbital_predictor import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.predictors.class_fractal_orbital_predictor import ...",
+      "line": 165
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Integrations/fractal_nexus.py",
+      "original": "from LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.predictors.divergence_calculator import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.predictors.divergence_calculator import ...",
+      "line": 168
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Integrations/fractal_nexus.py",
+      "original": "from LOGOS_AGI.Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator import ...",
+      "line": 184
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Integrations/fractal_nexus.py",
+      "original": "from LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine import ...",
+      "line": 201
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Integrations/prediction_analyzer_exporter.py",
+      "original": "from LOGOS_AGI.settings import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.settings import ...",
+      "line": 46
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Integrations/prediction_analyzer_exporter.py",
+      "original": "from LOGOS_AGI.analytics import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.analytics import ...",
+      "line": 49
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/prediction_module.py",
+      "original": "from LOGOS_AGI.Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inferencer import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inferencer import ...",
+      "line": 35
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/prediction_module.py",
+      "original": "from LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_orbital_node_class import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_orbital_node_class import ...",
+      "line": 44
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Agent_Resources/Cognition_Normalized/simulated_consciousness_runtime.py",
+      "original": "from LOGOS_AGI.consciousness.recursion_engine_consciousness_bridge import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.consciousness.recursion_engine_consciousness_bridge import ...",
+      "line": 65
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Agent_Resources/Cognition_Normalized/simulated_consciousness_runtime.py",
+      "original": "from LOGOS_AGI.consciousness.recursion_engine_consciousness_bridge import ...",
+      "rewritten": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.consciousness.recursion_engine_consciousness_bridge import ...",
+      "line": 69
+    }
+  ],
+  "excluded_directory": "Dynamic_Reconstruction_Adaptive_Compilation_Protocol"
+}

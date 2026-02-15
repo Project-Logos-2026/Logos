@@ -50,9 +50,7 @@ from typing import Dict, List, Tuple, Set, Any
 from dataclasses import dataclass
 from enum import Enum
 
-# Add the mathematics module to path when invoked as a script
-if __name__ == "__main__":
-    sys.path.append(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
+# Assume canonical imports; no sys.path manipulation
 
 class LatticeElement(Enum):
     """The 12 elements of the extended lattice L."""

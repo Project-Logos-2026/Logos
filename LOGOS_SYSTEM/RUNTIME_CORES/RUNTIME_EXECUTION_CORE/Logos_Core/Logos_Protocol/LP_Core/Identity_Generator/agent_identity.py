@@ -46,7 +46,7 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional, Tuple
 import subprocess
 
-from Logos_System.System_Stack.Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger import (
+from LOGOS_SYSTEM.System_Stack.Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger import (
     DEFAULT_LEDGER_PATH as DEFAULT_COMMITMENT_LEDGER_PATH,
     LEDGER_VERSION as COMMITMENT_LEDGER_VERSION,
     compute_ledger_hash as compute_commitment_ledger_hash,

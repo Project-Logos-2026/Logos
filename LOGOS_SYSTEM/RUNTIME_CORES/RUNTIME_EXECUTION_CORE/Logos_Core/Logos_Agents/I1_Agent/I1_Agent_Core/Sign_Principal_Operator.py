@@ -1,60 +1,15 @@
-# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 from __future__ import annotations
-# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
-# AUTHORITY: LOGOS_SYSTEM
-# GOVERNANCE: ENABLED
-# EXECUTION: CONTROLLED
-# MUTABILITY: IMMUTABLE_LOGIC
-# VERSION: 1.0.0
-
-"""
-LOGOS_MODULE_METADATA
----------------------
-module_name: Sign_Principal_Operator
-runtime_layer: inferred
-role: inferred
-agent_binding: None
-protocol_binding: None
-boot_phase: inferred
-expected_imports: []
-provides: []
-depends_on_runtime_state: False
-failure_mode:
-  type: unknown
-  notes: ""
-rewrite_provenance:
-  source: System_Stack/Logos_Agents/I1_Agent/_core/Sign_Principal_Operator.py
-  rewrite_phase: Phase_B
-  rewrite_timestamp: 2026-01-18T23:03:31.726474
-observability:
-  log_channel: None
-  metrics: disabled
----------------------
-"""
-
-"""
-Principal operator for I1: Sign Principle.
-
-Role: causal mechanism for symbol grounding and reference resolution.
-Constraints:
-- Deterministic
-- No inference / no belief formation
-- Pure lookup + trace emission
-"""
-
-
+'\nLOGOS_MODULE_METADATA\n---------------------\nmodule_name: Sign_Principal_Operator\nruntime_layer: inferred\nrole: inferred\nagent_binding: None\nprotocol_binding: None\nboot_phase: inferred\nexpected_imports: []\nprovides: []\ndepends_on_runtime_state: False\nfailure_mode:\n  type: unknown\n  notes: ""\nrewrite_provenance:\n  source: System_Stack/Logos_Agents/I1_Agent/_core/Sign_Principal_Operator.py\n  rewrite_phase: Phase_B\n  rewrite_timestamp: 2026-01-18T23:03:31.726474\nobservability:\n  log_channel: None\n  metrics: disabled\n---------------------\n'
+'\nPrincipal operator for I1: Sign Principle.\n\nRole: causal mechanism for symbol grounding and reference resolution.\nConstraints:\n- Deterministic\n- No inference / no belief formation\n- Pure lookup + trace emission\n'
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple
-
-from I1_Agent.diagnostics.errors import IntegrationError
-
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.diagnostics.errors import IntegrationError
 
 @dataclass(frozen=True)
 class SignResolution:
     token: str
     resolved: bool
     referent: str
-
 
 class SignPrincipalOperator:
     """
@@ -65,24 +20,21 @@ class SignPrincipalOperator:
 
     def __init__(self, symbol_table: Dict[str, str]):
         if not isinstance(symbol_table, dict):
-            raise IntegrationError("symbol_table must be a dict[str, str]")
-        # normalize to strings only
-        self.symbol_table: Dict[str, str] = {
-            str(k): "" if v is None else str(v) for k, v in symbol_table.items()
-        }
+            raise IntegrationError('symbol_table must be a dict[str, str]')
+        self.symbol_table: Dict[str, str] = {str(k): '' if v is None else str(v) for k, v in symbol_table.items()}
 
     def anchor(self, token: str) -> str:
         """Lookup-only: returns referent or '<unresolved>'."""
         token = str(token)
-        ref = self.symbol_table.get(token, "")
-        return ref if ref else "<unresolved>"
+        ref = self.symbol_table.get(token, '')
+        return ref if ref else '<unresolved>'
 
     def resolve_tokens(self, tokens: List[str]) -> List[SignResolution]:
         """Resolves a list of tokens into referents with trace."""
         out: List[SignResolution] = []
         for t in tokens:
             ref = self.anchor(t)
-            out.append(SignResolution(token=t, resolved=(ref != "<unresolved>"), referent=ref))
+            out.append(SignResolution(token=t, resolved=ref != '<unresolved>', referent=ref))
         return out
 
     def coherence_check(self) -> Tuple[bool, List[str]]:
@@ -92,50 +44,33 @@ class SignPrincipalOperator:
         - flags duplicate referents if multiple tokens map to same non-empty referent (optional warning)
         """
         violations: List[str] = []
-
         for k, v in self.symbol_table.items():
             if not v.strip():
-                violations.append(f"empty_referent:{k}")
-
-        # duplicate referents warning (not fatal)
+                violations.append(f'empty_referent:{k}')
         rev: Dict[str, List[str]] = {}
         for k, v in self.symbol_table.items():
             if v.strip():
                 rev.setdefault(v, []).append(k)
         for ref, keys in rev.items():
             if len(keys) > 1:
-                violations.append(f"duplicate_referent:{ref}:{','.join(sorted(keys))}")
+                violations.append(f'duplicate_referent:{ref}:{','.join(sorted(keys))}')
+        ok = len([v for v in violations if v.startswith('empty_referent:')]) == 0
+        return (ok, violations)
 
-        ok = len([v for v in violations if v.startswith("empty_referent:")]) == 0
-        return ok, violations
-
-    def apply_to_packet(
-        self,
-        *,
-        packet: Dict[str, Any],
-        tokens_field: str = "tokens",
-        out_field: str = "sign_trace",
-    ) -> Dict[str, Any]:
+    def apply_to_packet(self, *, packet: Dict[str, Any], tokens_field: str='tokens', out_field: str='sign_trace') -> Dict[str, Any]:
         """
         Reads tokens from packet[tokens_field] if present and list-like,
         emits resolutions to packet[out_field]. Returns new dict.
         """
         if not isinstance(packet, dict):
-            raise IntegrationError("packet must be a dict")
-
+            raise IntegrationError('packet must be a dict')
         tokens_val = packet.get(tokens_field, [])
         if tokens_val is None:
             tokens_val = []
         if not isinstance(tokens_val, list):
-            raise IntegrationError(f"{tokens_field} must be a list")
-
+            raise IntegrationError(f'{tokens_field} must be a list')
         resolutions = self.resolve_tokens([str(x) for x in tokens_val])
         ok, violations = self.coherence_check()
-
         out = dict(packet)
-        out[out_field] = {
-            "resolved": [r.__dict__ for r in resolutions],
-            "coherence_ok": ok,
-            "violations": violations,
-        }
+        out[out_field] = {'resolved': [r.__dict__ for r in resolutions], 'coherence_ok': ok, 'violations': violations}
         return out

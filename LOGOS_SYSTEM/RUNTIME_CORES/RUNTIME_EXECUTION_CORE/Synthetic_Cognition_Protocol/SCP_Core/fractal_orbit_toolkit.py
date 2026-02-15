@@ -83,14 +83,7 @@ except ImportError as exc:
     np = _NumpyStub()  # type: ignore
 
 
-_MODULE_DIR = Path(__file__).resolve().parent
-_SCP_DIR = _MODULE_DIR.parent
-_REPO_ROOT = _SCP_DIR.parent.parent
-if __name__ == "__main__":
-    for _path in (_SCP_DIR, _REPO_ROOT, _MODULE_DIR):
-        str_path = str(_path)
-        if str_path not in sys.path:
-            sys.path.append(str_path)
+# Assume canonical imports; no sys.path manipulation
 
 try:
     from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import (
@@ -119,10 +112,10 @@ except ImportError:
 
 # Import existing fractal components
 try:
-    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.fractal_orbital.symbolic_math import SymbolicMath
-    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.predictors.fractal_mapping import FractalNavigator as OrbitalNavigator
-    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.modal_inference import ThonocModalInference, ModalFormula
-    from Logos_System.System_Stack.Synthetic_Cognition_Protocol.data_c_values.data_structures import MVSCoordinate, ModalInferenceResult
+    from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.fractal_orbital.symbolic_math import SymbolicMath
+    from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.predictors.fractal_mapping import FractalNavigator as OrbitalNavigator
+    from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.modal_inference import ThonocModalInference, ModalFormula
+    from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.data_c_values.data_structures import MVSCoordinate, ModalInferenceResult
 except ImportError:
     try:  # pragma: no cover - allow execution as loose script
         from fractal_orbital.symbolic_math import SymbolicMath

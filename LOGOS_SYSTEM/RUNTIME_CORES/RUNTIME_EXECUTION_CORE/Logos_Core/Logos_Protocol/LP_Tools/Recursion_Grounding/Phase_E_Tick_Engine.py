@@ -108,7 +108,7 @@ class PhaseETickEngine:
 
         This method is opt-in and introduces no behavior change unless invoked.
         """
-        from Logos_System.Governance.exceptions import GovernanceDenied
+        from LOGOS_SYSTEM.Governance.exceptions import GovernanceDenied
 
         if not isinstance(max_ticks, int) or max_ticks <= 0:
             raise GovernanceDenied("Invalid multi-tick budget")

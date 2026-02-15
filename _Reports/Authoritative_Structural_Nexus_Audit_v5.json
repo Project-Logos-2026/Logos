@@ -1,0 +1,168 @@
+{
+  "rule": "DEEP_AST_STRUCTURAL_CONTRACT",
+  "results": [
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Nexus/I1_Nexus.py",
+      "classes": [
+        {"class_name": "NexusViolation", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MeshRejection", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MREHalt", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "StatePacket", "methods": [], "attributes": [], "calls": [], "uses_sorted": false}
+      ],
+      "exceptions_defined": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "raise_targets": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Nexus/I2_Nexus.py",
+      "classes": [
+        {"class_name": "NexusViolation", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MeshRejection", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MREHalt", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "StatePacket", "methods": [], "attributes": [], "calls": [], "uses_sorted": false}
+      ],
+      "exceptions_defined": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "raise_targets": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Nexus/I3_Nexus.py",
+      "classes": [
+        {"class_name": "NexusViolation", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MeshRejection", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MREHalt", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "StatePacket", "methods": [], "attributes": [], "calls": [], "uses_sorted": false}
+      ],
+      "exceptions_defined": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "raise_targets": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Nexus/Logos_Agent_Nexus.py",
+      "classes": [
+        {"class_name": "NexusViolation", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MeshRejection", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MREHalt", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "StatePacket", "methods": [], "attributes": [], "calls": [], "uses_sorted": false}
+      ],
+      "exceptions_defined": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "raise_targets": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Nexus/Logos_Protocol_Nexus.py",
+      "classes": [
+        {"class_name": "NexusViolation", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MeshRejection", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MREHalt", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "StatePacket", "methods": [], "attributes": [], "calls": [], "uses_sorted": false}
+      ],
+      "exceptions_defined": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "raise_targets": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/MTP_Nexus.py",
+      "classes": [
+        {"class_name": "PipelineStageRecord", "methods": ["to_dict"], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "EgressPipelineResult", "methods": ["emitted_text", "to_dict"], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MTPNexus", "methods": ["__init__", "process"], "attributes": [], "calls": [], "uses_sorted": false}
+      ],
+      "exceptions_defined": [],
+      "raise_targets": [],
+      "classification": "TIER_1_PIPELINE"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Nexus/ARP_Nexus.py",
+      "classes": [
+        {"class_name": "NexusViolation", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MeshRejection", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MREHalt", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "StatePacket", "methods": [], "attributes": [], "calls": [], "uses_sorted": false}
+      ],
+      "exceptions_defined": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "raise_targets": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Nexus/SCP_Nexus.py",
+      "classes": [
+        {"class_name": "NexusViolation", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MeshRejection", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MREHalt", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "StatePacket", "methods": [], "attributes": [], "calls": [], "uses_sorted": false}
+      ],
+      "exceptions_defined": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "raise_targets": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/System_Operations_Protocol/SOP_Nexus/SOP_Nexus.py",
+      "classes": [
+        {"class_name": "NexusViolation", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MeshRejection", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MREHalt", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "StatePacket", "methods": [], "attributes": [], "calls": [], "uses_sorted": false}
+      ],
+      "exceptions_defined": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "raise_targets": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Epistemic_Monitoring_Protocol/EMP_Nexus/EMP_Nexus.py",
+      "classes": [
+        {"class_name": "NexusViolation", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MeshRejection", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MREHalt", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "StatePacket", "methods": [], "attributes": [], "calls": [], "uses_sorted": false}
+      ],
+      "exceptions_defined": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "raise_targets": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Nexus/DRAC_Nexus.py",
+      "classes": [
+        {"class_name": "NexusViolation", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MeshRejection", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MREHalt", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "StatePacket", "methods": [], "attributes": [], "calls": [], "uses_sorted": false}
+      ],
+      "exceptions_defined": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "raise_targets": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Nexus/CSP_Nexus.py",
+      "classes": [
+        {"class_name": "NexusViolation", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MeshRejection", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "MREHalt", "methods": [], "attributes": [], "calls": [], "uses_sorted": false},
+        {"class_name": "StatePacket", "methods": [], "attributes": [], "calls": [], "uses_sorted": false}
+      ],
+      "exceptions_defined": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "raise_targets": ["NexusViolation", "MeshRejection", "MREHalt"],
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/APPLICATION_FUNCTIONS/Memory/Logos_Memory_Nexus.py",
+      "classes": [],
+      "exceptions_defined": [],
+      "raise_targets": [],
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Core/Memory/Logos_Memory_Nexus.py",
+      "classes": [],
+      "exceptions_defined": [],
+      "raise_targets": [],
+      "classification": "UNCLASSIFIED"
+    }
+  ],
+  "summary": {
+    "total_files": 14,
+    "tier_1_execution": 0,
+    "tier_1_pipeline": 1,
+    "unclassified": 13
+  }
+}

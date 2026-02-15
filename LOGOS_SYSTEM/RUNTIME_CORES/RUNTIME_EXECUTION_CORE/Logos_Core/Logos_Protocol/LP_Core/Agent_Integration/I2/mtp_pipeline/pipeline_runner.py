@@ -39,7 +39,7 @@ PURPOSE:
 - Execute a single activation plan under a tick budget
 """
 
-from Logos_System.System_Stack.Logos_Protocol.Phase_E_Tick_Engine import (
+from LOGOS_SYSTEM.System_Stack.Logos_Protocol.Phase_E_Tick_Engine import (
     PhaseETickEngine,
     TickHalt,
 )

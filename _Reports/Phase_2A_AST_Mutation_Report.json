@@ -1,0 +1,18 @@
+{
+  "phase": "Phase_2A_AST_Canonical_Root_Normalization",
+  "total_files_modified": 1,
+  "total_imports_rewritten": 1,
+  "files_modified": [
+    "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Tools/IEL_Generator/iel_generator.py"
+  ],
+  "rewrite_records": [
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Tools/IEL_Generator/iel_generator.py",
+      "type": "from",
+      "original": "Logos_System.autonomous_learning",
+      "rewritten": "LOGOS_SYSTEM.autonomous_learning",
+      "line": 72
+    }
+  ],
+  "excluded_directory": "Dynamic_Reconstruction_Adaptive_Compilation_Protocol"
+}

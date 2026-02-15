@@ -1,0 +1,53 @@
+{
+  "expected_nexuses": [
+    "ARP_Nexus",
+    "SCP_Nexus",
+    "MTP_Nexus",
+    "MSCP_Nexus",
+    "I1_Nexus",
+    "I2_Nexus",
+    "I3_Nexus",
+    "Logos_Agent_Nexus",
+    "SOP_Nexus",
+    "DRAC_Nexus",
+    "EMP_Nexus",
+    "CSP_Nexus",
+    "Runtime_Bridge_Nexus",
+    "RGE_Nexus",
+    "IonMesh_Nexus",
+    "UWM_Nexus"
+  ],
+  "discovered_nexuses": [
+    "ARP_Nexus",
+    "SCP_Nexus",
+    "MTP_Nexus",
+    "I1_Nexus",
+    "I2_Nexus",
+    "I3_Nexus",
+    "Logos_Agent_Nexus",
+    "SOP_Nexus",
+    "DRAC_Nexus",
+    "EMP_Nexus",
+    "CSP_Nexus",
+    "Logos_Protocol_Nexus",
+    "Logos_Memory_Nexus"
+  ],
+  "classification_matrix": [
+    {"name": "ARP_Nexus", "status": "PRESENT_EXPLICIT"},
+    {"name": "SCP_Nexus", "status": "PRESENT_EXPLICIT"},
+    {"name": "MTP_Nexus", "status": "PRESENT_EXPLICIT"},
+    {"name": "MSCP_Nexus", "status": "MISSING"},
+    {"name": "I1_Nexus", "status": "PRESENT_EXPLICIT"},
+    {"name": "I2_Nexus", "status": "PRESENT_EXPLICIT"},
+    {"name": "I3_Nexus", "status": "PRESENT_EXPLICIT"},
+    {"name": "Logos_Agent_Nexus", "status": "PRESENT_EXPLICIT"},
+    {"name": "SOP_Nexus", "status": "PRESENT_EXPLICIT"},
+    {"name": "DRAC_Nexus", "status": "PRESENT_EXPLICIT"},
+    {"name": "EMP_Nexus", "status": "PRESENT_EXPLICIT"},
+    {"name": "CSP_Nexus", "status": "PRESENT_EXPLICIT"},
+    {"name": "Runtime_Bridge_Nexus", "status": "MISSING"},
+    {"name": "RGE_Nexus", "status": "MISSING"},
+    {"name": "IonMesh_Nexus", "status": "MISSING"},
+    {"name": "UWM_Nexus", "status": "MISSING"}
+  ]
+}

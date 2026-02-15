@@ -37,7 +37,7 @@ from typing import Any, Dict, Optional
 
 from .types import LogosBundle
 from .dispatch import dispatch_to_scp, dispatch_to_arp
-from Logos_System.System_Stack.Logos_Protocol.Activation_Sequencer.I1.scp_pipeline.pipeline_runner import (
+from LOGOS_SYSTEM.System_Stack.Logos_Protocol.Activation_Sequencer.I1.scp_pipeline.pipeline_runner import (
     PipelineRunner,
 )
 

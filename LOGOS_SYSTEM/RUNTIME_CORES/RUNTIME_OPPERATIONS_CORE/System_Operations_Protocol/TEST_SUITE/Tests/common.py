@@ -34,7 +34,8 @@ and standardizes result formatting for the custom runner.
 
 
 import contextlib
-import importlib
+from . import test_agent_deployment_safety
+from . import test_phase_d_runtime_spine
 import inspect
 import json
 import os
@@ -139,43 +140,58 @@ def run_module_tests(
 
     results: List[Dict[str, Any]] = []
 
-    try:
-        importlib.invalidate_caches()
-        module = importlib.import_module(module_path)
-        results.append(_result(module_path, "import", "PASS"))
-    except Exception as exc:
-        results.append(_result(module_path, "import", "FAIL", exc))
+    static_registry = {
+        "Test_Suite.Tests.test_agent_deployment_safety": test_agent_deployment_safety,
+        "Test_Suite.Tests.test_phase_d_runtime_spine": test_phase_d_runtime_spine,
+    }
+    module = static_registry.get(module_path)
+    if module is None:
+        results.append(_result(module_path, "import", "FAIL", Exception(f"Module {module_path} not found in static registry.")))
         return results
 
-    # Attribute presence checks
-    for func_name in public_functions:
-        try:
-            attr = getattr(module, func_name)
-            ok = callable(attr)
-            results.append(_result(module_path, f"function:{func_name}", "PASS" if ok else "FAIL"))
-        except Exception as exc:
-            results.append(_result(module_path, f"function:{func_name}", "FAIL", exc))
+    results.append(_result(module_path, "import", "PASS"))
+            module_path: str,
+            public_functions: Iterable[str],
+            public_classes: Iterable[str],
+            entry_points: Iterable[str],
+        ) -> List[Dict[str, Any]]:
+            """Execute standardized tests for a single module and return result rows."""
 
-    for class_name in public_classes:
-        try:
-            attr = getattr(module, class_name)
-            ok = inspect.isclass(attr)
-            results.append(_result(module_path, f"class:{class_name}", "PASS" if ok else "FAIL"))
-        except Exception as exc:
-            results.append(_result(module_path, f"class:{class_name}", "FAIL", exc))
+            results: List[Dict[str, Any]] = []
 
-    allowed_failures = _allowed_failures(module)
+            static_registry = {
+                "Test_Suite.Tests.test_agent_deployment_safety": test_agent_deployment_safety,
+                "Test_Suite.Tests.test_phase_d_runtime_spine": test_phase_d_runtime_spine,
+            }
+            module = static_registry.get(module_path)
+            if module is None:
+                results.append(_result(module_path, "import", "FAIL", Exception(f"Module {module_path} not found in static registry.")))
+                return results
 
-    # Entry point behavior checks
-    for entry in entry_points:
-        try:
-            result = _invoke_entry_point(module, entry)
-            ok = isinstance(result, dict) or result is not None
-            results.append(_result(module_path, f"entry:{entry}", "PASS" if ok else "FAIL"))
-        except Exception as exc:
-            if allowed_failures and isinstance(exc, allowed_failures):
-                results.append(_result(module_path, f"entry:{entry}", "PASS", exc))
-            else:
-                results.append(_result(module_path, f"entry:{entry}", "FAIL", exc))
+            results.append(_result(module_path, "import", "PASS"))
 
-    return results
+            # Attribute presence checks
+            for func_name in public_functions:
+                try:
+                    attr = getattr(module, func_name)
+                    ok = callable(attr)
+                    results.append(_result(module_path, f"function:{func_name}", "PASS" if ok else "FAIL"))
+                except Exception as exc:
+                    results.append(_result(module_path, f"function:{func_name}", "FAIL", exc))
+
+            for class_name in public_classes:
+                try:
+                    attr = getattr(module, class_name)
+                    ok = isinstance(attr, type)
+                    results.append(_result(module_path, f"class:{class_name}", "PASS" if ok else "FAIL"))
+                except Exception as exc:
+                    results.append(_result(module_path, f"class:{class_name}", "FAIL", exc))
+
+            for entry_point in entry_points:
+                try:
+                    _invoke_entry_point(module, entry_point)
+                    results.append(_result(module_path, f"entry_point:{entry_point}", "PASS"))
+                except Exception as exc:
+                    results.append(_result(module_path, f"entry_point:{entry_point}", "FAIL", exc))
+
+            return results

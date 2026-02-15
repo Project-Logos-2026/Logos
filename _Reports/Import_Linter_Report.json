@@ -1,0 +1,26 @@
+{
+  "summary": {
+    "total_files_scanned": 1305,
+    "total_violations": 2,
+    "violations_by_rule": {
+      "Rule_1": 0,
+      "Rule_2": 2,
+      "Rule_3": 0,
+      "Rule_4": 0
+    }
+  },
+  "violations": [
+    {
+      "rule": "Rule_2",
+      "file": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Agent_Invocation/Compliance/tests/test_agent_deployment_safety.py",
+      "line": 42,
+      "import": "Logos_System.System_Stack"
+    },
+    {
+      "rule": "Rule_2",
+      "file": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Agent_Invocation/Compliance/tests/test_agent_deployment_safety.py",
+      "line": 51,
+      "import": "Logos_System.System_Stack"
+    }
+  ]
+}

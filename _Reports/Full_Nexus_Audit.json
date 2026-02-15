@@ -1,0 +1,50 @@
+{
+  "branch": "pre-import-repair-stabilization",
+  "nexus_modules": [
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Nexus/ARP_Nexus.py",
+      "header_present": true,
+      "nexus_type": "EXECUTION_NEXUS",
+      "has_tick": true,
+      "has_process": false,
+      "has_participant_registry": true,
+      "has_mesh_enforcement": false,
+      "has_mre_integration": true,
+      "dynamic_import_usage": false,
+      "sys_modules_aliasing": false
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Nexus/SCP_Nexus.py",
+      "header_present": true,
+      "nexus_type": "EXECUTION_NEXUS",
+      "has_tick": true,
+      "has_process": false,
+      "has_participant_registry": true,
+      "has_mesh_enforcement": false,
+      "has_mre_integration": true,
+      "dynamic_import_usage": false,
+      "sys_modules_aliasing": false
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/MTP_Nexus.py",
+      "header_present": true,
+      "nexus_type": "PIPELINE_NEXUS",
+      "has_tick": false,
+      "has_process": true,
+      "has_participant_registry": false,
+      "has_mesh_enforcement": false,
+      "has_mre_integration": false,
+      "dynamic_import_usage": false,
+      "sys_modules_aliasing": false
+    }
+  ],
+  "summary": {
+    "total_nexus_modules": 3,
+    "execution_nexus_count": 2,
+    "pipeline_nexus_count": 1,
+    "unknown_type_count": 0,
+    "missing_headers": [],
+    "mre_missing_in_execution_nexus": [],
+    "rule_4_violations": []
+  }
+}

@@ -67,14 +67,14 @@ from pxl_engine import (
     get_pxl_engine
 )
 
-from Logos_System.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema import (
+from LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema import (
     TrinityVector,
     PXLRelation
 )
 
 # Mathematics imports
 try:
-    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.formalisms.arithmetic_engine import (
+    from LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.arithmetic_engine import (
         TrinityArithmeticEngine
     )
     ARITHMETIC_AVAILABLE = True
@@ -82,7 +82,7 @@ except ImportError:
     ARITHMETIC_AVAILABLE = False
 
 try:
-    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.formalisms.proof_engine import (
+    from LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.proof_engine import (
         OntologicalProofEngine,
         ProofResult
     )
@@ -91,7 +91,7 @@ except ImportError:
     PROOF_ENGINE_AVAILABLE = False
 
 try:
-    from Logos_System.System_Stack.Advanced_Reasoning_Protocol.formalisms.symbolic_math import (
+    from LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.symbolic_math import (
         FractalSymbolicMath
     )
     SYMBOLIC_MATH_AVAILABLE = True

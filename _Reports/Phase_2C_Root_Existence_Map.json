@@ -1,0 +1,39 @@
+{
+  "phase": "Phase_2C_Root_Existence_Map",
+  "branch": "pre-import-repair-stabilization",
+  "roots": [
+    {
+      "root": "Logos_System",
+      "violation_count": 158,
+      "exists_on_disk": false,
+      "locations": []
+    },
+    {
+      "root": "LOGOS_AGI",
+      "violation_count": 57,
+      "exists_on_disk": false,
+      "locations": []
+    },
+    {
+      "root": "intelligence",
+      "violation_count": 17,
+      "exists_on_disk": false,
+      "locations": []
+    },
+    {
+      "root": "mathematics",
+      "violation_count": 9,
+      "exists_on_disk": true,
+      "locations": [
+        "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/mathematics"
+      ]
+    },
+    {
+      "root": "Logos_System_Rebuild",
+      "violation_count": 2,
+      "exists_on_disk": false,
+      "locations": []
+    }
+  ],
+  "excluded_directory": "Dynamic_Reconstruction_Adaptive_Compilation_Protocol"
+}

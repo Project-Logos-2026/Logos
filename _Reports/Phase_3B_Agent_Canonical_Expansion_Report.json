@@ -1,0 +1,199 @@
+{
+  "phase": "Phase_3B_Agent_Canonical_Expansion",
+  "total_files_modified": 15,
+  "total_imports_rewritten": 32,
+  "rewrite_records": [
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/semantic_projection_monitor.py",
+      "original": "I2_Agent.config.constants",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.config.constants",
+      "line": 52
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/semantic_projection_monitor.py",
+      "original": "I2_Agent.config.hashing",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.config.hashing",
+      "line": 53
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/semantic_projection_monitor.py",
+      "original": "I2_Agent.diagnostics.errors",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.diagnostics.errors",
+      "line": 54
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/semantic_projection_monitor.py",
+      "original": "I2_Agent.protocol_operations.aa",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.protocol_operations.aa",
+      "line": 55
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/aa.py",
+      "original": "I2_Agent.config.hashing",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.config.hashing",
+      "line": 50
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/aa.py",
+      "original": "I2_Agent.diagnostics.errors",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.diagnostics.errors",
+      "line": 51
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/ui_io/adapter.py",
+      "original": "I2_Agent.config.constants",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.config.constants",
+      "line": 40
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/ui_io/adapter.py",
+      "original": "I2_Agent.config.hashing",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.config.hashing",
+      "line": 41
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/ui_io/adapter.py",
+      "original": "I2_Agent.connections.id_handler",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.connections.id_handler",
+      "line": 42
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/ui_io/adapter.py",
+      "original": "I2_Agent.connections.router",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.connections.router",
+      "line": 43
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/ui_io/adapter.py",
+      "original": "I2_Agent.protocol_operations.smp",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.protocol_operations.smp",
+      "line": 44
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/ui_io/adapter.py",
+      "original": "I2_Agent.protocol_operations.semantic_projection_monitor",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.protocol_operations.semantic_projection_monitor",
+      "line": 46
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/ui_io/server.py",
+      "original": "I2_Agent.protocol_operations.ui_io.adapter",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.protocol_operations.ui_io.adapter",
+      "line": 36
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Infra/config/schema_utils.py",
+      "original": "I3_Agent.diagnostics.errors",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.diagnostics.errors",
+      "line": 38
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Core/Mind_Principal_Operator.py",
+      "original": "I3_Agent.diagnostics.errors",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.diagnostics.errors",
+      "line": 50
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Core/Omni_Property_Integration.py",
+      "original": "I3_Agent.config.hashing",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.config.hashing",
+      "line": 51
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Core/Omni_Property_Integration.py",
+      "original": "I3_Agent.diagnostics.errors",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.diagnostics.errors",
+      "line": 52
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_tests/run_pipeline_smoke.py",
+      "original": "I1_Agent.protocol_operations.scp_integrations.pipeline_runner",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.protocol_operations.scp_integrations.pipeline_runner",
+      "line": 41
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_integrations/pipeline_runner.py",
+      "original": "I1_Agent.protocol_operations.scp_predict.risk_estimator",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.protocol_operations.scp_predict.risk_estimator",
+      "line": 43
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_runtime/result_packet.py",
+      "original": "I1_Agent.config.hashing",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.config.hashing",
+      "line": 40
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_runtime/smp_intake.py",
+      "original": "I1_Agent.config.hashing",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.config.hashing",
+      "line": 39
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_runtime/smp_intake.py",
+      "original": "I1_Agent.config.schema_utils",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.config.schema_utils",
+      "line": 40
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_runtime/smp_intake.py",
+      "original": "I1_Agent.diagnostics.errors",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.diagnostics.errors",
+      "line": 41
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_cycle/cycle_runner.py",
+      "original": "I1_Agent.protocol_operations.scp_runtime.smp_intake",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.protocol_operations.scp_runtime.smp_intake",
+      "line": 38
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_cycle/cycle_runner.py",
+      "original": "I1_Agent.protocol_operations.scp_runtime.work_order",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.protocol_operations.scp_runtime.work_order",
+      "line": 39
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_cycle/cycle_runner.py",
+      "original": "I1_Agent.protocol_operations.scp_runtime.result_packet",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.protocol_operations.scp_runtime.result_packet",
+      "line": 40
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_cycle/cycle_runner.py",
+      "original": "I1_Agent.protocol_operations.scp_transform.iterative_loop",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.protocol_operations.scp_transform.iterative_loop",
+      "line": 41
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Tools/scp_cycle/cycle_runner.py",
+      "original": "I1_Agent.protocol_operations.scp_cycle.policy",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.protocol_operations.scp_cycle.policy",
+      "line": 42
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Core/Sign_Principal_Operator.py",
+      "original": "I1_Agent.diagnostics.errors",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.diagnostics.errors",
+      "line": 49
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Core/OmniProperty_Integration.py",
+      "original": "I1_Agent.config.hashing",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.config.hashing",
+      "line": 49
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Core/OmniProperty_Integration.py",
+      "original": "I1_Agent.diagnostics.errors",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.diagnostics.errors",
+      "line": 50
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Infra/config/schema_utils.py",
+      "original": "I1_Agent.diagnostics.errors",
+      "rewritten": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.diagnostics.errors",
+      "line": 38
+    }
+  ]
+}

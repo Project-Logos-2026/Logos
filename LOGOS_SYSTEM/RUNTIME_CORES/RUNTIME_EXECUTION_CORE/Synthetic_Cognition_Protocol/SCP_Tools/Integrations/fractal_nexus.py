@@ -1,10 +1,3 @@
-# HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
-# AUTHORITY: LOGOS_SYSTEM
-# GOVERNANCE: ENABLED
-# EXECUTION: CONTROLLED
-# MUTABILITY: IMMUTABLE_LOGIC
-# VERSION: 1.0.0
-
 """
 LOGOS_MODULE_METADATA
 ---------------------
@@ -29,35 +22,19 @@ observability:
   metrics: disabled
 ---------------------
 """
-
-"""
-fractal_nexus.py
-
-Toolkit-level Nexus orchestrator for Fractal Orbital Predictor.
-"""
+'\nfractal_nexus.py\n\nToolkit-level Nexus orchestrator for Fractal Orbital Predictor.\n'
 import json
 import traceback
 from typing import Dict, List, Optional, Tuple
-
-
-# =============================================================================
-# Provisional PXL Proof Tagging (Egress Only)
-# =============================================================================
-
-PROVISIONAL_DISCLAIMER = "Requires EMP compilation"
-PROVISIONAL_STATUS = "PROVISIONAL"
-
+PROVISIONAL_DISCLAIMER = 'Requires EMP compilation'
+PROVISIONAL_STATUS = 'PROVISIONAL'
 
 def _payload_is_smp(payload: Dict[str, object]) -> bool:
-    return isinstance(payload, dict) and any(
-        key in payload for key in ("smp_id", "smp", "raw_input", "header")
-    )
-
+    return isinstance(payload, dict) and any((key in payload for key in ('smp_id', 'smp', 'raw_input', 'header')))
 
 def _pxl_key_match(text: str) -> bool:
     lowered = text.lower()
-    return any(token in lowered for token in ("pxl", "formal_logic", "wff", "axiom", "proof"))
-
+    return any((token in lowered for token in ('pxl', 'formal_logic', 'wff', 'axiom', 'proof')))
 
 def _contains_pxl_fragments(obj: object) -> bool:
     if isinstance(obj, dict):
@@ -66,75 +43,49 @@ def _contains_pxl_fragments(obj: object) -> bool:
                 return True
         return False
     if isinstance(obj, list):
-        return any(_contains_pxl_fragments(item) for item in obj)
+        return any((_contains_pxl_fragments(item) for item in obj))
     if isinstance(obj, str):
         return _pxl_key_match(obj)
     return False
 
-
 def _extract_proof_refs(obj: Dict[str, object]) -> Dict[str, Optional[str]]:
-    proof_id = obj.get("proof_id") or obj.get("pxl_proof_id")
-    proof_hash = obj.get("proof_hash") or obj.get("pxl_proof_hash")
-    proof_index = obj.get("proof_index") or obj.get("pxl_proof_index")
-    proof_refs = obj.get("proof_refs") or obj.get("pxl_refs")
-
+    proof_id = obj.get('proof_id') or obj.get('pxl_proof_id')
+    proof_hash = obj.get('proof_hash') or obj.get('pxl_proof_hash')
+    proof_index = obj.get('proof_index') or obj.get('pxl_proof_index')
+    proof_refs = obj.get('proof_refs') or obj.get('pxl_refs')
     if not proof_id and isinstance(proof_index, dict):
-        proof_id = proof_index.get("proof_id")
-        proof_hash = proof_hash or proof_index.get("proof_hash")
-
+        proof_id = proof_index.get('proof_id')
+        proof_hash = proof_hash or proof_index.get('proof_hash')
     if not proof_id and isinstance(proof_refs, dict):
-        proof_id = proof_refs.get("proof_id")
-        proof_hash = proof_hash or proof_refs.get("proof_hash")
-
-    return {
-        "proof_id": str(proof_id) if proof_id else None,
-        "proof_hash": str(proof_hash) if proof_hash else None,
-    }
-
+        proof_id = proof_refs.get('proof_id')
+        proof_hash = proof_hash or proof_refs.get('proof_hash')
+    return {'proof_id': str(proof_id) if proof_id else None, 'proof_hash': str(proof_hash) if proof_hash else None}
 
 def _build_span_mapping(obj: Dict[str, object]) -> Dict[str, object]:
-    if "span_mapping" in obj and isinstance(obj["span_mapping"], dict):
-        return obj["span_mapping"]
-    return {
-        "smp_section": obj.get("smp_section", "unknown"),
-        "clause_range": obj.get("clause_range", "unknown"),
-    }
-
+    if 'span_mapping' in obj and isinstance(obj['span_mapping'], dict):
+        return obj['span_mapping']
+    return {'smp_section': obj.get('smp_section', 'unknown'), 'clause_range': obj.get('clause_range', 'unknown')}
 
 def _derive_polarity(obj: Dict[str, object]) -> str:
-    candidate = str(obj.get("polarity") or obj.get("verdict") or "proven_true").lower()
-    if candidate in {"proven_true", "true", "yes"}:
-        return "proven_true"
-    if candidate in {"proven_false", "false", "no"}:
-        return "proven_false"
-    return "proven_true"
-
+    candidate = str(obj.get('polarity') or obj.get('verdict') or 'proven_true').lower()
+    if candidate in {'proven_true', 'true', 'yes'}:
+        return 'proven_true'
+    if candidate in {'proven_false', 'false', 'no'}:
+        return 'proven_false'
+    return 'proven_true'
 
 def _tag_append_artifact(aa_payload: Dict[str, object]) -> Dict[str, object]:
-    if "PROVISIONAL_PROOF_TAG" in aa_payload:
+    if 'PROVISIONAL_PROOF_TAG' in aa_payload:
         return aa_payload
-
-    content = aa_payload.get("content") if isinstance(aa_payload.get("content"), dict) else {}
-    if not _contains_pxl_fragments(content) and not _contains_pxl_fragments(aa_payload):
+    content = aa_payload.get('content') if isinstance(aa_payload.get('content'), dict) else {}
+    if not _contains_pxl_fragments(content) and (not _contains_pxl_fragments(aa_payload)):
         return aa_payload
-
     refs = _extract_proof_refs(content) if content else _extract_proof_refs(aa_payload)
-    if not refs.get("proof_id") and not refs.get("proof_hash"):
+    if not refs.get('proof_id') and (not refs.get('proof_hash')):
         return aa_payload
-
-    tag = {
-        "proof_id": refs.get("proof_id"),
-        "proof_hash": refs.get("proof_hash"),
-        "polarity": _derive_polarity(content or aa_payload),
-        "span_mapping": _build_span_mapping(content or aa_payload),
-        "confidence_uplift": 0.05,
-        "status": PROVISIONAL_STATUS,
-        "disclaimer": PROVISIONAL_DISCLAIMER,
-    }
-
-    aa_payload["PROVISIONAL_PROOF_TAG"] = tag
+    tag = {'proof_id': refs.get('proof_id'), 'proof_hash': refs.get('proof_hash'), 'polarity': _derive_polarity(content or aa_payload), 'span_mapping': _build_span_mapping(content or aa_payload), 'confidence_uplift': 0.05, 'status': PROVISIONAL_STATUS, 'disclaimer': PROVISIONAL_DISCLAIMER}
+    aa_payload['PROVISIONAL_PROOF_TAG'] = tag
     return aa_payload
-
 
 def _apply_provisional_proof_tagging(payload: object) -> object:
     try:
@@ -142,84 +93,71 @@ def _apply_provisional_proof_tagging(payload: object) -> object:
             return payload
         if _payload_is_smp(payload):
             return payload
-
-        if {"aa_id", "aa_type"}.issubset(payload.keys()):
+        if {'aa_id', 'aa_type'}.issubset(payload.keys()):
             return _tag_append_artifact(payload)
-
-        for key in ("append_artifact", "append_artifacts", "aa", "aa_list"):
+        for key in ('append_artifact', 'append_artifacts', 'aa', 'aa_list'):
             if key in payload:
                 aa_block = payload.get(key)
                 if isinstance(aa_block, dict):
                     payload[key] = _tag_append_artifact(aa_block)
                 elif isinstance(aa_block, list):
-                    payload[key] = [
-                        _tag_append_artifact(item) if isinstance(item, dict) else item
-                        for item in aa_block
-                    ]
+                    payload[key] = [_tag_append_artifact(item) if isinstance(item, dict) else item for item in aa_block]
         return payload
     except Exception:
         return payload
-
-# Optional dependency guard: LOGOS_AGI may be absent in minimal environments.
 try:
-    from LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.predictors.class_fractal_orbital_predictor import (  # type: ignore
-        TrinityPredictionEngine,
-    )
-    from LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.predictors.divergence_calculator import (  # type: ignore
-        DivergenceEngine,
-    )
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.predictors.class_fractal_orbital_predictor import TrinityPredictionEngine
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.predictors.divergence_calculator import DivergenceEngine
 except ImportError:
-    class TrinityPredictionEngine:  # pragma: no cover - stub placeholder
+
+    class TrinityPredictionEngine:
+
         def __init__(self, *_args, **_kwargs):
-            raise ImportError("LOGOS_AGI is not available in this environment")
+            raise ImportError('LOGOS_AGI is not available in this environment')
 
         def predict(self, *_args, **_kwargs):
-            raise ImportError("LOGOS_AGI is not available in this environment")
+            raise ImportError('LOGOS_AGI is not available in this environment')
 
-    class DivergenceEngine:  # pragma: no cover - stub placeholder
+    class DivergenceEngine:
+
         def analyze_divergence(self, *_args, **_kwargs):
-            raise ImportError("LOGOS_AGI is not available in this environment")
-
+            raise ImportError('LOGOS_AGI is not available in this environment')
 try:
-    from LOGOS_AGI.Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator import (
-        FractalNodeGenerator,
-    )
-except ImportError:  # pragma: no cover - fallback to sibling import when package path absent
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator import FractalNodeGenerator
+except ImportError:
     try:
-        from Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator import (
-            FractalNodeGenerator,
-        )
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator import FractalNodeGenerator
     except ImportError:
-        class FractalNodeGenerator:  # pragma: no cover - stub placeholder
+
+        class FractalNodeGenerator:
+
             def __init__(self, *_args, **_kwargs):
-                raise ImportError("FractalNodeGenerator is not available")
+                raise ImportError('FractalNodeGenerator is not available')
 
             def generate(self, *_args, **_kwargs):
-                raise ImportError("FractalNodeGenerator is not available")
-
+                raise ImportError('FractalNodeGenerator is not available')
 try:
-    from LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine import (
-        OntologicalSpace,
-    )
-except ImportError:  # pragma: no cover - fallback to relative import when executed as script
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine import OntologicalSpace
+except ImportError:
     try:
-        from Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine import (
-            OntologicalSpace,
-        )
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine import OntologicalSpace
     except ImportError:
-        class OntologicalSpace:  # pragma: no cover - stub placeholder
+
+        class OntologicalSpace:
+
             def __init__(self, *_args, **_kwargs):
-                raise ImportError("OntologicalSpace is not available")
+                raise ImportError('OntologicalSpace is not available')
 
             def compute_fractal_position(self, *_args, **_kwargs):
-                raise ImportError("OntologicalSpace is not available")
+                raise ImportError('OntologicalSpace is not available')
 
 class FractalNexus:
+
     def __init__(self, prior_path: str):
         self.predictor = TrinityPredictionEngine(prior_path)
         self.divergence = DivergenceEngine()
         self.generator = FractalNodeGenerator()
-        self.mapper    = OntologicalSpace()
+        self.mapper = OntologicalSpace()
 
     def run_predict(self, keywords: List[str]) -> Dict:
         try:
@@ -251,45 +189,31 @@ class FractalNexus:
 
     def run_pipeline(self, keywords: List[str]) -> List[Dict]:
         report = []
-        # 1) Predict
         p = self.run_predict(keywords)
         report.append({'step': 'predict', **p})
         if p['error'] or not p['output']:
             return report
-
-        # Extract trinity & c_value
         trinity = p['output'].get('trinity')
-        c_val   = p['output'].get('c_value')
-
-        # 2) Divergence on trinity
+        c_val = p['output'].get('c_value')
         d = self.run_divergence(trinity)
         report.append({'step': 'divergence', **d})
-
-        # 3) Generate nodes from c_value
         try:
-            # convert c_value string to complex if needed
             c = complex(c_val) if isinstance(c_val, str) else c_val
         except:
             c = c_val
         g = self.run_generate(c)
         report.append({'step': 'generate', **g})
-
-        # 4) Map trinity -> position (using first variant if available)
         if d['output']:
             first_tv = d['output'][0].get('trinity_vector')
             m = self.run_map(first_tv)
             report.append({'step': 'map', **m})
-
         return report
-
 if __name__ == '__main__':
     import sys
     import pprint
-
     if len(sys.argv) < 3:
-        print("Usage: python fractal_nexus.py <prior_path> <keyword1> [keyword2 ...]")
+        print('Usage: python fractal_nexus.py <prior_path> <keyword1> [keyword2 ...]')
         sys.exit(1)
-
     prior = sys.argv[1]
     keywords = sys.argv[2:]
     nexus = FractalNexus(prior)

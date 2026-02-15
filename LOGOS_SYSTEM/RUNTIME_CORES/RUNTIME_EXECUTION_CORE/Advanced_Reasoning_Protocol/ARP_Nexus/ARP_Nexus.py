@@ -51,7 +51,7 @@ from typing import Dict, List, Any, Optional, Hashable
 from dataclasses import dataclass
 import time
 
-from metered_reasoning_enforcer import MeteredReasoningEnforcer
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.metered_reasoning_enforcer import MeteredReasoningEnforcer
 
 
 # =============================================================================

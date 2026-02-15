@@ -60,9 +60,7 @@ import sys
 from pathlib import Path
 from typing import List
 
-# Add parent directory to path for imports when invoked as a script
-if __name__ == "__main__":
-    sys.path.insert(0, str(Path(__file__).parent))
+# Assume canonical imports; no sys.path manipulation
 
 try:
     from LOGOS_SYSTEM.SYSTEM.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.fractal_orbit_toolkit import (

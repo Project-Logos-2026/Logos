@@ -1,0 +1,165 @@
+{
+  "audit_version": "v4_structural_execution_boundary",
+  "results": [
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Nexus/I1_Nexus.py",
+      "execution_boundary_class": false,
+      "has_tick": false,
+      "has_register_participant": false,
+      "has_ingest": false,
+      "has_mesh_enforcer": false,
+      "has_mre_governor": false,
+      "raises_custom_exceptions": true,
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Nexus/I2_Nexus.py",
+      "execution_boundary_class": false,
+      "has_tick": false,
+      "has_register_participant": false,
+      "has_ingest": false,
+      "has_mesh_enforcer": false,
+      "has_mre_governor": false,
+      "raises_custom_exceptions": true,
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Nexus/I3_Nexus.py",
+      "execution_boundary_class": false,
+      "has_tick": false,
+      "has_register_participant": false,
+      "has_ingest": false,
+      "has_mesh_enforcer": false,
+      "has_mre_governor": false,
+      "raises_custom_exceptions": true,
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Nexus/Logos_Agent_Nexus.py",
+      "execution_boundary_class": false,
+      "has_tick": false,
+      "has_register_participant": false,
+      "has_ingest": false,
+      "has_mesh_enforcer": false,
+      "has_mre_governor": false,
+      "raises_custom_exceptions": true,
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Nexus/Logos_Protocol_Nexus.py",
+      "execution_boundary_class": false,
+      "has_tick": false,
+      "has_register_participant": false,
+      "has_ingest": false,
+      "has_mesh_enforcer": false,
+      "has_mre_governor": false,
+      "raises_custom_exceptions": true,
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/MTP_Nexus.py",
+      "execution_boundary_class": false,
+      "has_tick": false,
+      "has_register_participant": false,
+      "has_ingest": false,
+      "has_mesh_enforcer": false,
+      "has_mre_governor": false,
+      "raises_custom_exceptions": false,
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Nexus/ARP_Nexus.py",
+      "execution_boundary_class": false,
+      "has_tick": false,
+      "has_register_participant": false,
+      "has_ingest": false,
+      "has_mesh_enforcer": false,
+      "has_mre_governor": false,
+      "raises_custom_exceptions": true,
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Nexus/SCP_Nexus.py",
+      "execution_boundary_class": false,
+      "has_tick": false,
+      "has_register_participant": false,
+      "has_ingest": false,
+      "has_mesh_enforcer": false,
+      "has_mre_governor": false,
+      "raises_custom_exceptions": true,
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/System_Operations_Protocol/SOP_Nexus/SOP_Nexus.py",
+      "execution_boundary_class": false,
+      "has_tick": false,
+      "has_register_participant": false,
+      "has_ingest": false,
+      "has_mesh_enforcer": false,
+      "has_mre_governor": false,
+      "raises_custom_exceptions": true,
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Epistemic_Monitoring_Protocol/EMP_Nexus/EMP_Nexus.py",
+      "execution_boundary_class": false,
+      "has_tick": false,
+      "has_register_participant": false,
+      "has_ingest": false,
+      "has_mesh_enforcer": false,
+      "has_mre_governor": false,
+      "raises_custom_exceptions": true,
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Nexus/DRAC_Nexus.py",
+      "execution_boundary_class": false,
+      "has_tick": false,
+      "has_register_participant": false,
+      "has_ingest": false,
+      "has_mesh_enforcer": false,
+      "has_mre_governor": false,
+      "raises_custom_exceptions": true,
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Nexus/CSP_Nexus.py",
+      "execution_boundary_class": false,
+      "has_tick": false,
+      "has_register_participant": false,
+      "has_ingest": false,
+      "has_mesh_enforcer": false,
+      "has_mre_governor": false,
+      "raises_custom_exceptions": true,
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/APPLICATION_FUNCTIONS/Memory/Logos_Memory_Nexus.py",
+      "execution_boundary_class": false,
+      "has_tick": false,
+      "has_register_participant": false,
+      "has_ingest": false,
+      "has_mesh_enforcer": false,
+      "has_mre_governor": false,
+      "raises_custom_exceptions": false,
+      "classification": "UNCLASSIFIED"
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Core/Memory/Logos_Memory_Nexus.py",
+      "execution_boundary_class": false,
+      "has_tick": false,
+      "has_register_participant": false,
+      "has_ingest": false,
+      "has_mesh_enforcer": false,
+      "has_mre_governor": false,
+      "raises_custom_exceptions": false,
+      "classification": "UNCLASSIFIED"
+    }
+  ],
+  "summary": {
+    "total_nexus_files": 14,
+    "tier_1_execution": 0,
+    "partial_execution_boundary": 0,
+    "unclassified": 14
+  }
+}
