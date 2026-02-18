@@ -1,0 +1,45 @@
+{
+  "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Runtime_Enforcement/Runtime_Spine/Agent_Orchestration/agent_orchestration": [
+    "typing"
+  ],
+  "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Runtime_Enforcement/Runtime_Spine/Lock_And_Key/lock_and_key": [
+    "hashlib",
+    "json",
+    "pathlib",
+    "time",
+    "typing"
+  ],
+  "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Core/Lem_Discharge": [
+    "typing"
+  ],
+  "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Core/Start_Logos_Agent": [
+    "typing"
+  ],
+  "LOGOS_SYSTEM/Runtime_Spine/Agent_Orchestration/agent_orchestration": [
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Spine.Agent_Orchestration.agent_orchestration"
+  ],
+  "LOGOS_SYSTEM/Runtime_Spine/Lock_And_Key/lock_and_key": [
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Spine.Lock_And_Key.lock_and_key"
+  ],
+  "LOGOS_SYSTEM/System_Entry_Point/Agent_Orchestration/agent_orchestration": [
+    "LOGOS_SYSTEM.Runtime_Spine.Agent_Orchestration.agent_orchestration"
+  ],
+  "LOGOS_SYSTEM/System_Entry_Point/System_Entry_Point": [
+    "typing"
+  ],
+  "STARTUP/LOGOS_SYSTEM": [
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Lem_Discharge",
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Start_Logos_Agent",
+    "LOGOS_SYSTEM.Runtime_Spine.Lock_And_Key.lock_and_key",
+    "LOGOS_SYSTEM.System_Entry_Point.Agent_Orchestration.agent_orchestration",
+    "LOGOS_SYSTEM.System_Entry_Point.System_Entry_Point",
+    "os",
+    "pathlib",
+    "subprocess",
+    "sys",
+    "typing"
+  ],
+  "STARTUP/START_LOGOS": [
+    "STARTUP.LOGOS_SYSTEM"
+  ]
+}
