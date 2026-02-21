@@ -11,7 +11,7 @@ LOGOS V2 Unified Worker Kernel
 Consolidated worker infrastructure from distributed and adaptive_reasoning.
 """
 
-from .system_imports import *
+from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports import *
 from .unified_classes import UnifiedWorkerConfig
 
 

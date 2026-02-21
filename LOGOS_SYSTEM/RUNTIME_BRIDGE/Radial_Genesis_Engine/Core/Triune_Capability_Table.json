@@ -1,0 +1,82 @@
+{
+  "spec_version": "1.0.0",
+  "spec_reference": "Capability_Function_Spec.md §4",
+  "invariants": {
+    "all_vectors_sum_to_1": true,
+    "all_components_in_0_1": true,
+    "static": true,
+    "non_learning": true,
+    "piecewise_constant": true
+  },
+  "regions": {
+    "R_E": {
+      "condition": "max_axis = E AND E > 0.5",
+      "interpretation": "Existential pressure dominates"
+    },
+    "R_G": {
+      "condition": "max_axis = G AND G > 0.5",
+      "interpretation": "Normative pressure dominates"
+    },
+    "R_T": {
+      "condition": "max_axis = T AND T > 0.5",
+      "interpretation": "Epistemic pressure dominates"
+    },
+    "R_ET": {
+      "condition": "max_axis <= 0.5 AND min_axis < 0.2 AND G = min_axis",
+      "interpretation": "Existential + epistemic, normative weak"
+    },
+    "R_EG": {
+      "condition": "max_axis <= 0.5 AND min_axis < 0.2 AND T = min_axis",
+      "interpretation": "Existential + normative, epistemic weak"
+    },
+    "R_GT": {
+      "condition": "max_axis <= 0.5 AND min_axis < 0.2 AND E = min_axis",
+      "interpretation": "Normative + epistemic, existential weak"
+    },
+    "R_B": {
+      "condition": "max_axis <= 0.5 AND min_axis >= 0.2",
+      "interpretation": "No axis dominates"
+    }
+  },
+  "capability_vectors": {
+    "SCP": {
+      "R_E":  [0.20, 0.10, 0.70],
+      "R_G":  [0.15, 0.15, 0.70],
+      "R_T":  [0.15, 0.10, 0.75],
+      "R_ET": [0.20, 0.10, 0.70],
+      "R_EG": [0.20, 0.15, 0.65],
+      "R_GT": [0.15, 0.15, 0.70],
+      "R_B":  [0.20, 0.10, 0.70]
+    },
+    "MTP": {
+      "R_E":  [0.40, 0.25, 0.35],
+      "R_G":  [0.30, 0.40, 0.30],
+      "R_T":  [0.30, 0.25, 0.45],
+      "R_ET": [0.35, 0.20, 0.45],
+      "R_EG": [0.40, 0.35, 0.25],
+      "R_GT": [0.25, 0.35, 0.40],
+      "R_B":  [0.35, 0.30, 0.35]
+    },
+    "ARP": {
+      "R_E":  [0.25, 0.15, 0.60],
+      "R_G":  [0.20, 0.20, 0.60],
+      "R_T":  [0.20, 0.15, 0.65],
+      "R_ET": [0.25, 0.15, 0.60],
+      "R_EG": [0.25, 0.20, 0.55],
+      "R_GT": [0.20, 0.20, 0.60],
+      "R_B":  [0.25, 0.15, 0.60]
+    },
+    "LOGOS": {
+      "R_E":  [0.40, 0.30, 0.30],
+      "R_G":  [0.30, 0.40, 0.30],
+      "R_T":  [0.30, 0.30, 0.40],
+      "R_ET": [0.35, 0.25, 0.40],
+      "R_EG": [0.35, 0.35, 0.30],
+      "R_GT": [0.25, 0.35, 0.40],
+      "R_B":  [0.34, 0.33, 0.33]
+    }
+  },
+  "vector_order": ["E", "G", "T"],
+  "protocols": ["SCP", "MTP", "ARP", "LOGOS"],
+  "region_ids": ["R_E", "R_G", "R_T", "R_ET", "R_EG", "R_GT", "R_B"]
+}

@@ -49,7 +49,7 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 
 import networkx as nx
 import numpy as np
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.APPLICATION_FUNCTIONS.Utilities.system_imports import (
+from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports import (
     defaultdict, dataclass, field, Enum, Any, Dict, List, Optional, Set, Tuple
 )
 

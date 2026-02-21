@@ -12,7 +12,7 @@ Consolidated core data structures and shared abstractions.
 Eliminates redundancy across adaptive_reasoning and logos_core.
 """
 
-from .system_imports import *
+from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports import *
 
 
 # === WORKER INFRASTRUCTURE ===

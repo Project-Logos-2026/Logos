@@ -1,0 +1,50 @@
+{
+  "entry_root": "STARTUP/START_LOGOS.py",
+  "call_chain": [
+    {
+      "function": "main",
+      "file_path": "STARTUP/START_LOGOS.py",
+      "calls": "RUN_LOGOS_SYSTEM (STARTUP/LOGOS_SYSTEM.py)"
+    },
+    {
+      "function": "RUN_LOGOS_SYSTEM",
+      "file_path": "STARTUP/LOGOS_SYSTEM.py",
+      "calls": [
+        "START_LOGOS (LOGOS_SYSTEM/System_Entry_Point/System_Entry_Point.py)",
+        "execute_lock_and_key (LOGOS_SYSTEM/Runtime_Spine/Lock_And_Key/lock_and_key.py)",
+        "start_logos_agent (LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Core/Start_Logos_Agent.py)",
+        "discharge_lem (LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Core/Lem_Discharge.py)",
+        "prepare_agent_orchestration (LOGOS_SYSTEM/System_Entry_Point/Agent_Orchestration/agent_orchestration.py)"
+      ]
+    },
+    {
+      "function": "START_LOGOS",
+      "file_path": "LOGOS_SYSTEM/System_Entry_Point/System_Entry_Point.py",
+      "calls": "handoff context only (no further calls)"
+    },
+    {
+      "function": "execute_lock_and_key",
+      "file_path": "LOGOS_SYSTEM/Runtime_Spine/Lock_And_Key/lock_and_key.py",
+      "calls": "Lock-and-Key logic (details abstracted)"
+    },
+    {
+      "function": "start_logos_agent",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Core/Start_Logos_Agent.py",
+      "calls": "LOGOS session envelope (no protocol activation)"
+    },
+    {
+      "function": "discharge_lem",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Core/Lem_Discharge.py",
+      "calls": "LOGOS agent identity formation"
+    },
+    {
+      "function": "prepare_agent_orchestration",
+      "file_path": "LOGOS_SYSTEM/System_Entry_Point/Agent_Orchestration/agent_orchestration.py",
+      "calls": [
+        "SCP (planned)",
+        "ARP (planned)",
+        "MTP (planned)"
+      ]
+    }
+  ]
+}

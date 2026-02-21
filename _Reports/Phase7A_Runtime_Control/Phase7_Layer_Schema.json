@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "L0": "STARTUP",
+    "L1": "EXECUTION_CORE",
+    "L2": "GOVERNANCE_ENFORCEMENT",
+    "L3": "RUNTIME_BRIDGE",
+    "L4": "OPERATIONS_CORE",
+    "L5": "EXTERNALIZATION",
+    "L6": "DEVELOPMENT_TOOLS",
+    "L7": "TESTS",
+    "L8": "DOCUMENTATION"
+  },
+  "prohibited_runtime_constructs": [
+    "importlib",
+    "eval",
+    "exec",
+    "sys.path"
+  ]
+}

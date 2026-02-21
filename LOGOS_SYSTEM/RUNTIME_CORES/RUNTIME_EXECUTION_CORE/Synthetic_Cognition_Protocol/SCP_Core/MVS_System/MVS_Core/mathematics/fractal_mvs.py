@@ -56,7 +56,7 @@ import numpy as np
 from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import TrinityVector, Trinity_Hyperstructure
 TrinityVector = Trinity_Hyperstructure
 try:
-    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.APPLICATION_FUNCTIONS.Utilities.system_imports import (
+    from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports import (
         logging, defaultdict, dataclass, field, datetime, Any, Dict, List, Optional, Tuple
     )
 except ImportError:

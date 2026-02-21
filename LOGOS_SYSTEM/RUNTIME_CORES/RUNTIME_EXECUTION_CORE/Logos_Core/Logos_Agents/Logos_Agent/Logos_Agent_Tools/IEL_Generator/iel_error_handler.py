@@ -49,7 +49,7 @@ from enum import Enum
 from functools import wraps
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.APPLICATION_FUNCTIONS.Utilities.system_imports import (
+from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports import (
     dataclass, field, Enum, Any, Callable, Dict, List, Optional, Tuple
 )
 

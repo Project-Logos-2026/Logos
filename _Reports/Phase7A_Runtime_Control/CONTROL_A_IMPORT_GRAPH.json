@@ -1,0 +1,30 @@
+{
+  "total_modules": 3,
+  "total_import_edges": 7,
+  "modules": [
+    {
+      "module": "STARTUP.START_LOGOS",
+      "file_path": "STARTUP/START_LOGOS.py",
+      "internal_imports": ["STARTUP.LOGOS_SYSTEM"],
+      "external_imports": ["os", "subprocess", "sys"]
+    },
+    {
+      "module": "STARTUP.LOGOS_SYSTEM",
+      "file_path": "STARTUP/LOGOS_SYSTEM.py",
+      "internal_imports": [
+        "LOGOS_SYSTEM.System_Entry_Point.System_Entry_Point",
+        "LOGOS_SYSTEM.System_Entry_Point.Agent_Orchestration.agent_orchestration",
+        "LOGOS_SYSTEM.Runtime_Spine.Lock_And_Key.lock_and_key",
+        "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Start_Logos_Agent",
+        "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Lem_Discharge"
+      ],
+      "external_imports": ["os", "subprocess", "sys", "pathlib", "typing"]
+    },
+    {
+      "module": "STARTUP.__main__",
+      "file_path": "STARTUP/__main__.py",
+      "internal_imports": ["STARTUP.START_LOGOS"],
+      "external_imports": ["__future__"]
+    }
+  ]
+}
