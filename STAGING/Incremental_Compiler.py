@@ -42,7 +42,9 @@ import time
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional
 
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Topology_Context import TopologyContext
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Topology_Context import (
+    TopologyContext,
+)
 
 
 @dataclass

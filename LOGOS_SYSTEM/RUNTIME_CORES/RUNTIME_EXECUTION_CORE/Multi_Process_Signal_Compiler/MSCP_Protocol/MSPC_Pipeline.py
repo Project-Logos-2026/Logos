@@ -1,16 +1,16 @@
 from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_State import MSPCState
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Ingress import SignalIngress
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Registry import SignalRegistry
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Resolution.Conflict_Resolver import ConflictResolver, ResolutionResult
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Dependency_Graph import DependencyGraph
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Incremental_Compiler import IncrementalCompiler, CompilationResult
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Artifact_Emitter import ArtifactEmitter, EmissionBatch
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Contracts.MSPC_Subscription_API import MSPCSubscriptionAPI
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Diagnostics.MSPC_Telemetry import MSPCTelemetry
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Diagnostics.MSPC_Audit_Log import AuditEventType, MSPCAuditLog
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_State import MSPCState
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Ingress import SignalIngress
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Registry import SignalRegistry
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Resolution.Conflict_Resolver import ConflictResolver, ResolutionResult
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Dependency_Graph import DependencyGraph
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Incremental_Compiler import IncrementalCompiler, CompilationResult
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Artifact_Emitter import ArtifactEmitter, EmissionBatch
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Contracts.MSPC_Subscription_API import MSPCSubscriptionAPI
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Diagnostics.MSPC_Telemetry import MSPCTelemetry
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Diagnostics.MSPC_Audit_Log import AuditEventType, MSPCAuditLog
 
 @dataclass
 class PipelineTickResult:
@@ -111,19 +111,30 @@ class MSPCPipeline:
         resolved = getattr(self._state, '_resolved_signals', [])
         self._graph.build_from_signals(resolved)
         self._audit.record(AuditEventType.COMPILATION_STARTED, tick_num)
-        comp_result: CompilationResult = self._compiler.compile(resolved, self._graph)
-        result.artifacts_compiled = len(comp_result.artifacts)
-        self._state.tick.signals_compiled_this_tick = len(comp_result.artifacts)
-        if comp_result.halted:
+        comp_result: CompilationResult = self._compiler.compile_batch(resolved, self._graph)
+        result.artifacts_compiled = len(comp_result.compiled)
+        self._state.tick.signals_compiled_this_tick = len(comp_result.compiled)
+        if comp_result.errors:
             result.halted = True
             result.errors.extend(comp_result.errors)
-            self._audit.record(AuditEventType.COMPILATION_ERROR, tick_num, {'errors': comp_result.errors})
+            self._audit.record(
+                AuditEventType.COMPILATION_ERROR,
+                tick_num,
+                {'errors': comp_result.errors},
+            )
         else:
-            self._audit.record(AuditEventType.COMPILATION_COMPLETED, tick_num, {'artifact_count': len(comp_result.artifacts)})
+            self._audit.record(
+                AuditEventType.COMPILATION_COMPLETED,
+                tick_num,
+                {'artifact_count': len(comp_result.compiled)},
+            )
         for err in comp_result.errors:
             self._state.record_error('compilation', str(err))
-        self._state._compiled_artifacts = comp_result.artifacts
-        self._telemetry.end_stage(items_processed=len(comp_result.artifacts), errors=len(comp_result.errors))
+        self._state._compiled_artifacts = comp_result.compiled
+        self._telemetry.end_stage(
+            items_processed=len(comp_result.compiled),
+            errors=len(comp_result.errors),
+        )
         return result
 
     def _stage_emission(self, result: PipelineTickResult, tick_num: int) -> PipelineTickResult:

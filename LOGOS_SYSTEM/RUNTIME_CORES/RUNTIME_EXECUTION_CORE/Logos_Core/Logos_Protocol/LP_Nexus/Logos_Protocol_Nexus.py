@@ -365,6 +365,7 @@ class StandardNexus:
 
         # Execute participants deterministically (sorted by id)
         for pid in sorted(self.participants.keys()):
+            print("TICK ORDER ->", pid)  # TEMPORARY AUDIT PRINT
             participant = self.participants[pid]
 
             # MRE pre-check

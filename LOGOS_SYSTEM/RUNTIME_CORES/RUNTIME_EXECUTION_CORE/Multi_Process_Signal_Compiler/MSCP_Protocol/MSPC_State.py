@@ -54,9 +54,18 @@ class MSPCState:
     blocked_signals: Dict[str, Any] = field(default_factory=dict)
     dependency_graph: Dict[str, Set[str]] = field(default_factory=dict)
     compilation_cache: Dict[str, Any] = field(default_factory=dict)
+
     emitted_artifacts: List[Dict[str, Any]] = field(default_factory=list)
     escalation_queue: List[Dict[str, Any]] = field(default_factory=list)
     error_log: List[Dict[str, Any]] = field(default_factory=list)
+
+    # --- Pipeline Ephemeral Tick State (Internal Only) ---
+    # These fields are transient and are created/cleared by MSPCPipeline
+    # during a single tick execution. They are not part of persistent state.
+    _ingested_batch: Optional[List[Any]] = field(default=None, repr=False)
+    _resolved_signals: Optional[List[Any]] = field(default=None, repr=False)
+    _compiled_artifacts: Optional[List[Any]] = field(default=None, repr=False)
+    _emitted_batch: Optional[List[Any]] = field(default=None, repr=False)
 
     def initialize(self, session_id: str) -> None:
         if self.phase != RuntimePhase.UNINITIALIZED:

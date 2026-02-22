@@ -35,11 +35,15 @@ observability:
 
 from typing import Any, Dict, Optional
 
-from .types import LogosBundle
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Integration.types import LogosBundle
 from .dispatch import dispatch_to_scp, dispatch_to_arp
-from LOGOS_SYSTEM.System_Stack.Logos_Protocol.Activation_Sequencer.I1.scp_pipeline.pipeline_runner import (
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Integration.I1.scp_pipeline.pipeline_runner import (
     PipelineRunner,
 )
+
+# RGE integration imports
+from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap import build_rge
+from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Integration.RGE_Nexus_Adapter import RGENexusAdapter
 
 
 def _should_call_scp(smp: Dict[str, Any]) -> bool:
@@ -63,6 +67,7 @@ def _should_call_arp(smp: Dict[str, Any]) -> bool:
     return rt.upper() in {"ARP", "I3"}
 
 
+
 def run_logos_cycle(
     *,
     smp: Dict[str, Any],
@@ -84,6 +89,7 @@ def run_logos_cycle(
         "reasons": [],
     }
 
+    # Construct Logos participant (existing logic)
     scp_result = None
     if _should_call_scp(smp):
         scp_result = dispatch_to_scp(smp=smp, payload_ref=payload_ref)
@@ -110,6 +116,8 @@ def run_logos_cycle(
         arp_result = dispatch_to_arp(task=task)
         route_summary["called_arp"] = True
         route_summary["reasons"].append("ARP selected by route_to.")
+
+
 
     return LogosBundle(
         smp=smp,

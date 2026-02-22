@@ -18,6 +18,9 @@
   },
   "python.formatting.provider": "none",
   "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}"
+  ],
   "python.analysis.indexing": true,
   "python.linting.enabled": true,
   "python.linting.ruffEnabled": true,

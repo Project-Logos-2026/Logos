@@ -1,0 +1,63 @@
+{
+  "Radial_Genesis_Engine": {
+    "Contracts": ["RGE_Telemetry_Snapshot.py"],
+    "Control": ["Hysteresis_Governor.py"],
+    "Controller": ["Genesis_Selector.py", "Mode_Controller.py", "RGE_Override_Channel.py", "__pycache__/"],
+    "Core": ["Telemetry_Snapshot.py", "Topology_State.py", "Triad_Region_Classifier.py", "__pycache__/"],
+    "DOCUMENTS": [],
+    "Evaluation": ["Commutation_Balance_Score.py", "Composite_Aggregator_Registration_Diff.py", "Divergence_Metric.py", "Recursion_Coupling_Coherence_Score.py", "Scoring_Interface.py", "Triune_Fit_Score.py", "__pycache__/"],
+    "Events": ["Event_Emitter.py", "__pycache__/"],
+    "Ontological_Field": ["Ontological_Registry.py", "__init__.py", "__pycache__/"],
+    "STAGING": ["Commutation_Residual_Producer.py", "Logos_Telemetry_Integration_Point.py", "Stability_Scalar_Producer.py", "Task_Triad_Derivation.py", "Telemetry_Producer.py", "__init__.py"],
+    "Tests": ["__pycache__", "test_recursion_coupling_score.py", "test_recursion_layer_telemetry.py", "test_rge_override_behavior.py", "test_topology_validation.py"]
+  },
+  "Logos_Core": {
+    "Logos_Agents": {
+      "Agent_Safety_Shims": ["Agent_Lifecycle.py", "Capability_Router.py", "Documentation/", "Memory_Substrate.py", "Phase_E_Memory_Substrate.py", "Tick_Engine.py", "__init__.py"],
+      "I1_Agent": ["I1_Agent_Core/", "I1_Agent_Documentation/", "I1_Agent_Infra/", "I1_Agent_Nexus/", "I1_Agent_Tools/", "__init__.py", "__pycache__/"],
+      "I2_Agent": ["I2_Agent_Core/", "I2_Agent_Documentation/", "I2_Agent_Infra/", "I2_Agent_Nexus/", "I2_Agent_Tools/", "__init__.py", "__pycache__/"],
+      "I3_Agent": ["I3_Agent_Core/", "I3_Agent_Documentation/", "I3_Agent_Infra/", "I3_Agent_Nexus/", "I3_Agent_Tools/", "__init__.py"],
+      "Logos_Agent": ["Documentation/", "Logos_Agent_Core/", "Logos_Agent_Nexus/", "Logos_Agent_Tools/", "Tetra_Conscious/", "__init__.py", "__pycache__", "agent_classes.py", "runtime.py"],
+      "__init__.py": null,
+      "__pycache__": null
+    },
+    "Logos_Core_Documentation": ["GOVERNANCE_SCOPE.md", "MANIFEST.md", "METADATA.json", "ORDER_OF_OPERATIONS.md", "RUNTIME_ROLE.md", "STACK_POSITION.md", "__init__.py"],
+    "Logos_Protocol": {
+      "LP_Core": ["Activation_Sequencer/", "Agent_Integration/", "Agent_Orchestration/", "Identity_Generator/", "__init__.py", "__pycache__/"],
+      "LP_Nexus": ["Logos_Protocol_Nexus.py", "__init__.py"],
+      "LP_Tools": ["Recursion_Grounding/", "__init__.py", "tests/"],
+      "Logos_Agent_Resources": ["Cognition_Normalized/", "Epistemic_Library/", "IEL_Foundations/", "__init__.py", "__pycache__", "math_categories/", "privation_library.json"],
+      "Runtime_Operations": ["Orchestration/", "__init__.py", "tests/"],
+      "__init__.py": null,
+      "__pycache__": null
+    },
+    "__init__.py": null,
+    "__pycache__": null
+  },
+  "Import_Root_Findings": [
+    {
+      "path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/APPLICATION_FUNCTIONS/Utilities/test_self_improvement_cycle.py",
+      "import_line": "from scripts.update_telemetry import AggregatedMetrics, TelemetryAggregator"
+    },
+    {
+      "path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Pipeline.py",
+      "import_line": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Diagnostics.MSPC_Telemetry import MSPCTelemetry"
+    },
+    {
+      "path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/MSPC_Runtime.py",
+      "import_line": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Diagnostics.MSPC_Telemetry import MSPCTelemetry"
+    }
+  ],
+  "Nexus_Participant_Locations": [
+    {
+      "path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Nexus/Logos_Protocol_Nexus.py",
+      "class_name": "NexusViolation",
+      "snippet": "class NexusViolation(Exception):\n    pass\n\nclass NexusParticipant:\n    def execute_tick(self, context: Dict[str, Any]) -> None:\n        pass\n\nclass NexusHandle:\n    pass\n\nclass StandardNexus:\n    pass\n\n    def register_participant(self, participant: NexusParticipant) -> None:\n        pass\n"
+    },
+    {
+      "path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/STAGING/Logos_Telemetry_Integration_Point.py",
+      "class_name": "NexusParticipant",
+      "snippet": "This module defines a mixin class that any Logos NexusParticipant\n...\n#     def execute_tick(self, context: Dict[str, Any]) -> None:\n        pass\n"
+    }
+  ]
+}
