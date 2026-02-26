@@ -89,7 +89,14 @@ from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Prod
 )
 
 
+
+from .RGE_Governance_Context import RGEGovernanceContext
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library import Epistemic_Library_Router
+import datetime
+import json
+
 class RGERuntime:
+
 
     def __init__(
         self,
@@ -103,6 +110,7 @@ class RGERuntime:
         mode_controller: ModeController,
         override_channel: RGEOverrideChannel,
         event_emitter: EventEmitter,
+        governance_context: RGEGovernanceContext,
     ) -> None:
         self._aggregator = aggregator
         self._fit_score = fit_score
@@ -114,11 +122,62 @@ class RGERuntime:
         self._mode_controller = mode_controller
         self._override_channel = override_channel
         self._event_emitter = event_emitter
+        self._governance_context = governance_context
 
         self._snapshot: Optional[TelemetrySnapshot] = None
         self._tick_counter: int = 0
         self._prev_config_id: Optional[str] = None
         self._prev_score: Optional[float] = None
+
+    def _emit_topology_advice(self, result: Dict[str, Any]) -> None:
+        # Validate router availability
+        router = self._governance_context.get_router()
+        if router is None:
+            self._event_emitter.emit("RGE_ROUTER_UNAVAILABLE", {"reason": "Router not available"})
+            raise RuntimeError("Epistemic_Library_Router unavailable")
+
+        # Required fields from governance context
+        status_context = self._governance_context.get_status_context()
+        parent_hash_reference = self._governance_context.get_parent_hash_reference()
+        if status_context is None or parent_hash_reference is None:
+            raise RuntimeError("status_context and parent_hash_reference must be provided by governance context")
+
+        # Build schema-compliant payload
+        payload = {
+            "schema_version": "1.0.0",
+            "aa_type": "TOPOLOGY_ADVICE",
+            "author_class": "PROTOCOL",
+            "author_id": "RGE",
+            "topology_id": result["config_id"],
+            "orchestration_tick": result["tick"],
+            "timestamp_utc": datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
+            "topology_configuration": result["topology"],
+            "derivation_context": {
+                # Optionally add more if available from context
+            },
+            "confidence_metrics": {
+                "primary_score": result["score"],
+                "stability_index": 0.0 if result.get("switched") else 1.0
+            },
+            "status_context": status_context,
+            "parent_hash_reference": parent_hash_reference,
+        }
+
+        # Validate payload against schema (fail-closed)
+        # (Assume schema validation is handled by router, as per governance addendum)
+        try:
+            router.Attach_NonCanonical_Aa(
+                parent_smp_id=parent_hash_reference,
+                aa_payload=payload,
+                aa_type="TOPOLOGY_ADVICE",
+                author_class="PROTOCOL",
+                author_id="RGE",
+                status_context=status_context,
+            )
+            self._event_emitter.emit("RGE_ROUTER_SUBMISSION_SUCCESS", {"payload": payload})
+        except Exception as e:
+            self._event_emitter.emit("RGE_ROUTER_SUBMISSION_REJECTED", {"error": str(e), "payload": payload})
+            raise
 
     def inject_telemetry(
         self,
@@ -187,7 +246,7 @@ class RGERuntime:
             prev_score=self._prev_score,
             tick=self._tick_counter,
             A_t=self._mode_controller.is_activation_allowed(),
-            override_type=self._override_channel.get_override_type(),
+            override_type="HARD" if self._override_channel.is_hard_override() else None,
         )
 
         switched = chosen_id != self._prev_config_id and self._prev_config_id is not None
@@ -203,6 +262,9 @@ class RGERuntime:
             "switched": switched,
             "topology": best.snapshot(),
         }
+
+        # Controlled router emission (before event emission, after result construction)
+        self._emit_topology_advice(result)
 
         self._event_emitter.emit("rge_selection_complete", result)
 
@@ -268,6 +330,11 @@ def build_rge(
     )
 
     event_emitter = EventEmitter()
+    governance_context = RGEGovernanceContext(
+        status_context="Provisional",
+        parent_hash_reference="",
+        router=Epistemic_Library_Router,
+    )
 
     return RGERuntime(
         aggregator=aggregator,
@@ -280,4 +347,5 @@ def build_rge(
         mode_controller=mode_controller,
         override_channel=override_channel,
         event_emitter=event_emitter,
+        governance_context=governance_context,
     )

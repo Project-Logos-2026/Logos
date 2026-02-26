@@ -1,7 +1,8 @@
 from __future__ import annotations
 from collections import deque
 from typing import Any, Dict, List, Optional, Set
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Envelope import SignalEnvelope
+# from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Envelope import SignalEnvelope  # If this fails, try relative import below:
+from ..Signals.Signal_Envelope import SignalEnvelope
 
 class CyclicDependencyError(Exception):
     pass

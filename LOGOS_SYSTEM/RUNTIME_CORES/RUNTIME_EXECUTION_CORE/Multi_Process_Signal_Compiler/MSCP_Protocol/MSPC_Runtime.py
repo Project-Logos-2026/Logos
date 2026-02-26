@@ -1,24 +1,92 @@
 from __future__ import annotations
 import uuid
 from typing import Any, Dict, Optional
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_Config import ExecutionMode, MSPCConfig, load_config
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_State import MSPCState, RuntimePhase
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_Pipeline import MSPCPipeline, PipelineTickResult
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_Scheduler import MSPCScheduler, SchedulerHalt
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Ingress import SignalIngress
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Registry import SignalRegistry
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Resolution.Conflict_Resolver import ConflictResolver
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Dependency_Graph import DependencyGraph
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Incremental_Compiler import IncrementalCompiler
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Artifact_Emitter import ArtifactEmitter
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Contracts.MSPC_Subscription_API import MSPCSubscriptionAPI
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Diagnostics.MSPC_Telemetry import MSPCTelemetry
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Diagnostics.MSPC_Audit_Log import MSPCAuditLog
+
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Config import (
+    ExecutionMode,
+    MSPCConfig,
+    load_config,
+)
+
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_State import (
+    MSPCState,
+    RuntimePhase,
+)
+
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Pipeline import (
+    MSPCPipeline,
+    PipelineTickResult,
+)
+
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Scheduler import (
+    MSPCScheduler,
+    SchedulerHalt,
+)
+
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Ingress import (
+    SignalIngress,
+)
+
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Registry import (
+    SignalRegistry,
+)
+
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Resolution.Conflict_Resolver import (
+    ConflictResolver,
+)
+
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Dependency_Graph import (
+    DependencyGraph,
+)
+
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Incremental_Compiler import (
+    IncrementalCompiler,
+)
+
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Artifact_Emitter import (
+    ArtifactEmitter,
+)
+
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Contracts.MSPC_Subscription_API import (
+    MSPCSubscriptionAPI,
+)
+
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Diagnostics.MSPC_Telemetry import (
+    MSPCTelemetry,
+)
+
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Diagnostics.MSPC_Audit_Log import (
+    MSPCAuditLog,
+)
 
 class MSPCBootError(Exception):
     pass
 
 class MSPCRuntime:
+    def register_mtp_egress(
+        self,
+        mtp_process_fn,
+        smp_builder_fn=None,
+    ) -> None:
+        """
+        Phase 6 explicit activation hook.
+
+        Registers the MSPC → MTP egress router.
+        Must be called after boot().
+        """
+        if self._subscription_api is None:
+            raise MSPCBootError("Runtime not booted")
+
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Contracts.MSPC_MTP_Router import (
+            MSPCMTPRouter,
+        )
+
+        self._mtp_router = MSPCMTPRouter(
+            mtp_process_fn=mtp_process_fn,
+            smp_builder_fn=smp_builder_fn,
+        )
+
+        self._subscription_api.subscribe(self._mtp_router)
 
     def __init__(self, config_overrides: Optional[Dict[str, Any]]=None) -> None:
         self._config: MSPCConfig = load_config(config_overrides)
@@ -34,6 +102,18 @@ class MSPCRuntime:
         self._audit: Optional[MSPCAuditLog] = None
         self._pipeline: Optional[MSPCPipeline] = None
         self._scheduler: Optional[MSPCScheduler] = None
+        self._mtp_router = None
+        self._topology_context = None
+    def set_topology_context(self, topology_context) -> None:
+        """
+        Phase 6 topology activation hook.
+
+        Sets the active TopologyContext used during compilation.
+        """
+        self._topology_context = topology_context
+
+    def get_topology_context(self):
+        return self._topology_context
 
     @property
     def config(self) -> MSPCConfig:
@@ -66,9 +146,32 @@ class MSPCRuntime:
             self._compiler = IncrementalCompiler(max_depth=self._config.max_compilation_depth)
             self._emitter = ArtifactEmitter(version_prefix=self._config.artifact_version_prefix, hash_algorithm=self._config.artifact_hash_algorithm)
             self._subscription_api = MSPCSubscriptionAPI()
+
+            # Phase 6: Optional MTP Router Registration
+            try:
+                from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Contracts.MSPC_MTP_Router import MSPCMTPRouter
+            except Exception:
+                MSPCMTPRouter = None
+
+            if MSPCMTPRouter is not None:
+                # mtp_process_fn must be injected externally later
+                self._mtp_router = None
+
             self._telemetry = MSPCTelemetry(enabled=self._config.enable_telemetry)
             self._audit = MSPCAuditLog(session_id=session_id)
-            self._pipeline = MSPCPipeline(state=self._state, ingress=self._ingress, registry=self._registry, resolver=self._resolver, graph=self._graph, compiler=self._compiler, emitter=self._emitter, subscription_api=self._subscription_api, telemetry=self._telemetry, audit_log=self._audit)
+            self._pipeline = MSPCPipeline(
+                state=self._state,
+                ingress=self._ingress,
+                registry=self._registry,
+                resolver=self._resolver,
+                graph=self._graph,
+                compiler=self._compiler,
+                emitter=self._emitter,
+                subscription_api=self._subscription_api,
+                telemetry=self._telemetry,
+                audit_log=self._audit,
+                runtime_ref=self,
+            )
             self._scheduler = MSPCScheduler(config=self._config, state=self._state, pipeline=self._pipeline)
             self._state.transition(RuntimePhase.READY)
         except Exception as exc:

@@ -8,4 +8,11 @@
   "typeCheckingMode": "basic",
   "reportMissingImports": true,
   "reportMissingModuleSource": false
+  ,
+  "executionEnvironments": [
+    {
+      "root": ".",
+      "extraPaths": ["."]
+    }
+  ]
 }

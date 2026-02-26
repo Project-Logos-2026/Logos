@@ -1,0 +1,864 @@
+[
+  {
+    "reason": "Attempt to rewrite immutable SMP",
+    "context": {
+      "smp_id": "TEST_SMP_1"
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT"
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT"
+    }
+  },
+  {
+    "reason": "Parent SMP not found",
+    "context": {
+      "parent_smp_id": "NONEXISTENT_SMP"
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT"
+    }
+  },
+  {
+    "reason": "Attempt to rewrite immutable SMP",
+    "context": {
+      "smp_id": "TEST_SMP_1"
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT"
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT"
+    }
+  },
+  {
+    "reason": "Parent SMP not found",
+    "context": {
+      "parent_smp_id": "NONEXISTENT_SMP"
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT"
+    }
+  },
+  {
+    "reason": "Attempt to rewrite immutable SMP",
+    "context": {
+      "smp_id": "TEST_SMP_1"
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": [
+              "TEST"
+            ]
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {
+              "TEST": [
+                "AA1",
+                "AA2",
+                "AA3"
+              ]
+            },
+            "decision": "Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Registry load error",
+    "context": {
+      "error": "Unauthorized AA type",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": [
+              "TEST"
+            ]
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {
+              "TEST": [
+                "AA1",
+                "AA2",
+                "AA3"
+              ]
+            },
+            "decision": "Registry load error: Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": []
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {},
+            "decision": "Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Registry load error",
+    "context": {
+      "error": "Unauthorized AA type",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": []
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {},
+            "decision": "Registry load error: Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": []
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {},
+            "decision": "Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Registry load error",
+    "context": {
+      "error": "Unauthorized AA type",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": []
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {},
+            "decision": "Registry load error: Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": [
+              "TEST"
+            ]
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {
+              "TEST": [
+                "AA1"
+              ]
+            },
+            "decision": "Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Registry load error",
+    "context": {
+      "error": "Unauthorized AA type",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": [
+              "TEST"
+            ]
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {
+              "TEST": [
+                "AA1"
+              ]
+            },
+            "decision": "Registry load error: Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Attempt to rewrite immutable SMP",
+    "context": {
+      "smp_id": "TEST_SMP_1"
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": [
+              "TEST"
+            ]
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {
+              "TEST": [
+                "AA1",
+                "AA2",
+                "AA3"
+              ]
+            },
+            "decision": "Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Registry load error",
+    "context": {
+      "error": "Unauthorized AA type",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": [
+              "TEST"
+            ]
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {
+              "TEST": [
+                "AA1",
+                "AA2",
+                "AA3"
+              ]
+            },
+            "decision": "Registry load error: Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": []
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {},
+            "decision": "Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Registry load error",
+    "context": {
+      "error": "Unauthorized AA type",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": []
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {},
+            "decision": "Registry load error: Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": []
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {},
+            "decision": "Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Registry load error",
+    "context": {
+      "error": "Unauthorized AA type",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": []
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {},
+            "decision": "Registry load error: Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": [
+              "TEST"
+            ]
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {
+              "TEST": [
+                "AA1"
+              ]
+            },
+            "decision": "Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Registry load error",
+    "context": {
+      "error": "Unauthorized AA type",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": [
+              "TEST"
+            ]
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {
+              "TEST": [
+                "AA1"
+              ]
+            },
+            "decision": "Registry load error: Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Attempt to rewrite immutable SMP",
+    "context": {
+      "smp_id": "TEST_SMP_1"
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": [
+              "TEST"
+            ]
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {
+              "TEST": [
+                "AA1",
+                "AA2",
+                "AA3"
+              ]
+            },
+            "decision": "Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Registry load error",
+    "context": {
+      "error": "Unauthorized AA type",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": [
+              "TEST"
+            ]
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {
+              "TEST": [
+                "AA1",
+                "AA2",
+                "AA3"
+              ]
+            },
+            "decision": "Registry load error: Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": []
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {},
+            "decision": "Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Registry load error",
+    "context": {
+      "error": "Unauthorized AA type",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": []
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {},
+            "decision": "Registry load error: Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": []
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {},
+            "decision": "Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Registry load error",
+    "context": {
+      "error": "Unauthorized AA type",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": []
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {},
+            "decision": "Registry load error: Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Unauthorized AA type",
+    "context": {
+      "aa_type": "AA1",
+      "author_class": "AGENT",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": [
+              "TEST"
+            ]
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {
+              "TEST": [
+                "AA1"
+              ]
+            },
+            "decision": "Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Registry load error",
+    "context": {
+      "error": "Unauthorized AA type",
+      "debug": {
+        "Debug_Registry_Load": {
+          "Registry_Path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/Logos_Agent_Resources/Epistemic_Library/Indexes_Manifests/AA_Write_Permissions_Registry.json",
+          "Registry_Exists": true,
+          "Registry_Content": {
+            "PROTOCOL": [
+              "RGE",
+              "MSPC",
+              "MTP"
+            ],
+            "AGENT": [
+              "TEST"
+            ]
+          },
+          "AA_Attach": {
+            "author_class": "AGENT",
+            "author_id": "TEST",
+            "aa_type": "AA1",
+            "allowed_types": {
+              "TEST": [
+                "AA1"
+              ]
+            },
+            "decision": "Registry load error: Unauthorized AA type"
+          }
+        }
+      }
+    }
+  },
+  {
+    "reason": "Attempt to rewrite immutable SMP",
+    "context": {
+      "smp_id": "TEST_SMP_1"
+    }
+  },
+  {
+    "reason": "Chain hash mismatch",
+    "context": {
+      "aa_id": "AA3",
+      "prev_chain_hash": "bad_hash",
+      "current_head": "1b0c1cf749b3ac3d82cf42b930cb6205abe8412647c7d3c4a74f86288e3d5777"
+    }
+  },
+  {
+    "reason": "Unauthorized author id",
+    "context": {
+      "author_class": "AGENT",
+      "author_id": "TEST",
+      "aa_type": "AA1"
+    }
+  },
+  {
+    "reason": "Parent SMP not found",
+    "context": {
+      "parent_smp_id": "NONEXISTENT_SMP"
+    }
+  },
+  {
+    "reason": "Attempt to overwrite AA",
+    "context": {
+      "aa_id": "AA1"
+    }
+  }
+]

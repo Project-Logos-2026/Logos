@@ -27,7 +27,7 @@ class PipelineTickResult:
 
 class MSPCPipeline:
 
-    def __init__(self, state: MSPCState, ingress: SignalIngress, registry: SignalRegistry, resolver: ConflictResolver, graph: DependencyGraph, compiler: IncrementalCompiler, emitter: ArtifactEmitter, subscription_api: MSPCSubscriptionAPI, telemetry: MSPCTelemetry, audit_log: MSPCAuditLog) -> None:
+    def __init__(self, state: MSPCState, ingress: SignalIngress, registry: SignalRegistry, resolver: ConflictResolver, graph: DependencyGraph, compiler: IncrementalCompiler, emitter: ArtifactEmitter, subscription_api: MSPCSubscriptionAPI, telemetry: MSPCTelemetry, audit_log: MSPCAuditLog, runtime_ref: Optional[Any] = None) -> None:
         self._state = state
         self._ingress = ingress
         self._registry = registry
@@ -38,6 +38,7 @@ class MSPCPipeline:
         self._subscription_api = subscription_api
         self._telemetry = telemetry
         self._audit = audit_log
+        self._runtime_ref = runtime_ref
 
     def execute_tick(self) -> PipelineTickResult:
         result = PipelineTickResult(tick_number=self._state.tick.tick_number)
@@ -111,7 +112,18 @@ class MSPCPipeline:
         resolved = getattr(self._state, '_resolved_signals', [])
         self._graph.build_from_signals(resolved)
         self._audit.record(AuditEventType.COMPILATION_STARTED, tick_num)
-        comp_result: CompilationResult = self._compiler.compile_batch(resolved, self._graph)
+
+        topology_context = None
+        if getattr(self, "_runtime_ref", None) is not None:
+            get_ctx = getattr(self._runtime_ref, "get_topology_context", None)
+            if callable(get_ctx):
+                topology_context = get_ctx()
+
+        comp_result: CompilationResult = self._compiler.compile_batch(
+            resolved,
+            self._graph,
+            topology_context=topology_context,
+        )
         result.artifacts_compiled = len(comp_result.compiled)
         self._state.tick.signals_compiled_this_tick = len(comp_result.compiled)
         if comp_result.errors:

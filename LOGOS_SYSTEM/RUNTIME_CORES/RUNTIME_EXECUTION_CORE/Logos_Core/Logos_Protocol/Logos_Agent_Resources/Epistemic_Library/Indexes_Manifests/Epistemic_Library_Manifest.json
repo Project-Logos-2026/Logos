@@ -1,0 +1,17 @@
+{
+  "Root_Paths": [
+    "AA_Storage/Agent_AAs/",
+    "AA_Storage/Protocol_AAs/",
+    "Non-Canonical_SMPs/Status_Provisional/",
+    "Non-Canonical_SMPs/Status_Conditional/",
+    "Non-Canonical_SMPs/Status_Rejected/",
+    "Indexes_Manifests/Smp_AA_Indexes/",
+    "Indexes_Manifests/Status_Manifests/"
+  ],
+  "Hashing_Method_Version": "SHA-256-Canonical-JSON-v1",
+  "Chain_Hashing_Enabled": true,
+  "Alias_Mapping": {
+    "Statues_Rejected": "Status_Rejected"
+  },
+  "Registry_Version": 1
+}
