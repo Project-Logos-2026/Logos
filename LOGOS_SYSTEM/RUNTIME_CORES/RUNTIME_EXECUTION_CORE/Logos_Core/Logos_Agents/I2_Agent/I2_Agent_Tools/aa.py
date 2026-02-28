@@ -9,6 +9,8 @@ import time
 import uuid
 from typing import Any, Dict, List, Optional
 from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.diagnostics.errors import SchemaError
+import os
+from pathlib import Path
 def _build_aa_hash(payload: dict) -> str:
     # Import safe_hash here to avoid circular import issues
     from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.config.hashing import safe_hash as infra_safe_hash
@@ -161,8 +163,6 @@ def _normalize_semantic_projection(value: Any) -> List[str]:
     return projections
 
 def _load_semantic_projection_families() -> set[str]:
-    from pathlib import Path
-    import os
     root = _find_repo_root()
     manifest_path = Path(root) / "_Governance" / "Semantic_Projection_Manifest.json"
     if not manifest_path.exists():

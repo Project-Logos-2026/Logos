@@ -158,4 +158,4 @@ if not rtodo.exists() or "step-5" not in read_text(rtodo):
 REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
 REPORT_PATH.write_text(json.dumps(results, indent=2), encoding="utf-8")
 
-print(f"Runtime_Control R-Series audit complete: {results['status']}")
+# governance_output_removed(f"Runtime_Control R-Series audit complete: {results['status']}")

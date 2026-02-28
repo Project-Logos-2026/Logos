@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LOGOS Semantic Projection Manifest Schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manifest_version", "description", "families"],
+  "properties": {
+    "manifest_version": {
+      "type": "string",
+      "enum": ["1.0"]
+    },
+    "description": {
+      "type": "string"
+    },
+    "families": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -389,7 +389,7 @@ class DeterministicReplayLogger:
             self.metrics['batch_flushes'] += 1
             
         except Exception as e:
-            print(f"Error flushing replay batch: {e}")
+            # governance_output_removed(f"Error flushing replay batch: {e}")
             # Keep events in buffer for retry
     
     def _append_to_event_log(self, events: List[ReplayEvent]):
@@ -409,7 +409,7 @@ class DeterministicReplayLogger:
                         msgpack.packb(event.to_serializable(), use_bin_type=True)
                     )
         except Exception as e:
-            print(f"Error appending to event log: {e}")
+            # governance_output_removed(f"Error appending to event log: {e}")
 
 # ==================== REPLAY ENGINE ====================
 
@@ -486,9 +486,9 @@ class DeterministicReplayEngine:
         if checkpoint:
             system_state = self._restore_from_checkpoint(checkpoint)
             start_sequence = checkpoint['sequence_number']
-            print(f"Starting replay from checkpoint at sequence {start_sequence}")
+            # governance_output_removed(f"Starting replay from checkpoint at sequence {start_sequence}")
         else:
-            print(f"Starting replay from beginning (no suitable checkpoint found)")
+            # governance_output_removed(f"Starting replay from beginning (no suitable checkpoint found)")
         
         # Load events
         events = self._load_events(
@@ -540,7 +540,7 @@ class DeterministicReplayEngine:
                     self._sleep_for_event_timing(event, events)
                     
             except Exception as e:
-                print(f"Error replaying event {event.event_id}: {e}")
+                # governance_output_removed(f"Error replaying event {event.event_id}: {e}")
                 replay_report.setdefault('replay_errors', []).append({
                     'event_id': event.event_id,
                     'error': str(e),
@@ -1437,7 +1437,7 @@ class CompleteReplayInfrastructure:
                             self._archive_session(session_dir.name)
                             self._delete_session(session_dir)
                 except Exception as e:
-                    print(f"Error cleaning up session {session_dir.name}: {e}")
+                    # governance_output_removed(f"Error cleaning up session {session_dir.name}: {e}")
     
     # ==================== HELPER METHODS ====================
     
@@ -1487,8 +1487,9 @@ class CompleteReplayInfrastructure:
                             event_data = msgpack.unpackb(value, raw=False)
                             event = ReplayEvent.from_serializable(event_data)
                             events.append(event)
-                        except Exception as e:
-                            print(f"Error loading event: {e}")
+                        except Exception:
+                            # governance_output_removed("Error loading event")
+                            pass
         
         # Sort by sequence number
         events.sort(key=lambda x: x.sequence_number)
@@ -1580,9 +1581,9 @@ class CompleteReplayInfrastructure:
         
         try:
             shutil.rmtree(session_dir)
-            print(f"Deleted session: {session_dir.name}")
+            # governance_output_removed(f"Deleted session: {session_dir.name}")
         except Exception as e:
-            print(f"Error deleting session {session_dir.name}: {e}")
+            # governance_output_removed(f"Error deleting session {session_dir.name}: {e}")
     
     def get_statistics(self) -> Dict:
         """Get infrastructure statistics"""
@@ -1645,9 +1646,9 @@ def quick_replay_analysis(session_id: str,
     
     def progress_callback(event, state):
         if show_progress:
-            print(f"Replaying event {event.sequence_number}: {event.event_type.name}")
+            # governance_output_removed(f"Replaying event {event.sequence_number}: {event.event_type.name}")
             if event.criticality >= 4:
-                print(f"  Critical event: {event.event_id}")
+                # governance_output_removed(f"  Critical event: {event.event_id}")
         return True
     
     # Perform replay
@@ -1660,17 +1661,17 @@ def quick_replay_analysis(session_id: str,
     
     # Print summary
     if show_progress:
-        print("\n" + "="*60)
-        print(f"REPLAY COMPLETE: {session_id}")
-        print("="*60)
-        print(f"Events replayed: {report['replay']['events_replayed']}")
-        print(f"Success rate: {report['replay']['success_rate']:.1%}")
-        print(f"Duration: {report['replay']['end_time']}")
+        # governance_output_removed("\n" + "="*60)
+        # governance_output_removed(f"REPLAY COMPLETE: {session_id}")
+        # governance_output_removed("="*60)
+        # governance_output_removed(f"Events replayed: {report['replay']['events_replayed']}")
+        # governance_output_removed(f"Success rate: {report['replay']['success_rate']:.1%}")
+        # governance_output_removed(f"Duration: {report['replay']['end_time']}")
         
         if 'analysis' in report and 'validation' in report['analysis']:
             validation = report['analysis']['validation']
-            print(f"Validation: {'PASSED' if validation['passed'] else 'FAILED'}")
-            print(f"Validation score: {validation['score']:.1%}")
+            # governance_output_removed(f"Validation: {'PASSED' if validation['passed'] else 'FAILED'}")
+            # governance_output_removed(f"Validation score: {validation['score']:.1%}")
     
     return report
 
@@ -1678,7 +1679,7 @@ def quick_replay_analysis(session_id: str,
 
 if __name__ == "__main__":
     # Example usage
-    print("Initializing Replay Infrastructure...")
+    # governance_output_removed("Initializing Replay Infrastructure...")
     
     # Create infrastructure
     infra = create_replay_infrastructure()
@@ -1689,7 +1690,7 @@ if __name__ == "__main__":
         description="Example replay session for demonstration"
     )
     
-    print(f"Started session: {session_id}")
+    # governance_output_removed(f"Started session: {session_id}")
     
     # Get logger for the session
     logger = infra.get_logger(session_id)
@@ -1732,28 +1733,28 @@ if __name__ == "__main__":
         description="Example checkpoint after initial events"
     )
     
-    print(f"Created checkpoint: {checkpoint_event.event_id}")
+    # governance_output_removed(f"Created checkpoint: {checkpoint_event.event_id}")
     
     # End session
     infra.end_session(session_id, final_state=current_state)
     
-    print(f"Ended session. Total events: {logger.sequence_counter}")
+    # governance_output_removed(f"Ended session. Total events: {logger.sequence_counter}")
     
     # Replay the session
-    print("\nReplaying session...")
+    # governance_output_removed("\nReplaying session...")
     replay_report = infra.replay_and_analyze(session_id, analysis_type="full")
     
-    print(f"\nReplay completed. Success rate: {replay_report['replay']['success_rate']:.1%}")
+    # governance_output_removed(f"\nReplay completed. Success rate: {replay_report['replay']['success_rate']:.1%}")
     
     # Export session
     export_path = infra.export_session(session_id, export_format="json")
-    print(f"Session exported to: {export_path}")
+    # governance_output_removed(f"Session exported to: {export_path}")
     
     # Show statistics
     stats = infra.get_statistics()
-    print(f"\nInfrastructure Statistics:")
-    print(f"  Sessions recorded: {stats['sessions_recorded']}")
-    print(f"  Events logged: {stats['events_logged']}")
-    print(f"  Storage used: {stats['storage_used_mb']:.2f} MB")
+    # governance_output_removed(f"\nInfrastructure Statistics:")
+    # governance_output_removed(f"  Sessions recorded: {stats['sessions_recorded']}")
+    # governance_output_removed(f"  Events logged: {stats['events_logged']}")
+    # governance_output_removed(f"  Storage used: {stats['storage_used_mb']:.2f} MB")
     
-    print("\nReplay infrastructure example completed successfully!")
+    # governance_output_removed("\nReplay infrastructure example completed successfully!")

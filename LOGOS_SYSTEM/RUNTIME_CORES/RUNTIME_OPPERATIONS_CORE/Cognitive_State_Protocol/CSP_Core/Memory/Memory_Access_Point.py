@@ -191,12 +191,12 @@ class TieredMemoryStorage:
             
             return store_success
             
-        except Exception as e:
-            print(f"Error storing memory {memory_id}: {e}")
+        except Exception:
+            governance_output_removed_call
             return False
     
     def retrieve_memory(self, 
-                       memory_id: str,
+            governance_output_removed_call
                        include_encoding: bool = True) -> Optional[Dict]:
         """
         Retrieve memory from appropriate tier
@@ -276,8 +276,8 @@ class TieredMemoryStorage:
                     pickle.dumps(serialized)
                 )
             return True
-        except Exception as e:
-            print(f"Ephemeral store error: {e}")
+        except Exception:
+            governance_output_removed_call
             return False
     
     def _store_hot(self, memory_id: str, data: Dict, 

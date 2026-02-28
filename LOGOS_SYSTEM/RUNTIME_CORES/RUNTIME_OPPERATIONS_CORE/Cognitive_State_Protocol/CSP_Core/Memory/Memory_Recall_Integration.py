@@ -191,8 +191,8 @@ class TieredMemoryStorage:
             
             return store_success
             
-        except Exception as e:
-            print(f"Error storing memory {memory_id}: {e}")
+        except Exception:
+            governance_output_removed_call
             return False
     
     def retrieve_memory(self, 
@@ -276,8 +276,8 @@ class TieredMemoryStorage:
                     pickle.dumps(serialized)
                 )
             return True
-        except Exception as e:
-            print(f"Ephemeral store error: {e}")
+        except Exception:
+            governance_output_removed_call
             return False
     
     def _store_hot(self, memory_id: str, data: Dict, 
@@ -1107,15 +1107,15 @@ class CompleteMemorySystem:
             try:
                 report = self.consolidation_scheduler.run_consolidation_cycle()
                 self.metamemory.monitor_memory_operation('background_consolidation', report)
-            except Exception as e:
-                print(f"Background consolidation error: {e}")
+            except Exception:
+                governance_output_removed_call
 
 # ==================== USAGE EXAMPLE ====================
 
 def demonstrate_complete_memory_system():
     """Demonstrate the complete memory system"""
     
-    print("Initializing Complete Memory System...")
+    governance_output_removed_call
     
     # 1. Initialize system
     memory_system = CompleteMemorySystem()
@@ -1135,14 +1135,14 @@ def demonstrate_complete_memory_system():
     
     sample_encoding = np.random.randn(4096).astype('float32')
     
-    print("\n1. Storing memory...")
+    governance_output_removed_call
     storage_result = memory_system.store_complete_memory(
         sample_smp, sample_evaluation, sample_encoding
     )
-    print(f"Storage result: {storage_result}")
+    governance_output_removed_call
     
     # 3. Retrieve for application
-    print("\n2. Retrieving for reasoning application...")
+    governance_output_removed_call
     query = {
         'query_text': 'What do we know about cats?',
         'encoding': sample_encoding,  # Would be properly encoded
@@ -1153,21 +1153,21 @@ def demonstrate_complete_memory_system():
         query, 'reasoning', {'domain': 'biology'}
     )
     
-    print(f"Retrieved {len(retrieval_result['retrieved_memories'])} memories")
-    print(f"Application result type: {type(retrieval_result['application_result'])}")
+    governance_output_removed_call
+    governance_output_removed_call
     
     # 4. Run maintenance
-    print("\n3. Running maintenance cycle...")
+    governance_output_removed_call
     maintenance_report = memory_system.run_maintenance_cycle()
-    print(f"Maintenance completed:")
-    print(f"  - Consolidated: {maintenance_report['consolidation']['consolidated_count']}")
-    print(f"  - Due for review: {maintenance_report['forgetting']['due_for_review']}")
+    governance_output_removed_call
+    governance_output_removed_call
+    governance_output_removed_call
     
     # 5. Demonstrate auxiliary systems
-    print("\n4. Auxiliary systems status:")
-    print(f"  - Consolidation queue size: {len(memory_system.consolidation_scheduler.consolidation_queue)}")
-    print(f"  - Forgetting curves tracked: {len(memory_system.forgetting_manager.forgetting_curves)}")
-    print(f"  - Metamemory monitoring operations: {len(memory_system.metamemory.memory_monitoring)}")
+    governance_output_removed_call
+    governance_output_removed_call
+    governance_output_removed_call
+    governance_output_removed_call
     
     return {
         'system': memory_system,
@@ -1235,20 +1235,4 @@ CRITICAL AUXILIARY SYSTEMS NEEDED FOR FULL SYNTHETIC MEMORY:
 """
 
 if __name__ == "__main__":
-    results = demonstrate_complete_memory_system()
-    print("\n" + "="*70)
-    print("COMPLETE MEMORY SYSTEM DEMONSTRATION COMPLETE")
-    print("="*70)
-    print("\nThe system now has:")
-    print("1. Tiered storage with automatic promotion/demotion")
-    print("2. Multi-index retrieval for different access patterns")
-    print("3. Application pipelines for memory utilization")
-    print("4. Auxiliary systems for memory lifecycle management")
-    print("5. Metamemory for self-regulation")
-    print("\nThis approximates human memory with:")
-    print("- Working memory limits (7±2 items)")
-    print("- Forgetting curves (Ebbinghaus)")
-    print("- Context-dependent recall")
-    print("- Pattern completion capabilities")
-    print("- Semantic abstraction")
-    print("- Cross-domain transfer")
+

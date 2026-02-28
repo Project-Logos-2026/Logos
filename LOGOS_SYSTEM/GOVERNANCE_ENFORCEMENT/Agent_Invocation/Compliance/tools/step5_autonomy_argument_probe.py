@@ -346,7 +346,7 @@ def render_markdown(argument: Dict[str, Any], resistor: Dict[str, Any]) -> str:
     return "\n".join(lines)
 
 def main() -> int:
-    checks: List[Check] = []
+        # governance_output_removed("Probe complete: PASS (design-only; deny-by-default; no authority granted).")
     for p in EVIDENCE_PATHS:
         if not p.exists():
             checks.append(Check(id=f"evidence_exists:{p.as_posix()}", status="FAIL", detail="missing"))
@@ -391,9 +391,9 @@ def main() -> int:
     REPORT_JSON.parent.mkdir(parents=True, exist_ok=True)
     REPORT_JSON.write_text(json.dumps(out, indent=2), encoding="utf-8")
     REPORT_MD.write_text(md, encoding="utf-8")
-    print(f"Wrote: {REPORT_JSON.as_posix()}")
-    print(f"Wrote: {REPORT_MD.as_posix()}")
-    print("Probe complete: PASS (design-only; deny-by-default; no authority granted).")
+        # console_output_removed(f"Wrote: {REPORT_JSON.as_posix()}")
+        # console_output_removed(f"Wrote: {REPORT_MD.as_posix()}")
+    # governance_output_removed("Probe complete: PASS (design-only; deny-by-default; no authority granted).")
     return 0
 
 if __name__ == "__main__":
