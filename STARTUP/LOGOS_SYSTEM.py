@@ -159,6 +159,7 @@ def RUN_LOGOS_SYSTEM(
             error_detail=str(exc),
         )
         raise RuntimeHalt(f"Startup halted: {exc}")
+    operational_logger.status(Channel.STARTUP, "system_bootstrap_start")
 
     try:
         lock_and_key_result = execute_lock_and_key(
@@ -174,11 +175,16 @@ def RUN_LOGOS_SYSTEM(
         )
         raise RuntimeHalt(f"Lock-and-Key failed: {exc}")
 
+    operational_logger.status(Channel.STARTUP, "lock_and_key_complete")
+
     verified_context = dict(handoff)
     verified_context["session_id"] = lock_and_key_result.get("session_id")
     verified_context["lock_and_key_status"] = lock_and_key_result.get("status")
 
     from typing import cast
+
+    # Close provisional logger before session logger instantiation
+    operational_logger.close()
 
     # Type-safe session_id binding after invariant check
     session_id = cast(str, verified_context["session_id"])
@@ -196,7 +202,6 @@ def RUN_LOGOS_SYSTEM(
         )
         raise RuntimeHalt("Derived session_id is missing or invalid")
 
-    operational_logger.status(Channel.STARTUP, "system_bootstrap_start")
     operational_logger.status(Channel.STARTUP, "governance_contracts_loaded")
     operational_logger.status(Channel.STARTUP, "operational_logger_initialized")
 
@@ -210,6 +215,7 @@ def RUN_LOGOS_SYSTEM(
             error_detail=str(exc),
         )
         raise RuntimeHalt(f"LOGOS agent startup failed: {exc}")
+    operational_logger.status(Channel.STARTUP, "logos_agent_started")
 
     try:
         logos_identity = discharge_lem(logos_session)
@@ -221,6 +227,7 @@ def RUN_LOGOS_SYSTEM(
             error_detail=str(exc),
         )
         raise RuntimeHalt(f"LEM discharge failed: {exc}")
+    operational_logger.status(Channel.STARTUP, "lem_discharge_complete")
 
     constructive_compile_output = {
         "logos_agent_id": logos_identity.get("logos_agent_id"),
@@ -264,6 +271,6 @@ def RUN_LOGOS_SYSTEM(
         "constructive_compile_output": constructive_compile_output,
         "agent_orchestration_plan": orchestration_plan,
     }
-    operational_logger.status(Channel.STARTUP, "system_bootstrap_complete")
+    operational_logger.status(Channel.STARTUP, "agent_orchestration_complete")
     operational_logger.close()
     return result
