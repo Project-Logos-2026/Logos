@@ -1,0 +1,22 @@
+{
+  "artifact_type": "governance_ratification",
+  "artifact_name": "Section_10_Fail_Open_Exception_Ratification",
+  "status": "RATIFIED",
+  "ratified_on": "2026-02-28",
+  "governs": "Governance_Log_Spec_v1.Section_10",
+  "exception_scope": {
+    "subsystem": "Operational_Logger",
+    "path": "SOP_Tools/Operational_Log/Operational_Logger.py",
+    "fail_mode": "fail-open",
+    "non_recursive_self_report_required": true
+  },
+  "boundary_conditions": {
+    "no_authority": true,
+    "no_proof_gating": true,
+    "no_execution_influence": true,
+    "no_runtime_read": true,
+    "no_state_mutation": true
+  },
+  "non_precedent": true,
+  "revocable": true
+}

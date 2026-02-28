@@ -1,0 +1,46 @@
+{
+  "artifact_type": "governance_spec",
+  "artifact_name": "Governance_Log_Spec_v1",
+  "status": "RATIFIED",
+  "authority": "System_Operations_Protocol",
+  "domain": "Operational_Memory",
+  "ratified_on": "2026-02-28",
+  "ratification_artifact": "Section_10_Fail_Open_Exception_Ratification.json",
+  "failure_semantics": {
+    "mode": "fail-open",
+    "bounded_subsystem": "Operational_Logger",
+    "recursion_guard": true,
+    "non_recursive_degradation_signal": true
+  },
+  "invariants": {
+    "no_runtime_read_path": true,
+    "no_governance_authority": true,
+    "append_only": true,
+    "no_hash_chaining": true,
+    "deny_by_default_outside_scope": true
+  },
+  "storage": {
+    "path": "_Reports/Operational_Logs/",
+    "naming_format": "session_{session_id}_{YYYYMMDD_HHMMSS}.jsonl",
+    "format": "JSONL",
+    "serialization": "sorted_keys_compact"
+  },
+  "channels": [
+    "STARTUP",
+    "SOP",
+    "GOVERNANCE",
+    "AGENT",
+    "PROTOCOL",
+    "BRIDGE",
+    "MEMORY",
+    "COMPILER",
+    "EXTERNALIZATION"
+  ],
+  "severity_levels": {
+    "HALT": 0,
+    "ERROR": 1,
+    "WARN": 2,
+    "STATUS": 3,
+    "TRACE": 4
+  }
+}

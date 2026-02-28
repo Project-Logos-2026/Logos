@@ -133,6 +133,18 @@ def RUN_LOGOS_SYSTEM(
 ) -> Dict[str, Any]:
     """Canonical runtime spine entry receiving handoff from START_LOGOS."""
 
+    # M3: Import logger and Channel at top of function
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Operational_Log.Operational_Logger import (
+        Operational_Logger,
+        Channel,
+    )
+
+    # M3: Create provisional logger before any try blocks
+    operational_logger = Operational_Logger(
+        log_dir="_Reports/Operational_Logs",
+        session_id="BOOTSTRAP",
+    )
+
     try:
         handoff = START_LOGOS(
             config_path=config_path,
@@ -140,6 +152,12 @@ def RUN_LOGOS_SYSTEM(
             diagnostic=diagnostic,
         )
     except StartupHalt as exc:
+        operational_logger.halt(
+            Channel.STARTUP,
+            f"Startup halted: {exc}",
+            error_type="StartupHalt",
+            error_detail=str(exc),
+        )
         raise RuntimeHalt(f"Startup halted: {exc}")
 
     try:
@@ -148,23 +166,60 @@ def RUN_LOGOS_SYSTEM(
             internal_compile_artifact=b"STUB_COMPILE_ARTIFACT",
         )
     except LockAndKeyFailure as exc:
+        operational_logger.halt(
+            Channel.STARTUP,
+            f"Lock-and-Key failed: {exc}",
+            error_type="LockAndKeyFailure",
+            error_detail=str(exc),
+        )
         raise RuntimeHalt(f"Lock-and-Key failed: {exc}")
 
     verified_context = dict(handoff)
     verified_context["session_id"] = lock_and_key_result.get("session_id")
     verified_context["lock_and_key_status"] = lock_and_key_result.get("status")
 
+    from typing import cast
+
+    # Type-safe session_id binding after invariant check
+    session_id = cast(str, verified_context["session_id"])
+    operational_logger = Operational_Logger(
+        log_dir="_Reports/Operational_Logs",
+        session_id=session_id,
+    )
+
     if not isinstance(verified_context["session_id"], str):
+        operational_logger.halt(
+            Channel.STARTUP,
+            "Derived session_id is missing or invalid",
+            error_type="MissingSessionId",
+            error_detail="session_id missing or invalid",
+        )
         raise RuntimeHalt("Derived session_id is missing or invalid")
+
+    operational_logger.status(Channel.STARTUP, "system_bootstrap_start")
+    operational_logger.status(Channel.STARTUP, "governance_contracts_loaded")
+    operational_logger.status(Channel.STARTUP, "operational_logger_initialized")
 
     try:
         logos_session = start_logos_agent(verified_context)
     except LogosAgentStartupHalt as exc:
+        operational_logger.halt(
+            Channel.STARTUP,
+            f"LOGOS agent startup failed: {exc}",
+            error_type="LogosAgentStartupHalt",
+            error_detail=str(exc),
+        )
         raise RuntimeHalt(f"LOGOS agent startup failed: {exc}")
 
     try:
         logos_identity = discharge_lem(logos_session)
     except LemDischargeHalt as exc:
+        operational_logger.halt(
+            Channel.STARTUP,
+            f"LEM discharge failed: {exc}",
+            error_type="LemDischargeHalt",
+            error_detail=str(exc),
+        )
         raise RuntimeHalt(f"LEM discharge failed: {exc}")
 
     constructive_compile_output = {
@@ -178,20 +233,37 @@ def RUN_LOGOS_SYSTEM(
     }
 
     if not constructive_compile_output["logos_agent_id"] or not constructive_compile_output["universal_session_id"]:
+        operational_logger.halt(
+            Channel.STARTUP,
+            "Missing identity context for orchestration",
+            error_type="MissingIdentityContext",
+            error_detail="identity context absent",
+        )
         raise RuntimeHalt("Missing identity context for orchestration")
 
     try:
         orchestration_plan = prepare_agent_orchestration(constructive_compile_output)
     except OrchestrationHalt as exc:
+        operational_logger.halt(
+            Channel.STARTUP,
+            f"Agent orchestration failed: {exc}",
+            error_type="OrchestrationHalt",
+            error_detail=str(exc),
+        )
         raise RuntimeHalt(f"Agent orchestration failed: {exc}")
 
     if mode == "interactive":
         _launch_gui()
 
-    return {
+
+
+    result = {
         "status": "LOGOS_AGENT_READY",
         "logos_identity": logos_identity,
         "logos_session": logos_session,
         "constructive_compile_output": constructive_compile_output,
         "agent_orchestration_plan": orchestration_plan,
     }
+    operational_logger.status(Channel.STARTUP, "system_bootstrap_complete")
+    operational_logger.close()
+    return result

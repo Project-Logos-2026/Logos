@@ -1,0 +1,24 @@
+{
+  "phase": "M3",
+  "title": "Startup Halt Site Instrumentation",
+  "status": "LOCKED",
+  "scope": "RuntimeHalt raise sites within STARTUP/LOGOS_SYSTEM.py",
+  "instrumented_sites": [
+    "StartupHalt",
+    "LockAndKeyFailure",
+    "LogosAgentStartupHalt",
+    "LemDischargeHalt",
+    "OrchestrationHalt",
+    "MissingIdentityContext"
+  ],
+  "logger_method": "halt",
+  "channel": "STARTUP",
+  "control_flow_preserved": true,
+  "exception_semantics_preserved": true,
+  "fail_open_preserved": true,
+  "read_path_introduced": false,
+  "runtime_semantics_modified": false,
+  "governance_influence_added": false,
+  "static_analysis_clean": true,
+  "ratified": true
+}

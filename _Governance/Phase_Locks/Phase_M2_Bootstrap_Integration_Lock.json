@@ -1,0 +1,25 @@
+{
+  "phase": "M2",
+  "title": "Bootstrap Integration",
+  "status": "LOCKED",
+  "scope": "Startup lifecycle instrumentation only",
+  "operational_logger_version": "1.0.0",
+  "integration_points": [
+    "RUN_LOGOS_SYSTEM"
+  ],
+  "lifecycle_events": [
+    "system_bootstrap_start",
+    "governance_contracts_loaded",
+    "operational_logger_initialized",
+    "system_bootstrap_complete"
+  ],
+  "constraints_preserved": [
+    "no_global_state",
+    "fail_open",
+    "no_read_api",
+    "no_governance_mutation",
+    "no_runtime_dependency_on_logs",
+    "no_scope_expansion"
+  ],
+  "ratified": true
+}
