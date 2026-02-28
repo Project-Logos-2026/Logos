@@ -58,7 +58,9 @@ class UnifiedBinder:
         context: Dict[str, Any],
         base_packet: Dict[str, Any],
         taxonomy_packet: Dict[str, Any],
-        synthesis_packet: Dict[str, Any]
+        synthesis_packet: Dict[str, Any],
+        *,
+        smp_core: Dict[str, Any] = None
     ) -> Dict[str, Any]:
         """
         Bind all analysis layers into final I3AA artifact.
@@ -69,31 +71,32 @@ class UnifiedBinder:
             base_packet: Stage 1 output
             taxonomy_packet: Stage 2 output
             synthesis_packet: Stage 3+4 output
-            
+        
         Returns:
             I3AA-structured artifact conforming to governance schema
         """
-        
+        # AA_CORE: require smp_core for hash computation
+        if smp_core is None:
+            if isinstance(aaced_packet.get("smp_core"), dict):
+                smp_core = aaced_packet["smp_core"]
+            else:
+                raise Exception("AA_CORE compliance requires SMP core for hash computation.")
         # Step 1: Detect contradictions
         contradictions = self._detect_contradictions(
             base_packet, taxonomy_packet, synthesis_packet
         )
-        
         # Step 2: Calibrate confidence
         overall_confidence = self._calibrate_confidence(
             taxonomy_packet, synthesis_packet, contradictions
         )
-        
         # Step 3: Extract meta-reasoning flags
         meta_flags = self._extract_meta_flags(
             base_packet, taxonomy_packet, synthesis_packet, contradictions
         )
-        
         # Step 4: Build provenance trace
         provenance_trace = self._build_provenance(
             base_packet, taxonomy_packet, synthesis_packet
         )
-        
         # Step 5: Assemble I3AA per governance schema
         i3aa = self._assemble_i3aa(
             aaced_packet=aaced_packet,
@@ -104,9 +107,9 @@ class UnifiedBinder:
             contradictions=contradictions,
             overall_confidence=overall_confidence,
             meta_flags=meta_flags,
-            provenance_trace=provenance_trace
+            provenance_trace=provenance_trace,
+            smp_core=smp_core
         )
-        
         return i3aa
     
     def _detect_contradictions(
@@ -256,59 +259,61 @@ class UnifiedBinder:
         contradictions: List[Dict[str, Any]],
         overall_confidence: float,
         meta_flags: List[str],
-        provenance_trace: Dict[str, Any]
+        provenance_trace: Dict[str, Any],
+        smp_core: Dict[str, Any] = None
     ) -> Dict[str, Any]:
-        """Assemble final I3AA artifact per governance schema"""
-        
-        # Extract reasoning domains used
-        reasoning_domains = []
-        reasoning_domains.extend(provenance_trace["base_reasoning"]["engines_invoked"])
-        reasoning_domains.extend(provenance_trace["triune_synthesis"]["iel_domains"])
-        reasoning_domains.extend(provenance_trace["triune_synthesis"]["math_categories"])
-        
-        # Build aggregation summary
-        taxonomies = taxonomy_packet.get("taxonomies", {})
-        aggregation_summary = "; ".join([
-            f"{name}: {data.get('summary', 'N/A')}"
-            for name, data in taxonomies.items()
-        ])
-        
-        # Assemble validation conflicts
-        validation_conflicts = contradictions
-        
-        # Build I3AA structure conforming to governance schema
-        i3aa = {
-            # Protocol metadata
-            "protocol": "ARP",
-            "type": "AA_PRE_STRUCTURED",
-            "status": "compiled",
-            
-            # Core AA fields (per SMP_Agent_AA_Schemas.md)
-            "aa_type": "I3AA",
-            "aa_origin_type": "protocol",
+        """Assemble final I3AA artifact per AA_CORE schema"""
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.aa import build_append_artifact
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.hashing import safe_hash
+        import json, hashlib, time
+        if smp_core is None:
+            raise Exception("AA_CORE compliance requires SMP core for hash computation.")
+        bound_smp_id = aaced_packet.get("smp_id", "unknown")
+        bound_smp_hash = safe_hash(json.dumps(smp_core, sort_keys=True, separators=(",", ":"), ensure_ascii=True))
+        creation_timestamp = time.time()
+        origin_sig_payload = {
             "originating_entity": "Advanced_Reasoning_Protocol",
-            "bound_smp_id": aaced_packet.get("smp_id", "unknown"),
-            "creation_timestamp": time.time(),
-            
-            # I3AA-specific fields (per governance schema)
-            "reasoning_domains_used": reasoning_domains,
-            "aggregation_summary": aggregation_summary,
-            "validation_conflicts": validation_conflicts,
+            "aa_type": "I3AA",
+            "bound_smp_id": bound_smp_id,
+            "bound_smp_hash": bound_smp_hash,
+            "creation_timestamp": creation_timestamp
+        }
+        origin_signature = "sha256:" + hashlib.sha256(json.dumps(origin_sig_payload, sort_keys=True, separators=(",", ":"), ensure_ascii=True).encode("utf-8")).hexdigest()
+        metadata_header = {
+            "epistemic_status": "PROVISIONAL",
+            "proof_coverage": "UNPROVEN",
+            "semantic_projection": []
+        }
+        content = {
+            "reasoning_domains_used": provenance_trace["base_reasoning"]["engines_invoked"] + provenance_trace["triune_synthesis"]["iel_domains"] + provenance_trace["triune_synthesis"]["math_categories"],
+            "aggregation_summary": "; ".join([
+                f"{name}: {data.get('summary', 'N/A')}"
+                for name, data in taxonomy_packet.get("taxonomies", {}).items()
+            ]),
+            "validation_conflicts": contradictions,
             "meta_reasoning_flags": meta_flags,
-            
-            # Full analysis stack for auditability
             "analysis_stack": {
                 "base_reasoning": base_packet,
                 "taxonomy_aggregation": taxonomy_packet,
                 "triune_synthesis": synthesis_packet
             },
-            
-            # Confidence and provenance
             "overall_confidence": overall_confidence,
             "provenance_trace": provenance_trace,
-            
-            # Trinity coherence (if available)
             "trinity_coherence": synthesis_packet.get("synthesis_result", {}).get("trinity_coherence", None)
         }
-        
-        return i3aa
+        aa = build_append_artifact(
+            aa_type="I3AA",
+            aa_origin_type="protocol",
+            originating_entity="Advanced_Reasoning_Protocol",
+            bound_smp_id=bound_smp_id,
+            bound_smp_hash=bound_smp_hash,
+            classification_state="provisional",
+            promotion_context={},
+            origin_signature=origin_signature,
+            verification_stage="ingress",
+            content=content,
+            cross_validation_signatures=[],
+            metadata_header=metadata_header,
+            creation_timestamp=creation_timestamp
+        )
+        return aa.to_dict()

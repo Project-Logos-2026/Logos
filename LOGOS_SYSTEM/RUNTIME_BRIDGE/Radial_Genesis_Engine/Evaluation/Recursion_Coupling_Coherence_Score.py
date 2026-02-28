@@ -59,6 +59,7 @@ _KAPPA = 1.0
 
 
 class RecursionCouplingCoherenceScore(ScoringInterface):
+
     """
     Scores topology configurations by recursion-layer coupling coherence.
 
@@ -72,6 +73,41 @@ class RecursionCouplingCoherenceScore(ScoringInterface):
 
     If recursion telemetry is not injected, returns 0.0 (neutral).
     """
+
+    def validate_snapshot(self, snapshot: dict) -> bool:
+        """
+        Minimal deterministic structural validation.
+        Fail-closed. Never raises.
+        """
+        try:
+            if not isinstance(snapshot, dict):
+                return False
+
+            required_keys = {
+                "agent_assignments",
+                "assignment_string",
+                "config_id",
+                "rotation_index",
+            }
+
+            if not required_keys.issubset(snapshot.keys()):
+                return False
+
+            if not isinstance(snapshot["agent_assignments"], dict):
+                return False
+
+            if not isinstance(snapshot["assignment_string"], str):
+                return False
+
+            if not isinstance(snapshot["config_id"], str):
+                return False
+
+            if not isinstance(snapshot["rotation_index"], int):
+                return False
+
+            return True
+        except Exception:
+            return False
 
     def __init__(
         self,

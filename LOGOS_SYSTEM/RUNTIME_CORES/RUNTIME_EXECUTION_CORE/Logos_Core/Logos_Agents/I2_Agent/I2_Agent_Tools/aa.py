@@ -4,15 +4,24 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 import json
 from pathlib import Path
+import os
 import time
 import uuid
 from typing import Any, Dict, List, Optional
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.config.hashing import safe_hash
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.diagnostics.errors import SchemaError
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.diagnostics.errors import SchemaError
+def _build_aa_hash(payload: dict) -> str:
+    # Import safe_hash here to avoid circular import issues
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.config.hashing import safe_hash as infra_safe_hash
+    import json
+    return infra_safe_hash(_stable_json(payload))
+def _validate_required(value: Any, field_name: str) -> None:
+    if value is None or (isinstance(value, str) and (not value.strip())):
+        raise SchemaError(f'AA missing {field_name}')
 ALLOWED_AA_TYPES = {'I1AA', 'I2AA', 'I3AA', 'LogosAA', 'ProtocolAA'}
 ALLOWED_ORIGIN_TYPES = {'agent', 'protocol'}
 ALLOWED_CLASSIFICATION = {'rejected', 'conditional', 'provisional', 'canonical'}
 ALLOWED_VERIFICATION_STAGE = {'ingress', 'post-triune', 'pre-canonicalization'}
+
 
 @dataclass(frozen=True)
 class AppendArtifact:
@@ -34,7 +43,24 @@ class AppendArtifact:
     diff_references: Dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
-        return {'aa_id': self.aa_id, 'aa_type': self.aa_type, 'aa_origin_type': self.aa_origin_type, 'originating_entity': self.originating_entity, 'bound_smp_id': self.bound_smp_id, 'bound_smp_hash': self.bound_smp_hash, 'creation_timestamp': self.creation_timestamp, 'aa_hash': self.aa_hash, 'classification_state': self.classification_state, 'promotion_context': self.promotion_context, 'origin_signature': self.origin_signature, 'cross_validation_signatures': list(self.cross_validation_signatures), 'verification_stage': self.verification_stage, 'metadata_header': self.metadata_header, 'content': self.content, 'diff_references': self.diff_references}
+        return {
+            'aa_id': self.aa_id,
+            'aa_type': self.aa_type,
+            'aa_origin_type': self.aa_origin_type,
+            'originating_entity': self.originating_entity,
+            'bound_smp_id': self.bound_smp_id,
+            'bound_smp_hash': self.bound_smp_hash,
+            'creation_timestamp': self.creation_timestamp,
+            'aa_hash': self.aa_hash,
+            'classification_state': self.classification_state,
+            'promotion_context': self.promotion_context,
+            'origin_signature': self.origin_signature,
+            'cross_validation_signatures': list(self.cross_validation_signatures),
+            'verification_stage': self.verification_stage,
+            'metadata_header': self.metadata_header,
+            'content': self.content,
+            'diff_references': self.diff_references
+        }
 
 def _normalize_list(values: Optional[List[Any]]) -> List[str]:
     if not values:
@@ -44,16 +70,13 @@ def _normalize_list(values: Optional[List[Any]]) -> List[str]:
 def _stable_json(payload: Dict[str, Any]) -> str:
     return json.dumps(payload, sort_keys=True, separators=(',', ':'), ensure_ascii=True)
 
-def _validate_required(value: Any, field_name: str) -> None:
-    if value is None or (isinstance(value, str) and (not value.strip())):
-        raise SchemaError(f'AA missing {field_name}')
+    # see above for new implementation
 
 def _validate_enum(value: str, allowed: set, field_name: str) -> None:
     if value not in allowed:
         raise SchemaError(f'AA {field_name} must be one of: {sorted(allowed)}')
 
-def _build_aa_hash(payload: Dict[str, Any]) -> str:
-    return safe_hash(_stable_json(payload))
+    # see above for new implementation
 
 def build_append_artifact(*, aa_type: str, aa_origin_type: str, originating_entity: str, bound_smp_id: str, bound_smp_hash: str, classification_state: str, promotion_context: Optional[Dict[str, Any]]=None, origin_signature: str='', verification_stage: str='ingress', content: Optional[Dict[str, Any]]=None, diff_references: Optional[Dict[str, Any]]=None, cross_validation_signatures: Optional[List[Any]]=None, metadata_header: Optional[Dict[str, Any]]=None, aa_id: Optional[str]=None, creation_timestamp: Optional[float]=None) -> AppendArtifact:
     """
@@ -138,20 +161,38 @@ def _normalize_semantic_projection(value: Any) -> List[str]:
     return projections
 
 def _load_semantic_projection_families() -> set[str]:
+    from pathlib import Path
+    import os
     root = _find_repo_root()
-    manifest_path = root / '_Governance' / 'Semantic_Projection_Manifest.json'
-    if not manifest_path.is_file():
-        raise SchemaError('Semantic_Projection_Manifest.json missing')
+    print("DEBUG repo_root:", root)
+    print("DEBUG cwd:", Path.cwd())
+    manifest_path = Path(root) / "_Governance" / "Semantic_Projection_Manifest.json"
+    print("DEBUG file exists at:", manifest_path)
+    print("DEBUG exists?:", manifest_path.exists())
+    if not manifest_path.exists():
+        raise SchemaError("Semantic_Projection_Manifest.json missing")
     with manifest_path.open('r', encoding='utf-8') as handle:
         payload = json.load(handle)
-    families = payload.get('families') if isinstance(payload, dict) else None
+    families = payload.get('Families') if isinstance(payload, dict) else None
     if not isinstance(families, dict):
         raise SchemaError('Semantic_Projection_Manifest.json invalid')
     return {str(key).upper() for key in families.keys()}
 
 def _find_repo_root() -> Path:
-    current = Path(__file__).resolve()
-    for parent in [current] + list(current.parents):
-        if (parent / '_Governance').is_dir():
+    from pathlib import Path
+    import os
+
+    # 1. Explicit environment override
+    env_root = os.environ.get("LOGOS_REPO_ROOT")
+    if env_root:
+        candidate = Path(env_root).resolve()
+        if (candidate / "_Governance").is_dir():
+            return candidate
+
+    # 2. Walk upward from current working directory ONLY
+    cwd = Path.cwd().resolve()
+    for parent in [cwd] + list(cwd.parents):
+        if (parent / "_Governance").is_dir():
             return parent
-    raise SchemaError('Repository root with _Governance not found')
+
+    raise SchemaError("Repository root with _Governance not found")

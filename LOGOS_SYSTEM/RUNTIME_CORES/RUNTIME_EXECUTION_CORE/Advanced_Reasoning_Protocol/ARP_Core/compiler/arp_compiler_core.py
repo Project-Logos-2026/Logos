@@ -35,7 +35,7 @@ observability:
 from __future__ import annotations
 
 from typing import Any, Dict, List, Optional
-from enum import Enum
+from ..engines.base_reasoning_registry import ComputeMode as BaseComputeMode
 import time
 import logging
 
@@ -47,10 +47,6 @@ from ..engines.unified_binder import UnifiedBinder
 logger = logging.getLogger(__name__)
 
 
-class ComputeMode(Enum):
-    LIGHTWEIGHT = "lightweight"
-    BALANCED = "balanced"
-    HIGH_RIGOR = "high_rigor"
 
 
 class ARPCompilerCore:
@@ -70,7 +66,7 @@ class ARPCompilerCore:
     
     def __init__(
         self,
-        compute_mode: ComputeMode = ComputeMode.BALANCED,
+        compute_mode: BaseComputeMode = BaseComputeMode.BALANCED,
         enable_provenance: bool = True
     ) -> None:
         self.compute_mode = compute_mode
@@ -83,7 +79,7 @@ class ARPCompilerCore:
         self.taxonomy_aggregator = TaxonomyAggregator()
         
         # Stage 3+4: Triune + Synthesis
-        self.integration_bridge = IntegrationBridge(compute_mode=compute_mode)
+        self.integration_bridge = IntegrationBridge(compute_mode=compute_mode.value)
         
         # Stage 5: Unified binder
         self.unified_binder = UnifiedBinder()
@@ -205,12 +201,16 @@ class ARPCompilerCore:
         synthesis_packet: Dict[str, Any]
     ) -> Dict[str, Any]:
         """Execute Stage 5: Unified Reasoning Binder → I3AA"""
+        smp_core = aaced_packet.get("smp_core")
+        if not isinstance(smp_core, dict):
+            raise Exception("AA_CORE compliance requires SMP core for hash computation.")
         return self.unified_binder.bind(
             aaced_packet=aaced_packet,
             context=context,
             base_packet=base_packet,
             taxonomy_packet=taxonomy_packet,
-            synthesis_packet=synthesis_packet
+            synthesis_packet=synthesis_packet,
+            smp_core=smp_core
         )
     
     def _emit_degraded_i3aa(
@@ -218,17 +218,34 @@ class ARPCompilerCore:
         aaced_packet: Dict[str, Any],
         context: Dict[str, Any],
         failure_stage: str,
-        failure_reason: str
+        failure_reason: str,
+        smp_core: Optional[Dict[str, Any]] = None
     ) -> Dict[str, Any]:
         """
-        Emit a degraded I3AA artifact that explicitly marks failure.
-        
-        Fail-closed principle: Better to admit inability than hallucinate.
+        Emit a degraded I3AA artifact that explicitly marks failure (AA_CORE compliant).
         """
-        return {
-            "protocol": "ARP",
-            "type": "AA_PRE_STRUCTURED",
-            "status": "degraded",
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.aa import build_append_artifact
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.hashing import safe_hash
+        import json, hashlib, time
+        if smp_core is None:
+            raise Exception("AA_CORE compliance requires SMP core for hash computation.")
+        bound_smp_id = aaced_packet.get("smp_id", "unknown")
+        bound_smp_hash = safe_hash(json.dumps(smp_core, sort_keys=True, separators=(",", ":"), ensure_ascii=True))
+        creation_timestamp = time.time()
+        origin_sig_payload = {
+            "originating_entity": "Advanced_Reasoning_Protocol",
+            "aa_type": "I3AA",
+            "bound_smp_id": bound_smp_id,
+            "bound_smp_hash": bound_smp_hash,
+            "creation_timestamp": creation_timestamp
+        }
+        origin_signature = "sha256:" + hashlib.sha256(json.dumps(origin_sig_payload, sort_keys=True, separators=(",", ":"), ensure_ascii=True).encode("utf-8")).hexdigest()
+        metadata_header = {
+            "epistemic_status": "REJECTED",
+            "proof_coverage": "UNPROVEN",
+            "semantic_projection": []
+        }
+        content = {
             "failure_stage": failure_stage,
             "failure_reason": failure_reason,
             "analysis_stack": {
@@ -237,18 +254,30 @@ class ARPCompilerCore:
                 "mathematical": {"status": "unavailable"},
                 "unified": {"status": "unavailable"}
             },
-            "i3aa_fields": {
-                "reasoning_domains_used": [],
-                "aggregation_summary": f"FAILED at {failure_stage}: {failure_reason}",
-                "validation_conflicts": [
-                    {
-                        "type": "pipeline_failure",
-                        "stage": failure_stage,
-                        "reason": failure_reason
-                    }
-                ],
-                "meta_reasoning_flags": ["DEGRADED_OUTPUT", "FAIL_CLOSED"]
-            },
-            "bound_smp_id": aaced_packet.get("smp_id", "unknown"),
-            "creation_timestamp": time.time()
+            "reasoning_domains_used": [],
+            "aggregation_summary": f"FAILED at {failure_stage}: {failure_reason}",
+            "validation_conflicts": [
+                {
+                    "type": "pipeline_failure",
+                    "stage": failure_stage,
+                    "reason": failure_reason
+                }
+            ],
+            "meta_reasoning_flags": ["DEGRADED_OUTPUT", "FAIL_CLOSED"]
         }
+        aa = build_append_artifact(
+            aa_type="I3AA",
+            aa_origin_type="protocol",
+            originating_entity="Advanced_Reasoning_Protocol",
+            bound_smp_id=bound_smp_id,
+            bound_smp_hash=bound_smp_hash,
+            classification_state="rejected",
+            promotion_context={},
+            origin_signature=origin_signature,
+            verification_stage="ingress",
+            content=content,
+            cross_validation_signatures=[],
+            metadata_header=metadata_header,
+            creation_timestamp=creation_timestamp
+        )
+        return aa.to_dict()

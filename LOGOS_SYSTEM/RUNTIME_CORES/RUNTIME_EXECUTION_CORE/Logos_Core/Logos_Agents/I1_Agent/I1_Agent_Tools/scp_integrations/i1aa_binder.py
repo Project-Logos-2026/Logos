@@ -5,8 +5,14 @@
 """I1AA assembly from SCP analysis results."""
 
 from __future__ import annotations
+
 from typing import Any, Dict, List
 import time
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.aa import build_append_artifact
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.config.hashing import safe_hash
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.diagnostics.errors import SchemaError
+import json
+import hashlib
 
 
 class I1AABinder:
@@ -18,27 +24,39 @@ class I1AABinder:
         mvs_result: Dict[str, Any],
         bdn_result: Dict[str, Any],
         sign_grounding: Dict[str, Any],
-        privation_profile: Dict[str, Any]
+        privation_profile: Dict[str, Any],
+        smp_core: Dict[str, Any] = None
     ) -> Dict[str, Any]:
-        """Bind all layers into I1AA per governance schema."""
-        
+        """Bind all layers into I1AA per AA_CORE schema."""
+        if smp_core is None:
+            raise SchemaError("AA_CORE compliance requires SMP core for hash computation.")
+
         contradictions = self._detect_contradictions(
             mvs_result, bdn_result, sign_grounding
         )
-        
         confidence = self._calibrate_confidence(
             mvs_result, bdn_result, sign_grounding, contradictions
         )
-        
-        return {
-            "protocol": "SCP",
-            "type": "AA_PRE_STRUCTURED",
-            "status": "compiled",
-            "aa_type": "I1AA",
-            "aa_origin_type": "agent",
+        # Compute bound_smp_hash using canonical JSON hashing
+        bound_smp_hash = safe_hash(json.dumps(smp_core, sort_keys=True, separators=(",", ":"), ensure_ascii=True))
+        creation_timestamp = time.time()
+        # Deterministic origin_signature
+        origin_sig_payload = {
             "originating_entity": "I1_Agent",
+            "aa_type": "I1AA",
             "bound_smp_id": smp_id,
-            "creation_timestamp": time.time(),
+            "bound_smp_hash": bound_smp_hash,
+            "creation_timestamp": creation_timestamp
+        }
+        origin_signature = "sha256:" + hashlib.sha256(json.dumps(origin_sig_payload, sort_keys=True, separators=(",", ":"), ensure_ascii=True).encode("utf-8")).hexdigest()
+        # Minimal deterministic metadata_header
+        metadata_header = {
+            "epistemic_status": "PROVISIONAL",
+            "proof_coverage": "UNPROVEN",
+            "semantic_projection": []
+        }
+        # Move all semantic fields into content
+        content = {
             "fractal_configuration": {
                 "privation_depth": privation_profile.get("depth_level", "unknown"),
                 "mvs_depth_explored": mvs_result.get("meta", {}).get("depth_explored", 0),
@@ -74,6 +92,22 @@ class I1AABinder:
                 "sign_grounding": "mvs_sign_resolution"
             }
         }
+        aa = build_append_artifact(
+            aa_type="I1AA",
+            aa_origin_type="agent",
+            originating_entity="I1_Agent",
+            bound_smp_id=smp_id,
+            bound_smp_hash=bound_smp_hash,
+            classification_state="provisional",
+            promotion_context={},
+            origin_signature=origin_signature,
+            verification_stage="ingress",
+            content=content,
+            cross_validation_signatures=[],
+            metadata_header=metadata_header,
+            creation_timestamp=creation_timestamp
+        )
+        return aa.to_dict()
     
     def _detect_contradictions(
         self,
