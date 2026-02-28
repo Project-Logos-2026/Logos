@@ -122,13 +122,11 @@ def main() -> int:
 
     if args.init_identity:
         _write_identity(parent_sha, digest)
-        print(f"identity_sha256={digest}")
         return 0
 
     try:
         meta = _load_identity()
     except FileNotFoundError as exc:
-        print(str(exc), file=sys.stderr)
         return 1
 
     recorded_sha = meta.get("identity_sha256")
@@ -151,10 +149,6 @@ def main() -> int:
             errors.append("parent_sha mismatch")
 
     if errors:
-        print(
-            "Identity hash verification failed: " + ", ".join(errors),
-            file=sys.stderr,
-        )
         return 1
 
     return 0

@@ -59,4 +59,4 @@ monolith_routing = {
 
 
 if __name__ == "__main__":
-    print("Monolith runtime entrypoint. Use invoke(<name>, context) for canonical modules.")
+    pass

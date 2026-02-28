@@ -73,8 +73,7 @@ try:
     import numpy as np
 except ImportError as exc:
     if __name__ == "__main__":
-        print("❌ Import Error: No module named 'numpy'")
-        print("Make sure the fractal_orbit_toolkit.py is available")
+        pass
 
     class _NumpyStub:
         def __getattr__(self, name):

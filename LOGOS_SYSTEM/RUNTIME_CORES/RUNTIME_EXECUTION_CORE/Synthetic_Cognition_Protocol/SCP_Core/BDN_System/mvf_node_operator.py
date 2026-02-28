@@ -900,9 +900,7 @@ if __name__ == "__main__":
     nearest = db.find_nearest_by_trinity(v1)
 
     print(f"Created node: {node1.id}")
-    print(f"Entailed node: {node2.id}")
-    print(f"Banach-Tarski pieces: {piece_ids}")
-    print(f"Reassembled copies: {copy_ids}")
+    pass
     print(f"Nearest nodes by trinity vector: {nearest}")
 
     # Close database
