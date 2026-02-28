@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
+from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.repo_root import _find_repo_root
 import time
 import uuid
 from typing import Any, Dict, List, Optional
@@ -127,15 +128,27 @@ def _extract_metadata_header(payload: Dict[str, Any]) -> Dict[str, Any]:
 def _normalize_semantic_projection(value: Any) -> List[str]:
     if value is None:
         return []
+
     if not isinstance(value, list):
         raise SchemaError('metadata_header.semantic_projection must be a list')
-    projections = [str(item).strip().upper() for item in value if str(item).strip()]
+
+    projections = [
+        str(item).strip().upper()
+        for item in value
+        if str(item).strip()
+    ]
+
     if not projections:
         return []
+
     registered = _load_semantic_projection_families()
+
     unregistered = [item for item in projections if item not in registered]
     if unregistered:
-        raise SchemaError(f'semantic_projection unregistered: {sorted(set(unregistered))}')
+        raise SchemaError(
+            f'semantic_projection unregistered: {sorted(set(unregistered))}'
+        )
+
     return projections
 
 def _normalize_proof_coverage(value: Any) -> Optional[str]:
@@ -205,16 +218,15 @@ def _load_semantic_projection_families() -> set[str]:
     manifest_path = root / '_Governance' / 'Semantic_Projection_Manifest.json'
     if not manifest_path.is_file():
         raise SchemaError('Semantic_Projection_Manifest.json missing')
+
     with manifest_path.open('r', encoding='utf-8') as handle:
         payload = json.load(handle)
-    families = payload.get('families') if isinstance(payload, dict) else None
+
+    if not isinstance(payload, dict):
+        raise SchemaError('Semantic_Projection_Manifest.json invalid')
+
+    families = payload.get('families')
     if not isinstance(families, dict):
         raise SchemaError('Semantic_Projection_Manifest.json invalid')
-    return {str(key).upper() for key in families.keys()}
 
-def _find_repo_root() -> Path:
-    current = Path(__file__).resolve()
-    for parent in [current] + list(current.parents):
-        if (parent / '_Governance').is_dir():
-            return parent
-    raise SchemaError('Repository root with _Governance not found')
+    return {str(key).upper() for key in families.keys()}

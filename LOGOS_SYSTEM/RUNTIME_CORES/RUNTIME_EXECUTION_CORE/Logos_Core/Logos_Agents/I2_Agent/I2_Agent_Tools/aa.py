@@ -4,7 +4,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 import json
 from pathlib import Path
-import os
+from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.repo_root import _find_repo_root
 import time
 import uuid
 from typing import Any, Dict, List, Optional
@@ -164,35 +164,12 @@ def _load_semantic_projection_families() -> set[str]:
     from pathlib import Path
     import os
     root = _find_repo_root()
-    print("DEBUG repo_root:", root)
-    print("DEBUG cwd:", Path.cwd())
     manifest_path = Path(root) / "_Governance" / "Semantic_Projection_Manifest.json"
-    print("DEBUG file exists at:", manifest_path)
-    print("DEBUG exists?:", manifest_path.exists())
     if not manifest_path.exists():
         raise SchemaError("Semantic_Projection_Manifest.json missing")
     with manifest_path.open('r', encoding='utf-8') as handle:
         payload = json.load(handle)
-    families = payload.get('Families') if isinstance(payload, dict) else None
+    families = payload.get('families') if isinstance(payload, dict) else None
     if not isinstance(families, dict):
         raise SchemaError('Semantic_Projection_Manifest.json invalid')
     return {str(key).upper() for key in families.keys()}
-
-def _find_repo_root() -> Path:
-    from pathlib import Path
-    import os
-
-    # 1. Explicit environment override
-    env_root = os.environ.get("LOGOS_REPO_ROOT")
-    if env_root:
-        candidate = Path(env_root).resolve()
-        if (candidate / "_Governance").is_dir():
-            return candidate
-
-    # 2. Walk upward from current working directory ONLY
-    cwd = Path.cwd().resolve()
-    for parent in [cwd] + list(cwd.parents):
-        if (parent / "_Governance").is_dir():
-            return parent
-
-    raise SchemaError("Repository root with _Governance not found")

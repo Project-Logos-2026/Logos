@@ -46,6 +46,7 @@ from dataclasses import dataclass, field
 import hashlib
 import json
 from pathlib import Path
+from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.repo_root import _find_repo_root
 import time
 from typing import Any, Dict, List, Mapping, Optional
 
@@ -403,12 +404,7 @@ def _load_semantic_projection_families() -> set[str]:
 	return {str(key).upper() for key in families.keys()}
 
 
-def _find_repo_root() -> Path:
-	current = Path(__file__).resolve()
-	for parent in [current] + list(current.parents):
-		if (parent / "_Governance").is_dir():
-			return parent
-	raise ValueError("Repository root with _Governance not found")
+...existing code...
 
 
 def _canonical_json(value: Any) -> str:
