@@ -45,12 +45,12 @@ def validate():
 
     validate_score_range(comp.get("Compatibility", {}))
 
-    print("DRAC Registry Validation: PASS")
+# governance_output_removed_call
 
 
 if __name__ == "__main__":
     try:
         validate()
     except Exception as exc:
-        print(f"DRAC Registry Validation: FAIL -> {exc}")
+# governance_output_removed_call
         sys.exit(1)
