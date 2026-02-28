@@ -1,0 +1,13 @@
+name: Governance Print Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  startup_print_enforcement:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enforce no print() in startup-path governed modules
+        run: bash _Governance/CI_Checks/Check_No_Print_In_Governed_Modules.sh
