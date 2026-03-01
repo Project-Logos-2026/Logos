@@ -108,6 +108,13 @@ class RGENexusAdapter(NexusParticipant):
             causal_intent="topology_advisory",
         )
 
+    def get_last_result(self) -> Optional[Dict[str, Any]]:
+        """
+        Public accessor for the most recent RGE selection result.
+        Returns None if no result exists or if execution failed.
+        """
+        return self._last_result
+
     def _extract_telemetry_input(self, context: Dict[str, Any]) -> Dict[str, Any]:
         tick_id = str(context.get("tick_id", ""))
         task_id = str(context.get("task_id", ""))

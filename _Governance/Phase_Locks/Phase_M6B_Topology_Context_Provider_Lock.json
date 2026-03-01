@@ -1,0 +1,20 @@
+{
+  "phase": "M6B",
+  "title": "Topology Context Provider",
+  "status": "LOCKED",
+  "new_files": [
+    "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Orchestration/Topology_Context_Provider.py",
+    "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Orchestration/__init__.py"
+  ],
+  "deleted_files": [
+    "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Telemetry_Production/Topology_Context_Provider.py"
+  ],
+  "modified_files": [],
+  "api_surface": ["set_topology", "get_topology_context", "clear"],
+  "rge_imports": false,
+  "mspc_imports": false,
+  "mspc_pipeline_modified": false,
+  "rge_modified": false,
+  "no_rge_mspc_import_path": true,
+  "governance_compliance_verified": true
+}

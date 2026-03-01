@@ -321,6 +321,8 @@ class ExecutionToOperationsExchanger(NexusParticipant):
                 not be dispatched until ``gating.is_discharged()`` returns
                 ``True``.
         """
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Topology_Context_Provider import TopologyContextProvider
+        self._topology_provider = TopologyContextProvider()
         self.operations_consumer = operations_consumer
         self.validator = validator or DualBijectiveCommutationValidator()
         self.gating = gating or PXLGate()
@@ -348,20 +350,25 @@ class ExecutionToOperationsExchanger(NexusParticipant):
         operation's unique identifier so that the corresponding result can be
         correlated later.
         """
-        if not self._handle:
-            # If we have not been registered yet, do nothing.
-            return
+        # --- M6C Orchestration Wiring ---
+        # 1. After RGE advisory available, set topology
+        rge_adapter = context.get("rge_adapter")
+        if rge_adapter is not None:
+            rge_result = rge_adapter.get_last_result()
+            self._topology_provider.set_topology(rge_result)
 
-        # Only dispatch operations after the PXL gate is ready.
+        # 2. Inject provider into MSPC context before MSPC execution
+        if "mspc_context" in context:
+            context["mspc_context"]["topology_context_provider"] = self._topology_provider
+
+        # 3. Proceed with normal tick logic
+        if not self._handle:
+            return
         if not self.gating.is_discharged():
             return
-
         if not self._pending_operations:
             return
-
-        # Pop one operation off the queue and emit it.
         op_request = self._pending_operations.popleft()
-        # Record the operation ID with the validator before dispatch.
         self.validator.register_operation(op_request.op_id)
         payload: Dict[str, object] = {
             "type": op_request.type,
@@ -369,10 +376,10 @@ class ExecutionToOperationsExchanger(NexusParticipant):
             "operation_id": op_request.op_id,
         }
         payload = _apply_provisional_proof_tagging(payload)
-        # The causal intent (if provided) is used to annotate the state
-        # packet.  This allows downstream participants to correlate causal
-        # chains through the runtime.
         self._handle.emit(payload, causal_intent=op_request.causal_intent)
+
+        # 4. End of tick cleanup
+        self._topology_provider.clear()
 
     def receive_state(self, packet: StatePacket) -> None:
         """

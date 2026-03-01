@@ -352,7 +352,7 @@ class StandardNexus:
     # Tick Loop
     # -------------------------------------------------------------------------
 
-    def tick(self, causal_intent: Optional[str] = None) -> None:
+    def tick(self, causal_intent: Optional[str] = None, task_context: Optional[Dict[str, Any]] = None) -> None:
         self.tick_counter += 1
         tick_id = self.tick_counter
 
@@ -374,8 +374,8 @@ class StandardNexus:
                 "tick_id": tick_id,
                 "causal_intent": causal_intent,
             })
-
-            # Execute
+            if task_context is not None:
+                context.update(task_context)
             participant.execute_tick(context)
 
             # MRE post-check
