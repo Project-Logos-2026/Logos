@@ -130,7 +130,7 @@ def RUN_LOGOS_SYSTEM(
     config_path: Optional[str] = None,
     mode: Literal["headless", "interactive"] = "headless",
     diagnostic: bool = False,
-) -> Dict[str, Any]:
+) -> Optional[Dict[str, Any]]:
     """Canonical runtime spine entry receiving handoff from START_LOGOS."""
 
     # M3: Import logger and Channel at top of function
@@ -272,5 +272,26 @@ def RUN_LOGOS_SYSTEM(
         "agent_orchestration_plan": orchestration_plan,
     }
     operational_logger.status(Channel.STARTUP, "agent_orchestration_complete")
-    operational_logger.close()
-    return result
+
+    if mode == "headless":
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Runtime_Loop import RuntimeLoop
+
+        runtime = RuntimeLoop(startup_context=result)
+        try:
+            runtime.run()
+        except Exception as e:
+            operational_logger.halt(
+                Channel.STARTUP,
+                f"RuntimeLoop failure: {e}",
+                error_type="RuntimeLoopFailure",
+                error_detail=str(e),
+            )
+            raise
+
+        operational_logger.close()
+        return None
+
+    if mode == "interactive":
+        _launch_gui()
+        operational_logger.close()
+        return result
