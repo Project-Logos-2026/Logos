@@ -10,6 +10,7 @@ import sys
 
 from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Lifecycle_Manager import (
     AgentLifecycleManager,
+    LifecycleState,
 )
 from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Nexus_Factory import (
     NexusFactory,
@@ -85,19 +86,15 @@ class RuntimeLoop:
         task_source: Optional[TaskSource] = None,
         output_sink: Optional[OutputSink] = None,
     ) -> None:
-
         self._startup_context = startup_context
         self._task_source = task_source or StdinTaskSource()
         self._output_sink = output_sink or StdoutOutputSink()
-
-        # Activate agents
         self._alm = AgentLifecycleManager(startup_context)
         participants = self._alm.activate()
-
-        # Build LP Nexus
         self._nexus: StandardNexus = NexusFactory.build_lp_nexus(participants)
-
         self._running = False
+        self._first_tick = True
+        self._initial_participant_ids = sorted(participants.keys())
 
     # ----------------------------------------
     # Blocking main loop
@@ -126,25 +123,38 @@ class RuntimeLoop:
     # ----------------------------------------
 
     def _execute_tick(self, task: Dict[str, Any]) -> Dict[str, Any]:
-
         try:
+            # Freeze registry and enforce sorted order
+            current_ids = sorted(self._alm.get_participants().keys())
+            if current_ids != self._initial_participant_ids:
+                raise RuntimeError("RuntimeActivationHalt: Participant registry mutated during tick")
+            # First tick: transition REGISTERED -> ACTIVE
+            if self._first_tick:
+                for pid in current_ids:
+                    self._alm._transition_state(pid, LifecycleState.ACTIVE)
+                self._first_tick = False
+            # Enforce all ACTIVE before tick
+            for pid in current_ids:
+                if self._alm._participant_states.get(pid) != LifecycleState.ACTIVE:
+                    raise RuntimeError(f"LifecycleHalt: Participant {pid} not ACTIVE before tick")
             causal_intent = task.get("input") if isinstance(task, dict) else None
+            # Deterministic sorted execution
+            for pid in current_ids:
+                # (Assume tick logic is inside Nexus)
+                pass  # Placeholder for per-participant tick if needed
             self._nexus.tick(causal_intent)
-
             result = {
                 "status": "TICK_COMPLETE",
                 "session_id": self._alm.get_session_id(),
                 "logos_agent_id": self._alm.get_logos_agent_id(),
                 "task": task,
-                "participants": list(self._alm.get_participants().keys()),
+                "participants": current_ids,
                 "mre_state": "UNKNOWN",  # P1 scope placeholder
                 "constraints_applied": False,
                 "ms_pipeline_invoked": False,
                 "error": None,
             }
-
             return result
-
         except Exception as e:
             return {
                 "status": "TICK_FAILED",
@@ -157,3 +167,9 @@ class RuntimeLoop:
                 "ms_pipeline_invoked": False,
                 "error": str(e),
             }
+    def halt(self) -> None:
+        # Transition all ACTIVE participants to HALTED
+        for pid in self._initial_participant_ids:
+            if self._alm._participant_states.get(pid) == LifecycleState.ACTIVE:
+                self._alm._transition_state(pid, LifecycleState.HALTED)
+        self._running = False

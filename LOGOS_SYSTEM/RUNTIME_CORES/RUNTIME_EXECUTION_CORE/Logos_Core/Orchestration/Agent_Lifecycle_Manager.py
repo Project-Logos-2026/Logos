@@ -1,3 +1,11 @@
+from enum import Enum
+
+class LifecycleState(Enum):
+    INITIALIZED = "INITIALIZED"
+    REGISTERED = "REGISTERED"
+    ACTIVE = "ACTIVE"
+    HALTED = "HALTED"
+
 # HEADER_TYPE: PRODUCTION_RUNTIME_MODULE
 # AUTHORITY: LOGOS_SYSTEM
 # GOVERNANCE: ENABLED
@@ -22,6 +30,22 @@ class LifecycleHalt(Exception):
 
 
 class AgentLifecycleManager:
+    def _transition_state(self, participant_id: str, new_state: LifecycleState) -> None:
+        current_state = self._participant_states.get(participant_id)
+        legal = {
+            LifecycleState.INITIALIZED: LifecycleState.REGISTERED,
+            LifecycleState.REGISTERED: LifecycleState.ACTIVE,
+            LifecycleState.ACTIVE: LifecycleState.HALTED,
+        }
+        if current_state is None:
+            # Only allow INITIALIZED as first state
+            if new_state != LifecycleState.INITIALIZED:
+                raise LifecycleHalt(f"Illegal initial state for {participant_id}: {new_state}")
+        else:
+            if legal.get(current_state) != new_state:
+                raise LifecycleHalt(f"Illegal transition for {participant_id}: {current_state} -> {new_state}")
+        self._participant_states[participant_id] = new_state
+
     def __init__(self, startup_context: Dict[str, Any]) -> None:
         if not isinstance(startup_context, dict):
             raise LifecycleHalt("Invalid startup_context")
@@ -52,6 +76,7 @@ class AgentLifecycleManager:
         self._plan = plan
         self._participants: Dict[str, NexusParticipant] = {}
         self._activated = False
+        self._participant_states: Dict[str, LifecycleState] = {}
 
     def activate(self) -> Dict[str, NexusParticipant]:
         try:
@@ -68,8 +93,11 @@ class AgentLifecycleManager:
             "agent_i3": i3,
             "agent_logos": logos,
         }
-
-        self._activated = True
+        # Set INITIALIZED and transition to REGISTERED
+        for pid in self._participants:
+            self._transition_state(pid, LifecycleState.INITIALIZED)
+            self._transition_state(pid, LifecycleState.REGISTERED)
+        self._activated = True  # Legacy guard
         return self._participants
 
     def get_session_id(self) -> str:
@@ -79,6 +107,7 @@ class AgentLifecycleManager:
         return self._logos_agent_id
 
     def get_participants(self) -> Dict[str, NexusParticipant]:
-        if not self._activated:
-            raise LifecycleHalt("activate() not yet called")
+        for pid in self._participants:
+            if self._participant_states.get(pid) != LifecycleState.REGISTERED:
+                raise LifecycleHalt(f"Participant {pid} not in REGISTERED state")
         return self._participants
