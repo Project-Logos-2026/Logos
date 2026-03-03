@@ -186,6 +186,7 @@ def _apply_provisional_proof_tagging(payload: Dict[str, Any]) -> Dict[str, Any]:
                     ]
         return payload
     except Exception:
+        pass
         return payload
 
 

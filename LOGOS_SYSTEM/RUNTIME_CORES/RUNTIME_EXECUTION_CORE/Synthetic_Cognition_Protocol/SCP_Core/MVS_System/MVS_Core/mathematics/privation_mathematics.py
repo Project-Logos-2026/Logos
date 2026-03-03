@@ -1435,32 +1435,18 @@ if __name__ == "__main__":
     # Validate coherence
     result = coherence.validate_coherence(test_propositions, domain)
 
-    print(f"Coherence Status: {result.status}")
-    print(f"Coherence Measure: {result.coherence_measure:.2f}")
-    print(f"Identity Preserved: {result.identity_preserved}")
-    print(f"Contradiction Detected: {result.contradiction_detected}")
-    print(f"Excluded Middle Satisfied: {result.excluded_middle_satisfied}")
-    print(f"Modal Consistency: {result.modal_consistency}")
-    print(f"S5 Properties Maintained: {result.s5_properties_maintained}")
+    # Output suppressed for governance compliance
 
     if result.violated_laws:
-        print(f"Violated Laws: {[law.value for law in result.violated_laws]}")
-        print(f"Corrective Actions: {result.corrective_actions}")
+        pass  # Output suppressed for governance compliance
 
     # Test bijective mapping validation
     bijection_result = coherence.get_bijective_mapping_validation()
-    print(f"\nBijective Mapping Type: {bijection_result['bijection_type']}")
-    print(f"Unity/Trinity Preserved: {bijection_result['unity_trinity_preserved']}")
-    print(f"Modal Integration: {bijection_result['modal_integration']}")
-    print(f"Commutation Compatible: {bijection_result['commutation_compatible']}")
+    # Output suppressed for governance compliance
 
     # Display mapping details
     for mapping_name, details in bijection_result['mapping'].items():
-        print(f"\n{mapping_name}:")
-        print(f"  {details['transcendental']} → {details['logical_law']}")
-        print(f"  Principle: {details['principle']}")
-        print(f"  Modal Necessity: {details['modal_necessity']}")
-        print(f"  Valid: {details['bijection_valid']}")
+        pass  # Output suppressed for governance compliance
 
 
 class CoherenceIntegrationValidator:
@@ -1761,7 +1747,7 @@ class EnhancedTLMWithCoherence:
 def demonstrate_enhanced_coherence_system():
     """Demonstrate the enhanced TLM system with coherence validation."""
 
-    print("=== Enhanced LOGOS AGI with Coherence Formalism ===\n")
+    # Output suppressed for governance compliance
 
     # Initialize enhanced TLM
     enhanced_tlm = EnhancedTLMWithCoherence()
@@ -1779,21 +1765,14 @@ def demonstrate_enhanced_coherence_system():
         "context": {"evaluation_type": "ethical"}
     }
 
-    print("Testing valid moral evaluation request...")
+    # Output suppressed for governance compliance
     result = enhanced_tlm.enhanced_validate_system_operation(valid_request)
 
-    print(f"TLM Status: {result['tlm_status']}")
-    print(f"Coherence Validated: {result.get('coherence_validated', False)}")
-    print(f"Coherence Measure: {result.get('coherence_measure', 0.0):.3f}")
-    print(f"Logical Laws Compliance: {result.get('logical_laws_compliance', {})}")
+    # Output suppressed for governance compliance
 
     if result['tlm_status'] == 'LOCKED':
-        print(f"Enhanced Token: {result['validation_token'][:50]}...")
-        print("✓ Operation authorized with mathematical incorruptibility")
-        print("✓ All formalism sets validated including coherence")
-        print("✓ Bijective mappings verified and commutation maintained")
-
-    print("\n" + "="*60)
+        pass  # Output suppressed for governance compliance
+    # Output suppressed for governance compliance
 
     # Test operation that should fail coherence validation
     invalid_request = {
@@ -1806,17 +1785,13 @@ def demonstrate_enhanced_coherence_system():
         "context": {"test_type": "contradiction"}
     }
 
-    print("Testing contradictory request...")
+    # Output suppressed for governance compliance
     result = enhanced_tlm.enhanced_validate_system_operation(invalid_request)
 
-    print(f"TLM Status: {result['tlm_status']}")
-    print(f"Failed Validations: {result.get('failed_validations', [])}")
-    print(f"Logical Violations: {result.get('logical_violations', [])}")
-    print(f"Corrective Actions: {result.get('corrective_actions', [])}")
+    # Output suppressed for governance compliance
 
     if result['tlm_status'] == 'NOT LOCKED':
-        print("✗ Operation blocked due to coherence violations")
-        print("✗ Mathematical incorruptibility prevents execution")
+        pass  # Output suppressed for governance compliance
 
 if __name__ == "__main__":
     demonstrate_enhanced_coherence_system()
@@ -2330,15 +2305,15 @@ if __name__ == "__main__":
     modal_coherence = ModalCoherenceBijection()
 
     # Test bijection properties
-    print("=== Modal Coherence Bijection Validation ===")
+    # Output suppressed for governance compliance
     validation_results = modal_coherence.validate_bijection_properties()
 
     for property_name, is_valid in validation_results.items():
         status = "✓" if is_valid else "✗"
-        print(f"{status} {property_name}: {is_valid}")
+        # Output suppressed for governance compliance
 
     # Test bijection application
-    print("\n=== Bijection Application Tests ===")
+    # Output suppressed for governance compliance
     test_mappings = [
         ("EI", "Existence Is → Identity Law"),
         ("OG", "Objective Good → Non-Contradiction Law"),
@@ -2348,10 +2323,10 @@ if __name__ == "__main__":
     for transcendental, description in test_mappings:
         logical_law = modal_coherence.apply_bijection(transcendental)
         inverse = modal_coherence.apply_inverse_bijection(logical_law)
-        print(f"{transcendental} → {logical_law} → {inverse} | {description}")
+        # Output suppressed for governance compliance
 
     # Test system state coherence
-    print("\n=== System Coherence Measurement ===")
+    # Output suppressed for governance compliance
     test_system_state = {
         "entities": [{"id": 1}, {"id": 2}],
         "propositions": [{"content": "P", "negated": False}],
@@ -2360,27 +2335,20 @@ if __name__ == "__main__":
     }
 
     coherence_measure = modal_coherence.calculate_coherence_measure(test_system_state)
-    print(f"System Coherence Measure: {coherence_measure:.3f}")
+    # Output suppressed for governance compliance
 
     # Generate complete bijection result
-    print("\n=== Complete Bijection Result ===")
+    # Output suppressed for governance compliance
     result = modal_coherence.generate_coherence_bijection_result(test_system_state)
 
-    print(f"Bijection Valid: {result.bijection_valid}")
-    print(f"Unity Preserved: {result.unity_preserved}")
-    print(f"Trinity Preserved: {result.trinity_preserved}")
-    print(f"Ratio Preserved: {result.ratio_preserved}")
-    print(f"Modal Consistency: {result.modal_consistency}")
-    print(f"Commutation Valid: {result.commutation_valid}")
-    print(f"Coherence Measure: {result.coherence_measure:.3f}")
-    print(f"TLM Compatible: {result.tlm_compatible}")
+    # Output suppressed for governance compliance
 
     if result.error_details:
-        print(f"Errors: {result.error_details}")
+        pass  # Output suppressed for governance compliance
 
     # Generate bijection signature
     signature = modal_coherence.get_bijection_signature()
-    print(f"\nBijection Signature: {signature[:16]}...")
+    # Output suppressed for governance compliance
 
 # =============================================================================
 # DEPLOYMENT NOTES:

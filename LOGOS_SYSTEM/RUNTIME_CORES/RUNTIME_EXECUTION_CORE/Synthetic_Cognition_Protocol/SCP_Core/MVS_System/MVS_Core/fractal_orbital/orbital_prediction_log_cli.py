@@ -56,4 +56,4 @@ def summarize_predictions(preds: list) -> dict:
 
 if __name__ == "__main__":
     prs = load_predictions()
-    print(json.dumps(summarize_predictions(prs), indent=2))
+      # Output suppressed for governance compliance

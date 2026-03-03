@@ -735,7 +735,7 @@ class TrinitarianOptimizationTheorem:
 
         Returns comprehensive verification results for all theorems.
         """
-        print("=== Trinitarian Optimization Theorem - Complete Verification ===\n")
+        # Output suppressed for governance compliance
 
         theorems = [
             self.theorem_2_1_insufficiency_of_2,
@@ -756,12 +756,7 @@ class TrinitarianOptimizationTheorem:
             results[result.theorem_name] = result
             all_valid = all_valid and result.proof_valid
 
-            print(f"{result.theorem_name}: {'✓ PROVEN' if result.proof_valid else '✗ FAILED'}")
-            print(f"  Claim: {result.claim}")
-            if result.counterexamples:
-                print(f"  Counterexamples: {result.counterexamples}")
-            print(f"  Conclusion: {result.conclusion}")
-            print()
+            # Output suppressed for governance compliance
 
         # Final verification
         framework_succeeds = all_valid
@@ -774,10 +769,7 @@ class TrinitarianOptimizationTheorem:
             'philosophical_significance': self._get_philosophical_significance(framework_succeeds)
         }
 
-        print("=== FINAL VERIFICATION ===")
-        print(f"Framework Status: {'✓ COMPLETE SUCCESS' if framework_succeeds else '✗ VERIFICATION FAILED'}")
-        print(f"Theorems Proven: {final_result['theorems_verified']}/{final_result['total_theorems']}")
-        print(f"\nPhilosophical Significance:\n{final_result['philosophical_significance']}")
+        # Output suppressed for governance compliance
 
         return final_result
 
@@ -810,4 +802,4 @@ def main():
 
 if __name__ == "__main__":
     success = main()
-    print(f"\nTrinitarian Optimization Theorem: {'VERIFIED' if success else 'FAILED'}")
+    # Output suppressed for governance compliance

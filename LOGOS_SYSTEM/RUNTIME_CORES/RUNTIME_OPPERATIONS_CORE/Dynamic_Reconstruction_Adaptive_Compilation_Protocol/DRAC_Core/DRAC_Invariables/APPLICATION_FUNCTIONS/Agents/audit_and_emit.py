@@ -31,7 +31,6 @@ def main(argv: list[str] | None = None) -> int:
     if args.write:
         _rewrite_file(_CONFIG_PATH)
 
-    print("audit_and_emit stub executed; ontology left unchanged")
     return 0
 
 

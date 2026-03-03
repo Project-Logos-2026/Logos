@@ -239,73 +239,40 @@ def demonstrate_dual_bijection_fix():
     def g(x): return B.get(x)
     def g_inv(y): return B_inverse.get(y)
 
-    print("🔗 Dual Bijection System: Fixing Ontological Coherence")
-    print("=" * 60)
+    # Output suppressed for governance compliance
 
     # Create the dual bijection system
     system = DualBijectionSystem(A, B)
 
     # Basic demonstrations
-    print("\n📊 Basic Mappings:")
-    print(f"A: {A}")
-    print(f"A⁻¹: {A_inverse}")
-    print(f"B: {B}")
-    print(f"B⁻¹: {B_inverse}")
+    # Output suppressed for governance compliance
 
-    print("\n🔄 Function Demonstrations:")
-    print(f"f('I') = {f('I')}")
-    print(f"f⁻¹('T') = {f_inv('T')}")
-    print(f"g('R') = {g('R')}")
-    print(f"g⁻¹('G') = {g_inv('G')}")
+    # Output suppressed for governance compliance
 
     # Comprehensive analysis
     analysis = system.analyze_ontological_coherence()
 
-    print("\n🔍 Bijection Properties:")
-    print(f"A mapping - Injective: {analysis['bijection_properties']['A_mapping']['injective']}, "
-          f"Surjective: {analysis['bijection_properties']['A_mapping']['surjective']}, "
-          f"Bijective: {analysis['bijection_properties']['A_mapping']['bijective']}")
-    print(f"B mapping - Injective: {analysis['bijection_properties']['B_mapping']['injective']}, "
-          f"Surjective: {analysis['bijection_properties']['B_mapping']['surjective']}, "
-          f"Bijective: {analysis['bijection_properties']['B_mapping']['bijective']}")
+        # Output suppressed for governance compliance
 
-    print("\n🔗 Commutation Analysis:")
-    print(f"Commutation Score: {analysis['commutation_properties']['commutation_score']:.3f}")
-    print(f"Commutation Failures: {len(analysis['commutation_properties']['commutation_failures'])}")
+    # Output suppressed for governance compliance
 
     if analysis['commutation_properties']['commutation_failures']:
-        print("Failure Details:")
-        for failure in analysis['commutation_properties']['commutation_failures'][:3]:
-            print(f"  • {failure['type']}: {failure}")
+        pass  # Output suppressed for governance compliance
 
-    print("\n🧬 Ontological Coherence:")
-    print(f"Overall Coherence Score: {analysis['coherence_score']:.3f}")
+    # Output suppressed for governance compliance
 
-    print("\n📈 Improvement Over Previous System:")
-    improvement = analysis['improvement_over_previous']
-    print(f"Previous Commutation Failures: {improvement['previous_commutation_failures']}")
-    print(f"Current Commutation Failures: {improvement['current_commutation_failures']}")
-    print(f"Improvement Achieved: {improvement['improvement']}")
-    print(f"Flexibility Gained: {improvement['flexibility_gained']}")
+    # Output suppressed for governance compliance
 
-    print("\n💡 Key Insights:")
-    if analysis['coherence_score'] > 0.5:
-        print("  • Dual bijection system shows improved ontological coherence")
-    else:
-        print("  • Ontological coherence still requires further refinement")
-
-    if improvement['flexibility_gained']:
-        print("  • Many-to-one inverse mappings provide ontological flexibility")
-        print("  • Allows multiple primitives to share ontological categories")
+    # Output suppressed for governance compliance
 
     if improvement['improvement']:
-        print("  • Significant reduction in commutation failures vs. strict bijection")
+        pass  # Output suppressed for governance compliance
 
     # Save detailed analysis
     with open('dual_bijection_coherence_analysis.json', 'w') as f:
         json.dump(analysis, f, indent=2, default=str)
 
-    print("\n📁 Analysis saved to: dual_bijection_coherence_analysis.json")
+    # Output suppressed for governance compliance
     return analysis
 
 if __name__ == "__main__":

@@ -750,20 +750,8 @@ async def _test_system_a():
     # Evaluate
     refined = await evaluator.evaluate(test_smp)
     
-    # Print results
-    print("\n" + "="*80)
-    print("SYSTEM A EVALUATION RESULTS")
-    print("="*80)
-    print(f"SMP ID: {refined.original_smp.id}")
-    print(f"Iterations: {refined.iterations}")
-    print(f"Stability Score: {refined.stability_score:.3f}")
-    print(f"\nPXL Logic: {refined.pxl_report.score:.3f} - {refined.pxl_report.passed}")
-    print(f"IEL Domains: {refined.iel_report.score:.3f} - {refined.iel_report.passed}")
-    print(f"ARP Math: {refined.arp_report.score:.3f} - {refined.arp_report.passed}")
-    print(f"Cognitive Resistor: {refined.resistor_report.score:.3f} - {refined.resistor_report.passed}")
-    print(f"\nRefined Content:")
-    print(json.dumps(refined.refined_content, indent=2))
-    print("="*80)
+    # Results block removed for governance compliance
+    return None
 
 
 if __name__ == "__main__":

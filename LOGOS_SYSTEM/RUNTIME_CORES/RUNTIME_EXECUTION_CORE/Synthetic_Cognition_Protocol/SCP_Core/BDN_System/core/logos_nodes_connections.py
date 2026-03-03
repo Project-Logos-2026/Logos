@@ -82,4 +82,4 @@ trinity_agents = [TrinitarianAgent('Father'), TrinitarianAgent('Son'), Trinitari
 
 # --- 6. Short Initialization Test ---
 errors = []
-print(f"Loaded {len(nodes)} Bonnock nodes.")
+# Output suppressed for governance compliance

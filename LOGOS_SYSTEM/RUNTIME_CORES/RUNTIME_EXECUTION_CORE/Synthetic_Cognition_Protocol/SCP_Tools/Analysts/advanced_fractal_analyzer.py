@@ -678,18 +678,12 @@ if __name__ == '__main__':
         return iterations
 
     # Test the analyzer
-    print("Testing Advanced Fractal Analyzer...")
+    # Output suppressed for governance compliance
     test_iterations = generate_test_julia()
 
     analyzer = AdvancedFractalAnalyzer(test_iterations)
     results = analyzer.analyze_all_layers()
 
-    print("\nAnalysis Results Summary:")
-    print(f"Topological: {len(results.topological)} metrics")
-    print(f"Information: Shannon entropy = {results.information['shannon_entropy']:.3f}")
-    print(f"Dynamical: Lyapunov exponent = {results.dynamical['lyapunov_exponent']:.3f}")
-    print(f"Statistical: Mean iterations = {results.statistical['mean_iterations']:.1f}")
-    print(f"Graph: {results.graph['num_nodes']} nodes, {results.graph['num_edges']} edges")
-    print(f"Categorical: {results.categorical['num_objects']} objects")
+    # Output suppressed for governance compliance
 
-    print("\nAdvanced fractal analysis completed successfully!")
+    # Output suppressed for governance compliance

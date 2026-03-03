@@ -617,8 +617,7 @@ def create_integrated_logos_system(
 def demonstration_example():
     """Demonstration of LOGOS harmonization system"""
 
-    print("LOGOS Harmonizer Demonstration")
-    print("=" * 50)
+    # Output suppressed for governance compliance
 
     # Create system
     system = create_integrated_logos_system("demo_harmonized.db")
@@ -632,9 +631,7 @@ def demonstration_example():
             test_content, SemanticDomain.THEOLOGICAL
         )
 
-        print(f"Validation Result: {validation_result['is_valid']}")
-        print(f"Trinity Coherence: {validation_result['trinity_coherence']:.3f}")
-        print(f"Trinity Product: {validation_result['trinity_product']:.3f}")
+        # Output suppressed for governance compliance
 
         # Test harmonization
         from core.cognitive.transducer_math import UniversalLanguagePlaneProjector
@@ -646,12 +643,11 @@ def demonstration_example():
 
         harmonized = system.harmonize_semantic_glyph(test_glyph, async_processing=False)
         if harmonized:
-            print(f"Harmonized Trinity Product: {harmonized.trinity_product():.3f}")
+            pass  # Output suppressed for governance compliance
 
         # Get statistics
         stats = system.get_harmonization_statistics()
-        print(f"Total Harmonizations: {stats['total_harmonizations']}")
-        print(f"Success Rate: {stats['success_rate_percent']:.1f}%")
+        # Output suppressed for governance compliance
 
     finally:
         system.stop_harmonization_service()

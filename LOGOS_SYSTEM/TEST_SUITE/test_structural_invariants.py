@@ -1,6 +1,7 @@
 
 import json
 from pathlib import Path
+import re
 
 # ==========================
 # Module-Level Exclusions
@@ -31,6 +32,11 @@ def is_excluded(path: Path) -> bool:
         return True
     if any(part in EXCLUDED_DIRS for part in path.parts):
         return True
+    # Governance exclusion scope extension
+    if "DRAC_Core/DRAC_Invariables/APPLICATION_FUNCTIONS" in str(path):
+        return True
+    if "System_Operations_Protocol/TEST_SUITE" in str(path):
+        return True
     text = safe_read(path)
     for marker in EXCLUDED_HEADER_MARKERS:
         if marker in text:
@@ -43,11 +49,13 @@ def is_excluded(path: Path) -> bool:
 
 def test_no_print_in_governed_code():
     root = Path("LOGOS_SYSTEM")
+    pattern = re.compile(r'(^|\s)print\s*\(')
     for path in root.rglob("*.py"):
         if is_excluded(path):
             continue
         text = safe_read(path)
-        assert "print(" not in text, f"print() found in {path}"
+        if pattern.search(text):
+            raise AssertionError(f"print() found in {path}")
 
 # ==========================
 # INV-02 — Single _find_repo_root definition

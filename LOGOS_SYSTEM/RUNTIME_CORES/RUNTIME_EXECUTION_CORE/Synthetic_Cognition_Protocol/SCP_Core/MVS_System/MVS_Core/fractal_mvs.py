@@ -122,19 +122,10 @@ class TrinityAgent:
                 anchor = JuliaAnchor(name=prop, c_real=coords[0], c_imag=coords[1])
                 self.julia_anchors.append(anchor)
         except Exception as e:
-            print(f'Error loading Julia dictionary: {e}')
+            pass
 
     def describe_structure(self):
-        print('=== modal vector space ===')
-        print(f'Essence Node at {self.essence_node.location}:')
-        for item in self.essence_node.includes:
-            print(f'  - {item}')
-        print('\nAxes Configuration:')
-        for axis in self.axes.values():
-            print(f'  {axis.name}-axis -> {axis.person}, Principle: {axis.principle}, Logic: {axis.logic_law}')
-        print('\nJulia Anchors:')
-        for anchor in self.julia_anchors:
-            print(f'  - {anchor.name}: c = ({anchor.c_real}, {anchor.c_imag})')
+        pass
 
 class TrinitarianAgent:
     """
@@ -225,7 +216,7 @@ class TrinitarianAgent:
         origin = (0.0, 0.0, 0.0)
         path = self._trail + [anchor_coord] + [origin]
         for p, q in zip(path, path[1:]):
-            print(f'{self.name} RETRACE: {p} → {q}')
+            pass
         self._trail.clear()
 
 class DivineMind:
@@ -265,5 +256,5 @@ class DivineMind:
             time.sleep(self.processing_interval)
 if __name__ == '__main__':
     dm = DivineMind()
-    print(f'Loaded {len(dm.banach_nodes)} existing nodes.')
+    pass
     dm.activate_background_processing()

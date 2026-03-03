@@ -1,7 +1,11 @@
+
 from typing import Dict, List, Optional
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema import SMP
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.\
+Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema import SMP
+
 
 class CSPCanonicalStore:
+
     def __init__(self):
         self._store: Dict[str, SMP] = {}
 
@@ -20,3 +24,14 @@ class CSPCanonicalStore:
 
     def count(self) -> int:
         return len(self._store)
+
+    def get_governance_adapter(self):
+        """
+        Returns a read-only CanonicalGovernanceAdapter.
+        This is the only sanctioned external exposure boundary.
+        """
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.\
+Cognitive_State_Protocol.CSP_Core.Canonical_Governance_Adapter \
+import CanonicalGovernanceAdapter
+
+        return CanonicalGovernanceAdapter(self)

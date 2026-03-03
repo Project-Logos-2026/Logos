@@ -99,13 +99,12 @@ def analyze_all_fractals() -> Dict[str, Any]:
         "Mandelbrot Seed E", "Mandelbrot Seed F", "Mandelbrot Seed G"
     ]
 
-    print("🔬 Starting comprehensive fractal analysis of all 17 canonical LOGOS sets...")
-    print("=" * 80)
+    # Output suppressed for governance compliance
 
     all_results = {}
 
     for i, (c_val, name) in enumerate(zip(c_values, fractal_names)):
-        print(f"Analyzing {i+1:2d}/17: {name} (c = {c_val})")
+        # Output suppressed for governance compliance
 
         # Generate fractal
         iterations = generate_julia_set(c_val)
@@ -335,13 +334,12 @@ def create_visual_summary(analysis_results: Dict[str, Any]):
     plt.savefig('fractal_analysis_summary.png', dpi=150, bbox_inches='tight')
     plt.close()
 
-    print("✓ Created visual summary: fractal_analysis_summary.png")
+    # Output suppressed for governance compliance
 
 def main():
     """Main analysis workflow"""
 
-    print("🚀 LOGOS Comprehensive Fractal Analysis System")
-    print("=" * 50)
+    # Output suppressed for governance compliance
 
     # Perform analysis
     analysis_results = analyze_all_fractals()
@@ -360,15 +358,7 @@ def main():
     # Create visual summary
     create_visual_summary(analysis_results)
 
-    print("\n✅ Analysis Complete!")
-    print("📊 Generated files:")
-    print("  - comprehensive_fractal_analysis.json (detailed results)")
-    print("  - FRACTAL_ANALYSIS_REPORT.md (comprehensive report)")
-    print("  - fractal_analysis_summary.png (visual summary)")
-    print("\n🎯 Key Insights:")
-    print("  - Analyzed 17 canonical LOGOS fractals across 7 mathematical disciplines")
-    print("  - Identified complexity hierarchies and structural relationships")
-    print("  - Generated actionable recommendations for LOGOS development")
+    # Output suppressed for governance compliance
 
 if __name__ == '__main__':
     main()

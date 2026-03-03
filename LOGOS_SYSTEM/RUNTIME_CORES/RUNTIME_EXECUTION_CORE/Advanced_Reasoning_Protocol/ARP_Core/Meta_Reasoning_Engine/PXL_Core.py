@@ -393,7 +393,7 @@ class FractalMemoryOrchestrator:
                     enhanced["coherence_score"] += enhancement_result["coherence_score"] * 0.25
                     
             except Exception as e:
-                print(f"Enhancement {name} failed: {e}")
+                # ...existing code...
                 
         return enhanced
     
@@ -581,11 +581,11 @@ def main():
     """Demonstrate the PXL-grounded fractal reasoning engine"""
     
     # Initialize PXL formal system
-    print("Initializing PXL Formal System...")
+    # ...existing code...
     pxl_system = PXLFormalSystem()
     
     # Initialize fractal memory orchestrator
-    print("Initializing Fractal Memory Orchestrator...")
+    # ...existing code...
     orchestrator = FractalMemoryOrchestrator(pxl_system)
     
     # Test propositions from MESH argument
@@ -599,37 +599,37 @@ def main():
     
     results = []
     for i, prop in enumerate(test_propositions):
-        print(f"\n{'='*60}")
-        print(f"Processing Proposition {i+1}: {prop[:50]}...")
+        # ...existing code...
+        # ...existing code...
         
         result = orchestrator.process_smp(prop, {"source": "MESH_argument"})
         results.append(result)
         
         # Display key results
-        print(f"Node ID: {result['node_id']}")
-        print(f"Coherence Score: {result['enhanced_analysis'].get('coherence_score', 0.0):.2f}")
-        print(f"Commitment Level: {result['commitment']['level']}")
-        print(f"Paradox Free: {result['pxl_analysis'].get('paradox_free', False)}")
+        # ...existing code...
+        # ...existing code...
+        # ...existing code...
+        # ...existing code...
         
         # Display triune grounding
         if 'universal_filter' in result['enhanced_analysis']:
             uf = result['enhanced_analysis']['universal_filter']
-            print(f"Universal Filter: {uf.get('status', 'UNKNOWN')}")
-            print(f"  𝕀₁ Coherent: {uf.get('person_analysis', {}).get('𝕀₁', {}).get('coheres', False)}")
-            print(f"  𝕀₂ Contradiction-Free: {uf.get('person_analysis', {}).get('𝕀₂', {}).get('contradiction_free', False)}")
-            print(f"  𝕀₃ Bivalence Respected: {uf.get('person_analysis', {}).get('𝕀₃', {}).get('bivalence_respected', False)}")
+            # ...existing code...
+            # ...existing code...
+            # ...existing code...
+            # ...existing code...
     
     # Display fractal memory summary
-    print(f"\n{'='*60}")
-    print("FRACTAL MEMORY SUMMARY")
-    print(f"{'='*60}")
-    print(f"Total Nodes: {len(orchestrator.memory_graph)}")
+    # ...existing code...
+    # ...existing code...
+    # ...existing code...
+    # ...existing code...
     
     if orchestrator.memory_graph:
         # Show node connections
-        print("\nNode Connections:")
+        # ...existing code...
         for node_id, node in list(orchestrator.memory_graph.items())[:5]:
-            print(f"  {node_id}: {len(node.connections)} connections, depth {node.depth}")
+            # ...existing code...
     
     # Export results for IEL integration
     export_data = {
@@ -656,9 +656,9 @@ def main():
         "timestamp": datetime.now().isoformat()
     }
     
-    print(f"\nExport ready for IEL domain integration")
-    print(f"Total propositions analyzed: {len(results)}")
-    print(f"PXL axioms/theorems available: {len(pxl_system.axioms)}/{len(pxl_system.theorems)}")
+    # ...existing code...
+    # ...existing code...
+    # ...existing code...
 
 if __name__ == "__main__":
     main()

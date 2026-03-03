@@ -899,9 +899,7 @@ if __name__ == "__main__":
     # Find nearest nodes
     nearest = db.find_nearest_by_trinity(v1)
 
-    print(f"Created node: {node1.id}")
     pass
-    print(f"Nearest nodes by trinity vector: {nearest}")
 
     # Close database
     db.close()

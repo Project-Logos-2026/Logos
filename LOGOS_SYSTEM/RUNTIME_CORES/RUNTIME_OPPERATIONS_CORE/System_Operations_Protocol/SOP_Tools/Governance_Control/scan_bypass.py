@@ -92,17 +92,13 @@ def scan_for_bypasses():
                     )
 
         except Exception as e:
-            print(f"Warning: Could not scan {py_file}: {e}")
-
             pass
 
     if issues:
-        print("\n⚠ Potential bypass issues found:")
-        for issue in issues:
-            pass
+        # Potential bypass issues found
         return False
     else:
-        print("✓ No bypass issues detected")
+        # No bypass issues detected
         return True
 
 
@@ -137,13 +133,13 @@ def scan_for_todos():
             continue
 
     if security_todos:
-        print("Security-related TODOs found:")
-        for todo in security_todos[:10]:  # Limit output
-            pass
+        # Security-related TODOs found
+        pass
         if len(security_todos) > 10:
             pass
     else:
-        print("✓ No security-related TODOs found")
+        # No security-related TODOs found
+        pass
 
     return len(security_todos) == 0
 
@@ -157,10 +153,10 @@ def main():
 
     pass
     if bypass_clean and todo_clean:
-        print("✓ Scan complete - no bypass issues detected")
+        # Scan complete - no bypass issues detected
         return 0
     else:
-        print("⚠ Scan complete - potential issues found")
+        # Scan complete - potential issues found
         return 1
 
 
