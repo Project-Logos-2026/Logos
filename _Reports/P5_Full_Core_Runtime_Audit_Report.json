@@ -1,0 +1,47 @@
+{
+  "header_audit": {
+    "violations": 1,
+    "details": [
+      {
+        "path": "_Governance/Semantic_Projection_Manifest.json",
+        "header_status": "MISSING_HEADER",
+        "details": "No header block present; required fields missing; file is a JSON manifest."
+      }
+    ]
+  },
+  "observability_audit": {
+    "violations": 30,
+    "details": [
+      {"file": "STARTUP/Runtime_Compiler/coq/src/ui/PXL_Proof_Compile.py", "lines": "71-73", "type": "print statement"},
+      {"file": "STARTUP/Runtime_Compiler/coq/src/ui/PXL_Proof_Compile.py", "lines": "107-114", "type": "print statement"},
+      {"file": "STARTUP/Runtime_Compiler/coq/src/ui/PXL_Proof_Compile.py", "lines": "140-162", "type": "print statement"},
+      {"file": "STARTUP/Runtime_Compiler/coq/src/ui/audit_and_emit.py", "lines": "67", "type": "print statement"},
+      {"file": "STARTUP/Runtime_Compiler/coq/src/ui/run_coq_pipeline.py", "lines": "124", "type": "print statement"},
+      {"file": "STARTUP/Runtime_Compiler/coq/src/ui/serve_pxl.py", "lines": "76-81", "type": "print in exception context"},
+      {"file": "STARTUP/Runtime_Compiler/coq/src/ui/serve_pxl.py", "lines": "99-105", "type": "print in exception context"},
+      {"file": "STARTUP/Runtime_Compiler/coq/src/ui/serve_pxl.py", "lines": "123-124", "type": "print in exception context"},
+      {"file": "STARTUP/Runtime_Compiler/coq/src/ui/serve_pxl.py", "lines": "149-150", "type": "print in exception context"},
+      {"file": "STARTUP/Runtime_Compiler/coq/src/ui/serve_pxl.py", "lines": "155-167", "type": "print statement"},
+      {"file": "STARTUP/Runtime_Compiler/coq/src/ui/serve_pxl.py", "lines": "260-262", "type": "print in exception context"},
+      {"file": "STARTUP/Runtime_Compiler/coq/src/ui/serve_pxl.py", "lines": "101", "type": "print in exception context"},
+      {"file": "STARTUP/Runtime_Compiler/coq/src/ui/serve_pxl.py", "lines": "324-350", "type": "print statement"},
+      {"file": "LOGOS_SYSTEM/RUNTIME_SHARED_UTILS/system_imports.py", "lines": "35-36", "type": "uncontrolled logging.basicConfig"},
+      {"file": "LOGOS_SYSTEM/_Governance/Nexus_Validation/Nexus_AST_Validator.py", "lines": "30-42", "type": "bare except"},
+      {"file": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Bridge_Modules/execution_to_operations_exchanger.py", "lines": "103", "type": "silent pass in exception context"},
+      {"file": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Bridge_Modules/execution_to_operations_exchanger.py", "lines": "227", "type": "bare except"},
+      {"file": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Bridge_Modules/execution_to_operations_exchanger.py", "lines": "424", "type": "except Exception without re-raise"},
+      {"file": "LOGOS_SYSTEM/System_Entry_Point/System_Entry_Point.py", "lines": "77-102", "type": "silent pass in exception context"},
+      {"file": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py", "lines": "203-240", "type": "print statement"},
+      {"file": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Control/Hysteresis_Governor.py", "lines": "35-72", "type": "print statement"},
+      {"file": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Events/Event_Emitter.py", "lines": "9", "type": "silent pass in exception context"},
+      {"file": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Integration/RGE_Nexus_Adapter.py", "lines": "86-99", "type": "bare except"},
+      {"file": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Integration/RGE_Nexus_Adapter.py", "lines": "99", "type": "print statement"},
+      {"file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/MTP_Nexus.py", "lines": "281-454", "type": "bare except"},
+      {"file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/symbolic_translation/logos_lambda_integration.py", "lines": "432-434", "type": "print statement"},
+      {"file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/symbolic_translation/lambda_parser.py", "lines": "1501", "type": "print statement"},
+      {"file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Tools/language_modules/translation_engine.py", "lines": "45", "type": "uncontrolled logging.getLogger"},
+      {"file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/Compilation/Artifact_Emitter.py", "lines": "39", "type": "except Exception without re-raise"},
+      {"file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Multi_Process_Signal_Compiler/MSCP_Protocol/Compilation/Incremental_Compiler.py", "lines": "90", "type": "except Exception without re-raise"}
+    ]
+  }
+}

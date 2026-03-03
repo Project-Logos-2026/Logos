@@ -21,31 +21,57 @@ from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protoc
 )
 
 # ----------------------------------------
-# MRE Adapter (Contract Reconciliation)
+# Per-Participant MRE Adapter (BM-06 / REM-05)
 # ----------------------------------------
 
-class MREAdapter:
+class ProductionMREAdapter:
     """
-    Adapter reconciling StandardNexus MREGovernor contract
-    with MeteredReasoningEnforcer implementation.
+    Per-participant MRE adapter.
+
+    Each participant receives an isolated MeteredReasoningEnforcer.
+    Novelty signatures are content-based (participant:tick_count),
+    not participant identity, preventing false repetition halts.
+
+    Authority: LOGOS_V1_P4_Hardening_Validation_Spec.md §3.3–3.6
     """
 
-    def __init__(self, mre: MeteredReasoningEnforcer) -> None:
-        self._mre = mre
+    def __init__(self, mre_level: float, max_iterations: int, max_time_seconds: float) -> None:
+        self._mre_level = mre_level
+        self._max_iterations = max_iterations
+        self._max_time_seconds = max_time_seconds
+        self._enforcers: Dict[str, MeteredReasoningEnforcer] = {}
+        self._call_counters: Dict[str, int] = {}
+
+    def _get_enforcer(self, participant_id: str) -> MeteredReasoningEnforcer:
+        if participant_id not in self._enforcers:
+            self._enforcers[participant_id] = MeteredReasoningEnforcer(
+                mre_level=self._mre_level,
+                max_iterations=self._max_iterations,
+                max_time_seconds=self._max_time_seconds,
+            )
+            self._call_counters[participant_id] = 0
+        return self._enforcers[participant_id]
 
     def pre_tick(self, participant_id: str) -> Dict[str, Any]:
-        # Pre-execution snapshot (no mutation)
-        return self._mre.telemetry_snapshot()
+        # Pre-execution snapshot — no mutation
+        enforcer = self._get_enforcer(participant_id)
+        return enforcer.telemetry_snapshot()
 
     def post_tick(self, participant_id: str) -> Dict[str, Any]:
-        # Update enforcement state after execution
-        self._mre.update(participant_id)
-        state = self._mre.telemetry_snapshot()
-
-        if not self._mre.should_continue():
+        # Update per-participant enforcer with content-based signature
+        enforcer = self._get_enforcer(participant_id)
+        self._call_counters[participant_id] += 1
+        signature = f"{participant_id}:{self._call_counters[participant_id]}"
+        enforcer.update(signature)
+        state = enforcer.telemetry_snapshot()
+        if not enforcer.should_continue():
             state["state"] = "RED"
-
         return state
+
+    def reset(self) -> None:
+        # Reset all per-participant enforcers between task cycles
+        self._enforcers.clear()
+        self._call_counters.clear()
 
 
 class NexusFactory:
@@ -69,9 +95,12 @@ class NexusFactory:
             }
 
 
-        mre = MeteredReasoningEnforcer(**mre_config)
-        adapter = MREAdapter(mre)
-        governor = MREGovernor(adapter)
+        mre = ProductionMREAdapter(
+            mre_level=mre_config["mre_level"],
+            max_iterations=mre_config["max_iterations"],
+            max_time_seconds=mre_config["max_time_seconds"],
+        )
+        governor = MREGovernor(mre)
 
         # 4 — Construct Nexus
         nexus = StandardNexus(mesh, governor)
@@ -85,3 +114,33 @@ class NexusFactory:
             nexus.register_participant(rge_adapter)
 
         return nexus
+
+    @staticmethod
+    def build_rge_adapter(rge_core) -> NexusParticipant:
+        """
+        Stub for RGE adapter construction.
+        Activated during REM-04.
+        """
+        raise NotImplementedError(
+            "RGEAdapter not implemented. Implement during REM-04 (RGE\u2194MSPC Wiring)."
+        )
+
+    @staticmethod
+    def build_topology_provider() -> NexusParticipant:
+        """
+        Stub for topology provider construction.
+        Activated during REM-04.
+        """
+        raise NotImplementedError(
+            "TopologyContextProvider not implemented. Implement during REM-04."
+        )
+
+    @staticmethod
+    def build_mspc_pipeline(ms_core) -> NexusParticipant:
+        """
+        Stub for MSPC pipeline construction.
+        Activated during REM-04.
+        """
+        raise NotImplementedError(
+            "MSPCPipeline not implemented. Implement during REM-04."
+        )

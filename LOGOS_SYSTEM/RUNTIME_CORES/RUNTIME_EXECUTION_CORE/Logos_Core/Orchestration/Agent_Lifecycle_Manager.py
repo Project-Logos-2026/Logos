@@ -23,6 +23,12 @@ from .Agent_Wrappers import (
 from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus import (
     NexusParticipant,
 )
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Store import SMPStore
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.UWM_Access_Control import UWMReadAPI
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.SCP_Orchestrator import SCPOrchestrator
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Promotion_Evaluator import PromotionEvaluator
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Canonical_SMP_Producer import CanonicalSMPProducer
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.CSP_Canonical_Store import CSPCanonicalStore
 
 
 class LifecycleHalt(Exception):
@@ -80,10 +86,25 @@ class AgentLifecycleManager:
 
     def activate(self) -> Dict[str, NexusParticipant]:
         try:
-            i1 = I1AgentParticipant(self._session_id, self._logos_agent_id)
-            i2 = I2AgentParticipant(self._session_id, self._logos_agent_id)
+            smp_store = SMPStore()
+            uwm_reader = UWMReadAPI(smp_store)
+            scp_orchestrator = SCPOrchestrator()
+            promotion_evaluator = PromotionEvaluator(uwm_reader)
+            canonical_producer = CanonicalSMPProducer()
+            canonical_store = CSPCanonicalStore()
+            i1 = I1AgentParticipant(self._session_id, self._logos_agent_id, scp_orchestrator)
+            i2 = I2AgentParticipant(self._session_id, self._logos_agent_id, uwm_reader, canonical_store)
             i3 = I3AgentParticipant(self._session_id, self._logos_agent_id)
-            logos = LogosAgentParticipant(self._session_id, self._logos_agent_id)
+            logos = LogosAgentParticipant(
+                self._session_id,
+                self._logos_agent_id,
+                smp_store,
+                uwm_reader,
+                scp_orchestrator,
+                promotion_evaluator,
+                canonical_producer,
+                canonical_store,
+            )
         except Exception as e:
             raise LifecycleHalt(f"Agent construction failed: {e}")
 

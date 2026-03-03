@@ -18,6 +18,9 @@ from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.
 from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus import (
     StandardNexus,
 )
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Wrappers import (
+    LogosAgentParticipant,
+)
 
 
 # ----------------------------------------
@@ -93,10 +96,12 @@ class RuntimeLoop:
         self._output_sink = output_sink or StdoutOutputSink()
         self._alm = AgentLifecycleManager(startup_context)
         participants = self._alm.activate()
+        self._participants = participants
         self._nexus: StandardNexus = NexusFactory.build_lp_nexus(participants)
         self._running = False
         self._first_tick = True
         self._initial_participant_ids = sorted(participants.keys())
+        self._integration_wired = False
 
     # ----------------------------------------
     # Blocking main loop
@@ -110,7 +115,7 @@ class RuntimeLoop:
             if task is None:
                 break
 
-            result = self._execute_tick(task)
+            result = self._process_task(task)
             self._output_sink.emit(result)
 
     # ----------------------------------------
@@ -118,18 +123,107 @@ class RuntimeLoop:
     # ----------------------------------------
 
     def run_single(self, task: Dict[str, Any]) -> Dict[str, Any]:
-        return self._execute_tick(task)
+        return self._process_task(task)
+
+    # ----------------------------------------
+    # Multi-tick task processing
+    # ----------------------------------------
+
+    def _process_task(self, task: Dict[str, Any]) -> Dict[str, Any]:
+        # REM-04: Integration hook — fail-closed until RGE/MSPC artifacts implemented
+        integration_error = self._attempt_rge_mspc_wiring()
+        if integration_error is not None:
+            return {
+                "tick_id": 0,
+                "session_id": self._alm.get_session_id(),
+                "task_id": task.get("task_id", "") if isinstance(task, dict) else "",
+                "status": "halted",
+                "rendered_output": None,
+                "smp_id": None,
+                "csmp_id": None,
+                "classification": None,
+                "halt_reason": integration_error,
+            }
+        tick_counter = 0
+        while tick_counter < 50:
+            result = self._execute_tick(task, tick_counter)
+            if result.get("status") in {"completed", "halted"}:
+                return result
+            tick_counter += 1
+        return {
+            "tick_id": tick_counter,
+            "session_id": self._alm.get_session_id(),
+            "task_id": task.get("task_id", "") if isinstance(task, dict) else "",
+            "status": "halted",
+            "rendered_output": None,
+            "smp_id": None,
+            "csmp_id": None,
+            "classification": None,
+            "halt_reason": "max_ticks_exceeded",
+        }
+
+    # ----------------------------------------
+    # REM-04: RGE ↔ MSPC Integration Wiring
+    # ----------------------------------------
+
+    def _attempt_rge_mspc_wiring(self) -> Optional[str]:
+        """
+        Attempts one-time RGE ↔ MSPC participant registration.
+
+        Returns None on success (wiring complete).
+        Returns a deterministic error string on failure (fail-closed).
+
+        NotImplementedError from stub builders is treated as a hard halt,
+        not a silent skip. Integration is mandatory once builders are present.
+
+        Authority: LOGOS_V1_P3_Integration_Wiring_Spec.md §3
+        """
+        if self._integration_wired:
+            return None
+        try:
+            rge_adapter = NexusFactory.build_rge_adapter(None)
+            topology_provider = NexusFactory.build_topology_provider()
+            mspc_pipeline = NexusFactory.build_mspc_pipeline(None)
+
+            # Collect new participants with deterministic ordering
+            new_participants = {
+                rge_adapter.participant_id: rge_adapter,
+                topology_provider.participant_id: topology_provider,
+                mspc_pipeline.participant_id: mspc_pipeline,
+            }
+
+            # Register into ALM lifecycle, then nexus — in sorted order
+            for pid in sorted(new_participants.keys()):
+                if pid in self._participants:
+                    raise RuntimeError(
+                        f"LifecycleSymmetryHalt: Duplicate participant_id '{pid}' during REM-04 wiring"
+                    )
+                self._participants[pid] = new_participants[pid]
+                self._alm._participant_states[pid] = LifecycleState.REGISTERED
+                self._nexus.register_participant(new_participants[pid])
+
+            # Expand registry freeze to include integration participants
+            self._initial_participant_ids = sorted(self._participants.keys())
+
+            self._integration_wired = True
+            return None
+        except NotImplementedError as e:
+            return f"REM-04 integration artifacts not implemented: {e}"
 
     # ----------------------------------------
     # Tick execution contract
     # ----------------------------------------
 
-    def _execute_tick(self, task: Dict[str, Any]) -> Dict[str, Any]:
+    def _execute_tick(self, task: Dict[str, Any], tick_id: int) -> Dict[str, Any]:
         try:
             # Freeze registry and enforce sorted order
-            current_ids = sorted(self._alm.get_participants().keys())
+            current_ids = sorted(self._participants.keys())
             if current_ids != self._initial_participant_ids:
                 raise RuntimeError("RuntimeActivationHalt: Participant registry mutated during tick")
+            # Enforce nexus/ALM registry symmetry
+            nexus_ids = sorted(self._nexus.participants.keys())
+            if nexus_ids != current_ids:
+                raise RuntimeError("LifecycleSymmetryHalt: Nexus registry diverged from ALM registry")
             # First tick: transition REGISTERED -> ACTIVE
             if self._first_tick:
                 for pid in current_ids:
@@ -140,34 +234,43 @@ class RuntimeLoop:
                 if self._alm._participant_states.get(pid) != LifecycleState.ACTIVE:
                     raise RuntimeError(f"LifecycleHalt: Participant {pid} not ACTIVE before tick")
             causal_intent = task.get("input") if isinstance(task, dict) else None
-            # Deterministic sorted execution
-            for pid in current_ids:
-                # (Assume tick logic is inside Nexus)
-                pass  # Placeholder for per-participant tick if needed
-            self._nexus.tick(causal_intent)
-            result = {
-                "status": "TICK_COMPLETE",
+            self._nexus.tick(causal_intent, task_context={"task": task})
+            logos_participant = self._participants.get("agent_logos")
+            if isinstance(logos_participant, LogosAgentParticipant):
+                raw = logos_participant._tick_result
+                return {
+                    "tick_id": tick_id,
+                    "session_id": self._alm.get_session_id(),
+                    "task_id": task.get("task_id", "") if isinstance(task, dict) else "",
+                    "status": raw.get("status"),
+                    "rendered_output": raw.get("rendered_output"),
+                    "smp_id": raw.get("smp_id"),
+                    "csmp_id": raw.get("csmp_id"),
+                    "classification": raw.get("classification"),
+                    "halt_reason": raw.get("halt_reason"),
+                }
+            return {
+                "tick_id": tick_id,
                 "session_id": self._alm.get_session_id(),
-                "logos_agent_id": self._alm.get_logos_agent_id(),
-                "task": task,
-                "participants": current_ids,
-                "mre_state": "UNKNOWN",  # P1 scope placeholder
-                "constraints_applied": False,
-                "ms_pipeline_invoked": False,
-                "error": None,
+                "task_id": task.get("task_id", "") if isinstance(task, dict) else "",
+                "status": "no_output",
+                "rendered_output": None,
+                "smp_id": None,
+                "csmp_id": None,
+                "classification": None,
+                "halt_reason": None,
             }
-            return result
         except Exception as e:
             return {
-                "status": "TICK_FAILED",
+                "tick_id": tick_id,
                 "session_id": self._alm.get_session_id(),
-                "logos_agent_id": self._alm.get_logos_agent_id(),
-                "task": task,
-                "participants": [],
-                "mre_state": "ERROR",
-                "constraints_applied": False,
-                "ms_pipeline_invoked": False,
-                "error": str(e),
+                "task_id": task.get("task_id", "") if isinstance(task, dict) else "",
+                "status": "halted",
+                "rendered_output": None,
+                "smp_id": None,
+                "csmp_id": None,
+                "classification": None,
+                "halt_reason": str(e),
             }
     def halt(self) -> None:
         # Transition all ACTIVE participants to HALTED
