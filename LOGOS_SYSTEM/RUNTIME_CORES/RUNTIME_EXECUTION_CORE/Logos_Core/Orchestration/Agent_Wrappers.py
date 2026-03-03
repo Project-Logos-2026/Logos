@@ -47,6 +47,9 @@ class AgentParticipantBase(NexusParticipant):
         return self._last_projection
 
     def _on_tick(self, context: Dict[str, Any]) -> Dict[str, Any]:
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators import validate_route_packet
+        if "packet" in context:
+            validate_route_packet(context["packet"])
         raise NotImplementedError
 
     def _on_receive(self, packet: StatePacket) -> None:
@@ -63,6 +66,9 @@ class I1AgentParticipant(AgentParticipantBase):
         super().__init__("I1", session_id, logos_agent_id, "SCP")
 
     def _on_tick(self, context: Dict[str, Any]) -> Dict[str, Any]:
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators import validate_route_packet
+        if "packet" in context:
+            validate_route_packet(context["packet"])
         return {"agent": "I1", "status": "stub_tick"}
 
     def _project(self) -> Optional[StatePacket]:
@@ -76,6 +82,11 @@ class I2AgentParticipant(AgentParticipantBase):
         super().__init__("I2", session_id, logos_agent_id, "MTP")
 
     def _on_tick(self, context: Dict[str, Any]) -> Dict[str, Any]:
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators import validate_route_packet, validate_mtp_result
+        if "packet" in context:
+            validate_route_packet(context["packet"])
+        if "mtp_result" in context:
+            validate_mtp_result(context["mtp_result"])
         return {"agent": "I2", "status": "stub_tick"}
 
     def _project(self) -> Optional[StatePacket]:
@@ -89,6 +100,9 @@ class I3AgentParticipant(AgentParticipantBase):
         super().__init__("I3", session_id, logos_agent_id, "ARP")
 
     def _on_tick(self, context: Dict[str, Any]) -> Dict[str, Any]:
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators import validate_route_packet
+        if "packet" in context:
+            validate_route_packet(context["packet"])
         return {"agent": "I3", "status": "stub_tick"}
 
     def _project(self) -> Optional[StatePacket]:
@@ -102,6 +116,11 @@ class LogosAgentParticipant(AgentParticipantBase):
         super().__init__("LOGOS", session_id, logos_agent_id, "Logos_Protocol")
 
     def _on_tick(self, context: Dict[str, Any]) -> Dict[str, Any]:
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators import validate_route_packet, validate_task
+        if "packet" in context:
+            validate_route_packet(context["packet"])
+        if "task" in context:
+            validate_task(context["task"])
         return {"agent": "LOGOS", "status": "stub_tick"}
 
     def _project(self) -> Optional[StatePacket]:

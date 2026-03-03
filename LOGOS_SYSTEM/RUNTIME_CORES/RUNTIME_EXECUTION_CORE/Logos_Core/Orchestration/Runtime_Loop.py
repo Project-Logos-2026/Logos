@@ -86,6 +86,8 @@ class RuntimeLoop:
         task_source: Optional[TaskSource] = None,
         output_sink: Optional[OutputSink] = None,
     ) -> None:
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators import validate_startup_context
+        validate_startup_context(startup_context)
         self._startup_context = startup_context
         self._task_source = task_source or StdinTaskSource()
         self._output_sink = output_sink or StdoutOutputSink()

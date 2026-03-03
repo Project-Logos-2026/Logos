@@ -35,12 +35,14 @@ class PromotionEvaluator:
         return PromotionEvaluation(eligible, smp.header.classification_state, "provisional", missing, aa_summary, conflicts, False)
 
     def evaluate_for_canonical(self, smp_id: str) -> PromotionEvaluation:
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators import validate_promotion_boundary
         smp = self.uwm_read.get_smp(smp_id, requester_role="logos_agent")
         missing = []
         aa_summary = {}
         conflicts = []
         if not smp:
             return PromotionEvaluation(False, None, "canonical", ["SMP not found"], {}, [], False)
+        validate_promotion_boundary(smp.header.classification_state, "canonical")
         if smp.header.classification_state != "provisional":
             missing.append("Not provisional state")
         aas = self.uwm_read.get_aas_for_smp(smp_id, requester_role="logos_agent")

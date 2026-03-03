@@ -54,6 +54,8 @@ class SMPStore:
         return smp
 
     def append_aa(self, bound_smp_id: str, aa_type: str, originating_entity: str, content: Dict[str, Any]) -> AppendArtifact:
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators import validate_agent_write_boundary
+        validate_agent_write_boundary(bound_smp_id, aa_type)
         if bound_smp_id not in self._smps:
             raise SMPStoreError("SMP not found.")
         smp = self._smps[bound_smp_id]
