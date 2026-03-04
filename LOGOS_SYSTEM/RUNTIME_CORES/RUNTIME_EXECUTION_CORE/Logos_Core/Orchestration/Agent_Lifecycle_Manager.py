@@ -87,24 +87,27 @@ class AgentLifecycleManager:
     def activate(self) -> Dict[str, NexusParticipant]:
         try:
             smp_store = SMPStore()
-            uwm_reader = UWMReadAPI(smp_store)
+            uwm_read_api = UWMReadAPI(smp_store)
             scp_orchestrator = SCPOrchestrator()
-            promotion_evaluator = PromotionEvaluator(uwm_reader)
-            canonical_producer = CanonicalSMPProducer()
-            canonical_store = CSPCanonicalStore()
-            i1 = I1AgentParticipant(self._session_id, self._logos_agent_id, scp_orchestrator)
-            i2 = I2AgentParticipant(self._session_id, self._logos_agent_id, uwm_reader, canonical_store)
-            i3 = I3AgentParticipant(self._session_id, self._logos_agent_id)
-            logos = LogosAgentParticipant(
-                self._session_id,
-                self._logos_agent_id,
+            promotion_evaluator = PromotionEvaluator(uwm_read_api)
+            canonical_smp_producer = CanonicalSMPProducer()
+            csp_canonical_store = CSPCanonicalStore()
+            mtp_nexus = None  # stub — not activated in P3.1
+            arp_compiler = None  # stub — not activated in P3.1
+            _shared = (
                 smp_store,
-                uwm_reader,
+                uwm_read_api,
                 scp_orchestrator,
                 promotion_evaluator,
-                canonical_producer,
-                canonical_store,
+                canonical_smp_producer,
+                csp_canonical_store,
+                mtp_nexus,
+                arp_compiler,
             )
+            i1 = I1AgentParticipant(self._session_id, self._logos_agent_id, *_shared)
+            i2 = I2AgentParticipant(self._session_id, self._logos_agent_id, *_shared)
+            i3 = I3AgentParticipant(self._session_id, self._logos_agent_id, *_shared)
+            logos = LogosAgentParticipant(self._session_id, self._logos_agent_id, *_shared)
         except Exception as e:
             raise LifecycleHalt(f"Agent construction failed: {e}")
 
