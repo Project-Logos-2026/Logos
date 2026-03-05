@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_utc": "2026-03-05T10:28:22Z",
+  "generated_utc": "2026-03-05T10:51:17Z",
   "repository": {
     "owner": "Project-Logos-2026",
     "name": "Logos"
@@ -11,16 +11,16 @@
   },
   "fields": {
     "PHASE": {
-      "id": "{\"errors\":[{\"extensions\":{\"value\":\"[{\\\"name\\\":\\\"P1\\\"},{\\\"name\\\":\\\"P2\\\"},{\\\"name\\\":\\\"P3\\\"},{\\\"name\\\":\\\"P4\\\"},{\\\"name\\\":\\\"P5\\\"}]\",\"problems\":[{\"path\":[0],\"explanation\":\"Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"P1\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P2\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P3\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P4\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P5\\\\\\\"}]\\\" to be a key-value object.\"}]},\"locations\":[{\"line\":2,\"column\":41}],\"message\":\"Variable $opts of type [ProjectV2SingleSelectFieldOptionInput!]! was provided invalid value for 0 (Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"P1\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P2\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P3\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P4\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P5\\\\\\\"}]\\\" to be a key-value object.)\"}]}"
+      "id": "  [exists] PHASE → PVTSSF_lAHOD3Zli84BQ2plzg-2tQw\nPVTSSF_lAHOD3Zli84BQ2plzg-2tQw"
     },
     "CATEGORY": {
-      "id": "{\"errors\":[{\"extensions\":{\"value\":\"[{\\\"name\\\":\\\"Phase Deliverable\\\"},{\\\"name\\\":\\\"Verification\\\"},{\\\"name\\\":\\\"Infrastructure\\\"}]\",\"problems\":[{\"path\":[0],\"explanation\":\"Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"Phase Deliverable\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Verification\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Infrastructure\\\\\\\"}]\\\" to be a key-value object.\"}]},\"locations\":[{\"line\":2,\"column\":41}],\"message\":\"Variable $opts of type [ProjectV2SingleSelectFieldOptionInput!]! was provided invalid value for 0 (Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"Phase Deliverable\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Verification\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Infrastructure\\\\\\\"}]\\\" to be a key-value object.)\"}]}"
+      "id": "  [exists] CATEGORY → PVTSSF_lAHOD3Zli84BQ2plzg-2tQ0\nPVTSSF_lAHOD3Zli84BQ2plzg-2tQ0"
     },
     "STATUS": {
-      "id": "{\"errors\":[{\"extensions\":{\"value\":\"[{\\\"name\\\":\\\"Backlog\\\"},{\\\"name\\\":\\\"Ready\\\"},{\\\"name\\\":\\\"In Progress\\\"},{\\\"name\\\":\\\"Verify\\\"},{\\\"name\\\":\\\"Complete\\\"}]\",\"problems\":[{\"path\":[0],\"explanation\":\"Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"Backlog\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Ready\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"In Progress\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Verify\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Complete\\\\\\\"}]\\\" to be a key-value object.\"}]},\"locations\":[{\"line\":2,\"column\":41}],\"message\":\"Variable $opts of type [ProjectV2SingleSelectFieldOptionInput!]! was provided invalid value for 0 (Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"Backlog\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Ready\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"In Progress\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Verify\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Complete\\\\\\\"}]\\\" to be a key-value object.)\"}]}"
+      "id": "  [reused existing] STATUS (case collision) → PVTSSF_lAHOD3Zli84BQ2plzg-2pNA\nPVTSSF_lAHOD3Zli84BQ2plzg-2pNA"
     },
     "PRIORITY": {
-      "id": "{\"errors\":[{\"extensions\":{\"value\":\"[{\\\"name\\\":\\\"High\\\"},{\\\"name\\\":\\\"Medium\\\"},{\\\"name\\\":\\\"Low\\\"}]\",\"problems\":[{\"path\":[0],\"explanation\":\"Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"High\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Medium\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Low\\\\\\\"}]\\\" to be a key-value object.\"}]},\"locations\":[{\"line\":2,\"column\":41}],\"message\":\"Variable $opts of type [ProjectV2SingleSelectFieldOptionInput!]! was provided invalid value for 0 (Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"High\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Medium\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Low\\\\\\\"}]\\\" to be a key-value object.)\"}]}"
+      "id": "  [exists] PRIORITY → PVTSSF_lAHOD3Zli84BQ2plzg-2tQ4\nPVTSSF_lAHOD3Zli84BQ2plzg-2tQ4"
     }
   },
   "fields_snapshot_graphql": {
@@ -31,20 +31,17 @@
             {
               "__typename": "ProjectV2Field",
               "id": "PVTF_lAHOD3Zli84BQ2plzg-2pM4",
-              "name": "Title",
-              "dataType": "TITLE"
+              "name": "Title"
             },
             {
               "__typename": "ProjectV2Field",
               "id": "PVTF_lAHOD3Zli84BQ2plzg-2pM8",
-              "name": "Assignees",
-              "dataType": "ASSIGNEES"
+              "name": "Assignees"
             },
             {
               "__typename": "ProjectV2SingleSelectField",
               "id": "PVTSSF_lAHOD3Zli84BQ2plzg-2pNA",
               "name": "Status",
-              "dataType": "SINGLE_SELECT",
               "options": [
                 {
                   "id": "f75ad846",
@@ -63,44 +60,102 @@
             {
               "__typename": "ProjectV2Field",
               "id": "PVTF_lAHOD3Zli84BQ2plzg-2pNE",
-              "name": "Labels",
-              "dataType": "LABELS"
+              "name": "Labels"
             },
             {
               "__typename": "ProjectV2Field",
               "id": "PVTF_lAHOD3Zli84BQ2plzg-2pNI",
-              "name": "Linked pull requests",
-              "dataType": "LINKED_PULL_REQUESTS"
+              "name": "Linked pull requests"
             },
             {
               "__typename": "ProjectV2Field",
               "id": "PVTF_lAHOD3Zli84BQ2plzg-2pNM",
-              "name": "Milestone",
-              "dataType": "MILESTONE"
+              "name": "Milestone"
             },
             {
               "__typename": "ProjectV2Field",
               "id": "PVTF_lAHOD3Zli84BQ2plzg-2pNQ",
-              "name": "Repository",
-              "dataType": "REPOSITORY"
+              "name": "Repository"
             },
             {
               "__typename": "ProjectV2Field",
               "id": "PVTF_lAHOD3Zli84BQ2plzg-2pNU",
-              "name": "Reviewers",
-              "dataType": "REVIEWERS"
+              "name": "Reviewers"
             },
             {
               "__typename": "ProjectV2Field",
               "id": "PVTF_lAHOD3Zli84BQ2plzg-2pNY",
-              "name": "Parent issue",
-              "dataType": "PARENT_ISSUE"
+              "name": "Parent issue"
             },
             {
               "__typename": "ProjectV2Field",
               "id": "PVTF_lAHOD3Zli84BQ2plzg-2pNc",
-              "name": "Sub-issues progress",
-              "dataType": "SUB_ISSUES_PROGRESS"
+              "name": "Sub-issues progress"
+            },
+            {
+              "__typename": "ProjectV2SingleSelectField",
+              "id": "PVTSSF_lAHOD3Zli84BQ2plzg-2tQw",
+              "name": "PHASE",
+              "options": [
+                {
+                  "id": "eb049bbb",
+                  "name": "P1"
+                },
+                {
+                  "id": "84842304",
+                  "name": "P2"
+                },
+                {
+                  "id": "7bd06072",
+                  "name": "P3"
+                },
+                {
+                  "id": "dfc2d865",
+                  "name": "P4"
+                },
+                {
+                  "id": "053b3b1a",
+                  "name": "P5"
+                }
+              ]
+            },
+            {
+              "__typename": "ProjectV2SingleSelectField",
+              "id": "PVTSSF_lAHOD3Zli84BQ2plzg-2tQ0",
+              "name": "CATEGORY",
+              "options": [
+                {
+                  "id": "ffa8b901",
+                  "name": "Phase Deliverable"
+                },
+                {
+                  "id": "ee0056de",
+                  "name": "Verification"
+                },
+                {
+                  "id": "58774a7c",
+                  "name": "Infrastructure"
+                }
+              ]
+            },
+            {
+              "__typename": "ProjectV2SingleSelectField",
+              "id": "PVTSSF_lAHOD3Zli84BQ2plzg-2tQ4",
+              "name": "PRIORITY",
+              "options": [
+                {
+                  "id": "fd178e24",
+                  "name": "High"
+                },
+                {
+                  "id": "f668ddaa",
+                  "name": "Medium"
+                },
+                {
+                  "id": "247a38ef",
+                  "name": "Low"
+                }
+              ]
             }
           ]
         }
