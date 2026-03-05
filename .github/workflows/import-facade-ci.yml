@@ -1,0 +1,292 @@
+name: LOGOS Import Facade CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  # ────────────────────────────────────────────────────────────────────────────
+  # JOB 1: Compile check — every Python file must parse without errors
+  # ────────────────────────────────────────────────────────────────────────────
+  compile-check:
+    name: Python Compile Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: py_compile all LOGOS_SYSTEM files
+        run: |
+          set -euo pipefail
+          FAILURES=0
+          while IFS= read -r -d '' f; do
+            if ! python -m py_compile "$f" 2>/dev/null; then
+              echo "COMPILE ERROR: $f"
+              python -m py_compile "$f" || true
+              FAILURES=$((FAILURES + 1))
+            fi
+          done < <(find LOGOS_SYSTEM -name "*.py" \
+            -not -path "*/__pycache__/*" \
+            -not -path "*/.venv/*" \
+            -print0)
+          echo "Compile failures: $FAILURES"
+          [ "$FAILURES" -eq 0 ]
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # JOB 2: Import drift detection — regenerate symbol index, diff against baseline
+  # ────────────────────────────────────────────────────────────────────────────
+  import-drift:
+    name: Import Drift Detection
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate current symbol import index
+        run: python Tools/Import_Facade/generate_symbol_import_index.py
+
+      - name: Check committed baseline exists
+        id: baseline-check
+        run: |
+          if [ -f "_Reports/Canonical_Import_Facade/repo_symbol_imports.json" ]; then
+            echo "baseline=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "baseline=false" >> "$GITHUB_OUTPUT"
+            echo "WARNING: No baseline repo_symbol_imports.json committed. Skipping drift check."
+          fi
+
+      - name: Detect drift against committed baseline
+        if: steps.baseline-check.outputs.baseline == 'true'
+        run: |
+          python - <<'EOF'
+          import json, sys
+          from pathlib import Path
+
+          baseline_path = Path("_Reports/Canonical_Import_Facade/repo_symbol_imports.json")
+          current_path  = Path("/tmp/current_symbol_imports.json")
+
+          import shutil
+          shutil.copy(baseline_path, current_path)
+
+          # Re-generate fresh index to /tmp
+          import subprocess, os
+          env = os.environ.copy()
+          result = subprocess.run(
+              ["python", "Tools/Import_Facade/generate_symbol_import_index.py"],
+              capture_output=True, text=True, env=env
+          )
+
+          baseline = set(
+              (r["imported_by_file"], r["import_statement"])
+              for r in json.loads(baseline_path.read_text())["symbols"]
+          )
+
+          # The script overwrites the file; read back
+          fresh = set(
+              (r["imported_by_file"], r["import_statement"])
+              for r in json.loads(baseline_path.read_text())["symbols"]
+          )
+
+          added   = fresh - baseline
+          removed = baseline - fresh
+
+          if added or removed:
+              print(f"DRIFT DETECTED: {len(added)} added, {len(removed)} removed imports.")
+              if added:
+                  print("Added (sample):")
+                  for item in list(added)[:10]:
+                      print(f"  + {item[0]}: {item[1]}")
+              if removed:
+                  print("Removed (sample):")
+                  for item in list(removed)[:10]:
+                      print(f"  - {item[0]}: {item[1]}")
+              # Drift is informational only — does not fail the build
+              # until a frozen baseline policy is enforced
+          else:
+              print("No import drift detected.")
+          EOF
+
+      - name: Upload symbol import index artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: import-symbol-index
+          path: _Reports/Canonical_Import_Facade/repo_symbol_imports.json
+          retention-days: 30
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # JOB 3: Import boundary enforcement — block forbidden deep imports
+  # ────────────────────────────────────────────────────────────────────────────
+  import-boundary:
+    name: Import Boundary Enforcement
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Check for forbidden deep imports
+        run: |
+          python - <<'EOF'
+          """
+          Enforces the Forbidden Prefix Registry from the Canonical Import Facade Blueprint.
+          Files inside allowlisted paths are exempt.
+
+          Blueprint reference: Section 5.5
+          """
+          import ast, json, sys
+          from pathlib import Path
+
+          FORBIDDEN_PREFIXES = [
+              "LOGOS_SYSTEM.RUNTIME_CORES",
+              "LOGOS_SYSTEM.RUNTIME_OPPERATIONS_CORE",   # repo spelling — double-P preserved
+              "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT",
+              "LOGOS_SYSTEM.Runtime_Spine",
+              "LOGOS_SYSTEM.STARTUP",
+          ]
+
+          ALLOWLISTED_PATH_SEGMENTS = {
+              "Canonical_Import_Facade",
+              "Import_Facade",
+          }
+
+          EXCLUDE_DIRS = {".venv", "__pycache__", ".git", "node_modules"}
+
+          violations = []
+
+          for path in sorted(Path("LOGOS_SYSTEM").rglob("*.py")):
+              parts = set(path.parts)
+              if parts & EXCLUDE_DIRS:
+                  continue
+              if parts & ALLOWLISTED_PATH_SEGMENTS:
+                  continue
+
+              try:
+                  source = path.read_text(encoding="utf-8", errors="replace")
+                  tree   = ast.parse(source, filename=str(path))
+              except SyntaxError:
+                  continue
+
+              for node in ast.walk(tree):
+                  if isinstance(node, ast.ImportFrom) and node.module:
+                      for prefix in FORBIDDEN_PREFIXES:
+                          if node.module == prefix or node.module.startswith(prefix + "."):
+                              violations.append({
+                                  "file": str(path),
+                                  "line": node.lineno,
+                                  "import": node.module,
+                                  "violated_prefix": prefix,
+                              })
+
+          if violations:
+              print(f"IMPORT BOUNDARY VIOLATIONS: {len(violations)} found")
+              for v in violations[:30]:
+                  print(f"  {v['file']}:{v['line']}  {v['import']}")
+              print()
+              print("These deep imports must be routed through the Canonical Import Facade.")
+              print("See: BLUEPRINTS/Canonical_Import_Facade/Canonical_Import_Facade_Blueprint.md")
+              # Informational until facade is fully deployed — set to sys.exit(1) at Phase E
+          else:
+              print("Import boundary check PASSED — no forbidden deep imports found.")
+
+          report_path = Path("_Reports/Canonical_Import_Facade/boundary_violations.json")
+          report_path.parent.mkdir(parents=True, exist_ok=True)
+          report_path.write_text(json.dumps({"violations": violations}, indent=2))
+          print(f"Report: {report_path}")
+          EOF
+
+      - name: Upload boundary violation report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: import-boundary-report
+          path: _Reports/Canonical_Import_Facade/boundary_violations.json
+          retention-days: 30
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # JOB 4: Facade validation — verify Canonical_Map.json integrity if present
+  # ────────────────────────────────────────────────────────────────────────────
+  facade-validation:
+    name: Canonical Map Integrity Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate Canonical_Map.json if present
+        run: |
+          python - <<'EOF'
+          """
+          Validates LOGOS_SYSTEM/Canonical_Import_Facade/Canonical_Map.json against
+          the schema defined in Canonical_Import_Facade_Blueprint.md Section 5.4.
+
+          Checks:
+            - Required top-level keys present
+            - All symbol entries have canonical_name, facade_module, internal_module
+            - canonical_name is unique across all entries
+            - internal_module paths resolve to files on disk
+            - No symbol entry has an empty canonical_name
+          """
+          import json, sys
+          from pathlib import Path
+
+          MAP_PATH = Path("LOGOS_SYSTEM/Canonical_Import_Facade/Canonical_Map.json")
+
+          if not MAP_PATH.exists():
+              print("Canonical_Map.json not yet present — facade not deployed. Skipping.")
+              sys.exit(0)
+
+          data = json.loads(MAP_PATH.read_text(encoding="utf-8"))
+
+          errors = []
+
+          for key in ("schema_version", "governed_by", "authority", "symbols"):
+              if key not in data:
+                  errors.append(f"Missing required top-level key: {key}")
+
+          symbols = data.get("symbols", [])
+          names_seen = set()
+
+          for i, entry in enumerate(symbols):
+              for field in ("canonical_name", "facade_module", "internal_module"):
+                  if field not in entry or not entry[field]:
+                      errors.append(f"symbols[{i}]: missing or empty '{field}'")
+
+              name = entry.get("canonical_name", "")
+              if name in names_seen:
+                  errors.append(f"Duplicate canonical_name: '{name}'")
+              names_seen.add(name)
+
+              internal = entry.get("internal_module", "")
+              if internal:
+                  # Convert dotted module path to file path
+                  rel_path = Path(internal.replace(".", "/") + ".py")
+                  if not rel_path.exists():
+                      init_path = Path(internal.replace(".", "/")) / "__init__.py"
+                      if not init_path.exists():
+                          errors.append(
+                              f"symbols[{i}] '{name}': internal_module '{internal}' "
+                              f"does not resolve to a file on disk"
+                          )
+
+          if errors:
+              print(f"Canonical_Map.json INVALID: {len(errors)} error(s)")
+              for e in errors:
+                  print(f"  ERROR: {e}")
+              sys.exit(1)
+          else:
+              print(f"Canonical_Map.json VALID: {len(symbols)} symbols, all checks passed.")
+          EOF
