@@ -29,6 +29,7 @@ class AgentParticipantBase(NexusParticipant):
         self._nexus_handle: Optional[NexusHandle] = None
         self._last_projection: Optional[StatePacket] = None
         self._received_packets: List[StatePacket] = []
+        self._tick_result: Dict[str, Any] = {}
 
     def register(self, nexus_handle: NexusHandle) -> None:
         self._nexus_handle = nexus_handle
@@ -39,6 +40,7 @@ class AgentParticipantBase(NexusParticipant):
 
     def execute_tick(self, context: Dict[str, Any]) -> None:
         result = self._on_tick(context)
+        self._tick_result = result
         projection = self._project()
         self._last_projection = projection
         self._received_packets.clear()
@@ -84,12 +86,23 @@ class I1AgentParticipant(AgentParticipantBase):
         self._csp_canonical_store = csp_canonical_store
         self._mtp_nexus = mtp_nexus
         self._arp_compiler = arp_compiler
+        self._pending_smp_id: Optional[str] = None
+
+    def _on_receive(self, packet: StatePacket) -> None:
+        content = packet.payload.get("content") if isinstance(packet.payload, dict) else None
+        if isinstance(content, dict) and content.get("routing_signal") == "route_to_i1":
+            smp_id = content.get("smp_id")
+            if smp_id:
+                self._pending_smp_id = smp_id
 
     def _on_tick(self, context: Dict[str, Any]) -> Dict[str, Any]:
         from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators import validate_route_packet
         if "packet" in context:
             validate_route_packet(context["packet"])
         smp_id = context.get("smp_id")
+        if not smp_id and self._pending_smp_id:
+            smp_id = self._pending_smp_id
+            self._pending_smp_id = None
         if not smp_id:
             return {"agent": "I1", "status": "stub_tick"}
         aas = self._uwm_read_api.get_aas_for_smp(smp_id, requester_role="logos_agent")
@@ -235,6 +248,7 @@ class LogosAgentParticipant(AgentParticipantBase):
         self._current_smp_id: Optional[str] = None
         self._csmp_id: Optional[str] = None
         self._routing_state: str = "INIT"
+        self._i1_delegated: bool = False
 
     def _on_tick(self, context: Dict[str, Any]) -> Dict[str, Any]:
         from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators import validate_route_packet, validate_task
@@ -254,10 +268,25 @@ class LogosAgentParticipant(AgentParticipantBase):
             self._routing_state = "SMP_CREATED"
             return {"agent": "LOGOS", "status": "in_progress", "smp_id": self._current_smp_id}
         elif self._routing_state == "SMP_CREATED":
-            smp = self._smp_store.get_smp(self._current_smp_id)
-            aa = self._scp_orchestrator.analyze(smp)
-            self._smp_store.append_aa(self._current_smp_id, aa.aa_type, "I1", aa.content)
+            # Stage 2: delegate I1AA generation to I1AgentParticipant
+            aas = self._uwm_read_api.get_aas_for_smp(self._current_smp_id, requester_role="logos_agent")
+            i1aa_present = any(
+                (aa.get("aa_type") if isinstance(aa, dict) else getattr(aa, "aa_type", None)) == "I1AA" or
+                (aa.get("source_agent") if isinstance(aa, dict) else getattr(aa, "source_agent", None)) == "I1"
+                for aa in aas
+            )
+            if not i1aa_present:
+                # I1AA not yet present — delegate to I1 participant
+                self._i1_delegated = True
+                return {
+                    "agent": "LOGOS",
+                    "status": "in_progress",
+                    "routing_state": "delegated_to_i1",
+                    "smp_id": self._current_smp_id,
+                }
+            # I1AA present — advance (LogosAgent no longer generates I1AA)
             self._smp_store.promote_classification(self._current_smp_id, "provisional")
+            self._i1_delegated = False
             self._routing_state = "I1_COMPLETE"
             return {
                 "agent": "LOGOS",
@@ -331,4 +360,17 @@ class LogosAgentParticipant(AgentParticipantBase):
         return {"agent": "LOGOS", "status": "stub_tick"}
 
     def _project(self) -> Optional[StatePacket]:
+        import time
+        if self._routing_state == "SMP_CREATED" and self._i1_delegated and self._current_smp_id:
+            return StatePacket(
+                source_id=self.participant_id,
+                payload={
+                    "type": "route_to_i1",
+                    "content": {
+                        "routing_signal": "route_to_i1",
+                        "smp_id": self._current_smp_id,
+                    },
+                },
+                timestamp=time.time(),
+            )
         return None
