@@ -1,22 +1,63 @@
 #!/usr/bin/env bash
 # fix_project_fields.sh
-# Idempotent: creates PHASE, CATEGORY, STATUS, PRIORITY single-select fields
-# on the existing LOGOS V1 Development Dashboard project.
+# Idempotent: finds or creates the LOGOS V1 Development Dashboard project,
+# then ensures PHASE, CATEGORY, STATUS, PRIORITY single-select fields exist.
 #
 # Usage:
 #   export GH_TOKEN=ghp_<your-token-with-project-scope>
 #   bash fix_project_fields.sh
 set -euo pipefail
 
-PROJECT_ID="PVT_kwHOD3Zliw84BQ2pl"
+PROJECT_TITLE="LOGOS V1 Development Dashboard"
 OUT_FILE="_Governance/GitHub/Projects/LOGOS_V1_Project_Metadata.json"
 
 echo "== LOGOS Project Field Creation (Idempotent) =="
-echo "Project ID: $PROJECT_ID"
 
 if ! command -v jq >/dev/null 2>&1; then
   echo "Installing jq..."
   sudo apt-get update -y >/dev/null && sudo apt-get install -y jq >/dev/null
+fi
+
+# Resolve owner
+REPO_FULL="$(gh repo view --json nameWithOwner -q .nameWithOwner)"
+OWNER="${REPO_FULL%/*}"
+REPO="${REPO_FULL#*/}"
+
+OWNER_ID="$(gh api graphql -f query='
+query($owner:String!,$repo:String!){repository(owner:$owner,name:$repo){owner{id __typename}}}
+' -F owner="$OWNER" -F repo="$REPO" --jq '.data.repository.owner.id')"
+
+OWNER_TYPENAME="$(gh api graphql -f query='
+query($owner:String!,$repo:String!){repository(owner:$owner,name:$repo){owner{__typename}}}
+' -F owner="$OWNER" -F repo="$REPO" --jq '.data.repository.owner.__typename')"
+
+echo "Owner: $OWNER ($OWNER_TYPENAME, $OWNER_ID)"
+
+# Find or create project
+PROJECT_ID="$(
+  gh api graphql -f query='
+query($ownerId:ID!) {
+  node(id:$ownerId) {
+    ... on Organization { projectsV2(first:50) { nodes { id title } } }
+    ... on User         { projectsV2(first:50) { nodes { id title } } }
+  }
+}' -F ownerId="$OWNER_ID" | jq -r --arg t "$PROJECT_TITLE" '
+  .data.node.projectsV2.nodes | map(select(.title==$t)) | .[0].id // empty
+')"
+
+if [ -z "${PROJECT_ID:-}" ]; then
+  echo "Project not found. Creating: $PROJECT_TITLE"
+  PROJECT_ID="$(
+    jq -n \
+      --arg query 'mutation($ownerId:ID!,$title:String!){createProjectV2(input:{ownerId:$ownerId,title:$title}){projectV2{id title}}}' \
+      --arg ownerId "$OWNER_ID" \
+      --arg title  "$PROJECT_TITLE" \
+      '{"query":$query,"variables":{"ownerId":$ownerId,"title":$title}}' \
+    | gh api graphql --input - --jq '.data.createProjectV2.projectV2.id'
+  )"
+  echo "Created project: $PROJECT_ID"
+else
+  echo "Project exists: $PROJECT_ID"
 fi
 
 # ── helpers ──────────────────────────────────────────────────────────────────
@@ -71,22 +112,26 @@ ensure_field() {
 }
 
 # ── create fields ─────────────────────────────────────────────────────────────
+# GitHub requires color and description on each option.
+# Valid colors: GRAY BLUE GREEN YELLOW ORANGE RED PINK PURPLE
 echo "Ensuring fields..."
-PHASE_FIELD_ID="$(    ensure_field "PHASE"    '[{"name":"P1"},{"name":"P2"},{"name":"P3"},{"name":"P4"},{"name":"P5"}]')"
-CATEGORY_FIELD_ID="$( ensure_field "CATEGORY" '[{"name":"Phase Deliverable"},{"name":"Verification"},{"name":"Infrastructure"}]')"
-STATUS_FIELD_ID="$(   ensure_field "STATUS"   '[{"name":"Backlog"},{"name":"Ready"},{"name":"In Progress"},{"name":"Verify"},{"name":"Complete"}]')"
-PRIORITY_FIELD_ID="$( ensure_field "PRIORITY" '[{"name":"High"},{"name":"Medium"},{"name":"Low"}]')"
+PHASE_FIELD_ID="$(    ensure_field "PHASE"    '[{"name":"P1","color":"BLUE","description":"Phase 1"},{"name":"P2","color":"GREEN","description":"Phase 2"},{"name":"P3","color":"YELLOW","description":"Phase 3"},{"name":"P4","color":"ORANGE","description":"Phase 4"},{"name":"P5","color":"PURPLE","description":"Phase 5"}]')"
+CATEGORY_FIELD_ID="$( ensure_field "CATEGORY" '[{"name":"Phase Deliverable","color":"BLUE","description":""},{"name":"Verification","color":"GREEN","description":""},{"name":"Infrastructure","color":"GRAY","description":""}]')"
+STATUS_FIELD_ID="$(   ensure_field "STATUS"   '[{"name":"Backlog","color":"GRAY","description":""},{"name":"Ready","color":"BLUE","description":""},{"name":"In Progress","color":"YELLOW","description":""},{"name":"Verify","color":"ORANGE","description":""},{"name":"Complete","color":"GREEN","description":""}]')"
+PRIORITY_FIELD_ID="$( ensure_field "PRIORITY" '[{"name":"High","color":"RED","description":""},{"name":"Medium","color":"YELLOW","description":""},{"name":"Low","color":"GRAY","description":""}]')"
 
 # ── snapshot & write metadata ─────────────────────────────────────────────────
 FIELDS_SNAPSHOT="$(get_field_json)"
-
+owner             "$OWNER" \
+  --arg repo              "$REPO" \
+  --arg 
 jq -n \
   --arg project_id        "$PROJECT_ID" \
   --arg phase_field_id    "$PHASE_FIELD_ID" \
   --arg category_field_id "$CATEGORY_FIELD_ID" \
   --arg status_field_id   "$STATUS_FIELD_ID" \
   --arg priority_field_id "$PRIORITY_FIELD_ID" \
-  --argjson fields_snapshot "$FIELDS_SNAPSHOT" \
+  --argjson fields_snap$owner, name: $repo
 '{
   schema_version: "1.0",
   generated_utc: (now | todateiso8601),
