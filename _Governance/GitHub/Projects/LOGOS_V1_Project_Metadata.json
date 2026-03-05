@@ -1,48 +1,110 @@
 {
   "schema_version": "1.0",
-  "status": "PENDING_TOKEN_UPGRADE",
-  "generated_utc": "2026-03-05T00:00:00Z",
+  "generated_utc": "2026-03-05T10:28:22Z",
   "repository": {
     "owner": "Project-Logos-2026",
     "name": "Logos"
   },
   "project": {
     "title": "LOGOS V1 Development Dashboard",
-    "id": null,
-    "note": "Project not yet created. Requires a PAT with 'project' scope. See blocker note below."
+    "id": "PVT_kwHOD3Zli84BQ2pl"
   },
   "fields": {
-    "PHASE": { "id": null },
-    "CATEGORY": { "id": null },
-    "STATUS": { "id": null },
-    "PRIORITY": { "id": null }
-  },
-  "blocker": {
-    "reason": "The Codespaces GITHUB_TOKEN is a GitHub App installation token with no OAuth scopes. GitHub Projects v2 mutations (createProjectV2, createProjectV2Field) require a classic PAT with 'repo' and 'project' scopes, or a fine-grained PAT with 'Projects: read and write' permission.",
-    "resolution": [
-      "1. Go to https://github.com/settings/tokens and create a classic PAT.",
-      "2. Enable scopes: repo, project.",
-      "3. In the Codespaces terminal, run: export GH_TOKEN=ghp_<your-token>",
-      "4. Re-run: bash setup_github_project.sh",
-      "5. This file will be overwritten with the real project ID and field IDs."
-    ]
-  },
-  "required_fields": {
     "PHASE": {
-      "type": "single_select",
-      "options": ["P1", "P2", "P3", "P4", "P5"]
+      "id": "{\"errors\":[{\"extensions\":{\"value\":\"[{\\\"name\\\":\\\"P1\\\"},{\\\"name\\\":\\\"P2\\\"},{\\\"name\\\":\\\"P3\\\"},{\\\"name\\\":\\\"P4\\\"},{\\\"name\\\":\\\"P5\\\"}]\",\"problems\":[{\"path\":[0],\"explanation\":\"Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"P1\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P2\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P3\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P4\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P5\\\\\\\"}]\\\" to be a key-value object.\"}]},\"locations\":[{\"line\":2,\"column\":41}],\"message\":\"Variable $opts of type [ProjectV2SingleSelectFieldOptionInput!]! was provided invalid value for 0 (Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"P1\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P2\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P3\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P4\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"P5\\\\\\\"}]\\\" to be a key-value object.)\"}]}"
     },
     "CATEGORY": {
-      "type": "single_select",
-      "options": ["Phase Deliverable", "Verification", "Infrastructure"]
+      "id": "{\"errors\":[{\"extensions\":{\"value\":\"[{\\\"name\\\":\\\"Phase Deliverable\\\"},{\\\"name\\\":\\\"Verification\\\"},{\\\"name\\\":\\\"Infrastructure\\\"}]\",\"problems\":[{\"path\":[0],\"explanation\":\"Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"Phase Deliverable\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Verification\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Infrastructure\\\\\\\"}]\\\" to be a key-value object.\"}]},\"locations\":[{\"line\":2,\"column\":41}],\"message\":\"Variable $opts of type [ProjectV2SingleSelectFieldOptionInput!]! was provided invalid value for 0 (Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"Phase Deliverable\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Verification\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Infrastructure\\\\\\\"}]\\\" to be a key-value object.)\"}]}"
     },
     "STATUS": {
-      "type": "single_select",
-      "options": ["Backlog", "Ready", "In Progress", "Verify", "Complete"]
+      "id": "{\"errors\":[{\"extensions\":{\"value\":\"[{\\\"name\\\":\\\"Backlog\\\"},{\\\"name\\\":\\\"Ready\\\"},{\\\"name\\\":\\\"In Progress\\\"},{\\\"name\\\":\\\"Verify\\\"},{\\\"name\\\":\\\"Complete\\\"}]\",\"problems\":[{\"path\":[0],\"explanation\":\"Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"Backlog\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Ready\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"In Progress\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Verify\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Complete\\\\\\\"}]\\\" to be a key-value object.\"}]},\"locations\":[{\"line\":2,\"column\":41}],\"message\":\"Variable $opts of type [ProjectV2SingleSelectFieldOptionInput!]! was provided invalid value for 0 (Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"Backlog\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Ready\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"In Progress\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Verify\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Complete\\\\\\\"}]\\\" to be a key-value object.)\"}]}"
     },
     "PRIORITY": {
-      "type": "single_select",
-      "options": ["High", "Medium", "Low"]
+      "id": "{\"errors\":[{\"extensions\":{\"value\":\"[{\\\"name\\\":\\\"High\\\"},{\\\"name\\\":\\\"Medium\\\"},{\\\"name\\\":\\\"Low\\\"}]\",\"problems\":[{\"path\":[0],\"explanation\":\"Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"High\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Medium\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Low\\\\\\\"}]\\\" to be a key-value object.\"}]},\"locations\":[{\"line\":2,\"column\":41}],\"message\":\"Variable $opts of type [ProjectV2SingleSelectFieldOptionInput!]! was provided invalid value for 0 (Expected \\\"[{\\\\\\\"name\\\\\\\":\\\\\\\"High\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Medium\\\\\\\"},{\\\\\\\"name\\\\\\\":\\\\\\\"Low\\\\\\\"}]\\\" to be a key-value object.)\"}]}"
+    }
+  },
+  "fields_snapshot_graphql": {
+    "data": {
+      "node": {
+        "fields": {
+          "nodes": [
+            {
+              "__typename": "ProjectV2Field",
+              "id": "PVTF_lAHOD3Zli84BQ2plzg-2pM4",
+              "name": "Title",
+              "dataType": "TITLE"
+            },
+            {
+              "__typename": "ProjectV2Field",
+              "id": "PVTF_lAHOD3Zli84BQ2plzg-2pM8",
+              "name": "Assignees",
+              "dataType": "ASSIGNEES"
+            },
+            {
+              "__typename": "ProjectV2SingleSelectField",
+              "id": "PVTSSF_lAHOD3Zli84BQ2plzg-2pNA",
+              "name": "Status",
+              "dataType": "SINGLE_SELECT",
+              "options": [
+                {
+                  "id": "f75ad846",
+                  "name": "Todo"
+                },
+                {
+                  "id": "47fc9ee4",
+                  "name": "In Progress"
+                },
+                {
+                  "id": "98236657",
+                  "name": "Done"
+                }
+              ]
+            },
+            {
+              "__typename": "ProjectV2Field",
+              "id": "PVTF_lAHOD3Zli84BQ2plzg-2pNE",
+              "name": "Labels",
+              "dataType": "LABELS"
+            },
+            {
+              "__typename": "ProjectV2Field",
+              "id": "PVTF_lAHOD3Zli84BQ2plzg-2pNI",
+              "name": "Linked pull requests",
+              "dataType": "LINKED_PULL_REQUESTS"
+            },
+            {
+              "__typename": "ProjectV2Field",
+              "id": "PVTF_lAHOD3Zli84BQ2plzg-2pNM",
+              "name": "Milestone",
+              "dataType": "MILESTONE"
+            },
+            {
+              "__typename": "ProjectV2Field",
+              "id": "PVTF_lAHOD3Zli84BQ2plzg-2pNQ",
+              "name": "Repository",
+              "dataType": "REPOSITORY"
+            },
+            {
+              "__typename": "ProjectV2Field",
+              "id": "PVTF_lAHOD3Zli84BQ2plzg-2pNU",
+              "name": "Reviewers",
+              "dataType": "REVIEWERS"
+            },
+            {
+              "__typename": "ProjectV2Field",
+              "id": "PVTF_lAHOD3Zli84BQ2plzg-2pNY",
+              "name": "Parent issue",
+              "dataType": "PARENT_ISSUE"
+            },
+            {
+              "__typename": "ProjectV2Field",
+              "id": "PVTF_lAHOD3Zli84BQ2plzg-2pNc",
+              "name": "Sub-issues progress",
+              "dataType": "SUB_ISSUES_PROGRESS"
+            }
+          ]
+        }
+      }
     }
   }
 }
