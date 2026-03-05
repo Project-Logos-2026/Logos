@@ -145,7 +145,7 @@ query($projectId:ID!) {
 
 ensure_single_select_field() {
   local FIELD_NAME="$1"
-  local OPTIONS_JSON="$2"
+  local OPTIONS_JSON="$2"   # JSON array of {"name":"..."} objects
 
   local FIELD_ID
   FIELD_ID="$(get_field_json | jq -r --arg n "$FIELD_NAME" '
@@ -161,24 +161,19 @@ ensure_single_select_field() {
   fi
 
   echo "Creating field: $FIELD_NAME" >&2
+
+  # Build a fully-structured JSON request body so the array variable is typed
+  # correctly. gh api graphql -f/-F only accepts scalars; arrays require --input.
+  local MUTATION='mutation($projectId:ID!,$name:String!,$opts:[ProjectV2SingleSelectFieldOptionInput!]!){createProjectV2Field(input:{projectId:$projectId,dataType:SINGLE_SELECT,name:$name,singleSelectOptions:$opts}){projectV2Field{...on ProjectV2SingleSelectField{id name options{id name}}}}}'
+
   FIELD_ID="$(
-    gh api graphql -f query='
-mutation($projectId:ID!, $name:String!, $opts:[ProjectV2SingleSelectFieldOptionInput!]!) {
-  createProjectV2Field(input:{
-    projectId:$projectId,
-    dataType:SINGLE_SELECT,
-    name:$name,
-    singleSelectOptions:$opts
-  }) {
-    projectV2Field {
-      ... on ProjectV2SingleSelectField {
-        id
-        name
-        options { id name }
-      }
-    }
-  }
-}' -F projectId="$PROJECT_ID" -F name="$FIELD_NAME" -f opts="$OPTIONS_JSON" --jq '.data.createProjectV2Field.projectV2Field.id'
+    jq -n \
+      --arg query   "$MUTATION" \
+      --arg pid     "$PROJECT_ID" \
+      --arg name    "$FIELD_NAME" \
+      --argjson opts "$OPTIONS_JSON" \
+      '{"query":$query,"variables":{"projectId":$pid,"name":$name,"opts":$opts}}' \
+    | gh api graphql --input - --jq '.data.createProjectV2Field.projectV2Field.id'
   )"
 
   echo "Created field: $FIELD_NAME (id: $FIELD_ID)" >&2
