@@ -1,58 +1,39 @@
 #!/usr/bin/env bash
-# fix_project_fields.sh
-# Idempotent: finds or creates the LOGOS V1 Development Dashboard project,
-# then ensures PHASE, CATEGORY, STATUS, PRIORITY single-select fields exist.
-#
-# Usage:
-#   export GH_TOKEN=ghp_<your-token-with-project-scope>
-#   bash fix_project_fields.sh
+# fix_project_fields.sh — idempotent, handles pre-existing fields
 set -euo pipefail
 
 PROJECT_TITLE="LOGOS V1 Development Dashboard"
 OUT_FILE="_Governance/GitHub/Projects/LOGOS_V1_Project_Metadata.json"
 
-echo "== LOGOS Project Field Creation (Idempotent) =="
+echo "== LOGOS Project Field Setup (Idempotent) =="
 
-if ! command -v jq >/dev/null 2>&1; then
-  echo "Installing jq..."
-  sudo apt-get update -y >/dev/null && sudo apt-get install -y jq >/dev/null
-fi
+command -v jq >/dev/null 2>&1 || { sudo apt-get update -y >/dev/null && sudo apt-get install -y jq >/dev/null; }
 
-# Resolve owner
+# ── resolve repo + owner ───────────────────────────────────────────────────────
 REPO_FULL="$(gh repo view --json nameWithOwner -q .nameWithOwner)"
 OWNER="${REPO_FULL%/*}"
 REPO="${REPO_FULL#*/}"
 
 OWNER_ID="$(gh api graphql -f query='
-query($owner:String!,$repo:String!){repository(owner:$owner,name:$repo){owner{id __typename}}}
-' -F owner="$OWNER" -F repo="$REPO" --jq '.data.repository.owner.id')"
+query($o:String!,$r:String!){repository(owner:$o,name:$r){owner{id}}}
+' -F o="$OWNER" -F r="$REPO" --jq '.data.repository.owner.id')"
 
-OWNER_TYPENAME="$(gh api graphql -f query='
-query($owner:String!,$repo:String!){repository(owner:$owner,name:$repo){owner{__typename}}}
-' -F owner="$OWNER" -F repo="$REPO" --jq '.data.repository.owner.__typename')"
+echo "Repo: $OWNER/$REPO  Owner ID: $OWNER_ID"
 
-echo "Owner: $OWNER ($OWNER_TYPENAME, $OWNER_ID)"
-
-# Find or create project
+# ── find or create project ─────────────────────────────────────────────────────
 PROJECT_ID="$(
   gh api graphql -f query='
-query($ownerId:ID!) {
-  node(id:$ownerId) {
-    ... on Organization { projectsV2(first:50) { nodes { id title } } }
-    ... on User         { projectsV2(first:50) { nodes { id title } } }
-  }
-}' -F ownerId="$OWNER_ID" | jq -r --arg t "$PROJECT_TITLE" '
+query($id:ID!){node(id:$id){... on User{projectsV2(first:50){nodes{id title}}}... on Organization{projectsV2(first:50){nodes{id title}}}}}
+' -F id="$OWNER_ID" | jq -r --arg t "$PROJECT_TITLE" '
   .data.node.projectsV2.nodes | map(select(.title==$t)) | .[0].id // empty
 ')"
 
 if [ -z "${PROJECT_ID:-}" ]; then
-  echo "Project not found. Creating: $PROJECT_TITLE"
   PROJECT_ID="$(
     jq -n \
-      --arg query 'mutation($ownerId:ID!,$title:String!){createProjectV2(input:{ownerId:$ownerId,title:$title}){projectV2{id title}}}' \
-      --arg ownerId "$OWNER_ID" \
-      --arg title  "$PROJECT_TITLE" \
-      '{"query":$query,"variables":{"ownerId":$ownerId,"title":$title}}' \
+      --arg q 'mutation($o:ID!,$t:String!){createProjectV2(input:{ownerId:$o,title:$t}){projectV2{id}}}' \
+      --arg o "$OWNER_ID" --arg t "$PROJECT_TITLE" \
+      '{"query":$q,"variables":{"o":$o,"t":$t}}' \
     | gh api graphql --input - --jq '.data.createProjectV2.projectV2.id'
   )"
   echo "Created project: $PROJECT_ID"
@@ -60,95 +41,117 @@ else
   echo "Project exists: $PROJECT_ID"
 fi
 
-# ── helpers ──────────────────────────────────────────────────────────────────
-get_field_json() {
+# ── fetch all current fields ───────────────────────────────────────────────────
+fetch_fields() {
   gh api graphql -f query='
-query($projectId:ID!) {
-  node(id:$projectId) {
-    ... on ProjectV2 {
-      fields(first:100) {
-        nodes {
-          __typename
-          ... on ProjectV2FieldCommon { id name dataType }
-          ... on ProjectV2SingleSelectField {
-            id name dataType
-            options { id name }
-          }
-        }
-      }
-    }
-  }
-}' -F projectId="$PROJECT_ID"
+query($p:ID!){node(id:$p){... on ProjectV2{fields(first:100){nodes{
+  __typename
+  ... on ProjectV2FieldCommon{id name}
+  ... on ProjectV2SingleSelectField{id name options{id name}}
+}}}}}' -F p="$PROJECT_ID"
 }
 
-MUTATION='mutation($projectId:ID!,$name:String!,$opts:[ProjectV2SingleSelectFieldOptionInput!]!){createProjectV2Field(input:{projectId:$projectId,dataType:SINGLE_SELECT,name:$name,singleSelectOptions:$opts}){projectV2Field{...on ProjectV2SingleSelectField{id name options{id name}}}}}'
+# look up field ID by exact name (case-sensitive, as stored on GitHub)
+field_id_by_name() {
+  local fname="$1"
+  fetch_fields | jq -r --arg n "$fname" \
+    '.data.node.fields.nodes | map(select(.name == $n)) | .[0].id // empty'
+}
+
+# look up field ID case-insensitively (for STATUS vs Status collision)
+field_id_icase() {
+  local fname="${1,,}"   # lowercase
+  fetch_fields | jq -r --arg n "$fname" \
+    '.data.node.fields.nodes | map(select(.name | ascii_downcase == $n)) | .[0].id // empty'
+}
+
+MUTATION='mutation($p:ID!,$n:String!,$o:[ProjectV2SingleSelectFieldOptionInput!]!){createProjectV2Field(input:{projectId:$p,dataType:SINGLE_SELECT,name:$n,singleSelectOptions:$o}){projectV2Field{... on ProjectV2SingleSelectField{id name}}}}'
 
 ensure_field() {
-  local FIELD_NAME="$1"
-  local OPTIONS_JSON="$2"
+  local FNAME="$1"
+  local OPTS="$2"
 
-  local FIELD_ID
-  FIELD_ID="$(get_field_json | jq -r --arg n "$FIELD_NAME" '
-    .data.node.fields.nodes | map(select(.name == $n)) | .[0].id // empty
-  ')"
+  # exact-name lookup first
+  local FID
+  FID="$(field_id_by_name "$FNAME")"
 
-  if [ -n "$FIELD_ID" ]; then
-    echo "  [exists] $FIELD_NAME → $FIELD_ID"
-    echo "$FIELD_ID"
+  if [ -n "$FID" ]; then
+    echo "  [exists] $FNAME → $FID"
+    printf '%s' "$FID"
     return 0
   fi
 
-  FIELD_ID="$(
+  # try to create
+  local CREATE_OUT
+  CREATE_OUT="$(
     jq -n \
-      --arg query   "$MUTATION" \
-      --arg pid     "$PROJECT_ID" \
-      --arg name    "$FIELD_NAME" \
-      --argjson opts "$OPTIONS_JSON" \
-      '{"query":$query,"variables":{"projectId":$pid,"name":$name,"opts":$opts}}' \
-    | gh api graphql --input - --jq '.data.createProjectV2Field.projectV2Field.id'
-  )"
-  echo "  [created] $FIELD_NAME → $FIELD_ID"
-  echo "$FIELD_ID"
+      --arg q  "$MUTATION" \
+      --arg p  "$PROJECT_ID" \
+      --arg n  "$FNAME" \
+      --argjson o "$OPTS" \
+      '{"query":$q,"variables":{"p":$p,"n":$n,"o":$o}}' \
+    | gh api graphql --input - 2>&1
+  )" || true
+
+  FID="$(printf '%s' "$CREATE_OUT" | jq -r '.data.createProjectV2Field.projectV2Field.id // empty' 2>/dev/null || true)"
+
+  if [ -n "$FID" ]; then
+    echo "  [created] $FNAME → $FID"
+    printf '%s' "$FID"
+    return 0
+  fi
+
+  # creation failed (likely name collision) — fall back to case-insensitive lookup
+  FID="$(field_id_icase "$FNAME")"
+  if [ -n "$FID" ]; then
+    echo "  [reused existing] $FNAME (case collision) → $FID"
+    printf '%s' "$FID"
+    return 0
+  fi
+
+  echo "  [ERROR] Could not find or create field: $FNAME" >&2
+  printf ''
 }
 
-# ── create fields ─────────────────────────────────────────────────────────────
-# GitHub requires color and description on each option.
-# Valid colors: GRAY BLUE GREEN YELLOW ORANGE RED PINK PURPLE
+# ── ensure all four fields ─────────────────────────────────────────────────────
 echo "Ensuring fields..."
-PHASE_FIELD_ID="$(    ensure_field "PHASE"    '[{"name":"P1","color":"BLUE","description":"Phase 1"},{"name":"P2","color":"GREEN","description":"Phase 2"},{"name":"P3","color":"YELLOW","description":"Phase 3"},{"name":"P4","color":"ORANGE","description":"Phase 4"},{"name":"P5","color":"PURPLE","description":"Phase 5"}]')"
-CATEGORY_FIELD_ID="$( ensure_field "CATEGORY" '[{"name":"Phase Deliverable","color":"BLUE","description":""},{"name":"Verification","color":"GREEN","description":""},{"name":"Infrastructure","color":"GRAY","description":""}]')"
-STATUS_FIELD_ID="$(   ensure_field "STATUS"   '[{"name":"Backlog","color":"GRAY","description":""},{"name":"Ready","color":"BLUE","description":""},{"name":"In Progress","color":"YELLOW","description":""},{"name":"Verify","color":"ORANGE","description":""},{"name":"Complete","color":"GREEN","description":""}]')"
-PRIORITY_FIELD_ID="$( ensure_field "PRIORITY" '[{"name":"High","color":"RED","description":""},{"name":"Medium","color":"YELLOW","description":""},{"name":"Low","color":"GRAY","description":""}]')"
+PHASE_ID="$(    ensure_field "PHASE"    '[{"name":"P1","color":"BLUE","description":"Phase 1"},{"name":"P2","color":"GREEN","description":"Phase 2"},{"name":"P3","color":"YELLOW","description":"Phase 3"},{"name":"P4","color":"ORANGE","description":"Phase 4"},{"name":"P5","color":"PURPLE","description":"Phase 5"}]')"
+CATEGORY_ID="$( ensure_field "CATEGORY" '[{"name":"Phase Deliverable","color":"BLUE","description":""},{"name":"Verification","color":"GREEN","description":""},{"name":"Infrastructure","color":"GRAY","description":""}]')"
+STATUS_ID="$(   ensure_field "STATUS"   '[{"name":"Backlog","color":"GRAY","description":""},{"name":"Ready","color":"BLUE","description":""},{"name":"In Progress","color":"YELLOW","description":""},{"name":"Verify","color":"ORANGE","description":""},{"name":"Complete","color":"GREEN","description":""}]')"
+PRIORITY_ID="$( ensure_field "PRIORITY" '[{"name":"High","color":"RED","description":""},{"name":"Medium","color":"YELLOW","description":""},{"name":"Low","color":"GRAY","description":""}]')"
 
-# ── snapshot & write metadata ─────────────────────────────────────────────────
-FIELDS_SNAPSHOT="$(get_field_json)"
-owner             "$OWNER" \
-  --arg repo              "$REPO" \
-  --arg 
+# ── snapshot + write metadata ──────────────────────────────────────────────────
+SNAPSHOT="$(fetch_fields)"
+
+mkdir -p "$(dirname "$OUT_FILE")"
+
 jq -n \
-  --arg project_id        "$PROJECT_ID" \
-  --arg phase_field_id    "$PHASE_FIELD_ID" \
-  --arg category_field_id "$CATEGORY_FIELD_ID" \
-  --arg status_field_id   "$STATUS_FIELD_ID" \
-  --arg priority_field_id "$PRIORITY_FIELD_ID" \
-  --argjson fields_snap$owner, name: $repo
+  --arg owner      "$OWNER" \
+  --arg repo       "$REPO" \
+  --arg proj_title "$PROJECT_TITLE" \
+  --arg proj_id    "$PROJECT_ID" \
+  --arg phase      "$PHASE_ID" \
+  --arg category   "$CATEGORY_ID" \
+  --arg status     "$STATUS_ID" \
+  --arg priority   "$PRIORITY_ID" \
+  --argjson snap   "$SNAPSHOT" \
 '{
   schema_version: "1.0",
   generated_utc: (now | todateiso8601),
-  repository: { owner: "Project-Logos-2026", name: "Logos" },
-  project: { title: "LOGOS V1 Development Dashboard", id: $project_id },
+  repository: { owner: $owner, name: $repo },
+  project: { title: $proj_title, id: $proj_id },
   fields: {
-    PHASE:    { id: $phase_field_id },
-    CATEGORY: { id: $category_field_id },
-    STATUS:   { id: $status_field_id },
-    PRIORITY: { id: $priority_field_id }
+    PHASE:    { id: $phase },
+    CATEGORY: { id: $category },
+    STATUS:   { id: $status },
+    PRIORITY: { id: $priority }
   },
-  fields_snapshot_graphql: $fields_snapshot
+  fields_snapshot_graphql: $snap
 }' > "$OUT_FILE"
 
 echo "Wrote: $OUT_FILE"
 
-# ── commit ────────────────────────────────────────────────────────────────────
+# ── commit ─────────────────────────────────────────────────────────────────────
 git add "$OUT_FILE"
 if git diff --cached --quiet; then
   echo "No changes to commit."
@@ -160,10 +163,9 @@ fi
 
 echo ""
 echo "== SUCCESS =="
-echo "Project ID: $PROJECT_ID"
-echo "Fields:"
-echo "  PHASE:    $PHASE_FIELD_ID"
-echo "  CATEGORY: $CATEGORY_FIELD_ID"
-echo "  STATUS:   $STATUS_FIELD_ID"
-echo "  PRIORITY: $PRIORITY_FIELD_ID"
+echo "Project:  $PROJECT_TITLE ($PROJECT_ID)"
+echo "  PHASE:    $PHASE_ID"
+echo "  CATEGORY: $CATEGORY_ID"
+echo "  STATUS:   $STATUS_ID"
+echo "  PRIORITY: $PRIORITY_ID"
 echo "Metadata: $OUT_FILE"
