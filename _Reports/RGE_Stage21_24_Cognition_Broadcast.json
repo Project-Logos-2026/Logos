@@ -1,0 +1,58 @@
+{
+  "stage_range": "RGE Stage 21-24",
+  "title": "Cognition Signal Broadcasting Infrastructure",
+  "status": "success",
+  "modules_created": [
+    "Cognition/__init__.py",
+    "Cognition/RGE_Cognition_Signal.py",
+    "Cognition/RGE_Cognition_Channel.py",
+    "Cognition/RGE_Signal_Broadcaster.py"
+  ],
+  "modules_modified": [
+    "Field/RGE_Recursion_Field_Engine.py"
+  ],
+  "module_descriptions": {
+    "RGE_Cognition_Signal.py": "Frozen dataclass RGECognitionSignal with fields packet_id, source_node, destination_node, timestamp. Immutable value object; stdlib only; no runtime logic.",
+    "RGE_Cognition_Channel.py": "Class RGECognitionChannel. Maintains a list of callable subscribers. register_subscriber appends a callback; emit delivers the signal synchronously to all subscribers in registration order. No async logic.",
+    "RGE_Signal_Broadcaster.py": "Class RGESignalBroadcaster. Thin facade holding a RGECognitionChannel. broadcast(signal) delegates to channel.emit(signal).",
+    "RGE_Recursion_Field_Engine.py (modified)": "Added import time and RGECognitionSignal/RGESignalBroadcaster imports. Added optional broadcaster parameter to constructor (default None). Modified propagate_packet to capture source_node before delegation, then emit RGECognitionSignal through broadcaster (if configured) after propagation completes. Propagation logic unchanged."
+  },
+  "cif_import_check": {
+    "forbidden_prefixes_present": false,
+    "checked_prefixes": [
+      "LOGOS_SYSTEM.RUNTIME_CORES",
+      "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT",
+      "LOGOS_SYSTEM.Runtime_Spine"
+    ],
+    "imports_used": [
+      "dataclasses",
+      "typing",
+      "time",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Signal",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Channel",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Signal_Broadcaster",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Propagator"
+    ]
+  },
+  "compile_status": "PASS",
+  "compile_command": "python -m py_compile Cognition/RGE_Cognition_Signal.py Cognition/RGE_Cognition_Channel.py Cognition/RGE_Signal_Broadcaster.py Field/RGE_Recursion_Field_Engine.py",
+  "validation": {
+    "py_compile": "PASS",
+    "import_test": "PASS",
+    "signal_emission_test": "PASS",
+    "broadcaster_test": "PASS",
+    "engine_signal_test": "PASS",
+    "smoke_test_exit_code": 0,
+    "smoke_test_run_date": "2026-03-07"
+  },
+  "design_decisions": [
+    "RGECognitionSignal is frozen — immutable once constructed, safe to pass across subscribers without defensive copying.",
+    "RGECognitionChannel delivers signals synchronously to subscribers in registration order; no async requirements in this stage.",
+    "RGESignalBroadcaster is a thin facade to decouple engine from channel implementation details.",
+    "source_node captured from location_map before propagator.propagate() executes so the signal reflects the pre-move state accurately.",
+    "broadcaster is strictly optional; absence causes silent no-op (no error, no logging gap).",
+    "No automatic propagation loops, no scoring, no resonance, no decay logic introduced."
+  ],
+  "python_compat": "3.9+",
+  "smoke_test_script": "tools/rge_stage21_24_smoke.py"
+}

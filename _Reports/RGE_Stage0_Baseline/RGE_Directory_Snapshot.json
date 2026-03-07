@@ -1,0 +1,503 @@
+{
+  "artifact": "RGE_Directory_Snapshot",
+  "stage": "Stage-0 Baseline Freeze",
+  "generated_utc": "2026-03-06T22:00:37.350378+00:00",
+  "rge_root": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine",
+  "summary": {
+    "total_directories": 11,
+    "total_files": 33,
+    "total_python_files": 30,
+    "total_size_bytes": 149695
+  },
+  "directories": [
+    {
+      "path": ".",
+      "mtime_iso": "2026-02-21T19:31:35.649639+00:00"
+    },
+    {
+      "path": "Contracts",
+      "mtime_iso": "2026-02-21T19:27:47.447634+00:00"
+    },
+    {
+      "path": "Control",
+      "mtime_iso": "2026-02-21T19:27:47.448634+00:00"
+    },
+    {
+      "path": "Controller",
+      "mtime_iso": "2026-02-26T15:29:07.615603+00:00"
+    },
+    {
+      "path": "Core",
+      "mtime_iso": "2026-02-21T19:27:30.928633+00:00"
+    },
+    {
+      "path": "DOCUMENTS",
+      "mtime_iso": "2026-02-21T16:28:57.879398+00:00"
+    },
+    {
+      "path": "Evaluation",
+      "mtime_iso": "2026-02-21T19:27:29.345633+00:00"
+    },
+    {
+      "path": "Events",
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00"
+    },
+    {
+      "path": "Integration",
+      "mtime_iso": "2026-02-21T20:44:53.294736+00:00"
+    },
+    {
+      "path": "Ontological_Field",
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00"
+    },
+    {
+      "path": "Tests",
+      "mtime_iso": "2026-02-20T18:35:22.657687+00:00"
+    }
+  ],
+  "python_files": [
+    {
+      "file": "__init__.py",
+      "directory": ".",
+      "size_bytes": 336,
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Contracts/RGE_Telemetry_Snapshot.py",
+      "directory": "Contracts",
+      "size_bytes": 1516,
+      "mtime_iso": "2026-02-21T17:36:29.287487+00:00",
+      "mtime_unix": 1771695389
+    },
+    {
+      "file": "Control/Hysteresis_Governor.py",
+      "directory": "Control",
+      "size_bytes": 2808,
+      "mtime_iso": "2026-02-21T17:36:29.287487+00:00",
+      "mtime_unix": 1771695389
+    },
+    {
+      "file": "Controller/Genesis_Selector.py",
+      "directory": "Controller",
+      "size_bytes": 2902,
+      "mtime_iso": "2026-02-15T17:41:04.330270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Controller/Mode_Controller.py",
+      "directory": "Controller",
+      "size_bytes": 831,
+      "mtime_iso": "2026-02-15T17:41:04.330270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Controller/RGE_Bootstrap.py",
+      "directory": "Controller",
+      "size_bytes": 12604,
+      "mtime_iso": "2026-02-26T16:13:19.104575+00:00",
+      "mtime_unix": 1772122399
+    },
+    {
+      "file": "Controller/RGE_Governance_Context.py",
+      "directory": "Controller",
+      "size_bytes": 624,
+      "mtime_iso": "2026-02-26T15:34:12.132600+00:00",
+      "mtime_unix": 1772120052
+    },
+    {
+      "file": "Controller/RGE_Override_Channel.py",
+      "directory": "Controller",
+      "size_bytes": 1002,
+      "mtime_iso": "2026-02-15T17:41:04.330270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Core/Task_Triad_Derivation.py",
+      "directory": "Core",
+      "size_bytes": 4489,
+      "mtime_iso": "2026-02-21T19:27:58.647634+00:00",
+      "mtime_unix": 1771702078
+    },
+    {
+      "file": "Core/Telemetry_Producer.py",
+      "directory": "Core",
+      "size_bytes": 3358,
+      "mtime_iso": "2026-02-21T19:27:58.647634+00:00",
+      "mtime_unix": 1771702078
+    },
+    {
+      "file": "Core/Telemetry_Snapshot.py",
+      "directory": "Core",
+      "size_bytes": 12252,
+      "mtime_iso": "2026-02-20T17:03:17.260409+00:00",
+      "mtime_unix": 1771606997
+    },
+    {
+      "file": "Core/Topology_State.py",
+      "directory": "Core",
+      "size_bytes": 1756,
+      "mtime_iso": "2026-02-15T17:41:04.330270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Core/Triad_Region_Classifier.py",
+      "directory": "Core",
+      "size_bytes": 2922,
+      "mtime_iso": "2026-02-20T18:22:07.079647+00:00",
+      "mtime_unix": 1771611727
+    },
+    {
+      "file": "Evaluation/Commutation_Balance_Score.py",
+      "directory": "Evaluation",
+      "size_bytes": 4621,
+      "mtime_iso": "2026-02-20T17:03:17.163409+00:00",
+      "mtime_unix": 1771606997
+    },
+    {
+      "file": "Evaluation/Commutation_Residual_Producer.py",
+      "directory": "Evaluation",
+      "size_bytes": 4018,
+      "mtime_iso": "2026-02-21T19:27:58.647634+00:00",
+      "mtime_unix": 1771702078
+    },
+    {
+      "file": "Evaluation/Composite_Aggregator_Registration_Diff.py",
+      "directory": "Evaluation",
+      "size_bytes": 2581,
+      "mtime_iso": "2026-02-20T18:22:07.874647+00:00",
+      "mtime_unix": 1771611727
+    },
+    {
+      "file": "Evaluation/Divergence_Metric.py",
+      "directory": "Evaluation",
+      "size_bytes": 4779,
+      "mtime_iso": "2026-02-20T17:03:17.163409+00:00",
+      "mtime_unix": 1771606997
+    },
+    {
+      "file": "Evaluation/Recursion_Coupling_Coherence_Score.py",
+      "directory": "Evaluation",
+      "size_bytes": 9943,
+      "mtime_iso": "2026-02-27T19:53:05.600961+00:00",
+      "mtime_unix": 1772221985
+    },
+    {
+      "file": "Evaluation/Scoring_Interface.py",
+      "directory": "Evaluation",
+      "size_bytes": 235,
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Evaluation/Stability_Scalar_Producer.py",
+      "directory": "Evaluation",
+      "size_bytes": 4414,
+      "mtime_iso": "2026-02-21T19:27:58.647634+00:00",
+      "mtime_unix": 1771702078
+    },
+    {
+      "file": "Evaluation/Triune_Fit_Score.py",
+      "directory": "Evaluation",
+      "size_bytes": 5832,
+      "mtime_iso": "2026-02-20T17:03:17.260409+00:00",
+      "mtime_unix": 1771606997
+    },
+    {
+      "file": "Events/Event_Emitter.py",
+      "directory": "Events",
+      "size_bytes": 232,
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Integration/Logos_Telemetry_Integration_Point.py",
+      "directory": "Integration",
+      "size_bytes": 6250,
+      "mtime_iso": "2026-02-21T19:27:58.647634+00:00",
+      "mtime_unix": 1771702078
+    },
+    {
+      "file": "Integration/RGE_Nexus_Adapter.py",
+      "directory": "Integration",
+      "size_bytes": 4676,
+      "mtime_iso": "2026-03-01T01:03:35.972281+00:00",
+      "mtime_unix": 1772327015
+    },
+    {
+      "file": "Ontological_Field/Ontological_Registry.py",
+      "directory": "Ontological_Field",
+      "size_bytes": 537,
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Ontological_Field/__init__.py",
+      "directory": "Ontological_Field",
+      "size_bytes": 0,
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Tests/test_recursion_coupling_score.py",
+      "directory": "Tests",
+      "size_bytes": 8349,
+      "mtime_iso": "2026-02-20T18:22:08.747647+00:00",
+      "mtime_unix": 1771611728
+    },
+    {
+      "file": "Tests/test_recursion_layer_telemetry.py",
+      "directory": "Tests",
+      "size_bytes": 7642,
+      "mtime_iso": "2026-02-20T18:22:08.747647+00:00",
+      "mtime_unix": 1771611728
+    },
+    {
+      "file": "Tests/test_rge_override_behavior.py",
+      "directory": "Tests",
+      "size_bytes": 2485,
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Tests/test_topology_validation.py",
+      "directory": "Tests",
+      "size_bytes": 784,
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00",
+      "mtime_unix": 1771177264
+    }
+  ],
+  "all_files": [
+    {
+      "file": "__init__.py",
+      "directory": ".",
+      "size_bytes": 336,
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Contracts/RGE_Telemetry_Snapshot.py",
+      "directory": "Contracts",
+      "size_bytes": 1516,
+      "mtime_iso": "2026-02-21T17:36:29.287487+00:00",
+      "mtime_unix": 1771695389
+    },
+    {
+      "file": "Control/Hysteresis_Governor.py",
+      "directory": "Control",
+      "size_bytes": 2808,
+      "mtime_iso": "2026-02-21T17:36:29.287487+00:00",
+      "mtime_unix": 1771695389
+    },
+    {
+      "file": "Controller/Genesis_Selector.py",
+      "directory": "Controller",
+      "size_bytes": 2902,
+      "mtime_iso": "2026-02-15T17:41:04.330270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Controller/Mode_Controller.py",
+      "directory": "Controller",
+      "size_bytes": 831,
+      "mtime_iso": "2026-02-15T17:41:04.330270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Controller/RGE_Bootstrap.py",
+      "directory": "Controller",
+      "size_bytes": 12604,
+      "mtime_iso": "2026-02-26T16:13:19.104575+00:00",
+      "mtime_unix": 1772122399
+    },
+    {
+      "file": "Controller/RGE_Governance_Context.py",
+      "directory": "Controller",
+      "size_bytes": 624,
+      "mtime_iso": "2026-02-26T15:34:12.132600+00:00",
+      "mtime_unix": 1772120052
+    },
+    {
+      "file": "Controller/RGE_Override_Channel.py",
+      "directory": "Controller",
+      "size_bytes": 1002,
+      "mtime_iso": "2026-02-15T17:41:04.330270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Core/Task_Triad_Derivation.py",
+      "directory": "Core",
+      "size_bytes": 4489,
+      "mtime_iso": "2026-02-21T19:27:58.647634+00:00",
+      "mtime_unix": 1771702078
+    },
+    {
+      "file": "Core/Telemetry_Producer.py",
+      "directory": "Core",
+      "size_bytes": 3358,
+      "mtime_iso": "2026-02-21T19:27:58.647634+00:00",
+      "mtime_unix": 1771702078
+    },
+    {
+      "file": "Core/Telemetry_Snapshot.py",
+      "directory": "Core",
+      "size_bytes": 12252,
+      "mtime_iso": "2026-02-20T17:03:17.260409+00:00",
+      "mtime_unix": 1771606997
+    },
+    {
+      "file": "Core/Topology_State.py",
+      "directory": "Core",
+      "size_bytes": 1756,
+      "mtime_iso": "2026-02-15T17:41:04.330270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Core/Triad_Region_Classifier.py",
+      "directory": "Core",
+      "size_bytes": 2922,
+      "mtime_iso": "2026-02-20T18:22:07.079647+00:00",
+      "mtime_unix": 1771611727
+    },
+    {
+      "file": "DOCUMENTS/Capability_Function_Spec.md",
+      "directory": "DOCUMENTS",
+      "size_bytes": 16634,
+      "mtime_iso": "2026-02-20T18:22:04.980647+00:00",
+      "mtime_unix": 1771611724
+    },
+    {
+      "file": "DOCUMENTS/Constraint_Taxonomy_Spec.md",
+      "directory": "DOCUMENTS",
+      "size_bytes": 15825,
+      "mtime_iso": "2026-02-20T18:22:04.982647+00:00",
+      "mtime_unix": 1771611724
+    },
+    {
+      "file": "DOCUMENTS/Triune_Capability_Table.json",
+      "directory": "DOCUMENTS",
+      "size_bytes": 2458,
+      "mtime_iso": "2026-02-20T18:22:07.079647+00:00",
+      "mtime_unix": 1771611727
+    },
+    {
+      "file": "Evaluation/Commutation_Balance_Score.py",
+      "directory": "Evaluation",
+      "size_bytes": 4621,
+      "mtime_iso": "2026-02-20T17:03:17.163409+00:00",
+      "mtime_unix": 1771606997
+    },
+    {
+      "file": "Evaluation/Commutation_Residual_Producer.py",
+      "directory": "Evaluation",
+      "size_bytes": 4018,
+      "mtime_iso": "2026-02-21T19:27:58.647634+00:00",
+      "mtime_unix": 1771702078
+    },
+    {
+      "file": "Evaluation/Composite_Aggregator_Registration_Diff.py",
+      "directory": "Evaluation",
+      "size_bytes": 2581,
+      "mtime_iso": "2026-02-20T18:22:07.874647+00:00",
+      "mtime_unix": 1771611727
+    },
+    {
+      "file": "Evaluation/Divergence_Metric.py",
+      "directory": "Evaluation",
+      "size_bytes": 4779,
+      "mtime_iso": "2026-02-20T17:03:17.163409+00:00",
+      "mtime_unix": 1771606997
+    },
+    {
+      "file": "Evaluation/Recursion_Coupling_Coherence_Score.py",
+      "directory": "Evaluation",
+      "size_bytes": 9943,
+      "mtime_iso": "2026-02-27T19:53:05.600961+00:00",
+      "mtime_unix": 1772221985
+    },
+    {
+      "file": "Evaluation/Scoring_Interface.py",
+      "directory": "Evaluation",
+      "size_bytes": 235,
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Evaluation/Stability_Scalar_Producer.py",
+      "directory": "Evaluation",
+      "size_bytes": 4414,
+      "mtime_iso": "2026-02-21T19:27:58.647634+00:00",
+      "mtime_unix": 1771702078
+    },
+    {
+      "file": "Evaluation/Triune_Fit_Score.py",
+      "directory": "Evaluation",
+      "size_bytes": 5832,
+      "mtime_iso": "2026-02-20T17:03:17.260409+00:00",
+      "mtime_unix": 1771606997
+    },
+    {
+      "file": "Events/Event_Emitter.py",
+      "directory": "Events",
+      "size_bytes": 232,
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Integration/Logos_Telemetry_Integration_Point.py",
+      "directory": "Integration",
+      "size_bytes": 6250,
+      "mtime_iso": "2026-02-21T19:27:58.647634+00:00",
+      "mtime_unix": 1771702078
+    },
+    {
+      "file": "Integration/RGE_Nexus_Adapter.py",
+      "directory": "Integration",
+      "size_bytes": 4676,
+      "mtime_iso": "2026-03-01T01:03:35.972281+00:00",
+      "mtime_unix": 1772327015
+    },
+    {
+      "file": "Ontological_Field/Ontological_Registry.py",
+      "directory": "Ontological_Field",
+      "size_bytes": 537,
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Ontological_Field/__init__.py",
+      "directory": "Ontological_Field",
+      "size_bytes": 0,
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Tests/test_recursion_coupling_score.py",
+      "directory": "Tests",
+      "size_bytes": 8349,
+      "mtime_iso": "2026-02-20T18:22:08.747647+00:00",
+      "mtime_unix": 1771611728
+    },
+    {
+      "file": "Tests/test_recursion_layer_telemetry.py",
+      "directory": "Tests",
+      "size_bytes": 7642,
+      "mtime_iso": "2026-02-20T18:22:08.747647+00:00",
+      "mtime_unix": 1771611728
+    },
+    {
+      "file": "Tests/test_rge_override_behavior.py",
+      "directory": "Tests",
+      "size_bytes": 2485,
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00",
+      "mtime_unix": 1771177264
+    },
+    {
+      "file": "Tests/test_topology_validation.py",
+      "directory": "Tests",
+      "size_bytes": 784,
+      "mtime_iso": "2026-02-15T17:41:04.331270+00:00",
+      "mtime_unix": 1771177264
+    }
+  ]
+}

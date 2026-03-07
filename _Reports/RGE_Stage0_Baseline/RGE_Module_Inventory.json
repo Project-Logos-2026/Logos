@@ -1,0 +1,688 @@
+{
+  "artifact": "RGE_Module_Inventory",
+  "stage": "Stage-0 Baseline Freeze",
+  "generated_utc": "2026-03-06T22:25:43.675625+00:00",
+  "rge_root": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine",
+  "summary": {
+    "total_modules": 30,
+    "by_directory_group": {
+      "ROOT": 1,
+      "Contracts": 1,
+      "Control": 1,
+      "Controller": 5,
+      "Core": 5,
+      "Evaluation": 8,
+      "Events": 1,
+      "Integration": 2,
+      "Ontological_Field": 2,
+      "Tests": 4
+    }
+  },
+  "modules": [
+    {
+      "module_name": "__init__",
+      "relative_path": "__init__.py",
+      "directory_group": "ROOT",
+      "lines_of_code": 9,
+      "import_count": 5,
+      "imports": [
+        {
+          "line": 5,
+          "statement": "from .Core.Topology_State import TopologyState"
+        },
+        {
+          "line": 6,
+          "statement": "from .Controller.Genesis_Selector import GenesisSelector"
+        },
+        {
+          "line": 7,
+          "statement": "from .Evaluation.Scoring_Interface import ScoringInterface"
+        },
+        {
+          "line": 8,
+          "statement": "from .Ontological_Field.Ontological_Registry import OntologicalRegistry"
+        },
+        {
+          "line": 9,
+          "statement": "from .Events.Event_Emitter import EventEmitter"
+        }
+      ]
+    },
+    {
+      "module_name": "RGE_Telemetry_Snapshot",
+      "relative_path": "Contracts/RGE_Telemetry_Snapshot.py",
+      "directory_group": "Contracts",
+      "lines_of_code": 36,
+      "import_count": 2,
+      "imports": [
+        {
+          "line": 7,
+          "statement": "from dataclasses import dataclass"
+        },
+        {
+          "line": 8,
+          "statement": "from typing import Dict, Tuple"
+        }
+      ]
+    },
+    {
+      "module_name": "Hysteresis_Governor",
+      "relative_path": "Control/Hysteresis_Governor.py",
+      "directory_group": "Control",
+      "lines_of_code": 73,
+      "import_count": 1,
+      "imports": [
+        {
+          "line": 9,
+          "statement": "from typing import Optional"
+        }
+      ]
+    },
+    {
+      "module_name": "Genesis_Selector",
+      "relative_path": "Controller/Genesis_Selector.py",
+      "directory_group": "Controller",
+      "lines_of_code": 84,
+      "import_count": 4,
+      "imports": [
+        {
+          "line": 7,
+          "statement": "from typing import Any, Dict"
+        },
+        {
+          "line": 9,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.Mode_Controller import ("
+        },
+        {
+          "line": 12,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Override_Channel import ("
+        },
+        {
+          "line": 16,
+          "statement": "from ..Core.Topology_State import TopologyState"
+        }
+      ]
+    },
+    {
+      "module_name": "Mode_Controller",
+      "relative_path": "Controller/Mode_Controller.py",
+      "directory_group": "Controller",
+      "lines_of_code": 33,
+      "import_count": 1,
+      "imports": [
+        {
+          "line": 7,
+          "statement": "from enum import Enum"
+        }
+      ]
+    },
+    {
+      "module_name": "RGE_Bootstrap",
+      "relative_path": "Controller/RGE_Bootstrap.py",
+      "directory_group": "Controller",
+      "lines_of_code": 351,
+      "import_count": 22,
+      "imports": [
+        {
+          "line": 35,
+          "statement": "from typing import Any, Dict, List, Optional"
+        },
+        {
+          "line": 37,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot import ("
+        },
+        {
+          "line": 41,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State import ("
+        },
+        {
+          "line": 44,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Composite_Aggregator import ("
+        },
+        {
+          "line": 47,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Stability_Metric import ("
+        },
+        {
+          "line": 50,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Triune_Fit_Score import ("
+        },
+        {
+          "line": 53,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Balance_Score import ("
+        },
+        {
+          "line": 56,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Divergence_Metric import ("
+        },
+        {
+          "line": 59,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Recursion_Coupling_Coherence_Score import ("
+        },
+        {
+          "line": 62,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Control.Hysteresis_Governor import ("
+        },
+        {
+          "line": 65,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.Genesis_Selector import ("
+        },
+        {
+          "line": 68,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.Mode_Controller import ("
+        },
+        {
+          "line": 72,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Override_Channel import ("
+        },
+        {
+          "line": 75,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Events.Event_Emitter import ("
+        },
+        {
+          "line": 78,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Task_Triad_Derivation import ("
+        },
+        {
+          "line": 81,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Commutation_Residual_Producer import ("
+        },
+        {
+          "line": 84,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Stability_Scalar_Producer import ("
+        },
+        {
+          "line": 87,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Telemetry_Producer import ("
+        },
+        {
+          "line": 93,
+          "statement": "from .RGE_Governance_Context import RGEGovernanceContext"
+        },
+        {
+          "line": 94,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library import Epistemic_Library_Router"
+        },
+        {
+          "line": 95,
+          "statement": "import datetime"
+        },
+        {
+          "line": 96,
+          "statement": "import json"
+        }
+      ]
+    },
+    {
+      "module_name": "RGE_Governance_Context",
+      "relative_path": "Controller/RGE_Governance_Context.py",
+      "directory_group": "Controller",
+      "lines_of_code": 19,
+      "import_count": 1,
+      "imports": [
+        {
+          "line": 4,
+          "statement": "from typing import Optional"
+        }
+      ]
+    },
+    {
+      "module_name": "RGE_Override_Channel",
+      "relative_path": "Controller/RGE_Override_Channel.py",
+      "directory_group": "Controller",
+      "lines_of_code": 33,
+      "import_count": 0,
+      "imports": []
+    },
+    {
+      "module_name": "Task_Triad_Derivation",
+      "relative_path": "Core/Task_Triad_Derivation.py",
+      "directory_group": "Core",
+      "lines_of_code": 171,
+      "import_count": 3,
+      "imports": [
+        {
+          "line": 49,
+          "statement": "from dataclasses import dataclass"
+        },
+        {
+          "line": 50,
+          "statement": "from typing import FrozenSet, List, Tuple"
+        },
+        {
+          "line": 52,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot import ("
+        }
+      ]
+    },
+    {
+      "module_name": "Telemetry_Producer",
+      "relative_path": "Core/Telemetry_Producer.py",
+      "directory_group": "Core",
+      "lines_of_code": 99,
+      "import_count": 5,
+      "imports": [
+        {
+          "line": 48,
+          "statement": "from typing import List, Optional"
+        },
+        {
+          "line": 50,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot import ("
+        },
+        {
+          "line": 57,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Task_Triad_Derivation import ("
+        },
+        {
+          "line": 63,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Residual_Producer import ("
+        },
+        {
+          "line": 68,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Stability_Scalar_Producer import ("
+        }
+      ]
+    },
+    {
+      "module_name": "Telemetry_Snapshot",
+      "relative_path": "Core/Telemetry_Snapshot.py",
+      "directory_group": "Core",
+      "lines_of_code": 344,
+      "import_count": 3,
+      "imports": [
+        {
+          "line": 15,
+          "statement": "import math"
+        },
+        {
+          "line": 16,
+          "statement": "from dataclasses import dataclass, field"
+        },
+        {
+          "line": 17,
+          "statement": "from typing import Any, Dict, FrozenSet, List, Optional, Tuple"
+        }
+      ]
+    },
+    {
+      "module_name": "Topology_State",
+      "relative_path": "Core/Topology_State.py",
+      "directory_group": "Core",
+      "lines_of_code": 54,
+      "import_count": 3,
+      "imports": [
+        {
+          "line": 7,
+          "statement": "from dataclasses import dataclass"
+        },
+        {
+          "line": 8,
+          "statement": "import itertools"
+        },
+        {
+          "line": 9,
+          "statement": "from typing import Dict, List"
+        }
+      ]
+    },
+    {
+      "module_name": "Triad_Region_Classifier",
+      "relative_path": "Core/Triad_Region_Classifier.py",
+      "directory_group": "Core",
+      "lines_of_code": 107,
+      "import_count": 1,
+      "imports": [
+        {
+          "line": 23,
+          "statement": "from typing import Tuple"
+        }
+      ]
+    },
+    {
+      "module_name": "Commutation_Balance_Score",
+      "relative_path": "Evaluation/Commutation_Balance_Score.py",
+      "directory_group": "Evaluation",
+      "lines_of_code": 141,
+      "import_count": 3,
+      "imports": [
+        {
+          "line": 22,
+          "statement": "from typing import Any, Dict, List, Optional"
+        },
+        {
+          "line": 24,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Scoring_Interface import ("
+        },
+        {
+          "line": 34,
+          "statement": "from Logos telemetry. Weights them by topology-derived priority"
+        }
+      ]
+    },
+    {
+      "module_name": "Commutation_Residual_Producer",
+      "relative_path": "Evaluation/Commutation_Residual_Producer.py",
+      "directory_group": "Evaluation",
+      "lines_of_code": 122,
+      "import_count": 3,
+      "imports": [
+        {
+          "line": 48,
+          "statement": "from dataclasses import dataclass"
+        },
+        {
+          "line": 49,
+          "statement": "from typing import Dict, List, Optional"
+        },
+        {
+          "line": 51,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot import ("
+        }
+      ]
+    },
+    {
+      "module_name": "Composite_Aggregator_Registration_Diff",
+      "relative_path": "Evaluation/Composite_Aggregator_Registration_Diff.py",
+      "directory_group": "Evaluation",
+      "lines_of_code": 66,
+      "import_count": 0,
+      "imports": []
+    },
+    {
+      "module_name": "Divergence_Metric",
+      "relative_path": "Evaluation/Divergence_Metric.py",
+      "directory_group": "Evaluation",
+      "lines_of_code": 145,
+      "import_count": 3,
+      "imports": [
+        {
+          "line": 24,
+          "statement": "from typing import Any, Dict, List, Optional"
+        },
+        {
+          "line": 26,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Scoring_Interface import ("
+        },
+        {
+          "line": 36,
+          "statement": "from Logos telemetry. Penalizes configurations that rely on"
+        }
+      ]
+    },
+    {
+      "module_name": "Recursion_Coupling_Coherence_Score",
+      "relative_path": "Evaluation/Recursion_Coupling_Coherence_Score.py",
+      "directory_group": "Evaluation",
+      "lines_of_code": 311,
+      "import_count": 5,
+      "imports": [
+        {
+          "line": 45,
+          "statement": "import math"
+        },
+        {
+          "line": 46,
+          "statement": "from typing import Any, Dict, List, Optional, Tuple"
+        },
+        {
+          "line": 48,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Scoring_Interface import ("
+        },
+        {
+          "line": 51,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot import ("
+        },
+        {
+          "line": 147,
+          "statement": "from the same intermediate variables used in scoring. No"
+        }
+      ]
+    },
+    {
+      "module_name": "Scoring_Interface",
+      "relative_path": "Evaluation/Scoring_Interface.py",
+      "directory_group": "Evaluation",
+      "lines_of_code": 8,
+      "import_count": 0,
+      "imports": []
+    },
+    {
+      "module_name": "Stability_Scalar_Producer",
+      "relative_path": "Evaluation/Stability_Scalar_Producer.py",
+      "directory_group": "Evaluation",
+      "lines_of_code": 130,
+      "import_count": 3,
+      "imports": [
+        {
+          "line": 48,
+          "statement": "from dataclasses import dataclass"
+        },
+        {
+          "line": 49,
+          "statement": "from typing import Dict, List, Optional"
+        },
+        {
+          "line": 51,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot import ("
+        }
+      ]
+    },
+    {
+      "module_name": "Triune_Fit_Score",
+      "relative_path": "Evaluation/Triune_Fit_Score.py",
+      "directory_group": "Evaluation",
+      "lines_of_code": 172,
+      "import_count": 4,
+      "imports": [
+        {
+          "line": 19,
+          "statement": "import json"
+        },
+        {
+          "line": 20,
+          "statement": "from typing import Any, Dict, List, Optional, Tuple"
+        },
+        {
+          "line": 22,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Scoring_Interface import ("
+        },
+        {
+          "line": 25,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Triad_Region_Classifier import ("
+        }
+      ]
+    },
+    {
+      "module_name": "Event_Emitter",
+      "relative_path": "Events/Event_Emitter.py",
+      "directory_group": "Events",
+      "lines_of_code": 9,
+      "import_count": 0,
+      "imports": []
+    },
+    {
+      "module_name": "Logos_Telemetry_Integration_Point",
+      "relative_path": "Integration/Logos_Telemetry_Integration_Point.py",
+      "directory_group": "Integration",
+      "lines_of_code": 176,
+      "import_count": 10,
+      "imports": [
+        {
+          "line": 57,
+          "statement": "from typing import Any, Dict, List, Optional"
+        },
+        {
+          "line": 59,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot import ("
+        },
+        {
+          "line": 64,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Triune_Fit_Score import ("
+        },
+        {
+          "line": 68,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Balance_Score import ("
+        },
+        {
+          "line": 72,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Divergence_Metric import ("
+        },
+        {
+          "line": 76,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Recursion_Coupling_Coherence_Score import ("
+        },
+        {
+          "line": 80,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Task_Triad_Derivation import ("
+        },
+        {
+          "line": 84,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Residual_Producer import ("
+        },
+        {
+          "line": 88,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Stability_Scalar_Producer import ("
+        },
+        {
+          "line": 92,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Producer import ("
+        }
+      ]
+    },
+    {
+      "module_name": "RGE_Nexus_Adapter",
+      "relative_path": "Integration/RGE_Nexus_Adapter.py",
+      "directory_group": "Integration",
+      "lines_of_code": 135,
+      "import_count": 4,
+      "imports": [
+        {
+          "line": 35,
+          "statement": "import time"
+        },
+        {
+          "line": 36,
+          "statement": "from typing import Any, Dict, List, Optional"
+        },
+        {
+          "line": 38,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap import ("
+        },
+        {
+          "line": 41,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus import ("
+        }
+      ]
+    },
+    {
+      "module_name": "Ontological_Registry",
+      "relative_path": "Ontological_Field/Ontological_Registry.py",
+      "directory_group": "Ontological_Field",
+      "lines_of_code": 20,
+      "import_count": 1,
+      "imports": [
+        {
+          "line": 6,
+          "statement": "import json"
+        }
+      ]
+    },
+    {
+      "module_name": "__init__",
+      "relative_path": "Ontological_Field/__init__.py",
+      "directory_group": "Ontological_Field",
+      "lines_of_code": 0,
+      "import_count": 0,
+      "imports": []
+    },
+    {
+      "module_name": "test_recursion_coupling_score",
+      "relative_path": "Tests/test_recursion_coupling_score.py",
+      "directory_group": "Tests",
+      "lines_of_code": 226,
+      "import_count": 4,
+      "imports": [
+        {
+          "line": 16,
+          "statement": "import math"
+        },
+        {
+          "line": 17,
+          "statement": "import unittest"
+        },
+        {
+          "line": 19,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot import ("
+        },
+        {
+          "line": 25,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Recursion_Coupling_Coherence_Score import ("
+        }
+      ]
+    },
+    {
+      "module_name": "test_recursion_layer_telemetry",
+      "relative_path": "Tests/test_recursion_layer_telemetry.py",
+      "directory_group": "Tests",
+      "lines_of_code": 225,
+      "import_count": 3,
+      "imports": [
+        {
+          "line": 20,
+          "statement": "import math"
+        },
+        {
+          "line": 21,
+          "statement": "import unittest"
+        },
+        {
+          "line": 23,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot import ("
+        }
+      ]
+    },
+    {
+      "module_name": "test_rge_override_behavior",
+      "relative_path": "Tests/test_rge_override_behavior.py",
+      "directory_group": "Tests",
+      "lines_of_code": 89,
+      "import_count": 3,
+      "imports": [
+        {
+          "line": 6,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Override_Channel import ("
+        },
+        {
+          "line": 9,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.Genesis_Selector import ("
+        },
+        {
+          "line": 12,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State import ("
+        }
+      ]
+    },
+    {
+      "module_name": "test_topology_validation",
+      "relative_path": "Tests/test_topology_validation.py",
+      "directory_group": "Tests",
+      "lines_of_code": 33,
+      "import_count": 3,
+      "imports": [
+        {
+          "line": 7,
+          "statement": "import sys"
+        },
+        {
+          "line": 8,
+          "statement": "from pathlib import Path"
+        },
+        {
+          "line": 10,
+          "statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State import ("
+        }
+      ]
+    }
+  ]
+}

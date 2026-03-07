@@ -1,0 +1,41 @@
+{
+  "artifact": "RGE_Obsolete_Module_Report",
+  "stage": "Stage-0 Baseline Freeze",
+  "generated_utc": "2026-03-06T22:28:40.066195+00:00",
+  "spec_reference": "RGE_Design_Spec.md Section 2.1; RGE_Implementation_Guide.md Section 3 Stage-0",
+  "summary": {
+    "obsolete_targets_checked": 1,
+    "confirmed_present_obsolete": 1,
+    "already_absent": 0,
+    "deprecated_modules_present": 1,
+    "stage0_blocking_deletions_required": 1
+  },
+  "obsolete_modules": [
+    {
+      "module": "RGE_Telemetry_Snapshot.py",
+      "expected_path": "Contracts/RGE_Telemetry_Snapshot.py",
+      "full_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Contracts/RGE_Telemetry_Snapshot.py",
+      "spec_reference": "RGE_Design_Spec.md Section 2.1; RGE_Implementation_Guide.md Section 2",
+      "reason": "V1 contract artifact. Superseded by Core/Telemetry_Snapshot.py (V2). CIF boundary violation if retained \u2014 exposes stale type surface. Spec disposition: OBSOLETE \u2014 delete in Stage 0.",
+      "required_action": "DELETE in Stage-0 execution",
+      "blocking": true,
+      "present_in_repo": true,
+      "detection_result": "CONFIRMED_PRESENT",
+      "size_bytes": 1516,
+      "mtime_iso": "2026-02-21T17:36:29.287487+00:00"
+    }
+  ],
+  "deprecated_modules": [
+    {
+      "module": "RGE_Nexus_Adapter.py",
+      "path": "Integration/RGE_Nexus_Adapter.py",
+      "disposition": "DEPRECATED",
+      "spec_reference": "RGE_Design_Spec.md Section 2.1, Section 8.2",
+      "reason": "Replaced by RGE_Bridge_Nexus.py (to be created in a later stage). Must NOT be deleted in Stage-0. Will be retained with DEPRECATED marker until Stage completion.",
+      "action": "MARK OBSOLETE header via governance artifact in Stage-1; do not delete in Stage-0.",
+      "present_in_repo": true,
+      "size_bytes": 4676,
+      "mtime_iso": "2026-03-01T01:03:35.972281+00:00"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "artifact": "RGE_CIF_Compliance_Preflight",
+  "stage": "Stage-0 Baseline Freeze",
+  "generated_utc": "2026-03-06T22:40:10.475312+00:00",
+  "rge_root": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine",
+  "cif_blueprint_reference": "BLUEPRINTS/Canonical_Import_Facade/Canonical_Import_Facade_Blueprint.md",
+  "forbidden_prefix_registry": [
+    "LOGOS_SYSTEM.RUNTIME_CORES",
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT",
+    "LOGOS_SYSTEM.Runtime_Spine",
+    "LOGOS_SYSTEM.STARTUP"
+  ],
+  "summary": {
+    "total_live_violations": 6,
+    "by_severity": {
+      "HIGH": 6
+    },
+    "modules_with_violations": 2,
+    "confirmed_in_violation_db": 6,
+    "new_violations_not_in_db": 0,
+    "db_violations_no_longer_live": 0,
+    "violation_db_rge_entries": 6,
+    "violation_db_source": "/workspaces/Logos/BLUEPRINTS/Canonical_Import_Facade/Deep_Import_Violations.json",
+    "violation_db_generated_utc": "2026-03-05T12:17:08Z",
+    "overall_compliance_status": "NON_COMPLIANT"
+  },
+  "live_violations": [
+    {
+      "file": "Controller/RGE_Bootstrap.py",
+      "file_full_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+      "line": 78,
+      "import": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Task_Triad_Derivation import (",
+      "import_path": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Task_Triad_Derivation",
+      "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES",
+      "severity": "HIGH"
+    },
+    {
+      "file": "Controller/RGE_Bootstrap.py",
+      "file_full_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+      "line": 81,
+      "import": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Commutation_Residual_Producer import (",
+      "import_path": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Commutation_Residual_Producer",
+      "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES",
+      "severity": "HIGH"
+    },
+    {
+      "file": "Controller/RGE_Bootstrap.py",
+      "file_full_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+      "line": 84,
+      "import": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Stability_Scalar_Producer import (",
+      "import_path": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Stability_Scalar_Producer",
+      "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES",
+      "severity": "HIGH"
+    },
+    {
+      "file": "Controller/RGE_Bootstrap.py",
+      "file_full_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+      "line": 87,
+      "import": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Telemetry_Producer import (",
+      "import_path": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Telemetry_Producer",
+      "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES",
+      "severity": "HIGH"
+    },
+    {
+      "file": "Controller/RGE_Bootstrap.py",
+      "file_full_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+      "line": 94,
+      "import": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library import Epistemic_Library_Router",
+      "import_path": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library",
+      "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES",
+      "severity": "HIGH"
+    },
+    {
+      "file": "Integration/RGE_Nexus_Adapter.py",
+      "file_full_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Integration/RGE_Nexus_Adapter.py",
+      "line": 41,
+      "import": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus import (",
+      "import_path": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus",
+      "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES",
+      "severity": "HIGH"
+    }
+  ],
+  "reconciliation": {
+    "confirmed_violations": [
+      {
+        "file": "Controller/RGE_Bootstrap.py",
+        "file_full_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+        "line": 78,
+        "import": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Task_Triad_Derivation import (",
+        "import_path": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Task_Triad_Derivation",
+        "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES",
+        "severity": "HIGH"
+      },
+      {
+        "file": "Controller/RGE_Bootstrap.py",
+        "file_full_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+        "line": 81,
+        "import": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Commutation_Residual_Producer import (",
+        "import_path": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Commutation_Residual_Producer",
+        "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES",
+        "severity": "HIGH"
+      },
+      {
+        "file": "Controller/RGE_Bootstrap.py",
+        "file_full_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+        "line": 84,
+        "import": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Stability_Scalar_Producer import (",
+        "import_path": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Stability_Scalar_Producer",
+        "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES",
+        "severity": "HIGH"
+      },
+      {
+        "file": "Controller/RGE_Bootstrap.py",
+        "file_full_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+        "line": 87,
+        "import": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Telemetry_Producer import (",
+        "import_path": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Telemetry_Producer",
+        "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES",
+        "severity": "HIGH"
+      },
+      {
+        "file": "Controller/RGE_Bootstrap.py",
+        "file_full_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+        "line": 94,
+        "import": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library import Epistemic_Library_Router",
+        "import_path": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library",
+        "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES",
+        "severity": "HIGH"
+      },
+      {
+        "file": "Integration/RGE_Nexus_Adapter.py",
+        "file_full_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Integration/RGE_Nexus_Adapter.py",
+        "line": 41,
+        "import": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus import (",
+        "import_path": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus",
+        "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES",
+        "severity": "HIGH"
+      }
+    ],
+    "new_violations_since_db": [],
+    "db_violations_resolved_since_scan": [],
+    "violation_db_rge_entries": [
+      {
+        "file": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+        "line": 78,
+        "content": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Task_Triad_Derivation import (",
+        "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES"
+      },
+      {
+        "file": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+        "line": 81,
+        "content": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Commutation_Residual_Producer import (",
+        "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES"
+      },
+      {
+        "file": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+        "line": 84,
+        "content": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Stability_Scalar_Producer import (",
+        "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES"
+      },
+      {
+        "file": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+        "line": 87,
+        "content": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Telemetry_Producer import (",
+        "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES"
+      },
+      {
+        "file": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+        "line": 94,
+        "content": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library import Epistemic_Library_Router",
+        "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES"
+      },
+      {
+        "file": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Integration/RGE_Nexus_Adapter.py",
+        "line": 41,
+        "content": "from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus import (",
+        "forbidden_prefix": "LOGOS_SYSTEM.RUNTIME_CORES"
+      }
+    ]
+  }
+}

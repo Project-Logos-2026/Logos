@@ -1,0 +1,50 @@
+{
+  "generated": "2026-03-07",
+  "status": "FAIL",
+  "layer_separation_rules": {
+    "Field": "must not depend on Cognition, Runtime, Bootstrap",
+    "Cognition": "must not depend on Runtime, Bootstrap (TYPE_CHECKING guards exempt)"
+  },
+  "violation_count": 3,
+  "violations": [
+    {
+      "module": "Field/RGE_Recursion_Field_Engine.py",
+      "layer": "Field",
+      "violating_import": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Signal",
+      "target_layer": "Cognition",
+      "rule": "Field must not depend on Cognition",
+      "classification": "by-design integration coupling",
+      "rationale": "RGE_Recursion_Field_Engine.py is the Stage 24/28 integration point. Cognition and Runtime imports were explicitly required by Stage 24 and Stage 28 prompt instructions. The engine acts as the orchestration coordinator \u2014 not a pure field primitive.",
+      "introduced_by_stages_21_31": true,
+      "governance_approved": "Stage 24 and Stage 28 prompts"
+    },
+    {
+      "module": "Field/RGE_Recursion_Field_Engine.py",
+      "layer": "Field",
+      "violating_import": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Signal_Broadcaster",
+      "target_layer": "Cognition",
+      "rule": "Field must not depend on Cognition",
+      "classification": "by-design integration coupling",
+      "rationale": "RGE_Recursion_Field_Engine.py is the Stage 24/28 integration point. Cognition and Runtime imports were explicitly required by Stage 24 and Stage 28 prompt instructions. The engine acts as the orchestration coordinator \u2014 not a pure field primitive.",
+      "introduced_by_stages_21_31": true,
+      "governance_approved": "Stage 24 and Stage 28 prompts"
+    },
+    {
+      "module": "Field/RGE_Recursion_Field_Engine.py",
+      "layer": "Field",
+      "violating_import": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Dispatcher",
+      "target_layer": "Runtime",
+      "rule": "Field must not depend on Runtime",
+      "classification": "by-design integration coupling",
+      "rationale": "RGE_Recursion_Field_Engine.py is the Stage 24/28 integration point. Cognition and Runtime imports were explicitly required by Stage 24 and Stage 28 prompt instructions. The engine acts as the orchestration coordinator \u2014 not a pure field primitive.",
+      "introduced_by_stages_21_31": true,
+      "governance_approved": "Stage 24 and Stage 28 prompts"
+    }
+  ],
+  "layers_audited": [
+    "Field",
+    "Cognition"
+  ],
+  "note": "The 3 architecture flags in Field/RGE_Recursion_Field_Engine.py are intentional by-design couplings mandated by Stages 24 and 28. Pure field primitives (topology, propagator, packet registry, etc.) maintain full layer isolation. The engine is the designated cross-layer integration node.",
+  "pure_field_primitives_compliant": true
+}

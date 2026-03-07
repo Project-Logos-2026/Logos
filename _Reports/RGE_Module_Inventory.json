@@ -1,0 +1,1303 @@
+{
+  "generated": "2026-03-07",
+  "rge_root": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine",
+  "total_modules": 65,
+  "total_classes": 82,
+  "total_top_level_functions": 27,
+  "total_lines_of_code": 4772,
+  "modules": [
+    {
+      "module_path": "Bootstrap/RGE_Activation_Manager.py",
+      "module_type": "Bootstrap",
+      "lines_of_code": 52,
+      "classes_defined": [
+        "RGEActivationManager"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Bootstrap.RGE_Bridge_Nexus",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Bootstrap.RGE_Runtime_Bootstrap"
+        ],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Bootstrap/RGE_Bridge_Nexus.py",
+      "module_type": "Bootstrap",
+      "lines_of_code": 43,
+      "classes_defined": [
+        "RGEBridgeNexus"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Channel",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Dispatcher"
+        ],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Bootstrap/RGE_Runtime_Bootstrap.py",
+      "module_type": "Bootstrap",
+      "lines_of_code": 47,
+      "classes_defined": [
+        "RGERuntimeBootstrap"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Bootstrap.RGE_Bridge_Nexus",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Registry"
+        ],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Bootstrap/__init__.py",
+      "module_type": "Bootstrap",
+      "lines_of_code": 2,
+      "classes_defined": [],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Cognition/RGE_Cognition_Channel.py",
+      "module_type": "Cognition",
+      "lines_of_code": 54,
+      "classes_defined": [
+        "RGECognitionChannel"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Signal"
+        ],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Cognition/RGE_Cognition_Signal.py",
+      "module_type": "Cognition",
+      "lines_of_code": 18,
+      "classes_defined": [
+        "RGECognitionSignal"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "dataclasses"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Cognition/RGE_Signal_Broadcaster.py",
+      "module_type": "Cognition",
+      "lines_of_code": 23,
+      "classes_defined": [
+        "RGESignalBroadcaster"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Channel",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Signal"
+        ],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Cognition/__init__.py",
+      "module_type": "Cognition",
+      "lines_of_code": 2,
+      "classes_defined": [],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Contracts/RGE_Telemetry_Snapshot_V2.py",
+      "module_type": "Contracts",
+      "lines_of_code": 57,
+      "classes_defined": [
+        "RGETelemetrySnapshotV2"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "dataclasses",
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Control/Hysteresis_Governor.py",
+      "module_type": "Control",
+      "lines_of_code": 74,
+      "classes_defined": [
+        "Hysteresis_Governor"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Controller/Genesis_Selector.py",
+      "module_type": "Controller",
+      "lines_of_code": 85,
+      "classes_defined": [
+        "GenesisSelector"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.Mode_Controller",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Override_Channel"
+        ],
+        "external": [
+          "typing",
+          "Core.Topology_State"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Controller/Mode_Controller.py",
+      "module_type": "Controller",
+      "lines_of_code": 34,
+      "classes_defined": [
+        "RuntimeMode",
+        "ModeController"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "enum"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Controller/RGE_Bootstrap.py",
+      "module_type": "Controller",
+      "lines_of_code": 352,
+      "classes_defined": [
+        "RGERuntime"
+      ],
+      "functions_defined": [
+        "build_rge"
+      ],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Composite_Aggregator",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Stability_Metric",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Triune_Fit_Score",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Balance_Score",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Divergence_Metric",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Recursion_Coupling_Coherence_Score",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Control.Hysteresis_Governor",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.Genesis_Selector",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.Mode_Controller",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Override_Channel",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Events.Event_Emitter"
+        ],
+        "external": [
+          "typing",
+          "RGE_Governance_Context",
+          "datetime",
+          "json"
+        ],
+        "type_checking_only": [],
+        "forbidden": [
+          "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Task_Triad_Derivation",
+          "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Commutation_Residual_Producer",
+          "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Stability_Scalar_Producer",
+          "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Telemetry_Producer",
+          "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library"
+        ]
+      }
+    },
+    {
+      "module_path": "Controller/RGE_Governance_Context.py",
+      "module_type": "Controller",
+      "lines_of_code": 20,
+      "classes_defined": [
+        "RGEGovernanceContext"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Controller/RGE_Override_Channel.py",
+      "module_type": "Controller",
+      "lines_of_code": 34,
+      "classes_defined": [
+        "RGEOverrideChannel"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Core/Task_Triad_Derivation.py",
+      "module_type": "Core",
+      "lines_of_code": 172,
+      "classes_defined": [
+        "Constraint",
+        "TriadDerivationResult"
+      ],
+      "functions_defined": [
+        "_effective_weight",
+        "_classify_single",
+        "derive_triad"
+      ],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot"
+        ],
+        "external": [
+          "dataclasses",
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Core/Telemetry_Producer.py",
+      "module_type": "Core",
+      "lines_of_code": 100,
+      "classes_defined": [],
+      "functions_defined": [
+        "assemble_telemetry"
+      ],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Task_Triad_Derivation",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Residual_Producer",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Stability_Scalar_Producer"
+        ],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Core/Telemetry_Snapshot.py",
+      "module_type": "Core",
+      "lines_of_code": 345,
+      "classes_defined": [
+        "Triad",
+        "RawCounts",
+        "ProtocolResiduals",
+        "ProtocolStability",
+        "RecursionLayerTelemetry",
+        "TelemetrySnapshot"
+      ],
+      "functions_defined": [
+        "_validate_layer_keys",
+        "_validate_finite_nonneg",
+        "_generate_pair_key",
+        "_all_unordered_pairs"
+      ],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "math",
+          "dataclasses",
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Core/Topology_State.py",
+      "module_type": "Core",
+      "lines_of_code": 55,
+      "classes_defined": [
+        "TopologyState"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "dataclasses",
+          "itertools",
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Core/Triad_Region_Classifier.py",
+      "module_type": "Core",
+      "lines_of_code": 108,
+      "classes_defined": [],
+      "functions_defined": [
+        "classify_region",
+        "_find_max_axis",
+        "_find_min_axis",
+        "classify_from_triad"
+      ],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Evaluation/Commutation_Balance_Score.py",
+      "module_type": "Evaluation",
+      "lines_of_code": 142,
+      "classes_defined": [
+        "CommutationBalanceScore"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Scoring_Interface"
+        ],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Evaluation/Commutation_Residual_Producer.py",
+      "module_type": "Evaluation",
+      "lines_of_code": 123,
+      "classes_defined": [
+        "ProtocolCommutationResult",
+        "MeshCommutationOutput"
+      ],
+      "functions_defined": [
+        "produce_residuals"
+      ],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot"
+        ],
+        "external": [
+          "dataclasses",
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Evaluation/Composite_Aggregator.py",
+      "module_type": "Evaluation",
+      "lines_of_code": 105,
+      "classes_defined": [
+        "CompositeAggregator"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Scoring_Interface",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Contracts.RGE_Telemetry_Snapshot_V2"
+        ],
+        "external": [
+          "math",
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Evaluation/Composite_Aggregator_Registration_Diff.py",
+      "module_type": "Evaluation",
+      "lines_of_code": 67,
+      "classes_defined": [],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Evaluation/Divergence_Metric.py",
+      "module_type": "Evaluation",
+      "lines_of_code": 146,
+      "classes_defined": [
+        "DivergenceMetric"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Scoring_Interface"
+        ],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Evaluation/Recursion_Coupling_Coherence_Score.py",
+      "module_type": "Evaluation",
+      "lines_of_code": 312,
+      "classes_defined": [
+        "RecursionCouplingCoherenceScore"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Scoring_Interface",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot"
+        ],
+        "external": [
+          "math",
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Evaluation/Scoring_Interface.py",
+      "module_type": "Evaluation",
+      "lines_of_code": 18,
+      "classes_defined": [
+        "ScoringInterface"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Evaluation/Stability_Scalar_Producer.py",
+      "module_type": "Evaluation",
+      "lines_of_code": 131,
+      "classes_defined": [
+        "ProtocolTickTelemetry"
+      ],
+      "functions_defined": [
+        "_compute_single_stability",
+        "produce_stability"
+      ],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot"
+        ],
+        "external": [
+          "dataclasses",
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Evaluation/Triune_Fit_Score.py",
+      "module_type": "Evaluation",
+      "lines_of_code": 173,
+      "classes_defined": [
+        "TriuneFitScore"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Scoring_Interface",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Triad_Region_Classifier"
+        ],
+        "external": [
+          "json",
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Events/Event_Emitter.py",
+      "module_type": "Events",
+      "lines_of_code": 10,
+      "classes_defined": [
+        "EventEmitter"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Circulation_Controller.py",
+      "module_type": "Field",
+      "lines_of_code": 35,
+      "classes_defined": [
+        "RGECirculationController"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Base",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Registry",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Validator"
+        ],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Completion_Metrics.py",
+      "module_type": "Field",
+      "lines_of_code": 26,
+      "classes_defined": [
+        "RGECompletionMetrics"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Base"
+        ],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Default_Router.py",
+      "module_type": "Field",
+      "lines_of_code": 42,
+      "classes_defined": [
+        "RGEDefaultRouter"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Base",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Registry",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Validator",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Routing_Interface"
+        ],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Field_Edge.py",
+      "module_type": "Field",
+      "lines_of_code": 19,
+      "classes_defined": [
+        "RGEFieldEdge"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "dataclasses",
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Field_Graph.py",
+      "module_type": "Field",
+      "lines_of_code": 35,
+      "classes_defined": [
+        "RGEFieldGraph"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Node",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Edge"
+        ],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Field_Node.py",
+      "module_type": "Field",
+      "lines_of_code": 25,
+      "classes_defined": [
+        "RGEFieldNode"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "dataclasses",
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Field_Stability_Index.py",
+      "module_type": "Field",
+      "lines_of_code": 32,
+      "classes_defined": [
+        "RGEFieldStabilityIndex"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Base"
+        ],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Field_Topology.py",
+      "module_type": "Field",
+      "lines_of_code": 36,
+      "classes_defined": [
+        "RGEFieldTopology"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Node"
+        ],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Graph_Builder.py",
+      "module_type": "Field",
+      "lines_of_code": 44,
+      "classes_defined": [
+        "RGEGraphBuilder"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Edge",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Graph",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology"
+        ],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Graph_Traversal.py",
+      "module_type": "Field",
+      "lines_of_code": 23,
+      "classes_defined": [
+        "RGEGraphTraversal"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Graph"
+        ],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Node_Packet_Accessor.py",
+      "module_type": "Field",
+      "lines_of_code": 54,
+      "classes_defined": [
+        "RGENodePacketAccessor"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology"
+        ],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Packet_Lifecycle.py",
+      "module_type": "Field",
+      "lines_of_code": 31,
+      "classes_defined": [
+        "RGEPacketLifecycleManager"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Base",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Registry"
+        ],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Packet_Location_Map.py",
+      "module_type": "Field",
+      "lines_of_code": 27,
+      "classes_defined": [
+        "RGEPacketLocationMap"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Packet_Propagator.py",
+      "module_type": "Field",
+      "lines_of_code": 64,
+      "classes_defined": [
+        "RGEPacketPropagator"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Graph",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Graph_Traversal",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Node_Packet_Accessor",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Location_Map"
+        ],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Packet_Registry.py",
+      "module_type": "Field",
+      "lines_of_code": 36,
+      "classes_defined": [
+        "RGEPacketRegistry"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Base"
+        ],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Packet_Validator.py",
+      "module_type": "Field",
+      "lines_of_code": 32,
+      "classes_defined": [
+        "RGEPacketValidator"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Base"
+        ],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Recursion_Field_Engine.py",
+      "module_type": "Field",
+      "lines_of_code": 115,
+      "classes_defined": [
+        "RGERecursionFieldEngine"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Base",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Registry",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Validator",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Circulation_Controller",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Routing_Interface",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Default_Router",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Propagator",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Signal",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Signal_Broadcaster",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Dispatcher"
+        ],
+        "external": [
+          "time",
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Routing_Interface.py",
+      "module_type": "Field",
+      "lines_of_code": 38,
+      "classes_defined": [
+        "RGERoutingInterface"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Base",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Registry"
+        ],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Field/RGE_Topology_Bridge.py",
+      "module_type": "Field",
+      "lines_of_code": 42,
+      "classes_defined": [
+        "RGETopologyBridge"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Registry",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Node"
+        ],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Integration/Logos_Telemetry_Integration_Point.py",
+      "module_type": "Integration",
+      "lines_of_code": 177,
+      "classes_defined": [
+        "LogosTelemetryMixin"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Triune_Fit_Score",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Balance_Score",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Divergence_Metric",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Recursion_Coupling_Coherence_Score",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Task_Triad_Derivation",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Residual_Producer",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Stability_Scalar_Producer",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Producer"
+        ],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Integration/RGE_Nexus_Adapter.py",
+      "module_type": "Integration",
+      "lines_of_code": 136,
+      "classes_defined": [
+        "RGENexusAdapter"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap"
+        ],
+        "external": [
+          "time",
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": [
+          "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus"
+        ]
+      }
+    },
+    {
+      "module_path": "Ontological_Field/Ontological_Registry.py",
+      "module_type": "Ontological_Field",
+      "lines_of_code": 21,
+      "classes_defined": [
+        "OntologicalRegistry"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "json"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Ontological_Field/__init__.py",
+      "module_type": "Ontological_Field",
+      "lines_of_code": 1,
+      "classes_defined": [],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Packet_Schemas/RGE_Packet_Base.py",
+      "module_type": "Packet_Schemas",
+      "lines_of_code": 32,
+      "classes_defined": [
+        "RGEPacketBase"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "dataclasses",
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Packet_Schemas/RGE_Packet_Types.py",
+      "module_type": "Packet_Schemas",
+      "lines_of_code": 19,
+      "classes_defined": [
+        "RGEPacketType"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "enum"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Runtime/RGE_Runtime_Dispatcher.py",
+      "module_type": "Runtime",
+      "lines_of_code": 40,
+      "classes_defined": [
+        "RGERuntimeDispatcher"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Signal",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Interface",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Subscriber"
+        ],
+        "external": [
+          "typing"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Runtime/RGE_Runtime_Interface.py",
+      "module_type": "Runtime",
+      "lines_of_code": 31,
+      "classes_defined": [
+        "RGERuntimeInterface"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Signal"
+        ],
+        "external": [
+          "abc"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Runtime/RGE_Runtime_Registry.py",
+      "module_type": "Runtime",
+      "lines_of_code": 36,
+      "classes_defined": [
+        "RGERuntimeRegistry"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Dispatcher",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Interface"
+        ],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Runtime/RGE_Runtime_Subscriber.py",
+      "module_type": "Runtime",
+      "lines_of_code": 30,
+      "classes_defined": [
+        "RGERuntimeSubscriber"
+      ],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Signal",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Interface"
+        ],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Runtime/__init__.py",
+      "module_type": "Runtime",
+      "lines_of_code": 2,
+      "classes_defined": [],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Tests/test_recursion_coupling_score.py",
+      "module_type": "Tests",
+      "lines_of_code": 227,
+      "classes_defined": [
+        "TestIdenticalDeltasProduceZero",
+        "TestZeroStrainProducesZero",
+        "TestExtremeDivergenceBelowOne",
+        "TestInstrumentedVsNonInstrumentedIdentical",
+        "TestContributionSumEqualsTotal",
+        "TestAllFloatsFinite",
+        "TestDeterministicPairOrdering",
+        "TestNoTelemetryReturnsZero",
+        "TestInstrumentationDisabledReturnsNone",
+        "TestReportSchemaShape"
+      ],
+      "functions_defined": [
+        "_build_telemetry",
+        "_make_scorer",
+        "_dummy_snapshot"
+      ],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Recursion_Coupling_Coherence_Score"
+        ],
+        "external": [
+          "math",
+          "unittest"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Tests/test_recursion_layer_telemetry.py",
+      "module_type": "Tests",
+      "lines_of_code": 226,
+      "classes_defined": [
+        "TestValidConstruction",
+        "TestKeyMismatchRejected",
+        "TestDimensionalMismatchRejected",
+        "TestNonFiniteValuesRejected",
+        "TestCouplingWeightSumRejected",
+        "TestNegativeWeightsRejected",
+        "TestDeltaOutOfBoundsRejected",
+        "TestNegativeLayerMagnitudesRejected",
+        "TestFewerThanTwoLayersRejected",
+        "TestNotTupleRejected"
+      ],
+      "functions_defined": [
+        "_valid_kwargs"
+      ],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot"
+        ],
+        "external": [
+          "math",
+          "unittest"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Tests/test_rge_override_behavior.py",
+      "module_type": "Tests",
+      "lines_of_code": 90,
+      "classes_defined": [
+        "_ModeGateStub"
+      ],
+      "functions_defined": [
+        "_default_assignments",
+        "test_override_yields_immediately",
+        "test_hard_override_clears_retained_state",
+        "test_mode_gating_blocks_activation",
+        "test_static_configuration_no_rotation",
+        "test_override_lift_requires_mode_activation"
+      ],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Override_Channel",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.Genesis_Selector",
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State"
+        ],
+        "external": [],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "Tests/test_topology_validation.py",
+      "module_type": "Tests",
+      "lines_of_code": 34,
+      "classes_defined": [],
+      "functions_defined": [
+        "run_tests"
+      ],
+      "import_dependencies": {
+        "internal_rge": [
+          "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State"
+        ],
+        "external": [
+          "sys",
+          "pathlib"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    },
+    {
+      "module_path": "__init__.py",
+      "module_type": "root",
+      "lines_of_code": 10,
+      "classes_defined": [],
+      "functions_defined": [],
+      "import_dependencies": {
+        "internal_rge": [],
+        "external": [
+          "Core.Topology_State",
+          "Controller.Genesis_Selector",
+          "Evaluation.Scoring_Interface",
+          "Ontological_Field.Ontological_Registry",
+          "Events.Event_Emitter"
+        ],
+        "type_checking_only": [],
+        "forbidden": []
+      }
+    }
+  ]
+}

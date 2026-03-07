@@ -1,0 +1,286 @@
+{
+  "artifact": "RGE_Module_Disposition_Check",
+  "stage": "Stage-0 Baseline Freeze",
+  "generated_utc": "2026-03-06T22:26:32.819456+00:00",
+  "spec_reference": "RGE_Design_Spec.md Section 2.1; RGE_Implementation_Guide.md Section 2",
+  "summary": {
+    "MATCH": 16,
+    "NON_COMPLIANT": 1,
+    "MISSING": 1,
+    "COMPLIANT": 0,
+    "PATH_MISMATCH": 0,
+    "UNSPECIFIED": 12
+  },
+  "records": [
+    {
+      "module": "Topology_State.py",
+      "expected_path": "Core/Topology_State.py",
+      "expected_status": "PRESERVED",
+      "repo_path": "Core/Topology_State.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "PRESERVED \u2014 add symmetry-class extraction (Stage 2); Section 2.1, Section 6.3"
+    },
+    {
+      "module": "Telemetry_Snapshot.py",
+      "expected_path": "Core/Telemetry_Snapshot.py",
+      "expected_status": "PRESERVED",
+      "repo_path": "Core/Telemetry_Snapshot.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "PRESERVED \u2014 add ContextPacket emission hooks (Stage 2); Section 2.1, Section 3.1. Must be V2 (has recursion-layer coupling fields)."
+    },
+    {
+      "module": "Triad_Region_Classifier.py",
+      "expected_path": "Core/Triad_Region_Classifier.py",
+      "expected_status": "PRESERVED",
+      "repo_path": "Core/Triad_Region_Classifier.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "PRESERVED \u2014 no change; Section 2.1"
+    },
+    {
+      "module": "Scoring_Interface.py",
+      "expected_path": "Evaluation/Scoring_Interface.py",
+      "expected_status": "MODIFIED",
+      "repo_path": "Evaluation/Scoring_Interface.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "MODIFIED \u2014 extend for LOGOS-native scorer protocol; Section 2.1, Section 6.1"
+    },
+    {
+      "module": "Triune_Fit_Score.py",
+      "expected_path": "Evaluation/Triune_Fit_Score.py",
+      "expected_status": "MODIFIED",
+      "repo_path": "Evaluation/Triune_Fit_Score.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "MODIFIED \u2014 candidate for TriadicAlignmentScore replacement; Section 2.1, Section 6.1"
+    },
+    {
+      "module": "Commutation_Balance_Score.py",
+      "expected_path": "Evaluation/Commutation_Balance_Score.py",
+      "expected_status": "PRESERVED",
+      "repo_path": "Evaluation/Commutation_Balance_Score.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "PRESERVED; Section 2.1"
+    },
+    {
+      "module": "Divergence_Metric.py",
+      "expected_path": "Evaluation/Divergence_Metric.py",
+      "expected_status": "PRESERVED",
+      "repo_path": "Evaluation/Divergence_Metric.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "PRESERVED; Section 2.1"
+    },
+    {
+      "module": "Recursion_Coupling_Coherence_Score.py",
+      "expected_path": "Evaluation/Recursion_Coupling_Coherence_Score.py",
+      "expected_status": "PRESERVED",
+      "repo_path": "Evaluation/Recursion_Coupling_Coherence_Score.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "PRESERVED; Section 2.1"
+    },
+    {
+      "module": "Composite_Aggregator.py",
+      "expected_path": "Evaluation/Composite_Aggregator.py",
+      "expected_status": "MODIFIED",
+      "repo_path": null,
+      "repo_status": "ABSENT",
+      "compliance": "MISSING",
+      "notes": "MODIFIED \u2014 add top-N, confidence gap, abstention; Section 2.1, Section 3.1 \u2014 WARNING: Expected file is absent from repo."
+    },
+    {
+      "module": "Composite_Aggregator_Registration_Diff.py",
+      "expected_path": "Evaluation/Composite_Aggregator_Registration_Diff.py",
+      "expected_status": "PRESERVED",
+      "repo_path": "Evaluation/Composite_Aggregator_Registration_Diff.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "PRESERVED; referenced in spec Section 2.1"
+    },
+    {
+      "module": "Genesis_Selector.py",
+      "expected_path": "Controller/Genesis_Selector.py",
+      "expected_status": "MODIFIED",
+      "repo_path": "Controller/Genesis_Selector.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "MODIFIED \u2014 add symmetry-reduced path, top-N, abstention gate; Section 2.1, Section 3.1, Section 6.3"
+    },
+    {
+      "module": "Mode_Controller.py",
+      "expected_path": "Controller/Mode_Controller.py",
+      "expected_status": "MODIFIED",
+      "repo_path": "Controller/Mode_Controller.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "MODIFIED \u2014 add CyclePhase enum; Section 2.1, Section 4.3"
+    },
+    {
+      "module": "RGE_Override_Channel.py",
+      "expected_path": "Controller/RGE_Override_Channel.py",
+      "expected_status": "PRESERVED",
+      "repo_path": "Controller/RGE_Override_Channel.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "PRESERVED; Section 2.1"
+    },
+    {
+      "module": "RGE_Bootstrap.py",
+      "expected_path": "Controller/RGE_Bootstrap.py",
+      "expected_status": "MODIFIED",
+      "repo_path": "Controller/RGE_Bootstrap.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "MODIFIED \u2014 wire new subsystems; Section 2.1"
+    },
+    {
+      "module": "RGE_Nexus_Adapter.py",
+      "expected_path": "Integration/RGE_Nexus_Adapter.py",
+      "expected_status": "DEPRECATED",
+      "repo_path": "Integration/RGE_Nexus_Adapter.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "DEPRECATED \u2014 replaced by RGE_Bridge_Nexus.py; Section 2.1, Section 8.2"
+    },
+    {
+      "module": "RGE_Telemetry_Snapshot.py",
+      "expected_path": "Contracts/RGE_Telemetry_Snapshot.py",
+      "expected_status": "OBSOLETE",
+      "repo_path": "Contracts/RGE_Telemetry_Snapshot.py",
+      "repo_status": "PRESENT",
+      "compliance": "NON_COMPLIANT",
+      "notes": "OBSOLETE \u2014 delete in Stage 0; V1 contract superseded by Core/Telemetry_Snapshot.py V2; Section 2.1 \u2014 FILE STILL PRESENT, must be deleted in Stage-0."
+    },
+    {
+      "module": "test_topology_validation.py",
+      "expected_path": "Tests/test_topology_validation.py",
+      "expected_status": "PRESERVED",
+      "repo_path": "Tests/test_topology_validation.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "PRESERVED \u2014 existing test; Section 2.1 directory listing"
+    },
+    {
+      "module": "test_rge_override_behavior.py",
+      "expected_path": "Tests/test_rge_override_behavior.py",
+      "expected_status": "PRESERVED",
+      "repo_path": "Tests/test_rge_override_behavior.py",
+      "repo_status": "PRESENT",
+      "compliance": "MATCH",
+      "notes": "PRESERVED \u2014 existing test; Section 2.1 directory listing"
+    },
+    {
+      "module": "Commutation_Residual_Producer.py",
+      "expected_path": null,
+      "expected_status": "UNKNOWN",
+      "repo_path": "Evaluation/Commutation_Residual_Producer.py",
+      "repo_status": "PRESENT",
+      "compliance": "UNSPECIFIED",
+      "notes": "Module exists in repo but has no disposition entry in RGE Design Spec Section 2.1. Requires human review."
+    },
+    {
+      "module": "Event_Emitter.py",
+      "expected_path": null,
+      "expected_status": "UNKNOWN",
+      "repo_path": "Events/Event_Emitter.py",
+      "repo_status": "PRESENT",
+      "compliance": "UNSPECIFIED",
+      "notes": "Module exists in repo but has no disposition entry in RGE Design Spec Section 2.1. Requires human review."
+    },
+    {
+      "module": "Hysteresis_Governor.py",
+      "expected_path": null,
+      "expected_status": "UNKNOWN",
+      "repo_path": "Control/Hysteresis_Governor.py",
+      "repo_status": "PRESENT",
+      "compliance": "UNSPECIFIED",
+      "notes": "Module exists in repo but has no disposition entry in RGE Design Spec Section 2.1. Requires human review."
+    },
+    {
+      "module": "Logos_Telemetry_Integration_Point.py",
+      "expected_path": null,
+      "expected_status": "UNKNOWN",
+      "repo_path": "Integration/Logos_Telemetry_Integration_Point.py",
+      "repo_status": "PRESENT",
+      "compliance": "UNSPECIFIED",
+      "notes": "Module exists in repo but has no disposition entry in RGE Design Spec Section 2.1. Requires human review."
+    },
+    {
+      "module": "Ontological_Registry.py",
+      "expected_path": null,
+      "expected_status": "UNKNOWN",
+      "repo_path": "Ontological_Field/Ontological_Registry.py",
+      "repo_status": "PRESENT",
+      "compliance": "UNSPECIFIED",
+      "notes": "Module exists in repo but has no disposition entry in RGE Design Spec Section 2.1. Requires human review."
+    },
+    {
+      "module": "RGE_Governance_Context.py",
+      "expected_path": null,
+      "expected_status": "UNKNOWN",
+      "repo_path": "Controller/RGE_Governance_Context.py",
+      "repo_status": "PRESENT",
+      "compliance": "UNSPECIFIED",
+      "notes": "Module exists in repo but has no disposition entry in RGE Design Spec Section 2.1. Requires human review."
+    },
+    {
+      "module": "Stability_Scalar_Producer.py",
+      "expected_path": null,
+      "expected_status": "UNKNOWN",
+      "repo_path": "Evaluation/Stability_Scalar_Producer.py",
+      "repo_status": "PRESENT",
+      "compliance": "UNSPECIFIED",
+      "notes": "Module exists in repo but has no disposition entry in RGE Design Spec Section 2.1. Requires human review."
+    },
+    {
+      "module": "Task_Triad_Derivation.py",
+      "expected_path": null,
+      "expected_status": "UNKNOWN",
+      "repo_path": "Core/Task_Triad_Derivation.py",
+      "repo_status": "PRESENT",
+      "compliance": "UNSPECIFIED",
+      "notes": "Module exists in repo but has no disposition entry in RGE Design Spec Section 2.1. Requires human review."
+    },
+    {
+      "module": "Telemetry_Producer.py",
+      "expected_path": null,
+      "expected_status": "UNKNOWN",
+      "repo_path": "Core/Telemetry_Producer.py",
+      "repo_status": "PRESENT",
+      "compliance": "UNSPECIFIED",
+      "notes": "Module exists in repo but has no disposition entry in RGE Design Spec Section 2.1. Requires human review."
+    },
+    {
+      "module": "__init__.py",
+      "expected_path": null,
+      "expected_status": "UNKNOWN",
+      "repo_path": "Ontological_Field/__init__.py",
+      "repo_status": "PRESENT",
+      "compliance": "UNSPECIFIED",
+      "notes": "Module exists in repo but has no disposition entry in RGE Design Spec Section 2.1. Requires human review."
+    },
+    {
+      "module": "test_recursion_coupling_score.py",
+      "expected_path": null,
+      "expected_status": "UNKNOWN",
+      "repo_path": "Tests/test_recursion_coupling_score.py",
+      "repo_status": "PRESENT",
+      "compliance": "UNSPECIFIED",
+      "notes": "Module exists in repo but has no disposition entry in RGE Design Spec Section 2.1. Requires human review."
+    },
+    {
+      "module": "test_recursion_layer_telemetry.py",
+      "expected_path": null,
+      "expected_status": "UNKNOWN",
+      "repo_path": "Tests/test_recursion_layer_telemetry.py",
+      "repo_status": "PRESENT",
+      "compliance": "UNSPECIFIED",
+      "notes": "Module exists in repo but has no disposition entry in RGE Design Spec Section 2.1. Requires human review."
+    }
+  ]
+}

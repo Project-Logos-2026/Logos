@@ -1,0 +1,44 @@
+{
+  "generated": "2026-03-07",
+  "total_modules": 65,
+  "total_classes": 82,
+  "total_top_level_functions": 27,
+  "lines_of_code": 4772,
+  "cross_module_dependencies": 52,
+  "unique_internal_deps": 44,
+  "unique_external_deps": 18,
+  "validation_tests_detected": 3,
+  "smoke_test_files": [
+    "tools/rge_stage21_24_smoke.py",
+    "tools/rge_stage25_28_smoke.py",
+    "tools/rge_stage29_31_smoke.py"
+  ],
+  "layer_module_breakdown": {
+    "Bootstrap": 4,
+    "Cognition": 4,
+    "Contracts": 1,
+    "Control": 1,
+    "Controller": 5,
+    "Core": 5,
+    "Evaluation": 9,
+    "Events": 1,
+    "Field": 19,
+    "Integration": 2,
+    "Ontological_Field": 2,
+    "Packet_Schemas": 2,
+    "Runtime": 5,
+    "Tests": 4,
+    "root": 1
+  },
+  "prompt_estimated_complexity": "high",
+  "stage_ranges_implemented": [
+    "0-6 (Field/Topology)",
+    "7-9 (Packet Registry)",
+    "10-12 (Field Topology Graph)",
+    "13-16 (Graph Traversal)",
+    "17-20 (Packet Propagation)",
+    "21-24 (Cognition Signal Broadcasting)",
+    "25-28 (Runtime Bridge Integration)",
+    "29-31 (Bootstrap and Runtime Activation)"
+  ]
+}

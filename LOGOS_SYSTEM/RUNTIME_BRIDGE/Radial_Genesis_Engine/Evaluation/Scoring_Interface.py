@@ -1,8 +1,17 @@
 """
-Scoring interface placeholder for pluggable evaluation modules.
+Scoring interface for pluggable evaluation modules.
 """
 
+from typing import Any, Dict, Protocol
 
-class ScoringInterface:
-    def compute_score(self, configuration) -> float:
-        raise NotImplementedError("Scoring modules must implement compute_score()")
+
+class ScoringInterface(Protocol):
+
+    @property
+    def name(self) -> str:
+        """Unique identifier for scoring module."""
+        ...
+
+    def compute_score(self, configuration: Dict[str, Any]) -> float:
+        """Return score for candidate configuration."""
+        ...
