@@ -14,7 +14,7 @@
 | Authority | `LOGOS_Import_Infrastructure` |
 | Mutability | Manual revision only — requires diff review |
 | Execution Status | Non_Executable (design specification) |
-| Version | 1.1.0 |
+| Version | 1.1.1 |
 | Governed By Schema | This document is the governing schema for all implementation artifacts it specifies |
 
 ---
@@ -25,6 +25,7 @@
 |---|---|
 | 1.0.0 | Initial blueprint |
 | 1.1.0 | AST-guided line replacement in `replace_imports.py`; corrected CI enforcement phase order (Phase D precedes Phase E); added `rollback_imports.py` and `Replacement_Log.json`; corrected `check_import_boundaries.py` logic flaw; corrected `validate_canonical_map.py` to verify `internal_module` paths on disk; extended `detect_import_drift.py` to full forbidden prefix registry; scoped `runtime_import_smoke.py` to importable roots only; removed `importlib.import_module` from `validate_facade.py` |
+| 1.1.1 | Corrected forbidden prefix registry: `LOGOS_SYSTEM.RUNTIME_OPPERATIONS_CORE` was an invalid standalone path — the actual repo location is `LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/`; corrected entry to `LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE` with explicit-redundancy note. Applied to Section 5.5, `check_import_boundaries.py`, and `detect_import_drift.py`. |
 
 ---
 
@@ -193,12 +194,14 @@ The following internal import prefixes are forbidden outside of allowlisted dire
 ```python
 FORBIDDEN_PREFIXES = [
     "LOGOS_SYSTEM.RUNTIME_CORES",
-    "LOGOS_SYSTEM.RUNTIME_OPPERATIONS_CORE",   # repo spelling — double-P preserved
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",   # explicit — double-P; subset of RUNTIME_CORES above; listed separately for enforcement clarity
     "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT",
     "LOGOS_SYSTEM.Runtime_Spine",
     "LOGOS_SYSTEM.STARTUP",
 ]
 ```
+
+**Repo path note:** `RUNTIME_OPPERATIONS_CORE` (double-P) lives at `LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/`. Its Python import root is therefore `LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE`. The standalone prefix `LOGOS_SYSTEM.RUNTIME_OPPERATIONS_CORE` does not exist in this repo and must not appear in any enforcement script. The explicit entry above is retained for documentation and grep-target clarity even though it is logically subsumed by `LOGOS_SYSTEM.RUNTIME_CORES`.
 
 **Allowlisted path segments** (directories permitted to use deep imports):
 
@@ -906,9 +909,12 @@ import sys
 from pathlib import Path
 
 # Canonical forbidden prefix registry — see Blueprint Section 5.5
+# Note: RUNTIME_OPPERATIONS_CORE (double-P) is at LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/
+# Its import root is LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.
+# The standalone LOGOS_SYSTEM.RUNTIME_OPPERATIONS_CORE does not exist in this repo.
 FORBIDDEN_PREFIXES = [
     "LOGOS_SYSTEM.RUNTIME_CORES",
-    "LOGOS_SYSTEM.RUNTIME_OPPERATIONS_CORE",
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",   # explicit subset — double-P; listed for enforcement clarity
     "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT",
     "LOGOS_SYSTEM.Runtime_Spine",
     "LOGOS_SYSTEM.STARTUP",
@@ -1062,9 +1068,12 @@ import sys
 from pathlib import Path
 
 # Canonical forbidden prefix registry — see Blueprint Section 5.5
+# Note: RUNTIME_OPPERATIONS_CORE (double-P) is at LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/
+# Its import root is LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.
+# The standalone LOGOS_SYSTEM.RUNTIME_OPPERATIONS_CORE does not exist in this repo.
 FORBIDDEN_PREFIXES = [
     "LOGOS_SYSTEM.RUNTIME_CORES",
-    "LOGOS_SYSTEM.RUNTIME_OPPERATIONS_CORE",
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",   # explicit subset — double-P; listed for enforcement clarity
     "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT",
     "LOGOS_SYSTEM.Runtime_Spine",
     "LOGOS_SYSTEM.STARTUP",
