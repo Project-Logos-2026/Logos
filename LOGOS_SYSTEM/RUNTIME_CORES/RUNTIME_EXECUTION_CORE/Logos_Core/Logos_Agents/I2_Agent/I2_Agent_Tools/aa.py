@@ -4,7 +4,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 import json
 from pathlib import Path
-from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.repo_root import _find_repo_root
+from logos.imports.runtime_utils import _find_repo_root
 import time
 import uuid
 from typing import Any, Dict, List, Optional

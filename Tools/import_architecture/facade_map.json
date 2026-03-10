@@ -1,0 +1,1025 @@
+ARCHON PRIME — FACade Import Rewrite Pass
+MODE: Deterministic Repair Execution
+SAFETY: Fail-Closed / Full Report / No Silent Mutation
+
+---------------------------------------------------------------------
+
+OBJECTIVE
+
+Apply the deterministic facade substitution plan generated during the
+Runtime_Facade_Synthesis phase.
+
+The repository now contains a complete rewrite table describing every
+deep import violation and its canonical facade replacement.
+
+This pass must:
+
+1. Load rewrite rules
+2. Locate every affected file
+3. Replace illegal deep imports with the canonical facade namespace
+4. Preserve symbol names
+5. Write repaired files
+6. Produce a full audit report
+
+No architectural inference is allowed.
+All replacements must follow the rewrite table exactly.
+
+---------------------------------------------------------------------
+
+INPUT ARTIFACTS
+
+Load the following files from:
+
+Runtime_Facade_Synthesis/
+
+    import_rewrite_table.json
+    repair_feasibility.json
+    facade_map.json
+    cluster_map.json
+    facade_surface_spec.json
+
+Repository structure information may be referenced from:
+
+    repo_directory_tree.json
+    repo_python_files.json
+    repo_imports.json
+    repo_symbol_imports.json
+
+---------------------------------------------------------------------
+
+REWRITE TARGET
+
+Apply repairs ONLY for entries where:
+
+    classification == "AUTO_REPAIRABLE"
+
+These correspond to the 89 cross-cluster violations.
+
+Do NOT modify:
+
+    OPTIONAL_INTRA_CLUSTER
+    MANUAL_REVIEW_REQUIRED
+
+Those remain untouched during this pass.
+
+---------------------------------------------------------------------
+
+REWRITE ALGORITHM
+
+For each entry in import_rewrite_table.json:
+
+1. Identify:
+
+    source_module
+    illegal_import
+    replacement_facade
+    imported_symbol
+
+2. Locate the file containing the import statement.
+
+3. Replace the statement:
+
+    from <illegal_import> import <symbol>
+
+WITH
+
+    from <replacement_facade> import <symbol>
+
+4. Preserve:
+
+    - symbol names
+    - aliasing (if present)
+    - indentation
+    - surrounding code
+
+5. Do NOT introduce wildcard imports.
+
+---------------------------------------------------------------------
+
+VALIDATION PASS
+
+After rewriting:
+
+1. Re-scan all Python files.
+2. Rebuild the import dependency graph.
+3. Verify:
+
+    cross_cluster_deep_imports == 0
+
+4. Confirm no syntax errors were introduced.
+
+---------------------------------------------------------------------
+
+OUTPUT ARTIFACTS
+
+Create directory:
+
+Reports/Facade_Rewrite_Pass/
+
+Write the following:
+
+facade_rewrite_summary.json
+facade_rewrite_changes.json
+facade_rewrite_diff.patch
+facade_rewrite_validation.json
+facade_rewrite_report.md
+
+Metrics must include:
+
+    total_files_scanned
+    files_modified
+    rewrites_applied
+    cross_cluster_violations_remaining
+    syntax_errors_detected
+
+---------------------------------------------------------------------
+
+FAIL CONDITIONS
+
+Abort immediately if:
+
+- rewrite rule cannot be applied cleanly
+- file cannot be located
+- import statement is ambiguous
+- syntax error introduced
+
+On abort:
+
+write failure report:
+
+Reports/Facade_Rewrite_Pass/facade_rewrite_failure.json
+
+---------------------------------------------------------------------
+
+SUCCESS CONDITION
+
+Execution succeeds only if:
+
+cross_cluster_deep_imports == 0
+syntax_errors_detected == 0
+
+---------------------------------------------------------------------
+
+BEGIN EXECUTION{
+  "Agent_Resources": {
+    "cluster_root": "Agent_Resources",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "Agent_Resources.Cognition_Normalized.Triune_Sierpinski_Core",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "BLUEPRINTS": {
+    "cluster_root": "BLUEPRINTS",
+    "facade_namespace": "logos.imports.blueprints",
+    "facade_module": "BLUEPRINTS.Canonical_Import_Facade.Import_Facade.generate_symbol_import_index",
+    "module_count": 3,
+    "selection_method": "max_centrality"
+  },
+  "CONSCIOUS_Modal_Inference_System": {
+    "cluster_root": "CONSCIOUS_Modal_Inference_System",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "CONSCIOUS_Modal_Inference_System",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "Cognition_Normalized": {
+    "cluster_root": "Cognition_Normalized",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "Cognition_Normalized.Triune_Sierpinski_Core",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "DRAC": {
+    "cluster_root": "DRAC",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "DRAC.CORE.DRAC_Core",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "I2_Integration": {
+    "cluster_root": "I2_Integration",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "I2_Integration.I2_Egress_Critique",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "LOGOS_SYSTEM": {
+    "cluster_root": "LOGOS_SYSTEM",
+    "facade_namespace": "logos.imports.governance",
+    "facade_module": "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Planning.Plan_Objects.plan_schema",
+    "module_count": 82,
+    "selection_method": "explicit_candidate"
+  },
+  "LOGOS_SYSTEM.RUNTIME_BRIDGE": {
+    "cluster_root": "LOGOS_SYSTEM.RUNTIME_BRIDGE",
+    "facade_namespace": "logos.imports.startup",
+    "facade_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap",
+    "module_count": 74,
+    "selection_method": "explicit_candidate"
+  },
+  "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE": {
+    "cluster_root": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+    "facade_namespace": "logos.imports.protocols",
+    "facade_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus",
+    "module_count": 847,
+    "selection_method": "explicit_candidate"
+  },
+  "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE": {
+    "cluster_root": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+    "facade_namespace": "logos.imports.protocols",
+    "facade_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Operational_Log.Operational_Logger",
+    "module_count": 123,
+    "selection_method": "explicit_candidate"
+  },
+  "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS": {
+    "cluster_root": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "module_count": 3,
+    "selection_method": "explicit_candidate"
+  },
+  "LOGOS_SYSTEM.System_Stack": {
+    "cluster_root": "LOGOS_SYSTEM.System_Stack",
+    "facade_namespace": "logos.imports.agents",
+    "facade_module": "LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema",
+    "module_count": 34,
+    "selection_method": "max_centrality"
+  },
+  "LOGOS_SYSTEM._Governance": {
+    "cluster_root": "LOGOS_SYSTEM._Governance",
+    "facade_namespace": "logos.imports.governance",
+    "facade_module": "LOGOS_SYSTEM._Governance.Nexus_Validation.Nexus_AST_Validator",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "LOGOS_V1": {
+    "cluster_root": "LOGOS_V1",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "LOGOS_V1.core.verified_core",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "Logos_AGI": {
+    "cluster_root": "Logos_AGI",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "Logos_AGI.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "Logos_Protocol": {
+    "cluster_root": "Logos_Protocol",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "Logos_Protocol.logos_core.world_model",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "Logos_System": {
+    "cluster_root": "Logos_System",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "Logos_System.System_Stack",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "MTP_Core": {
+    "cluster_root": "MTP_Core",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "MTP_Core.MTP_Output_Renderer",
+    "module_count": 5,
+    "selection_method": "max_centrality"
+  },
+  "MTP_Nexus": {
+    "cluster_root": "MTP_Nexus",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "MTP_Nexus.MTP_Nexus",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "Nexus": {
+    "cluster_root": "Nexus",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "Nexus",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "PYTHON_MODULES": {
+    "cluster_root": "PYTHON_MODULES",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate",
+    "module_count": 11,
+    "selection_method": "max_centrality"
+  },
+  "STARTUP": {
+    "cluster_root": "STARTUP",
+    "facade_namespace": "logos.imports.startup",
+    "facade_module": "STARTUP.LOGOS_SYSTEM",
+    "module_count": 10,
+    "selection_method": "explicit_candidate"
+  },
+  "System_Stack": {
+    "cluster_root": "System_Stack",
+    "facade_namespace": "logos.imports.agents",
+    "facade_module": "System_Stack.Logos_Protocol.Protocol_Core.Activation_Sequencer.Identity_Generator.System_Entry_Point.Recusion_Grounding.Initialize_Recursion_Engine",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "_Governance": {
+    "cluster_root": "_Governance",
+    "facade_namespace": "logos.imports.governance",
+    "facade_module": "_Governance.Gov_Modules.preflight_filesystem_check",
+    "module_count": 3,
+    "selection_method": "max_centrality"
+  },
+  "__future__": {
+    "cluster_root": "__future__",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "__future__",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "aa": {
+    "cluster_root": "aa",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "aa",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "abc": {
+    "cluster_root": "abc",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "abc",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "advanced_fractal_analyzer": {
+    "cluster_root": "advanced_fractal_analyzer",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "advanced_fractal_analyzer",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "argparse": {
+    "cluster_root": "argparse",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "argparse",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "ast": {
+    "cluster_root": "ast",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "ast",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "asyncio": {
+    "cluster_root": "asyncio",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "asyncio",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "banach_generator": {
+    "cluster_root": "banach_generator",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "banach_generator",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "base64": {
+    "cluster_root": "base64",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "base64",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "bs4": {
+    "cluster_root": "bs4",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "bs4",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "burt_module": {
+    "cluster_root": "burt_module",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "burt_module",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "causallearn": {
+    "cluster_root": "causallearn",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "causallearn.search.ConstraintBased.PC",
+    "module_count": 3,
+    "selection_method": "max_centrality"
+  },
+  "cmath": {
+    "cluster_root": "cmath",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "cmath",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "collections": {
+    "cluster_root": "collections",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "collections",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "concurrent": {
+    "cluster_root": "concurrent",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "concurrent.futures",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "contextlib": {
+    "cluster_root": "contextlib",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "contextlib",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "copy": {
+    "cluster_root": "copy",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "copy",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "core": {
+    "cluster_root": "core",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "core.async_workers",
+    "module_count": 5,
+    "selection_method": "max_centrality"
+  },
+  "cryptography": {
+    "cluster_root": "cryptography",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "cryptography.fernet",
+    "module_count": 3,
+    "selection_method": "max_centrality"
+  },
+  "data_c_values": {
+    "cluster_root": "data_c_values",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "data_c_values.data_structures",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "dataclasses": {
+    "cluster_root": "dataclasses",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "dataclasses",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "datasketch": {
+    "cluster_root": "datasketch",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "datasketch",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "datetime": {
+    "cluster_root": "datetime",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "datetime",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "development_environment": {
+    "cluster_root": "development_environment",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "development_environment",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "dual_bijective_commutation_validator": {
+    "cluster_root": "dual_bijective_commutation_validator",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "dual_bijective_commutation_validator",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "enum": {
+    "cluster_root": "enum",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "enum",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "fastapi": {
+    "cluster_root": "fastapi",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "fastapi",
+    "module_count": 2,
+    "selection_method": "max_centrality"
+  },
+  "flask": {
+    "cluster_root": "flask",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "flask",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "fractal_orbital": {
+    "cluster_root": "fractal_orbital",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "fractal_orbital.symbolic_math",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "functools": {
+    "cluster_root": "functools",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "functools",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "glob": {
+    "cluster_root": "glob",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "glob",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "gzip": {
+    "cluster_root": "gzip",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "gzip",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "hashlib": {
+    "cluster_root": "hashlib",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "hashlib",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "heapq": {
+    "cluster_root": "heapq",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "heapq",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "hmac": {
+    "cluster_root": "hmac",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "hmac",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "http": {
+    "cluster_root": "http",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "http.server",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "iel_engine": {
+    "cluster_root": "iel_engine",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "iel_engine",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "importlib": {
+    "cluster_root": "importlib",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "importlib.util",
+    "module_count": 3,
+    "selection_method": "max_centrality"
+  },
+  "itertools": {
+    "cluster_root": "itertools",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "itertools",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "json": {
+    "cluster_root": "json",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "json",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "knowledge_catalog": {
+    "cluster_root": "knowledge_catalog",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "knowledge_catalog",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "lambda_logos_core": {
+    "cluster_root": "lambda_logos_core",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "lambda_logos_core",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "logging": {
+    "cluster_root": "logging",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "logging",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "math": {
+    "cluster_root": "math",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "math",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "math_engine": {
+    "cluster_root": "math_engine",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "math_engine",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "matplotlib": {
+    "cluster_root": "matplotlib",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "matplotlib.pyplot",
+    "module_count": 3,
+    "selection_method": "max_centrality"
+  },
+  "modal_inference": {
+    "cluster_root": "modal_inference",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "modal_inference",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "modal_privative_overlays": {
+    "cluster_root": "modal_privative_overlays",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "modal_privative_overlays",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "modal_verifier": {
+    "cluster_root": "modal_verifier",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "modal_verifier",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "msgpack": {
+    "cluster_root": "msgpack",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "msgpack",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "networkx": {
+    "cluster_root": "networkx",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "networkx",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "nltk": {
+    "cluster_root": "nltk",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "nltk.tokenize",
+    "module_count": 3,
+    "selection_method": "max_centrality"
+  },
+  "numpy": {
+    "cluster_root": "numpy",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "numpy",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "onto_lattice": {
+    "cluster_root": "onto_lattice",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "onto_lattice",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "ontological_node_class": {
+    "cluster_root": "ontological_node_class",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "ontological_node_class",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "os": {
+    "cluster_root": "os",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "os",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "pandas": {
+    "cluster_root": "pandas",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "pandas",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "pathlib": {
+    "cluster_root": "pathlib",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "pathlib",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "pickle": {
+    "cluster_root": "pickle",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "pickle",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "plugins": {
+    "cluster_root": "plugins",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "plugins.perception_ingestors",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "pprint": {
+    "cluster_root": "pprint",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "pprint",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "principles": {
+    "cluster_root": "principles",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "principles",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "pxl_engine": {
+    "cluster_root": "pxl_engine",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "pxl_engine",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "pydantic": {
+    "cluster_root": "pydantic",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "pydantic",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "pymc": {
+    "cluster_root": "pymc",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "pymc",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "pytest": {
+    "cluster_root": "pytest",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "pytest",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "python_files": {
+    "cluster_root": "python_files",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "python_files",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "queue": {
+    "cluster_root": "queue",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "queue",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "random": {
+    "cluster_root": "random",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "random",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "re": {
+    "cluster_root": "re",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "re",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "requests": {
+    "cluster_root": "requests",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "requests",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "scipy": {
+    "cluster_root": "scipy",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "scipy",
+    "module_count": 4,
+    "selection_method": "max_centrality"
+  },
+  "secrets": {
+    "cluster_root": "secrets",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "secrets",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "sentence_transformers": {
+    "cluster_root": "sentence_transformers",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "sentence_transformers",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "shutil": {
+    "cluster_root": "shutil",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "shutil",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "signal": {
+    "cluster_root": "signal",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "signal",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "sklearn": {
+    "cluster_root": "sklearn",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "sklearn.cluster",
+    "module_count": 5,
+    "selection_method": "max_centrality"
+  },
+  "spacy": {
+    "cluster_root": "spacy",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "spacy",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "sqlite3": {
+    "cluster_root": "sqlite3",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "sqlite3",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "statistics": {
+    "cluster_root": "statistics",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "statistics",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "subprocess": {
+    "cluster_root": "subprocess",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "subprocess",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "sympy": {
+    "cluster_root": "sympy",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "sympy",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "sys": {
+    "cluster_root": "sys",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "sys",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "tempfile": {
+    "cluster_root": "tempfile",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "tempfile",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "tenacity": {
+    "cluster_root": "tenacity",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "tenacity",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "threading": {
+    "cluster_root": "threading",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "threading",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "time": {
+    "cluster_root": "time",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "time",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "torch": {
+    "cluster_root": "torch",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "torch",
+    "module_count": 2,
+    "selection_method": "max_centrality"
+  },
+  "traceback": {
+    "cluster_root": "traceback",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "traceback",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "types": {
+    "cluster_root": "types",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "types",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "typing": {
+    "cluster_root": "typing",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "typing",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "unified_reasoning": {
+    "cluster_root": "unified_reasoning",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "unified_reasoning",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "unittest": {
+    "cluster_root": "unittest",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "unittest",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "uuid": {
+    "cluster_root": "uuid",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "uuid",
+    "module_count": 1,
+    "selection_method": "explicit_candidate"
+  },
+  "waitress": {
+    "cluster_root": "waitress",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "waitress",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "warnings": {
+    "cluster_root": "warnings",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "warnings",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "your_memory_system": {
+    "cluster_root": "your_memory_system",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "your_memory_system",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "z3": {
+    "cluster_root": "z3",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "z3",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  },
+  "zlib": {
+    "cluster_root": "zlib",
+    "facade_namespace": "logos.imports.runtime",
+    "facade_module": "zlib",
+    "module_count": 1,
+    "selection_method": "max_centrality"
+  }
+}

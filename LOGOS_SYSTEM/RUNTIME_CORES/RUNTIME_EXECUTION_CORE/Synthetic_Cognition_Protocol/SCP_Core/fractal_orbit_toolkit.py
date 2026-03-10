@@ -111,14 +111,14 @@ except ImportError:
 
 # Import existing fractal components
 try:
-    from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.fractal_orbital.symbolic_math import SymbolicMath
-    from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.predictors.fractal_mapping import FractalNavigator as OrbitalNavigator
-    from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.modal_inference import ThonocModalInference, ModalFormula
-    from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.data_c_values.data_structures import MVSCoordinate, ModalInferenceResult
+    from logos.imports.agents import SymbolicMath
+    from logos.imports.agents import FractalNavigator as OrbitalNavigator
+    from logos.imports.agents import ThonocModalInference, ModalFormula
+    from logos.imports.agents import MVSCoordinate, ModalInferenceResult
 except ImportError:
     try:  # pragma: no cover - allow execution as loose script
         from fractal_orbital.symbolic_math import SymbolicMath
-        from LOGOS_SYSTEM.SYSTEM.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.fractal_mapping import FractalNavigator as OrbitalNavigator
+        from logos.imports.governance import FractalNavigator as OrbitalNavigator
         from modal_inference import ThonocModalInference, ModalFormula
         from data_c_values.data_structures import MVSCoordinate, ModalInferenceResult
     except ImportError:

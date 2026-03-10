@@ -39,7 +39,7 @@ def test_autonomy_not_available():
     # Autonomy interfaces must not exist
   with pytest.raises(ModuleNotFoundError):
     try:
-      from Logos_System.System_Stack import Autonomy  # type: ignore
+from logos.imports.agents import Autonomy
     except ModuleNotFoundError:
       raise
 
@@ -48,7 +48,7 @@ def test_planning_runtime_not_available():
     # Planning runtime must not be importable or callable
   with pytest.raises(ModuleNotFoundError):
     try:
-      from Logos_System.System_Stack import Planning_Runtime  # type: ignore
+from logos.imports.agents import Planning_Runtime
     except ModuleNotFoundError:
       raise
 

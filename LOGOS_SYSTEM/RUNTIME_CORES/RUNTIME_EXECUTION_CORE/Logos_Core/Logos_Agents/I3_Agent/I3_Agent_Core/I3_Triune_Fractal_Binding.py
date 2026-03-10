@@ -48,9 +48,9 @@ observability:
 
 from typing import Any, Dict, List, Tuple
 
-from Cognition_Normalized.Triune_Sierpinski_Core import (
+from logos.imports.cognition import (
     TriuneSierpinskiCore,
-    TriuneSummary,
+    TriuneSummary
 )
 
 

@@ -1,0 +1,897 @@
+[
+  {
+    "symbol": "PlanMetadata",
+    "source_module": "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Planning.Plan_Objects.plan_schema",
+    "recommended_facade": "logos.imports.governance"
+  },
+  {
+    "symbol": "PlanObject",
+    "source_module": "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Planning.Plan_Objects.plan_schema",
+    "recommended_facade": "logos.imports.governance"
+  },
+  {
+    "symbol": "PlanStep",
+    "source_module": "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Planning.Plan_Objects.plan_schema",
+    "recommended_facade": "logos.imports.governance"
+  },
+  {
+    "symbol": "RGERoutingInterface",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Routing_Interface",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "RGERuntimeInterface",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Interface",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "IELDomain",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "IELReasoningEngine",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "get_iel_engine",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "MathCategory",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.math_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "MathematicsReasoningEngine",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.math_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "get_math_engine",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.math_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "PXLReasoningContext",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.pxl_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "PXLReasoningEngine",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.pxl_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "ReasoningMode",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.pxl_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "get_pxl_engine",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.pxl_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "TrinityVector",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.unified_reasoning",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "UnifiedReasoningEngine",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.unified_reasoning",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "ARPCompilerCore",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.compiler.arp_compiler_core",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "BaseReasoningRegistry",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.base_reasoning_registry",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "ComputeMode",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.base_reasoning_registry",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "IntegrationBridge",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.integration_bridge",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "UnifiedBinder",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.unified_binder",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "MeteredReasoningEnforcer",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.metered_reasoning_enforcer",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "MREGovernor",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "MeshEnforcer",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "NexusHandle",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "NexusParticipant",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "StandardNexus",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "StatePacket",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "canonicalize_json",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library.Utilities.Canonical_Hashing",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "compute_sha256",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library.Utilities.Canonical_Hashing",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "EnforcementResult",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.MTP_Compiler.smp_format_enforcer",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "SMPFormatEnforcer",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.MTP_Compiler.smp_format_enforcer",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "ToolAggregator",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.MTP_Compiler.tool_aggregator",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "ToolOutput",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.MTP_Compiler.tool_aggregator",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "build_mtp_smp_packet",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.core_processing.MTP_aggregator",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "PXL_SYMBOL_KEY",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.formal_logic_enrichment.pxl_symbol_key",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "Application",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "LambdaEngine",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "LogosExpr",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "SufficientReason",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "Value",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "Variable",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "Application",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_onto_calculus_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "FunctionType",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_onto_calculus_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "LambdaExpr",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_onto_calculus_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "OntologicalType",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_onto_calculus_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "SufficientReason",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_onto_calculus_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "Variable",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_onto_calculus_engine",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "ArtifactEmitter",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Artifact_Emitter",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "EmissionBatch",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Artifact_Emitter",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "EmittedArtifact",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Artifact_Emitter",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "DependencyGraph",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Dependency_Graph",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "CompilationResult",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Incremental_Compiler",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "IncrementalCompiler",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Incremental_Compiler",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "MSPCSubscriptionAPI",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Contracts.MSPC_Subscription_API",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "AuditEventType",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Diagnostics.MSPC_Audit_Log",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "MSPCAuditLog",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Diagnostics.MSPC_Audit_Log",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "MSPCTelemetry",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Diagnostics.MSPC_Telemetry",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "MSPCPipeline",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Pipeline",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "PipelineTickResult",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Pipeline",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "MSPCScheduler",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Scheduler",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "SchedulerHalt",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Scheduler",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "MSPCState",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_State",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "RuntimePhase",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_State",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "ConflictResolver",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Resolution.Conflict_Resolver",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "ResolutionResult",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Resolution.Conflict_Resolver",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "SignalEnvelope",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Envelope",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "SignalIngress",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Ingress",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "SignalRegistry",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Registry",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "EnhancedTrinityVector",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "TrinityVector",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "Trinity_Hyperstructure",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "MVSBDNBridge",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "BDNGenealogy",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "BDNTransformationType",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "MVSCoordinate",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "MVSRegionType",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "ModalInferenceResult",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "DivergenceEngine",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.divergence_calculator",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "CSPCanonicalStore",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.CSP_Canonical_Store",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "AppendArtifact",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "SMP",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "SMPAppendArtifacts",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "SMPConfidence",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "SMPHeader",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "SMPPrivation",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "SMPProvenance",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "SMPValidationError",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "SMPStore",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Store",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "Channel",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Operational_Log.Operational_Logger",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "Operational_Logger",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Operational_Log.Operational_Logger",
+    "recommended_facade": "logos.imports.protocols"
+  },
+  {
+    "symbol": "RGECognitionChannel",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Channel",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "RGECognitionSignal",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Signal",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "GenesisSelector",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.Genesis_Selector",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "Constraint",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Task_Triad_Derivation",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "TriadDerivationResult",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Task_Triad_Derivation",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "derive_triad",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Task_Triad_Derivation",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "CANONICAL_RECURSION_LAYERS",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "ProtocolResiduals",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "ProtocolStability",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "RawCounts",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "RecursionLayerTelemetry",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "TelemetrySnapshot",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "Triad",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "_all_unordered_pairs",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "_generate_pair_key",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "AGENTS",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "AXES",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "TopologyState",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "CommutationBalanceScore",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Balance_Score",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "MeshCommutationOutput",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Residual_Producer",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "produce_residuals",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Residual_Producer",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "DivergenceMetric",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Divergence_Metric",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "RecursionCouplingCoherenceScore",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Recursion_Coupling_Coherence_Score",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "ProtocolTickTelemetry",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Stability_Scalar_Producer",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "produce_stability",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Stability_Scalar_Producer",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "TriuneFitScore",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Triune_Fit_Score",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "RGEFieldEdge",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Edge",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "RGEFieldGraph",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Graph",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "RGEFieldNode",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Node",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "RGEFieldTopology",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "RGEPacketRegistry",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Registry",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "RGEPacketBase",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Base",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "RGERuntimeDispatcher",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Dispatcher",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "safe_hash",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.config.hashing",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "run_analysis",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_analysis.analysis_runner",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "I1AABinder",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_integrations.i1aa_binder",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "IMVSAdapter",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_mvs_adapter.mvs_adapter",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "StubMVSAdapter",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_mvs_adapter.mvs_adapter",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "MVSRequest",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_mvs_adapter.mvs_types",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "MVSResult",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_mvs_adapter.mvs_types",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "SMPEnvelope",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_runtime.smp_intake",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "load_smp",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_runtime.smp_intake",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "TransformRegistry",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_transform.transform_registry",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "default_registry",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_transform.transform_registry",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "TransformOutcome",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_transform.transform_types",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "TransformStep",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_transform.transform_types",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "safe_hash",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.config.hashing",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "build_append_artifact",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.aa",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "safe_hash",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.hashing",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "ErrorContext",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_error_handler",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "ErrorRecoveryStrategy",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_error_handler",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "ErrorSeverity",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_error_handler",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "IELErrorType",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_error_handler",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "IELEvaluator",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_evaluator",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "IELCandidate",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_generator",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "IELSigner",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_signer",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "DomainType",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_synthesizer",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "KnowledgeLevel",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_synthesizer",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "SynthesisQuality",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_synthesizer",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "SynthesisStrategy",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_synthesizer",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "KnowledgeCatalog",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.module_generator.knowledge_catalog",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "AgentLifecycleManager",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Lifecycle_Manager",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "LifecycleState",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Lifecycle_Manager",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "I1AgentParticipant",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Wrappers",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "I2AgentParticipant",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Wrappers",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "I3AgentParticipant",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Wrappers",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "LogosAgentParticipant",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Wrappers",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "RuntimeLoop",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Runtime_Loop",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "Any",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "Callable",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "Dict",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "Enum",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "List",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "Optional",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "Set",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "Tuple",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "Union",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "dataclass",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "datetime",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "defaultdict",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "field",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "logging",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "uuid",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+    "recommended_facade": "logos.imports.runtime"
+  },
+  {
+    "symbol": "RGEBridgeNexus",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Bootstrap.RGE_Bridge_Nexus",
+    "recommended_facade": "logos.imports.startup"
+  },
+  {
+    "symbol": "RGERuntime",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap",
+    "recommended_facade": "logos.imports.startup"
+  },
+  {
+    "symbol": "build_rge",
+    "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap",
+    "recommended_facade": "logos.imports.startup"
+  },
+  {
+    "symbol": "RUN_LOGOS_SYSTEM",
+    "source_module": "STARTUP.LOGOS_SYSTEM",
+    "recommended_facade": "logos.imports.startup"
+  }
+]

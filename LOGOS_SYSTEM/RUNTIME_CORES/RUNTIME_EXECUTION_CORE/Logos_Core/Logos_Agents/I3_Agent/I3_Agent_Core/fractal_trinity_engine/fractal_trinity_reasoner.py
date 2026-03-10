@@ -30,7 +30,12 @@ from dataclasses import dataclass, field
 from enum import Enum
 import logging
 try:
-    from Agent_Resources.Cognition_Normalized.Triune_Sierpinski_Core import TriuneSierpinskiCore, TriuneSummary, TransformOperator, TerminationPredicate
+from logos.imports.cognition import (
+    TriuneSierpinskiCore,
+    TriuneSummary,
+    TransformOperator,
+    TerminationPredicate
+)
     SIERPINSKI_AVAILABLE = True
 except ImportError:
     SIERPINSKI_AVAILABLE = False

@@ -31,7 +31,7 @@ observability:
 """
 
 import json
-from LOGOS_SYSTEM.SYSTEM.RUNTIME_EXECUTION_CORE.Logos_Agents.agent_classes import TrinitarianAgent, CreatureAgent
+from logos.imports.governance import TrinitarianAgent, CreatureAgent
 from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.logos_validator_hub import LOGOSValidatorHub
 from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.ontological_validator import OntologicalPropertyValidator
 

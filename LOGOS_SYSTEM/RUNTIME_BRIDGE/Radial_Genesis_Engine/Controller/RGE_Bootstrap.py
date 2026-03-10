@@ -75,23 +75,15 @@ from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Override_C
 from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Events.Event_Emitter import (
     EventEmitter,
 )
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Task_Triad_Derivation import (
-    Constraint,
-)
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Commutation_Residual_Producer import (
-    MeshCommutationOutput,
-)
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Stability_Scalar_Producer import (
-    ProtocolTickTelemetry,
-)
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Telemetry_Producer import (
-    assemble_telemetry,
-)
+from logos.imports.protocols import Constraint
+from logos.imports.protocols import MeshCommutationOutput
+from logos.imports.protocols import ProtocolTickTelemetry
+from logos.imports.protocols import assemble_telemetry
 
 
 
 from .RGE_Governance_Context import RGEGovernanceContext
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library import Epistemic_Library_Router
+from logos.imports.protocols import Epistemic_Library_Router
 import datetime
 import json
 

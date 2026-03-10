@@ -67,34 +67,31 @@ from pxl_engine import (
     get_pxl_engine
 )
 
-from LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema import (
-    TrinityVector,
-    PXLRelation
-)
+from logos.imports.agents import TrinityVector,     PXLRelation
 
 # IEL Domain Imports
 try:
-    from LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.AxioPraxis.axiom_systems import AxiomSystem
-    from LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.AxioPraxis.consistency_checker import ConsistencyChecker
+    from logos.imports.agents import AxiomSystem
+    from logos.imports.agents import ConsistencyChecker
     AXIOPRAXIS_AVAILABLE = True
 except ImportError:
     AXIOPRAXIS_AVAILABLE = False
 
 try:
-    from LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.GnosiPraxis.knowledge_system import KnowledgeSystem
-    from LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.GnosiPraxis.belief_network import BeliefNetwork
+    from logos.imports.agents import KnowledgeSystem
+    from logos.imports.agents import BeliefNetwork
     GNOSIPRAXIS_AVAILABLE = True
 except ImportError:
     GNOSIPRAXIS_AVAILABLE = False
 
 try:
-    from LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.ChronoPraxis.chronopraxis.temporal_logic import TemporalLogic
+    from logos.imports.agents import TemporalLogic
     CHRONOPRAXIS_AVAILABLE = True
 except ImportError:
     CHRONOPRAXIS_AVAILABLE = False
 
 try:
-    from LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.ModalPraxis.modal_logic import ModalLogic, ModalSystem
+    from logos.imports.agents import ModalLogic, ModalSystem
     MODALPRAXIS_AVAILABLE = True
 except ImportError:
     MODALPRAXIS_AVAILABLE = False

@@ -1,7 +1,7 @@
 
 from typing import Optional, List
 import time
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema import AppendArtifact
+from logos.imports.protocols import AppendArtifact
 
 class IMVSAdapter:
     def run_analysis(self, smp_id, content_hash, payload_ref):

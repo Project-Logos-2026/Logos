@@ -72,7 +72,7 @@ except ImportError as e:
 
         def validate_trinity_constraints(self, vector):
             return {'compliance_validated': True}
-from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.MVS_System.data_c_values.data_structures import MVSCoordinate
+from logos.imports.agents import MVSCoordinate
 logger = logging.getLogger(__name__)
 
 

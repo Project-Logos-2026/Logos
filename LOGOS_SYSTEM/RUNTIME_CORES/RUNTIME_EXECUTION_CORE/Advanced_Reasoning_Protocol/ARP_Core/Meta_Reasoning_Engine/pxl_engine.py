@@ -58,21 +58,9 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 from enum import Enum
 
 # PXL Core Components
-from LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema import (
-    PXLRelationType,
-    PXLRelation,
-    TrinityVector,
-    ModalProperties,
-    PXLAnalysisConfig,
-    ValidationResult,
-    ValidationSeverity
-)
+from logos.imports.agents import PXLRelationType,     PXLRelation,     TrinityVector,     ModalProperties,     PXLAnalysisConfig,     ValidationResult,     ValidationSeverity
 
-from LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.relation_mapper import (
-    PXLRelationMapper,
-    RelationMappingResult,
-    TrinityRelationAnalyzer
-)
+from logos.imports.agents import PXLRelationMapper,     RelationMappingResult,     TrinityRelationAnalyzer
 
 # Configure logging when invoked as a script
 if __name__ == "__main__":

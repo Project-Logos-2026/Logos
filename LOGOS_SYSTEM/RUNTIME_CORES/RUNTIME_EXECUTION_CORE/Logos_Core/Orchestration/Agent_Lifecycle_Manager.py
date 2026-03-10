@@ -23,12 +23,12 @@ from .Agent_Wrappers import (
 from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus import (
     NexusParticipant,
 )
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Store import SMPStore
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.UWM_Access_Control import UWMReadAPI
+from logos.imports.protocols import SMPStore
+from logos.imports.protocols import UWMReadAPI
 from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.SCP_Orchestrator import SCPOrchestrator
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Promotion_Evaluator import PromotionEvaluator
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Canonical_SMP_Producer import CanonicalSMPProducer
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.CSP_Canonical_Store import CSPCanonicalStore
+from logos.imports.protocols import PromotionEvaluator
+from logos.imports.protocols import CanonicalSMPProducer
+from logos.imports.protocols import CSPCanonicalStore
 
 
 class LifecycleHalt(Exception):

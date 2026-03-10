@@ -1,1 +1,1 @@
-from I2_Integration.I2_Egress_Critique import I2EgressCritique, CritiqueResult
+from logos.imports.mtp import I2EgressCritique, CritiqueResult

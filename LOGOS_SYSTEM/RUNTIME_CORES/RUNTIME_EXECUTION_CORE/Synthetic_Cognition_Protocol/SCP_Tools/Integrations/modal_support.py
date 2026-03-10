@@ -66,7 +66,7 @@ class _FallbackThonocVerifier:
 def get_thonoc_verifier() -> Type[_FallbackThonocVerifier]:
     """Return the best-available Thonoc verifier implementation."""
     try:
-        from CONSCIOUS_Modal_Inference_System import ThonocVerifier as external_verifier
+from logos.imports.cognition import ThonocVerifier as external_verifier
 
         return external_verifier  # type: ignore[no-any-return]
     except Exception:  # pragma: no cover - fall through to legacy or fallback

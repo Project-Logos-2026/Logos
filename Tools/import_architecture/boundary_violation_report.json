@@ -1,0 +1,449 @@
+{
+  "status": "FAIL",
+  "description": "Direct cross-cluster import violations detected (internal project modules only). Stdlib and external package imports are excluded from this governed boundary rule.",
+  "raw_direct_cross_cluster_count": 1697,
+  "stdlib_or_external_import_count": 1646,
+  "internal_violation_count": 51,
+  "architectural_rule": "ALL internal cross-cluster imports MUST route through logos.imports.*",
+  "cluster_pair_summary": [
+    {
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "count": 19
+    },
+    {
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS",
+      "count": 7
+    },
+    {
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "MTP_Core",
+      "count": 6
+    },
+    {
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "Cognition_Normalized",
+      "count": 4
+    },
+    {
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "LOGOS_SYSTEM",
+      "count": 3
+    },
+    {
+      "source_cluster": "LOGOS_SYSTEM",
+      "target_cluster": "Logos_System",
+      "count": 2
+    },
+    {
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "DRAC",
+      "count": 1
+    },
+    {
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "LOGOS_V1",
+      "count": 1
+    },
+    {
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "CONSCIOUS_Modal_Inference_System",
+      "count": 1
+    },
+    {
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "Logos_Protocol",
+      "count": 1
+    },
+    {
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "Agent_Resources",
+      "count": 1
+    },
+    {
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "I2_Integration",
+      "count": 1
+    },
+    {
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "MTP_Nexus",
+      "count": 1
+    },
+    {
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_BRIDGE",
+      "target_cluster": "Nexus",
+      "count": 1
+    },
+    {
+      "source_cluster": "STARTUP",
+      "target_cluster": "LOGOS_SYSTEM",
+      "count": 1
+    },
+    {
+      "source_cluster": "_Dev_Resources",
+      "target_cluster": "LOGOS_SYSTEM._Governance",
+      "count": 1
+    }
+  ],
+  "violations": [
+    {
+      "source_module": "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.tests.test_agent_deployment_safety",
+      "target_module": "Logos_System.System_Stack",
+      "source_cluster": "LOGOS_SYSTEM",
+      "target_cluster": "Logos_System",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.tests.test_agent_deployment_safety",
+      "target_module": "Logos_System.System_Stack",
+      "source_cluster": "LOGOS_SYSTEM",
+      "target_cluster": "Logos_System",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.ORCHESTRATION_AND_ENTRYPOINTS.Canonical_System_Bootstrap_Pipeline",
+      "target_module": "PYTHON_MODULES.SEMANTIC_CONTEXTS.Bootstrap_Runtime_Context",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.ORCHESTRATION_AND_ENTRYPOINTS.Canonical_System_Bootstrap_Pipeline",
+      "target_module": "PYTHON_MODULES.SEMANTIC_CONTEXTS.Runtime_Mode_Context",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.ORCHESTRATION_AND_ENTRYPOINTS.Canonical_System_Bootstrap_Pipeline",
+      "target_module": "PYTHON_MODULES.SEMANTIC_CONTEXTS.Agent_Policy_Decision_Context",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.ORCHESTRATION_AND_ENTRYPOINTS.Canonical_System_Bootstrap_Pipeline",
+      "target_module": "PYTHON_MODULES.SEMANTIC_CONTEXTS.Privation_Handling_Context",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.ORCHESTRATION_AND_ENTRYPOINTS.Canonical_System_Bootstrap_Pipeline",
+      "target_module": "PYTHON_MODULES.SEMANTIC_CONTEXTS.Trinitarian_Optimization_Context",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Runtime_Mode_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Runtime_Mode_Controller",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Runtime_Mode_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Runtime_Mode_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Trinitarian_Optimization_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Trinitarian_Alignment_Core",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Trinitarian_Optimization_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Trinitarian_Optimization_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Bootstrap_Runtime_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Runtime_Context_Initializer",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Bootstrap_Runtime_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Runtime_Mode_Controller",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Bootstrap_Runtime_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Bootstrap_Runtime_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Privation_Handling_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Privation_Handling_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Agent_Policy_Decision_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Agent_Policy_Decision_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "PYTHON_MODULES",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Tools.DRAC_Phase_Tracker",
+      "target_module": "DRAC.CORE.DRAC_Core",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "target_cluster": "DRAC",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.fractal_mvs",
+      "target_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge",
+      "target_module": "LOGOS_V1.core.verified_core",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "LOGOS_V1",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge",
+      "target_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.modal_support",
+      "target_module": "CONSCIOUS_Modal_Inference_System",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "CONSCIOUS_Modal_Inference_System",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Tools.Recursion_Grounding.Phase_E_Tick_Engine",
+      "target_module": "LOGOS_SYSTEM.Governance.exceptions",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "LOGOS_SYSTEM",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Identity_Generator.agent_identity",
+      "target_module": "Logos_Protocol.logos_core.world_model",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "Logos_Protocol",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Tetra_Conscious.Triune_Fractal_Convergence",
+      "target_module": "Cognition_Normalized.Triune_Sierpinski_Core",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "Cognition_Normalized",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_synthesizer",
+      "target_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_error_handler",
+      "target_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_schema",
+      "target_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.semantic_projection_monitor",
+      "target_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.repo_root",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.aa",
+      "target_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.repo_root",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Core.I2_Triune_Fractal_Binding",
+      "target_module": "Cognition_Normalized.Triune_Sierpinski_Core",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "Cognition_Normalized",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Core.I3_Triune_Fractal_Binding",
+      "target_module": "Cognition_Normalized.Triune_Sierpinski_Core",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "Cognition_Normalized",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Core.fractal_trinity_engine.fractal_trinity_reasoner",
+      "target_module": "Agent_Resources.Cognition_Normalized.Triune_Sierpinski_Core",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "Agent_Resources",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Agent_Safety_Shims.Memory_Substrate",
+      "target_module": "LOGOS_SYSTEM.Agent_Safety_Shims.Capability_Router",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "LOGOS_SYSTEM",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Agent_Safety_Shims.Phase_E_Memory_Substrate",
+      "target_module": "LOGOS_SYSTEM.Agent_Safety_Shims.Phase_E_Capability_Router",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "LOGOS_SYSTEM",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Core.I1_Triune_Fractal_Binding",
+      "target_module": "Cognition_Normalized.Triune_Sierpinski_Core",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "Cognition_Normalized",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core",
+      "target_module": "MTP_Core.MTP_Projection_Engine",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "MTP_Core",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core",
+      "target_module": "MTP_Core.MTP_Semantic_Linearizer",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "MTP_Core",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core",
+      "target_module": "MTP_Core.MTP_Fractal_Evaluator",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "MTP_Core",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core",
+      "target_module": "MTP_Core.MTP_Output_Renderer",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "MTP_Core",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core",
+      "target_module": "MTP_Core.MTP_Validation_Gate",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "MTP_Core",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.I2_Integration",
+      "target_module": "I2_Integration.I2_Egress_Critique",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "I2_Integration",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Nexus.MTP_Nexus",
+      "target_module": "MTP_Core.MTP_Output_Renderer",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "MTP_Core",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Nexus",
+      "target_module": "MTP_Nexus.MTP_Nexus",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "target_cluster": "MTP_Nexus",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Bridge_Modules.execution_to_operations_exchanger",
+      "target_module": "Nexus",
+      "source_cluster": "LOGOS_SYSTEM.RUNTIME_BRIDGE",
+      "target_cluster": "Nexus",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "STARTUP.LOGOS_SYSTEM",
+      "target_module": "LOGOS_SYSTEM.System_Entry_Point.System_Entry_Point",
+      "source_cluster": "STARTUP",
+      "target_cluster": "LOGOS_SYSTEM",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    },
+    {
+      "source_module": "_Dev_Resources.scripts.Run_Nexus_Structural_Audit",
+      "target_module": "LOGOS_SYSTEM._Governance.Nexus_Validation.Nexus_AST_Validator",
+      "source_cluster": "_Dev_Resources",
+      "target_cluster": "LOGOS_SYSTEM._Governance",
+      "classification": "DIRECT_CROSS_CLUSTER_INTERNAL"
+    }
+  ]
+}

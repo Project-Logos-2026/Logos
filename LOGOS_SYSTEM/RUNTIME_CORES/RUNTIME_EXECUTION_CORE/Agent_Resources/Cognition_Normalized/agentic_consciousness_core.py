@@ -79,7 +79,7 @@ except ImportError:
         logger.warning("PyMC not available - Bayesian modeling disabled")
 
 try:
-    from causallearn.search.ConstraintBased.PC import pc
+    from logos.imports.runtime import pc
     CAUSAL_LEARN_AVAILABLE = True
 except ImportError:
     CAUSAL_LEARN_AVAILABLE = False

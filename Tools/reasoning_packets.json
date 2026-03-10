@@ -1,0 +1,2196 @@
+[
+  {
+    "packet_id": "PKT_0001",
+    "module_count": 2,
+    "is_cycle": true,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 3,
+      "semantic": 0,
+      "agent": 2,
+      "safety": 2,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "autonomous_learning",
+      "iel_generator"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/autonomous_learning.py",
+      "Blueprints/reasoning/iel_generator.py"
+    ],
+    "external_dependencies": [
+      "iel_evaluator"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0003",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 1,
+      "utility": 0
+    },
+    "modules": [
+      "scp_nexus"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/scp_nexus.py"
+    ],
+    "external_dependencies": [
+      "base_nexus"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0005",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 0,
+      "agent": 1,
+      "safety": 0,
+      "math": 1,
+      "utility": 0
+    },
+    "modules": [
+      "arp_nexus"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Reasoning/arp_nexus.py"
+    ],
+    "external_dependencies": [
+      "agent_nexus",
+      "base_nexus",
+      "scp_nexus"
+    ],
+    "external_dep_count": 3
+  },
+  {
+    "packet_id": "PKT_0006",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 1,
+      "utility": 0
+    },
+    "modules": [
+      "arp_stack_compiler"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/arp_stack_compiler.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0010",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "test_arp_nexus"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Reasoning/test_arp_nexus.py"
+    ],
+    "external_dependencies": [
+      "arp_nexus"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0012",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 3
+    },
+    "modules": [
+      "schemas"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/schemas.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0015",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "entry"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/entry.py"
+    ],
+    "external_dependencies": [
+      "enhanced_reference_monitor"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0021",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "uip_integration_plugin"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/uip_integration_plugin.py"
+    ],
+    "external_dependencies": [
+      "_uip_connector_stubs"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0034",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "resource_manager"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/resource_manager.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0066",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 1,
+      "math": 1,
+      "utility": 0
+    },
+    "modules": [
+      "ergonomic_optimizer"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/ergonomic_optimizer.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0085",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "modal_vector_sync"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/modal_vector_sync.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0093",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 2,
+      "utility": 0
+    },
+    "modules": [
+      "fractal_mvs"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/fractal_mvs.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0100",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 0,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "integration_test"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/integration_test.py"
+    ],
+    "external_dependencies": [
+      "arp_nexus"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0104",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "test_proved_grounding"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_proved_grounding.py"
+    ],
+    "external_dependencies": [
+      "LOGOS"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0105",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 1,
+      "utility": 0
+    },
+    "modules": [
+      "test_dual_bijection"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_dual_bijection.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0107",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "uip_nexus"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/uip_nexus.py"
+    ],
+    "external_dependencies": [
+      "base_nexus"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0111",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 0,
+      "agent": 2,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "coherence_metrics"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/coherence_metrics.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0113",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 2,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "iel_evaluator"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/iel_evaluator.py"
+    ],
+    "external_dependencies": [
+      "coherence_metrics",
+      "coherence_optimizer",
+      "iel_signer"
+    ],
+    "external_dep_count": 3
+  },
+  {
+    "packet_id": "PKT_0120",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "test_bayesian_data_handler"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_bayesian_data_handler.py"
+    ],
+    "external_dependencies": [
+      "types"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0124",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "integration_test_suite"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/integration_test_suite.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0127",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "test_logos_agi_persistence_smoke"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_logos_agi_persistence_smoke.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0133",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 3,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "bayesian_interface"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/bayesian_interface.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0136",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "bayesian_ml"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/bayesian_ml.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0137",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 5,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "bayesian_inference"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/bayesian_inference.py"
+    ],
+    "external_dependencies": [
+      "bayesian_interface",
+      "bayesian_ml",
+      "bayesian_updates",
+      "translation_engine"
+    ],
+    "external_dep_count": 4
+  },
+  {
+    "packet_id": "PKT_0139",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "core_service"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/core_service.py"
+    ],
+    "external_dependencies": [
+      "bayesian_inference",
+      "semantic_transformers"
+    ],
+    "external_dep_count": 2
+  },
+  {
+    "packet_id": "PKT_0140",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 2,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "test_integration"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_integration.py"
+    ],
+    "external_dependencies": [
+      "bayesian_inference",
+      "core_service",
+      "semantic_transformers"
+    ],
+    "external_dep_count": 3
+  },
+  {
+    "packet_id": "PKT_0145",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "Constraint_Result"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/Constraint_Result.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0149",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "time_modeling"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/time_modeling.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0151",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 1,
+      "safety": 1,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "persistence"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/persistence.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0155",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "relation_mapper"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/relation_mapper.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0159",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "Trinitarian_Optimizer"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/Trinitarian_Optimizer.py"
+    ],
+    "external_dependencies": [
+      "Constraint_Context",
+      "Constraint_Result"
+    ],
+    "external_dep_count": 2
+  },
+  {
+    "packet_id": "PKT_0162",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 2,
+      "utility": 0
+    },
+    "modules": [
+      "advanced_fractal_analyzer"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/advanced_fractal_analyzer.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0165",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 3,
+      "semantic": 0,
+      "agent": 2,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "PXL_World_Model"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/PXL_World_Model.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0166",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 2,
+      "utility": 0
+    },
+    "modules": [
+      "data_structures"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/data_structures.py"
+    ],
+    "external_dependencies": [
+      "fractal_mvs"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0169",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "epistemological_framework"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/epistemological_framework.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0170",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 1,
+      "utility": 0
+    },
+    "modules": [
+      "space_time_framework"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/space_time_framework.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0171",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 1,
+      "utility": 0
+    },
+    "modules": [
+      "bijective_mapping"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/bijective_mapping.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0172",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "privation_override"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/privation_override.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0179",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 4,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 1,
+      "utility": 1
+    },
+    "modules": [
+      "lambda_onto_calculus_engine"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/lambda_onto_calculus_engine.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0180",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "lambda_engine"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/lambda_engine.py"
+    ],
+    "external_dependencies": [
+      "lambda_onto_calculus_engine"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0189",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "bayes_update_real_time"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/bayes_update_real_time.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0192",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "api_server"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/api_server.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0195",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 2
+    },
+    "modules": [
+      "unified_classes"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/unified_classes.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0196",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 3,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "natural_language_processor"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/natural_language_processor.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0197",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "Utilities__entry"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/Utilities__entry.py"
+    ],
+    "external_dependencies": [
+      "autonomous_learning",
+      "iel_integration",
+      "integrity_safeguard",
+      "natural_language_processor",
+      "reference_monitor",
+      "unified_classes"
+    ],
+    "external_dep_count": 6
+  },
+  {
+    "packet_id": "PKT_0198",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 4,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "agentic_consciousness_core"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/agentic_consciousness_core.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0203",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "cosmic_systems"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/cosmic_systems.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0209",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 3,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "Reasoning__consistency_checker"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/Reasoning__consistency_checker.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0210",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 3,
+      "semantic": 0,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "iel_synthesizer"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/iel_synthesizer.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0214",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "pxl_schema"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/pxl_schema.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0215",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 1,
+      "utility": 1
+    },
+    "modules": [
+      "fractal_mapping"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/fractal_mapping.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0217",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "collaboration"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/collaboration.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0218",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 1,
+      "utility": 0
+    },
+    "modules": [
+      "example_usage"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/example_usage.py"
+    ],
+    "external_dependencies": [
+      "arp_nexus"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0220",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "modal_support"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/modal_support.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0222",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "TLM_Confirmation"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/TLM_Confirmation.py"
+    ],
+    "external_dependencies": [
+      "Constraint_Context",
+      "Constraint_Result"
+    ],
+    "external_dep_count": 2
+  },
+  {
+    "packet_id": "PKT_0223",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 1,
+      "safety": 0,
+      "math": 1,
+      "utility": 0
+    },
+    "modules": [
+      "axiom_systems"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/axiom_systems.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0226",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "privative_policies"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/privative_policies.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0227",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 3,
+      "semantic": 0,
+      "agent": 1,
+      "safety": 1,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "iel_overlay"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/iel_overlay.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0231",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "pxl_postprocessor"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/pxl_postprocessor.py"
+    ],
+    "external_dependencies": [
+      "pxl_schema"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0232",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "tranlsation_bridge"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/tranlsation_bridge.py"
+    ],
+    "external_dependencies": [
+      "bayesian_inference",
+      "lambda_engine",
+      "lambda_onto_calculus_engine"
+    ],
+    "external_dep_count": 3
+  },
+  {
+    "packet_id": "PKT_0234",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "bayesian_recursion"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/bayesian_recursion.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0238",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "consistency_checker"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/consistency_checker.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0239",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "build_coq_theorem_index"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/build_coq_theorem_index.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0249",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 3,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "modal_logic"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/modal_logic.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0250",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "multi_modal_system"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/multi_modal_system.py"
+    ],
+    "external_dependencies": [
+      "modal_logic"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0252",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "lambda_parser"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/lambda_parser.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0254",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "iel_schema"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/iel_schema.py"
+    ],
+    "external_dependencies": [
+      "iel_error_handler",
+      "iel_synthesizer"
+    ],
+    "external_dep_count": 2
+  },
+  {
+    "packet_id": "PKT_0256",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "capture_arp_traces_and_backfill"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/capture_arp_traces_and_backfill.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0258",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 3,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "universal_logic"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/universal_logic.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0259",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 1,
+      "utility": 0
+    },
+    "modules": [
+      "foundational_logic"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/foundational_logic.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0260",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "logos_nodes_connections"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/logos_nodes_connections.py"
+    ],
+    "external_dependencies": [
+      "ontological_validator"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0261",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "llm_backend"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/llm_backend.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0264",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "hierarchical_bayes_network"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/hierarchical_bayes_network.py"
+    ],
+    "external_dependencies": [
+      "bayes_update_real_time"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0265",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "proof_engine"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/proof_engine.py"
+    ],
+    "external_dependencies": [
+      "bijective_mapping",
+      "logos_lambda_core",
+      "ontological_validator"
+    ],
+    "external_dep_count": 3
+  },
+  {
+    "packet_id": "PKT_0266",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 1,
+      "math": 1,
+      "utility": 0
+    },
+    "modules": [
+      "coherence_formalism"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/coherence_formalism.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0270",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "scan_bypass"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/scan_bypass.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0272",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "bayesian_inferencer"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/bayesian_inferencer.py"
+    ],
+    "external_dependencies": [
+      "bayes_update_real_time"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0273",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 3,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "prediction_module"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/prediction_module.py"
+    ],
+    "external_dependencies": [
+      "bayesian_inferencer",
+      "fractal_orbital_node_class",
+      "modal_support"
+    ],
+    "external_dep_count": 3
+  },
+  {
+    "packet_id": "PKT_0277",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "bayesian_nexus"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/bayesian_nexus.py"
+    ],
+    "external_dependencies": [
+      "bayes_update_real_time",
+      "bayesian_inferencer",
+      "bayesian_recursion",
+      "hierarchical_bayes_network"
+    ],
+    "external_dep_count": 4
+  },
+  {
+    "packet_id": "PKT_0282",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "knowledge_system"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/knowledge_system.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0294",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "demo_gui"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/demo_gui.py"
+    ],
+    "external_dependencies": [
+      "entry"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0295",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "logos_bridge"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/logos_bridge.py"
+    ],
+    "external_dependencies": [
+      "banach_data_nodes",
+      "data_structures",
+      "fractal_mvs"
+    ],
+    "external_dep_count": 3
+  },
+  {
+    "packet_id": "PKT_0296",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "coherence"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/coherence.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0297",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "enhanced_uip_integration_plugin"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/enhanced_uip_integration_plugin.py"
+    ],
+    "external_dependencies": [
+      "_uip_connector_stubs"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0302",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "logos_lambda_integration"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/logos_lambda_integration.py"
+    ],
+    "external_dependencies": [
+      "lambda_engine",
+      "lambda_onto_calculus_engine"
+    ],
+    "external_dep_count": 2
+  },
+  {
+    "packet_id": "PKT_0305",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "temporal_logic"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/temporal_logic.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0307",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 2,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 1,
+      "math": 1,
+      "utility": 0
+    },
+    "modules": [
+      "pxl_modal_fractal_boundary_analysis"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/pxl_modal_fractal_boundary_analysis.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0308",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "action_system"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/action_system.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0309",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 3,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 1,
+      "utility": 0
+    },
+    "modules": [
+      "trinitarian_optimization_theorem"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/trinitarian_optimization_theorem.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0311",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 1,
+      "math": 2,
+      "utility": 0
+    },
+    "modules": [
+      "pxl_fractal_orbital_analysis"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/pxl_fractal_orbital_analysis.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0312",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 4,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "modal_validator"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/modal_validator.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0314",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 3,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "modal_reasoner"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/modal_reasoner.py"
+    ],
+    "external_dependencies": [
+      "modal_logic"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0316",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 1,
+      "safety": 0,
+      "math": 1,
+      "utility": 0
+    },
+    "modules": [
+      "belief_network"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/belief_network.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0320",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 3,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 1,
+      "utility": 0
+    },
+    "modules": [
+      "trinity_framework"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/trinity_framework.py"
+    ],
+    "external_dependencies": [
+      "ontology_inducer"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0323",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 0,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "bayesian_data_parser"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/bayesian_data_parser.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  }
+]

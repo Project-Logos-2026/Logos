@@ -25,10 +25,10 @@ observability:
 import itertools
 from typing import Any, Dict, List, Tuple
 try:
-    from Logos_AGI.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital import fractal_orbital_node_class as fractal_node_module
+    from logos.imports.runtime import fractal_orbital_node_class as fractal_node_module
 except ImportError:
     from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital import fractal_orbital_node_class as fractal_node_module
-from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.modal_support import get_thonoc_verifier
+from logos.imports.agents import get_thonoc_verifier
 ThonocVerifier = get_thonoc_verifier()
 OntologicalNode = fractal_node_module.OntologicalNode
 

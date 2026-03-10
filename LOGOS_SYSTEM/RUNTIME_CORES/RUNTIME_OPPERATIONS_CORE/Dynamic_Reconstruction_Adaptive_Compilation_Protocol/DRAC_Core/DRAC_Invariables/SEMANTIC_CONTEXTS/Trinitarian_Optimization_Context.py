@@ -22,9 +22,9 @@ NOTE:
 - Metadata is authoritative in SEMANTIC_CONTEXTS_CATALOG.json.
 """
 
-from PYTHON_MODULES.SEMANTIC_AXIOMS.Trinitarian_Alignment_Core import score_candidates
-from PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints import enforce_invariants
-from PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate import validate_capabilities
+from logos.imports.drac_axioms import score_candidates
+from logos.imports.drac_axioms import enforce_invariants
+from logos.imports.drac_axioms import validate_capabilities
 
 
 def run(context: dict) -> dict:

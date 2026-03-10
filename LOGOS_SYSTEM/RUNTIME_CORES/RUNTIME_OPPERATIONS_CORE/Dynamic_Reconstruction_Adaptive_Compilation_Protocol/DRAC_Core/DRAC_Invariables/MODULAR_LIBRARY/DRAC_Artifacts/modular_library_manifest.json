@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-10T23:00:48.496984+00:00",
+  "total_af_modules": 78,
+  "total_af_clusters": 10,
+  "total_cores": 27,
+  "compatibility_bindings": 1514,
+  "tag_dictionary_size": 30,
+  "tags_in_use": 21,
+  "taxonomy_classes": 9,
+  "source_directories": [
+    "SEMANTIC_AXIOMS",
+    "SEMANTIC_CONTEXTS",
+    "ORCHESTRATION_AND_ENTRYPOINTS",
+    "CORE_CONFIGURATIONS"
+  ],
+  "output_files": [
+    "fbc_master_registry.json",
+    "fbc_taxonomy.json",
+    "fbc_tag_dictionary.json",
+    "af_core_compatibility_matrix.json",
+    "modular_library_manifest.json"
+  ]
+}

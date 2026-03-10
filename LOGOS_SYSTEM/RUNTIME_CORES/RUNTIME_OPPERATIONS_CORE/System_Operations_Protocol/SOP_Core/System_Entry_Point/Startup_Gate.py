@@ -6,7 +6,7 @@ import os
 import hashlib
 from datetime import datetime
 
-from LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.Governance_Control.Invariant_Enforcer import InvariantEnforcer
+from logos.imports.governance import InvariantEnforcer
 
 
 class StartupGate:

@@ -1,0 +1,114 @@
+{
+  "logos.imports.runtime": {
+    "facade_namespace": "logos.imports.runtime",
+    "canonical_facade_module": "zlib",
+    "cluster_root": "zlib",
+    "cluster_module_count": 1,
+    "exported_symbols": {},
+    "total_exported_symbols": 0
+  },
+  "logos.imports.blueprints": {
+    "facade_namespace": "logos.imports.blueprints",
+    "canonical_facade_module": "BLUEPRINTS.Canonical_Import_Facade.Import_Facade.generate_symbol_import_index",
+    "cluster_root": "BLUEPRINTS",
+    "cluster_module_count": 3,
+    "exported_symbols": {},
+    "total_exported_symbols": 0
+  },
+  "logos.imports.governance": {
+    "facade_namespace": "logos.imports.governance",
+    "canonical_facade_module": "_Governance.Gov_Modules.preflight_filesystem_check",
+    "cluster_root": "_Governance",
+    "cluster_module_count": 3,
+    "exported_symbols": {},
+    "total_exported_symbols": 0
+  },
+  "logos.imports.startup": {
+    "facade_namespace": "logos.imports.startup",
+    "canonical_facade_module": "STARTUP.LOGOS_SYSTEM",
+    "cluster_root": "STARTUP",
+    "cluster_module_count": 10,
+    "exported_symbols": {
+      "STARTUP.LOGOS_SYSTEM": [
+        "RUN_LOGOS_SYSTEM"
+      ],
+      "STARTUP.START_LOGOS": [
+        "main"
+      ]
+    },
+    "total_exported_symbols": 2
+  },
+  "logos.imports.protocols": {
+    "facade_namespace": "logos.imports.protocols",
+    "canonical_facade_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Operational_Log.Operational_Logger",
+    "cluster_root": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+    "cluster_module_count": 123,
+    "exported_symbols": {
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.SMP_Schema": [
+        "AppendArtifact",
+        "SMP"
+      ],
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Canonical_Governance_Adapter": [
+        "CanonicalGovernanceAdapter"
+      ],
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Operational_Log.Operational_Logger": [
+        "Channel",
+        "Operational_Logger"
+      ],
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.SMP_Store": [
+        "SMPStore"
+      ],
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Canonical_SMP_Producer": [
+        "CanonicalSMPProducer"
+      ],
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.Classification_Tracker": [
+        "validate_transition"
+      ],
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.UWM_Access_Control": [
+        "UWMReadAPI"
+      ],
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema": [
+        "AppendArtifact",
+        "SMP",
+        "SMPAppendArtifacts",
+        "SMPConfidence",
+        "SMPHeader",
+        "SMPPrivation",
+        "SMPProvenance",
+        "SMPValidationError"
+      ],
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.CSP_Canonical_Store": [
+        "CSPCanonicalStore"
+      ],
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Classification_Tracker": [
+        "validate_transition"
+      ],
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Store": [
+        "SMPStore"
+      ],
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.APPLICATION_FUNCTIONS.Reasoning.pxl_schema": [
+        "ModalProperties",
+        "TrinityVector"
+      ],
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Promotion_Evaluator": [
+        "PromotionEvaluator"
+      ],
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.UWM_Access_Control": [
+        "UWMReadAPI"
+      ]
+    },
+    "total_exported_symbols": 24
+  },
+  "logos.imports.agents": {
+    "facade_namespace": "logos.imports.agents",
+    "canonical_facade_module": "System_Stack.Logos_Protocol.Protocol_Core.Activation_Sequencer.Identity_Generator.System_Entry_Point.Recusion_Grounding.Initialize_Recursion_Engine",
+    "cluster_root": "System_Stack",
+    "cluster_module_count": 1,
+    "exported_symbols": {
+      "System_Stack.Logos_Protocol.Protocol_Core.Activation_Sequencer.Identity_Generator.System_Entry_Point.Recusion_Grounding.Initialize_Recursion_Engine": [
+        "AgentSelfReflection"
+      ]
+    },
+    "total_exported_symbols": 1
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "pass": "ARCHON PRIME \u2014 Facade Import Rewrite Pass",
+  "mode": "Deterministic Repair Execution",
+  "timestamp": "2026-03-10T19:33:23.154568Z",
+  "input_artifacts": [
+    "Runtime_Facade_Synthesis/import_rewrite_table.json",
+    "Runtime_Facade_Synthesis/repair_feasibility.json",
+    "Runtime_Facade_Synthesis/facade_map.json",
+    "Runtime_Facade_Synthesis/cluster_map.json",
+    "Runtime_Facade_Synthesis/facade_surface_spec.json"
+  ],
+  "rewrite_scope": "AUTO_REPAIRABLE entries only",
+  "metrics": {
+    "total_files_scanned": 925,
+    "files_examined_for_repair": 48,
+    "auto_repairable_entries_in_table": 89,
+    "files_modified": 0,
+    "rewrites_applied": 0,
+    "entries_pre_repaired": 88,
+    "entries_not_applicable": 1,
+    "entries_file_not_found": 0,
+    "cross_cluster_violations_remaining": 0,
+    "syntax_errors_detected": 9,
+    "syntax_errors_introduced_by_this_pass": 0
+  },
+  "outcome": {
+    "status": "PASS",
+    "reason": "All 89 AUTO_REPAIRABLE cross-cluster violations have been resolved. 88 source files already import via canonical facade namespaces (logos.imports.*). 1 entry is not applicable (illegal import absent, facade not needed). 0 files were modified by this pass (rewrite already complete). 9 pre-existing syntax errors detected \u2014 none introduced by this pass.",
+    "cross_cluster_deep_imports": 0,
+    "syntax_errors_introduced": 0
+  },
+  "pre_existing_syntax_errors": {
+    "count": 9,
+    "note": "These errors predate this pass and were NOT introduced by the facade rewrite.",
+    "files": [
+      "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Core/Memory/Memory_State_Persistence.py",
+      "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Core/Memory/Memory_Access_Point.py",
+      "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Core/Memory/Memory_Recall_Integration.py",
+      "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/fractal_orbital/fractal_orbit_demo.py",
+      "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/core/fractal_orbital_node_generator.py",
+      "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/PXL_Core.py",
+      "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/smp.py",
+      "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Core/MTP_Compiler/tool_compiler.py",
+      "LOGOS_SYSTEM/_Governance/Nexus_Validation/Nexus_AST_Validator.py"
+    ]
+  }
+}

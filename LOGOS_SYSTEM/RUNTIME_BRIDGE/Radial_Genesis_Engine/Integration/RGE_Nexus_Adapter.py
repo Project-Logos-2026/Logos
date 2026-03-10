@@ -38,10 +38,7 @@ from typing import Any, Dict, List, Optional
 from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap import (
     RGERuntime,
 )
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus import (
-    NexusParticipant,
-    StatePacket,
-)
+from logos.imports.protocols import NexusParticipant,     StatePacket
 
 
 _ADAPTER_PARTICIPANT_ID = "rge_topology_advisor"

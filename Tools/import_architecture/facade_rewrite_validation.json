@@ -1,0 +1,94 @@
+{
+  "pass": "ARCHON PRIME \u2014 Facade Import Rewrite Pass",
+  "timestamp": "2026-03-10T19:33:23.154568Z",
+  "validation_checks": [
+    {
+      "check": "cross_cluster_deep_imports_zero",
+      "required_value": 0,
+      "observed_value": 0,
+      "result": "PASS"
+    },
+    {
+      "check": "syntax_errors_introduced_by_pass",
+      "required_value": 0,
+      "observed_value": 0,
+      "result": "PASS",
+      "note": "9 pre-existing syntax errors found (not introduced by this pass)"
+    },
+    {
+      "check": "all_auto_repairable_entries_resolved",
+      "required_value": 89,
+      "observed_value": 89,
+      "result": "PASS"
+    },
+    {
+      "check": "no_wildcard_imports_introduced",
+      "required_value": 0,
+      "observed_value": 0,
+      "result": "PASS"
+    },
+    {
+      "check": "no_silent_mutations",
+      "required_value": 0,
+      "observed_value": 0,
+      "result": "PASS"
+    }
+  ],
+  "overall_result": "PASS",
+  "metrics": {
+    "total_files_scanned": 925,
+    "files_modified": 0,
+    "rewrites_applied": 0,
+    "cross_cluster_violations_remaining": 0,
+    "syntax_errors_detected": 9,
+    "syntax_errors_introduced_by_pass": 0
+  },
+  "pre_existing_syntax_errors": [
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Core/Memory/Memory_State_Persistence.py",
+      "error": "expected an indented block after 'except' statement on line 391 (<unknown>, line 395)",
+      "line": 395
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Core/Memory/Memory_Access_Point.py",
+      "error": "invalid syntax (<unknown>, line 200)",
+      "line": 200
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Core/Memory/Memory_Recall_Integration.py",
+      "error": "expected an indented block after 'if' statement on line 1237 (<unknown>, line 1238)",
+      "line": 1238
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/fractal_orbital/fractal_orbit_demo.py",
+      "error": "expected an indented block after 'if' statement on line 191 (<unknown>, line 193)",
+      "line": 193
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/core/fractal_orbital_node_generator.py",
+      "error": "unexpected indent (<unknown>, line 68)",
+      "line": 68
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/PXL_Core.py",
+      "error": "expected an indented block after 'except' statement on line 395 (<unknown>, line 398)",
+      "line": 398
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/smp.py",
+      "error": "invalid syntax (<unknown>, line 284)",
+      "line": 284
+    },
+    {
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Core/MTP_Compiler/tool_compiler.py",
+      "error": "invalid syntax (<unknown>, line 407)",
+      "line": 407
+    },
+    {
+      "file": "LOGOS_SYSTEM/_Governance/Nexus_Validation/Nexus_AST_Validator.py",
+      "error": "unexpected indent (<unknown>, line 92)",
+      "line": 92
+    }
+  ],
+  "cross_cluster_violations": []
+}

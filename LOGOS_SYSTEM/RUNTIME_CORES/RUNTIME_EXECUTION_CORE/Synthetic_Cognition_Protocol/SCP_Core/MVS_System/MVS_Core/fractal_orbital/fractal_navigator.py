@@ -43,7 +43,7 @@ from typing import Dict, Optional, Union, Any
 import logging
 
 # Import from utils (adjust path as needed)
-from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.utils.data_structures import OntologicalType, FunctionType
+from logos.imports.agents import OntologicalType, FunctionType
 
 logger = logging.getLogger(__name__)
 

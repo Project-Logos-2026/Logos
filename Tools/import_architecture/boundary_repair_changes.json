@@ -1,0 +1,550 @@
+{
+  "description": "Complete record of all import rewrite changes applied",
+  "total_changes": 51,
+  "changes": [
+    {
+      "source_module": "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.tests.test_agent_deployment_safety",
+      "target_module": "Logos_System.System_Stack",
+      "facade": "logos.imports.agents",
+      "file": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Agent_Invocation/Compliance/tests/test_agent_deployment_safety.py",
+      "lineno": 42,
+      "old_stmt": "      from Logos_System.System_Stack import Autonomy  # type: ignore",
+      "new_stmt": "from logos.imports.agents import Autonomy",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.tests.test_agent_deployment_safety",
+      "target_module": "Logos_System.System_Stack",
+      "facade": "logos.imports.agents",
+      "file": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Agent_Invocation/Compliance/tests/test_agent_deployment_safety.py",
+      "lineno": 51,
+      "old_stmt": "      from Logos_System.System_Stack import Planning_Runtime  # type: ignore",
+      "new_stmt": "from logos.imports.agents import Planning_Runtime",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.ORCHESTRATION_AND_ENTRYPOINTS.Canonical_System_Bootstrap_Pipeline",
+      "target_module": "PYTHON_MODULES.SEMANTIC_CONTEXTS.Bootstrap_Runtime_Context",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/ORCHESTRATION_AND_ENTRYPOINTS/Canonical_System_Bootstrap_Pipeline.py",
+      "lineno": 26,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_CONTEXTS.Bootstrap_Runtime_Context import run as bootstrap_runtime",
+      "new_stmt": "from logos.imports.drac_axioms import run as bootstrap_runtime",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.ORCHESTRATION_AND_ENTRYPOINTS.Canonical_System_Bootstrap_Pipeline",
+      "target_module": "PYTHON_MODULES.SEMANTIC_CONTEXTS.Runtime_Mode_Context",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/ORCHESTRATION_AND_ENTRYPOINTS/Canonical_System_Bootstrap_Pipeline.py",
+      "lineno": 27,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_CONTEXTS.Runtime_Mode_Context import run as runtime_mode",
+      "new_stmt": "from logos.imports.drac_axioms import run as runtime_mode",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.ORCHESTRATION_AND_ENTRYPOINTS.Canonical_System_Bootstrap_Pipeline",
+      "target_module": "PYTHON_MODULES.SEMANTIC_CONTEXTS.Agent_Policy_Decision_Context",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/ORCHESTRATION_AND_ENTRYPOINTS/Canonical_System_Bootstrap_Pipeline.py",
+      "lineno": 28,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_CONTEXTS.Agent_Policy_Decision_Context import run as policy_decision",
+      "new_stmt": "from logos.imports.drac_axioms import run as policy_decision",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.ORCHESTRATION_AND_ENTRYPOINTS.Canonical_System_Bootstrap_Pipeline",
+      "target_module": "PYTHON_MODULES.SEMANTIC_CONTEXTS.Privation_Handling_Context",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/ORCHESTRATION_AND_ENTRYPOINTS/Canonical_System_Bootstrap_Pipeline.py",
+      "lineno": 29,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_CONTEXTS.Privation_Handling_Context import run as privation_handling",
+      "new_stmt": "from logos.imports.drac_axioms import run as privation_handling",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.ORCHESTRATION_AND_ENTRYPOINTS.Canonical_System_Bootstrap_Pipeline",
+      "target_module": "PYTHON_MODULES.SEMANTIC_CONTEXTS.Trinitarian_Optimization_Context",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/ORCHESTRATION_AND_ENTRYPOINTS/Canonical_System_Bootstrap_Pipeline.py",
+      "lineno": 30,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_CONTEXTS.Trinitarian_Optimization_Context import run as trinitarian_optimization",
+      "new_stmt": "from logos.imports.drac_axioms import run as trinitarian_optimization",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Runtime_Mode_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Runtime_Mode_Controller",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Runtime_Mode_Context.py",
+      "lineno": 25,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Runtime_Mode_Controller import set_runtime_mode",
+      "new_stmt": "from logos.imports.drac_axioms import set_runtime_mode",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Runtime_Mode_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Runtime_Mode_Context.py",
+      "lineno": 26,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints import enforce_invariants",
+      "new_stmt": "from logos.imports.drac_axioms import enforce_invariants",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Runtime_Mode_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Runtime_Mode_Context.py",
+      "lineno": 27,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate import validate_capabilities",
+      "new_stmt": "from logos.imports.drac_axioms import validate_capabilities",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Trinitarian_Optimization_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Trinitarian_Alignment_Core",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Trinitarian_Optimization_Context.py",
+      "lineno": 25,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Trinitarian_Alignment_Core import score_candidates",
+      "new_stmt": "from logos.imports.drac_axioms import score_candidates",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Trinitarian_Optimization_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Trinitarian_Optimization_Context.py",
+      "lineno": 26,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints import enforce_invariants",
+      "new_stmt": "from logos.imports.drac_axioms import enforce_invariants",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Trinitarian_Optimization_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Trinitarian_Optimization_Context.py",
+      "lineno": 27,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate import validate_capabilities",
+      "new_stmt": "from logos.imports.drac_axioms import validate_capabilities",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Bootstrap_Runtime_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Runtime_Context_Initializer",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Bootstrap_Runtime_Context.py",
+      "lineno": 25,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Runtime_Context_Initializer import initialize_runtime_context",
+      "new_stmt": "from logos.imports.drac_axioms import initialize_runtime_context",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Bootstrap_Runtime_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Runtime_Mode_Controller",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Bootstrap_Runtime_Context.py",
+      "lineno": 26,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Runtime_Mode_Controller import set_runtime_mode",
+      "new_stmt": "from logos.imports.drac_axioms import set_runtime_mode",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Bootstrap_Runtime_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Bootstrap_Runtime_Context.py",
+      "lineno": 27,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints import enforce_invariants",
+      "new_stmt": "from logos.imports.drac_axioms import enforce_invariants",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Bootstrap_Runtime_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Bootstrap_Runtime_Context.py",
+      "lineno": 28,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate import validate_capabilities",
+      "new_stmt": "from logos.imports.drac_axioms import validate_capabilities",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Privation_Handling_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Privation_Handling_Context.py",
+      "lineno": 25,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints import enforce_invariants",
+      "new_stmt": "from logos.imports.drac_axioms import enforce_invariants",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Privation_Handling_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Privation_Handling_Context.py",
+      "lineno": 26,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate import validate_capabilities",
+      "new_stmt": "from logos.imports.drac_axioms import validate_capabilities",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Agent_Policy_Decision_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Agent_Policy_Decision_Context.py",
+      "lineno": 25,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints import enforce_invariants",
+      "new_stmt": "from logos.imports.drac_axioms import enforce_invariants",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Agent_Policy_Decision_Context",
+      "target_module": "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Agent_Policy_Decision_Context.py",
+      "lineno": 26,
+      "old_stmt": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate import validate_capabilities",
+      "new_stmt": "from logos.imports.drac_axioms import validate_capabilities",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Tools.DRAC_Phase_Tracker",
+      "target_module": "DRAC.CORE.DRAC_Core",
+      "facade": "logos.imports.drac_axioms",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Tools/DRAC_Phase_Tracker.py",
+      "lineno": 7,
+      "old_stmt": "from DRAC.CORE.DRAC_Core import DRACPhaseState",
+      "new_stmt": "from logos.imports.drac_axioms import DRACPhaseState",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.fractal_mvs",
+      "target_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "facade": "logos.imports.runtime_utils",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/mathematics/fractal_mvs.py",
+      "lineno": 59,
+      "old_stmt": "    from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports import (\n        logging, defaultdict, dataclass, field, datetime, Any, Dict, List, Optional, Tuple\n    )",
+      "new_stmt": "from logos.imports.runtime_utils import (\n    logging,\n    defaultdict,\n    dataclass,\n    field,\n    datetime,\n    Any,\n    Dict,\n    List,\n    Optional,\n    Tuple\n)",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge",
+      "target_module": "LOGOS_V1.core.verified_core",
+      "facade": "logos.imports.runtime_utils",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/integration/logos_bridge.py",
+      "lineno": 62,
+      "old_stmt": "    from LOGOS_V1.core.verified_core import CoreIntegrityValidator",
+      "new_stmt": "from logos.imports.runtime_utils import CoreIntegrityValidator",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge",
+      "target_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "facade": "logos.imports.runtime_utils",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/integration/logos_bridge.py",
+      "lineno": 64,
+      "old_stmt": "    from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports import (\n        logging, dataclass, field, datetime, Any, Dict, List, Optional, Tuple, uuid\n    )",
+      "new_stmt": "from logos.imports.runtime_utils import (\n    logging,\n    dataclass,\n    field,\n    datetime,\n    Any,\n    Dict,\n    List,\n    Optional,\n    Tuple,\n    uuid\n)",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.modal_support",
+      "target_module": "CONSCIOUS_Modal_Inference_System",
+      "facade": "logos.imports.cognition",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Integrations/modal_support.py",
+      "lineno": 69,
+      "old_stmt": "        from CONSCIOUS_Modal_Inference_System import ThonocVerifier as external_verifier",
+      "new_stmt": "from logos.imports.cognition import ThonocVerifier as external_verifier",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Tools.Recursion_Grounding.Phase_E_Tick_Engine",
+      "target_module": "LOGOS_SYSTEM.Governance.exceptions",
+      "facade": "logos.imports.governance",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Tools/Recursion_Grounding/Phase_E_Tick_Engine.py",
+      "lineno": 111,
+      "old_stmt": "        from LOGOS_SYSTEM.Governance.exceptions import GovernanceDenied",
+      "new_stmt": "from logos.imports.governance import GovernanceDenied",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Identity_Generator.agent_identity",
+      "target_module": "Logos_Protocol.logos_core.world_model",
+      "facade": "logos.imports.cognition",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Identity_Generator/agent_identity.py",
+      "lineno": 217,
+      "old_stmt": "                        from Logos_Protocol.logos_core.world_model import uwm as world_model_module  # type: ignore",
+      "new_stmt": "from logos.imports.cognition import uwm as world_model_module",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Tetra_Conscious.Triune_Fractal_Convergence",
+      "target_module": "Cognition_Normalized.Triune_Sierpinski_Core",
+      "facade": "logos.imports.cognition",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Tetra_Conscious/Triune_Fractal_Convergence.py",
+      "lineno": 52,
+      "old_stmt": "from Cognition_Normalized.Triune_Sierpinski_Core import TriuneSummary",
+      "new_stmt": "from logos.imports.cognition import TriuneSummary",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_synthesizer",
+      "target_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "facade": "logos.imports.runtime_utils",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Tools/IEL_Generator/iel_synthesizer.py",
+      "lineno": 52,
+      "old_stmt": "from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports import (\n    defaultdict, dataclass, field, Enum, Any, Dict, List, Optional, Set, Tuple\n)",
+      "new_stmt": "from logos.imports.runtime_utils import (\n    defaultdict,\n    dataclass,\n    field,\n    Enum,\n    Any,\n    Dict,\n    List,\n    Optional,\n    Set,\n    Tuple\n)",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_error_handler",
+      "target_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "facade": "logos.imports.runtime_utils",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Tools/IEL_Generator/iel_error_handler.py",
+      "lineno": 52,
+      "old_stmt": "from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports import (\n    dataclass, field, Enum, Any, Callable, Dict, List, Optional, Tuple\n)",
+      "new_stmt": "from logos.imports.runtime_utils import (\n    dataclass,\n    field,\n    Enum,\n    Any,\n    Callable,\n    Dict,\n    List,\n    Optional,\n    Tuple\n)",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_schema",
+      "target_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "facade": "logos.imports.runtime_utils",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Tools/IEL_Generator/iel_schema.py",
+      "lineno": 63,
+      "old_stmt": "from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports import (\n    dataclass, field, Enum, Any, Dict, List, Optional, Tuple, Union\n)",
+      "new_stmt": "from logos.imports.runtime_utils import (\n    dataclass,\n    field,\n    Enum,\n    Any,\n    Dict,\n    List,\n    Optional,\n    Tuple,\n    Union\n)",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.semantic_projection_monitor",
+      "target_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.repo_root",
+      "facade": "logos.imports.runtime_utils",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/semantic_projection_monitor.py",
+      "lineno": 7,
+      "old_stmt": "from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.repo_root import _find_repo_root",
+      "new_stmt": "from logos.imports.runtime_utils import _find_repo_root",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.aa",
+      "target_module": "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.repo_root",
+      "facade": "logos.imports.runtime_utils",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Tools/aa.py",
+      "lineno": 7,
+      "old_stmt": "from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.repo_root import _find_repo_root",
+      "new_stmt": "from logos.imports.runtime_utils import _find_repo_root",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Core.I2_Triune_Fractal_Binding",
+      "target_module": "Cognition_Normalized.Triune_Sierpinski_Core",
+      "facade": "logos.imports.cognition",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I2_Agent/I2_Agent_Core/I2_Triune_Fractal_Binding.py",
+      "lineno": 51,
+      "old_stmt": "from Cognition_Normalized.Triune_Sierpinski_Core import (\n    TriuneSierpinskiCore,\n    TriuneSummary,\n)",
+      "new_stmt": "from logos.imports.cognition import (\n    TriuneSierpinskiCore,\n    TriuneSummary\n)",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Core.I3_Triune_Fractal_Binding",
+      "target_module": "Cognition_Normalized.Triune_Sierpinski_Core",
+      "facade": "logos.imports.cognition",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Core/I3_Triune_Fractal_Binding.py",
+      "lineno": 51,
+      "old_stmt": "from Cognition_Normalized.Triune_Sierpinski_Core import (\n    TriuneSierpinskiCore,\n    TriuneSummary,\n)",
+      "new_stmt": "from logos.imports.cognition import (\n    TriuneSierpinskiCore,\n    TriuneSummary\n)",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Core.fractal_trinity_engine.fractal_trinity_reasoner",
+      "target_module": "Agent_Resources.Cognition_Normalized.Triune_Sierpinski_Core",
+      "facade": "logos.imports.cognition",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I3_Agent/I3_Agent_Core/fractal_trinity_engine/fractal_trinity_reasoner.py",
+      "lineno": 33,
+      "old_stmt": "    from Agent_Resources.Cognition_Normalized.Triune_Sierpinski_Core import TriuneSierpinskiCore, TriuneSummary, TransformOperator, TerminationPredicate",
+      "new_stmt": "from logos.imports.cognition import (\n    TriuneSierpinskiCore,\n    TriuneSummary,\n    TransformOperator,\n    TerminationPredicate\n)",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Agent_Safety_Shims.Memory_Substrate",
+      "target_module": "LOGOS_SYSTEM.Agent_Safety_Shims.Capability_Router",
+      "facade": "logos.imports.safety_shims",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Agent_Safety_Shims/Memory_Substrate.py",
+      "lineno": 39,
+      "old_stmt": "from LOGOS_SYSTEM.Agent_Safety_Shims.Capability_Router import (\n    CapabilityRouter,\n    validate_authz_memory_bounded,\n    router_allows_memory_write,\n)",
+      "new_stmt": "from logos.imports.safety_shims import (\n    CapabilityRouter,\n    validate_authz_memory_bounded,\n    router_allows_memory_write\n)",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Agent_Safety_Shims.Phase_E_Memory_Substrate",
+      "target_module": "LOGOS_SYSTEM.Agent_Safety_Shims.Phase_E_Capability_Router",
+      "facade": "logos.imports.safety_shims",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Agent_Safety_Shims/Phase_E_Memory_Substrate.py",
+      "lineno": 39,
+      "old_stmt": "from LOGOS_SYSTEM.Agent_Safety_Shims.Phase_E_Capability_Router import (\n    CapabilityRouter,\n    validate_authz_memory_bounded,\n    router_allows_memory_write,\n)",
+      "new_stmt": "from logos.imports.safety_shims import (\n    CapabilityRouter,\n    validate_authz_memory_bounded,\n    router_allows_memory_write\n)",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Core.I1_Triune_Fractal_Binding",
+      "target_module": "Cognition_Normalized.Triune_Sierpinski_Core",
+      "facade": "logos.imports.cognition",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/I1_Agent/I1_Agent_Core/I1_Triune_Fractal_Binding.py",
+      "lineno": 51,
+      "old_stmt": "from Cognition_Normalized.Triune_Sierpinski_Core import (\n    TriuneSierpinskiCore,\n    TriuneSummary,\n)",
+      "new_stmt": "from logos.imports.cognition import (\n    TriuneSierpinskiCore,\n    TriuneSummary\n)",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core",
+      "target_module": "MTP_Core.MTP_Projection_Engine",
+      "facade": "logos.imports.mtp",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Core/__init__.py",
+      "lineno": 1,
+      "old_stmt": "from MTP_Core.MTP_Projection_Engine import ProjectionEngine, SemanticContentGraph, ContentNode, ContentEdge, ProjectionResult",
+      "new_stmt": "from logos.imports.mtp import (\n    ProjectionEngine,\n    SemanticContentGraph,\n    ContentNode,\n    ContentEdge,\n    ProjectionResult\n)",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core",
+      "target_module": "MTP_Core.MTP_Semantic_Linearizer",
+      "facade": "logos.imports.mtp",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Core/__init__.py",
+      "lineno": 2,
+      "old_stmt": "from MTP_Core.MTP_Semantic_Linearizer import SemanticLinearizer, LinearizationPlan, LinearUnit, DiscourseMode",
+      "new_stmt": "from logos.imports.mtp import (\n    SemanticLinearizer,\n    LinearizationPlan,\n    LinearUnit,\n    DiscourseMode\n)",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core",
+      "target_module": "MTP_Core.MTP_Fractal_Evaluator",
+      "facade": "logos.imports.mtp",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Core/__init__.py",
+      "lineno": 3,
+      "old_stmt": "from MTP_Core.MTP_Fractal_Evaluator import FractalEvaluator, StabilityReport, ResonanceScore",
+      "new_stmt": "from logos.imports.mtp import FractalEvaluator, StabilityReport, ResonanceScore",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core",
+      "target_module": "MTP_Core.MTP_Output_Renderer",
+      "facade": "logos.imports.mtp",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Core/__init__.py",
+      "lineno": 4,
+      "old_stmt": "from MTP_Core.MTP_Output_Renderer import OutputRenderer, RenderedOutput, RenderConfig, ToneLevel, VerbosityLevel",
+      "new_stmt": "from logos.imports.mtp import (\n    OutputRenderer,\n    RenderedOutput,\n    RenderConfig,\n    ToneLevel,\n    VerbosityLevel\n)",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core",
+      "target_module": "MTP_Core.MTP_Validation_Gate",
+      "facade": "logos.imports.mtp",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Core/__init__.py",
+      "lineno": 5,
+      "old_stmt": "from MTP_Core.MTP_Validation_Gate import ValidationGate, ValidationResult",
+      "new_stmt": "from logos.imports.mtp import ValidationGate, ValidationResult",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.I2_Integration",
+      "target_module": "I2_Integration.I2_Egress_Critique",
+      "facade": "logos.imports.mtp",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/I2_Integration/__init__.py",
+      "lineno": 1,
+      "old_stmt": "from I2_Integration.I2_Egress_Critique import I2EgressCritique, CritiqueResult",
+      "new_stmt": "from logos.imports.mtp import I2EgressCritique, CritiqueResult",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Nexus.MTP_Nexus",
+      "target_module": "MTP_Core.MTP_Output_Renderer",
+      "facade": "logos.imports.mtp",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/MTP_Nexus.py",
+      "lineno": 472,
+      "old_stmt": "            from MTP_Core.MTP_Output_Renderer import RenderConfig, ToneLevel",
+      "new_stmt": "from logos.imports.mtp import RenderConfig, ToneLevel",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Nexus",
+      "target_module": "MTP_Nexus.MTP_Nexus",
+      "facade": "logos.imports.mtp",
+      "file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Meaning_Translation_Protocol/MTP_Nexus/__init__.py",
+      "lineno": 1,
+      "old_stmt": "from MTP_Nexus.MTP_Nexus import MTPNexus, EgressPipelineResult, PipelineStageRecord",
+      "new_stmt": "from logos.imports.mtp import MTPNexus, EgressPipelineResult, PipelineStageRecord",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Bridge_Modules.execution_to_operations_exchanger",
+      "target_module": "Nexus",
+      "facade": "logos.imports.mtp",
+      "file": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Bridge_Modules/execution_to_operations_exchanger.py",
+      "lineno": 79,
+      "old_stmt": "    from Nexus import StatePacket, StandardNexus, NexusParticipant",
+      "new_stmt": "from logos.imports.mtp import StatePacket, StandardNexus, NexusParticipant",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "STARTUP.LOGOS_SYSTEM",
+      "target_module": "LOGOS_SYSTEM.System_Entry_Point.System_Entry_Point",
+      "facade": "logos.imports.startup",
+      "file": "STARTUP/LOGOS_SYSTEM.py",
+      "lineno": 64,
+      "old_stmt": "from LOGOS_SYSTEM.System_Entry_Point.System_Entry_Point import (\n    START_LOGOS,\n    StartupHalt,\n)",
+      "new_stmt": "from logos.imports.startup import (\n    START_LOGOS,\n    StartupHalt\n)",
+      "status": "APPLIED"
+    },
+    {
+      "source_module": "_Dev_Resources.scripts.Run_Nexus_Structural_Audit",
+      "target_module": "LOGOS_SYSTEM._Governance.Nexus_Validation.Nexus_AST_Validator",
+      "facade": "logos.imports.governance",
+      "file": "_Dev_Resources/scripts/Run_Nexus_Structural_Audit.py",
+      "lineno": 2,
+      "old_stmt": "from LOGOS_SYSTEM._Governance.Nexus_Validation.Nexus_AST_Validator import NexusASTValidator",
+      "new_stmt": "from logos.imports.governance import NexusASTValidator",
+      "status": "APPLIED"
+    }
+  ],
+  "facade_additions": {
+    "new_files": [
+      "logos.imports.drac_axioms",
+      "logos.imports.runtime_utils",
+      "logos.imports.cognition",
+      "logos.imports.mtp",
+      "logos.imports.safety_shims"
+    ],
+    "extended_files": [
+      "logos.imports.agents",
+      "logos.imports.governance",
+      "logos.imports.startup"
+    ]
+  },
+  "skipped_already_correct": [
+    {
+      "source_module": "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.tests.test_agent_deployment_safety",
+      "target_module": "Logos_System.System_Stack",
+      "facade": "logos.imports.agents",
+      "file": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Agent_Invocation/Compliance/tests/test_agent_deployment_safety.py",
+      "old_stmt": "      from Logos_System.System_Stack import Autonomy  # type: ignore",
+      "new_stmt": "from logos.imports.agents import Autonomy",
+      "status": "SKIP_NOT_FOUND_IN_FILE"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.tests.test_agent_deployment_safety",
+      "target_module": "Logos_System.System_Stack",
+      "facade": "logos.imports.agents",
+      "file": "LOGOS_SYSTEM/GOVERNANCE_ENFORCEMENT/Agent_Invocation/Compliance/tests/test_agent_deployment_safety.py",
+      "old_stmt": "      from Logos_System.System_Stack import Planning_Runtime  # type: ignore",
+      "new_stmt": "from logos.imports.agents import Planning_Runtime",
+      "status": "SKIP_NOT_FOUND_IN_FILE"
+    }
+  ]
+}

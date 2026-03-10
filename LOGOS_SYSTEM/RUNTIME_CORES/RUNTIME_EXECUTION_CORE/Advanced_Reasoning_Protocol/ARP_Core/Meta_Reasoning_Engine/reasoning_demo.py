@@ -55,10 +55,7 @@ from pxl_engine import PXLReasoningContext, ReasoningMode
 from iel_engine import IELDomain
 from math_engine import MathCategory
 
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.APPLICATION_FUNCTIONS.Reasoning.pxl_schema import (
-    TrinityVector,
-    ModalProperties
-)
+from logos.imports.protocols import TrinityVector,     ModalProperties
 
 
 def print_separator(title: str = ""):

@@ -42,8 +42,8 @@ from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol
 )
 
 # RGE integration imports
-from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap import build_rge
-from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Integration.RGE_Nexus_Adapter import RGENexusAdapter
+from logos.imports.startup import build_rge
+from logos.imports.startup import RGENexusAdapter
 
 
 def _should_call_scp(smp: Dict[str, Any]) -> bool:

@@ -60,8 +60,16 @@ from typing import (
 )
 
 import numpy as np
-from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports import (
-    dataclass, field, Enum, Any, Dict, List, Optional, Tuple, Union
+from logos.imports.runtime_utils import (
+    dataclass,
+    field,
+    Enum,
+    Any,
+    Dict,
+    List,
+    Optional,
+    Tuple,
+    Union
 )
 from pydantic import BaseModel, Field, model_validator, validator
 

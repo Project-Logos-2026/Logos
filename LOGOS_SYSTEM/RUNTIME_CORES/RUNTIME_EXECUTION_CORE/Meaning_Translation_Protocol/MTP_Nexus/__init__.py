@@ -1,1 +1,1 @@
-from MTP_Nexus.MTP_Nexus import MTPNexus, EgressPipelineResult, PipelineStageRecord
+from logos.imports.mtp import MTPNexus, EgressPipelineResult, PipelineStageRecord

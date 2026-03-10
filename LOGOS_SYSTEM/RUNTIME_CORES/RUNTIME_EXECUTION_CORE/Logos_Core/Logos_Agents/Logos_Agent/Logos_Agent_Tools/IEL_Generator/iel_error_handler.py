@@ -49,8 +49,16 @@ from enum import Enum
 from functools import wraps
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
-from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports import (
-    dataclass, field, Enum, Any, Callable, Dict, List, Optional, Tuple
+from logos.imports.runtime_utils import (
+    dataclass,
+    field,
+    Enum,
+    Any,
+    Callable,
+    Dict,
+    List,
+    Optional,
+    Tuple
 )
 
 

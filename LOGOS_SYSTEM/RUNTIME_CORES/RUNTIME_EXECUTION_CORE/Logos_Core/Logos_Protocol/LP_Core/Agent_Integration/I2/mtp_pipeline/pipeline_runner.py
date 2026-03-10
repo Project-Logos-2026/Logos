@@ -39,10 +39,7 @@ PURPOSE:
 - Execute a single activation plan under a tick budget
 """
 
-from LOGOS_SYSTEM.System_Stack.Logos_Protocol.Phase_E_Tick_Engine import (
-    PhaseETickEngine,
-    TickHalt,
-)
+from logos.imports.agents import PhaseETickEngine,     TickHalt
 
 
 class PipelineRunner:

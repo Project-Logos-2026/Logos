@@ -61,26 +61,14 @@ import sys
 from pathlib import Path
 from typing import Dict, Any, Literal, Optional
 
-from LOGOS_SYSTEM.System_Entry_Point.System_Entry_Point import (
+from logos.imports.startup import (
     START_LOGOS,
-    StartupHalt,
+    StartupHalt
 )
-from LOGOS_SYSTEM.System_Entry_Point.Agent_Orchestration.agent_orchestration import (
-    OrchestrationHalt,
-    prepare_agent_orchestration,
-)
-from LOGOS_SYSTEM.Runtime_Spine.Lock_And_Key.lock_and_key import (
-    execute_lock_and_key,
-    LockAndKeyFailure,
-)
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Start_Logos_Agent import (
-    LogosAgentStartupHalt,
-    start_logos_agent,
-)
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Lem_Discharge import (
-    LemDischargeHalt,
-    discharge_lem,
-)
+from logos.imports.governance import OrchestrationHalt,     prepare_agent_orchestration
+from logos.imports.governance import execute_lock_and_key,     LockAndKeyFailure
+from logos.imports.protocols import LogosAgentStartupHalt,     start_logos_agent
+from logos.imports.protocols import LemDischargeHalt,     discharge_lem
 
 
 class RuntimeHalt(Exception):
@@ -134,10 +122,7 @@ def RUN_LOGOS_SYSTEM(
     """Canonical runtime spine entry receiving handoff from START_LOGOS."""
 
     # M3: Import logger and Channel at top of function
-    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Operational_Log.Operational_Logger import (
-        Operational_Logger,
-        Channel,
-    )
+    from logos.imports.protocols import Operational_Logger,         Channel
 
     # M3: Create provisional logger before any try blocks
     operational_logger = Operational_Logger(
@@ -274,7 +259,7 @@ def RUN_LOGOS_SYSTEM(
     operational_logger.status(Channel.STARTUP, "agent_orchestration_complete")
 
     if mode == "headless":
-        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Runtime_Loop import RuntimeLoop
+        from logos.imports.protocols import RuntimeLoop
 
         runtime = RuntimeLoop(startup_context=result)
         try:

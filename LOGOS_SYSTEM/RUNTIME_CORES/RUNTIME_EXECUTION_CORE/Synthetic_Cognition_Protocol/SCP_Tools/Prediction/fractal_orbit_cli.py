@@ -63,13 +63,7 @@ from typing import List
 # Assume canonical imports; no sys.path manipulation
 
 try:
-    from LOGOS_SYSTEM.SYSTEM.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.fractal_orbit_toolkit import (
-        FractalOrbitAnalysisToolkit,
-        TrinityVector,
-        PredictionConfidence,
-        FractalScale,
-        OrbitalPrediction
-    )
+    from logos.imports.governance import FractalOrbitAnalysisToolkit,         TrinityVector,         PredictionConfidence,         FractalScale,         OrbitalPrediction
 except ImportError as e:
     if __name__ == "__main__":
         print(f"Error importing fractal toolkit: {e}")
@@ -229,7 +223,7 @@ class FractalOrbitCLI:
 
     def _create_sample_pattern(self, e: float, g: float, t: float):
         """Create a sample pattern for testing"""
-        from LOGOS_SYSTEM.SYSTEM.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.fractal_orbit_toolkit import FractalPattern
+        from logos.imports.governance import FractalPattern
 
         trinity = TrinityVector(e, g, t)
         return FractalPattern(

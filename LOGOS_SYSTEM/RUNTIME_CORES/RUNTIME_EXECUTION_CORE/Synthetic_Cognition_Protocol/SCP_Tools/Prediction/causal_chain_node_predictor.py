@@ -30,7 +30,7 @@ observability:
 ---------------------
 """
 
-from causallearn.search.ConstraintBased.PC import pc
+from logos.imports.runtime import pc
 from causallearn.utils.GraphUtils import GraphUtils
 from causallearn.utils.cit import fisherz
 import numpy as np

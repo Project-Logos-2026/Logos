@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-10T23:00:48.496305+00:00",
+  "taxonomy_classes": {
+    "axiomatic_core": {
+      "definition": "Invariant logical premises applied unconditionally before any reasoning step",
+      "count": 0
+    },
+    "safety_core": {
+      "definition": "Fail-closed safety gates, validators, and governance enforcement modules",
+      "count": 8
+    },
+    "inference_core": {
+      "definition": "Logical inference, symbolic reasoning, and deduction engines",
+      "count": 7
+    },
+    "semantic_core": {
+      "definition": "Semantic context handlers and meaning-extraction scaffolding",
+      "count": 6
+    },
+    "planning_core": {
+      "definition": "Goal decomposition, task sequencing, and plan representation",
+      "count": 0
+    },
+    "agent_orchestration_core": {
+      "definition": "Agent lifecycle control, dispatch, and policy decision modules",
+      "count": 2
+    },
+    "numeric_core": {
+      "definition": "Deterministic mathematical and algebraic computation modules",
+      "count": 0
+    },
+    "memory_core": {
+      "definition": "Persistent-state access, knowledge catalog, and storage interfaces",
+      "count": 0
+    },
+    "protocol_core": {
+      "definition": "System-level runtime protocol, orchestration, and bootstrap modules",
+      "count": 4
+    }
+  },
+  "distribution": {
+    "agent_orchestration_core": 2,
+    "inference_core": 7,
+    "protocol_core": 4,
+    "safety_core": 8,
+    "semantic_core": 6
+  }
+}

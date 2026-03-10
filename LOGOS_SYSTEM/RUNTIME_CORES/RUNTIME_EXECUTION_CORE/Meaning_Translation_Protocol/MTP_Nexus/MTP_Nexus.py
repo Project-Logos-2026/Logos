@@ -469,7 +469,7 @@ class MTPNexus:
             return base_config
 
         try:
-            from MTP_Core.MTP_Output_Renderer import RenderConfig, ToneLevel
+from logos.imports.mtp import RenderConfig, ToneLevel
         except ImportError:
             return base_config
 

@@ -1,0 +1,898 @@
+{
+  "pass": "ARCHON PRIME \u2014 Facade Import Rewrite Pass",
+  "timestamp": "2026-03-10T19:33:23.154568Z",
+  "total_changes": 0,
+  "note": "No file modifications were made by this pass. All 89 AUTO_REPAIRABLE violations were already resolved in a prior repair operation. The pass serves as a verification that the rewrite plan has been fully executed.",
+  "entry_audit": [
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.reasoning_demo",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.APPLICATION_FUNCTIONS.Reasoning.pxl_schema",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/reasoning_demo.py",
+      "depth": 8,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.symbolic_math",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/mathematics/symbolic_math.py",
+      "depth": 8,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.ChronoPraxis.chronopraxis.temporal_logic",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/iel_engine.py",
+      "depth": 7,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Identity_Generator.identity_loader",
+      "illegal_import": "System_Stack.Logos_Protocol.Protocol_Core.Activation_Sequencer.Identity_Generator.System_Entry_Point.Recusion_Grounding.Initialize_Recursion_Engine",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Identity_Generator/identity_loader.py",
+      "depth": 7,
+      "target_cluster": "System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.System_Entry_Point.Agent_Orchestration.Lem_Discharge",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Lem_Discharge",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/System_Entry_Point/Agent_Orchestration/Lem_Discharge.py",
+      "depth": 7,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "STARTUP.LOGOS_SYSTEM",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Start_Logos_Agent",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "STARTUP/LOGOS_SYSTEM.py",
+      "depth": 7,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "STARTUP.LOGOS_SYSTEM",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Lem_Discharge",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "STARTUP/LOGOS_SYSTEM.py",
+      "depth": 7,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+      "depth": 6,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Integration.RGE_Nexus_Adapter",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Integration/RGE_Nexus_Adapter.py",
+      "depth": 6,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.AxioPraxis.axiom_systems",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/iel_engine.py",
+      "depth": 6,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.AxioPraxis.consistency_checker",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/iel_engine.py",
+      "depth": 6,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.GnosiPraxis.belief_network",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/iel_engine.py",
+      "depth": 6,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.GnosiPraxis.knowledge_system",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/iel_engine.py",
+      "depth": 6,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Logos_Agents.Agent_Resources.iel_domains.ModalPraxis.modal_logic",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/iel_engine.py",
+      "depth": 6,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Lifecycle_Manager",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Store",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Orchestration/Agent_Lifecycle_Manager.py",
+      "depth": 6,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Lifecycle_Manager",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.UWM_Access_Control",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Orchestration/Agent_Lifecycle_Manager.py",
+      "depth": 6,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.SCP_Orchestrator",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/SCP_Orchestrator.py",
+      "depth": 6,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.fractal_orbit_toolkit",
+      "illegal_import": "LOGOS_SYSTEM.SYSTEM.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.fractal_mapping",
+      "replacement_import": "logos.imports.governance",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/fractal_orbit_toolkit.py",
+      "depth": 6,
+      "target_cluster": "LOGOS_SYSTEM",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "STARTUP.LOGOS_SYSTEM",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Operational_Log.Operational_Logger",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "STARTUP/LOGOS_SYSTEM.py",
+      "depth": 6,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Bridge_Modules.execution_to_operations_exchanger",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Topology_Context_Provider",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Bridge_Modules/execution_to_operations_exchanger.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Task_Triad_Derivation",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Commutation_Residual_Producer",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Stability_Scalar_Producer",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Telemetry_Producer",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/Radial_Genesis_Engine/Controller/RGE_Bootstrap.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.runtime",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Logos_Protocol.Activation_Sequencer.Agent_Integration.coordinator",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/runtime.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.runtime",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Logos_Protocol.Activation_Sequencer.Agent_Integration.dispatch",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/runtime.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Orchestration.dispatch",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Agent_Orchestration/dispatch.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Identity_Generator.agent_identity",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Identity_Generator/agent_identity.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Lifecycle_Manager",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Promotion_Evaluator",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Orchestration/Agent_Lifecycle_Manager.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Lifecycle_Manager",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Canonical_SMP_Producer",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Orchestration/Agent_Lifecycle_Manager.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Lifecycle_Manager",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.CSP_Canonical_Store",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Orchestration/Agent_Lifecycle_Manager.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.MVS_System.data_c_values.data_structures",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/integration/logos_bridge.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.trinity_alignment",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.MVS_System.data_c_values.data_structures",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/integration/trinity_alignment.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.fractal_orbit_cli",
+      "illegal_import": "LOGOS_SYSTEM.SYSTEM.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.fractal_orbit_toolkit",
+      "replacement_import": "logos.imports.governance",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/fractal_orbit_cli.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Promotion_Evaluator",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Core/Promotion_Evaluator.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Store",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Cognitive_State_Protocol/CSP_Core/Unified_Working_Memory/SMP_Store.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "STARTUP.LOGOS_SYSTEM",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Runtime_Loop",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "STARTUP/LOGOS_SYSTEM.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "_Dev_Resources.scripts.test_import_base_reasoning_registry",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines",
+      "replacement_import": "logos.imports.protocols",
+      "file_path": "_Dev_Resources/scripts/test_import_base_reasoning_registry.py",
+      "depth": 5,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/iel_engine.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.math_engine",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.arithmetic_engine",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/math_engine.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.math_engine",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.proof_engine",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/math_engine.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.math_engine",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/math_engine.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.math_engine",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.symbolic_math",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/math_engine.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.pxl_engine",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/pxl_engine.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.pxl_engine",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.relation_mapper",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/pxl_engine.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.unified_reasoning",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Advanced_Reasoning_Protocol/ARP_Core/Meta_Reasoning_Engine/unified_reasoning.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Agent_Safety_Shims.Tick_Engine",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Logos_Protocol.Logos_Protocol_Nexus.logos_protocol_nexus",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Agent_Safety_Shims/Tick_Engine.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.runtime",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.System_Operations_Protocol.governance.reference_monitor",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/runtime.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Orchestration.coordinator",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap",
+      "replacement_import": "logos.imports.startup",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Agent_Orchestration/coordinator.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_BRIDGE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Orchestration.coordinator",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Integration.RGE_Nexus_Adapter",
+      "replacement_import": "logos.imports.startup",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Agent_Orchestration/coordinator.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_BRIDGE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Task_Constraint_Provider",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Task_Triad_Derivation",
+      "replacement_import": "logos.imports.startup",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Telemetry_Production/Task_Constraint_Provider.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.RUNTIME_BRIDGE",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.logos_nodes_connections",
+      "illegal_import": "LOGOS_SYSTEM.SYSTEM.RUNTIME_EXECUTION_CORE.Logos_Agents.agent_classes",
+      "replacement_import": "logos.imports.governance",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/core/logos_nodes_connections.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.core.banach_data_nodes",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/integration/logos_bridge.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.mathematics.fractal_mvs",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/integration/logos_bridge.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.fractal_orbital.fractal_navigator",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.utils.data_structures",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/fractal_orbital/fractal_navigator.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.trinity_alignment",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.core.data_structures",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/mathematics/trinity_alignment.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.fractal_orbit_toolkit",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.data_c_values.data_structures",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/fractal_orbit_toolkit.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.fractal_orbit_toolkit",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.fractal_orbital.symbolic_math",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/fractal_orbit_toolkit.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.fractal_orbit_toolkit",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.predictors.fractal_mapping",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/fractal_orbit_toolkit.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.divergence_calculator",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.fractal_orbital.fractal_orbital_node_class",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/divergence_calculator.py",
+      "depth": 4,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Agent_Resources.Cognition_Normalized.agentic_consciousness_core",
+      "illegal_import": "causallearn.search.ConstraintBased.PC",
+      "replacement_import": "logos.imports.runtime",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Agent_Resources/Cognition_Normalized/agentic_consciousness_core.py",
+      "depth": 3,
+      "target_cluster": "causallearn",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_generator",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.LOGOS_SYSTEM.autonomous_learning",
+      "replacement_import": "logos.imports.governance",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Tools/IEL_Generator/iel_generator.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM",
+      "verdict": "IMPORT_NOT_PRESENT",
+      "action_taken": "NOT_APPLICABLE"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_signer",
+      "illegal_import": "cryptography.hazmat.primitives.asymmetric",
+      "replacement_import": "logos.imports.runtime",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Agents/Logos_Agent/Logos_Agent_Tools/IEL_Generator/iel_signer.py",
+      "depth": 3,
+      "target_cluster": "cryptography",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Integration.I1.scp_pipeline.pipeline_runner",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Logos_Protocol.Phase_E_Tick_Engine",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Agent_Integration/I1/scp_pipeline/pipeline_runner.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Integration.I2.mtp_pipeline.pipeline_runner",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Logos_Protocol.Phase_E_Tick_Engine",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Agent_Integration/I2/mtp_pipeline/pipeline_runner.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Integration.I3.arp_cycle.cycle_runner",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Logos_Protocol.Phase_E_Tick_Engine",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Agent_Integration/I3/arp_cycle/cycle_runner.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Identity_Generator.attestation",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Logos_Core/Logos_Protocol/LP_Core/Identity_Generator/attestation.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.persistence_manager",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.mvf_node_operator",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/BDN_System/core/persistence_manager.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.fractal_orbital.ontology_inducer",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.async_workers",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/fractal_orbital/ontology_inducer.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.fractal_orbital.ontology_inducer",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.config_loader",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/fractal_orbital/ontology_inducer.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.fractal_orbital.ontology_inducer",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.logos_validator_hub",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/MVS_System/MVS_Core/fractal_orbital/ontology_inducer.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.fractal_orbit_toolkit",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.modal_inference",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Core/fractal_orbit_toolkit.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.causal_chain_node_predictor",
+      "illegal_import": "causallearn.search.ConstraintBased.PC",
+      "replacement_import": "logos.imports.runtime",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/causal_chain_node_predictor.py",
+      "depth": 3,
+      "target_cluster": "causallearn",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.class_fractal_orbital_predictor",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.modal_support",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/class_fractal_orbital_predictor.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.class_fractal_orbital_predictor",
+      "illegal_import": "Logos_AGI.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital",
+      "replacement_import": "logos.imports.runtime",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/class_fractal_orbital_predictor.py",
+      "depth": 3,
+      "target_cluster": "Logos_AGI",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.divergence_engine",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.modal_support",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/divergence_engine.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.divergence_engine",
+      "illegal_import": "Logos_AGI.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital",
+      "replacement_import": "logos.imports.runtime",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/divergence_engine.py",
+      "depth": 3,
+      "target_cluster": "Logos_AGI",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.prediction_module",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.modal_support",
+      "replacement_import": "logos.imports.agents",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/Synthetic_Cognition_Protocol/SCP_Tools/Prediction/prediction_module.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM.System_Stack",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.ORCHESTRATION_AND_ENTRYPOINTS.Logos_System_Entry_Point",
+      "illegal_import": "PYTHON_MODULES.ORCHESTRATION_AND_ENTRYPOINTS.BOOTSTRAP_PIPELINES.Canonical_System_Bootstrap_Pipeline",
+      "replacement_import": "logos.imports.runtime",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/ORCHESTRATION_AND_ENTRYPOINTS/Logos_System_Entry_Point.py",
+      "depth": 3,
+      "target_cluster": "PYTHON_MODULES",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Core.Runtime_Airlock.Runtime_Interface_Gate",
+      "illegal_import": "LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.Audit_Spine.Audit_Logger",
+      "replacement_import": "logos.imports.governance",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/System_Operations_Protocol/SOP_Core/Runtime_Airlock/Runtime_Interface_Gate.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Core.Runtime_Airlock.Runtime_Interface_Gate",
+      "illegal_import": "LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.DRAC_Integration.DRAC_Handshake",
+      "replacement_import": "logos.imports.governance",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/System_Operations_Protocol/SOP_Core/Runtime_Airlock/Runtime_Interface_Gate.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Core.Runtime_Airlock.Runtime_Interface_Gate",
+      "illegal_import": "LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.DRAC_Integration.DRAC_Orchestration_Bridge",
+      "replacement_import": "logos.imports.governance",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/System_Operations_Protocol/SOP_Core/Runtime_Airlock/Runtime_Interface_Gate.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Core.System_Entry_Point.Startup_Gate",
+      "illegal_import": "LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.Governance_Control.Invariant_Enforcer",
+      "replacement_import": "logos.imports.governance",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/System_Operations_Protocol/SOP_Core/System_Entry_Point/Startup_Gate.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.DRAC_Integration.DRAC_Handshake",
+      "illegal_import": "LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.DRAC_Integration.Core_Binding_Validator",
+      "replacement_import": "logos.imports.governance",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/System_Operations_Protocol/SOP_Tools/DRAC_Integration/DRAC_Handshake.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.DRAC_Integration.DRAC_Handshake",
+      "illegal_import": "LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.DRAC_Integration.Overlay_Validator",
+      "replacement_import": "logos.imports.governance",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/System_Operations_Protocol/SOP_Tools/DRAC_Integration/DRAC_Handshake.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.DRAC_Integration.DRAC_Handshake",
+      "illegal_import": "LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.Policy_Matrix.Compile_Quota_Guard",
+      "replacement_import": "logos.imports.governance",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/System_Operations_Protocol/SOP_Tools/DRAC_Integration/DRAC_Handshake.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.DRAC_Integration.DRAC_Handshake",
+      "illegal_import": "LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.Policy_Matrix.SOP_Policy_Matrix",
+      "replacement_import": "logos.imports.governance",
+      "file_path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/System_Operations_Protocol/SOP_Tools/DRAC_Integration/DRAC_Handshake.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "STARTUP.LOGOS_SYSTEM",
+      "illegal_import": "LOGOS_SYSTEM.Runtime_Spine.Lock_And_Key.lock_and_key",
+      "replacement_import": "logos.imports.governance",
+      "file_path": "STARTUP/LOGOS_SYSTEM.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    },
+    {
+      "source_module": "STARTUP.LOGOS_SYSTEM",
+      "illegal_import": "LOGOS_SYSTEM.System_Entry_Point.Agent_Orchestration.agent_orchestration",
+      "replacement_import": "logos.imports.governance",
+      "file_path": "STARTUP/LOGOS_SYSTEM.py",
+      "depth": 3,
+      "target_cluster": "LOGOS_SYSTEM",
+      "verdict": "FACADE_ALREADY_IN_USE",
+      "action_taken": "PRE_REPAIRED"
+    }
+  ]
+}

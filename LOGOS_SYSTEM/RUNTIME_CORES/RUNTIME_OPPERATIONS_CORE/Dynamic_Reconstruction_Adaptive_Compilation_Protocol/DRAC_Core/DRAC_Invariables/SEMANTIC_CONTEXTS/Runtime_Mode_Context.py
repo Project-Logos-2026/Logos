@@ -22,9 +22,9 @@ NOTE:
 - Metadata is authoritative in SEMANTIC_CONTEXTS_CATALOG.json.
 """
 
-from PYTHON_MODULES.SEMANTIC_AXIOMS.Runtime_Mode_Controller import set_runtime_mode
-from PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints import enforce_invariants
-from PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate import validate_capabilities
+from logos.imports.drac_axioms import set_runtime_mode
+from logos.imports.drac_axioms import enforce_invariants
+from logos.imports.drac_axioms import validate_capabilities
 
 
 def run(context: dict) -> dict:

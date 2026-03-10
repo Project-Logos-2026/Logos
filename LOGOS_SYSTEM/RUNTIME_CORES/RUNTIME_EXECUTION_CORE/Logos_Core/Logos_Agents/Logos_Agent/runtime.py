@@ -47,15 +47,9 @@ NON-GOALS:
 
 from typing import Any, Dict
 
-from LOGOS_SYSTEM.System_Stack.System_Operations_Protocol.governance.reference_monitor import (
-    ReferenceMonitor,
-)
-from LOGOS_SYSTEM.System_Stack.Logos_Protocol.Activation_Sequencer.Agent_Integration.coordinator import (
-    coordinate,
-)
-from LOGOS_SYSTEM.System_Stack.Logos_Protocol.Activation_Sequencer.Agent_Integration.dispatch import (
-    dispatch,
-)
+from logos.imports.agents import ReferenceMonitor
+from logos.imports.agents import coordinate
+from logos.imports.agents import dispatch
 
 
 class LogosAgentRuntime:

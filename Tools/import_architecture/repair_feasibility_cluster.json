@@ -1,0 +1,255 @@
+{
+  "total_cross_cluster_violations": 31,
+  "auto_repairable": 22,
+  "require_manual_review": 9,
+  "repair_rules": [
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Tests.test_topology_validation",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State",
+      "target_cluster": 546,
+      "proposed_facade": null,
+      "rewrite_rule": null,
+      "feasibility": "MANUAL — no facade identified for target cluster"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.tests.test_phase_d_runtime_spine",
+      "illegal_import": "LOGOS_SYSTEM.Runtime_Spine.Logos_Constructive_Compile.logos_constructive_compile",
+      "target_cluster": 3,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.Runtime_Spine.Logos_Constructive_Compile.logos_constructive_compile import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.connections.id_handler",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.config.hashing",
+      "target_cluster": 7,
+      "proposed_facade": null,
+      "rewrite_rule": null,
+      "feasibility": "MANUAL — no facade identified for target cluster"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_integrations.pipeline_runner",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_runtime.result_packet",
+      "target_cluster": 4,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_runtime.result_packet import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_tests.run_pipeline_smoke",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_tests.sample_smp",
+      "target_cluster": 4,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_tests.sample_smp import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.connections.id_handler",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.config.hashing",
+      "target_cluster": 7,
+      "proposed_facade": null,
+      "rewrite_rule": null,
+      "feasibility": "MANUAL — no facade identified for target cluster"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.connections.id_handler",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.hashing",
+      "target_cluster": 7,
+      "proposed_facade": null,
+      "rewrite_rule": null,
+      "feasibility": "MANUAL — no facade identified for target cluster"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.base_reasoning_registry",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.logical.inductive_engine",
+      "target_cluster": 5,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.logical.inductive_engine import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.base_reasoning_registry",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.relational_structural.relational_engine",
+      "target_cluster": 5,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.relational_structural.relational_engine import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_runtime.result_packet",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.config.hashing",
+      "target_cluster": 3,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.config.hashing import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.logos_aa_builder",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.aa",
+      "target_cluster": 7,
+      "proposed_facade": null,
+      "rewrite_rule": null,
+      "feasibility": "MANUAL — no facade identified for target cluster"
+    },
+    {
+      "source_module": "STARTUP.LOGOS_SYSTEM",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Lem_Discharge",
+      "target_cluster": 3,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Lem_Discharge import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_mvs_adapter.mvs_adapter_real",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "target_cluster": 5,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.core_processing.language_processor",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "target_cluster": 5,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.language_modules.semantic_transformers",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "target_cluster": 5,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.language_modules.translation_bridge",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "target_cluster": 5,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.fractal_orbital.fractal_orbital_node_class",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "target_cluster": 5,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_mvs_adapter.mvs_adapter_real",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge",
+      "target_cluster": 5,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_mvs_adapter.mvs_adapter_real",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+      "target_cluster": 5,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.compiler.arp_compiler_core",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.base_reasoning_registry",
+      "target_cluster": 3,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.base_reasoning_registry import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.compiler.arp_compiler_core",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.integration_bridge",
+      "target_cluster": 0,
+      "proposed_facade": null,
+      "rewrite_rule": null,
+      "feasibility": "MANUAL — no facade identified for target cluster"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Integration.RGE_Nexus_Adapter",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus",
+      "target_cluster": 487,
+      "proposed_facade": null,
+      "rewrite_rule": null,
+      "feasibility": "MANUAL — no facade identified for target cluster"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Dependency_Graph",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Envelope",
+      "target_cluster": 4,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Envelope import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "STARTUP.LOGOS_SYSTEM",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Operational_Log.Operational_Logger",
+      "target_cluster": 4,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Operational_Log.Operational_Logger import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Nexus_Factory",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.metered_reasoning_enforcer",
+      "target_cluster": 4,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.metered_reasoning_enforcer import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "STARTUP.LOGOS_SYSTEM",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Runtime_Loop",
+      "target_cluster": 487,
+      "proposed_facade": null,
+      "rewrite_rule": null,
+      "feasibility": "MANUAL — no facade identified for target cluster"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Bridge_Modules.execution_to_operations_exchanger",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Topology_Context_Provider",
+      "target_cluster": 3,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Topology_Context_Provider import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Runtime",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Config",
+      "target_cluster": 4,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Config import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Pipeline",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_State",
+      "target_cluster": 4,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_State import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Runtime",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_State",
+      "target_cluster": 4,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_State import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Identity_Generator.agent_identity",
+      "illegal_import": "LOGOS_SYSTEM.System_Stack.Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger",
+      "target_cluster": 546,
+      "proposed_facade": null,
+      "rewrite_rule": null,
+      "feasibility": "MANUAL — no facade identified for target cluster"
+    }
+  ]
+}

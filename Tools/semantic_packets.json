@@ -1,0 +1,1345 @@
+[
+  {
+    "packet_id": "PKT_0018",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "llm_advisor"
+    ],
+    "file_paths": [
+      "Blueprints/utils/llm_advisor.py"
+    ],
+    "external_dependencies": [
+      "evidence"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0020",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "_uip_connector_stubs"
+    ],
+    "file_paths": [
+      "Blueprints/utils/_uip_connector_stubs.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0024",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "commitment_ledger"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/commitment_ledger.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0027",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "prioritization"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/prioritization.py"
+    ],
+    "external_dependencies": [
+      "commitment_ledger"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0028",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "guardrails"
+    ],
+    "file_paths": [
+      "Blueprints/utils/guardrails.py"
+    ],
+    "external_dependencies": [
+      "agent_nexus"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0029",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "cycle_ledger"
+    ],
+    "file_paths": [
+      "Blueprints/utils/cycle_ledger.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0031",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "test_logos_agi_adapter"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Tooling/test_logos_agi_adapter.py"
+    ],
+    "external_dependencies": [
+      "logos_agi_adapter"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0032",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "test_tool_fallback_proposal"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Tooling/test_tool_fallback_proposal.py"
+    ],
+    "external_dependencies": [
+      "start_agent"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0035",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 2,
+      "agent": 2,
+      "safety": 1,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "types"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/types.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0036",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "providers_llama"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/providers_llama.py"
+    ],
+    "external_dependencies": [
+      "types"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0037",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 2,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 2
+    },
+    "modules": [
+      "hashing"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/hashing.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0052",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "transform_types"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/transform_types.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0058",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "plan_evaluator"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/plan_evaluator.py"
+    ],
+    "external_dependencies": [
+      "evaluation_packet"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0060",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "dispatch"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/dispatch.py"
+    ],
+    "external_dependencies": [
+      "cycle_runner",
+      "pipeline_runner"
+    ],
+    "external_dep_count": 2
+  },
+  {
+    "packet_id": "PKT_0062",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "maintenance"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/maintenance.py"
+    ],
+    "external_dependencies": [
+      "shared_resources"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0063",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "gen_ontoprops_dedup"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/gen_ontoprops_dedup.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0065",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "packet_types"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/packet_types.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0067",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "providers_openai"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/providers_openai.py"
+    ],
+    "external_dependencies": [
+      "types"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0068",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "boot_system"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/boot_system.py"
+    ],
+    "external_dependencies": [
+      "maintenance",
+      "shared_resources"
+    ],
+    "external_dep_count": 2
+  },
+  {
+    "packet_id": "PKT_0069",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "ontoprops_remap"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/ontoprops_remap.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0073",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "time_utils"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/time_utils.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0078",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "test_perception_ingestors"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_perception_ingestors.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0090",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "test_registry_and_response"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_registry_and_response.py"
+    ],
+    "external_dependencies": [
+      "registry"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0101",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "mtp_nexus_orchestrator"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/mtp_nexus_orchestrator.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0109",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "logos_daemon"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/logos_daemon.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0123",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "nexus_manager"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/nexus_manager.py"
+    ],
+    "external_dependencies": [
+      "logos_agi_adapter",
+      "start_agent"
+    ],
+    "external_dep_count": 2
+  },
+  {
+    "packet_id": "PKT_0130",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "test_simulation_cli"
+    ],
+    "file_paths": [
+      "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_simulation_cli.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0134",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 2,
+      "agent": 1,
+      "safety": 1,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "translation_engine"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/translation_engine.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0138",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 3,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "semantic_transformers"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/semantic_transformers.py"
+    ],
+    "external_dependencies": [
+      "bayesian_inference"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0142",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 2,
+      "agent": 2,
+      "safety": 0,
+      "math": 2,
+      "utility": 1
+    },
+    "modules": [
+      "Fractal_Data_Analyzer"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/Fractal_Data_Analyzer.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0156",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "constants"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/constants.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0177",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "etgc_validator"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/etgc_validator.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0181",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "logos_lambda_core"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/logos_lambda_core.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0193",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "tool_invention"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/tool_invention.py"
+    ],
+    "external_dependencies": [
+      "development_environment"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0201",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 2,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "privation_transformer"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/privation_transformer.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0205",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 2,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "language_processor"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/language_processor.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0208",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 3,
+      "agent": 2,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "bridge_principle_operator"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/bridge_principle_operator.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0224",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "local_scp"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/local_scp.py"
+    ],
+    "external_dependencies": [
+      "boot_system"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0228",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "bdn_runtime"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/bdn_runtime.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0230",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "health"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/health.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0236",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 3,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "NLP_Wrapper_Sentence_Transformers"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/NLP_Wrapper_Sentence_Transformers.py"
+    ],
+    "external_dependencies": [
+      "Constraint_Stubs"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0245",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "gen_worldview_ontoprops"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/gen_worldview_ontoprops.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0247",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "archive_planner_digests"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/archive_planner_digests.py"
+    ],
+    "external_dependencies": [
+      "agent_planner"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0262",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 1,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "logos_interface"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/logos_interface.py"
+    ],
+    "external_dependencies": [
+      "llm_backend"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0267",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "omniproperty_integration"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/omniproperty_integration.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0276",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "3OT_mediator"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/3OT_mediator.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0278",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "mcmc_engine"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/mcmc_engine.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0286",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 2,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 2
+    },
+    "modules": [
+      "Register_All_Wrappers"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/Register_All_Wrappers.py"
+    ],
+    "external_dependencies": [
+      "External_Enhancements_Registry",
+      "NLP_Wrapper_Sentence_Transformers",
+      "Visualization_Wrapper_Matplotlib"
+    ],
+    "external_dep_count": 3
+  },
+  {
+    "packet_id": "PKT_0293",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 1,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "demo_integrated_ml"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/demo_integrated_ml.py"
+    ],
+    "external_dependencies": [
+      "extensions_loader",
+      "natural_language_processor"
+    ],
+    "external_dep_count": 2
+  },
+  {
+    "packet_id": "PKT_0299",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "interaction_models"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/interaction_models.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0317",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "predict_integration"
+    ],
+    "file_paths": [
+      "Blueprints/reasoning/predict_integration.py"
+    ],
+    "external_dependencies": [
+      "risk_estimator"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0318",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "config"
+    ],
+    "file_paths": [
+      "Blueprints/utils/config.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0328",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "sanitizer"
+    ],
+    "file_paths": [
+      "Blueprints/utils/sanitizer.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0335",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 1
+    },
+    "modules": [
+      "check_run_cycle_prereqs"
+    ],
+    "file_paths": [
+      "Blueprints/utils/check_run_cycle_prereqs.py"
+    ],
+    "external_dependencies": [
+      "capabilities"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0339",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "stress_sop_runtime"
+    ],
+    "file_paths": [
+      "Blueprints/utils/stress_sop_runtime.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0348",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "logos_gpt_chat"
+    ],
+    "file_paths": [
+      "Blueprints/utils/logos_gpt_chat.py"
+    ],
+    "external_dependencies": [
+      "LOGOS",
+      "attestation",
+      "llm_advisor",
+      "schemas",
+      "start_agent"
+    ],
+    "external_dep_count": 5
+  },
+  {
+    "packet_id": "PKT_0349",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 1,
+      "safety": 1,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "logos_gpt_server"
+    ],
+    "file_paths": [
+      "Blueprints/utils/logos_gpt_server.py"
+    ],
+    "external_dependencies": [
+      "LOGOS",
+      "attestation",
+      "evidence",
+      "llm_advisor",
+      "logos_gpt_chat",
+      "nexus_manager",
+      "schemas",
+      "start_agent"
+    ],
+    "external_dep_count": 8
+  },
+  {
+    "packet_id": "PKT_0350",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "class_scores": {
+      "reasoning": 0,
+      "semantic": 1,
+      "agent": 0,
+      "safety": 0,
+      "math": 0,
+      "utility": 0
+    },
+    "modules": [
+      "run_logos_gpt_acceptance"
+    ],
+    "file_paths": [
+      "Blueprints/utils/run_logos_gpt_acceptance.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  }
+]

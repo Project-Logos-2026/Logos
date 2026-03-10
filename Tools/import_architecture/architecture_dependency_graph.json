@@ -1,0 +1,2832 @@
+{
+  "description": "Module-level dependency graph (source \u2192 list of imported modules)",
+  "generated_by": "ARCHON PRIME \u2014 Runtime Dependency Rebuild & Boundary Validation",
+  "total_nodes": 1191,
+  "total_edges": 2025,
+  "graph": {
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.Projection_Validator": [
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.compute_identity_hash": [
+      "argparse",
+      "hashlib",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.policy_checks": [
+      "LOGOS_SYSTEM.Governance.exceptions"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.tests.test_agent_deployment_safety": [
+      "LOGOS_SYSTEM.Governance.policy_checks",
+      "Logos_System.System_Stack",
+      "pytest"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.tests.test_phase_d_runtime_spine": [
+      "LOGOS_SYSTEM.Runtime_Spine.Agent_Orchestration.agent_orchestration",
+      "LOGOS_SYSTEM.Runtime_Spine.Logos_Constructive_Compile.logos_constructive_compile",
+      "pathlib",
+      "pytest",
+      "sys"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.tools.runtime_control_r_series_audit": [
+      "datetime",
+      "json",
+      "pathlib"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.tools.step5_autonomy_argument_probe": [
+      "dataclasses",
+      "datetime",
+      "json",
+      "os",
+      "pathlib",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Projection_Loader": [
+      "pathlib"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.logos_constructive_compile": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Delegated_Invocation_Layer.dil_evaluator": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Invocation_Governance.igl_evaluator": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Lock_And_Key.lock_and_key": [
+      "hashlib",
+      "json",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Orchestration_Tools.proof_gate_tools": [
+      "datetime",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "subprocess"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Orchestration_Tools.runtime_protocol": [
+      "datetime",
+      "json",
+      "pathlib",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Protocol_Mediated_Tool_Evaluation.pmte_evaluator": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Planning.Governance_Integration.governance_review_response": [
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Planning.Governance_Integration.plan_governance_interface": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Planning.Governance_Integration.plan_submission_envelope": [
+      "LOGOS_SYSTEM.Planning_Runtime.Plan_Objects.plan_schema",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Planning.Plan_Objects.plan_schema": [
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Planning.Plan_Objects.plan_serialization": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Planning.Plan_Objects.plan_validation": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Spine.Agent_Orchestration.agent_orchestration": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Spine.Lock_And_Key.lock_and_key": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.Governance.exceptions": [
+      "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.exceptions"
+    ],
+    "LOGOS_SYSTEM.Governance.policy_checks": [
+      "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.Compliance.policy_checks"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Bridge_Modules.dual_bijective_commutation_validator": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Bridge_Modules.execution_to_operations_exchanger": [
+      "Nexus",
+      "collections",
+      "dataclasses",
+      "dual_bijective_commutation_validator",
+      "logos.imports.protocols",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Control.Hysteresis_Governor": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.Genesis_Selector": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.Mode_Controller",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Override_Channel",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.Mode_Controller": [
+      "enum"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Control.Hysteresis_Governor",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.Genesis_Selector",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.Mode_Controller",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Override_Channel",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Balance_Score",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Composite_Aggregator",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Divergence_Metric",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Recursion_Coupling_Coherence_Score",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Stability_Metric",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Triune_Fit_Score",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Events.Event_Emitter",
+      "datetime",
+      "json",
+      "logos.imports.protocols",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Governance_Context": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Task_Triad_Derivation": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Producer": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Task_Triad_Derivation",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Residual_Producer",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Stability_Scalar_Producer",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot": [
+      "dataclasses",
+      "math",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State": [
+      "dataclasses",
+      "itertools",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Triad_Region_Classifier": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Balance_Score": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Scoring_Interface",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Residual_Producer": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Divergence_Metric": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Scoring_Interface",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Recursion_Coupling_Coherence_Score": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Scoring_Interface",
+      "math",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Scoring_Interface": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Stability_Scalar_Producer": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Triune_Fit_Score": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Triad_Region_Classifier",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Scoring_Interface",
+      "json",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Integration.Logos_Telemetry_Integration_Point": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Task_Triad_Derivation",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Producer",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Balance_Score",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Commutation_Residual_Producer",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Divergence_Metric",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Recursion_Coupling_Coherence_Score",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Stability_Scalar_Producer",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Triune_Fit_Score",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Integration.RGE_Nexus_Adapter": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Bootstrap",
+      "logos.imports.protocols",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Ontological_Field.Ontological_Registry": [
+      "json"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Tests.test_recursion_coupling_score": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Evaluation.Recursion_Coupling_Coherence_Score",
+      "math",
+      "unittest"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Tests.test_recursion_layer_telemetry": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Telemetry_Snapshot",
+      "math",
+      "unittest"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Tests.test_rge_override_behavior": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.Genesis_Selector",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Controller.RGE_Override_Channel",
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Tests.test_topology_validation": [
+      "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State",
+      "pathlib",
+      "sys"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine": [
+      "dataclasses",
+      "enum",
+      "logging",
+      "logos.imports.agents",
+      "pxl_engine",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.math_engine": [
+      "dataclasses",
+      "enum",
+      "logging",
+      "logos.imports.agents",
+      "pxl_engine",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.pxl_engine": [
+      "dataclasses",
+      "enum",
+      "hashlib",
+      "logging",
+      "logos.imports.agents",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.reasoning_demo": [
+      "iel_engine",
+      "logos.imports.protocols",
+      "math_engine",
+      "pxl_engine",
+      "unified_reasoning"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.unified_reasoning": [
+      "dataclasses",
+      "enum",
+      "iel_engine",
+      "logging",
+      "logos.imports.agents",
+      "math_engine",
+      "pxl_engine",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.compiler.arp_compiler_core": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.aa",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.hashing",
+      "__future__",
+      "hashlib",
+      "json",
+      "logging",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.compiler.tests.test_degraded_i3aa_aa_core": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.compiler.arp_compiler_core",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.hashing",
+      "pytest",
+      "time"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.base_reasoning_registry": [
+      "__future__",
+      "enum",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.integration_bridge": [
+      "__future__",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.taxonomy_aggregator": [
+      "__future__",
+      "dataclasses",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.unified_binder": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.aa",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.hashing",
+      "__future__",
+      "hashlib",
+      "json",
+      "logging",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.metered_reasoning_enforcer": [
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.nexus_interface.arp_to_nexus_router": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.tests.test_i3aa_aa_core": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.unified_binder",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.hashing",
+      "pytest",
+      "time"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Nexus.ARP_Nexus": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.metered_reasoning_enforcer",
+      "dataclasses",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.applied_reasoning_nexus.aggregator": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.applied_reasoning_nexus.arn_orchestrator": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.applied_reasoning_nexus.bayesian_dispatcher": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.applied_reasoning_nexus.external_analysis": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.constraint.consistency_engine": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.constraint.invariant_engine": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.logical.abductive_engine": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.logical.deductive_engine": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.logical.inductive_engine": [
+      "__future__",
+      "collections",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.probabilistic.bayesian_engine": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.probabilistic.causal_engine": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.relational_structural.graph_engine": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.relational_structural.relational_engine": [
+      "__future__",
+      "collections",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.relational_structural.topological_engine": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.semantic.analogical_engine": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Tools.reasoning_engines.semantic.metaphorical_engine": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Agent_Resources.Cognition_Normalized.Agent_Memory_Integrations": [
+      "your_memory_system"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Agent_Resources.Cognition_Normalized.Triune_Sierpinski_Core": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Agent_Resources.Cognition_Normalized.agentic_consciousness_core": [
+      "logging",
+      "logos.imports.runtime",
+      "numpy",
+      "pandas",
+      "pymc",
+      "sentence_transformers",
+      "sklearn.cluster",
+      "sklearn.metrics.pairwise",
+      "sympy",
+      "typing",
+      "z3"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Agent_Resources.Cognition_Normalized.consciousness_safety_adapter": [
+      "datetime",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Agent_Resources.Cognition_Normalized.emergence_core": [
+      "__future__",
+      "dataclasses",
+      "datetime",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Agent_Resources.Cognition_Normalized.fractal_consciousness_core": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "logging",
+      "math",
+      "random",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Agent_Resources.Cognition_Normalized.logos_core_foundations": [
+      "json",
+      "logging",
+      "numpy",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Agent_Resources.Cognition_Normalized.reflexive_evaluator": [
+      "logging",
+      "modal_privative_overlays",
+      "onto_lattice",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Agent_Resources.Cognition_Normalized.simulated_consciousness_runtime": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.consciousness.recursion_engine_consciousness_bridge",
+      "__future__",
+      "datetime",
+      "json",
+      "logging",
+      "pathlib",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Agent_Resources.IEL_Foundations.ArithmoPraxis.arithmopraxis.proof_engine": [
+      "re"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Agent_Resources.math_categories.logos_mathematical_core": [
+      "dataclasses",
+      "hashlib",
+      "json",
+      "logging",
+      "math",
+      "numpy",
+      "secrets",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Agent_Safety_Shims.Agent_Lifecycle": [
+      "time",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Agent_Safety_Shims.Capability_Router": [
+      "json",
+      "time"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Agent_Safety_Shims.Memory_Substrate": [
+      "LOGOS_SYSTEM.Agent_Safety_Shims.Capability_Router",
+      "json",
+      "time"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Agent_Safety_Shims.Phase_E_Memory_Substrate": [
+      "LOGOS_SYSTEM.Agent_Safety_Shims.Phase_E_Capability_Router",
+      "json",
+      "time"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Agent_Safety_Shims.Tick_Engine": [
+      "logos.imports.agents",
+      "time",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Core.I1_Triune_Fractal_Binding": [
+      "Cognition_Normalized.Triune_Sierpinski_Core",
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Core.OmniProperty_Integration": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.config.hashing",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.diagnostics.errors",
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Core.Sign_Principal_Operator": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.diagnostics.errors",
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.config.constants": [
+      "__future__"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.config.hashing": [
+      "__future__",
+      "hashlib",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.config.logging_utils": [
+      "__future__",
+      "json",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.config.packet_types": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.config.schema_utils": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.diagnostics.errors",
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.config.smp_intake_semantics": [
+      "__future__",
+      "dataclasses",
+      "enum",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.config.time_utils": [
+      "__future__",
+      "datetime"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.connections.id_handler": [
+      "__future__",
+      "dataclasses",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.connections.router": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.diagnostics.errors": [
+      "__future__"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.diagnostics.health": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Nexus.I1_Nexus": [
+      "dataclasses",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_analysis.analysis_runner": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_analysis.trajectory_types": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_cycle.cycle_runner": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.protocol_operations.scp_cycle.policy",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.protocol_operations.scp_runtime.result_packet",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.protocol_operations.scp_runtime.smp_intake",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.protocol_operations.scp_runtime.work_order",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.protocol_operations.scp_transform.iterative_loop",
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_cycle.policy": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_integrations.i1aa_binder": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.config.hashing",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.diagnostics.errors",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.aa",
+      "__future__",
+      "hashlib",
+      "json",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_integrations.iterative_loop": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_integrations.pipeline_runner": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.protocol_operations.scp_predict.risk_estimator",
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_mvs_adapter.bdn_adapter_real": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+      "__future__",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_mvs_adapter.mvs_adapter": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_mvs_adapter.mvs_adapter_real": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+      "__future__",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_mvs_adapter.mvs_types": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_predict.predict_integration": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_predict.risk_estimator": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_runtime.result_packet": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.config.hashing",
+      "__future__",
+      "dataclasses",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_runtime.smp_intake": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.config.hashing",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.config.schema_utils",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.diagnostics.errors",
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_runtime.work_order": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_tests.run_pipeline_smoke": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.protocol_operations.scp_integrations.pipeline_runner",
+      "__future__",
+      "json",
+      "sys",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_tests.sample_smp": [
+      "__future__",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_transform.iterative_loop": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_transform.transform_registry": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_transform.transform_types": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.tests.test_i1aa_aa_core": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Infra.config.hashing",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_integrations.i1aa_binder",
+      "pytest",
+      "time"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Core.3OT_mediator": [
+      "__future__",
+      "dataclasses",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Core.I2_Triune_Fractal_Binding": [
+      "Cognition_Normalized.Triune_Sierpinski_Core",
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Core.bridge_principle_operator": [
+      "dataclasses",
+      "datetime",
+      "enum",
+      "json",
+      "logging",
+      "re",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Core.omniproperty_integration": [
+      "__future__",
+      "dataclasses",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Core.privation_handler.privation_analyst": [
+      "__future__",
+      "dataclasses",
+      "importlib",
+      "json",
+      "pathlib",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Core.privation_handler.privation_classifier": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Core.privation_handler.privation_gate": [
+      "__future__",
+      "dataclasses",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Core.privation_handler.privation_override": [
+      "__future__",
+      "dataclasses",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Core.privation_handler.privation_transformer": [
+      "__future__",
+      "dataclasses",
+      "hashlib",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.config.constants": [
+      "__future__"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.config.hashing": [
+      "__future__",
+      "hashlib",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.config.logging_utils": [
+      "__future__",
+      "json",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.config.packet_types": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.config.schema_utils": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.config.time_utils": [
+      "__future__",
+      "datetime"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.connections.id_handler": [
+      "__future__",
+      "dataclasses",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.connections.router": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.diagnostics.errors": [
+      "__future__"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.diagnostics.health": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Nexus.I2_Nexus": [
+      "dataclasses",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.aa": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.config.hashing",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Infra.diagnostics.errors",
+      "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.repo_root",
+      "__future__",
+      "dataclasses",
+      "json",
+      "os",
+      "pathlib",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.semantic_projection_monitor": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.config.constants",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.config.hashing",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.diagnostics.errors",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.protocol_operations.aa",
+      "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.repo_root",
+      "__future__",
+      "dataclasses",
+      "json",
+      "pathlib",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.ui_io.adapter": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.config.constants",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.config.hashing",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.connections.id_handler",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.connections.router",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.protocol_operations.semantic_projection_monitor",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.protocol_operations.smp",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.core_processing.MTP_aggregator",
+      "__future__",
+      "dataclasses",
+      "json",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.ui_io.server": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.protocol_operations.ui_io.adapter",
+      "fastapi",
+      "fastapi.middleware.cors",
+      "pydantic"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Core.I3_Triune_Fractal_Binding": [
+      "Cognition_Normalized.Triune_Sierpinski_Core",
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Core.Mind_Principal_Operator": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.diagnostics.errors",
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Core.Omni_Property_Integration": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.config.hashing",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.diagnostics.errors",
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Core.fractal_trinity_engine.fractal_trinity_reasoner": [
+      "Agent_Resources.Cognition_Normalized.Triune_Sierpinski_Core",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.iel_engine",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.math_engine",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.pxl_engine",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.Meta_Reasoning_Engine.unified_reasoning",
+      "__future__",
+      "dataclasses",
+      "enum",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.constants": [
+      "__future__"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.hashing": [
+      "__future__",
+      "hashlib",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.logging_utils": [
+      "__future__",
+      "json",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.packet_types": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.schema_utils": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.diagnostics.errors",
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.time_utils": [
+      "__future__",
+      "datetime"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.connections.id_handler": [
+      "__future__",
+      "dataclasses",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.connections.router": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.diagnostics.errors": [
+      "__future__"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.diagnostics.health": [
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Nexus.I3_Nexus": [
+      "dataclasses",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Tools.arp_tests.run_cycle_smoke": [
+      "__future__",
+      "json"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Tools.arp_tests.sample_task": [
+      "__future__",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Lem_Discharge": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Start_Logos_Agent": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.self_improvement_integration": [
+      "asyncio",
+      "datetime",
+      "logging",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Nexus.Logos_Agent_Nexus": [
+      "dataclasses",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_error_handler": [
+      "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "contextlib",
+      "dataclasses",
+      "enum",
+      "functools",
+      "traceback",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_evaluator": [
+      "argparse",
+      "datetime",
+      "json",
+      "logging",
+      "pathlib",
+      "statistics",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_generator": [
+      "argparse",
+      "dataclasses",
+      "datetime",
+      "hashlib",
+      "json",
+      "logging",
+      "pathlib",
+      "sys",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_overlay": [
+      "dataclasses",
+      "enum",
+      "logging",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_registryv1": [
+      "argparse",
+      "dataclasses",
+      "datetime",
+      "hashlib",
+      "json",
+      "logging",
+      "os",
+      "pathlib",
+      "re",
+      "shutil",
+      "sqlite3",
+      "sys",
+      "threading",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_registryv2": [
+      "os",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_schema": [
+      "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "dataclasses",
+      "enum",
+      "json",
+      "numpy",
+      "pydantic",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_signer": [
+      "argparse",
+      "base64",
+      "cryptography.fernet",
+      "cryptography.hazmat.primitives",
+      "dataclasses",
+      "datetime",
+      "hashlib",
+      "json",
+      "logging",
+      "logos.imports.runtime",
+      "pathlib",
+      "secrets",
+      "sys",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_synthesizer": [
+      "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "collections",
+      "dataclasses",
+      "enum",
+      "hashlib",
+      "networkx",
+      "numpy",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.logos_aa_builder": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.aa",
+      "hashlib",
+      "json",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.module_generator.development_environment": [
+      "ast",
+      "dataclasses",
+      "hashlib",
+      "importlib.util",
+      "knowledge_catalog",
+      "logging",
+      "os",
+      "pathlib",
+      "tempfile",
+      "time",
+      "typing",
+      "warnings"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.module_generator.gen_ontoprops_dedup": [
+      "shutil",
+      "sys"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.module_generator.gen_worldview_ontoprops": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "sys"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.module_generator.knowledge_catalog": [
+      "datetime",
+      "hashlib",
+      "json",
+      "pathlib",
+      "tempfile",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.module_generator.self_improvement_integration": [
+      "asyncio",
+      "datetime",
+      "development_environment",
+      "glob",
+      "logging",
+      "os",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.module_generator.skill_acquisition": [
+      "core.async_workers",
+      "core.config_loader",
+      "core.logos_validator_hub"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Tetra_Conscious.Cognitive_Resistor": [
+      "dataclasses",
+      "datetime",
+      "enum",
+      "numpy",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Tetra_Conscious.Fractal_Data_Analyzer": [
+      "asyncio",
+      "dataclasses",
+      "datetime",
+      "hashlib",
+      "json",
+      "logging",
+      "pathlib",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Tetra_Conscious.Fractal_Data_Verifier": [
+      "asyncio",
+      "dataclasses",
+      "datetime",
+      "hashlib",
+      "json",
+      "logging",
+      "pathlib",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Tetra_Conscious.Fractal_Memory_Orchestrator": [
+      "abc",
+      "asyncio",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "json",
+      "logging",
+      "pathlib",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Tetra_Conscious.PXL_Tetra_Analyst": [
+      "sympy"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Tetra_Conscious.Triune_Fractal_Convergence": [
+      "Cognition_Normalized.Triune_Sierpinski_Core",
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.runtime": [
+      "logos.imports.agents",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.tests.test_logosaa_aa_core": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.logos_aa_builder",
+      "aa",
+      "json",
+      "os",
+      "pathlib",
+      "pytest",
+      "time"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Integration.I1.scp_pipeline.pipeline_runner": [
+      "logos.imports.agents"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Integration.I2.mtp_pipeline.pipeline_runner": [
+      "logos.imports.agents"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Integration.I3.arp_cycle.cycle_runner": [
+      "logos.imports.agents"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Integration.types": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Orchestration.agent_orchestration": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Orchestration.agent_planner": [
+      "__future__",
+      "copy",
+      "dataclasses",
+      "datetime",
+      "gzip",
+      "json",
+      "pathlib",
+      "plugins.perception_ingestors",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Orchestration.coordinator": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Integration.I1.scp_pipeline.pipeline_runner",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Integration.types",
+      "__future__",
+      "logos.imports.startup",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Orchestration.dispatch": [
+      "__future__",
+      "logos.imports.agents",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Agent_Orchestration.test_determinism": [
+      "hashlib",
+      "pathlib",
+      "subprocess"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Identity_Generator.agent_identity": [
+      "Logos_Protocol.logos_core.world_model",
+      "argparse",
+      "datetime",
+      "hashlib",
+      "json",
+      "logos.imports.agents",
+      "pathlib",
+      "subprocess",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Identity_Generator.attestation": [
+      "__future__",
+      "datetime",
+      "json",
+      "logos.imports.agents",
+      "pathlib",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Identity_Generator.audit_and_emit": [
+      "__future__",
+      "argparse",
+      "pathlib"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Identity_Generator.commitment_ledger": [
+      "__future__",
+      "dataclasses",
+      "datetime",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "tempfile",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Identity_Generator.consciousness_safety_adapter": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.consciousness.consciousness_safety_adapter",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Identity_Generator.identity_loader": [
+      "__future__",
+      "json",
+      "logos.imports.agents",
+      "pathlib",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Identity_Generator.persist_identity": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "sys"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Core.Identity_Generator.schemas": [
+      "__future__",
+      "datetime",
+      "hashlib",
+      "json",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus": [
+      "dataclasses",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Tools.Recursion_Grounding.Phase_E_Tick_Engine": [
+      "LOGOS_SYSTEM.Governance.exceptions",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Tools.Recursion_Grounding.recursion_identity_runtime": [
+      "dataclasses",
+      "json",
+      "pathlib",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Cognition_Normalized.Agent_Memory_Integrations": [
+      "your_memory_system"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Cognition_Normalized.emergence_core": [
+      "__future__",
+      "dataclasses",
+      "datetime",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library.Epistemic_Library_Router": [
+      "json",
+      "os",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library.Tests.test_epistemic_library_router": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library.Epistemic_Library_Router",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library.Utilities.Canonical_Hashing",
+      "json",
+      "os",
+      "pytest",
+      "shutil"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library.Utilities.Canonical_Hashing": [
+      "hashlib",
+      "json",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.IEL_Foundations.ArithmoPraxis.arithmopraxis.proof_engine": [
+      "re"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.math_categories.logos_mathematical_core": [
+      "dataclasses",
+      "hashlib",
+      "json",
+      "logging",
+      "math",
+      "numpy",
+      "secrets",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Lifecycle_Manager": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.SCP_Orchestrator",
+      "enum",
+      "logos.imports.protocols",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Wrappers": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Nexus_Factory": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.metered_reasoning_enforcer",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Runtime_Loop": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Lifecycle_Manager",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Agent_Wrappers",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Nexus_Factory",
+      "json",
+      "sys",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Topology_Context_Provider": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Task_Constraint_Provider": [
+      "logos.imports.startup",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.I2_Integration": [
+      "I2_Integration.I2_Egress_Critique"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.I2_Integration.I2_Egress_Critique": [
+      "dataclasses",
+      "enum",
+      "hashlib",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core": [
+      "MTP_Core.MTP_Fractal_Evaluator",
+      "MTP_Core.MTP_Output_Renderer",
+      "MTP_Core.MTP_Projection_Engine",
+      "MTP_Core.MTP_Semantic_Linearizer",
+      "MTP_Core.MTP_Validation_Gate"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.Language_Transmission_System.MTP_Fractal_Evaluator": [
+      "dataclasses",
+      "enum",
+      "math",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.Language_Transmission_System.MTP_Output_Renderer": [
+      "dataclasses",
+      "enum",
+      "hashlib",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.Language_Transmission_System.MTP_Projection_Engine": [
+      "dataclasses",
+      "enum",
+      "hashlib",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.Language_Transmission_System.MTP_Semantic_Linearizer": [
+      "dataclasses",
+      "enum",
+      "hashlib",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.Language_Transmission_System.MTP_Validation_Gate": [
+      "dataclasses",
+      "enum",
+      "hashlib",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.MTP_Compiler.smp_format_enforcer": [
+      "dataclasses",
+      "hashlib",
+      "json",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.MTP_Compiler.tool_aggregator": [
+      "dataclasses",
+      "hashlib",
+      "json",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.SMP_Generator.SMP_Evaluator": [
+      "collections",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "hashlib",
+      "json",
+      "numpy",
+      "scipy",
+      "statistics",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.SMP_Generator.SMP_Generator": [
+      "asyncio",
+      "collections",
+      "concurrent.futures",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "hashlib",
+      "itertools",
+      "json",
+      "msgpack",
+      "networkx",
+      "numpy",
+      "pathlib",
+      "scipy",
+      "typing",
+      "uuid",
+      "zlib"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.SMP_Generator.SMP_Memory_Validator": [
+      "__future__",
+      "asyncio",
+      "dataclasses",
+      "datetime",
+      "hashlib",
+      "hmac",
+      "json",
+      "logging",
+      "pathlib",
+      "secrets",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Nexus": [
+      "MTP_Nexus.MTP_Nexus"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Nexus.MTP_Nexus": [
+      "MTP_Core.MTP_Output_Renderer",
+      "dataclasses",
+      "enum",
+      "hashlib",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Nexus.interface_runtime.interface_runtime": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Nexus.interface_runtime.progressive_router": [
+      "__future__",
+      "dataclasses",
+      "json",
+      "logging",
+      "pydantic",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Nexus.interface_runtime.router": [
+      "__future__",
+      "dataclasses",
+      "datetime",
+      "json",
+      "logging",
+      "pathlib",
+      "queue",
+      "sys",
+      "threading",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.core_processing.MTP_aggregator": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.MTP_Compiler.smp_format_enforcer",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.MTP_Compiler.tool_aggregator",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Core.MTP_Compiler.tool_compiler",
+      "__future__",
+      "dataclasses",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.core_processing.adaptive_engine": [
+      "__future__",
+      "dataclasses",
+      "logging",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.core_processing.language_processor": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "collections",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "logging",
+      "nltk.corpus",
+      "nltk.stem",
+      "nltk.tokenize",
+      "re",
+      "spacy",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.core_processing.mcmc_engine": [
+      "__future__",
+      "logging",
+      "numpy",
+      "pymc",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.core_processing.registry": [
+      "__future__",
+      "asyncio",
+      "dataclasses",
+      "enum",
+      "logging",
+      "tenacity",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.core_processing.sanitizer": [
+      "__future__",
+      "dataclasses",
+      "logging",
+      "re",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.formal_logic_enrichment.pxl_ambiguity_profile": [
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.formal_logic_enrichment.pxl_enrichment_emitter": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.formal_logic_enrichment.pxl_symbol_key": [
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.formal_logic_enrichment.pxl_wff_builder": [
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.language_modules.natural_language_processor": [
+      "dataclasses",
+      "datetime",
+      "re",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.language_modules.semantic_transformers": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inference",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "dataclasses",
+      "datetime",
+      "hashlib",
+      "logging",
+      "numpy",
+      "re",
+      "sentence_transformers",
+      "torch",
+      "torch.nn.functional",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.language_modules.translation_bridge": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.reasoning_engines.lambda_calculus.lambda_engine",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.reasoning_engines.lambda_calculus.lambda_onto_calculus_engine",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "logging",
+      "re",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.language_modules.translation_engine": [
+      "datetime",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_engine": [
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_engine_definitions": [
+      "abc",
+      "json",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_onto_calculus_engine": [
+      "enum",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.lambda_parser": [
+      "enum",
+      "lambda_logos_core",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.logos_lambda_core": [
+      "logging",
+      "sentence_transformers",
+      "sklearn.feature_extraction.text",
+      "sklearn.naive_bayes",
+      "sklearn.pipeline",
+      "torch"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.symbolic_translation.logos_lambda_integration": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Artifact_Emitter": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Incremental_Compiler",
+      "__future__",
+      "dataclasses",
+      "hashlib",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Dependency_Graph": [
+      "__future__",
+      "collections",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Incremental_Compiler": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Topology_Context",
+      "__future__",
+      "dataclasses",
+      "hashlib",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Contracts.MSPC_MTP_Router": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Artifact_Emitter",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Contracts.MSPC_Output_Contract",
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Contracts.MSPC_Output_Contract": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Artifact_Emitter",
+      "__future__",
+      "enum",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Contracts.MSPC_Subscription_API": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Compilation.Artifact_Emitter",
+      "__future__",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Diagnostics.MSPC_Audit_Log": [
+      "__future__",
+      "dataclasses",
+      "enum",
+      "hashlib",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Diagnostics.MSPC_Telemetry": [
+      "__future__",
+      "dataclasses",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Config": [
+      "__future__",
+      "dataclasses",
+      "enum",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Pipeline": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Artifact_Emitter",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Dependency_Graph",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Incremental_Compiler",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Contracts.MSPC_Subscription_API",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Diagnostics.MSPC_Audit_Log",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Diagnostics.MSPC_Telemetry",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_State",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Resolution.Conflict_Resolver",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Ingress",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Registry",
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Runtime": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Artifact_Emitter",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Dependency_Graph",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Compilation.Incremental_Compiler",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Contracts.MSPC_MTP_Router",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Contracts.MSPC_Subscription_API",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Diagnostics.MSPC_Audit_Log",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Diagnostics.MSPC_Telemetry",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Config",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Pipeline",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Scheduler",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_State",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Resolution.Conflict_Resolver",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Ingress",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Registry",
+      "__future__",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_Scheduler": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_Config",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_Pipeline",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSPC_State",
+      "__future__",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.MSPC_State": [
+      "__future__",
+      "dataclasses",
+      "enum",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Resolution.Conflict_Resolver": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Resolution.Precedence_Rules",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Resolution.Precedence_Rules": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "__future__"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Envelope": [
+      "__future__",
+      "dataclasses",
+      "enum",
+      "hashlib",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Ingress": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Signals.Signal_Registry": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.Signals.Signal_Envelope",
+      "__future__",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Multi_Process_Signal_Compiler.MSCP_Protocol.Topology_Context": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.bdn_runtime": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.banach_data_nodes": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.pxl.arithmopraxis.trinity_arithmetic_engine",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+      "collections",
+      "dataclasses",
+      "datetime",
+      "logging",
+      "math",
+      "numpy",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.class_extrapolator": [
+      "random",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.logos_nodes_connections": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.logos_validator_hub",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.ontological_validator",
+      "json",
+      "logos.imports.governance"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.persistence_manager": [
+      "json",
+      "logos.imports.agents",
+      "os"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors": [
+      "dataclasses",
+      "math",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.logos_bridge": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.pxl.arithmopraxis.trinity_arithmetic_engine",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.trinity.trinity_vector_processor",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.uip.uip_step4_enhancement",
+      "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "LOGOS_V1.core.verified_core",
+      "dataclasses",
+      "datetime",
+      "logging",
+      "logos.imports.agents",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.integration.trinity_alignment": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.pxl.arithmopraxis.trinity_arithmetic_engine",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.trinity.trinity_vector_processor",
+      "collections",
+      "dataclasses",
+      "datetime",
+      "logging",
+      "logos.imports.agents",
+      "numpy",
+      "threading",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.mvf_node_operator": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "collections",
+      "dataclasses",
+      "enum",
+      "hashlib",
+      "heapq",
+      "json",
+      "math",
+      "numpy",
+      "sqlite3",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.fractal_mvs": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inferencer",
+      "banach_generator",
+      "bs4",
+      "burt_module",
+      "dataclasses",
+      "json",
+      "math",
+      "principles",
+      "random",
+      "re",
+      "requests",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.fractal_orbital.fractal_mvs": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "math",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.fractal_orbital.fractal_navigator": [
+      "logging",
+      "logos.imports.agents",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.fractal_orbital.fractal_orbital_node_class": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "enum",
+      "lambda_logos_core",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.fractal_orbital.integration_harmonizer": [
+      "core.cognitive.transducer_math",
+      "core.logos_mathematical_core",
+      "dataclasses",
+      "logging",
+      "math",
+      "queue",
+      "threading",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.fractal_orbital.modal_vector_sync": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.fractal_orbital.ontology_inducer": [
+      "logos.imports.agents"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.fractal_orbital.orbital_prediction_log_cli": [
+      "json"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.fractal_mvs": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.pxl.arithmopraxis.trinity_arithmetic_engine",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.trinity.trinity_vector_processor",
+      "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "cmath",
+      "collections",
+      "dataclasses",
+      "datetime",
+      "logging",
+      "math",
+      "numpy",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.privation_mathematics": [
+      "dataclasses",
+      "enum",
+      "hashlib",
+      "logging",
+      "numpy",
+      "secrets",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.symbolic_math": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.divergence_calculator",
+      "logging",
+      "logos.imports.agents",
+      "sympy",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.trinitarian_optimization_theorem": [
+      "dataclasses",
+      "enum",
+      "os",
+      "sys",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.trinity_alignment": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.pxl.arithmopraxis.trinity_arithmetic_engine",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.trinity.trinity_vector_processor",
+      "collections",
+      "dataclasses",
+      "datetime",
+      "logging",
+      "logos.imports.agents",
+      "numpy",
+      "threading",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.SCP_Orchestrator": [
+      "logos.imports.protocols",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.fractal_orbit_toolkit": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "collections",
+      "data_c_values.data_structures",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "fractal_orbital.symbolic_math",
+      "logging",
+      "logos.imports.agents",
+      "logos.imports.governance",
+      "math",
+      "modal_inference",
+      "numpy",
+      "pathlib",
+      "sys",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Nexus.SCP_Nexus": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.metered_reasoning_enforcer",
+      "dataclasses",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Analysts.advanced_fractal_analyzer": [
+      "collections",
+      "dataclasses",
+      "matplotlib",
+      "numpy",
+      "scipy",
+      "scipy.signal",
+      "scipy.spatial",
+      "scipy.stats",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Analysts.comprehensive_fractal_analysis": [
+      "advanced_fractal_analyzer",
+      "json",
+      "matplotlib",
+      "matplotlib.pyplot",
+      "numpy",
+      "pandas",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Analysts.consciousness_fractal_analysis": [
+      "advanced_fractal_analyzer",
+      "dataclasses",
+      "enum",
+      "json",
+      "matplotlib",
+      "matplotlib.pyplot",
+      "numpy",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Analysts.dual_bijection_coherence_analysis": [
+      "collections",
+      "json",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Analysts.pxl_fractal_orbital_analysis": [
+      "dataclasses",
+      "datetime",
+      "enum",
+      "json",
+      "matplotlib.pyplot",
+      "numpy",
+      "os",
+      "sys",
+      "traceback",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Analysts.pxl_modal_fractal_boundary_analysis": [
+      "collections",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "json",
+      "matplotlib.pyplot",
+      "numpy",
+      "os",
+      "sys",
+      "traceback",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Expirements.dual_bijection_agent_experiment": [
+      "datetime",
+      "json",
+      "matplotlib.pyplot",
+      "numpy",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "numpy",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.etgc_prior_checker": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.fractal_mapping": [
+      "collections"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.fractal_nexus": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.predictors.class_fractal_orbital_predictor",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.predictors.divergence_calculator",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine",
+      "json",
+      "pprint",
+      "sys",
+      "traceback",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.modal_support": [
+      "CONSCIOUS_Modal_Inference_System",
+      "__future__",
+      "modal_verifier",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.prediction_analyzer_exporter": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.analytics",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.settings",
+      "argparse",
+      "json",
+      "matplotlib.pyplot",
+      "pandas",
+      "types",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.simple_julia": [
+      "argparse",
+      "matplotlib.colors",
+      "matplotlib.pyplot",
+      "numpy"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.causal_chain_node_predictor": [
+      "causallearn.utils.GraphUtils",
+      "causallearn.utils.cit",
+      "logging",
+      "logos.imports.runtime",
+      "numpy"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.class_fractal_orbital_predictor": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital",
+      "importlib",
+      "json",
+      "logos.imports.agents",
+      "logos.imports.runtime",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.divergence_calculator": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "itertools",
+      "logging",
+      "logos.imports.agents",
+      "ontological_node_class",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.divergence_engine": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital",
+      "itertools",
+      "logos.imports.agents",
+      "logos.imports.runtime",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.fractal_orbit_cli": [
+      "argparse",
+      "asyncio",
+      "json",
+      "logging",
+      "logos.imports.governance",
+      "pathlib",
+      "sys",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.orbital_recursion_engine": [
+      "collections"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.prediction_module": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inferencer",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_orbital_node_class",
+      "json",
+      "logos.imports.agents",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Validation.bijective_mapping": [
+      "numpy",
+      "sympy",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Validation.etgc_validator": [
+      "abc",
+      "json"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Validation.ontological_validator": [
+      "json",
+      "sys"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Validation.validation_schemas_system": [
+      "dataclasses",
+      "datetime",
+      "enum",
+      "hashlib",
+      "json",
+      "secrets",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.CSP_Canonical_Store": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Canonical_Governance_Adapter",
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Canonical_Governance_Adapter": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.CSP_Canonical_Store",
+      "copy",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Canonical_SMP_Producer": [
+      "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema",
+      "hashlib",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Memory.Logos_Memory_Nexus": [
+      "collections",
+      "dataclasses",
+      "datasketch",
+      "datetime",
+      "enum",
+      "hashlib",
+      "heapq",
+      "json",
+      "networkx",
+      "numpy",
+      "pickle",
+      "scipy",
+      "typing",
+      "zlib"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Promotion_Evaluator": [
+      "dataclasses",
+      "logos.imports.protocols",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.AA_Catalog": [
+      "collections",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema": [
+      "dataclasses",
+      "hashlib",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Store": [
+      "hashlib",
+      "logos.imports.protocols",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.UWM_Access_Control": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.World_Modeling.PXL_World_Model": [
+      "asyncio",
+      "collections",
+      "concurrent.futures",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "functools",
+      "hashlib",
+      "heapq",
+      "json",
+      "networkx",
+      "numpy",
+      "pathlib",
+      "pickle",
+      "scipy",
+      "typing",
+      "zlib"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.World_Modeling.commitment_ledger": [
+      "hashlib",
+      "json",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.World_Modeling.world_model": [
+      "__future__",
+      "datetime",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "tempfile",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Nexus.CSP_Nexus": [
+      "dataclasses",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Core": [
+      "dataclasses",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.ORCHESTRATION_AND_ENTRYPOINTS.Canonical_System_Bootstrap_Pipeline": [
+      "PYTHON_MODULES.SEMANTIC_CONTEXTS.Agent_Policy_Decision_Context",
+      "PYTHON_MODULES.SEMANTIC_CONTEXTS.Bootstrap_Runtime_Context",
+      "PYTHON_MODULES.SEMANTIC_CONTEXTS.Privation_Handling_Context",
+      "PYTHON_MODULES.SEMANTIC_CONTEXTS.Runtime_Mode_Context",
+      "PYTHON_MODULES.SEMANTIC_CONTEXTS.Trinitarian_Optimization_Context"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.ORCHESTRATION_AND_ENTRYPOINTS.Logos_System_Entry_Point": [
+      "logos.imports.runtime"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_AXIOMS.Monolith_Runtime": [
+      "importlib.machinery",
+      "importlib.util",
+      "json",
+      "pathlib"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Agent_Policy_Decision_Context": [
+      "PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints",
+      "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Bootstrap_Runtime_Context": [
+      "PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints",
+      "PYTHON_MODULES.SEMANTIC_AXIOMS.Runtime_Context_Initializer",
+      "PYTHON_MODULES.SEMANTIC_AXIOMS.Runtime_Mode_Controller",
+      "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Privation_Handling_Context": [
+      "PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints",
+      "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Runtime_Mode_Context": [
+      "PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints",
+      "PYTHON_MODULES.SEMANTIC_AXIOMS.Runtime_Mode_Controller",
+      "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core.DRAC_Invariables.SEMANTIC_CONTEXTS.Trinitarian_Optimization_Context": [
+      "PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints",
+      "PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate",
+      "PYTHON_MODULES.SEMANTIC_AXIOMS.Trinitarian_Alignment_Core"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Nexus.DRAC_Nexus": [
+      "dataclasses",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Registries.DRAC_Registry_Validator": [
+      "json",
+      "os",
+      "sys"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Tools.DRAC_Artifact_Inventory": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Tools.DRAC_Dependancy_Resolver": [
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Tools.DRAC_Phase_Tracker": [
+      "DRAC.CORE.DRAC_Core",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Epistemic_Monitoring_Protocol.EMP_Core.EMP_Abstraction_Engine": [
+      "collections",
+      "dataclasses",
+      "pathlib",
+      "re",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Epistemic_Monitoring_Protocol.EMP_Core.EMP_Coq_Bridge": [
+      "dataclasses",
+      "hashlib",
+      "os",
+      "pathlib",
+      "re",
+      "shutil",
+      "subprocess",
+      "tempfile",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Epistemic_Monitoring_Protocol.EMP_Core.EMP_Meta_Reasoner": [
+      "dataclasses",
+      "enum",
+      "hashlib",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Epistemic_Monitoring_Protocol.EMP_Core.EMP_Proof_Index": [
+      "collections",
+      "dataclasses",
+      "pathlib",
+      "re",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Epistemic_Monitoring_Protocol.EMP_Core.EMP_Template_Engine": [
+      "dataclasses",
+      "hashlib",
+      "pathlib",
+      "re",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Epistemic_Monitoring_Protocol.EMP_Nexus.EMP_MSPC_Witness": [
+      "dataclasses",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Epistemic_Monitoring_Protocol.EMP_Nexus.EMP_Nexus": [
+      "dataclasses",
+      "time",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Core.Policy_Matrix.Compile_Quota_Guard": [
+      "time"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Core.Runtime_Airlock.Runtime_Audit_Handoff": [
+      "hashlib",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Core.Runtime_Airlock.Runtime_Interface_Gate": [
+      "logos.imports.governance"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Core.Runtime_Airlock.SMP_Execution_Interpreter": [
+      "hashlib",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Core.System_Entry_Point.Boot_Audit_Recorder": [
+      "hashlib",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Core.System_Entry_Point.Startup_Gate": [
+      "datetime",
+      "hashlib",
+      "logos.imports.governance",
+      "os"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Core.System_Entry_Point.System_Context": [
+      "hashlib",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Nexus.SOP_Nexus": [
+      "dataclasses",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Nexus.Telemetry_Backend.Metrics_Registry": [
+      "hashlib",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Nexus.Telemetry_Backend.Prometheus_Exporter": [
+      "http.server"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Nexus.Telemetry_Backend.System_Health_Checks": [
+      "hashlib",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Audit_Spine.Audit_Logger": [
+      "datetime",
+      "hashlib",
+      "json",
+      "os"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Audit_Spine.Evidence_Registry": [
+      "hashlib",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Audit_Spine.Hash_Attestation_Service": [
+      "hashlib",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Audit_Spine.Outbound_Audit_Channel": [
+      "hashlib",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.DRAC_Integration.Core_Binding_Validator": [
+      "json",
+      "os"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.DRAC_Integration.DRAC_Handshake": [
+      "logos.imports.governance",
+      "time"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.DRAC_Integration.DRAC_Orchestration_Bridge": [
+      "hashlib",
+      "os",
+      "time"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.DRAC_Integration.Overlay_Validator": [
+      "json",
+      "os"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Governance_Control.Governance_Loader": [
+      "hashlib",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Governance_Control.Governance_Validator": [
+      "hashlib",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Governance_Control.Invariant_Drift_Detector": [
+      "hashlib",
+      "logging",
+      "typing"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Governance_Control.Invariant_Enforcer": [
+      "datetime",
+      "hashlib",
+      "json",
+      "os"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Governance_Control.SMP_Policy_Validator": [
+      "hashlib",
+      "json"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Governance_Control.scan_bypass": [
+      "pathlib",
+      "re",
+      "sys"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.System_Operations_Protocol.SOP_Tools.Operational_Log.Operational_Logger": [
+      "enum",
+      "json",
+      "os",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.repo_root": [
+      "pathlib"
+    ],
+    "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports": [
+      "abc",
+      "asyncio",
+      "collections",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "hashlib",
+      "json",
+      "logging",
+      "os",
+      "pathlib",
+      "sys",
+      "threading",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "LOGOS_SYSTEM.Runtime_Spine.Agent_Orchestration.agent_orchestration": [
+      "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Spine.Agent_Orchestration.agent_orchestration"
+    ],
+    "LOGOS_SYSTEM.Runtime_Spine.Lock_And_Key.lock_and_key": [
+      "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Runtime_Enforcement.Runtime_Spine.Lock_And_Key.lock_and_key"
+    ],
+    "LOGOS_SYSTEM.Runtime_Spine.Logos_Constructive_Compile.logos_constructive_compile": [
+      "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Agent_Invocation.logos_constructive_compile"
+    ],
+    "LOGOS_SYSTEM.System_Entry_Point.Agent_Orchestration.Lem_Discharge": [
+      "logos.imports.protocols"
+    ],
+    "LOGOS_SYSTEM.System_Entry_Point.Agent_Orchestration.agent_orchestration": [
+      "LOGOS_SYSTEM.Runtime_Spine.Agent_Orchestration.agent_orchestration"
+    ],
+    "LOGOS_SYSTEM.System_Entry_Point.System_Entry_Point": [
+      "typing"
+    ],
+    "STARTUP.LOGOS_SYSTEM": [
+      "LOGOS_SYSTEM.System_Entry_Point.System_Entry_Point",
+      "logos.imports.governance",
+      "logos.imports.protocols",
+      "os",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "typing"
+    ],
+    "STARTUP.Runtime_Compiler.coq.src.ui.PXL_Proof_Compile": [
+      "argparse",
+      "os",
+      "re",
+      "subprocess",
+      "sys",
+      "typing"
+    ],
+    "STARTUP.Runtime_Compiler.coq.src.ui.audit_and_emit": [
+      "argparse",
+      "pathlib"
+    ],
+    "STARTUP.Runtime_Compiler.coq.src.ui.lem_portal": [
+      "json",
+      "pathlib"
+    ],
+    "STARTUP.Runtime_Compiler.coq.src.ui.run_coq_pipeline": [
+      "pathlib",
+      "subprocess"
+    ],
+    "STARTUP.Runtime_Compiler.coq.src.ui.serve_pxl": [
+      "flask",
+      "glob",
+      "hashlib",
+      "queue",
+      "signal",
+      "subprocess",
+      "sys",
+      "threading",
+      "time",
+      "uuid",
+      "waitress"
+    ],
+    "STARTUP.START_LOGOS": [
+      "STARTUP.LOGOS_SYSTEM"
+    ],
+    "STARTUP.__main__": [
+      "__future__"
+    ],
+    "_Dev_Resources.scripts.Import_Linter": [
+      "ast",
+      "json",
+      "os",
+      "pathlib",
+      "sys"
+    ],
+    "_Dev_Resources.scripts.Phase_2A_AST_Canonical_Root_Normalization": [
+      "ast",
+      "json",
+      "os",
+      "pathlib"
+    ],
+    "_Dev_Resources.scripts.Phase_2A_Corrected_Case_Normalization": [
+      "json",
+      "os",
+      "re"
+    ],
+    "_Dev_Resources.scripts.Phase_2A_Rule2_Classification": [
+      "collections",
+      "json",
+      "os"
+    ],
+    "_Dev_Resources.scripts.Phase_2B_A_Rule2_Root_Grouping": [
+      "collections",
+      "json",
+      "pathlib"
+    ],
+    "_Dev_Resources.scripts.Phase_2B_Pre_Discovery_Structure_Scan": [
+      "json",
+      "os",
+      "pathlib"
+    ],
+    "_Dev_Resources.scripts.Phase_2F_Prefix_String_Verification": [
+      "collections",
+      "json",
+      "os",
+      "re"
+    ],
+    "_Dev_Resources.scripts.Phase_3A_Rule3_Canonical_Expansion": [
+      "ast",
+      "json",
+      "os",
+      "typing"
+    ],
+    "_Dev_Resources.scripts.Phase_3B_Agent_Canonical_Expansion": [
+      "ast",
+      "json",
+      "os",
+      "typing"
+    ],
+    "_Dev_Resources.scripts.Run_Nexus_Structural_Audit": [
+      "LOGOS_SYSTEM._Governance.Nexus_Validation.Nexus_AST_Validator",
+      "json",
+      "os"
+    ],
+    "_Dev_Resources.scripts.conftest": [
+      "pathlib",
+      "pytest"
+    ],
+    "_Dev_Resources.scripts.m5_validation_scan": [
+      "json",
+      "pathlib"
+    ],
+    "_Dev_Resources.scripts.phase6_runtime_callgraph_extractor": [
+      "ast",
+      "json",
+      "pathlib",
+      "sys",
+      "typing"
+    ],
+    "_Dev_Resources.scripts.phase6b_runtime_execution_tracer": [
+      "importlib.util",
+      "inspect",
+      "json",
+      "os",
+      "pathlib",
+      "sys"
+    ],
+    "_Dev_Resources.scripts.phase6c_execution_core_isolation_audit": [
+      "ast",
+      "json",
+      "pathlib",
+      "sys",
+      "typing"
+    ],
+    "_Dev_Resources.scripts.phase_2b_ast_mutator": [
+      "ast",
+      "astor",
+      "json",
+      "os",
+      "pathlib",
+      "typing"
+    ],
+    "_Dev_Resources.scripts.phase_2c_root_existence_map": [
+      "json",
+      "os",
+      "pathlib"
+    ],
+    "_Dev_Resources.scripts.phase_2d_canonical_root_expansion": [
+      "ast",
+      "astor",
+      "json",
+      "os",
+      "pathlib"
+    ],
+    "_Dev_Resources.scripts.phase_2e_rule2_prefix_grouping": [
+      "collections",
+      "json",
+      "pathlib"
+    ],
+    "_Dev_Resources.scripts.phase_2f_structural_namespace_relocation": [
+      "ast",
+      "astor",
+      "json",
+      "os",
+      "pathlib"
+    ],
+    "_Dev_Resources.scripts.static_ast_analysis": [
+      "ast",
+      "json",
+      "os",
+      "pathlib",
+      "python_file_list",
+      "sys"
+    ],
+    "_Dev_Resources.scripts.test_import_base_reasoning_registry": [
+      "logos.imports.protocols",
+      "traceback"
+    ],
+    "_Governance.Audit_Artifacts.print_classification_alignment_report": [
+      "json",
+      "pathlib"
+    ],
+    "_Governance.Gov_Modules.filesystem_guard": [
+      "pathlib"
+    ],
+    "_Governance.Gov_Modules.preflight_filesystem_check": [
+      "pathlib",
+      "sys"
+    ],
+    "tools.audit_and_emit": [
+      "sys"
+    ]
+  }
+}

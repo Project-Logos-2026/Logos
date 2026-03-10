@@ -9,18 +9,10 @@ Fail-Closed
 
 import time
 
-from LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.Policy_Matrix.SOP_Policy_Matrix import (
-    SOPPolicyMatrix,
-)
-from LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.Policy_Matrix.Compile_Quota_Guard import (
-    CompileQuotaGuard,
-)
-from LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.DRAC_Integration.Core_Binding_Validator import (
-    CoreBindingValidator,
-)
-from LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.DRAC_Integration.Overlay_Validator import (
-    OverlayValidator,
-)
+from logos.imports.governance import SOPPolicyMatrix
+from logos.imports.governance import CompileQuotaGuard
+from logos.imports.governance import CoreBindingValidator
+from logos.imports.governance import OverlayValidator
 
 
 class DRACHandshake:

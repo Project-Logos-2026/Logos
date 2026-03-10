@@ -1,0 +1,760 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-10T23:00:48.496961+00:00",
+  "total_cores": 27,
+  "taxonomy_distribution": {
+    "agent_orchestration_core": 2,
+    "inference_core": 7,
+    "protocol_core": 4,
+    "safety_core": 8,
+    "semantic_core": 6
+  },
+  "cores": [
+    {
+      "core_id": "FBC_0001",
+      "core_name": "3PDN_Constraint",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/3PDN_Constraint.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "safety_core",
+      "reasoning_domain": "safety_governance",
+      "purpose": "Safety validation gate: 3PDN Constraint",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "audited",
+        "constraint",
+        "safety_guard",
+        "validation"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "support_services",
+        "validation_guard"
+      ],
+      "structural_role": "Safety"
+    },
+    {
+      "core_id": "FBC_0002",
+      "core_name": "3PDN_Validator",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/3PDN_Validator.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "safety_core",
+      "reasoning_domain": "safety_governance",
+      "purpose": "Safety validation gate: 3PDN Validator",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "audited",
+        "constraint",
+        "safety_guard",
+        "validation"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "support_services",
+        "validation_guard"
+      ],
+      "structural_role": "Safety"
+    },
+    {
+      "core_id": "FBC_0003",
+      "core_name": "Agent_Activation_Gate",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Agent_Activation_Gate.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "safety_core",
+      "reasoning_domain": "safety_governance",
+      "purpose": "Safety validation gate: Agent Activation Gate",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "audited",
+        "constraint",
+        "safety_guard",
+        "validation"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "support_services",
+        "validation_guard"
+      ],
+      "structural_role": "Safety"
+    },
+    {
+      "core_id": "FBC_0004",
+      "core_name": "Evidence_Chain",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Evidence_Chain.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "inference_core",
+      "reasoning_domain": "logical_inference",
+      "purpose": "Inference or logic core: Evidence Chain",
+      "functions": [
+        "verify_evidence_chain"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "deterministic",
+        "reasoning",
+        "symbolic"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "numerical_compute",
+        "planning",
+        "reasoning_inference",
+        "support_services"
+      ],
+      "structural_role": "Inference"
+    },
+    {
+      "core_id": "FBC_0005",
+      "core_name": "Global_Bijective_Recursion_Core",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Global_Bijective_Recursion_Core.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "inference_core",
+      "reasoning_domain": "logical_inference",
+      "purpose": "Inference or logic core: Global Bijective Recursion Core",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "bijective",
+        "deterministic",
+        "reasoning",
+        "symbolic"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "numerical_compute",
+        "planning",
+        "reasoning_inference",
+        "support_services"
+      ],
+      "structural_role": "Inference"
+    },
+    {
+      "core_id": "FBC_0006",
+      "core_name": "Hypostatic_ID_Validator",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Hypostatic_ID_Validator.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "safety_core",
+      "reasoning_domain": "safety_governance",
+      "purpose": "Safety validation gate: Hypostatic ID Validator",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "audited",
+        "constraint",
+        "safety_guard",
+        "validation"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "support_services",
+        "validation_guard"
+      ],
+      "structural_role": "Safety"
+    },
+    {
+      "core_id": "FBC_0007",
+      "core_name": "Invariant_Constraints",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Invariant_Constraints.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "safety_core",
+      "reasoning_domain": "safety_governance",
+      "purpose": "Safety validation gate: Invariant Constraints",
+      "functions": [
+        "enforce_invariants"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "audited",
+        "constraint",
+        "safety_guard",
+        "validation"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "support_services",
+        "validation_guard"
+      ],
+      "structural_role": "Safety"
+    },
+    {
+      "core_id": "FBC_0008",
+      "core_name": "Monolith_Runtime",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Monolith_Runtime.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "protocol_core",
+      "reasoning_domain": "system_protocol",
+      "purpose": "Runtime protocol module: Monolith Runtime",
+      "functions": [
+        "load_contract",
+        "load_canonical_module",
+        "invoke"
+      ],
+      "classes": [],
+      "dependencies": [
+        "json",
+        "pathlib",
+        "importlib.machinery",
+        "importlib.util"
+      ],
+      "tags": [
+        "governance",
+        "protocol"
+      ],
+      "compatible_clusters": [],
+      "structural_role": "Protocol"
+    },
+    {
+      "core_id": "FBC_0009",
+      "core_name": "Necessary_Existence_Core",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Necessary_Existence_Core.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "inference_core",
+      "reasoning_domain": "logical_inference",
+      "purpose": "Inference or logic core: Necessary Existence Core",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "deterministic",
+        "reasoning",
+        "symbolic"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "numerical_compute",
+        "planning",
+        "reasoning_inference",
+        "support_services"
+      ],
+      "structural_role": "Inference"
+    },
+    {
+      "core_id": "FBC_0010",
+      "core_name": "Read_Only_Agent_Interface",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Read_Only_Agent_Interface.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "agent_orchestration_core",
+      "reasoning_domain": "agent_lifecycle",
+      "purpose": "Agent orchestration core: Read Only Agent Interface",
+      "functions": [
+        "assert_read_only"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "agent_runtime",
+        "orchestration",
+        "stateful"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "support_services"
+      ],
+      "structural_role": "Agent Orchestration"
+    },
+    {
+      "core_id": "FBC_0011",
+      "core_name": "Runtime_Context_Initializer",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Runtime_Context_Initializer.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "semantic_core",
+      "reasoning_domain": "semantic_processing",
+      "purpose": "Semantic context module: Runtime Context Initializer",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "embedded",
+        "governance",
+        "semantic"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "structural_role": "Semantic"
+    },
+    {
+      "core_id": "FBC_0012",
+      "core_name": "Runtime_Input_Sanitizer",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Runtime_Input_Sanitizer.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "safety_core",
+      "reasoning_domain": "safety_governance",
+      "purpose": "Safety validation gate: Runtime Input Sanitizer",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "audited",
+        "constraint",
+        "input_sanitation",
+        "safety_guard",
+        "validation"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "support_services",
+        "validation_guard"
+      ],
+      "structural_role": "Safety"
+    },
+    {
+      "core_id": "FBC_0013",
+      "core_name": "Runtime_Mode_Controller",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Runtime_Mode_Controller.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "semantic_core",
+      "reasoning_domain": "semantic_processing",
+      "purpose": "Semantic context module: Runtime Mode Controller",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "embedded",
+        "governance",
+        "semantic"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "structural_role": "Semantic"
+    },
+    {
+      "core_id": "FBC_0014",
+      "core_name": "Semantic_Capability_Gate",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Semantic_Capability_Gate.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "safety_core",
+      "reasoning_domain": "safety_governance",
+      "purpose": "Safety validation gate: Semantic Capability Gate",
+      "functions": [
+        "admit_capability"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "audited",
+        "constraint",
+        "safety_guard",
+        "validation"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "support_services",
+        "validation_guard"
+      ],
+      "structural_role": "Safety"
+    },
+    {
+      "core_id": "FBC_0015",
+      "core_name": "Temporal_Supersession",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Temporal_Supersession.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "inference_core",
+      "reasoning_domain": "logical_inference",
+      "purpose": "Inference or logic core: Temporal Supersession",
+      "functions": [
+        "supersede"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "deterministic",
+        "reasoning",
+        "symbolic",
+        "temporal"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "numerical_compute",
+        "planning",
+        "reasoning_inference",
+        "support_services"
+      ],
+      "structural_role": "Inference"
+    },
+    {
+      "core_id": "FBC_0016",
+      "core_name": "Trinitarian_Alignment_Core",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Trinitarian_Alignment_Core.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "inference_core",
+      "reasoning_domain": "logical_inference",
+      "purpose": "Inference or logic core: Trinitarian Alignment Core",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "deterministic",
+        "reasoning",
+        "symbolic",
+        "trinitarian"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "numerical_compute",
+        "planning",
+        "reasoning_inference",
+        "support_services"
+      ],
+      "structural_role": "Inference"
+    },
+    {
+      "core_id": "FBC_0017",
+      "core_name": "Trinitarian_Logic_Core",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Trinitarian_Logic_Core.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "inference_core",
+      "reasoning_domain": "logical_inference",
+      "purpose": "Inference or logic core: Trinitarian Logic Core",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "deterministic",
+        "reasoning",
+        "symbolic",
+        "trinitarian"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "numerical_compute",
+        "planning",
+        "reasoning_inference",
+        "support_services"
+      ],
+      "structural_role": "Inference"
+    },
+    {
+      "core_id": "FBC_0018",
+      "core_name": "UWM_Ingestion",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/UWM_Ingestion.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "protocol_core",
+      "reasoning_domain": "system_protocol",
+      "purpose": "Runtime protocol module: UWM Ingestion",
+      "functions": [
+        "ingest"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "governance",
+        "protocol"
+      ],
+      "compatible_clusters": [],
+      "structural_role": "Protocol"
+    },
+    {
+      "core_id": "FBC_0019",
+      "core_name": "UWM_Validator",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/UWM_Validator.py",
+      "source_directory": "SEMANTIC_AXIOMS",
+      "taxonomy_class": "safety_core",
+      "reasoning_domain": "safety_governance",
+      "purpose": "Safety validation gate: UWM Validator",
+      "functions": [
+        "enforce_phase_5"
+      ],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "audited",
+        "constraint",
+        "safety_guard",
+        "validation"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "support_services",
+        "validation_guard"
+      ],
+      "structural_role": "Safety"
+    },
+    {
+      "core_id": "FBC_0020",
+      "core_name": "Agent_Policy_Decision_Context",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Agent_Policy_Decision_Context.py",
+      "source_directory": "SEMANTIC_CONTEXTS",
+      "taxonomy_class": "agent_orchestration_core",
+      "reasoning_domain": "agent_lifecycle",
+      "purpose": "Semantic Context: Agent_Policy_Decision_Context",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [
+        "logos.imports.drac_axioms",
+        "logos.imports.drac_axioms"
+      ],
+      "tags": [
+        "agent_runtime",
+        "memory_access",
+        "orchestration",
+        "stateful"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "support_services"
+      ],
+      "structural_role": "Agent Orchestration"
+    },
+    {
+      "core_id": "FBC_0021",
+      "core_name": "Bootstrap_Runtime_Context",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Bootstrap_Runtime_Context.py",
+      "source_directory": "SEMANTIC_CONTEXTS",
+      "taxonomy_class": "semantic_core",
+      "reasoning_domain": "semantic_processing",
+      "purpose": "Semantic Context: Bootstrap_Runtime_Context",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [
+        "logos.imports.drac_axioms",
+        "logos.imports.drac_axioms",
+        "logos.imports.drac_axioms",
+        "logos.imports.drac_axioms"
+      ],
+      "tags": [
+        "bootstrap",
+        "embedded",
+        "governance",
+        "memory_access",
+        "semantic"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "structural_role": "Semantic"
+    },
+    {
+      "core_id": "FBC_0022",
+      "core_name": "Privation_Handling_Context",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Privation_Handling_Context.py",
+      "source_directory": "SEMANTIC_CONTEXTS",
+      "taxonomy_class": "semantic_core",
+      "reasoning_domain": "semantic_processing",
+      "purpose": "Semantic Context: Privation_Handling_Context",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [
+        "logos.imports.drac_axioms",
+        "logos.imports.drac_axioms"
+      ],
+      "tags": [
+        "embedded",
+        "governance",
+        "memory_access",
+        "semantic"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "structural_role": "Semantic"
+    },
+    {
+      "core_id": "FBC_0023",
+      "core_name": "Runtime_Mode_Context",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Runtime_Mode_Context.py",
+      "source_directory": "SEMANTIC_CONTEXTS",
+      "taxonomy_class": "semantic_core",
+      "reasoning_domain": "semantic_processing",
+      "purpose": "Semantic Context: Runtime_Mode_Context",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [
+        "logos.imports.drac_axioms",
+        "logos.imports.drac_axioms",
+        "logos.imports.drac_axioms"
+      ],
+      "tags": [
+        "embedded",
+        "governance",
+        "memory_access",
+        "semantic"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "structural_role": "Semantic"
+    },
+    {
+      "core_id": "FBC_0024",
+      "core_name": "Trinitarian_Optimization_Context",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Trinitarian_Optimization_Context.py",
+      "source_directory": "SEMANTIC_CONTEXTS",
+      "taxonomy_class": "inference_core",
+      "reasoning_domain": "logical_inference",
+      "purpose": "Semantic Context: Trinitarian_Optimization_Context",
+      "functions": [
+        "run"
+      ],
+      "classes": [],
+      "dependencies": [
+        "logos.imports.drac_axioms",
+        "logos.imports.drac_axioms",
+        "logos.imports.drac_axioms"
+      ],
+      "tags": [
+        "deterministic",
+        "memory_access",
+        "reasoning",
+        "symbolic",
+        "trinitarian"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "memory_access",
+        "numerical_compute",
+        "planning",
+        "reasoning_inference",
+        "support_services"
+      ],
+      "structural_role": "Inference"
+    },
+    {
+      "core_id": "FBC_0025",
+      "core_name": "Canonical_System_Bootstrap_Pipeline",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/ORCHESTRATION_AND_ENTRYPOINTS/Canonical_System_Bootstrap_Pipeline.py",
+      "source_directory": "ORCHESTRATION_AND_ENTRYPOINTS",
+      "taxonomy_class": "semantic_core",
+      "reasoning_domain": "semantic_processing",
+      "purpose": "Canonical System Bootstrap Pipeline",
+      "functions": [
+        "system_bootstrap"
+      ],
+      "classes": [],
+      "dependencies": [
+        "logos.imports.drac_axioms",
+        "logos.imports.drac_axioms",
+        "logos.imports.drac_axioms",
+        "logos.imports.drac_axioms",
+        "logos.imports.drac_axioms"
+      ],
+      "tags": [
+        "bootstrap",
+        "embedded",
+        "governance",
+        "semantic"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "structural_role": "Semantic"
+    },
+    {
+      "core_id": "FBC_0026",
+      "core_name": "Logos_System_Entry_Point",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/ORCHESTRATION_AND_ENTRYPOINTS/Logos_System_Entry_Point.py",
+      "source_directory": "ORCHESTRATION_AND_ENTRYPOINTS",
+      "taxonomy_class": "protocol_core",
+      "reasoning_domain": "system_protocol",
+      "purpose": "LOGOS System Entry Point",
+      "functions": [
+        "main"
+      ],
+      "classes": [],
+      "dependencies": [
+        "logos.imports.runtime"
+      ],
+      "tags": [
+        "governance",
+        "protocol"
+      ],
+      "compatible_clusters": [],
+      "structural_role": "Protocol"
+    },
+    {
+      "core_id": "FBC_0027",
+      "core_name": "CoreConfig_0001",
+      "source_file": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/CORE_CONFIGURATIONS/CoreConfig_0001.json",
+      "source_directory": "CORE_CONFIGURATIONS",
+      "taxonomy_class": "protocol_core",
+      "reasoning_domain": "system_protocol",
+      "purpose": "Canonical DRAC core configuration \u2014 axiom set binding, constraint flags",
+      "functions": [],
+      "classes": [],
+      "dependencies": [],
+      "tags": [
+        "protocol",
+        "axiomatic",
+        "constraint",
+        "governance",
+        "deterministic"
+      ],
+      "compatible_clusters": [
+        "agent_runtime",
+        "support_services"
+      ],
+      "structural_role": "Protocol"
+    }
+  ]
+}

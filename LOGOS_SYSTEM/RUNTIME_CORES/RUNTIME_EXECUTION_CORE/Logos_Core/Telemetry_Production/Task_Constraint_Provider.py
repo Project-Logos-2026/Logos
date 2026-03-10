@@ -4,7 +4,7 @@
 # Governance: Fail-closed, advisory-only, deterministic
 
 from typing import Any, Dict, List, Protocol
-from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Task_Triad_Derivation import Constraint
+from logos.imports.startup import Constraint
 
 class ConstraintProvider(Protocol):
     def get_constraints_for_tick(self, task_context: Dict[str, Any]) -> List[Constraint]: ...

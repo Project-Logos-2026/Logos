@@ -90,7 +90,7 @@ def initialize_agent_identity() -> None:
 
     This function should be called before any connector or consciousness subsystem is activated.
     """
-    from System_Stack.Logos_Protocol.Protocol_Core.Activation_Sequencer.Identity_Generator.System_Entry_Point.Recusion_Grounding.Initialize_Recursion_Engine import AgentSelfReflection
+    from logos.imports.agents import AgentSelfReflection
 
     # Attempt to prove the Law of the Excluded Middle (LEM) internally.
     lem_proven = AgentSelfReflection.evaluate_LEM()

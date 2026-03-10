@@ -31,7 +31,7 @@ try:
     from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_orbital_node_class import OntologicalNode
 except ImportError:
     from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_orbital_node_class import OntologicalNode
-from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.modal_support import get_thonoc_verifier
+from logos.imports.agents import get_thonoc_verifier
 ThonocVerifier = get_thonoc_verifier()
 import time
 import json

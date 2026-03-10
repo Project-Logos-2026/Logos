@@ -59,11 +59,20 @@ from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Proto
 try:
     from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.trinity.trinity_vector_processor import TrinityVector, TrinityVectorProcessor
     from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.uip.uip_step4_enhancement import UIPStep4Enhancement
-    from LOGOS_V1.core.verified_core import CoreIntegrityValidator
+from logos.imports.runtime_utils import CoreIntegrityValidator
     from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.pxl.arithmopraxis.trinity_arithmetic_engine import TrinityArithmeticEngine
-    from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports import (
-        logging, dataclass, field, datetime, Any, Dict, List, Optional, Tuple, uuid
-    )
+from logos.imports.runtime_utils import (
+    logging,
+    dataclass,
+    field,
+    datetime,
+    Any,
+    Dict,
+    List,
+    Optional,
+    Tuple,
+    uuid
+)
 except ImportError as e:
     logging.warning(f'LOGOS V2 imports not fully available: {e}')
     TrinityVector = Trinity_Hyperstructure
@@ -85,9 +94,9 @@ except ImportError as e:
 
         def validate_trinity_constraints(self, vector):
             return {'compliance_validated': True}
-from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.core.banach_data_nodes import BanachDataNode, BanachNodeNetwork
-from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.MVS_System.data_c_values.data_structures import CreativeHypothesis, MVSCoordinate, MVSRegionType, NovelProblem
-from LOGOS_SYSTEM.System_Stack.Synthetic_Cognition_Protocol.mathematics.fractal_mvs import FractalModalVectorSpace
+from logos.imports.agents import BanachDataNode, BanachNodeNetwork
+from logos.imports.agents import CreativeHypothesis, MVSCoordinate, MVSRegionType, NovelProblem
+from logos.imports.agents import FractalModalVectorSpace
 logger = logging.getLogger(__name__)
 
 

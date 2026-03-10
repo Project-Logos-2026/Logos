@@ -39,7 +39,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Mapping
 
-from LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas import SchemaError, canonical_json_hash
+from logos.imports.agents import SchemaError, canonical_json_hash
 
 
 class AlignmentGateError(RuntimeError):

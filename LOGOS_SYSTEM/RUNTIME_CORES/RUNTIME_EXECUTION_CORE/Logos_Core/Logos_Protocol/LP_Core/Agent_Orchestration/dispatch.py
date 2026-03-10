@@ -39,9 +39,7 @@ from typing import Any, Dict, Optional
 from ..I1.scp_pipeline.pipeline_runner import run_scp_pipeline
 # I3 ARP cycle
 from ..I3.arp_cycle.cycle_runner import run_arp_cycle
-from LOGOS_SYSTEM.System_Stack.Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger import (
-  commit,
-)
+from logos.imports.agents import commit
 
 
 def dispatch_to_scp(*, smp: Dict[str, Any], payload_ref: Any = None) -> Dict[str, Any]:

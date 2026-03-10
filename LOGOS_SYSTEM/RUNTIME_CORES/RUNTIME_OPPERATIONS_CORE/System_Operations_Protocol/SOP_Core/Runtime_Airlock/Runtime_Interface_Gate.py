@@ -4,15 +4,9 @@ Phase 4: DRAC Orchestration Bound
 Fail-Closed
 """
 
-from LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.DRAC_Integration.DRAC_Handshake import (
-    DRACHandshake,
-)
-from LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.DRAC_Integration.DRAC_Orchestration_Bridge import (
-    DRACOrchestrationBridge,
-)
-from LOGOS_SYSTEM.SYSTEM_OPERATIONS_PROTOCOL.Audit_Spine.Audit_Logger import (
-    AuditLogger,
-)
+from logos.imports.governance import DRACHandshake
+from logos.imports.governance import DRACOrchestrationBridge
+from logos.imports.governance import AuditLogger
 
 
 class RuntimeInterfaceGate:

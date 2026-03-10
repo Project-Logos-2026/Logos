@@ -1,5 +1,22 @@
-from MTP_Core.MTP_Projection_Engine import ProjectionEngine, SemanticContentGraph, ContentNode, ContentEdge, ProjectionResult
-from MTP_Core.MTP_Semantic_Linearizer import SemanticLinearizer, LinearizationPlan, LinearUnit, DiscourseMode
-from MTP_Core.MTP_Fractal_Evaluator import FractalEvaluator, StabilityReport, ResonanceScore
-from MTP_Core.MTP_Output_Renderer import OutputRenderer, RenderedOutput, RenderConfig, ToneLevel, VerbosityLevel
-from MTP_Core.MTP_Validation_Gate import ValidationGate, ValidationResult
+from logos.imports.mtp import (
+    ProjectionEngine,
+    SemanticContentGraph,
+    ContentNode,
+    ContentEdge,
+    ProjectionResult
+)
+from logos.imports.mtp import (
+    SemanticLinearizer,
+    LinearizationPlan,
+    LinearUnit,
+    DiscourseMode
+)
+from logos.imports.mtp import FractalEvaluator, StabilityReport, ResonanceScore
+from logos.imports.mtp import (
+    OutputRenderer,
+    RenderedOutput,
+    RenderConfig,
+    ToneLevel,
+    VerbosityLevel
+)
+from logos.imports.mtp import ValidationGate, ValidationResult

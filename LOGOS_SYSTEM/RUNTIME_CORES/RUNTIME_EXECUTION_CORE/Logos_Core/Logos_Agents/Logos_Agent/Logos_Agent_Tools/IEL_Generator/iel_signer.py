@@ -64,7 +64,7 @@ from typing import Any, Dict, List, Optional
 
 from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import hashes, serialization
-from cryptography.hazmat.primitives.asymmetric import padding, rsa
+from logos.imports.runtime import padding, rsa
 
 
 @dataclass

@@ -78,10 +78,7 @@ from math_engine import (
     get_math_engine
 )
 
-from LOGOS_SYSTEM.System_Stack.Advanced_Reasoning_Protocol.formalisms.pxl_schema import (
-    TrinityVector,
-    PXLRelation
-)
+from logos.imports.agents import TrinityVector,     PXLRelation
 
 # Configure logging when invoked as a script
 if __name__ == "__main__":

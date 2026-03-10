@@ -76,7 +76,7 @@ from collections import deque
 # module.  They are reimported here for type checking and payload
 # construction only.
 try:
-    from Nexus import StatePacket, StandardNexus, NexusParticipant
+from logos.imports.mtp import StatePacket, StandardNexus, NexusParticipant
 except ImportError:
     # If Nexus is not available on the import path, define minimal stubs for
     # type checking.  These stubs do not implement any functionality but
@@ -321,7 +321,7 @@ class ExecutionToOperationsExchanger(NexusParticipant):
                 not be dispatched until ``gating.is_discharged()`` returns
                 ``True``.
         """
-        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Topology_Context_Provider import TopologyContextProvider
+        from logos.imports.protocols import TopologyContextProvider
         self._topology_provider = TopologyContextProvider()
         self.operations_consumer = operations_consumer
         self.validator = validator or DualBijectiveCommutationValidator()

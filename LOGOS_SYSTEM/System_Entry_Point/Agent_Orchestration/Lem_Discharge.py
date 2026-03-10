@@ -38,9 +38,6 @@ System Entry Point LEM discharge adapter.
 Provides a governed alias for LOGOS agent LEM discharge.
 """
 
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Lem_Discharge import (
-    LemDischargeHalt,
-    discharge_lem,
-)
+from logos.imports.protocols import LemDischargeHalt,     discharge_lem
 
 __all__ = ["LemDischargeHalt", "discharge_lem"]

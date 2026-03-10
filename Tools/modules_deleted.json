@@ -1,0 +1,572 @@
+[
+  {
+    "path": "Agents/__init__.py",
+    "reason": "no callables and minimal content",
+    "category": "stub"
+  },
+  {
+    "path": "Agents/exports.py",
+    "reason": "no callables and minimal content",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/__init__.py",
+    "reason": "no callables and minimal content",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/_init__.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/analogical_reasoning_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/counterfactual_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/counterfactual_reasoning_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/deductive_reasoning_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/ethical_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/ethical_reasoning_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/game_theoretic_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/game_theoretic_reasoning_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/heuristic_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/heuristic_reasoning_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/inductive_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/inductive_reasoning_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/meta_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/meta_reasoning_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/modal_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/modal_reasoning_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/optimization_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/optimization_reasoning_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/temporal_reasoning_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Reasoning/topological_engine.py",
+    "reason": "only comment lines",
+    "category": "stub"
+  },
+  {
+    "path": "Utilities/__init__.py",
+    "reason": "no callables and minimal content",
+    "category": "stub"
+  },
+  {
+    "path": "Utilities/lambda_engine_definitions.py",
+    "reason": "all 35 function(s) are stub bodies (pass/NotImplementedError)",
+    "category": "stub"
+  },
+  {
+    "path": "Utilities/trinity_vectors.py",
+    "reason": "no callables and minimal content",
+    "category": "stub"
+  },
+  {
+    "path": "Memory/__init__.py",
+    "reason": "empty __init__.py",
+    "category": "empty_init"
+  },
+  {
+    "path": "Tooling/__init__.py",
+    "reason": "empty __init__.py",
+    "category": "empty_init"
+  },
+  {
+    "path": "__init__.py",
+    "reason": "empty __init__.py",
+    "category": "empty_init"
+  },
+  {
+    "path": "Agents/protocol_integration.py",
+    "reason": "duplicate of Agents/initialize_agent_system.py (fn_sim=1.0, line_sim=0.949)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Agents/run_cycle_smoke.py",
+    "reason": "duplicate of Agents/run_pipeline_smoke.py (fn_sim=1.0, line_sim=0.769)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Agents/uwm.py",
+    "reason": "duplicate of Utilities/world_model.py (fn_sim=1.0, line_sim=1.0)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Reasoning/Temporal_Flow_Analyzer.py",
+    "reason": "duplicate of Reasoning/bugfix.py (fn_sim=1.0, line_sim=0.991)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Reasoning/three_pillars_framework.py",
+    "reason": "duplicate of Reasoning/three_pillars_alt.py (fn_sim=1.0, line_sim=0.943)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/Cognition_Wrapper_Memgpt.py",
+    "reason": "duplicate of Utilities/Cognition_Wrapper_Micropsi.py (fn_sim=0.667, line_sim=0.921)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/Cognition_Wrapper_Pgmpy.py",
+    "reason": "duplicate of Utilities/Cognition_Wrapper_Memgpt.py (fn_sim=0.667, line_sim=0.921)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/Cognition_Wrapper_Sympy.py",
+    "reason": "duplicate of Utilities/Cognition_Wrapper_Memgpt.py (fn_sim=0.667, line_sim=0.921)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/Cognition_Wrapper_Openai.py",
+    "reason": "duplicate of Utilities/Cognition_Wrapper_Micropsi.py (fn_sim=0.667, line_sim=0.921)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/Cognition_Wrapper_Micropsi.py",
+    "reason": "duplicate of Utilities/Cognition_Wrapper_Pydantic.py (fn_sim=0.667, line_sim=0.921)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/Cognition_Wrapper_Pydantic.py",
+    "reason": "duplicate of Utilities/NLP_Wrapper_Sentence_Transformers.py (fn_sim=0.667, line_sim=0.91)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/NLP_Wrapper_Transformers.py",
+    "reason": "duplicate of Utilities/NLP_Wrapper_Sentence_Transformers.py (fn_sim=0.667, line_sim=0.921)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/class_fractal_orbital_predictor.py",
+    "reason": "duplicate of Utilities/prediction_module.py (fn_sim=1.0, line_sim=0.551)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/fractal_navigator.py",
+    "reason": "duplicate of Utilities/lambda_engine.py (fn_sim=0.857, line_sim=0.961)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Memory/Memory_Access_Point.py",
+    "reason": "duplicate of Memory/Memory_Recall_Integration.py (fn_sim=0.923, line_sim=0.913)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/Graph_Wrapper_Pyvis.py",
+    "reason": "duplicate of Utilities/Graph_Wrapper_Networkx.py (fn_sim=0.667, line_sim=0.921)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/Graph_Wrapper_Rdflib.py",
+    "reason": "duplicate of Utilities/Graph_Wrapper_Networkx.py (fn_sim=0.667, line_sim=0.921)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/ML_Wrapper_Arch.py",
+    "reason": "duplicate of Utilities/Graph_Wrapper_Networkx.py (fn_sim=0.667, line_sim=0.91)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/ML_Wrapper_Prophet.py",
+    "reason": "duplicate of Utilities/Graph_Wrapper_Networkx.py (fn_sim=0.667, line_sim=0.91)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/ML_Wrapper_Sklearn.py",
+    "reason": "duplicate of Utilities/Graph_Wrapper_Networkx.py (fn_sim=0.667, line_sim=0.91)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/Graph_Wrapper_Networkx.py",
+    "reason": "duplicate of Utilities/ML_Wrapper_Statsmodels.py (fn_sim=0.667, line_sim=0.91)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/ML_Wrapper_Torch.py",
+    "reason": "duplicate of Utilities/Graph_Wrapper_Networkx.py (fn_sim=0.667, line_sim=0.91)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/NLP_Wrapper_Nltk.py",
+    "reason": "duplicate of Utilities/Graph_Wrapper_Networkx.py (fn_sim=0.667, line_sim=0.91)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/NLP_Wrapper_Spacy.py",
+    "reason": "duplicate of Utilities/Graph_Wrapper_Networkx.py (fn_sim=0.667, line_sim=0.91)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/ML_Wrapper_Statsmodels.py",
+    "reason": "duplicate of Utilities/Visualization_Wrapper_Matplotlib.py (fn_sim=0.667, line_sim=0.91)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/Visualization_Wrapper_Plotly.py",
+    "reason": "duplicate of Utilities/ML_Wrapper_Statsmodels.py (fn_sim=0.667, line_sim=0.91)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Utilities/Visualization_Wrapper_Seaborn.py",
+    "reason": "duplicate of Utilities/Visualization_Wrapper_Matplotlib.py (fn_sim=0.667, line_sim=0.921)",
+    "category": "duplicate"
+  },
+  {
+    "path": "Agents/agent_nexus.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Agents/attestation.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Agents/audit_and_emit.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Agents/base_nexus.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Agents/boot_aligned_agent.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Agents/boot_system.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Agents/test_agent_planner.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Agents/test_determinism.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Memory/Logos_Memory_Nexus.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Reasoning/arp_bootstrap.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Reasoning/arp_nexus.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Reasoning/arp_nexus_orchestrator.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Reasoning/bayesian_nexus.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Reasoning/test_arp_modes.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Reasoning/test_arp_nexus.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Tooling/test_logos_agi_adapter.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Tooling/test_tool_fallback_proposal.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Tooling/test_tool_pipeline_smoke.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/csp_nexus_orchestrator.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/fractal_nexus.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/integration_test.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/integration_test_suite.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/legacy_sop_nexus.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/logos_protocol_nexus.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/mtp_nexus_orchestrator.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/nexus_manager.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/scp_nexus.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/scp_nexus_orchestrator.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/sop_nexus.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/sop_nexus_orchestrator.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_bayesian_data_handler.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_dual_bijection.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_end_to_end_pipeline.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_evaluator_learning_smoke.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_hardening.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_integration.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_integration_identity.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_llm_bypass_smoke.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_lock_unlock.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_logos_agi_bootstrap_modes.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_logos_agi_persistence_smoke.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_logos_agi_pin_drift.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_logos_agi_replay_proposals.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_logos_runtime_phase2_smoke.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_nexus_capability_governance.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_pai.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_perception_ingestors.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_plan_revision_on_contradiction.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_proved_grounding.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_reference_monitor.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_registry_and_response.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_scp_recovery_mode_gate.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_self_improvement_cycle.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_simulation_cli.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_stub_beliefs_never_verified.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/test_verify_pai.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  },
+  {
+    "path": "Utilities/uip_nexus.py",
+    "reason": "excluded by rule",
+    "category": "excluded"
+  }
+]

@@ -49,8 +49,17 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 
 import networkx as nx
 import numpy as np
-from LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports import (
-    defaultdict, dataclass, field, Enum, Any, Dict, List, Optional, Set, Tuple
+from logos.imports.runtime_utils import (
+    defaultdict,
+    dataclass,
+    field,
+    Enum,
+    Any,
+    Dict,
+    List,
+    Optional,
+    Set,
+    Tuple
 )
 
 

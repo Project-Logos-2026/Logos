@@ -1,0 +1,4341 @@
+{
+  "nodes": [
+    {
+      "id": "PKT_0000",
+      "module_count": 2,
+      "is_cycle": true,
+      "classification": "agent",
+      "modules": [
+        "start_agent",
+        "tool_introspection"
+      ]
+    },
+    {
+      "id": "PKT_0001",
+      "module_count": 2,
+      "is_cycle": true,
+      "classification": "reasoning",
+      "modules": [
+        "autonomous_learning",
+        "iel_generator"
+      ]
+    },
+    {
+      "id": "PKT_0002",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "base_nexus"
+      ]
+    },
+    {
+      "id": "PKT_0003",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "scp_nexus"
+      ]
+    },
+    {
+      "id": "PKT_0004",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "agent_nexus"
+      ]
+    },
+    {
+      "id": "PKT_0005",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "arp_nexus"
+      ]
+    },
+    {
+      "id": "PKT_0006",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "arp_stack_compiler"
+      ]
+    },
+    {
+      "id": "PKT_0007",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "arp_operations"
+      ]
+    },
+    {
+      "id": "PKT_0008",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "test_arp_modes"
+      ]
+    },
+    {
+      "id": "PKT_0009",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "arp_nexus_orchestrator"
+      ]
+    },
+    {
+      "id": "PKT_0010",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "test_arp_nexus"
+      ]
+    },
+    {
+      "id": "PKT_0011",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "arp_bootstrap"
+      ]
+    },
+    {
+      "id": "PKT_0012",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "schemas"
+      ]
+    },
+    {
+      "id": "PKT_0013",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "integrity_safeguard"
+      ]
+    },
+    {
+      "id": "PKT_0014",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "enhanced_reference_monitor"
+      ]
+    },
+    {
+      "id": "PKT_0015",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "entry"
+      ]
+    },
+    {
+      "id": "PKT_0016",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "LOGOS"
+      ]
+    },
+    {
+      "id": "PKT_0017",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "PKT_0018",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "llm_advisor"
+      ]
+    },
+    {
+      "id": "PKT_0019",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "attestation"
+      ]
+    },
+    {
+      "id": "PKT_0020",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "_uip_connector_stubs"
+      ]
+    },
+    {
+      "id": "PKT_0021",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "uip_integration_plugin"
+      ]
+    },
+    {
+      "id": "PKT_0022",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "policy"
+      ]
+    },
+    {
+      "id": "PKT_0023",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "logos_agi_adapter"
+      ]
+    },
+    {
+      "id": "PKT_0024",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "commitment_ledger"
+      ]
+    },
+    {
+      "id": "PKT_0025",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "world_model"
+      ]
+    },
+    {
+      "id": "PKT_0026",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "agent_identity"
+      ]
+    },
+    {
+      "id": "PKT_0027",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "prioritization"
+      ]
+    },
+    {
+      "id": "PKT_0028",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "guardrails"
+      ]
+    },
+    {
+      "id": "PKT_0029",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "cycle_ledger"
+      ]
+    },
+    {
+      "id": "PKT_0030",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "test_tool_pipeline_smoke"
+      ]
+    },
+    {
+      "id": "PKT_0031",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "test_logos_agi_adapter"
+      ]
+    },
+    {
+      "id": "PKT_0032",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "test_tool_fallback_proposal"
+      ]
+    },
+    {
+      "id": "PKT_0033",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "plan_packet"
+      ]
+    },
+    {
+      "id": "PKT_0034",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "resource_manager"
+      ]
+    },
+    {
+      "id": "PKT_0035",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "types"
+      ]
+    },
+    {
+      "id": "PKT_0036",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "providers_llama"
+      ]
+    },
+    {
+      "id": "PKT_0037",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "hashing"
+      ]
+    },
+    {
+      "id": "PKT_0038",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "id_handler"
+      ]
+    },
+    {
+      "id": "PKT_0039",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "errors"
+      ]
+    },
+    {
+      "id": "PKT_0040",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "schema_utils"
+      ]
+    },
+    {
+      "id": "PKT_0041",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "smp_intake"
+      ]
+    },
+    {
+      "id": "PKT_0042",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "task_intake"
+      ]
+    },
+    {
+      "id": "PKT_0043",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "work_order"
+      ]
+    },
+    {
+      "id": "PKT_0044",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "result_packet"
+      ]
+    },
+    {
+      "id": "PKT_0045",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "mvs_types"
+      ]
+    },
+    {
+      "id": "PKT_0046",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "mvs_adapter"
+      ]
+    },
+    {
+      "id": "PKT_0047",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "bdn_types"
+      ]
+    },
+    {
+      "id": "PKT_0048",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "bdn_adapter"
+      ]
+    },
+    {
+      "id": "PKT_0049",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "analysis_runner"
+      ]
+    },
+    {
+      "id": "PKT_0050",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "trajectory_types"
+      ]
+    },
+    {
+      "id": "PKT_0051",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "risk_estimator"
+      ]
+    },
+    {
+      "id": "PKT_0052",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "transform_types"
+      ]
+    },
+    {
+      "id": "PKT_0053",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "transform_registry"
+      ]
+    },
+    {
+      "id": "PKT_0054",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "iterative_loop"
+      ]
+    },
+    {
+      "id": "PKT_0055",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "pipeline_runner"
+      ]
+    },
+    {
+      "id": "PKT_0056",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "baseline_planner"
+      ]
+    },
+    {
+      "id": "PKT_0057",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "evaluation_packet"
+      ]
+    },
+    {
+      "id": "PKT_0058",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "plan_evaluator"
+      ]
+    },
+    {
+      "id": "PKT_0059",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "cycle_runner"
+      ]
+    },
+    {
+      "id": "PKT_0060",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "dispatch"
+      ]
+    },
+    {
+      "id": "PKT_0061",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "shared_resources"
+      ]
+    },
+    {
+      "id": "PKT_0062",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "maintenance"
+      ]
+    },
+    {
+      "id": "PKT_0063",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "gen_ontoprops_dedup"
+      ]
+    },
+    {
+      "id": "PKT_0064",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "development_environment"
+      ]
+    },
+    {
+      "id": "PKT_0065",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "packet_types"
+      ]
+    },
+    {
+      "id": "PKT_0066",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "ergonomic_optimizer"
+      ]
+    },
+    {
+      "id": "PKT_0067",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "providers_openai"
+      ]
+    },
+    {
+      "id": "PKT_0068",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "boot_system"
+      ]
+    },
+    {
+      "id": "PKT_0069",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "ontoprops_remap"
+      ]
+    },
+    {
+      "id": "PKT_0070",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "knowledge_catalog"
+      ]
+    },
+    {
+      "id": "PKT_0071",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "agent_planner"
+      ]
+    },
+    {
+      "id": "PKT_0072",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_agent_planner"
+      ]
+    },
+    {
+      "id": "PKT_0073",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "time_utils"
+      ]
+    },
+    {
+      "id": "PKT_0074",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "test_determinism"
+      ]
+    },
+    {
+      "id": "PKT_0075",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "test_evaluator_learning_smoke"
+      ]
+    },
+    {
+      "id": "PKT_0076",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "dual_bijection_demo"
+      ]
+    },
+    {
+      "id": "PKT_0077",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_llm_bypass_smoke"
+      ]
+    },
+    {
+      "id": "PKT_0078",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "test_perception_ingestors"
+      ]
+    },
+    {
+      "id": "PKT_0079",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_stub_beliefs_never_verified"
+      ]
+    },
+    {
+      "id": "PKT_0080",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "smp"
+      ]
+    },
+    {
+      "id": "PKT_0081",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "coordinator"
+      ]
+    },
+    {
+      "id": "PKT_0082",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_logos_runtime_phase2_smoke"
+      ]
+    },
+    {
+      "id": "PKT_0083",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "self_improvement_integration"
+      ]
+    },
+    {
+      "id": "PKT_0084",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "sop_nexus"
+      ]
+    },
+    {
+      "id": "PKT_0085",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "modal_vector_sync"
+      ]
+    },
+    {
+      "id": "PKT_0086",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "regression_checker"
+      ]
+    },
+    {
+      "id": "PKT_0087",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "scp_nexus_orchestrator"
+      ]
+    },
+    {
+      "id": "PKT_0088",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "system_utils"
+      ]
+    },
+    {
+      "id": "PKT_0089",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "registry"
+      ]
+    },
+    {
+      "id": "PKT_0090",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "test_registry_and_response"
+      ]
+    },
+    {
+      "id": "PKT_0091",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "class_extrapolator"
+      ]
+    },
+    {
+      "id": "PKT_0092",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_integration_identity"
+      ]
+    },
+    {
+      "id": "PKT_0093",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "fractal_mvs"
+      ]
+    },
+    {
+      "id": "PKT_0094",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "fractal_orbital_node_class"
+      ]
+    },
+    {
+      "id": "PKT_0095",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "divergence_calculator"
+      ]
+    },
+    {
+      "id": "PKT_0096",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "fractal_orbital_node_generator"
+      ]
+    },
+    {
+      "id": "PKT_0097",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "orbital_recursion_engine"
+      ]
+    },
+    {
+      "id": "PKT_0098",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "fractal_nexus"
+      ]
+    },
+    {
+      "id": "PKT_0099",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_scp_recovery_mode_gate"
+      ]
+    },
+    {
+      "id": "PKT_0100",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "integration_test"
+      ]
+    },
+    {
+      "id": "PKT_0101",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "mtp_nexus_orchestrator"
+      ]
+    },
+    {
+      "id": "PKT_0102",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_nexus_capability_governance"
+      ]
+    },
+    {
+      "id": "PKT_0103",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_logos_agi_bootstrap_modes"
+      ]
+    },
+    {
+      "id": "PKT_0104",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "test_proved_grounding"
+      ]
+    },
+    {
+      "id": "PKT_0105",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "test_dual_bijection"
+      ]
+    },
+    {
+      "id": "PKT_0106",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "csp_nexus_orchestrator"
+      ]
+    },
+    {
+      "id": "PKT_0107",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "uip_nexus"
+      ]
+    },
+    {
+      "id": "PKT_0108",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "health_server"
+      ]
+    },
+    {
+      "id": "PKT_0109",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "logos_daemon"
+      ]
+    },
+    {
+      "id": "PKT_0110",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "iel_signer"
+      ]
+    },
+    {
+      "id": "PKT_0111",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "coherence_metrics"
+      ]
+    },
+    {
+      "id": "PKT_0112",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "coherence_optimizer"
+      ]
+    },
+    {
+      "id": "PKT_0113",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "iel_evaluator"
+      ]
+    },
+    {
+      "id": "PKT_0114",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_self_improvement_cycle"
+      ]
+    },
+    {
+      "id": "PKT_0115",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "sop_nexus_orchestrator"
+      ]
+    },
+    {
+      "id": "PKT_0116",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_hardening"
+      ]
+    },
+    {
+      "id": "PKT_0117",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_end_to_end_pipeline"
+      ]
+    },
+    {
+      "id": "PKT_0118",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "test_reference_monitor"
+      ]
+    },
+    {
+      "id": "PKT_0119",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "legacy_sop_nexus"
+      ]
+    },
+    {
+      "id": "PKT_0120",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "test_bayesian_data_handler"
+      ]
+    },
+    {
+      "id": "PKT_0121",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "logos_protocol_nexus"
+      ]
+    },
+    {
+      "id": "PKT_0122",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_lock_unlock"
+      ]
+    },
+    {
+      "id": "PKT_0123",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "nexus_manager"
+      ]
+    },
+    {
+      "id": "PKT_0124",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "integration_test_suite"
+      ]
+    },
+    {
+      "id": "PKT_0125",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "causal_trace_operator"
+      ]
+    },
+    {
+      "id": "PKT_0126",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_pai"
+      ]
+    },
+    {
+      "id": "PKT_0127",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "test_logos_agi_persistence_smoke"
+      ]
+    },
+    {
+      "id": "PKT_0128",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_plan_revision_on_contradiction"
+      ]
+    },
+    {
+      "id": "PKT_0129",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "test_logos_agi_pin_drift"
+      ]
+    },
+    {
+      "id": "PKT_0130",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "test_simulation_cli"
+      ]
+    },
+    {
+      "id": "PKT_0131",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_verify_pai"
+      ]
+    },
+    {
+      "id": "PKT_0132",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "test_logos_agi_replay_proposals"
+      ]
+    },
+    {
+      "id": "PKT_0133",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "bayesian_interface"
+      ]
+    },
+    {
+      "id": "PKT_0134",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "translation_engine"
+      ]
+    },
+    {
+      "id": "PKT_0135",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "bayesian_updates"
+      ]
+    },
+    {
+      "id": "PKT_0136",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "bayesian_ml"
+      ]
+    },
+    {
+      "id": "PKT_0137",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "bayesian_inference"
+      ]
+    },
+    {
+      "id": "PKT_0138",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "semantic_transformers"
+      ]
+    },
+    {
+      "id": "PKT_0139",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "core_service"
+      ]
+    },
+    {
+      "id": "PKT_0140",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "test_integration"
+      ]
+    },
+    {
+      "id": "PKT_0141",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "Logos_Memory_Nexus"
+      ]
+    },
+    {
+      "id": "PKT_0142",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "Fractal_Data_Analyzer"
+      ]
+    },
+    {
+      "id": "PKT_0143",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "system_mode_initializer"
+      ]
+    },
+    {
+      "id": "PKT_0144",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "message_formats"
+      ]
+    },
+    {
+      "id": "PKT_0145",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "Constraint_Result"
+      ]
+    },
+    {
+      "id": "PKT_0146",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "Constraint_Context"
+      ]
+    },
+    {
+      "id": "PKT_0147",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "ETGC_Validator"
+      ]
+    },
+    {
+      "id": "PKT_0148",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "persist_identity"
+      ]
+    },
+    {
+      "id": "PKT_0149",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "time_modeling"
+      ]
+    },
+    {
+      "id": "PKT_0150",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "Utilities__server"
+      ]
+    },
+    {
+      "id": "PKT_0151",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "persistence"
+      ]
+    },
+    {
+      "id": "PKT_0152",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "extensions_loader"
+      ]
+    },
+    {
+      "id": "PKT_0153",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "onto_lattice"
+      ]
+    },
+    {
+      "id": "PKT_0154",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "reflexive_evaluator"
+      ]
+    },
+    {
+      "id": "PKT_0155",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "relation_mapper"
+      ]
+    },
+    {
+      "id": "PKT_0156",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "constants"
+      ]
+    },
+    {
+      "id": "PKT_0157",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "router"
+      ]
+    },
+    {
+      "id": "PKT_0158",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "adapter"
+      ]
+    },
+    {
+      "id": "PKT_0159",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "Trinitarian_Optimizer"
+      ]
+    },
+    {
+      "id": "PKT_0160",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "Sign_Principal_Operator"
+      ]
+    },
+    {
+      "id": "PKT_0161",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "mvf_node_operator"
+      ]
+    },
+    {
+      "id": "PKT_0162",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "advanced_fractal_analyzer"
+      ]
+    },
+    {
+      "id": "PKT_0163",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "persistence_manager"
+      ]
+    },
+    {
+      "id": "PKT_0164",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "validate_production"
+      ]
+    },
+    {
+      "id": "PKT_0165",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "PXL_World_Model"
+      ]
+    },
+    {
+      "id": "PKT_0166",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "data_structures"
+      ]
+    },
+    {
+      "id": "PKT_0167",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "banach_data_nodes"
+      ]
+    },
+    {
+      "id": "PKT_0168",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "reference_monitor"
+      ]
+    },
+    {
+      "id": "PKT_0169",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "epistemological_framework"
+      ]
+    },
+    {
+      "id": "PKT_0170",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "space_time_framework"
+      ]
+    },
+    {
+      "id": "PKT_0171",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "bijective_mapping"
+      ]
+    },
+    {
+      "id": "PKT_0172",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "privation_override"
+      ]
+    },
+    {
+      "id": "PKT_0173",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "privation_gate"
+      ]
+    },
+    {
+      "id": "PKT_0174",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "simulated_consciousness_runtime"
+      ]
+    },
+    {
+      "id": "PKT_0175",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "aligned_agent_import"
+      ]
+    },
+    {
+      "id": "PKT_0176",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "adaptive_engine"
+      ]
+    },
+    {
+      "id": "PKT_0177",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "etgc_validator"
+      ]
+    },
+    {
+      "id": "PKT_0178",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "sequence_analysis"
+      ]
+    },
+    {
+      "id": "PKT_0179",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "lambda_onto_calculus_engine"
+      ]
+    },
+    {
+      "id": "PKT_0180",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "lambda_engine"
+      ]
+    },
+    {
+      "id": "PKT_0181",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "logos_lambda_core"
+      ]
+    },
+    {
+      "id": "PKT_0182",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "ontological_validator"
+      ]
+    },
+    {
+      "id": "PKT_0183",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "arithmetic_engine"
+      ]
+    },
+    {
+      "id": "PKT_0184",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "dual_bijection_coherence_analysis"
+      ]
+    },
+    {
+      "id": "PKT_0185",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "three_pillars_alt"
+      ]
+    },
+    {
+      "id": "PKT_0186",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "tool_optimizer"
+      ]
+    },
+    {
+      "id": "PKT_0187",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "emergence_core"
+      ]
+    },
+    {
+      "id": "PKT_0188",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "privation_classifier"
+      ]
+    },
+    {
+      "id": "PKT_0189",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "bayes_update_real_time"
+      ]
+    },
+    {
+      "id": "PKT_0190",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "privation_analyst"
+      ]
+    },
+    {
+      "id": "PKT_0191",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "sop_operations"
+      ]
+    },
+    {
+      "id": "PKT_0192",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "api_server"
+      ]
+    },
+    {
+      "id": "PKT_0193",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "tool_invention"
+      ]
+    },
+    {
+      "id": "PKT_0194",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "iel_integration"
+      ]
+    },
+    {
+      "id": "PKT_0195",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "unified_classes"
+      ]
+    },
+    {
+      "id": "PKT_0196",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "natural_language_processor"
+      ]
+    },
+    {
+      "id": "PKT_0197",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "Utilities__entry"
+      ]
+    },
+    {
+      "id": "PKT_0198",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "agentic_consciousness_core"
+      ]
+    },
+    {
+      "id": "PKT_0199",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "logos_core_foundations"
+      ]
+    },
+    {
+      "id": "PKT_0200",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "validation_schemas_system"
+      ]
+    },
+    {
+      "id": "PKT_0201",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "privation_transformer"
+      ]
+    },
+    {
+      "id": "PKT_0202",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "Privation_Filter"
+      ]
+    },
+    {
+      "id": "PKT_0203",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "cosmic_systems"
+      ]
+    },
+    {
+      "id": "PKT_0204",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "temporal_predictor"
+      ]
+    },
+    {
+      "id": "PKT_0205",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "language_processor"
+      ]
+    },
+    {
+      "id": "PKT_0206",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "Memory_State_Persistence"
+      ]
+    },
+    {
+      "id": "PKT_0207",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "PXL_Tetra_Analyst"
+      ]
+    },
+    {
+      "id": "PKT_0208",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "bridge_principle_operator"
+      ]
+    },
+    {
+      "id": "PKT_0209",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "Reasoning__consistency_checker"
+      ]
+    },
+    {
+      "id": "PKT_0210",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "iel_synthesizer"
+      ]
+    },
+    {
+      "id": "PKT_0211",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "iel_error_handler"
+      ]
+    },
+    {
+      "id": "PKT_0212",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "iel_overlays"
+      ]
+    },
+    {
+      "id": "PKT_0213",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "Fractal_Memory_Orchestrator"
+      ]
+    },
+    {
+      "id": "PKT_0214",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "pxl_schema"
+      ]
+    },
+    {
+      "id": "PKT_0215",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "fractal_mapping"
+      ]
+    },
+    {
+      "id": "PKT_0216",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "deploy_core_services"
+      ]
+    },
+    {
+      "id": "PKT_0217",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "collaboration"
+      ]
+    },
+    {
+      "id": "PKT_0218",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "example_usage"
+      ]
+    },
+    {
+      "id": "PKT_0219",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "triune_commutator"
+      ]
+    },
+    {
+      "id": "PKT_0220",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "modal_support"
+      ]
+    },
+    {
+      "id": "PKT_0221",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "divergence_engine"
+      ]
+    },
+    {
+      "id": "PKT_0222",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "TLM_Confirmation"
+      ]
+    },
+    {
+      "id": "PKT_0223",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "axiom_systems"
+      ]
+    },
+    {
+      "id": "PKT_0224",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "local_scp"
+      ]
+    },
+    {
+      "id": "PKT_0225",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "PKT_0226",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "privative_policies"
+      ]
+    },
+    {
+      "id": "PKT_0227",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "iel_overlay"
+      ]
+    },
+    {
+      "id": "PKT_0228",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "bdn_runtime"
+      ]
+    },
+    {
+      "id": "PKT_0229",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "consciousness_safety_adapter"
+      ]
+    },
+    {
+      "id": "PKT_0230",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "health"
+      ]
+    },
+    {
+      "id": "PKT_0231",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "pxl_postprocessor"
+      ]
+    },
+    {
+      "id": "PKT_0232",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "tranlsation_bridge"
+      ]
+    },
+    {
+      "id": "PKT_0233",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "orbital_prediction_log_cli"
+      ]
+    },
+    {
+      "id": "PKT_0234",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "bayesian_recursion"
+      ]
+    },
+    {
+      "id": "PKT_0235",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "Constraint_Stubs"
+      ]
+    },
+    {
+      "id": "PKT_0236",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "NLP_Wrapper_Sentence_Transformers"
+      ]
+    },
+    {
+      "id": "PKT_0237",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "safety_formalisms"
+      ]
+    },
+    {
+      "id": "PKT_0238",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "consistency_checker"
+      ]
+    },
+    {
+      "id": "PKT_0239",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "build_coq_theorem_index"
+      ]
+    },
+    {
+      "id": "PKT_0240",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "capabilities"
+      ]
+    },
+    {
+      "id": "PKT_0241",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "prediction_analyzer_exporter"
+      ]
+    },
+    {
+      "id": "PKT_0242",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "logos_agent_system"
+      ]
+    },
+    {
+      "id": "PKT_0243",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "initialize_agent_system"
+      ]
+    },
+    {
+      "id": "PKT_0244",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "sample_smp"
+      ]
+    },
+    {
+      "id": "PKT_0245",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "gen_worldview_ontoprops"
+      ]
+    },
+    {
+      "id": "PKT_0246",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "bugfix"
+      ]
+    },
+    {
+      "id": "PKT_0247",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "archive_planner_digests"
+      ]
+    },
+    {
+      "id": "PKT_0248",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "Utilities__symbolic_math"
+      ]
+    },
+    {
+      "id": "PKT_0249",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "modal_logic"
+      ]
+    },
+    {
+      "id": "PKT_0250",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "multi_modal_system"
+      ]
+    },
+    {
+      "id": "PKT_0251",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "identity_loader"
+      ]
+    },
+    {
+      "id": "PKT_0252",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "lambda_parser"
+      ]
+    },
+    {
+      "id": "PKT_0253",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "Tooling__consciousness_safety_adapter"
+      ]
+    },
+    {
+      "id": "PKT_0254",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "iel_schema"
+      ]
+    },
+    {
+      "id": "PKT_0255",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "interface_runtime"
+      ]
+    },
+    {
+      "id": "PKT_0256",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "capture_arp_traces_and_backfill"
+      ]
+    },
+    {
+      "id": "PKT_0257",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "fractal_consciousness_core"
+      ]
+    },
+    {
+      "id": "PKT_0258",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "universal_logic"
+      ]
+    },
+    {
+      "id": "PKT_0259",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "foundational_logic"
+      ]
+    },
+    {
+      "id": "PKT_0260",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "logos_nodes_connections"
+      ]
+    },
+    {
+      "id": "PKT_0261",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "llm_backend"
+      ]
+    },
+    {
+      "id": "PKT_0262",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "logos_interface"
+      ]
+    },
+    {
+      "id": "PKT_0263",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "OmniProperty_Integration"
+      ]
+    },
+    {
+      "id": "PKT_0264",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "hierarchical_bayes_network"
+      ]
+    },
+    {
+      "id": "PKT_0265",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "proof_engine"
+      ]
+    },
+    {
+      "id": "PKT_0266",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "coherence_formalism"
+      ]
+    },
+    {
+      "id": "PKT_0267",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "omniproperty_integration"
+      ]
+    },
+    {
+      "id": "PKT_0268",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "server"
+      ]
+    },
+    {
+      "id": "PKT_0269",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "dual_bijection_agent_experiment"
+      ]
+    },
+    {
+      "id": "PKT_0270",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "scan_bypass"
+      ]
+    },
+    {
+      "id": "PKT_0271",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "reasoning_agent"
+      ]
+    },
+    {
+      "id": "PKT_0272",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "bayesian_inferencer"
+      ]
+    },
+    {
+      "id": "PKT_0273",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "prediction_module"
+      ]
+    },
+    {
+      "id": "PKT_0274",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "Mind_Principal_Operator"
+      ]
+    },
+    {
+      "id": "PKT_0275",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "tool_chain_executor"
+      ]
+    },
+    {
+      "id": "PKT_0276",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "3OT_mediator"
+      ]
+    },
+    {
+      "id": "PKT_0277",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "bayesian_nexus"
+      ]
+    },
+    {
+      "id": "PKT_0278",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "mcmc_engine"
+      ]
+    },
+    {
+      "id": "PKT_0279",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "logos_mathematical_core"
+      ]
+    },
+    {
+      "id": "PKT_0280",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "integration_harmonizer"
+      ]
+    },
+    {
+      "id": "PKT_0281",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "ultima_safety"
+      ]
+    },
+    {
+      "id": "PKT_0282",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "knowledge_system"
+      ]
+    },
+    {
+      "id": "PKT_0283",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "comprehensive_fractal_analysis"
+      ]
+    },
+    {
+      "id": "PKT_0284",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "External_Enhancements_Registry"
+      ]
+    },
+    {
+      "id": "PKT_0285",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "Visualization_Wrapper_Matplotlib"
+      ]
+    },
+    {
+      "id": "PKT_0286",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "Register_All_Wrappers"
+      ]
+    },
+    {
+      "id": "PKT_0287",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "Omni_Property_Integration"
+      ]
+    },
+    {
+      "id": "PKT_0288",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "sample_task"
+      ]
+    },
+    {
+      "id": "PKT_0289",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "SMP_Memory_Validator"
+      ]
+    },
+    {
+      "id": "PKT_0290",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "symbolic_math"
+      ]
+    },
+    {
+      "id": "PKT_0291",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "fractal_orbit_toolkit"
+      ]
+    },
+    {
+      "id": "PKT_0292",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "fractal_orbit_demo"
+      ]
+    },
+    {
+      "id": "PKT_0293",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "demo_integrated_ml"
+      ]
+    },
+    {
+      "id": "PKT_0294",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "demo_gui"
+      ]
+    },
+    {
+      "id": "PKT_0295",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "logos_bridge"
+      ]
+    },
+    {
+      "id": "PKT_0296",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "coherence"
+      ]
+    },
+    {
+      "id": "PKT_0297",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "enhanced_uip_integration_plugin"
+      ]
+    },
+    {
+      "id": "PKT_0298",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "consciousness_fractal_analysis"
+      ]
+    },
+    {
+      "id": "PKT_0299",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "interaction_models"
+      ]
+    },
+    {
+      "id": "PKT_0300",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "run_pipeline_smoke"
+      ]
+    },
+    {
+      "id": "PKT_0301",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "SMP_Generator"
+      ]
+    },
+    {
+      "id": "PKT_0302",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "logos_lambda_integration"
+      ]
+    },
+    {
+      "id": "PKT_0303",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "SMP_Evaluator"
+      ]
+    },
+    {
+      "id": "PKT_0304",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "trinity_alignment"
+      ]
+    },
+    {
+      "id": "PKT_0305",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "temporal_logic"
+      ]
+    },
+    {
+      "id": "PKT_0306",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "etgc_prior_checker"
+      ]
+    },
+    {
+      "id": "PKT_0307",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "pxl_modal_fractal_boundary_analysis"
+      ]
+    },
+    {
+      "id": "PKT_0308",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "action_system"
+      ]
+    },
+    {
+      "id": "PKT_0309",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "trinitarian_optimization_theorem"
+      ]
+    },
+    {
+      "id": "PKT_0310",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "Cognitive_Resistor"
+      ]
+    },
+    {
+      "id": "PKT_0311",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "pxl_fractal_orbital_analysis"
+      ]
+    },
+    {
+      "id": "PKT_0312",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "modal_validator"
+      ]
+    },
+    {
+      "id": "PKT_0313",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "privation_mathematics"
+      ]
+    },
+    {
+      "id": "PKT_0314",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "modal_reasoner"
+      ]
+    },
+    {
+      "id": "PKT_0315",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "fractal_orbit_cli"
+      ]
+    },
+    {
+      "id": "PKT_0316",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "belief_network"
+      ]
+    },
+    {
+      "id": "PKT_0317",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "predict_integration"
+      ]
+    },
+    {
+      "id": "PKT_0318",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "config"
+      ]
+    },
+    {
+      "id": "PKT_0319",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "ontology_inducer"
+      ]
+    },
+    {
+      "id": "PKT_0320",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "trinity_framework"
+      ]
+    },
+    {
+      "id": "PKT_0321",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "Triune_Principal_Validator"
+      ]
+    },
+    {
+      "id": "PKT_0322",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "math",
+      "modules": [
+        "resurrection_s2_demo"
+      ]
+    },
+    {
+      "id": "PKT_0323",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "reasoning",
+      "modules": [
+        "bayesian_data_parser"
+      ]
+    },
+    {
+      "id": "PKT_0324",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "logging_utils"
+      ]
+    },
+    {
+      "id": "PKT_0325",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "deploy_full_stack"
+      ]
+    },
+    {
+      "id": "PKT_0326",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "tool_repair_proposal"
+      ]
+    },
+    {
+      "id": "PKT_0327",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "export_tool_registry"
+      ]
+    },
+    {
+      "id": "PKT_0328",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "sanitizer"
+      ]
+    },
+    {
+      "id": "PKT_0329",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "self_diagnosis"
+      ]
+    },
+    {
+      "id": "PKT_0330",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "causal_chain_node_predictor"
+      ]
+    },
+    {
+      "id": "PKT_0331",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "client"
+      ]
+    },
+    {
+      "id": "PKT_0332",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "iel_registryv2"
+      ]
+    },
+    {
+      "id": "PKT_0333",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "io_normalizer"
+      ]
+    },
+    {
+      "id": "PKT_0334",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "kernel"
+      ]
+    },
+    {
+      "id": "PKT_0335",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "check_run_cycle_prereqs"
+      ]
+    },
+    {
+      "id": "PKT_0336",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "iel_registryv1"
+      ]
+    },
+    {
+      "id": "PKT_0337",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "uip_operations"
+      ]
+    },
+    {
+      "id": "PKT_0338",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "worker_kernel"
+      ]
+    },
+    {
+      "id": "PKT_0339",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "stress_sop_runtime"
+      ]
+    },
+    {
+      "id": "PKT_0340",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "Blueprints/utils/router.py"
+      ]
+    },
+    {
+      "id": "PKT_0341",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "progressive_router"
+      ]
+    },
+    {
+      "id": "PKT_0342",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "bridge"
+      ]
+    },
+    {
+      "id": "PKT_0343",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "skill_acquisition"
+      ]
+    },
+    {
+      "id": "PKT_0344",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "tool_proposal_pipeline"
+      ]
+    },
+    {
+      "id": "PKT_0345",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "simple_julia"
+      ]
+    },
+    {
+      "id": "PKT_0346",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "logos_monitor"
+      ]
+    },
+    {
+      "id": "PKT_0347",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "agent",
+      "modules": [
+        "Memory_Recall_Integration"
+      ]
+    },
+    {
+      "id": "PKT_0348",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "logos_gpt_chat"
+      ]
+    },
+    {
+      "id": "PKT_0349",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "logos_gpt_server"
+      ]
+    },
+    {
+      "id": "PKT_0350",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "semantic",
+      "modules": [
+        "run_logos_gpt_acceptance"
+      ]
+    },
+    {
+      "id": "PKT_0351",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "utility",
+      "modules": [
+        "check_imports"
+      ]
+    },
+    {
+      "id": "PKT_0352",
+      "module_count": 1,
+      "is_cycle": false,
+      "classification": "safety",
+      "modules": [
+        "Blueprints/utils/policy.py"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "PKT_0000",
+      "to": "PKT_0016"
+    },
+    {
+      "from": "PKT_0000",
+      "to": "PKT_0026"
+    },
+    {
+      "from": "PKT_0000",
+      "to": "PKT_0019"
+    },
+    {
+      "from": "PKT_0000",
+      "to": "PKT_0024"
+    },
+    {
+      "from": "PKT_0000",
+      "to": "PKT_0029"
+    },
+    {
+      "from": "PKT_0000",
+      "to": "PKT_0028"
+    },
+    {
+      "from": "PKT_0000",
+      "to": "PKT_0013"
+    },
+    {
+      "from": "PKT_0000",
+      "to": "PKT_0018"
+    },
+    {
+      "from": "PKT_0000",
+      "to": "PKT_0023"
+    },
+    {
+      "from": "PKT_0000",
+      "to": "PKT_0027"
+    },
+    {
+      "from": "PKT_0000",
+      "to": "PKT_0012"
+    },
+    {
+      "from": "PKT_0000",
+      "to": "PKT_0021"
+    },
+    {
+      "from": "PKT_0001",
+      "to": "PKT_0113"
+    },
+    {
+      "from": "PKT_0003",
+      "to": "PKT_0002"
+    },
+    {
+      "from": "PKT_0004",
+      "to": "PKT_0002"
+    },
+    {
+      "from": "PKT_0005",
+      "to": "PKT_0004"
+    },
+    {
+      "from": "PKT_0005",
+      "to": "PKT_0002"
+    },
+    {
+      "from": "PKT_0005",
+      "to": "PKT_0003"
+    },
+    {
+      "from": "PKT_0007",
+      "to": "PKT_0005"
+    },
+    {
+      "from": "PKT_0007",
+      "to": "PKT_0006"
+    },
+    {
+      "from": "PKT_0008",
+      "to": "PKT_0007"
+    },
+    {
+      "from": "PKT_0010",
+      "to": "PKT_0005"
+    },
+    {
+      "from": "PKT_0015",
+      "to": "PKT_0014"
+    },
+    {
+      "from": "PKT_0016",
+      "to": "PKT_0015"
+    },
+    {
+      "from": "PKT_0017",
+      "to": "PKT_0016"
+    },
+    {
+      "from": "PKT_0018",
+      "to": "PKT_0017"
+    },
+    {
+      "from": "PKT_0019",
+      "to": "PKT_0012"
+    },
+    {
+      "from": "PKT_0021",
+      "to": "PKT_0020"
+    },
+    {
+      "from": "PKT_0023",
+      "to": "PKT_0016"
+    },
+    {
+      "from": "PKT_0023",
+      "to": "PKT_0011"
+    },
+    {
+      "from": "PKT_0023",
+      "to": "PKT_0002"
+    },
+    {
+      "from": "PKT_0023",
+      "to": "PKT_0022"
+    },
+    {
+      "from": "PKT_0023",
+      "to": "PKT_0012"
+    },
+    {
+      "from": "PKT_0023",
+      "to": "PKT_0003"
+    },
+    {
+      "from": "PKT_0026",
+      "to": "PKT_0024"
+    },
+    {
+      "from": "PKT_0026",
+      "to": "PKT_0025"
+    },
+    {
+      "from": "PKT_0027",
+      "to": "PKT_0024"
+    },
+    {
+      "from": "PKT_0028",
+      "to": "PKT_0004"
+    },
+    {
+      "from": "PKT_0030",
+      "to": "PKT_0016"
+    },
+    {
+      "from": "PKT_0030",
+      "to": "PKT_0012"
+    },
+    {
+      "from": "PKT_0030",
+      "to": "PKT_0000"
+    },
+    {
+      "from": "PKT_0031",
+      "to": "PKT_0023"
+    },
+    {
+      "from": "PKT_0032",
+      "to": "PKT_0000"
+    },
+    {
+      "from": "PKT_0036",
+      "to": "PKT_0035"
+    },
+    {
+      "from": "PKT_0038",
+      "to": "PKT_0037"
+    },
+    {
+      "from": "PKT_0040",
+      "to": "PKT_0039"
+    },
+    {
+      "from": "PKT_0041",
+      "to": "PKT_0039"
+    },
+    {
+      "from": "PKT_0041",
+      "to": "PKT_0037"
+    },
+    {
+      "from": "PKT_0041",
+      "to": "PKT_0040"
+    },
+    {
+      "from": "PKT_0042",
+      "to": "PKT_0039"
+    },
+    {
+      "from": "PKT_0042",
+      "to": "PKT_0040"
+    },
+    {
+      "from": "PKT_0043",
+      "to": "PKT_0042"
+    },
+    {
+      "from": "PKT_0044",
+      "to": "PKT_0037"
+    },
+    {
+      "from": "PKT_0046",
+      "to": "PKT_0045"
+    },
+    {
+      "from": "PKT_0048",
+      "to": "PKT_0047"
+    },
+    {
+      "from": "PKT_0049",
+      "to": "PKT_0048"
+    },
+    {
+      "from": "PKT_0049",
+      "to": "PKT_0047"
+    },
+    {
+      "from": "PKT_0049",
+      "to": "PKT_0046"
+    },
+    {
+      "from": "PKT_0049",
+      "to": "PKT_0045"
+    },
+    {
+      "from": "PKT_0051",
+      "to": "PKT_0050"
+    },
+    {
+      "from": "PKT_0053",
+      "to": "PKT_0052"
+    },
+    {
+      "from": "PKT_0054",
+      "to": "PKT_0053"
+    },
+    {
+      "from": "PKT_0054",
+      "to": "PKT_0052"
+    },
+    {
+      "from": "PKT_0055",
+      "to": "PKT_0049"
+    },
+    {
+      "from": "PKT_0055",
+      "to": "PKT_0054"
+    },
+    {
+      "from": "PKT_0055",
+      "to": "PKT_0022"
+    },
+    {
+      "from": "PKT_0055",
+      "to": "PKT_0044"
+    },
+    {
+      "from": "PKT_0055",
+      "to": "PKT_0051"
+    },
+    {
+      "from": "PKT_0055",
+      "to": "PKT_0041"
+    },
+    {
+      "from": "PKT_0055",
+      "to": "PKT_0043"
+    },
+    {
+      "from": "PKT_0056",
+      "to": "PKT_0033"
+    },
+    {
+      "from": "PKT_0056",
+      "to": "PKT_0042"
+    },
+    {
+      "from": "PKT_0058",
+      "to": "PKT_0057"
+    },
+    {
+      "from": "PKT_0059",
+      "to": "PKT_0056"
+    },
+    {
+      "from": "PKT_0059",
+      "to": "PKT_0058"
+    },
+    {
+      "from": "PKT_0059",
+      "to": "PKT_0022"
+    },
+    {
+      "from": "PKT_0059",
+      "to": "PKT_0042"
+    },
+    {
+      "from": "PKT_0060",
+      "to": "PKT_0059"
+    },
+    {
+      "from": "PKT_0060",
+      "to": "PKT_0055"
+    },
+    {
+      "from": "PKT_0062",
+      "to": "PKT_0061"
+    },
+    {
+      "from": "PKT_0067",
+      "to": "PKT_0035"
+    },
+    {
+      "from": "PKT_0068",
+      "to": "PKT_0062"
+    },
+    {
+      "from": "PKT_0068",
+      "to": "PKT_0061"
+    },
+    {
+      "from": "PKT_0072",
+      "to": "PKT_0071"
+    },
+    {
+      "from": "PKT_0075",
+      "to": "PKT_0016"
+    },
+    {
+      "from": "PKT_0081",
+      "to": "PKT_0060"
+    },
+    {
+      "from": "PKT_0081",
+      "to": "PKT_0035"
+    },
+    {
+      "from": "PKT_0082",
+      "to": "PKT_0081"
+    },
+    {
+      "from": "PKT_0082",
+      "to": "PKT_0080"
+    },
+    {
+      "from": "PKT_0083",
+      "to": "PKT_0064"
+    },
+    {
+      "from": "PKT_0084",
+      "to": "PKT_0002"
+    },
+    {
+      "from": "PKT_0084",
+      "to": "PKT_0064"
+    },
+    {
+      "from": "PKT_0084",
+      "to": "PKT_0083"
+    },
+    {
+      "from": "PKT_0089",
+      "to": "PKT_0088"
+    },
+    {
+      "from": "PKT_0090",
+      "to": "PKT_0089"
+    },
+    {
+      "from": "PKT_0092",
+      "to": "PKT_0035"
+    },
+    {
+      "from": "PKT_0094",
+      "to": "PKT_0093"
+    },
+    {
+      "from": "PKT_0095",
+      "to": "PKT_0093"
+    },
+    {
+      "from": "PKT_0095",
+      "to": "PKT_0094"
+    },
+    {
+      "from": "PKT_0096",
+      "to": "PKT_0093"
+    },
+    {
+      "from": "PKT_0098",
+      "to": "PKT_0095"
+    },
+    {
+      "from": "PKT_0098",
+      "to": "PKT_0096"
+    },
+    {
+      "from": "PKT_0098",
+      "to": "PKT_0097"
+    },
+    {
+      "from": "PKT_0100",
+      "to": "PKT_0005"
+    },
+    {
+      "from": "PKT_0102",
+      "to": "PKT_0002"
+    },
+    {
+      "from": "PKT_0104",
+      "to": "PKT_0016"
+    },
+    {
+      "from": "PKT_0107",
+      "to": "PKT_0002"
+    },
+    {
+      "from": "PKT_0112",
+      "to": "PKT_0111"
+    },
+    {
+      "from": "PKT_0113",
+      "to": "PKT_0111"
+    },
+    {
+      "from": "PKT_0113",
+      "to": "PKT_0112"
+    },
+    {
+      "from": "PKT_0113",
+      "to": "PKT_0110"
+    },
+    {
+      "from": "PKT_0114",
+      "to": "PKT_0113"
+    },
+    {
+      "from": "PKT_0114",
+      "to": "PKT_0001"
+    },
+    {
+      "from": "PKT_0114",
+      "to": "PKT_0110"
+    },
+    {
+      "from": "PKT_0114",
+      "to": "PKT_0109"
+    },
+    {
+      "from": "PKT_0116",
+      "to": "PKT_0064"
+    },
+    {
+      "from": "PKT_0116",
+      "to": "PKT_0070"
+    },
+    {
+      "from": "PKT_0116",
+      "to": "PKT_0083"
+    },
+    {
+      "from": "PKT_0118",
+      "to": "PKT_0014"
+    },
+    {
+      "from": "PKT_0118",
+      "to": "PKT_0015"
+    },
+    {
+      "from": "PKT_0119",
+      "to": "PKT_0002"
+    },
+    {
+      "from": "PKT_0120",
+      "to": "PKT_0035"
+    },
+    {
+      "from": "PKT_0122",
+      "to": "PKT_0035"
+    },
+    {
+      "from": "PKT_0123",
+      "to": "PKT_0023"
+    },
+    {
+      "from": "PKT_0123",
+      "to": "PKT_0000"
+    },
+    {
+      "from": "PKT_0126",
+      "to": "PKT_0026"
+    },
+    {
+      "from": "PKT_0131",
+      "to": "PKT_0026"
+    },
+    {
+      "from": "PKT_0137",
+      "to": "PKT_0133"
+    },
+    {
+      "from": "PKT_0137",
+      "to": "PKT_0136"
+    },
+    {
+      "from": "PKT_0137",
+      "to": "PKT_0135"
+    },
+    {
+      "from": "PKT_0137",
+      "to": "PKT_0134"
+    },
+    {
+      "from": "PKT_0138",
+      "to": "PKT_0137"
+    },
+    {
+      "from": "PKT_0139",
+      "to": "PKT_0137"
+    },
+    {
+      "from": "PKT_0139",
+      "to": "PKT_0138"
+    },
+    {
+      "from": "PKT_0140",
+      "to": "PKT_0137"
+    },
+    {
+      "from": "PKT_0140",
+      "to": "PKT_0139"
+    },
+    {
+      "from": "PKT_0140",
+      "to": "PKT_0138"
+    },
+    {
+      "from": "PKT_0143",
+      "to": "PKT_0004"
+    },
+    {
+      "from": "PKT_0147",
+      "to": "PKT_0146"
+    },
+    {
+      "from": "PKT_0147",
+      "to": "PKT_0145"
+    },
+    {
+      "from": "PKT_0152",
+      "to": "PKT_0151"
+    },
+    {
+      "from": "PKT_0154",
+      "to": "PKT_0153"
+    },
+    {
+      "from": "PKT_0157",
+      "to": "PKT_0156"
+    },
+    {
+      "from": "PKT_0158",
+      "to": "PKT_0156"
+    },
+    {
+      "from": "PKT_0158",
+      "to": "PKT_0037"
+    },
+    {
+      "from": "PKT_0158",
+      "to": "PKT_0038"
+    },
+    {
+      "from": "PKT_0158",
+      "to": "PKT_0157"
+    },
+    {
+      "from": "PKT_0158",
+      "to": "PKT_0080"
+    },
+    {
+      "from": "PKT_0159",
+      "to": "PKT_0146"
+    },
+    {
+      "from": "PKT_0159",
+      "to": "PKT_0145"
+    },
+    {
+      "from": "PKT_0160",
+      "to": "PKT_0039"
+    },
+    {
+      "from": "PKT_0161",
+      "to": "PKT_0093"
+    },
+    {
+      "from": "PKT_0163",
+      "to": "PKT_0161"
+    },
+    {
+      "from": "PKT_0166",
+      "to": "PKT_0093"
+    },
+    {
+      "from": "PKT_0167",
+      "to": "PKT_0166"
+    },
+    {
+      "from": "PKT_0168",
+      "to": "PKT_0151"
+    },
+    {
+      "from": "PKT_0173",
+      "to": "PKT_0172"
+    },
+    {
+      "from": "PKT_0176",
+      "to": "PKT_0088"
+    },
+    {
+      "from": "PKT_0180",
+      "to": "PKT_0179"
+    },
+    {
+      "from": "PKT_0183",
+      "to": "PKT_0180"
+    },
+    {
+      "from": "PKT_0183",
+      "to": "PKT_0181"
+    },
+    {
+      "from": "PKT_0183",
+      "to": "PKT_0182"
+    },
+    {
+      "from": "PKT_0186",
+      "to": "PKT_0070"
+    },
+    {
+      "from": "PKT_0193",
+      "to": "PKT_0064"
+    },
+    {
+      "from": "PKT_0197",
+      "to": "PKT_0001"
+    },
+    {
+      "from": "PKT_0197",
+      "to": "PKT_0194"
+    },
+    {
+      "from": "PKT_0197",
+      "to": "PKT_0013"
+    },
+    {
+      "from": "PKT_0197",
+      "to": "PKT_0196"
+    },
+    {
+      "from": "PKT_0197",
+      "to": "PKT_0168"
+    },
+    {
+      "from": "PKT_0197",
+      "to": "PKT_0195"
+    },
+    {
+      "from": "PKT_0202",
+      "to": "PKT_0146"
+    },
+    {
+      "from": "PKT_0202",
+      "to": "PKT_0145"
+    },
+    {
+      "from": "PKT_0202",
+      "to": "PKT_0190"
+    },
+    {
+      "from": "PKT_0202",
+      "to": "PKT_0188"
+    },
+    {
+      "from": "PKT_0202",
+      "to": "PKT_0172"
+    },
+    {
+      "from": "PKT_0202",
+      "to": "PKT_0201"
+    },
+    {
+      "from": "PKT_0204",
+      "to": "PKT_0168"
+    },
+    {
+      "from": "PKT_0218",
+      "to": "PKT_0005"
+    },
+    {
+      "from": "PKT_0221",
+      "to": "PKT_0094"
+    },
+    {
+      "from": "PKT_0221",
+      "to": "PKT_0220"
+    },
+    {
+      "from": "PKT_0222",
+      "to": "PKT_0146"
+    },
+    {
+      "from": "PKT_0222",
+      "to": "PKT_0145"
+    },
+    {
+      "from": "PKT_0224",
+      "to": "PKT_0068"
+    },
+    {
+      "from": "PKT_0231",
+      "to": "PKT_0214"
+    },
+    {
+      "from": "PKT_0232",
+      "to": "PKT_0137"
+    },
+    {
+      "from": "PKT_0232",
+      "to": "PKT_0180"
+    },
+    {
+      "from": "PKT_0232",
+      "to": "PKT_0179"
+    },
+    {
+      "from": "PKT_0236",
+      "to": "PKT_0235"
+    },
+    {
+      "from": "PKT_0240",
+      "to": "PKT_0168"
+    },
+    {
+      "from": "PKT_0241",
+      "to": "PKT_0240"
+    },
+    {
+      "from": "PKT_0241",
+      "to": "PKT_0035"
+    },
+    {
+      "from": "PKT_0242",
+      "to": "PKT_0068"
+    },
+    {
+      "from": "PKT_0242",
+      "to": "PKT_0224"
+    },
+    {
+      "from": "PKT_0243",
+      "to": "PKT_0227"
+    },
+    {
+      "from": "PKT_0243",
+      "to": "PKT_0242"
+    },
+    {
+      "from": "PKT_0247",
+      "to": "PKT_0071"
+    },
+    {
+      "from": "PKT_0248",
+      "to": "PKT_0095"
+    },
+    {
+      "from": "PKT_0248",
+      "to": "PKT_0093"
+    },
+    {
+      "from": "PKT_0248",
+      "to": "PKT_0181"
+    },
+    {
+      "from": "PKT_0250",
+      "to": "PKT_0249"
+    },
+    {
+      "from": "PKT_0254",
+      "to": "PKT_0211"
+    },
+    {
+      "from": "PKT_0254",
+      "to": "PKT_0210"
+    },
+    {
+      "from": "PKT_0260",
+      "to": "PKT_0182"
+    },
+    {
+      "from": "PKT_0262",
+      "to": "PKT_0261"
+    },
+    {
+      "from": "PKT_0263",
+      "to": "PKT_0039"
+    },
+    {
+      "from": "PKT_0263",
+      "to": "PKT_0037"
+    },
+    {
+      "from": "PKT_0264",
+      "to": "PKT_0189"
+    },
+    {
+      "from": "PKT_0265",
+      "to": "PKT_0171"
+    },
+    {
+      "from": "PKT_0265",
+      "to": "PKT_0181"
+    },
+    {
+      "from": "PKT_0265",
+      "to": "PKT_0182"
+    },
+    {
+      "from": "PKT_0268",
+      "to": "PKT_0158"
+    },
+    {
+      "from": "PKT_0271",
+      "to": "PKT_0261"
+    },
+    {
+      "from": "PKT_0271",
+      "to": "PKT_0000"
+    },
+    {
+      "from": "PKT_0272",
+      "to": "PKT_0189"
+    },
+    {
+      "from": "PKT_0273",
+      "to": "PKT_0272"
+    },
+    {
+      "from": "PKT_0273",
+      "to": "PKT_0094"
+    },
+    {
+      "from": "PKT_0273",
+      "to": "PKT_0220"
+    },
+    {
+      "from": "PKT_0274",
+      "to": "PKT_0039"
+    },
+    {
+      "from": "PKT_0277",
+      "to": "PKT_0189"
+    },
+    {
+      "from": "PKT_0277",
+      "to": "PKT_0272"
+    },
+    {
+      "from": "PKT_0277",
+      "to": "PKT_0234"
+    },
+    {
+      "from": "PKT_0277",
+      "to": "PKT_0264"
+    },
+    {
+      "from": "PKT_0280",
+      "to": "PKT_0279"
+    },
+    {
+      "from": "PKT_0283",
+      "to": "PKT_0162"
+    },
+    {
+      "from": "PKT_0285",
+      "to": "PKT_0235"
+    },
+    {
+      "from": "PKT_0286",
+      "to": "PKT_0284"
+    },
+    {
+      "from": "PKT_0286",
+      "to": "PKT_0236"
+    },
+    {
+      "from": "PKT_0286",
+      "to": "PKT_0285"
+    },
+    {
+      "from": "PKT_0287",
+      "to": "PKT_0039"
+    },
+    {
+      "from": "PKT_0287",
+      "to": "PKT_0037"
+    },
+    {
+      "from": "PKT_0290",
+      "to": "PKT_0180"
+    },
+    {
+      "from": "PKT_0291",
+      "to": "PKT_0166"
+    },
+    {
+      "from": "PKT_0291",
+      "to": "PKT_0215"
+    },
+    {
+      "from": "PKT_0291",
+      "to": "PKT_0093"
+    },
+    {
+      "from": "PKT_0291",
+      "to": "PKT_0290"
+    },
+    {
+      "from": "PKT_0292",
+      "to": "PKT_0291"
+    },
+    {
+      "from": "PKT_0293",
+      "to": "PKT_0152"
+    },
+    {
+      "from": "PKT_0293",
+      "to": "PKT_0196"
+    },
+    {
+      "from": "PKT_0294",
+      "to": "PKT_0015"
+    },
+    {
+      "from": "PKT_0295",
+      "to": "PKT_0167"
+    },
+    {
+      "from": "PKT_0295",
+      "to": "PKT_0166"
+    },
+    {
+      "from": "PKT_0295",
+      "to": "PKT_0093"
+    },
+    {
+      "from": "PKT_0297",
+      "to": "PKT_0020"
+    },
+    {
+      "from": "PKT_0298",
+      "to": "PKT_0162"
+    },
+    {
+      "from": "PKT_0300",
+      "to": "PKT_0055"
+    },
+    {
+      "from": "PKT_0300",
+      "to": "PKT_0244"
+    },
+    {
+      "from": "PKT_0302",
+      "to": "PKT_0180"
+    },
+    {
+      "from": "PKT_0302",
+      "to": "PKT_0179"
+    },
+    {
+      "from": "PKT_0304",
+      "to": "PKT_0166"
+    },
+    {
+      "from": "PKT_0304",
+      "to": "PKT_0093"
+    },
+    {
+      "from": "PKT_0314",
+      "to": "PKT_0249"
+    },
+    {
+      "from": "PKT_0315",
+      "to": "PKT_0291"
+    },
+    {
+      "from": "PKT_0317",
+      "to": "PKT_0051"
+    },
+    {
+      "from": "PKT_0319",
+      "to": "PKT_0318"
+    },
+    {
+      "from": "PKT_0320",
+      "to": "PKT_0319"
+    },
+    {
+      "from": "PKT_0321",
+      "to": "PKT_0146"
+    },
+    {
+      "from": "PKT_0321",
+      "to": "PKT_0145"
+    },
+    {
+      "from": "PKT_0322",
+      "to": "PKT_0313"
+    },
+    {
+      "from": "PKT_0326",
+      "to": "PKT_0012"
+    },
+    {
+      "from": "PKT_0327",
+      "to": "PKT_0016"
+    },
+    {
+      "from": "PKT_0327",
+      "to": "PKT_0000"
+    },
+    {
+      "from": "PKT_0331",
+      "to": "PKT_0318"
+    },
+    {
+      "from": "PKT_0331",
+      "to": "PKT_0036"
+    },
+    {
+      "from": "PKT_0331",
+      "to": "PKT_0067"
+    },
+    {
+      "from": "PKT_0331",
+      "to": "PKT_0035"
+    },
+    {
+      "from": "PKT_0334",
+      "to": "PKT_0168"
+    },
+    {
+      "from": "PKT_0335",
+      "to": "PKT_0240"
+    },
+    {
+      "from": "PKT_0336",
+      "to": "PKT_0113"
+    },
+    {
+      "from": "PKT_0336",
+      "to": "PKT_0001"
+    },
+    {
+      "from": "PKT_0338",
+      "to": "PKT_0195"
+    },
+    {
+      "from": "PKT_0340",
+      "to": "PKT_0328"
+    },
+    {
+      "from": "PKT_0341",
+      "to": "PKT_0089"
+    },
+    {
+      "from": "PKT_0341",
+      "to": "PKT_0088"
+    },
+    {
+      "from": "PKT_0343",
+      "to": "PKT_0318"
+    },
+    {
+      "from": "PKT_0344",
+      "to": "PKT_0012"
+    },
+    {
+      "from": "PKT_0346",
+      "to": "PKT_0015"
+    },
+    {
+      "from": "PKT_0348",
+      "to": "PKT_0016"
+    },
+    {
+      "from": "PKT_0348",
+      "to": "PKT_0019"
+    },
+    {
+      "from": "PKT_0348",
+      "to": "PKT_0018"
+    },
+    {
+      "from": "PKT_0348",
+      "to": "PKT_0012"
+    },
+    {
+      "from": "PKT_0348",
+      "to": "PKT_0000"
+    },
+    {
+      "from": "PKT_0349",
+      "to": "PKT_0016"
+    },
+    {
+      "from": "PKT_0349",
+      "to": "PKT_0019"
+    },
+    {
+      "from": "PKT_0349",
+      "to": "PKT_0017"
+    },
+    {
+      "from": "PKT_0349",
+      "to": "PKT_0018"
+    },
+    {
+      "from": "PKT_0349",
+      "to": "PKT_0348"
+    },
+    {
+      "from": "PKT_0349",
+      "to": "PKT_0123"
+    },
+    {
+      "from": "PKT_0349",
+      "to": "PKT_0012"
+    },
+    {
+      "from": "PKT_0349",
+      "to": "PKT_0000"
+    }
+  ]
+}

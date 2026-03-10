@@ -46,12 +46,7 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional, Tuple
 import subprocess
 
-from LOGOS_SYSTEM.System_Stack.Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger import (
-    DEFAULT_LEDGER_PATH as DEFAULT_COMMITMENT_LEDGER_PATH,
-    LEDGER_VERSION as COMMITMENT_LEDGER_VERSION,
-    compute_ledger_hash as compute_commitment_ledger_hash,
-    validate_ledger as validate_commitment_ledger,
-)
+from logos.imports.agents import DEFAULT_LEDGER_PATH as DEFAULT_COMMITMENT_LEDGER_PATH,     LEDGER_VERSION as COMMITMENT_LEDGER_VERSION,     compute_ledger_hash as compute_commitment_ledger_hash,     validate_ledger as validate_commitment_ledger
 
 
 class PersistentAgentIdentity:
@@ -219,7 +214,7 @@ class PersistentAgentIdentity:
                         return False, f"World model snapshot missing: {snapshot_path}"
                     try:
                         # Import lazily to avoid hard dependency if module unavailable
-                        from Logos_Protocol.logos_core.world_model import uwm as world_model_module  # type: ignore
+from logos.imports.cognition import uwm as world_model_module
                     except ImportError as exc:
                         return False, f"World model validation unavailable: {exc}"
 

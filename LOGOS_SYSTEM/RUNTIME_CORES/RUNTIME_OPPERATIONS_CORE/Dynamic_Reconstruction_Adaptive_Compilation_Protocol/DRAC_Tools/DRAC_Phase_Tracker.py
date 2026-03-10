@@ -4,7 +4,7 @@ Pure utility for external systems to query DRAC state.
 """
 
 from typing import List
-from DRAC.CORE.DRAC_Core import DRACPhaseState
+from logos.imports.drac_axioms import DRACPhaseState
 
 
 def summarize_phases(phases: List[DRACPhaseState]) -> dict:

@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "tags": {
+    "axiomatic": {
+      "definition": "Invariant logical premise applied unconditionally",
+      "category": "structural"
+    },
+    "constraint": {
+      "definition": "Precondition or bound that limits execution space",
+      "category": "structural"
+    },
+    "validation": {
+      "definition": "Pass/fail gate over a data or state assertion",
+      "category": "structural"
+    },
+    "semantic": {
+      "definition": "Relates to meaning, ontology, or token interpretation",
+      "category": "domain"
+    },
+    "reasoning": {
+      "definition": "Inference, deduction, or logical derivation capability",
+      "category": "domain"
+    },
+    "planning": {
+      "definition": "Goal decomposition and task sequencing capability",
+      "category": "domain"
+    },
+    "agent_runtime": {
+      "definition": "Controls or participates in agent lifecycle execution",
+      "category": "domain"
+    },
+    "safety_guard": {
+      "definition": "Enforces fail-closed or governance-safe execution",
+      "category": "domain"
+    },
+    "memory_access": {
+      "definition": "Reads or writes to a persistent state or knowledge store",
+      "category": "domain"
+    },
+    "tool_interface": {
+      "definition": "Integrates with or wraps an external tool or LLM provider",
+      "category": "domain"
+    },
+    "learning": {
+      "definition": "Adapts behavior from observations or feedback signals",
+      "category": "domain"
+    },
+    "numeric": {
+      "definition": "Performs deterministic mathematical computation",
+      "category": "domain"
+    },
+    "symbolic": {
+      "definition": "Operates over symbolic or formal logic representations",
+      "category": "domain"
+    },
+    "probabilistic": {
+      "definition": "Incorporates stochastic or Bayesian inference",
+      "category": "domain"
+    },
+    "protocol": {
+      "definition": "Defines or enforces a structured communication protocol",
+      "category": "structural"
+    },
+    "orchestration": {
+      "definition": "Coordinates sequencing of multiple system components",
+      "category": "structural"
+    },
+    "bootstrap": {
+      "definition": "Involved in system startup or initialization",
+      "category": "structural"
+    },
+    "identity": {
+      "definition": "Manages or validates agent or resource identity",
+      "category": "structural"
+    },
+    "bijective": {
+      "definition": "Implements a one-to-one deterministic mapping",
+      "category": "domain"
+    },
+    "temporal": {
+      "definition": "Handles time-based ordering, supersession, or sequencing",
+      "category": "domain"
+    },
+    "trinitarian": {
+      "definition": "Applies three-part alignment or scoring logic (3OT)",
+      "category": "structural"
+    },
+    "input_sanitation": {
+      "definition": "Cleans and validates external inputs before processing",
+      "category": "structural"
+    },
+    "governance": {
+      "definition": "Subject to or enforces project governance contracts",
+      "category": "structural"
+    },
+    "deterministic": {
+      "definition": "Produces the same output for the same input (side-effect-free)",
+      "category": "structural"
+    },
+    "stateless": {
+      "definition": "Holds no persistent internal state between invocations",
+      "category": "structural"
+    },
+    "stateful": {
+      "definition": "Maintains state across invocations or sessions",
+      "category": "structural"
+    },
+    "audited": {
+      "definition": "Subject to audit logging or traceability requirements",
+      "category": "structural"
+    },
+    "embedded": {
+      "definition": "Directly embedded context in the DRAC invariant layer",
+      "category": "structural"
+    },
+    "numeric_compute": {
+      "definition": "Executes arithmetic or algebraic transformations",
+      "category": "domain"
+    },
+    "support_services": {
+      "definition": "General-purpose helper with no direct reasoning role",
+      "category": "domain"
+    }
+  }
+}

@@ -22,7 +22,7 @@ NOTE:
 - All legacy entrypoints are deprecated.
 """
 
-from PYTHON_MODULES.ORCHESTRATION_AND_ENTRYPOINTS.BOOTSTRAP_PIPELINES.Canonical_System_Bootstrap_Pipeline import system_bootstrap
+from logos.imports.runtime import system_bootstrap
 
 
 def main(initial_context: dict) -> dict:

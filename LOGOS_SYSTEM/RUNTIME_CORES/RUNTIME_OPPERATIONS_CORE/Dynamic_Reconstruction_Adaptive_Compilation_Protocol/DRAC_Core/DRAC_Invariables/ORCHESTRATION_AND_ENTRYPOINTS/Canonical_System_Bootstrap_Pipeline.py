@@ -23,11 +23,11 @@ NOTE:
 - Headers are intentionally deferred until the final header pass.
 """
 
-from PYTHON_MODULES.SEMANTIC_CONTEXTS.Bootstrap_Runtime_Context import run as bootstrap_runtime
-from PYTHON_MODULES.SEMANTIC_CONTEXTS.Runtime_Mode_Context import run as runtime_mode
-from PYTHON_MODULES.SEMANTIC_CONTEXTS.Agent_Policy_Decision_Context import run as policy_decision
-from PYTHON_MODULES.SEMANTIC_CONTEXTS.Privation_Handling_Context import run as privation_handling
-from PYTHON_MODULES.SEMANTIC_CONTEXTS.Trinitarian_Optimization_Context import run as trinitarian_optimization
+from logos.imports.drac_axioms import run as bootstrap_runtime
+from logos.imports.drac_axioms import run as runtime_mode
+from logos.imports.drac_axioms import run as policy_decision
+from logos.imports.drac_axioms import run as privation_handling
+from logos.imports.drac_axioms import run as trinitarian_optimization
 
 
 def system_bootstrap(initial_context: dict) -> dict:

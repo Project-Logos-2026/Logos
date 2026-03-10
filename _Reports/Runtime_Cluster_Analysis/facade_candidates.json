@@ -1,0 +1,433 @@
+[
+  {
+    "module": "typing",
+    "importing_cluster_count": 12,
+    "importing_clusters": [
+      0,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      449,
+      487,
+      546,
+      547
+    ],
+    "own_cluster": 3,
+    "in_degree": 340,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "dataclasses",
+    "importing_cluster_count": 11,
+    "importing_clusters": [
+      0,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      449,
+      487,
+      546,
+      547
+    ],
+    "own_cluster": 4,
+    "in_degree": 155,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "time",
+    "importing_cluster_count": 11,
+    "importing_clusters": [
+      0,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      477,
+      487,
+      546,
+      547
+    ],
+    "own_cluster": 4,
+    "in_degree": 102,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "json",
+    "importing_cluster_count": 11,
+    "importing_clusters": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      19,
+      449,
+      487,
+      546,
+      547
+    ],
+    "own_cluster": 2,
+    "in_degree": 99,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "__future__",
+    "importing_cluster_count": 11,
+    "importing_clusters": [
+      0,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      449,
+      487,
+      546
+    ],
+    "own_cluster": 3,
+    "in_degree": 140,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "enum",
+    "importing_cluster_count": 8,
+    "importing_clusters": [
+      0,
+      2,
+      3,
+      5,
+      6,
+      449,
+      487,
+      546
+    ],
+    "own_cluster": 4,
+    "in_degree": 50,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "logging",
+    "importing_cluster_count": 8,
+    "importing_clusters": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      449
+    ],
+    "own_cluster": 2,
+    "in_degree": 71,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "datetime",
+    "importing_cluster_count": 7,
+    "importing_clusters": [
+      3,
+      4,
+      5,
+      6,
+      449,
+      487,
+      546
+    ],
+    "own_cluster": 2,
+    "in_degree": 56,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "hashlib",
+    "importing_cluster_count": 7,
+    "importing_clusters": [
+      0,
+      3,
+      4,
+      5,
+      7,
+      449,
+      487
+    ],
+    "own_cluster": 2,
+    "in_degree": 79,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "uuid",
+    "importing_cluster_count": 7,
+    "importing_clusters": [
+      2,
+      3,
+      5,
+      7,
+      8,
+      449,
+      487
+    ],
+    "own_cluster": 4,
+    "in_degree": 41,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "collections",
+    "importing_cluster_count": 5,
+    "importing_clusters": [
+      2,
+      3,
+      4,
+      6,
+      487
+    ],
+    "own_cluster": 5,
+    "in_degree": 25,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "pathlib",
+    "importing_cluster_count": 5,
+    "importing_clusters": [
+      4,
+      5,
+      6,
+      7,
+      487
+    ],
+    "own_cluster": 2,
+    "in_degree": 56,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+    "importing_cluster_count": 4,
+    "importing_clusters": [
+      3,
+      4,
+      6,
+      449
+    ],
+    "own_cluster": 5,
+    "in_degree": 17,
+    "out_degree": 3,
+    "centrality_score": 0.00384,
+    "betweenness_centrality": 1.9e-05,
+    "is_violation_target": true,
+    "recommended_facade_namespace": "logos.imports.protocols"
+  },
+  {
+    "module": "math",
+    "importing_cluster_count": 3,
+    "importing_clusters": [
+      4,
+      6,
+      546
+    ],
+    "own_cluster": 5,
+    "in_degree": 17,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "numpy",
+    "importing_cluster_count": 3,
+    "importing_clusters": [
+      2,
+      4,
+      449
+    ],
+    "own_cluster": 5,
+    "in_degree": 30,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "re",
+    "importing_cluster_count": 3,
+    "importing_clusters": [
+      2,
+      4,
+      449
+    ],
+    "own_cluster": 6,
+    "in_degree": 17,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "os",
+    "importing_cluster_count": 3,
+    "importing_clusters": [
+      3,
+      4,
+      7
+    ],
+    "own_cluster": 2,
+    "in_degree": 31,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "sys",
+    "importing_cluster_count": 3,
+    "importing_clusters": [
+      4,
+      5,
+      487
+    ],
+    "own_cluster": 2,
+    "in_degree": 28,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "itertools",
+    "importing_cluster_count": 2,
+    "importing_clusters": [
+      6,
+      546
+    ],
+    "own_cluster": 5,
+    "in_degree": 4,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "threading",
+    "importing_cluster_count": 2,
+    "importing_clusters": [
+      2,
+      4
+    ],
+    "own_cluster": 5,
+    "in_degree": 7,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "secrets",
+    "importing_cluster_count": 2,
+    "importing_clusters": [
+      2,
+      4
+    ],
+    "own_cluster": 5,
+    "in_degree": 6,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "abc",
+    "importing_cluster_count": 2,
+    "importing_clusters": [
+      2,
+      4
+    ],
+    "own_cluster": 547,
+    "in_degree": 5,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  },
+  {
+    "module": "asyncio",
+    "importing_cluster_count": 2,
+    "importing_clusters": [
+      4,
+      5
+    ],
+    "own_cluster": 2,
+    "in_degree": 11,
+    "out_degree": 0,
+    "centrality_score": 0.0,
+    "betweenness_centrality": 0.0,
+    "is_violation_target": false,
+    "recommended_facade_namespace": "logos.imports.runtime"
+  }
+]
