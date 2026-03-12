@@ -1,0 +1,730 @@
+{
+  "registry_version": "2.0",
+  "generated": "2026-03-11T00:00:00Z",
+  "generator": "Dev Tooling Migration \u2014 canonical rebuild",
+  "canonical_root": "/workspaces/Logos/_Dev_Resources/_Dev_Scripts/Repo_Tools",
+  "total_registered": 26,
+  "entries": [
+    {
+      "tool_name": "Import_Linter",
+      "script_path": "Repo_Tools/Repo_Audit/Import_Linter.py",
+      "functional_category": "Repo_Audit",
+      "description": "Static import enforcement linter. Scans STARTUP/ and LOGOS_SYSTEM/ for namespace violations, prohibited patterns, and disallowed net-module usage.",
+      "invocation_pattern": "python3 Import_Linter.py",
+      "expected_arguments": [],
+      "produces_artifact": false,
+      "artifact_paths": [],
+      "dependencies": [
+        "ast",
+        "os",
+        "sys",
+        "pathlib"
+      ],
+      "external_dependencies": [],
+      "uses_cli": true,
+      "entrypoint": "main",
+      "destructive_capability_flag": false,
+      "functions": [
+        "main",
+        "scan_file",
+        "check_violations"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "triage",
+      "script_path": "Repo_Tools/Repo_Audit/triage.py",
+      "functional_category": "Repo_Audit",
+      "description": "Legacy module triage and extraction pass. Classifies staging modules, moves files, deduplicates, writes JSON + markdown reports.",
+      "invocation_pattern": "python3 triage.py",
+      "expected_arguments": [],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "_Reports/triage_report.json",
+        "_Reports/triage_summary.md"
+      ],
+      "dependencies": [
+        "ast",
+        "difflib",
+        "json",
+        "os",
+        "re",
+        "shutil",
+        "sys",
+        "pathlib",
+        "collections"
+      ],
+      "external_dependencies": [],
+      "uses_cli": true,
+      "entrypoint": "main",
+      "destructive_capability_flag": true,
+      "functions": [
+        "main",
+        "classify_module",
+        "move_module",
+        "deduplicate"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "scanner",
+      "script_path": "Repo_Tools/Repo_Audit/scanner.py",
+      "functional_category": "Repo_Audit",
+      "description": "Repository Python source file scanner. Recursively yields all .py files under a root, skipping __pycache__, .git, node_modules, and venv directories.",
+      "invocation_pattern": "module_import_only",
+      "expected_arguments": [
+        "root: Path"
+      ],
+      "produces_artifact": false,
+      "artifact_paths": [],
+      "dependencies": [
+        "pathlib",
+        "typing"
+      ],
+      "external_dependencies": [],
+      "uses_cli": false,
+      "entrypoint": "none",
+      "destructive_capability_flag": false,
+      "functions": [
+        "scan",
+        "collect"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "repo_structure_export",
+      "script_path": "Repo_Tools/Repo_Audit/repo_structure_export.py",
+      "functional_category": "Repo_Audit",
+      "description": "Walks the repository tree and exports directory structure, Python file list, and all import statements to JSON artifacts.",
+      "invocation_pattern": "python3 repo_structure_export.py",
+      "expected_arguments": [],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "repo_directory_tree.json",
+        "repo_python_files.json",
+        "repo_imports.json"
+      ],
+      "dependencies": [
+        "os",
+        "json"
+      ],
+      "external_dependencies": [],
+      "uses_cli": true,
+      "entrypoint": "script_body",
+      "destructive_capability_flag": false,
+      "functions": [],
+      "classes": []
+    },
+    {
+      "tool_name": "ast_parser",
+      "script_path": "Repo_Tools/Static_Analysis/ast_parser.py",
+      "functional_category": "Static_Analysis",
+      "description": "AST-based function extraction module. Extracts function name, docstring, signature, imports, and body summary from Python source files.",
+      "invocation_pattern": "module_import_only",
+      "expected_arguments": [
+        "source: str | Path"
+      ],
+      "produces_artifact": false,
+      "artifact_paths": [],
+      "dependencies": [
+        "ast",
+        "pathlib",
+        "typing"
+      ],
+      "external_dependencies": [],
+      "uses_cli": false,
+      "entrypoint": "none",
+      "destructive_capability_flag": false,
+      "functions": [
+        "_imports_from_tree",
+        "_build_signature",
+        "parse_file",
+        "extract_functions"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "classifier",
+      "script_path": "Repo_Tools/Static_Analysis/classifier.py",
+      "functional_category": "Static_Analysis",
+      "description": "Keyword-based function classifier into DRAC AF categories (AGENT_CONTROL, SEMANTIC_PROCESSING, REASONING_ENGINE, UTILITY_SUPPORT, SAFETY_GUARD, MATH_OPERATOR).",
+      "invocation_pattern": "module_import_only",
+      "expected_arguments": [
+        "name: str",
+        "docstring: str",
+        "body_calls: str"
+      ],
+      "produces_artifact": false,
+      "artifact_paths": [],
+      "dependencies": [
+        "typing"
+      ],
+      "external_dependencies": [],
+      "uses_cli": false,
+      "entrypoint": "none",
+      "destructive_capability_flag": false,
+      "functions": [
+        "classify"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "drac_indexer",
+      "script_path": "Repo_Tools/Static_Analysis/drac_indexer.py",
+      "functional_category": "Static_Analysis",
+      "description": "DRAC Application Function Master Index Builder. Produces af_master_index.json, af_cluster_index.json, and af_runtime_roles.json. Read-only analysis; no source mutations.",
+      "invocation_pattern": "python3 drac_indexer.py",
+      "expected_arguments": [],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "af_master_index.json",
+        "af_cluster_index.json",
+        "af_runtime_roles.json"
+      ],
+      "dependencies": [
+        "ast",
+        "json",
+        "re",
+        "sys",
+        "pathlib",
+        "collections",
+        "datetime"
+      ],
+      "external_dependencies": [],
+      "uses_cli": true,
+      "entrypoint": "main",
+      "destructive_capability_flag": false,
+      "functions": [
+        "main",
+        "index_functions",
+        "write_artifacts"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "runtime_analysis",
+      "script_path": "Repo_Tools/Static_Analysis/runtime_analysis.py",
+      "functional_category": "Static_Analysis",
+      "description": "ARCHON runtime topology analysis. Analyzes LOGOS runtime surface directories and produces machine-readable artifacts. Analysis-only \u2014 no repository mutation.",
+      "invocation_pattern": "python3 runtime_analysis.py",
+      "expected_arguments": [],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "ARCHON_RUNTIME_ANALYSIS/runtime_topology.json"
+      ],
+      "dependencies": [
+        "ast",
+        "json",
+        "os",
+        "sys",
+        "collections",
+        "math",
+        "pathlib",
+        "typing"
+      ],
+      "external_dependencies": [],
+      "uses_cli": true,
+      "entrypoint": "main",
+      "destructive_capability_flag": false,
+      "functions": [
+        "main",
+        "analyze_directory",
+        "compute_metrics"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "semantic_extractor",
+      "script_path": "Repo_Tools/Static_Analysis/semantic_extractor.py",
+      "functional_category": "Static_Analysis",
+      "description": "Derives the minimal semantic modifier expression for a function name (e.g. symbolic_deduction() -> 'deduce(symbolic)'). Extracts ARP/CSP/MTP scores from AST node data.",
+      "invocation_pattern": "module_import_only",
+      "expected_arguments": [
+        "name: str"
+      ],
+      "produces_artifact": false,
+      "artifact_paths": [],
+      "dependencies": [
+        "re"
+      ],
+      "external_dependencies": [],
+      "uses_cli": false,
+      "entrypoint": "none",
+      "destructive_capability_flag": false,
+      "functions": [
+        "_tokenize",
+        "extract",
+        "extract_record"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "static_ast_analysis",
+      "script_path": "Repo_Tools/Static_Analysis/static_ast_analysis.py",
+      "functional_category": "Static_Analysis",
+      "description": "Static AST analysis for the Logos repository. Extracts module paths, file paths, and static imports. Outputs FULL_STATIC_IMPORT_GRAPH.json and LAYER_CLASSIFIED_GRAPH.json.",
+      "invocation_pattern": "python3 static_ast_analysis.py",
+      "expected_arguments": [
+        "--root <path>",
+        "--output <path>"
+      ],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "_Reports/FULL_STATIC_IMPORT_GRAPH.json",
+        "_Reports/LAYER_CLASSIFIED_GRAPH.json"
+      ],
+      "dependencies": [
+        "ast",
+        "os",
+        "json",
+        "pathlib"
+      ],
+      "external_dependencies": [
+        "python_file_list"
+      ],
+      "uses_cli": false,
+      "entrypoint": "main",
+      "destructive_capability_flag": false,
+      "functions": [
+        "file_to_module_path",
+        "classify_layer",
+        "extract_imports",
+        "main"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "packet_discovery",
+      "script_path": "Repo_Tools/Static_Analysis/packet_discovery.py",
+      "functional_category": "Static_Analysis",
+      "description": "Module packet discovery. Builds an import dependency graph, detects SCCs, classifies packets, and produces JSON + DOT output. Pure Python.",
+      "invocation_pattern": "python3 packet_discovery.py",
+      "expected_arguments": [],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "Tools/module_packets.json",
+        "Tools/dependency_graph.dot"
+      ],
+      "dependencies": [
+        "ast",
+        "json",
+        "os",
+        "re",
+        "sys",
+        "pathlib",
+        "collections"
+      ],
+      "external_dependencies": [],
+      "uses_cli": true,
+      "entrypoint": "main",
+      "destructive_capability_flag": false,
+      "functions": [
+        "main",
+        "build_graph",
+        "detect_scc",
+        "classify_packets"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "generate_symbol_import_index",
+      "script_path": "Repo_Tools/Static_Analysis/generate_symbol_import_index.py",
+      "functional_category": "Static_Analysis",
+      "description": "Read-only AST audit: extracts symbol-level import data from all Python files. Writes repo_symbol_imports.json and refreshes repo_python_files.json.",
+      "invocation_pattern": "python3 generate_symbol_import_index.py",
+      "expected_arguments": [],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "_Reports/Canonical_Import_Facade/repo_symbol_imports.json",
+        "repo_python_files.json"
+      ],
+      "dependencies": [
+        "ast",
+        "json",
+        "os",
+        "sys"
+      ],
+      "external_dependencies": [],
+      "uses_cli": true,
+      "entrypoint": "script_body",
+      "destructive_capability_flag": false,
+      "functions": [],
+      "classes": []
+    },
+    {
+      "tool_name": "cluster_analysis",
+      "script_path": "Repo_Tools/Dependency_Analysis/cluster_analysis.py",
+      "functional_category": "Dependency_Analysis",
+      "description": "Runtime dependency graph clustering analysis. Performs Louvain community detection, SCC, betweenness centrality, cluster boundary analysis, and facade candidate identification. Analysis only.",
+      "invocation_pattern": "python3 cluster_analysis.py",
+      "expected_arguments": [],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "ARCHON_RUNTIME_ANALYSIS/cluster_analysis.json"
+      ],
+      "dependencies": [
+        "collections",
+        "json",
+        "math",
+        "sys"
+      ],
+      "external_dependencies": [],
+      "uses_cli": true,
+      "entrypoint": "main",
+      "destructive_capability_flag": false,
+      "functions": [
+        "main",
+        "detect_communities",
+        "detect_scc",
+        "compute_centrality",
+        "identify_facade_candidates"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "facade_rewrite_pass",
+      "script_path": "Repo_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+      "functional_category": "Dependency_Analysis",
+      "description": "Facade import rewrite pass. Applies deterministic facade substitutions to AUTO_REPAIRABLE violations. Fail-closed with AST-verified dry-run. DESTRUCTIVE \u2014 rewrites source files.",
+      "invocation_pattern": "python3 facade_rewrite_pass.py",
+      "expected_arguments": [
+        "--dry-run",
+        "--live"
+      ],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "ARCHON_RUNTIME_ANALYSIS/rewrite_report.json"
+      ],
+      "dependencies": [
+        "ast",
+        "collections",
+        "difflib",
+        "json",
+        "re",
+        "sys"
+      ],
+      "external_dependencies": [],
+      "uses_cli": true,
+      "entrypoint": "main",
+      "destructive_capability_flag": true,
+      "functions": [
+        "main",
+        "dry_run",
+        "live_pass",
+        "verify_preconditions"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "facade_synthesis",
+      "script_path": "Repo_Tools/Dependency_Analysis/facade_synthesis.py",
+      "functional_category": "Dependency_Analysis",
+      "description": "Runtime Facade Synthesis Pass. Derives canonical import facades and generates automated rewrite mappings from runtime topology artifacts. Analysis only \u2014 no source mutation.",
+      "invocation_pattern": "python3 facade_synthesis.py",
+      "expected_arguments": [],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "BLUEPRINTS/Canonical_Import_Facade/facade_synthesis.json"
+      ],
+      "dependencies": [
+        "collections",
+        "json",
+        "sys",
+        "pathlib",
+        "datetime"
+      ],
+      "external_dependencies": [],
+      "uses_cli": true,
+      "entrypoint": "main",
+      "destructive_capability_flag": false,
+      "functions": [
+        "main",
+        "derive_facades",
+        "generate_rewrite_map"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "generate_deep_import_violations",
+      "script_path": "Repo_Tools/Dependency_Analysis/generate_deep_import_violations.py",
+      "functional_category": "Dependency_Analysis",
+      "description": "Canonical Import Facade Phase 3. Scans repo for forbidden-prefix deep imports and writes Deep_Import_Violations.json. Exit 0 on success, 1 on fatal error.",
+      "invocation_pattern": "python3 generate_deep_import_violations.py",
+      "expected_arguments": [],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "BLUEPRINTS/Canonical_Import_Facade/Deep_Import_Violations.json"
+      ],
+      "dependencies": [
+        "json",
+        "os",
+        "sys"
+      ],
+      "external_dependencies": [],
+      "uses_cli": true,
+      "entrypoint": "script_body",
+      "destructive_capability_flag": false,
+      "functions": [],
+      "classes": []
+    },
+    {
+      "tool_name": "extract",
+      "script_path": "Repo_Tools/Code_Extraction/extract.py",
+      "functional_category": "Code_Extraction",
+      "description": "Application Function Extraction Pass using semantic-heuristic analysis. COPY ONLY \u2014 no source modifications.",
+      "invocation_pattern": "python3 extract.py",
+      "expected_arguments": [],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/"
+      ],
+      "dependencies": [
+        "ast",
+        "json",
+        "os",
+        "re",
+        "sys",
+        "math",
+        "pathlib",
+        "collections"
+      ],
+      "external_dependencies": [],
+      "uses_cli": true,
+      "entrypoint": "main",
+      "destructive_capability_flag": false,
+      "functions": [
+        "main",
+        "extract_functions",
+        "score_function",
+        "emit_record"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "legacy_extract",
+      "script_path": "Repo_Tools/Code_Extraction/legacy_extract.py",
+      "functional_category": "Code_Extraction",
+      "description": "Legacy Application Function Deep Semantic Extraction pipeline. Targets legacy staging modules. Static analysis only.",
+      "invocation_pattern": "python3 legacy_extract.py",
+      "expected_arguments": [],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "Application_Function_Extraction/"
+      ],
+      "dependencies": [
+        "ast",
+        "json",
+        "os",
+        "re",
+        "sys",
+        "pathlib",
+        "collections"
+      ],
+      "external_dependencies": [],
+      "uses_cli": true,
+      "entrypoint": "main",
+      "destructive_capability_flag": false,
+      "functions": [
+        "main",
+        "deep_extract",
+        "analyze_semantics"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "fbc_registry",
+      "script_path": "Repo_Tools/Code_Extraction/fbc_registry.py",
+      "functional_category": "Code_Extraction",
+      "description": "DRAC Function Block Core (FBC) Registry Builder. Produces fbc_master_registry.json, fbc_taxonomy.json, fbc_tag_dictionary.json, af_core_compatibility_matrix.json, and modular_library_manifest.json. Read-only.",
+      "invocation_pattern": "python3 fbc_registry.py",
+      "expected_arguments": [],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "fbc_master_registry.json",
+        "fbc_taxonomy.json",
+        "fbc_tag_dictionary.json",
+        "af_core_compatibility_matrix.json",
+        "modular_library_manifest.json"
+      ],
+      "dependencies": [
+        "ast",
+        "json",
+        "sys",
+        "pathlib",
+        "collections",
+        "datetime"
+      ],
+      "external_dependencies": [],
+      "uses_cli": true,
+      "entrypoint": "main",
+      "destructive_capability_flag": false,
+      "functions": [
+        "main",
+        "build_registry",
+        "build_taxonomy",
+        "build_tag_dictionary"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "reorganize",
+      "script_path": "Repo_Tools/Migration/reorganize.py",
+      "functional_category": "Migration",
+      "description": "APPLICATION_FUNCTIONS categorical reorganization. Move-only pass \u2014 no code edits, no deletions, no import modifications. DESTRUCTIVE \u2014 moves files between directories.",
+      "invocation_pattern": "python3 reorganize.py",
+      "expected_arguments": [],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "Tools/reorganize_report.json"
+      ],
+      "dependencies": [
+        "json",
+        "shutil",
+        "sys",
+        "pathlib"
+      ],
+      "external_dependencies": [],
+      "uses_cli": true,
+      "entrypoint": "main",
+      "destructive_capability_flag": true,
+      "functions": [
+        "main",
+        "categorize_module",
+        "move_module"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "pipeline",
+      "script_path": "Repo_Tools/Report_Generation/pipeline.py",
+      "functional_category": "Report_Generation",
+      "description": "DRAC AF extraction pipeline orchestrator. Coordinates Pass 1 agent_control function extraction across the LOGOS repository. COPY ONLY.",
+      "invocation_pattern": "python3 pipeline.py",
+      "expected_arguments": [],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "MODULAR_LIBRARY/af_semantic_registry.json"
+      ],
+      "dependencies": [
+        "sys",
+        "pathlib",
+        "collections"
+      ],
+      "external_dependencies": [
+        "ast_parser",
+        "classifier",
+        "semantic_extractor",
+        "registry_writer"
+      ],
+      "uses_cli": true,
+      "entrypoint": "main",
+      "destructive_capability_flag": false,
+      "functions": [
+        "main",
+        "run_pass"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "registry_writer",
+      "script_path": "Repo_Tools/Report_Generation/registry_writer.py",
+      "functional_category": "Report_Generation",
+      "description": "Writes AF semantic registry entries to MODULAR_LIBRARY with deterministic AF IDs (AF_0001, AF_0002, \u2026). Called by pipeline.py.",
+      "invocation_pattern": "module_import_only",
+      "expected_arguments": [
+        "counter: int",
+        "record: dict"
+      ],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "MODULAR_LIBRARY/af_semantic_registry.json"
+      ],
+      "dependencies": [
+        "json",
+        "datetime",
+        "pathlib"
+      ],
+      "external_dependencies": [],
+      "uses_cli": false,
+      "entrypoint": "none",
+      "destructive_capability_flag": false,
+      "functions": [
+        "build_entry",
+        "write_registry"
+      ],
+      "classes": []
+    },
+    {
+      "tool_name": "__init__",
+      "script_path": "Repo_Tools/Dev_Utilities/__init__.py",
+      "functional_category": "Dev_Utilities",
+      "description": "Package namespace declaration for Dev_Utilities.",
+      "invocation_pattern": "module_import_only",
+      "expected_arguments": [],
+      "produces_artifact": false,
+      "artifact_paths": [],
+      "dependencies": [],
+      "external_dependencies": [],
+      "uses_cli": false,
+      "entrypoint": "none",
+      "destructive_capability_flag": false,
+      "functions": [],
+      "classes": []
+    },
+    {
+      "tool_name": "conftest",
+      "script_path": "Repo_Tools/Dev_Utilities/conftest.py",
+      "functional_category": "Dev_Utilities",
+      "description": "pytest conftest for Dev_Utilities. Provides shared fixtures and test session configuration.",
+      "invocation_pattern": "pytest_autodiscovery",
+      "expected_arguments": [],
+      "produces_artifact": false,
+      "artifact_paths": [],
+      "dependencies": [
+        "pytest"
+      ],
+      "external_dependencies": [],
+      "uses_cli": false,
+      "entrypoint": "none",
+      "destructive_capability_flag": false,
+      "functions": [],
+      "classes": []
+    },
+    {
+      "tool_name": "test_import_base_reasoning_registry",
+      "script_path": "Repo_Tools/Dev_Utilities/test_import_base_reasoning_registry.py",
+      "functional_category": "Dev_Utilities",
+      "description": "Smoke test verifying the base reasoning registry imports resolve correctly from the logos package.",
+      "invocation_pattern": "pytest Repo_Tools/Dev_Utilities/test_import_base_reasoning_registry.py",
+      "expected_arguments": [],
+      "produces_artifact": false,
+      "artifact_paths": [],
+      "dependencies": [],
+      "external_dependencies": [
+        "logos"
+      ],
+      "uses_cli": false,
+      "entrypoint": "none",
+      "destructive_capability_flag": false,
+      "functions": [],
+      "classes": []
+    },
+    {
+      "tool_name": "python_file_list",
+      "script_path": "Repo_Tools/Dev_Utilities/python_file_list.py",
+      "functional_category": "Dev_Utilities",
+      "description": "Auto-generated static index of Python files. Consumed by static_ast_analysis and other tools as the PYTHON_FILE_LIST constant.",
+      "invocation_pattern": "module_import_only",
+      "expected_arguments": [],
+      "produces_artifact": false,
+      "artifact_paths": [],
+      "dependencies": [],
+      "external_dependencies": [],
+      "uses_cli": false,
+      "entrypoint": "none",
+      "destructive_capability_flag": false,
+      "functions": [],
+      "classes": []
+    }
+  ]
+}

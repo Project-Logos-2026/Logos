@@ -1,0 +1,16 @@
+{
+  "schema_name": "runtime_module_header",
+  "schema_version": "1.0",
+  "applies_to": "LOGOS_RUNTIME",
+  "required_fields": [
+    "module_name",
+    "runtime_layer",
+    "protocol_binding",
+    "agent_binding",
+    "boot_phase",
+    "purpose",
+    "provides",
+    "depends_on",
+    "failure_mode"
+  ]
+}

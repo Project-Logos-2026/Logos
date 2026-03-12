@@ -1,0 +1,170 @@
+{
+  "artifact_type": "governance_tools_generation_report",
+  "generated_utc": "2026-03-12T01:42:15Z",
+  "schema_version": "1.0",
+  "status": "PASS",
+  "summary": {
+    "tools_expected": 8,
+    "tools_created": 8,
+    "tools_missing": 0,
+    "all_headers_valid": true,
+    "all_output_routing_valid": true
+  },
+  "directory_validation": {
+    "tools_directory": "_Dev_Resources/Dev_Tools/Repo_Governance_Tools",
+    "no_dirs_created_outside_target": true,
+    "status": "PASS",
+    "note": "All tools written exclusively to Repo_Governance_Tools/"
+  },
+  "created_tools": [
+    {
+      "tool_name": "devscript_header_validator.py",
+      "path": "_Dev_Resources/Dev_Tools/Repo_Governance_Tools/devscript_header_validator.py",
+      "exists": true,
+      "size_bytes": 6756,
+      "status": "CREATED"
+    },
+    {
+      "tool_name": "tool_registry_validator.py",
+      "path": "_Dev_Resources/Dev_Tools/Repo_Governance_Tools/tool_registry_validator.py",
+      "exists": true,
+      "size_bytes": 9029,
+      "status": "CREATED"
+    },
+    {
+      "tool_name": "directory_structure_validator.py",
+      "path": "_Dev_Resources/Dev_Tools/Repo_Governance_Tools/directory_structure_validator.py",
+      "exists": true,
+      "size_bytes": 9864,
+      "status": "CREATED"
+    },
+    {
+      "tool_name": "governance_contract_validator.py",
+      "path": "_Dev_Resources/Dev_Tools/Repo_Governance_Tools/governance_contract_validator.py",
+      "exists": true,
+      "size_bytes": 10958,
+      "status": "CREATED"
+    },
+    {
+      "tool_name": "repo_policy_enforcer.py",
+      "path": "_Dev_Resources/Dev_Tools/Repo_Governance_Tools/repo_policy_enforcer.py",
+      "exists": true,
+      "size_bytes": 8733,
+      "status": "CREATED"
+    },
+    {
+      "tool_name": "dev_resources_freeze_validator.py",
+      "path": "_Dev_Resources/Dev_Tools/Repo_Governance_Tools/dev_resources_freeze_validator.py",
+      "exists": true,
+      "size_bytes": 9761,
+      "status": "CREATED"
+    },
+    {
+      "tool_name": "abbreviation_registry_validator.py",
+      "path": "_Dev_Resources/Dev_Tools/Repo_Governance_Tools/abbreviation_registry_validator.py",
+      "exists": true,
+      "size_bytes": 9808,
+      "status": "CREATED"
+    },
+    {
+      "tool_name": "runtime_wiring_log_validator.py",
+      "path": "_Dev_Resources/Dev_Tools/Repo_Governance_Tools/runtime_wiring_log_validator.py",
+      "exists": true,
+      "size_bytes": 9183,
+      "status": "CREATED"
+    }
+  ],
+  "header_validation": {
+    "devscript_header_validator.py": {
+      "header_present": true,
+      "marker": "REPO_GOVERNANCE_TOOL_METADATA",
+      "status": "PASS"
+    },
+    "tool_registry_validator.py": {
+      "header_present": true,
+      "marker": "REPO_GOVERNANCE_TOOL_METADATA",
+      "status": "PASS"
+    },
+    "directory_structure_validator.py": {
+      "header_present": true,
+      "marker": "REPO_GOVERNANCE_TOOL_METADATA",
+      "status": "PASS"
+    },
+    "governance_contract_validator.py": {
+      "header_present": true,
+      "marker": "REPO_GOVERNANCE_TOOL_METADATA",
+      "status": "PASS"
+    },
+    "repo_policy_enforcer.py": {
+      "header_present": true,
+      "marker": "REPO_GOVERNANCE_TOOL_METADATA",
+      "status": "PASS"
+    },
+    "dev_resources_freeze_validator.py": {
+      "header_present": true,
+      "marker": "REPO_GOVERNANCE_TOOL_METADATA",
+      "status": "PASS"
+    },
+    "abbreviation_registry_validator.py": {
+      "header_present": true,
+      "marker": "REPO_GOVERNANCE_TOOL_METADATA",
+      "status": "PASS"
+    },
+    "runtime_wiring_log_validator.py": {
+      "header_present": true,
+      "marker": "REPO_GOVERNANCE_TOOL_METADATA",
+      "status": "PASS"
+    }
+  },
+  "output_routing_validation": {
+    "devscript_header_validator.py": {
+      "output_root_defined": true,
+      "mkdir_called": true,
+      "routes_to_dev_governance": true,
+      "status": "PASS"
+    },
+    "tool_registry_validator.py": {
+      "output_root_defined": true,
+      "mkdir_called": true,
+      "routes_to_dev_governance": true,
+      "status": "PASS"
+    },
+    "directory_structure_validator.py": {
+      "output_root_defined": true,
+      "mkdir_called": true,
+      "routes_to_dev_governance": true,
+      "status": "PASS"
+    },
+    "governance_contract_validator.py": {
+      "output_root_defined": true,
+      "mkdir_called": true,
+      "routes_to_dev_governance": true,
+      "status": "PASS"
+    },
+    "repo_policy_enforcer.py": {
+      "output_root_defined": true,
+      "mkdir_called": true,
+      "routes_to_dev_governance": true,
+      "status": "PASS"
+    },
+    "dev_resources_freeze_validator.py": {
+      "output_root_defined": true,
+      "mkdir_called": true,
+      "routes_to_dev_governance": true,
+      "status": "PASS"
+    },
+    "abbreviation_registry_validator.py": {
+      "output_root_defined": true,
+      "mkdir_called": true,
+      "routes_to_dev_governance": true,
+      "status": "PASS"
+    },
+    "runtime_wiring_log_validator.py": {
+      "output_root_defined": true,
+      "mkdir_called": true,
+      "routes_to_dev_governance": true,
+      "status": "PASS"
+    }
+  },
+  "constraint_violations": 0
+}

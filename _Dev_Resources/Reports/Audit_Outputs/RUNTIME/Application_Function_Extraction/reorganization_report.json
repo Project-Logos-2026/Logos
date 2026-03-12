@@ -1,0 +1,408 @@
+{
+  "modules_scanned": 78,
+  "moves_performed": 78,
+  "skipped_already_correct": 0,
+  "skipped_no_classification": 0,
+  "external_blueprint_modules": 275,
+  "category_counts": {
+    "reasoning": 14,
+    "agent": 25,
+    "utility": 13,
+    "semantic": 20,
+    "safety": 4,
+    "math": 2
+  },
+  "moves": [
+    {
+      "module": "agent_nexus.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/agent_nexus.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/agent_nexus.py"
+    },
+    {
+      "module": "attestation.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/attestation.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/safety/attestation.py"
+    },
+    {
+      "module": "base_nexus.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/base_nexus.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/base_nexus.py"
+    },
+    {
+      "module": "boot_system.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/boot_system.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/boot_system.py"
+    },
+    {
+      "module": "development_environment.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/development_environment.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/utility/development_environment.py"
+    },
+    {
+      "module": "dispatch.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/dispatch.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/dispatch.py"
+    },
+    {
+      "module": "ergonomic_optimizer.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/ergonomic_optimizer.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/reasoning/ergonomic_optimizer.py"
+    },
+    {
+      "module": "evaluation_packet.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/evaluation_packet.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/evaluation_packet.py"
+    },
+    {
+      "module": "hashing.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/hashing.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/hashing.py"
+    },
+    {
+      "module": "id_handler.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/id_handler.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/id_handler.py"
+    },
+    {
+      "module": "knowledge_catalog.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/knowledge_catalog.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/knowledge_catalog.py"
+    },
+    {
+      "module": "maintenance.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/maintenance.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/maintenance.py"
+    },
+    {
+      "module": "ontoprops_remap.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/ontoprops_remap.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/ontoprops_remap.py"
+    },
+    {
+      "module": "packet_types.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/packet_types.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/packet_types.py"
+    },
+    {
+      "module": "plan_packet.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/plan_packet.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/plan_packet.py"
+    },
+    {
+      "module": "providers_llama.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/providers_llama.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/providers_llama.py"
+    },
+    {
+      "module": "providers_openai.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/providers_openai.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/providers_openai.py"
+    },
+    {
+      "module": "resource_manager.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/resource_manager.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/reasoning/resource_manager.py"
+    },
+    {
+      "module": "test_agent_planner.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/test_agent_planner.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_agent_planner.py"
+    },
+    {
+      "module": "test_determinism.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/test_determinism.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/utility/test_determinism.py"
+    },
+    {
+      "module": "time_utils.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/time_utils.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/time_utils.py"
+    },
+    {
+      "module": "transform_types.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/transform_types.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/transform_types.py"
+    },
+    {
+      "module": "types.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Agents/types.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/types.py"
+    },
+    {
+      "module": "Logos_Memory_Nexus.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Memory/Logos_Memory_Nexus.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/Logos_Memory_Nexus.py"
+    },
+    {
+      "module": "arp_nexus.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Reasoning/arp_nexus.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/reasoning/arp_nexus.py"
+    },
+    {
+      "module": "arp_nexus_orchestrator.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Reasoning/arp_nexus_orchestrator.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/utility/arp_nexus_orchestrator.py"
+    },
+    {
+      "module": "test_arp_modes.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Reasoning/test_arp_modes.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/utility/test_arp_modes.py"
+    },
+    {
+      "module": "test_arp_nexus.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Reasoning/test_arp_nexus.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/reasoning/test_arp_nexus.py"
+    },
+    {
+      "module": "test_logos_agi_adapter.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Tooling/test_logos_agi_adapter.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/test_logos_agi_adapter.py"
+    },
+    {
+      "module": "test_tool_fallback_proposal.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Tooling/test_tool_fallback_proposal.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/test_tool_fallback_proposal.py"
+    },
+    {
+      "module": "test_tool_pipeline_smoke.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Tooling/test_tool_pipeline_smoke.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/safety/test_tool_pipeline_smoke.py"
+    },
+    {
+      "module": "causal_trace_operator.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/causal_trace_operator.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/utility/causal_trace_operator.py"
+    },
+    {
+      "module": "class_extrapolator.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/class_extrapolator.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/utility/class_extrapolator.py"
+    },
+    {
+      "module": "commitment_ledger.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/commitment_ledger.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/commitment_ledger.py"
+    },
+    {
+      "module": "csp_nexus_orchestrator.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/csp_nexus_orchestrator.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/utility/csp_nexus_orchestrator.py"
+    },
+    {
+      "module": "dual_bijection_demo.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/dual_bijection_demo.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/math/dual_bijection_demo.py"
+    },
+    {
+      "module": "fractal_nexus.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/fractal_nexus.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/math/fractal_nexus.py"
+    },
+    {
+      "module": "health_server.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/health_server.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/safety/health_server.py"
+    },
+    {
+      "module": "integration_test.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/integration_test.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/reasoning/integration_test.py"
+    },
+    {
+      "module": "integration_test_suite.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/integration_test_suite.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/reasoning/integration_test_suite.py"
+    },
+    {
+      "module": "legacy_sop_nexus.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/legacy_sop_nexus.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/legacy_sop_nexus.py"
+    },
+    {
+      "module": "logos_protocol_nexus.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/logos_protocol_nexus.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/utility/logos_protocol_nexus.py"
+    },
+    {
+      "module": "modal_vector_sync.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/modal_vector_sync.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/reasoning/modal_vector_sync.py"
+    },
+    {
+      "module": "mtp_nexus_orchestrator.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/mtp_nexus_orchestrator.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/mtp_nexus_orchestrator.py"
+    },
+    {
+      "module": "nexus_manager.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/nexus_manager.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/nexus_manager.py"
+    },
+    {
+      "module": "prioritization.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/prioritization.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/prioritization.py"
+    },
+    {
+      "module": "regression_checker.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/regression_checker.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/utility/regression_checker.py"
+    },
+    {
+      "module": "scp_nexus.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/scp_nexus.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/reasoning/scp_nexus.py"
+    },
+    {
+      "module": "scp_nexus_orchestrator.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/scp_nexus_orchestrator.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/utility/scp_nexus_orchestrator.py"
+    },
+    {
+      "module": "sop_nexus.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/sop_nexus.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/sop_nexus.py"
+    },
+    {
+      "module": "sop_nexus_orchestrator.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/sop_nexus_orchestrator.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/utility/sop_nexus_orchestrator.py"
+    },
+    {
+      "module": "test_bayesian_data_handler.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_bayesian_data_handler.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/reasoning/test_bayesian_data_handler.py"
+    },
+    {
+      "module": "test_dual_bijection.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_dual_bijection.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/reasoning/test_dual_bijection.py"
+    },
+    {
+      "module": "test_end_to_end_pipeline.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_end_to_end_pipeline.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_end_to_end_pipeline.py"
+    },
+    {
+      "module": "test_evaluator_learning_smoke.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_evaluator_learning_smoke.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/utility/test_evaluator_learning_smoke.py"
+    },
+    {
+      "module": "test_hardening.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_hardening.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_hardening.py"
+    },
+    {
+      "module": "test_integration.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_integration.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/reasoning/test_integration.py"
+    },
+    {
+      "module": "test_integration_identity.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_integration_identity.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_integration_identity.py"
+    },
+    {
+      "module": "test_llm_bypass_smoke.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_llm_bypass_smoke.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_llm_bypass_smoke.py"
+    },
+    {
+      "module": "test_lock_unlock.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_lock_unlock.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_lock_unlock.py"
+    },
+    {
+      "module": "test_logos_agi_bootstrap_modes.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_logos_agi_bootstrap_modes.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_logos_agi_bootstrap_modes.py"
+    },
+    {
+      "module": "test_logos_agi_persistence_smoke.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_logos_agi_persistence_smoke.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/reasoning/test_logos_agi_persistence_smoke.py"
+    },
+    {
+      "module": "test_logos_agi_pin_drift.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_logos_agi_pin_drift.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/utility/test_logos_agi_pin_drift.py"
+    },
+    {
+      "module": "test_logos_agi_replay_proposals.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_logos_agi_replay_proposals.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_logos_agi_replay_proposals.py"
+    },
+    {
+      "module": "test_logos_runtime_phase2_smoke.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_logos_runtime_phase2_smoke.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_logos_runtime_phase2_smoke.py"
+    },
+    {
+      "module": "test_nexus_capability_governance.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_nexus_capability_governance.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_nexus_capability_governance.py"
+    },
+    {
+      "module": "test_pai.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_pai.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_pai.py"
+    },
+    {
+      "module": "test_perception_ingestors.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_perception_ingestors.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/test_perception_ingestors.py"
+    },
+    {
+      "module": "test_plan_revision_on_contradiction.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_plan_revision_on_contradiction.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_plan_revision_on_contradiction.py"
+    },
+    {
+      "module": "test_proved_grounding.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_proved_grounding.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/reasoning/test_proved_grounding.py"
+    },
+    {
+      "module": "test_reference_monitor.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_reference_monitor.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/safety/test_reference_monitor.py"
+    },
+    {
+      "module": "test_registry_and_response.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_registry_and_response.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/test_registry_and_response.py"
+    },
+    {
+      "module": "test_scp_recovery_mode_gate.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_scp_recovery_mode_gate.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_scp_recovery_mode_gate.py"
+    },
+    {
+      "module": "test_self_improvement_cycle.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_self_improvement_cycle.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_self_improvement_cycle.py"
+    },
+    {
+      "module": "test_simulation_cli.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_simulation_cli.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/semantic/test_simulation_cli.py"
+    },
+    {
+      "module": "test_stub_beliefs_never_verified.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_stub_beliefs_never_verified.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_stub_beliefs_never_verified.py"
+    },
+    {
+      "module": "test_verify_pai.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/test_verify_pai.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/agent/test_verify_pai.py"
+    },
+    {
+      "module": "uip_nexus.py",
+      "from": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/Utilities/uip_nexus.py",
+      "to": "_Dev_Resources/STAGING/APPLICATION_FUNCTIONS/reasoning/uip_nexus.py"
+    }
+  ],
+  "no_classification": []
+}

@@ -1,0 +1,61 @@
+{
+  "index_version": "2.0",
+  "generated": "2026-03-11T00:00:00Z",
+  "generator": "Dev Tooling Migration \u2014 canonical rebuild",
+  "total_destructive_tools": 3,
+  "policy_reference": "Tool_Index/Dev_Tooling_Policies.md \u00a73",
+  "warning": "Execution of any tool in this list requires explicit confirmation and pre-execution scope review.",
+  "tools": [
+    {
+      "tool_name": "triage",
+      "script_path": "Repo_Tools/Repo_Audit/triage.py",
+      "classification": "Repo_Audit",
+      "mutation_scope": "file_relocation \u2014 moves modules from STAGING/APPLICATION_FUNCTIONS/ to Blueprints reasoning/utils directories",
+      "capabilities_involved": [
+        "file_relocation"
+      ],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "_Reports/triage_report.json",
+        "_Reports/triage_summary.md"
+      ],
+      "safety_notes": "Always run with dry-run first. Confirm SOURCE_DIR and DEST dirs. Only staging modules are targeted \u2014 do not point at runtime dirs.",
+      "confirmation_required": true,
+      "dry_run_available": false
+    },
+    {
+      "tool_name": "facade_rewrite_pass",
+      "script_path": "Repo_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+      "classification": "Dependency_Analysis",
+      "mutation_scope": "source_file_rewrite \u2014 rewrites import statements in-place in any .py file targeted by the rewrite table",
+      "capabilities_involved": [
+        "source_file_rewrite"
+      ],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "ARCHON_RUNTIME_ANALYSIS/rewrite_report.json"
+      ],
+      "safety_notes": "Fail-closed by design. Run --dry-run and verify ALL diffs before --live pass. Only AUTO_REPAIRABLE violations are touched. Preconditions must pass or tool aborts.",
+      "confirmation_required": true,
+      "dry_run_available": true
+    },
+    {
+      "tool_name": "reorganize",
+      "script_path": "Repo_Tools/Migration/reorganize.py",
+      "classification": "Migration",
+      "mutation_scope": "file_relocation \u2014 moves modules between categorical subdirectories under _Dev_Resources/STAGING/APPLICATION_FUNCTIONS/",
+      "capabilities_involved": [
+        "categorical_file_relocation",
+        "staging_reorganization",
+        "move_only_pass"
+      ],
+      "produces_artifact": true,
+      "artifact_paths": [
+        "Tools/reorganize_report.json"
+      ],
+      "safety_notes": "Move-only, no code modifications. Verify module_packets.json categorization is correct before running. Target directories must exist.",
+      "confirmation_required": true,
+      "dry_run_available": false
+    }
+  ]
+}

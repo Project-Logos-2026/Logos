@@ -1,0 +1,696 @@
+{
+  "index_version": "2.0",
+  "generated": "2026-03-11T00:00:00Z",
+  "generator": "Dev Tooling Migration \u2014 canonical rebuild",
+  "canonical_root": "/workspaces/Logos/_Dev_Resources/_Dev_Scripts/Repo_Tools",
+  "total_capabilities": 83,
+  "total_tools": 26,
+  "category_summary": {
+    "Repo_Audit": {
+      "tools": [
+        "Import_Linter",
+        "triage",
+        "scanner",
+        "repo_structure_export"
+      ],
+      "destructive_count": 1,
+      "artifact_producing_count": 2
+    },
+    "Static_Analysis": {
+      "tools": [
+        "ast_parser",
+        "classifier",
+        "drac_indexer",
+        "runtime_analysis",
+        "semantic_extractor",
+        "static_ast_analysis",
+        "packet_discovery",
+        "generate_symbol_import_index"
+      ],
+      "destructive_count": 0,
+      "artifact_producing_count": 5
+    },
+    "Dependency_Analysis": {
+      "tools": [
+        "cluster_analysis",
+        "facade_rewrite_pass",
+        "facade_synthesis",
+        "generate_deep_import_violations"
+      ],
+      "destructive_count": 1,
+      "artifact_producing_count": 4
+    },
+    "Code_Extraction": {
+      "tools": [
+        "extract",
+        "legacy_extract",
+        "fbc_registry"
+      ],
+      "destructive_count": 0,
+      "artifact_producing_count": 3
+    },
+    "Migration": {
+      "tools": [
+        "reorganize"
+      ],
+      "destructive_count": 1,
+      "artifact_producing_count": 1
+    },
+    "Report_Generation": {
+      "tools": [
+        "pipeline",
+        "registry_writer"
+      ],
+      "destructive_count": 0,
+      "artifact_producing_count": 2
+    },
+    "Dev_Utilities": {
+      "tools": [
+        "__init__",
+        "conftest",
+        "test_import_base_reasoning_registry",
+        "python_file_list"
+      ],
+      "destructive_count": 0,
+      "artifact_producing_count": 0
+    }
+  },
+  "capability_to_tools": {
+    "import_violation_scan": [
+      {
+        "tool_name": "Import_Linter",
+        "script_path": "Repo_Tools/Repo_Audit/Import_Linter.py",
+        "classification": "Repo_Audit"
+      }
+    ],
+    "namespace_enforcement": [
+      {
+        "tool_name": "Import_Linter",
+        "script_path": "Repo_Tools/Repo_Audit/Import_Linter.py",
+        "classification": "Repo_Audit"
+      }
+    ],
+    "prohibited_pattern_detection": [
+      {
+        "tool_name": "Import_Linter",
+        "script_path": "Repo_Tools/Repo_Audit/Import_Linter.py",
+        "classification": "Repo_Audit"
+      }
+    ],
+    "module_classification": [
+      {
+        "tool_name": "triage",
+        "script_path": "Repo_Tools/Repo_Audit/triage.py",
+        "classification": "Repo_Audit"
+      }
+    ],
+    "staging_triage": [
+      {
+        "tool_name": "triage",
+        "script_path": "Repo_Tools/Repo_Audit/triage.py",
+        "classification": "Repo_Audit"
+      }
+    ],
+    "deduplication": [
+      {
+        "tool_name": "triage",
+        "script_path": "Repo_Tools/Repo_Audit/triage.py",
+        "classification": "Repo_Audit"
+      }
+    ],
+    "file_relocation": [
+      {
+        "tool_name": "triage",
+        "script_path": "Repo_Tools/Repo_Audit/triage.py",
+        "classification": "Repo_Audit"
+      }
+    ],
+    "json_report_generation": [
+      {
+        "tool_name": "triage",
+        "script_path": "Repo_Tools/Repo_Audit/triage.py",
+        "classification": "Repo_Audit"
+      },
+      {
+        "tool_name": "static_ast_analysis",
+        "script_path": "Repo_Tools/Static_Analysis/static_ast_analysis.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "markdown_summary": [
+      {
+        "tool_name": "triage",
+        "script_path": "Repo_Tools/Repo_Audit/triage.py",
+        "classification": "Repo_Audit"
+      }
+    ],
+    "python_file_discovery": [
+      {
+        "tool_name": "scanner",
+        "script_path": "Repo_Tools/Repo_Audit/scanner.py",
+        "classification": "Repo_Audit"
+      }
+    ],
+    "recursive_scan": [
+      {
+        "tool_name": "scanner",
+        "script_path": "Repo_Tools/Repo_Audit/scanner.py",
+        "classification": "Repo_Audit"
+      }
+    ],
+    "ignore_filter": [
+      {
+        "tool_name": "scanner",
+        "script_path": "Repo_Tools/Repo_Audit/scanner.py",
+        "classification": "Repo_Audit"
+      }
+    ],
+    "directory_tree_export": [
+      {
+        "tool_name": "repo_structure_export",
+        "script_path": "Repo_Tools/Repo_Audit/repo_structure_export.py",
+        "classification": "Repo_Audit"
+      }
+    ],
+    "python_file_indexing": [
+      {
+        "tool_name": "repo_structure_export",
+        "script_path": "Repo_Tools/Repo_Audit/repo_structure_export.py",
+        "classification": "Repo_Audit"
+      }
+    ],
+    "import_statement_extraction": [
+      {
+        "tool_name": "repo_structure_export",
+        "script_path": "Repo_Tools/Repo_Audit/repo_structure_export.py",
+        "classification": "Repo_Audit"
+      }
+    ],
+    "json_artifact_generation": [
+      {
+        "tool_name": "repo_structure_export",
+        "script_path": "Repo_Tools/Repo_Audit/repo_structure_export.py",
+        "classification": "Repo_Audit"
+      },
+      {
+        "tool_name": "drac_indexer",
+        "script_path": "Repo_Tools/Static_Analysis/drac_indexer.py",
+        "classification": "Static_Analysis"
+      },
+      {
+        "tool_name": "runtime_analysis",
+        "script_path": "Repo_Tools/Static_Analysis/runtime_analysis.py",
+        "classification": "Static_Analysis"
+      },
+      {
+        "tool_name": "packet_discovery",
+        "script_path": "Repo_Tools/Static_Analysis/packet_discovery.py",
+        "classification": "Static_Analysis"
+      },
+      {
+        "tool_name": "generate_symbol_import_index",
+        "script_path": "Repo_Tools/Static_Analysis/generate_symbol_import_index.py",
+        "classification": "Static_Analysis"
+      },
+      {
+        "tool_name": "facade_synthesis",
+        "script_path": "Repo_Tools/Dependency_Analysis/facade_synthesis.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "function_extraction": [
+      {
+        "tool_name": "ast_parser",
+        "script_path": "Repo_Tools/Static_Analysis/ast_parser.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "docstring_extraction": [
+      {
+        "tool_name": "ast_parser",
+        "script_path": "Repo_Tools/Static_Analysis/ast_parser.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "signature_extraction": [
+      {
+        "tool_name": "ast_parser",
+        "script_path": "Repo_Tools/Static_Analysis/ast_parser.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "import_extraction": [
+      {
+        "tool_name": "ast_parser",
+        "script_path": "Repo_Tools/Static_Analysis/ast_parser.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "ast_traversal": [
+      {
+        "tool_name": "ast_parser",
+        "script_path": "Repo_Tools/Static_Analysis/ast_parser.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "function_classification": [
+      {
+        "tool_name": "classifier",
+        "script_path": "Repo_Tools/Static_Analysis/classifier.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "drac_af_categorization": [
+      {
+        "tool_name": "classifier",
+        "script_path": "Repo_Tools/Static_Analysis/classifier.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "keyword_signal_matching": [
+      {
+        "tool_name": "classifier",
+        "script_path": "Repo_Tools/Static_Analysis/classifier.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "drac_af_master_index_build": [
+      {
+        "tool_name": "drac_indexer",
+        "script_path": "Repo_Tools/Static_Analysis/drac_indexer.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "cluster_index_generation": [
+      {
+        "tool_name": "drac_indexer",
+        "script_path": "Repo_Tools/Static_Analysis/drac_indexer.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "runtime_role_assignment": [
+      {
+        "tool_name": "drac_indexer",
+        "script_path": "Repo_Tools/Static_Analysis/drac_indexer.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "runtime_topology_analysis": [
+      {
+        "tool_name": "runtime_analysis",
+        "script_path": "Repo_Tools/Static_Analysis/runtime_analysis.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "import_surface_mapping": [
+      {
+        "tool_name": "runtime_analysis",
+        "script_path": "Repo_Tools/Static_Analysis/runtime_analysis.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "semantic_signal_extraction": [
+      {
+        "tool_name": "semantic_extractor",
+        "script_path": "Repo_Tools/Static_Analysis/semantic_extractor.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "arp_csp_mtp_scoring": [
+      {
+        "tool_name": "semantic_extractor",
+        "script_path": "Repo_Tools/Static_Analysis/semantic_extractor.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "function_semantic_labeling": [
+      {
+        "tool_name": "semantic_extractor",
+        "script_path": "Repo_Tools/Static_Analysis/semantic_extractor.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "import_graph_extraction": [
+      {
+        "tool_name": "static_ast_analysis",
+        "script_path": "Repo_Tools/Static_Analysis/static_ast_analysis.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "module_path_mapping": [
+      {
+        "tool_name": "static_ast_analysis",
+        "script_path": "Repo_Tools/Static_Analysis/static_ast_analysis.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "layer_classification": [
+      {
+        "tool_name": "static_ast_analysis",
+        "script_path": "Repo_Tools/Static_Analysis/static_ast_analysis.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "import_dependency_graph_build": [
+      {
+        "tool_name": "packet_discovery",
+        "script_path": "Repo_Tools/Static_Analysis/packet_discovery.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "scc_detection": [
+      {
+        "tool_name": "packet_discovery",
+        "script_path": "Repo_Tools/Static_Analysis/packet_discovery.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "packet_classification": [
+      {
+        "tool_name": "packet_discovery",
+        "script_path": "Repo_Tools/Static_Analysis/packet_discovery.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "dot_export": [
+      {
+        "tool_name": "packet_discovery",
+        "script_path": "Repo_Tools/Static_Analysis/packet_discovery.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "symbol_level_import_extraction": [
+      {
+        "tool_name": "generate_symbol_import_index",
+        "script_path": "Repo_Tools/Static_Analysis/generate_symbol_import_index.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "repo_wide_ast_audit": [
+      {
+        "tool_name": "generate_symbol_import_index",
+        "script_path": "Repo_Tools/Static_Analysis/generate_symbol_import_index.py",
+        "classification": "Static_Analysis"
+      }
+    ],
+    "community_detection": [
+      {
+        "tool_name": "cluster_analysis",
+        "script_path": "Repo_Tools/Dependency_Analysis/cluster_analysis.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "scc_analysis": [
+      {
+        "tool_name": "cluster_analysis",
+        "script_path": "Repo_Tools/Dependency_Analysis/cluster_analysis.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "betweenness_centrality": [
+      {
+        "tool_name": "cluster_analysis",
+        "script_path": "Repo_Tools/Dependency_Analysis/cluster_analysis.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "cluster_boundary_analysis": [
+      {
+        "tool_name": "cluster_analysis",
+        "script_path": "Repo_Tools/Dependency_Analysis/cluster_analysis.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "facade_candidate_identification": [
+      {
+        "tool_name": "cluster_analysis",
+        "script_path": "Repo_Tools/Dependency_Analysis/cluster_analysis.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "repair_feasibility_assessment": [
+      {
+        "tool_name": "cluster_analysis",
+        "script_path": "Repo_Tools/Dependency_Analysis/cluster_analysis.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "facade_import_substitution": [
+      {
+        "tool_name": "facade_rewrite_pass",
+        "script_path": "Repo_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "ast_verified_dry_run": [
+      {
+        "tool_name": "facade_rewrite_pass",
+        "script_path": "Repo_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "source_file_rewrite": [
+      {
+        "tool_name": "facade_rewrite_pass",
+        "script_path": "Repo_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "diff_generation": [
+      {
+        "tool_name": "facade_rewrite_pass",
+        "script_path": "Repo_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "failure_reporting": [
+      {
+        "tool_name": "facade_rewrite_pass",
+        "script_path": "Repo_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "canonical_facade_derivation": [
+      {
+        "tool_name": "facade_synthesis",
+        "script_path": "Repo_Tools/Dependency_Analysis/facade_synthesis.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "rewrite_mapping_generation": [
+      {
+        "tool_name": "facade_synthesis",
+        "script_path": "Repo_Tools/Dependency_Analysis/facade_synthesis.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "deep_import_violation_scan": [
+      {
+        "tool_name": "generate_deep_import_violations",
+        "script_path": "Repo_Tools/Dependency_Analysis/generate_deep_import_violations.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "forbidden_prefix_detection": [
+      {
+        "tool_name": "generate_deep_import_violations",
+        "script_path": "Repo_Tools/Dependency_Analysis/generate_deep_import_violations.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "json_violation_dataset_generation": [
+      {
+        "tool_name": "generate_deep_import_violations",
+        "script_path": "Repo_Tools/Dependency_Analysis/generate_deep_import_violations.py",
+        "classification": "Dependency_Analysis"
+      }
+    ],
+    "application_function_extraction": [
+      {
+        "tool_name": "extract",
+        "script_path": "Repo_Tools/Code_Extraction/extract.py",
+        "classification": "Code_Extraction"
+      }
+    ],
+    "semantic_heuristic_analysis": [
+      {
+        "tool_name": "extract",
+        "script_path": "Repo_Tools/Code_Extraction/extract.py",
+        "classification": "Code_Extraction"
+      }
+    ],
+    "function_copy_pipeline": [
+      {
+        "tool_name": "extract",
+        "script_path": "Repo_Tools/Code_Extraction/extract.py",
+        "classification": "Code_Extraction"
+      },
+      {
+        "tool_name": "legacy_extract",
+        "script_path": "Repo_Tools/Code_Extraction/legacy_extract.py",
+        "classification": "Code_Extraction"
+      }
+    ],
+    "legacy_function_extraction": [
+      {
+        "tool_name": "legacy_extract",
+        "script_path": "Repo_Tools/Code_Extraction/legacy_extract.py",
+        "classification": "Code_Extraction"
+      }
+    ],
+    "deep_semantic_analysis": [
+      {
+        "tool_name": "legacy_extract",
+        "script_path": "Repo_Tools/Code_Extraction/legacy_extract.py",
+        "classification": "Code_Extraction"
+      }
+    ],
+    "fbc_master_registry_build": [
+      {
+        "tool_name": "fbc_registry",
+        "script_path": "Repo_Tools/Code_Extraction/fbc_registry.py",
+        "classification": "Code_Extraction"
+      }
+    ],
+    "fbc_taxonomy_generation": [
+      {
+        "tool_name": "fbc_registry",
+        "script_path": "Repo_Tools/Code_Extraction/fbc_registry.py",
+        "classification": "Code_Extraction"
+      }
+    ],
+    "tag_dictionary_generation": [
+      {
+        "tool_name": "fbc_registry",
+        "script_path": "Repo_Tools/Code_Extraction/fbc_registry.py",
+        "classification": "Code_Extraction"
+      }
+    ],
+    "compatibility_matrix_generation": [
+      {
+        "tool_name": "fbc_registry",
+        "script_path": "Repo_Tools/Code_Extraction/fbc_registry.py",
+        "classification": "Code_Extraction"
+      }
+    ],
+    "modular_library_manifest": [
+      {
+        "tool_name": "fbc_registry",
+        "script_path": "Repo_Tools/Code_Extraction/fbc_registry.py",
+        "classification": "Code_Extraction"
+      }
+    ],
+    "categorical_file_relocation": [
+      {
+        "tool_name": "reorganize",
+        "script_path": "Repo_Tools/Migration/reorganize.py",
+        "classification": "Migration"
+      }
+    ],
+    "staging_reorganization": [
+      {
+        "tool_name": "reorganize",
+        "script_path": "Repo_Tools/Migration/reorganize.py",
+        "classification": "Migration"
+      }
+    ],
+    "move_only_pass": [
+      {
+        "tool_name": "reorganize",
+        "script_path": "Repo_Tools/Migration/reorganize.py",
+        "classification": "Migration"
+      }
+    ],
+    "af_extraction_orchestration": [
+      {
+        "tool_name": "pipeline",
+        "script_path": "Repo_Tools/Report_Generation/pipeline.py",
+        "classification": "Report_Generation"
+      }
+    ],
+    "pipeline_coordination": [
+      {
+        "tool_name": "pipeline",
+        "script_path": "Repo_Tools/Report_Generation/pipeline.py",
+        "classification": "Report_Generation"
+      }
+    ],
+    "registry_population": [
+      {
+        "tool_name": "pipeline",
+        "script_path": "Repo_Tools/Report_Generation/pipeline.py",
+        "classification": "Report_Generation"
+      }
+    ],
+    "af_registry_entry_write": [
+      {
+        "tool_name": "registry_writer",
+        "script_path": "Repo_Tools/Report_Generation/registry_writer.py",
+        "classification": "Report_Generation"
+      }
+    ],
+    "deterministic_af_id_assignment": [
+      {
+        "tool_name": "registry_writer",
+        "script_path": "Repo_Tools/Report_Generation/registry_writer.py",
+        "classification": "Report_Generation"
+      }
+    ],
+    "json_registry_generation": [
+      {
+        "tool_name": "registry_writer",
+        "script_path": "Repo_Tools/Report_Generation/registry_writer.py",
+        "classification": "Report_Generation"
+      }
+    ],
+    "package_namespace_declaration": [
+      {
+        "tool_name": "__init__",
+        "script_path": "Repo_Tools/Dev_Utilities/__init__.py",
+        "classification": "Dev_Utilities"
+      }
+    ],
+    "pytest_fixture_configuration": [
+      {
+        "tool_name": "conftest",
+        "script_path": "Repo_Tools/Dev_Utilities/conftest.py",
+        "classification": "Dev_Utilities"
+      }
+    ],
+    "test_session_setup": [
+      {
+        "tool_name": "conftest",
+        "script_path": "Repo_Tools/Dev_Utilities/conftest.py",
+        "classification": "Dev_Utilities"
+      }
+    ],
+    "import_smoke_test": [
+      {
+        "tool_name": "test_import_base_reasoning_registry",
+        "script_path": "Repo_Tools/Dev_Utilities/test_import_base_reasoning_registry.py",
+        "classification": "Dev_Utilities"
+      }
+    ],
+    "base_reasoning_registry_validation": [
+      {
+        "tool_name": "test_import_base_reasoning_registry",
+        "script_path": "Repo_Tools/Dev_Utilities/test_import_base_reasoning_registry.py",
+        "classification": "Dev_Utilities"
+      }
+    ],
+    "python_file_index_provision": [
+      {
+        "tool_name": "python_file_list",
+        "script_path": "Repo_Tools/Dev_Utilities/python_file_list.py",
+        "classification": "Dev_Utilities"
+      }
+    ],
+    "static_analysis_input": [
+      {
+        "tool_name": "python_file_list",
+        "script_path": "Repo_Tools/Dev_Utilities/python_file_list.py",
+        "classification": "Dev_Utilities"
+      }
+    ]
+  }
+}

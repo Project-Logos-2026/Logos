@@ -107,7 +107,7 @@ __all__ = ["AuditLogger", "CompileQuotaGuard", "CoreBindingValidator", "Creature
 
 # ── Additions from Boundary Repair Pass ──────────────────────────────────────
 try:
-    from LOGOS_SYSTEM.Governance.exceptions import GovernanceDenied
+    from LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT.Compatibility_Shims.exceptions import GovernanceDenied
 except Exception:  # noqa: BLE001
     GovernanceDenied = None  # type: ignore[assignment]
 

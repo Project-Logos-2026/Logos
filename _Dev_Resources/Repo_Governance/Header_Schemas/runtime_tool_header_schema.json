@@ -1,0 +1,19 @@
+{
+  "schema_name": "runtime_tool_header",
+  "schema_version": "1.0",
+  "applies_to": "Runtime_Tools",
+  "required_fields": [
+    "tool_name",
+    "tool_category",
+    "tool_subcategory",
+    "purpose",
+    "authoritative_scope",
+    "mutation_capability",
+    "destructive_capability",
+    "requires_repo_context",
+    "cli_entrypoint",
+    "output_artifacts",
+    "dependencies",
+    "safety_classification"
+  ]
+}

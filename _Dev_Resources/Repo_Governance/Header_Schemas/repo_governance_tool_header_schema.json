@@ -1,0 +1,16 @@
+{
+  "schema_name": "repo_governance_tool_header",
+  "schema_version": "1.0",
+  "applies_to": "Repo_Governance_Tools",
+  "required_fields": [
+    "tool_name",
+    "governance_scope",
+    "policy_dependencies",
+    "purpose",
+    "mutation_capability",
+    "destructive_capability",
+    "requires_repo_context",
+    "cli_entrypoint",
+    "output_artifacts"
+  ]
+}
