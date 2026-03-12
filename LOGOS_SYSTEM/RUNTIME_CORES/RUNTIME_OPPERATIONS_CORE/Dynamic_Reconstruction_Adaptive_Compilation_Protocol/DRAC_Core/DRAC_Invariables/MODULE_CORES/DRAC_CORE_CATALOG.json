@@ -1,0 +1,741 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_type": "DRAC_CORE_CATALOG",
+  "generated_at": "2026-03-12T00:00:00Z",
+  "note": "Incomplete configurations by design. Each DRAC Core is a stable axiom+context arrangement that combines with APPLICATION_FUNCTIONS to form a full runtime instantiation. Entries reflect all EMBEDDED SEMANTIC_CONTEXTS against the ACTIVE SEMANTIC_AXIOM inventory. RETIRED and ARCHIVED_ORCHESTRATION contexts are excluded.",
+  "sources": {
+    "semantic_axioms_dir": "DRAC_Invariables/SEMANTIC_AXIOMS/",
+    "semantic_contexts_dir": "DRAC_Invariables/SEMANTIC_CONTEXTS/",
+    "af_master_index": "DRAC_Invariables/APPLICATION_FUNCTIONS/af_master_index.json",
+    "fbc_registry": "DRAC_Invariables/MODULAR_LIBRARY/DRAC_Registries/fbc_master_registry.json",
+    "base_core_config": "DRAC_Invariables/CORE_CONFIGURATIONS/CoreConfig_0001.json"
+  },
+  "governance_constraints": {
+    "config_source": "CoreConfig_0001",
+    "axiom_set_id": "Primary_Logical_Axiom_Set",
+    "fail_closed": true,
+    "no_semantic_creation": true,
+    "no_direct_smp_mutation": true,
+    "eligible_context_statuses": ["EMBEDDED"],
+    "ineligible_statuses": ["RETIRED", "ARCHIVED_ORCHESTRATION"]
+  },
+
+  "axiom_module_inventory": [
+    {
+      "fbc_id": "FBC_0007",
+      "module": "Invariant_Constraints.py",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "enforce_invariants",
+      "role_in_cores": "REQUIRED_UNIVERSAL",
+      "compatible_clusters": ["agent_runtime", "support_services", "validation_guard"],
+      "note": "Present in every valid DRAC Core without exception."
+    },
+    {
+      "fbc_id": "FBC_0014",
+      "module": "Semantic_Capability_Gate.py",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "admit_capability",
+      "role_in_cores": "REQUIRED_UNIVERSAL",
+      "compatible_clusters": ["agent_runtime", "support_services", "validation_guard"],
+      "note": "Present in every valid DRAC Core without exception."
+    },
+    {
+      "fbc_id": "FBC_0011",
+      "module": "Runtime_Context_Initializer.py",
+      "taxonomy_class": "semantic_core",
+      "entrypoint": "run",
+      "role_in_cores": "CONTEXT_SELECTIVE",
+      "compatible_clusters": ["agent_runtime", "planning", "semantic_interpretation", "support_services", "tool_interface"],
+      "note": "Required by SCX-002 (Bootstrap_Runtime_Context). Called as initialize_runtime_context()."
+    },
+    {
+      "fbc_id": "FBC_0013",
+      "module": "Runtime_Mode_Controller.py",
+      "taxonomy_class": "semantic_core",
+      "entrypoint": "run",
+      "role_in_cores": "CONTEXT_SELECTIVE",
+      "compatible_clusters": ["agent_runtime", "planning", "semantic_interpretation", "support_services", "tool_interface"],
+      "note": "Required by SCX-002 and SCX-004. Called as set_runtime_mode()."
+    },
+    {
+      "fbc_id": "FBC_0016",
+      "module": "Trinitarian_Alignment_Core.py",
+      "taxonomy_class": "inference_core",
+      "entrypoint": "run",
+      "role_in_cores": "CONTEXT_SELECTIVE",
+      "compatible_clusters": ["agent_runtime", "numerical_compute", "planning", "reasoning_inference", "support_services"],
+      "note": "Required by SCX-005 (Trinitarian_Optimization_Context). Called as score_candidates()."
+    },
+    {
+      "fbc_id": "FBC_0001",
+      "module": "3PDN_Constraint.py",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "compatible_clusters": ["agent_runtime", "support_services", "validation_guard"]
+    },
+    {
+      "fbc_id": "FBC_0002",
+      "module": "3PDN_Validator.py",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "compatible_clusters": ["agent_runtime", "support_services", "validation_guard"]
+    },
+    {
+      "fbc_id": "FBC_0003",
+      "module": "Agent_Activation_Gate.py",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "compatible_clusters": ["agent_runtime", "support_services", "validation_guard"]
+    },
+    {
+      "fbc_id": "FBC_0004",
+      "module": "Evidence_Chain.py",
+      "taxonomy_class": "inference_core",
+      "entrypoint": "verify_evidence_chain",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "compatible_clusters": ["agent_runtime", "numerical_compute", "planning", "reasoning_inference", "support_services"]
+    },
+    {
+      "fbc_id": "FBC_0005",
+      "module": "Global_Bijective_Recursion_Core.py",
+      "taxonomy_class": "inference_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "compatible_clusters": ["agent_runtime", "numerical_compute", "planning", "reasoning_inference", "support_services"]
+    },
+    {
+      "fbc_id": "FBC_0006",
+      "module": "Hypostatic_ID_Validator.py",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "compatible_clusters": ["agent_runtime", "support_services", "validation_guard"]
+    },
+    {
+      "fbc_id": "FBC_0008",
+      "module": "Monolith_Runtime.py",
+      "taxonomy_class": "protocol_core",
+      "entrypoints": ["load_contract", "load_canonical_module", "invoke"],
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "compatible_clusters": [],
+      "note": "No AF cluster bindings. Invoked by Canonical_System_Bootstrap_Pipeline only."
+    },
+    {
+      "fbc_id": "FBC_0009",
+      "module": "Necessary_Existence_Core.py",
+      "taxonomy_class": "inference_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "compatible_clusters": ["agent_runtime", "numerical_compute", "planning", "reasoning_inference", "support_services"]
+    },
+    {
+      "fbc_id": "FBC_0010",
+      "module": "Read_Only_Agent_Interface.py",
+      "taxonomy_class": "agent_orchestration_core",
+      "entrypoint": "assert_read_only",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "compatible_clusters": ["agent_runtime", "memory_access", "planning", "support_services"]
+    },
+    {
+      "fbc_id": "FBC_0012",
+      "module": "Runtime_Input_Sanitizer.py",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "compatible_clusters": ["agent_runtime", "support_services", "validation_guard"]
+    },
+    {
+      "fbc_id": "FBC_0015",
+      "module": "Temporal_Supersession.py",
+      "taxonomy_class": "inference_core",
+      "entrypoint": "supersede",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "compatible_clusters": ["agent_runtime", "numerical_compute", "planning", "reasoning_inference", "support_services"]
+    },
+    {
+      "fbc_id": "FBC_0017",
+      "module": "Trinitarian_Logic_Core.py",
+      "taxonomy_class": "inference_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "compatible_clusters": ["agent_runtime", "numerical_compute", "planning", "reasoning_inference", "support_services"]
+    },
+    {
+      "fbc_id": "FBC_0018",
+      "module": "UWM_Ingestion.py",
+      "taxonomy_class": "protocol_core",
+      "entrypoint": "ingest",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "compatible_clusters": [],
+      "note": "No AF cluster bindings. Protocol-level ingestion only."
+    },
+    {
+      "fbc_id": "FBC_0019",
+      "module": "UWM_Validator.py",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "enforce_phase_5",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "compatible_clusters": ["agent_runtime", "support_services", "validation_guard"]
+    }
+  ],
+
+  "context_module_inventory": [
+    {
+      "scx_id": "SCX-001",
+      "fbc_id": "FBC_0020",
+      "module": "Agent_Policy_Decision_Context.py",
+      "family_id": "FAMILY_036",
+      "role": "AGENT_POLICY_DECISION_CONTEXT",
+      "spine_bindings": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "required_axiom_fbcs": ["FBC_0007", "FBC_0014"],
+      "axiom_calls": ["enforce_invariants", "validate_capabilities"],
+      "entrypoint": "run",
+      "code_block": "def run(context: dict) -> dict:\n    enforce_invariants(context)\n    validate_capabilities(context)\n    return context",
+      "compatible_clusters": ["agent_runtime", "memory_access", "planning", "support_services"],
+      "contracts": ["Invariant_Constraint_Contract", "Semantic_Capability_Admission_Contract"],
+      "status": "EMBEDDED"
+    },
+    {
+      "scx_id": "SCX-002",
+      "fbc_id": "FBC_0021",
+      "module": "Bootstrap_Runtime_Context.py",
+      "family_id": "FAMILY_003",
+      "role": "BOOTSTRAP_RUNTIME_CONTEXT",
+      "spine_bindings": [
+        "PASSIVE_RUNTIME_INITIALIZATION"
+      ],
+      "required_axiom_fbcs": ["FBC_0007", "FBC_0014", "FBC_0011", "FBC_0013"],
+      "axiom_calls": ["enforce_invariants", "validate_capabilities", "initialize_runtime_context", "set_runtime_mode"],
+      "entrypoint": "run",
+      "code_block": "def run(context: dict) -> dict:\n    enforce_invariants(context)\n    validate_capabilities(context)\n    initialized = initialize_runtime_context(context)\n    return set_runtime_mode(initialized)",
+      "compatible_clusters": ["agent_runtime", "memory_access", "planning", "semantic_interpretation", "support_services", "tool_interface"],
+      "contracts": ["Invariant_Constraint_Contract", "Phase_5_Validation_Contract"],
+      "status": "EMBEDDED"
+    },
+    {
+      "scx_id": "SCX-003",
+      "fbc_id": "FBC_0022",
+      "module": "Privation_Handling_Context.py",
+      "family_id": "FAMILY_037",
+      "role": "PRIVATION_HANDLING_CONTEXT",
+      "spine_bindings": [
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING",
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "required_axiom_fbcs": ["FBC_0007", "FBC_0014"],
+      "axiom_calls": ["enforce_invariants", "validate_capabilities"],
+      "entrypoint": "run",
+      "code_block": "def run(context: dict) -> dict:\n    enforce_invariants(context)\n    validate_capabilities(context)\n    return context",
+      "compatible_clusters": ["agent_runtime", "memory_access", "planning", "semantic_interpretation", "support_services", "tool_interface"],
+      "contracts": ["Invariant_Constraint_Contract", "Semantic_Capability_Admission_Contract"],
+      "status": "EMBEDDED"
+    },
+    {
+      "scx_id": "SCX-004",
+      "fbc_id": "FBC_0023",
+      "module": "Runtime_Mode_Context.py",
+      "family_id": "FAMILY_005",
+      "role": "RUNTIME_MODE_CONTEXT",
+      "spine_bindings": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "required_axiom_fbcs": ["FBC_0007", "FBC_0014", "FBC_0013"],
+      "axiom_calls": ["enforce_invariants", "validate_capabilities", "set_runtime_mode"],
+      "entrypoint": "run",
+      "code_block": "def run(context: dict) -> dict:\n    enforce_invariants(context)\n    validate_capabilities(context)\n    return set_runtime_mode(context)",
+      "compatible_clusters": ["agent_runtime", "memory_access", "planning", "semantic_interpretation", "support_services", "tool_interface"],
+      "contracts": ["Invariant_Constraint_Contract", "Semantic_Capability_Admission_Contract"],
+      "status": "EMBEDDED"
+    },
+    {
+      "scx_id": "SCX-005",
+      "fbc_id": "FBC_0024",
+      "module": "Trinitarian_Optimization_Context.py",
+      "family_id": "FAMILY_035",
+      "role": "TRINITARIAN_OPTIMIZATION_CONTEXT",
+      "spine_bindings": [
+        "AGENT_ORCHESTRATION_AND_PROTOCOL_BINDING"
+      ],
+      "required_axiom_fbcs": ["FBC_0007", "FBC_0014", "FBC_0016"],
+      "axiom_calls": ["enforce_invariants", "validate_capabilities", "score_candidates"],
+      "entrypoint": "run",
+      "code_block": "def run(context: dict) -> dict:\n    enforce_invariants(context)\n    validate_capabilities(context)\n    return score_candidates(context)",
+      "compatible_clusters": ["agent_runtime", "memory_access", "numerical_compute", "planning", "reasoning_inference", "support_services"],
+      "contracts": ["Semantic_Capability_Admission_Contract", "Invariant_Constraint_Contract"],
+      "status": "EMBEDDED"
+    }
+  ],
+
+  "excluded_contexts": [
+    {
+      "family_id": "FAMILY_001_04",
+      "status": "RETIRED",
+      "reason": "Pure smoke-test / example orchestration family. No reusable semantic kernel."
+    },
+    {
+      "family_id": "FAMILY_001_38",
+      "status": "ARCHIVED_ORCHESTRATION",
+      "reason": "Consolidated into canonical bootstrap pipeline. Not eligible for semantic embedding."
+    },
+    {
+      "family_id": "FAMILY_001_41",
+      "status": "ARCHIVED_ORCHESTRATION",
+      "reason": "Consolidated into canonical bootstrap pipeline. Not eligible for semantic embedding."
+    },
+    {
+      "family_id": "FAMILY_001_44",
+      "status": "ARCHIVED_ORCHESTRATION",
+      "reason": "Consolidated into canonical bootstrap pipeline. Not eligible for semantic embedding."
+    }
+  ],
+
+  "drac_cores": [
+    {
+      "core_id": "DRAC_CORE_001",
+      "core_name": "Agent_Policy_Kernel",
+      "stability_class": "SINGLE_CONTEXT",
+      "composition_type": "MINIMAL",
+      "semantic_contexts": ["SCX-001"],
+      "required_axiom_set": ["FBC_0007", "FBC_0014"],
+      "axiom_functions": ["enforce_invariants", "validate_capabilities"],
+      "spine_binding_coverage": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "af_clusters_engaged": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "support_services"
+      ],
+      "compatible_af_count": 62,
+      "contracts_implicated": [
+        "Invariant_Constraint_Contract",
+        "Semantic_Capability_Admission_Contract"
+      ],
+      "notes": "Minimum viable policy kernel. Capability and invariant enforcement only. Dual spine binding covers both boot and suspension phases with the smallest possible axiom footprint (2 axioms)."
+    },
+    {
+      "core_id": "DRAC_CORE_002",
+      "core_name": "Bootstrap_Kernel",
+      "stability_class": "SINGLE_CONTEXT",
+      "composition_type": "MINIMAL",
+      "semantic_contexts": ["SCX-002"],
+      "required_axiom_set": ["FBC_0007", "FBC_0014", "FBC_0011", "FBC_0013"],
+      "axiom_functions": [
+        "enforce_invariants",
+        "validate_capabilities",
+        "initialize_runtime_context",
+        "set_runtime_mode"
+      ],
+      "spine_binding_coverage": [
+        "PASSIVE_RUNTIME_INITIALIZATION"
+      ],
+      "af_clusters_engaged": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "compatible_af_count": 70,
+      "contracts_implicated": [
+        "Invariant_Constraint_Contract",
+        "Phase_5_Validation_Contract"
+      ],
+      "notes": "Canonical bootstrap kernel. Highest-coverage single-context core (70 AF modules). Initializes runtime context then sets execution mode. Broadest single-context cluster reach."
+    },
+    {
+      "core_id": "DRAC_CORE_003",
+      "core_name": "Privation_Kernel",
+      "stability_class": "SINGLE_CONTEXT",
+      "composition_type": "MINIMAL",
+      "semantic_contexts": ["SCX-003"],
+      "required_axiom_set": ["FBC_0007", "FBC_0014"],
+      "axiom_functions": ["enforce_invariants", "validate_capabilities"],
+      "spine_binding_coverage": [
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING",
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "af_clusters_engaged": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "compatible_af_count": 70,
+      "contracts_implicated": [
+        "Invariant_Constraint_Contract",
+        "Semantic_Capability_Admission_Contract"
+      ],
+      "notes": "Fail-safe kernel. Governs safe behavior when required conditions are absent or disallowed. Spans both suspension and interaction phases with minimal axiom footprint (2 axioms). Broadest dual-spine single-context core."
+    },
+    {
+      "core_id": "DRAC_CORE_004",
+      "core_name": "Runtime_Mode_Kernel",
+      "stability_class": "SINGLE_CONTEXT",
+      "composition_type": "MINIMAL",
+      "semantic_contexts": ["SCX-004"],
+      "required_axiom_set": ["FBC_0007", "FBC_0014", "FBC_0013"],
+      "axiom_functions": ["enforce_invariants", "validate_capabilities", "set_runtime_mode"],
+      "spine_binding_coverage": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "af_clusters_engaged": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "compatible_af_count": 70,
+      "contracts_implicated": [
+        "Invariant_Constraint_Contract",
+        "Semantic_Capability_Admission_Contract"
+      ],
+      "notes": "Active interaction kernel. Governs runtime mode switching during execution. Single spine binding at the interaction phase. Activates FBC_0013 (Runtime_Mode_Controller) as its distinguishing axiom."
+    },
+    {
+      "core_id": "DRAC_CORE_005",
+      "core_name": "Trinitarian_Optimization_Kernel",
+      "stability_class": "SINGLE_CONTEXT",
+      "composition_type": "MINIMAL",
+      "semantic_contexts": ["SCX-005"],
+      "required_axiom_set": ["FBC_0007", "FBC_0014", "FBC_0016"],
+      "axiom_functions": ["enforce_invariants", "validate_capabilities", "score_candidates"],
+      "spine_binding_coverage": [
+        "AGENT_ORCHESTRATION_AND_PROTOCOL_BINDING"
+      ],
+      "af_clusters_engaged": [
+        "agent_runtime",
+        "memory_access",
+        "numerical_compute",
+        "planning",
+        "reasoning_inference",
+        "support_services"
+      ],
+      "compatible_af_count": 68,
+      "contracts_implicated": [
+        "Semantic_Capability_Admission_Contract",
+        "Invariant_Constraint_Contract"
+      ],
+      "notes": "Triadic candidate scoring kernel. Only single-context core with reasoning_inference and numerical_compute cluster access. Deterministic and side-effect free. Sole occupant of the AGENT_ORCHESTRATION_AND_PROTOCOL_BINDING spine position."
+    },
+    {
+      "core_id": "DRAC_CORE_006",
+      "core_name": "Bootstrap_Policy_CoActive",
+      "stability_class": "DUAL_CONTEXT",
+      "composition_type": "CO_ACTIVE",
+      "semantic_contexts": ["SCX-002", "SCX-001"],
+      "required_axiom_set": ["FBC_0007", "FBC_0014", "FBC_0011", "FBC_0013"],
+      "axiom_functions": [
+        "enforce_invariants",
+        "validate_capabilities",
+        "initialize_runtime_context",
+        "set_runtime_mode"
+      ],
+      "spine_binding_coverage": [
+        "PASSIVE_RUNTIME_INITIALIZATION"
+      ],
+      "af_clusters_engaged": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "compatible_af_count": 70,
+      "contracts_implicated": [
+        "Invariant_Constraint_Contract",
+        "Phase_5_Validation_Contract",
+        "Semantic_Capability_Admission_Contract"
+      ],
+      "notes": "Bootstrap and policy decision running co-actively at the initialization spine. SCX-001 adds governance policy evaluation to the canonical bootstrap at startup. No additional axioms required beyond DRAC_CORE_002."
+    },
+    {
+      "core_id": "DRAC_CORE_007",
+      "core_name": "Suspension_Bridge",
+      "stability_class": "DUAL_CONTEXT",
+      "composition_type": "CO_ACTIVE",
+      "semantic_contexts": ["SCX-001", "SCX-003"],
+      "required_axiom_set": ["FBC_0007", "FBC_0014"],
+      "axiom_functions": ["enforce_invariants", "validate_capabilities"],
+      "spine_binding_coverage": [
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING"
+      ],
+      "af_clusters_engaged": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "compatible_af_count": 70,
+      "contracts_implicated": [
+        "Invariant_Constraint_Contract",
+        "Semantic_Capability_Admission_Contract"
+      ],
+      "notes": "Minimum-axiom dual-context core (2 axioms, 70 AF modules). Policy decision and privation handling co-active during state suspension. Both contexts arrive at the suspension spine from different directions — SCX-001 descends from init, SCX-003 bridges into interaction."
+    },
+    {
+      "core_id": "DRAC_CORE_008",
+      "core_name": "Interaction_Bridge",
+      "stability_class": "DUAL_CONTEXT",
+      "composition_type": "CO_ACTIVE",
+      "semantic_contexts": ["SCX-003", "SCX-004"],
+      "required_axiom_set": ["FBC_0007", "FBC_0014", "FBC_0013"],
+      "axiom_functions": ["enforce_invariants", "validate_capabilities", "set_runtime_mode"],
+      "spine_binding_coverage": [
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "af_clusters_engaged": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "compatible_af_count": 70,
+      "contracts_implicated": [
+        "Invariant_Constraint_Contract",
+        "Semantic_Capability_Admission_Contract"
+      ],
+      "notes": "Co-active at the interaction spine. Privation handling and mode control both active during live interaction. Mode switching can trigger privation checks. SCX-003 bridges from suspension; SCX-004 enforces mode priority."
+    },
+    {
+      "core_id": "DRAC_CORE_009",
+      "core_name": "Boot_To_Interaction_Chain",
+      "stability_class": "DUAL_CONTEXT",
+      "composition_type": "SEQUENTIAL",
+      "semantic_contexts": ["SCX-002", "SCX-004"],
+      "required_axiom_set": ["FBC_0007", "FBC_0014", "FBC_0011", "FBC_0013"],
+      "axiom_functions": [
+        "enforce_invariants",
+        "validate_capabilities",
+        "initialize_runtime_context",
+        "set_runtime_mode"
+      ],
+      "spine_binding_coverage": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "af_clusters_engaged": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "compatible_af_count": 70,
+      "contracts_implicated": [
+        "Invariant_Constraint_Contract",
+        "Phase_5_Validation_Contract",
+        "Semantic_Capability_Admission_Contract"
+      ],
+      "notes": "Sequential two-phase chain: SCX-002 bootstraps the runtime, SCX-004 governs the active interaction phase. No suspension context. Skips PASSIVE_TASK_SUSPENSION spine — suitable for uninterrupted execution paths."
+    },
+    {
+      "core_id": "DRAC_CORE_010",
+      "core_name": "Boot_To_Orchestration_Chain",
+      "stability_class": "DUAL_CONTEXT",
+      "composition_type": "SEQUENTIAL",
+      "semantic_contexts": ["SCX-002", "SCX-005"],
+      "required_axiom_set": ["FBC_0007", "FBC_0014", "FBC_0011", "FBC_0013", "FBC_0016"],
+      "axiom_functions": [
+        "enforce_invariants",
+        "validate_capabilities",
+        "initialize_runtime_context",
+        "set_runtime_mode",
+        "score_candidates"
+      ],
+      "spine_binding_coverage": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "AGENT_ORCHESTRATION_AND_PROTOCOL_BINDING"
+      ],
+      "af_clusters_engaged": [
+        "agent_runtime",
+        "memory_access",
+        "numerical_compute",
+        "planning",
+        "reasoning_inference",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "compatible_af_count": 76,
+      "contracts_implicated": [
+        "Invariant_Constraint_Contract",
+        "Phase_5_Validation_Contract",
+        "Semantic_Capability_Admission_Contract"
+      ],
+      "notes": "Broadest dual-context configuration by cluster coverage (76 of 78 AF modules, 8 clusters). All 5 axiom functions active. Bootstrap feeds directly into Trinitarian candidate evaluation. Unlocks reasoning_inference and numerical_compute clusters not available in init-only or interaction-only cores."
+    },
+    {
+      "core_id": "DRAC_CORE_011",
+      "core_name": "Policy_Suspension_Interaction_Pipeline",
+      "stability_class": "MULTI_CONTEXT",
+      "composition_type": "PIPELINE",
+      "semantic_contexts": ["SCX-001", "SCX-003", "SCX-004"],
+      "required_axiom_set": ["FBC_0007", "FBC_0014", "FBC_0013"],
+      "axiom_functions": ["enforce_invariants", "validate_capabilities", "set_runtime_mode"],
+      "spine_binding_coverage": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING",
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH"
+      ],
+      "af_clusters_engaged": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "compatible_af_count": 70,
+      "contracts_implicated": [
+        "Invariant_Constraint_Contract",
+        "Semantic_Capability_Admission_Contract"
+      ],
+      "notes": "Three-phase pipeline without explicit bootstrap or orchestration. Policy (SCX-001) and privation (SCX-003) govern the init and suspension phases; mode controller (SCX-004) governs resumption into active interaction. Lightweight axiom footprint: 3 axioms covering 3 spine positions."
+    },
+    {
+      "core_id": "DRAC_CORE_012",
+      "core_name": "Active_Runtime_Triad",
+      "stability_class": "MULTI_CONTEXT",
+      "composition_type": "PIPELINE",
+      "semantic_contexts": ["SCX-002", "SCX-004", "SCX-005"],
+      "required_axiom_set": ["FBC_0007", "FBC_0014", "FBC_0011", "FBC_0013", "FBC_0016"],
+      "axiom_functions": [
+        "enforce_invariants",
+        "validate_capabilities",
+        "initialize_runtime_context",
+        "set_runtime_mode",
+        "score_candidates"
+      ],
+      "spine_binding_coverage": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "AGENT_ORCHESTRATION_AND_PROTOCOL_BINDING"
+      ],
+      "af_clusters_engaged": [
+        "agent_runtime",
+        "memory_access",
+        "numerical_compute",
+        "planning",
+        "reasoning_inference",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "compatible_af_count": 76,
+      "contracts_implicated": [
+        "Invariant_Constraint_Contract",
+        "Phase_5_Validation_Contract",
+        "Semantic_Capability_Admission_Contract"
+      ],
+      "notes": "Three-phase active runtime pipeline spanning initialization through orchestration. Covers all lifecycle phases except suspension. Full 5-axiom set active. Maximum cluster coverage (76 AF modules, 8 clusters) without suspension contexts. Preferred configuration for uninterrupted execution with orchestration."
+    },
+    {
+      "core_id": "DRAC_CORE_013",
+      "core_name": "Complete_DRAC_Kernel",
+      "stability_class": "MULTI_CONTEXT",
+      "composition_type": "PIPELINE",
+      "semantic_contexts": ["SCX-001", "SCX-002", "SCX-003", "SCX-004", "SCX-005"],
+      "required_axiom_set": ["FBC_0007", "FBC_0014", "FBC_0011", "FBC_0013", "FBC_0016"],
+      "axiom_functions": [
+        "enforce_invariants",
+        "validate_capabilities",
+        "initialize_runtime_context",
+        "set_runtime_mode",
+        "score_candidates"
+      ],
+      "spine_binding_coverage": [
+        "PASSIVE_RUNTIME_INITIALIZATION",
+        "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING",
+        "ACTIVE_INTERACTION_PRIORITY_SWITCH",
+        "AGENT_ORCHESTRATION_AND_PROTOCOL_BINDING"
+      ],
+      "af_clusters_engaged": [
+        "agent_runtime",
+        "memory_access",
+        "numerical_compute",
+        "planning",
+        "reasoning_inference",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "compatible_af_count": 76,
+      "contracts_implicated": [
+        "Invariant_Constraint_Contract",
+        "Phase_5_Validation_Contract",
+        "Semantic_Capability_Admission_Contract"
+      ],
+      "notes": "Complete DRAC kernel. All 5 EMBEDDED contexts active across all 4 spine binding positions. Full lifecycle coverage: initialization, suspension, interaction, and orchestration. Maximum cluster reach at 76 of 78 AF modules (8 of 10 clusters). DRAC_CORE_013 is the canonical reference configuration for full instantiation."
+    }
+  ],
+
+  "summary": {
+    "total_drac_cores": 13,
+    "by_stability_class": {
+      "SINGLE_CONTEXT": 5,
+      "DUAL_CONTEXT": 5,
+      "MULTI_CONTEXT": 3
+    },
+    "by_composition_type": {
+      "MINIMAL": 5,
+      "CO_ACTIVE": 3,
+      "SEQUENTIAL": 2,
+      "PIPELINE": 3
+    },
+    "axiom_footprint_range": {
+      "minimum_axioms": 2,
+      "maximum_axioms": 5,
+      "universal_required": ["FBC_0007", "FBC_0014"],
+      "context_selective": ["FBC_0011", "FBC_0013", "FBC_0016"],
+      "optional_composable_count": 14
+    },
+    "af_coverage_range": {
+      "minimum_compatible_af_count": 62,
+      "maximum_compatible_af_count": 76,
+      "total_af_modules": 78,
+      "total_af_clusters": 10,
+      "clusters_reachable_by_cores": [
+        "agent_runtime",
+        "memory_access",
+        "numerical_compute",
+        "planning",
+        "reasoning_inference",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "clusters_not_directly_engaged": ["validation_guard", "learning"],
+      "note": "validation_guard (CLUSTER_010, AF_0075) and learning (CLUSTER_002, AF_0071) are not directly covered by any EMBEDDED context's cluster binding. These clusters are reached externally via safety gate and utility paths."
+    },
+    "spine_binding_positions": {
+      "PASSIVE_RUNTIME_INITIALIZATION": ["SCX-001", "SCX-002"],
+      "PASSIVE_TASK_SUSPENSION_AND_TEMPORARY_STATE_LOCKING": ["SCX-001", "SCX-003"],
+      "ACTIVE_INTERACTION_PRIORITY_SWITCH": ["SCX-003", "SCX-004"],
+      "AGENT_ORCHESTRATION_AND_PROTOCOL_BINDING": ["SCX-005"]
+    },
+    "minimum_complete_coverage_core": "DRAC_CORE_013",
+    "minimum_axiom_core": "DRAC_CORE_001",
+    "broadest_single_context_core": "DRAC_CORE_002",
+    "broadest_dual_context_core": "DRAC_CORE_010"
+  }
+}

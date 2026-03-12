@@ -1,0 +1,226 @@
+{
+  "scan_root": "_Dev_Resources/Reports",
+  "audit_timestamp": "2026-03-12T00:00:00Z",
+  "total_files_scanned": 222,
+  "candidate_artifacts": [
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Application_Function_Extraction/application_function_candidates.json",
+      "artifact_type": "FUNCTION_EXTRACTION",
+      "size_bytes": 1330649,
+      "last_modified": "2026-03-10T20:11:48Z",
+      "tool_origin": "Code_Extraction/extract.py",
+      "notes": "Initial repository function scan. Contains per-file symbol entries with docstring metadata. 414 Python files discovered, 357 candidates scanned (57 excluded by rule). Represents Stage: repository_scan."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Application_Function_Extraction/application_function_registry.json",
+      "artifact_type": "FUNCTION_EXTRACTION",
+      "size_bytes": 859283,
+      "last_modified": "2026-03-10T20:11:49Z",
+      "tool_origin": "Code_Extraction/extract.py",
+      "notes": "Full function-level registry with symbol, module, file_path, and semantic metadata per entry. Substantive and populated. Represents Stage: function_extraction."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Application_Function_Extraction/application_function_clusters.json",
+      "artifact_type": "CLUSTER_ANALYSIS",
+      "size_bytes": 475990,
+      "last_modified": "2026-03-10T20:11:49Z",
+      "tool_origin": "Dependency_Analysis/cluster_analysis.py",
+      "notes": "Per-function cluster assignments with cluster_id, cluster_label, cluster_top_terms, and semantic_signature. Substantive output. Represents Stage: cluster_analysis."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Application_Function_Extraction/module_semantic_profiles.json",
+      "artifact_type": "SEMANTIC_EXTRACTION",
+      "size_bytes": 668975,
+      "last_modified": "2026-03-10T20:45:30Z",
+      "tool_origin": "Static_Analysis/semantic_extractor.py",
+      "notes": "Per-module semantic profiles with module_path, staging_group, purpose, runtime_role, and subsystem. Substantive. Represents Stage: semantic_extraction."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Application_Function_Extraction/salvageable_function_blocks.json",
+      "artifact_type": "FBC_REGISTRY",
+      "size_bytes": 588642,
+      "last_modified": "2026-03-10T20:45:30Z",
+      "tool_origin": "Code_Extraction/fbc_registry.py",
+      "notes": "Registry of salvageable function blocks with function_name, module, module_name. Represents the FBC (Function Block Core) registry stage. Substantive output."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Canonical_Import_Facade/Reports/Architecture_Verification/module_extraction_summary.json",
+      "artifact_type": "FUNCTION_EXTRACTION",
+      "size_bytes": 469,
+      "last_modified": "2026-03-10T21:02:48Z",
+      "tool_origin": "Code_Extraction/extract.py",
+      "notes": "Summary artifact for the module extraction pass. Generated 2026-03-10, source_directory /workspaces/Logos/_Dev_Resources/STAGING/APPLICATION_FUNCTIONS. Fields: total_python_files_found=414, excluded_by_rule=57, candidates_scanned=357, stubs=27, duplicates=114. Small summary file; substantive detail in registry JSON."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Canonical_Import_Facade/Reports/Architecture_Verification/repo_symbol_imports.json",
+      "artifact_type": "SYMBOL_IMPORT_INDEX",
+      "size_bytes": 3179212,
+      "last_modified": "2026-03-05T10:55:08Z",
+      "tool_origin": "Static_Analysis/generate_symbol_import_index.py",
+      "notes": "Repo-wide symbol import index with symbol, source_module, imported_by_file, import_line_number, import_statement, alias. Large and substantive (3.1 MB). Older than runtime-targeted variant (2026-03-05). Covers full repo scope."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Canonical_Import_Facade/Reports/Architecture_Verification/semantic_packets.json",
+      "artifact_type": "SEMANTIC_EXTRACTION",
+      "size_bytes": 27794,
+      "last_modified": "2026-03-10T21:15:51Z",
+      "tool_origin": "Static_Analysis/packet_discovery.py",
+      "notes": "Semantic packet classification with packet_id, module_count, is_cycle, classification, class_scores. Most recent artifact in the set. Represents semantic packet discovery pass."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Canonical_Import_Facade/Runtime_Cluster_Analysis/cluster_analysis_report.md",
+      "artifact_type": "CLUSTER_ANALYSIS",
+      "size_bytes": 13635,
+      "last_modified": "2026-03-10T18:22:30Z",
+      "tool_origin": "Dependency_Analysis/cluster_analysis.py",
+      "notes": "Human-readable cluster analysis report. Header timestamp: 2026-03-10T18:22:30.219887+00:00 UTC. Narrative summary of the cluster analysis run."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Canonical_Import_Facade/import_architecture/IMPORT_ARCHITECTURE_INDEX.md",
+      "artifact_type": "AST_ANALYSIS",
+      "size_bytes": 5662,
+      "last_modified": "2026-03-10T20:35:25Z",
+      "tool_origin": "Static_Analysis/ast_parser.py",
+      "notes": "Index of consolidated import architecture toolkit outputs. Dated 2026-03-10. Notes 36 artifact files from import architecture pipeline. Serves as navigation manifest for AST/import analysis outputs."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Canonical_Import_Facade/import_architecture/cluster_boundary_violations.json",
+      "artifact_type": "CLUSTER_ANALYSIS",
+      "size_bytes": 197947,
+      "last_modified": "2026-03-10T18:22:30Z",
+      "tool_origin": "Dependency_Analysis/cluster_analysis.py",
+      "notes": "Cross-cluster illegal import violations with source_module, illegal_import, depth, source_cluster, target_cluster, classification. 31 total cross-cluster violations (22 auto-repairable, 9 manual). Substantive."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Canonical_Import_Facade/import_architecture/cluster_dependency_graph.json",
+      "artifact_type": "CLUSTER_ANALYSIS",
+      "size_bytes": 76930,
+      "last_modified": "2026-03-10T18:22:30Z",
+      "tool_origin": "Dependency_Analysis/cluster_analysis.py",
+      "notes": "Cluster-level dependency graph with cluster_nodes array. Inter-cluster edge structure for dependency traversal."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Canonical_Import_Facade/import_architecture/cluster_map.json",
+      "artifact_type": "CLUSTER_ANALYSIS",
+      "size_bytes": 198700,
+      "last_modified": "2026-03-10T18:52:56Z",
+      "tool_origin": "Dependency_Analysis/cluster_analysis.py",
+      "notes": "Full module-to-cluster assignment map. Largest cluster artifact. Keys are fully qualified module paths, values are cluster_id strings (e.g. LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE)."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Canonical_Import_Facade/import_architecture/cluster_membership.json",
+      "artifact_type": "CLUSTER_ANALYSIS",
+      "size_bytes": 145507,
+      "last_modified": "2026-03-10T18:22:30Z",
+      "tool_origin": "Dependency_Analysis/cluster_analysis.py",
+      "notes": "Module-to-cluster_id integer mapping. Explicitly contains DRAC_Core modules (e.g. LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Dynamic_Reconstruction_Adaptive_Compilation_Protocol.DRAC_Core). Confirms DRAC modules were scanned and classified."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Canonical_Import_Facade/import_architecture/cluster_summary.json",
+      "artifact_type": "CLUSTER_ANALYSIS",
+      "size_bytes": 195698,
+      "last_modified": "2026-03-10T18:22:30Z",
+      "tool_origin": "Dependency_Analysis/cluster_analysis.py",
+      "notes": "Per-cluster summary with cluster_id, dominant_layer, module_count, internal_edges, external_edges_out, external_edges_in, density, top_level_packages. Cluster 2 has 153 modules. Substantive."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Canonical_Import_Facade/import_architecture/repair_feasibility_cluster.json",
+      "artifact_type": "CLUSTER_ANALYSIS",
+      "size_bytes": 17295,
+      "last_modified": "2026-03-10T18:22:30Z",
+      "tool_origin": "Dependency_Analysis/cluster_analysis.py",
+      "notes": "Cluster-variant of repair feasibility report. Fields: total_cross_cluster_violations=31, auto_repairable=22, require_manual_review=9, plus per-rule entries with source_module, illegal_import, target_cluster, proposed_facade."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Canonical_Import_Facade/import_architecture/runtime_symbol_imports.json",
+      "artifact_type": "SYMBOL_IMPORT_INDEX",
+      "size_bytes": 675993,
+      "last_modified": "2026-03-10T17:30:33Z",
+      "tool_origin": "Static_Analysis/generate_symbol_import_index.py",
+      "notes": "Runtime-scoped symbol import index (subset of repo_symbol_imports, filtered to runtime surface). Fields: source_module, target_module, symbol. 675 KB, substantive."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/P1-7/Phase2_Normalization/Phase_2A_AST_Mutation_Report.json",
+      "artifact_type": "AST_ANALYSIS",
+      "size_bytes": 707,
+      "last_modified": "2026-02-15T17:41:04Z",
+      "tool_origin": "Static_Analysis/ast_parser.py",
+      "notes": "AST canonical root normalization phase report. Fields: phase=Phase_2A_AST_Canonical_Root_Normalization, total_files_modified=1, total_imports_rewritten=1. Older artifact from Phase 2 (February 2026). Shows AST mutation was performed."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/P1-7/Phase3_Nexus/Nexus_Structural_Extraction_Artifact.json",
+      "artifact_type": "FUNCTION_EXTRACTION",
+      "size_bytes": 13150,
+      "last_modified": "2026-02-15T17:41:04Z",
+      "tool_origin": "Static_Analysis/drac_indexer.py",
+      "notes": "Nexus structural extraction artifact. Per-file records with header_metadata_block, nexus_class_names, public_methods, has_tick_method, has_register_participant, has_ingest. Represents structural extraction of Nexus interfaces relevant to DRAC indexing."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/P1-7/Phase6_Runtime_CallGraph/PHASE6B_DRAC_TOUCHPOINTS.json",
+      "artifact_type": "DRAC_INDEX",
+      "size_bytes": 2,
+      "last_modified": "2026-02-17T16:05:49Z",
+      "tool_origin": "Static_Analysis/drac_indexer.py",
+      "notes": "CRITICAL: File contains only empty array [] (2 bytes). This is the dedicated DRAC touchpoint index artifact but it was never populated. The drac_index pipeline stage has a registered output path with no substantive data. This is the primary gap in the DRAC pipeline."
+    },
+    {
+      "path": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/RGE_Audit_Reports/RGE_Stage_Analysis/RGE_Stage21_24_Cognition_Broadcast.json",
+      "artifact_type": "UNKNOWN",
+      "size_bytes": 3297,
+      "last_modified": "2026-03-07T10:28:42Z",
+      "tool_origin": "RGE audit pipeline",
+      "notes": "RGE Stage 21-24 analysis: Cognition Signal Broadcasting Infrastructure. Fields: stage_range, title, status=success, modules_created. Does not directly map to a DRAC pipeline stage; matched by 'index' substring in parent directory context. Classification: UNKNOWN (RGE-specific)."
+    }
+  ],
+  "pipeline_stage_presence": {
+    "repository_scan": true,
+    "ast_parse": true,
+    "function_extraction": true,
+    "fbc_registry": true,
+    "drac_index": false,
+    "cluster_analysis": true
+  },
+  "pipeline_stage_evidence": {
+    "repository_scan": {
+      "present": true,
+      "primary_artifact": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Application_Function_Extraction/application_function_candidates.json",
+      "notes": "414 Python files scanned, 357 candidates, 57 excluded by rule. Dated 2026-03-10."
+    },
+    "ast_parse": {
+      "present": true,
+      "primary_artifact": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/P1-7/Phase2_Normalization/Phase_2A_AST_Mutation_Report.json",
+      "notes": "Phase_2A_AST_Canonical_Root_Normalization confirmed. Supplemented by import architecture cluster outputs generated by ast_parser.py (2026-03-10)."
+    },
+    "function_extraction": {
+      "present": true,
+      "primary_artifact": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Application_Function_Extraction/application_function_registry.json",
+      "notes": "859 KB registry of all extracted functions with full semantic metadata. Dated 2026-03-10."
+    },
+    "fbc_registry": {
+      "present": true,
+      "primary_artifact": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Application_Function_Extraction/salvageable_function_blocks.json",
+      "notes": "588 KB Function Block Core registry of salvageable function blocks. Dated 2026-03-10."
+    },
+    "drac_index": {
+      "present": false,
+      "primary_artifact": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/P1-7/Phase6_Runtime_CallGraph/PHASE6B_DRAC_TOUCHPOINTS.json",
+      "notes": "File exists (2 bytes) but contains only empty array []. No substantive DRAC index artifact found across all 222 files in Reports. The drac_indexer.py output path is registered but the data was never committed. DRAC module references appear in cluster_membership.json (cluster_analysis stage) but a dedicated DRAC symbol/touchpoint index is absent."
+    },
+    "cluster_analysis": {
+      "present": true,
+      "primary_artifact": "_Dev_Resources/Reports/Audit_Outputs/RUNTIME/Canonical_Import_Facade/import_architecture/cluster_summary.json",
+      "notes": "Multiple substantive cluster analysis outputs present: cluster_map (198 KB), cluster_membership (145 KB), cluster_summary (195 KB), cluster_dependency_graph (76 KB), cluster_boundary_violations (197 KB). Dated 2026-03-10. High confidence in completeness."
+    }
+  },
+  "drac_state": "STATE_B_PARTIAL",
+  "drac_state_rationale": "Five of six DRAC pipeline stages have substantive artifacts: repository_scan, ast_parse, function_extraction, fbc_registry, and cluster_analysis are all present with large, populated, and recently dated outputs (2026-03-10). The drac_index stage is the sole gap: PHASE6B_DRAC_TOUCHPOINTS.json exists at the expected output path but contains only an empty array []. No alternative DRAC index artifact was located across all 222 files in the Reports tree. The drac_indexer.py tool (Static_Analysis/drac_indexer.py) is registered in runtime_tools_generation_report.json as updated but its output has not been materialized. Recommendation: run drac_indexer.py to populate the DRAC index; all prerequisite artifacts (function registry, cluster membership, FBC registry) are available as inputs.",
+  "scan_notes": {
+    "keyword_filter": ["drac", "fbc", "function_block", "cluster", "semantic", "symbol_import", "ast", "extract", "index", "registry"],
+    "extension_filter": [".json", ".jsonl", ".md", ".txt"],
+    "candidate_count": 21,
+    "priority_subtree_files": 1,
+    "priority_subtree_path": "_Dev_Resources/Reports/Execution_Reports/Tool_Outputs/Runtime",
+    "no_files_modified_outside_reports": true,
+    "tool_runs_performed": false
+  }
+}

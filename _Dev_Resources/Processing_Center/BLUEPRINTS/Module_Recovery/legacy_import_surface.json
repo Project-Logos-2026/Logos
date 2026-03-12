@@ -1,0 +1,4335 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-12T09:19:33.507681Z",
+  "tool_used": "Dependency_Analysis (Runtime_Tools inline via AST)",
+  "total_modules": 161,
+  "aggregate_stats": {
+    "unique_external_packages": [
+      "fastapi",
+      "matplotlib",
+      "matplotlib.pyplot",
+      "networkx",
+      "networkx.algorithms.community",
+      "numpy",
+      "pandas",
+      "pydantic",
+      "redis",
+      "requests",
+      "scipy",
+      "scipy.signal",
+      "scipy.spatial",
+      "scipy.stats",
+      "sentence_transformers",
+      "sklearn.cluster",
+      "sklearn.linear_model",
+      "sklearn.metrics.pairwise",
+      "sklearn.preprocessing",
+      "sympy",
+      "torch",
+      "torch.nn.functional",
+      "uvicorn",
+      "yaml"
+    ],
+    "unique_internal_module_prefixes": [
+      "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas",
+      "logos",
+      "logos.evaluator",
+      "logos.proof_refs",
+      "logos.tool_registry_loader"
+    ],
+    "unique_unresolved_roots": [
+      "",
+      "Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inference",
+      "BDN_System.core.trinity_hyperstructure",
+      "I1.scp_pipeline.pipeline_runner",
+      "I1_Agent.config.hashing",
+      "I1_Agent.config.schema_utils",
+      "I1_Agent.diagnostics.errors",
+      "I3.arp_cycle.cycle_runner",
+      "I3_Agent.config.schema_utils",
+      "I3_Agent.diagnostics.errors",
+      "JUNK_DRAWER.scripts.runtime.could_be_dev.start_agent",
+      "JUNK_DRAWER.scripts.runtime.need_to_distribute.logos_agi_adapter",
+      "JUNK_DRAWER.scripts.runtime.need_to_distribute.provenance",
+      "LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports",
+      "LOGOS_AGI.Logos_Agent.agent.nexus.agent_nexus",
+      "LOGOS_AGI.Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator",
+      "LOGOS_AGI.Synthetic_Cognition_Protocol.BDN_System.core.trinity_hyperstructure",
+      "LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.predictors.class_fractal_orbital_predictor",
+      "LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.predictors.divergence_calculator",
+      "LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine",
+      "LOGOS_AGI.Synthetic_Cognition_Protocol.nexus.scp_nexus",
+      "LOGOS_AGI.analytics",
+      "LOGOS_AGI.consciousness.recursion_engine_consciousness_bridge",
+      "LOGOS_AGI.settings",
+      "LOGOS_AGI.v7.adaptive_reasoning.bayesian_inference",
+      "LOGOS_AGI.v7.adaptive_reasoning.semantic_transformers",
+      "LOGOS_AGI.v7.adaptive_reasoning.torch_adapters",
+      "LOGOS_AGI.v7.integration.adaptive_interface",
+      "LOGOS_AGI.v7.runtime_services.core_service",
+      "Logos_AGI.Logos_Agent.creator_packet.reflection_builder.perception_ingestors",
+      "Logos_Agent.I2_Agent.I2_Core.smp",
+      "Logos_Agent.logos_runtime.coordinator",
+      "Logos_Agent.sop_runtime",
+      "Logos_Protocol.Logos_Core",
+      "Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger",
+      "Logos_Protocol.logos_core.governance.agent_identity",
+      "Logos_Protocol.logos_core.reference_monitor",
+      "Logos_Protocol.logos_core.world_model",
+      "Logos_System.System_Entry_Point.Orchestration_Tools",
+      "Logos_System.System_Stack.Logos_Protocol.External_Enhancements.Constraint_Stubs",
+      "Logos_System.System_Stack.Logos_Protocol.Runtime_Operations.IEL_generator.entry",
+      "Logos_System.System_Stack.Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger",
+      "Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_mvs",
+      "Logos_System.System_Stack.System_Operations_Protocol.governance.enhanced_reference_monitor",
+      "Logos_System.System_Stack.System_Operations_Protocol.infrastructure.agent_system.agent_nexus",
+      "Protopraxis.agent_planner",
+      "Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator",
+      "Synthetic_Cognition_Protocol.BDN_System.core.trinity_hyperstructure",
+      "Synthetic_Cognition_Protocol.BDN_System.core.trinity_vectors",
+      "Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine",
+      "System_Operations_Protocol.code_generator.development_environment",
+      "System_Operations_Protocol.code_generator.knowledge_catalog",
+      "System_Operations_Protocol.deployment.configuration.entry",
+      "System_Operations_Protocol.infrastructure.agent_system.base_nexus",
+      "User_Interaction_Protocol.uip_protocol.core_processing.registry",
+      "User_Interaction_Protocol.uip_protocol.output.response_formatter",
+      "__future__",
+      "advanced_fractal_analyzer",
+      "agent_system.base_nexus",
+      "arp_nexus",
+      "arp_operations",
+      "async_workers",
+      "bayes_update_real_time",
+      "bayesian_inferencer",
+      "bayesian_recursion",
+      "bcolz",
+      "causallearn.search.ConstraintBased.PC",
+      "causallearn.utils.GraphUtils",
+      "causallearn.utils.cit",
+      "config_loader",
+      "core.async_workers",
+      "core.config_loader",
+      "core.logos_core.daemon.logos_daemon",
+      "core.logos_core.governance.iel_signer",
+      "core.logos_core.meta_reasoning.iel_evaluator",
+      "core.logos_core.meta_reasoning.iel_generator",
+      "core.logos_core.meta_reasoning.iel_registry",
+      "core.logos_validator_hub",
+      "core_processing.sanitizer",
+      "data_c_values.data_structures",
+      "datasketch",
+      "decimal",
+      "development_environment",
+      "errors",
+      "external.Logos_AGI.Advanced_Reasoning_Protocol.reasoning_engines",
+      "external.Logos_AGI.System_Operations_Protocol.infrastructure.agent_system.base_nexus",
+      "external.Logos_AGI.identity_paths",
+      "faiss",
+      "fractal_orbital.symbolic_math",
+      "h5py",
+      "hashing",
+      "hierarchical_bayes_network",
+      "iel_domains",
+      "iel_evaluator",
+      "iel_generator",
+      "iel_registry",
+      "input.input_handler",
+      "input_output_processing.parser",
+      "intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.logos_validator_hub",
+      "intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.ontological_validator"
+    ],
+    "modules_with_external_deps": 25,
+    "modules_with_unresolved_imports": 107
+  },
+  "modules": [
+    {
+      "module_name": "Memory_Recall_Integration",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 25,
+      "all_imports": [
+        "asyncio",
+        "bcolz",
+        "collections",
+        "concurrent.futures",
+        "dataclasses",
+        "datasketch",
+        "datetime",
+        "enum",
+        "faiss",
+        "h5py",
+        "hashlib",
+        "heapq",
+        "json",
+        "leveldb",
+        "lmdb",
+        "msgpack",
+        "numpy",
+        "pathlib",
+        "pickle",
+        "redis",
+        "shelve",
+        "sqlite3",
+        "typing",
+        "zarr",
+        "zlib"
+      ],
+      "stdlib_imports": [
+        "asyncio",
+        "collections",
+        "concurrent.futures",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "hashlib",
+        "heapq",
+        "json",
+        "pathlib",
+        "pickle",
+        "shelve",
+        "typing",
+        "zlib"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "numpy",
+        "redis"
+      ],
+      "unresolved_imports": [
+        "bcolz",
+        "datasketch",
+        "faiss",
+        "h5py",
+        "leveldb",
+        "lmdb",
+        "msgpack",
+        "sqlite3",
+        "zarr"
+      ]
+    },
+    {
+      "module_name": "NLP_Wrapper_Sentence_Transformers",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/NLP_Wrapper_Sentence_Transformers.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 4,
+      "all_imports": [
+        "Logos_System.System_Entry_Point.Orchestration_Tools",
+        "Logos_System.System_Stack.Logos_Protocol.External_Enhancements.Constraint_Stubs",
+        "__future__",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "Logos_System.System_Entry_Point.Orchestration_Tools",
+        "Logos_System.System_Stack.Logos_Protocol.External_Enhancements.Constraint_Stubs",
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "adaptive_engine",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/adaptive_engine.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 6,
+      "all_imports": [
+        "__future__",
+        "dataclasses",
+        "logging",
+        "time",
+        "typing",
+        "utils.system_utils"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "logging",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__",
+        "utils.system_utils"
+      ]
+    },
+    {
+      "module_name": "agentic_consciousness_core",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 11,
+      "all_imports": [
+        "causallearn.search.ConstraintBased.PC",
+        "logging",
+        "numpy",
+        "pandas",
+        "pymc",
+        "sentence_transformers",
+        "sklearn.cluster",
+        "sklearn.metrics.pairwise",
+        "sympy",
+        "typing",
+        "z3"
+      ],
+      "stdlib_imports": [
+        "logging",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "numpy",
+        "pandas",
+        "sentence_transformers",
+        "sklearn.cluster",
+        "sklearn.metrics.pairwise",
+        "sympy"
+      ],
+      "unresolved_imports": [
+        "causallearn.search.ConstraintBased.PC",
+        "pymc",
+        "z3"
+      ]
+    },
+    {
+      "module_name": "bayes_update_real_time",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 5,
+      "all_imports": [
+        "__future__",
+        "datetime",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "datetime",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "bayesian_data_parser",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 6,
+      "all_imports": [
+        "datetime",
+        "importlib",
+        "json",
+        "pandas",
+        "pathlib",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "datetime",
+        "importlib",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "pandas"
+      ],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "bayesian_recursion",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayesian_recursion.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 7,
+      "all_imports": [
+        "dataclasses",
+        "datetime",
+        "numpy",
+        "pathlib",
+        "pickle",
+        "scipy",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "datetime",
+        "pathlib",
+        "pickle",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "numpy",
+        "scipy"
+      ],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "coherence",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/coherence.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 6,
+      "all_imports": [
+        "asyncio",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "asyncio",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "comprehensive_fractal_analysis",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/comprehensive_fractal_analysis.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 7,
+      "all_imports": [
+        "advanced_fractal_analyzer",
+        "json",
+        "matplotlib",
+        "matplotlib.pyplot",
+        "numpy",
+        "pandas",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "json",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "matplotlib",
+        "matplotlib.pyplot",
+        "numpy",
+        "pandas"
+      ],
+      "unresolved_imports": [
+        "advanced_fractal_analyzer"
+      ]
+    },
+    {
+      "module_name": "fractal_orbit_toolkit",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 19,
+      "all_imports": [
+        "BDN_System.core.trinity_hyperstructure",
+        "LOGOS_AGI.Synthetic_Cognition_Protocol.BDN_System.core.trinity_hyperstructure",
+        "Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_mvs",
+        "Synthetic_Cognition_Protocol.BDN_System.core.trinity_hyperstructure",
+        "collections",
+        "data_c_values.data_structures",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "fractal_orbital.symbolic_math",
+        "logging",
+        "math",
+        "modal_inference",
+        "numpy",
+        "pathlib",
+        "predictors.fractal_mapping",
+        "sys",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "collections",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "math",
+        "pathlib",
+        "sys",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "numpy"
+      ],
+      "unresolved_imports": [
+        "BDN_System.core.trinity_hyperstructure",
+        "LOGOS_AGI.Synthetic_Cognition_Protocol.BDN_System.core.trinity_hyperstructure",
+        "Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_mvs",
+        "Synthetic_Cognition_Protocol.BDN_System.core.trinity_hyperstructure",
+        "data_c_values.data_structures",
+        "fractal_orbital.symbolic_math",
+        "modal_inference",
+        "predictors.fractal_mapping"
+      ]
+    },
+    {
+      "module_name": "gen_worldview_ontoprops",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/gen_worldview_ontoprops.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 5,
+      "all_imports": [
+        "hashlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "hashlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "hierarchical_bayes_network",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 6,
+      "all_imports": [
+        "bayes_update_real_time",
+        "json",
+        "numpy",
+        "re",
+        "sklearn.linear_model",
+        "sklearn.preprocessing"
+      ],
+      "stdlib_imports": [
+        "json",
+        "re"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "numpy",
+        "sklearn.linear_model",
+        "sklearn.preprocessing"
+      ],
+      "unresolved_imports": [
+        "bayes_update_real_time"
+      ]
+    },
+    {
+      "module_name": "iel_overlay",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/iel_overlay.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 7,
+      "all_imports": [
+        "Logos_Protocol.Logos_Core",
+        "dataclasses",
+        "enum",
+        "iel_domains",
+        "logging",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "enum",
+        "logging",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "Logos_Protocol.Logos_Core",
+        "iel_domains"
+      ]
+    },
+    {
+      "module_name": "logos_mathematical_core",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 9,
+      "all_imports": [
+        "dataclasses",
+        "hashlib",
+        "json",
+        "logging",
+        "math",
+        "numpy",
+        "secrets",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "hashlib",
+        "json",
+        "logging",
+        "math",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "numpy"
+      ],
+      "unresolved_imports": [
+        "secrets"
+      ]
+    },
+    {
+      "module_name": "privative_policies",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/privative_policies.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 1,
+      "all_imports": [
+        "typing"
+      ],
+      "stdlib_imports": [
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "safety_formalisms",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 1,
+      "all_imports": [
+        "logging"
+      ],
+      "stdlib_imports": [
+        "logging"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "simulated_consciousness_runtime",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/simulated_consciousness_runtime.py",
+      "domain_layer": "Logic_Extraction",
+      "import_count": 8,
+      "all_imports": [
+        "LOGOS_AGI.consciousness.recursion_engine_consciousness_bridge",
+        "__future__",
+        "datetime",
+        "json",
+        "logging",
+        "pathlib",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "datetime",
+        "json",
+        "logging",
+        "pathlib",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "LOGOS_AGI.consciousness.recursion_engine_consciousness_bridge",
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "PXL_World_Model",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 17,
+      "all_imports": [
+        "asyncio",
+        "collections",
+        "concurrent.futures",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "functools",
+        "hashlib",
+        "heapq",
+        "json",
+        "networkx",
+        "numpy",
+        "pathlib",
+        "pickle",
+        "scipy",
+        "typing",
+        "zlib"
+      ],
+      "stdlib_imports": [
+        "asyncio",
+        "collections",
+        "concurrent.futures",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "functools",
+        "hashlib",
+        "heapq",
+        "json",
+        "pathlib",
+        "pickle",
+        "typing",
+        "zlib"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "networkx",
+        "numpy",
+        "scipy"
+      ],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "action_system",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/action_system.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 4,
+      "all_imports": [
+        "dataclasses",
+        "enum",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "enum",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "advanced_fractal_analyzer",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 9,
+      "all_imports": [
+        "collections",
+        "dataclasses",
+        "matplotlib",
+        "numpy",
+        "scipy",
+        "scipy.signal",
+        "scipy.spatial",
+        "scipy.stats",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "collections",
+        "dataclasses",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "matplotlib",
+        "numpy",
+        "scipy",
+        "scipy.signal",
+        "scipy.spatial",
+        "scipy.stats"
+      ],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "agent_identity",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/agent_identity.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 10,
+      "all_imports": [
+        "Logos_Protocol.logos_core.world_model",
+        "Logos_System.System_Stack.Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger",
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "subprocess",
+        "typing",
+        "uuid"
+      ],
+      "stdlib_imports": [
+        "argparse",
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "subprocess",
+        "typing",
+        "uuid"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "Logos_Protocol.logos_core.world_model",
+        "Logos_System.System_Stack.Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger"
+      ]
+    },
+    {
+      "module_name": "arithmetic_engine",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/arithmetic_engine.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 8,
+      "all_imports": [
+        "decimal",
+        "intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.ontological_validator",
+        "intelligence.trinity.thonoc.symbolic_engine.lambda_engine.lambda_engine",
+        "intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core",
+        "logging",
+        "math",
+        "numpy",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "logging",
+        "math",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "numpy"
+      ],
+      "unresolved_imports": [
+        "decimal",
+        "intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.ontological_validator",
+        "intelligence.trinity.thonoc.symbolic_engine.lambda_engine.lambda_engine",
+        "intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core"
+      ]
+    },
+    {
+      "module_name": "autonomous_learning",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/autonomous_learning.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 12,
+      "all_imports": [
+        "collections",
+        "dataclasses",
+        "datetime",
+        "json",
+        "logging",
+        "meta_reasoning.iel_evaluator",
+        "meta_reasoning.iel_generator",
+        "meta_reasoning.iel_registry",
+        "pathlib",
+        "threading",
+        "typing",
+        "uuid"
+      ],
+      "stdlib_imports": [
+        "collections",
+        "dataclasses",
+        "datetime",
+        "json",
+        "logging",
+        "pathlib",
+        "threading",
+        "typing",
+        "uuid"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "meta_reasoning.iel_evaluator",
+        "meta_reasoning.iel_generator",
+        "meta_reasoning.iel_registry"
+      ]
+    },
+    {
+      "module_name": "bayesian_inferencer",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_inferencer.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 3,
+      "all_imports": [
+        "bayes_update_real_time",
+        "json",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "json",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "bayes_update_real_time"
+      ]
+    },
+    {
+      "module_name": "bayesian_interface",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_interface.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 3,
+      "all_imports": [
+        "dataclasses",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "bayesian_nexus",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 9,
+      "all_imports": [
+        "bayes_update_real_time",
+        "bayesian_inferencer",
+        "bayesian_recursion",
+        "hierarchical_bayes_network",
+        "json",
+        "pprint",
+        "sys",
+        "traceback",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "json",
+        "pprint",
+        "sys",
+        "traceback",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "bayes_update_real_time",
+        "bayesian_inferencer",
+        "bayesian_recursion",
+        "hierarchical_bayes_network"
+      ]
+    },
+    {
+      "module_name": "bayesian_updates",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 9,
+      "all_imports": [
+        "__future__",
+        "datetime",
+        "json",
+        "numpy",
+        "pathlib",
+        "re",
+        "sklearn.linear_model",
+        "sklearn.preprocessing",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "datetime",
+        "json",
+        "pathlib",
+        "re",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "numpy",
+        "sklearn.linear_model",
+        "sklearn.preprocessing"
+      ],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "belief_network",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/belief_network.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 3,
+      "all_imports": [
+        "collections",
+        "math",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "collections",
+        "math",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "coherence_formalism",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/coherence_formalism.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 6,
+      "all_imports": [
+        "collections",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "collections",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "coherence_metrics",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/coherence_metrics.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 8,
+      "all_imports": [
+        "collections",
+        "dataclasses",
+        "datetime",
+        "logging",
+        "math",
+        "statistics",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "collections",
+        "dataclasses",
+        "datetime",
+        "logging",
+        "math",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "statistics"
+      ]
+    },
+    {
+      "module_name": "export_tool_registry",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/export_tool_registry.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 8,
+      "all_imports": [
+        "JUNK_DRAWER.scripts.runtime.could_be_dev.start_agent",
+        "argparse",
+        "dataclasses",
+        "json",
+        "logos.tool_registry_loader",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "argparse",
+        "dataclasses",
+        "json",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "internal_imports": [
+        "logos.tool_registry_loader"
+      ],
+      "external_imports": [],
+      "unresolved_imports": [
+        "JUNK_DRAWER.scripts.runtime.could_be_dev.start_agent"
+      ]
+    },
+    {
+      "module_name": "lambda_engine",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_engine.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 3,
+      "all_imports": [
+        "lambda_onto_calculus_engine",
+        "logging",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "logging",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "lambda_onto_calculus_engine"
+      ]
+    },
+    {
+      "module_name": "lambda_onto_calculus_engine",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 2,
+      "all_imports": [
+        "enum",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "enum",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "lambda_parser",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 3,
+      "all_imports": [
+        "enum",
+        "lambda_logos_core",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "enum",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "lambda_logos_core"
+      ]
+    },
+    {
+      "module_name": "modal_logic",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_logic.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 3,
+      "all_imports": [
+        "dataclasses",
+        "enum",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "enum",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "modal_reasoner",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_reasoner.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 2,
+      "all_imports": [
+        "modal_logic",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "modal_logic"
+      ]
+    },
+    {
+      "module_name": "modal_validator",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_validator.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 5,
+      "all_imports": [
+        "LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports",
+        "dataclasses",
+        "enum",
+        "itertools",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "enum",
+        "itertools",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports"
+      ]
+    },
+    {
+      "module_name": "multi_modal_system",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/multi_modal_system.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 2,
+      "all_imports": [
+        "modal_logic",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "modal_logic"
+      ]
+    },
+    {
+      "module_name": "proof_engine",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/proof_engine.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 8,
+      "all_imports": [
+        "dataclasses",
+        "enum",
+        "intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.logos_validator_hub",
+        "intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.ontological_validator",
+        "intelligence.iel_domains.iel_ontoprop_bijectives.onto_logic.bijective_mapping",
+        "intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core",
+        "logging",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "enum",
+        "logging",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.logos_validator_hub",
+        "intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.ontological_validator",
+        "intelligence.iel_domains.iel_ontoprop_bijectives.onto_logic.bijective_mapping",
+        "intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core"
+      ]
+    },
+    {
+      "module_name": "pxl_fractal_orbital_analysis",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/pxl_fractal_orbital_analysis.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 10,
+      "all_imports": [
+        "dataclasses",
+        "datetime",
+        "enum",
+        "json",
+        "matplotlib.pyplot",
+        "numpy",
+        "os",
+        "sys",
+        "traceback",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "datetime",
+        "enum",
+        "json",
+        "os",
+        "sys",
+        "traceback",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "matplotlib.pyplot",
+        "numpy"
+      ],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "pxl_modal_fractal_boundary_analysis",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/pxl_modal_fractal_boundary_analysis.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 11,
+      "all_imports": [
+        "collections",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "json",
+        "matplotlib.pyplot",
+        "numpy",
+        "os",
+        "sys",
+        "traceback",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "collections",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "json",
+        "os",
+        "sys",
+        "traceback",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "matplotlib.pyplot",
+        "numpy"
+      ],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "pxl_schema",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 6,
+      "all_imports": [
+        "LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports",
+        "dataclasses",
+        "enum",
+        "numpy",
+        "pydantic",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "enum",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "numpy",
+        "pydantic"
+      ],
+      "unresolved_imports": [
+        "LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports"
+      ]
+    },
+    {
+      "module_name": "relation_mapper",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 10,
+      "all_imports": [
+        "LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports",
+        "collections",
+        "dataclasses",
+        "enum",
+        "hashlib",
+        "itertools",
+        "networkx",
+        "networkx.algorithms.community",
+        "numpy",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "collections",
+        "dataclasses",
+        "enum",
+        "hashlib",
+        "itertools",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "networkx",
+        "networkx.algorithms.community",
+        "numpy"
+      ],
+      "unresolved_imports": [
+        "LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports"
+      ]
+    },
+    {
+      "module_name": "semantic_transformers",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/semantic_transformers.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 11,
+      "all_imports": [
+        "Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inference",
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "logging",
+        "numpy",
+        "re",
+        "sentence_transformers",
+        "torch",
+        "torch.nn.functional",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "logging",
+        "re",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "numpy",
+        "sentence_transformers",
+        "torch",
+        "torch.nn.functional"
+      ],
+      "unresolved_imports": [
+        "Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inference"
+      ]
+    },
+    {
+      "module_name": "tool_introspection",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 10,
+      "all_imports": [
+        "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas",
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "json",
+        "os",
+        "pathlib",
+        "scripts",
+        "sys",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "datetime",
+        "json",
+        "os",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "internal_imports": [
+        "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas"
+      ],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__",
+        "scripts"
+      ]
+    },
+    {
+      "module_name": "tool_invention",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_invention.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 9,
+      "all_imports": [
+        "System_Operations_Protocol.code_generator.development_environment",
+        "__future__",
+        "collections",
+        "datetime",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "collections",
+        "datetime",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "System_Operations_Protocol.code_generator.development_environment",
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "tool_optimizer",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 11,
+      "all_imports": [
+        "System_Operations_Protocol.code_generator.knowledge_catalog",
+        "__future__",
+        "ast",
+        "collections",
+        "datetime",
+        "gzip",
+        "hashlib",
+        "json",
+        "knowledge_catalog",
+        "pathlib",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "ast",
+        "collections",
+        "datetime",
+        "gzip",
+        "hashlib",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "System_Operations_Protocol.code_generator.knowledge_catalog",
+        "__future__",
+        "knowledge_catalog"
+      ]
+    },
+    {
+      "module_name": "tool_proposal_pipeline",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 11,
+      "all_imports": [
+        "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas",
+        "argparse",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "scripts.system_stack_tbd.need_to_distribute._bootstrap",
+        "subprocess",
+        "sys",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [
+        "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas"
+      ],
+      "external_imports": [],
+      "unresolved_imports": [
+        "scripts.system_stack_tbd.need_to_distribute._bootstrap"
+      ]
+    },
+    {
+      "module_name": "tool_repair_proposal",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 10,
+      "all_imports": [
+        "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas",
+        "__future__",
+        "argparse",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "argparse",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [
+        "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas"
+      ],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "translation_engine",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/translation_engine.py",
+      "domain_layer": "Keep_Verify",
+      "import_count": 3,
+      "all_imports": [
+        "datetime",
+        "logging",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "datetime",
+        "logging",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "Logos_Memory_Nexus",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/Logos_Memory_Nexus.py",
+      "domain_layer": "Agent",
+      "import_count": 14,
+      "all_imports": [
+        "collections",
+        "dataclasses",
+        "datasketch",
+        "datetime",
+        "enum",
+        "hashlib",
+        "heapq",
+        "json",
+        "networkx",
+        "numpy",
+        "pickle",
+        "scipy",
+        "typing",
+        "zlib"
+      ],
+      "stdlib_imports": [
+        "collections",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "hashlib",
+        "heapq",
+        "json",
+        "pickle",
+        "typing",
+        "zlib"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "networkx",
+        "numpy",
+        "scipy"
+      ],
+      "unresolved_imports": [
+        "datasketch"
+      ]
+    },
+    {
+      "module_name": "agent_nexus",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/agent_nexus.py",
+      "domain_layer": "Agent",
+      "import_count": 8,
+      "all_imports": [
+        "agent_system.base_nexus",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "agent_system.base_nexus"
+      ]
+    },
+    {
+      "module_name": "base_nexus",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py",
+      "domain_layer": "Agent",
+      "import_count": 6,
+      "all_imports": [
+        "abc",
+        "datetime",
+        "enum",
+        "logging",
+        "typing",
+        "uuid"
+      ],
+      "stdlib_imports": [
+        "abc",
+        "datetime",
+        "enum",
+        "logging",
+        "typing",
+        "uuid"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "evaluation_packet",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/evaluation_packet.py",
+      "domain_layer": "Agent",
+      "import_count": 4,
+      "all_imports": [
+        "__future__",
+        "dataclasses",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "id_handler",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/id_handler.py",
+      "domain_layer": "Agent",
+      "import_count": 6,
+      "all_imports": [
+        "__future__",
+        "dataclasses",
+        "hashing",
+        "time",
+        "typing",
+        "uuid"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "time",
+        "typing",
+        "uuid"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__",
+        "hashing"
+      ]
+    },
+    {
+      "module_name": "knowledge_catalog",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/knowledge_catalog.py",
+      "domain_layer": "Agent",
+      "import_count": 6,
+      "all_imports": [
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "legacy_sop_nexus",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/legacy_sop_nexus.py",
+      "domain_layer": "Agent",
+      "import_count": 10,
+      "all_imports": [
+        "agent_system.base_nexus",
+        "asyncio",
+        "datetime",
+        "enum",
+        "json",
+        "logging",
+        "pathlib",
+        "sys",
+        "typing",
+        "uuid"
+      ],
+      "stdlib_imports": [
+        "asyncio",
+        "datetime",
+        "enum",
+        "json",
+        "logging",
+        "pathlib",
+        "sys",
+        "typing",
+        "uuid"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "agent_system.base_nexus"
+      ]
+    },
+    {
+      "module_name": "plan_packet",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/plan_packet.py",
+      "domain_layer": "Agent",
+      "import_count": 4,
+      "all_imports": [
+        "__future__",
+        "dataclasses",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "sop_nexus",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/sop_nexus.py",
+      "domain_layer": "Agent",
+      "import_count": 13,
+      "all_imports": [
+        "agent_system.base_nexus",
+        "asyncio",
+        "datetime",
+        "development_environment",
+        "enum",
+        "json",
+        "logging",
+        "os",
+        "pathlib",
+        "self_improvement_integration",
+        "sys",
+        "typing",
+        "uuid"
+      ],
+      "stdlib_imports": [
+        "asyncio",
+        "datetime",
+        "enum",
+        "json",
+        "logging",
+        "os",
+        "pathlib",
+        "sys",
+        "typing",
+        "uuid"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "agent_system.base_nexus",
+        "development_environment",
+        "self_improvement_integration"
+      ]
+    },
+    {
+      "module_name": "test_agent_planner",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_agent_planner.py",
+      "domain_layer": "Agent",
+      "import_count": 6,
+      "all_imports": [
+        "Protopraxis.agent_planner",
+        "__future__",
+        "gzip",
+        "pathlib",
+        "tempfile",
+        "unittest"
+      ],
+      "stdlib_imports": [
+        "gzip",
+        "pathlib",
+        "tempfile",
+        "unittest"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "Protopraxis.agent_planner",
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "test_end_to_end_pipeline",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_end_to_end_pipeline.py",
+      "domain_layer": "Agent",
+      "import_count": 4,
+      "all_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess"
+      ],
+      "stdlib_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "test_hardening",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_hardening.py",
+      "domain_layer": "Agent",
+      "import_count": 6,
+      "all_imports": [
+        "asyncio",
+        "development_environment",
+        "knowledge_catalog",
+        "pathlib",
+        "self_improvement_integration",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "asyncio",
+        "pathlib",
+        "sys"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "development_environment",
+        "knowledge_catalog",
+        "self_improvement_integration"
+      ]
+    },
+    {
+      "module_name": "test_integration_identity",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_integration_identity.py",
+      "domain_layer": "Agent",
+      "import_count": 5,
+      "all_imports": [
+        "importlib.util",
+        "json",
+        "pathlib",
+        "sys",
+        "types"
+      ],
+      "stdlib_imports": [
+        "importlib.util",
+        "json",
+        "pathlib",
+        "sys",
+        "types"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "test_llm_bypass_smoke",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_llm_bypass_smoke.py",
+      "domain_layer": "Agent",
+      "import_count": 5,
+      "all_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "test_lock_unlock",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_lock_unlock.py",
+      "domain_layer": "Agent",
+      "import_count": 5,
+      "all_imports": [
+        "importlib.util",
+        "json",
+        "pathlib",
+        "sys",
+        "types"
+      ],
+      "stdlib_imports": [
+        "importlib.util",
+        "json",
+        "pathlib",
+        "sys",
+        "types"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "test_logos_agi_bootstrap_modes",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_logos_agi_bootstrap_modes.py",
+      "domain_layer": "Agent",
+      "import_count": 5,
+      "all_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "test_logos_agi_replay_proposals",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_logos_agi_replay_proposals.py",
+      "domain_layer": "Agent",
+      "import_count": 5,
+      "all_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "test_logos_runtime_phase2_smoke",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_logos_runtime_phase2_smoke.py",
+      "domain_layer": "Agent",
+      "import_count": 8,
+      "all_imports": [
+        "Logos_Agent.I2_Agent.I2_Core.smp",
+        "Logos_Agent.logos_runtime.coordinator",
+        "Logos_Agent.sop_runtime",
+        "__future__",
+        "dataclasses",
+        "json",
+        "os",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "json",
+        "os",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "Logos_Agent.I2_Agent.I2_Core.smp",
+        "Logos_Agent.logos_runtime.coordinator",
+        "Logos_Agent.sop_runtime",
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "test_nexus_capability_governance",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_nexus_capability_governance.py",
+      "domain_layer": "Agent",
+      "import_count": 4,
+      "all_imports": [
+        "asyncio",
+        "external.Logos_AGI.System_Operations_Protocol.infrastructure.agent_system.base_nexus",
+        "typing",
+        "unittest"
+      ],
+      "stdlib_imports": [
+        "asyncio",
+        "typing",
+        "unittest"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "external.Logos_AGI.System_Operations_Protocol.infrastructure.agent_system.base_nexus"
+      ]
+    },
+    {
+      "module_name": "test_pai",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_pai.py",
+      "domain_layer": "Agent",
+      "import_count": 5,
+      "all_imports": [
+        "Logos_Protocol.logos_core.governance.agent_identity",
+        "external.Logos_AGI.identity_paths",
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "Logos_Protocol.logos_core.governance.agent_identity",
+        "external.Logos_AGI.identity_paths"
+      ]
+    },
+    {
+      "module_name": "test_plan_revision_on_contradiction",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_plan_revision_on_contradiction.py",
+      "domain_layer": "Agent",
+      "import_count": 5,
+      "all_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "test_scp_recovery_mode_gate",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_scp_recovery_mode_gate.py",
+      "domain_layer": "Agent",
+      "import_count": 5,
+      "all_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "test_self_improvement_cycle",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_self_improvement_cycle.py",
+      "domain_layer": "Agent",
+      "import_count": 14,
+      "all_imports": [
+        "core.logos_core.daemon.logos_daemon",
+        "core.logos_core.governance.iel_signer",
+        "core.logos_core.meta_reasoning.iel_evaluator",
+        "core.logos_core.meta_reasoning.iel_generator",
+        "core.logos_core.meta_reasoning.iel_registry",
+        "datetime",
+        "json",
+        "logging",
+        "pathlib",
+        "pytest",
+        "scripts.update_telemetry",
+        "tempfile",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "datetime",
+        "json",
+        "logging",
+        "pathlib",
+        "tempfile",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "core.logos_core.daemon.logos_daemon",
+        "core.logos_core.governance.iel_signer",
+        "core.logos_core.meta_reasoning.iel_evaluator",
+        "core.logos_core.meta_reasoning.iel_generator",
+        "core.logos_core.meta_reasoning.iel_registry",
+        "pytest",
+        "scripts.update_telemetry"
+      ]
+    },
+    {
+      "module_name": "test_stub_beliefs_never_verified",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_stub_beliefs_never_verified.py",
+      "domain_layer": "Agent",
+      "import_count": 5,
+      "all_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "test_verify_pai",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_verify_pai.py",
+      "domain_layer": "Agent",
+      "import_count": 6,
+      "all_imports": [
+        "Logos_Protocol.logos_core.governance.agent_identity",
+        "copy",
+        "external.Logos_AGI.identity_paths",
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "copy",
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "Logos_Protocol.logos_core.governance.agent_identity",
+        "external.Logos_AGI.identity_paths"
+      ]
+    },
+    {
+      "module_name": "dual_bijection_demo",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/math/dual_bijection_demo.py",
+      "domain_layer": "Math",
+      "import_count": 0,
+      "all_imports": [],
+      "stdlib_imports": [],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "fractal_nexus",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/math/fractal_nexus.py",
+      "domain_layer": "Math",
+      "import_count": 11,
+      "all_imports": [
+        "LOGOS_AGI.Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator",
+        "LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.predictors.class_fractal_orbital_predictor",
+        "LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.predictors.divergence_calculator",
+        "LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine",
+        "Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator",
+        "Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine",
+        "json",
+        "pprint",
+        "sys",
+        "traceback",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "json",
+        "pprint",
+        "sys",
+        "traceback",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "LOGOS_AGI.Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator",
+        "LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.predictors.class_fractal_orbital_predictor",
+        "LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.predictors.divergence_calculator",
+        "LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine",
+        "Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator",
+        "Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine"
+      ]
+    },
+    {
+      "module_name": "arp_nexus",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/arp_nexus.py",
+      "domain_layer": "Reasoning",
+      "import_count": 14,
+      "all_imports": [
+        "LOGOS_AGI.Logos_Agent.agent.nexus.agent_nexus",
+        "LOGOS_AGI.Synthetic_Cognition_Protocol.nexus.scp_nexus",
+        "agent_system.base_nexus",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "iel_domains",
+        "logging",
+        "mathematical_foundations",
+        "pathlib",
+        "reasoning_engines",
+        "sys",
+        "typing",
+        "uuid"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "pathlib",
+        "sys",
+        "typing",
+        "uuid"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "LOGOS_AGI.Logos_Agent.agent.nexus.agent_nexus",
+        "LOGOS_AGI.Synthetic_Cognition_Protocol.nexus.scp_nexus",
+        "agent_system.base_nexus",
+        "iel_domains",
+        "mathematical_foundations",
+        "reasoning_engines"
+      ]
+    },
+    {
+      "module_name": "ergonomic_optimizer",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/ergonomic_optimizer.py",
+      "domain_layer": "Reasoning",
+      "import_count": 4,
+      "all_imports": [
+        "dataclasses",
+        "enum",
+        "math",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "enum",
+        "math",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "integration_test",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/integration_test.py",
+      "domain_layer": "Reasoning",
+      "import_count": 4,
+      "all_imports": [
+        "arp_nexus",
+        "asyncio",
+        "pathlib",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "asyncio",
+        "pathlib",
+        "sys"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "arp_nexus"
+      ]
+    },
+    {
+      "module_name": "integration_test_suite",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/integration_test_suite.py",
+      "domain_layer": "Reasoning",
+      "import_count": 8,
+      "all_imports": [
+        "argparse",
+        "concurrent.futures",
+        "datetime",
+        "json",
+        "requests",
+        "statistics",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "argparse",
+        "concurrent.futures",
+        "datetime",
+        "json",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "requests"
+      ],
+      "unresolved_imports": [
+        "statistics"
+      ]
+    },
+    {
+      "module_name": "modal_vector_sync",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/modal_vector_sync.py",
+      "domain_layer": "Reasoning",
+      "import_count": 3,
+      "all_imports": [
+        "__future__",
+        "dataclasses",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "resource_manager",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/resource_manager.py",
+      "domain_layer": "Reasoning",
+      "import_count": 2,
+      "all_imports": [
+        "collections",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "collections",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "scp_nexus",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/scp_nexus.py",
+      "domain_layer": "Reasoning",
+      "import_count": 8,
+      "all_imports": [
+        "System_Operations_Protocol.infrastructure.agent_system.base_nexus",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "System_Operations_Protocol.infrastructure.agent_system.base_nexus"
+      ]
+    },
+    {
+      "module_name": "test_arp_nexus",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_arp_nexus.py",
+      "domain_layer": "Reasoning",
+      "import_count": 4,
+      "all_imports": [
+        "arp_nexus",
+        "asyncio",
+        "pathlib",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "asyncio",
+        "pathlib",
+        "sys"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "arp_nexus"
+      ]
+    },
+    {
+      "module_name": "test_bayesian_data_handler",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_bayesian_data_handler.py",
+      "domain_layer": "Reasoning",
+      "import_count": 8,
+      "all_imports": [
+        "datetime",
+        "external.Logos_AGI.Advanced_Reasoning_Protocol.reasoning_engines",
+        "importlib",
+        "pandas",
+        "pathlib",
+        "tempfile",
+        "types",
+        "unittest"
+      ],
+      "stdlib_imports": [
+        "datetime",
+        "importlib",
+        "pathlib",
+        "tempfile",
+        "types",
+        "unittest"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "pandas"
+      ],
+      "unresolved_imports": [
+        "external.Logos_AGI.Advanced_Reasoning_Protocol.reasoning_engines"
+      ]
+    },
+    {
+      "module_name": "test_dual_bijection",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_dual_bijection.py",
+      "domain_layer": "Reasoning",
+      "import_count": 2,
+      "all_imports": [
+        "numpy",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "numpy"
+      ],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "test_integration",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_integration.py",
+      "domain_layer": "Reasoning",
+      "import_count": 11,
+      "all_imports": [
+        "LOGOS_AGI.v7.adaptive_reasoning.bayesian_inference",
+        "LOGOS_AGI.v7.adaptive_reasoning.semantic_transformers",
+        "LOGOS_AGI.v7.adaptive_reasoning.torch_adapters",
+        "LOGOS_AGI.v7.integration.adaptive_interface",
+        "LOGOS_AGI.v7.runtime_services.core_service",
+        "Synthetic_Cognition_Protocol.BDN_System.core.trinity_vectors",
+        "asyncio",
+        "logging",
+        "os",
+        "sys",
+        "traceback"
+      ],
+      "stdlib_imports": [
+        "asyncio",
+        "logging",
+        "os",
+        "sys",
+        "traceback"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "LOGOS_AGI.v7.adaptive_reasoning.bayesian_inference",
+        "LOGOS_AGI.v7.adaptive_reasoning.semantic_transformers",
+        "LOGOS_AGI.v7.adaptive_reasoning.torch_adapters",
+        "LOGOS_AGI.v7.integration.adaptive_interface",
+        "LOGOS_AGI.v7.runtime_services.core_service",
+        "Synthetic_Cognition_Protocol.BDN_System.core.trinity_vectors"
+      ]
+    },
+    {
+      "module_name": "test_logos_agi_persistence_smoke",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_logos_agi_persistence_smoke.py",
+      "domain_layer": "Reasoning",
+      "import_count": 6,
+      "all_imports": [
+        "json",
+        "pathlib",
+        "shutil",
+        "subprocess",
+        "sys",
+        "tempfile"
+      ],
+      "stdlib_imports": [
+        "json",
+        "pathlib",
+        "shutil",
+        "subprocess",
+        "sys",
+        "tempfile"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "test_proved_grounding",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_proved_grounding.py",
+      "domain_layer": "Reasoning",
+      "import_count": 5,
+      "all_imports": [
+        "logos.proof_refs",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "internal_imports": [
+        "logos.proof_refs"
+      ],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "uip_nexus",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/uip_nexus.py",
+      "domain_layer": "Reasoning",
+      "import_count": 8,
+      "all_imports": [
+        "agent_system.base_nexus",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "agent_system.base_nexus"
+      ]
+    },
+    {
+      "module_name": "attestation",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/attestation.py",
+      "domain_layer": "Safety",
+      "import_count": 6,
+      "all_imports": [
+        "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas",
+        "__future__",
+        "datetime",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "datetime",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "internal_imports": [
+        "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas"
+      ],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "health_server",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/health_server.py",
+      "domain_layer": "Safety",
+      "import_count": 4,
+      "all_imports": [
+        "datetime",
+        "fastapi",
+        "requests",
+        "uvicorn"
+      ],
+      "stdlib_imports": [
+        "datetime"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "fastapi",
+        "requests",
+        "uvicorn"
+      ],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "test_reference_monitor",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/test_reference_monitor.py",
+      "domain_layer": "Safety",
+      "import_count": 10,
+      "all_imports": [
+        "Logos_System.System_Stack.Logos_Protocol.Runtime_Operations.IEL_generator.entry",
+        "Logos_System.System_Stack.System_Operations_Protocol.governance.enhanced_reference_monitor",
+        "json",
+        "pathlib",
+        "shutil",
+        "sys",
+        "threading",
+        "time",
+        "unittest",
+        "unittest.mock"
+      ],
+      "stdlib_imports": [
+        "json",
+        "pathlib",
+        "shutil",
+        "sys",
+        "threading",
+        "time",
+        "unittest",
+        "unittest.mock"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "Logos_System.System_Stack.Logos_Protocol.Runtime_Operations.IEL_generator.entry",
+        "Logos_System.System_Stack.System_Operations_Protocol.governance.enhanced_reference_monitor"
+      ]
+    },
+    {
+      "module_name": "test_tool_pipeline_smoke",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/test_tool_pipeline_smoke.py",
+      "domain_layer": "Safety",
+      "import_count": 9,
+      "all_imports": [
+        "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas",
+        "json",
+        "logos.tool_registry_loader",
+        "os",
+        "pathlib",
+        "scripts.system_stack_tbd.could_be_dev.start_agent",
+        "subprocess",
+        "sys",
+        "tempfile"
+      ],
+      "stdlib_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tempfile"
+      ],
+      "internal_imports": [
+        "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas",
+        "logos.tool_registry_loader"
+      ],
+      "external_imports": [],
+      "unresolved_imports": [
+        "scripts.system_stack_tbd.could_be_dev.start_agent"
+      ]
+    },
+    {
+      "module_name": "boot_system",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/boot_system.py",
+      "domain_layer": "Semantic",
+      "import_count": 11,
+      "all_imports": [
+        "",
+        "__future__",
+        "asyncio",
+        "dataclasses",
+        "json",
+        "maintenance",
+        "pathlib",
+        "shared_resources",
+        "time",
+        "typing",
+        "uuid"
+      ],
+      "stdlib_imports": [
+        "asyncio",
+        "dataclasses",
+        "json",
+        "pathlib",
+        "time",
+        "typing",
+        "uuid"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "",
+        "__future__",
+        "maintenance",
+        "shared_resources"
+      ]
+    },
+    {
+      "module_name": "commitment_ledger",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/commitment_ledger.py",
+      "domain_layer": "Semantic",
+      "import_count": 9,
+      "all_imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "tempfile",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "dispatch",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/dispatch.py",
+      "domain_layer": "Semantic",
+      "import_count": 4,
+      "all_imports": [
+        "I1.scp_pipeline.pipeline_runner",
+        "I3.arp_cycle.cycle_runner",
+        "__future__",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "I1.scp_pipeline.pipeline_runner",
+        "I3.arp_cycle.cycle_runner",
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "hashing",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/hashing.py",
+      "domain_layer": "Semantic",
+      "import_count": 3,
+      "all_imports": [
+        "__future__",
+        "hashlib",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "hashlib",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "maintenance",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/maintenance.py",
+      "domain_layer": "Semantic",
+      "import_count": 10,
+      "all_imports": [
+        "",
+        "__future__",
+        "asyncio",
+        "dataclasses",
+        "json",
+        "os",
+        "pathlib",
+        "shared_resources",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "asyncio",
+        "dataclasses",
+        "json",
+        "os",
+        "pathlib",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "",
+        "__future__",
+        "shared_resources"
+      ]
+    },
+    {
+      "module_name": "mtp_nexus_orchestrator",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/mtp_nexus_orchestrator.py",
+      "domain_layer": "Semantic",
+      "import_count": 0,
+      "all_imports": [],
+      "stdlib_imports": [],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "nexus_manager",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/nexus_manager.py",
+      "domain_layer": "Semantic",
+      "import_count": 7,
+      "all_imports": [
+        "JUNK_DRAWER.scripts.runtime.could_be_dev.start_agent",
+        "JUNK_DRAWER.scripts.runtime.need_to_distribute.logos_agi_adapter",
+        "__future__",
+        "pathlib",
+        "subprocess",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "pathlib",
+        "subprocess",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "JUNK_DRAWER.scripts.runtime.could_be_dev.start_agent",
+        "JUNK_DRAWER.scripts.runtime.need_to_distribute.logos_agi_adapter",
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "ontoprops_remap",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/ontoprops_remap.py",
+      "domain_layer": "Semantic",
+      "import_count": 2,
+      "all_imports": [
+        "json",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "json",
+        "sys"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "packet_types",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/packet_types.py",
+      "domain_layer": "Semantic",
+      "import_count": 3,
+      "all_imports": [
+        "__future__",
+        "dataclasses",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "prioritization",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/prioritization.py",
+      "domain_layer": "Semantic",
+      "import_count": 6,
+      "all_imports": [
+        "Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger",
+        "__future__",
+        "datetime",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "datetime",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger",
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "providers_llama",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/providers_llama.py",
+      "domain_layer": "Semantic",
+      "import_count": 7,
+      "all_imports": [
+        "__future__",
+        "json",
+        "llama_cpp",
+        "types",
+        "typing",
+        "urllib.error",
+        "urllib.request"
+      ],
+      "stdlib_imports": [
+        "json",
+        "types",
+        "typing",
+        "urllib.error",
+        "urllib.request"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__",
+        "llama_cpp"
+      ]
+    },
+    {
+      "module_name": "providers_openai",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/providers_openai.py",
+      "domain_layer": "Semantic",
+      "import_count": 6,
+      "all_imports": [
+        "__future__",
+        "json",
+        "types",
+        "typing",
+        "urllib.error",
+        "urllib.request"
+      ],
+      "stdlib_imports": [
+        "json",
+        "types",
+        "typing",
+        "urllib.error",
+        "urllib.request"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "test_logos_agi_adapter",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_logos_agi_adapter.py",
+      "domain_layer": "Semantic",
+      "import_count": 7,
+      "all_imports": [
+        "__future__",
+        "json",
+        "pathlib",
+        "scripts.logos_agi_adapter",
+        "tempfile",
+        "unittest",
+        "unittest.mock"
+      ],
+      "stdlib_imports": [
+        "json",
+        "pathlib",
+        "tempfile",
+        "unittest",
+        "unittest.mock"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__",
+        "scripts.logos_agi_adapter"
+      ]
+    },
+    {
+      "module_name": "test_perception_ingestors",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_perception_ingestors.py",
+      "domain_layer": "Semantic",
+      "import_count": 7,
+      "all_imports": [
+        "Logos_AGI.Logos_Agent.creator_packet.reflection_builder.perception_ingestors",
+        "__future__",
+        "datetime",
+        "json",
+        "pathlib",
+        "typing",
+        "unittest"
+      ],
+      "stdlib_imports": [
+        "datetime",
+        "json",
+        "pathlib",
+        "typing",
+        "unittest"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "Logos_AGI.Logos_Agent.creator_packet.reflection_builder.perception_ingestors",
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "test_registry_and_response",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_registry_and_response.py",
+      "domain_layer": "Semantic",
+      "import_count": 4,
+      "all_imports": [
+        "User_Interaction_Protocol.uip_protocol.core_processing.registry",
+        "User_Interaction_Protocol.uip_protocol.output.response_formatter",
+        "__future__",
+        "pytest"
+      ],
+      "stdlib_imports": [],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "User_Interaction_Protocol.uip_protocol.core_processing.registry",
+        "User_Interaction_Protocol.uip_protocol.output.response_formatter",
+        "__future__",
+        "pytest"
+      ]
+    },
+    {
+      "module_name": "test_simulation_cli",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_simulation_cli.py",
+      "domain_layer": "Semantic",
+      "import_count": 5,
+      "all_imports": [
+        "__future__",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tempfile"
+      ],
+      "stdlib_imports": [
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tempfile"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "test_tool_fallback_proposal",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_tool_fallback_proposal.py",
+      "domain_layer": "Semantic",
+      "import_count": 6,
+      "all_imports": [
+        "__future__",
+        "json",
+        "os",
+        "pathlib",
+        "scripts.start_agent",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "json",
+        "os",
+        "pathlib",
+        "sys"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__",
+        "scripts.start_agent"
+      ]
+    },
+    {
+      "module_name": "time_utils",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/time_utils.py",
+      "domain_layer": "Semantic",
+      "import_count": 2,
+      "all_imports": [
+        "__future__",
+        "datetime"
+      ],
+      "stdlib_imports": [
+        "datetime"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "transform_types",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/transform_types.py",
+      "domain_layer": "Semantic",
+      "import_count": 3,
+      "all_imports": [
+        "__future__",
+        "dataclasses",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "types",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/types.py",
+      "domain_layer": "Semantic",
+      "import_count": 3,
+      "all_imports": [
+        "__future__",
+        "dataclasses",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "arp_nexus_orchestrator",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/arp_nexus_orchestrator.py",
+      "domain_layer": "Utility",
+      "import_count": 0,
+      "all_imports": [],
+      "stdlib_imports": [],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "causal_trace_operator",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/causal_trace_operator.py",
+      "domain_layer": "Utility",
+      "import_count": 0,
+      "all_imports": [],
+      "stdlib_imports": [],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "class_extrapolator",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/class_extrapolator.py",
+      "domain_layer": "Utility",
+      "import_count": 2,
+      "all_imports": [
+        "random",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "random",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "csp_nexus_orchestrator",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/csp_nexus_orchestrator.py",
+      "domain_layer": "Utility",
+      "import_count": 0,
+      "all_imports": [],
+      "stdlib_imports": [],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "development_environment",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/development_environment.py",
+      "domain_layer": "Utility",
+      "import_count": 1,
+      "all_imports": [
+        "typing"
+      ],
+      "stdlib_imports": [
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "logos_protocol_nexus",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/logos_protocol_nexus.py",
+      "domain_layer": "Utility",
+      "import_count": 0,
+      "all_imports": [],
+      "stdlib_imports": [],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "regression_checker",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/regression_checker.py",
+      "domain_layer": "Utility",
+      "import_count": 3,
+      "all_imports": [
+        "datetime",
+        "json",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "datetime",
+        "json",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "scp_nexus_orchestrator",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/scp_nexus_orchestrator.py",
+      "domain_layer": "Utility",
+      "import_count": 0,
+      "all_imports": [],
+      "stdlib_imports": [],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "sop_nexus_orchestrator",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/sop_nexus_orchestrator.py",
+      "domain_layer": "Utility",
+      "import_count": 0,
+      "all_imports": [],
+      "stdlib_imports": [],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "test_arp_modes",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_arp_modes.py",
+      "domain_layer": "Utility",
+      "import_count": 4,
+      "all_imports": [
+        "arp_operations",
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "arp_operations"
+      ]
+    },
+    {
+      "module_name": "test_determinism",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_determinism.py",
+      "domain_layer": "Utility",
+      "import_count": 3,
+      "all_imports": [
+        "hashlib",
+        "pathlib",
+        "subprocess"
+      ],
+      "stdlib_imports": [
+        "hashlib",
+        "pathlib",
+        "subprocess"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "test_evaluator_learning_smoke",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_evaluator_learning_smoke.py",
+      "domain_layer": "Utility",
+      "import_count": 3,
+      "all_imports": [
+        "logos.evaluator",
+        "pathlib",
+        "sys"
+      ],
+      "stdlib_imports": [
+        "pathlib",
+        "sys"
+      ],
+      "internal_imports": [
+        "logos.evaluator"
+      ],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "test_logos_agi_pin_drift",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_logos_agi_pin_drift.py",
+      "domain_layer": "Utility",
+      "import_count": 8,
+      "all_imports": [
+        "JUNK_DRAWER.scripts.runtime.need_to_distribute.provenance",
+        "json",
+        "pathlib",
+        "shutil",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "unittest"
+      ],
+      "stdlib_imports": [
+        "json",
+        "pathlib",
+        "shutil",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "unittest"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "JUNK_DRAWER.scripts.runtime.need_to_distribute.provenance"
+      ]
+    },
+    {
+      "module_name": "_uip_connector_stubs",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/_uip_connector_stubs.py",
+      "domain_layer": "Utils",
+      "import_count": 4,
+      "all_imports": [
+        "__future__",
+        "dataclasses",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "bridge",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/bridge.py",
+      "domain_layer": "Utils",
+      "import_count": 6,
+      "all_imports": [
+        "asyncio",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "asyncio",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "causal_chain_node_predictor",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/causal_chain_node_predictor.py",
+      "domain_layer": "Utils",
+      "import_count": 5,
+      "all_imports": [
+        "causallearn.search.ConstraintBased.PC",
+        "causallearn.utils.GraphUtils",
+        "causallearn.utils.cit",
+        "logging",
+        "numpy"
+      ],
+      "stdlib_imports": [
+        "logging"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "numpy"
+      ],
+      "unresolved_imports": [
+        "causallearn.search.ConstraintBased.PC",
+        "causallearn.utils.GraphUtils",
+        "causallearn.utils.cit"
+      ]
+    },
+    {
+      "module_name": "check_imports",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/check_imports.py",
+      "domain_layer": "Utils",
+      "import_count": 3,
+      "all_imports": [
+        "ast",
+        "importlib.util",
+        "os"
+      ],
+      "stdlib_imports": [
+        "ast",
+        "importlib.util",
+        "os"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "check_run_cycle_prereqs",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/check_run_cycle_prereqs.py",
+      "domain_layer": "Utils",
+      "import_count": 7,
+      "all_imports": [
+        "LOGOS_AGI.analytics",
+        "LOGOS_AGI.settings",
+        "__future__",
+        "importlib",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "importlib",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "LOGOS_AGI.analytics",
+        "LOGOS_AGI.settings",
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "config",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/config.py",
+      "domain_layer": "Utils",
+      "import_count": 4,
+      "all_imports": [
+        "__future__",
+        "dataclasses",
+        "os",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "os",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "cycle_ledger",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/cycle_ledger.py",
+      "domain_layer": "Utils",
+      "import_count": 5,
+      "all_imports": [
+        "__future__",
+        "hashlib",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "hashlib",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "evidence",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/evidence.py",
+      "domain_layer": "Utils",
+      "import_count": 4,
+      "all_imports": [
+        "__future__",
+        "logos",
+        "pathlib",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "pathlib",
+        "typing"
+      ],
+      "internal_imports": [
+        "logos"
+      ],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "guardrails",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/guardrails.py",
+      "domain_layer": "Utils",
+      "import_count": 7,
+      "all_imports": [
+        "Logos_System.System_Stack.System_Operations_Protocol.infrastructure.agent_system.agent_nexus",
+        "__future__",
+        "functools",
+        "json",
+        "os",
+        "pathlib",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "functools",
+        "json",
+        "os",
+        "pathlib",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "Logos_System.System_Stack.System_Operations_Protocol.infrastructure.agent_system.agent_nexus",
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "iel_integration",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iel_integration.py",
+      "domain_layer": "Utils",
+      "import_count": 4,
+      "all_imports": [
+        "iel_registry",
+        "os",
+        "sys",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "os",
+        "sys",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "iel_registry"
+      ]
+    },
+    {
+      "module_name": "iel_registryv1",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iel_registryv1.py",
+      "domain_layer": "Utils",
+      "import_count": 16,
+      "all_imports": [
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "iel_evaluator",
+        "iel_generator",
+        "json",
+        "logging",
+        "os",
+        "pathlib",
+        "re",
+        "shutil",
+        "sqlite3",
+        "sys",
+        "threading",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "json",
+        "logging",
+        "os",
+        "pathlib",
+        "re",
+        "shutil",
+        "sys",
+        "threading",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "iel_evaluator",
+        "iel_generator",
+        "sqlite3"
+      ]
+    },
+    {
+      "module_name": "iel_registryv2",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iel_registryv2.py",
+      "domain_layer": "Utils",
+      "import_count": 2,
+      "all_imports": [
+        "os",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "os",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "io_normalizer",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/io_normalizer.py",
+      "domain_layer": "Utils",
+      "import_count": 3,
+      "all_imports": [
+        "datetime",
+        "json",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "datetime",
+        "json",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "iterative_loop",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iterative_loop.py",
+      "domain_layer": "Utils",
+      "import_count": 5,
+      "all_imports": [
+        "__future__",
+        "dataclasses",
+        "transform_registry",
+        "transform_types",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__",
+        "transform_registry",
+        "transform_types"
+      ]
+    },
+    {
+      "module_name": "kernel",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/kernel.py",
+      "domain_layer": "Utils",
+      "import_count": 5,
+      "all_imports": [
+        "Logos_Protocol.logos_core.reference_monitor",
+        "collections.abc",
+        "os",
+        "sys",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "collections.abc",
+        "os",
+        "sys",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "Logos_Protocol.logos_core.reference_monitor"
+      ]
+    },
+    {
+      "module_name": "logging_utils",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/logging_utils.py",
+      "domain_layer": "Utils",
+      "import_count": 4,
+      "all_imports": [
+        "__future__",
+        "json",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "json",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "logos_monitor",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/logos_monitor.py",
+      "domain_layer": "Utils",
+      "import_count": 6,
+      "all_imports": [
+        "System_Operations_Protocol.deployment.configuration.entry",
+        "argparse",
+        "json",
+        "pathlib",
+        "sys",
+        "time"
+      ],
+      "stdlib_imports": [
+        "argparse",
+        "json",
+        "pathlib",
+        "sys",
+        "time"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "System_Operations_Protocol.deployment.configuration.entry"
+      ]
+    },
+    {
+      "module_name": "ontology_inducer",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/ontology_inducer.py",
+      "domain_layer": "Utils",
+      "import_count": 3,
+      "all_imports": [
+        "async_workers",
+        "config_loader",
+        "logos_validator_hub"
+      ],
+      "stdlib_imports": [],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "async_workers",
+        "config_loader",
+        "logos_validator_hub"
+      ]
+    },
+    {
+      "module_name": "policy",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/policy.py",
+      "domain_layer": "Utils",
+      "import_count": 6,
+      "all_imports": [
+        "dataclasses",
+        "datetime",
+        "logging",
+        "pathlib",
+        "typing",
+        "yaml"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "datetime",
+        "logging",
+        "pathlib",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "yaml"
+      ],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "progressive_router",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/progressive_router.py",
+      "domain_layer": "Utils",
+      "import_count": 12,
+      "all_imports": [
+        "__future__",
+        "dataclasses",
+        "input.input_handler",
+        "json",
+        "logging",
+        "output.response_formatter",
+        "pydantic",
+        "system_utilities.system_utils",
+        "time",
+        "typing",
+        "uip_protocol.core_processing.registry",
+        "uuid"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "json",
+        "logging",
+        "time",
+        "typing",
+        "uuid"
+      ],
+      "internal_imports": [],
+      "external_imports": [
+        "pydantic"
+      ],
+      "unresolved_imports": [
+        "__future__",
+        "input.input_handler",
+        "output.response_formatter",
+        "system_utilities.system_utils",
+        "uip_protocol.core_processing.registry"
+      ]
+    },
+    {
+      "module_name": "router",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/router.py",
+      "domain_layer": "Utils",
+      "import_count": 13,
+      "all_imports": [
+        "__future__",
+        "core_processing.sanitizer",
+        "dataclasses",
+        "datetime",
+        "input_output_processing.parser",
+        "json",
+        "logging",
+        "metadata_filters.response_engine",
+        "pathlib",
+        "queue",
+        "sys",
+        "threading",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "datetime",
+        "json",
+        "logging",
+        "pathlib",
+        "queue",
+        "sys",
+        "threading",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__",
+        "core_processing.sanitizer",
+        "input_output_processing.parser",
+        "metadata_filters.response_engine"
+      ]
+    },
+    {
+      "module_name": "sanitizer",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/sanitizer.py",
+      "domain_layer": "Utils",
+      "import_count": 5,
+      "all_imports": [
+        "__future__",
+        "dataclasses",
+        "logging",
+        "re",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "logging",
+        "re",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "schema_utils",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/schema_utils.py",
+      "domain_layer": "Utils",
+      "import_count": 3,
+      "all_imports": [
+        "__future__",
+        "errors",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__",
+        "errors"
+      ]
+    },
+    {
+      "module_name": "self_diagnosis",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/self_diagnosis.py",
+      "domain_layer": "Utils",
+      "import_count": 8,
+      "all_imports": [
+        "asyncio",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "os",
+        "psutil",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "asyncio",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "logging",
+        "os",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "psutil"
+      ]
+    },
+    {
+      "module_name": "shared_resources",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/shared_resources.py",
+      "domain_layer": "Utils",
+      "import_count": 9,
+      "all_imports": [
+        "__future__",
+        "asyncio",
+        "contextlib",
+        "dataclasses",
+        "json",
+        "os",
+        "pathlib",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "asyncio",
+        "contextlib",
+        "dataclasses",
+        "json",
+        "os",
+        "pathlib",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "skill_acquisition",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/skill_acquisition.py",
+      "domain_layer": "Utils",
+      "import_count": 3,
+      "all_imports": [
+        "core.async_workers",
+        "core.config_loader",
+        "core.logos_validator_hub"
+      ],
+      "stdlib_imports": [],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "core.async_workers",
+        "core.config_loader",
+        "core.logos_validator_hub"
+      ]
+    },
+    {
+      "module_name": "smp_intake",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/smp_intake.py",
+      "domain_layer": "Utils",
+      "import_count": 6,
+      "all_imports": [
+        "I1_Agent.config.hashing",
+        "I1_Agent.config.schema_utils",
+        "I1_Agent.diagnostics.errors",
+        "__future__",
+        "dataclasses",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "I1_Agent.config.hashing",
+        "I1_Agent.config.schema_utils",
+        "I1_Agent.diagnostics.errors",
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "stress_sop_runtime",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/stress_sop_runtime.py",
+      "domain_layer": "Utils",
+      "import_count": 12,
+      "all_imports": [
+        "__future__",
+        "argparse",
+        "asyncio",
+        "collections",
+        "datetime",
+        "importlib",
+        "importlib.util",
+        "json",
+        "pathlib",
+        "sys",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "argparse",
+        "asyncio",
+        "collections",
+        "datetime",
+        "importlib",
+        "importlib.util",
+        "json",
+        "pathlib",
+        "sys",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "system_utils",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/system_utils.py",
+      "domain_layer": "Utils",
+      "import_count": 7,
+      "all_imports": [
+        "datetime",
+        "json",
+        "logging",
+        "prometheus_client",
+        "structlog",
+        "typing",
+        "uuid"
+      ],
+      "stdlib_imports": [
+        "datetime",
+        "json",
+        "logging",
+        "typing",
+        "uuid"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "prometheus_client",
+        "structlog"
+      ]
+    },
+    {
+      "module_name": "task_intake",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/task_intake.py",
+      "domain_layer": "Utils",
+      "import_count": 5,
+      "all_imports": [
+        "I3_Agent.config.schema_utils",
+        "I3_Agent.diagnostics.errors",
+        "__future__",
+        "dataclasses",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "dataclasses",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "I3_Agent.config.schema_utils",
+        "I3_Agent.diagnostics.errors",
+        "__future__"
+      ]
+    },
+    {
+      "module_name": "transform_registry",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/transform_registry.py",
+      "domain_layer": "Utils",
+      "import_count": 3,
+      "all_imports": [
+        "__future__",
+        "transform_types",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": [
+        "__future__",
+        "transform_types"
+      ]
+    },
+    {
+      "module_name": "uip_operations",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/uip_operations.py",
+      "domain_layer": "Utils",
+      "import_count": 7,
+      "all_imports": [
+        "argparse",
+        "json",
+        "logging",
+        "os",
+        "sys",
+        "time",
+        "typing"
+      ],
+      "stdlib_imports": [
+        "argparse",
+        "json",
+        "logging",
+        "os",
+        "sys",
+        "time",
+        "typing"
+      ],
+      "internal_imports": [],
+      "external_imports": [],
+      "unresolved_imports": []
+    },
+    {
+      "module_name": "worker_kernel",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/worker_kernel.py",
+      "domain_layer": "Utils",
+      "import_count": 2,
+      "all_imports": [
+        "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+        "unified_classes"
+      ],
+      "stdlib_imports": [],
+      "internal_imports": [
+        "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports"
+      ],
+      "external_imports": [],
+      "unresolved_imports": [
+        "unified_classes"
+      ]
+    }
+  ]
+}

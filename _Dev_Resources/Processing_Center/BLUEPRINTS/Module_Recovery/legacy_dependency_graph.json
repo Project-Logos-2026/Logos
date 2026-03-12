@@ -1,0 +1,596 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-12T09:19:33.507681Z",
+  "tool_used": "Runtime_Diagnostics/runtime_callgraph_extractor (Runtime_Tools inline)",
+  "total_nodes": 161,
+  "total_edges": 52,
+  "isolated_modules_count": 119,
+  "isolated_modules": [
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/NLP_Wrapper_Sentence_Transformers.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayesian_recursion.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/coherence.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/gen_worldview_ontoprops.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/iel_overlay.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/privative_policies.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/simulated_consciousness_runtime.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/action_system.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/autonomous_learning.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_interface.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/belief_network.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/coherence_formalism.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/coherence_metrics.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/export_tool_registry.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_logic.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_validator.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/pxl_fractal_orbital_analysis.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/pxl_modal_fractal_boundary_analysis.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/semantic_transformers.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/Logos_Memory_Nexus.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/evaluation_packet.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/knowledge_catalog.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/plan_packet.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_agent_planner.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_end_to_end_pipeline.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_llm_bypass_smoke.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_logos_agi_bootstrap_modes.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_logos_agi_replay_proposals.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_logos_runtime_phase2_smoke.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_plan_revision_on_contradiction.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_scp_recovery_mode_gate.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_self_improvement_cycle.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_stub_beliefs_never_verified.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/math/dual_bijection_demo.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/math/fractal_nexus.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/ergonomic_optimizer.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/integration_test_suite.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/modal_vector_sync.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/resource_manager.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_dual_bijection.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_logos_agi_persistence_smoke.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_proved_grounding.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/attestation.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/health_server.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/test_reference_monitor.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/test_tool_pipeline_smoke.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/commitment_ledger.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/dispatch.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/hashing.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/mtp_nexus_orchestrator.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/nexus_manager.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/ontoprops_remap.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/packet_types.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_logos_agi_adapter.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_perception_ingestors.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_registry_and_response.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_simulation_cli.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_tool_fallback_proposal.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/time_utils.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/transform_types.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/types.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/arp_nexus_orchestrator.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/causal_trace_operator.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/class_extrapolator.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/csp_nexus_orchestrator.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/development_environment.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/logos_protocol_nexus.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/regression_checker.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/scp_nexus_orchestrator.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/sop_nexus_orchestrator.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_arp_modes.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_determinism.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_evaluator_learning_smoke.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_logos_agi_pin_drift.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/_uip_connector_stubs.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/bridge.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/causal_chain_node_predictor.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/check_imports.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/check_run_cycle_prereqs.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/config.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/cycle_ledger.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/evidence.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iel_integration.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iel_registryv1.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iel_registryv2.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/io_normalizer.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/kernel.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/logging_utils.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/logos_monitor.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/ontology_inducer.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/policy.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/sanitizer.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/schema_utils.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/self_diagnosis.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/shared_resources.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/skill_acquisition.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/stress_sop_runtime.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/system_utils.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/uip_operations.py",
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/worker_kernel.py"
+  ],
+  "adjacency": {
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/NLP_Wrapper_Sentence_Transformers.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/adaptive_engine.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/system_utils.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayesian_recursion.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/coherence.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/comprehensive_fractal_analysis.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/gen_worldview_ontoprops.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/iel_overlay.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/privative_policies.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/simulated_consciousness_runtime.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/PXL_World_Model.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/action_system.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/agent_identity.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/commitment_ledger.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/arithmetic_engine.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_engine.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/autonomous_learning.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_inferencer.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_interface.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_nexus.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayesian_recursion.py",
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py",
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_inferencer.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_updates.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/belief_network.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/coherence_formalism.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/coherence_metrics.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/export_tool_registry.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_engine.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_parser.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_logic.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_reasoner.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_logic.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_validator.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/multi_modal_system.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_logic.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/proof_engine.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_engine.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/pxl_fractal_orbital_analysis.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/pxl_modal_fractal_boundary_analysis.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/pxl_schema.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/relation_mapper.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/semantic_transformers.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_introspection.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_invention.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/development_environment.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_optimizer.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/knowledge_catalog.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/translation_engine.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/Logos_Memory_Nexus.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/agent_nexus.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/evaluation_packet.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/id_handler.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/hashing.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/knowledge_catalog.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/legacy_sop_nexus.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/plan_packet.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/sop_nexus.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py",
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/development_environment.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_agent_planner.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_end_to_end_pipeline.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_hardening.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/knowledge_catalog.py",
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/development_environment.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_integration_identity.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/types.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_llm_bypass_smoke.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_lock_unlock.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/types.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_logos_agi_bootstrap_modes.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_logos_agi_replay_proposals.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_logos_runtime_phase2_smoke.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_nexus_capability_governance.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_pai.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/agent_identity.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_plan_revision_on_contradiction.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_scp_recovery_mode_gate.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_self_improvement_cycle.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_stub_beliefs_never_verified.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_verify_pai.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/agent_identity.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/math/dual_bijection_demo.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/math/fractal_nexus.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/arp_nexus.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/agent_nexus.py",
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py",
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/scp_nexus.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/ergonomic_optimizer.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/integration_test.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/arp_nexus.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/integration_test_suite.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/modal_vector_sync.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/resource_manager.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/scp_nexus.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_arp_nexus.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/arp_nexus.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_bayesian_data_handler.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/types.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_dual_bijection.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_integration.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/semantic_transformers.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_logos_agi_persistence_smoke.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_proved_grounding.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/uip_nexus.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/attestation.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/health_server.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/test_reference_monitor.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/test_tool_pipeline_smoke.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/boot_system.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/maintenance.py",
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/shared_resources.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/commitment_ledger.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/dispatch.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/hashing.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/maintenance.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/shared_resources.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/mtp_nexus_orchestrator.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/nexus_manager.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/ontoprops_remap.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/packet_types.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/prioritization.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/commitment_ledger.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/providers_llama.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/types.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/providers_openai.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/types.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_logos_agi_adapter.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_perception_ingestors.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_registry_and_response.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_simulation_cli.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_tool_fallback_proposal.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/time_utils.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/transform_types.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/types.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/arp_nexus_orchestrator.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/causal_trace_operator.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/class_extrapolator.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/csp_nexus_orchestrator.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/development_environment.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/logos_protocol_nexus.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/regression_checker.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/scp_nexus_orchestrator.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/sop_nexus_orchestrator.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_arp_modes.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_determinism.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_evaluator_learning_smoke.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_logos_agi_pin_drift.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/_uip_connector_stubs.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/bridge.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/causal_chain_node_predictor.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/check_imports.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/check_run_cycle_prereqs.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/config.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/cycle_ledger.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/evidence.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/guardrails.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/agent_nexus.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iel_integration.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iel_registryv1.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iel_registryv2.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/io_normalizer.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iterative_loop.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/transform_types.py",
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/transform_registry.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/kernel.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/logging_utils.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/logos_monitor.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/ontology_inducer.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/policy.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/progressive_router.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/system_utils.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/router.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/sanitizer.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/sanitizer.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/schema_utils.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/self_diagnosis.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/shared_resources.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/skill_acquisition.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/smp_intake.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/hashing.py",
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/schema_utils.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/stress_sop_runtime.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/system_utils.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/task_intake.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/schema_utils.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/transform_registry.py": [
+      "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/transform_types.py"
+    ],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/uip_operations.py": [],
+    "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/worker_kernel.py": []
+  },
+  "edges": [
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/adaptive_engine.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/system_utils.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/comprehensive_fractal_analysis.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/agent_identity.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/commitment_ledger.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/arithmetic_engine.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_engine.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_inferencer.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_inferencer.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayesian_recursion.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_engine.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_reasoner.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_logic.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/multi_modal_system.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_logic.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/proof_engine.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_engine.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_invention.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/development_environment.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/knowledge_catalog.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/agent_nexus.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/id_handler.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/hashing.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/legacy_sop_nexus.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/sop_nexus.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/sop_nexus.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/development_environment.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_hardening.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/development_environment.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_hardening.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/knowledge_catalog.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_integration_identity.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/types.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_lock_unlock.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/types.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_nexus_capability_governance.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_pai.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/agent_identity.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_verify_pai.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/agent_identity.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/arp_nexus.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/scp_nexus.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/arp_nexus.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/arp_nexus.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/agent_nexus.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/integration_test.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/arp_nexus.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/scp_nexus.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_arp_nexus.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/arp_nexus.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_bayesian_data_handler.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/types.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_integration.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/semantic_transformers.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/uip_nexus.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/boot_system.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/maintenance.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/boot_system.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/shared_resources.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/maintenance.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/shared_resources.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/prioritization.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/commitment_ledger.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/providers_llama.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/types.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/providers_openai.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/types.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/guardrails.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/agent_nexus.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iterative_loop.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/transform_types.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iterative_loop.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/transform_registry.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/progressive_router.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/system_utils.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/router.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/sanitizer.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/smp_intake.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/schema_utils.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/smp_intake.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/hashing.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/task_intake.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/schema_utils.py"
+    },
+    {
+      "from": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/transform_registry.py",
+      "to": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/transform_types.py"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "registry_type": "DRAC_CONTEXT_REGISTRY",
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-12T00:00:00Z",
+  "source_directory": "DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS",
+  "catalog_source": "DRAC_Core/DRAC_Invariables/MODULE_CORES/DRAC_CORE_CATALOG.json",
+  "total_registered": 5,
+  "entries": [
+    {
+      "module_name": "Agent_Policy_Decision_Context",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Agent_Policy_Decision_Context.py",
+      "scx_id": "SCX-001",
+      "fbc_id": "FBC_0020",
+      "family_id": "FAMILY_036",
+      "role": "AGENT_POLICY_DECISION_CONTEXT",
+      "status": "EMBEDDED",
+      "entrypoint": "run",
+      "required_axiom_fbcs": ["FBC_0007", "FBC_0014"],
+      "compatible_clusters": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "support_services"
+      ],
+      "dependencies": [
+        "logos.imports.drac_axioms"
+      ],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Bootstrap_Runtime_Context",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Bootstrap_Runtime_Context.py",
+      "scx_id": "SCX-002",
+      "fbc_id": "FBC_0021",
+      "family_id": "FAMILY_003",
+      "role": "BOOTSTRAP_RUNTIME_CONTEXT",
+      "status": "EMBEDDED",
+      "entrypoint": "run",
+      "required_axiom_fbcs": ["FBC_0007", "FBC_0014", "FBC_0011", "FBC_0013"],
+      "compatible_clusters": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "dependencies": [
+        "logos.imports.drac_axioms"
+      ],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Privation_Handling_Context",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Privation_Handling_Context.py",
+      "scx_id": "SCX-003",
+      "fbc_id": "FBC_0022",
+      "family_id": "FAMILY_037",
+      "role": "PRIVATION_HANDLING_CONTEXT",
+      "status": "EMBEDDED",
+      "entrypoint": "run",
+      "required_axiom_fbcs": ["FBC_0007", "FBC_0014"],
+      "compatible_clusters": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "dependencies": [
+        "logos.imports.drac_axioms"
+      ],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Runtime_Mode_Context",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Runtime_Mode_Context.py",
+      "scx_id": "SCX-004",
+      "fbc_id": "FBC_0023",
+      "family_id": "FAMILY_005",
+      "role": "RUNTIME_MODE_CONTEXT",
+      "status": "EMBEDDED",
+      "entrypoint": "run",
+      "required_axiom_fbcs": ["FBC_0007", "FBC_0014", "FBC_0013"],
+      "compatible_clusters": [
+        "agent_runtime",
+        "memory_access",
+        "planning",
+        "semantic_interpretation",
+        "support_services",
+        "tool_interface"
+      ],
+      "dependencies": [
+        "logos.imports.drac_axioms"
+      ],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Trinitarian_Optimization_Context",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Trinitarian_Optimization_Context.py",
+      "scx_id": "SCX-005",
+      "fbc_id": "FBC_0024",
+      "family_id": "FAMILY_035",
+      "role": "TRINITARIAN_OPTIMIZATION_CONTEXT",
+      "status": "EMBEDDED",
+      "entrypoint": "run",
+      "required_axiom_fbcs": ["FBC_0007", "FBC_0014", "FBC_0016"],
+      "compatible_clusters": [
+        "agent_runtime",
+        "memory_access",
+        "numerical_compute",
+        "planning",
+        "reasoning_inference",
+        "support_services"
+      ],
+      "dependencies": [
+        "logos.imports.drac_axioms"
+      ],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    }
+  ],
+  "non_module_files_noted": [
+    "SEMANTIC_CONTEXTS_CATALOG.json",
+    "__init__.py"
+  ]
+}

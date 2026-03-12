@@ -1,0 +1,229 @@
+{
+  "registry_type": "DRAC_AXIOM_REGISTRY",
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-12T00:00:00Z",
+  "source_directory": "DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS",
+  "catalog_source": "DRAC_Core/DRAC_Invariables/MODULE_CORES/DRAC_CORE_CATALOG.json",
+  "total_registered": 19,
+  "entries": [
+    {
+      "module_name": "3PDN_Constraint",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/3PDN_Constraint.py",
+      "fbc_id": "FBC_0001",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "3PDN_Validator",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/3PDN_Validator.py",
+      "fbc_id": "FBC_0002",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Agent_Activation_Gate",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Agent_Activation_Gate.py",
+      "fbc_id": "FBC_0003",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Evidence_Chain",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Evidence_Chain.py",
+      "fbc_id": "FBC_0004",
+      "taxonomy_class": "inference_core",
+      "entrypoint": "verify_evidence_chain",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Global_Bijective_Recursion_Core",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Global_Bijective_Recursion_Core.py",
+      "fbc_id": "FBC_0005",
+      "taxonomy_class": "inference_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Hypostatic_ID_Validator",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Hypostatic_ID_Validator.py",
+      "fbc_id": "FBC_0006",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Invariant_Constraints",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Invariant_Constraints.py",
+      "fbc_id": "FBC_0007",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "enforce_invariants",
+      "role_in_cores": "REQUIRED_UNIVERSAL",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Monolith_Runtime",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Monolith_Runtime.py",
+      "fbc_id": "FBC_0008",
+      "taxonomy_class": "protocol_core",
+      "entrypoint": "invoke",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "dependencies": [
+        "importlib.machinery",
+        "importlib.util",
+        "json",
+        "pathlib"
+      ],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Necessary_Existence_Core",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Necessary_Existence_Core.py",
+      "fbc_id": "FBC_0009",
+      "taxonomy_class": "inference_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Read_Only_Agent_Interface",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Read_Only_Agent_Interface.py",
+      "fbc_id": "FBC_0010",
+      "taxonomy_class": "agent_orchestration_core",
+      "entrypoint": "assert_read_only",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Runtime_Context_Initializer",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Runtime_Context_Initializer.py",
+      "fbc_id": "FBC_0011",
+      "taxonomy_class": "semantic_core",
+      "entrypoint": "run",
+      "role_in_cores": "CONTEXT_SELECTIVE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Runtime_Input_Sanitizer",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Runtime_Input_Sanitizer.py",
+      "fbc_id": "FBC_0012",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Runtime_Mode_Controller",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Runtime_Mode_Controller.py",
+      "fbc_id": "FBC_0013",
+      "taxonomy_class": "semantic_core",
+      "entrypoint": "run",
+      "role_in_cores": "CONTEXT_SELECTIVE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Semantic_Capability_Gate",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Semantic_Capability_Gate.py",
+      "fbc_id": "FBC_0014",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "admit_capability",
+      "role_in_cores": "REQUIRED_UNIVERSAL",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Temporal_Supersession",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Temporal_Supersession.py",
+      "fbc_id": "FBC_0015",
+      "taxonomy_class": "inference_core",
+      "entrypoint": "supersede",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Trinitarian_Alignment_Core",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Trinitarian_Alignment_Core.py",
+      "fbc_id": "FBC_0016",
+      "taxonomy_class": "inference_core",
+      "entrypoint": "run",
+      "role_in_cores": "CONTEXT_SELECTIVE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "Trinitarian_Logic_Core",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/Trinitarian_Logic_Core.py",
+      "fbc_id": "FBC_0017",
+      "taxonomy_class": "inference_core",
+      "entrypoint": "run",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "UWM_Ingestion",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/UWM_Ingestion.py",
+      "fbc_id": "FBC_0018",
+      "taxonomy_class": "protocol_core",
+      "entrypoint": "ingest",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    },
+    {
+      "module_name": "UWM_Validator",
+      "file_path": "/workspaces/Logos/LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_AXIOMS/UWM_Validator.py",
+      "fbc_id": "FBC_0019",
+      "taxonomy_class": "safety_core",
+      "entrypoint": "enforce_phase_5",
+      "role_in_cores": "OPTIONAL_COMPOSABLE",
+      "dependencies": [],
+      "compatibility_markers": [],
+      "catalog_presence": true
+    }
+  ],
+  "non_module_files_noted": [
+    "FAM_Axiom_Stub.md",
+    "SEMANTIC_AXIOMS.json",
+    "__init__.py"
+  ]
+}

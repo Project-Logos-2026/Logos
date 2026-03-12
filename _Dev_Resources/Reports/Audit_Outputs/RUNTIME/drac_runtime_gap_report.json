@@ -1,0 +1,223 @@
+{
+  "report_type": "DRAC_RUNTIME_GAP_REPORT",
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-12T00:00:00Z",
+  "mode": "ANALYSIS_ONLY",
+  "fail_closed": true,
+  "repo_root": "/workspaces/Logos",
+  "total_files_scanned": 1015,
+
+  "scan_scope": {
+    "included_trees": [
+      "LOGOS_SYSTEM/ (excl. _Governance, _Reports, DOCUMENTS, __pycache__)",
+      "logos/",
+      "STARTUP/"
+    ],
+    "also_scanned": "LOGOS_SYSTEM/RUNTIME_CORES/**/*.json (JSON catalog artifacts)",
+    "total_python_files": 1015
+  },
+
+  "registry_sources": {
+    "axiom_registry": "DRAC_Core/DRAC_Invariables/MODULAR_LIBRARY/DRAC_Registries/drac_axiom_registry.json",
+    "context_registry": "DRAC_Core/DRAC_Invariables/MODULAR_LIBRARY/DRAC_Registries/drac_context_registry.json"
+  },
+
+  "summary": {
+    "total_registry_axioms": 19,
+    "total_registry_contexts": 5,
+    "axioms_with_external_runtime_references": 5,
+    "axioms_referenced_only_internally": 14,
+    "contexts_with_external_runtime_references": 5,
+    "contexts_referenced_only_internally": 0,
+    "runtime_binding_surface": "logos/imports/drac_axioms.py",
+    "facade_consumers": [
+      "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/ORCHESTRATION_AND_ENTRYPOINTS/Canonical_System_Bootstrap_Pipeline.py",
+      "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Tools/DRAC_Phase_Tracker.py",
+      "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Agent_Policy_Decision_Context.py",
+      "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Bootstrap_Runtime_Context.py",
+      "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Privation_Handling_Context.py",
+      "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Runtime_Mode_Context.py",
+      "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_OPPERATIONS_CORE/Dynamic_Reconstruction_Adaptive_Compilation_Protocol/DRAC_Core/DRAC_Invariables/SEMANTIC_CONTEXTS/Trinitarian_Optimization_Context.py"
+    ]
+  },
+
+  "runtime_axioms_detected": [
+    {
+      "name": "Invariant_Constraints",
+      "fbc_id": "FBC_0007",
+      "external_reference_count": 1,
+      "referencing_files": ["logos/imports/drac_axioms.py"],
+      "exposed_symbol": "enforce_invariants",
+      "facade_import": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Invariant_Constraints import enforce_invariants"
+    },
+    {
+      "name": "Runtime_Context_Initializer",
+      "fbc_id": "FBC_0011",
+      "external_reference_count": 1,
+      "referencing_files": ["logos/imports/drac_axioms.py"],
+      "exposed_symbol": "initialize_runtime_context",
+      "facade_import": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Runtime_Context_Initializer import initialize_runtime_context"
+    },
+    {
+      "name": "Runtime_Mode_Controller",
+      "fbc_id": "FBC_0013",
+      "external_reference_count": 1,
+      "referencing_files": ["logos/imports/drac_axioms.py"],
+      "exposed_symbol": "set_runtime_mode",
+      "facade_import": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Runtime_Mode_Controller import set_runtime_mode"
+    },
+    {
+      "name": "Semantic_Capability_Gate",
+      "fbc_id": "FBC_0014",
+      "external_reference_count": 1,
+      "referencing_files": ["logos/imports/drac_axioms.py"],
+      "exposed_symbol": "validate_capabilities",
+      "facade_import": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Semantic_Capability_Gate import validate_capabilities"
+    },
+    {
+      "name": "Trinitarian_Alignment_Core",
+      "fbc_id": "FBC_0016",
+      "external_reference_count": 1,
+      "referencing_files": ["logos/imports/drac_axioms.py"],
+      "exposed_symbol": "score_candidates",
+      "facade_import": "from PYTHON_MODULES.SEMANTIC_AXIOMS.Trinitarian_Alignment_Core import score_candidates"
+    }
+  ],
+
+  "runtime_contexts_detected": [
+    {
+      "name": "Agent_Policy_Decision_Context",
+      "scx_id": "SCX-001",
+      "fbc_id": "FBC_0020",
+      "external_reference_count": 1,
+      "referencing_files": ["logos/imports/drac_axioms.py"],
+      "exposed_symbol": "run",
+      "facade_import": "from PYTHON_MODULES.SEMANTIC_CONTEXTS.Agent_Policy_Decision_Context import run"
+    },
+    {
+      "name": "Bootstrap_Runtime_Context",
+      "scx_id": "SCX-002",
+      "fbc_id": "FBC_0021",
+      "external_reference_count": 1,
+      "referencing_files": ["logos/imports/drac_axioms.py"],
+      "exposed_symbol": "run",
+      "facade_import": "from PYTHON_MODULES.SEMANTIC_CONTEXTS.Bootstrap_Runtime_Context import run"
+    },
+    {
+      "name": "Privation_Handling_Context",
+      "scx_id": "SCX-003",
+      "fbc_id": "FBC_0022",
+      "external_reference_count": 1,
+      "referencing_files": ["logos/imports/drac_axioms.py"],
+      "exposed_symbol": "run",
+      "facade_import": "from PYTHON_MODULES.SEMANTIC_CONTEXTS.Privation_Handling_Context import run"
+    },
+    {
+      "name": "Runtime_Mode_Context",
+      "scx_id": "SCX-004",
+      "fbc_id": "FBC_0023",
+      "external_reference_count": 1,
+      "referencing_files": ["logos/imports/drac_axioms.py"],
+      "exposed_symbol": "run",
+      "facade_import": "from PYTHON_MODULES.SEMANTIC_CONTEXTS.Runtime_Mode_Context import run"
+    },
+    {
+      "name": "Trinitarian_Optimization_Context",
+      "scx_id": "SCX-005",
+      "fbc_id": "FBC_0024",
+      "external_reference_count": 1,
+      "referencing_files": ["logos/imports/drac_axioms.py"],
+      "exposed_symbol": "run",
+      "facade_import": "from PYTHON_MODULES.SEMANTIC_CONTEXTS.Trinitarian_Optimization_Context import run"
+    }
+  ],
+
+  "runtime_axioms_not_in_registry": [],
+  "runtime_contexts_not_in_registry": [],
+
+  "registry_axioms_unused": [],
+  "registry_contexts_unused": [],
+
+  "axioms_internal_only": [
+    {"name": "3PDN_Constraint",              "fbc_id": "FBC_0001", "note": "Referenced only within DRAC catalog JSON. No external runtime import."},
+    {"name": "3PDN_Validator",               "fbc_id": "FBC_0002", "note": "Referenced only within DRAC catalog JSON. No external runtime import."},
+    {"name": "Agent_Activation_Gate",        "fbc_id": "FBC_0003", "note": "Referenced only within DRAC catalog JSON. No external runtime import."},
+    {"name": "Evidence_Chain",               "fbc_id": "FBC_0004", "note": "Referenced only within DRAC catalog JSON. No external runtime import."},
+    {"name": "Global_Bijective_Recursion_Core","fbc_id": "FBC_0005","note": "Referenced only within DRAC catalog JSON. No external runtime import."},
+    {"name": "Hypostatic_ID_Validator",      "fbc_id": "FBC_0006", "note": "Referenced only within DRAC catalog JSON. No external runtime import."},
+    {"name": "Monolith_Runtime",             "fbc_id": "FBC_0008", "note": "Referenced only within DRAC catalog JSON. Canonical_System_Bootstrap_Pipeline invokes via Monolith_Runtime.invoke() but through internal DRAC path only."},
+    {"name": "Necessary_Existence_Core",     "fbc_id": "FBC_0009", "note": "Referenced only within DRAC catalog JSON. No external runtime import."},
+    {"name": "Read_Only_Agent_Interface",    "fbc_id": "FBC_0010", "note": "Referenced only within DRAC catalog JSON. No external runtime import."},
+    {"name": "Runtime_Input_Sanitizer",      "fbc_id": "FBC_0012", "note": "Referenced only within DRAC catalog JSON. No external runtime import."},
+    {"name": "Temporal_Supersession",        "fbc_id": "FBC_0015", "note": "Referenced only within DRAC catalog JSON. No external runtime import."},
+    {"name": "Trinitarian_Logic_Core",       "fbc_id": "FBC_0017", "note": "Referenced only within DRAC catalog JSON. No external runtime import."},
+    {"name": "UWM_Ingestion",               "fbc_id": "FBC_0018", "note": "Referenced only within DRAC catalog JSON. No external runtime import."},
+    {"name": "UWM_Validator",               "fbc_id": "FBC_0019", "note": "Referenced only within DRAC catalog JSON. No external runtime import."}
+  ],
+
+  "findings": [
+    {
+      "id": "FINDING_001",
+      "severity": "OBSERVATION",
+      "title": "Single facade binding point",
+      "description": "All external DRAC axiom and context references pass through a single canonical import facade: logos/imports/drac_axioms.py. This is by design — the facade acts as the sole runtime surface for DRAC modules."
+    },
+    {
+      "id": "FINDING_002",
+      "severity": "GAP",
+      "title": "Facade import path mismatch — PYTHON_MODULES vs actual paths",
+      "description": "The facade at logos/imports/drac_axioms.py imports from 'PYTHON_MODULES.SEMANTIC_AXIOMS.*' and 'PYTHON_MODULES.SEMANTIC_CONTEXTS.*'. These package paths do not match the actual filesystem locations under LOGOS_SYSTEM/RUNTIME_CORES/.../SEMANTIC_AXIOMS/ and SEMANTIC_CONTEXTS/. All imports in the facade are wrapped in try/except and will silently resolve to None at runtime. No module is currently reachable via this facade.",
+      "affected_axioms": ["Invariant_Constraints","Runtime_Context_Initializer","Runtime_Mode_Controller","Semantic_Capability_Gate","Trinitarian_Alignment_Core"],
+      "affected_contexts": ["Agent_Policy_Decision_Context","Bootstrap_Runtime_Context","Privation_Handling_Context","Runtime_Mode_Context","Trinitarian_Optimization_Context"]
+    },
+    {
+      "id": "FINDING_003",
+      "severity": "OBSERVATION",
+      "title": "14 axioms have no external runtime binding",
+      "description": "14 of 19 registered axioms are referenced only within the DRAC catalog JSON artifacts and have no import or call-site in external runtime modules. They are composable but not wired through the facade. These are: 3PDN_Constraint, 3PDN_Validator, Agent_Activation_Gate, Evidence_Chain, Global_Bijective_Recursion_Core, Hypostatic_ID_Validator, Monolith_Runtime, Necessary_Existence_Core, Read_Only_Agent_Interface, Runtime_Input_Sanitizer, Temporal_Supersession, Trinitarian_Logic_Core, UWM_Ingestion, UWM_Validator.",
+      "count": 14
+    },
+    {
+      "id": "FINDING_004",
+      "severity": "OBSERVATION",
+      "title": "Canonical_System_Bootstrap_Pipeline imports all 5 contexts via facade",
+      "description": "Canonical_System_Bootstrap_Pipeline.py (lines 26-30) imports all five context run() functions through logos.imports.drac_axioms using aliased names: bootstrap_runtime, runtime_mode, policy_decision, privation_handling, trinitarian_optimization. These will all resolve to the same symbol 'run=None' due to the path mismatch in FINDING_002."
+    },
+    {
+      "id": "FINDING_005",
+      "severity": "OBSERVATION",
+      "title": "DRAC_Phase_Tracker imports DRACPhaseState from facade",
+      "description": "DRAC_Tools/DRAC_Phase_Tracker.py imports DRACPhaseState from logos.imports.drac_axioms. The facade sources this from 'DRAC.CORE.DRAC_Core' — a separate path not matching any known module tree. Also resolves to None silently."
+    }
+  ],
+
+  "axiom_reference_map": {
+    "3PDN_Constraint":              {"total_references": 1, "external_runtime_references": 0, "internal_drac_references": 1},
+    "3PDN_Validator":               {"total_references": 1, "external_runtime_references": 0, "internal_drac_references": 1},
+    "Agent_Activation_Gate":        {"total_references": 1, "external_runtime_references": 0, "internal_drac_references": 1},
+    "Evidence_Chain":               {"total_references": 1, "external_runtime_references": 0, "internal_drac_references": 1},
+    "Global_Bijective_Recursion_Core": {"total_references": 1, "external_runtime_references": 0, "internal_drac_references": 1},
+    "Hypostatic_ID_Validator":      {"total_references": 1, "external_runtime_references": 0, "internal_drac_references": 1},
+    "Invariant_Constraints":        {"total_references": 2, "external_runtime_references": 1, "internal_drac_references": 1, "external_files": ["logos/imports/drac_axioms.py"]},
+    "Monolith_Runtime":             {"total_references": 1, "external_runtime_references": 0, "internal_drac_references": 1},
+    "Necessary_Existence_Core":     {"total_references": 1, "external_runtime_references": 0, "internal_drac_references": 1},
+    "Read_Only_Agent_Interface":    {"total_references": 1, "external_runtime_references": 0, "internal_drac_references": 1},
+    "Runtime_Context_Initializer":  {"total_references": 2, "external_runtime_references": 1, "internal_drac_references": 1, "external_files": ["logos/imports/drac_axioms.py"]},
+    "Runtime_Input_Sanitizer":      {"total_references": 1, "external_runtime_references": 0, "internal_drac_references": 1},
+    "Runtime_Mode_Controller":      {"total_references": 2, "external_runtime_references": 1, "internal_drac_references": 1, "external_files": ["logos/imports/drac_axioms.py"]},
+    "Semantic_Capability_Gate":     {"total_references": 2, "external_runtime_references": 1, "internal_drac_references": 1, "external_files": ["logos/imports/drac_axioms.py"]},
+    "Temporal_Supersession":        {"total_references": 1, "external_runtime_references": 0, "internal_drac_references": 1},
+    "Trinitarian_Alignment_Core":   {"total_references": 2, "external_runtime_references": 1, "internal_drac_references": 1, "external_files": ["logos/imports/drac_axioms.py"]},
+    "Trinitarian_Logic_Core":       {"total_references": 1, "external_runtime_references": 0, "internal_drac_references": 1},
+    "UWM_Ingestion":                {"total_references": 1, "external_runtime_references": 0, "internal_drac_references": 1},
+    "UWM_Validator":                {"total_references": 1, "external_runtime_references": 0, "internal_drac_references": 1}
+  },
+
+  "context_reference_map": {
+    "Agent_Policy_Decision_Context":      {"total_references": 2, "external_runtime_references": 1, "internal_drac_references": 1, "external_files": ["logos/imports/drac_axioms.py"]},
+    "Bootstrap_Runtime_Context":          {"total_references": 2, "external_runtime_references": 1, "internal_drac_references": 1, "external_files": ["logos/imports/drac_axioms.py"]},
+    "Privation_Handling_Context":         {"total_references": 2, "external_runtime_references": 1, "internal_drac_references": 1, "external_files": ["logos/imports/drac_axioms.py"]},
+    "Runtime_Mode_Context":               {"total_references": 2, "external_runtime_references": 1, "internal_drac_references": 1, "external_files": ["logos/imports/drac_axioms.py"]},
+    "Trinitarian_Optimization_Context":   {"total_references": 2, "external_runtime_references": 1, "internal_drac_references": 1, "external_files": ["logos/imports/drac_axioms.py"]}
+  }
+}

@@ -1,0 +1,1308 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-03-12T09:19:33.507681Z",
+  "tool_chain": "Runtime_Tools/Static_Analysis (AST inline)",
+  "source_directory": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing",
+  "total_modules": 161,
+  "domain_distribution": {
+    "Logic_Extraction": 17,
+    "Keep_Verify": 33,
+    "Agent": 25,
+    "Math": 2,
+    "Reasoning": 14,
+    "Safety": 4,
+    "Semantic": 20,
+    "Utility": 13,
+    "Utils": 33
+  },
+  "modules": [
+    {
+      "module_name": "Memory_Recall_Integration",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+      "file_size": 46527,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "NLP_Wrapper_Sentence_Transformers",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/NLP_Wrapper_Sentence_Transformers.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/NLP_Wrapper_Sentence_Transformers.py",
+      "file_size": 2984,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "adaptive_engine",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/adaptive_engine.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/adaptive_engine.py",
+      "file_size": 7204,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "agentic_consciousness_core",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+      "file_size": 19224,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "bayes_update_real_time",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+      "file_size": 4429,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "bayesian_data_parser",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py",
+      "file_size": 7403,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "bayesian_recursion",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayesian_recursion.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/bayesian_recursion.py",
+      "file_size": 3376,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "coherence",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/coherence.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/coherence.py",
+      "file_size": 6561,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "comprehensive_fractal_analysis",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/comprehensive_fractal_analysis.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/comprehensive_fractal_analysis.py",
+      "file_size": 14549,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "fractal_orbit_toolkit",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+      "file_size": 32443,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "gen_worldview_ontoprops",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/gen_worldview_ontoprops.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/gen_worldview_ontoprops.py",
+      "file_size": 7051,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "hierarchical_bayes_network",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py",
+      "file_size": 1690,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "iel_overlay",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/iel_overlay.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/iel_overlay.py",
+      "file_size": 49064,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "logos_mathematical_core",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+      "file_size": 21138,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "privative_policies",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/privative_policies.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/privative_policies.py",
+      "file_size": 9014,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "safety_formalisms",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py",
+      "file_size": 36375,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "simulated_consciousness_runtime",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/simulated_consciousness_runtime.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/EXTRACT_LOGIC/simulated_consciousness_runtime.py",
+      "file_size": 6551,
+      "domain_layer": "Logic_Extraction",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "PXL_World_Model",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+      "file_size": 38918,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "action_system",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/action_system.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/action_system.py",
+      "file_size": 6158,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "advanced_fractal_analyzer",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+      "file_size": 26072,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "agent_identity",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/agent_identity.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/agent_identity.py",
+      "file_size": 24839,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "arithmetic_engine",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/arithmetic_engine.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/arithmetic_engine.py",
+      "file_size": 15611,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "autonomous_learning",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/autonomous_learning.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/autonomous_learning.py",
+      "file_size": 23697,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "bayesian_inferencer",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_inferencer.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_inferencer.py",
+      "file_size": 1802,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "bayesian_interface",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_interface.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_interface.py",
+      "file_size": 7630,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "bayesian_nexus",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+      "file_size": 8424,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "bayesian_updates",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+      "file_size": 7589,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "belief_network",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/belief_network.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/belief_network.py",
+      "file_size": 10423,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "coherence_formalism",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/coherence_formalism.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/coherence_formalism.py",
+      "file_size": 28601,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "coherence_metrics",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/coherence_metrics.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/coherence_metrics.py",
+      "file_size": 21955,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "export_tool_registry",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/export_tool_registry.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/export_tool_registry.py",
+      "file_size": 5125,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "lambda_engine",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_engine.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_engine.py",
+      "file_size": 19933,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "lambda_onto_calculus_engine",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py",
+      "file_size": 19591,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "lambda_parser",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+      "file_size": 14474,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "modal_logic",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_logic.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_logic.py",
+      "file_size": 8577,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "modal_reasoner",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_reasoner.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_reasoner.py",
+      "file_size": 7794,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "modal_validator",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_validator.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/modal_validator.py",
+      "file_size": 21662,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "multi_modal_system",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/multi_modal_system.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/multi_modal_system.py",
+      "file_size": 7296,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "proof_engine",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/proof_engine.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/proof_engine.py",
+      "file_size": 22035,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "pxl_fractal_orbital_analysis",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/pxl_fractal_orbital_analysis.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/pxl_fractal_orbital_analysis.py",
+      "file_size": 32275,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "pxl_modal_fractal_boundary_analysis",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/pxl_modal_fractal_boundary_analysis.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/pxl_modal_fractal_boundary_analysis.py",
+      "file_size": 27070,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "pxl_schema",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+      "file_size": 28141,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "relation_mapper",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+      "file_size": 27801,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "semantic_transformers",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/semantic_transformers.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/semantic_transformers.py",
+      "file_size": 31554,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "tool_introspection",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+      "file_size": 7392,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "tool_invention",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_invention.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_invention.py",
+      "file_size": 18454,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "tool_optimizer",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+      "file_size": 19414,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "tool_proposal_pipeline",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+      "file_size": 12460,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "tool_repair_proposal",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py",
+      "file_size": 6118,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "translation_engine",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/translation_engine.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/KEEP_VERIFY/translation_engine.py",
+      "file_size": 21871,
+      "domain_layer": "Keep_Verify",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "Logos_Memory_Nexus",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/Logos_Memory_Nexus.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/Logos_Memory_Nexus.py",
+      "file_size": 40496,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "agent_nexus",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/agent_nexus.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/agent_nexus.py",
+      "file_size": 37678,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "base_nexus",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/base_nexus.py",
+      "file_size": 27122,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "evaluation_packet",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/evaluation_packet.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/evaluation_packet.py",
+      "file_size": 1565,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "id_handler",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/id_handler.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/id_handler.py",
+      "file_size": 1717,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "knowledge_catalog",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/knowledge_catalog.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/knowledge_catalog.py",
+      "file_size": 9049,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "legacy_sop_nexus",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/legacy_sop_nexus.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/legacy_sop_nexus.py",
+      "file_size": 46771,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "plan_packet",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/plan_packet.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/plan_packet.py",
+      "file_size": 1434,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "sop_nexus",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/sop_nexus.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/sop_nexus.py",
+      "file_size": 52521,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_agent_planner",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_agent_planner.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_agent_planner.py",
+      "file_size": 5252,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_end_to_end_pipeline",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_end_to_end_pipeline.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_end_to_end_pipeline.py",
+      "file_size": 6868,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_hardening",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_hardening.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_hardening.py",
+      "file_size": 4558,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_integration_identity",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_integration_identity.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_integration_identity.py",
+      "file_size": 3011,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_llm_bypass_smoke",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_llm_bypass_smoke.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_llm_bypass_smoke.py",
+      "file_size": 4522,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_lock_unlock",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_lock_unlock.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_lock_unlock.py",
+      "file_size": 5095,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_logos_agi_bootstrap_modes",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_logos_agi_bootstrap_modes.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_logos_agi_bootstrap_modes.py",
+      "file_size": 2884,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_logos_agi_replay_proposals",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_logos_agi_replay_proposals.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_logos_agi_replay_proposals.py",
+      "file_size": 3921,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_logos_runtime_phase2_smoke",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_logos_runtime_phase2_smoke.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_logos_runtime_phase2_smoke.py",
+      "file_size": 4350,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_nexus_capability_governance",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_nexus_capability_governance.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_nexus_capability_governance.py",
+      "file_size": 3504,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_pai",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_pai.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_pai.py",
+      "file_size": 4764,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_plan_revision_on_contradiction",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_plan_revision_on_contradiction.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_plan_revision_on_contradiction.py",
+      "file_size": 7265,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_scp_recovery_mode_gate",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_scp_recovery_mode_gate.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_scp_recovery_mode_gate.py",
+      "file_size": 4689,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_self_improvement_cycle",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_self_improvement_cycle.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_self_improvement_cycle.py",
+      "file_size": 17760,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_stub_beliefs_never_verified",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_stub_beliefs_never_verified.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_stub_beliefs_never_verified.py",
+      "file_size": 2893,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_verify_pai",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_verify_pai.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/agent/test_verify_pai.py",
+      "file_size": 7021,
+      "domain_layer": "Agent",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "dual_bijection_demo",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/math/dual_bijection_demo.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/math/dual_bijection_demo.py",
+      "file_size": 601,
+      "domain_layer": "Math",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "fractal_nexus",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/math/fractal_nexus.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/math/fractal_nexus.py",
+      "file_size": 8944,
+      "domain_layer": "Math",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "arp_nexus",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/arp_nexus.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/arp_nexus.py",
+      "file_size": 30313,
+      "domain_layer": "Reasoning",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "ergonomic_optimizer",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/ergonomic_optimizer.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/ergonomic_optimizer.py",
+      "file_size": 9367,
+      "domain_layer": "Reasoning",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "integration_test",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/integration_test.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/integration_test.py",
+      "file_size": 9780,
+      "domain_layer": "Reasoning",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "integration_test_suite",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/integration_test_suite.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/integration_test_suite.py",
+      "file_size": 29746,
+      "domain_layer": "Reasoning",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "modal_vector_sync",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/modal_vector_sync.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/modal_vector_sync.py",
+      "file_size": 672,
+      "domain_layer": "Reasoning",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "resource_manager",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/resource_manager.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/resource_manager.py",
+      "file_size": 7536,
+      "domain_layer": "Reasoning",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "scp_nexus",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/scp_nexus.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/scp_nexus.py",
+      "file_size": 32177,
+      "domain_layer": "Reasoning",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_arp_nexus",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_arp_nexus.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_arp_nexus.py",
+      "file_size": 7097,
+      "domain_layer": "Reasoning",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_bayesian_data_handler",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_bayesian_data_handler.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_bayesian_data_handler.py",
+      "file_size": 7807,
+      "domain_layer": "Reasoning",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_dual_bijection",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_dual_bijection.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_dual_bijection.py",
+      "file_size": 10097,
+      "domain_layer": "Reasoning",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_integration",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_integration.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_integration.py",
+      "file_size": 9595,
+      "domain_layer": "Reasoning",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_logos_agi_persistence_smoke",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_logos_agi_persistence_smoke.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_logos_agi_persistence_smoke.py",
+      "file_size": 4554,
+      "domain_layer": "Reasoning",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_proved_grounding",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_proved_grounding.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/test_proved_grounding.py",
+      "file_size": 4332,
+      "domain_layer": "Reasoning",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "uip_nexus",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/uip_nexus.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/reasoning/uip_nexus.py",
+      "file_size": 18612,
+      "domain_layer": "Reasoning",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "attestation",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/attestation.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/attestation.py",
+      "file_size": 4776,
+      "domain_layer": "Safety",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "health_server",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/health_server.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/health_server.py",
+      "file_size": 1403,
+      "domain_layer": "Safety",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_reference_monitor",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/test_reference_monitor.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/test_reference_monitor.py",
+      "file_size": 24169,
+      "domain_layer": "Safety",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_tool_pipeline_smoke",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/test_tool_pipeline_smoke.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/safety/test_tool_pipeline_smoke.py",
+      "file_size": 5934,
+      "domain_layer": "Safety",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "boot_system",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/boot_system.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/boot_system.py",
+      "file_size": 8779,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "commitment_ledger",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/commitment_ledger.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/commitment_ledger.py",
+      "file_size": 13900,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "dispatch",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/dispatch.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/dispatch.py",
+      "file_size": 875,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "hashing",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/hashing.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/hashing.py",
+      "file_size": 496,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "maintenance",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/maintenance.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/maintenance.py",
+      "file_size": 4989,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "mtp_nexus_orchestrator",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/mtp_nexus_orchestrator.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/mtp_nexus_orchestrator.py",
+      "file_size": 173,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "nexus_manager",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/nexus_manager.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/nexus_manager.py",
+      "file_size": 2549,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "ontoprops_remap",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/ontoprops_remap.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/ontoprops_remap.py",
+      "file_size": 1201,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "packet_types",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/packet_types.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/packet_types.py",
+      "file_size": 1034,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "prioritization",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/prioritization.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/prioritization.py",
+      "file_size": 21982,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "providers_llama",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/providers_llama.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/providers_llama.py",
+      "file_size": 3997,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "providers_openai",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/providers_openai.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/providers_openai.py",
+      "file_size": 2343,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_logos_agi_adapter",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_logos_agi_adapter.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_logos_agi_adapter.py",
+      "file_size": 5095,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_perception_ingestors",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_perception_ingestors.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_perception_ingestors.py",
+      "file_size": 6376,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_registry_and_response",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_registry_and_response.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_registry_and_response.py",
+      "file_size": 1465,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_simulation_cli",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_simulation_cli.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_simulation_cli.py",
+      "file_size": 1271,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_tool_fallback_proposal",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_tool_fallback_proposal.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/test_tool_fallback_proposal.py",
+      "file_size": 1361,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "time_utils",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/time_utils.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/time_utils.py",
+      "file_size": 403,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "transform_types",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/transform_types.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/transform_types.py",
+      "file_size": 777,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "types",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/types.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/semantic/types.py",
+      "file_size": 992,
+      "domain_layer": "Semantic",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "arp_nexus_orchestrator",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/arp_nexus_orchestrator.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/arp_nexus_orchestrator.py",
+      "file_size": 173,
+      "domain_layer": "Utility",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "causal_trace_operator",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/causal_trace_operator.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/causal_trace_operator.py",
+      "file_size": 1684,
+      "domain_layer": "Utility",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "class_extrapolator",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/class_extrapolator.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/class_extrapolator.py",
+      "file_size": 1137,
+      "domain_layer": "Utility",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "csp_nexus_orchestrator",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/csp_nexus_orchestrator.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/csp_nexus_orchestrator.py",
+      "file_size": 173,
+      "domain_layer": "Utility",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "development_environment",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/development_environment.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/development_environment.py",
+      "file_size": 1018,
+      "domain_layer": "Utility",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "logos_protocol_nexus",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/logos_protocol_nexus.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/logos_protocol_nexus.py",
+      "file_size": 172,
+      "domain_layer": "Utility",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "regression_checker",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/regression_checker.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/regression_checker.py",
+      "file_size": 2326,
+      "domain_layer": "Utility",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "scp_nexus_orchestrator",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/scp_nexus_orchestrator.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/scp_nexus_orchestrator.py",
+      "file_size": 173,
+      "domain_layer": "Utility",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "sop_nexus_orchestrator",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/sop_nexus_orchestrator.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/sop_nexus_orchestrator.py",
+      "file_size": 204,
+      "domain_layer": "Utility",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_arp_modes",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_arp_modes.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_arp_modes.py",
+      "file_size": 9851,
+      "domain_layer": "Utility",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_determinism",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_determinism.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_determinism.py",
+      "file_size": 591,
+      "domain_layer": "Utility",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_evaluator_learning_smoke",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_evaluator_learning_smoke.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_evaluator_learning_smoke.py",
+      "file_size": 2460,
+      "domain_layer": "Utility",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "test_logos_agi_pin_drift",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_logos_agi_pin_drift.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utility/test_logos_agi_pin_drift.py",
+      "file_size": 6860,
+      "domain_layer": "Utility",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "_uip_connector_stubs",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/_uip_connector_stubs.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/_uip_connector_stubs.py",
+      "file_size": 2928,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "bridge",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/bridge.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/bridge.py",
+      "file_size": 3948,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "causal_chain_node_predictor",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/causal_chain_node_predictor.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/causal_chain_node_predictor.py",
+      "file_size": 1415,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "check_imports",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/check_imports.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/check_imports.py",
+      "file_size": 8436,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "check_run_cycle_prereqs",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/check_run_cycle_prereqs.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/check_run_cycle_prereqs.py",
+      "file_size": 3578,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "config",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/config.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/config.py",
+      "file_size": 1495,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "cycle_ledger",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/cycle_ledger.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/cycle_ledger.py",
+      "file_size": 4383,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "evidence",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/evidence.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/evidence.py",
+      "file_size": 5022,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "guardrails",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/guardrails.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/guardrails.py",
+      "file_size": 2948,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "iel_integration",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iel_integration.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iel_integration.py",
+      "file_size": 5529,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "iel_registryv1",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iel_registryv1.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iel_registryv1.py",
+      "file_size": 31686,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "iel_registryv2",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iel_registryv2.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iel_registryv2.py",
+      "file_size": 2683,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "io_normalizer",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/io_normalizer.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/io_normalizer.py",
+      "file_size": 1684,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "iterative_loop",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iterative_loop.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/iterative_loop.py",
+      "file_size": 2072,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "kernel",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/kernel.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/kernel.py",
+      "file_size": 6756,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "logging_utils",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/logging_utils.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/logging_utils.py",
+      "file_size": 851,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "logos_monitor",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/logos_monitor.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/logos_monitor.py",
+      "file_size": 5425,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "ontology_inducer",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/ontology_inducer.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/ontology_inducer.py",
+      "file_size": 1116,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "policy",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/policy.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/policy.py",
+      "file_size": 22545,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "progressive_router",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/progressive_router.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/progressive_router.py",
+      "file_size": 9569,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "router",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/router.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/router.py",
+      "file_size": 6604,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "sanitizer",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/sanitizer.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/sanitizer.py",
+      "file_size": 2013,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "schema_utils",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/schema_utils.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/schema_utils.py",
+      "file_size": 1017,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "self_diagnosis",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/self_diagnosis.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/self_diagnosis.py",
+      "file_size": 13928,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "shared_resources",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/shared_resources.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/shared_resources.py",
+      "file_size": 10380,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "skill_acquisition",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/skill_acquisition.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/skill_acquisition.py",
+      "file_size": 1193,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "smp_intake",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/smp_intake.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/smp_intake.py",
+      "file_size": 2228,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "stress_sop_runtime",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/stress_sop_runtime.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/stress_sop_runtime.py",
+      "file_size": 15238,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "system_utils",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/system_utils.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/system_utils.py",
+      "file_size": 5426,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "task_intake",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/task_intake.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/task_intake.py",
+      "file_size": 1188,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "transform_registry",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/transform_registry.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/transform_registry.py",
+      "file_size": 3840,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "uip_operations",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/uip_operations.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/uip_operations.py",
+      "file_size": 13970,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    },
+    {
+      "module_name": "worker_kernel",
+      "file_path": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/worker_kernel.py",
+      "relative_path": "_Dev_Resources/Processing_Center/STAGING/Pre-Processing/utils/worker_kernel.py",
+      "file_size": 2052,
+      "domain_layer": "Utils",
+      "discovery_timestamp": "2026-03-12T09:19:33.507681Z"
+    }
+  ]
+}
