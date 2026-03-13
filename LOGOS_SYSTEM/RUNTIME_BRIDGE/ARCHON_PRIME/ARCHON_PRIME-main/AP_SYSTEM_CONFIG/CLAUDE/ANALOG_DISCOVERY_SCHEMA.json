@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ARCHON_PRIME Analog Discovery Schema",
+  "description": "Validates the structure of analog candidate report artifacts",
+  "type": "object",
+  "required": [
+    "report_identity",
+    "concept_summary",
+    "candidates",
+    "recommendation"
+  ],
+  "properties": {
+    "report_identity": {
+      "type": "object",
+      "required": ["concept", "version", "author", "date"],
+      "properties": {
+        "concept": { "type": "string" },
+        "version": { "type": "string" },
+        "author": { "type": "string" },
+        "date": { "type": "string", "format": "date" },
+        "claude_mode": { "type": "string", "const": "Research_Specialist" }
+      }
+    },
+    "concept_summary": { "type": "string", "minLength": 1 },
+    "functional_requirements": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "structural_characteristics": {
+      "type": "object",
+      "properties": {
+        "dimensionality": { "type": "string" },
+        "boundedness": { "type": "string" },
+        "iterability": { "type": "string" },
+        "compositional_structure": { "type": "string" },
+        "symmetry_properties": { "type": "string" },
+        "topological_properties": { "type": "string" }
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "domain",
+          "structural_correspondence",
+          "adaptation_required",
+          "limitations",
+          "implementation_viability"
+        ],
+        "properties": {
+          "name": { "type": "string" },
+          "domain": { "type": "string" },
+          "structural_correspondence": { "type": "string" },
+          "adaptation_required": { "type": "string" },
+          "limitations": { "type": "string" },
+          "implementation_viability": {
+            "type": "string",
+            "enum": ["high", "moderate", "low", "uncertain"]
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "comparative_ranking": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rank": { "type": "integer", "minimum": 1 },
+          "candidate": { "type": "string" },
+          "rationale": { "type": "string" }
+        }
+      }
+    },
+    "recommendation": {
+      "type": "object",
+      "required": ["candidate", "rationale", "tradeoffs"],
+      "properties": {
+        "candidate": { "type": "string" },
+        "rationale": { "type": "string" },
+        "tradeoffs": { "type": "string" }
+      }
+    }
+  }
+}

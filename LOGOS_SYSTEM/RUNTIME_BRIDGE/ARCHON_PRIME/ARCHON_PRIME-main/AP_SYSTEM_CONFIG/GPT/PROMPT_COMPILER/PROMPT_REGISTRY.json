@@ -1,0 +1,43 @@
+{
+  "registry_version": "1.0",
+  "description": "Registry mapping architecture phases to prompt artifacts.",
+  "phases": {
+    "PHASE_1_DISCOVERY": {
+      "description": "Audit and structural discovery",
+      "prompt_types": [
+        "repo_scan",
+        "module_registry_builder",
+        "structure_validator"
+      ]
+    },
+    "PHASE_2_SPEC_RECONCILIATION": {
+      "description": "Compare discovered repo against design spec",
+      "prompt_types": [
+        "spec_diff_analysis",
+        "missing_module_detection",
+        "analog_module_classification"
+      ]
+    },
+    "PHASE_3_REMEDIATION_PLANNING": {
+      "description": "Generate remediation plans",
+      "prompt_types": [
+        "remediation_plan_builder",
+        "execution_graph_generation"
+      ]
+    },
+    "PHASE_4_MODULE_IMPLEMENTATION": {
+      "description": "Generate missing modules",
+      "prompt_types": [
+        "module_stub_generation",
+        "canonical_module_generation"
+      ]
+    },
+    "PHASE_5_VALIDATION": {
+      "description": "Run final verification",
+      "prompt_types": [
+        "architecture_validation",
+        "runtime_simulation"
+      ]
+    }
+  }
+}

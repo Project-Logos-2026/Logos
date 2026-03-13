@@ -1,0 +1,114 @@
+{
+  "operation": "logos_module_migration",
+  "source_directory": "WORKFLOW_EXECUTION_ENVELOPES/INCOMING_TARGETS/TARGETS/TOOLING_IMPLEMENTATION",
+  "destination_directory": "WORKFLOW_EXECUTION_ENVELOPES/INCOMING_TARGETS/TARGETS/Modules_To_Integrate",
+  "modules_moved": [
+    "Import_Linter.py",
+    "scanner.py",
+    "triage.py",
+    "extract.py",
+    "fbc_registry.py",
+    "legacy_extract.py",
+    "runtime_callgraph_extractor.py",
+    "runtime_debug_artifact_scanner.py",
+    "runtime_execution_tracer.py",
+    "runtime_module_tree_auditor.py",
+    "reorganize.py",
+    "execution_core_isolation_audit.py",
+    "import_prefix_verifier.py",
+    "import_root_grouping_analyzer.py",
+    "import_violation_classifier.py",
+    "module_root_existence_checker.py",
+    "namespace_discovery_scan.py",
+    "nexus_structural_audit.py",
+    "violation_prefix_grouper.py",
+    "__init__.py",
+    "conftest.py",
+    "python_file_list.py",
+    "test_import_base_reasoning_registry.py",
+    "pipeline.py",
+    "registry_writer.py",
+    "cluster_analysis.py",
+    "facade_rewrite_pass.py",
+    "facade_synthesis.py",
+    "ast_parser.py",
+    "classifier.py",
+    "drac_indexer.py",
+    "packet_discovery.py",
+    "runtime_analysis.py",
+    "semantic_extractor.py",
+    "static_ast_analysis.py"
+  ],
+  "modules_count": 35,
+  "skipped_due_to_collision": [
+    {
+      "filename": "repo_structure_export.py",
+      "source": "WORKFLOW_EXECUTION_ENVELOPES/INCOMING_TARGETS/TARGETS/TOOLING_IMPLEMENTATION/Repo_Audit/repo_structure_export.py",
+      "reason": "filename_collision"
+    },
+    {
+      "filename": "generate_deep_import_violations.py",
+      "source": "WORKFLOW_EXECUTION_ENVELOPES/INCOMING_TARGETS/TARGETS/TOOLING_IMPLEMENTATION/Dependency_Analysis/generate_deep_import_violations.py",
+      "reason": "filename_collision"
+    },
+    {
+      "filename": "generate_symbol_import_index.py",
+      "source": "WORKFLOW_EXECUTION_ENVELOPES/INCOMING_TARGETS/TARGETS/TOOLING_IMPLEMENTATION/Static_Analysis/generate_symbol_import_index.py",
+      "reason": "filename_collision"
+    }
+  ],
+  "remaining_directories": [
+    {
+      "directory": "Repo_Audit",
+      "remaining_py_files": 1,
+      "deletion_safe": false
+    },
+    {
+      "directory": "Code_Extraction",
+      "remaining_py_files": 0,
+      "deletion_safe": true
+    },
+    {
+      "directory": "Runtime_Diagnostics",
+      "remaining_py_files": 0,
+      "deletion_safe": true
+    },
+    {
+      "directory": "Migration",
+      "remaining_py_files": 0,
+      "deletion_safe": true
+    },
+    {
+      "directory": "Architecture_Validation",
+      "remaining_py_files": 0,
+      "deletion_safe": true
+    },
+    {
+      "directory": "AP_V1_ARTIFACTS",
+      "remaining_py_files": 50,
+      "deletion_safe": false
+    },
+    {
+      "directory": "Dev_Utilities",
+      "remaining_py_files": 0,
+      "deletion_safe": true
+    },
+    {
+      "directory": "Report_Generation",
+      "remaining_py_files": 0,
+      "deletion_safe": true
+    },
+    {
+      "directory": "Dependency_Analysis",
+      "remaining_py_files": 1,
+      "deletion_safe": false
+    },
+    {
+      "directory": "Static_Analysis",
+      "remaining_py_files": 1,
+      "deletion_safe": false
+    }
+  ],
+  "deletion_safe": false,
+  "status": "success"
+}

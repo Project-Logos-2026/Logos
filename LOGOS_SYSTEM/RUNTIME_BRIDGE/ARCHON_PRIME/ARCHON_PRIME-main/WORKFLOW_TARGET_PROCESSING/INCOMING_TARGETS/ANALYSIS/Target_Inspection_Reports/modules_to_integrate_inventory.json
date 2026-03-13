@@ -1,0 +1,1240 @@
+{
+  "modules_to_integrate": [
+    {
+      "module": "Import_Linter.py",
+      "module_description": "LOGOS Static Import Enforcement Linter",
+      "classes": [],
+      "functions": [
+        {
+          "name": "is_mathematics_path",
+          "brief": "\u2014"
+        },
+        {
+          "name": "scan_file",
+          "brief": "\u2014"
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        },
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "__init__.py",
+      "module_description": "",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "module": "_run_audit.py",
+      "module_description": "ARCHON_PRIME Mechanical Completeness Audit",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_json",
+          "brief": "\u2014"
+        },
+        {
+          "name": "record_failure",
+          "brief": "\u2014"
+        },
+        {
+          "name": "flush_failures",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step1_parse_module_inventory",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step2_repo_file_inventory",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step3_config_file_presence",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step4_module_presence",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step5_implementation_depth",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step6_subsystem_metrics",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step7_pipeline_stage_readiness",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step8_prior_audit_verification",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step9_completion_score",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step10_final_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "ap_artifact_collection_p1.py",
+      "module_description": "AP_ARTIFACT_COLLECTION_P1_R1_EXECUTION",
+      "classes": [],
+      "functions": [
+        {
+          "name": "step0_create_directories",
+          "brief": "\u2014"
+        },
+        {
+          "name": "is_excluded",
+          "brief": "Return True if this path should be excluded from scanning."
+        },
+        {
+          "name": "step1_scan_repository",
+          "brief": "\u2014"
+        },
+        {
+          "name": "classify_file",
+          "brief": "Returns (role, type_bucket, unclassified)."
+        },
+        {
+          "name": "step2_classify",
+          "brief": "\u2014"
+        },
+        {
+          "name": "path_to_safe_name",
+          "brief": "Convert relative path to a flat safe filename."
+        },
+        {
+          "name": "step3_handle_collisions",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step4_copy_files",
+          "brief": "\u2014"
+        },
+        {
+          "name": "build_tree",
+          "brief": "Recursively build a directory tree dict."
+        },
+        {
+          "name": "step5_build_directory_tree",
+          "brief": "\u2014"
+        },
+        {
+          "name": "collect_empty_dirs",
+          "brief": "Return list of paths that are completely empty (no files, no non-empty children)."
+        },
+        {
+          "name": "find_truly_empty_dirs",
+          "brief": "Walk filesystem to find directories with zero files in their entire subtree."
+        },
+        {
+          "name": "step51_detect_empty_directories",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step6_write_artifact_index",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step7_write_failure_log",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step8_terminal_summary",
+          "brief": "\u2014"
+        },
+        {
+          "name": "validate_outputs",
+          "brief": "\u2014"
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "ast_parser.py",
+      "module_description": "ast_parser.py \u2014 AST-based function extraction from Python source files.",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "_imports_from_tree",
+          "brief": "\u2014"
+        },
+        {
+          "name": "_build_signature",
+          "brief": "\u2014"
+        },
+        {
+          "name": "_body_summary",
+          "brief": "Return a compact summary of what the function body does."
+        },
+        {
+          "name": "parse_file",
+          "brief": "Parse a Python file and return a list of function records."
+        }
+      ]
+    },
+    {
+      "module": "classifier.py",
+      "module_description": "classifier.py \u2014 Keyword-based function classification into DRAC AF categories.",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "classify",
+          "brief": "Return the best-matching DRAC AF category for a function."
+        },
+        {
+          "name": "classify_record",
+          "brief": "Convenience wrapper that accepts an ast_parser record dict."
+        }
+      ]
+    },
+    {
+      "module": "cluster_analysis.py",
+      "module_description": "ARCHON Runtime Dependency Graph Clustering Analysis",
+      "classes": [],
+      "functions": [
+        {
+          "name": "load_json",
+          "brief": "\u2014"
+        },
+        {
+          "name": "write_json",
+          "brief": "\u2014"
+        },
+        {
+          "name": "top_level_package",
+          "brief": "\u2014"
+        },
+        {
+          "name": "guess_layer",
+          "brief": "Map a module to a high-level architectural layer label."
+        },
+        {
+          "name": "load_artifacts",
+          "brief": "\u2014"
+        },
+        {
+          "name": "build_graph",
+          "brief": "\u2014"
+        },
+        {
+          "name": "detect_communities",
+          "brief": "Louvain works on undirected graphs. Convert, detect, then map back to"
+        },
+        {
+          "name": "find_sccs",
+          "brief": "\u2014"
+        },
+        {
+          "name": "compute_betweenness",
+          "brief": "\u2014"
+        },
+        {
+          "name": "cluster_boundary_analysis",
+          "brief": "\u2014"
+        },
+        {
+          "name": "cluster_dependency_graph",
+          "brief": "\u2014"
+        },
+        {
+          "name": "classify_violations",
+          "brief": "\u2014"
+        },
+        {
+          "name": "identify_facade_candidates",
+          "brief": "\u2014"
+        },
+        {
+          "name": "repair_feasibility",
+          "brief": "Assess whether deep imports can be repaired algorithmically."
+        },
+        {
+          "name": "write_artifacts",
+          "brief": "\u2014"
+        },
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "validate",
+          "brief": "\u2014"
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "conftest.py",
+      "module_description": "",
+      "classes": [],
+      "functions": [
+        {
+          "name": "pytest_collection_modifyitems",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "drac_indexer.py",
+      "module_description": "ARCHON PRIME \u2014 DRAC Application Function Master Index Builder",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "_parse_module",
+          "brief": "Return extracted metadata from a Python source file (best-effort)."
+        },
+        {
+          "name": "_assign_cluster",
+          "brief": "\u2014"
+        },
+        {
+          "name": "_load_packet_data",
+          "brief": "Return stem \u2192 {classification, packet_id, external_deps} from module_packets.json."
+        },
+        {
+          "name": "_compat_tags",
+          "brief": "\u2014"
+        },
+        {
+          "name": "run",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "execution_core_isolation_audit.py",
+      "module_description": "RUNTIME_TOOL_METADATA",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "get_imports",
+          "brief": "Return all imported module strings from a Python file."
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "extract.py",
+      "module_description": "ARCHON PRIME \u2014 Application Function Extraction Pass",
+      "classes": [],
+      "functions": [
+        {
+          "name": "should_exclude",
+          "brief": "\u2014"
+        },
+        {
+          "name": "collect_python_files",
+          "brief": "\u2014"
+        },
+        {
+          "name": "extract_docstrings",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step1_ast_parse",
+          "brief": "\u2014"
+        },
+        {
+          "name": "score_docstring",
+          "brief": "Return match info for signal keywords in a docstring."
+        },
+        {
+          "name": "is_trivial",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step2_filter",
+          "brief": "\u2014"
+        },
+        {
+          "name": "tokenize",
+          "brief": "\u2014"
+        },
+        {
+          "name": "build_tfidf",
+          "brief": "Lightweight TF-IDF using pure Python."
+        },
+        {
+          "name": "vec_to_list",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step3_vectorize",
+          "brief": "\u2014"
+        },
+        {
+          "name": "dot",
+          "brief": "Dot product of two sparse vectors."
+        },
+        {
+          "name": "cosine_sim",
+          "brief": "\u2014"
+        },
+        {
+          "name": "kmeans_cosine",
+          "brief": "Simple KMeans with cosine distance on sparse dicts."
+        },
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "pick_k",
+          "brief": "Pick cluster count between 10 and 20 based on corpus size."
+        },
+        {
+          "name": "cluster_top_terms",
+          "brief": "Return top 10 terms for each cluster centroid."
+        },
+        {
+          "name": "step4_cluster",
+          "brief": "\u2014"
+        },
+        {
+          "name": "derive_module",
+          "brief": "Convert file_path to module notation."
+        },
+        {
+          "name": "step5_registry",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step6_report",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "facade_rewrite_pass.py",
+      "module_description": "ARCHON PRIME \u2014 Facade Import Rewrite Pass",
+      "classes": [],
+      "functions": [
+        {
+          "name": "should_skip",
+          "brief": "\u2014"
+        },
+        {
+          "name": "write_json",
+          "brief": "\u2014"
+        },
+        {
+          "name": "write_text",
+          "brief": "\u2014"
+        },
+        {
+          "name": "load_json",
+          "brief": "\u2014"
+        },
+        {
+          "name": "module_to_file",
+          "brief": "Convert a dotted module path to an absolute .py file path."
+        },
+        {
+          "name": "check_syntax",
+          "brief": "Return list of syntax error descriptions, empty if clean."
+        },
+        {
+          "name": "abort",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step1_load",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step2_preconditions",
+          "brief": "Preconditions required before any mutation:"
+        },
+        {
+          "name": "build_import_pattern",
+          "brief": "Build a regex that matches:"
+        },
+        {
+          "name": "rewrite_import_lines",
+          "brief": "Replace every import line whose module is exactly `target_module` with one"
+        },
+        {
+          "name": "step3_dry_run",
+          "brief": "Simulate every rewrite: apply to in-memory copy, verify syntax."
+        },
+        {
+          "name": "step4_apply",
+          "brief": "Write rewritten files to disk only for changed, syntax-clean files."
+        },
+        {
+          "name": "step5_validate",
+          "brief": "Re-scan all rewritten files."
+        },
+        {
+          "name": "step6_write_artifacts",
+          "brief": "\u2014"
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "facade_synthesis.py",
+      "error": "invalid syntax (<unknown>, line 8)",
+      "functions": [],
+      "classes": []
+    },
+    {
+      "module": "fbc_registry.py",
+      "error": "unexpected indent (<unknown>, line 557)",
+      "functions": [],
+      "classes": []
+    },
+    {
+      "module": "generate_deep_import_violations.py",
+      "module_description": "generate_deep_import_violations.py",
+      "classes": [],
+      "functions": [
+        {
+          "name": "is_import_line",
+          "brief": "\u2014"
+        },
+        {
+          "name": "path_is_allowlisted",
+          "brief": "\u2014"
+        },
+        {
+          "name": "scan",
+          "brief": "Walk REPO_ROOT, scan every .py file, return (files_scanned, violations)."
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "generate_symbol_import_index.py",
+      "module_description": "generate_symbol_import_index.py",
+      "classes": [],
+      "functions": [
+        {
+          "name": "should_skip",
+          "brief": "\u2014"
+        },
+        {
+          "name": "discover_python_files",
+          "brief": "Walk the repo and return relative paths of all .py files, refreshing the index."
+        },
+        {
+          "name": "load_python_files",
+          "brief": "\u2014"
+        },
+        {
+          "name": "read_source_lines",
+          "brief": "\u2014"
+        },
+        {
+          "name": "parse_imports",
+          "brief": "\u2014"
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "import_prefix_verifier.py",
+      "module_description": "RUNTIME_TOOL_METADATA",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "extract_prefix_distribution",
+          "brief": "Build prefix frequency tables from 1 to max_segments depth."
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "import_root_grouping_analyzer.py",
+      "module_description": "RUNTIME_TOOL_METADATA",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "group_by_root",
+          "brief": "Group violations by the root (first segment) of the imported module."
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "import_violation_classifier.py",
+      "module_description": "RUNTIME_TOOL_METADATA",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "classify_violations",
+          "brief": "Group violations by rule ID and by the root prefix of the imported module."
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "legacy_extract.py",
+      "module_description": "ARCHON PRIME \u2014 Legacy Application Function Deep Semantic Extraction",
+      "classes": [
+        {
+          "name": "ModuleAnalysis",
+          "brief": "\u2014",
+          "methods": [
+            {
+              "name": "__init__",
+              "brief": "\u2014"
+            },
+            {
+              "name": "parse",
+              "brief": "\u2014"
+            },
+            {
+              "name": "_walk",
+              "brief": "\u2014"
+            },
+            {
+              "name": "_decorator_name",
+              "brief": "\u2014"
+            },
+            {
+              "name": "_extract_args",
+              "brief": "\u2014"
+            },
+            {
+              "name": "_annotation_str",
+              "brief": "\u2014"
+            },
+            {
+              "name": "_const_value",
+              "brief": "\u2014"
+            },
+            {
+              "name": "_call_target",
+              "brief": "\u2014"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "should_exclude",
+          "brief": "\u2014"
+        },
+        {
+          "name": "extract_signal_keywords",
+          "brief": "\u2014"
+        },
+        {
+          "name": "classify_subsystems",
+          "brief": "\u2014"
+        },
+        {
+          "name": "infer_runtime_role",
+          "brief": "\u2014"
+        },
+        {
+          "name": "infer_purpose",
+          "brief": "\u2014"
+        },
+        {
+          "name": "deduplicate_calls",
+          "brief": "\u2014"
+        },
+        {
+          "name": "extract_exports",
+          "brief": "\u2014"
+        },
+        {
+          "name": "assess_salvageability",
+          "brief": "\u2014"
+        },
+        {
+          "name": "assess_method_salvageability",
+          "brief": "\u2014"
+        },
+        {
+          "name": "assess_subsystem_compat",
+          "brief": "\u2014"
+        },
+        {
+          "name": "core_compatibility",
+          "brief": "\u2014"
+        },
+        {
+          "name": "run",
+          "brief": "\u2014"
+        },
+        {
+          "name": "_generate_report",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "module_root_existence_checker.py",
+      "module_description": "RUNTIME_TOOL_METADATA",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "check_root",
+          "brief": "Check whether root_name resolves to a directory in any of scan_dirs."
+        },
+        {
+          "name": "extract_roots",
+          "brief": "Extract root prefix names from various report formats."
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "namespace_discovery_scan.py",
+      "module_description": "RUNTIME_TOOL_METADATA",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "discover_namespaces",
+          "brief": "Find all directories matching each target name under repo_root."
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "nexus_structural_audit.py",
+      "module_description": "RUNTIME_TOOL_METADATA",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "classify_module",
+          "brief": "Classify a module and list its top-level class names."
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "packet_discovery.py",
+      "module_description": "ARCHON PRIME \u2014 Module Packet Discovery",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "collect_modules",
+          "brief": "Return {module_key: Path} for all Python files in scan roots."
+        },
+        {
+          "name": "parse_imports",
+          "brief": "Return list of module/name strings imported by this file."
+        },
+        {
+          "name": "build_graph",
+          "brief": "Build directed adjacency list: key \u2192 [keys of modules it imports]."
+        },
+        {
+          "name": "tarjan_scc",
+          "brief": "Iterative Tarjan's SCC algorithm."
+        },
+        {
+          "name": "classify_packet",
+          "brief": "Classify an SCC packet by semantic signals in module names + first 500 chars."
+        },
+        {
+          "name": "classify_all_signals",
+          "brief": "Return score for every class for this packet."
+        },
+        {
+          "name": "build_packet_records",
+          "brief": "\u2014"
+        },
+        {
+          "name": "build_dot",
+          "brief": "Build a DOT graph where:"
+        },
+        {
+          "name": "run",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "pipeline.py",
+      "error": "unexpected indent (<unknown>, line 190)",
+      "functions": [],
+      "classes": []
+    },
+    {
+      "module": "python_file_list.py",
+      "module_description": "from pathlib import Path",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "module": "registry_writer.py",
+      "module_description": "registry_writer.py \u2014 Write AF semantic registry entries to MODULAR_LIBRARY.",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "build_entry",
+          "brief": "Construct a single AF registry entry."
+        },
+        {
+          "name": "write_registry",
+          "brief": "Write the AF registry to MODULAR_LIBRARY/af_semantic_registry.json."
+        }
+      ]
+    },
+    {
+      "module": "reorganize.py",
+      "module_description": "ARCHON PRIME \u2014 APPLICATION_FUNCTIONS Categorical Reorganization",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "rollback_all",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "repo_structure_export.py",
+      "module_description": "",
+      "classes": [],
+      "functions": []
+    },
+    {
+      "module": "runtime_analysis.py",
+      "module_description": "ARCHON Runtime Topology Analysis Script",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "should_skip",
+          "brief": "Return True if any segment of this path matches an excluded keyword."
+        },
+        {
+          "name": "write_json",
+          "brief": "\u2014"
+        },
+        {
+          "name": "file_to_module_path",
+          "brief": "Convert an absolute file path to a dotted module path relative to REPO_ROOT."
+        },
+        {
+          "name": "build_tree",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step1_directory_tree",
+          "brief": "\u2014"
+        },
+        {
+          "name": "collect_python_files",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step2_python_inventory",
+          "brief": "\u2014"
+        },
+        {
+          "name": "parse_imports",
+          "brief": "Returns (imports_list, symbol_imports_list) for one file."
+        },
+        {
+          "name": "step3_4_imports",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step5_dependency_graph",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step6_runtime_surfaces",
+          "brief": "\u2014"
+        },
+        {
+          "name": "import_depth",
+          "brief": "Count number of package separators \u2192 depth of the dotted path."
+        },
+        {
+          "name": "step7_deep_violations",
+          "brief": "\u2014"
+        },
+        {
+          "name": "guess_facade_namespace",
+          "brief": "Assign a recommended facade namespace based on module path segments."
+        },
+        {
+          "name": "step8_facade_candidates",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step9_graphviz",
+          "brief": "\u2014"
+        },
+        {
+          "name": "step10_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "runtime_callgraph_extractor.py",
+      "module_description": "RUNTIME_TOOL_METADATA",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "extract_imports",
+          "brief": "Return all imported module names from a single Python file."
+        },
+        {
+          "name": "build_callgraph",
+          "brief": "Walk AST from each entry-point file, following discovered .py paths"
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "runtime_debug_artifact_scanner.py",
+      "module_description": "RUNTIME_TOOL_METADATA",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "scan_file",
+          "brief": "Scan a single file for debug artifacts."
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "runtime_execution_tracer.py",
+      "module_description": "RUNTIME_TOOL_METADATA",
+      "classes": [
+        {
+          "name": "ExecutionTracer",
+          "brief": "Collects call-edge records via sys.settrace.",
+          "methods": [
+            {
+              "name": "__init__",
+              "brief": "\u2014"
+            },
+            {
+              "name": "trace_calls",
+              "brief": "\u2014"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "runtime_module_tree_auditor.py",
+      "module_description": "RUNTIME_TOOL_METADATA",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "audit_module",
+          "brief": "Extract classes, functions, imports, and LOC from a single .py file."
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "scanner.py",
+      "module_description": "scanner.py \u2014 Repository Python source file scanner",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "scan",
+          "brief": "Yield all .py files under root, skipping ignored directories."
+        },
+        {
+          "name": "collect",
+          "brief": "Return sorted list of all scannable .py files."
+        }
+      ]
+    },
+    {
+      "module": "semantic_extractor.py",
+      "module_description": "semantic_extractor.py \u2014 Derive the minimal semantic modifier expression for a function.",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "_tokenize",
+          "brief": "Split snake_case and camelCase name into lowercase tokens."
+        },
+        {
+          "name": "extract",
+          "brief": "Return the smallest semantic modifier expression for a function."
+        },
+        {
+          "name": "extract_record",
+          "brief": "Convenience wrapper that accepts an ast_parser record dict."
+        }
+      ]
+    },
+    {
+      "module": "static_ast_analysis.py",
+      "module_description": "RUNTIME_TOOL_METADATA",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "file_to_module_path",
+          "brief": "\u2014"
+        },
+        {
+          "name": "classify_layer",
+          "brief": "\u2014"
+        },
+        {
+          "name": "extract_imports",
+          "brief": "\u2014"
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "test_import_base_reasoning_registry.py",
+      "error": "expected 'except' or 'finally' block (<unknown>, line 35)",
+      "functions": [],
+      "classes": []
+    },
+    {
+      "module": "triage.py",
+      "module_description": "ARCHON PRIME \u2014 Legacy Module Triage and Extraction",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "should_exclude",
+          "brief": "\u2014"
+        },
+        {
+          "name": "read_source",
+          "brief": "\u2014"
+        },
+        {
+          "name": "try_parse",
+          "brief": "\u2014"
+        },
+        {
+          "name": "is_stub",
+          "brief": "Return (is_stub, reason)."
+        },
+        {
+          "name": "score_signals",
+          "brief": "\u2014"
+        },
+        {
+          "name": "classify_module",
+          "brief": "Returns 'REASONING', 'UTILITY', or 'UNCLASSIFIED'."
+        },
+        {
+          "name": "function_names",
+          "brief": "\u2014"
+        },
+        {
+          "name": "line_similarity",
+          "brief": "\u2014"
+        },
+        {
+          "name": "find_duplicates",
+          "brief": "Within each destination group (REASONING / UTILITY), compare pairs."
+        },
+        {
+          "name": "is_empty_init",
+          "brief": "\u2014"
+        },
+        {
+          "name": "safe_move",
+          "brief": "\u2014"
+        },
+        {
+          "name": "run",
+          "brief": "\u2014"
+        },
+        {
+          "name": "_write_report",
+          "brief": "\u2014"
+        }
+      ]
+    },
+    {
+      "module": "violation_prefix_grouper.py",
+      "module_description": "RUNTIME_TOOL_METADATA",
+      "classes": [],
+      "functions": [
+        {
+          "name": "write_report",
+          "brief": "\u2014"
+        },
+        {
+          "name": "group_by_prefix_depth",
+          "brief": "Group violations by a prefix of exactly `depth` dot-separated segments."
+        },
+        {
+          "name": "main",
+          "brief": "\u2014"
+        }
+      ]
+    }
+  ],
+  "count": 40
+}

@@ -1,0 +1,63 @@
+{
+  "schema_id": "AP_PROMPT_SCHEMA_V1",
+  "version": "1.0",
+  "description": "Canonical schema governing the structure of all prompts engineered for VS Code execution within the ARCHON PRIME remediation workflow.",
+  "required": [
+    "prompt_id",
+    "phase",
+    "spec_reference",
+    "objective",
+    "target_scope",
+    "operations",
+    "mutation_policy",
+    "expected_outputs",
+    "validation_steps",
+    "non_deletion_rule"
+  ],
+  "fields": {
+    "prompt_id": {
+      "type": "string",
+      "description": "Unique identifier for the prompt."
+    },
+    "phase": {
+      "type": "string",
+      "description": "Remediation phase this prompt belongs to."
+    },
+    "spec_reference": {
+      "type": "string",
+      "description": "Reference to architecture design spec section."
+    },
+    "objective": {
+      "type": "string",
+      "description": "High-level goal of the prompt."
+    },
+    "target_scope": {
+      "type": "object",
+      "description": "Files, directories, or modules affected by this prompt."
+    },
+    "operations": {
+      "type": "array",
+      "description": "List of operations to perform in deterministic order."
+    },
+    "mutation_policy": {
+      "type": "string",
+      "allowed": [
+        "READ_ONLY",
+        "CREATE_ONLY",
+        "MODIFY_ALLOWED"
+      ]
+    },
+    "non_deletion_rule": {
+      "type": "boolean",
+      "description": "Ensures no files are deleted unless explicitly authorized."
+    },
+    "expected_outputs": {
+      "type": "array",
+      "description": "Artifacts expected to be produced by prompt execution."
+    },
+    "validation_steps": {
+      "type": "array",
+      "description": "Checks to confirm prompt execution succeeded."
+    }
+  }
+}

@@ -1,0 +1,22 @@
+name: ARCHON_PRIME_INFRA_VALIDATION
+
+on:
+  pull_request:
+
+jobs:
+  validate-repo-structure:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate required files
+        run: |
+          test -f .devcontainer/devcontainer.json
+          test -f requirements.txt
+          test -f .vscode/settings.json
+          test -f .vscode/extensions.json
+          test -f .vscode/tasks.json
+          test -f .github/CODEOWNERS
+          test -f .github/pull_request_template.md

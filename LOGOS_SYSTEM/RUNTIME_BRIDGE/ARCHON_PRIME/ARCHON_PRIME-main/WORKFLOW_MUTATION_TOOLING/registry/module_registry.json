@@ -1,0 +1,52 @@
+{
+  "modules": [
+    {
+      "name": "DependencyGraphBuilder",
+      "module": "tools.runtime_analysis.dependency_graph",
+      "entry_function": "build_graph",
+      "artifact_output": "AP_SYSTEM_AUDIT/dependency_graph.json",
+      "category": "analysis",
+      "description": "Builds dependency graph from import map logs"
+    },
+    {
+      "name": "ImportScanner",
+      "module": "tools.import_analysis.import_scanner",
+      "entry_function": "scan",
+      "artifact_output": "AP_SYSTEM_AUDIT/module_topology.json",
+      "category": "analysis",
+      "description": "Scans all Python files and extracts import relationships"
+    },
+    {
+      "name": "RepoScanner",
+      "module": "tools.repo_mapping.repo_scanner",
+      "entry_function": "scan_repo",
+      "artifact_output": "AP_SYSTEM_AUDIT/structure_map.json",
+      "category": "analysis",
+      "description": "Walks repository tree and produces file structure map"
+    },
+    {
+      "name": "GovernanceScanner",
+      "module": "tools.governance_analysis.governance_scanner",
+      "entry_function": "scan",
+      "artifact_output": "AP_SYSTEM_AUDIT/governance_map.json",
+      "category": "analysis",
+      "description": "Discovers governance-tagged modules across the repository"
+    },
+    {
+      "name": "NamespaceShadowAuditor",
+      "module": "tools.audit_tools.namespace_shadow_audit",
+      "entry_function": "run",
+      "artifact_output": "AP_SYSTEM_AUDIT/namespace_conflicts.json",
+      "category": "analysis",
+      "description": "Detects namespace shadowing conflicts between modules"
+    },
+    {
+      "name": "CircularDependencyAuditor",
+      "module": "tools.audit_tools.circular_dependency_audit",
+      "entry_function": "run",
+      "artifact_output": "AP_SYSTEM_AUDIT/circular_dependency_report.json",
+      "category": "analysis",
+      "description": "Identifies circular import dependencies in the repository"
+    }
+  ]
+}

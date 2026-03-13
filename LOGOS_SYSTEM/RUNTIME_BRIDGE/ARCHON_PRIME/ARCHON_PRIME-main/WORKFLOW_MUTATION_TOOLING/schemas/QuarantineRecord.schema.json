@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "module_path": { "type": "string" },
+    "reason": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "repair_attempted": { "type": "boolean" },
+    "release_status": {
+      "type": "string",
+      "enum": ["pending", "released", "permanent_exclusion"]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+    "system": "ARCHON_PRIME",
+    "artifact_type": "Execution_Envelope_Manifest",
+    "envelope_name": "AP_V2_TOOLING",
+    "version": "1.0.0",
+    "status": "active",
+    "artifact_bundle": {
+        "design_specification": {
+            "artifact": "AP_V2_Tooling_DS.md",
+            "hash": "71b9dabe4020a2b8d35980292431b60753cd9e4270522c8f59100921c6d81c67"
+        },
+        "implementation_guide": {
+            "artifact": "AP_V2_Tooling_IG.md",
+            "hash": "09fd884ea327dafbeecbc9088e5ec7a3bda0bf96d13f4c9e37df055fb020fe6b"
+        },
+        "execution_plan": {
+            "artifact": "AP_V2_Tooling_EP.md",
+            "hash": "87847fc09a0bcd52e8708a3423e6a7879bb51cc6a22468e87bbe36574b9cfc71"
+        }
+    },
+    "addendum": [
+        "../../AP_SYSTEM_CONFIG/SYSTEM/EXECUTION_ENVELOPES/EA_CONFIG/EA-001_ENVELOPE_TARGET_INTEGRITY.md",
+        "../../AP_SYSTEM_CONFIG/SYSTEM/EXECUTION_ENVELOPES/EA_CONFIG/EA-002_ARTIFACT_ROUTER_ENFORCEMENT.md",
+        "../../AP_SYSTEM_CONFIG/SYSTEM/EXECUTION_ENVELOPES/EA_CONFIG/EA-003_DETERMINISTIC_EXECUTION_ORDERING.md",
+        "../../AP_SYSTEM_CONFIG/SYSTEM/EXECUTION_ENVELOPES/EA_CONFIG/EA-004_SIMULATION_FIRST_RULE.md",
+        "../../AP_SYSTEM_CONFIG/SYSTEM/EXECUTION_ENVELOPES/EA_CONFIG/EA-005_GOVERNANCE_CONSISTENCY_CHECK.md",
+        "../../AP_SYSTEM_CONFIG/SYSTEM/EXECUTION_ENVELOPES/EA_CONFIG/EA-006_EXECUTION_LOGGING_REQUIREMENTS.md",
+        "../../AP_SYSTEM_CONFIG/SYSTEM/EXECUTION_ENVELOPES/EA_CONFIG/EA-007_ARTIFACT_METADATA_SCHEMA_ENFORCEMENT.md",
+        "../../AP_SYSTEM_CONFIG/SYSTEM/EXECUTION_ENVELOPES/EA_CONFIG/EA-008_ENVELOPE_MANIFEST_CONTRACT.md",
+        "../../AP_SYSTEM_CONFIG/SYSTEM/EXECUTION_ENVELOPES/EA_CONFIG/EA-009_PROMPT_COMPILER_INTEGRATION.md",
+        "../../AP_SYSTEM_CONFIG/SYSTEM/EXECUTION_ENVELOPES/EA_CONFIG/EA-010_FAILURE_ROLLBACK_PROTOCOL.md"
+    ],
+    "execution_phases": [
+        "environment_verification",
+        "artifact_discovery",
+        "static_analysis",
+        "simulation_pass",
+        "controlled_mutation",
+        "validation",
+        "reporting"
+    ],
+    "validation_layer": {
+        "schema_enforcement": true,
+        "metadata_validation": true,
+        "artifact_identity_check": true
+    },
+    "execution_context": {
+        "artifact_router_required": true,
+        "simulation_required": true,
+        "rollback_enabled": true
+    }
+}

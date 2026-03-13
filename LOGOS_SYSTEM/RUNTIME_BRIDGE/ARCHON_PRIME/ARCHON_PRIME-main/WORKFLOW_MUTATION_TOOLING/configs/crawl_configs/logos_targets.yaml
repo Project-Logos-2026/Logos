@@ -1,0 +1,13 @@
+targets:
+  - name: LOGOS
+    repository_path: ../LOGOS
+    include_extensions:
+      - ".py"
+      - ".json"
+      - ".yaml"
+      - ".yml"
+      - ".md"
+    exclude_paths:
+      - "__pycache__"
+      - ".git"
+      - ".pytest_cache"

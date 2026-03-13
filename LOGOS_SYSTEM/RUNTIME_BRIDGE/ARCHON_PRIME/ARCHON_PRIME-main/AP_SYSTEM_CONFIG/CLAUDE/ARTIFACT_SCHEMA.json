@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ARCHON_PRIME Design Specification Schema",
+  "description": "Validates the structure of design specification artifacts",
+  "type": "object",
+  "required": [
+    "spec_identity",
+    "purpose",
+    "functional_requirements",
+    "constraints",
+    "formal_model",
+    "verification_criteria"
+  ],
+  "properties": {
+    "spec_identity": {
+      "type": "object",
+      "required": ["subsystem", "version", "status", "source_concept", "author", "date"],
+      "properties": {
+        "subsystem": { "type": "string" },
+        "version": { "type": "string", "pattern": "^v[0-9]+$" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "under_review", "approved"]
+        },
+        "source_concept": { "type": "string" },
+        "author": { "type": "string" },
+        "date": { "type": "string", "format": "date" },
+        "approved_by": { "type": ["string", "null"] }
+      }
+    },
+    "purpose": { "type": "string", "minLength": 1 },
+    "functional_requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "description", "source"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^FR-[0-9]{3}$" },
+          "description": { "type": "string" },
+          "source": { "type": "string" }
+        }
+      },
+      "minItems": 1
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "description", "rationale"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^C-[0-9]{3}$" },
+          "description": { "type": "string" },
+          "rationale": { "type": "string" }
+        }
+      }
+    },
+    "formal_model": {
+      "type": "object",
+      "properties": {
+        "primitives": { "type": "array", "items": { "type": "object" } },
+        "operations": { "type": "array", "items": { "type": "object" } },
+        "axioms": { "type": "array", "items": { "type": "object" } },
+        "relations": { "type": "array", "items": { "type": "object" } },
+        "properties": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "integration_surfaces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "adjacent_subsystem": { "type": "string" },
+          "interface_type": { "type": "string" },
+          "data_flow": { "type": "string" }
+        }
+      }
+    },
+    "governance_requirements": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "deferments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "item": { "type": "string" },
+          "reason": { "type": "string" }
+        }
+      }
+    },
+    "verification_criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "criterion", "method"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^V-[0-9]{3}$" },
+          "criterion": { "type": "string" },
+          "method": { "type": "string" }
+        }
+      },
+      "minItems": 1
+    },
+    "open_questions": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

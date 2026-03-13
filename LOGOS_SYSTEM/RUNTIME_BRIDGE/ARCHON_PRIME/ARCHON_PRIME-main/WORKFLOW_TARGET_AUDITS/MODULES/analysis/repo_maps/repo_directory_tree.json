@@ -1,0 +1,369 @@
+{
+  ".": {
+    "dirs": [
+      ".git",
+      "AUDIT_SYSTEM",
+      "STAGING_ARTIFACTS",
+      "configs",
+      "orchestration",
+      "tools"
+    ],
+    "files": [
+      "MASTER_SYSTEM_DESIGN_SPEC.md",
+      "README.md"
+    ]
+  },
+  ".git": {
+    "dirs": [
+      "hooks",
+      "info",
+      "lfs",
+      "logs",
+      "objects",
+      "refs"
+    ],
+    "files": [
+      "FETCH_HEAD",
+      "HEAD",
+      "config",
+      "description",
+      "index",
+      "packed-refs"
+    ]
+  },
+  ".git/refs": {
+    "dirs": [
+      "heads",
+      "remotes",
+      "tags"
+    ],
+    "files": []
+  },
+  ".git/refs/tags": {
+    "dirs": [],
+    "files": []
+  },
+  ".git/refs/heads": {
+    "dirs": [],
+    "files": [
+      "main"
+    ]
+  },
+  ".git/refs/remotes": {
+    "dirs": [
+      "origin"
+    ],
+    "files": []
+  },
+  ".git/refs/remotes/origin": {
+    "dirs": [],
+    "files": [
+      "HEAD"
+    ]
+  },
+  ".git/logs": {
+    "dirs": [
+      "refs"
+    ],
+    "files": [
+      "HEAD"
+    ]
+  },
+  ".git/logs/refs": {
+    "dirs": [
+      "heads",
+      "remotes"
+    ],
+    "files": []
+  },
+  ".git/logs/refs/heads": {
+    "dirs": [],
+    "files": [
+      "main"
+    ]
+  },
+  ".git/logs/refs/remotes": {
+    "dirs": [
+      "origin"
+    ],
+    "files": []
+  },
+  ".git/logs/refs/remotes/origin": {
+    "dirs": [],
+    "files": [
+      "HEAD"
+    ]
+  },
+  ".git/objects": {
+    "dirs": [
+      "info",
+      "pack"
+    ],
+    "files": []
+  },
+  ".git/objects/pack": {
+    "dirs": [],
+    "files": [
+      "pack-5619cef201e605ff60cd065a53c6e7c383a8a479.idx",
+      "pack-5619cef201e605ff60cd065a53c6e7c383a8a479.pack",
+      "pack-5619cef201e605ff60cd065a53c6e7c383a8a479.rev"
+    ]
+  },
+  ".git/objects/info": {
+    "dirs": [],
+    "files": []
+  },
+  ".git/hooks": {
+    "dirs": [],
+    "files": [
+      "applypatch-msg.sample",
+      "commit-msg.sample",
+      "fsmonitor-watchman.sample",
+      "post-checkout",
+      "post-commit",
+      "post-merge",
+      "post-update.sample",
+      "pre-applypatch.sample",
+      "pre-commit.sample",
+      "pre-merge-commit.sample",
+      "pre-push",
+      "pre-push.sample",
+      "pre-rebase.sample",
+      "pre-receive.sample",
+      "prepare-commit-msg.sample",
+      "push-to-checkout.sample",
+      "sendemail-validate.sample",
+      "update.sample"
+    ]
+  },
+  ".git/lfs": {
+    "dirs": [
+      "tmp"
+    ],
+    "files": []
+  },
+  ".git/lfs/tmp": {
+    "dirs": [],
+    "files": []
+  },
+  ".git/info": {
+    "dirs": [],
+    "files": [
+      "exclude"
+    ]
+  },
+  "configs": {
+    "dirs": [
+      "audit_configs",
+      "phase_maps",
+      "repair_registry"
+    ],
+    "files": []
+  },
+  "configs/audit_configs": {
+    "dirs": [],
+    "files": [
+      "PRE_CRAWL_CHECKLIST.md"
+    ]
+  },
+  "configs/repair_registry": {
+    "dirs": [],
+    "files": [
+      "FAILURE_TAXONOMY.md"
+    ]
+  },
+  "configs/phase_maps": {
+    "dirs": [],
+    "files": [
+      "IMPLEMENTATION_SEQUENCE.md"
+    ]
+  },
+  "AUDIT_SYSTEM": {
+    "dirs": [
+      "analysis",
+      "baselines",
+      "diagnostics",
+      "reports",
+      "runtime_monitor",
+      "scripts"
+    ],
+    "files": []
+  },
+  "AUDIT_SYSTEM/analysis": {
+    "dirs": [
+      "dependency_graphs",
+      "protocol_maps",
+      "repo_maps",
+      "runtime_maps"
+    ],
+    "files": []
+  },
+  "AUDIT_SYSTEM/analysis/dependency_graphs": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/analysis/protocol_maps": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/analysis/runtime_maps": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/analysis/repo_maps": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/diagnostics": {
+    "dirs": [
+      "error_catalogs",
+      "repair_recommendations",
+      "violation_logs"
+    ],
+    "files": []
+  },
+  "AUDIT_SYSTEM/diagnostics/violation_logs": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/diagnostics/repair_recommendations": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/diagnostics/error_catalogs": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/scripts": {
+    "dirs": [
+      "dependency_scanners",
+      "governance_scanners",
+      "header_scanners",
+      "import_scanners",
+      "repo_scanners",
+      "runtime_scanners"
+    ],
+    "files": []
+  },
+  "AUDIT_SYSTEM/scripts/header_scanners": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/scripts/repo_scanners": {
+    "dirs": [],
+    "files": [
+      "repo_mapper.py"
+    ]
+  },
+  "AUDIT_SYSTEM/scripts/runtime_scanners": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/scripts/dependency_scanners": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/scripts/import_scanners": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/scripts/governance_scanners": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/runtime_monitor": {
+    "dirs": [
+      "live_status",
+      "progress_tracking"
+    ],
+    "files": []
+  },
+  "AUDIT_SYSTEM/runtime_monitor/progress_tracking": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/runtime_monitor/live_status": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/baselines": {
+    "dirs": [
+      "initial_repo_snapshot",
+      "post_normalization_snapshot"
+    ],
+    "files": []
+  },
+  "AUDIT_SYSTEM/baselines/initial_repo_snapshot": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/baselines/post_normalization_snapshot": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/reports": {
+    "dirs": [
+      "concept_reports",
+      "governance_reports",
+      "import_reports",
+      "runtime_reports",
+      "structural_reports"
+    ],
+    "files": []
+  },
+  "AUDIT_SYSTEM/reports/governance_reports": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/reports/structural_reports": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/reports/concept_reports": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/reports/import_reports": {
+    "dirs": [],
+    "files": []
+  },
+  "AUDIT_SYSTEM/reports/runtime_reports": {
+    "dirs": [],
+    "files": []
+  },
+  "orchestration": {
+    "dirs": [
+      "json_drivers"
+    ],
+    "files": [
+      "OUTPUT_ROUTING_TABLE.md"
+    ]
+  },
+  "orchestration/json_drivers": {
+    "dirs": [],
+    "files": [
+      "ARTIFACT_SCHEMAS.md"
+    ]
+  },
+  "tools": {
+    "dirs": [],
+    "files": [
+      "MODULE_INVENTORY.md"
+    ]
+  },
+  "STAGING_ARTIFACTS": {
+    "dirs": [
+      "incoming",
+      "sorted"
+    ],
+    "files": []
+  },
+  "STAGING_ARTIFACTS/sorted": {
+    "dirs": [],
+    "files": []
+  },
+  "STAGING_ARTIFACTS/incoming": {
+    "dirs": [],
+    "files": []
+  }
+}

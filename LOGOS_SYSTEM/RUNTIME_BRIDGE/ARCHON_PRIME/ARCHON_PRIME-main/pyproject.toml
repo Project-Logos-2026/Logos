@@ -1,0 +1,31 @@
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I"]
+# E402: AP module header places enforce_runtime_gate() before subsequent imports by design
+# E501: AP header canonical_path fields in comments may exceed 88 chars
+ignore = ["E402", "E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"*.py" = []
+"AP_SYSTEM_AUDIT/Complettion_Audit/_run_audit.py" = ["E501"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+warn_unused_configs = true
+implicit_optional = true
+disable_error_code = ["var-annotated", "import-untyped"]
+exclude = [
+    "ALL_ARTIFACTS_P1/",
+    "AP_SYSTEM_AUDIT/",
+    "STAGING_ARTIFACTS/",
+    "SYSTEM_AUDITS_AND_REPORTS/",
+    "WORKFLOW_NEXUS/",
+]

@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "ExecutionEnvelopeManifest",
+    "type": "object",
+    "required": [
+        "system",
+        "artifact_type",
+        "envelope_name",
+        "version",
+        "artifact_bundle",
+        "execution_phases"
+    ],
+    "properties": {
+        "system": {
+            "type": "string"
+        },
+        "artifact_type": {
+            "type": "string"
+        },
+        "envelope_name": {
+            "type": "string"
+        },
+        "version": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "artifact_bundle": {
+            "type": "object",
+            "required": [
+                "design_specification",
+                "implementation_guide",
+                "execution_plan"
+            ]
+        },
+        "addenda": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "execution_phases": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

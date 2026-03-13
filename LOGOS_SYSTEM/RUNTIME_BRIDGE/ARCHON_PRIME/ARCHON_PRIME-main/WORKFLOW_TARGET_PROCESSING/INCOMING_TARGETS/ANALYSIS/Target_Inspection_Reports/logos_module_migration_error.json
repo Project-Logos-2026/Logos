@@ -1,0 +1,28 @@
+{
+  "operation": "logos_module_migration",
+  "status": "aborted",
+  "reason": "filename_collision",
+  "collision_count": 3,
+  "collisions": [
+    {
+      "filename": "repo_structure_export.py",
+      "logos_source": "TOOLING_IMPLEMENTATION/Repo_Audit/repo_structure_export.py",
+      "existing_at_dest": "Modules_To_Integrate/repo_structure_export.py",
+      "existing_origin": "AP_V1_ARTIFACTS salvage (V1 archive)"
+    },
+    {
+      "filename": "generate_deep_import_violations.py",
+      "logos_source": "TOOLING_IMPLEMENTATION/Dependency_Analysis/generate_deep_import_violations.py",
+      "existing_at_dest": "Modules_To_Integrate/generate_deep_import_violations.py",
+      "existing_origin": "AP_V1_ARTIFACTS salvage (V1 archive)"
+    },
+    {
+      "filename": "generate_symbol_import_index.py",
+      "logos_source": "TOOLING_IMPLEMENTATION/Static_Analysis/generate_symbol_import_index.py",
+      "existing_at_dest": "Modules_To_Integrate/generate_symbol_import_index.py",
+      "existing_origin": "AP_V1_ARTIFACTS salvage (V1 archive)"
+    }
+  ],
+  "files_moved": [],
+  "resolution_required": "Three Logos staging modules share filenames with AP_V1 salvage modules already present in Modules_To_Integrate. Operator must decide: (A) replace V1 versions with Logos versions, (B) skip conflicting Logos files and migrate 35 non-conflicting modules, or (C) rename conflicting files before migration."
+}

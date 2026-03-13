@@ -1,0 +1,37 @@
+# Phase-1 control dataset snapshot (temporary, not for version control)
+ALL_ARTIFACTS_P1/
+AP_PHASE1_REPO_SNAPSHOT.zip
+
+# V1 artifacts
+AP_V1_ARTIFACTS/
+
+# Audit and report outputs
+SYSTEM_AUDITS_AND_REPORTS/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Test & coverage artifacts
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage.xml
+.coverage
+htmlcov/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# VS Code
+.vscode/*.log

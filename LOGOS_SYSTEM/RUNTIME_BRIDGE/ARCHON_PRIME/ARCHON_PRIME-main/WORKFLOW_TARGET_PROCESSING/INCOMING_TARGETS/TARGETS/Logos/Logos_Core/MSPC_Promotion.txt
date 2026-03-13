@@ -1,0 +1,527 @@
+LOGOS ARCHITECTURE RECONFIGURATION SPEC
+TITLE: MSPC Ingress Promotion + Deterministic EA Admission Pipeline
+STATUS: ARCHITECTURE ROUGH DRAFT (PRE-MIGRATION)
+INTENDED EXECUTOR: CLAUDE WITH FULL REPO ACCESS
+AUTHORITY: LOGOS ARCHITECTURE GOVERNANCE
+MODE: FAIL-CLOSED / DETERMINISTIC / AUDIT-FIRST
+
+---------------------------------------------------------------------
+
+SECTION 0 — OBJECTIVE
+
+Promote MSPC (Multi-Signal Process Compiler) to the FIRST runtime surface
+touched by a P1 input while preserving all existing runtime invariants.
+
+The migration must:
+
+• NOT redesign the runtime architecture
+• ONLY change ingress sequencing and artifact generation consolidation
+• Preserve the EA boundary rule (only EAs enter agents/protocols)
+• Preserve MTP as the final enriched user-output layer
+• Preserve RGE as NON-REASONING infrastructure
+• Remain fully deterministic and fail-closed
+
+All work must be preceded by a complete repository audit.
+
+No movement of code may occur until all audits pass.
+
+---------------------------------------------------------------------
+
+SECTION 1 — UNCHANGED RUNTIME INVARIANTS
+
+The following architectural truths MUST remain unchanged:
+
+1. Only EA artifacts may enter agents or protocols.
+2. SMP and AA are internal artifact layers and never enter protocols directly.
+3. RGE is non-reasoning and must never be modeled or wired as a reasoning engine.
+4. MTP remains the final user-facing enrichment layer before output.
+5. Logos Core retains full orchestration authority.
+6. All runtime operations remain deterministic and fail-closed.
+
+If any migration step violates these invariants the operation must halt.
+
+---------------------------------------------------------------------
+
+SECTION 2 — TARGET RUNTIME SPINE
+
+INGRESS SIDE
+
+User_Input
+   ↓
+MSPC (Ingress Compiler)
+   • privation classification
+   • SMP generation
+   • AA initialization
+   • metadata population
+   • NL / LC / PXL compilation
+   • commutation verification
+   ↓
+EA Packaging Gate
+   ↓
+EA Artifact
+
+CORE RUNTIME
+
+EA
+   ↓
+Logos Core
+   ↓
+Agents (I1 / I2 / I3)
+   ↓
+Protocols
+   ↓
+EMP / RGE / other infrastructure
+
+EGRESS SIDE
+
+EA Result
+   ↓
+MSPC (optional structural rendering)
+   ↓
+MTP (final enriched NL output)
+   ↓
+User Output
+
+---------------------------------------------------------------------
+
+SECTION 3 — DIRECTORIES AND SUBSYSTEMS TO MIGRATE
+
+The following responsibilities must move into MSPC:
+
+A. Privation System
+Current location:
+    I2_Agent_Core/privation_handler/
+
+Modules:
+    privation_classifier.py
+    privation_analyst.py
+    privation_gate.py
+    privation_transformer.py
+    privation_override.py
+
+Target location:
+    MSPC/ingress/privation/
+
+---------------------------------------------------------------------
+
+B. SMP Generation Machinery
+
+Current locations (must be audited):
+
+    runtime adapters
+    packet builders
+    MTP ingress logic
+
+Target location:
+
+    MSPC/ingress/artifact_generation/smp/
+
+Responsibilities:
+
+    immutable payload capture
+    SMP schema enforcement
+    source provenance recording
+
+---------------------------------------------------------------------
+
+C. AA Initialization Machinery
+
+Current locations (must be audited):
+
+    packet builders
+    metadata population utilities
+
+Target location:
+
+    MSPC/ingress/artifact_generation/aa/
+
+Responsibilities:
+
+    append-only metadata record
+    classification recording
+    ingress observations
+
+---------------------------------------------------------------------
+
+D. Metadata Population
+
+Target location:
+
+    MSPC/ingress/metadata/
+
+Responsibilities:
+
+    source metadata
+    timestamping
+    ingress context tagging
+
+---------------------------------------------------------------------
+
+E. Language Compilation
+
+Target location:
+
+    MSPC/compilation/
+
+Responsibilities:
+
+    natural language formalization
+    lambda calculus generation
+    PXL representation generation
+
+---------------------------------------------------------------------
+
+F. Commutation Verification
+
+Target location:
+
+    MSPC/verification/
+
+Responsibilities:
+
+    NL ↔ LC equivalence
+    NL ↔ PXL equivalence
+    LC ↔ PXL equivalence
+
+Fail condition:
+
+    EA packaging denied
+
+---------------------------------------------------------------------
+
+SECTION 4 — NEW MODULES TO CREATE
+
+The following modules must be introduced inside MSPC.
+
+Directory structure:
+
+MSPC/
+  ingress/
+    ingress_controller.py
+    artifact_generation/
+        smp_builder.py
+        aa_initializer.py
+    privation/
+        privation_controller.py
+    metadata/
+        metadata_populator.py
+  compilation/
+        nl_compiler.py
+        lc_compiler.py
+        pxl_compiler.py
+  verification/
+        commutation_gate.py
+  packaging/
+        ea_packager.py
+
+---------------------------------------------------------------------
+
+MODULE RESPONSIBILITIES
+
+ingress_controller.py
+
+• first runtime entry point
+• orchestrates privation → artifact generation → compilation
+
+---------------------------------------------------------------------
+
+privation_controller.py
+
+• invokes classifier / analyst / gate
+• returns deterministic privation classification object
+
+---------------------------------------------------------------------
+
+smp_builder.py
+
+• constructs immutable SMP artifact
+• enforces SMP schema
+
+---------------------------------------------------------------------
+
+aa_initializer.py
+
+• constructs initial AA artifact
+• attaches classification + metadata
+
+---------------------------------------------------------------------
+
+metadata_populator.py
+
+• injects ingress metadata
+• timestamps
+• provenance tracking
+
+---------------------------------------------------------------------
+
+nl_compiler.py
+
+• deterministic NL formalization
+
+---------------------------------------------------------------------
+
+lc_compiler.py
+
+• lambda calculus expression generation
+
+---------------------------------------------------------------------
+
+pxl_compiler.py
+
+• PXL expression generation
+
+---------------------------------------------------------------------
+
+commutation_gate.py
+
+• verifies semantic equivalence of NL / LC / PXL
+• failure blocks EA creation
+
+---------------------------------------------------------------------
+
+ea_packager.py
+
+• constructs EA artifact
+• ensures EA admission invariants satisfied
+
+---------------------------------------------------------------------
+
+SECTION 5 — REQUIRED AUDITS (MANDATORY)
+
+No code movement is permitted until the following audits are completed.
+
+---------------------------------------------------------------------
+
+AUDIT A — Artifact Generation Audit
+
+Locate all modules that currently create or mutate:
+
+• SMP
+• AA
+• EA metadata
+
+Deliverable:
+
+artifact_generation_map.json
+
+Fields:
+
+module_path
+function_name
+artifact_type
+callers
+imports
+
+---------------------------------------------------------------------
+
+AUDIT B — Privation Dependency Audit
+
+Deliverable:
+
+privation_dependency_graph.json
+
+Fields:
+
+module
+imports
+callers
+data_contract
+
+Goal:
+
+Confirm privation logic is portable.
+
+---------------------------------------------------------------------
+
+AUDIT C — Import Graph Audit
+
+Deliverable:
+
+repo_import_graph.json
+
+Graph of all Python imports affecting:
+
+• SMP generation
+• AA generation
+• MTP
+• MSPC
+• privation modules
+
+Goal:
+
+Detect circular dependencies before migration.
+
+---------------------------------------------------------------------
+
+AUDIT D — Call Path Audit
+
+Deliverable:
+
+repo_call_graph.json
+
+Map function invocation flow for:
+
+• ingress
+• artifact generation
+• EA packaging
+
+---------------------------------------------------------------------
+
+AUDIT E — Runtime Spine Reconstruction
+
+Deliverable:
+
+runtime_spine.md
+
+Must identify:
+
+• first user contact
+• SMP creation location
+• AA creation location
+• EA packaging location
+• Logos Core entry
+
+---------------------------------------------------------------------
+
+AUDIT F — Governance Artifact Audit
+
+Artifacts to inspect:
+
+LOGOS_V1_Operational_Readiness_Blueprint
+P1_Runtime_Activation_Spec
+P2_Subsystem_Completion_Spec
+P3_Integration_Wiring_Spec
+P4_Hardening_Validation_Spec
+P5_Documentation_Closure_Spec
+LOGOS_AI_ALIGNMENT_PROTOCOL
+LOGOS_DIALECTIC_PROCEDURE_MANUAL
+
+Deliverable:
+
+governance_dependency_map.md
+
+Each reference tagged:
+
+UNCHANGED
+UPDATE_REQUIRED
+DEPRECATED
+
+---------------------------------------------------------------------
+
+AUDIT G — Orchestration Impact Audit
+
+Inspect:
+
+Logos Core routing
+agent protocol entry points
+runtime execution core
+
+Deliverable:
+
+orchestration_impact_report.md
+
+Goal:
+
+Confirm no protocol assumes direct SMP or AA access.
+
+---------------------------------------------------------------------
+
+SECTION 6 — ORDER OF OPERATIONS
+
+PHASE 1 — REPOSITORY AUDITS
+
+Execute:
+
+Artifact Generation Audit
+Privation Dependency Audit
+Import Graph Audit
+Call Path Audit
+Runtime Spine Reconstruction
+
+No code changes allowed.
+
+---------------------------------------------------------------------
+
+PHASE 2 — DATA ANALYSIS
+
+Analyze audit outputs:
+
+• detect circular imports
+• detect runtime ordering assumptions
+• identify modules requiring refactor
+
+Produce:
+
+migration_impact_report.md
+
+---------------------------------------------------------------------
+
+PHASE 3 — GOVERNANCE UPDATE
+
+Update affected governance artifacts to reflect:
+
+• MSPC ingress promotion
+• new EA admission gate
+• artifact generation consolidation
+
+---------------------------------------------------------------------
+
+PHASE 4 — GOVERNANCE COMPLIANCE AUDIT
+
+Run second audit to ensure:
+
+• repo code matches governance docs
+• runtime spine matches documentation
+
+Deliverable:
+
+governance_compliance_report.md
+
+---------------------------------------------------------------------
+
+PHASE 5 — MIGRATION IMPLEMENTATION
+
+Move modules according to Section 3.
+
+Update imports.
+
+Update runtime spine.
+
+---------------------------------------------------------------------
+
+PHASE 6 — POST-MIGRATION VALIDATION
+
+Run automated validation:
+
+• EA admission tests
+• privation classification tests
+• commutation verification tests
+• runtime execution tests
+
+---------------------------------------------------------------------
+
+SECTION 7 — FAIL-CLOSED CONDITIONS
+
+Migration must abort if:
+
+• circular imports detected
+• protocols depend on SMP/AA directly
+• EA boundary violated
+• governance contradictions discovered
+
+---------------------------------------------------------------------
+
+SECTION 8 — SUCCESS CRITERIA
+
+Migration considered successful if:
+
+1. MSPC is first ingress runtime surface.
+2. SMP and AA generation consolidated inside MSPC.
+3. Privation gating executed before artifact generation.
+4. EA packaging remains the admission boundary.
+5. MTP remains final enriched user output layer.
+6. No runtime invariants violated.
+
+---------------------------------------------------------------------
+
+END OF SPEC

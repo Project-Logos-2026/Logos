@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "module_path": { "type": "string" },
+    "mutation_type": { "type": "string" },
+    "pre_state_hash": { "type": "string" },
+    "post_state_hash": { "type": "string" },
+    "mutation_status": {
+      "type": "string",
+      "enum": ["success", "partial", "failed"]
+    },
+    "failure_point": { "type": "string" },
+    "rollback_available": { "type": "boolean" }
+  },
+  "required": [
+    "module_path",
+    "mutation_type",
+    "mutation_status"
+  ]
+}

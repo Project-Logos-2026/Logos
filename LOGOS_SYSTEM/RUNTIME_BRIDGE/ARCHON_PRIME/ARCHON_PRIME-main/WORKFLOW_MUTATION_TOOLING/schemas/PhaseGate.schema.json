@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "phase_name": { "type": "string" },
+    "required_artifacts": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "max_critical": { "type": "integer" },
+    "max_major": { "type": "integer" },
+    "gate_evaluator": { "type": "string" }
+  }
+}

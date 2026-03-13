@@ -1,0 +1,44 @@
+{
+  "simulations": [
+    {
+      "name": "RepoSimulator",
+      "module": "simulation.repo_simulator.repo_simulator",
+      "entry_function": "simulate",
+      "artifact_output": "AP_SYSTEM_AUDIT/repo_simulation_report.json",
+      "config_flag": null,
+      "description": "Walks repository tree and simulates module inventory"
+    },
+    {
+      "name": "DependencyResolutionSimulator",
+      "module": "simulation.dependency_simulator.dependency_simulator",
+      "entry_function": "simulate",
+      "artifact_output": "AP_SYSTEM_AUDIT/dependency_simulation_report.json",
+      "config_flag": "enable_dependency_simulation",
+      "description": "Simulates dependency resolution and detects missing or cyclic deps"
+    },
+    {
+      "name": "ImportResolutionSimulator",
+      "module": "simulation.import_simulator.import_simulator",
+      "entry_function": "simulate",
+      "artifact_output": "AP_SYSTEM_AUDIT/import_simulation_report.json",
+      "config_flag": "enable_import_simulation",
+      "description": "Simulates import resolution across all scanned modules"
+    },
+    {
+      "name": "NamespaceConflictSimulator",
+      "module": "simulation.namespace_simulator.namespace_simulator",
+      "entry_function": "simulate",
+      "artifact_output": "AP_SYSTEM_AUDIT/namespace_simulation_report.json",
+      "config_flag": "enable_namespace_simulation",
+      "description": "Simulates runtime impact of namespace shadow conflicts"
+    },
+    {
+      "name": "RuntimeBootSimulator",
+      "module": "simulation.runtime_simulator.runtime_simulator",
+      "entry_function": "simulate",
+      "artifact_output": "AP_SYSTEM_AUDIT/runtime_boot_simulation.json",
+      "config_flag": "enable_runtime_boot_simulation",
+      "description": "Simulates repository boot sequence from dependency graph"
+    }
+  ]
+}

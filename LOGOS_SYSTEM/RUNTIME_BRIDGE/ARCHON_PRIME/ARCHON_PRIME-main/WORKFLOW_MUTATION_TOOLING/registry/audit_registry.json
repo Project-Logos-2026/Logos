@@ -1,0 +1,194 @@
+{
+  "audits": [
+    {
+      "name": "AuditUtilities",
+      "stem": "audit_utils",
+      "module": "tools.audit_tools.audit_utils",
+      "file_path": "tools/audit_tools/audit_utils.py",
+      "entry_function": "N/A",
+      "artifact_output": "N/A \u2014 shared utility",
+      "purpose": "Shared utilities: ID generation, date helper, JSON log writer",
+      "role": "utility"
+    },
+    {
+      "name": "CircularDependencyAudit",
+      "stem": "circular_dependency_audit",
+      "module": "tools.audit_tools.circular_dependency_audit",
+      "file_path": "tools/audit_tools/circular_dependency_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/circular_dependency_audit.json",
+      "purpose": "Detects bidirectional import cycles between module pairs",
+      "role": "audit"
+    },
+    {
+      "name": "CrossPackageDependencyAudit",
+      "stem": "cross_package_dependency_audit",
+      "module": "tools.audit_tools.cross_package_dependency_audit",
+      "file_path": "tools/audit_tools/cross_package_dependency_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/cross_package_dependency_audit.json",
+      "purpose": "Flags from-imports crossing package directory boundaries",
+      "role": "audit"
+    },
+    {
+      "name": "DuplicateModuleAudit",
+      "stem": "duplicate_module_audit",
+      "module": "tools.audit_tools.duplicate_module_audit",
+      "file_path": "tools/audit_tools/duplicate_module_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/duplicate_module_audit.json",
+      "purpose": "Identifies .py files sharing an identical filename",
+      "role": "audit"
+    },
+    {
+      "name": "FacadeBypassAudit",
+      "stem": "facade_bypass_audit",
+      "module": "tools.audit_tools.facade_bypass_audit",
+      "file_path": "tools/audit_tools/facade_bypass_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/facade_bypass_audit.json",
+      "purpose": "Detects from-imports not routed through canonical facade",
+      "role": "audit"
+    },
+    {
+      "name": "FileSizeAudit",
+      "stem": "file_size_audit",
+      "module": "tools.audit_tools.file_size_audit",
+      "file_path": "tools/audit_tools/file_size_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/file_size_audit.json",
+      "purpose": "Flags Python modules exceeding 50,000 bytes",
+      "role": "audit"
+    },
+    {
+      "name": "GovernanceContractAudit",
+      "stem": "governance_contract_audit",
+      "module": "tools.audit_tools.governance_contract_audit",
+      "file_path": "tools/audit_tools/governance_contract_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/governance_contract_audit.json",
+      "purpose": "Scans doc/config files for governance terminology",
+      "role": "audit"
+    },
+    {
+      "name": "GovernanceCoverageMap",
+      "stem": "governance_coverage_map",
+      "module": "tools.audit_tools.governance_coverage_map",
+      "file_path": "tools/audit_tools/governance_coverage_map.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/governance_coverage_map.json",
+      "purpose": "Pairs governance contracts to enforcement modules",
+      "role": "audit"
+    },
+    {
+      "name": "GovernanceModuleAudit",
+      "stem": "governance_module_audit",
+      "module": "tools.audit_tools.governance_module_audit",
+      "file_path": "tools/audit_tools/governance_module_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/governance_module_audit.json",
+      "purpose": "Finds .py files containing governance/policy keywords",
+      "role": "audit"
+    },
+    {
+      "name": "HeaderSchemaAudit",
+      "stem": "header_schema_audit",
+      "module": "tools.audit_tools.header_schema_audit",
+      "file_path": "tools/audit_tools/header_schema_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/header_schema_audit.json",
+      "purpose": "Flags .py files whose first character is not '#'",
+      "role": "audit"
+    },
+    {
+      "name": "ImportSurfaceAudit",
+      "stem": "import_surface_audit",
+      "module": "tools.audit_tools.import_surface_audit",
+      "file_path": "tools/audit_tools/import_surface_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/import_surface_audit.json",
+      "purpose": "Flags from-imports with dotted module paths (deep imports)",
+      "role": "audit"
+    },
+    {
+      "name": "ModulePathAmbiguityAudit",
+      "stem": "module_path_ambiguity_audit",
+      "module": "tools.audit_tools.module_path_ambiguity_audit",
+      "file_path": "tools/audit_tools/module_path_ambiguity_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/module_path_ambiguity_audit.json",
+      "purpose": "Detects modules whose stem appears in multiple directories",
+      "role": "audit"
+    },
+    {
+      "name": "NamespaceShadowAudit",
+      "stem": "namespace_shadow_audit",
+      "module": "tools.audit_tools.namespace_shadow_audit",
+      "file_path": "tools/audit_tools/namespace_shadow_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/namespace_shadow_audit.json",
+      "purpose": "Flags duplicate module stems across the directory tree",
+      "role": "audit"
+    },
+    {
+      "name": "OrphanModuleAudit",
+      "stem": "orphan_module_audit",
+      "module": "tools.audit_tools.orphan_module_audit",
+      "file_path": "tools/audit_tools/orphan_module_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/orphan_module_audit.json",
+      "purpose": "Identifies .py stems never referenced by any import",
+      "role": "audit"
+    },
+    {
+      "name": "AuditSuiteRunner",
+      "stem": "run_audit_suite",
+      "module": "tools.audit_tools.run_audit_suite",
+      "file_path": "tools/audit_tools/run_audit_suite.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/ (orchestrates all 13 structural audits)",
+      "purpose": "Master runner for all 13 structural audit tools",
+      "role": "runner"
+    },
+    {
+      "name": "GovernanceAuditRunner",
+      "stem": "run_governance_audit",
+      "module": "tools.audit_tools.run_governance_audit",
+      "file_path": "tools/audit_tools/run_governance_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/ (orchestrates governance pipeline)",
+      "purpose": "Master runner for the 3-stage governance audit pipeline",
+      "role": "runner"
+    },
+    {
+      "name": "RuntimeEntryAudit",
+      "stem": "runtime_entry_audit",
+      "module": "tools.audit_tools.runtime_entry_audit",
+      "file_path": "tools/audit_tools/runtime_entry_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/runtime_entry_audit.json",
+      "purpose": "Catalogs every .py file containing '__main__'",
+      "role": "audit"
+    },
+    {
+      "name": "SymbolCollisionAudit",
+      "stem": "symbol_collision_audit",
+      "module": "tools.audit_tools.symbol_collision_audit",
+      "file_path": "tools/audit_tools/symbol_collision_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/symbol_collision_audit.json",
+      "purpose": "Detects function/class names defined in more than one file",
+      "role": "audit"
+    },
+    {
+      "name": "UnusedImportAudit",
+      "stem": "unused_import_audit",
+      "module": "tools.audit_tools.unused_import_audit",
+      "file_path": "tools/audit_tools/unused_import_audit.py",
+      "entry_function": "run",
+      "artifact_output": "AUDIT_LOGS/unused_import_audit.json",
+      "purpose": "Flags top-level imports whose name never appears as ast.Name",
+      "role": "audit"
+    }
+  ]
+}

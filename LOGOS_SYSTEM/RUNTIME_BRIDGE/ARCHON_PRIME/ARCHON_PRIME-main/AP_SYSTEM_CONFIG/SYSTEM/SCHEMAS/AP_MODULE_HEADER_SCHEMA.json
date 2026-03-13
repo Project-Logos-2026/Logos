@@ -1,0 +1,28 @@
+{
+    "schema_name": "ARCHON_PRIME_MODULE_HEADER",
+    "version": "1.0",
+    "authority": "ARCHON_PRIME",
+    "description": "Canonical runtime module metadata header schema",
+    "header_boundary_start": "# ARCHON PRIME MODULE HEADER",
+    "header_boundary_end": "# END ARCHON PRIME MODULE HEADER",
+    "guard_activation": "from SYSTEM.workflow_guard import enforce_runtime_guard",
+    "fields": [
+        "module_id",
+        "module_name",
+        "subsystem",
+        "module_role",
+        "canonical_path",
+        "responsibility",
+        "runtime_stage",
+        "execution_entry",
+        "allowed_targets",
+        "forbidden_targets",
+        "allowed_imports",
+        "forbidden_imports",
+        "spec_reference",
+        "implementation_phase",
+        "authoring_authority",
+        "version",
+        "status"
+    ]
+}

@@ -1,0 +1,785 @@
+{
+  "generated": "2026-03-12T10:41:38.401733Z",
+  "total_modules": 86,
+  "already_compliant": 0,
+  "needs_injection": 86,
+  "malformed_headers": 0,
+  "syntax_conflicts": 0,
+  "abort_triggered": false,
+  "results": [
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/controllers/analysis_controller.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/controllers/audit_controller.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/controllers/config_loader.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/controllers/crawler_controller.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/controllers/pipeline_controller.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/controllers/repair_controller.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/controllers/simulation_controller.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/crawler/core/crawl_engine.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/crawler/core/crawl_monitor.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/crawler/utils/file_scanner.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/orchestration/task_router/routing_table_loader.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/registry/fbc_registry.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/repair/operators/dependency_normalizer.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/repair/operators/facade_rewrite_pass.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/repair/operators/facade_synthesis.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/repair/operators/header_injection_operator.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/repair/operators/import_rewrite_operator.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/repair/operators/module_relocation_operator.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/repair/operators/namespace_disambiguator.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/repair/operators/reorganize.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/ap_phase2_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/_run_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/ap_artifact_collection_p1.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/audit_utils.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/circular_dependency_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/cross_package_dependency_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/duplicate_module_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/execution_core_isolation_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/facade_bypass_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/file_size_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/governance_contract_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/governance_coverage_map.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/governance_module_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/header_schema_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/import_surface_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/module_path_ambiguity_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/namespace_shadow_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/nexus_structural_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/orphan_module_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/repair_registry_loader.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/run_audit_suite.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/run_governance_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/runtime_entry_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/scanner.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/static_ast_analysis.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/symbol_collision_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/triage.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/unused_import_audit.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/governance_analysis/governance_scanner.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/Import_Linter.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/generate_deep_import_violations.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/generate_symbol_import_index.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_prefix_verifier.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_root_grouping_analyzer.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_scanner.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_violation_classifier.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/module_root_existence_checker.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/namespace_discovery_scan.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/violation_prefix_grouper.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/header_validator.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/normalization_engine.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/schema_registry.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/repo_mapping/repo_scanner.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/repo_mapping/repo_structure_export.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/dependency_graph.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_analysis.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_callgraph_extractor.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_debug_artifact_scanner.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_execution_tracer.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_module_tree_auditor.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/__init__.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/ast_parser.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/classifier.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/drac_indexer.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/extract.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/legacy_extract.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/pipeline.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/registry_writer.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/semantic_extractor.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/utils/conftest.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/utils/logger.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_MUTATION_TOOLING/utils/python_file_list.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_NEXUS/Governance/workflow_gate.py",
+      "has_header": false,
+      "has_gate": true,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_TARGET_AUDITS/MODULES/analysis/dependency_graphs/cluster_analysis.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_TARGET_AUDITS/MODULES/analysis/dependency_graphs/packet_discovery.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    },
+    {
+      "module": "WORKFLOW_TARGET_AUDITS/MODULES/analysis/repo_maps/repo_mapper.py",
+      "has_header": false,
+      "has_gate": false,
+      "malformed": false,
+      "syntax_ok": true,
+      "needs_injection": true,
+      "safe_to_inject": true
+    }
+  ]
+}

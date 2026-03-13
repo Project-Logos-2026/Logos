@@ -1,0 +1,523 @@
+{
+  "generated": "2026-03-12T10:41:38.291265Z",
+  "module_count": 86,
+  "expected_count": 91,
+  "modules": [
+    {
+      "module_name": "analysis_controller",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/controllers/analysis_controller.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/controllers/analysis_controller.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/controllers"
+    },
+    {
+      "module_name": "audit_controller",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/controllers/audit_controller.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/controllers/audit_controller.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/controllers"
+    },
+    {
+      "module_name": "config_loader",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/controllers/config_loader.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/controllers/config_loader.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/controllers"
+    },
+    {
+      "module_name": "crawler_controller",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/controllers/crawler_controller.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/controllers/crawler_controller.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/controllers"
+    },
+    {
+      "module_name": "pipeline_controller",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/controllers/pipeline_controller.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/controllers/pipeline_controller.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/controllers"
+    },
+    {
+      "module_name": "repair_controller",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/controllers/repair_controller.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/controllers/repair_controller.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/controllers"
+    },
+    {
+      "module_name": "simulation_controller",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/controllers/simulation_controller.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/controllers/simulation_controller.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/controllers"
+    },
+    {
+      "module_name": "crawl_engine",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/crawler/core/crawl_engine.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/crawler/core/crawl_engine.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/crawler/core"
+    },
+    {
+      "module_name": "crawl_monitor",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/crawler/core/crawl_monitor.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/crawler/core/crawl_monitor.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/crawler/core"
+    },
+    {
+      "module_name": "file_scanner",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/crawler/utils/file_scanner.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/crawler/utils/file_scanner.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/crawler/utils"
+    },
+    {
+      "module_name": "routing_table_loader",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/orchestration/task_router/routing_table_loader.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/orchestration/task_router/routing_table_loader.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/orchestration/task_router"
+    },
+    {
+      "module_name": "fbc_registry",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/registry/fbc_registry.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/registry/fbc_registry.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/registry"
+    },
+    {
+      "module_name": "dependency_normalizer",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators/dependency_normalizer.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/repair/operators/dependency_normalizer.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators"
+    },
+    {
+      "module_name": "facade_rewrite_pass",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators/facade_rewrite_pass.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/repair/operators/facade_rewrite_pass.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators"
+    },
+    {
+      "module_name": "facade_synthesis",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators/facade_synthesis.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/repair/operators/facade_synthesis.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators"
+    },
+    {
+      "module_name": "header_injection_operator",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators/header_injection_operator.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/repair/operators/header_injection_operator.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators"
+    },
+    {
+      "module_name": "import_rewrite_operator",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators/import_rewrite_operator.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/repair/operators/import_rewrite_operator.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators"
+    },
+    {
+      "module_name": "module_relocation_operator",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators/module_relocation_operator.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/repair/operators/module_relocation_operator.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators"
+    },
+    {
+      "module_name": "namespace_disambiguator",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators/namespace_disambiguator.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/repair/operators/namespace_disambiguator.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators"
+    },
+    {
+      "module_name": "reorganize",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators/reorganize.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/repair/operators/reorganize.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/repair/operators"
+    },
+    {
+      "module_name": "ap_phase2_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/ap_phase2_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/ap_phase2_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools"
+    },
+    {
+      "module_name": "_run_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/_run_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/_run_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "ap_artifact_collection_p1",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/ap_artifact_collection_p1.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/ap_artifact_collection_p1.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "audit_utils",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/audit_utils.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/audit_utils.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "circular_dependency_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/circular_dependency_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/circular_dependency_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "cross_package_dependency_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/cross_package_dependency_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/cross_package_dependency_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "duplicate_module_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/duplicate_module_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/duplicate_module_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "execution_core_isolation_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/execution_core_isolation_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/execution_core_isolation_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "facade_bypass_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/facade_bypass_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/facade_bypass_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "file_size_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/file_size_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/file_size_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "governance_contract_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/governance_contract_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/governance_contract_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "governance_coverage_map",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/governance_coverage_map.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/governance_coverage_map.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "governance_module_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/governance_module_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/governance_module_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "header_schema_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/header_schema_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/header_schema_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "import_surface_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/import_surface_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/import_surface_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "module_path_ambiguity_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/module_path_ambiguity_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/module_path_ambiguity_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "namespace_shadow_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/namespace_shadow_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/namespace_shadow_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "nexus_structural_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/nexus_structural_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/nexus_structural_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "orphan_module_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/orphan_module_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/orphan_module_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "repair_registry_loader",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/repair_registry_loader.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/repair_registry_loader.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "run_audit_suite",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/run_audit_suite.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/run_audit_suite.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "run_governance_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/run_governance_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/run_governance_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "runtime_entry_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/runtime_entry_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/runtime_entry_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "scanner",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/scanner.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/scanner.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "static_ast_analysis",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/static_ast_analysis.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/static_ast_analysis.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "symbol_collision_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/symbol_collision_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/symbol_collision_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "triage",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/triage.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/triage.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "unused_import_audit",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/unused_import_audit.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/audit_tools/unused_import_audit.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/audit_tools"
+    },
+    {
+      "module_name": "governance_scanner",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/governance_analysis/governance_scanner.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/governance_analysis/governance_scanner.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/governance_analysis"
+    },
+    {
+      "module_name": "Import_Linter",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/Import_Linter.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/Import_Linter.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis"
+    },
+    {
+      "module_name": "generate_deep_import_violations",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/generate_deep_import_violations.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/generate_deep_import_violations.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis"
+    },
+    {
+      "module_name": "generate_symbol_import_index",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/generate_symbol_import_index.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/generate_symbol_import_index.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis"
+    },
+    {
+      "module_name": "import_prefix_verifier",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_prefix_verifier.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_prefix_verifier.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis"
+    },
+    {
+      "module_name": "import_root_grouping_analyzer",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_root_grouping_analyzer.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_root_grouping_analyzer.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis"
+    },
+    {
+      "module_name": "import_scanner",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_scanner.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_scanner.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis"
+    },
+    {
+      "module_name": "import_violation_classifier",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_violation_classifier.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_violation_classifier.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis"
+    },
+    {
+      "module_name": "module_root_existence_checker",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/module_root_existence_checker.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/module_root_existence_checker.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis"
+    },
+    {
+      "module_name": "namespace_discovery_scan",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/namespace_discovery_scan.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/namespace_discovery_scan.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis"
+    },
+    {
+      "module_name": "violation_prefix_grouper",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/violation_prefix_grouper.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/import_analysis/violation_prefix_grouper.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/import_analysis"
+    },
+    {
+      "module_name": "header_validator",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/header_validator.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/header_validator.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/normalization_tools"
+    },
+    {
+      "module_name": "normalization_engine",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/normalization_engine.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/normalization_engine.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/normalization_tools"
+    },
+    {
+      "module_name": "schema_registry",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/schema_registry.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/schema_registry.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/normalization_tools"
+    },
+    {
+      "module_name": "repo_scanner",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/repo_mapping/repo_scanner.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/repo_mapping/repo_scanner.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/repo_mapping"
+    },
+    {
+      "module_name": "repo_structure_export",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/repo_mapping/repo_structure_export.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/repo_mapping/repo_structure_export.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/repo_mapping"
+    },
+    {
+      "module_name": "dependency_graph",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/dependency_graph.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/dependency_graph.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis"
+    },
+    {
+      "module_name": "runtime_analysis",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_analysis.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_analysis.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis"
+    },
+    {
+      "module_name": "runtime_callgraph_extractor",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_callgraph_extractor.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_callgraph_extractor.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis"
+    },
+    {
+      "module_name": "runtime_debug_artifact_scanner",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_debug_artifact_scanner.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_debug_artifact_scanner.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis"
+    },
+    {
+      "module_name": "runtime_execution_tracer",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_execution_tracer.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_execution_tracer.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis"
+    },
+    {
+      "module_name": "runtime_module_tree_auditor",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_module_tree_auditor.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_module_tree_auditor.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis"
+    },
+    {
+      "module_name": "__init__",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/__init__.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/__init__.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction"
+    },
+    {
+      "module_name": "ast_parser",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/ast_parser.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/ast_parser.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction"
+    },
+    {
+      "module_name": "classifier",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/classifier.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/classifier.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction"
+    },
+    {
+      "module_name": "drac_indexer",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/drac_indexer.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/drac_indexer.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction"
+    },
+    {
+      "module_name": "extract",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/extract.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/extract.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction"
+    },
+    {
+      "module_name": "legacy_extract",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/legacy_extract.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/legacy_extract.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction"
+    },
+    {
+      "module_name": "pipeline",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/pipeline.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/pipeline.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction"
+    },
+    {
+      "module_name": "registry_writer",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/registry_writer.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/registry_writer.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction"
+    },
+    {
+      "module_name": "semantic_extractor",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/semantic_extractor.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/semantic_extractor.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction"
+    },
+    {
+      "module_name": "conftest",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/utils/conftest.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/utils/conftest.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/utils"
+    },
+    {
+      "module_name": "logger",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/utils/logger.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/utils/logger.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/utils"
+    },
+    {
+      "module_name": "python_file_list",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/utils/python_file_list.py",
+      "relative_repo_path": "WORKFLOW_MUTATION_TOOLING/utils/python_file_list.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/utils"
+    },
+    {
+      "module_name": "workflow_gate",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_NEXUS/Governance/workflow_gate.py",
+      "relative_repo_path": "WORKFLOW_NEXUS/Governance/workflow_gate.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_NEXUS/Governance"
+    },
+    {
+      "module_name": "cluster_analysis",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_AUDITS/MODULES/analysis/dependency_graphs/cluster_analysis.py",
+      "relative_repo_path": "WORKFLOW_TARGET_AUDITS/MODULES/analysis/dependency_graphs/cluster_analysis.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_TARGET_AUDITS/MODULES/analysis/dependency_graphs"
+    },
+    {
+      "module_name": "packet_discovery",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_AUDITS/MODULES/analysis/dependency_graphs/packet_discovery.py",
+      "relative_repo_path": "WORKFLOW_TARGET_AUDITS/MODULES/analysis/dependency_graphs/packet_discovery.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_TARGET_AUDITS/MODULES/analysis/dependency_graphs"
+    },
+    {
+      "module_name": "repo_mapper",
+      "absolute_path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_AUDITS/MODULES/analysis/repo_maps/repo_mapper.py",
+      "relative_repo_path": "WORKFLOW_TARGET_AUDITS/MODULES/analysis/repo_maps/repo_mapper.py",
+      "directory_context": "workspaces/ARCHON_PRIME/WORKFLOW_TARGET_AUDITS/MODULES/analysis/repo_maps"
+    }
+  ]
+}

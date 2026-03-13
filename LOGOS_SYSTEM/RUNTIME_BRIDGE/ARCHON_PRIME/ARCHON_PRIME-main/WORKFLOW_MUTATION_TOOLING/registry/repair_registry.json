@@ -1,0 +1,49 @@
+{
+  "repairs": [
+    {
+      "name": "ImportRewriteOperator",
+      "module": "repair.operators.import_rewrite_operator",
+      "class": "ImportRewriteOperator",
+      "entry_function": "plan_repair",
+      "issue_type": "import_error",
+      "mutation_required": true,
+      "description": "Rewrites broken or malformed import statements to their canonical form"
+    },
+    {
+      "name": "HeaderInjectionOperator",
+      "module": "repair.operators.header_injection_operator",
+      "class": "HeaderInjectionOperator",
+      "entry_function": "plan_repair",
+      "issue_type": "header_violation",
+      "mutation_required": true,
+      "description": "Injects canonical governance header blocks into modules missing them"
+    },
+    {
+      "name": "DependencyNormalizerOperator",
+      "module": "repair.operators.dependency_normalizer",
+      "class": "DependencyNormalizerOperator",
+      "entry_function": "plan_repair",
+      "issue_type": "dependency_inconsistency",
+      "mutation_required": true,
+      "description": "Normalizes inconsistent, circular, or cross-package dependency declarations"
+    },
+    {
+      "name": "ModuleRelocationOperator",
+      "module": "repair.operators.module_relocation_operator",
+      "class": "ModuleRelocationOperator",
+      "entry_function": "plan_repair",
+      "issue_type": "module_misplacement",
+      "mutation_required": true,
+      "description": "Relocates orphaned or misplaced modules to their canonical package directory"
+    },
+    {
+      "name": "NamespaceDisambiguatorOperator",
+      "module": "repair.operators.namespace_disambiguator",
+      "class": "NamespaceDisambiguatorOperator",
+      "entry_function": "plan_repair",
+      "issue_type": "namespace_collision",
+      "mutation_required": true,
+      "description": "Resolves namespace shadow conflicts by renaming lower-priority conflicting modules"
+    }
+  ]
+}

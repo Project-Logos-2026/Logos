@@ -1,0 +1,15 @@
+{
+    "version": "1.0",
+    "mutation_allowed": false,
+    "repair": {
+        "max_retry_cycles": 3
+    },
+    "crawler": {
+        "max_workers": 4,
+        "scan_depth": 10
+    },
+    "targets_file": "configs/crawl_configs/logos_targets.yaml",
+    "routing_table": "orchestration/task_router/routing_table.json",
+    "repair_registry": "configs/repair_registry/repair_registry.json"
+}
+

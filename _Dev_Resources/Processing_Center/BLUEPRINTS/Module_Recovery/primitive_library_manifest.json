@@ -1,0 +1,3237 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-03-12",
+  "pipeline_phase": "Phase-3",
+  "total_atoms": 287,
+  "total_primitive_libraries": 5,
+  "atom_distribution": {
+    "REASONING_PRIMITIVES": 114,
+    "SCHEMA_PRIMITIVES": 57,
+    "VALIDATION_PRIMITIVES": 46,
+    "UTILITY_PRIMITIVES": 45,
+    "NORMALIZATION_PRIMITIVES": 25
+  },
+  "primitive_libraries": {
+    "REASONING_PRIMITIVES": {
+      "module_name": "REASONING_PRIMITIVES",
+      "build_order": 0,
+      "atom_count": 114,
+      "source_modules": [
+        "advanced_fractal_analyzer",
+        "agent_nexus",
+        "arp_nexus",
+        "bayes_update_real_time",
+        "bayesian_data_parser",
+        "bayesian_interface",
+        "bayesian_nexus",
+        "comprehensive_fractal_analysis",
+        "evidence",
+        "fractal_nexus",
+        "gen_worldview_ontoprops",
+        "hashing",
+        "hierarchical_bayes_network",
+        "lambda_parser",
+        "plan_packet",
+        "prioritization",
+        "privative_policies",
+        "pxl_fractal_orbital_analysis",
+        "pxl_modal_fractal_boundary_analysis",
+        "scp_nexus",
+        "time_utils",
+        "tool_optimizer",
+        "translation_engine",
+        "uip_nexus"
+      ],
+      "dependency_primitives": [],
+      "atom_types_present": [
+        "pure_utility",
+        "reasoning_primitive",
+        "stateless_helper"
+      ],
+      "atoms": [
+        {
+          "atom_name": "analyze_fractal_iterations",
+          "source_module": "advanced_fractal_analyzer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "collections",
+            "dataclasses",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "initialize_logos_agent_nexus",
+          "source_module": "agent_nexus",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_apply_provisional_proof_tagging",
+          "source_module": "arp_nexus",
+          "atom_type": "reasoning_primitive",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "_build_span_mapping",
+          "source_module": "arp_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "_contains_pxl_fragments",
+          "source_module": "arp_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "_derive_polarity",
+          "source_module": "arp_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "_extract_proof_refs",
+          "source_module": "arp_nexus",
+          "atom_type": "reasoning_primitive",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "_payload_is_smp",
+          "source_module": "arp_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "_pxl_key_match",
+          "source_module": "arp_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "_tag_append_artifact",
+          "source_module": "arp_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "assign_confidence",
+          "source_module": "bayes_update_real_time",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "filter_and_score",
+          "source_module": "bayes_update_real_time",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "load_priors",
+          "source_module": "bayes_update_real_time",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "predictive_refinement",
+          "source_module": "bayes_update_real_time",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "resolve_priors_path",
+          "source_module": "bayes_update_real_time",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "save_priors",
+          "source_module": "bayes_update_real_time",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "score_data_point",
+          "source_module": "bayes_update_real_time",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_disabled",
+          "source_module": "bayesian_data_parser",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "FalseP",
+          "source_module": "bayesian_interface",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "TrueP",
+          "source_module": "bayesian_interface",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "UncertainP",
+          "source_module": "bayesian_interface",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_apply_provisional_proof_tagging",
+          "source_module": "bayesian_nexus",
+          "atom_type": "reasoning_primitive",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_build_span_mapping",
+          "source_module": "bayesian_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_contains_pxl_fragments",
+          "source_module": "bayesian_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_derive_polarity",
+          "source_module": "bayesian_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_extract_proof_refs",
+          "source_module": "bayesian_nexus",
+          "atom_type": "reasoning_primitive",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_payload_is_smp",
+          "source_module": "bayesian_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_pxl_key_match",
+          "source_module": "bayesian_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_tag_append_artifact",
+          "source_module": "bayesian_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "analyze_all_fractals",
+          "source_module": "comprehensive_fractal_analysis",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "create_visual_summary",
+          "source_module": "comprehensive_fractal_analysis",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "generate_comprehensive_report",
+          "source_module": "comprehensive_fractal_analysis",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "generate_julia_set",
+          "source_module": "comprehensive_fractal_analysis",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "legacy_main",
+          "source_module": "comprehensive_fractal_analysis",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "load_canonical_c_values",
+          "source_module": "comprehensive_fractal_analysis",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_as_posix",
+          "source_module": "evidence",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_sort_key",
+          "source_module": "evidence",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "evidence_to_citation_string",
+          "source_module": "evidence",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_apply_provisional_proof_tagging",
+          "source_module": "fractal_nexus",
+          "atom_type": "reasoning_primitive",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_build_span_mapping",
+          "source_module": "fractal_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_contains_pxl_fragments",
+          "source_module": "fractal_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_derive_polarity",
+          "source_module": "fractal_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_extract_proof_refs",
+          "source_module": "fractal_nexus",
+          "atom_type": "reasoning_primitive",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_payload_is_smp",
+          "source_module": "fractal_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_pxl_key_match",
+          "source_module": "fractal_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_tag_append_artifact",
+          "source_module": "fractal_nexus",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "fix_pm",
+          "source_module": "gen_worldview_ontoprops",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "hashlib",
+            "json",
+            "re"
+          ]
+        },
+        {
+          "atom_name": "fmt",
+          "source_module": "gen_worldview_ontoprops",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "hashlib",
+            "json",
+            "re"
+          ]
+        },
+        {
+          "atom_name": "parse",
+          "source_module": "gen_worldview_ontoprops",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "hashlib",
+            "json",
+            "re"
+          ]
+        },
+        {
+          "atom_name": "to_theo",
+          "source_module": "gen_worldview_ontoprops",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "hashlib",
+            "json",
+            "re"
+          ]
+        },
+        {
+          "atom_name": "w",
+          "source_module": "gen_worldview_ontoprops",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "hashlib",
+            "json",
+            "re"
+          ]
+        },
+        {
+          "atom_name": "safe_hash",
+          "source_module": "hashing",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "hashlib",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "execute_HBN",
+          "source_module": "hierarchical_bayes_network",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "re"
+          ]
+        },
+        {
+          "atom_name": "load_static_priors",
+          "source_module": "hierarchical_bayes_network",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "re"
+          ]
+        },
+        {
+          "atom_name": "preprocess_query",
+          "source_module": "hierarchical_bayes_network",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "re"
+          ]
+        },
+        {
+          "atom_name": "query_intent_analyzer",
+          "source_module": "hierarchical_bayes_network",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "re"
+          ]
+        },
+        {
+          "atom_name": "parse_expr",
+          "source_module": "lambda_parser",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "enum",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "emit_plan_packet",
+          "source_module": "plan_packet",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_build_uwm_ref",
+          "source_module": "prioritization",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_clamp",
+          "source_module": "prioritization",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_default_success_criteria",
+          "source_module": "prioritization",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_evidence_refs",
+          "source_module": "prioritization",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_find_commitment",
+          "source_module": "prioritization",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_parse_priority",
+          "source_module": "prioritization",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "score_commitment",
+          "source_module": "prioritization",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "select_next_active_commitment",
+          "source_module": "prioritization",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "Coherent",
+          "source_module": "privative_policies",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "Good",
+          "source_module": "privative_policies",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "TrueP",
+          "source_module": "privative_policies",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "obligation_for",
+          "source_module": "privative_policies",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "preserves_invariants",
+          "source_module": "privative_policies",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "create_orbital_visualization",
+          "source_module": "pxl_fractal_orbital_analysis",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "legacy_main",
+          "source_module": "pxl_fractal_orbital_analysis",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "assess_ontological_coherence",
+          "source_module": "pxl_modal_fractal_boundary_analysis",
+          "atom_type": "reasoning_primitive",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "dataclasses",
+            "datetime",
+            "enum",
+            "json"
+          ]
+        },
+        {
+          "atom_name": "interpret_privative_boundaries",
+          "source_module": "pxl_modal_fractal_boundary_analysis",
+          "atom_type": "reasoning_primitive",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "dataclasses",
+            "datetime",
+            "enum",
+            "json"
+          ]
+        },
+        {
+          "atom_name": "legacy_main",
+          "source_module": "pxl_modal_fractal_boundary_analysis",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "dataclasses",
+            "datetime",
+            "enum",
+            "json"
+          ]
+        },
+        {
+          "atom_name": "initialize_scp_nexus",
+          "source_module": "scp_nexus",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "utc_now_ts",
+          "source_module": "time_utils",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime"
+          ]
+        },
+        {
+          "atom_name": "_aggregate_profiles",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_classify_sequence",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_collect_inputs",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_compute_catalog_tail_hash",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_compute_file_hash",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_infer_protocol_tag",
+          "source_module": "tool_optimizer",
+          "atom_type": "reasoning_primitive",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_infer_risk_tag",
+          "source_module": "tool_optimizer",
+          "atom_type": "reasoning_primitive",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_io_hint_for_risk",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_matches_keyword",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_module_path",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_now_utc",
+          "source_module": "tool_optimizer",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_profile_payload",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_publish_catalog_artifact",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_repo_root_from_identity",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_safe_read_json",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_scan_python_files",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_stable_id",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_write_json",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "run_tool_optimization",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_apply_grammar_rules",
+          "source_module": "translation_engine",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_assess_readability",
+          "source_module": "translation_engine",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_calculate_translation_confidence",
+          "source_module": "translation_engine",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_calculate_translation_quality",
+          "source_module": "translation_engine",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_describe_logical_operators",
+          "source_module": "translation_engine",
+          "atom_type": "reasoning_primitive",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_describe_predicates",
+          "source_module": "translation_engine",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_describe_quantifiers",
+          "source_module": "translation_engine",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_determine_translation_mode",
+          "source_module": "translation_engine",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_generate_semantic_mapping",
+          "source_module": "translation_engine",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_generate_structural_description",
+          "source_module": "translation_engine",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_optimize_readability",
+          "source_module": "translation_engine",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_translate_combinator_structure",
+          "source_module": "translation_engine",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_translate_logical_structure",
+          "source_module": "translation_engine",
+          "atom_type": "reasoning_primitive",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_translate_natural_structure",
+          "source_module": "translation_engine",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_translate_standard_structure",
+          "source_module": "translation_engine",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_translate_structure",
+          "source_module": "translation_engine",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "initialize_uip_nexus",
+          "source_module": "uip_nexus",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing"
+          ]
+        }
+      ]
+    },
+    "SCHEMA_PRIMITIVES": {
+      "module_name": "SCHEMA_PRIMITIVES",
+      "build_order": 1,
+      "atom_count": 57,
+      "source_modules": [
+        "Memory_Recall_Integration",
+        "agent_nexus",
+        "arp_nexus",
+        "bayesian_recursion",
+        "bayesian_updates",
+        "belief_network",
+        "bridge",
+        "coherence_formalism",
+        "coherence_metrics",
+        "dual_bijection_demo",
+        "evaluation_packet",
+        "export_tool_registry",
+        "fractal_orbit_toolkit",
+        "guardrails",
+        "hierarchical_bayes_network",
+        "id_handler",
+        "iel_registryv1",
+        "io_normalizer",
+        "iterative_loop",
+        "lambda_onto_calculus_engine",
+        "modal_reasoner",
+        "modal_validator",
+        "ontology_inducer",
+        "pxl_schema",
+        "relation_mapper",
+        "router",
+        "schema_utils",
+        "scp_nexus",
+        "smp_intake",
+        "task_intake",
+        "transform_registry",
+        "types",
+        "uip_nexus"
+      ],
+      "dependency_primitives": [],
+      "atom_types_present": [
+        "normalizer",
+        "pure_utility",
+        "schema_class",
+        "stateless_helper"
+      ],
+      "atoms": [
+        {
+          "atom_name": "StorageConfiguration",
+          "source_module": "Memory_Recall_Integration",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "GapDetectionRequest",
+          "source_module": "agent_nexus",
+          "atom_type": "schema_class",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "LinguisticRequest",
+          "source_module": "agent_nexus",
+          "atom_type": "schema_class",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "PlanningRequest",
+          "source_module": "agent_nexus",
+          "atom_type": "schema_class",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "DataBuilder",
+          "source_module": "arp_nexus",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "ReasoningRequest",
+          "source_module": "arp_nexus",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "ReasoningResult",
+          "source_module": "arp_nexus",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "BayesianMLModel",
+          "source_module": "bayesian_recursion",
+          "atom_type": "schema_class",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "ModelState",
+          "source_module": "bayesian_recursion",
+          "atom_type": "schema_class",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "run_HBN_analysis",
+          "source_module": "bayesian_updates",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "re",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "BeliefNetwork",
+          "source_module": "belief_network",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "Message",
+          "source_module": "bridge",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "ModalLogic",
+          "source_module": "coherence_formalism",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "CoherenceConfig",
+          "source_module": "coherence_metrics",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "f",
+          "source_module": "dual_bijection_demo",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "f_inv",
+          "source_module": "dual_bijection_demo",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "g",
+          "source_module": "dual_bijection_demo",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "g_inv",
+          "source_module": "dual_bijection_demo",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "emit_evaluation_packet",
+          "source_module": "evaluation_packet",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_tool_metadata",
+          "source_module": "export_tool_registry",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "FractalOrbitPredictor",
+          "source_module": "fractal_orbit_toolkit",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "require_safe_interfaces",
+          "source_module": "guardrails",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "functools",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "run_HBN_analysis",
+          "source_module": "hierarchical_bayes_network",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json",
+            "re"
+          ]
+        },
+        {
+          "atom_name": "PacketIdentity",
+          "source_module": "id_handler",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "generate_packet_identity",
+          "source_module": "id_handler",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "RegistryConfig",
+          "source_module": "iel_registryv1",
+          "atom_type": "schema_class",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "normalize_payload",
+          "source_module": "io_normalizer",
+          "atom_type": "normalizer",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "LoopConfig",
+          "source_module": "iterative_loop",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "run_iterative_stabilization",
+          "source_module": "iterative_loop",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "FunctionType",
+          "source_module": "lambda_onto_calculus_engine",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "ModalReasoner",
+          "source_module": "modal_reasoner",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "KripkeModel",
+          "source_module": "modal_validator",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "World",
+          "source_module": "modal_validator",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "OntologyInducer",
+          "source_module": "ontology_inducer",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "Config",
+          "source_module": "pxl_schema",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "PXLAnalysisConfig",
+          "source_module": "pxl_schema",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "PXLRelation",
+          "source_module": "pxl_schema",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "PXLRelationModel",
+          "source_module": "pxl_schema",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "PXLSchemaValidator",
+          "source_module": "pxl_schema",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "create_default_analysis_config",
+          "source_module": "pxl_schema",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "enum",
+            "pydantic",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "relation_from_json",
+          "source_module": "pxl_schema",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "enum",
+            "pydantic",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "relation_to_json",
+          "source_module": "pxl_schema",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "enum",
+            "pydantic",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "SemanticNetworkBuilder",
+          "source_module": "relation_mapper",
+          "atom_type": "schema_class",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "InteractionConfig",
+          "source_module": "router",
+          "atom_type": "schema_class",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "get_dict",
+          "source_module": "schema_utils",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "get_list",
+          "source_module": "schema_utils",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "get_str",
+          "source_module": "schema_utils",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "require_dict",
+          "source_module": "schema_utils",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "require_str",
+          "source_module": "schema_utils",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "CognitiveRequest",
+          "source_module": "scp_nexus",
+          "atom_type": "schema_class",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "CognitiveResult",
+          "source_module": "scp_nexus",
+          "atom_type": "schema_class",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "load_smp",
+          "source_module": "smp_intake",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "load_task",
+          "source_module": "task_intake",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "default_registry",
+          "source_module": "transform_registry",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "LogosBundle",
+          "source_module": "types",
+          "atom_type": "schema_class",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "ReasoningRequest",
+          "source_module": "uip_nexus",
+          "atom_type": "schema_class",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "ReasoningResult",
+          "source_module": "uip_nexus",
+          "atom_type": "schema_class",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": []
+        }
+      ]
+    },
+    "VALIDATION_PRIMITIVES": {
+      "module_name": "VALIDATION_PRIMITIVES",
+      "build_order": 2,
+      "atom_count": 46,
+      "source_modules": [
+        "attestation",
+        "check_imports",
+        "check_run_cycle_prereqs",
+        "coherence",
+        "commitment_ledger",
+        "evidence",
+        "export_tool_registry",
+        "guardrails",
+        "logos_mathematical_core",
+        "prioritization",
+        "pxl_fractal_orbital_analysis",
+        "pxl_schema"
+      ],
+      "dependency_primitives": [],
+      "atom_types_present": [
+        "normalizer",
+        "pure_utility",
+        "stateless_helper",
+        "validator"
+      ],
+      "atoms": [
+        {
+          "atom_name": "_ensure_hex",
+          "source_module": "attestation",
+          "atom_type": "validator",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_load_json",
+          "source_module": "attestation",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_require",
+          "source_module": "attestation",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "compute_attestation_hash",
+          "source_module": "attestation",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "load_alignment_attestation",
+          "source_module": "attestation",
+          "atom_type": "validator",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "load_mission_profile",
+          "source_module": "attestation",
+          "atom_type": "validator",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "validate_attestation",
+          "source_module": "attestation",
+          "atom_type": "validator",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "validate_mission_profile",
+          "source_module": "attestation",
+          "atom_type": "validator",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "check_imports",
+          "source_module": "check_imports",
+          "atom_type": "validator",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "_check",
+          "source_module": "check_run_cycle_prereqs",
+          "atom_type": "validator",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "legacy_main",
+          "source_module": "check_run_cycle_prereqs",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "check_logical_consistency",
+          "source_module": "coherence",
+          "atom_type": "validator",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "get_consistency_check",
+          "source_module": "coherence",
+          "atom_type": "validator",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_clamp_success_criteria",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_clamp_text",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_compute_commitment_id",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_compute_event_id",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_ensure_constraints",
+          "source_module": "commitment_ledger",
+          "atom_type": "validator",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_sha256_hex",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_trim_commitments",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_trim_history",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "atomic_write_json",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "canonical_json",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "compute_ledger_hash",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "ensure_active_commitment",
+          "source_module": "commitment_ledger",
+          "atom_type": "validator",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "load_or_create_ledger",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "mark_commitment_status",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "mark_cycle_outcome",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "record_event",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "set_active_commitment",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "sha256_bytes",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "upsert_commitment",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "validate_ledger",
+          "source_module": "commitment_ledger",
+          "atom_type": "validator",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "write_ledger",
+          "source_module": "commitment_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "is_proved_reference",
+          "source_module": "evidence",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "normalize_evidence_refs",
+          "source_module": "evidence",
+          "atom_type": "normalizer",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "validate_evidence_ref",
+          "source_module": "evidence",
+          "atom_type": "validator",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_ensure_scripts_importable",
+          "source_module": "export_tool_registry",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_load_tools",
+          "source_module": "export_tool_registry",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "restrict_writes_to",
+          "source_module": "guardrails",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "functools",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "legacy_main",
+          "source_module": "logos_mathematical_core",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "hashlib",
+            "json",
+            "math",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_inherit_constraints",
+          "source_module": "prioritization",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "propose_candidate_commitments",
+          "source_module": "prioritization",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "analyze_logos_agent_ontology",
+          "source_module": "pxl_fractal_orbital_analysis",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "merge_validation_results",
+          "source_module": "pxl_schema",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "enum",
+            "pydantic",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "validate_trinity_vector",
+          "source_module": "pxl_schema",
+          "atom_type": "validator",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "enum",
+            "pydantic",
+            "typing"
+          ]
+        }
+      ]
+    },
+    "UTILITY_PRIMITIVES": {
+      "module_name": "UTILITY_PRIMITIVES",
+      "build_order": 3,
+      "atom_count": 45,
+      "source_modules": [
+        "Memory_Recall_Integration",
+        "bayesian_updates",
+        "bridge",
+        "causal_chain_node_predictor",
+        "cycle_ledger",
+        "development_environment",
+        "export_tool_registry",
+        "iel_integration",
+        "iel_registryv2",
+        "logging_utils",
+        "logos_monitor",
+        "regression_checker",
+        "self_diagnosis",
+        "system_utils",
+        "tool_introspection"
+      ],
+      "dependency_primitives": [],
+      "atom_types_present": [
+        "pure_utility",
+        "stateless_helper"
+      ],
+      "atoms": [
+        {
+          "atom_name": "demonstrate_complete_memory_system",
+          "source_module": "Memory_Recall_Integration",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "collections",
+            "dataclasses",
+            "datetime",
+            "enum",
+            "hashlib"
+          ]
+        },
+        {
+          "atom_name": "assign_confidence",
+          "source_module": "bayesian_updates",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "re",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "execute_HBN",
+          "source_module": "bayesian_updates",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "re",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "filter_and_score",
+          "source_module": "bayesian_updates",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "re",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "load_priors",
+          "source_module": "bayesian_updates",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "re",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "load_static_priors",
+          "source_module": "bayesian_updates",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "re",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "predictive_refinement",
+          "source_module": "bayesian_updates",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "re",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "preprocess_query",
+          "source_module": "bayesian_updates",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "re",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "query_intent_analyzer",
+          "source_module": "bayesian_updates",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "re",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "resolve_priors_path",
+          "source_module": "bayesian_updates",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "re",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "save_priors",
+          "source_module": "bayesian_updates",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "re",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "score_data_point",
+          "source_module": "bayesian_updates",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "re",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "bridge_status",
+          "source_module": "bridge",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "get_bridge_status",
+          "source_module": "bridge",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "run_pc_causal_discovery",
+          "source_module": "causal_chain_node_predictor",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "_sha256_file",
+          "source_module": "cycle_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "get_code_environment_status",
+          "source_module": "development_environment",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_write_json",
+          "source_module": "export_tool_registry",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_write_markdown",
+          "source_module": "export_tool_registry",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "legacy_main",
+          "source_module": "export_tool_registry",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "get_iel_integration",
+          "source_module": "iel_integration",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "initialize_iel_system",
+          "source_module": "iel_integration",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "get_iel_registry",
+          "source_module": "iel_registryv2",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": [
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "dumps_log",
+          "source_module": "logging_utils",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "log_event",
+          "source_module": "logging_utils",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "export_json_report",
+          "source_module": "logos_monitor",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json"
+          ]
+        },
+        {
+          "atom_name": "get_detailed_status",
+          "source_module": "logos_monitor",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json"
+          ]
+        },
+        {
+          "atom_name": "legacy_main",
+          "source_module": "logos_monitor",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json"
+          ]
+        },
+        {
+          "atom_name": "compare_tool_outputs",
+          "source_module": "regression_checker",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "get_system_diagnosis",
+          "source_module": "self_diagnosis",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "perform_system_diagnosis",
+          "source_module": "self_diagnosis",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "enum",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "calculate_average_processing_time",
+          "source_module": "system_utils",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "generate_correlation_id",
+          "source_module": "system_utils",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "handle_step_error",
+          "source_module": "system_utils",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "log_uip_event",
+          "source_module": "system_utils",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "observe_request_latency",
+          "source_module": "system_utils",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "record_request_outcome",
+          "source_module": "system_utils",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "_builtin_defaults",
+          "source_module": "tool_introspection",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_compute_usage_stats",
+          "source_module": "tool_introspection",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_load_approved_manifests",
+          "source_module": "tool_introspection",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_load_builtin_tools",
+          "source_module": "tool_introspection",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_load_run_ledgers",
+          "source_module": "tool_introspection",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "build_capability_records",
+          "source_module": "tool_introspection",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "build_introspection_summary",
+          "source_module": "tool_introspection",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "legacy_main",
+          "source_module": "tool_introspection",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "json",
+            "typing"
+          ]
+        }
+      ]
+    },
+    "NORMALIZATION_PRIMITIVES": {
+      "module_name": "NORMALIZATION_PRIMITIVES",
+      "build_order": 4,
+      "atom_count": 25,
+      "source_modules": [
+        "attestation",
+        "bayes_update_real_time",
+        "bayesian_updates",
+        "causal_chain_node_predictor",
+        "commitment_ledger",
+        "cycle_ledger",
+        "iel_registryv1",
+        "logos_monitor",
+        "prioritization",
+        "pxl_modal_fractal_boundary_analysis",
+        "system_utils",
+        "time_utils",
+        "tool_optimizer",
+        "translation_engine"
+      ],
+      "dependency_primitives": [],
+      "atom_types_present": [
+        "normalizer",
+        "pure_utility",
+        "stateless_helper"
+      ],
+      "atoms": [
+        {
+          "atom_name": "_is_iso",
+          "source_module": "attestation",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "run_BERT_pipeline",
+          "source_module": "bayes_update_real_time",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "run_BERT_pipeline",
+          "source_module": "bayesian_updates",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "re",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "simulate_example_data",
+          "source_module": "causal_chain_node_predictor",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": []
+        },
+        {
+          "atom_name": "_utc_now",
+          "source_module": "commitment_ledger",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_collect_bundle_hashes",
+          "source_module": "cycle_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_normalize_path",
+          "source_module": "cycle_ledger",
+          "atom_type": "normalizer",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_sanitize_outcomes",
+          "source_module": "cycle_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_sanitize_steps",
+          "source_module": "cycle_ledger",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "write_cycle_ledger",
+          "source_module": "cycle_ledger",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "legacy_main",
+          "source_module": "iel_registryv1",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "dataclasses",
+            "datetime",
+            "hashlib",
+            "json",
+            "re"
+          ]
+        },
+        {
+          "atom_name": "print_status_report",
+          "source_module": "logos_monitor",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "json"
+          ]
+        },
+        {
+          "atom_name": "_dedupe_key",
+          "source_module": "prioritization",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_iso_to_timestamp",
+          "source_module": "prioritization",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_now_iso",
+          "source_module": "prioritization",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "analyze_privative_modal_boundaries",
+          "source_module": "pxl_modal_fractal_boundary_analysis",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "dataclasses",
+            "datetime",
+            "enum",
+            "json"
+          ]
+        },
+        {
+          "atom_name": "export_metrics",
+          "source_module": "system_utils",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "get_current_timestamp",
+          "source_module": "system_utils",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:global_state",
+          "dependency_requirements": [
+            "datetime",
+            "json",
+            "typing",
+            "uuid"
+          ]
+        },
+        {
+          "atom_name": "utc_now_iso",
+          "source_module": "time_utils",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime"
+          ]
+        },
+        {
+          "atom_name": "_build_tool_registry",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_clean_docstring",
+          "source_module": "tool_optimizer",
+          "atom_type": "normalizer",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_iso_timestamp",
+          "source_module": "tool_optimizer",
+          "atom_type": "pure_utility",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_read_digest_file",
+          "source_module": "tool_optimizer",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "ISOLATED:file_io",
+          "dependency_requirements": [
+            "collections",
+            "datetime",
+            "hashlib",
+            "json",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "_synthesize_unified_representation",
+          "source_module": "translation_engine",
+          "atom_type": "stateless_helper",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        },
+        {
+          "atom_name": "convert_to_nl",
+          "source_module": "translation_engine",
+          "atom_type": "normalizer",
+          "side_effect_profile": "PURE",
+          "dependency_requirements": [
+            "datetime",
+            "typing"
+          ]
+        }
+      ]
+    }
+  }
+}

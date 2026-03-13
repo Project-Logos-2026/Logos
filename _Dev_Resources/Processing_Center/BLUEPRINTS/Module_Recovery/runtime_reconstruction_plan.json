@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-03-12",
+  "pipeline_phase": "Phase-3",
+  "target_phase": "Phase-4 Runtime Module Reconstruction",
+  "total_reconstruction_targets": 3,
+  "reconstruction_targets": [
+    {
+      "target_module": "PXL_World_Model",
+      "classification": "Reasoning",
+      "recovery_status": "Recoverable_As_Is",
+      "reconstruction_reason": "unsafe_side_effects=['file_io', 'global_state']",
+      "required_primitives": [
+        "UTILITY_PRIMITIVES"
+      ],
+      "build_dependencies": [],
+      "integration_destination": "PXL_World_Model_Core",
+      "priority_score": 0.75
+    },
+    {
+      "target_module": "autonomous_learning",
+      "classification": "Reasoning",
+      "recovery_status": "Recoverable_With_Normalization",
+      "reconstruction_reason": "unsafe_side_effects=['file_io', 'global_state']",
+      "required_primitives": [
+        "UTILITY_PRIMITIVES"
+      ],
+      "build_dependencies": [],
+      "integration_destination": "Autonomous_Learning_Core",
+      "priority_score": 0.75
+    },
+    {
+      "target_module": "shared_resources",
+      "classification": "Utility",
+      "recovery_status": "Recoverable_With_Normalization",
+      "reconstruction_reason": "unsafe_side_effects=['file_io', 'global_state']",
+      "required_primitives": [
+        "UTILITY_PRIMITIVES"
+      ],
+      "build_dependencies": [],
+      "integration_destination": "RUNTIME_CORE_PENDING",
+      "priority_score": 0.75
+    }
+  ],
+  "machine_artifact_candidates": {
+    "agent_identity.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.85,
+      "destination_core": "Agentic_Cognition_Core",
+      "notes": "Identity model likely reusable with minimal structural rewrite."
+    },
+    "autonomous_learning.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.82,
+      "destination_core": "Autonomous_Learning_Core",
+      "notes": "Learning control logic valuable but imports likely outdated."
+    },
+    "action_system.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.8,
+      "destination_core": "Agentic_Cognition_Core",
+      "notes": "Execution action layer tied to agent reasoning loop."
+    },
+    "coherence_metrics.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.9,
+      "destination_core": "Coherence_Alignment_Core"
+    },
+    "coherence_formalism.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.88,
+      "destination_core": "Coherence_Alignment_Core"
+    },
+    "PXL_World_Model.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.92,
+      "destination_core": "PXL_World_Model_Core"
+    },
+    "pxl_schema.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.9,
+      "destination_core": "PXL_World_Model_Core"
+    },
+    "pxl_fractal_orbital_analysis.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.86,
+      "destination_core": "PXL_World_Model_Core"
+    },
+    "pxl_modal_fractal_boundary_analysis.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.86,
+      "destination_core": "PXL_World_Model_Core"
+    },
+    "modal_logic.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.89,
+      "destination_core": "Modal_Reasoning_Core"
+    },
+    "modal_reasoner.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.89,
+      "destination_core": "Modal_Reasoning_Core"
+    },
+    "modal_validator.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.86,
+      "destination_core": "Modal_Reasoning_Core"
+    },
+    "multi_modal_system.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.83,
+      "destination_core": "Modal_Reasoning_Core"
+    },
+    "translation_engine.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.9,
+      "destination_core": "Semantic_Translation_Core"
+    },
+    "translation_bridge.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.86,
+      "destination_core": "Semantic_Translation_Core"
+    },
+    "semantic_transformers.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.84,
+      "destination_core": "Semantic_Translation_Core"
+    },
+    "relation_mapper.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.82,
+      "destination_core": "Semantic_Translation_Core"
+    },
+    "proof_engine.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.88,
+      "destination_core": "Formal_Reasoning_Core"
+    },
+    "lambda_parser.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.87,
+      "destination_core": "Formal_Reasoning_Core"
+    },
+    "lambda_engine.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.86,
+      "destination_core": "Formal_Reasoning_Core"
+    },
+    "lambda_onto_calculus_engine.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.86,
+      "destination_core": "Formal_Reasoning_Core"
+    },
+    "bayesian_interface.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.86,
+      "destination_core": "Probabilistic_Reasoning_Core"
+    },
+    "bayesian_inferencer.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.87,
+      "destination_core": "Probabilistic_Reasoning_Core"
+    },
+    "bayesian_updates.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.87,
+      "destination_core": "Probabilistic_Reasoning_Core"
+    },
+    "bayesian_nexus.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.85,
+      "destination_core": "Probabilistic_Reasoning_Core"
+    },
+    "belief_network.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.84,
+      "destination_core": "Probabilistic_Reasoning_Core"
+    },
+    "tool_invention.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.8,
+      "destination_core": "Tooling_Intelligence_Core"
+    },
+    "tool_optimizer.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.8,
+      "destination_core": "Tooling_Intelligence_Core"
+    }
+  },
+  "primitive_libraries_available": [
+    "REASONING_PRIMITIVES",
+    "SCHEMA_PRIMITIVES",
+    "VALIDATION_PRIMITIVES",
+    "UTILITY_PRIMITIVES",
+    "NORMALIZATION_PRIMITIVES"
+  ]
+}

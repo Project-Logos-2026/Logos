@@ -1,0 +1,13 @@
+{
+  "system": "ARCHON_PRIME",
+  "artifact": "AP_PIPELINE_AUDIT_LOG_SCHEMA",
+  "version": "1.0",
+  "fields": {
+    "timestamp": "ISO8601 datetime",
+    "phase": "Pipeline phase identifier",
+    "platform": "Architect | GPT | Claude | VSCode",
+    "action": "Description of event",
+    "artifact": "Affected artifact",
+    "status": "success | warning | failure"
+  }
+}

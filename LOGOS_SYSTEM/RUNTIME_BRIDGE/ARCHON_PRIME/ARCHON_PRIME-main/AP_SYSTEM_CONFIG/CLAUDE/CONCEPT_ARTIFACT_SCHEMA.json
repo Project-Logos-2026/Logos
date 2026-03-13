@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ARCHON_PRIME Concept Artifact Schema",
+  "description": "Validates the structure of concept draft and formal concept artifacts",
+  "type": "object",
+  "required": [
+    "concept_identity",
+    "concept_summary",
+    "core_objectives",
+    "functional_requirements",
+    "constraints"
+  ],
+  "properties": {
+    "concept_identity": {
+      "type": "object",
+      "required": ["name", "version", "source", "date"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string", "pattern": "^v[0-9]+$" },
+        "source": {
+          "type": "string",
+          "enum": ["gpt_brainstorm", "architect_direct", "claude_output", "mixed"]
+        },
+        "date": { "type": "string", "format": "date" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "under_review", "approved", "superseded"]
+        }
+      }
+    },
+    "concept_summary": { "type": "string", "minLength": 1 },
+    "core_objectives": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "functional_requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "description"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^FR-[0-9]{3}$" },
+          "description": { "type": "string" },
+          "testable": { "type": "boolean" }
+        }
+      },
+      "minItems": 1
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "description", "rationale"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^C-[0-9]{3}$" },
+          "description": { "type": "string" },
+          "rationale": { "type": "string" }
+        }
+      }
+    },
+    "candidate_mechanisms": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "adjacent_subsystems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "interface_type": { "type": "string" },
+          "data_flow": { "type": "string" }
+        }
+      }
+    },
+    "open_questions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "deferments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "item": { "type": "string" },
+          "reason": { "type": "string" }
+        }
+      }
+    }
+  }
+}

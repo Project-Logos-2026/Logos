@@ -1,0 +1,679 @@
+{
+  "report_id": "AP_V2_Tooling_Normalization_Report",
+  "generated_at": "2026-03-12T07:53:38.768686+00:00",
+  "processing_directory": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING",
+  "completed_directory": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED",
+  "total_modules_processed": 40,
+  "modules_successfully_normalized": 40,
+  "modules_repaired": 4,
+  "modules_failed": 0,
+  "pass_criteria_met": true,
+  "modules": [
+    {
+      "module": "Import_Linter.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/Import_Linter.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/Import_Linter.py"
+    },
+    {
+      "module": "__init__.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/__init__.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/__init__.py"
+    },
+    {
+      "module": "_run_audit.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/_run_audit.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/_run_audit.py"
+    },
+    {
+      "module": "ap_artifact_collection_p1.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/ap_artifact_collection_p1.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/ap_artifact_collection_p1.py"
+    },
+    {
+      "module": "ast_parser.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/ast_parser.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/ast_parser.py"
+    },
+    {
+      "module": "classifier.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/classifier.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/classifier.py"
+    },
+    {
+      "module": "cluster_analysis.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/cluster_analysis.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/cluster_analysis.py"
+    },
+    {
+      "module": "conftest.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/conftest.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/conftest.py"
+    },
+    {
+      "module": "drac_indexer.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/drac_indexer.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/drac_indexer.py"
+    },
+    {
+      "module": "execution_core_isolation_audit.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/execution_core_isolation_audit.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/execution_core_isolation_audit.py"
+    },
+    {
+      "module": "extract.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/extract.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/extract.py"
+    },
+    {
+      "module": "facade_rewrite_pass.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/facade_rewrite_pass.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/facade_rewrite_pass.py"
+    },
+    {
+      "module": "facade_synthesis.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/facade_synthesis.py",
+      "status": "failed",
+      "syntax_ok": false,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": false,
+      "errors": [
+        "Syntax error (unrepaired): invalid syntax (<unknown>, line 8)",
+        "Runtime import failed: invalid syntax (facade_synthesis.py, line 8)"
+      ],
+      "moved_to": null
+    },
+    {
+      "module": "fbc_registry.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/fbc_registry.py",
+      "status": "failed",
+      "syntax_ok": false,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": false,
+      "errors": [
+        "Syntax error (unrepaired): unexpected indent (<unknown>, line 557)",
+        "Runtime import failed: unexpected indent (fbc_registry.py, line 557)"
+      ],
+      "moved_to": null
+    },
+    {
+      "module": "generate_deep_import_violations.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/generate_deep_import_violations.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/generate_deep_import_violations.py"
+    },
+    {
+      "module": "generate_symbol_import_index.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/generate_symbol_import_index.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/generate_symbol_import_index.py"
+    },
+    {
+      "module": "import_prefix_verifier.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/import_prefix_verifier.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/import_prefix_verifier.py"
+    },
+    {
+      "module": "import_root_grouping_analyzer.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/import_root_grouping_analyzer.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/import_root_grouping_analyzer.py"
+    },
+    {
+      "module": "import_violation_classifier.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/import_violation_classifier.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/import_violation_classifier.py"
+    },
+    {
+      "module": "legacy_extract.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/legacy_extract.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos/_Dev_Resources/STAGING/APPLICATION_FUNCTIONS' \u2192 '/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/INCOMING_TARGETS/TARGETS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/legacy_extract.py"
+    },
+    {
+      "module": "module_root_existence_checker.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/module_root_existence_checker.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/module_root_existence_checker.py"
+    },
+    {
+      "module": "namespace_discovery_scan.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/namespace_discovery_scan.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/namespace_discovery_scan.py"
+    },
+    {
+      "module": "nexus_structural_audit.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/nexus_structural_audit.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/nexus_structural_audit.py"
+    },
+    {
+      "module": "packet_discovery.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/packet_discovery.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos/_Dev_Resources/STAGING/APPLICATION_FUNCTIONS' \u2192 '/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/INCOMING_TARGETS/TARGETS'",
+        "Replaced '/workspaces/Logos/Blueprints/reasoning' \u2192 '/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED'",
+        "Replaced '/workspaces/Logos/Blueprints/utils' \u2192 '/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED'",
+        "Replaced '/workspaces/Logos/Tools' \u2192 '/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/packet_discovery.py"
+    },
+    {
+      "module": "pipeline.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/pipeline.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": true,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [
+        "Commented out syntax-error line 190: sys.exit(1)"
+      ],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/pipeline.py"
+    },
+    {
+      "module": "python_file_list.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/python_file_list.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/python_file_list.py"
+    },
+    {
+      "module": "registry_writer.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/registry_writer.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/registry_writer.py"
+    },
+    {
+      "module": "reorganize.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/reorganize.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/reorganize.py"
+    },
+    {
+      "module": "repo_structure_export.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/repo_structure_export.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/repo_structure_export.py"
+    },
+    {
+      "module": "runtime_analysis.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/runtime_analysis.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/runtime_analysis.py"
+    },
+    {
+      "module": "runtime_callgraph_extractor.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/runtime_callgraph_extractor.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/runtime_callgraph_extractor.py"
+    },
+    {
+      "module": "runtime_debug_artifact_scanner.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/runtime_debug_artifact_scanner.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/runtime_debug_artifact_scanner.py"
+    },
+    {
+      "module": "runtime_execution_tracer.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/runtime_execution_tracer.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/runtime_execution_tracer.py"
+    },
+    {
+      "module": "runtime_module_tree_auditor.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/runtime_module_tree_auditor.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/runtime_module_tree_auditor.py"
+    },
+    {
+      "module": "scanner.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/scanner.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/scanner.py"
+    },
+    {
+      "module": "semantic_extractor.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/semantic_extractor.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/semantic_extractor.py"
+    },
+    {
+      "module": "static_ast_analysis.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/static_ast_analysis.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/static_ast_analysis.py"
+    },
+    {
+      "module": "test_import_base_reasoning_registry.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/test_import_base_reasoning_registry.py",
+      "status": "failed",
+      "syntax_ok": false,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'"
+      ],
+      "import_changes": [
+        "Commented out Logos import: from logos.imports.protocols import base_reasoning_registry"
+      ],
+      "repair_notes": [],
+      "runtime_import_ok": false,
+      "errors": [
+        "Syntax error (unrepaired): expected 'except' or 'finally' block (<unknown>, line 35)",
+        "Runtime import failed: expected an indented block after 'try' statement on line 33 (test_import_base_reasoning_registry.py, line 35)"
+      ],
+      "moved_to": null
+    },
+    {
+      "module": "triage.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/triage.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos/_Dev_Resources/STAGING/APPLICATION_FUNCTIONS' \u2192 '/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/INCOMING_TARGETS/TARGETS'",
+        "Replaced '/workspaces/Logos/Blueprints/reasoning' \u2192 '/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED'",
+        "Replaced '/workspaces/Logos/Blueprints/utils' \u2192 '/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED'",
+        "Replaced '/workspaces/Logos/Tools' \u2192 '/workspaces/ARCHON_PRIME/WORKFLOW_MUTATION_TOOLING/tools'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/triage.py"
+    },
+    {
+      "module": "violation_prefix_grouper.py",
+      "path": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/PROCESSING/violation_prefix_grouper.py",
+      "status": "success",
+      "syntax_ok": true,
+      "syntax_repaired": false,
+      "path_changes": [
+        "Replaced '/workspaces/Logos/_Dev_Resources/Reports/Tool_Outputs/Runtime' \u2192 '/workspaces/ARCHON_PRIME/SYSTEM_AUDITS_AND_REPORTS/PIPELINE_OUTPUTS'",
+        "Replaced '/workspaces/Logos' \u2192 '/workspaces/ARCHON_PRIME'"
+      ],
+      "import_changes": [],
+      "repair_notes": [],
+      "runtime_import_ok": true,
+      "errors": [],
+      "moved_to": "/workspaces/ARCHON_PRIME/WORKFLOW_TARGET_PROCESSING/COMPLETED/violation_prefix_grouper.py"
+    }
+  ],
+  "pass2_repair_timestamp": "2026-03-12T08:28:09.233071+00:00",
+  "pass2_repaired_modules": [
+    {
+      "module": "facade_synthesis.py",
+      "status": "success",
+      "syntax_ok": true,
+      "runtime_ok": true,
+      "repaired": true,
+      "errors": [],
+      "moved_to": "WORKFLOW_TARGET_PROCESSING/COMPLETED/facade_synthesis.py"
+    },
+    {
+      "module": "fbc_registry.py",
+      "status": "success",
+      "syntax_ok": true,
+      "runtime_ok": true,
+      "repaired": true,
+      "errors": [],
+      "moved_to": "WORKFLOW_TARGET_PROCESSING/COMPLETED/fbc_registry.py"
+    },
+    {
+      "module": "test_import_base_reasoning_registry.py",
+      "status": "success",
+      "syntax_ok": true,
+      "runtime_ok": true,
+      "repaired": true,
+      "errors": [],
+      "moved_to": "WORKFLOW_TARGET_PROCESSING/COMPLETED/test_import_base_reasoning_registry.py"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+name: ARCHON_PRIME_PACKET_VALIDATION
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  packet-validation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Packet validation placeholder
+        run: |
+          echo "ARCHON PRIME packet validation workflow placeholder."
+          echo "Full validation will activate once Stage-0 configuration artifacts exist."
+
+          if [ -f configs/crawl_configs/crawl_config.json ]; then
+            echo "crawl_config.json detected."
+          else
+            echo "crawl_config.json not present yet."
+          fi
+
+          if [ -f configs/repair_registry/repair_registry.json ]; then
+            echo "repair_registry.json detected."
+          else
+            echo "repair_registry.json not present yet."
+          fi
+
+          if [ -f orchestration/task_router/routing_table.json ]; then
+            echo "routing_table.json detected."
+          else
+            echo "routing_table.json not present yet."
+          fi

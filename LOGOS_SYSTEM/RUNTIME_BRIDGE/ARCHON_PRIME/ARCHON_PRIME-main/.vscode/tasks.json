@@ -1,0 +1,60 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "AP: Run Full Pipeline",
+      "type": "shell",
+      "command": "python orchestration/controllers/controller_main.py --config configs/crawl_configs/crawl_config.json",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "AP: Simulation Only",
+      "type": "shell",
+      "command": "python orchestration/controllers/controller_main.py --config configs/crawl_configs/crawl_config.json --simulation-only",
+      "group": "test",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "AP: Resume Crawl",
+      "type": "shell",
+      "command": "python orchestration/controllers/controller_main.py --config configs/crawl_configs/crawl_config.json --resume",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "AP: Run Audit Suite",
+      "type": "shell",
+      "command": "python tools/audit_tools/run_audit_suite.py",
+      "group": "test",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "AP: Run Governance Audit",
+      "type": "shell",
+      "command": "python tools/audit_tools/run_governance_audit.py",
+      "group": "test",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "AP: Run Tests",
+      "type": "shell",
+      "command": "pytest tests/ -v --cov=. --cov-report=xml",
+      "group": { "kind": "test", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "AP: Lint (ruff)",
+      "type": "shell",
+      "command": "ruff check . && black --check .",
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}

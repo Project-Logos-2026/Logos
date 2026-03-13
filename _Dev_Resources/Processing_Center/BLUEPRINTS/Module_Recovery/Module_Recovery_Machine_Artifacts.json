@@ -1,0 +1,227 @@
+{
+  "primitive_libraries": {
+    "Agentic_Cognition_Primitives": [
+      "adaptive_engine.py",
+      "agentic_consciousness_core.py"
+    ],
+    "Fractal_Analysis_Primitives": [
+      "fractal_orbit_toolkit.py",
+      "comprehensive_fractal_analysis.py"
+    ],
+    "Bayesian_Primitives": [
+      "bayesian_recursion.py",
+      "bayes_update_real_time.py"
+    ],
+    "Semantic_Extraction_Primitives": [
+      "NLP_Wrapper_Sentence_Transformers.py",
+      "semantic_transformers.py"
+    ],
+    "Validation_Primitives": [
+      "modal_validator.py"
+    ]
+  },
+
+  "module_recovery_candidates": {
+    "agent_identity.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.85,
+      "destination_core": "Agentic_Cognition_Core",
+      "notes": "Identity model likely reusable with minimal structural rewrite."
+    },
+    "autonomous_learning.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.82,
+      "destination_core": "Autonomous_Learning_Core",
+      "notes": "Learning control logic valuable but imports likely outdated."
+    },
+    "action_system.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.80,
+      "destination_core": "Agentic_Cognition_Core",
+      "notes": "Execution action layer tied to agent reasoning loop."
+    },
+
+    "coherence_metrics.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.90,
+      "destination_core": "Coherence_Alignment_Core"
+    },
+    "coherence_formalism.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.88,
+      "destination_core": "Coherence_Alignment_Core"
+    },
+
+    "PXL_World_Model.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.92,
+      "destination_core": "PXL_World_Model_Core"
+    },
+    "pxl_schema.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.90,
+      "destination_core": "PXL_World_Model_Core"
+    },
+    "pxl_fractal_orbital_analysis.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.86,
+      "destination_core": "PXL_World_Model_Core"
+    },
+    "pxl_modal_fractal_boundary_analysis.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.86,
+      "destination_core": "PXL_World_Model_Core"
+    },
+
+    "modal_logic.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.89,
+      "destination_core": "Modal_Reasoning_Core"
+    },
+    "modal_reasoner.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.89,
+      "destination_core": "Modal_Reasoning_Core"
+    },
+    "modal_validator.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.86,
+      "destination_core": "Modal_Reasoning_Core"
+    },
+    "multi_modal_system.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.83,
+      "destination_core": "Modal_Reasoning_Core"
+    },
+
+    "translation_engine.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.90,
+      "destination_core": "Semantic_Translation_Core"
+    },
+    "translation_bridge.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.86,
+      "destination_core": "Semantic_Translation_Core"
+    },
+    "semantic_transformers.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.84,
+      "destination_core": "Semantic_Translation_Core"
+    },
+    "relation_mapper.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.82,
+      "destination_core": "Semantic_Translation_Core"
+    },
+
+    "proof_engine.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.88,
+      "destination_core": "Formal_Reasoning_Core"
+    },
+    "lambda_parser.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.87,
+      "destination_core": "Formal_Reasoning_Core"
+    },
+    "lambda_engine.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.86,
+      "destination_core": "Formal_Reasoning_Core"
+    },
+    "lambda_onto_calculus_engine.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.86,
+      "destination_core": "Formal_Reasoning_Core"
+    },
+
+    "bayesian_interface.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.86,
+      "destination_core": "Probabilistic_Reasoning_Core"
+    },
+    "bayesian_inferencer.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.87,
+      "destination_core": "Probabilistic_Reasoning_Core"
+    },
+    "bayesian_updates.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.87,
+      "destination_core": "Probabilistic_Reasoning_Core"
+    },
+    "bayesian_nexus.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.85,
+      "destination_core": "Probabilistic_Reasoning_Core"
+    },
+    "belief_network.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.84,
+      "destination_core": "Probabilistic_Reasoning_Core"
+    },
+
+    "tool_invention.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.80,
+      "destination_core": "Tooling_Intelligence_Core"
+    },
+    "tool_optimizer.py": {
+      "bucket": "Primary_Candidate",
+      "confidence": 0.80,
+      "destination_core": "Tooling_Intelligence_Core"
+    },
+
+    "adaptive_engine.py": {
+      "bucket": "Donor_Only",
+      "confidence": 0.75,
+      "destination_core": "Agentic_Cognition_Primitives"
+    },
+    "agentic_consciousness_core.py": {
+      "bucket": "Donor_Only",
+      "confidence": 0.74,
+      "destination_core": "Agentic_Cognition_Primitives"
+    },
+
+    "fractal_orbit_toolkit.py": {
+      "bucket": "Donor_Only",
+      "confidence": 0.72,
+      "destination_core": "Fractal_Analysis_Primitives"
+    },
+    "comprehensive_fractal_analysis.py": {
+      "bucket": "Donor_Only",
+      "confidence": 0.72,
+      "destination_core": "Fractal_Analysis_Primitives"
+    },
+
+    "bayesian_recursion.py": {
+      "bucket": "Donor_Only",
+      "confidence": 0.73,
+      "destination_core": "Bayesian_Primitives"
+    },
+    "bayes_update_real_time.py": {
+      "bucket": "Donor_Only",
+      "confidence": 0.73,
+      "destination_core": "Bayesian_Primitives"
+    },
+
+    "simulated_consciousness_runtime.py": {
+      "bucket": "Reject",
+      "confidence": 0.60,
+      "notes": "Architecture bound and likely superseded."
+    }
+  },
+
+  "logic_atom_schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "LOGOS_Module_Logic_Atom",
+    "type": "object"
+  },
+
+  "logic_atom_extraction_ruleset": {
+    "version": "1.0",
+    "purpose": "Deterministic extraction rules for logic atoms during legacy module recovery",
+    "compatible_schema": "MODULE_LOGIC_ATOM_SCHEMA.json"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "python.defaultInterpreterPath": "/usr/local/bin/python",
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "ruff.enable": true,
+  "ruff.organizeImports": true,
+  "mypy-type-checker.enabled": true,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.pytest_cache": true
+  },
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": [
+    "tests/"
+  ],
+  "coverage-gutters.coverageFileNames": [
+    "coverage.xml"
+  ],
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": ".github/workflows/*"
+  },
+  "python-envs.defaultEnvManager": "ms-python.python:system"
+}

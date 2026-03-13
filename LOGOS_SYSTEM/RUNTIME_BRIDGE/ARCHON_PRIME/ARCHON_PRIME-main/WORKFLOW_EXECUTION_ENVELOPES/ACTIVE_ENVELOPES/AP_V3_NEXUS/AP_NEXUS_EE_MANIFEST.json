@@ -1,0 +1,24 @@
+
+{
+  "envelope_id": "EE_AP_V3_NEXUS_BUILD",
+  "version": "3.0",
+  "artifact_set": [
+    "AP_NEXUS_DS.md",
+    "AP_NEXUS_IG.md",
+    "AP_NEXUS_EP.md",
+    "AP_NEXUS_EA.md"
+  ],
+  "target_directory": "WORKFLOW_NEXUS",
+  "modules_expected": 38,
+  "execution_stages": 7,
+  "governance_required": true,
+  "mutation_scope": [
+    "WORKFLOW_NEXUS",
+    "WORKFLOW_EXECUTION_ENVELOPES",
+    "SYSTEM/REPORTS"
+  ],
+  "forbidden_mutation_scope": [
+    "LOGOS_SYSTEM",
+    "SYSTEM_CORE"
+  ]
+}

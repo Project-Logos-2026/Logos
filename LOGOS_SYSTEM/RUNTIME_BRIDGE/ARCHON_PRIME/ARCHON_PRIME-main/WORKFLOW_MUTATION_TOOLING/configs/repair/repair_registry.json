@@ -1,0 +1,8 @@
+{
+    "version": "1.0",
+    "repair_types": {
+        "syntax_error": "repair_executor",
+        "missing_header": "header_injector",
+        "import_error": "import_rewriter"
+    }
+}

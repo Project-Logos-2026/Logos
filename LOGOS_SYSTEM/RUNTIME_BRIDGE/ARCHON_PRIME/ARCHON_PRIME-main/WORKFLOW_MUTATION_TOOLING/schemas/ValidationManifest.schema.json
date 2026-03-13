@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "imports_normalized": { "type": "boolean" },
+    "dependencies_resolved": { "type": "boolean" },
+    "namespaces_clean": { "type": "boolean" },
+    "governance_enforced": { "type": "boolean" },
+    "runtime_boot_valid": { "type": "boolean" }
+  }
+}

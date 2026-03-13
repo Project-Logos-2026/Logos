@@ -1,0 +1,23 @@
+{
+  "system": "ARCHON_PRIME",
+  "artifact_type": "Header_Policy_Registry",
+  "version": "1.0",
+  "canonical_header_fields": [
+    "SYSTEM",
+    "ARTIFACT_TYPE",
+    "ARTIFACT_NAME",
+    "VERSION",
+    "DATE",
+    "AUTHORITY"
+  ],
+  "header_operations": {
+    "detect": true,
+    "remove_invalid": true,
+    "replace_outdated": true,
+    "inject_missing": true
+  },
+  "validation_rules": {
+    "header_required": true,
+    "unknown_fields_allowed": false
+  }
+}
