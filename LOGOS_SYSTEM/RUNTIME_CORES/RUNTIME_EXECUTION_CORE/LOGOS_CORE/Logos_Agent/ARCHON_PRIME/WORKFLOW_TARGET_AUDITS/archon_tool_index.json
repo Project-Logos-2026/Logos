@@ -1,0 +1,603 @@
+{
+  "schema_version": "1.1",
+  "registry": "ARCHON_PRIME Audit Tool Index",
+  "authoring_authority": "ARCHON_PRIME",
+  "spec_reference": "SPEC-AP-V2.1",
+  "output_root_env": "ARCHON_OUTPUT_ROOT",
+  "default_output_root": "_Dev_Resources/Reports/ARCHON_DIAGNOSTICS",
+  "generated_at": "2026-03-15",
+  "total_tools": 37,
+  "archon_pipeline": {
+    "stage_1_repository_mapping": {
+      "stage": 1,
+      "tool": "repo_mapper.py",
+      "path": "MODULES/analysis/repo_maps/repo_mapper.py",
+      "description": "Walks the target directory tree and produces a full repository map including directory structure, Python file inventory, and a module index with extracted import declarations. Must be run first — its outputs are consumed by all downstream stages.",
+      "execution_entry": null,
+      "output_artifacts": [
+        "repo_directory_tree.json",
+        "repo_python_files.json",
+        "module_index.json"
+      ],
+      "dependencies": [],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_2a_filesystem_inventory": {
+      "stage": 2,
+      "tool": "filesystem_inventory.py",
+      "path": "MODULES/analysis/filesystem/filesystem_inventory.py",
+      "description": "Produces a comprehensive inventory of all files in the target repository including sizes, extensions, modification timestamps, and directory statistics.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "filesystem_inventory.json"
+      ],
+      "dependencies": [],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_2b_language_detector": {
+      "stage": 2,
+      "tool": "language_detector.py",
+      "path": "MODULES/analysis/filesystem/language_detector.py",
+      "description": "Detects programming languages used in the target repository by file extension and shebang analysis, producing a language distribution report.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "language_distribution.json"
+      ],
+      "dependencies": [],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_2c_entrypoint_detector": {
+      "stage": 2,
+      "tool": "entrypoint_detector.py",
+      "path": "MODULES/analysis/filesystem/entrypoint_detector.py",
+      "description": "Detects executable entry points in the target repository including __main__ blocks, CLI scripts, and framework entry patterns.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "entrypoints.json"
+      ],
+      "dependencies": [
+        "stage_1_repository_mapping"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_3_import_graph_builder": {
+      "stage": 3,
+      "tool": "import_graph_builder.py",
+      "path": "MODULES/analysis/dependency_graphs/import_graph_builder.py",
+      "description": "Builds a directed import dependency graph for all Python modules in the target repository by parsing AST import statements.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "import_graph.json"
+      ],
+      "dependencies": [
+        "stage_1_repository_mapping"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_4a_cluster_analysis": {
+      "stage": 4,
+      "tool": "cluster_analysis.py",
+      "path": "MODULES/analysis/dependency_graphs/cluster_analysis.py",
+      "description": "Ingests the runtime dependency graph and performs Louvain community detection, strongly connected component analysis, betweenness centrality scoring, cluster boundary violation classification, facade candidate identification, and deterministic repair feasibility assessment.",
+      "execution_entry": "main",
+      "output_artifacts": [
+        "cluster_membership.json",
+        "cluster_summary.json",
+        "cluster_dependency_graph.json",
+        "cluster_boundary_violations.json",
+        "facade_candidates.json",
+        "repair_feasibility.json"
+      ],
+      "dependencies": [
+        "stage_3_import_graph_builder"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_4b_packet_discovery": {
+      "stage": 4,
+      "tool": "packet_discovery.py",
+      "path": "MODULES/analysis/dependency_graphs/packet_discovery.py",
+      "description": "Builds an import dependency graph, detects strongly connected components via Tarjan's algorithm, classifies each SCC packet by semantic signals (reasoning, semantic, agent, safety, math, utility), and produces JSON and DOT graph output.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "module_packets.json",
+        "module_packet_graph.json",
+        "reasoning_packets.json",
+        "semantic_packets.json",
+        "arp_packets.json"
+      ],
+      "dependencies": [
+        "stage_1_repository_mapping"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_4c_circular_dependency_detector": {
+      "stage": 4,
+      "tool": "circular_dependency_detector.py",
+      "path": "MODULES/analysis/risk_detection/circular_dependency_detector.py",
+      "description": "Detects circular import chains in the dependency graph using Tarjan's SCC algorithm and produces a ranked circular dependency report.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "circular_dependencies.json"
+      ],
+      "dependencies": [
+        "stage_3_import_graph_builder"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_5a_ast_symbol_extractor": {
+      "stage": 5,
+      "tool": "ast_symbol_extractor.py",
+      "path": "MODULES/analysis/ast_analysis/ast_symbol_extractor.py",
+      "description": "Extracts all symbols (functions, classes, constants, type aliases) from Python modules via AST analysis, producing a searchable symbol index.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "symbol_index.json"
+      ],
+      "dependencies": [
+        "stage_1_repository_mapping"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_5b_ast_dependency_analyzer": {
+      "stage": 5,
+      "tool": "ast_dependency_analyzer.py",
+      "path": "MODULES/analysis/ast_analysis/ast_dependency_analyzer.py",
+      "description": "Performs deep AST-level dependency analysis on module function bodies to trace inter-function and inter-module call relationships.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "ast_dependencies.json"
+      ],
+      "dependencies": [
+        "stage_1_repository_mapping"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_5c_type_hint_extractor": {
+      "stage": 5,
+      "tool": "type_hint_extractor.py",
+      "path": "MODULES/analysis/ast_analysis/type_hint_extractor.py",
+      "description": "Extracts type annotations from function signatures and variable assignments, producing a type surface report for compatibility analysis.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "type_hints.json"
+      ],
+      "dependencies": [
+        "stage_1_repository_mapping"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_6a_ast_semantic_analyzer": {
+      "stage": 6,
+      "tool": "ast_semantic_analyzer.py",
+      "path": "MODULES/analysis/semantic_analysis/ast_semantic_analyzer.py",
+      "description": "Performs semantic analysis over AST outputs to infer module intent, reasoning patterns, and domain roles from code structure.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "semantic_analysis.json"
+      ],
+      "dependencies": [
+        "stage_5a_ast_symbol_extractor"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_6b_docstring_indexer": {
+      "stage": 6,
+      "tool": "docstring_indexer.py",
+      "path": "MODULES/analysis/semantic_analysis/docstring_indexer.py",
+      "description": "Extracts and indexes all docstrings from modules, classes, and functions, building a searchable documentation corpus.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "docstring_index.json"
+      ],
+      "dependencies": [
+        "stage_1_repository_mapping"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_6c_logic_fragment_extractor": {
+      "stage": 6,
+      "tool": "logic_fragment_extractor.py",
+      "path": "MODULES/analysis/semantic_analysis/logic_fragment_extractor.py",
+      "description": "Identifies reusable reasoning logic fragments in modules using Python AST. Classifies fragments as reasoning_pipeline, symbolic_manipulation, mathematical_algorithm, decision_tree, or utility_logic. Supports recovery of algorithmic and reasoning kernels from legacy modules.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "logic_fragments.json",
+        "logic_fragment_index.json",
+        "fragment_origin_map.json"
+      ],
+      "dependencies": [
+        "stage_1_repository_mapping"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_7_semantic_packet_classifier": {
+      "stage": 7,
+      "tool": "semantic_packet_classifier.py",
+      "path": "MODULES/analysis/packet_analysis/semantic_packet_classifier.py",
+      "description": "Refines packet classification by combining signal-based packet discovery outputs with semantic analysis results to produce enriched packet semantic labels.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "semantic_packet_classifications.json"
+      ],
+      "dependencies": [
+        "stage_4b_packet_discovery",
+        "stage_6a_ast_semantic_analyzer"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_8a_runtime_callgraph_builder": {
+      "stage": 8,
+      "tool": "runtime_callgraph_builder.py",
+      "path": "MODULES/analysis/runtime_analysis/runtime_callgraph_builder.py",
+      "description": "Constructs a static approximation of the runtime call graph from AST-level function call analysis, identifying call chains and entry point reachability.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "runtime_callgraph.json"
+      ],
+      "dependencies": [
+        "stage_5b_ast_dependency_analyzer"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_8b_execution_surface_detector": {
+      "stage": 8,
+      "tool": "execution_surface_detector.py",
+      "path": "MODULES/analysis/runtime_analysis/execution_surface_detector.py",
+      "description": "Detects the execution surface of the repository — all functions, methods, and endpoints that are reachable from runtime entry points.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "execution_surface.json"
+      ],
+      "dependencies": [
+        "stage_8a_runtime_callgraph_builder"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_8c_dynamic_import_detector": {
+      "stage": 8,
+      "tool": "dynamic_import_detector.py",
+      "path": "MODULES/analysis/runtime_analysis/dynamic_import_detector.py",
+      "description": "Detects dynamic import patterns (importlib, __import__, lazy loaders) that cannot be resolved by static AST analysis, flagging them for manual review.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "dynamic_imports.json"
+      ],
+      "dependencies": [
+        "stage_1_repository_mapping"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_9a_architecture_layer_detector": {
+      "stage": 9,
+      "tool": "architecture_layer_detector.py",
+      "path": "MODULES/analysis/structure_analysis/architecture_layer_detector.py",
+      "description": "Infers architectural layer assignments for each module using naming signals, directory structure, and import patterns.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "architecture_layer_assignments.json"
+      ],
+      "dependencies": [
+        "stage_4a_cluster_analysis"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_9b_module_coupling_analyzer": {
+      "stage": 9,
+      "tool": "module_coupling_analyzer.py",
+      "path": "MODULES/analysis/structure_analysis/module_coupling_analyzer.py",
+      "description": "Measures afferent and efferent coupling for each module (Ce/Ca metrics), computing instability and abstractness scores.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "module_coupling.json"
+      ],
+      "dependencies": [
+        "stage_3_import_graph_builder"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_9c_cohesion_analyzer": {
+      "stage": 9,
+      "tool": "cohesion_analyzer.py",
+      "path": "MODULES/analysis/structure_analysis/cohesion_analyzer.py",
+      "description": "Measures per-module cohesion by analyzing how tightly related the functions and classes within each module are, based on shared state and call patterns.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "cohesion_scores.json"
+      ],
+      "dependencies": [
+        "stage_5a_ast_symbol_extractor"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_9d_code_complexity_analyzer": {
+      "stage": 9,
+      "tool": "code_complexity_analyzer.py",
+      "path": "MODULES/analysis/structure_analysis/code_complexity_analyzer.py",
+      "description": "Computes cyclomatic complexity, cognitive complexity, and lines-of-code metrics for every function in the target repository.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "code_complexity.json"
+      ],
+      "dependencies": [
+        "stage_1_repository_mapping"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_10_architecture_mapper": {
+      "stage": 10,
+      "tool": "architecture_mapper.py",
+      "path": "MODULES/analysis/structure_analysis/architecture_mapper.py",
+      "description": "Synthesises outputs from prior analysis tools to construct a high-level architecture model of the target repository. Derives subsystem groupings, infers architectural layers, maps subsystem dependency flow, and detects cross-layer import violations.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "architecture_graph.json",
+        "subsystem_registry.json",
+        "architecture_layers.json",
+        "architecture_dependency_flow.json",
+        "architecture_violations.json"
+      ],
+      "dependencies": [
+        "stage_1_repository_mapping",
+        "stage_3_import_graph_builder",
+        "stage_4a_cluster_analysis",
+        "stage_4b_packet_discovery",
+        "stage_5a_ast_symbol_extractor",
+        "stage_6a_ast_semantic_analyzer"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_11a_dead_module_detector": {
+      "stage": 11,
+      "tool": "dead_module_detector.py",
+      "path": "MODULES/analysis/risk_detection/dead_module_detector.py",
+      "description": "Identifies modules with no inbound imports from any other module in the repository (dead code candidates), excluding known entry points.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "dead_modules.json"
+      ],
+      "dependencies": [
+        "stage_3_import_graph_builder",
+        "stage_2c_entrypoint_detector"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_11b_unused_symbol_detector": {
+      "stage": 11,
+      "tool": "unused_symbol_detector.py",
+      "path": "MODULES/analysis/risk_detection/unused_symbol_detector.py",
+      "description": "Detects symbols (functions, classes, constants) that are defined but never referenced elsewhere in the codebase.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "unused_symbols.json"
+      ],
+      "dependencies": [
+        "stage_5a_ast_symbol_extractor",
+        "stage_5b_ast_dependency_analyzer"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_11c_interface_violation_detector": {
+      "stage": 11,
+      "tool": "interface_violation_detector.py",
+      "path": "MODULES/analysis/risk_detection/interface_violation_detector.py",
+      "description": "Detects modules that bypass declared public interfaces by directly importing private symbols or internal submodules.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "interface_violations.json"
+      ],
+      "dependencies": [
+        "stage_3_import_graph_builder",
+        "stage_5a_ast_symbol_extractor"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_12a_configuration_file_scanner": {
+      "stage": 12,
+      "tool": "configuration_file_scanner.py",
+      "path": "MODULES/analysis/integration_analysis/configuration_file_scanner.py",
+      "description": "Scans for configuration files (YAML, TOML, JSON, INI, .env) in the target repository and extracts key configuration patterns and service endpoint references.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "configuration_inventory.json"
+      ],
+      "dependencies": [],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_12b_integration_compatibility_analyzer": {
+      "stage": 12,
+      "tool": "integration_compatibility_analyzer.py",
+      "path": "MODULES/analysis/integration_analysis/integration_compatibility_analyzer.py",
+      "description": "Evaluates KEEP_VERIFY modules for integration compatibility with SCP, ARP, MTP, and runtime utility protocols based on semantic signals and interface patterns.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "integration_compatibility.json"
+      ],
+      "dependencies": [
+        "stage_6a_ast_semantic_analyzer",
+        "stage_12a_configuration_file_scanner"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_13_module_triage_classifier": {
+      "stage": 13,
+      "tool": "module_triage_classifier.py",
+      "path": "MODULES/analysis/classification/module_triage_classifier.py",
+      "description": "Classifies every module into DELETE, KEEP_VERIFY, or EXTRACT_LOGIC based on triage signals from prior analysis stages including dead module detection, coupling analysis, semantic classification, and complexity scoring.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "module_triage.json",
+        "module_triage_report.md"
+      ],
+      "dependencies": [
+        "stage_11a_dead_module_detector",
+        "stage_9b_module_coupling_analyzer",
+        "stage_6a_ast_semantic_analyzer",
+        "stage_9d_code_complexity_analyzer"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_14a_security_surface_scanner": {
+      "stage": 14,
+      "tool": "security_surface_scanner.py",
+      "path": "MODULES/analysis/security/security_surface_scanner.py",
+      "description": "Scans the target repository for security-relevant patterns including hardcoded secrets patterns, eval/exec usage, unsafe deserialization, and SSRF-relevant URL construction.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "security_surface.json"
+      ],
+      "dependencies": [
+        "stage_1_repository_mapping"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_14b_dependency_license_scanner": {
+      "stage": 14,
+      "tool": "dependency_license_scanner.py",
+      "path": "MODULES/analysis/security/dependency_license_scanner.py",
+      "description": "Scans requirements files and import statements to identify third-party dependencies and flag any with known restrictive or incompatible licenses.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "dependency_licenses.json"
+      ],
+      "dependencies": [
+        "stage_1_repository_mapping"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_15_test_coverage_mapper": {
+      "stage": 15,
+      "tool": "test_coverage_mapper.py",
+      "path": "MODULES/analysis/testing/test_coverage_mapper.py",
+      "description": "Maps test files to production modules by naming convention and import analysis, producing a coverage gap report showing which modules lack corresponding tests.",
+      "execution_entry": "run",
+      "output_artifacts": [
+        "test_coverage_map.json"
+      ],
+      "dependencies": [
+        "stage_1_repository_mapping",
+        "stage_5a_ast_symbol_extractor"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_16a_fragment_family_builder": {
+      "stage": 16,
+      "tool": "fragment_family_builder.py",
+      "path": "MODULES/analysis/semantic_analysis/fragment_family_builder.py",
+      "description": "Splits extracted logic fragments into three structural families (infrastructure, reasoning, math_symbolic) based on semantic category. Consumes logic_fragments.json and produces one JSON file per family.",
+      "execution_entry": "run",
+      "stage_category": "semantic_analysis",
+      "output_artifacts": [
+        "fragment_family_infrastructure.json",
+        "fragment_family_reasoning.json",
+        "fragment_family_math_symbolic.json"
+      ],
+      "dependencies": [
+        "stage_6c_logic_fragment_extractor"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_16b_fragment_cluster_analyzer": {
+      "stage": 16,
+      "tool": "fragment_cluster_analyzer.py",
+      "path": "MODULES/analysis/semantic_analysis/fragment_cluster_analyzer.py",
+      "description": "Groups fragments within each family into algorithmic clusters using multi-signal greedy agglomeration (name overlap, module cohesion, docstring similarity). Produces one cluster JSON per family.",
+      "execution_entry": "run",
+      "stage_category": "semantic_analysis",
+      "output_artifacts": [
+        "family_infrastructure_clusters.json",
+        "family_reasoning_clusters.json",
+        "family_math_clusters.json"
+      ],
+      "dependencies": [
+        "stage_16a_fragment_family_builder"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_16c_fragment_runtime_mapper": {
+      "stage": 16,
+      "tool": "fragment_runtime_mapper.py",
+      "path": "MODULES/analysis/semantic_analysis/fragment_runtime_mapper.py",
+      "description": "Maps each fragment cluster to a Logos runtime domain (SOP, SCP, ARP, MTP) using lexicon-based signal scoring over function names, source modules, and cluster themes. Produces fragment_runtime_mapping.json.",
+      "execution_entry": "run",
+      "stage_category": "semantic_analysis",
+      "output_artifacts": [
+        "fragment_runtime_mapping.json"
+      ],
+      "dependencies": [
+        "stage_16b_fragment_cluster_analyzer"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_17a_module_reconstruction_planner": {
+      "stage": 17,
+      "tool": "module_reconstruction_planner.py",
+      "path": "MODULES/analysis/semantic_analysis/module_reconstruction_planner.py",
+      "description": "Creates reconstruction blueprints for clean Logos modules by joining cluster data with runtime domain mappings. Each plan specifies module_name, cluster_source, fragment_count, target_runtime_domain, dependency_requirements, and integration_notes.",
+      "execution_entry": "run",
+      "stage_category": "semantic_analysis",
+      "output_artifacts": [
+        "fragment_module_reconstruction_plan.json"
+      ],
+      "dependencies": [
+        "stage_16b_fragment_cluster_analyzer",
+        "stage_16c_fragment_runtime_mapper"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    },
+    "stage_17b_module_synthesizer": {
+      "stage": 17,
+      "tool": "module_synthesizer.py",
+      "path": "MODULES/analysis/semantic_analysis/module_synthesizer.py",
+      "description": "Generates prototype Python module files from reconstruction plans. Each file contains origin docstring, fragment list, structured function stubs with TODO markers, and dependency hints. Writes to synthesized_modules/ subdirectory. No runtime integration is emitted automatically.",
+      "execution_entry": "run",
+      "stage_category": "semantic_analysis",
+      "output_artifacts": [
+        "synthesized_modules/",
+        "synthesized_module_manifest.json"
+      ],
+      "dependencies": [
+        "stage_17a_module_reconstruction_planner",
+        "stage_6c_logic_fragment_extractor"
+      ],
+      "mutation_capability": false,
+      "safety_classification": "READ_ONLY"
+    }
+  }
+}

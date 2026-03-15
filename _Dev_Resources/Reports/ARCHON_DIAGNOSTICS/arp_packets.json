@@ -1,0 +1,446 @@
+[
+  {
+    "packet_id": "PKT_0004",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core"
+    ],
+    "file_paths": [
+      "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0018",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.simulated_consciousness_runtime"
+    ],
+    "file_paths": [
+      "Pre-Processing/EXTRACT_LOGIC/simulated_consciousness_runtime.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0021",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.Logos_Memory_Nexus"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/Logos_Memory_Nexus.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0022",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.base_nexus"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/base_nexus.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0023",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.agent_nexus"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/agent_nexus.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.agent.base_nexus"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0024",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.evaluation_packet"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/evaluation_packet.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0026",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.id_handler"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/id_handler.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.semantic.hashing"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0027",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.knowledge_catalog"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/knowledge_catalog.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0028",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.legacy_sop_nexus"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/legacy_sop_nexus.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.agent.base_nexus"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0029",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.plan_packet"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/plan_packet.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0031",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.sop_nexus"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/sop_nexus.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.agent.base_nexus",
+      "Pre-Processing.utility.development_environment"
+    ],
+    "external_dep_count": 2
+  },
+  {
+    "packet_id": "PKT_0032",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_agent_planner"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_agent_planner.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0033",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_end_to_end_pipeline"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_end_to_end_pipeline.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0034",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_hardening"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_hardening.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.agent.knowledge_catalog",
+      "Pre-Processing.utility.development_environment"
+    ],
+    "external_dep_count": 2
+  },
+  {
+    "packet_id": "PKT_0036",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_integration_identity"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_integration_identity.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.semantic.types"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0037",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_llm_bypass_smoke"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_llm_bypass_smoke.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0038",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_lock_unlock"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_lock_unlock.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.semantic.types"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0039",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_logos_agi_bootstrap_modes"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_logos_agi_bootstrap_modes.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0040",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_logos_agi_replay_proposals"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_logos_agi_replay_proposals.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0041",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_logos_runtime_phase2_smoke"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_logos_runtime_phase2_smoke.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0042",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_nexus_capability_governance"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_nexus_capability_governance.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.agent.base_nexus"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0044",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.agent_identity"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/agent_identity.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.semantic.commitment_ledger"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0045",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_pai"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_pai.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.KEEP_VERIFY.agent_identity"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0046",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_plan_revision_on_contradiction"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_plan_revision_on_contradiction.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0047",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_scp_recovery_mode_gate"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_scp_recovery_mode_gate.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0048",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_self_improvement_cycle"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_self_improvement_cycle.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0049",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_stub_beliefs_never_verified"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_stub_beliefs_never_verified.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0050",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.agent.test_verify_pai"
+    ],
+    "file_paths": [
+      "Pre-Processing/agent/test_verify_pai.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.KEEP_VERIFY.agent_identity"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0082",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.utils.iel_integration"
+    ],
+    "file_paths": [
+      "Pre-Processing/utils/iel_integration.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0126",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "agent",
+    "modules": [
+      "Pre-Processing.utility.sop_nexus_orchestrator"
+    ],
+    "file_paths": [
+      "Pre-Processing/utility/sop_nexus_orchestrator.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  }
+]

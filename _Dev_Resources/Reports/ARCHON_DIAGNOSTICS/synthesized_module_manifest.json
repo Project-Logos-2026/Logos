@@ -1,0 +1,1351 @@
+{
+  "generated_at": "2026-03-15T16:05:00.981650+00:00",
+  "total_modules": 168,
+  "synthesized_dir": "_Dev_Resources/Reports/ARCHON_DIAGNOSTICS/synthesized_modules",
+  "modules": [
+    {
+      "module_name": "scp_analysis",
+      "file": "synthesized_modules/scp_analysis.py",
+      "cluster_source": "INFRASTRUCTURE-C0000",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 4,
+      "confidence_score": 0.6448
+    },
+    {
+      "module_name": "arp_dataframe",
+      "file": "synthesized_modules/arp_dataframe.py",
+      "cluster_source": "INFRASTRUCTURE-C0001",
+      "target_runtime_domain": "ARP",
+      "fragment_count": 2,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_are",
+      "file": "synthesized_modules/scp_are.py",
+      "cluster_source": "INFRASTRUCTURE-C0002",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_patterns",
+      "file": "synthesized_modules/scp_patterns.py",
+      "cluster_source": "INFRASTRUCTURE-C0003",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 0.696
+    },
+    {
+      "module_name": "scp_fmt",
+      "file": "synthesized_modules/scp_fmt.py",
+      "cluster_source": "INFRASTRUCTURE-C0004",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 2,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "scp_init",
+      "file": "synthesized_modules/scp_init.py",
+      "cluster_source": "INFRASTRUCTURE-C0005",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 825,
+      "confidence_score": 0.64
+    },
+    {
+      "module_name": "scp_set",
+      "file": "synthesized_modules/scp_set.py",
+      "cluster_source": "INFRASTRUCTURE-C0006",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 0.952
+    },
+    {
+      "module_name": "scp_rabin",
+      "file": "synthesized_modules/scp_rabin.py",
+      "cluster_source": "INFRASTRUCTURE-C0007",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_get",
+      "file": "synthesized_modules/scp_get.py",
+      "cluster_source": "INFRASTRUCTURE-C0008",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 4,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_coherence",
+      "file": "synthesized_modules/scp_coherence.py",
+      "cluster_source": "INFRASTRUCTURE-C0009",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_importable",
+      "file": "synthesized_modules/scp_importable.py",
+      "cluster_source": "INFRASTRUCTURE-C0010",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 0.7616
+    },
+    {
+      "module_name": "scp_model",
+      "file": "synthesized_modules/scp_model.py",
+      "cluster_source": "INFRASTRUCTURE-C0011",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_knowledge",
+      "file": "synthesized_modules/scp_knowledge.py",
+      "cluster_source": "INFRASTRUCTURE-C0012",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 3,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_iterate",
+      "file": "synthesized_modules/scp_iterate.py",
+      "cluster_source": "INFRASTRUCTURE-C0013",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_category",
+      "file": "synthesized_modules/scp_category.py",
+      "cluster_source": "INFRASTRUCTURE-C0014",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_relation",
+      "file": "synthesized_modules/scp_relation.py",
+      "cluster_source": "INFRASTRUCTURE-C0015",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 2,
+      "confidence_score": 0.968
+    },
+    {
+      "module_name": "scp_hint",
+      "file": "synthesized_modules/scp_hint.py",
+      "cluster_source": "INFRASTRUCTURE-C0016",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 6,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_catalog",
+      "file": "synthesized_modules/scp_catalog.py",
+      "cluster_source": "INFRASTRUCTURE-C0017",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 0.952
+    },
+    {
+      "module_name": "scp_write",
+      "file": "synthesized_modules/scp_write.py",
+      "cluster_source": "INFRASTRUCTURE-C0018",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 3,
+      "confidence_score": 0.93
+    },
+    {
+      "module_name": "mtp_describe",
+      "file": "synthesized_modules/mtp_describe.py",
+      "cluster_source": "INFRASTRUCTURE-C0019",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 7,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_packet",
+      "file": "synthesized_modules/sop_packet.py",
+      "cluster_source": "INFRASTRUCTURE-C0020",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_artifact",
+      "file": "synthesized_modules/sop_artifact.py",
+      "cluster_source": "INFRASTRUCTURE-C0021",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 5,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "mtp_write",
+      "file": "synthesized_modules/mtp_write.py",
+      "cluster_source": "INFRASTRUCTURE-C0022",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 3,
+      "confidence_score": 0.455
+    },
+    {
+      "module_name": "sop_artifacts",
+      "file": "synthesized_modules/sop_artifacts.py",
+      "cluster_source": "INFRASTRUCTURE-C0023",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_filter",
+      "file": "synthesized_modules/sop_filter.py",
+      "cluster_source": "INFRASTRUCTURE-C0024",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_emergence",
+      "file": "synthesized_modules/sop_emergence.py",
+      "cluster_source": "INFRASTRUCTURE-C0025",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_identity",
+      "file": "synthesized_modules/sop_identity.py",
+      "cluster_source": "INFRASTRUCTURE-C0026",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 2,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_log",
+      "file": "synthesized_modules/sop_log.py",
+      "cluster_source": "INFRASTRUCTURE-C0027",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_bridge",
+      "file": "synthesized_modules/sop_bridge.py",
+      "cluster_source": "INFRASTRUCTURE-C0028",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "arp_cycles",
+      "file": "synthesized_modules/arp_cycles.py",
+      "cluster_source": "INFRASTRUCTURE-C0029",
+      "target_runtime_domain": "ARP",
+      "fragment_count": 2,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "arp_cascade",
+      "file": "synthesized_modules/arp_cascade.py",
+      "cluster_source": "INFRASTRUCTURE-C0030",
+      "target_runtime_domain": "ARP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_synchronize",
+      "file": "synthesized_modules/scp_synchronize.py",
+      "cluster_source": "INFRASTRUCTURE-C0031",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "arp_regression",
+      "file": "synthesized_modules/arp_regression.py",
+      "cluster_source": "INFRASTRUCTURE-C0032",
+      "target_runtime_domain": "ARP",
+      "fragment_count": 7,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_dict",
+      "file": "synthesized_modules/scp_dict.py",
+      "cluster_source": "INFRASTRUCTURE-C0033",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "sop_hex",
+      "file": "synthesized_modules/sop_hex.py",
+      "cluster_source": "INFRASTRUCTURE-C0034",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "mtp_sha256",
+      "file": "synthesized_modules/mtp_sha256.py",
+      "cluster_source": "INFRASTRUCTURE-C0035",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 2,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "mtp_commitment",
+      "file": "synthesized_modules/mtp_commitment.py",
+      "cluster_source": "INFRASTRUCTURE-C0036",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 5,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "mtp_trim",
+      "file": "synthesized_modules/mtp_trim.py",
+      "cluster_source": "INFRASTRUCTURE-C0037",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 2,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "mtp_outcome",
+      "file": "synthesized_modules/mtp_outcome.py",
+      "cluster_source": "INFRASTRUCTURE-C0038",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_dispatch",
+      "file": "synthesized_modules/sop_dispatch.py",
+      "cluster_source": "INFRASTRUCTURE-C0039",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 2,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "mtp_rotate",
+      "file": "synthesized_modules/mtp_rotate.py",
+      "cluster_source": "INFRASTRUCTURE-C0040",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "mtp_job",
+      "file": "synthesized_modules/mtp_job.py",
+      "cluster_source": "INFRASTRUCTURE-C0041",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "mtp_constraints",
+      "file": "synthesized_modules/mtp_constraints.py",
+      "cluster_source": "INFRASTRUCTURE-C0042",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "mtp_key",
+      "file": "synthesized_modules/mtp_key.py",
+      "cluster_source": "INFRASTRUCTURE-C0043",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "mtp_ref",
+      "file": "synthesized_modules/mtp_ref.py",
+      "cluster_source": "INFRASTRUCTURE-C0044",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "arp_evidence",
+      "file": "synthesized_modules/arp_evidence.py",
+      "cluster_source": "INFRASTRUCTURE-C0045",
+      "target_runtime_domain": "ARP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "mtp_iso",
+      "file": "synthesized_modules/mtp_iso.py",
+      "cluster_source": "INFRASTRUCTURE-C0046",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "mtp_make",
+      "file": "synthesized_modules/mtp_make.py",
+      "cluster_source": "INFRASTRUCTURE-C0047",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "mtp_test",
+      "file": "synthesized_modules/mtp_test.py",
+      "cluster_source": "INFRASTRUCTURE-C0048",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 3,
+      "confidence_score": 0.678
+    },
+    {
+      "module_name": "sop_test",
+      "file": "synthesized_modules/sop_test.py",
+      "cluster_source": "INFRASTRUCTURE-C0049",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 2,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_nodes",
+      "file": "synthesized_modules/sop_nodes.py",
+      "cluster_source": "INFRASTRUCTURE-C0050",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_generate",
+      "file": "synthesized_modules/sop_generate.py",
+      "cluster_source": "INFRASTRUCTURE-C0051",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_compare",
+      "file": "synthesized_modules/sop_compare.py",
+      "cluster_source": "INFRASTRUCTURE-C0052",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 3,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_sanitize",
+      "file": "synthesized_modules/sop_sanitize.py",
+      "cluster_source": "INFRASTRUCTURE-C0053",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 3,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "arp_sort",
+      "file": "synthesized_modules/arp_sort.py",
+      "cluster_source": "INFRASTRUCTURE-C0054",
+      "target_runtime_domain": "ARP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "arp_evidence_2",
+      "file": "synthesized_modules/arp_evidence_2.py",
+      "cluster_source": "INFRASTRUCTURE-C0055",
+      "target_runtime_domain": "ARP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_wrapper",
+      "file": "synthesized_modules/sop_wrapper.py",
+      "cluster_source": "INFRASTRUCTURE-C0056",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_iterative",
+      "file": "synthesized_modules/sop_iterative.py",
+      "cluster_source": "INFRASTRUCTURE-C0057",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_compliance",
+      "file": "synthesized_modules/sop_compliance.py",
+      "cluster_source": "INFRASTRUCTURE-C0058",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_emergency",
+      "file": "synthesized_modules/sop_emergency.py",
+      "cluster_source": "INFRASTRUCTURE-C0059",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 2,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_violation",
+      "file": "synthesized_modules/sop_violation.py",
+      "cluster_source": "INFRASTRUCTURE-C0060",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "scp_uip",
+      "file": "synthesized_modules/scp_uip.py",
+      "cluster_source": "INFRASTRUCTURE-C0061",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_input",
+      "file": "synthesized_modules/sop_input.py",
+      "cluster_source": "INFRASTRUCTURE-C0062",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_extract",
+      "file": "synthesized_modules/sop_extract.py",
+      "cluster_source": "INFRASTRUCTURE-C0063",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_construct",
+      "file": "synthesized_modules/sop_construct.py",
+      "cluster_source": "INFRASTRUCTURE-C0064",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_result",
+      "file": "synthesized_modules/sop_result.py",
+      "cluster_source": "INFRASTRUCTURE-C0065",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_prompt",
+      "file": "synthesized_modules/sop_prompt.py",
+      "cluster_source": "INFRASTRUCTURE-C0066",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 4,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_rules",
+      "file": "synthesized_modules/sop_rules.py",
+      "cluster_source": "INFRASTRUCTURE-C0067",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_resources",
+      "file": "synthesized_modules/sop_resources.py",
+      "cluster_source": "INFRASTRUCTURE-C0068",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_error",
+      "file": "synthesized_modules/sop_error.py",
+      "cluster_source": "INFRASTRUCTURE-C0069",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_correlation",
+      "file": "synthesized_modules/sop_correlation.py",
+      "cluster_source": "INFRASTRUCTURE-C0070",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_request",
+      "file": "synthesized_modules/sop_request.py",
+      "cluster_source": "INFRASTRUCTURE-C0071",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 2,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_default",
+      "file": "synthesized_modules/sop_default.py",
+      "cluster_source": "INFRASTRUCTURE-C0072",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 5,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "sop_initialize",
+      "file": "synthesized_modules/sop_initialize.py",
+      "cluster_source": "INFRASTRUCTURE-C0073",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 2,
+      "confidence_score": 0.714
+    },
+    {
+      "module_name": "sop_create",
+      "file": "synthesized_modules/sop_create.py",
+      "cluster_source": "INFRASTRUCTURE-C0074",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_run",
+      "file": "synthesized_modules/sop_run.py",
+      "cluster_source": "REASONING-C0000",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 2,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "arp_resolve",
+      "file": "synthesized_modules/arp_resolve.py",
+      "cluster_source": "REASONING-C0001",
+      "target_runtime_domain": "ARP",
+      "fragment_count": 2,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "scp_create",
+      "file": "synthesized_modules/scp_create.py",
+      "cluster_source": "REASONING-C0002",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 0.7616
+    },
+    {
+      "module_name": "mtp_transform",
+      "file": "synthesized_modules/mtp_transform.py",
+      "cluster_source": "REASONING-C0003",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "arp_run",
+      "file": "synthesized_modules/arp_run.py",
+      "cluster_source": "REASONING-C0004",
+      "target_runtime_domain": "ARP",
+      "fragment_count": 2,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_init_2",
+      "file": "synthesized_modules/scp_init_2.py",
+      "cluster_source": "REASONING-C0005",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 480,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "scp_summarize",
+      "file": "synthesized_modules/scp_summarize.py",
+      "cluster_source": "REASONING-C0006",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "scp_analyze",
+      "file": "synthesized_modules/scp_analyze.py",
+      "cluster_source": "REASONING-C0007",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 0.952
+    },
+    {
+      "module_name": "scp_analysis_2",
+      "file": "synthesized_modules/scp_analysis_2.py",
+      "cluster_source": "REASONING-C0008",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_run_2",
+      "file": "synthesized_modules/sop_run_2.py",
+      "cluster_source": "REASONING-C0009",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "scp_create_2",
+      "file": "synthesized_modules/scp_create_2.py",
+      "cluster_source": "REASONING-C0010",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_from",
+      "file": "synthesized_modules/scp_from.py",
+      "cluster_source": "REASONING-C0011",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_write_2",
+      "file": "synthesized_modules/scp_write_2.py",
+      "cluster_source": "REASONING-C0012",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 2,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "arp_tag",
+      "file": "synthesized_modules/arp_tag.py",
+      "cluster_source": "REASONING-C0013",
+      "target_runtime_domain": "ARP",
+      "fragment_count": 2,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "mtp_logical",
+      "file": "synthesized_modules/mtp_logical.py",
+      "cluster_source": "REASONING-C0014",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 4,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_handle",
+      "file": "synthesized_modules/sop_handle.py",
+      "cluster_source": "REASONING-C0015",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 3,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_after",
+      "file": "synthesized_modules/sop_after.py",
+      "cluster_source": "REASONING-C0016",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_consciousness",
+      "file": "synthesized_modules/sop_consciousness.py",
+      "cluster_source": "REASONING-C0017",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 2,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_requires",
+      "file": "synthesized_modules/sop_requires.py",
+      "cluster_source": "REASONING-C0018",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_when",
+      "file": "synthesized_modules/sop_when.py",
+      "cluster_source": "REASONING-C0019",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_iels",
+      "file": "synthesized_modules/sop_iels.py",
+      "cluster_source": "REASONING-C0020",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 5,
+      "confidence_score": 0.282
+    },
+    {
+      "module_name": "mtp_commitments",
+      "file": "synthesized_modules/mtp_commitments.py",
+      "cluster_source": "REASONING-C0021",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "mtp_commitment_2",
+      "file": "synthesized_modules/mtp_commitment_2.py",
+      "cluster_source": "REASONING-C0022",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "mtp_collects",
+      "file": "synthesized_modules/mtp_collects.py",
+      "cluster_source": "REASONING-C0023",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 0.87
+    },
+    {
+      "module_name": "mtp_summarizes",
+      "file": "synthesized_modules/mtp_summarizes.py",
+      "cluster_source": "REASONING-C0024",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 0.87
+    },
+    {
+      "module_name": "arp_passive",
+      "file": "synthesized_modules/arp_passive.py",
+      "cluster_source": "REASONING-C0025",
+      "target_runtime_domain": "ARP",
+      "fragment_count": 1,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "sop_test_2",
+      "file": "synthesized_modules/sop_test_2.py",
+      "cluster_source": "REASONING-C0026",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_sanitize_2",
+      "file": "synthesized_modules/sop_sanitize_2.py",
+      "cluster_source": "REASONING-C0027",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "arp_proved",
+      "file": "synthesized_modules/arp_proved.py",
+      "cluster_source": "REASONING-C0028",
+      "target_runtime_domain": "ARP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_verify",
+      "file": "synthesized_modules/scp_verify.py",
+      "cluster_source": "REASONING-C0029",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_emergency_2",
+      "file": "synthesized_modules/sop_emergency_2.py",
+      "cluster_source": "REASONING-C0030",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 2,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_get",
+      "file": "synthesized_modules/sop_get.py",
+      "cluster_source": "REASONING-C0031",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 2,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_initialized",
+      "file": "synthesized_modules/sop_initialized.py",
+      "cluster_source": "REASONING-C0032",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_handle_2",
+      "file": "synthesized_modules/sop_handle_2.py",
+      "cluster_source": "REASONING-C0033",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_phase",
+      "file": "synthesized_modules/sop_phase.py",
+      "cluster_source": "REASONING-C0034",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 2,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_process",
+      "file": "synthesized_modules/sop_process.py",
+      "cluster_source": "REASONING-C0035",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_step",
+      "file": "synthesized_modules/sop_step.py",
+      "cluster_source": "REASONING-C0036",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 3,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "scp_self",
+      "file": "synthesized_modules/scp_self.py",
+      "cluster_source": "MATH_SYMBOLIC-C0000",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 2,
+      "confidence_score": 0.7056
+    },
+    {
+      "module_name": "arp_priors",
+      "file": "synthesized_modules/arp_priors.py",
+      "cluster_source": "MATH_SYMBOLIC-C0001",
+      "target_runtime_domain": "ARP",
+      "fragment_count": 5,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_calculate",
+      "file": "synthesized_modules/scp_calculate.py",
+      "cluster_source": "MATH_SYMBOLIC-C0002",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 3,
+      "confidence_score": 0.744
+    },
+    {
+      "module_name": "scp_obligation",
+      "file": "synthesized_modules/scp_obligation.py",
+      "cluster_source": "MATH_SYMBOLIC-C0003",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_calculate_2",
+      "file": "synthesized_modules/scp_calculate_2.py",
+      "cluster_source": "MATH_SYMBOLIC-C0004",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 217,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "scp_affect",
+      "file": "synthesized_modules/scp_affect.py",
+      "cluster_source": "MATH_SYMBOLIC-C0005",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 0.696
+    },
+    {
+      "module_name": "scp_step",
+      "file": "synthesized_modules/scp_step.py",
+      "cluster_source": "MATH_SYMBOLIC-C0006",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "scp_likelihood",
+      "file": "synthesized_modules/scp_likelihood.py",
+      "cluster_source": "MATH_SYMBOLIC-C0007",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 2,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "scp_state",
+      "file": "synthesized_modules/scp_state.py",
+      "cluster_source": "MATH_SYMBOLIC-C0008",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_calculate_3",
+      "file": "synthesized_modules/scp_calculate_3.py",
+      "cluster_source": "MATH_SYMBOLIC-C0009",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 2,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_learn",
+      "file": "synthesized_modules/scp_learn.py",
+      "cluster_source": "MATH_SYMBOLIC-C0010",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_compute",
+      "file": "synthesized_modules/scp_compute.py",
+      "cluster_source": "MATH_SYMBOLIC-C0011",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 3,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_history",
+      "file": "synthesized_modules/scp_history.py",
+      "cluster_source": "MATH_SYMBOLIC-C0012",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_usage",
+      "file": "synthesized_modules/scp_usage.py",
+      "cluster_source": "MATH_SYMBOLIC-C0013",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_defaults",
+      "file": "synthesized_modules/scp_defaults.py",
+      "cluster_source": "MATH_SYMBOLIC-C0014",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_capability",
+      "file": "synthesized_modules/scp_capability.py",
+      "cluster_source": "MATH_SYMBOLIC-C0015",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_root",
+      "file": "synthesized_modules/scp_root.py",
+      "cluster_source": "MATH_SYMBOLIC-C0016",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 2,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_catalog_2",
+      "file": "synthesized_modules/scp_catalog_2.py",
+      "cluster_source": "MATH_SYMBOLIC-C0017",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_rules",
+      "file": "synthesized_modules/scp_rules.py",
+      "cluster_source": "MATH_SYMBOLIC-C0018",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "mtp_structure",
+      "file": "synthesized_modules/mtp_structure.py",
+      "cluster_source": "MATH_SYMBOLIC-C0019",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 2,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "scp_description",
+      "file": "synthesized_modules/scp_description.py",
+      "cluster_source": "MATH_SYMBOLIC-C0020",
+      "target_runtime_domain": "SCP",
+      "fragment_count": 1,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "mtp_encoding",
+      "file": "synthesized_modules/mtp_encoding.py",
+      "cluster_source": "MATH_SYMBOLIC-C0021",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 7,
+      "confidence_score": 0.253
+    },
+    {
+      "module_name": "sop_processors",
+      "file": "synthesized_modules/sop_processors.py",
+      "cluster_source": "MATH_SYMBOLIC-C0022",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_protocols",
+      "file": "synthesized_modules/sop_protocols.py",
+      "cluster_source": "MATH_SYMBOLIC-C0023",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_calculate",
+      "file": "synthesized_modules/sop_calculate.py",
+      "cluster_source": "MATH_SYMBOLIC-C0024",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 2,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_test_3",
+      "file": "synthesized_modules/sop_test_3.py",
+      "cluster_source": "MATH_SYMBOLIC-C0025",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 2,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_protocol",
+      "file": "synthesized_modules/sop_protocol.py",
+      "cluster_source": "MATH_SYMBOLIC-C0026",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 2,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_system",
+      "file": "synthesized_modules/sop_system.py",
+      "cluster_source": "MATH_SYMBOLIC-C0027",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 6,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_latest",
+      "file": "synthesized_modules/sop_latest.py",
+      "cluster_source": "MATH_SYMBOLIC-C0028",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_log_2",
+      "file": "synthesized_modules/sop_log_2.py",
+      "cluster_source": "MATH_SYMBOLIC-C0029",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_downgraded",
+      "file": "synthesized_modules/sop_downgraded.py",
+      "cluster_source": "MATH_SYMBOLIC-C0030",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_replay",
+      "file": "synthesized_modules/sop_replay.py",
+      "cluster_source": "MATH_SYMBOLIC-C0031",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_test_4",
+      "file": "synthesized_modules/sop_test_4.py",
+      "cluster_source": "MATH_SYMBOLIC-C0032",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_run_3",
+      "file": "synthesized_modules/sop_run_3.py",
+      "cluster_source": "MATH_SYMBOLIC-C0033",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "arp_optimize",
+      "file": "synthesized_modules/arp_optimize.py",
+      "cluster_source": "MATH_SYMBOLIC-C0034",
+      "target_runtime_domain": "ARP",
+      "fragment_count": 8,
+      "confidence_score": 0.978
+    },
+    {
+      "module_name": "arp_calculate",
+      "file": "synthesized_modules/arp_calculate.py",
+      "cluster_source": "MATH_SYMBOLIC-C0035",
+      "target_runtime_domain": "ARP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_dashboard",
+      "file": "synthesized_modules/sop_dashboard.py",
+      "cluster_source": "MATH_SYMBOLIC-C0036",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "mtp_sentinel",
+      "file": "synthesized_modules/mtp_sentinel.py",
+      "cluster_source": "MATH_SYMBOLIC-C0037",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "mtp_test_2",
+      "file": "synthesized_modules/mtp_test_2.py",
+      "cluster_source": "MATH_SYMBOLIC-C0038",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 0.87
+    },
+    {
+      "module_name": "sop_setup",
+      "file": "synthesized_modules/sop_setup.py",
+      "cluster_source": "MATH_SYMBOLIC-C0039",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "mtp_last",
+      "file": "synthesized_modules/mtp_last.py",
+      "cluster_source": "MATH_SYMBOLIC-C0040",
+      "target_runtime_domain": "MTP",
+      "fragment_count": 1,
+      "confidence_score": 0.8
+    },
+    {
+      "module_name": "sop_test_5",
+      "file": "synthesized_modules/sop_test_5.py",
+      "cluster_source": "MATH_SYMBOLIC-C0041",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_resolve",
+      "file": "synthesized_modules/sop_resolve.py",
+      "cluster_source": "MATH_SYMBOLIC-C0042",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 3,
+      "confidence_score": 0.702
+    },
+    {
+      "module_name": "sop_simulate",
+      "file": "synthesized_modules/sop_simulate.py",
+      "cluster_source": "MATH_SYMBOLIC-C0043",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 2,
+      "confidence_score": 0.588
+    },
+    {
+      "module_name": "sop_sha256",
+      "file": "synthesized_modules/sop_sha256.py",
+      "cluster_source": "MATH_SYMBOLIC-C0044",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_collect",
+      "file": "synthesized_modules/sop_collect.py",
+      "cluster_source": "MATH_SYMBOLIC-C0045",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_interfaces",
+      "file": "synthesized_modules/sop_interfaces.py",
+      "cluster_source": "MATH_SYMBOLIC-C0046",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_restrict",
+      "file": "synthesized_modules/sop_restrict.py",
+      "cluster_source": "MATH_SYMBOLIC-C0047",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_mission",
+      "file": "synthesized_modules/sop_mission.py",
+      "cluster_source": "MATH_SYMBOLIC-C0048",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_load",
+      "file": "synthesized_modules/sop_load.py",
+      "cluster_source": "MATH_SYMBOLIC-C0049",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_violation_2",
+      "file": "synthesized_modules/sop_violation_2.py",
+      "cluster_source": "MATH_SYMBOLIC-C0050",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_metrics",
+      "file": "synthesized_modules/sop_metrics.py",
+      "cluster_source": "MATH_SYMBOLIC-C0051",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_log_3",
+      "file": "synthesized_modules/sop_log_3.py",
+      "cluster_source": "MATH_SYMBOLIC-C0052",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_full",
+      "file": "synthesized_modules/sop_full.py",
+      "cluster_source": "MATH_SYMBOLIC-C0053",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    },
+    {
+      "module_name": "sop_load_2",
+      "file": "synthesized_modules/sop_load_2.py",
+      "cluster_source": "MATH_SYMBOLIC-C0054",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 1.0
+    },
+    {
+      "module_name": "sop_input_2",
+      "file": "synthesized_modules/sop_input_2.py",
+      "cluster_source": "MATH_SYMBOLIC-C0055",
+      "target_runtime_domain": "SOP",
+      "fragment_count": 1,
+      "confidence_score": 0.1
+    }
+  ]
+}

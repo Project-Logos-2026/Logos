@@ -1,0 +1,2273 @@
+[
+  {
+    "module": "Inspection_Targets.Nexus_AST_Validator",
+    "file": "Inspection_Targets/Nexus_AST_Validator.py",
+    "size": 7527,
+    "imports": [],
+    "staging_subdir": "Inspection_Targets"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+    "file": "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+    "size": 46527,
+    "imports": [
+      "asyncio",
+      "bcolz",
+      "collections",
+      "concurrent.futures",
+      "dataclasses",
+      "datasketch",
+      "datetime",
+      "enum",
+      "faiss",
+      "h5py",
+      "hashlib",
+      "heapq",
+      "json",
+      "leveldb",
+      "lmdb",
+      "msgpack",
+      "numpy",
+      "pathlib",
+      "pickle",
+      "redis",
+      "shelve",
+      "sqlite3",
+      "typing",
+      "zarr",
+      "zlib"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.NLP_Wrapper_Sentence_Transformers",
+    "file": "Pre-Processing/EXTRACT_LOGIC/NLP_Wrapper_Sentence_Transformers.py",
+    "size": 2984,
+    "imports": [
+      "Logos_System.System_Entry_Point.Orchestration_Tools",
+      "Logos_System.System_Stack.Logos_Protocol.External_Enhancements.Constraint_Stubs",
+      "__future__",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.adaptive_engine",
+    "file": "Pre-Processing/EXTRACT_LOGIC/adaptive_engine.py",
+    "size": 7204,
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "logging",
+      "time",
+      "typing",
+      "utils.system_utils"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+    "size": 19224,
+    "imports": [
+      "causallearn.search.ConstraintBased.PC",
+      "logging",
+      "numpy",
+      "pandas",
+      "pymc",
+      "sentence_transformers",
+      "sklearn.cluster",
+      "sklearn.metrics.pairwise",
+      "sympy",
+      "typing",
+      "z3"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+    "file": "Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+    "size": 4429,
+    "imports": [
+      "__future__",
+      "datetime",
+      "json",
+      "pathlib",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser",
+    "file": "Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py",
+    "size": 7403,
+    "imports": [
+      "datetime",
+      "importlib",
+      "json",
+      "pandas",
+      "pathlib",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.bayesian_recursion",
+    "file": "Pre-Processing/EXTRACT_LOGIC/bayesian_recursion.py",
+    "size": 3376,
+    "imports": [
+      "dataclasses",
+      "datetime",
+      "numpy",
+      "pathlib",
+      "pickle",
+      "scipy",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.coherence",
+    "file": "Pre-Processing/EXTRACT_LOGIC/coherence.py",
+    "size": 6561,
+    "imports": [
+      "asyncio",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "logging",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.comprehensive_fractal_analysis",
+    "file": "Pre-Processing/EXTRACT_LOGIC/comprehensive_fractal_analysis.py",
+    "size": 14549,
+    "imports": [
+      "advanced_fractal_analyzer",
+      "json",
+      "matplotlib",
+      "matplotlib.pyplot",
+      "numpy",
+      "pandas",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+    "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+    "size": 32443,
+    "imports": [
+      "BDN_System.core.trinity_hyperstructure",
+      "LOGOS_AGI.Synthetic_Cognition_Protocol.BDN_System.core.trinity_hyperstructure",
+      "Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_mvs",
+      "Synthetic_Cognition_Protocol.BDN_System.core.trinity_hyperstructure",
+      "collections",
+      "data_c_values.data_structures",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "fractal_orbital.symbolic_math",
+      "logging",
+      "math",
+      "modal_inference",
+      "numpy",
+      "pathlib",
+      "predictors.fractal_mapping",
+      "sys",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.gen_worldview_ontoprops",
+    "file": "Pre-Processing/EXTRACT_LOGIC/gen_worldview_ontoprops.py",
+    "size": 7051,
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network",
+    "file": "Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py",
+    "size": 1690,
+    "imports": [
+      "bayes_update_real_time",
+      "json",
+      "numpy",
+      "re",
+      "sklearn.linear_model",
+      "sklearn.preprocessing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.iel_overlay",
+    "file": "Pre-Processing/EXTRACT_LOGIC/iel_overlay.py",
+    "size": 49064,
+    "imports": [
+      "Logos_Protocol.Logos_Core",
+      "dataclasses",
+      "enum",
+      "iel_domains",
+      "logging",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+    "size": 21138,
+    "imports": [
+      "dataclasses",
+      "hashlib",
+      "json",
+      "logging",
+      "math",
+      "numpy",
+      "secrets",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.privative_policies",
+    "file": "Pre-Processing/EXTRACT_LOGIC/privative_policies.py",
+    "size": 9014,
+    "imports": [
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms",
+    "file": "Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py",
+    "size": 36375,
+    "imports": [
+      "logging"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.simulated_consciousness_runtime",
+    "file": "Pre-Processing/EXTRACT_LOGIC/simulated_consciousness_runtime.py",
+    "size": 6551,
+    "imports": [
+      "LOGOS_AGI.consciousness.recursion_engine_consciousness_bridge",
+      "__future__",
+      "datetime",
+      "json",
+      "logging",
+      "pathlib",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+    "file": "Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+    "size": 38918,
+    "imports": [
+      "asyncio",
+      "collections",
+      "concurrent.futures",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "functools",
+      "hashlib",
+      "heapq",
+      "json",
+      "networkx",
+      "numpy",
+      "pathlib",
+      "pickle",
+      "scipy",
+      "typing",
+      "zlib"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.action_system",
+    "file": "Pre-Processing/KEEP_VERIFY/action_system.py",
+    "size": 6158,
+    "imports": [
+      "dataclasses",
+      "enum",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+    "file": "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+    "size": 26072,
+    "imports": [
+      "collections",
+      "dataclasses",
+      "matplotlib",
+      "numpy",
+      "scipy",
+      "scipy.signal",
+      "scipy.spatial",
+      "scipy.stats",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+    "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+    "size": 24839,
+    "imports": [
+      "Logos_Protocol.logos_core.world_model",
+      "Logos_System.System_Stack.Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger",
+      "argparse",
+      "datetime",
+      "hashlib",
+      "json",
+      "pathlib",
+      "subprocess",
+      "typing",
+      "uuid"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.arithmetic_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/arithmetic_engine.py",
+    "size": 15611,
+    "imports": [
+      "decimal",
+      "intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.ontological_validator",
+      "intelligence.trinity.thonoc.symbolic_engine.lambda_engine.lambda_engine",
+      "intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core",
+      "logging",
+      "math",
+      "numpy",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.autonomous_learning",
+    "file": "Pre-Processing/KEEP_VERIFY/autonomous_learning.py",
+    "size": 23697,
+    "imports": [
+      "collections",
+      "dataclasses",
+      "datetime",
+      "json",
+      "logging",
+      "meta_reasoning.iel_evaluator",
+      "meta_reasoning.iel_generator",
+      "meta_reasoning.iel_registry",
+      "pathlib",
+      "threading",
+      "typing",
+      "uuid"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_inferencer",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_inferencer.py",
+    "size": 1802,
+    "imports": [
+      "bayes_update_real_time",
+      "json",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_interface",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_interface.py",
+    "size": 7630,
+    "imports": [
+      "dataclasses",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_nexus",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+    "size": 8424,
+    "imports": [
+      "bayes_update_real_time",
+      "bayesian_inferencer",
+      "bayesian_recursion",
+      "hierarchical_bayes_network",
+      "json",
+      "pprint",
+      "sys",
+      "traceback",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+    "size": 7589,
+    "imports": [
+      "__future__",
+      "datetime",
+      "json",
+      "numpy",
+      "pathlib",
+      "re",
+      "sklearn.linear_model",
+      "sklearn.preprocessing",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.belief_network",
+    "file": "Pre-Processing/KEEP_VERIFY/belief_network.py",
+    "size": 10423,
+    "imports": [
+      "collections",
+      "math",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.coherence_formalism",
+    "file": "Pre-Processing/KEEP_VERIFY/coherence_formalism.py",
+    "size": 28601,
+    "imports": [
+      "collections",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "logging",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.coherence_metrics",
+    "file": "Pre-Processing/KEEP_VERIFY/coherence_metrics.py",
+    "size": 21955,
+    "imports": [
+      "collections",
+      "dataclasses",
+      "datetime",
+      "logging",
+      "math",
+      "statistics",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.export_tool_registry",
+    "file": "Pre-Processing/KEEP_VERIFY/export_tool_registry.py",
+    "size": 5125,
+    "imports": [
+      "JUNK_DRAWER.scripts.runtime.could_be_dev.start_agent",
+      "argparse",
+      "dataclasses",
+      "json",
+      "logos.tool_registry_loader",
+      "pathlib",
+      "sys",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.lambda_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/lambda_engine.py",
+    "size": 19933,
+    "imports": [
+      "lambda_onto_calculus_engine",
+      "logging",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py",
+    "size": 19591,
+    "imports": [
+      "enum",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.lambda_parser",
+    "file": "Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+    "size": 14474,
+    "imports": [
+      "enum",
+      "lambda_logos_core",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.modal_logic",
+    "file": "Pre-Processing/KEEP_VERIFY/modal_logic.py",
+    "size": 8577,
+    "imports": [
+      "dataclasses",
+      "enum",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.modal_reasoner",
+    "file": "Pre-Processing/KEEP_VERIFY/modal_reasoner.py",
+    "size": 7794,
+    "imports": [
+      "modal_logic",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.modal_validator",
+    "file": "Pre-Processing/KEEP_VERIFY/modal_validator.py",
+    "size": 21662,
+    "imports": [
+      "LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports",
+      "dataclasses",
+      "enum",
+      "itertools",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.multi_modal_system",
+    "file": "Pre-Processing/KEEP_VERIFY/multi_modal_system.py",
+    "size": 7296,
+    "imports": [
+      "modal_logic",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.proof_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/proof_engine.py",
+    "size": 22035,
+    "imports": [
+      "dataclasses",
+      "enum",
+      "intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.logos_validator_hub",
+      "intelligence.iel_domains.IEL_ONTO_KIT.onto_logic.validators.ontological_validator",
+      "intelligence.iel_domains.iel_ontoprop_bijectives.onto_logic.bijective_mapping",
+      "intelligence.trinity.thonoc.symbolic_engine.lambda_engine.logos_lambda_core",
+      "logging",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis",
+    "file": "Pre-Processing/KEEP_VERIFY/pxl_fractal_orbital_analysis.py",
+    "size": 32275,
+    "imports": [
+      "dataclasses",
+      "datetime",
+      "enum",
+      "json",
+      "matplotlib.pyplot",
+      "numpy",
+      "os",
+      "sys",
+      "traceback",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis",
+    "file": "Pre-Processing/KEEP_VERIFY/pxl_modal_fractal_boundary_analysis.py",
+    "size": 27070,
+    "imports": [
+      "collections",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "json",
+      "matplotlib.pyplot",
+      "numpy",
+      "os",
+      "sys",
+      "traceback",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+    "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+    "size": 28141,
+    "imports": [
+      "LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports",
+      "dataclasses",
+      "enum",
+      "numpy",
+      "pydantic",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.relation_mapper",
+    "file": "Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+    "size": 27801,
+    "imports": [
+      "LOGOS_AGI.Advanced_Reasoning_Protocol.system_utilities.system_imports",
+      "collections",
+      "dataclasses",
+      "enum",
+      "hashlib",
+      "itertools",
+      "networkx",
+      "networkx.algorithms.community",
+      "numpy",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.semantic_transformers",
+    "file": "Pre-Processing/KEEP_VERIFY/semantic_transformers.py",
+    "size": 31554,
+    "imports": [
+      "Advanced_Reasoning_Protocol.reasoning_engines.bayesian.bayesian_enhanced.bayesian_inference",
+      "dataclasses",
+      "datetime",
+      "hashlib",
+      "logging",
+      "numpy",
+      "re",
+      "sentence_transformers",
+      "torch",
+      "torch.nn.functional",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_introspection",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+    "size": 7392,
+    "imports": [
+      "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas",
+      "__future__",
+      "dataclasses",
+      "datetime",
+      "json",
+      "os",
+      "pathlib",
+      "scripts",
+      "sys",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+    "size": 18454,
+    "imports": [
+      "System_Operations_Protocol.code_generator.development_environment",
+      "__future__",
+      "collections",
+      "datetime",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "size": 19414,
+    "imports": [
+      "System_Operations_Protocol.code_generator.knowledge_catalog",
+      "__future__",
+      "ast",
+      "collections",
+      "datetime",
+      "gzip",
+      "hashlib",
+      "json",
+      "knowledge_catalog",
+      "pathlib",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+    "size": 12460,
+    "imports": [
+      "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas",
+      "argparse",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "scripts.system_stack_tbd.need_to_distribute._bootstrap",
+      "subprocess",
+      "sys",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_repair_proposal",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py",
+    "size": 6118,
+    "imports": [
+      "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas",
+      "__future__",
+      "argparse",
+      "json",
+      "os",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "size": 21871,
+    "imports": [
+      "datetime",
+      "logging",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.Logos_Memory_Nexus",
+    "file": "Pre-Processing/agent/Logos_Memory_Nexus.py",
+    "size": 40496,
+    "imports": [
+      "collections",
+      "dataclasses",
+      "datasketch",
+      "datetime",
+      "enum",
+      "hashlib",
+      "heapq",
+      "json",
+      "networkx",
+      "numpy",
+      "pickle",
+      "scipy",
+      "typing",
+      "zlib"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.agent_nexus",
+    "file": "Pre-Processing/agent/agent_nexus.py",
+    "size": 37678,
+    "imports": [
+      "agent_system.base_nexus",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "logging",
+      "pathlib",
+      "sys",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.base_nexus",
+    "file": "Pre-Processing/agent/base_nexus.py",
+    "size": 27122,
+    "imports": [
+      "abc",
+      "datetime",
+      "enum",
+      "logging",
+      "typing",
+      "uuid"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.evaluation_packet",
+    "file": "Pre-Processing/agent/evaluation_packet.py",
+    "size": 1565,
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.id_handler",
+    "file": "Pre-Processing/agent/id_handler.py",
+    "size": 1717,
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "hashing",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.knowledge_catalog",
+    "file": "Pre-Processing/agent/knowledge_catalog.py",
+    "size": 9049,
+    "imports": [
+      "datetime",
+      "hashlib",
+      "json",
+      "pathlib",
+      "tempfile",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.legacy_sop_nexus",
+    "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+    "size": 46771,
+    "imports": [
+      "agent_system.base_nexus",
+      "asyncio",
+      "datetime",
+      "enum",
+      "json",
+      "logging",
+      "pathlib",
+      "sys",
+      "typing",
+      "uuid"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.plan_packet",
+    "file": "Pre-Processing/agent/plan_packet.py",
+    "size": 1434,
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.sop_nexus",
+    "file": "Pre-Processing/agent/sop_nexus.py",
+    "size": 52521,
+    "imports": [
+      "agent_system.base_nexus",
+      "asyncio",
+      "datetime",
+      "development_environment",
+      "enum",
+      "json",
+      "logging",
+      "os",
+      "pathlib",
+      "self_improvement_integration",
+      "sys",
+      "typing",
+      "uuid"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_agent_planner",
+    "file": "Pre-Processing/agent/test_agent_planner.py",
+    "size": 5252,
+    "imports": [
+      "Protopraxis.agent_planner",
+      "__future__",
+      "gzip",
+      "pathlib",
+      "tempfile",
+      "unittest"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_end_to_end_pipeline",
+    "file": "Pre-Processing/agent/test_end_to_end_pipeline.py",
+    "size": 6868,
+    "imports": [
+      "json",
+      "os",
+      "pathlib",
+      "subprocess"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_hardening",
+    "file": "Pre-Processing/agent/test_hardening.py",
+    "size": 4558,
+    "imports": [
+      "asyncio",
+      "development_environment",
+      "knowledge_catalog",
+      "pathlib",
+      "self_improvement_integration",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_integration_identity",
+    "file": "Pre-Processing/agent/test_integration_identity.py",
+    "size": 3011,
+    "imports": [
+      "importlib.util",
+      "json",
+      "pathlib",
+      "sys",
+      "types"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_llm_bypass_smoke",
+    "file": "Pre-Processing/agent/test_llm_bypass_smoke.py",
+    "size": 4522,
+    "imports": [
+      "json",
+      "os",
+      "pathlib",
+      "subprocess",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_lock_unlock",
+    "file": "Pre-Processing/agent/test_lock_unlock.py",
+    "size": 5095,
+    "imports": [
+      "importlib.util",
+      "json",
+      "pathlib",
+      "sys",
+      "types"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_logos_agi_bootstrap_modes",
+    "file": "Pre-Processing/agent/test_logos_agi_bootstrap_modes.py",
+    "size": 2884,
+    "imports": [
+      "json",
+      "os",
+      "pathlib",
+      "subprocess",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_logos_agi_replay_proposals",
+    "file": "Pre-Processing/agent/test_logos_agi_replay_proposals.py",
+    "size": 3921,
+    "imports": [
+      "json",
+      "os",
+      "pathlib",
+      "subprocess",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_logos_runtime_phase2_smoke",
+    "file": "Pre-Processing/agent/test_logos_runtime_phase2_smoke.py",
+    "size": 4350,
+    "imports": [
+      "Logos_Agent.I2_Agent.I2_Core.smp",
+      "Logos_Agent.logos_runtime.coordinator",
+      "Logos_Agent.sop_runtime",
+      "__future__",
+      "dataclasses",
+      "json",
+      "os",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_nexus_capability_governance",
+    "file": "Pre-Processing/agent/test_nexus_capability_governance.py",
+    "size": 3504,
+    "imports": [
+      "asyncio",
+      "external.Logos_AGI.System_Operations_Protocol.infrastructure.agent_system.base_nexus",
+      "typing",
+      "unittest"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_pai",
+    "file": "Pre-Processing/agent/test_pai.py",
+    "size": 4764,
+    "imports": [
+      "Logos_Protocol.logos_core.governance.agent_identity",
+      "external.Logos_AGI.identity_paths",
+      "json",
+      "pathlib",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_plan_revision_on_contradiction",
+    "file": "Pre-Processing/agent/test_plan_revision_on_contradiction.py",
+    "size": 7265,
+    "imports": [
+      "json",
+      "os",
+      "pathlib",
+      "subprocess",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_scp_recovery_mode_gate",
+    "file": "Pre-Processing/agent/test_scp_recovery_mode_gate.py",
+    "size": 4689,
+    "imports": [
+      "json",
+      "os",
+      "pathlib",
+      "subprocess",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_self_improvement_cycle",
+    "file": "Pre-Processing/agent/test_self_improvement_cycle.py",
+    "size": 17760,
+    "imports": [
+      "core.logos_core.daemon.logos_daemon",
+      "core.logos_core.governance.iel_signer",
+      "core.logos_core.meta_reasoning.iel_evaluator",
+      "core.logos_core.meta_reasoning.iel_generator",
+      "core.logos_core.meta_reasoning.iel_registry",
+      "datetime",
+      "json",
+      "logging",
+      "pathlib",
+      "pytest",
+      "scripts.update_telemetry",
+      "tempfile",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_stub_beliefs_never_verified",
+    "file": "Pre-Processing/agent/test_stub_beliefs_never_verified.py",
+    "size": 2893,
+    "imports": [
+      "json",
+      "os",
+      "pathlib",
+      "subprocess",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.agent.test_verify_pai",
+    "file": "Pre-Processing/agent/test_verify_pai.py",
+    "size": 7021,
+    "imports": [
+      "Logos_Protocol.logos_core.governance.agent_identity",
+      "copy",
+      "external.Logos_AGI.identity_paths",
+      "json",
+      "pathlib",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.math.dual_bijection_demo",
+    "file": "Pre-Processing/math/dual_bijection_demo.py",
+    "size": 601,
+    "imports": [],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.math.fractal_nexus",
+    "file": "Pre-Processing/math/fractal_nexus.py",
+    "size": 8944,
+    "imports": [
+      "LOGOS_AGI.Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator",
+      "LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.predictors.class_fractal_orbital_predictor",
+      "LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.predictors.divergence_calculator",
+      "LOGOS_AGI.Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine",
+      "Synthetic_Cognition_Protocol.BDN_System.core.fractal_orbital_node_generator",
+      "Synthetic_Cognition_Protocol.MVS_System.predictors.orbital_recursion_engine",
+      "json",
+      "pprint",
+      "sys",
+      "traceback",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.reasoning.arp_nexus",
+    "file": "Pre-Processing/reasoning/arp_nexus.py",
+    "size": 30313,
+    "imports": [
+      "LOGOS_AGI.Logos_Agent.agent.nexus.agent_nexus",
+      "LOGOS_AGI.Synthetic_Cognition_Protocol.nexus.scp_nexus",
+      "agent_system.base_nexus",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "iel_domains",
+      "logging",
+      "mathematical_foundations",
+      "pathlib",
+      "reasoning_engines",
+      "sys",
+      "typing",
+      "uuid"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.reasoning.ergonomic_optimizer",
+    "file": "Pre-Processing/reasoning/ergonomic_optimizer.py",
+    "size": 9367,
+    "imports": [
+      "dataclasses",
+      "enum",
+      "math",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.reasoning.integration_test",
+    "file": "Pre-Processing/reasoning/integration_test.py",
+    "size": 9780,
+    "imports": [
+      "arp_nexus",
+      "asyncio",
+      "pathlib",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.reasoning.integration_test_suite",
+    "file": "Pre-Processing/reasoning/integration_test_suite.py",
+    "size": 29746,
+    "imports": [
+      "argparse",
+      "concurrent.futures",
+      "datetime",
+      "json",
+      "requests",
+      "statistics",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.reasoning.modal_vector_sync",
+    "file": "Pre-Processing/reasoning/modal_vector_sync.py",
+    "size": 672,
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.reasoning.resource_manager",
+    "file": "Pre-Processing/reasoning/resource_manager.py",
+    "size": 7536,
+    "imports": [
+      "collections",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.reasoning.scp_nexus",
+    "file": "Pre-Processing/reasoning/scp_nexus.py",
+    "size": 32177,
+    "imports": [
+      "System_Operations_Protocol.infrastructure.agent_system.base_nexus",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "logging",
+      "pathlib",
+      "sys",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_arp_nexus",
+    "file": "Pre-Processing/reasoning/test_arp_nexus.py",
+    "size": 7097,
+    "imports": [
+      "arp_nexus",
+      "asyncio",
+      "pathlib",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_bayesian_data_handler",
+    "file": "Pre-Processing/reasoning/test_bayesian_data_handler.py",
+    "size": 7807,
+    "imports": [
+      "datetime",
+      "external.Logos_AGI.Advanced_Reasoning_Protocol.reasoning_engines",
+      "importlib",
+      "pandas",
+      "pathlib",
+      "tempfile",
+      "types",
+      "unittest"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_dual_bijection",
+    "file": "Pre-Processing/reasoning/test_dual_bijection.py",
+    "size": 10097,
+    "imports": [
+      "numpy",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_integration",
+    "file": "Pre-Processing/reasoning/test_integration.py",
+    "size": 9595,
+    "imports": [
+      "LOGOS_AGI.v7.adaptive_reasoning.bayesian_inference",
+      "LOGOS_AGI.v7.adaptive_reasoning.semantic_transformers",
+      "LOGOS_AGI.v7.adaptive_reasoning.torch_adapters",
+      "LOGOS_AGI.v7.integration.adaptive_interface",
+      "LOGOS_AGI.v7.runtime_services.core_service",
+      "Synthetic_Cognition_Protocol.BDN_System.core.trinity_vectors",
+      "asyncio",
+      "logging",
+      "os",
+      "sys",
+      "traceback"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_logos_agi_persistence_smoke",
+    "file": "Pre-Processing/reasoning/test_logos_agi_persistence_smoke.py",
+    "size": 4554,
+    "imports": [
+      "json",
+      "pathlib",
+      "shutil",
+      "subprocess",
+      "sys",
+      "tempfile"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_proved_grounding",
+    "file": "Pre-Processing/reasoning/test_proved_grounding.py",
+    "size": 4332,
+    "imports": [
+      "logos.proof_refs",
+      "os",
+      "pathlib",
+      "subprocess",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.reasoning.uip_nexus",
+    "file": "Pre-Processing/reasoning/uip_nexus.py",
+    "size": 18612,
+    "imports": [
+      "agent_system.base_nexus",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "logging",
+      "pathlib",
+      "sys",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.safety.attestation",
+    "file": "Pre-Processing/safety/attestation.py",
+    "size": 4776,
+    "imports": [
+      "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas",
+      "__future__",
+      "datetime",
+      "json",
+      "pathlib",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.safety.health_server",
+    "file": "Pre-Processing/safety/health_server.py",
+    "size": 1403,
+    "imports": [
+      "datetime",
+      "fastapi",
+      "requests",
+      "uvicorn"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.safety.test_reference_monitor",
+    "file": "Pre-Processing/safety/test_reference_monitor.py",
+    "size": 24169,
+    "imports": [
+      "Logos_System.System_Stack.Logos_Protocol.Runtime_Operations.IEL_generator.entry",
+      "Logos_System.System_Stack.System_Operations_Protocol.governance.enhanced_reference_monitor",
+      "json",
+      "pathlib",
+      "shutil",
+      "sys",
+      "threading",
+      "time",
+      "unittest",
+      "unittest.mock"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.safety.test_tool_pipeline_smoke",
+    "file": "Pre-Processing/safety/test_tool_pipeline_smoke.py",
+    "size": 5934,
+    "imports": [
+      "LOGOS_SYSTEM.System_Stack.Protocol_Resources.schemas",
+      "json",
+      "logos.tool_registry_loader",
+      "os",
+      "pathlib",
+      "scripts.system_stack_tbd.could_be_dev.start_agent",
+      "subprocess",
+      "sys",
+      "tempfile"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.boot_system",
+    "file": "Pre-Processing/semantic/boot_system.py",
+    "size": 8779,
+    "imports": [
+      "__future__",
+      "asyncio",
+      "dataclasses",
+      "json",
+      "maintenance",
+      "pathlib",
+      "shared_resources",
+      "time",
+      "typing",
+      "uuid"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "size": 13900,
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "datetime",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "tempfile",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.dispatch",
+    "file": "Pre-Processing/semantic/dispatch.py",
+    "size": 875,
+    "imports": [
+      "I1.scp_pipeline.pipeline_runner",
+      "I3.arp_cycle.cycle_runner",
+      "__future__",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.hashing",
+    "file": "Pre-Processing/semantic/hashing.py",
+    "size": 496,
+    "imports": [
+      "__future__",
+      "hashlib",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.maintenance",
+    "file": "Pre-Processing/semantic/maintenance.py",
+    "size": 4989,
+    "imports": [
+      "__future__",
+      "asyncio",
+      "dataclasses",
+      "json",
+      "os",
+      "pathlib",
+      "shared_resources",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.mtp_nexus_orchestrator",
+    "file": "Pre-Processing/semantic/mtp_nexus_orchestrator.py",
+    "size": 173,
+    "imports": [],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.nexus_manager",
+    "file": "Pre-Processing/semantic/nexus_manager.py",
+    "size": 2549,
+    "imports": [
+      "JUNK_DRAWER.scripts.runtime.could_be_dev.start_agent",
+      "JUNK_DRAWER.scripts.runtime.need_to_distribute.logos_agi_adapter",
+      "__future__",
+      "pathlib",
+      "subprocess",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.ontoprops_remap",
+    "file": "Pre-Processing/semantic/ontoprops_remap.py",
+    "size": 1201,
+    "imports": [
+      "json",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.packet_types",
+    "file": "Pre-Processing/semantic/packet_types.py",
+    "size": 1034,
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.prioritization",
+    "file": "Pre-Processing/semantic/prioritization.py",
+    "size": 21982,
+    "imports": [
+      "Logos_Protocol.Unified_Working_Memory.World_Modeling.commitment_ledger",
+      "__future__",
+      "datetime",
+      "json",
+      "pathlib",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.providers_llama",
+    "file": "Pre-Processing/semantic/providers_llama.py",
+    "size": 3997,
+    "imports": [
+      "__future__",
+      "json",
+      "llama_cpp",
+      "types",
+      "typing",
+      "urllib.error",
+      "urllib.request"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.providers_openai",
+    "file": "Pre-Processing/semantic/providers_openai.py",
+    "size": 2343,
+    "imports": [
+      "__future__",
+      "json",
+      "types",
+      "typing",
+      "urllib.error",
+      "urllib.request"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.test_logos_agi_adapter",
+    "file": "Pre-Processing/semantic/test_logos_agi_adapter.py",
+    "size": 5095,
+    "imports": [
+      "__future__",
+      "json",
+      "pathlib",
+      "scripts.logos_agi_adapter",
+      "tempfile",
+      "unittest",
+      "unittest.mock"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.test_perception_ingestors",
+    "file": "Pre-Processing/semantic/test_perception_ingestors.py",
+    "size": 6376,
+    "imports": [
+      "Logos_AGI.Logos_Agent.creator_packet.reflection_builder.perception_ingestors",
+      "__future__",
+      "datetime",
+      "json",
+      "pathlib",
+      "typing",
+      "unittest"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.test_registry_and_response",
+    "file": "Pre-Processing/semantic/test_registry_and_response.py",
+    "size": 1465,
+    "imports": [
+      "User_Interaction_Protocol.uip_protocol.core_processing.registry",
+      "User_Interaction_Protocol.uip_protocol.output.response_formatter",
+      "__future__",
+      "pytest"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.test_simulation_cli",
+    "file": "Pre-Processing/semantic/test_simulation_cli.py",
+    "size": 1271,
+    "imports": [
+      "__future__",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "tempfile"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.test_tool_fallback_proposal",
+    "file": "Pre-Processing/semantic/test_tool_fallback_proposal.py",
+    "size": 1361,
+    "imports": [
+      "__future__",
+      "json",
+      "os",
+      "pathlib",
+      "scripts.start_agent",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.time_utils",
+    "file": "Pre-Processing/semantic/time_utils.py",
+    "size": 403,
+    "imports": [
+      "__future__",
+      "datetime"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.transform_types",
+    "file": "Pre-Processing/semantic/transform_types.py",
+    "size": 777,
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.semantic.types",
+    "file": "Pre-Processing/semantic/types.py",
+    "size": 992,
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utility.arp_nexus_orchestrator",
+    "file": "Pre-Processing/utility/arp_nexus_orchestrator.py",
+    "size": 173,
+    "imports": [],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utility.causal_trace_operator",
+    "file": "Pre-Processing/utility/causal_trace_operator.py",
+    "size": 1684,
+    "imports": [],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utility.class_extrapolator",
+    "file": "Pre-Processing/utility/class_extrapolator.py",
+    "size": 1137,
+    "imports": [
+      "random",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utility.csp_nexus_orchestrator",
+    "file": "Pre-Processing/utility/csp_nexus_orchestrator.py",
+    "size": 173,
+    "imports": [],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utility.development_environment",
+    "file": "Pre-Processing/utility/development_environment.py",
+    "size": 1018,
+    "imports": [
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utility.logos_protocol_nexus",
+    "file": "Pre-Processing/utility/logos_protocol_nexus.py",
+    "size": 172,
+    "imports": [],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utility.regression_checker",
+    "file": "Pre-Processing/utility/regression_checker.py",
+    "size": 2326,
+    "imports": [
+      "datetime",
+      "json",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utility.scp_nexus_orchestrator",
+    "file": "Pre-Processing/utility/scp_nexus_orchestrator.py",
+    "size": 173,
+    "imports": [],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utility.sop_nexus_orchestrator",
+    "file": "Pre-Processing/utility/sop_nexus_orchestrator.py",
+    "size": 204,
+    "imports": [],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utility.test_arp_modes",
+    "file": "Pre-Processing/utility/test_arp_modes.py",
+    "size": 9851,
+    "imports": [
+      "arp_operations",
+      "json",
+      "pathlib",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utility.test_determinism",
+    "file": "Pre-Processing/utility/test_determinism.py",
+    "size": 591,
+    "imports": [
+      "hashlib",
+      "pathlib",
+      "subprocess"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utility.test_evaluator_learning_smoke",
+    "file": "Pre-Processing/utility/test_evaluator_learning_smoke.py",
+    "size": 2460,
+    "imports": [
+      "logos.evaluator",
+      "pathlib",
+      "sys"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utility.test_logos_agi_pin_drift",
+    "file": "Pre-Processing/utility/test_logos_agi_pin_drift.py",
+    "size": 6860,
+    "imports": [
+      "JUNK_DRAWER.scripts.runtime.need_to_distribute.provenance",
+      "json",
+      "pathlib",
+      "shutil",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "unittest"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils._uip_connector_stubs",
+    "file": "Pre-Processing/utils/_uip_connector_stubs.py",
+    "size": 2928,
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.bridge",
+    "file": "Pre-Processing/utils/bridge.py",
+    "size": 3948,
+    "imports": [
+      "asyncio",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "logging",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.causal_chain_node_predictor",
+    "file": "Pre-Processing/utils/causal_chain_node_predictor.py",
+    "size": 1415,
+    "imports": [
+      "causallearn.search.ConstraintBased.PC",
+      "causallearn.utils.GraphUtils",
+      "causallearn.utils.cit",
+      "logging",
+      "numpy"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.check_imports",
+    "file": "Pre-Processing/utils/check_imports.py",
+    "size": 8436,
+    "imports": [
+      "ast",
+      "importlib.util",
+      "os"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.check_run_cycle_prereqs",
+    "file": "Pre-Processing/utils/check_run_cycle_prereqs.py",
+    "size": 3578,
+    "imports": [
+      "LOGOS_AGI.analytics",
+      "LOGOS_AGI.settings",
+      "__future__",
+      "importlib",
+      "pathlib",
+      "sys",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.config",
+    "file": "Pre-Processing/utils/config.py",
+    "size": 1495,
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "os",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.cycle_ledger",
+    "file": "Pre-Processing/utils/cycle_ledger.py",
+    "size": 4383,
+    "imports": [
+      "__future__",
+      "hashlib",
+      "json",
+      "pathlib",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.evidence",
+    "file": "Pre-Processing/utils/evidence.py",
+    "size": 5022,
+    "imports": [
+      "__future__",
+      "logos",
+      "pathlib",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.guardrails",
+    "file": "Pre-Processing/utils/guardrails.py",
+    "size": 2948,
+    "imports": [
+      "Logos_System.System_Stack.System_Operations_Protocol.infrastructure.agent_system.agent_nexus",
+      "__future__",
+      "functools",
+      "json",
+      "os",
+      "pathlib",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.iel_integration",
+    "file": "Pre-Processing/utils/iel_integration.py",
+    "size": 5529,
+    "imports": [
+      "iel_registry",
+      "os",
+      "sys",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.iel_registryv1",
+    "file": "Pre-Processing/utils/iel_registryv1.py",
+    "size": 31686,
+    "imports": [
+      "argparse",
+      "dataclasses",
+      "datetime",
+      "hashlib",
+      "iel_evaluator",
+      "iel_generator",
+      "json",
+      "logging",
+      "os",
+      "pathlib",
+      "re",
+      "shutil",
+      "sqlite3",
+      "sys",
+      "threading",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.iel_registryv2",
+    "file": "Pre-Processing/utils/iel_registryv2.py",
+    "size": 2683,
+    "imports": [
+      "os",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.io_normalizer",
+    "file": "Pre-Processing/utils/io_normalizer.py",
+    "size": 1684,
+    "imports": [
+      "datetime",
+      "json",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.iterative_loop",
+    "file": "Pre-Processing/utils/iterative_loop.py",
+    "size": 2072,
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "transform_registry",
+      "transform_types",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.kernel",
+    "file": "Pre-Processing/utils/kernel.py",
+    "size": 6756,
+    "imports": [
+      "Logos_Protocol.logos_core.reference_monitor",
+      "collections.abc",
+      "os",
+      "sys",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.logging_utils",
+    "file": "Pre-Processing/utils/logging_utils.py",
+    "size": 851,
+    "imports": [
+      "__future__",
+      "json",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.logos_monitor",
+    "file": "Pre-Processing/utils/logos_monitor.py",
+    "size": 5425,
+    "imports": [
+      "System_Operations_Protocol.deployment.configuration.entry",
+      "argparse",
+      "json",
+      "pathlib",
+      "sys",
+      "time"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.ontology_inducer",
+    "file": "Pre-Processing/utils/ontology_inducer.py",
+    "size": 1116,
+    "imports": [
+      "async_workers",
+      "config_loader",
+      "logos_validator_hub"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.policy",
+    "file": "Pre-Processing/utils/policy.py",
+    "size": 22545,
+    "imports": [
+      "dataclasses",
+      "datetime",
+      "logging",
+      "pathlib",
+      "typing",
+      "yaml"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.progressive_router",
+    "file": "Pre-Processing/utils/progressive_router.py",
+    "size": 9569,
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "input.input_handler",
+      "json",
+      "logging",
+      "output.response_formatter",
+      "pydantic",
+      "system_utilities.system_utils",
+      "time",
+      "typing",
+      "uip_protocol.core_processing.registry",
+      "uuid"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.router",
+    "file": "Pre-Processing/utils/router.py",
+    "size": 6604,
+    "imports": [
+      "__future__",
+      "core_processing.sanitizer",
+      "dataclasses",
+      "datetime",
+      "input_output_processing.parser",
+      "json",
+      "logging",
+      "metadata_filters.response_engine",
+      "pathlib",
+      "queue",
+      "sys",
+      "threading",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.sanitizer",
+    "file": "Pre-Processing/utils/sanitizer.py",
+    "size": 2013,
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "logging",
+      "re",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.schema_utils",
+    "file": "Pre-Processing/utils/schema_utils.py",
+    "size": 1017,
+    "imports": [
+      "__future__",
+      "errors",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.self_diagnosis",
+    "file": "Pre-Processing/utils/self_diagnosis.py",
+    "size": 13928,
+    "imports": [
+      "asyncio",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "logging",
+      "os",
+      "psutil",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.shared_resources",
+    "file": "Pre-Processing/utils/shared_resources.py",
+    "size": 10380,
+    "imports": [
+      "__future__",
+      "asyncio",
+      "contextlib",
+      "dataclasses",
+      "json",
+      "os",
+      "pathlib",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.skill_acquisition",
+    "file": "Pre-Processing/utils/skill_acquisition.py",
+    "size": 1193,
+    "imports": [
+      "core.async_workers",
+      "core.config_loader",
+      "core.logos_validator_hub"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.smp_intake",
+    "file": "Pre-Processing/utils/smp_intake.py",
+    "size": 2228,
+    "imports": [
+      "I1_Agent.config.hashing",
+      "I1_Agent.config.schema_utils",
+      "I1_Agent.diagnostics.errors",
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.stress_sop_runtime",
+    "file": "Pre-Processing/utils/stress_sop_runtime.py",
+    "size": 15238,
+    "imports": [
+      "__future__",
+      "argparse",
+      "asyncio",
+      "collections",
+      "datetime",
+      "importlib",
+      "importlib.util",
+      "json",
+      "pathlib",
+      "sys",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.system_utils",
+    "file": "Pre-Processing/utils/system_utils.py",
+    "size": 5426,
+    "imports": [
+      "datetime",
+      "json",
+      "logging",
+      "prometheus_client",
+      "structlog",
+      "typing",
+      "uuid"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.task_intake",
+    "file": "Pre-Processing/utils/task_intake.py",
+    "size": 1188,
+    "imports": [
+      "I3_Agent.config.schema_utils",
+      "I3_Agent.diagnostics.errors",
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.transform_registry",
+    "file": "Pre-Processing/utils/transform_registry.py",
+    "size": 3840,
+    "imports": [
+      "__future__",
+      "transform_types",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.uip_operations",
+    "file": "Pre-Processing/utils/uip_operations.py",
+    "size": 13970,
+    "imports": [
+      "argparse",
+      "json",
+      "logging",
+      "os",
+      "sys",
+      "time",
+      "typing"
+    ],
+    "staging_subdir": "Pre-Processing"
+  },
+  {
+    "module": "Pre-Processing.utils.worker_kernel",
+    "file": "Pre-Processing/utils/worker_kernel.py",
+    "size": 2052,
+    "imports": [
+      "LOGOS_SYSTEM.RUNTIME_SHARED_UTILS.system_imports",
+      "unified_classes"
+    ],
+    "staging_subdir": "Pre-Processing"
+  }
+]

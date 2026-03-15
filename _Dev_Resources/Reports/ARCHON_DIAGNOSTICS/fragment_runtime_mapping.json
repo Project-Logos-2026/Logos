@@ -1,0 +1,2028 @@
+{
+  "generated_at": "2026-03-15T16:05:00.859170+00:00",
+  "total_clusters": 168,
+  "domain_distribution": {
+    "SCP": 49,
+    "ARP": 15,
+    "MTP": 25,
+    "SOP": 79
+  },
+  "mappings": [
+    {
+      "cluster_id": "INFRASTRUCTURE-C0000",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.6448,
+      "signal_scores": {
+        "SCP": 0.0806,
+        "ARP": 0.0806,
+        "MTP": 0.0645,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.0806). Full scores: {'SCP': 0.0806, 'ARP': 0.0806, 'MTP': 0.0645, 'SOP': 0.0}. Theme token: 'analysis'. Fragment count: 4."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0001",
+      "recommended_runtime_domain": "ARP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1,
+        "ARP": 0.2,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'ARP' scored highest (0.2000). Full scores: {'SCP': 0.1, 'ARP': 0.2, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'dataframe'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0002",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.2667,
+        "ARP": 0.1333,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.2667). Full scores: {'SCP': 0.2667, 'ARP': 0.1333, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'are'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0003",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.696,
+      "signal_scores": {
+        "SCP": 0.087,
+        "ARP": 0.087,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.0870). Full scores: {'SCP': 0.087, 'ARP': 0.087, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'patterns'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0004",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.125,
+        "ARP": 0.125,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1250). Full scores: {'SCP': 0.125, 'ARP': 0.125, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'fmt'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0005",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.64,
+      "signal_scores": {
+        "SCP": 0.08,
+        "ARP": 0.0689,
+        "MTP": 0.0172,
+        "SOP": 0.0271
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.0800). Full scores: {'SCP': 0.08, 'ARP': 0.0689, 'MTP': 0.0172, 'SOP': 0.0271}. Theme token: 'init'. Fragment count: 825."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0006",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.952,
+      "signal_scores": {
+        "SCP": 0.0952,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.0952). Full scores: {'SCP': 0.0952, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'set'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0007",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1176,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1176). Full scores: {'SCP': 0.1176, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'rabin'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0008",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1639,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0328
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1639). Full scores: {'SCP': 0.1639, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0328}. Theme token: 'get'. Fragment count: 4."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0009",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.3684,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.3684). Full scores: {'SCP': 0.3684, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'coherence'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0010",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.7616,
+      "signal_scores": {
+        "SCP": 0.0952,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0952
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.0952). Full scores: {'SCP': 0.0952, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0952}. Theme token: 'importable'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0011",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.2105,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.2105). Full scores: {'SCP': 0.2105, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'model'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0012",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1633,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1633). Full scores: {'SCP': 0.1633, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'knowledge'. Fragment count: 3."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0013",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1739,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1739). Full scores: {'SCP': 0.1739, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'iterate'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0014",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1053,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1053). Full scores: {'SCP': 0.1053, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'category'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0015",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.968,
+      "signal_scores": {
+        "SCP": 0.0968,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.0968). Full scores: {'SCP': 0.0968, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'relation'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0016",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1014,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1014). Full scores: {'SCP': 0.1014, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'hint'. Fragment count: 6."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0017",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.952,
+      "signal_scores": {
+        "SCP": 0.0952,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.0952). Full scores: {'SCP': 0.0952, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'catalog'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0018",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.93,
+      "signal_scores": {
+        "SCP": 0.093,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.0930). Full scores: {'SCP': 0.093, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'write'. Fragment count: 3."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0019",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0988,
+        "ARP": 0.0,
+        "MTP": 0.1728,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1728). Full scores: {'SCP': 0.0988, 'ARP': 0.0, 'MTP': 0.1728, 'SOP': 0.0}. Theme token: 'describe'. Fragment count: 7."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0020",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'packet'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0021",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'artifact'. Fragment count: 5."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0022",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 0.455,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0455,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.0455). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0455, 'SOP': 0.0}. Theme token: 'write'. Fragment count: 3."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0023",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'artifacts'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0024",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'filter'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0025",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'emergence'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0026",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'identity'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0027",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.1579
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.1579). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.1579}. Theme token: 'log'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0028",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.1765
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.1765). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.1765}. Theme token: 'bridge'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0029",
+      "recommended_runtime_domain": "ARP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.2143,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'ARP' scored highest (0.2143). Full scores: {'SCP': 0.0, 'ARP': 0.2143, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'cycles'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0030",
+      "recommended_runtime_domain": "ARP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.2353,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'ARP' scored highest (0.2353). Full scores: {'SCP': 0.0, 'ARP': 0.2353, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'cascade'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0031",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.1333,
+        "ARP": 0.1333,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1333). Full scores: {'SCP': 0.1333, 'ARP': 0.1333, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'synchronize'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0032",
+      "recommended_runtime_domain": "ARP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.1649,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'ARP' scored highest (0.1649). Full scores: {'SCP': 0.0, 'ARP': 0.1649, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'regression'. Fragment count: 7."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0033",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.1176,
+        "ARP": 0.1176,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1176). Full scores: {'SCP': 0.1176, 'ARP': 0.1176, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'dict'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0034",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'hex'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0035",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.125,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1250). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.125, 'SOP': 0.0}. Theme token: 'sha256'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0036",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.1148,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1148). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.1148, 'SOP': 0.0}. Theme token: 'commitment'. Fragment count: 5."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0037",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.125,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1250). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.125, 'SOP': 0.0}. Theme token: 'trim'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0038",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.1176,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1176). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.1176, 'SOP': 0.0}. Theme token: 'outcome'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0039",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0952,
+        "ARP": 0.0952,
+        "MTP": 0.1429,
+        "SOP": 0.381
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.3810). Full scores: {'SCP': 0.0952, 'ARP': 0.0952, 'MTP': 0.1429, 'SOP': 0.381}. Theme token: 'dispatch'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0040",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.1333,
+        "SOP": 0.1333
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1333). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.1333, 'SOP': 0.1333}. Theme token: 'rotate'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0041",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.1333,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1333). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.1333, 'SOP': 0.0}. Theme token: 'job'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0042",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.1538,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1538). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.1538, 'SOP': 0.0}. Theme token: 'constraints'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0043",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.1538,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1538). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.1538, 'SOP': 0.0}. Theme token: 'key'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0044",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.1333,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1333). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.1333, 'SOP': 0.0}. Theme token: 'ref'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0045",
+      "recommended_runtime_domain": "ARP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.2308,
+        "MTP": 0.1538,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'ARP' scored highest (0.2308). Full scores: {'SCP': 0.0, 'ARP': 0.2308, 'MTP': 0.1538, 'SOP': 0.0}. Theme token: 'evidence'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0046",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.1538,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1538). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.1538, 'SOP': 0.0}. Theme token: 'iso'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0047",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.1538,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1538). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.1538, 'SOP': 0.0}. Theme token: 'make'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0048",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 0.678,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0678,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.0678). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0678, 'SOP': 0.0}. Theme token: 'test'. Fragment count: 3."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0049",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.075,
+        "SOP": 0.125
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.1250). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.075, 'SOP': 0.125}. Theme token: 'test'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0050",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.1333
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.1333). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.1333}. Theme token: 'nodes'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0051",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.1176
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.1176). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.1176}. Theme token: 'generate'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0052",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.129
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.1290). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.129}. Theme token: 'compare'. Fragment count: 3."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0053",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'sanitize'. Fragment count: 3."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0054",
+      "recommended_runtime_domain": "ARP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.1538,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'ARP' scored highest (0.1538). Full scores: {'SCP': 0.0, 'ARP': 0.1538, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'sort'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0055",
+      "recommended_runtime_domain": "ARP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.3333,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'ARP' scored highest (0.3333). Full scores: {'SCP': 0.0, 'ARP': 0.3333, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'evidence'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0056",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'wrapper'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0057",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.1176
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.1176). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.1176}. Theme token: 'iterative'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0058",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'compliance'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0059",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'emergency'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0060",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'violation'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0061",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1176,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1176). Full scores: {'SCP': 0.1176, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'uip'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0062",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'input'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0063",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'extract'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0064",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'construct'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0065",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'result'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0066",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'prompt'. Fragment count: 4."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0067",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'rules'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0068",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'resources'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0069",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'error'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0070",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'correlation'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0071",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'request'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0072",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.1395,
+        "SOP": 0.186
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.1860). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.1395, 'SOP': 0.186}. Theme token: 'default'. Fragment count: 5."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0073",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.714,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0714
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0714). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0714}. Theme token: 'initialize'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0074",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'create'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0000",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0625,
+        "ARP": 0.0625,
+        "MTP": 0.0625,
+        "SOP": 0.125
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.1250). Full scores: {'SCP': 0.0625, 'ARP': 0.0625, 'MTP': 0.0625, 'SOP': 0.125}. Theme token: 'run'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "REASONING-C0001",
+      "recommended_runtime_domain": "ARP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.1053,
+        "ARP": 0.1579,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'ARP' scored highest (0.1579). Full scores: {'SCP': 0.1053, 'ARP': 0.1579, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'resolve'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "REASONING-C0002",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.7616,
+      "signal_scores": {
+        "SCP": 0.0952,
+        "ARP": 0.0952,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.0952). Full scores: {'SCP': 0.0952, 'ARP': 0.0952, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'create'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0003",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.087,
+        "ARP": 0.087,
+        "MTP": 0.1304,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1304). Full scores: {'SCP': 0.087, 'ARP': 0.087, 'MTP': 0.1304, 'SOP': 0.0}. Theme token: 'transform'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0004",
+      "recommended_runtime_domain": "ARP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1111,
+        "ARP": 0.1667,
+        "MTP": 0.0,
+        "SOP": 0.1111
+      },
+      "reasoning": "Domain 'ARP' scored highest (0.1667). Full scores: {'SCP': 0.1111, 'ARP': 0.1667, 'MTP': 0.0, 'SOP': 0.1111}. Theme token: 'run'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "REASONING-C0005",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.145,
+        "ARP": 0.1009,
+        "MTP": 0.0055,
+        "SOP": 0.0202
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1450). Full scores: {'SCP': 0.145, 'ARP': 0.1009, 'MTP': 0.0055, 'SOP': 0.0202}. Theme token: 'init'. Fragment count: 480."
+    },
+    {
+      "cluster_id": "REASONING-C0006",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.1053,
+        "ARP": 0.1053,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1053). Full scores: {'SCP': 0.1053, 'ARP': 0.1053, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'summarize'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0007",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.952,
+      "signal_scores": {
+        "SCP": 0.0952,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.0952). Full scores: {'SCP': 0.0952, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'analyze'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0008",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1053,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1053). Full scores: {'SCP': 0.1053, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'analysis'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0009",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.1053,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.1579
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.1579). Full scores: {'SCP': 0.1053, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.1579}. Theme token: 'run'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0010",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.2609,
+        "ARP": 0.087,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.2609). Full scores: {'SCP': 0.2609, 'ARP': 0.087, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'create'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0011",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1739,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1739). Full scores: {'SCP': 0.1739, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'from'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0012",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1111,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1111). Full scores: {'SCP': 0.1111, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'write'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "REASONING-C0013",
+      "recommended_runtime_domain": "ARP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.0968,
+        "ARP": 0.129,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'ARP' scored highest (0.1290). Full scores: {'SCP': 0.0968, 'ARP': 0.129, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'tag'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "REASONING-C0014",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0943,
+        "ARP": 0.0,
+        "MTP": 0.2075,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.2075). Full scores: {'SCP': 0.0943, 'ARP': 0.0, 'MTP': 0.2075, 'SOP': 0.0}. Theme token: 'logical'. Fragment count: 4."
+    },
+    {
+      "cluster_id": "REASONING-C0015",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'handle'. Fragment count: 3."
+    },
+    {
+      "cluster_id": "REASONING-C0016",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'after'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0017",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'consciousness'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "REASONING-C0018",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'requires'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0019",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'when'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0020",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.282,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0282
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0282). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0282}. Theme token: 'iels'. Fragment count: 5."
+    },
+    {
+      "cluster_id": "REASONING-C0021",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.1333,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1333). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.1333, 'SOP': 0.0}. Theme token: 'commitments'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0022",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.1538,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1538). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.1538, 'SOP': 0.0}. Theme token: 'commitment'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0023",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 0.87,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.087,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.0870). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.087, 'SOP': 0.0}. Theme token: 'collects'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0024",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 0.87,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.087,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.0870). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.087, 'SOP': 0.0}. Theme token: 'summarizes'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0025",
+      "recommended_runtime_domain": "ARP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.1053,
+        "MTP": 0.0,
+        "SOP": 0.1053
+      },
+      "reasoning": "Domain 'ARP' scored highest (0.1053). Full scores: {'SCP': 0.0, 'ARP': 0.1053, 'MTP': 0.0, 'SOP': 0.1053}. Theme token: 'passive'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0026",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.1176
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.1176). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.1176}. Theme token: 'test'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0027",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'sanitize'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0028",
+      "recommended_runtime_domain": "ARP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.1538,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'ARP' scored highest (0.1538). Full scores: {'SCP': 0.0, 'ARP': 0.1538, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'proved'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0029",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.2,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.2000). Full scores: {'SCP': 0.2, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'verify'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0030",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'emergency'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "REASONING-C0031",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'get'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "REASONING-C0032",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'initialized'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0033",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'handle'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0034",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'phase'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "REASONING-C0035",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'process'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "REASONING-C0036",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'step'. Fragment count: 3."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0000",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.7056,
+      "signal_scores": {
+        "SCP": 0.0882,
+        "ARP": 0.0882,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.0882). Full scores: {'SCP': 0.0882, 'ARP': 0.0882, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'self'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0001",
+      "recommended_runtime_domain": "ARP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1067,
+        "ARP": 0.1733,
+        "MTP": 0.0,
+        "SOP": 0.0667
+      },
+      "reasoning": "Domain 'ARP' scored highest (0.1733). Full scores: {'SCP': 0.1067, 'ARP': 0.1733, 'MTP': 0.0, 'SOP': 0.0667}. Theme token: 'priors'. Fragment count: 5."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0002",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.744,
+      "signal_scores": {
+        "SCP": 0.093,
+        "ARP": 0.093,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.0930). Full scores: {'SCP': 0.093, 'ARP': 0.093, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'calculate'. Fragment count: 3."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0003",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.2105,
+        "ARP": 0.1053,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.2105). Full scores: {'SCP': 0.2105, 'ARP': 0.1053, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'obligation'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0004",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.1002,
+        "ARP": 0.0843,
+        "MTP": 0.0114,
+        "SOP": 0.0251
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1002). Full scores: {'SCP': 0.1002, 'ARP': 0.0843, 'MTP': 0.0114, 'SOP': 0.0251}. Theme token: 'calculate'. Fragment count: 217."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0005",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.696,
+      "signal_scores": {
+        "SCP": 0.087,
+        "ARP": 0.087,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.0870). Full scores: {'SCP': 0.087, 'ARP': 0.087, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'affect'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0006",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.1176,
+        "ARP": 0.1176,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1176). Full scores: {'SCP': 0.1176, 'ARP': 0.1176, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'step'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0007",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.1111,
+        "ARP": 0.1111,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1111). Full scores: {'SCP': 0.1111, 'ARP': 0.1111, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'likelihood'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0008",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1905,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1905). Full scores: {'SCP': 0.1905, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'state'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0009",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1935,
+        "ARP": 0.0645,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1935). Full scores: {'SCP': 0.1935, 'ARP': 0.0645, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'calculate'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0010",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.2353,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.2353). Full scores: {'SCP': 0.2353, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'learn'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0011",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.2791,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.2791). Full scores: {'SCP': 0.2791, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'compute'. Fragment count: 3."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0012",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1905,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1905). Full scores: {'SCP': 0.1905, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'history'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0013",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1053,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1053). Full scores: {'SCP': 0.1053, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'usage'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0014",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1176,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1176). Full scores: {'SCP': 0.1176, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'defaults'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0015",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1053,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1053). Full scores: {'SCP': 0.1053, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'capability'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0016",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1081,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1081). Full scores: {'SCP': 0.1081, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'root'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0017",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.1053,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1053). Full scores: {'SCP': 0.1053, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'catalog'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0018",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.1053,
+        "ARP": 0.0,
+        "MTP": 0.1053,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1053). Full scores: {'SCP': 0.1053, 'ARP': 0.0, 'MTP': 0.1053, 'SOP': 0.0}. Theme token: 'rules'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0019",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0968,
+        "ARP": 0.0,
+        "MTP": 0.2258,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.2258). Full scores: {'SCP': 0.0968, 'ARP': 0.0, 'MTP': 0.2258, 'SOP': 0.0}. Theme token: 'structure'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0020",
+      "recommended_runtime_domain": "SCP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.1053,
+        "ARP": 0.0,
+        "MTP": 0.1053,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SCP' scored highest (0.1053). Full scores: {'SCP': 0.1053, 'ARP': 0.0, 'MTP': 0.1053, 'SOP': 0.0}. Theme token: 'description'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0021",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 0.253,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0253,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.0253). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0253, 'SOP': 0.0}. Theme token: 'encoding'. Fragment count: 7."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0022",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'processors'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0023",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'protocols'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0024",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'calculate'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0025",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'test'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0026",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'protocol'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0027",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'system'. Fragment count: 6."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0028",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'latest'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0029",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.12
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.1200). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.12}. Theme token: 'log'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0030",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'downgraded'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0031",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'replay'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0032",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'test'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0033",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.3333
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.3333). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.3333}. Theme token: 'run'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0034",
+      "recommended_runtime_domain": "ARP",
+      "confidence_score": 0.978,
+      "signal_scores": {
+        "SCP": 0.0217,
+        "ARP": 0.0978,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'ARP' scored highest (0.0978). Full scores: {'SCP': 0.0217, 'ARP': 0.0978, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'optimize'. Fragment count: 8."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0035",
+      "recommended_runtime_domain": "ARP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.1053,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'ARP' scored highest (0.1053). Full scores: {'SCP': 0.0, 'ARP': 0.1053, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'calculate'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0036",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'dashboard'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0037",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.1333,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.1333). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.1333, 'SOP': 0.0}. Theme token: 'sentinel'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0038",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 0.87,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.087,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.0870). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.087, 'SOP': 0.0}. Theme token: 'test'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0039",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.1333,
+        "SOP": 0.2
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.2000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.1333, 'SOP': 0.2}. Theme token: 'setup'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0040",
+      "recommended_runtime_domain": "MTP",
+      "confidence_score": 0.8,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.08,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'MTP' scored highest (0.0800). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.08, 'SOP': 0.0}. Theme token: 'last'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0041",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.1053
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.1053). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.1053}. Theme token: 'test'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0042",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.702,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0702
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0702). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0702}. Theme token: 'resolve'. Fragment count: 3."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0043",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.588,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0588
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0588). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0588}. Theme token: 'simulate'. Fragment count: 2."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0044",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'sha256'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0045",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'collect'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0046",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'interfaces'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0047",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'restrict'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0048",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'mission'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0049",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.3333
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.3333). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.3333}. Theme token: 'load'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0050",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'violation'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0051",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'metrics'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0052",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.2308
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.2308). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.2308}. Theme token: 'log'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0053",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'full'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0054",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 1.0,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.2
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.2000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.2}. Theme token: 'load'. Fragment count: 1."
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0055",
+      "recommended_runtime_domain": "SOP",
+      "confidence_score": 0.1,
+      "signal_scores": {
+        "SCP": 0.0,
+        "ARP": 0.0,
+        "MTP": 0.0,
+        "SOP": 0.0
+      },
+      "reasoning": "Domain 'SOP' scored highest (0.0000). Full scores: {'SCP': 0.0, 'ARP': 0.0, 'MTP': 0.0, 'SOP': 0.0}. Theme token: 'input'. Fragment count: 1."
+    }
+  ]
+}

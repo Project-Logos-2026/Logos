@@ -1,0 +1,41 @@
+{
+  "category": "INTEGRATE",
+  "count": 2,
+  "generated_at": "2026-03-15T15:15:44.487872+00:00",
+  "modules": [
+    {
+      "module": "Pre-Processing.semantic.transform_types",
+      "file": "Pre-Processing/semantic/transform_types.py",
+      "size": 777,
+      "staging_subdir": "Pre-Processing",
+      "triage": "INTEGRATE",
+      "is_dead": false,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.semantic.types",
+      "file": "Pre-Processing/semantic/types.py",
+      "size": 992,
+      "staging_subdir": "Pre-Processing",
+      "triage": "INTEGRATE",
+      "is_dead": false,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 3
+    }
+  ]
+}

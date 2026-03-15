@@ -1,0 +1,1112 @@
+{
+  "generated_at": "2026-03-15T16:04:50.542207+00:00",
+  "family": "reasoning",
+  "merge_threshold": 0.25,
+  "fragment_count": 536,
+  "cluster_count": 37,
+  "clusters": [
+    {
+      "cluster_id": "REASONING-C0000",
+      "cluster_theme": "run",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.EXTRACT_LOGIC.NLP_Wrapper_Sentence_Transformers.run",
+        "Pre-Processing.utils.stress_sop_runtime.run"
+      ],
+      "representative_functions": [
+        "run"
+      ],
+      "source_modules": [
+        "Pre-Processing.EXTRACT_LOGIC.NLP_Wrapper_Sentence_Transformers",
+        "Pre-Processing.utils.stress_sop_runtime"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0001",
+      "cluster_theme": "resolve",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time.resolve_priors_path",
+        "Pre-Processing.KEEP_VERIFY.bayesian_updates.resolve_priors_path"
+      ],
+      "representative_functions": [
+        "resolve_priors_path"
+      ],
+      "source_modules": [
+        "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+        "Pre-Processing.KEEP_VERIFY.bayesian_updates"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0002",
+      "cluster_theme": "create",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.EXTRACT_LOGIC.comprehensive_fractal_analysis.create_visual_summary"
+      ],
+      "representative_functions": [
+        "create_visual_summary"
+      ],
+      "source_modules": [
+        "Pre-Processing.EXTRACT_LOGIC.comprehensive_fractal_analysis"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0003",
+      "cluster_theme": "transform",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._transform_pattern_across_domains"
+      ],
+      "representative_functions": [
+        "_transform_pattern_across_domains"
+      ],
+      "source_modules": [
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0004",
+      "cluster_theme": "run",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network.run_HBN_analysis",
+        "Pre-Processing.KEEP_VERIFY.bayesian_updates.run_HBN_analysis"
+      ],
+      "representative_functions": [
+        "run_HBN_analysis"
+      ],
+      "source_modules": [
+        "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network",
+        "Pre-Processing.KEEP_VERIFY.bayesian_updates"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0005",
+      "cluster_theme": "init",
+      "fragment_count": 480,
+      "fragment_members": [
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.demonstrate_complete_memory_system",
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.__init__",
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.store_complete_memory",
+        "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core.bayesian_self_model",
+        "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core.hypothesis_self_test",
+        "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core.modal_self_reasoning",
+        "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core.consistency_self_check",
+        "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core.integrated_consciousness_state",
+        "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser.__init__",
+        "Pre-Processing.EXTRACT_LOGIC.bayesian_recursion.__init__",
+        "Pre-Processing.EXTRACT_LOGIC.bayesian_recursion.update_belief",
+        "Pre-Processing.EXTRACT_LOGIC.coherence.check_logical_consistency",
+        "Pre-Processing.EXTRACT_LOGIC.coherence.get_consistency_check",
+        "Pre-Processing.EXTRACT_LOGIC.coherence.__init__",
+        "Pre-Processing.EXTRACT_LOGIC.coherence.add_statement",
+        "Pre-Processing.EXTRACT_LOGIC.coherence.check_consistency",
+        "Pre-Processing.EXTRACT_LOGIC.coherence._analyze_consistency",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._default_config",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._determine_modal_status",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit.__init__",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay.handle_iel_overlay",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay.__init__",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay.initialize_iel_systems",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._load_available_domains",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._get_fallback_domains",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._initialize_modal_analyzers",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._initialize_temporal_analyzers",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._initialize_epistemic_analyzers",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._initialize_deontic_analyzers",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._get_domain_keywords",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._get_domain_operations",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._apply_modal_analysis",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._apply_temporal_analysis",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._apply_epistemic_analysis",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._apply_deontic_analysis",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._detect_modal_operators",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._calculate_logical_coherence",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._identify_reasoning_pathways",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.calculate_coherence_score",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.validate_operation",
+        "Pre-Processing.EXTRACT_LOGIC.privative_policies.__init__",
+        "Pre-Processing.EXTRACT_LOGIC.privative_policies.bijection_preservation_obligation",
+        "Pre-Processing.EXTRACT_LOGIC.privative_policies.commutation_obligation",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._block_operation",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._combine_moral_results",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._load_reality_ontology",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._initialize_correspondence_checker",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._block_claim",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._reject_truth_claim",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._initialize_error_correction",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._combine_truth_results",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._block_infinite_operation",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._block_paradox_operation",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._block_causality_violation",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._block_temporal_paradox",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._combine_boundary_results",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms.validate_existence_operation",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._initialize_participation_ladder",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._participates_in_necessary_being",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._block_existence_operation",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._validate_ontological_consistency",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._maintain_being_boundary",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._combine_existence_results",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms.__init__",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms.validate_resurrection_cycle",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._initialize_modal_states",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._validates_modal_transition",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._block_invalid_transition",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._block_nature_conflict",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms.__init__",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._combine_relational_results",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._generate_safety_guarantees",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.project_to_pxl",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.get_entity_modality",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.__init__",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model._create_initial_state",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model._check_modal_consistency",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.predict_modal_evolution",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.add_modal_constraint",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model._update_consistency_graph",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.save_state",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.load_state",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.get_diagnostics",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model._get_modal_distribution",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.__init__",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.pxl_proposition_to_modal",
+        "Pre-Processing.KEEP_VERIFY.agent_identity._create_new_identity",
+        "Pre-Processing.KEEP_VERIFY.agent_identity.validate_identity",
+        "Pre-Processing.KEEP_VERIFY.arithmetic_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.arithmetic_engine.trinity_gcd",
+        "Pre-Processing.KEEP_VERIFY.arithmetic_engine.trinity_lcm",
+        "Pre-Processing.KEEP_VERIFY.arithmetic_engine.get_computation_statistics",
+        "Pre-Processing.KEEP_VERIFY.autonomous_learning.identify_reasoning_gaps",
+        "Pre-Processing.KEEP_VERIFY.autonomous_learning._create_reasoning_gap",
+        "Pre-Processing.KEEP_VERIFY.autonomous_learning._generate_gap_description",
+        "Pre-Processing.KEEP_VERIFY.autonomous_learning._generate_candidates_for_gap",
+        "Pre-Processing.KEEP_VERIFY.bayesian_inferencer.infer",
+        "Pre-Processing.KEEP_VERIFY.bayesian_interface.__init__",
+        "Pre-Processing.KEEP_VERIFY.bayesian_interface.infer",
+        "Pre-Processing.KEEP_VERIFY.bayesian_nexus._pxl_key_match",
+        "Pre-Processing.KEEP_VERIFY.bayesian_nexus._extract_proof_refs",
+        "Pre-Processing.KEEP_VERIFY.bayesian_nexus._tag_append_artifact",
+        "Pre-Processing.KEEP_VERIFY.bayesian_nexus.__init__",
+        "Pre-Processing.KEEP_VERIFY.bayesian_nexus.run_pipeline",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.__init__",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.map_between_modals",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._initialize_logic_hierarchy",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._initialize_translation_maps",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._find_translation_path",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._apply_single_translation",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._k_to_kt",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._kt_to_s4",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._s4_to_s5",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._repair_coherence",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.__init__",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.validate_coherence_preservation",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.validate_belief_coherence",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._initialize_coherence_checks",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._check_semantic_equivalence",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._check_modal_frame_preservation",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._check_modal_consistency",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._find_contradictory_modals",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._get_negation",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._are_contradictory",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._get_logic_properties",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._logic_implies",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._calculate_coherence_score",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.detect_contradiction",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.detect_belief_contradictions",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._initialize_contradiction_patterns",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._has_modal_contradiction",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._beliefs_contradict",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.__init__",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.update_belief",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.validate_belief_coherence",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._validate_update_coherence",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._bayesian_update",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.__init__",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.verify_coherence_property",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.prove_coherence_theorem",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._initialize_verification_theorems",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.prove_theorem",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._initialize_proof_methods",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._natural_deduction",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._sequent_calculus",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._modal_logic_proof",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.__init__",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.validate_operation_coherence",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.translate_modal_logic",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.verify_formal_property",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism.get_coherence_status",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism._assess_overall_coherence",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.trinity_coherence",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.weighted_trinity_coherence",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.to_dict",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.__init__",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics._setup_logging",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.analyze_coherence_trends",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.get_coherence_history",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.is_coherence_degraded",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.get_coherence_statistics",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics._compute_coherence_trend",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics._compute_coherence_volatility",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics._compute_stability_score",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics._generate_coherence_recommendations",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics._update_coherence_statistics",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.compute_pxl_coherence",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.compute_iel_coherence",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.compute_runtime_coherence",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.get_current_trinity_coherence",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.is_system_coherent",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.get_coherence_report",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.calculate_coherence",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.from_dict",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.from_dict",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.from_dict",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.from_dict",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.from_dict",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine._initialize_environment",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.check_type",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine._initialize_environment",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine._evaluate",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.substitute",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.create_variable",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.create_value",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.create_abstraction",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.create_sr",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.check_type",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.add",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.get",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.add_sr_operator",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.type_check",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.evaluate",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.necessarily",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.possibly",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.evaluate_modal",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.create_variable",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.create_abstraction",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.create_sr",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.check_type",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.trinity_to_modal",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.bridge_to_3pdn",
+        "Pre-Processing.KEEP_VERIFY.lambda_parser.parse_atomic",
+        "Pre-Processing.KEEP_VERIFY.lambda_parser.parse_sr",
+        "Pre-Processing.KEEP_VERIFY.lambda_parser._parse_type",
+        "Pre-Processing.KEEP_VERIFY.modal_logic.__init__",
+        "Pre-Processing.KEEP_VERIFY.modal_logic._initialize_system",
+        "Pre-Processing.KEEP_VERIFY.modal_logic.evaluate_formula",
+        "Pre-Processing.KEEP_VERIFY.modal_logic.check_consistency",
+        "Pre-Processing.KEEP_VERIFY.modal_logic.find_counterexample",
+        "Pre-Processing.KEEP_VERIFY.modal_logic.validate_modal_logic",
+        "Pre-Processing.KEEP_VERIFY.modal_reasoner.__init__",
+        "Pre-Processing.KEEP_VERIFY.modal_reasoner.prove_theorem",
+        "Pre-Processing.KEEP_VERIFY.modal_reasoner._prove_necessity_theorem",
+        "Pre-Processing.KEEP_VERIFY.modal_reasoner._prove_possibility_theorem",
+        "Pre-Processing.KEEP_VERIFY.modal_reasoner.check_logical_consequence",
+        "Pre-Processing.KEEP_VERIFY.modal_reasoner.find_model",
+        "Pre-Processing.KEEP_VERIFY.modal_reasoner.get_proof_tree",
+        "Pre-Processing.KEEP_VERIFY.modal_reasoner.check_modal_consistency",
+        "Pre-Processing.KEEP_VERIFY.modal_reasoner.get_reasoning_statistics",
+        "Pre-Processing.KEEP_VERIFY.modal_validator.__init__",
+        "Pre-Processing.KEEP_VERIFY.modal_validator.validate_modal_formula",
+        "Pre-Processing.KEEP_VERIFY.modal_validator._parse_formula",
+        "Pre-Processing.KEEP_VERIFY.modal_validator._evaluate_formula",
+        "Pre-Processing.KEEP_VERIFY.modal_validator._calculate_modal_confidence",
+        "Pre-Processing.KEEP_VERIFY.modal_validator._analyze_modal_properties",
+        "Pre-Processing.KEEP_VERIFY.modal_validator.validate_modal_consistency",
+        "Pre-Processing.KEEP_VERIFY.modal_validator._check_mutual_consistency",
+        "Pre-Processing.KEEP_VERIFY.multi_modal_system.__init__",
+        "Pre-Processing.KEEP_VERIFY.multi_modal_system.add_modality",
+        "Pre-Processing.KEEP_VERIFY.multi_modal_system.add_cross_modal_constraint",
+        "Pre-Processing.KEEP_VERIFY.multi_modal_system.evaluate_hybrid_formula",
+        "Pre-Processing.KEEP_VERIFY.multi_modal_system.check_cross_modal_consistency",
+        "Pre-Processing.KEEP_VERIFY.multi_modal_system.translate_between_modalities",
+        "Pre-Processing.KEEP_VERIFY.multi_modal_system.get_system_overview",
+        "Pre-Processing.KEEP_VERIFY.multi_modal_system.__init__",
+        "Pre-Processing.KEEP_VERIFY.multi_modal_system._agent_knows",
+        "Pre-Processing.KEEP_VERIFY.proof_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.proof_engine.ontologically_verified_proof",
+        "Pre-Processing.KEEP_VERIFY.proof_engine._attempt_standard_proof",
+        "Pre-Processing.KEEP_VERIFY.proof_engine._check_logical_validity",
+        "Pre-Processing.KEEP_VERIFY.proof_engine._check_disprovability",
+        "Pre-Processing.KEEP_VERIFY.proof_engine._apply_lambda_proof_enhancement",
+        "Pre-Processing.KEEP_VERIFY.proof_engine._determine_ontological_type",
+        "Pre-Processing.KEEP_VERIFY.proof_engine.batch_proof_verification",
+        "Pre-Processing.KEEP_VERIFY.proof_engine.get_proof_engine_statistics",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.analyze_logos_agent_ontology",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.create_orbital_visualization",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.main",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.__repr__",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.__eq__",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.__init__",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis._create_bijection_A",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis._create_bijection_B",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.verify_injectivity",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.verify_surjectivity",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.verify_bijection",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.apply_bijection",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.test_commutation",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.is_privative",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.enforce_privative_boundary",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.apply_negation_as_privation",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.apply_necessity",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.apply_possibility",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.check_s5_consistency",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.enforce_riders",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis._get_expected_riders",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.resolve_to_iel_overlays",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.__init__",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.validate_pxl_constraints",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis._validate_dual_bijection",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis._validate_modal_necessity",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis._validate_ontological_riders",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis.perform_fractal_orbital_analysis",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis._trace_logical_orbit",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis._analyze_orbital_convergence",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis._detect_logical_attractors",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis._calculate_self_similarity",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis.analyze_privative_modal_boundaries",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis.interpret_privative_boundaries",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis.assess_ontological_coherence",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis.main",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis.get_modal_interpretation",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis.__repr__",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis.__repr__",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis.__eq__",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis.__init__",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis.initialize_ontological_fractal_space",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis.classify_modal_fractal_space",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis._identify_privative_boundaries",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis.analyze_ontological_fractal_dynamics",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis._assess_ontological_coherence",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis._detect_fractal_attractors",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis.generate_modal_fractal_visualization",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.relation_from_json",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.get_modal_properties",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.check_modal_consistency",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.__post_init__",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema._validate_modal_consistency",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.to_model",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.validate",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.analyze_trinity_coherence",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper.__init__",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper.__init__",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper._initialize_logical_patterns",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper.analyze_logical_relations",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper._analyze_definition_context",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper.__init__",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper._build_ontological_hierarchy",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper._calculate_global_coherence",
+        "Pre-Processing.KEEP_VERIFY.semantic_transformers.__init__",
+        "Pre-Processing.KEEP_VERIFY.semantic_transformers._extract_semantic_keywords",
+        "Pre-Processing.KEEP_VERIFY.semantic_transformers._default_trinity_vector",
+        "Pre-Processing.agent.Logos_Memory_Nexus.ingest_smp",
+        "Pre-Processing.agent.Logos_Memory_Nexus.form_concept",
+        "Pre-Processing.agent.Logos_Memory_Nexus.categorize",
+        "Pre-Processing.agent.Logos_Memory_Nexus.abstract_relations",
+        "Pre-Processing.agent.Logos_Memory_Nexus.__init__",
+        "Pre-Processing.agent.agent_nexus._simulate_gap_detection",
+        "Pre-Processing.agent.agent_nexus._simulate_linguistic_processing",
+        "Pre-Processing.agent.agent_nexus._protocol_specific_activation",
+        "Pre-Processing.agent.agent_nexus._protocol_specific_deactivation",
+        "Pre-Processing.agent.base_nexus._pxl_key_match",
+        "Pre-Processing.agent.base_nexus._extract_proof_refs",
+        "Pre-Processing.agent.base_nexus._tag_append_artifact",
+        "Pre-Processing.agent.base_nexus.__init__",
+        "Pre-Processing.agent.base_nexus._protocol_specific_initialization",
+        "Pre-Processing.agent.base_nexus._validate_security_boundaries",
+        "Pre-Processing.agent.base_nexus._protocol_specific_security_validation",
+        "Pre-Processing.agent.base_nexus._protocol_specific_activation",
+        "Pre-Processing.agent.base_nexus._protocol_specific_deactivation",
+        "Pre-Processing.agent.legacy_sop_nexus._pxl_key_match",
+        "Pre-Processing.agent.legacy_sop_nexus._extract_proof_refs",
+        "Pre-Processing.agent.legacy_sop_nexus._tag_append_artifact",
+        "Pre-Processing.agent.legacy_sop_nexus._analyze_protocol_dependencies",
+        "Pre-Processing.agent.legacy_sop_nexus._protocol_specific_security_validation",
+        "Pre-Processing.agent.legacy_sop_nexus._handle_token_validation",
+        "Pre-Processing.agent.legacy_sop_nexus.__init__",
+        "Pre-Processing.agent.sop_nexus._pxl_key_match",
+        "Pre-Processing.agent.sop_nexus._extract_proof_refs",
+        "Pre-Processing.agent.sop_nexus._tag_append_artifact",
+        "Pre-Processing.agent.sop_nexus._analyze_protocol_dependencies",
+        "Pre-Processing.agent.sop_nexus._protocol_specific_security_validation",
+        "Pre-Processing.agent.sop_nexus._handle_token_validation",
+        "Pre-Processing.agent.sop_nexus.__init__",
+        "Pre-Processing.agent.test_agent_planner.setUp",
+        "Pre-Processing.agent.test_end_to_end_pipeline.test_component_interfaces",
+        "Pre-Processing.agent.test_integration_identity._write_persisted_identity",
+        "Pre-Processing.agent.test_integration_identity.__init__",
+        "Pre-Processing.agent.test_nexus_capability_governance._protocol_specific_security_validation",
+        "Pre-Processing.math.fractal_nexus._pxl_key_match",
+        "Pre-Processing.math.fractal_nexus._extract_proof_refs",
+        "Pre-Processing.math.fractal_nexus._tag_append_artifact",
+        "Pre-Processing.math.fractal_nexus.__init__",
+        "Pre-Processing.reasoning.arp_nexus._pxl_key_match",
+        "Pre-Processing.reasoning.arp_nexus._extract_proof_refs",
+        "Pre-Processing.reasoning.arp_nexus._tag_append_artifact",
+        "Pre-Processing.reasoning.arp_nexus.__init__",
+        "Pre-Processing.reasoning.arp_nexus.initialize",
+        "Pre-Processing.reasoning.arp_nexus._initialize_reasoning_engines",
+        "Pre-Processing.reasoning.arp_nexus._initialize_mathematical_foundations",
+        "Pre-Processing.reasoning.arp_nexus.process_reasoning_request",
+        "Pre-Processing.reasoning.arp_nexus._process_recursive_refinement",
+        "Pre-Processing.reasoning.arp_nexus._process_standard_analysis",
+        "Pre-Processing.reasoning.arp_nexus._process_deep_ontological",
+        "Pre-Processing.reasoning.arp_nexus._process_formal_verification",
+        "Pre-Processing.reasoning.arp_nexus.get_status",
+        "Pre-Processing.reasoning.arp_nexus.__init__",
+        "Pre-Processing.reasoning.integration_test.test_protocol_integration",
+        "Pre-Processing.reasoning.integration_test.test_recursive_processing_simulation",
+        "Pre-Processing.reasoning.integration_test_suite.test_pxl_proof_engine",
+        "Pre-Processing.reasoning.integration_test_suite._test_pxl_serapi_integration",
+        "Pre-Processing.reasoning.integration_test_suite.run_full_integration_suite",
+        "Pre-Processing.reasoning.scp_nexus.__init__",
+        "Pre-Processing.reasoning.scp_nexus.initialize",
+        "Pre-Processing.reasoning.scp_nexus._initialize_cognitive_systems",
+        "Pre-Processing.reasoning.scp_nexus._initialize_modal_chain_processors",
+        "Pre-Processing.reasoning.scp_nexus._initialize_fractal_analysis",
+        "Pre-Processing.reasoning.scp_nexus._initialize_meta_reasoning",
+        "Pre-Processing.reasoning.scp_nexus.process_agent_request",
+        "Pre-Processing.reasoning.scp_nexus._handle_activate_mvs",
+        "Pre-Processing.reasoning.scp_nexus._handle_activate_bdn",
+        "Pre-Processing.reasoning.scp_nexus._handle_process_modal_chains",
+        "Pre-Processing.reasoning.scp_nexus._simulate_modal_processing",
+        "Pre-Processing.reasoning.scp_nexus._handle_fractal_analysis",
+        "Pre-Processing.reasoning.scp_nexus._handle_meta_reasoning",
+        "Pre-Processing.reasoning.scp_nexus._handle_infinite_reasoning",
+        "Pre-Processing.reasoning.scp_nexus._handle_enhance_cognition",
+        "Pre-Processing.reasoning.scp_nexus._handle_process_todo",
+        "Pre-Processing.reasoning.scp_nexus._handle_get_cognitive_status",
+        "Pre-Processing.reasoning.scp_nexus._protocol_specific_security_validation",
+        "Pre-Processing.reasoning.scp_nexus._protocol_specific_activation",
+        "Pre-Processing.reasoning.scp_nexus._protocol_specific_deactivation",
+        "Pre-Processing.reasoning.scp_nexus._protocol_specific_smoke_test",
+        "Pre-Processing.reasoning.test_arp_nexus.test_nexus_initialization",
+        "Pre-Processing.reasoning.test_arp_nexus.test_reasoning_request",
+        "Pre-Processing.reasoning.test_arp_nexus.test_recursive_processing",
+        "Pre-Processing.reasoning.test_arp_nexus.main",
+        "Pre-Processing.reasoning.test_bayesian_data_handler.setUp",
+        "Pre-Processing.reasoning.test_bayesian_data_handler.__init__",
+        "Pre-Processing.reasoning.test_bayesian_data_handler.regression_analysis",
+        "Pre-Processing.reasoning.test_bayesian_data_handler.partial_correlation_analysis",
+        "Pre-Processing.reasoning.test_dual_bijection.test_dual_bijection_system",
+        "Pre-Processing.reasoning.test_dual_bijection.__eq__",
+        "Pre-Processing.reasoning.test_dual_bijection.__init__",
+        "Pre-Processing.reasoning.test_dual_bijection.biject_A",
+        "Pre-Processing.reasoning.test_dual_bijection.biject_B",
+        "Pre-Processing.reasoning.test_dual_bijection.commute",
+        "Pre-Processing.reasoning.test_dual_bijection.validate_ontological_consistency",
+        "Pre-Processing.reasoning.test_dual_bijection.get_concept_strength",
+        "Pre-Processing.reasoning.test_dual_bijection.compute_ontological_distance",
+        "Pre-Processing.reasoning.test_dual_bijection.find_related_concepts",
+        "Pre-Processing.reasoning.test_integration.test_imports",
+        "Pre-Processing.reasoning.test_integration.test_component_initialization",
+        "Pre-Processing.reasoning.test_integration.test_unified_interface",
+        "Pre-Processing.reasoning.test_integration.run_integration_tests",
+        "Pre-Processing.reasoning.test_logos_agi_persistence_smoke.run_test",
+        "Pre-Processing.reasoning.uip_nexus.__init__",
+        "Pre-Processing.reasoning.uip_nexus.initialize",
+        "Pre-Processing.reasoning.uip_nexus._initialize_reasoning_engines",
+        "Pre-Processing.reasoning.uip_nexus._initialize_analysis_tools",
+        "Pre-Processing.reasoning.uip_nexus.process_agent_request",
+        "Pre-Processing.reasoning.uip_nexus._handle_activate_reasoning",
+        "Pre-Processing.reasoning.uip_nexus._handle_perform_analysis",
+        "Pre-Processing.reasoning.uip_nexus._handle_synthesize_response",
+        "Pre-Processing.reasoning.uip_nexus._handle_orchestrate_workflow",
+        "Pre-Processing.reasoning.uip_nexus._handle_deactivate",
+        "Pre-Processing.reasoning.uip_nexus._handle_get_status",
+        "Pre-Processing.reasoning.uip_nexus._protocol_specific_security_validation",
+        "Pre-Processing.reasoning.uip_nexus._protocol_specific_activation",
+        "Pre-Processing.reasoning.uip_nexus._protocol_specific_deactivation",
+        "Pre-Processing.reasoning.uip_nexus._protocol_specific_smoke_test",
+        "Pre-Processing.safety.test_reference_monitor.test_contradiction_detection",
+        "Pre-Processing.safety.test_reference_monitor.test_tautology_detection",
+        "Pre-Processing.safety.test_reference_monitor.test_modal_axiom_validation",
+        "Pre-Processing.safety.test_reference_monitor.setUp",
+        "Pre-Processing.safety.test_reference_monitor.test_pre_validation_syntax_checking",
+        "Pre-Processing.safety.test_reference_monitor.test_dangerous_pattern_detection",
+        "Pre-Processing.safety.test_reference_monitor.test_operator_nesting_limits",
+        "Pre-Processing.safety.test_reference_monitor.test_emergency_halt_functionality",
+        "Pre-Processing.safety.test_reference_monitor.test_blocked_operations",
+        "Pre-Processing.safety.test_reference_monitor.test_evaluation_logging",
+        "Pre-Processing.safety.test_reference_monitor.test_monitor_status_reporting",
+        "Pre-Processing.safety.test_reference_monitor.setUp",
+        "Pre-Processing.safety.test_reference_monitor.test_error_injection_and_circuit_breaker",
+        "Pre-Processing.safety.test_reference_monitor.test_consistency_violation_detection",
+        "Pre-Processing.safety.test_reference_monitor.test_performance_anomaly_detection",
+        "Pre-Processing.safety.test_reference_monitor.test_recovery_from_emergency_state",
+        "Pre-Processing.safety.test_reference_monitor.test_logos_core_initialization",
+        "Pre-Processing.safety.test_reference_monitor.test_convenience_functions",
+        "Pre-Processing.safety.test_reference_monitor.setUp",
+        "Pre-Processing.safety.test_reference_monitor.test_concurrent_evaluations",
+        "Pre-Processing.semantic.commitment_ledger.validate_ledger",
+        "Pre-Processing.semantic.commitment_ledger.mark_commitment_status",
+        "Pre-Processing.semantic.test_logos_agi_adapter.test_persistence_verification",
+        "Pre-Processing.semantic.test_logos_agi_adapter.test_real_api_integration",
+        "Pre-Processing.utils.iel_registryv1.verify_iel",
+        "Pre-Processing.utils.iel_registryv1.activate_iel",
+        "Pre-Processing.utils.iel_registryv1.revoke_iel",
+        "Pre-Processing.utils.iel_registryv1.verify_integrity",
+        "Pre-Processing.utils.iel_registryv1._init_database",
+        "Pre-Processing.utils.iel_registryv1._store_entry",
+        "Pre-Processing.utils.iel_registryv1._update_entry",
+        "Pre-Processing.utils.iel_registryv1._row_to_entry",
+        "Pre-Processing.utils.kernel.apply_bijection",
+        "Pre-Processing.utils.kernel.commute",
+        "Pre-Processing.utils.kernel.register_verified_bijection",
+        "Pre-Processing.utils.router.__init__"
+      ],
+      "representative_functions": [
+        "__eq__",
+        "__init__",
+        "__post_init__",
+        "__repr__",
+        "_agent_knows",
+        "_analyze_consistency",
+        "_analyze_definition_context",
+        "_analyze_modal_properties",
+        "_analyze_orbital_convergence",
+        "_analyze_protocol_dependencies"
+      ],
+      "source_modules": [
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+        "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+        "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser",
+        "Pre-Processing.EXTRACT_LOGIC.bayesian_recursion",
+        "Pre-Processing.EXTRACT_LOGIC.coherence",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+        "Pre-Processing.EXTRACT_LOGIC.privative_policies",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+        "Pre-Processing.KEEP_VERIFY.agent_identity",
+        "Pre-Processing.KEEP_VERIFY.arithmetic_engine",
+        "Pre-Processing.KEEP_VERIFY.autonomous_learning",
+        "Pre-Processing.KEEP_VERIFY.bayesian_inferencer",
+        "Pre-Processing.KEEP_VERIFY.bayesian_interface",
+        "Pre-Processing.KEEP_VERIFY.bayesian_nexus",
+        "Pre-Processing.KEEP_VERIFY.coherence_formalism",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine",
+        "Pre-Processing.KEEP_VERIFY.lambda_parser",
+        "Pre-Processing.KEEP_VERIFY.modal_logic",
+        "Pre-Processing.KEEP_VERIFY.modal_reasoner",
+        "Pre-Processing.KEEP_VERIFY.modal_validator",
+        "Pre-Processing.KEEP_VERIFY.multi_modal_system",
+        "Pre-Processing.KEEP_VERIFY.proof_engine",
+        "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis",
+        "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper",
+        "Pre-Processing.KEEP_VERIFY.semantic_transformers",
+        "Pre-Processing.agent.Logos_Memory_Nexus",
+        "Pre-Processing.agent.agent_nexus",
+        "Pre-Processing.agent.base_nexus",
+        "Pre-Processing.agent.legacy_sop_nexus",
+        "Pre-Processing.agent.sop_nexus",
+        "Pre-Processing.agent.test_agent_planner",
+        "Pre-Processing.agent.test_end_to_end_pipeline",
+        "Pre-Processing.agent.test_integration_identity",
+        "Pre-Processing.agent.test_nexus_capability_governance",
+        "Pre-Processing.math.fractal_nexus",
+        "Pre-Processing.reasoning.arp_nexus",
+        "Pre-Processing.reasoning.integration_test",
+        "Pre-Processing.reasoning.integration_test_suite",
+        "Pre-Processing.reasoning.scp_nexus",
+        "Pre-Processing.reasoning.test_arp_nexus",
+        "Pre-Processing.reasoning.test_bayesian_data_handler",
+        "Pre-Processing.reasoning.test_dual_bijection",
+        "Pre-Processing.reasoning.test_integration",
+        "Pre-Processing.reasoning.test_logos_agi_persistence_smoke",
+        "Pre-Processing.reasoning.uip_nexus",
+        "Pre-Processing.safety.test_reference_monitor",
+        "Pre-Processing.semantic.commitment_ledger",
+        "Pre-Processing.semantic.test_logos_agi_adapter",
+        "Pre-Processing.utils.iel_registryv1",
+        "Pre-Processing.utils.kernel",
+        "Pre-Processing.utils.router"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0006",
+      "cluster_theme": "summarize",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.EXTRACT_LOGIC.simulated_consciousness_runtime._summarize_cycle"
+      ],
+      "representative_functions": [
+        "_summarize_cycle"
+      ],
+      "source_modules": [
+        "Pre-Processing.EXTRACT_LOGIC.simulated_consciousness_runtime"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0007",
+      "cluster_theme": "analyze",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer.analyze_all_layers"
+      ],
+      "representative_functions": [
+        "analyze_all_layers"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0008",
+      "cluster_theme": "analysis",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._topological_analysis"
+      ],
+      "representative_functions": [
+        "_topological_analysis"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0009",
+      "cluster_theme": "run",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.autonomous_learning.run_learning_cycle"
+      ],
+      "representative_functions": [
+        "run_learning_cycle"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.autonomous_learning"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0010",
+      "cluster_theme": "create",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.multi_modal_system.create_common_knowledge_logic"
+      ],
+      "representative_functions": [
+        "create_common_knowledge_logic"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.multi_modal_system"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0011",
+      "cluster_theme": "from",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.proof_engine._extract_trinity_context_from_statement"
+      ],
+      "representative_functions": [
+        "_extract_trinity_context_from_statement"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.proof_engine"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0012",
+      "cluster_theme": "write",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.tool_invention._generate_tools",
+        "Pre-Processing.KEEP_VERIFY.tool_invention._write_proposal"
+      ],
+      "representative_functions": [
+        "_generate_tools",
+        "_write_proposal"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.tool_invention"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0013",
+      "cluster_theme": "tag",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.tool_optimizer._infer_protocol_tag",
+        "Pre-Processing.KEEP_VERIFY.tool_optimizer._infer_risk_tag"
+      ],
+      "representative_functions": [
+        "_infer_protocol_tag",
+        "_infer_risk_tag"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.tool_optimizer"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0014",
+      "cluster_theme": "logical",
+      "fragment_count": 4,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.translation_engine._determine_translation_mode",
+        "Pre-Processing.KEEP_VERIFY.translation_engine._translate_structure",
+        "Pre-Processing.KEEP_VERIFY.translation_engine._translate_logical_structure",
+        "Pre-Processing.KEEP_VERIFY.translation_engine._describe_logical_operators"
+      ],
+      "representative_functions": [
+        "_describe_logical_operators",
+        "_determine_translation_mode",
+        "_translate_logical_structure",
+        "_translate_structure"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.translation_engine"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0015",
+      "cluster_theme": "handle",
+      "fragment_count": 3,
+      "fragment_members": [
+        "Pre-Processing.agent.agent_nexus._handle_causal_planning",
+        "Pre-Processing.agent.agent_nexus._handle_strategic_planning",
+        "Pre-Processing.agent.agent_nexus._handle_goal_decomposition"
+      ],
+      "representative_functions": [
+        "_handle_causal_planning",
+        "_handle_goal_decomposition",
+        "_handle_strategic_planning"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.agent_nexus"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0016",
+      "cluster_theme": "after",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.agent.test_agent_planner.test_agenda_and_actions_after_alignment"
+      ],
+      "representative_functions": [
+        "test_agenda_and_actions_after_alignment"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.test_agent_planner"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0017",
+      "cluster_theme": "consciousness",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.agent.test_integration_identity._make_fake_consciousness_module",
+        "Pre-Processing.agent.test_lock_unlock._make_fake_consciousness_module"
+      ],
+      "representative_functions": [
+        "_make_fake_consciousness_module"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.test_integration_identity",
+        "Pre-Processing.agent.test_lock_unlock"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0018",
+      "cluster_theme": "requires",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.agent.test_llm_bypass_smoke.test_high_impact_requires_uip"
+      ],
+      "representative_functions": [
+        "test_high_impact_requires_uip"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.test_llm_bypass_smoke"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0019",
+      "cluster_theme": "when",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.agent.test_lock_unlock.test_connectors_blocked_when_no_identity"
+      ],
+      "representative_functions": [
+        "test_connectors_blocked_when_no_identity"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.test_lock_unlock"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0020",
+      "cluster_theme": "iels",
+      "fragment_count": 5,
+      "fragment_members": [
+        "Pre-Processing.agent.test_self_improvement_cycle.test_multi_cycle_stability",
+        "Pre-Processing.agent.test_self_improvement_cycle._create_mock_iels",
+        "Pre-Processing.agent.test_self_improvement_cycle.daemon_config",
+        "Pre-Processing.agent.test_self_improvement_cycle._register_test_iels",
+        "Pre-Processing.agent.test_self_improvement_cycle._create_candidate"
+      ],
+      "representative_functions": [
+        "_create_candidate",
+        "_create_mock_iels",
+        "_register_test_iels",
+        "daemon_config",
+        "test_multi_cycle_stability"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.test_self_improvement_cycle"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0021",
+      "cluster_theme": "commitments",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.semantic.prioritization.propose_candidate_commitments"
+      ],
+      "representative_functions": [
+        "propose_candidate_commitments"
+      ],
+      "source_modules": [
+        "Pre-Processing.semantic.prioritization"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0022",
+      "cluster_theme": "commitment",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.semantic.prioritization.score_commitment"
+      ],
+      "representative_functions": [
+        "score_commitment"
+      ],
+      "source_modules": [
+        "Pre-Processing.semantic.prioritization"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0023",
+      "cluster_theme": "collects",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.semantic.test_perception_ingestors.test_collects_events_into_observation"
+      ],
+      "representative_functions": [
+        "test_collects_events_into_observation"
+      ],
+      "source_modules": [
+        "Pre-Processing.semantic.test_perception_ingestors"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0024",
+      "cluster_theme": "summarizes",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.semantic.test_perception_ingestors.test_collect_summarizes_resource_statistics"
+      ],
+      "representative_functions": [
+        "test_collect_summarizes_resource_statistics"
+      ],
+      "source_modules": [
+        "Pre-Processing.semantic.test_perception_ingestors"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0025",
+      "cluster_theme": "passive",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utility.test_arp_modes.test_passive_trigger"
+      ],
+      "representative_functions": [
+        "test_passive_trigger"
+      ],
+      "source_modules": [
+        "Pre-Processing.utility.test_arp_modes"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0026",
+      "cluster_theme": "test",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utility.test_determinism.test_router_determinism"
+      ],
+      "representative_functions": [
+        "test_router_determinism"
+      ],
+      "source_modules": [
+        "Pre-Processing.utility.test_determinism"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0027",
+      "cluster_theme": "sanitize",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.cycle_ledger._sanitize_outcomes"
+      ],
+      "representative_functions": [
+        "_sanitize_outcomes"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.cycle_ledger"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0028",
+      "cluster_theme": "proved",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.evidence.is_proved_reference"
+      ],
+      "representative_functions": [
+        "is_proved_reference"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.evidence"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0029",
+      "cluster_theme": "verify",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.kernel.verify_structure_preservation"
+      ],
+      "representative_functions": [
+        "verify_structure_preservation"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.kernel"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0030",
+      "cluster_theme": "emergency",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.utils.policy.trigger_emergency_stop",
+        "Pre-Processing.utils.policy._notify_emergency_stop"
+      ],
+      "representative_functions": [
+        "_notify_emergency_stop",
+        "trigger_emergency_stop"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.policy"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0031",
+      "cluster_theme": "get",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.utils.policy._get_default_policy",
+        "Pre-Processing.utils.policy._get_safety_constraint"
+      ],
+      "representative_functions": [
+        "_get_default_policy",
+        "_get_safety_constraint"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.policy"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0032",
+      "cluster_theme": "initialized",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.router.ensure_initialized"
+      ],
+      "representative_functions": [
+        "ensure_initialized"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.router"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0033",
+      "cluster_theme": "handle",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.router._handle_prompt"
+      ],
+      "representative_functions": [
+        "_handle_prompt"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.router"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0034",
+      "cluster_theme": "phase",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.utils.uip_operations._phase_1_gui_systems",
+        "Pre-Processing.utils.uip_operations._phase_4_response_synthesis"
+      ],
+      "representative_functions": [
+        "_phase_1_gui_systems",
+        "_phase_4_response_synthesis"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.uip_operations"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0035",
+      "cluster_theme": "process",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.uip_operations.process_user_interaction"
+      ],
+      "representative_functions": [
+        "process_user_interaction"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.uip_operations"
+      ]
+    },
+    {
+      "cluster_id": "REASONING-C0036",
+      "cluster_theme": "step",
+      "fragment_count": 3,
+      "fragment_members": [
+        "Pre-Processing.utils.uip_operations._step_1_input_capture",
+        "Pre-Processing.utils.uip_operations._step_4_protocol_routing",
+        "Pre-Processing.utils.uip_operations._step_7_output_delivery"
+      ],
+      "representative_functions": [
+        "_step_1_input_capture",
+        "_step_4_protocol_routing",
+        "_step_7_output_delivery"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.uip_operations"
+      ]
+    }
+  ]
+}

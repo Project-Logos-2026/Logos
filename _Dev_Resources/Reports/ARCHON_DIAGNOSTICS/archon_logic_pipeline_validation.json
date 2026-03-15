@@ -1,0 +1,102 @@
+{
+  "generated_at": "2026-03-15T16:04:50.423945+00:00",
+  "static_validation": [
+    {
+      "tool": "fragment_family_builder.py",
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/LOGOS_CORE/Logos_Agent/ARCHON_PRIME/WORKFLOW_TARGET_AUDITS/MODULES/analysis/semantic_analysis/fragment_family_builder.py",
+      "checks": {
+        "path_exists": true,
+        "syntax_valid": true,
+        "has_run_entrypoint": true,
+        "has_main_entrypoint": true,
+        "references_output_root": true,
+        "no_workflow_nexus_import": true,
+        "has_module_docstring": true
+      }
+    },
+    {
+      "tool": "fragment_cluster_analyzer.py",
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/LOGOS_CORE/Logos_Agent/ARCHON_PRIME/WORKFLOW_TARGET_AUDITS/MODULES/analysis/semantic_analysis/fragment_cluster_analyzer.py",
+      "checks": {
+        "path_exists": true,
+        "syntax_valid": true,
+        "has_run_entrypoint": true,
+        "has_main_entrypoint": true,
+        "references_output_root": true,
+        "no_workflow_nexus_import": true,
+        "has_module_docstring": true
+      }
+    },
+    {
+      "tool": "fragment_runtime_mapper.py",
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/LOGOS_CORE/Logos_Agent/ARCHON_PRIME/WORKFLOW_TARGET_AUDITS/MODULES/analysis/semantic_analysis/fragment_runtime_mapper.py",
+      "checks": {
+        "path_exists": true,
+        "syntax_valid": true,
+        "has_run_entrypoint": true,
+        "has_main_entrypoint": true,
+        "references_output_root": true,
+        "no_workflow_nexus_import": true,
+        "has_module_docstring": true
+      }
+    },
+    {
+      "tool": "module_reconstruction_planner.py",
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/LOGOS_CORE/Logos_Agent/ARCHON_PRIME/WORKFLOW_TARGET_AUDITS/MODULES/analysis/semantic_analysis/module_reconstruction_planner.py",
+      "checks": {
+        "path_exists": true,
+        "syntax_valid": true,
+        "has_run_entrypoint": true,
+        "has_main_entrypoint": true,
+        "references_output_root": true,
+        "no_workflow_nexus_import": true,
+        "has_module_docstring": true
+      }
+    },
+    {
+      "tool": "module_synthesizer.py",
+      "path": "LOGOS_SYSTEM/RUNTIME_CORES/RUNTIME_EXECUTION_CORE/LOGOS_CORE/Logos_Agent/ARCHON_PRIME/WORKFLOW_TARGET_AUDITS/MODULES/analysis/semantic_analysis/module_synthesizer.py",
+      "checks": {
+        "path_exists": true,
+        "syntax_valid": true,
+        "has_run_entrypoint": true,
+        "has_main_entrypoint": true,
+        "references_output_root": true,
+        "no_workflow_nexus_import": true,
+        "has_module_docstring": true
+      }
+    }
+  ],
+  "execution_tests": [
+    {
+      "stage": "fragment_family_builder",
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "stage": "fragment_cluster_analyzer",
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "stage": "fragment_runtime_mapper",
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "stage": "module_reconstruction_planner",
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "stage": "module_synthesizer",
+      "status": "PASS",
+      "error": null
+    }
+  ],
+  "summary": {
+    "static_pass": true,
+    "exec_pass_count": 5,
+    "exec_fail_count": 0
+  }
+}

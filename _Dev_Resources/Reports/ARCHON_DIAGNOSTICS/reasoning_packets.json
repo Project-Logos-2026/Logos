@@ -1,0 +1,649 @@
+[
+  {
+    "packet_id": "PKT_0000",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration"
+    ],
+    "file_paths": [
+      "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0005",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time"
+    ],
+    "file_paths": [
+      "Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0006",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser"
+    ],
+    "file_paths": [
+      "Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0007",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.bayesian_recursion"
+    ],
+    "file_paths": [
+      "Pre-Processing/EXTRACT_LOGIC/bayesian_recursion.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0008",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.coherence"
+    ],
+    "file_paths": [
+      "Pre-Processing/EXTRACT_LOGIC/coherence.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0009",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0013",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network"
+    ],
+    "file_paths": [
+      "Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0014",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.iel_overlay"
+    ],
+    "file_paths": [
+      "Pre-Processing/EXTRACT_LOGIC/iel_overlay.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0016",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.privative_policies"
+    ],
+    "file_paths": [
+      "Pre-Processing/EXTRACT_LOGIC/privative_policies.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0104",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.reasoning.scp_nexus"
+    ],
+    "file_paths": [
+      "Pre-Processing/reasoning/scp_nexus.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.agent.base_nexus"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0105",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.reasoning.arp_nexus"
+    ],
+    "file_paths": [
+      "Pre-Processing/reasoning/arp_nexus.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.agent.agent_nexus",
+      "Pre-Processing.agent.base_nexus",
+      "Pre-Processing.reasoning.scp_nexus"
+    ],
+    "external_dep_count": 3
+  },
+  {
+    "packet_id": "PKT_0106",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.reasoning.ergonomic_optimizer"
+    ],
+    "file_paths": [
+      "Pre-Processing/reasoning/ergonomic_optimizer.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0107",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.reasoning.integration_test"
+    ],
+    "file_paths": [
+      "Pre-Processing/reasoning/integration_test.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.reasoning.arp_nexus"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0108",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.reasoning.integration_test_suite"
+    ],
+    "file_paths": [
+      "Pre-Processing/reasoning/integration_test_suite.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0109",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.reasoning.modal_vector_sync"
+    ],
+    "file_paths": [
+      "Pre-Processing/reasoning/modal_vector_sync.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0110",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.reasoning.resource_manager"
+    ],
+    "file_paths": [
+      "Pre-Processing/reasoning/resource_manager.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0111",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.reasoning.test_arp_nexus"
+    ],
+    "file_paths": [
+      "Pre-Processing/reasoning/test_arp_nexus.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.reasoning.arp_nexus"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0112",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.reasoning.test_bayesian_data_handler"
+    ],
+    "file_paths": [
+      "Pre-Processing/reasoning/test_bayesian_data_handler.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.semantic.types"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0113",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.reasoning.test_dual_bijection"
+    ],
+    "file_paths": [
+      "Pre-Processing/reasoning/test_dual_bijection.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0115",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.reasoning.test_integration"
+    ],
+    "file_paths": [
+      "Pre-Processing/reasoning/test_integration.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.KEEP_VERIFY.semantic_transformers"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0116",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.reasoning.test_logos_agi_persistence_smoke"
+    ],
+    "file_paths": [
+      "Pre-Processing/reasoning/test_logos_agi_persistence_smoke.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0117",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.reasoning.test_proved_grounding"
+    ],
+    "file_paths": [
+      "Pre-Processing/reasoning/test_proved_grounding.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0118",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.reasoning.uip_nexus"
+    ],
+    "file_paths": [
+      "Pre-Processing/reasoning/uip_nexus.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.agent.base_nexus"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0119",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.utility.arp_nexus_orchestrator"
+    ],
+    "file_paths": [
+      "Pre-Processing/utility/arp_nexus_orchestrator.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0125",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.utility.scp_nexus_orchestrator"
+    ],
+    "file_paths": [
+      "Pre-Processing/utility/scp_nexus_orchestrator.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0131",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.PXL_World_Model"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/PXL_World_Model.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0132",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.action_system"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/action_system.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0133",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0134",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.lambda_engine"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/lambda_engine.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0137",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.bayesian_inferencer"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/bayesian_inferencer.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0138",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.bayesian_interface"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/bayesian_interface.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0139",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.bayesian_nexus"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/bayesian_nexus.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+      "Pre-Processing.EXTRACT_LOGIC.bayesian_recursion",
+      "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network",
+      "Pre-Processing.KEEP_VERIFY.bayesian_inferencer"
+    ],
+    "external_dep_count": 4
+  },
+  {
+    "packet_id": "PKT_0140",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.bayesian_updates"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/bayesian_updates.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0141",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.belief_network"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/belief_network.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0142",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.coherence_formalism"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/coherence_formalism.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0143",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.coherence_metrics"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/coherence_metrics.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0146",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.modal_logic"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/modal_logic.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0147",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.modal_reasoner"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/modal_reasoner.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.KEEP_VERIFY.modal_logic"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0148",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.modal_validator"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/modal_validator.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0149",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.multi_modal_system"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/multi_modal_system.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.KEEP_VERIFY.modal_logic"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0150",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.proof_engine"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/proof_engine.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0152",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/pxl_modal_fractal_boundary_analysis.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0153",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.pxl_schema"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/pxl_schema.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0154",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "reasoning",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.relation_mapper"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/relation_mapper.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  }
+]

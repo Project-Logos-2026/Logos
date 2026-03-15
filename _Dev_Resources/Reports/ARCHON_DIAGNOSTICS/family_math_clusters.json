@@ -1,0 +1,1132 @@
+{
+  "generated_at": "2026-03-15T16:04:50.542207+00:00",
+  "family": "math_symbolic",
+  "merge_threshold": 0.25,
+  "fragment_count": 309,
+  "cluster_count": 56,
+  "clusters": [
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0000",
+      "cluster_theme": "self",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core.symbolic_self_representation",
+        "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core.lambda_self_evaluation"
+      ],
+      "representative_functions": [
+        "lambda_self_evaluation",
+        "symbolic_self_representation"
+      ],
+      "source_modules": [
+        "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0001",
+      "cluster_theme": "priors",
+      "fragment_count": 5,
+      "fragment_members": [
+        "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time.load_priors",
+        "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time.save_priors",
+        "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network.load_static_priors",
+        "Pre-Processing.KEEP_VERIFY.bayesian_updates.load_priors",
+        "Pre-Processing.KEEP_VERIFY.bayesian_updates.save_priors"
+      ],
+      "representative_functions": [
+        "load_priors",
+        "load_static_priors",
+        "save_priors"
+      ],
+      "source_modules": [
+        "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+        "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network",
+        "Pre-Processing.KEEP_VERIFY.bayesian_updates"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0002",
+      "cluster_theme": "calculate",
+      "fragment_count": 3,
+      "fragment_members": [
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._select_iel_domains",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._calculate_domain_compatibility",
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay._calculate_analysis_depth"
+      ],
+      "representative_functions": [
+        "_calculate_analysis_depth",
+        "_calculate_domain_compatibility",
+        "_select_iel_domains"
+      ],
+      "source_modules": [
+        "Pre-Processing.EXTRACT_LOGIC.iel_overlay"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0003",
+      "cluster_theme": "obligation",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.EXTRACT_LOGIC.privative_policies.system_consistency_obligation"
+      ],
+      "representative_functions": [
+        "system_consistency_obligation"
+      ],
+      "source_modules": [
+        "Pre-Processing.EXTRACT_LOGIC.privative_policies"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0004",
+      "cluster_theme": "calculate",
+      "fragment_count": 217,
+      "fragment_members": [
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.__init__",
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.store_memory",
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.retrieve_memory",
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration._store_hot",
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.__init__",
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.index_memory",
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.query_by_similarity",
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration._retrieve_by_association",
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.update_forgetting_curve",
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.get_memories_for_review",
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.run_maintenance_cycle",
+        "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser._init_storage",
+        "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser.get_predictions",
+        "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser.save_metadata",
+        "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser.cleanup_old_data",
+        "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser.regression_analysis",
+        "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser.partial_correlation_analysis",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit.__init__",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit.predict_orbital_trajectory",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._calculate_prediction_confidence",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._evolve_trinity_vector",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._calculate_historical_accuracy",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit.analyze_stability",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._calculate_lyapunov_exponent",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._compute_stability_score",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit.detect_bifurcations",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit.find_patterns",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._extract_features",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._calculate_pattern_similarity",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit.comprehensive_analysis",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._calculate_predictive_power",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit.real_time_prediction",
+        "Pre-Processing.EXTRACT_LOGIC.gen_worldview_ontoprops.parse",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.main",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.__post_init__",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.magnitude",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.to_trinity_vector",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.trinity_product",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.compute_optimization_function",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.verify_trinity_optimization",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.compute_orbit",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core._calculate_fractal_dimension",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.__init__",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.verify_commutation",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.validate_unity_trinity_invariants",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.__init__",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.bootstrap",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms.handle_moral_operation",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._initialize_temporal_boundaries",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._validate_eternal_distinction",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms.handle_being_operation",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._process_normal_being_operation",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms.__init__",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms.validate_dual_nature_operation",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._resolve_nature_conflict",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.id",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.similarity",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.modal_distance",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model._validate_scales",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.embed_at_scale",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.compute_fractal_dimension",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.state_hash",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.compute_modal_field",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.update_entity",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model._update_fractal_embedding",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.query_modal_space",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model.compute_world_entropy",
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._extract_boundary",
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._find_connected_components",
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._calculate_fractal_dimension",
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._information_analysis",
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._calculate_spatial_mutual_info",
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._calculate_information_dimension",
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._find_bifurcation_points",
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._statistical_analysis",
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._fit_distributions",
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._calculate_spatial_correlation",
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._spectral_analysis",
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._calculate_fractal_spectrum",
+        "Pre-Processing.KEEP_VERIFY.agent_identity.update_identity",
+        "Pre-Processing.KEEP_VERIFY.agent_identity.identity_hash",
+        "Pre-Processing.KEEP_VERIFY.agent_identity.__init__",
+        "Pre-Processing.KEEP_VERIFY.agent_identity._generate_stable_agent_id",
+        "Pre-Processing.KEEP_VERIFY.agent_identity._get_git_info",
+        "Pre-Processing.KEEP_VERIFY.agent_identity.update_identity",
+        "Pre-Processing.KEEP_VERIFY.agent_identity.identity_hash",
+        "Pre-Processing.KEEP_VERIFY.agent_identity._compute_file_hash",
+        "Pre-Processing.KEEP_VERIFY.agent_identity._compute_catalog_tail_hash",
+        "Pre-Processing.KEEP_VERIFY.arithmetic_engine.trinity_prime_test",
+        "Pre-Processing.KEEP_VERIFY.arithmetic_engine.trinity_modular_exponentiation",
+        "Pre-Processing.KEEP_VERIFY.arithmetic_engine.trinity_factorial",
+        "Pre-Processing.KEEP_VERIFY.autonomous_learning._extract_error_pattern",
+        "Pre-Processing.KEEP_VERIFY.autonomous_learning.__init__",
+        "Pre-Processing.KEEP_VERIFY.autonomous_learning._check_rate_limit",
+        "Pre-Processing.KEEP_VERIFY.autonomous_learning._record_cycle_result",
+        "Pre-Processing.KEEP_VERIFY.autonomous_learning.get_learning_status",
+        "Pre-Processing.KEEP_VERIFY.export_tool_registry._tool_metadata",
+        "Pre-Processing.KEEP_VERIFY.export_tool_registry.main",
+        "Pre-Processing.KEEP_VERIFY.export_tool_registry._normalize",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.to_dict",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.evaluate",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.parse_from_dict",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine.trinity_vector",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.substitute",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.map_to_complex",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.compute_iterations",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.create_application",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.evaluate",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.map_to_fractal",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.process_expression",
+        "Pre-Processing.KEEP_VERIFY.lambda_parser.parse_expr",
+        "Pre-Processing.KEEP_VERIFY.lambda_parser.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_parser.tokenize",
+        "Pre-Processing.KEEP_VERIFY.lambda_parser.__init__",
+        "Pre-Processing.KEEP_VERIFY.lambda_parser.parse",
+        "Pre-Processing.KEEP_VERIFY.lambda_parser.parse_expr",
+        "Pre-Processing.KEEP_VERIFY.lambda_parser.parse_abstraction",
+        "Pre-Processing.KEEP_VERIFY.lambda_parser.parse_application",
+        "Pre-Processing.KEEP_VERIFY.lambda_parser._error",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.validate_trinity_vector",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.get_trinity_vector",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.set_trinity_vector",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.__post_init__",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.magnitude",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.normalized",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.coherence_with",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.validate",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.check_consistency",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema.validate_trinity_vector_set",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper.__str__",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper.calculate_trinity_coherence",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper.calculate_cluster_density",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper.analyze_trinity_relations",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper._calculate_trinity_coherence",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper._calculate_trinity_complementarity",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper._calculate_confidence",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper.build_semantic_networks",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper.map_concept_relations",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper._build_trinity_coherence_map",
+        "Pre-Processing.KEEP_VERIFY.semantic_transformers._calculate_semantic_coherence",
+        "Pre-Processing.KEEP_VERIFY.semantic_transformers.compute_semantic_similarity",
+        "Pre-Processing.KEEP_VERIFY.semantic_transformers._cosine_similarity",
+        "Pre-Processing.KEEP_VERIFY.semantic_transformers._trinity_similarity",
+        "Pre-Processing.KEEP_VERIFY.semantic_transformers._verify_truth_preservation",
+        "Pre-Processing.KEEP_VERIFY.semantic_transformers.__init__",
+        "Pre-Processing.KEEP_VERIFY.tool_invention._relative_ref",
+        "Pre-Processing.KEEP_VERIFY.tool_invention.run_tool_invention",
+        "Pre-Processing.KEEP_VERIFY.tool_invention.__init__",
+        "Pre-Processing.KEEP_VERIFY.tool_invention.run",
+        "Pre-Processing.KEEP_VERIFY.tool_invention._select_gaps",
+        "Pre-Processing.KEEP_VERIFY.tool_invention._score_gap",
+        "Pre-Processing.KEEP_VERIFY.tool_invention._gap_rationale",
+        "Pre-Processing.KEEP_VERIFY.tool_invention._build_request",
+        "Pre-Processing.KEEP_VERIFY.tool_optimizer._module_path",
+        "Pre-Processing.KEEP_VERIFY.tool_optimizer._clean_docstring",
+        "Pre-Processing.KEEP_VERIFY.tool_optimizer._build_tool_registry",
+        "Pre-Processing.KEEP_VERIFY.tool_optimizer._collect_inputs",
+        "Pre-Processing.KEEP_VERIFY.tool_optimizer._write_json",
+        "Pre-Processing.KEEP_VERIFY.tool_optimizer.run_tool_optimization",
+        "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline._load_current_hashes",
+        "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline.cmd_generate",
+        "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline.cmd_validate",
+        "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline.cmd_approve",
+        "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline.cmd_register",
+        "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline.main",
+        "Pre-Processing.KEEP_VERIFY.tool_repair_proposal._base_provenance",
+        "Pre-Processing.KEEP_VERIFY.tool_repair_proposal.main",
+        "Pre-Processing.KEEP_VERIFY.translation_engine._optimize_readability",
+        "Pre-Processing.KEEP_VERIFY.translation_engine._calculate_translation_confidence",
+        "Pre-Processing.KEEP_VERIFY.translation_engine._calculate_translation_quality",
+        "Pre-Processing.agent.knowledge_catalog.__init__",
+        "Pre-Processing.reasoning.arp_nexus.get_cycle_status",
+        "Pre-Processing.reasoning.test_integration.test_trinity_vector_creation",
+        "Pre-Processing.safety.attestation.compute_attestation_hash",
+        "Pre-Processing.semantic.commitment_ledger.compute_ledger_hash",
+        "Pre-Processing.semantic.commitment_ledger._compute_commitment_id",
+        "Pre-Processing.semantic.commitment_ledger._compute_event_id",
+        "Pre-Processing.semantic.commitment_ledger.record_event",
+        "Pre-Processing.semantic.commitment_ledger.upsert_commitment",
+        "Pre-Processing.semantic.commitment_ledger.write_ledger",
+        "Pre-Processing.semantic.nexus_manager._evict_expired",
+        "Pre-Processing.semantic.nexus_manager.get",
+        "Pre-Processing.semantic.prioritization._parse_priority",
+        "Pre-Processing.utils.cycle_ledger._normalize_path",
+        "Pre-Processing.utils.evidence.validate_evidence_ref",
+        "Pre-Processing.utils.evidence.normalize_evidence_refs",
+        "Pre-Processing.utils.guardrails.decorator",
+        "Pre-Processing.utils.guardrails.wrapper",
+        "Pre-Processing.utils.guardrails._validate",
+        "Pre-Processing.utils.iel_registryv1.main",
+        "Pre-Processing.utils.iel_registryv1.__init__",
+        "Pre-Processing.utils.iel_registryv1.get_statistics",
+        "Pre-Processing.utils.iel_registryv1.backup_registry",
+        "Pre-Processing.utils.iel_registryv1._create_registry_entry",
+        "Pre-Processing.utils.iel_registryv1._compute_hash",
+        "Pre-Processing.utils.iel_registryv1._verify_content_hash",
+        "Pre-Processing.utils.io_normalizer.normalize_payload",
+        "Pre-Processing.utils.io_normalizer.normalize",
+        "Pre-Processing.utils.io_normalizer.batch_normalize",
+        "Pre-Processing.utils.logos_monitor.main",
+        "Pre-Processing.utils.policy.__init__",
+        "Pre-Processing.utils.policy.check_operation_rate_limit",
+        "Pre-Processing.utils.policy._calculate_operation_rate",
+        "Pre-Processing.utils.self_diagnosis._check_process_health",
+        "Pre-Processing.utils.self_diagnosis._calculate_overall_health",
+        "Pre-Processing.utils.stress_sop_runtime._spawn_user_requests",
+        "Pre-Processing.utils.stress_sop_runtime._spawn_meta_cycles",
+        "Pre-Processing.utils.stress_sop_runtime._tail_jsonl",
+        "Pre-Processing.utils.stress_sop_runtime._summarize_log_file",
+        "Pre-Processing.utils.stress_sop_runtime.parse_args",
+        "Pre-Processing.utils.stress_sop_runtime.main",
+        "Pre-Processing.utils.stress_sop_runtime._invoke",
+        "Pre-Processing.utils.stress_sop_runtime._invoke",
+        "Pre-Processing.utils.uip_operations.main",
+        "Pre-Processing.utils.uip_operations.health_check"
+      ],
+      "representative_functions": [
+        "__init__",
+        "__post_init__",
+        "__str__",
+        "_base_provenance",
+        "_build_request",
+        "_build_tool_registry",
+        "_build_trinity_coherence_map",
+        "_calculate_confidence",
+        "_calculate_fractal_dimension",
+        "_calculate_fractal_spectrum"
+      ],
+      "source_modules": [
+        "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+        "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser",
+        "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+        "Pre-Processing.EXTRACT_LOGIC.gen_worldview_ontoprops",
+        "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+        "Pre-Processing.EXTRACT_LOGIC.safety_formalisms",
+        "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+        "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+        "Pre-Processing.KEEP_VERIFY.agent_identity",
+        "Pre-Processing.KEEP_VERIFY.arithmetic_engine",
+        "Pre-Processing.KEEP_VERIFY.autonomous_learning",
+        "Pre-Processing.KEEP_VERIFY.export_tool_registry",
+        "Pre-Processing.KEEP_VERIFY.lambda_engine",
+        "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine",
+        "Pre-Processing.KEEP_VERIFY.lambda_parser",
+        "Pre-Processing.KEEP_VERIFY.pxl_schema",
+        "Pre-Processing.KEEP_VERIFY.relation_mapper",
+        "Pre-Processing.KEEP_VERIFY.semantic_transformers",
+        "Pre-Processing.KEEP_VERIFY.tool_invention",
+        "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+        "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+        "Pre-Processing.KEEP_VERIFY.tool_repair_proposal",
+        "Pre-Processing.KEEP_VERIFY.translation_engine",
+        "Pre-Processing.agent.knowledge_catalog",
+        "Pre-Processing.reasoning.arp_nexus",
+        "Pre-Processing.reasoning.test_integration",
+        "Pre-Processing.safety.attestation",
+        "Pre-Processing.semantic.commitment_ledger",
+        "Pre-Processing.semantic.nexus_manager",
+        "Pre-Processing.semantic.prioritization",
+        "Pre-Processing.utils.cycle_ledger",
+        "Pre-Processing.utils.evidence",
+        "Pre-Processing.utils.guardrails",
+        "Pre-Processing.utils.iel_registryv1",
+        "Pre-Processing.utils.io_normalizer",
+        "Pre-Processing.utils.logos_monitor",
+        "Pre-Processing.utils.policy",
+        "Pre-Processing.utils.self_diagnosis",
+        "Pre-Processing.utils.stress_sop_runtime",
+        "Pre-Processing.utils.uip_operations"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0005",
+      "cluster_theme": "affect",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.EXTRACT_LOGIC.simulated_consciousness_runtime._compute_affect_and_attention"
+      ],
+      "representative_functions": [
+        "_compute_affect_and_attention"
+      ],
+      "source_modules": [
+        "Pre-Processing.EXTRACT_LOGIC.simulated_consciousness_runtime"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0006",
+      "cluster_theme": "step",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.EXTRACT_LOGIC.simulated_consciousness_runtime.step"
+      ],
+      "representative_functions": [
+        "step"
+      ],
+      "source_modules": [
+        "Pre-Processing.EXTRACT_LOGIC.simulated_consciousness_runtime"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0007",
+      "cluster_theme": "likelihood",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.bayesian_interface._calculate_likelihood",
+        "Pre-Processing.KEEP_VERIFY.bayesian_interface._marginal_likelihood"
+      ],
+      "representative_functions": [
+        "_calculate_likelihood",
+        "_marginal_likelihood"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.bayesian_interface"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0008",
+      "cluster_theme": "state",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.belief_network.get_most_likely_state"
+      ],
+      "representative_functions": [
+        "get_most_likely_state"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.belief_network"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0009",
+      "cluster_theme": "calculate",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.belief_network.calculate_joint_probability",
+        "Pre-Processing.KEEP_VERIFY.belief_network._calculate_edge_score"
+      ],
+      "representative_functions": [
+        "_calculate_edge_score",
+        "calculate_joint_probability"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.belief_network"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0010",
+      "cluster_theme": "learn",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.belief_network.learn_structure"
+      ],
+      "representative_functions": [
+        "learn_structure"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.belief_network"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0011",
+      "cluster_theme": "compute",
+      "fragment_count": 3,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.compute_current_coherence",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics.take_coherence_snapshot",
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics._compute_adaptive_weights"
+      ],
+      "representative_functions": [
+        "_compute_adaptive_weights",
+        "compute_current_coherence",
+        "take_coherence_snapshot"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0012",
+      "cluster_theme": "history",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics._get_max_history_size"
+      ],
+      "representative_functions": [
+        "_get_max_history_size"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.coherence_metrics"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0013",
+      "cluster_theme": "usage",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.tool_introspection._compute_usage_stats"
+      ],
+      "representative_functions": [
+        "_compute_usage_stats"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.tool_introspection"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0014",
+      "cluster_theme": "defaults",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.tool_introspection._builtin_defaults"
+      ],
+      "representative_functions": [
+        "_builtin_defaults"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.tool_introspection"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0015",
+      "cluster_theme": "capability",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.tool_introspection.build_capability_records"
+      ],
+      "representative_functions": [
+        "build_capability_records"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.tool_introspection"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0016",
+      "cluster_theme": "root",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.tool_invention._repo_root_from_identity",
+        "Pre-Processing.KEEP_VERIFY.tool_optimizer._repo_root_from_identity"
+      ],
+      "representative_functions": [
+        "_repo_root_from_identity"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.tool_invention",
+        "Pre-Processing.KEEP_VERIFY.tool_optimizer"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0017",
+      "cluster_theme": "catalog",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.tool_optimizer._publish_catalog_artifact"
+      ],
+      "representative_functions": [
+        "_publish_catalog_artifact"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.tool_optimizer"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0018",
+      "cluster_theme": "rules",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.translation_engine._apply_grammar_rules"
+      ],
+      "representative_functions": [
+        "_apply_grammar_rules"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.translation_engine"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0019",
+      "cluster_theme": "structure",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.translation_engine._translate_combinator_structure",
+        "Pre-Processing.KEEP_VERIFY.translation_engine._translate_standard_structure"
+      ],
+      "representative_functions": [
+        "_translate_combinator_structure",
+        "_translate_standard_structure"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.translation_engine"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0020",
+      "cluster_theme": "description",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.translation_engine._generate_structural_description"
+      ],
+      "representative_functions": [
+        "_generate_structural_description"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.translation_engine"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0021",
+      "cluster_theme": "encoding",
+      "fragment_count": 7,
+      "fragment_members": [
+        "Pre-Processing.agent.Logos_Memory_Nexus._generate_pattern_key",
+        "Pre-Processing.agent.Logos_Memory_Nexus.strengthen",
+        "Pre-Processing.agent.Logos_Memory_Nexus._create_distributed_encoding",
+        "Pre-Processing.agent.Logos_Memory_Nexus._sparsify_encoding",
+        "Pre-Processing.agent.Logos_Memory_Nexus._abstract_semantic_group",
+        "Pre-Processing.agent.Logos_Memory_Nexus.recognition",
+        "Pre-Processing.agent.Logos_Memory_Nexus.episodic_replay"
+      ],
+      "representative_functions": [
+        "_abstract_semantic_group",
+        "_create_distributed_encoding",
+        "_generate_pattern_key",
+        "_sparsify_encoding",
+        "episodic_replay",
+        "recognition",
+        "strengthen"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.Logos_Memory_Nexus"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0022",
+      "cluster_theme": "processors",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.agent.agent_nexus._initialize_linguistic_processors"
+      ],
+      "representative_functions": [
+        "_initialize_linguistic_processors"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.agent_nexus"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0023",
+      "cluster_theme": "protocols",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.agent.agent_nexus._handle_coordinate_protocols"
+      ],
+      "representative_functions": [
+        "_handle_coordinate_protocols"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.agent_nexus"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0024",
+      "cluster_theme": "calculate",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.agent.base_nexus._calculate_processing_time",
+        "Pre-Processing.utils.system_utils.calculate_average_processing_time"
+      ],
+      "representative_functions": [
+        "_calculate_processing_time",
+        "calculate_average_processing_time"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.base_nexus",
+        "Pre-Processing.utils.system_utils"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0025",
+      "cluster_theme": "test",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.agent.legacy_sop_nexus._generate_test_cases",
+        "Pre-Processing.agent.sop_nexus._generate_test_cases"
+      ],
+      "representative_functions": [
+        "_generate_test_cases"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.legacy_sop_nexus",
+        "Pre-Processing.agent.sop_nexus"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0026",
+      "cluster_theme": "protocol",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.agent.legacy_sop_nexus._protocol_specific_initialization",
+        "Pre-Processing.agent.sop_nexus._protocol_specific_initialization"
+      ],
+      "representative_functions": [
+        "_protocol_specific_initialization"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.legacy_sop_nexus",
+        "Pre-Processing.agent.sop_nexus"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0027",
+      "cluster_theme": "system",
+      "fragment_count": 6,
+      "fragment_members": [
+        "Pre-Processing.agent.legacy_sop_nexus._handle_system_status_request",
+        "Pre-Processing.agent.legacy_sop_nexus._calculate_uptime",
+        "Pre-Processing.agent.legacy_sop_nexus._collect_system_metrics",
+        "Pre-Processing.agent.sop_nexus._handle_system_status_request",
+        "Pre-Processing.agent.sop_nexus._calculate_uptime",
+        "Pre-Processing.agent.sop_nexus._collect_system_metrics"
+      ],
+      "representative_functions": [
+        "_calculate_uptime",
+        "_collect_system_metrics",
+        "_handle_system_status_request"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.legacy_sop_nexus",
+        "Pre-Processing.agent.sop_nexus"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0028",
+      "cluster_theme": "latest",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.agent.test_agent_planner.test_latest_digest_contains_structured_payload"
+      ],
+      "representative_functions": [
+        "test_latest_digest_contains_structured_payload"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.test_agent_planner"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0029",
+      "cluster_theme": "log",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.agent.test_agent_planner.test_append_and_snapshot_preserves_log"
+      ],
+      "representative_functions": [
+        "test_append_and_snapshot_preserves_log"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.test_agent_planner"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0030",
+      "cluster_theme": "downgraded",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.agent.test_llm_bypass_smoke.test_proved_downgraded"
+      ],
+      "representative_functions": [
+        "test_proved_downgraded"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.test_llm_bypass_smoke"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0031",
+      "cluster_theme": "replay",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.agent.test_logos_agi_replay_proposals.test_proposal_replay"
+      ],
+      "representative_functions": [
+        "test_proposal_replay"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.test_logos_agi_replay_proposals"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0032",
+      "cluster_theme": "test",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.agent.test_self_improvement_cycle.test_error_recovery"
+      ],
+      "representative_functions": [
+        "test_error_recovery"
+      ],
+      "source_modules": [
+        "Pre-Processing.agent.test_self_improvement_cycle"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0033",
+      "cluster_theme": "run",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.math.fractal_nexus.run_pipeline"
+      ],
+      "representative_functions": [
+        "run_pipeline"
+      ],
+      "source_modules": [
+        "Pre-Processing.math.fractal_nexus"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0034",
+      "cluster_theme": "optimize",
+      "fragment_count": 8,
+      "fragment_members": [
+        "Pre-Processing.KEEP_VERIFY.action_system.optimize_resource_allocation",
+        "Pre-Processing.reasoning.ergonomic_optimizer.optimize",
+        "Pre-Processing.reasoning.ergonomic_optimizer._gradient_descent_optimization",
+        "Pre-Processing.reasoning.ergonomic_optimizer._calculate_gradient",
+        "Pre-Processing.reasoning.ergonomic_optimizer.reset",
+        "Pre-Processing.reasoning.resource_manager.set_budget",
+        "Pre-Processing.reasoning.resource_manager.optimize_allocation",
+        "Pre-Processing.reasoning.resource_manager.forecast_resource_needs"
+      ],
+      "representative_functions": [
+        "_calculate_gradient",
+        "_gradient_descent_optimization",
+        "forecast_resource_needs",
+        "optimize",
+        "optimize_allocation",
+        "optimize_resource_allocation",
+        "reset",
+        "set_budget"
+      ],
+      "source_modules": [
+        "Pre-Processing.KEEP_VERIFY.action_system",
+        "Pre-Processing.reasoning.ergonomic_optimizer",
+        "Pre-Processing.reasoning.resource_manager"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0035",
+      "cluster_theme": "calculate",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.reasoning.integration_test_suite.calculate_verification_ratio"
+      ],
+      "representative_functions": [
+        "calculate_verification_ratio"
+      ],
+      "source_modules": [
+        "Pre-Processing.reasoning.integration_test_suite"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0036",
+      "cluster_theme": "dashboard",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.safety.health_server.health_dashboard"
+      ],
+      "representative_functions": [
+        "health_dashboard"
+      ],
+      "source_modules": [
+        "Pre-Processing.safety.health_server"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0037",
+      "cluster_theme": "sentinel",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.semantic.boot_system._shutdown_sentinel"
+      ],
+      "representative_functions": [
+        "_shutdown_sentinel"
+      ],
+      "source_modules": [
+        "Pre-Processing.semantic.boot_system"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0038",
+      "cluster_theme": "test",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.semantic.test_logos_agi_adapter.test_adapter_health_reporting"
+      ],
+      "representative_functions": [
+        "test_adapter_health_reporting"
+      ],
+      "source_modules": [
+        "Pre-Processing.semantic.test_logos_agi_adapter"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0039",
+      "cluster_theme": "setup",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.semantic.test_perception_ingestors.setUp"
+      ],
+      "representative_functions": [
+        "setUp"
+      ],
+      "source_modules": [
+        "Pre-Processing.semantic.test_perception_ingestors"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0040",
+      "cluster_theme": "last",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.semantic.test_perception_ingestors.test_status_detail_reports_last_update"
+      ],
+      "representative_functions": [
+        "test_status_detail_reports_last_update"
+      ],
+      "source_modules": [
+        "Pre-Processing.semantic.test_perception_ingestors"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0041",
+      "cluster_theme": "test",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utility.test_evaluator_learning_smoke.test_learning"
+      ],
+      "representative_functions": [
+        "test_learning"
+      ],
+      "source_modules": [
+        "Pre-Processing.utility.test_evaluator_learning_smoke"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0042",
+      "cluster_theme": "resolve",
+      "fragment_count": 3,
+      "fragment_members": [
+        "Pre-Processing.utility.test_logos_agi_pin_drift.test_resolve_ref_head",
+        "Pre-Processing.utility.test_logos_agi_pin_drift.test_resolve_ref_sha",
+        "Pre-Processing.utility.test_logos_agi_pin_drift.test_resolve_ref_invalid"
+      ],
+      "representative_functions": [
+        "test_resolve_ref_head",
+        "test_resolve_ref_invalid",
+        "test_resolve_ref_sha"
+      ],
+      "source_modules": [
+        "Pre-Processing.utility.test_logos_agi_pin_drift"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0043",
+      "cluster_theme": "simulate",
+      "fragment_count": 2,
+      "fragment_members": [
+        "Pre-Processing.utils.causal_chain_node_predictor.run_pc_causal_discovery",
+        "Pre-Processing.utils.causal_chain_node_predictor.simulate_example_data"
+      ],
+      "representative_functions": [
+        "run_pc_causal_discovery",
+        "simulate_example_data"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.causal_chain_node_predictor"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0044",
+      "cluster_theme": "sha256",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.cycle_ledger._sha256_file"
+      ],
+      "representative_functions": [
+        "_sha256_file"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.cycle_ledger"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0045",
+      "cluster_theme": "collect",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.cycle_ledger._collect_bundle_hashes"
+      ],
+      "representative_functions": [
+        "_collect_bundle_hashes"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.cycle_ledger"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0046",
+      "cluster_theme": "interfaces",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.guardrails.require_safe_interfaces"
+      ],
+      "representative_functions": [
+        "require_safe_interfaces"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.guardrails"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0047",
+      "cluster_theme": "restrict",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.guardrails.restrict_writes_to"
+      ],
+      "representative_functions": [
+        "restrict_writes_to"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.guardrails"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0048",
+      "cluster_theme": "mission",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.guardrails.get_mission_profile"
+      ],
+      "representative_functions": [
+        "get_mission_profile"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.guardrails"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0049",
+      "cluster_theme": "load",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.policy._load_policy_config"
+      ],
+      "representative_functions": [
+        "_load_policy_config"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.policy"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0050",
+      "cluster_theme": "violation",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.policy._record_violation"
+      ],
+      "representative_functions": [
+        "_record_violation"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.policy"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0051",
+      "cluster_theme": "metrics",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.progressive_router._update_metrics"
+      ],
+      "representative_functions": [
+        "_update_metrics"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.progressive_router"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0052",
+      "cluster_theme": "log",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.router._log_interaction"
+      ],
+      "representative_functions": [
+        "_log_interaction"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.router"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0053",
+      "cluster_theme": "full",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.self_diagnosis.perform_full_diagnosis"
+      ],
+      "representative_functions": [
+        "perform_full_diagnosis"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.self_diagnosis"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0054",
+      "cluster_theme": "load",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.smp_intake.load_smp"
+      ],
+      "representative_functions": [
+        "load_smp"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.smp_intake"
+      ]
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0055",
+      "cluster_theme": "input",
+      "fragment_count": 1,
+      "fragment_members": [
+        "Pre-Processing.utils.uip_operations._step_2_input_interpretation"
+      ],
+      "representative_functions": [
+        "_step_2_input_interpretation"
+      ],
+      "source_modules": [
+        "Pre-Processing.utils.uip_operations"
+      ]
+    }
+  ]
+}

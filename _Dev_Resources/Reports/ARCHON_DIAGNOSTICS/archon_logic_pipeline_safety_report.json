@@ -1,0 +1,323 @@
+{
+  "generated_at": "2026-03-15T16:09:06.881843+00:00",
+  "overall_status": "PASS",
+  "checks_passed": [
+    "[OK] infrastructure: 28/75 clusters have \u2265 2 fragments",
+    "[OK] reasoning: 14/37 clusters have \u2265 2 fragments",
+    "[OK] math_symbolic: 17/56 clusters have \u2265 2 fragments",
+    "[OK] Runtime mapping: 109 clusters with confidence \u2265 0.5",
+    "[OK] No duplicate module plan names (168 plans)"
+  ],
+  "warnings": [
+    "[WARN] infrastructure: 47 singleton clusters (\u22652 required for reconstruction): INFRASTRUCTURE-C0002, INFRASTRUCTURE-C0003, INFRASTRUCTURE-C0006, INFRASTRUCTURE-C0007, INFRASTRUCTURE-C0009...",
+    "[WARN] reasoning: 23 singleton clusters (\u22652 required for reconstruction): REASONING-C0002, REASONING-C0003, REASONING-C0006, REASONING-C0007, REASONING-C0008...",
+    "[WARN] math_symbolic: 39 singleton clusters (\u22652 required for reconstruction): MATH_SYMBOLIC-C0003, MATH_SYMBOLIC-C0005, MATH_SYMBOLIC-C0006, MATH_SYMBOLIC-C0008, MATH_SYMBOLIC-C0010...",
+    "[WARN] 59 clusters below confidence 0.5 \u2014 flagged for manual review",
+    "[WARN] Files changed outside expected paths: ['D .rewriteignore', 'D LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/.devcontainer/devcontainer.json', 'D LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/.github/CODEOWNERS', 'D LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/.github/ISSUE_TEMPLATE/bug_report.md', 'D LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/.github/ISSUE_TEMPLATE/feature_request.md']"
+  ],
+  "issues": [],
+  "low_confidence_mappings": [
+    {
+      "cluster_id": "INFRASTRUCTURE-C0020",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0021",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0022",
+      "domain": "MTP",
+      "confidence": 0.455
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0023",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0024",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0025",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0026",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0034",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0053",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0056",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0058",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0059",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0060",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0062",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0063",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0064",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0065",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0066",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0067",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0068",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0069",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0070",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0071",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "INFRASTRUCTURE-C0074",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "REASONING-C0015",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "REASONING-C0016",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "REASONING-C0017",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "REASONING-C0018",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "REASONING-C0019",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "REASONING-C0020",
+      "domain": "SOP",
+      "confidence": 0.282
+    },
+    {
+      "cluster_id": "REASONING-C0027",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "REASONING-C0030",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "REASONING-C0031",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "REASONING-C0032",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "REASONING-C0033",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "REASONING-C0034",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "REASONING-C0035",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "REASONING-C0036",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0021",
+      "domain": "MTP",
+      "confidence": 0.253
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0022",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0023",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0024",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0025",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0026",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0027",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0028",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0030",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0031",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0032",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0036",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0044",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0045",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0046",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0047",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0048",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0050",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0051",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0053",
+      "domain": "SOP",
+      "confidence": 0.1
+    },
+    {
+      "cluster_id": "MATH_SYMBOLIC-C0055",
+      "domain": "SOP",
+      "confidence": 0.1
+    }
+  ],
+  "summary": {
+    "pass_count": 5,
+    "warning_count": 5,
+    "issue_count": 0,
+    "singleton_cluster_policy": "warn-only (singletons allowed but flagged)",
+    "confidence_threshold": 0.5
+  }
+}

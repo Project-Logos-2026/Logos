@@ -1,0 +1,262 @@
+{
+  "category": "DELETE",
+  "count": 15,
+  "generated_at": "2026-03-15T15:15:44.487872+00:00",
+  "modules": [
+    {
+      "module": "Inspection_Targets.Nexus_AST_Validator",
+      "file": "Inspection_Targets/Nexus_AST_Validator.py",
+      "size": 7527,
+      "staging_subdir": "Inspection_Targets",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.agent.evaluation_packet",
+      "file": "Pre-Processing/agent/evaluation_packet.py",
+      "size": 1565,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.agent.plan_packet",
+      "file": "Pre-Processing/agent/plan_packet.py",
+      "size": 1434,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.math.dual_bijection_demo",
+      "file": "Pre-Processing/math/dual_bijection_demo.py",
+      "size": 601,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.semantic.mtp_nexus_orchestrator",
+      "file": "Pre-Processing/semantic/mtp_nexus_orchestrator.py",
+      "size": 173,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.semantic.ontoprops_remap",
+      "file": "Pre-Processing/semantic/ontoprops_remap.py",
+      "size": 1201,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.semantic.packet_types",
+      "file": "Pre-Processing/semantic/packet_types.py",
+      "size": 1034,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.semantic.test_simulation_cli",
+      "file": "Pre-Processing/semantic/test_simulation_cli.py",
+      "size": 1271,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.semantic.time_utils",
+      "file": "Pre-Processing/semantic/time_utils.py",
+      "size": 403,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utility.arp_nexus_orchestrator",
+      "file": "Pre-Processing/utility/arp_nexus_orchestrator.py",
+      "size": 173,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utility.csp_nexus_orchestrator",
+      "file": "Pre-Processing/utility/csp_nexus_orchestrator.py",
+      "size": 173,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.utility.logos_protocol_nexus",
+      "file": "Pre-Processing/utility/logos_protocol_nexus.py",
+      "size": 172,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.utility.scp_nexus_orchestrator",
+      "file": "Pre-Processing/utility/scp_nexus_orchestrator.py",
+      "size": 173,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utility.sop_nexus_orchestrator",
+      "file": "Pre-Processing/utility/sop_nexus_orchestrator.py",
+      "size": 204,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.utils.check_imports",
+      "file": "Pre-Processing/utils/check_imports.py",
+      "size": 8436,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    }
+  ]
+}

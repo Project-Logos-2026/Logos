@@ -1,0 +1,63 @@
+{
+  "run_timestamp": "2026-03-15T15:15:44.487872+00:00",
+  "target_directory": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING",
+  "tool": "architecture_mapper",
+  "layers": {
+    "governance": {
+      "subsystems": [
+        "Pre-Processing"
+      ],
+      "module_count": 161
+    },
+    "agent": {
+      "subsystems": [],
+      "module_count": 0
+    },
+    "protocol": {
+      "subsystems": [],
+      "module_count": 0
+    },
+    "reasoning": {
+      "subsystems": [],
+      "module_count": 0
+    },
+    "semantic": {
+      "subsystems": [],
+      "module_count": 0
+    },
+    "math": {
+      "subsystems": [],
+      "module_count": 0
+    },
+    "safety": {
+      "subsystems": [],
+      "module_count": 0
+    },
+    "utility": {
+      "subsystems": [
+        "Inspection_Targets"
+      ],
+      "module_count": 1
+    },
+    "persistence": {
+      "subsystems": [],
+      "module_count": 0
+    },
+    "runtime": {
+      "subsystems": [],
+      "module_count": 0
+    }
+  },
+  "layer_order": [
+    "governance",
+    "agent",
+    "protocol",
+    "reasoning",
+    "semantic",
+    "math",
+    "safety",
+    "utility",
+    "persistence",
+    "runtime"
+  ]
+}

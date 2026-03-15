@@ -1,0 +1,395 @@
+[
+  {
+    "packet_id": "PKT_0001",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.NLP_Wrapper_Sentence_Transformers"
+    ],
+    "file_paths": [
+      "Pre-Processing/EXTRACT_LOGIC/NLP_Wrapper_Sentence_Transformers.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0012",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.gen_worldview_ontoprops"
+    ],
+    "file_paths": [
+      "Pre-Processing/EXTRACT_LOGIC/gen_worldview_ontoprops.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0025",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.hashing"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/hashing.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0035",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.types"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/types.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0043",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.commitment_ledger"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/commitment_ledger.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0056",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.maintenance"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/maintenance.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.utils.shared_resources"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0057",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.boot_system"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/boot_system.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.semantic.maintenance",
+      "Pre-Processing.utils.shared_resources"
+    ],
+    "external_dep_count": 2
+  },
+  {
+    "packet_id": "PKT_0058",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.dispatch"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/dispatch.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0059",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.mtp_nexus_orchestrator"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/mtp_nexus_orchestrator.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0060",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.nexus_manager"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/nexus_manager.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0061",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.ontoprops_remap"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/ontoprops_remap.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0062",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.packet_types"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/packet_types.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0063",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.prioritization"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/prioritization.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.semantic.commitment_ledger"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0064",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.providers_llama"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/providers_llama.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.semantic.types"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0065",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.providers_openai"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/providers_openai.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.semantic.types"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0066",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.test_logos_agi_adapter"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/test_logos_agi_adapter.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0067",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.test_perception_ingestors"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/test_perception_ingestors.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0068",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.test_registry_and_response"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/test_registry_and_response.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0069",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.test_simulation_cli"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/test_simulation_cli.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0070",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.test_tool_fallback_proposal"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/test_tool_fallback_proposal.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0071",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.time_utils"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/time_utils.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0072",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.semantic.transform_types"
+    ],
+    "file_paths": [
+      "Pre-Processing/semantic/transform_types.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0100",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.utils.stress_sop_runtime"
+    ],
+    "file_paths": [
+      "Pre-Processing/utils/stress_sop_runtime.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0114",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.semantic_transformers"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/semantic_transformers.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  },
+  {
+    "packet_id": "PKT_0156",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.tool_invention"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/tool_invention.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.utility.development_environment"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0157",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.tool_optimizer"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/tool_optimizer.py"
+    ],
+    "external_dependencies": [
+      "Pre-Processing.agent.knowledge_catalog"
+    ],
+    "external_dep_count": 1
+  },
+  {
+    "packet_id": "PKT_0160",
+    "module_count": 1,
+    "is_cycle": false,
+    "classification": "semantic",
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.translation_engine"
+    ],
+    "file_paths": [
+      "Pre-Processing/KEEP_VERIFY/translation_engine.py"
+    ],
+    "external_dependencies": [],
+    "external_dep_count": 0
+  }
+]

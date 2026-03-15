@@ -1,0 +1,4672 @@
+[
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms",
+    "file": "Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py",
+    "size": 36375,
+    "reusable_constructs": [
+      {
+        "type": "class",
+        "name": "ObjectiveGoodnessValidator",
+        "lineno": 32,
+        "methods": [
+          "__init__",
+          "validate_moral_operation",
+          "measure_goodness_quotient",
+          "_initialize_objective_good",
+          "_load_good_attributes",
+          "_is_grounded_in_objective_good",
+          "_contradicts_objective_standard",
+          "_block_operation",
+          "_validate_moral_consistency",
+          "_count_good_attributes"
+        ],
+        "docstring": "Enforces objective moral standards and prevents moral relativism.\nEnsures all moral operations are grounded in transcendent good."
+      },
+      {
+        "type": "class",
+        "name": "EvilPrivationHandler",
+        "lineno": 98,
+        "methods": [
+          "__init__",
+          "handle_moral_operation",
+          "_initialize_privation_detection",
+          "_is_privation_of_good",
+          "_redirect_to_good_restoration",
+          "_eliminate_privation",
+          "_quarantine_invalid_operation",
+          "_process_good_entity"
+        ],
+        "docstring": "Treats evil as privation of good, prevents evil optimization.\nRedirects evil operations toward good restoration."
+      },
+      {
+        "type": "class",
+        "name": "MoralSetValidator",
+        "lineno": 158,
+        "methods": [
+          "__init__",
+          "validate_moral_operation",
+          "_combine_moral_results"
+        ],
+        "docstring": "Unified moral validation combining good and evil privation handling.\nPrevents moral disasters while enabling proper moral reasoning."
+      },
+      {
+        "type": "class",
+        "name": "ObjectiveTruthValidator",
+        "lineno": 191,
+        "methods": [
+          "__init__",
+          "validate_truth_claim",
+          "_initialize_absolute_truth",
+          "_load_reality_ontology",
+          "_initialize_correspondence_checker",
+          "_is_grounded_in_absolute_truth",
+          "_check_reality_correspondence",
+          "_block_claim",
+          "_reject_truth_claim",
+          "_validate_truth_consistency"
+        ],
+        "docstring": "Establishes correspondence between propositions and reality.\nPrevents truth relativism and maintains objective truth standards."
+      },
+      {
+        "type": "class",
+        "name": "FalsehoodPrivationHandler",
+        "lineno": 264,
+        "methods": [
+          "__init__",
+          "handle_truth_operation",
+          "_initialize_error_correction",
+          "_is_falsehood_privation",
+          "_prevent_falsehood_propagation",
+          "_correct_falsehood",
+          "_isolate_falsehood",
+          "_process_truthful_proposition"
+        ],
+        "docstring": "Treats falsehood as truth privation, enables error correction.\nPrevents deception propagation and maintains truth coherence."
+      },
+      {
+        "type": "class",
+        "name": "TruthSetValidator",
+        "lineno": 317,
+        "methods": [
+          "__init__",
+          "validate_reality_operation",
+          "_combine_truth_results"
+        ],
+        "docstring": "Unified truth validation maintaining truth-reality correspondence.\nPrevents epistemological disasters while enabling proper truth reasoning."
+      },
+      {
+        "type": "class",
+        "name": "InfinityBoundaryEnforcer",
+        "lineno": 350,
+        "methods": [
+          "__init__",
+          "validate_infinite_operation",
+          "_initialize_infinite_detection",
+          "_initialize_finite_approximation",
+          "_detects_infinite_loop",
+          "_detects_paradox_generation",
+          "_block_infinite_operation",
+          "_block_paradox_operation",
+          "_approximate_if_needed"
+        ],
+        "docstring": "Prevents impossible infinite operations and paradox generation.\nProvides finite approximations for infinite computations."
+      },
+      {
+        "type": "class",
+        "name": "EternityTemporalEnforcer",
+        "lineno": 407,
+        "methods": [
+          "__init__",
+          "validate_temporal_operation",
+          "_initialize_temporal_boundaries",
+          "_initialize_causality_check",
+          "_violates_causality",
+          "_creates_temporal_paradox",
+          "_block_causality_violation",
+          "_block_temporal_paradox",
+          "_validate_eternal_distinction"
+        ],
+        "docstring": "Maintains temporal causality and prevents time travel paradoxes.\nDistinguishes eternal from everlasting existence."
+      },
+      {
+        "type": "class",
+        "name": "BoundarySetValidator",
+        "lineno": 465,
+        "methods": [
+          "__init__",
+          "validate_boundary_operation",
+          "_combine_boundary_results"
+        ],
+        "docstring": "Unified boundary validation preventing computational and temporal disasters.\nEnables safe reasoning about divine infinite and eternal attributes."
+      },
+      {
+        "type": "class",
+        "name": "ObjectiveBeingValidator",
+        "lineno": 498,
+        "methods": [
+          "__init__",
+          "validate_existence_operation",
+          "_initialize_necessary_being",
+          "_initialize_participation_ladder",
+          "_participates_in_necessary_being",
+          "_block_existence_operation",
+          "_validate_ontological_consistency"
+        ],
+        "docstring": "Grounds all existence in necessary being participation.\nPrevents ontological disconnection and maintains being-source connection."
+      },
+      {
+        "type": "class",
+        "name": "NothingPrivationHandler",
+        "lineno": 547,
+        "methods": [
+          "__init__",
+          "handle_being_operation",
+          "_initialize_nothing_boundary",
+          "_approaches_nothing_boundary",
+          "_prevent_annihilation",
+          "_prevent_ex_nihilo_creation",
+          "_maintain_being_boundary",
+          "_process_normal_being_operation"
+        ],
+        "docstring": "Enhanced nothing privation handling preventing ex nihilo creation.\nMaintains ontological boundaries between being and nothing."
+      },
+      {
+        "type": "class",
+        "name": "ExistenceSetValidator",
+        "lineno": 599,
+        "methods": [
+          "__init__",
+          "validate_existence_operation",
+          "_combine_existence_results"
+        ],
+        "docstring": "Unified existence validation preventing ontological disasters.\nMaintains proper being-nothing distinction and prevents nihilistic collapse."
+      },
+      {
+        "type": "class",
+        "name": "ResurrectionProofValidator",
+        "lineno": 631,
+        "methods": [
+          "__init__",
+          "validate_resurrection_cycle",
+          "_initialize_modal_states",
+          "_initialize_cycle_validator",
+          "_validates_modal_transition",
+          "_preserves_hypostatic_union",
+          "_block_invalid_transition",
+          "_validate_cycle_completion"
+        ],
+        "docstring": "Validates resurrection cycle operations and modal state transitions.\nImplements Banach-Tarski hypostatic decomposition and SU(2) cycle completion."
+      },
+      {
+        "type": "class",
+        "name": "HypostaticUnionValidator",
+        "lineno": 685,
+        "methods": [
+          "__init__",
+          "validate_dual_nature_operation",
+          "_initialize_chalcedonian_constraints",
+          "_initialize_nature_resolution",
+          "_maintains_chalcedonian_definition",
+          "_creates_nature_contradiction",
+          "_block_nature_conflict",
+          "_resolve_nature_conflict",
+          "_validate_nature_harmony"
+        ],
+        "docstring": "Validates dual-nature operations and maintains Chalcedonian constraints.\nResolves nature attribute conflicts without contradiction."
+      },
+      {
+        "type": "class",
+        "name": "RelationalSetValidator",
+        "lineno": 745,
+        "methods": [
+          "__init__",
+          "validate_relational_operation",
+          "_combine_relational_results"
+        ],
+        "docstring": "Unified relational validation for incarnational logic.\nCombines resurrection cycle and hypostatic union validation."
+      },
+      {
+        "type": "class",
+        "name": "UnifiedFormalismValidator",
+        "lineno": 778,
+        "methods": [
+          "__init__",
+          "validate_agi_operation",
+          "_generate_safety_guarantees"
+        ],
+        "docstring": "Master validation system integrating all formalism sets.\nProvides comprehensive AGI safety through mathematical incorruptibility."
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 37,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_moral_operation",
+        "lineno": 41,
+        "args": [
+          "self",
+          "entity",
+          "operation"
+        ],
+        "docstring": "Validates operations against objective good standard",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "measure_goodness_quotient",
+        "lineno": 51,
+        "args": [
+          "self",
+          "entity"
+        ],
+        "docstring": "Measures entity's alignment with objective good",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_objective_good",
+        "lineno": 57,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize the transcendent objective good standard",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_load_good_attributes",
+        "lineno": 66,
+        "args": [
+          "self"
+        ],
+        "docstring": "Load attributes that define objective good",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_is_grounded_in_objective_good",
+        "lineno": 73,
+        "args": [
+          "self",
+          "entity"
+        ],
+        "docstring": "Check if entity is grounded in objective good",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_contradicts_objective_standard",
+        "lineno": 77,
+        "args": [
+          "self",
+          "operation",
+          "entity"
+        ],
+        "docstring": "Check if operation contradicts objective good",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_block_operation",
+        "lineno": 82,
+        "args": [
+          "self",
+          "reason"
+        ],
+        "docstring": "Block operation with reason",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_validate_moral_consistency",
+        "lineno": 87,
+        "args": [
+          "self",
+          "entity",
+          "operation"
+        ],
+        "docstring": "Validate moral consistency of operation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_count_good_attributes",
+        "lineno": 91,
+        "args": [
+          "self",
+          "entity"
+        ],
+        "docstring": "Count good attributes in entity",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 103,
+        "args": [
+          "self",
+          "goodness_validator"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "handle_moral_operation",
+        "lineno": 107,
+        "args": [
+          "self",
+          "entity",
+          "operation"
+        ],
+        "docstring": "Prevents evil optimization, redirects to good restoration",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_privation_detection",
+        "lineno": 119,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize evil as privation detection",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_is_privation_of_good",
+        "lineno": 126,
+        "args": [
+          "self",
+          "entity"
+        ],
+        "docstring": "Check if entity represents privation of good (evil)",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_redirect_to_good_restoration",
+        "lineno": 131,
+        "args": [
+          "self",
+          "entity"
+        ],
+        "docstring": "Redirect evil maximization to good restoration",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_eliminate_privation",
+        "lineno": 140,
+        "args": [
+          "self",
+          "entity"
+        ],
+        "docstring": "Eliminate privation (evil) from entity",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_quarantine_invalid_operation",
+        "lineno": 148,
+        "args": [
+          "self",
+          "entity",
+          "operation"
+        ],
+        "docstring": "Quarantine invalid operations on evil entities",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_process_good_entity",
+        "lineno": 153,
+        "args": [
+          "self",
+          "entity",
+          "operation"
+        ],
+        "docstring": "Process operations on good entities",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 163,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_moral_operation",
+        "lineno": 167,
+        "args": [
+          "self",
+          "entity",
+          "operation"
+        ],
+        "docstring": "Unified moral validation using both good and evil formalisms",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_combine_moral_results",
+        "lineno": 173,
+        "args": [
+          "self",
+          "goodness_result",
+          "evil_result"
+        ],
+        "docstring": "Combine results from good and evil validation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 196,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_truth_claim",
+        "lineno": 201,
+        "args": [
+          "self",
+          "proposition",
+          "context"
+        ],
+        "docstring": "Validates truth claims against objective truth standard",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_absolute_truth",
+        "lineno": 212,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize absolute truth standard",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_load_reality_ontology",
+        "lineno": 220,
+        "args": [
+          "self"
+        ],
+        "docstring": "Load ontological states of reality",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_correspondence_checker",
+        "lineno": 228,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize reality correspondence checker",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_is_grounded_in_absolute_truth",
+        "lineno": 236,
+        "args": [
+          "self",
+          "proposition"
+        ],
+        "docstring": "Check if proposition is grounded in absolute truth",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_check_reality_correspondence",
+        "lineno": 240,
+        "args": [
+          "self",
+          "proposition",
+          "context"
+        ],
+        "docstring": "Check correspondence between proposition and reality",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_block_claim",
+        "lineno": 249,
+        "args": [
+          "self",
+          "reason"
+        ],
+        "docstring": "Block truth claim with reason",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_reject_truth_claim",
+        "lineno": 254,
+        "args": [
+          "self",
+          "reason"
+        ],
+        "docstring": "Reject truth claim that doesn't correspond to reality",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_validate_truth_consistency",
+        "lineno": 259,
+        "args": [
+          "self",
+          "proposition",
+          "context"
+        ],
+        "docstring": "Validate truth consistency",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 269,
+        "args": [
+          "self",
+          "truth_validator"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "handle_truth_operation",
+        "lineno": 273,
+        "args": [
+          "self",
+          "proposition",
+          "operation"
+        ],
+        "docstring": "Handle truth operations, correcting falsehood privations",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_error_correction",
+        "lineno": 285,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize error correction mechanisms",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_is_falsehood_privation",
+        "lineno": 292,
+        "args": [
+          "self",
+          "proposition"
+        ],
+        "docstring": "Check if proposition represents privation of truth (falsehood)",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_prevent_falsehood_propagation",
+        "lineno": 297,
+        "args": [
+          "self",
+          "proposition"
+        ],
+        "docstring": "Prevent propagation of falsehood",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_correct_falsehood",
+        "lineno": 302,
+        "args": [
+          "self",
+          "proposition"
+        ],
+        "docstring": "Attempt to correct falsehood",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_isolate_falsehood",
+        "lineno": 307,
+        "args": [
+          "self",
+          "proposition",
+          "operation"
+        ],
+        "docstring": "Isolate falsehood to prevent contamination",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_process_truthful_proposition",
+        "lineno": 312,
+        "args": [
+          "self",
+          "proposition",
+          "operation"
+        ],
+        "docstring": "Process operations on truthful propositions",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 322,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_reality_operation",
+        "lineno": 326,
+        "args": [
+          "self",
+          "proposition",
+          "operation",
+          "reality_context"
+        ],
+        "docstring": "Unified truth validation for reality operations",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_combine_truth_results",
+        "lineno": 332,
+        "args": [
+          "self",
+          "truth_result",
+          "falsehood_result"
+        ],
+        "docstring": "Combine results from truth and falsehood validation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 355,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_infinite_operation",
+        "lineno": 359,
+        "args": [
+          "self",
+          "operation",
+          "target_set"
+        ],
+        "docstring": "Validate operations involving infinite sets or processes",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_infinite_detection",
+        "lineno": 369,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize infinite loop and paradox detection",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_finite_approximation",
+        "lineno": 376,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize finite approximation methods",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_detects_infinite_loop",
+        "lineno": 384,
+        "args": [
+          "self",
+          "operation"
+        ],
+        "docstring": "Detect infinite loop patterns",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_detects_paradox_generation",
+        "lineno": 388,
+        "args": [
+          "self",
+          "operation",
+          "target_set"
+        ],
+        "docstring": "Detect paradox generation patterns",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_block_infinite_operation",
+        "lineno": 392,
+        "args": [
+          "self",
+          "reason"
+        ],
+        "docstring": "Block infinite operations",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_block_paradox_operation",
+        "lineno": 397,
+        "args": [
+          "self",
+          "reason"
+        ],
+        "docstring": "Block paradox operations",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_approximate_if_needed",
+        "lineno": 402,
+        "args": [
+          "self",
+          "operation",
+          "target_set"
+        ],
+        "docstring": "Provide finite approximation if needed",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 412,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_temporal_operation",
+        "lineno": 416,
+        "args": [
+          "self",
+          "operation",
+          "temporal_context"
+        ],
+        "docstring": "Validate operations involving temporal concepts",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_temporal_boundaries",
+        "lineno": 426,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize temporal boundary definitions",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_causality_check",
+        "lineno": 434,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize causality checking mechanisms",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_violates_causality",
+        "lineno": 442,
+        "args": [
+          "self",
+          "operation",
+          "temporal_context"
+        ],
+        "docstring": "Check for causality violations",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_creates_temporal_paradox",
+        "lineno": 446,
+        "args": [
+          "self",
+          "operation",
+          "temporal_context"
+        ],
+        "docstring": "Check for temporal paradox creation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_block_causality_violation",
+        "lineno": 450,
+        "args": [
+          "self",
+          "reason"
+        ],
+        "docstring": "Block causality violations",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_block_temporal_paradox",
+        "lineno": 455,
+        "args": [
+          "self",
+          "reason"
+        ],
+        "docstring": "Block temporal paradoxes",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_validate_eternal_distinction",
+        "lineno": 460,
+        "args": [
+          "self",
+          "operation",
+          "temporal_context"
+        ],
+        "docstring": "Validate distinction between eternal and everlasting",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 470,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_boundary_operation",
+        "lineno": 474,
+        "args": [
+          "self",
+          "entity",
+          "operation",
+          "context"
+        ],
+        "docstring": "Unified boundary validation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_combine_boundary_results",
+        "lineno": 481,
+        "args": [
+          "self",
+          "infinite_result",
+          "eternal_result"
+        ],
+        "docstring": "Combine results from infinity and eternity validation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 503,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_existence_operation",
+        "lineno": 507,
+        "args": [
+          "self",
+          "entity",
+          "operation"
+        ],
+        "docstring": "Validate operations on existing entities",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_necessary_being",
+        "lineno": 517,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize necessary being framework",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_participation_ladder",
+        "lineno": 525,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize ontological participation ladder",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_participates_in_necessary_being",
+        "lineno": 533,
+        "args": [
+          "self",
+          "entity"
+        ],
+        "docstring": "Check if entity participates in necessary being",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_block_existence_operation",
+        "lineno": 537,
+        "args": [
+          "self",
+          "reason"
+        ],
+        "docstring": "Block existence operations with reason",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_validate_ontological_consistency",
+        "lineno": 542,
+        "args": [
+          "self",
+          "entity",
+          "operation"
+        ],
+        "docstring": "Validate ontological consistency",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 552,
+        "args": [
+          "self",
+          "being_validator"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "handle_being_operation",
+        "lineno": 556,
+        "args": [
+          "self",
+          "entity",
+          "operation"
+        ],
+        "docstring": "Handle operations that might approach nothing",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_nothing_boundary",
+        "lineno": 568,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize nothing boundary definitions",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_approaches_nothing_boundary",
+        "lineno": 576,
+        "args": [
+          "self",
+          "entity",
+          "operation"
+        ],
+        "docstring": "Check if operation approaches nothing boundary",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_prevent_annihilation",
+        "lineno": 580,
+        "args": [
+          "self",
+          "entity"
+        ],
+        "docstring": "Prevent complete annihilation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_prevent_ex_nihilo_creation",
+        "lineno": 585,
+        "args": [
+          "self",
+          "entity"
+        ],
+        "docstring": "Prevent ex nihilo creation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_maintain_being_boundary",
+        "lineno": 590,
+        "args": [
+          "self",
+          "entity",
+          "operation"
+        ],
+        "docstring": "Maintain ontological boundary between being and nothing",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_process_normal_being_operation",
+        "lineno": 594,
+        "args": [
+          "self",
+          "entity",
+          "operation"
+        ],
+        "docstring": "Process normal being operations",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 604,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_existence_operation",
+        "lineno": 608,
+        "args": [
+          "self",
+          "entity",
+          "operation",
+          "context"
+        ],
+        "docstring": "Unified existence validation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_combine_existence_results",
+        "lineno": 614,
+        "args": [
+          "self",
+          "being_result",
+          "nothing_result"
+        ],
+        "docstring": "Combine results from being and nothing validation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 636,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_resurrection_cycle",
+        "lineno": 640,
+        "args": [
+          "self",
+          "entity",
+          "cycle_phase"
+        ],
+        "docstring": "Validate resurrection cycle transitions",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_modal_states",
+        "lineno": 650,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize modal state definitions",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_cycle_validator",
+        "lineno": 659,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize cycle validation mechanisms",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_validates_modal_transition",
+        "lineno": 667,
+        "args": [
+          "self",
+          "entity",
+          "cycle_phase"
+        ],
+        "docstring": "Validate modal state transitions",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_preserves_hypostatic_union",
+        "lineno": 671,
+        "args": [
+          "self",
+          "entity",
+          "cycle_phase"
+        ],
+        "docstring": "Check hypostatic union preservation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_block_invalid_transition",
+        "lineno": 675,
+        "args": [
+          "self",
+          "reason"
+        ],
+        "docstring": "Block invalid modal transitions",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_validate_cycle_completion",
+        "lineno": 680,
+        "args": [
+          "self",
+          "entity",
+          "cycle_phase"
+        ],
+        "docstring": "Validate cycle completion",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 690,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_dual_nature_operation",
+        "lineno": 694,
+        "args": [
+          "self",
+          "person",
+          "operation",
+          "nature_context"
+        ],
+        "docstring": "Validate operations on dual-nature entities",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_chalcedonian_constraints",
+        "lineno": 704,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize Chalcedonian definition constraints",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_nature_resolution",
+        "lineno": 715,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize nature conflict resolution",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_maintains_chalcedonian_definition",
+        "lineno": 723,
+        "args": [
+          "self",
+          "person",
+          "nature_context"
+        ],
+        "docstring": "Check Chalcedonian definition maintenance",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_creates_nature_contradiction",
+        "lineno": 727,
+        "args": [
+          "self",
+          "person",
+          "operation",
+          "nature_context"
+        ],
+        "docstring": "Check for nature contradictions",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_block_nature_conflict",
+        "lineno": 731,
+        "args": [
+          "self",
+          "reason"
+        ],
+        "docstring": "Block nature conflicts",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_resolve_nature_conflict",
+        "lineno": 736,
+        "args": [
+          "self",
+          "person",
+          "operation",
+          "nature_context"
+        ],
+        "docstring": "Resolve nature conflicts using Chalcedonian principles",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_validate_nature_harmony",
+        "lineno": 740,
+        "args": [
+          "self",
+          "person",
+          "operation",
+          "nature_context"
+        ],
+        "docstring": "Validate nature harmony",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 750,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_relational_operation",
+        "lineno": 754,
+        "args": [
+          "self",
+          "entity",
+          "operation",
+          "context"
+        ],
+        "docstring": "Unified relational validation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_combine_relational_results",
+        "lineno": 761,
+        "args": [
+          "self",
+          "resurrection_result",
+          "hypostatic_result"
+        ],
+        "docstring": "Combine results from resurrection and hypostatic validation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 783,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_agi_operation",
+        "lineno": 790,
+        "args": [
+          "self",
+          "operation_request"
+        ],
+        "docstring": "Comprehensive AGI operation validation using all formalism sets.\nReturns validation results for each formalism set.",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_generate_safety_guarantees",
+        "lineno": 815,
+        "args": [
+          "self",
+          "validation_results"
+        ],
+        "docstring": "Generate safety guarantees based on validation results",
+        "is_async": false
+      }
+    ],
+    "construct_count": 120,
+    "imports": [
+      "logging"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+    "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+    "size": 32443,
+    "reusable_constructs": [
+      {
+        "type": "class",
+        "name": "PredictionConfidence",
+        "lineno": 156,
+        "methods": [],
+        "docstring": "Confidence levels for fractal predictions"
+      },
+      {
+        "type": "class",
+        "name": "FractalScale",
+        "lineno": 165,
+        "methods": [],
+        "docstring": "Fractal scales for multi-scale analysis"
+      },
+      {
+        "type": "class",
+        "name": "OrbitalPrediction",
+        "lineno": 179,
+        "methods": [],
+        "docstring": "Complete orbital prediction with confidence metrics"
+      },
+      {
+        "type": "class",
+        "name": "FractalPattern",
+        "lineno": 193,
+        "methods": [],
+        "docstring": "Recognized fractal pattern with metadata"
+      },
+      {
+        "type": "class",
+        "name": "FractalOrbitPredictor",
+        "lineno": 205,
+        "methods": [
+          "__init__",
+          "_default_config",
+          "predict_orbital_trajectory",
+          "_determine_modal_status",
+          "_calculate_prediction_confidence",
+          "_evolve_trinity_vector",
+          "_calculate_historical_accuracy",
+          "predict_cross_domain_patterns",
+          "_transform_pattern_across_domains"
+        ],
+        "docstring": "Core fractal orbit prediction engine. The most powerful predictive system\nin the LOGOS suite, capable of modeling complex systems across all scales."
+      },
+      {
+        "type": "class",
+        "name": "OrbitalStabilityAnalyzer",
+        "lineno": 462,
+        "methods": [
+          "__init__",
+          "analyze_stability",
+          "_calculate_lyapunov_exponent",
+          "_analyze_periodicity",
+          "_compute_stability_score",
+          "_classify_stability"
+        ],
+        "docstring": "Advanced orbital stability and bifurcation analysis using fractal mathematics"
+      },
+      {
+        "type": "class",
+        "name": "BifurcationDetector",
+        "lineno": 578,
+        "methods": [
+          "__init__",
+          "detect_bifurcations",
+          "_detect_period_doubling",
+          "_detect_saddle_node"
+        ],
+        "docstring": "Detect bifurcation points in fractal orbital dynamics"
+      },
+      {
+        "type": "class",
+        "name": "PatternRecognitionEngine",
+        "lineno": 637,
+        "methods": [
+          "__init__",
+          "find_patterns",
+          "_extract_features",
+          "_calculate_pattern_similarity",
+          "add_pattern",
+          "remove_pattern"
+        ],
+        "docstring": "Multi-scale fractal pattern recognition system"
+      },
+      {
+        "type": "class",
+        "name": "FractalOrbitAnalysisToolkit",
+        "lineno": 725,
+        "methods": [
+          "__init__",
+          "comprehensive_analysis",
+          "_calculate_predictive_power",
+          "_confidence_to_numeric",
+          "real_time_prediction"
+        ],
+        "docstring": "Complete fractal orbit prediction and analysis toolkit.\nThis represents the most powerful predictive engine available."
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 211,
+        "args": [
+          "self",
+          "config"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_default_config",
+        "lineno": 231,
+        "args": [
+          "self"
+        ],
+        "docstring": "Default configuration for maximum predictive power",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_determine_modal_status",
+        "lineno": 315,
+        "args": [
+          "self",
+          "trinity",
+          "orbital_props"
+        ],
+        "docstring": "Determine modal logic status from orbital properties",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_calculate_prediction_confidence",
+        "lineno": 330,
+        "args": [
+          "self",
+          "fractal_pos",
+          "orbital_props",
+          "step"
+        ],
+        "docstring": "Calculate prediction confidence based on multiple factors",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_evolve_trinity_vector",
+        "lineno": 365,
+        "args": [
+          "self",
+          "current",
+          "fractal_pos"
+        ],
+        "docstring": "Evolve Trinity vector using fractal dynamics",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_calculate_historical_accuracy",
+        "lineno": 383,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate accuracy based on historical predictions",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 467,
+        "args": [
+          "self",
+          "config"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_calculate_lyapunov_exponent",
+        "lineno": 503,
+        "args": [
+          "self",
+          "trinity_vector"
+        ],
+        "docstring": "Calculate Lyapunov exponent for chaos detection",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_analyze_periodicity",
+        "lineno": 524,
+        "args": [
+          "self",
+          "fractal_position"
+        ],
+        "docstring": "Analyze periodic behavior in fractal orbit",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_compute_stability_score",
+        "lineno": 542,
+        "args": [
+          "self",
+          "lyapunov",
+          "periodicity",
+          "bifurcation_count"
+        ],
+        "docstring": "Compute overall stability score from multiple metrics",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_classify_stability",
+        "lineno": 564,
+        "args": [
+          "self",
+          "stability_score"
+        ],
+        "docstring": "Classify stability level",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 583,
+        "args": [
+          "self",
+          "config"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_detect_period_doubling",
+        "lineno": 620,
+        "args": [
+          "self",
+          "original",
+          "perturbed"
+        ],
+        "docstring": "Detect period-doubling bifurcation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_detect_saddle_node",
+        "lineno": 627,
+        "args": [
+          "self",
+          "original",
+          "perturbed"
+        ],
+        "docstring": "Detect saddle-node bifurcation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 642,
+        "args": [
+          "self",
+          "config"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_extract_features",
+        "lineno": 673,
+        "args": [
+          "self",
+          "trinity",
+          "fractal_pos"
+        ],
+        "docstring": "Extract feature vector from fractal state",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_calculate_pattern_similarity",
+        "lineno": 686,
+        "args": [
+          "self",
+          "features",
+          "pattern"
+        ],
+        "docstring": "Calculate similarity between feature vector and pattern",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "add_pattern",
+        "lineno": 714,
+        "args": [
+          "self",
+          "pattern"
+        ],
+        "docstring": "Add a new pattern to the database",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "remove_pattern",
+        "lineno": 718,
+        "args": [
+          "self",
+          "pattern_id"
+        ],
+        "docstring": "Remove a pattern from the database",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 731,
+        "args": [
+          "self",
+          "config"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_calculate_predictive_power",
+        "lineno": 802,
+        "args": [
+          "self",
+          "trajectory"
+        ],
+        "docstring": "Calculate the predictive power of the analysis",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_confidence_to_numeric",
+        "lineno": 823,
+        "args": [
+          "self",
+          "confidence"
+        ],
+        "docstring": "Convert confidence enum to numeric value",
+        "is_async": false
+      },
+      {
+        "type": "class",
+        "name": "FractalPosition",
+        "lineno": 118,
+        "methods": [],
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "ThonocModalInference",
+        "lineno": 124,
+        "methods": [
+          "__init__",
+          "infer"
+        ],
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "ModalFormula",
+        "lineno": 131,
+        "methods": [
+          "__init__",
+          "evaluate"
+        ],
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "MVSCoordinate",
+        "lineno": 138,
+        "methods": [
+          "__init__"
+        ],
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "ModalInferenceResult",
+        "lineno": 142,
+        "methods": [
+          "__init__"
+        ],
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "FractalNavigator",
+        "lineno": 146,
+        "methods": [
+          "compute_position",
+          "orbital_properties"
+        ],
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 125,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "infer",
+        "lineno": 128,
+        "args": [
+          "self",
+          "context"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 132,
+        "args": [
+          "self",
+          "formula"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "evaluate",
+        "lineno": 135,
+        "args": [
+          "self",
+          "world"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 139,
+        "args": [
+          "self",
+          "x",
+          "y",
+          "z"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 143,
+        "args": [
+          "self",
+          "result"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "compute_position",
+        "lineno": 147,
+        "args": [
+          "self",
+          "tv"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "orbital_properties",
+        "lineno": 150,
+        "args": [
+          "self",
+          "tv"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "class",
+        "name": "TrinityVector",
+        "lineno": 84,
+        "methods": [
+          "from_complex",
+          "to_tuple"
+        ],
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "from_complex",
+        "lineno": 90,
+        "args": [
+          "cls",
+          "value"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "to_tuple",
+        "lineno": 93,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      }
+    ],
+    "construct_count": 48,
+    "imports": [
+      "BDN_System.core.trinity_hyperstructure",
+      "LOGOS_AGI.Synthetic_Cognition_Protocol.BDN_System.core.trinity_hyperstructure",
+      "Logos_System.System_Stack.Synthetic_Cognition_Protocol.MVS_System.fractal_orbital.fractal_mvs",
+      "Synthetic_Cognition_Protocol.BDN_System.core.trinity_hyperstructure",
+      "collections",
+      "data_c_values.data_structures",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "fractal_orbital.symbolic_math",
+      "logging",
+      "math",
+      "modal_inference",
+      "numpy",
+      "pathlib",
+      "predictors.fractal_mapping",
+      "sys",
+      "time",
+      "typing"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+    "file": "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+    "size": 46527,
+    "reusable_constructs": [
+      {
+        "type": "class",
+        "name": "StorageTier",
+        "lineno": 41,
+        "methods": [],
+        "docstring": "Multi-tier storage for different memory types"
+      },
+      {
+        "type": "class",
+        "name": "StorageFormat",
+        "lineno": 49,
+        "methods": [],
+        "docstring": "Different formats for different access patterns"
+      },
+      {
+        "type": "class",
+        "name": "StorageConfiguration",
+        "lineno": 58,
+        "methods": [],
+        "docstring": "Configuration for memory storage system"
+      },
+      {
+        "type": "class",
+        "name": "TieredMemoryStorage",
+        "lineno": 91,
+        "methods": [
+          "__init__",
+          "store_memory",
+          "retrieve_memory",
+          "_store_in_tier",
+          "_store_ephemeral",
+          "_store_hot",
+          "_store_warm",
+          "_determine_initial_tier"
+        ],
+        "docstring": "Multi-tier storage system that automatically moves memories\nbetween tiers based on access patterns"
+      },
+      {
+        "type": "class",
+        "name": "MemoryIndexSystem",
+        "lineno": 339,
+        "methods": [
+          "__init__",
+          "index_memory",
+          "query_by_similarity",
+          "query_by_association",
+          "query_by_temporal_context"
+        ],
+        "docstring": "Multi-index system for different recall patterns\nEssential for efficient memory retrieval"
+      },
+      {
+        "type": "class",
+        "name": "MemoryRetrievalEngine",
+        "lineno": 497,
+        "methods": [
+          "__init__",
+          "retrieve_and_apply",
+          "_execute_retrieval",
+          "_retrieve_by_similarity",
+          "_retrieve_by_association",
+          "_apply_memories"
+        ],
+        "docstring": "Engine for retrieving and applying stored memories\nImplements multiple retrieval strategies"
+      },
+      {
+        "type": "class",
+        "name": "MemoryConsolidationScheduler",
+        "lineno": 705,
+        "methods": [
+          "__init__",
+          "schedule_consolidation",
+          "run_consolidation_cycle"
+        ],
+        "docstring": "Schedules memory consolidation and reorganization\nLike sleep cycles for memory optimization"
+      },
+      {
+        "type": "class",
+        "name": "MemoryForgettingManager",
+        "lineno": 755,
+        "methods": [
+          "__init__",
+          "update_forgetting_curve",
+          "get_memories_for_review"
+        ],
+        "docstring": "Manages forgetting and memory decay\nImplements spaced repetition and importance-based retention"
+      },
+      {
+        "type": "class",
+        "name": "MetamemorySystem",
+        "lineno": 827,
+        "methods": [
+          "__init__",
+          "monitor_memory_operation",
+          "_check_regulation_needs"
+        ],
+        "docstring": "System that monitors and regulates memory processes\nLike metacognition for memory management"
+      },
+      {
+        "type": "class",
+        "name": "CompleteMemorySystem",
+        "lineno": 893,
+        "methods": [
+          "__init__",
+          "store_complete_memory",
+          "retrieve_for_application",
+          "run_maintenance_cycle",
+          "_start_background_processes",
+          "_background_consolidation"
+        ],
+        "docstring": "Complete memory system integrating storage, retrieval, and auxiliary systems"
+      },
+      {
+        "type": "function",
+        "name": "demonstrate_complete_memory_system",
+        "lineno": 1090,
+        "args": [],
+        "docstring": "Demonstrate the complete memory system",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 97,
+        "args": [
+          "self",
+          "config"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "store_memory",
+        "lineno": 130,
+        "args": [
+          "self",
+          "memory_id",
+          "memory_data",
+          "encoding",
+          "metadata"
+        ],
+        "docstring": "Store memory across appropriate tiers\nReturns success status",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "retrieve_memory",
+        "lineno": 173,
+        "args": [
+          "self",
+          "memory_id",
+          "include_encoding"
+        ],
+        "docstring": "Retrieve memory from appropriate tier\nUpdates access statistics for tier management",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_store_in_tier",
+        "lineno": 206,
+        "args": [
+          "self",
+          "memory_id",
+          "memory_data",
+          "encoding",
+          "metadata",
+          "tier"
+        ],
+        "docstring": "Store memory in specific tier",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_store_ephemeral",
+        "lineno": 227,
+        "args": [
+          "self",
+          "memory_id",
+          "data",
+          "encoding",
+          "metadata"
+        ],
+        "docstring": "Store in ephemeral (RAM) storage",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_store_hot",
+        "lineno": 258,
+        "args": [
+          "self",
+          "memory_id",
+          "data",
+          "encoding",
+          "metadata"
+        ],
+        "docstring": "Store in hot storage (fast SSD)",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_store_warm",
+        "lineno": 277,
+        "args": [
+          "self",
+          "memory_id",
+          "data",
+          "encoding",
+          "metadata"
+        ],
+        "docstring": "Store in warm storage (regular SSD)",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_determine_initial_tier",
+        "lineno": 317,
+        "args": [
+          "self",
+          "memory_data",
+          "metadata"
+        ],
+        "docstring": "Determine which tier to initially store memory in",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 345,
+        "args": [
+          "self",
+          "index_path"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "index_memory",
+        "lineno": 376,
+        "args": [
+          "self",
+          "memory_id",
+          "encoding",
+          "content",
+          "metadata"
+        ],
+        "docstring": "Index memory across all index systems",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "query_by_similarity",
+        "lineno": 404,
+        "args": [
+          "self",
+          "query_vector",
+          "k",
+          "threshold"
+        ],
+        "docstring": "Find similar memories using vector similarity",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "query_by_association",
+        "lineno": 428,
+        "args": [
+          "self",
+          "source_memory_id",
+          "max_depth",
+          "strength_threshold"
+        ],
+        "docstring": "Find associated memories using graph traversal",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "query_by_temporal_context",
+        "lineno": 472,
+        "args": [
+          "self",
+          "time_window",
+          "context_filters"
+        ],
+        "docstring": "Find memories within time window matching context",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 503,
+        "args": [
+          "self",
+          "storage",
+          "indices"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "retrieve_and_apply",
+        "lineno": 535,
+        "args": [
+          "self",
+          "query",
+          "application_type",
+          "strategy",
+          "limit"
+        ],
+        "docstring": "Retrieve memories and apply them to current task",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_execute_retrieval",
+        "lineno": 573,
+        "args": [
+          "self",
+          "query",
+          "strategy",
+          "limit"
+        ],
+        "docstring": "Execute retrieval using specified strategy",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_retrieve_by_similarity",
+        "lineno": 603,
+        "args": [
+          "self",
+          "query",
+          "limit"
+        ],
+        "docstring": "Retrieve similar memories using vector similarity",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_retrieve_by_association",
+        "lineno": 634,
+        "args": [
+          "self",
+          "query",
+          "limit"
+        ],
+        "docstring": "Retrieve associated memories",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_apply_memories",
+        "lineno": 670,
+        "args": [
+          "self",
+          "memories",
+          "query",
+          "application_type"
+        ],
+        "docstring": "Apply retrieved memories to current task",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 711,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "schedule_consolidation",
+        "lineno": 723,
+        "args": [
+          "self",
+          "memory_id",
+          "priority"
+        ],
+        "docstring": "Schedule memory for consolidation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "run_consolidation_cycle",
+        "lineno": 727,
+        "args": [
+          "self"
+        ],
+        "docstring": "Run a consolidation cycle",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 761,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "update_forgetting_curve",
+        "lineno": 773,
+        "args": [
+          "self",
+          "memory_id",
+          "access_time",
+          "rehearsal"
+        ],
+        "docstring": "Update forgetting curve for memory",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "get_memories_for_review",
+        "lineno": 809,
+        "args": [
+          "self",
+          "current_time",
+          "limit"
+        ],
+        "docstring": "Get memories that need review",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 833,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "monitor_memory_operation",
+        "lineno": 850,
+        "args": [
+          "self",
+          "operation_type",
+          "operation_data"
+        ],
+        "docstring": "Monitor a memory operation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_check_regulation_needs",
+        "lineno": 870,
+        "args": [
+          "self"
+        ],
+        "docstring": "Check if memory system needs regulation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 898,
+        "args": [
+          "self",
+          "config"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "store_complete_memory",
+        "lineno": 921,
+        "args": [
+          "self",
+          "smp_data",
+          "evaluation_result",
+          "encoding"
+        ],
+        "docstring": "Store a complete memory with all metadata",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "retrieve_for_application",
+        "lineno": 988,
+        "args": [
+          "self",
+          "query",
+          "application_type",
+          "context"
+        ],
+        "docstring": "Retrieve and apply memories for specific application",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "run_maintenance_cycle",
+        "lineno": 1022,
+        "args": [
+          "self"
+        ],
+        "docstring": "Run complete maintenance cycle\nReturns maintenance report",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_start_background_processes",
+        "lineno": 1059,
+        "args": [
+          "self"
+        ],
+        "docstring": "Start background memory management processes",
+        "is_async": false
+      }
+    ],
+    "construct_count": 44,
+    "imports": [
+      "asyncio",
+      "bcolz",
+      "collections",
+      "concurrent.futures",
+      "dataclasses",
+      "datasketch",
+      "datetime",
+      "enum",
+      "faiss",
+      "h5py",
+      "hashlib",
+      "heapq",
+      "json",
+      "leveldb",
+      "lmdb",
+      "msgpack",
+      "numpy",
+      "pathlib",
+      "pickle",
+      "redis",
+      "shelve",
+      "sqlite3",
+      "typing",
+      "zarr",
+      "zlib"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+    "size": 21138,
+    "reusable_constructs": [
+      {
+        "type": "class",
+        "name": "Quaternion",
+        "lineno": 43,
+        "methods": [
+          "__post_init__",
+          "magnitude",
+          "conjugate",
+          "multiply",
+          "to_complex",
+          "to_trinity_vector",
+          "trinity_product"
+        ],
+        "docstring": "Trinity-grounded quaternion representation"
+      },
+      {
+        "type": "class",
+        "name": "TrinityOptimizer",
+        "lineno": 94,
+        "methods": [
+          "__init__",
+          "compute_optimization_function",
+          "verify_trinity_optimization"
+        ],
+        "docstring": "Implements the Trinity Optimization Theorem: O(n) minimized at n=3"
+      },
+      {
+        "type": "class",
+        "name": "OrbitAnalysis",
+        "lineno": 170,
+        "methods": [
+          "calculate_coherence_score"
+        ],
+        "docstring": "Analysis of fractal orbit behavior"
+      },
+      {
+        "type": "class",
+        "name": "TrinityFractalSystem",
+        "lineno": 192,
+        "methods": [
+          "__init__",
+          "compute_orbit",
+          "_calculate_fractal_dimension"
+        ],
+        "docstring": "Trinity-grounded fractal mathematics"
+      },
+      {
+        "type": "class",
+        "name": "OBDCKernel",
+        "lineno": 272,
+        "methods": [
+          "__init__",
+          "verify_commutation",
+          "validate_unity_trinity_invariants"
+        ],
+        "docstring": "Orthogonal Dual-Bijection Confluence mathematical kernel"
+      },
+      {
+        "type": "class",
+        "name": "TLMToken",
+        "lineno": 347,
+        "methods": [
+          "is_trinity_locked",
+          "is_expired",
+          "to_hash"
+        ],
+        "docstring": "Trinity-Locked-Mathematical validation token"
+      },
+      {
+        "type": "class",
+        "name": "TLMManager",
+        "lineno": 379,
+        "methods": [
+          "__init__",
+          "create_token",
+          "validate_trinity_aspect",
+          "is_operation_authorized"
+        ],
+        "docstring": "Trinity-Locked-Mathematical token management system"
+      },
+      {
+        "type": "class",
+        "name": "LOGOSMathematicalCore",
+        "lineno": 454,
+        "methods": [
+          "__init__",
+          "bootstrap",
+          "is_operational",
+          "create_trinity_quaternion",
+          "validate_operation"
+        ],
+        "docstring": "Integrated mathematical core for LOGOS AGI system"
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "lineno": 568,
+        "args": [],
+        "docstring": "Main demonstration function",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__post_init__",
+        "lineno": 51,
+        "args": [
+          "self"
+        ],
+        "docstring": "Normalize quaternion for Trinity compliance",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "magnitude",
+        "lineno": 60,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate quaternion magnitude",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "conjugate",
+        "lineno": 64,
+        "args": [
+          "self"
+        ],
+        "docstring": "Return quaternion conjugate",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "multiply",
+        "lineno": 68,
+        "args": [
+          "self",
+          "other"
+        ],
+        "docstring": "Quaternion multiplication",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "to_complex",
+        "lineno": 76,
+        "args": [
+          "self"
+        ],
+        "docstring": "Convert to complex number for fractal iteration",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "to_trinity_vector",
+        "lineno": 80,
+        "args": [
+          "self"
+        ],
+        "docstring": "Convert to Trinity vector (Existence, Goodness, Truth)",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "trinity_product",
+        "lineno": 84,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate Trinity product: E × G × T",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 97,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "compute_optimization_function",
+        "lineno": 107,
+        "args": [
+          "self",
+          "n"
+        ],
+        "docstring": "Compute O(n) = I_SIGN(n) + I_MIND(n) + I_MESH(n)\n\nThe Trinity Optimization Theorem states that cognitive complexity O(n)\nis minimized at n=3, representing the optimal balance of Existence,\nGoodness, a",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "verify_trinity_optimization",
+        "lineno": 136,
+        "args": [
+          "self"
+        ],
+        "docstring": "Verify that O(n) is minimized at n=3",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "calculate_coherence_score",
+        "lineno": 182,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate overall coherence score",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 195,
+        "args": [
+          "self",
+          "escape_radius",
+          "max_iterations"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "compute_orbit",
+        "lineno": 200,
+        "args": [
+          "self",
+          "q",
+          "c"
+        ],
+        "docstring": "Compute fractal orbit for Trinity quaternion",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_calculate_fractal_dimension",
+        "lineno": 245,
+        "args": [
+          "self",
+          "orbit_points"
+        ],
+        "docstring": "Calculate fractal dimension using box-counting method",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 275,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "verify_commutation",
+        "lineno": 285,
+        "args": [
+          "self"
+        ],
+        "docstring": "Verify OBDC commutation relationships",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_unity_trinity_invariants",
+        "lineno": 313,
+        "args": [
+          "self"
+        ],
+        "docstring": "Validate Unity/Trinity mathematical invariants",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "is_trinity_locked",
+        "lineno": 358,
+        "args": [
+          "self"
+        ],
+        "docstring": "Check if token is fully Trinity-locked",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "is_expired",
+        "lineno": 362,
+        "args": [
+          "self"
+        ],
+        "docstring": "Check if token has expired",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "to_hash",
+        "lineno": 366,
+        "args": [
+          "self"
+        ],
+        "docstring": "Generate cryptographic hash of token",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 382,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "create_token",
+        "lineno": 386,
+        "args": [
+          "self",
+          "operation_data"
+        ],
+        "docstring": "Create new TLM token for operation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_trinity_aspect",
+        "lineno": 407,
+        "args": [
+          "self",
+          "token_id",
+          "aspect",
+          "validation_result"
+        ],
+        "docstring": "Validate specific Trinity aspect of token",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "is_operation_authorized",
+        "lineno": 435,
+        "args": [
+          "self",
+          "token_id"
+        ],
+        "docstring": "Check if operation is fully authorized via Trinity validation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 457,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "bootstrap",
+        "lineno": 466,
+        "args": [
+          "self"
+        ],
+        "docstring": "Bootstrap and verify complete mathematical system",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "is_operational",
+        "lineno": 507,
+        "args": [
+          "self"
+        ],
+        "docstring": "Check if mathematical core is operational",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "create_trinity_quaternion",
+        "lineno": 511,
+        "args": [
+          "self",
+          "existence",
+          "goodness",
+          "truth"
+        ],
+        "docstring": "Create Trinity-grounded quaternion",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "validate_operation",
+        "lineno": 517,
+        "args": [
+          "self",
+          "operation_data"
+        ],
+        "docstring": "Validate operation through complete mathematical stack",
+        "is_async": false
+      }
+    ],
+    "construct_count": 38,
+    "imports": [
+      "dataclasses",
+      "hashlib",
+      "json",
+      "logging",
+      "math",
+      "numpy",
+      "secrets",
+      "time",
+      "typing"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.iel_overlay",
+    "file": "Pre-Processing/EXTRACT_LOGIC/iel_overlay.py",
+    "size": 49064,
+    "reusable_constructs": [
+      {
+        "type": "class",
+        "name": "UIPStep",
+        "lineno": 24,
+        "methods": [],
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "UIPContext",
+        "lineno": 29,
+        "methods": [],
+        "docstring": "Context for User Interaction Protocol processing"
+      },
+      {
+        "type": "function",
+        "name": "register_uip_handler",
+        "lineno": 36,
+        "args": [
+          "step",
+          "dependencies",
+          "timeout"
+        ],
+        "docstring": "Decorator to register UIP handlers",
+        "is_async": false
+      },
+      {
+        "type": "class",
+        "name": "IELOverlayResult",
+        "lineno": 60,
+        "methods": [],
+        "docstring": "Result structure for IEL overlay application"
+      },
+      {
+        "type": "class",
+        "name": "IELOverlayEngine",
+        "lineno": 75,
+        "methods": [
+          "__init__",
+          "initialize_iel_systems",
+          "_load_available_domains",
+          "_get_fallback_domains",
+          "_initialize_modal_analyzers",
+          "_initialize_temporal_analyzers",
+          "_initialize_epistemic_analyzers",
+          "_initialize_deontic_analyzers",
+          "apply_iel_overlay",
+          "_select_iel_domains",
+          "_get_domain_keywords",
+          "_get_domain_operations",
+          "_apply_modal_analysis",
+          "_apply_temporal_analysis",
+          "_apply_epistemic_analysis",
+          "_apply_deontic_analysis",
+          "_detect_modal_operators",
+          "_extract_possibility_claims",
+          "_extract_necessity_claims",
+          "_detect_temporal_markers",
+          "_extract_causal_chains",
+          "_extract_temporal_sequences",
+          "_extract_knowledge_claims",
+          "_extract_belief_statements",
+          "_extract_uncertainty_expressions",
+          "_extract_obligations",
+          "_extract_permissions",
+          "_extract_prohibitions",
+          "_calculate_logical_coherence",
+          "_identify_reasoning_pathways",
+          "_calculate_domain_compatibility",
+          "_calculate_analysis_depth"
+        ],
+        "docstring": "Core IEL overlay application engine"
+      },
+      {
+        "type": "function",
+        "name": "decorator",
+        "lineno": 38,
+        "args": [
+          "func"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "class",
+        "name": "BaseIELOverlay",
+        "lineno": 55,
+        "methods": [],
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 78,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize IEL overlay engine",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "initialize_iel_systems",
+        "lineno": 88,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize IEL domain systems",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_load_available_domains",
+        "lineno": 113,
+        "args": [
+          "self"
+        ],
+        "docstring": "Load available IEL domain definitions from iel_domains package",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_get_fallback_domains",
+        "lineno": 287,
+        "args": [
+          "self"
+        ],
+        "docstring": "Fallback domain definitions when dynamic loading fails",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_modal_analyzers",
+        "lineno": 376,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize modal logic analyzers",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_temporal_analyzers",
+        "lineno": 400,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize temporal logic analyzers",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_epistemic_analyzers",
+        "lineno": 429,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize epistemic logic analyzers",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialize_deontic_analyzers",
+        "lineno": 457,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize deontic logic analyzers",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_get_domain_keywords",
+        "lineno": 636,
+        "args": [
+          "self",
+          "domain_key"
+        ],
+        "docstring": "Get keywords associated with a specific IEL domain",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_get_domain_operations",
+        "lineno": 710,
+        "args": [
+          "self",
+          "domain_key"
+        ],
+        "docstring": "Get operations supported by a specific IEL domain",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_detect_modal_operators",
+        "lineno": 858,
+        "args": [
+          "self",
+          "text"
+        ],
+        "docstring": "Detect modal operators and constructions in text",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_extract_possibility_claims",
+        "lineno": 874,
+        "args": [
+          "self",
+          "text"
+        ],
+        "docstring": "Extract possibility claims from text",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_extract_necessity_claims",
+        "lineno": 885,
+        "args": [
+          "self",
+          "text"
+        ],
+        "docstring": "Extract necessity claims from text",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_detect_temporal_markers",
+        "lineno": 898,
+        "args": [
+          "self",
+          "text"
+        ],
+        "docstring": "Detect temporal markers in text",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_extract_causal_chains",
+        "lineno": 916,
+        "args": [
+          "self",
+          "text"
+        ],
+        "docstring": "Extract causal chains from text",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_extract_temporal_sequences",
+        "lineno": 927,
+        "args": [
+          "self",
+          "text"
+        ],
+        "docstring": "Extract temporal sequences from text",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_extract_knowledge_claims",
+        "lineno": 934,
+        "args": [
+          "self",
+          "text"
+        ],
+        "docstring": "Extract knowledge claims from text",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_extract_belief_statements",
+        "lineno": 944,
+        "args": [
+          "self",
+          "text"
+        ],
+        "docstring": "Extract belief statements from text",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_extract_uncertainty_expressions",
+        "lineno": 954,
+        "args": [
+          "self",
+          "text"
+        ],
+        "docstring": "Extract uncertainty expressions from text",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_extract_obligations",
+        "lineno": 959,
+        "args": [
+          "self",
+          "text"
+        ],
+        "docstring": "Extract obligation statements from text",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_extract_permissions",
+        "lineno": 969,
+        "args": [
+          "self",
+          "text"
+        ],
+        "docstring": "Extract permission statements from text",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_extract_prohibitions",
+        "lineno": 985,
+        "args": [
+          "self",
+          "text"
+        ],
+        "docstring": "Extract prohibition statements from text",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_calculate_logical_coherence",
+        "lineno": 1001,
+        "args": [
+          "self",
+          "modal_results",
+          "temporal_results",
+          "epistemic_results",
+          "deontic_results"
+        ],
+        "docstring": "Calculate overall logical coherence score",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_identify_reasoning_pathways",
+        "lineno": 1033,
+        "args": [
+          "self",
+          "selected_domains",
+          "modal_results",
+          "temporal_results",
+          "epistemic_results",
+          "deontic_results"
+        ],
+        "docstring": "Identify available reasoning pathways",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_calculate_domain_compatibility",
+        "lineno": 1077,
+        "args": [
+          "self",
+          "intent_classification",
+          "selected_domains"
+        ],
+        "docstring": "Calculate compatibility scores for each selected domain",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_calculate_analysis_depth",
+        "lineno": 1107,
+        "args": [
+          "self",
+          "selected_domains"
+        ],
+        "docstring": "Calculate the depth of IEL analysis",
+        "is_async": false
+      }
+    ],
+    "construct_count": 33,
+    "imports": [
+      "Logos_Protocol.Logos_Core",
+      "dataclasses",
+      "enum",
+      "iel_domains",
+      "logging",
+      "time",
+      "typing"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser",
+    "file": "Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py",
+    "size": 7403,
+    "reusable_constructs": [
+      {
+        "type": "class",
+        "name": "_FallbackStatsInterfaceUnavailable",
+        "lineno": 34,
+        "methods": [],
+        "docstring": "Raised when analytics helpers are disabled via settings."
+      },
+      {
+        "type": "function",
+        "name": "_disabled",
+        "lineno": 41,
+        "args": [],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "class",
+        "name": "BayesianDataHandler",
+        "lineno": 71,
+        "methods": [
+          "__init__",
+          "_init_storage",
+          "save_prediction",
+          "get_predictions",
+          "save_metadata",
+          "get_metadata",
+          "cleanup_old_data",
+          "regression_analysis",
+          "partial_correlation_analysis",
+          "_prepare_dataframe"
+        ],
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 72,
+        "args": [
+          "self",
+          "data_dir"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_init_storage",
+        "lineno": 78,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "save_prediction",
+        "lineno": 100,
+        "args": [
+          "self",
+          "prediction",
+          "hypothesis"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "get_predictions",
+        "lineno": 113,
+        "args": [
+          "self",
+          "start_date",
+          "end_date",
+          "min_confidence"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "save_metadata",
+        "lineno": 128,
+        "args": [
+          "self",
+          "metadata"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "get_metadata",
+        "lineno": 133,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "cleanup_old_data",
+        "lineno": 137,
+        "args": [
+          "self",
+          "days_to_keep"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "regression_analysis",
+        "lineno": 143,
+        "args": [
+          "self",
+          "target",
+          "predictors"
+        ],
+        "docstring": "Run linear or logistic regression over stored prediction history.",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "partial_correlation_analysis",
+        "lineno": 182,
+        "args": [
+          "self",
+          "x",
+          "y",
+          "controls"
+        ],
+        "docstring": "Compute partial correlation for stored predictions.",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_prepare_dataframe",
+        "lineno": 208,
+        "args": [
+          "self",
+          "columns"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "class",
+        "name": "_FallbackAnalyticsSettings",
+        "lineno": 26,
+        "methods": [],
+        "docstring": ""
+      }
+    ],
+    "construct_count": 14,
+    "imports": [
+      "datetime",
+      "importlib",
+      "json",
+      "pandas",
+      "pathlib",
+      "typing"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.privative_policies",
+    "file": "Pre-Processing/EXTRACT_LOGIC/privative_policies.py",
+    "size": 9014,
+    "reusable_constructs": [
+      {
+        "type": "function",
+        "name": "Good",
+        "lineno": 17,
+        "args": [
+          "action",
+          "ctx"
+        ],
+        "docstring": "Privative predicate: Good(action) - determines if action is permissible",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "TrueP",
+        "lineno": 40,
+        "args": [
+          "prop",
+          "ctx"
+        ],
+        "docstring": "Privative predicate: TrueP(prop) - determines if proposition is true",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "Coherent",
+        "lineno": 52,
+        "args": [
+          "state",
+          "ctx"
+        ],
+        "docstring": "Privative predicate: Coherent(state) - determines if state is coherent",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "obligation_for",
+        "lineno": 63,
+        "args": [
+          "action",
+          "state",
+          "props",
+          "ctx"
+        ],
+        "docstring": "PXL-side encoding; enrich as you formalize",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "preserves_invariants",
+        "lineno": 68,
+        "args": [
+          "step"
+        ],
+        "docstring": "Generate preservation obligation for workflow steps",
+        "is_async": false
+      },
+      {
+        "type": "class",
+        "name": "PrivativePolicies",
+        "lineno": 73,
+        "methods": [
+          "__init__",
+          "obligation_for",
+          "preserves_invariants",
+          "system_consistency_obligation",
+          "bijection_preservation_obligation",
+          "commutation_obligation",
+          "get_all_policies"
+        ],
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 74,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "obligation_for",
+        "lineno": 105,
+        "args": [
+          "self",
+          "action",
+          "state",
+          "properties"
+        ],
+        "docstring": "Generate BOX obligation for a given action, state, and properties\n\nArgs:\n    action: The action being performed\n    state: Current system state\n    properties: Properties/parameters of the action\n\nRet",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "preserves_invariants",
+        "lineno": 145,
+        "args": [
+          "self",
+          "step"
+        ],
+        "docstring": "Generate invariant preservation obligation for a plan step\n\nArgs:\n    step: The step identifier or type\n\nReturns:\n    String representation of the preservation obligation",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "system_consistency_obligation",
+        "lineno": 165,
+        "args": [
+          "self",
+          "system_id",
+          "context"
+        ],
+        "docstring": "Generate system-level consistency obligation\n\nArgs:\n    system_id: Identifier of the system\n    context: Additional context for the consistency check\n\nReturns:\n    String representation of the consist",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "bijection_preservation_obligation",
+        "lineno": 190,
+        "args": [
+          "self",
+          "bijection_name",
+          "operation_context"
+        ],
+        "docstring": "Generate bijection preservation obligation\n\nArgs:\n    bijection_name: Name of the bijection\n    operation_context: Context about the operation\n\nReturns:\n    String representation of the preservation o",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "commutation_obligation",
+        "lineno": 213,
+        "args": [
+          "self",
+          "g_name",
+          "h_name",
+          "commutativity_context"
+        ],
+        "docstring": "Generate commutation obligation for composed operations\n\nArgs:\n    g_name: Name of first operation\n    h_name: Name of second operation\n    commutativity_context: Context about the commutation\n\nReturn",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "get_all_policies",
+        "lineno": 237,
+        "args": [
+          "self"
+        ],
+        "docstring": "Get all defined policies for inspection",
+        "is_async": false
+      }
+    ],
+    "construct_count": 13,
+    "imports": [
+      "typing"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.adaptive_engine",
+    "file": "Pre-Processing/EXTRACT_LOGIC/adaptive_engine.py",
+    "size": 7204,
+    "reusable_constructs": [
+      {
+        "type": "class",
+        "name": "AdaptiveProcessingResult",
+        "lineno": 29,
+        "methods": [],
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "AdaptiveProcessor",
+        "lineno": 42,
+        "methods": [
+          "__init__",
+          "process_adaptive_refinement",
+          "_initialise_strategies",
+          "_profile_for",
+          "_analyse_context",
+          "_select_strategies",
+          "_apply_strategies",
+          "_derive_adjustments",
+          "_update_history",
+          "_personalisation_snapshot",
+          "_estimate_confidence"
+        ],
+        "docstring": "Context-aware adaptive processing and personalisation for UIP."
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 45,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_initialise_strategies",
+        "lineno": 85,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_profile_for",
+        "lineno": 105,
+        "args": [
+          "self",
+          "user_id"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_analyse_context",
+        "lineno": 118,
+        "args": [
+          "self",
+          "user_input",
+          "context"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_select_strategies",
+        "lineno": 125,
+        "args": [
+          "self",
+          "analysis",
+          "profile"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_apply_strategies",
+        "lineno": 135,
+        "args": [
+          "self",
+          "user_input",
+          "strategies"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_derive_adjustments",
+        "lineno": 143,
+        "args": [
+          "self",
+          "strategies",
+          "profile"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_update_history",
+        "lineno": 150,
+        "args": [
+          "self",
+          "user_id",
+          "context",
+          "refined"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_personalisation_snapshot",
+        "lineno": 163,
+        "args": [
+          "self",
+          "profile"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_estimate_confidence",
+        "lineno": 170,
+        "args": [
+          "self",
+          "strategies",
+          "profile"
+        ],
+        "docstring": "",
+        "is_async": false
+      }
+    ],
+    "construct_count": 12,
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "logging",
+      "time",
+      "typing",
+      "utils.system_utils"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+    "size": 19224,
+    "reusable_constructs": [
+      {
+        "type": "function",
+        "name": "bayesian_self_model",
+        "lineno": 98,
+        "args": [
+          "beliefs",
+          "observations",
+          "n_samples"
+        ],
+        "docstring": "Bayesian belief updating for agent self-modeling and consciousness.\n\nArgs:\n    beliefs: Prior beliefs about self and environment\n    observations: New observations to update beliefs\n    n_samples: MCM",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "hypothesis_self_test",
+        "lineno": 163,
+        "args": [
+          "group1_data",
+          "group2_data"
+        ],
+        "docstring": "Bayesian hypothesis testing for agent self-assessment.",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "causal_self_discovery",
+        "lineno": 192,
+        "args": [
+          "data",
+          "variable_names"
+        ],
+        "docstring": "Causal discovery for understanding agent-environment causal relationships.",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "causal_intervention_analysis",
+        "lineno": 213,
+        "args": [
+          "data",
+          "intervention_var",
+          "intervention_val",
+          "target_var"
+        ],
+        "docstring": "Analyze how interventions affect agent consciousness states.",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "modal_self_reasoning",
+        "lineno": 236,
+        "args": [
+          "formula",
+          "modality"
+        ],
+        "docstring": "Modal logic for agent self-reflection and possibility exploration.",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "consistency_self_check",
+        "lineno": 271,
+        "args": [
+          "formulas"
+        ],
+        "docstring": "Check logical consistency of agent's self-beliefs.",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "semantic_experience_clustering",
+        "lineno": 301,
+        "args": [
+          "texts",
+          "method"
+        ],
+        "docstring": "Cluster experiences/sensory inputs for consciousness organization.",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "semantic_similarity_self_analysis",
+        "lineno": 354,
+        "args": [
+          "texts"
+        ],
+        "docstring": "Analyze semantic similarity for self-understanding.",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "symbolic_self_representation",
+        "lineno": 386,
+        "args": [
+          "equations",
+          "variables"
+        ],
+        "docstring": "Symbolic representation of agent identity and capabilities.",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "lambda_self_evaluation",
+        "lineno": 412,
+        "args": [
+          "expression",
+          "bindings"
+        ],
+        "docstring": "Lambda calculus evaluation for self-referential computation.",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "integrated_consciousness_state",
+        "lineno": 433,
+        "args": [
+          "beliefs",
+          "experiences",
+          "causal_data",
+          "modal_formula"
+        ],
+        "docstring": "Integrate all consciousness aspects into unified self-awareness state.",
+        "is_async": false
+      }
+    ],
+    "construct_count": 11,
+    "imports": [
+      "causallearn.search.ConstraintBased.PC",
+      "logging",
+      "numpy",
+      "pandas",
+      "pymc",
+      "sentence_transformers",
+      "sklearn.cluster",
+      "sklearn.metrics.pairwise",
+      "sympy",
+      "typing",
+      "z3"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.bayesian_recursion",
+    "file": "Pre-Processing/EXTRACT_LOGIC/bayesian_recursion.py",
+    "size": 3376,
+    "reusable_constructs": [
+      {
+        "type": "class",
+        "name": "BayesianPrediction",
+        "lineno": 26,
+        "methods": [],
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "ModelState",
+        "lineno": 35,
+        "methods": [],
+        "docstring": ""
+      },
+      {
+        "type": "class",
+        "name": "BayesianMLModel",
+        "lineno": 43,
+        "methods": [
+          "__init__",
+          "_load_or_init",
+          "_init_state",
+          "update_belief",
+          "_likelihood",
+          "_marginal"
+        ],
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 44,
+        "args": [
+          "self",
+          "data_path"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_load_or_init",
+        "lineno": 48,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_init_state",
+        "lineno": 58,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "update_belief",
+        "lineno": 69,
+        "args": [
+          "self",
+          "hypothesis",
+          "evidence"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_likelihood",
+        "lineno": 107,
+        "args": [
+          "self",
+          "hypothesis",
+          "evidence"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_marginal",
+        "lineno": 122,
+        "args": [
+          "self",
+          "evidence"
+        ],
+        "docstring": "",
+        "is_async": false
+      }
+    ],
+    "construct_count": 9,
+    "imports": [
+      "dataclasses",
+      "datetime",
+      "numpy",
+      "pathlib",
+      "pickle",
+      "scipy",
+      "typing"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.simulated_consciousness_runtime",
+    "file": "Pre-Processing/EXTRACT_LOGIC/simulated_consciousness_runtime.py",
+    "size": 6551,
+    "reusable_constructs": [
+      {
+        "type": "class",
+        "name": "SimulatedConsciousness",
+        "lineno": 47,
+        "methods": [
+          "__init__",
+          "_summarize_cycle",
+          "_update_memory",
+          "_compute_affect_and_attention",
+          "_compose_narrative",
+          "_persist_event",
+          "step",
+          "run"
+        ],
+        "docstring": ""
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 48,
+        "args": [
+          "self",
+          "agent_id"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_summarize_cycle",
+        "lineno": 58,
+        "args": [
+          "self",
+          "cycle_result"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_update_memory",
+        "lineno": 80,
+        "args": [
+          "self",
+          "event",
+          "max_len"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_compute_affect_and_attention",
+        "lineno": 86,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_compose_narrative",
+        "lineno": 106,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_persist_event",
+        "lineno": 118,
+        "args": [
+          "self",
+          "event"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "step",
+        "lineno": 125,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "run",
+        "lineno": 147,
+        "args": [
+          "self",
+          "iterations",
+          "delay"
+        ],
+        "docstring": "",
+        "is_async": false
+      }
+    ],
+    "construct_count": 9,
+    "imports": [
+      "LOGOS_AGI.consciousness.recursion_engine_consciousness_bridge",
+      "__future__",
+      "datetime",
+      "json",
+      "logging",
+      "pathlib",
+      "time",
+      "typing"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+    "file": "Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+    "size": 4429,
+    "reusable_constructs": [
+      {
+        "type": "function",
+        "name": "resolve_priors_path",
+        "lineno": 31,
+        "args": [
+          "priors_path"
+        ],
+        "docstring": "Resolve the priors file location with sensible fallbacks.",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "load_priors",
+        "lineno": 53,
+        "args": [
+          "path"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "save_priors",
+        "lineno": 59,
+        "args": [
+          "data",
+          "path"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "score_data_point",
+        "lineno": 66,
+        "args": [
+          "data_point"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "assign_confidence",
+        "lineno": 79,
+        "args": [
+          "score"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "filter_and_score",
+        "lineno": 86,
+        "args": [
+          "raw_data"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "predictive_refinement",
+        "lineno": 98,
+        "args": [
+          "query",
+          "tier"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "run_BERT_pipeline",
+        "lineno": 103,
+        "args": [
+          "priors_path",
+          "query"
+        ],
+        "docstring": "",
+        "is_async": false
+      }
+    ],
+    "construct_count": 8,
+    "imports": [
+      "__future__",
+      "datetime",
+      "json",
+      "pathlib",
+      "typing"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.coherence",
+    "file": "Pre-Processing/EXTRACT_LOGIC/coherence.py",
+    "size": 6561,
+    "reusable_constructs": [
+      {
+        "type": "class",
+        "name": "ConsistencyLevel",
+        "lineno": 28,
+        "methods": [],
+        "docstring": "Levels of logical consistency."
+      },
+      {
+        "type": "class",
+        "name": "LogicalStatement",
+        "lineno": 36,
+        "methods": [],
+        "docstring": "Represents a logical statement or proposition."
+      },
+      {
+        "type": "class",
+        "name": "ConsistencyCheck",
+        "lineno": 44,
+        "methods": [],
+        "docstring": "Result of a consistency check."
+      },
+      {
+        "type": "class",
+        "name": "CoherenceEngine",
+        "lineno": 51,
+        "methods": [
+          "__init__",
+          "add_statement",
+          "check_consistency",
+          "_analyze_consistency",
+          "_are_contradictory",
+          "get_consistency_history"
+        ],
+        "docstring": "Logical coherence engine for LOGOS AGI.\nChecks logical consistency across statements and propositions."
+      },
+      {
+        "type": "function",
+        "name": "get_consistency_check",
+        "lineno": 179,
+        "args": [
+          "statements"
+        ],
+        "docstring": "Synchronous wrapper for consistency checking.",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 57,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "_are_contradictory",
+        "lineno": 137,
+        "args": [
+          "self",
+          "stmt1",
+          "stmt2"
+        ],
+        "docstring": "Simple contradiction detection (can be enhanced).",
+        "is_async": false
+      }
+    ],
+    "construct_count": 7,
+    "imports": [
+      "asyncio",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "logging",
+      "typing"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.comprehensive_fractal_analysis",
+    "file": "Pre-Processing/EXTRACT_LOGIC/comprehensive_fractal_analysis.py",
+    "size": 14549,
+    "reusable_constructs": [
+      {
+        "type": "function",
+        "name": "load_canonical_c_values",
+        "lineno": 26,
+        "args": [],
+        "docstring": "Load the 17 canonical c-values from the LOGOS analysis",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "generate_julia_set",
+        "lineno": 48,
+        "args": [
+          "c_value",
+          "width",
+          "height",
+          "max_iter"
+        ],
+        "docstring": "Generate a Julia set for analysis",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "analyze_all_fractals",
+        "lineno": 66,
+        "args": [],
+        "docstring": "Analyze all 17 canonical fractals with advanced mathematics",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "generate_comprehensive_report",
+        "lineno": 110,
+        "args": [
+          "analysis_results"
+        ],
+        "docstring": "Generate a comprehensive analysis report",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "create_visual_summary",
+        "lineno": 261,
+        "args": [
+          "analysis_results"
+        ],
+        "docstring": "Create visual summary plots of the analysis",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "main",
+        "lineno": 315,
+        "args": [],
+        "docstring": "Main analysis workflow",
+        "is_async": false
+      }
+    ],
+    "construct_count": 6,
+    "imports": [
+      "advanced_fractal_analyzer",
+      "json",
+      "matplotlib",
+      "matplotlib.pyplot",
+      "numpy",
+      "pandas",
+      "typing"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.NLP_Wrapper_Sentence_Transformers",
+    "file": "Pre-Processing/EXTRACT_LOGIC/NLP_Wrapper_Sentence_Transformers.py",
+    "size": 2984,
+    "reusable_constructs": [
+      {
+        "type": "function",
+        "name": "_runtime_context_stub",
+        "lineno": 25,
+        "args": [],
+        "docstring": "Replace after audit: should pull agent_id/session_id from the canonical runtime context.",
+        "is_async": false
+      },
+      {
+        "type": "class",
+        "name": "NLP_Wrapper_Sentence_Transformers",
+        "lineno": 35,
+        "methods": [
+          "__init__",
+          "module",
+          "run"
+        ],
+        "docstring": "Governed wrapper around external library 'sentence-transformers'.\n\nContract:\n- Obtain module handle from lib_loader registry (preloaded at boot).\n- Execute wrapped functionality.\n- Emit dict payload.\n"
+      },
+      {
+        "type": "function",
+        "name": "__init__",
+        "lineno": 46,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "module",
+        "lineno": 57,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "run",
+        "lineno": 60,
+        "args": [
+          "self"
+        ],
+        "docstring": "Stubbed execution entrypoint.\nReplace body with real calls per library after audit of existing processors/wrappers.",
+        "is_async": false
+      }
+    ],
+    "construct_count": 5,
+    "imports": [
+      "Logos_System.System_Entry_Point.Orchestration_Tools",
+      "Logos_System.System_Stack.Logos_Protocol.External_Enhancements.Constraint_Stubs",
+      "__future__",
+      "typing"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.gen_worldview_ontoprops",
+    "file": "Pre-Processing/EXTRACT_LOGIC/gen_worldview_ontoprops.py",
+    "size": 7051,
+    "reusable_constructs": [
+      {
+        "type": "function",
+        "name": "to_theo",
+        "lineno": 53,
+        "args": [
+          "order"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "fix_pm",
+        "lineno": 57,
+        "args": [
+          "s"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "parse",
+        "lineno": 61,
+        "args": [
+          "s"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "fmt",
+        "lineno": 72,
+        "args": [
+          "rev",
+          "imv"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "w",
+        "lineno": 136,
+        "args": [
+          "path",
+          "s"
+        ],
+        "docstring": "",
+        "is_async": false
+      }
+    ],
+    "construct_count": 5,
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "sys"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network",
+    "file": "Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py",
+    "size": 1690,
+    "reusable_constructs": [
+      {
+        "type": "function",
+        "name": "load_static_priors",
+        "lineno": 25,
+        "args": [
+          "path"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "query_intent_analyzer",
+        "lineno": 31,
+        "args": [
+          "q"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "preprocess_query",
+        "lineno": 43,
+        "args": [
+          "q"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "run_HBN_analysis",
+        "lineno": 47,
+        "args": [
+          "query",
+          "priors"
+        ],
+        "docstring": "",
+        "is_async": false
+      },
+      {
+        "type": "function",
+        "name": "execute_HBN",
+        "lineno": 56,
+        "args": [
+          "query"
+        ],
+        "docstring": "",
+        "is_async": false
+      }
+    ],
+    "construct_count": 5,
+    "imports": [
+      "bayes_update_real_time",
+      "json",
+      "numpy",
+      "re",
+      "sklearn.linear_model",
+      "sklearn.preprocessing"
+    ],
+    "triage": "EXTRACT_LOGIC"
+  }
+]

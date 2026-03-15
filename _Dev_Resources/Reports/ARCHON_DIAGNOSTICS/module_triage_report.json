@@ -1,0 +1,2767 @@
+{
+  "report_type": "module_triage_report",
+  "generated_at": "2026-03-15T15:15:44.487872+00:00",
+  "target": "/workspaces/Logos/_Dev_Resources/Processing_Center/STAGING",
+  "total_modules": 162,
+  "summary": {
+    "DELETE": 15,
+    "EXTRACT_LOGIC": 145,
+    "INTEGRATE": 2
+  },
+  "modules": [
+    {
+      "module": "Inspection_Targets.Nexus_AST_Validator",
+      "file": "Inspection_Targets/Nexus_AST_Validator.py",
+      "size": 7527,
+      "staging_subdir": "Inspection_Targets",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.agent.evaluation_packet",
+      "file": "Pre-Processing/agent/evaluation_packet.py",
+      "size": 1565,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.agent.plan_packet",
+      "file": "Pre-Processing/agent/plan_packet.py",
+      "size": 1434,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.math.dual_bijection_demo",
+      "file": "Pre-Processing/math/dual_bijection_demo.py",
+      "size": 601,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.semantic.mtp_nexus_orchestrator",
+      "file": "Pre-Processing/semantic/mtp_nexus_orchestrator.py",
+      "size": 173,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.semantic.ontoprops_remap",
+      "file": "Pre-Processing/semantic/ontoprops_remap.py",
+      "size": 1201,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.semantic.packet_types",
+      "file": "Pre-Processing/semantic/packet_types.py",
+      "size": 1034,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.semantic.test_simulation_cli",
+      "file": "Pre-Processing/semantic/test_simulation_cli.py",
+      "size": 1271,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.semantic.time_utils",
+      "file": "Pre-Processing/semantic/time_utils.py",
+      "size": 403,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utility.arp_nexus_orchestrator",
+      "file": "Pre-Processing/utility/arp_nexus_orchestrator.py",
+      "size": 173,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utility.csp_nexus_orchestrator",
+      "file": "Pre-Processing/utility/csp_nexus_orchestrator.py",
+      "size": 173,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.utility.logos_protocol_nexus",
+      "file": "Pre-Processing/utility/logos_protocol_nexus.py",
+      "size": 172,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.utility.scp_nexus_orchestrator",
+      "file": "Pre-Processing/utility/scp_nexus_orchestrator.py",
+      "size": 173,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utility.sop_nexus_orchestrator",
+      "file": "Pre-Processing/utility/sop_nexus_orchestrator.py",
+      "size": 204,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.utils.check_imports",
+      "file": "Pre-Processing/utils/check_imports.py",
+      "size": 8436,
+      "staging_subdir": "Pre-Processing",
+      "triage": "DELETE",
+      "is_dead": true,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+      "file": "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+      "size": 46527,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 35,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.NLP_Wrapper_Sentence_Transformers",
+      "file": "Pre-Processing/EXTRACT_LOGIC/NLP_Wrapper_Sentence_Transformers.py",
+      "size": 2984,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 3,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.adaptive_engine",
+      "file": "Pre-Processing/EXTRACT_LOGIC/adaptive_engine.py",
+      "size": 7204,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 8,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+      "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+      "size": 19224,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 11,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 4
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+      "file": "Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+      "size": 4429,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 7,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser",
+      "file": "Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py",
+      "size": 7403,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 9,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.bayesian_recursion",
+      "file": "Pre-Processing/EXTRACT_LOGIC/bayesian_recursion.py",
+      "size": 3376,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 3,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.coherence",
+      "file": "Pre-Processing/EXTRACT_LOGIC/coherence.py",
+      "size": 6561,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 8,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.comprehensive_fractal_analysis",
+      "file": "Pre-Processing/EXTRACT_LOGIC/comprehensive_fractal_analysis.py",
+      "size": 14549,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 6,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+      "size": 32443,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 29,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.gen_worldview_ontoprops",
+      "file": "Pre-Processing/EXTRACT_LOGIC/gen_worldview_ontoprops.py",
+      "size": 7051,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 3,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network",
+      "file": "Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py",
+      "size": 1690,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 4,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.iel_overlay",
+      "file": "Pre-Processing/EXTRACT_LOGIC/iel_overlay.py",
+      "size": 49064,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 35,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+      "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+      "size": 21138,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 30,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.privative_policies",
+      "file": "Pre-Processing/EXTRACT_LOGIC/privative_policies.py",
+      "size": 9014,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 12,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms",
+      "file": "Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py",
+      "size": 36375,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 104,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.EXTRACT_LOGIC.simulated_consciousness_runtime",
+      "file": "Pre-Processing/EXTRACT_LOGIC/simulated_consciousness_runtime.py",
+      "size": 6551,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 7,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+      "file": "Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+      "size": 38918,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 29,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.action_system",
+      "file": "Pre-Processing/KEEP_VERIFY/action_system.py",
+      "size": 6158,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 12,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+      "file": "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+      "size": 26072,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 27,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+      "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+      "size": 24839,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 18,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.arithmetic_engine",
+      "file": "Pre-Processing/KEEP_VERIFY/arithmetic_engine.py",
+      "size": 15611,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 8,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.autonomous_learning",
+      "file": "Pre-Processing/KEEP_VERIFY/autonomous_learning.py",
+      "size": 23697,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 14,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.bayesian_inferencer",
+      "file": "Pre-Processing/KEEP_VERIFY/bayesian_inferencer.py",
+      "size": 1802,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.bayesian_interface",
+      "file": "Pre-Processing/KEEP_VERIFY/bayesian_interface.py",
+      "size": 7630,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 17,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.bayesian_nexus",
+      "file": "Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+      "size": 8424,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 8,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+      "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+      "size": 7589,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 13,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.belief_network",
+      "file": "Pre-Processing/KEEP_VERIFY/belief_network.py",
+      "size": 10423,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 22,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.coherence_formalism",
+      "file": "Pre-Processing/KEEP_VERIFY/coherence_formalism.py",
+      "size": 28601,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 50,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.coherence_metrics",
+      "file": "Pre-Processing/KEEP_VERIFY/coherence_metrics.py",
+      "size": 21955,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 26,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.export_tool_registry",
+      "file": "Pre-Processing/KEEP_VERIFY/export_tool_registry.py",
+      "size": 5125,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 6,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 4
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.lambda_engine",
+      "file": "Pre-Processing/KEEP_VERIFY/lambda_engine.py",
+      "size": 19933,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 51,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine",
+      "file": "Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py",
+      "size": 19591,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 39,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.lambda_parser",
+      "file": "Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+      "size": 14474,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 22,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.modal_logic",
+      "file": "Pre-Processing/KEEP_VERIFY/modal_logic.py",
+      "size": 8577,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 16,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.modal_reasoner",
+      "file": "Pre-Processing/KEEP_VERIFY/modal_reasoner.py",
+      "size": 7794,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 13,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.modal_validator",
+      "file": "Pre-Processing/KEEP_VERIFY/modal_validator.py",
+      "size": 21662,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 20,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.multi_modal_system",
+      "file": "Pre-Processing/KEEP_VERIFY/multi_modal_system.py",
+      "size": 7296,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 13,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.proof_engine",
+      "file": "Pre-Processing/KEEP_VERIFY/proof_engine.py",
+      "size": 22035,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 10,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 4
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis",
+      "file": "Pre-Processing/KEEP_VERIFY/pxl_fractal_orbital_analysis.py",
+      "size": 32275,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 33,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis",
+      "file": "Pre-Processing/KEEP_VERIFY/pxl_modal_fractal_boundary_analysis.py",
+      "size": 27070,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 17,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+      "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+      "size": 28141,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 47,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.relation_mapper",
+      "file": "Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+      "size": 27801,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 22,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.semantic_transformers",
+      "file": "Pre-Processing/KEEP_VERIFY/semantic_transformers.py",
+      "size": 31554,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 23,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 4
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.tool_introspection",
+      "file": "Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+      "size": 7392,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 9,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+      "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+      "size": 18454,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 11,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+      "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+      "size": 19414,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 17,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+      "file": "Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+      "size": 12460,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 7,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.tool_repair_proposal",
+      "file": "Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py",
+      "size": 6118,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 5,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+      "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+      "size": 21871,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 18,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.agent.Logos_Memory_Nexus",
+      "file": "Pre-Processing/agent/Logos_Memory_Nexus.py",
+      "size": 40496,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 29,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.agent.agent_nexus",
+      "file": "Pre-Processing/agent/agent_nexus.py",
+      "size": 37678,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 26,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.agent.base_nexus",
+      "file": "Pre-Processing/agent/base_nexus.py",
+      "size": 27122,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 33,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.agent.id_handler",
+      "file": "Pre-Processing/agent/id_handler.py",
+      "size": 1717,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.agent.knowledge_catalog",
+      "file": "Pre-Processing/agent/knowledge_catalog.py",
+      "size": 9049,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 10,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.agent.legacy_sop_nexus",
+      "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+      "size": 46771,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 61,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.agent.sop_nexus",
+      "file": "Pre-Processing/agent/sop_nexus.py",
+      "size": 52521,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 66,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.agent.test_agent_planner",
+      "file": "Pre-Processing/agent/test_agent_planner.py",
+      "size": 5252,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 4,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.agent.test_end_to_end_pipeline",
+      "file": "Pre-Processing/agent/test_end_to_end_pipeline.py",
+      "size": 6868,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 3,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.agent.test_hardening",
+      "file": "Pre-Processing/agent/test_hardening.py",
+      "size": 4558,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.agent.test_integration_identity",
+      "file": "Pre-Processing/agent/test_integration_identity.py",
+      "size": 3011,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 4,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.agent.test_llm_bypass_smoke",
+      "file": "Pre-Processing/agent/test_llm_bypass_smoke.py",
+      "size": 4522,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 6,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.agent.test_lock_unlock",
+      "file": "Pre-Processing/agent/test_lock_unlock.py",
+      "size": 5095,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 6,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.agent.test_logos_agi_bootstrap_modes",
+      "file": "Pre-Processing/agent/test_logos_agi_bootstrap_modes.py",
+      "size": 2884,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 3,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.agent.test_logos_agi_replay_proposals",
+      "file": "Pre-Processing/agent/test_logos_agi_replay_proposals.py",
+      "size": 3921,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 5,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.agent.test_logos_runtime_phase2_smoke",
+      "file": "Pre-Processing/agent/test_logos_runtime_phase2_smoke.py",
+      "size": 4350,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 2,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.agent.test_nexus_capability_governance",
+      "file": "Pre-Processing/agent/test_nexus_capability_governance.py",
+      "size": 3504,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 9,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.agent.test_pai",
+      "file": "Pre-Processing/agent/test_pai.py",
+      "size": 4764,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.agent.test_plan_revision_on_contradiction",
+      "file": "Pre-Processing/agent/test_plan_revision_on_contradiction.py",
+      "size": 7265,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.agent.test_scp_recovery_mode_gate",
+      "file": "Pre-Processing/agent/test_scp_recovery_mode_gate.py",
+      "size": 4689,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.agent.test_self_improvement_cycle",
+      "file": "Pre-Processing/agent/test_self_improvement_cycle.py",
+      "size": 17760,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 14,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.agent.test_stub_beliefs_never_verified",
+      "file": "Pre-Processing/agent/test_stub_beliefs_never_verified.py",
+      "size": 2893,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.agent.test_verify_pai",
+      "file": "Pre-Processing/agent/test_verify_pai.py",
+      "size": 7021,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 5,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.math.fractal_nexus",
+      "file": "Pre-Processing/math/fractal_nexus.py",
+      "size": 8944,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 8,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.reasoning.arp_nexus",
+      "file": "Pre-Processing/reasoning/arp_nexus.py",
+      "size": 30313,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 35,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.reasoning.ergonomic_optimizer",
+      "file": "Pre-Processing/reasoning/ergonomic_optimizer.py",
+      "size": 9367,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 14,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.reasoning.integration_test",
+      "file": "Pre-Processing/reasoning/integration_test.py",
+      "size": 9780,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 5,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.reasoning.integration_test_suite",
+      "file": "Pre-Processing/reasoning/integration_test_suite.py",
+      "size": 29746,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 18,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.reasoning.modal_vector_sync",
+      "file": "Pre-Processing/reasoning/modal_vector_sync.py",
+      "size": 672,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.reasoning.resource_manager",
+      "file": "Pre-Processing/reasoning/resource_manager.py",
+      "size": 7536,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 10,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.reasoning.scp_nexus",
+      "file": "Pre-Processing/reasoning/scp_nexus.py",
+      "size": 32177,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 25,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.reasoning.test_arp_nexus",
+      "file": "Pre-Processing/reasoning/test_arp_nexus.py",
+      "size": 7097,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 6,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.reasoning.test_bayesian_data_handler",
+      "file": "Pre-Processing/reasoning/test_bayesian_data_handler.py",
+      "size": 7807,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 11,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.reasoning.test_dual_bijection",
+      "file": "Pre-Processing/reasoning/test_dual_bijection.py",
+      "size": 10097,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 11,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.reasoning.test_integration",
+      "file": "Pre-Processing/reasoning/test_integration.py",
+      "size": 9595,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 6,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 4
+    },
+    {
+      "module": "Pre-Processing.reasoning.test_logos_agi_persistence_smoke",
+      "file": "Pre-Processing/reasoning/test_logos_agi_persistence_smoke.py",
+      "size": 4554,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.reasoning.test_proved_grounding",
+      "file": "Pre-Processing/reasoning/test_proved_grounding.py",
+      "size": 4332,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.reasoning.uip_nexus",
+      "file": "Pre-Processing/reasoning/uip_nexus.py",
+      "size": 18612,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 21,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.safety.attestation",
+      "file": "Pre-Processing/safety/attestation.py",
+      "size": 4776,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 7,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.safety.health_server",
+      "file": "Pre-Processing/safety/health_server.py",
+      "size": 1403,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.safety.test_reference_monitor",
+      "file": "Pre-Processing/safety/test_reference_monitor.py",
+      "size": 24169,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 26,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.safety.test_tool_pipeline_smoke",
+      "file": "Pre-Processing/safety/test_tool_pipeline_smoke.py",
+      "size": 5934,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 2,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.semantic.boot_system",
+      "file": "Pre-Processing/semantic/boot_system.py",
+      "size": 8779,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 12,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.semantic.commitment_ledger",
+      "file": "Pre-Processing/semantic/commitment_ledger.py",
+      "size": 13900,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 20,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.semantic.dispatch",
+      "file": "Pre-Processing/semantic/dispatch.py",
+      "size": 875,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 2,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.semantic.hashing",
+      "file": "Pre-Processing/semantic/hashing.py",
+      "size": 496,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.semantic.maintenance",
+      "file": "Pre-Processing/semantic/maintenance.py",
+      "size": 4989,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 8,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.semantic.nexus_manager",
+      "file": "Pre-Processing/semantic/nexus_manager.py",
+      "size": 2549,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 3,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.semantic.prioritization",
+      "file": "Pre-Processing/semantic/prioritization.py",
+      "size": 21982,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 13,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.semantic.providers_llama",
+      "file": "Pre-Processing/semantic/providers_llama.py",
+      "size": 3997,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 2,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.semantic.providers_openai",
+      "file": "Pre-Processing/semantic/providers_openai.py",
+      "size": 2343,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 2,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.semantic.test_logos_agi_adapter",
+      "file": "Pre-Processing/semantic/test_logos_agi_adapter.py",
+      "size": 5095,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 4,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.semantic.test_perception_ingestors",
+      "file": "Pre-Processing/semantic/test_perception_ingestors.py",
+      "size": 6376,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 9,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.semantic.test_registry_and_response",
+      "file": "Pre-Processing/semantic/test_registry_and_response.py",
+      "size": 1465,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 2,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.semantic.test_tool_fallback_proposal",
+      "file": "Pre-Processing/semantic/test_tool_fallback_proposal.py",
+      "size": 1361,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utility.causal_trace_operator",
+      "file": "Pre-Processing/utility/causal_trace_operator.py",
+      "size": 1684,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 5,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.utility.class_extrapolator",
+      "file": "Pre-Processing/utility/class_extrapolator.py",
+      "size": 1137,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 2,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.utility.development_environment",
+      "file": "Pre-Processing/utility/development_environment.py",
+      "size": 1018,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.utility.regression_checker",
+      "file": "Pre-Processing/utility/regression_checker.py",
+      "size": 2326,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 3,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.utility.test_arp_modes",
+      "file": "Pre-Processing/utility/test_arp_modes.py",
+      "size": 9851,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 6,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utility.test_determinism",
+      "file": "Pre-Processing/utility/test_determinism.py",
+      "size": 591,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.utility.test_evaluator_learning_smoke",
+      "file": "Pre-Processing/utility/test_evaluator_learning_smoke.py",
+      "size": 2460,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.utility.test_logos_agi_pin_drift",
+      "file": "Pre-Processing/utility/test_logos_agi_pin_drift.py",
+      "size": 6860,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 16,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils._uip_connector_stubs",
+      "file": "Pre-Processing/utils/_uip_connector_stubs.py",
+      "size": 2928,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 3,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.bridge",
+      "file": "Pre-Processing/utils/bridge.py",
+      "size": 3948,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 7,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.utils.causal_chain_node_predictor",
+      "file": "Pre-Processing/utils/causal_chain_node_predictor.py",
+      "size": 1415,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 2,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.check_run_cycle_prereqs",
+      "file": "Pre-Processing/utils/check_run_cycle_prereqs.py",
+      "size": 3578,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 2,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.utils.config",
+      "file": "Pre-Processing/utils/config.py",
+      "size": 1495,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.cycle_ledger",
+      "file": "Pre-Processing/utils/cycle_ledger.py",
+      "size": 4383,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 6,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.utils.evidence",
+      "file": "Pre-Processing/utils/evidence.py",
+      "size": 5022,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 5,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.guardrails",
+      "file": "Pre-Processing/utils/guardrails.py",
+      "size": 2948,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 7,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.utils.iel_integration",
+      "file": "Pre-Processing/utils/iel_integration.py",
+      "size": 5529,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 12,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.iel_registryv1",
+      "file": "Pre-Processing/utils/iel_registryv1.py",
+      "size": 31686,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 30,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.utils.iel_registryv2",
+      "file": "Pre-Processing/utils/iel_registryv2.py",
+      "size": 2683,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 7,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.io_normalizer",
+      "file": "Pre-Processing/utils/io_normalizer.py",
+      "size": 1684,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 3,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.utils.iterative_loop",
+      "file": "Pre-Processing/utils/iterative_loop.py",
+      "size": 2072,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.utils.kernel",
+      "file": "Pre-Processing/utils/kernel.py",
+      "size": 6756,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 6,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.utils.logging_utils",
+      "file": "Pre-Processing/utils/logging_utils.py",
+      "size": 851,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.logos_monitor",
+      "file": "Pre-Processing/utils/logos_monitor.py",
+      "size": 5425,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 4,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.ontology_inducer",
+      "file": "Pre-Processing/utils/ontology_inducer.py",
+      "size": 1116,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 3,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.utils.policy",
+      "file": "Pre-Processing/utils/policy.py",
+      "size": 22545,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 25,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.utils.progressive_router",
+      "file": "Pre-Processing/utils/progressive_router.py",
+      "size": 9569,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 7,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 3
+    },
+    {
+      "module": "Pre-Processing.utils.router",
+      "file": "Pre-Processing/utils/router.py",
+      "size": 6604,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 8,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.utils.sanitizer",
+      "file": "Pre-Processing/utils/sanitizer.py",
+      "size": 2013,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.schema_utils",
+      "file": "Pre-Processing/utils/schema_utils.py",
+      "size": 1017,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 5,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": false
+      },
+      "compatible_count": 0
+    },
+    {
+      "module": "Pre-Processing.utils.self_diagnosis",
+      "file": "Pre-Processing/utils/self_diagnosis.py",
+      "size": 13928,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 15,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.shared_resources",
+      "file": "Pre-Processing/utils/shared_resources.py",
+      "size": 10380,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 15,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.skill_acquisition",
+      "file": "Pre-Processing/utils/skill_acquisition.py",
+      "size": 1193,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 3,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.smp_intake",
+      "file": "Pre-Processing/utils/smp_intake.py",
+      "size": 2228,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.utils.stress_sop_runtime",
+      "file": "Pre-Processing/utils/stress_sop_runtime.py",
+      "size": 15238,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 15,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.system_utils",
+      "file": "Pre-Processing/utils/system_utils.py",
+      "size": 5426,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 8,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.task_intake",
+      "file": "Pre-Processing/utils/task_intake.py",
+      "size": 1188,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 1,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.transform_registry",
+      "file": "Pre-Processing/utils/transform_registry.py",
+      "size": 3840,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": false,
+      "has_logic_fragments": true,
+      "fragment_count": 5,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 1
+    },
+    {
+      "module": "Pre-Processing.utils.uip_operations",
+      "file": "Pre-Processing/utils/uip_operations.py",
+      "size": 13970,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 19,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.utils.worker_kernel",
+      "file": "Pre-Processing/utils/worker_kernel.py",
+      "size": 2052,
+      "staging_subdir": "Pre-Processing",
+      "triage": "EXTRACT_LOGIC",
+      "is_dead": true,
+      "has_logic_fragments": true,
+      "fragment_count": 5,
+      "protocol_compat": {
+        "SCP": false,
+        "ARP": true,
+        "MTP": false,
+        "runtime_utility": true
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.semantic.transform_types",
+      "file": "Pre-Processing/semantic/transform_types.py",
+      "size": 777,
+      "staging_subdir": "Pre-Processing",
+      "triage": "INTEGRATE",
+      "is_dead": false,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": false,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 2
+    },
+    {
+      "module": "Pre-Processing.semantic.types",
+      "file": "Pre-Processing/semantic/types.py",
+      "size": 992,
+      "staging_subdir": "Pre-Processing",
+      "triage": "INTEGRATE",
+      "is_dead": false,
+      "has_logic_fragments": false,
+      "fragment_count": 0,
+      "protocol_compat": {
+        "SCP": true,
+        "ARP": true,
+        "MTP": true,
+        "runtime_utility": false
+      },
+      "compatible_count": 3
+    }
+  ]
+}

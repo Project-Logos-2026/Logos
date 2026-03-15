@@ -1,0 +1,1344 @@
+[
+  {
+    "cluster_id": 18,
+    "dominant_classification": "reasoning",
+    "module_count": 10,
+    "internal_edges": 11,
+    "external_edges_out": 0,
+    "density": 0.122222,
+    "modules": [
+      "Pre-Processing.agent.agent_nexus",
+      "Pre-Processing.agent.base_nexus",
+      "Pre-Processing.agent.legacy_sop_nexus",
+      "Pre-Processing.agent.test_nexus_capability_governance",
+      "Pre-Processing.reasoning.arp_nexus",
+      "Pre-Processing.reasoning.integration_test",
+      "Pre-Processing.reasoning.scp_nexus",
+      "Pre-Processing.reasoning.test_arp_nexus",
+      "Pre-Processing.reasoning.uip_nexus",
+      "Pre-Processing.utils.guardrails"
+    ]
+  },
+  {
+    "cluster_id": 21,
+    "dominant_classification": "agent",
+    "module_count": 6,
+    "internal_edges": 5,
+    "external_edges_out": 1,
+    "density": 0.166667,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.tool_invention",
+      "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+      "Pre-Processing.agent.knowledge_catalog",
+      "Pre-Processing.agent.sop_nexus",
+      "Pre-Processing.agent.test_hardening",
+      "Pre-Processing.utility.development_environment"
+    ]
+  },
+  {
+    "cluster_id": 25,
+    "dominant_classification": "reasoning",
+    "module_count": 6,
+    "internal_edges": 5,
+    "external_edges_out": 0,
+    "density": 0.166667,
+    "modules": [
+      "Pre-Processing.agent.test_integration_identity",
+      "Pre-Processing.agent.test_lock_unlock",
+      "Pre-Processing.reasoning.test_bayesian_data_handler",
+      "Pre-Processing.semantic.providers_llama",
+      "Pre-Processing.semantic.providers_openai",
+      "Pre-Processing.semantic.types"
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "dominant_classification": "reasoning",
+    "module_count": 5,
+    "internal_edges": 6,
+    "external_edges_out": 0,
+    "density": 0.3,
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+      "Pre-Processing.EXTRACT_LOGIC.bayesian_recursion",
+      "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network",
+      "Pre-Processing.KEEP_VERIFY.bayesian_inferencer",
+      "Pre-Processing.KEEP_VERIFY.bayesian_nexus"
+    ]
+  },
+  {
+    "cluster_id": 20,
+    "dominant_classification": "agent",
+    "module_count": 5,
+    "internal_edges": 4,
+    "external_edges_out": 0,
+    "density": 0.2,
+    "modules": [
+      "Pre-Processing.agent.id_handler",
+      "Pre-Processing.semantic.hashing",
+      "Pre-Processing.utils.schema_utils",
+      "Pre-Processing.utils.smp_intake",
+      "Pre-Processing.utils.task_intake"
+    ]
+  },
+  {
+    "cluster_id": 95,
+    "dominant_classification": "agent",
+    "module_count": 5,
+    "internal_edges": 4,
+    "external_edges_out": 0,
+    "density": 0.2,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.agent_identity",
+      "Pre-Processing.agent.test_pai",
+      "Pre-Processing.agent.test_verify_pai",
+      "Pre-Processing.semantic.commitment_ledger",
+      "Pre-Processing.semantic.prioritization"
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "dominant_classification": "utility",
+    "module_count": 3,
+    "internal_edges": 2,
+    "external_edges_out": 0,
+    "density": 0.333333,
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.adaptive_engine",
+      "Pre-Processing.utils.progressive_router",
+      "Pre-Processing.utils.system_utils"
+    ]
+  },
+  {
+    "cluster_id": 38,
+    "dominant_classification": "semantic",
+    "module_count": 3,
+    "internal_edges": 3,
+    "external_edges_out": 0,
+    "density": 0.5,
+    "modules": [
+      "Pre-Processing.semantic.boot_system",
+      "Pre-Processing.semantic.maintenance",
+      "Pre-Processing.utils.shared_resources"
+    ]
+  },
+  {
+    "cluster_id": 62,
+    "dominant_classification": "utility",
+    "module_count": 3,
+    "internal_edges": 3,
+    "external_edges_out": 0,
+    "density": 0.5,
+    "modules": [
+      "Pre-Processing.semantic.transform_types",
+      "Pre-Processing.utils.iterative_loop",
+      "Pre-Processing.utils.transform_registry"
+    ]
+  },
+  {
+    "cluster_id": 96,
+    "dominant_classification": "math",
+    "module_count": 3,
+    "internal_edges": 2,
+    "external_edges_out": 0,
+    "density": 0.333333,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.arithmetic_engine",
+      "Pre-Processing.KEEP_VERIFY.lambda_engine",
+      "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine"
+    ]
+  },
+  {
+    "cluster_id": 105,
+    "dominant_classification": "reasoning",
+    "module_count": 3,
+    "internal_edges": 2,
+    "external_edges_out": 0,
+    "density": 0.333333,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.modal_logic",
+      "Pre-Processing.KEEP_VERIFY.modal_reasoner",
+      "Pre-Processing.KEEP_VERIFY.multi_modal_system"
+    ]
+  },
+  {
+    "cluster_id": 7,
+    "dominant_classification": "math",
+    "module_count": 2,
+    "internal_edges": 1,
+    "external_edges_out": 0,
+    "density": 0.5,
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.comprehensive_fractal_analysis",
+      "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer"
+    ]
+  },
+  {
+    "cluster_id": 68,
+    "dominant_classification": "utility",
+    "module_count": 2,
+    "internal_edges": 1,
+    "external_edges_out": 0,
+    "density": 0.5,
+    "modules": [
+      "Pre-Processing.utils.router",
+      "Pre-Processing.utils.sanitizer"
+    ]
+  },
+  {
+    "cluster_id": 112,
+    "dominant_classification": "semantic",
+    "module_count": 2,
+    "internal_edges": 1,
+    "external_edges_out": 0,
+    "density": 0.5,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.semantic_transformers",
+      "Pre-Processing.reasoning.test_integration"
+    ]
+  },
+  {
+    "cluster_id": 0,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration"
+    ]
+  },
+  {
+    "cluster_id": 1,
+    "dominant_classification": "semantic",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.NLP_Wrapper_Sentence_Transformers"
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core"
+    ]
+  },
+  {
+    "cluster_id": 5,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser"
+    ]
+  },
+  {
+    "cluster_id": 6,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.coherence"
+    ]
+  },
+  {
+    "cluster_id": 8,
+    "dominant_classification": "math",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit"
+    ]
+  },
+  {
+    "cluster_id": 9,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.gen_worldview_ontoprops"
+    ]
+  },
+  {
+    "cluster_id": 10,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.iel_overlay"
+    ]
+  },
+  {
+    "cluster_id": 11,
+    "dominant_classification": "math",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core"
+    ]
+  },
+  {
+    "cluster_id": 12,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.privative_policies"
+    ]
+  },
+  {
+    "cluster_id": 13,
+    "dominant_classification": "safety",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.safety_formalisms"
+    ]
+  },
+  {
+    "cluster_id": 14,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.EXTRACT_LOGIC.simulated_consciousness_runtime"
+    ]
+  },
+  {
+    "cluster_id": 15,
+    "dominant_classification": "math",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.math.dual_bijection_demo"
+    ]
+  },
+  {
+    "cluster_id": 16,
+    "dominant_classification": "math",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.math.fractal_nexus"
+    ]
+  },
+  {
+    "cluster_id": 17,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.agent.Logos_Memory_Nexus"
+    ]
+  },
+  {
+    "cluster_id": 19,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.agent.evaluation_packet"
+    ]
+  },
+  {
+    "cluster_id": 22,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.agent.plan_packet"
+    ]
+  },
+  {
+    "cluster_id": 23,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.agent.test_agent_planner"
+    ]
+  },
+  {
+    "cluster_id": 24,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.agent.test_end_to_end_pipeline"
+    ]
+  },
+  {
+    "cluster_id": 26,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.agent.test_llm_bypass_smoke"
+    ]
+  },
+  {
+    "cluster_id": 27,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.agent.test_logos_agi_bootstrap_modes"
+    ]
+  },
+  {
+    "cluster_id": 28,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.agent.test_logos_agi_replay_proposals"
+    ]
+  },
+  {
+    "cluster_id": 29,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.agent.test_logos_runtime_phase2_smoke"
+    ]
+  },
+  {
+    "cluster_id": 30,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.agent.test_plan_revision_on_contradiction"
+    ]
+  },
+  {
+    "cluster_id": 31,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.agent.test_scp_recovery_mode_gate"
+    ]
+  },
+  {
+    "cluster_id": 32,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.agent.test_self_improvement_cycle"
+    ]
+  },
+  {
+    "cluster_id": 33,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.agent.test_stub_beliefs_never_verified"
+    ]
+  },
+  {
+    "cluster_id": 34,
+    "dominant_classification": "safety",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.safety.attestation"
+    ]
+  },
+  {
+    "cluster_id": 35,
+    "dominant_classification": "safety",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.safety.health_server"
+    ]
+  },
+  {
+    "cluster_id": 36,
+    "dominant_classification": "safety",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.safety.test_reference_monitor"
+    ]
+  },
+  {
+    "cluster_id": 37,
+    "dominant_classification": "safety",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.safety.test_tool_pipeline_smoke"
+    ]
+  },
+  {
+    "cluster_id": 39,
+    "dominant_classification": "semantic",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.semantic.dispatch"
+    ]
+  },
+  {
+    "cluster_id": 40,
+    "dominant_classification": "semantic",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.semantic.mtp_nexus_orchestrator"
+    ]
+  },
+  {
+    "cluster_id": 41,
+    "dominant_classification": "semantic",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.semantic.nexus_manager"
+    ]
+  },
+  {
+    "cluster_id": 42,
+    "dominant_classification": "semantic",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.semantic.ontoprops_remap"
+    ]
+  },
+  {
+    "cluster_id": 43,
+    "dominant_classification": "semantic",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.semantic.packet_types"
+    ]
+  },
+  {
+    "cluster_id": 44,
+    "dominant_classification": "semantic",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.semantic.test_logos_agi_adapter"
+    ]
+  },
+  {
+    "cluster_id": 45,
+    "dominant_classification": "semantic",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.semantic.test_perception_ingestors"
+    ]
+  },
+  {
+    "cluster_id": 46,
+    "dominant_classification": "semantic",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.semantic.test_registry_and_response"
+    ]
+  },
+  {
+    "cluster_id": 47,
+    "dominant_classification": "semantic",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.semantic.test_simulation_cli"
+    ]
+  },
+  {
+    "cluster_id": 48,
+    "dominant_classification": "semantic",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.semantic.test_tool_fallback_proposal"
+    ]
+  },
+  {
+    "cluster_id": 49,
+    "dominant_classification": "semantic",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.semantic.time_utils"
+    ]
+  },
+  {
+    "cluster_id": 50,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils._uip_connector_stubs"
+    ]
+  },
+  {
+    "cluster_id": 51,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.bridge"
+    ]
+  },
+  {
+    "cluster_id": 52,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.causal_chain_node_predictor"
+    ]
+  },
+  {
+    "cluster_id": 53,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.check_imports"
+    ]
+  },
+  {
+    "cluster_id": 54,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.check_run_cycle_prereqs"
+    ]
+  },
+  {
+    "cluster_id": 55,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.config"
+    ]
+  },
+  {
+    "cluster_id": 56,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.cycle_ledger"
+    ]
+  },
+  {
+    "cluster_id": 57,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.evidence"
+    ]
+  },
+  {
+    "cluster_id": 58,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.iel_integration"
+    ]
+  },
+  {
+    "cluster_id": 59,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.iel_registryv1"
+    ]
+  },
+  {
+    "cluster_id": 60,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.iel_registryv2"
+    ]
+  },
+  {
+    "cluster_id": 61,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.io_normalizer"
+    ]
+  },
+  {
+    "cluster_id": 63,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.kernel"
+    ]
+  },
+  {
+    "cluster_id": 64,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.logging_utils"
+    ]
+  },
+  {
+    "cluster_id": 65,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.logos_monitor"
+    ]
+  },
+  {
+    "cluster_id": 66,
+    "dominant_classification": "semantic",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.ontology_inducer"
+    ]
+  },
+  {
+    "cluster_id": 67,
+    "dominant_classification": "safety",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.policy"
+    ]
+  },
+  {
+    "cluster_id": 69,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.self_diagnosis"
+    ]
+  },
+  {
+    "cluster_id": 70,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.skill_acquisition"
+    ]
+  },
+  {
+    "cluster_id": 71,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.stress_sop_runtime"
+    ]
+  },
+  {
+    "cluster_id": 72,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.uip_operations"
+    ]
+  },
+  {
+    "cluster_id": 73,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utils.worker_kernel"
+    ]
+  },
+  {
+    "cluster_id": 74,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.reasoning.ergonomic_optimizer"
+    ]
+  },
+  {
+    "cluster_id": 75,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.reasoning.integration_test_suite"
+    ]
+  },
+  {
+    "cluster_id": 76,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.reasoning.modal_vector_sync"
+    ]
+  },
+  {
+    "cluster_id": 77,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.reasoning.resource_manager"
+    ]
+  },
+  {
+    "cluster_id": 78,
+    "dominant_classification": "math",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.reasoning.test_dual_bijection"
+    ]
+  },
+  {
+    "cluster_id": 79,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.reasoning.test_logos_agi_persistence_smoke"
+    ]
+  },
+  {
+    "cluster_id": 80,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.reasoning.test_proved_grounding"
+    ]
+  },
+  {
+    "cluster_id": 81,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utility.arp_nexus_orchestrator"
+    ]
+  },
+  {
+    "cluster_id": 82,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utility.causal_trace_operator"
+    ]
+  },
+  {
+    "cluster_id": 83,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utility.class_extrapolator"
+    ]
+  },
+  {
+    "cluster_id": 84,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utility.csp_nexus_orchestrator"
+    ]
+  },
+  {
+    "cluster_id": 85,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utility.logos_protocol_nexus"
+    ]
+  },
+  {
+    "cluster_id": 86,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utility.regression_checker"
+    ]
+  },
+  {
+    "cluster_id": 87,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utility.scp_nexus_orchestrator"
+    ]
+  },
+  {
+    "cluster_id": 88,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utility.sop_nexus_orchestrator"
+    ]
+  },
+  {
+    "cluster_id": 89,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utility.test_arp_modes"
+    ]
+  },
+  {
+    "cluster_id": 90,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utility.test_determinism"
+    ]
+  },
+  {
+    "cluster_id": 91,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utility.test_evaluator_learning_smoke"
+    ]
+  },
+  {
+    "cluster_id": 92,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.utility.test_logos_agi_pin_drift"
+    ]
+  },
+  {
+    "cluster_id": 93,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.PXL_World_Model"
+    ]
+  },
+  {
+    "cluster_id": 94,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.action_system"
+    ]
+  },
+  {
+    "cluster_id": 97,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.autonomous_learning"
+    ]
+  },
+  {
+    "cluster_id": 98,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.bayesian_interface"
+    ]
+  },
+  {
+    "cluster_id": 99,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.bayesian_updates"
+    ]
+  },
+  {
+    "cluster_id": 100,
+    "dominant_classification": "agent",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.belief_network"
+    ]
+  },
+  {
+    "cluster_id": 101,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.coherence_formalism"
+    ]
+  },
+  {
+    "cluster_id": 102,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.coherence_metrics"
+    ]
+  },
+  {
+    "cluster_id": 103,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.export_tool_registry"
+    ]
+  },
+  {
+    "cluster_id": 104,
+    "dominant_classification": "math",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.lambda_parser"
+    ]
+  },
+  {
+    "cluster_id": 106,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.modal_validator"
+    ]
+  },
+  {
+    "cluster_id": 107,
+    "dominant_classification": "reasoning",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.proof_engine"
+    ]
+  },
+  {
+    "cluster_id": 108,
+    "dominant_classification": "math",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis"
+    ]
+  },
+  {
+    "cluster_id": 109,
+    "dominant_classification": "math",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis"
+    ]
+  },
+  {
+    "cluster_id": 110,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.pxl_schema"
+    ]
+  },
+  {
+    "cluster_id": 111,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.relation_mapper"
+    ]
+  },
+  {
+    "cluster_id": 113,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.tool_introspection"
+    ]
+  },
+  {
+    "cluster_id": 114,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline"
+    ]
+  },
+  {
+    "cluster_id": 115,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.tool_repair_proposal"
+    ]
+  },
+  {
+    "cluster_id": 116,
+    "dominant_classification": "semantic",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Pre-Processing.KEEP_VERIFY.translation_engine"
+    ]
+  },
+  {
+    "cluster_id": 117,
+    "dominant_classification": "utility",
+    "module_count": 1,
+    "internal_edges": 0,
+    "external_edges_out": 0,
+    "density": 0.0,
+    "modules": [
+      "Inspection_Targets.Nexus_AST_Validator"
+    ]
+  }
+]

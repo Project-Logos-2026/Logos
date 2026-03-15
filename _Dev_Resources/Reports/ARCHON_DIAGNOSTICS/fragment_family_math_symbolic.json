@@ -1,0 +1,5250 @@
+{
+  "generated_at": "2026-03-15T16:04:50.468079+00:00",
+  "total": 309,
+  "fragments": [
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.__init__",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+      "function_name": "__init__",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+        "lineno": 97,
+        "args": [
+          "self",
+          "config"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 16
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.store_memory",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+      "function_name": "store_memory",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+        "lineno": 130,
+        "args": [
+          "self",
+          "memory_id",
+          "memory_data",
+          "encoding",
+          "metadata"
+        ],
+        "docstring": "Store memory across appropriate tiers\nReturns success status",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.retrieve_memory",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+      "function_name": "retrieve_memory",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+        "lineno": 173,
+        "args": [
+          "self",
+          "memory_id",
+          "include_encoding"
+        ],
+        "docstring": "Retrieve memory from appropriate tier\nUpdates access statistics for tier management",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration._store_hot",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+      "function_name": "_store_hot",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+        "lineno": 258,
+        "args": [
+          "self",
+          "memory_id",
+          "data",
+          "encoding",
+          "metadata"
+        ],
+        "docstring": "Store in hot storage (fast SSD)",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.__init__",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+      "function_name": "__init__",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+        "lineno": 345,
+        "args": [
+          "self",
+          "index_path"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 10
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.index_memory",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+      "function_name": "index_memory",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+        "lineno": 376,
+        "args": [
+          "self",
+          "memory_id",
+          "encoding",
+          "content",
+          "metadata"
+        ],
+        "docstring": "Index memory across all index systems",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.query_by_similarity",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+      "function_name": "query_by_similarity",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+        "lineno": 404,
+        "args": [
+          "self",
+          "query_vector",
+          "k",
+          "threshold"
+        ],
+        "docstring": "Find similar memories using vector similarity",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration._retrieve_by_association",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+      "function_name": "_retrieve_by_association",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+        "lineno": 634,
+        "args": [
+          "self",
+          "query",
+          "limit"
+        ],
+        "docstring": "Retrieve associated memories",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.update_forgetting_curve",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+      "function_name": "update_forgetting_curve",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+        "lineno": 773,
+        "args": [
+          "self",
+          "memory_id",
+          "access_time",
+          "rehearsal"
+        ],
+        "docstring": "Update forgetting curve for memory",
+        "is_async": false,
+        "body_lines": 10
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.get_memories_for_review",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+      "function_name": "get_memories_for_review",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+        "lineno": 809,
+        "args": [
+          "self",
+          "current_time",
+          "limit"
+        ],
+        "docstring": "Get memories that need review",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration.run_maintenance_cycle",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+      "function_name": "run_maintenance_cycle",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+        "lineno": 1022,
+        "args": [
+          "self"
+        ],
+        "docstring": "Run complete maintenance cycle\nReturns maintenance report",
+        "is_async": false,
+        "body_lines": 12
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core.symbolic_self_representation",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+      "function_name": "symbolic_self_representation",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+        "lineno": 386,
+        "args": [
+          "equations",
+          "variables"
+        ],
+        "docstring": "Symbolic representation of agent identity and capabilities.",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core.lambda_self_evaluation",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+      "function_name": "lambda_self_evaluation",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+        "lineno": 412,
+        "args": [
+          "expression",
+          "bindings"
+        ],
+        "docstring": "Lambda calculus evaluation for self-referential computation.",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time.load_priors",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+      "function_name": "load_priors",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+        "lineno": 53,
+        "args": [
+          "path"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time.save_priors",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+      "function_name": "save_priors",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+        "lineno": 59,
+        "args": [
+          "data",
+          "path"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser._init_storage",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser",
+      "function_name": "_init_storage",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py",
+        "lineno": 78,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser.get_predictions",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser",
+      "function_name": "get_predictions",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py",
+        "lineno": 113,
+        "args": [
+          "self",
+          "start_date",
+          "end_date",
+          "min_confidence"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser.save_metadata",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser",
+      "function_name": "save_metadata",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py",
+        "lineno": 128,
+        "args": [
+          "self",
+          "metadata"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser.cleanup_old_data",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser",
+      "function_name": "cleanup_old_data",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py",
+        "lineno": 137,
+        "args": [
+          "self",
+          "days_to_keep"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser.regression_analysis",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser",
+      "function_name": "regression_analysis",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py",
+        "lineno": 143,
+        "args": [
+          "self",
+          "target",
+          "predictors"
+        ],
+        "docstring": "Run linear or logistic regression over stored prediction history.",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser.partial_correlation_analysis",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser",
+      "function_name": "partial_correlation_analysis",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py",
+        "lineno": 182,
+        "args": [
+          "self",
+          "x",
+          "y",
+          "controls"
+        ],
+        "docstring": "Compute partial correlation for stored predictions.",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit.__init__",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "function_name": "__init__",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+        "lineno": 211,
+        "args": [
+          "self",
+          "config"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 9
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit.predict_orbital_trajectory",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "function_name": "predict_orbital_trajectory",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+        "lineno": 246,
+        "args": [
+          "self",
+          "initial_conditions",
+          "prediction_steps",
+          "include_stability"
+        ],
+        "docstring": "Predict complete orbital trajectory with full analysis\n\nArgs:\n    initial_conditions: Starting Trinity vector\n    prediction_steps: Number of prediction steps\n    include_stability: Include stability analysis\n\nReturns:\n    List of orbital predictions with confidence metrics",
+        "is_async": true,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._calculate_prediction_confidence",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "function_name": "_calculate_prediction_confidence",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+        "lineno": 330,
+        "args": [
+          "self",
+          "fractal_pos",
+          "orbital_props",
+          "step"
+        ],
+        "docstring": "Calculate prediction confidence based on multiple factors",
+        "is_async": false,
+        "body_lines": 9
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._evolve_trinity_vector",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "function_name": "_evolve_trinity_vector",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+        "lineno": 365,
+        "args": [
+          "self",
+          "current",
+          "fractal_pos"
+        ],
+        "docstring": "Evolve Trinity vector using fractal dynamics",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._calculate_historical_accuracy",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "function_name": "_calculate_historical_accuracy",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+        "lineno": 383,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate accuracy based on historical predictions",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit.analyze_stability",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "function_name": "analyze_stability",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+        "lineno": 471,
+        "args": [
+          "self",
+          "trinity_vector",
+          "fractal_position"
+        ],
+        "docstring": "Comprehensive stability analysis of orbital trajectory\n\nReturns:\n    Dict containing stability metrics and bifurcation points",
+        "is_async": true,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._calculate_lyapunov_exponent",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "function_name": "_calculate_lyapunov_exponent",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+        "lineno": 503,
+        "args": [
+          "self",
+          "trinity_vector"
+        ],
+        "docstring": "Calculate Lyapunov exponent for chaos detection",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._compute_stability_score",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "function_name": "_compute_stability_score",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+        "lineno": 542,
+        "args": [
+          "self",
+          "lyapunov",
+          "periodicity",
+          "bifurcation_count"
+        ],
+        "docstring": "Compute overall stability score from multiple metrics",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit.detect_bifurcations",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "function_name": "detect_bifurcations",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+        "lineno": 586,
+        "args": [
+          "self",
+          "trinity_vector",
+          "fractal_position"
+        ],
+        "docstring": "Detect bifurcation points in the orbital trajectory\n\nReturns:\n    List of (parameter_value, bifurcation_type) tuples",
+        "is_async": true,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit.find_patterns",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "function_name": "find_patterns",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+        "lineno": 647,
+        "args": [
+          "self",
+          "trinity_vector",
+          "fractal_position"
+        ],
+        "docstring": "Find matching patterns in the fractal pattern database\n\nReturns:\n    List of matching patterns with confidence scores",
+        "is_async": true,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._extract_features",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "function_name": "_extract_features",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+        "lineno": 673,
+        "args": [
+          "self",
+          "trinity",
+          "fractal_pos"
+        ],
+        "docstring": "Extract feature vector from fractal state",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._calculate_pattern_similarity",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "function_name": "_calculate_pattern_similarity",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+        "lineno": 686,
+        "args": [
+          "self",
+          "features",
+          "pattern"
+        ],
+        "docstring": "Calculate similarity between feature vector and pattern",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit.comprehensive_analysis",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "function_name": "comprehensive_analysis",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+        "lineno": 743,
+        "args": [
+          "self",
+          "initial_conditions",
+          "analysis_depth"
+        ],
+        "docstring": "Perform comprehensive fractal orbit analysis\n\nArgs:\n    initial_conditions: Starting Trinity vector\n    analysis_depth: Depth of analysis (higher = more computational intensive)\n\nReturns:\n    Complete analysis results",
+        "is_async": true,
+        "body_lines": 10
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit._calculate_predictive_power",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "function_name": "_calculate_predictive_power",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+        "lineno": 802,
+        "args": [
+          "self",
+          "trajectory"
+        ],
+        "docstring": "Calculate the predictive power of the analysis",
+        "is_async": false,
+        "body_lines": 9
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit.real_time_prediction",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.fractal_orbit_toolkit",
+      "function_name": "real_time_prediction",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/fractal_orbit_toolkit.py",
+        "lineno": 834,
+        "args": [
+          "self",
+          "current_state"
+        ],
+        "docstring": "Generate real-time orbital prediction\n\nArgs:\n    current_state: Current Trinity vector state\n\nReturns:\n    Next predicted orbital state",
+        "is_async": true,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.gen_worldview_ontoprops.parse",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.gen_worldview_ontoprops",
+      "function_name": "parse",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/gen_worldview_ontoprops.py",
+        "lineno": 61,
+        "args": [
+          "s"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network.load_static_priors",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network",
+      "function_name": "load_static_priors",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py",
+        "lineno": 25,
+        "args": [
+          "path"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.iel_overlay._select_iel_domains",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.iel_overlay",
+      "function_name": "_select_iel_domains",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/iel_overlay.py",
+        "lineno": 581,
+        "args": [
+          "self",
+          "intent_classification",
+          "entities",
+          "semantic_repr",
+          "permitted_operations"
+        ],
+        "docstring": "Select appropriate IEL domains for the request",
+        "is_async": true,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.iel_overlay._calculate_domain_compatibility",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.iel_overlay",
+      "function_name": "_calculate_domain_compatibility",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/iel_overlay.py",
+        "lineno": 1077,
+        "args": [
+          "self",
+          "intent_classification",
+          "selected_domains"
+        ],
+        "docstring": "Calculate compatibility scores for each selected domain",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.iel_overlay._calculate_analysis_depth",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.iel_overlay",
+      "function_name": "_calculate_analysis_depth",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/iel_overlay.py",
+        "lineno": 1107,
+        "args": [
+          "self",
+          "selected_domains"
+        ],
+        "docstring": "Calculate the depth of IEL analysis",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.main",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+      "function_name": "main",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+        "lineno": 568,
+        "args": [],
+        "docstring": "Main demonstration function",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.__post_init__",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+      "function_name": "__post_init__",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+        "lineno": 51,
+        "args": [
+          "self"
+        ],
+        "docstring": "Normalize quaternion for Trinity compliance",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.magnitude",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+      "function_name": "magnitude",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+        "lineno": 60,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate quaternion magnitude",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.to_trinity_vector",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+      "function_name": "to_trinity_vector",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+        "lineno": 80,
+        "args": [
+          "self"
+        ],
+        "docstring": "Convert to Trinity vector (Existence, Goodness, Truth)",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.trinity_product",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+      "function_name": "trinity_product",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+        "lineno": 84,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate Trinity product: E × G × T",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.compute_optimization_function",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+      "function_name": "compute_optimization_function",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+        "lineno": 107,
+        "args": [
+          "self",
+          "n"
+        ],
+        "docstring": "Compute O(n) = I_SIGN(n) + I_MIND(n) + I_MESH(n)\n\nThe Trinity Optimization Theorem states that cognitive complexity O(n)\nis minimized at n=3, representing the optimal balance of Existence,\nGoodness, and Truth dimensions.",
+        "is_async": false,
+        "body_lines": 10
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.verify_trinity_optimization",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+      "function_name": "verify_trinity_optimization",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+        "lineno": 136,
+        "args": [
+          "self"
+        ],
+        "docstring": "Verify that O(n) is minimized at n=3",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.compute_orbit",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+      "function_name": "compute_orbit",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+        "lineno": 200,
+        "args": [
+          "self",
+          "q",
+          "c"
+        ],
+        "docstring": "Compute fractal orbit for Trinity quaternion",
+        "is_async": false,
+        "body_lines": 9
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core._calculate_fractal_dimension",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+      "function_name": "_calculate_fractal_dimension",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+        "lineno": 245,
+        "args": [
+          "self",
+          "orbit_points"
+        ],
+        "docstring": "Calculate fractal dimension using box-counting method",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.__init__",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+      "function_name": "__init__",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+        "lineno": 275,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.verify_commutation",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+      "function_name": "verify_commutation",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+        "lineno": 285,
+        "args": [
+          "self"
+        ],
+        "docstring": "Verify OBDC commutation relationships",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.validate_unity_trinity_invariants",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+      "function_name": "validate_unity_trinity_invariants",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+        "lineno": 313,
+        "args": [
+          "self"
+        ],
+        "docstring": "Validate Unity/Trinity mathematical invariants",
+        "is_async": false,
+        "body_lines": 10
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.__init__",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+      "function_name": "__init__",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+        "lineno": 457,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core.bootstrap",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+      "function_name": "bootstrap",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+        "lineno": 466,
+        "args": [
+          "self"
+        ],
+        "docstring": "Bootstrap and verify complete mathematical system",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.privative_policies.system_consistency_obligation",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.privative_policies",
+      "function_name": "system_consistency_obligation",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/privative_policies.py",
+        "lineno": 165,
+        "args": [
+          "self",
+          "system_id",
+          "context"
+        ],
+        "docstring": "Generate system-level consistency obligation\n\nArgs:\n    system_id: Identifier of the system\n    context: Additional context for the consistency check\n\nReturns:\n    String representation of the consistency obligation",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms.handle_moral_operation",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms",
+      "function_name": "handle_moral_operation",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py",
+        "lineno": 107,
+        "args": [
+          "self",
+          "entity",
+          "operation"
+        ],
+        "docstring": "Prevents evil optimization, redirects to good restoration",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._initialize_temporal_boundaries",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms",
+      "function_name": "_initialize_temporal_boundaries",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py",
+        "lineno": 426,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize temporal boundary definitions",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._validate_eternal_distinction",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms",
+      "function_name": "_validate_eternal_distinction",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py",
+        "lineno": 460,
+        "args": [
+          "self",
+          "operation",
+          "temporal_context"
+        ],
+        "docstring": "Validate distinction between eternal and everlasting",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms.handle_being_operation",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms",
+      "function_name": "handle_being_operation",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py",
+        "lineno": 556,
+        "args": [
+          "self",
+          "entity",
+          "operation"
+        ],
+        "docstring": "Handle operations that might approach nothing",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._process_normal_being_operation",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms",
+      "function_name": "_process_normal_being_operation",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py",
+        "lineno": 594,
+        "args": [
+          "self",
+          "entity",
+          "operation"
+        ],
+        "docstring": "Process normal being operations",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms.__init__",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms",
+      "function_name": "__init__",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py",
+        "lineno": 690,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms.validate_dual_nature_operation",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms",
+      "function_name": "validate_dual_nature_operation",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py",
+        "lineno": 694,
+        "args": [
+          "self",
+          "person",
+          "operation",
+          "nature_context"
+        ],
+        "docstring": "Validate operations on dual-nature entities",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms._resolve_nature_conflict",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.safety_formalisms",
+      "function_name": "_resolve_nature_conflict",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/safety_formalisms.py",
+        "lineno": 736,
+        "args": [
+          "self",
+          "person",
+          "operation",
+          "nature_context"
+        ],
+        "docstring": "Resolve nature conflicts using Chalcedonian principles",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.simulated_consciousness_runtime._compute_affect_and_attention",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.simulated_consciousness_runtime",
+      "function_name": "_compute_affect_and_attention",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/simulated_consciousness_runtime.py",
+        "lineno": 86,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.EXTRACT_LOGIC.simulated_consciousness_runtime.step",
+      "source_module": "Pre-Processing.EXTRACT_LOGIC.simulated_consciousness_runtime",
+      "function_name": "step",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/EXTRACT_LOGIC/simulated_consciousness_runtime.py",
+        "lineno": 125,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 9
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.PXL_World_Model.id",
+      "source_module": "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+      "function_name": "id",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+        "lineno": 75,
+        "args": [
+          "self"
+        ],
+        "docstring": "Unique identifier based on vector state",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.PXL_World_Model.similarity",
+      "source_module": "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+      "function_name": "similarity",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+        "lineno": 84,
+        "args": [
+          "self",
+          "other",
+          "weights"
+        ],
+        "docstring": "Compute similarity between modal vectors",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.PXL_World_Model.modal_distance",
+      "source_module": "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+      "function_name": "modal_distance",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+        "lineno": 107,
+        "args": [
+          "self",
+          "other",
+          "dimension"
+        ],
+        "docstring": "Compute modal distance in specific dimension(s)",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.PXL_World_Model._validate_scales",
+      "source_module": "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+      "function_name": "_validate_scales",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+        "lineno": 172,
+        "args": [
+          "self"
+        ],
+        "docstring": "Ensure scales are positive and decreasing",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.PXL_World_Model.embed_at_scale",
+      "source_module": "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+      "function_name": "embed_at_scale",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+        "lineno": 181,
+        "args": [
+          "self",
+          "scale"
+        ],
+        "docstring": "Get embedding at specific fractal scale",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.PXL_World_Model.compute_fractal_dimension",
+      "source_module": "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+      "function_name": "compute_fractal_dimension",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+        "lineno": 219,
+        "args": [
+          "self"
+        ],
+        "docstring": "Compute fractal dimension from embeddings",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.PXL_World_Model.state_hash",
+      "source_module": "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+      "function_name": "state_hash",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+        "lineno": 257,
+        "args": [
+          "self"
+        ],
+        "docstring": "Compute cryptographic hash of world state",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.PXL_World_Model.compute_modal_field",
+      "source_module": "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+      "function_name": "compute_modal_field",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+        "lineno": 283,
+        "args": [
+          "self",
+          "position"
+        ],
+        "docstring": "Compute modal field value at given position",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.PXL_World_Model.update_entity",
+      "source_module": "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+      "function_name": "update_entity",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+        "lineno": 360,
+        "args": [
+          "self",
+          "entity_id",
+          "vector",
+          "source",
+          "validate_consistency"
+        ],
+        "docstring": "Update or add an entity to the world model\nReturns update results with validation",
+        "is_async": false,
+        "body_lines": 12
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.PXL_World_Model._update_fractal_embedding",
+      "source_module": "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+      "function_name": "_update_fractal_embedding",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+        "lineno": 476,
+        "args": [
+          "self",
+          "entity_id"
+        ],
+        "docstring": "Update or create fractal embedding for entity",
+        "is_async": false,
+        "body_lines": 11
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.PXL_World_Model.query_modal_space",
+      "source_module": "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+      "function_name": "query_modal_space",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+        "lineno": 530,
+        "args": [
+          "self",
+          "position",
+          "radius",
+          "dimensions",
+          "min_similarity"
+        ],
+        "docstring": "Query modal space for entities within radius\nReturns entities with similarity scores",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.PXL_World_Model.compute_world_entropy",
+      "source_module": "Pre-Processing.KEEP_VERIFY.PXL_World_Model",
+      "function_name": "compute_world_entropy",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/PXL_World_Model.py",
+        "lineno": 659,
+        "args": [
+          "self"
+        ],
+        "docstring": "Compute entropy of current world state",
+        "is_async": false,
+        "body_lines": 11
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.action_system.optimize_resource_allocation",
+      "source_module": "Pre-Processing.KEEP_VERIFY.action_system",
+      "function_name": "optimize_resource_allocation",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/action_system.py",
+        "lineno": 175,
+        "args": [
+          "self",
+          "target_actions"
+        ],
+        "docstring": "Optimize resource allocation for target actions.",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._extract_boundary",
+      "source_module": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+      "function_name": "_extract_boundary",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+        "lineno": 82,
+        "args": [
+          "self"
+        ],
+        "docstring": "Extract fractal boundary (points near the edge of convergence)",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._find_connected_components",
+      "source_module": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+      "function_name": "_find_connected_components",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+        "lineno": 92,
+        "args": [
+          "self"
+        ],
+        "docstring": "Find connected components in the fractal structure",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._calculate_fractal_dimension",
+      "source_module": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+      "function_name": "_calculate_fractal_dimension",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+        "lineno": 140,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate fractal dimension using box-counting method",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._information_analysis",
+      "source_module": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+      "function_name": "_information_analysis",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+        "lineno": 192,
+        "args": [
+          "self"
+        ],
+        "docstring": "Information theory analysis: entropy, complexity",
+        "is_async": false,
+        "body_lines": 11
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._calculate_spatial_mutual_info",
+      "source_module": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+      "function_name": "_calculate_spatial_mutual_info",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+        "lineno": 232,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate mutual information between neighboring pixels",
+        "is_async": false,
+        "body_lines": 12
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._calculate_information_dimension",
+      "source_module": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+      "function_name": "_calculate_information_dimension",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+        "lineno": 259,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate information dimension",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._find_bifurcation_points",
+      "source_module": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+      "function_name": "_find_bifurcation_points",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+        "lineno": 344,
+        "args": [
+          "self"
+        ],
+        "docstring": "Find points where iteration behavior changes dramatically",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._statistical_analysis",
+      "source_module": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+      "function_name": "_statistical_analysis",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+        "lineno": 374,
+        "args": [
+          "self"
+        ],
+        "docstring": "Statistical analysis of iteration distributions",
+        "is_async": false,
+        "body_lines": 11
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._fit_distributions",
+      "source_module": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+      "function_name": "_fit_distributions",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+        "lineno": 395,
+        "args": [
+          "self",
+          "data"
+        ],
+        "docstring": "Fit various distributions to the iteration data",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._calculate_spatial_correlation",
+      "source_module": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+      "function_name": "_calculate_spatial_correlation",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+        "lineno": 415,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate spatial correlation statistics (simplified for memory efficiency)",
+        "is_async": false,
+        "body_lines": 14
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._spectral_analysis",
+      "source_module": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+      "function_name": "_spectral_analysis",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+        "lineno": 447,
+        "args": [
+          "self"
+        ],
+        "docstring": "Spectral analysis: frequency domain characteristics",
+        "is_async": false,
+        "body_lines": 14
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer._calculate_fractal_spectrum",
+      "source_module": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+      "function_name": "_calculate_fractal_spectrum",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+        "lineno": 475,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate fractal spectrum (f(α) spectrum)",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.agent_identity.update_identity",
+      "source_module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+      "function_name": "update_identity",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+        "lineno": 460,
+        "args": [
+          "identity",
+          "mission_profile_path",
+          "catalog_path",
+          "last_entry_id",
+          "planner_digest_path",
+          "last_run_id",
+          "world_model_snapshot_path",
+          "world_model_snapshot_hash",
+          "world_model_version",
+          "commitment_ledger_path",
+          "commitment_ledger_hash",
+          "commitment_ledger_version",
+          "base_dir"
+        ],
+        "docstring": "Update agent identity.",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.agent_identity.identity_hash",
+      "source_module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+      "function_name": "identity_hash",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+        "lineno": 490,
+        "args": [
+          "identity",
+          "base_dir"
+        ],
+        "docstring": "Compute identity hash.",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.agent_identity.__init__",
+      "source_module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+      "function_name": "__init__",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+        "lineno": 37,
+        "args": [
+          "self",
+          "base_dir"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.agent_identity._generate_stable_agent_id",
+      "source_module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+      "function_name": "_generate_stable_agent_id",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+        "lineno": 48,
+        "args": [
+          "self"
+        ],
+        "docstring": "Generate a stable, deterministic agent ID for this workspace.",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.agent_identity._get_git_info",
+      "source_module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+      "function_name": "_get_git_info",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+        "lineno": 124,
+        "args": [
+          "self"
+        ],
+        "docstring": "Get current git commit and branch.",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.agent_identity.update_identity",
+      "source_module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+      "function_name": "update_identity",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+        "lineno": 261,
+        "args": [
+          "self",
+          "identity",
+          "mission_profile_path",
+          "catalog_path",
+          "last_entry_id",
+          "planner_digest_path",
+          "last_run_id",
+          "world_model_snapshot_path",
+          "world_model_snapshot_hash",
+          "world_model_version",
+          "commitment_ledger_path",
+          "commitment_ledger_hash",
+          "commitment_ledger_version"
+        ],
+        "docstring": "Update identity with current system state.",
+        "is_async": false,
+        "body_lines": 21
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.agent_identity.identity_hash",
+      "source_module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+      "function_name": "identity_hash",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+        "lineno": 341,
+        "args": [
+          "self",
+          "identity"
+        ],
+        "docstring": "Compute canonical hash of identity record.",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.agent_identity._compute_file_hash",
+      "source_module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+      "function_name": "_compute_file_hash",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+        "lineno": 347,
+        "args": [
+          "self",
+          "file_path"
+        ],
+        "docstring": "Compute SHA256 hash of file contents.",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.agent_identity._compute_catalog_tail_hash",
+      "source_module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+      "function_name": "_compute_catalog_tail_hash",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+        "lineno": 352,
+        "args": [
+          "self",
+          "catalog_path",
+          "tail_lines"
+        ],
+        "docstring": "Compute hash of last N lines of catalog.",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.arithmetic_engine.trinity_prime_test",
+      "source_module": "Pre-Processing.KEEP_VERIFY.arithmetic_engine",
+      "function_name": "trinity_prime_test",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/arithmetic_engine.py",
+        "lineno": 198,
+        "args": [
+          "self",
+          "n",
+          "certainty_level",
+          "trinity_context"
+        ],
+        "docstring": "Enhanced primality testing with Trinity-grounded certainty levels.\n\nArgs:\n    n: Number to test for primality\n    certainty_level: Required certainty level (0.0 to 1.0)\n    trinity_context: Trinity vector for enhanced validation\n\nReturns:\n    Primality test results with Trinity enhancement",
+        "is_async": false,
+        "body_lines": 12
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.arithmetic_engine.trinity_modular_exponentiation",
+      "source_module": "Pre-Processing.KEEP_VERIFY.arithmetic_engine",
+      "function_name": "trinity_modular_exponentiation",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/arithmetic_engine.py",
+        "lineno": 316,
+        "args": [
+          "self",
+          "base",
+          "exponent",
+          "modulus",
+          "trinity_optimization"
+        ],
+        "docstring": "Trinity-optimized modular exponentiation with enhanced efficiency.\n\nArgs:\n    base: Base number\n    exponent: Exponent\n    modulus: Modulus\n    trinity_optimization: Whether to apply Trinity-based optimizations\n\nReturns:\n    Modular exponentiation result with optimization details",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.arithmetic_engine.trinity_factorial",
+      "source_module": "Pre-Processing.KEEP_VERIFY.arithmetic_engine",
+      "function_name": "trinity_factorial",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/arithmetic_engine.py",
+        "lineno": 387,
+        "args": [
+          "self",
+          "n",
+          "use_stirling_approximation",
+          "trinity_precision"
+        ],
+        "docstring": "Trinity-enhanced factorial computation with high precision options.\n\nArgs:\n    n: Number to compute factorial for\n    use_stirling_approximation: Use Stirling's approximation for large n\n    trinity_precision: Use Trinity-enhanced precision\n\nReturns:\n    Factorial computation result",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.autonomous_learning._extract_error_pattern",
+      "source_module": "Pre-Processing.KEEP_VERIFY.autonomous_learning",
+      "function_name": "_extract_error_pattern",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/autonomous_learning.py",
+        "lineno": 173,
+        "args": [
+          "self",
+          "error_msg",
+          "proposition",
+          "evaluator_type"
+        ],
+        "docstring": "Extract error pattern for grouping similar failures",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.autonomous_learning.__init__",
+      "source_module": "Pre-Processing.KEEP_VERIFY.autonomous_learning",
+      "function_name": "__init__",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/autonomous_learning.py",
+        "lineno": 282,
+        "args": [
+          "self",
+          "config"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 10
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.autonomous_learning._check_rate_limit",
+      "source_module": "Pre-Processing.KEEP_VERIFY.autonomous_learning",
+      "function_name": "_check_rate_limit",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/autonomous_learning.py",
+        "lineno": 424,
+        "args": [
+          "self"
+        ],
+        "docstring": "Check if learning cycle rate limit is exceeded",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.autonomous_learning._record_cycle_result",
+      "source_module": "Pre-Processing.KEEP_VERIFY.autonomous_learning",
+      "function_name": "_record_cycle_result",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/autonomous_learning.py",
+        "lineno": 527,
+        "args": [
+          "self",
+          "result"
+        ],
+        "docstring": "Record learning cycle result for history tracking",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.autonomous_learning.get_learning_status",
+      "source_module": "Pre-Processing.KEEP_VERIFY.autonomous_learning",
+      "function_name": "get_learning_status",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/autonomous_learning.py",
+        "lineno": 549,
+        "args": [
+          "self"
+        ],
+        "docstring": "Get current learning system status",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.bayesian_interface._calculate_likelihood",
+      "source_module": "Pre-Processing.KEEP_VERIFY.bayesian_interface",
+      "function_name": "_calculate_likelihood",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/bayesian_interface.py",
+        "lineno": 86,
+        "args": [
+          "self",
+          "evidence",
+          "hypothesis"
+        ],
+        "docstring": "Calculate likelihood of evidence given hypothesis",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.bayesian_interface._marginal_likelihood",
+      "source_module": "Pre-Processing.KEEP_VERIFY.bayesian_interface",
+      "function_name": "_marginal_likelihood",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/bayesian_interface.py",
+        "lineno": 100,
+        "args": [
+          "self",
+          "evidence"
+        ],
+        "docstring": "Calculate marginal likelihood (normalizing constant)",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.bayesian_updates.load_priors",
+      "source_module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+      "function_name": "load_priors",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+        "lineno": 68,
+        "args": [
+          "path"
+        ],
+        "docstring": "Load priors from JSON file",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.bayesian_updates.save_priors",
+      "source_module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+      "function_name": "save_priors",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+        "lineno": 80,
+        "args": [
+          "data",
+          "path"
+        ],
+        "docstring": "Save priors to JSON file",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.belief_network.get_most_likely_state",
+      "source_module": "Pre-Processing.KEEP_VERIFY.belief_network",
+      "function_name": "get_most_likely_state",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/belief_network.py",
+        "lineno": 103,
+        "args": [
+          "self",
+          "node_name"
+        ],
+        "docstring": "Get the most likely state for a node.",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.belief_network.calculate_joint_probability",
+      "source_module": "Pre-Processing.KEEP_VERIFY.belief_network",
+      "function_name": "calculate_joint_probability",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/belief_network.py",
+        "lineno": 112,
+        "args": [
+          "self",
+          "states"
+        ],
+        "docstring": "Calculate joint probability of a set of states.",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.belief_network.learn_structure",
+      "source_module": "Pre-Processing.KEEP_VERIFY.belief_network",
+      "function_name": "learn_structure",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/belief_network.py",
+        "lineno": 161,
+        "args": [
+          "self",
+          "data",
+          "max_edges"
+        ],
+        "docstring": "Learn network structure from data.",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.belief_network._calculate_edge_score",
+      "source_module": "Pre-Processing.KEEP_VERIFY.belief_network",
+      "function_name": "_calculate_edge_score",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/belief_network.py",
+        "lineno": 177,
+        "args": [
+          "self",
+          "node1",
+          "node2",
+          "data"
+        ],
+        "docstring": "Calculate score for adding an edge.",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.coherence_metrics.compute_current_coherence",
+      "source_module": "Pre-Processing.KEEP_VERIFY.coherence_metrics",
+      "function_name": "compute_current_coherence",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/coherence_metrics.py",
+        "lineno": 148,
+        "args": [
+          "self"
+        ],
+        "docstring": "Compute current system coherence across all dimensions\n\nReturns:\n    CoherenceVector: Current coherence measurements",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.coherence_metrics.take_coherence_snapshot",
+      "source_module": "Pre-Processing.KEEP_VERIFY.coherence_metrics",
+      "function_name": "take_coherence_snapshot",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/coherence_metrics.py",
+        "lineno": 185,
+        "args": [
+          "self"
+        ],
+        "docstring": "Take a coherence snapshot and add to history\n\nReturns:\n    CoherenceSnapshot: Current coherence snapshot",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.coherence_metrics._get_max_history_size",
+      "source_module": "Pre-Processing.KEEP_VERIFY.coherence_metrics",
+      "function_name": "_get_max_history_size",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/coherence_metrics.py",
+        "lineno": 311,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate maximum history size based on retention and interval",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.coherence_metrics._compute_adaptive_weights",
+      "source_module": "Pre-Processing.KEEP_VERIFY.coherence_metrics",
+      "function_name": "_compute_adaptive_weights",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/coherence_metrics.py",
+        "lineno": 318,
+        "args": [
+          "self",
+          "coherence_vector"
+        ],
+        "docstring": "Compute adaptive weights based on current coherence state",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.export_tool_registry._tool_metadata",
+      "source_module": "Pre-Processing.KEEP_VERIFY.export_tool_registry",
+      "function_name": "_tool_metadata",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/export_tool_registry.py",
+        "lineno": 66,
+        "args": [
+          "tool_id",
+          "tool"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.export_tool_registry.main",
+      "source_module": "Pre-Processing.KEEP_VERIFY.export_tool_registry",
+      "function_name": "main",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/export_tool_registry.py",
+        "lineno": 137,
+        "args": [
+          "argv"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 11
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.export_tool_registry._normalize",
+      "source_module": "Pre-Processing.KEEP_VERIFY.export_tool_registry",
+      "function_name": "_normalize",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/export_tool_registry.py",
+        "lineno": 67,
+        "args": [
+          "value"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_engine.to_dict",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_engine",
+      "function_name": "to_dict",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_engine.py",
+        "lineno": 141,
+        "args": [
+          "self"
+        ],
+        "docstring": "Convert to dictionary representation.",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_engine.evaluate",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_engine",
+      "function_name": "evaluate",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_engine.py",
+        "lineno": 332,
+        "args": [
+          "self",
+          "expr",
+          "max_depth"
+        ],
+        "docstring": "Evaluate lambda expression.\n\nArgs:\n    expr: Expression to evaluate\n    max_depth: Maximum evaluation depth\n    \nReturns:\n    Evaluated expression",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_engine.__init__",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_engine",
+      "function_name": "__init__",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_engine.py",
+        "lineno": 428,
+        "args": [
+          "self",
+          "config"
+        ],
+        "docstring": "Initialize Lambda engine.\n\nArgs:\n    config: Engine configuration",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_engine.parse_from_dict",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_engine",
+      "function_name": "parse_from_dict",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_engine.py",
+        "lineno": 526,
+        "args": [
+          "self",
+          "data"
+        ],
+        "docstring": "Parse expression from dictionary representation.\n\nArgs:\n    data: Dictionary representation\n    \nReturns:\n    Parsed expression",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_engine.trinity_vector",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_engine",
+      "function_name": "trinity_vector",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_engine.py",
+        "lineno": 627,
+        "args": [
+          "self"
+        ],
+        "docstring": "Trinity vector (existence, goodness, truth).",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.__init__",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine",
+      "function_name": "__init__",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py",
+        "lineno": 103,
+        "args": [
+          "self",
+          "func",
+          "arg"
+        ],
+        "docstring": "Initialize function application.\n\nArgs:\n    func: Function\n    arg: Argument",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.substitute",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine",
+      "function_name": "substitute",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py",
+        "lineno": 277,
+        "args": [
+          "self",
+          "expr",
+          "var_name",
+          "value"
+        ],
+        "docstring": "Substitute variable in expression.\n\nArgs:\n    expr: Expression to modify\n    var_name: Variable name to replace\n    value: Replacement value\n    \nReturns:\n    Expression with substitution applied",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.map_to_complex",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine",
+      "function_name": "map_to_complex",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py",
+        "lineno": 427,
+        "args": [
+          "self",
+          "trinity_vector"
+        ],
+        "docstring": "Map trinity vector to complex plane.\n\nArgs:\n    trinity_vector: (existence, goodness, truth) values\n    \nReturns:\n    Complex number for fractal position",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.compute_iterations",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine",
+      "function_name": "compute_iterations",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py",
+        "lineno": 439,
+        "args": [
+          "self",
+          "c",
+          "max_iter"
+        ],
+        "docstring": "Compute Mandelbrot iterations for point.\n\nArgs:\n    c: Complex parameter\n    max_iter: Maximum iterations\n    \nReturns:\n    (iterations, in_set) tuple",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.create_application",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine",
+      "function_name": "create_application",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py",
+        "lineno": 493,
+        "args": [
+          "self",
+          "func",
+          "arg"
+        ],
+        "docstring": "Create function application.\n\nArgs:\n    func: Function\n    arg: Argument\n    \nReturns:\n    Function application",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.evaluate",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine",
+      "function_name": "evaluate",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py",
+        "lineno": 529,
+        "args": [
+          "self",
+          "expr"
+        ],
+        "docstring": "Evaluate lambda expression.\n\nArgs:\n    expr: Lambda expression\n    \nReturns:\n    Evaluated expression",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.map_to_fractal",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine",
+      "function_name": "map_to_fractal",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py",
+        "lineno": 540,
+        "args": [
+          "self",
+          "trinity_vector"
+        ],
+        "docstring": "Map trinity vector to fractal space.\n\nArgs:\n    trinity_vector: (existence, goodness, truth) values\n    \nReturns:\n    Fractal position information",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine.process_expression",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_onto_calculus_engine",
+      "function_name": "process_expression",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_onto_calculus_engine.py",
+        "lineno": 585,
+        "args": [
+          "self",
+          "expr_str"
+        ],
+        "docstring": "Process lambda expression string.\n\nArgs:\n    expr_str: Expression string\n    \nReturns:\n    Processing results",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_parser.parse_expr",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_parser",
+      "function_name": "parse_expr",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+        "lineno": 454,
+        "args": [
+          "input_str",
+          "env"
+        ],
+        "docstring": "Parse Lambda Logos expression from string.\n\nArgs:\n    input_str: Input string\n    env: Optional environment with predefined constants and values\n\nReturns:\n    Parsed expression\n\nRaises:\n    ValueError: If parsing fails",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_parser.__init__",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_parser",
+      "function_name": "__init__",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+        "lineno": 116,
+        "args": [
+          "self",
+          "input_str"
+        ],
+        "docstring": "Initialize lexer.\n\nArgs:\n    input_str: Input string to tokenize",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_parser.tokenize",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_parser",
+      "function_name": "tokenize",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+        "lineno": 126,
+        "args": [
+          "self"
+        ],
+        "docstring": "Tokenize input string.\n\nReturns:\n    List of tokens",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_parser.__init__",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_parser",
+      "function_name": "__init__",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+        "lineno": 234,
+        "args": [
+          "self",
+          "lexer",
+          "env"
+        ],
+        "docstring": "Initialize parser.\n\nArgs:\n    lexer: Lexer instance\n    env: Environment with predefined constants and values",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_parser.parse",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_parser",
+      "function_name": "parse",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+        "lineno": 247,
+        "args": [
+          "self"
+        ],
+        "docstring": "Parse input string into Lambda Logos expression.\n\nReturns:\n    Parsed expression",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_parser.parse_expr",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_parser",
+      "function_name": "parse_expr",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+        "lineno": 261,
+        "args": [
+          "self"
+        ],
+        "docstring": "Parse expression.\n\nReturns:\n    Parsed expression",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_parser.parse_abstraction",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_parser",
+      "function_name": "parse_abstraction",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+        "lineno": 274,
+        "args": [
+          "self"
+        ],
+        "docstring": "Parse lambda abstraction.\n\nReturns:\n    Parsed abstraction",
+        "is_async": false,
+        "body_lines": 11
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_parser.parse_application",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_parser",
+      "function_name": "parse_application",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+        "lineno": 304,
+        "args": [
+          "self"
+        ],
+        "docstring": "Parse function application.\n\nReturns:\n    Parsed application or atomic expression",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.lambda_parser._error",
+      "source_module": "Pre-Processing.KEEP_VERIFY.lambda_parser",
+      "function_name": "_error",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+        "lineno": 442,
+        "args": [
+          "self",
+          "message"
+        ],
+        "docstring": "Raise parser error.\n\nArgs:\n    message: Error message\n\nRaises:\n    ValueError: With position information",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.pxl_schema.validate_trinity_vector",
+      "source_module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+      "function_name": "validate_trinity_vector",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+        "lineno": 747,
+        "args": [
+          "vector"
+        ],
+        "docstring": "Validate Trinity vector tuple",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.pxl_schema.get_trinity_vector",
+      "source_module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+      "function_name": "get_trinity_vector",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+        "lineno": 149,
+        "args": [
+          "self"
+        ],
+        "docstring": "Get Trinity vector (E, G, T)",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.pxl_schema.set_trinity_vector",
+      "source_module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+      "function_name": "set_trinity_vector",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+        "lineno": 153,
+        "args": [
+          "self",
+          "vector"
+        ],
+        "docstring": "Set Trinity vector",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.pxl_schema.__post_init__",
+      "source_module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+      "function_name": "__post_init__",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+        "lineno": 182,
+        "args": [
+          "self"
+        ],
+        "docstring": "Validate Trinity vector",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.pxl_schema.magnitude",
+      "source_module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+      "function_name": "magnitude",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+        "lineno": 206,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate vector magnitude",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.pxl_schema.normalized",
+      "source_module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+      "function_name": "normalized",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+        "lineno": 210,
+        "args": [
+          "self"
+        ],
+        "docstring": "Return normalized Trinity vector",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.pxl_schema.coherence_with",
+      "source_module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+      "function_name": "coherence_with",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+        "lineno": 219,
+        "args": [
+          "self",
+          "other"
+        ],
+        "docstring": "Calculate coherence with another Trinity vector",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.pxl_schema.validate",
+      "source_module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+      "function_name": "validate",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+        "lineno": 504,
+        "args": [
+          "self"
+        ],
+        "docstring": "Validate consistency violation",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.pxl_schema.check_consistency",
+      "source_module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+      "function_name": "check_consistency",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+        "lineno": 716,
+        "args": [
+          "self",
+          "relations",
+          "trinity_vectors"
+        ],
+        "docstring": "Check consistency of PXL relations",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.pxl_schema.validate_trinity_vector_set",
+      "source_module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+      "function_name": "validate_trinity_vector_set",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+        "lineno": 853,
+        "args": [
+          "self",
+          "vectors"
+        ],
+        "docstring": "Validate a set of Trinity vectors",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.relation_mapper.__str__",
+      "source_module": "Pre-Processing.KEEP_VERIFY.relation_mapper",
+      "function_name": "__str__",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+        "lineno": 80,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.relation_mapper.calculate_trinity_coherence",
+      "source_module": "Pre-Processing.KEEP_VERIFY.relation_mapper",
+      "function_name": "calculate_trinity_coherence",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+        "lineno": 99,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate Trinity vector coherence between concepts",
+        "is_async": false,
+        "body_lines": 9
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.relation_mapper.calculate_cluster_density",
+      "source_module": "Pre-Processing.KEEP_VERIFY.relation_mapper",
+      "function_name": "calculate_cluster_density",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+        "lineno": 130,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate density of relations within cluster",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.relation_mapper.analyze_trinity_relations",
+      "source_module": "Pre-Processing.KEEP_VERIFY.relation_mapper",
+      "function_name": "analyze_trinity_relations",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+        "lineno": 169,
+        "args": [
+          "self",
+          "concepts"
+        ],
+        "docstring": "Analyze Trinity vector relationships between concepts",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.relation_mapper._calculate_trinity_coherence",
+      "source_module": "Pre-Processing.KEEP_VERIFY.relation_mapper",
+      "function_name": "_calculate_trinity_coherence",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+        "lineno": 217,
+        "args": [
+          "self",
+          "vector1",
+          "vector2"
+        ],
+        "docstring": "Calculate coherence between two Trinity vectors",
+        "is_async": false,
+        "body_lines": 12
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.relation_mapper._calculate_trinity_complementarity",
+      "source_module": "Pre-Processing.KEEP_VERIFY.relation_mapper",
+      "function_name": "_calculate_trinity_complementarity",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+        "lineno": 243,
+        "args": [
+          "self",
+          "vector1",
+          "vector2"
+        ],
+        "docstring": "Calculate complementarity (inverse relationship) between Trinity vectors",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.relation_mapper._calculate_confidence",
+      "source_module": "Pre-Processing.KEEP_VERIFY.relation_mapper",
+      "function_name": "_calculate_confidence",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+        "lineno": 265,
+        "args": [
+          "self",
+          "coherence",
+          "vector1",
+          "vector2"
+        ],
+        "docstring": "Calculate confidence in relation analysis",
+        "is_async": false,
+        "body_lines": 10
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.relation_mapper.build_semantic_networks",
+      "source_module": "Pre-Processing.KEEP_VERIFY.relation_mapper",
+      "function_name": "build_semantic_networks",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+        "lineno": 391,
+        "args": [
+          "self",
+          "relations"
+        ],
+        "docstring": "Build semantic networks by relation type",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.relation_mapper.map_concept_relations",
+      "source_module": "Pre-Processing.KEEP_VERIFY.relation_mapper",
+      "function_name": "map_concept_relations",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+        "lineno": 495,
+        "args": [
+          "self",
+          "concepts",
+          "trinity_vectors",
+          "concept_definitions"
+        ],
+        "docstring": "Map relations between PXL concepts\n\nArgs:\n    concepts: Dictionary of concepts with metadata\n    trinity_vectors: Trinity vector representations of concepts\n    concept_definitions: Textual definitions of concepts\n\nReturns:\n    RelationMappingResult: Comprehensive relation mapping analysis",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.relation_mapper._build_trinity_coherence_map",
+      "source_module": "Pre-Processing.KEEP_VERIFY.relation_mapper",
+      "function_name": "_build_trinity_coherence_map",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/relation_mapper.py",
+        "lineno": 651,
+        "args": [
+          "self",
+          "relations"
+        ],
+        "docstring": "Build Trinity coherence mapping between concepts",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.semantic_transformers._calculate_semantic_coherence",
+      "source_module": "Pre-Processing.KEEP_VERIFY.semantic_transformers",
+      "function_name": "_calculate_semantic_coherence",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/semantic_transformers.py",
+        "lineno": 314,
+        "args": [
+          "self",
+          "embedding",
+          "trinity_vector"
+        ],
+        "docstring": "Calculate semantic coherence between embedding and trinity vector",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.semantic_transformers.compute_semantic_similarity",
+      "source_module": "Pre-Processing.KEEP_VERIFY.semantic_transformers",
+      "function_name": "compute_semantic_similarity",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/semantic_transformers.py",
+        "lineno": 344,
+        "args": [
+          "self",
+          "text1",
+          "text2",
+          "use_trinity_alignment"
+        ],
+        "docstring": "Compute semantic similarity between two texts.\n\nArgs:\n    text1: First text\n    text2: Second text\n    use_trinity_alignment: Whether to include trinity vector alignment\n\nReturns:\n    Semantic similarity score [0,1]",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.semantic_transformers._cosine_similarity",
+      "source_module": "Pre-Processing.KEEP_VERIFY.semantic_transformers",
+      "function_name": "_cosine_similarity",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/semantic_transformers.py",
+        "lineno": 393,
+        "args": [
+          "self",
+          "vec1",
+          "vec2"
+        ],
+        "docstring": "Calculate cosine similarity between two vectors",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.semantic_transformers._trinity_similarity",
+      "source_module": "Pre-Processing.KEEP_VERIFY.semantic_transformers",
+      "function_name": "_trinity_similarity",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/semantic_transformers.py",
+        "lineno": 403,
+        "args": [
+          "self",
+          "trinity1",
+          "trinity2"
+        ],
+        "docstring": "Calculate similarity between two trinity vectors",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.semantic_transformers._verify_truth_preservation",
+      "source_module": "Pre-Processing.KEEP_VERIFY.semantic_transformers",
+      "function_name": "_verify_truth_preservation",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/semantic_transformers.py",
+        "lineno": 530,
+        "args": [
+          "self",
+          "source_embedding",
+          "target_embedding"
+        ],
+        "docstring": "Verify truth preservation in semantic transformation",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.semantic_transformers.__init__",
+      "source_module": "Pre-Processing.KEEP_VERIFY.semantic_transformers",
+      "function_name": "__init__",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/semantic_transformers.py",
+        "lineno": 662,
+        "args": [
+          "self",
+          "embedding_data"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_introspection._compute_usage_stats",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_introspection",
+      "function_name": "_compute_usage_stats",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+        "lineno": 95,
+        "args": [
+          "ledgers"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_introspection._builtin_defaults",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_introspection",
+      "function_name": "_builtin_defaults",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+        "lineno": 127,
+        "args": [
+          "tool_name"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_introspection.build_capability_records",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_introspection",
+      "function_name": "build_capability_records",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+        "lineno": 142,
+        "args": [],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_invention._relative_ref",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+      "function_name": "_relative_ref",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+        "lineno": 92,
+        "args": [
+          "repo_root",
+          "path",
+          "digest"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_invention.run_tool_invention",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+      "function_name": "run_tool_invention",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+        "lineno": 456,
+        "args": [
+          "identity_path",
+          "optimizer_dir",
+          "output_dir",
+          "proposal_only"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_invention.__init__",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+      "function_name": "__init__",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+        "lineno": 106,
+        "args": [
+          "self",
+          "identity_path",
+          "optimizer_dir",
+          "output_dir",
+          "proposal_only"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 11
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_invention.run",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+      "function_name": "run",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+        "lineno": 125,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 25
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_invention._select_gaps",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+      "function_name": "_select_gaps",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+        "lineno": 194,
+        "args": [
+          "self",
+          "registry",
+          "profiles",
+          "optimizer_report"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 14
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_invention._score_gap",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+      "function_name": "_score_gap",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+        "lineno": 257,
+        "args": [
+          "self",
+          "gap_id",
+          "registry_names",
+          "registry_symbols",
+          "step_counter",
+          "profile_names",
+          "max_steps",
+          "anomalies"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_invention._gap_rationale",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+      "function_name": "_gap_rationale",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+        "lineno": 291,
+        "args": [
+          "self",
+          "gap_id",
+          "score",
+          "max_steps",
+          "step_counter",
+          "anomalies"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_invention._build_request",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+      "function_name": "_build_request",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+        "lineno": 402,
+        "args": [
+          "self",
+          "gap",
+          "index"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_invention._repo_root_from_identity",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+      "function_name": "_repo_root_from_identity",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+        "lineno": 443,
+        "args": [
+          "identity_path"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_optimizer._repo_root_from_identity",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+      "function_name": "_repo_root_from_identity",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+        "lineno": 120,
+        "args": [
+          "identity_path"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_optimizer._module_path",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+      "function_name": "_module_path",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+        "lineno": 145,
+        "args": [
+          "file_path",
+          "repo_root"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_optimizer._clean_docstring",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+      "function_name": "_clean_docstring",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+        "lineno": 219,
+        "args": [
+          "node"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_optimizer._build_tool_registry",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+      "function_name": "_build_tool_registry",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+        "lineno": 245,
+        "args": [
+          "repo_root",
+          "anomalies"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_optimizer._collect_inputs",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+      "function_name": "_collect_inputs",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+        "lineno": 430,
+        "args": [
+          "repo_root",
+          "identity_path",
+          "digest_paths"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_optimizer._write_json",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+      "function_name": "_write_json",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+        "lineno": 443,
+        "args": [
+          "path",
+          "payload"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_optimizer._publish_catalog_artifact",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+      "function_name": "_publish_catalog_artifact",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+        "lineno": 450,
+        "args": [
+          "repo_root",
+          "registry_ref",
+          "profiles_ref",
+          "report_ref",
+          "anomalies"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 21
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_optimizer.run_tool_optimization",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+      "function_name": "run_tool_optimization",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+        "lineno": 530,
+        "args": [
+          "identity_path",
+          "out_dir",
+          "digests_glob"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 26
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline._load_current_hashes",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+      "function_name": "_load_current_hashes",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+        "lineno": 40,
+        "args": [],
+        "docstring": "Load current provenance hashes.",
+        "is_async": false,
+        "body_lines": 11
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline.cmd_generate",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+      "function_name": "cmd_generate",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+        "lineno": 99,
+        "args": [
+          "args"
+        ],
+        "docstring": "Generate tool proposals using existing invention/optimization.",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline.cmd_validate",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+      "function_name": "cmd_validate",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+        "lineno": 136,
+        "args": [
+          "args"
+        ],
+        "docstring": "Validate tool proposal in sandbox.",
+        "is_async": false,
+        "body_lines": 16
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline.cmd_approve",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+      "function_name": "cmd_approve",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+        "lineno": 208,
+        "args": [
+          "args"
+        ],
+        "docstring": "Approve validated proposal and register tool.",
+        "is_async": false,
+        "body_lines": 25
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline.cmd_register",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+      "function_name": "cmd_register",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+        "lineno": 286,
+        "args": [
+          "args"
+        ],
+        "docstring": "Register approved tool in canonical registry.",
+        "is_async": false,
+        "body_lines": 11
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline.main",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+      "function_name": "main",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+        "lineno": 315,
+        "args": [],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 20
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_repair_proposal._base_provenance",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_repair_proposal",
+      "function_name": "_base_provenance",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py",
+        "lineno": 44,
+        "args": [],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.tool_repair_proposal.main",
+      "source_module": "Pre-Processing.KEEP_VERIFY.tool_repair_proposal",
+      "function_name": "main",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py",
+        "lineno": 105,
+        "args": [
+          "argv"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 22
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.translation_engine._apply_grammar_rules",
+      "source_module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+      "function_name": "_apply_grammar_rules",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+        "lineno": 126,
+        "args": [
+          "semantic_mapping"
+        ],
+        "docstring": "Apply grammar rules to semantic mapping",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.translation_engine._optimize_readability",
+      "source_module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+      "function_name": "_optimize_readability",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+        "lineno": 133,
+        "args": [
+          "nl_elements"
+        ],
+        "docstring": "Optimize natural language elements for readability",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.translation_engine._translate_combinator_structure",
+      "source_module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+      "function_name": "_translate_combinator_structure",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+        "lineno": 217,
+        "args": [
+          "expressions",
+          "reduction_steps"
+        ],
+        "docstring": "Translate combinator-based lambda structures",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.translation_engine._translate_standard_structure",
+      "source_module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+      "function_name": "_translate_standard_structure",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+        "lineno": 348,
+        "args": [
+          "expressions",
+          "semantic_content"
+        ],
+        "docstring": "Translate standard lambda structures",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.translation_engine._generate_structural_description",
+      "source_module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+      "function_name": "_generate_structural_description",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+        "lineno": 434,
+        "args": [
+          "structure_data"
+        ],
+        "docstring": "Generate description of lambda structure organization",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.translation_engine._calculate_translation_confidence",
+      "source_module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+      "function_name": "_calculate_translation_confidence",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+        "lineno": 526,
+        "args": [
+          "structure_data",
+          "nl_text"
+        ],
+        "docstring": "Calculate confidence score for translation quality",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.KEEP_VERIFY.translation_engine._calculate_translation_quality",
+      "source_module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+      "function_name": "_calculate_translation_quality",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+        "lineno": 562,
+        "args": [
+          "translation_context",
+          "unified_nl"
+        ],
+        "docstring": "Calculate overall translation quality metrics",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.Logos_Memory_Nexus._generate_pattern_key",
+      "source_module": "Pre-Processing.agent.Logos_Memory_Nexus",
+      "function_name": "_generate_pattern_key",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/Logos_Memory_Nexus.py",
+        "lineno": 80,
+        "args": [
+          "self"
+        ],
+        "docstring": "Generate key for pattern completion (like sparse hippocampal codes)",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.Logos_Memory_Nexus.strengthen",
+      "source_module": "Pre-Processing.agent.Logos_Memory_Nexus",
+      "function_name": "strengthen",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/Logos_Memory_Nexus.py",
+        "lineno": 98,
+        "args": [
+          "self",
+          "amount"
+        ],
+        "docstring": "Strengthen memory trace (like rehearsal or emotional arousal)",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.Logos_Memory_Nexus._create_distributed_encoding",
+      "source_module": "Pre-Processing.agent.Logos_Memory_Nexus",
+      "function_name": "_create_distributed_encoding",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/Logos_Memory_Nexus.py",
+        "lineno": 252,
+        "args": [
+          "self",
+          "smp",
+          "evaluation"
+        ],
+        "docstring": "Create distributed representation (like neural population code)",
+        "is_async": false,
+        "body_lines": 12
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.Logos_Memory_Nexus._sparsify_encoding",
+      "source_module": "Pre-Processing.agent.Logos_Memory_Nexus",
+      "function_name": "_sparsify_encoding",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/Logos_Memory_Nexus.py",
+        "lineno": 279,
+        "args": [
+          "self",
+          "vector",
+          "sparsity"
+        ],
+        "docstring": "Convert to sparse distributed representation",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.Logos_Memory_Nexus._abstract_semantic_group",
+      "source_module": "Pre-Processing.agent.Logos_Memory_Nexus",
+      "function_name": "_abstract_semantic_group",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/Logos_Memory_Nexus.py",
+        "lineno": 292,
+        "args": [
+          "self",
+          "traces"
+        ],
+        "docstring": "Abstract multiple traces into semantic memory",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.Logos_Memory_Nexus.recognition",
+      "source_module": "Pre-Processing.agent.Logos_Memory_Nexus",
+      "function_name": "recognition",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/Logos_Memory_Nexus.py",
+        "lineno": 442,
+        "args": [
+          "self",
+          "probe",
+          "confidence_threshold"
+        ],
+        "docstring": "Recognition memory: \"know it when I see it\"\nFaster than recall, based on familiarity",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.Logos_Memory_Nexus.episodic_replay",
+      "source_module": "Pre-Processing.agent.Logos_Memory_Nexus",
+      "function_name": "episodic_replay",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/Logos_Memory_Nexus.py",
+        "lineno": 509,
+        "args": [
+          "self",
+          "trace",
+          "completeness"
+        ],
+        "docstring": "Episodic replay: re-experience or reconstruct event\nIncludes reconstruction errors like human memory",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.agent_nexus._initialize_linguistic_processors",
+      "source_module": "Pre-Processing.agent.agent_nexus",
+      "function_name": "_initialize_linguistic_processors",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/agent_nexus.py",
+        "lineno": 209,
+        "args": [
+          "self"
+        ],
+        "docstring": "Initialize linguistic processing systems (moved from UIP)",
+        "is_async": true,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.agent_nexus._handle_coordinate_protocols",
+      "source_module": "Pre-Processing.agent.agent_nexus",
+      "function_name": "_handle_coordinate_protocols",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/agent_nexus.py",
+        "lineno": 638,
+        "args": [
+          "self",
+          "request"
+        ],
+        "docstring": "Coordinate inter-protocol operations",
+        "is_async": true,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.base_nexus._calculate_processing_time",
+      "source_module": "Pre-Processing.agent.base_nexus",
+      "function_name": "_calculate_processing_time",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/base_nexus.py",
+        "lineno": 568,
+        "args": [
+          "self",
+          "request"
+        ],
+        "docstring": "Calculate request processing time in milliseconds",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.knowledge_catalog.__init__",
+      "source_module": "Pre-Processing.agent.knowledge_catalog",
+      "function_name": "__init__",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/knowledge_catalog.py",
+        "lineno": 30,
+        "args": [
+          "self",
+          "base_dir"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.legacy_sop_nexus._generate_test_cases",
+      "source_module": "Pre-Processing.agent.legacy_sop_nexus",
+      "function_name": "_generate_test_cases",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+        "lineno": 395,
+        "args": [
+          "self"
+        ],
+        "docstring": "Generate test cases for gap resolution validation",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.legacy_sop_nexus._protocol_specific_initialization",
+      "source_module": "Pre-Processing.agent.legacy_sop_nexus",
+      "function_name": "_protocol_specific_initialization",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+        "lineno": 473,
+        "args": [
+          "self"
+        ],
+        "docstring": "SOP-specific initialization",
+        "is_async": true,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.legacy_sop_nexus._handle_system_status_request",
+      "source_module": "Pre-Processing.agent.legacy_sop_nexus",
+      "function_name": "_handle_system_status_request",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+        "lineno": 884,
+        "args": [
+          "self",
+          "payload"
+        ],
+        "docstring": "Handle system status request",
+        "is_async": true,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.legacy_sop_nexus._calculate_uptime",
+      "source_module": "Pre-Processing.agent.legacy_sop_nexus",
+      "function_name": "_calculate_uptime",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+        "lineno": 1047,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate system uptime",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.legacy_sop_nexus._collect_system_metrics",
+      "source_module": "Pre-Processing.agent.legacy_sop_nexus",
+      "function_name": "_collect_system_metrics",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+        "lineno": 1069,
+        "args": [
+          "self"
+        ],
+        "docstring": "Collect system performance metrics",
+        "is_async": true,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.sop_nexus._generate_test_cases",
+      "source_module": "Pre-Processing.agent.sop_nexus",
+      "function_name": "_generate_test_cases",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/sop_nexus.py",
+        "lineno": 421,
+        "args": [
+          "self"
+        ],
+        "docstring": "Generate test cases for gap resolution validation",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.sop_nexus._protocol_specific_initialization",
+      "source_module": "Pre-Processing.agent.sop_nexus",
+      "function_name": "_protocol_specific_initialization",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/sop_nexus.py",
+        "lineno": 503,
+        "args": [
+          "self"
+        ],
+        "docstring": "SOP-specific initialization",
+        "is_async": true,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.sop_nexus._handle_system_status_request",
+      "source_module": "Pre-Processing.agent.sop_nexus",
+      "function_name": "_handle_system_status_request",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/sop_nexus.py",
+        "lineno": 951,
+        "args": [
+          "self",
+          "payload"
+        ],
+        "docstring": "Handle system status request",
+        "is_async": true,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.sop_nexus._calculate_uptime",
+      "source_module": "Pre-Processing.agent.sop_nexus",
+      "function_name": "_calculate_uptime",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/sop_nexus.py",
+        "lineno": 1195,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate system uptime",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.sop_nexus._collect_system_metrics",
+      "source_module": "Pre-Processing.agent.sop_nexus",
+      "function_name": "_collect_system_metrics",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/sop_nexus.py",
+        "lineno": 1217,
+        "args": [
+          "self"
+        ],
+        "docstring": "Collect system performance metrics",
+        "is_async": true,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.test_agent_planner.test_latest_digest_contains_structured_payload",
+      "source_module": "Pre-Processing.agent.test_agent_planner",
+      "function_name": "test_latest_digest_contains_structured_payload",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/test_agent_planner.py",
+        "lineno": 80,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 16
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.test_agent_planner.test_append_and_snapshot_preserves_log",
+      "source_module": "Pre-Processing.agent.test_agent_planner",
+      "function_name": "test_append_and_snapshot_preserves_log",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/test_agent_planner.py",
+        "lineno": 104,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.test_llm_bypass_smoke.test_proved_downgraded",
+      "source_module": "Pre-Processing.agent.test_llm_bypass_smoke",
+      "function_name": "test_proved_downgraded",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/test_llm_bypass_smoke.py",
+        "lineno": 87,
+        "args": [],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.test_logos_agi_replay_proposals.test_proposal_replay",
+      "source_module": "Pre-Processing.agent.test_logos_agi_replay_proposals",
+      "function_name": "test_proposal_replay",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/test_logos_agi_replay_proposals.py",
+        "lineno": 53,
+        "args": [],
+        "docstring": "Test that proposals change based on replayed state.",
+        "is_async": false,
+        "body_lines": 25
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.agent.test_self_improvement_cycle.test_error_recovery",
+      "source_module": "Pre-Processing.agent.test_self_improvement_cycle",
+      "function_name": "test_error_recovery",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/agent/test_self_improvement_cycle.py",
+        "lineno": 361,
+        "args": [
+          "self",
+          "temp_workspace",
+          "registry_config"
+        ],
+        "docstring": "Test system recovery from errors during evaluation",
+        "is_async": false,
+        "body_lines": 16
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.math.fractal_nexus.run_pipeline",
+      "source_module": "Pre-Processing.math.fractal_nexus",
+      "function_name": "run_pipeline",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/math/fractal_nexus.py",
+        "lineno": 198,
+        "args": [
+          "self",
+          "keywords"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 13
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.reasoning.arp_nexus.get_cycle_status",
+      "source_module": "Pre-Processing.reasoning.arp_nexus",
+      "function_name": "get_cycle_status",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/reasoning/arp_nexus.py",
+        "lineno": 403,
+        "args": [
+          "self",
+          "cycle_key"
+        ],
+        "docstring": "Get status of an active cycle",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.reasoning.ergonomic_optimizer.optimize",
+      "source_module": "Pre-Processing.reasoning.ergonomic_optimizer",
+      "function_name": "optimize",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/reasoning/ergonomic_optimizer.py",
+        "lineno": 85,
+        "args": [
+          "self",
+          "method",
+          "max_iterations"
+        ],
+        "docstring": "Run optimization using specified method.",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.reasoning.ergonomic_optimizer._gradient_descent_optimization",
+      "source_module": "Pre-Processing.reasoning.ergonomic_optimizer",
+      "function_name": "_gradient_descent_optimization",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/reasoning/ergonomic_optimizer.py",
+        "lineno": 127,
+        "args": [
+          "self",
+          "max_iterations"
+        ],
+        "docstring": "Gradient descent optimization.",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.reasoning.ergonomic_optimizer._calculate_gradient",
+      "source_module": "Pre-Processing.reasoning.ergonomic_optimizer",
+      "function_name": "_calculate_gradient",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/reasoning/ergonomic_optimizer.py",
+        "lineno": 210,
+        "args": [
+          "self",
+          "values"
+        ],
+        "docstring": "Calculate gradient for gradient descent.",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.reasoning.ergonomic_optimizer.reset",
+      "source_module": "Pre-Processing.reasoning.ergonomic_optimizer",
+      "function_name": "reset",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/reasoning/ergonomic_optimizer.py",
+        "lineno": 272,
+        "args": [
+          "self"
+        ],
+        "docstring": "Reset the optimizer.",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.reasoning.integration_test_suite.calculate_verification_ratio",
+      "source_module": "Pre-Processing.reasoning.integration_test_suite",
+      "function_name": "calculate_verification_ratio",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/reasoning/integration_test_suite.py",
+        "lineno": 745,
+        "args": [
+          "self"
+        ],
+        "docstring": "Calculate overall verification ratio for the system",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.reasoning.resource_manager.set_budget",
+      "source_module": "Pre-Processing.reasoning.resource_manager",
+      "function_name": "set_budget",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/reasoning/resource_manager.py",
+        "lineno": 51,
+        "args": [
+          "self",
+          "resource_name",
+          "period",
+          "amount",
+          "reset_interval"
+        ],
+        "docstring": "Set a budget for a resource over a time period.",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.reasoning.resource_manager.optimize_allocation",
+      "source_module": "Pre-Processing.reasoning.resource_manager",
+      "function_name": "optimize_allocation",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/reasoning/resource_manager.py",
+        "lineno": 136,
+        "args": [
+          "self",
+          "requirements",
+          "constraints"
+        ],
+        "docstring": "Optimize resource allocation given requirements.",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.reasoning.resource_manager.forecast_resource_needs",
+      "source_module": "Pre-Processing.reasoning.resource_manager",
+      "function_name": "forecast_resource_needs",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/reasoning/resource_manager.py",
+        "lineno": 189,
+        "args": [
+          "self",
+          "time_horizon",
+          "consumption_rate"
+        ],
+        "docstring": "Forecast future resource needs.",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.reasoning.test_integration.test_trinity_vector_creation",
+      "source_module": "Pre-Processing.reasoning.test_integration",
+      "function_name": "test_trinity_vector_creation",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/reasoning/test_integration.py",
+        "lineno": 105,
+        "args": [],
+        "docstring": "Test trinity vector creation and validation",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.safety.attestation.compute_attestation_hash",
+      "source_module": "Pre-Processing.safety.attestation",
+      "function_name": "compute_attestation_hash",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/safety/attestation.py",
+        "lineno": 98,
+        "args": [
+          "attestation"
+        ],
+        "docstring": "Return the canonical hash of the attestation entry.",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.safety.health_server.health_dashboard",
+      "source_module": "Pre-Processing.safety.health_server",
+      "function_name": "health_dashboard",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/safety/health_server.py",
+        "lineno": 17,
+        "args": [],
+        "docstring": "",
+        "is_async": true,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.semantic.boot_system._shutdown_sentinel",
+      "source_module": "Pre-Processing.semantic.boot_system",
+      "function_name": "_shutdown_sentinel",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/semantic/boot_system.py",
+        "lineno": 207,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.semantic.commitment_ledger.compute_ledger_hash",
+      "source_module": "Pre-Processing.semantic.commitment_ledger",
+      "function_name": "compute_ledger_hash",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/semantic/commitment_ledger.py",
+        "lineno": 51,
+        "args": [
+          "ledger"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.semantic.commitment_ledger._compute_commitment_id",
+      "source_module": "Pre-Processing.semantic.commitment_ledger",
+      "function_name": "_compute_commitment_id",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/semantic/commitment_ledger.py",
+        "lineno": 87,
+        "args": [
+          "commitment"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.semantic.commitment_ledger._compute_event_id",
+      "source_module": "Pre-Processing.semantic.commitment_ledger",
+      "function_name": "_compute_event_id",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/semantic/commitment_ledger.py",
+        "lineno": 99,
+        "args": [
+          "event"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.semantic.commitment_ledger.record_event",
+      "source_module": "Pre-Processing.semantic.commitment_ledger",
+      "function_name": "record_event",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/semantic/commitment_ledger.py",
+        "lineno": 207,
+        "args": [
+          "ledger",
+          "action",
+          "commitment_id",
+          "summary"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.semantic.commitment_ledger.upsert_commitment",
+      "source_module": "Pre-Processing.semantic.commitment_ledger",
+      "function_name": "upsert_commitment",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/semantic/commitment_ledger.py",
+        "lineno": 222,
+        "args": [
+          "ledger",
+          "commitment"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.semantic.commitment_ledger.write_ledger",
+      "source_module": "Pre-Processing.semantic.commitment_ledger",
+      "function_name": "write_ledger",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/semantic/commitment_ledger.py",
+        "lineno": 282,
+        "args": [
+          "path",
+          "ledger"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.semantic.nexus_manager._evict_expired",
+      "source_module": "Pre-Processing.semantic.nexus_manager",
+      "function_name": "_evict_expired",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/semantic/nexus_manager.py",
+        "lineno": 45,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.semantic.nexus_manager.get",
+      "source_module": "Pre-Processing.semantic.nexus_manager",
+      "function_name": "get",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/semantic/nexus_manager.py",
+        "lineno": 55,
+        "args": [
+          "self",
+          "session_id",
+          "mode",
+          "max_compute_ms",
+          "audit_logger"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.semantic.prioritization._parse_priority",
+      "source_module": "Pre-Processing.semantic.prioritization",
+      "function_name": "_parse_priority",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/semantic/prioritization.py",
+        "lineno": 381,
+        "args": [
+          "value"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.semantic.test_logos_agi_adapter.test_adapter_health_reporting",
+      "source_module": "Pre-Processing.semantic.test_logos_agi_adapter",
+      "function_name": "test_adapter_health_reporting",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/semantic/test_logos_agi_adapter.py",
+        "lineno": 91,
+        "args": [
+          "self"
+        ],
+        "docstring": "Test health status reporting.",
+        "is_async": false,
+        "body_lines": 9
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.semantic.test_perception_ingestors.setUp",
+      "source_module": "Pre-Processing.semantic.test_perception_ingestors",
+      "function_name": "setUp",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/semantic/test_perception_ingestors.py",
+        "lineno": 126,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.semantic.test_perception_ingestors.test_status_detail_reports_last_update",
+      "source_module": "Pre-Processing.semantic.test_perception_ingestors",
+      "function_name": "test_status_detail_reports_last_update",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/semantic/test_perception_ingestors.py",
+        "lineno": 169,
+        "args": [
+          "self"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utility.test_evaluator_learning_smoke.test_learning",
+      "source_module": "Pre-Processing.utility.test_evaluator_learning_smoke",
+      "function_name": "test_learning",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utility/test_evaluator_learning_smoke.py",
+        "lineno": 21,
+        "args": [],
+        "docstring": "Test that evaluator learns from outcomes.",
+        "is_async": false,
+        "body_lines": 18
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utility.test_logos_agi_pin_drift.test_resolve_ref_head",
+      "source_module": "Pre-Processing.utility.test_logos_agi_pin_drift",
+      "function_name": "test_resolve_ref_head",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utility/test_logos_agi_pin_drift.py",
+        "lineno": 116,
+        "args": [
+          "self"
+        ],
+        "docstring": "Test resolving HEAD ref.",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utility.test_logos_agi_pin_drift.test_resolve_ref_sha",
+      "source_module": "Pre-Processing.utility.test_logos_agi_pin_drift",
+      "function_name": "test_resolve_ref_sha",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utility/test_logos_agi_pin_drift.py",
+        "lineno": 121,
+        "args": [
+          "self"
+        ],
+        "docstring": "Test resolving a SHA ref.",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utility.test_logos_agi_pin_drift.test_resolve_ref_invalid",
+      "source_module": "Pre-Processing.utility.test_logos_agi_pin_drift",
+      "function_name": "test_resolve_ref_invalid",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utility/test_logos_agi_pin_drift.py",
+        "lineno": 126,
+        "args": [
+          "self"
+        ],
+        "docstring": "Test resolving invalid ref.",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.causal_chain_node_predictor.run_pc_causal_discovery",
+      "source_module": "Pre-Processing.utils.causal_chain_node_predictor",
+      "function_name": "run_pc_causal_discovery",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/causal_chain_node_predictor.py",
+        "lineno": 18,
+        "args": [
+          "data",
+          "alpha"
+        ],
+        "docstring": "Performs causal discovery using the PC algorithm.\n\nArgs:\n    data (np.ndarray): Input data matrix (samples x variables).\n    alpha (float): Significance threshold for conditional independence tests.\n\nReturns:\n    cg (CausalGraph): Output causal graph.",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.causal_chain_node_predictor.simulate_example_data",
+      "source_module": "Pre-Processing.utils.causal_chain_node_predictor",
+      "function_name": "simulate_example_data",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/causal_chain_node_predictor.py",
+        "lineno": 35,
+        "args": [
+          "n_samples"
+        ],
+        "docstring": "Simulates toy causal data for testing.\n\nReturns:\n    np.ndarray: Synthetic dataset.",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.cycle_ledger._sha256_file",
+      "source_module": "Pre-Processing.utils.cycle_ledger",
+      "function_name": "_sha256_file",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/cycle_ledger.py",
+        "lineno": 21,
+        "args": [
+          "path"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.cycle_ledger._normalize_path",
+      "source_module": "Pre-Processing.utils.cycle_ledger",
+      "function_name": "_normalize_path",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/cycle_ledger.py",
+        "lineno": 31,
+        "args": [
+          "raw_path",
+          "repo_root"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.cycle_ledger._collect_bundle_hashes",
+      "source_module": "Pre-Processing.utils.cycle_ledger",
+      "function_name": "_collect_bundle_hashes",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/cycle_ledger.py",
+        "lineno": 38,
+        "args": [
+          "promotion_outcomes",
+          "repo_root"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.evidence.validate_evidence_ref",
+      "source_module": "Pre-Processing.utils.evidence",
+      "function_name": "validate_evidence_ref",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/evidence.py",
+        "lineno": 26,
+        "args": [
+          "ref"
+        ],
+        "docstring": "Validate a single evidence reference and return normalized copy.",
+        "is_async": false,
+        "body_lines": 10
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.evidence.normalize_evidence_refs",
+      "source_module": "Pre-Processing.utils.evidence",
+      "function_name": "normalize_evidence_refs",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/evidence.py",
+        "lineno": 100,
+        "args": [
+          "refs"
+        ],
+        "docstring": "Dedupe and deterministically order evidence references.",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.guardrails.require_safe_interfaces",
+      "source_module": "Pre-Processing.utils.guardrails",
+      "function_name": "require_safe_interfaces",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/guardrails.py",
+        "lineno": 40,
+        "args": [
+          "func"
+        ],
+        "docstring": "Decorator blocking risky calls while the mission profile demands safety.",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.guardrails.restrict_writes_to",
+      "source_module": "Pre-Processing.utils.guardrails",
+      "function_name": "restrict_writes_to",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/guardrails.py",
+        "lineno": 56,
+        "args": [
+          "root"
+        ],
+        "docstring": "Block write attempts that escape the provided root directory.",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.guardrails.decorator",
+      "source_module": "Pre-Processing.utils.guardrails",
+      "function_name": "decorator",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/guardrails.py",
+        "lineno": 61,
+        "args": [
+          "func"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.guardrails.get_mission_profile",
+      "source_module": "Pre-Processing.utils.guardrails",
+      "function_name": "get_mission_profile",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/guardrails.py",
+        "lineno": 27,
+        "args": [],
+        "docstring": "Load the persisted mission profile if the nexus is unavailable.",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.guardrails.wrapper",
+      "source_module": "Pre-Processing.utils.guardrails",
+      "function_name": "wrapper",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/guardrails.py",
+        "lineno": 63,
+        "args": [],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.guardrails._validate",
+      "source_module": "Pre-Processing.utils.guardrails",
+      "function_name": "_validate",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/guardrails.py",
+        "lineno": 64,
+        "args": [
+          "candidate"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.iel_registryv1.main",
+      "source_module": "Pre-Processing.utils.iel_registryv1",
+      "function_name": "main",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/iel_registryv1.py",
+        "lineno": 750,
+        "args": [],
+        "docstring": "Main entry point for IEL registry command-line interface",
+        "is_async": false,
+        "body_lines": 15
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.iel_registryv1.__init__",
+      "source_module": "Pre-Processing.utils.iel_registryv1",
+      "function_name": "__init__",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/iel_registryv1.py",
+        "lineno": 119,
+        "args": [
+          "self",
+          "config"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 11
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.iel_registryv1.get_statistics",
+      "source_module": "Pre-Processing.utils.iel_registryv1",
+      "function_name": "get_statistics",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/iel_registryv1.py",
+        "lineno": 391,
+        "args": [
+          "self"
+        ],
+        "docstring": "Get registry statistics",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.iel_registryv1.backup_registry",
+      "source_module": "Pre-Processing.utils.iel_registryv1",
+      "function_name": "backup_registry",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/iel_registryv1.py",
+        "lineno": 484,
+        "args": [
+          "self"
+        ],
+        "docstring": "Create backup of registry",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.iel_registryv1._create_registry_entry",
+      "source_module": "Pre-Processing.utils.iel_registryv1",
+      "function_name": "_create_registry_entry",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/iel_registryv1.py",
+        "lineno": 554,
+        "args": [
+          "self",
+          "candidate"
+        ],
+        "docstring": "Create registry entry from candidate",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.iel_registryv1._compute_hash",
+      "source_module": "Pre-Processing.utils.iel_registryv1",
+      "function_name": "_compute_hash",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/iel_registryv1.py",
+        "lineno": 577,
+        "args": [
+          "self",
+          "content"
+        ],
+        "docstring": "Compute hash of content",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.iel_registryv1._verify_content_hash",
+      "source_module": "Pre-Processing.utils.iel_registryv1",
+      "function_name": "_verify_content_hash",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/iel_registryv1.py",
+        "lineno": 717,
+        "args": [
+          "self",
+          "entry"
+        ],
+        "docstring": "Verify content hash",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.io_normalizer.normalize_payload",
+      "source_module": "Pre-Processing.utils.io_normalizer",
+      "function_name": "normalize_payload",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/io_normalizer.py",
+        "lineno": 49,
+        "args": [
+          "payload"
+        ],
+        "docstring": "Normalize a single payload into canonical schema.",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.io_normalizer.normalize",
+      "source_module": "Pre-Processing.utils.io_normalizer",
+      "function_name": "normalize",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/io_normalizer.py",
+        "lineno": 25,
+        "args": [
+          "self",
+          "payload"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.io_normalizer.batch_normalize",
+      "source_module": "Pre-Processing.utils.io_normalizer",
+      "function_name": "batch_normalize",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/io_normalizer.py",
+        "lineno": 41,
+        "args": [
+          "self",
+          "payloads"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.logos_monitor.main",
+      "source_module": "Pre-Processing.utils.logos_monitor",
+      "function_name": "main",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/logos_monitor.py",
+        "lineno": 149,
+        "args": [],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.policy.__init__",
+      "source_module": "Pre-Processing.utils.policy",
+      "function_name": "__init__",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/policy.py",
+        "lineno": 90,
+        "args": [
+          "self",
+          "policy_file_path"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 11
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.policy.check_operation_rate_limit",
+      "source_module": "Pre-Processing.utils.policy",
+      "function_name": "check_operation_rate_limit",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/policy.py",
+        "lineno": 225,
+        "args": [
+          "self",
+          "operation_type",
+          "component"
+        ],
+        "docstring": "Check if operation rate limit is exceeded\n\nArgs:\n    operation_type: Type of operation to check\n    component: Component performing operation\n\nReturns:\n    bool: True if within rate limit, False otherwise",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.policy._load_policy_config",
+      "source_module": "Pre-Processing.utils.policy",
+      "function_name": "_load_policy_config",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/policy.py",
+        "lineno": 458,
+        "args": [
+          "self"
+        ],
+        "docstring": "Load policy configuration from YAML file",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.policy._calculate_operation_rate",
+      "source_module": "Pre-Processing.utils.policy",
+      "function_name": "_calculate_operation_rate",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/policy.py",
+        "lineno": 548,
+        "args": [
+          "self",
+          "operation_type",
+          "component"
+        ],
+        "docstring": "Calculate current operation rate",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.policy._record_violation",
+      "source_module": "Pre-Processing.utils.policy",
+      "function_name": "_record_violation",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/policy.py",
+        "lineno": 569,
+        "args": [
+          "self",
+          "policy_section",
+          "policy_rule",
+          "violation_type",
+          "severity",
+          "description",
+          "component",
+          "metadata"
+        ],
+        "docstring": "Record a policy violation",
+        "is_async": false,
+        "body_lines": 9
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.progressive_router._update_metrics",
+      "source_module": "Pre-Processing.utils.progressive_router",
+      "function_name": "_update_metrics",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/progressive_router.py",
+        "lineno": 219,
+        "args": [
+          "self",
+          "status",
+          "processing_time_ms"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.router._log_interaction",
+      "source_module": "Pre-Processing.utils.router",
+      "function_name": "_log_interaction",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/router.py",
+        "lineno": 146,
+        "args": [
+          "self",
+          "sanitised",
+          "parsed",
+          "payload"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 2
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.self_diagnosis.perform_full_diagnosis",
+      "source_module": "Pre-Processing.utils.self_diagnosis",
+      "function_name": "perform_full_diagnosis",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/self_diagnosis.py",
+        "lineno": 87,
+        "args": [
+          "self"
+        ],
+        "docstring": "Perform comprehensive system diagnosis.",
+        "is_async": true,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.self_diagnosis._check_process_health",
+      "source_module": "Pre-Processing.utils.self_diagnosis",
+      "function_name": "_check_process_health",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/self_diagnosis.py",
+        "lineno": 272,
+        "args": [
+          "self"
+        ],
+        "docstring": "Check process health.",
+        "is_async": true,
+        "body_lines": 7
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.self_diagnosis._calculate_overall_health",
+      "source_module": "Pre-Processing.utils.self_diagnosis",
+      "function_name": "_calculate_overall_health",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/self_diagnosis.py",
+        "lineno": 349,
+        "args": [
+          "self",
+          "health_checks"
+        ],
+        "docstring": "Calculate overall system health.",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.smp_intake.load_smp",
+      "source_module": "Pre-Processing.utils.smp_intake",
+      "function_name": "load_smp",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/smp_intake.py",
+        "lineno": 35,
+        "args": [],
+        "docstring": "Validate + normalize an SMP dict.\nDoes not require full schema, only what SCP needs to begin.",
+        "is_async": false,
+        "body_lines": 16
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.stress_sop_runtime._spawn_user_requests",
+      "source_module": "Pre-Processing.utils.stress_sop_runtime",
+      "function_name": "_spawn_user_requests",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/stress_sop_runtime.py",
+        "lineno": 79,
+        "args": [
+          "registry",
+          "total",
+          "text",
+          "concurrency"
+        ],
+        "docstring": "",
+        "is_async": true,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.stress_sop_runtime._spawn_meta_cycles",
+      "source_module": "Pre-Processing.utils.stress_sop_runtime",
+      "function_name": "_spawn_meta_cycles",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/stress_sop_runtime.py",
+        "lineno": 115,
+        "args": [
+          "registry",
+          "total"
+        ],
+        "docstring": "",
+        "is_async": true,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.stress_sop_runtime._tail_jsonl",
+      "source_module": "Pre-Processing.utils.stress_sop_runtime",
+      "function_name": "_tail_jsonl",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/stress_sop_runtime.py",
+        "lineno": 146,
+        "args": [
+          "path",
+          "keep"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 6
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.stress_sop_runtime._summarize_log_file",
+      "source_module": "Pre-Processing.utils.stress_sop_runtime",
+      "function_name": "_summarize_log_file",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/stress_sop_runtime.py",
+        "lineno": 197,
+        "args": [
+          "path"
+        ],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 5
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.stress_sop_runtime.parse_args",
+      "source_module": "Pre-Processing.utils.stress_sop_runtime",
+      "function_name": "parse_args",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/stress_sop_runtime.py",
+        "lineno": 413,
+        "args": [],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 8
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.stress_sop_runtime.main",
+      "source_module": "Pre-Processing.utils.stress_sop_runtime",
+      "function_name": "main",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/stress_sop_runtime.py",
+        "lineno": 452,
+        "args": [],
+        "docstring": "",
+        "is_async": false,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.stress_sop_runtime._invoke",
+      "source_module": "Pre-Processing.utils.stress_sop_runtime",
+      "function_name": "_invoke",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/stress_sop_runtime.py",
+        "lineno": 87,
+        "args": [
+          "idx"
+        ],
+        "docstring": "",
+        "is_async": true,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.stress_sop_runtime._invoke",
+      "source_module": "Pre-Processing.utils.stress_sop_runtime",
+      "function_name": "_invoke",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/stress_sop_runtime.py",
+        "lineno": 121,
+        "args": [
+          "idx"
+        ],
+        "docstring": "",
+        "is_async": true,
+        "body_lines": 4
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.system_utils.calculate_average_processing_time",
+      "source_module": "Pre-Processing.utils.system_utils",
+      "function_name": "calculate_average_processing_time",
+      "logic_category": "mathematical_algorithm",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/system_utils.py",
+        "lineno": 140,
+        "args": [
+          "current_avg",
+          "total_requests",
+          "new_time"
+        ],
+        "docstring": "Update running average processing time in milliseconds.",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.uip_operations.main",
+      "source_module": "Pre-Processing.utils.uip_operations",
+      "function_name": "main",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/uip_operations.py",
+        "lineno": 332,
+        "args": [],
+        "docstring": "Main execution function",
+        "is_async": false,
+        "body_lines": 10
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.uip_operations._step_2_input_interpretation",
+      "source_module": "Pre-Processing.utils.uip_operations",
+      "function_name": "_step_2_input_interpretation",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/uip_operations.py",
+        "lineno": 227,
+        "args": [
+          "self",
+          "captured_input"
+        ],
+        "docstring": "Step 2: Input Interpretation",
+        "is_async": false,
+        "body_lines": 3
+      }
+    },
+    {
+      "fragment_id": "Pre-Processing.utils.uip_operations.health_check",
+      "source_module": "Pre-Processing.utils.uip_operations",
+      "function_name": "health_check",
+      "logic_category": "symbolic_manipulation",
+      "fragment_body": {
+        "file": "Pre-Processing/utils/uip_operations.py",
+        "lineno": 321,
+        "args": [
+          "self"
+        ],
+        "docstring": "Perform UIP health check",
+        "is_async": false,
+        "body_lines": 2
+      }
+    }
+  ]
+}

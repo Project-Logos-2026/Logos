@@ -1,0 +1,7347 @@
+[
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.Memory_Recall_Integration",
+    "file": "Pre-Processing/EXTRACT_LOGIC/Memory_Recall_Integration.py",
+    "kind": "function",
+    "name": "demonstrate_complete_memory_system",
+    "lineno": 1090,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Demonstrate the complete memory system"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.NLP_Wrapper_Sentence_Transformers",
+    "file": "Pre-Processing/EXTRACT_LOGIC/NLP_Wrapper_Sentence_Transformers.py",
+    "kind": "function",
+    "name": "_runtime_context_stub",
+    "lineno": 25,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, str]",
+    "is_private": true,
+    "docstring": "Replace after audit: should pull agent_id/session_id from the canonical runtime context."
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+    "kind": "function",
+    "name": "bayesian_self_model",
+    "lineno": 98,
+    "is_async": false,
+    "args": [
+      {
+        "name": "beliefs",
+        "annotation": "Dict[str, float]"
+      },
+      {
+        "name": "observations",
+        "annotation": "Dict[str, float]"
+      },
+      {
+        "name": "n_samples",
+        "annotation": "int"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Bayesian belief updating for agent self-modeling and consciousness.\n\nArgs:\n    beliefs: Prior beliefs about self and environment\n    observations: New observations to update beliefs\n    n_samples: MCMC samples for uncertainty quantification\n\nReturns:\n    Updated beliefs with uncertainty bounds"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+    "kind": "function",
+    "name": "hypothesis_self_test",
+    "lineno": 163,
+    "is_async": false,
+    "args": [
+      {
+        "name": "group1_data",
+        "annotation": "np.ndarray"
+      },
+      {
+        "name": "group2_data",
+        "annotation": "np.ndarray"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Bayesian hypothesis testing for agent self-assessment."
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+    "kind": "function",
+    "name": "causal_self_discovery",
+    "lineno": 192,
+    "is_async": false,
+    "args": [
+      {
+        "name": "data",
+        "annotation": "np.ndarray"
+      },
+      {
+        "name": "variable_names",
+        "annotation": "List[str]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Causal discovery for understanding agent-environment causal relationships."
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+    "kind": "function",
+    "name": "causal_intervention_analysis",
+    "lineno": 213,
+    "is_async": false,
+    "args": [
+      {
+        "name": "data",
+        "annotation": "np.ndarray"
+      },
+      {
+        "name": "intervention_var",
+        "annotation": "int"
+      },
+      {
+        "name": "intervention_val",
+        "annotation": "float"
+      },
+      {
+        "name": "target_var",
+        "annotation": "int"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Analyze how interventions affect agent consciousness states."
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+    "kind": "function",
+    "name": "modal_self_reasoning",
+    "lineno": 236,
+    "is_async": false,
+    "args": [
+      {
+        "name": "formula",
+        "annotation": "str"
+      },
+      {
+        "name": "modality",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Modal logic for agent self-reflection and possibility exploration."
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+    "kind": "function",
+    "name": "consistency_self_check",
+    "lineno": 271,
+    "is_async": false,
+    "args": [
+      {
+        "name": "formulas",
+        "annotation": "List[str]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Check logical consistency of agent's self-beliefs."
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+    "kind": "function",
+    "name": "semantic_experience_clustering",
+    "lineno": 301,
+    "is_async": false,
+    "args": [
+      {
+        "name": "texts",
+        "annotation": "List[str]"
+      },
+      {
+        "name": "method",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Cluster experiences/sensory inputs for consciousness organization."
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+    "kind": "function",
+    "name": "semantic_similarity_self_analysis",
+    "lineno": 354,
+    "is_async": false,
+    "args": [
+      {
+        "name": "texts",
+        "annotation": "List[str]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Analyze semantic similarity for self-understanding."
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+    "kind": "function",
+    "name": "symbolic_self_representation",
+    "lineno": 386,
+    "is_async": false,
+    "args": [
+      {
+        "name": "equations",
+        "annotation": "List[str]"
+      },
+      {
+        "name": "variables",
+        "annotation": "List[str]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Symbolic representation of agent identity and capabilities."
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+    "kind": "function",
+    "name": "lambda_self_evaluation",
+    "lineno": 412,
+    "is_async": false,
+    "args": [
+      {
+        "name": "expression",
+        "annotation": "str"
+      },
+      {
+        "name": "bindings",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Lambda calculus evaluation for self-referential computation."
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.agentic_consciousness_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/agentic_consciousness_core.py",
+    "kind": "function",
+    "name": "integrated_consciousness_state",
+    "lineno": 433,
+    "is_async": false,
+    "args": [
+      {
+        "name": "beliefs",
+        "annotation": "Dict[str, float]"
+      },
+      {
+        "name": "experiences",
+        "annotation": "List[str]"
+      },
+      {
+        "name": "causal_data",
+        "annotation": "np.ndarray"
+      },
+      {
+        "name": "modal_formula",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Integrate all consciousness aspects into unified self-awareness state."
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+    "file": "Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+    "kind": "function",
+    "name": "resolve_priors_path",
+    "lineno": 31,
+    "is_async": false,
+    "args": [
+      {
+        "name": "priors_path",
+        "annotation": "Optional[Union[str, Path]]"
+      }
+    ],
+    "return_annotation": "Path",
+    "is_private": false,
+    "docstring": "Resolve the priors file location with sensible fallbacks."
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+    "file": "Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+    "kind": "function",
+    "name": "load_priors",
+    "lineno": 53,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Optional[Union[str, Path]]"
+      }
+    ],
+    "return_annotation": "Dict",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+    "file": "Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+    "kind": "function",
+    "name": "save_priors",
+    "lineno": 59,
+    "is_async": false,
+    "args": [
+      {
+        "name": "data",
+        "annotation": "Dict"
+      },
+      {
+        "name": "path",
+        "annotation": "Optional[Union[str, Path]]"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+    "file": "Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+    "kind": "function",
+    "name": "score_data_point",
+    "lineno": 66,
+    "is_async": false,
+    "args": [
+      {
+        "name": "data_point",
+        "annotation": "Dict"
+      }
+    ],
+    "return_annotation": "int",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+    "file": "Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+    "kind": "function",
+    "name": "assign_confidence",
+    "lineno": 79,
+    "is_async": false,
+    "args": [
+      {
+        "name": "score",
+        "annotation": "int"
+      }
+    ],
+    "return_annotation": "float",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+    "file": "Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+    "kind": "function",
+    "name": "filter_and_score",
+    "lineno": 86,
+    "is_async": false,
+    "args": [
+      {
+        "name": "raw_data",
+        "annotation": "List[Dict]"
+      }
+    ],
+    "return_annotation": "List[Dict]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+    "file": "Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+    "kind": "function",
+    "name": "predictive_refinement",
+    "lineno": 98,
+    "is_async": false,
+    "args": [
+      {
+        "name": "query",
+        "annotation": "str"
+      },
+      {
+        "name": "tier",
+        "annotation": "int"
+      }
+    ],
+    "return_annotation": "List[Dict]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.bayes_update_real_time",
+    "file": "Pre-Processing/EXTRACT_LOGIC/bayes_update_real_time.py",
+    "kind": "function",
+    "name": "run_BERT_pipeline",
+    "lineno": 103,
+    "is_async": false,
+    "args": [
+      {
+        "name": "priors_path",
+        "annotation": "Optional[Union[str, Path]]"
+      },
+      {
+        "name": "query",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "Tuple[bool, str]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.bayesian_data_parser",
+    "file": "Pre-Processing/EXTRACT_LOGIC/bayesian_data_parser.py",
+    "kind": "function",
+    "name": "_disabled",
+    "lineno": 41,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.coherence",
+    "file": "Pre-Processing/EXTRACT_LOGIC/coherence.py",
+    "kind": "function",
+    "name": "check_logical_consistency",
+    "lineno": 168,
+    "is_async": true,
+    "args": [
+      {
+        "name": "statements",
+        "annotation": "Optional[List[str]]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Main API for logical consistency checking."
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.coherence",
+    "file": "Pre-Processing/EXTRACT_LOGIC/coherence.py",
+    "kind": "function",
+    "name": "get_consistency_check",
+    "lineno": 179,
+    "is_async": false,
+    "args": [
+      {
+        "name": "statements",
+        "annotation": "Optional[List[str]]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Synchronous wrapper for consistency checking."
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.comprehensive_fractal_analysis",
+    "file": "Pre-Processing/EXTRACT_LOGIC/comprehensive_fractal_analysis.py",
+    "kind": "function",
+    "name": "load_canonical_c_values",
+    "lineno": 26,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "List[complex]",
+    "is_private": false,
+    "docstring": "Load the 17 canonical c-values from the LOGOS analysis"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.comprehensive_fractal_analysis",
+    "file": "Pre-Processing/EXTRACT_LOGIC/comprehensive_fractal_analysis.py",
+    "kind": "function",
+    "name": "generate_julia_set",
+    "lineno": 48,
+    "is_async": false,
+    "args": [
+      {
+        "name": "c_value",
+        "annotation": "complex"
+      },
+      {
+        "name": "width",
+        "annotation": "int"
+      },
+      {
+        "name": "height",
+        "annotation": "int"
+      },
+      {
+        "name": "max_iter",
+        "annotation": "int"
+      }
+    ],
+    "return_annotation": "np.ndarray",
+    "is_private": false,
+    "docstring": "Generate a Julia set for analysis"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.comprehensive_fractal_analysis",
+    "file": "Pre-Processing/EXTRACT_LOGIC/comprehensive_fractal_analysis.py",
+    "kind": "function",
+    "name": "analyze_all_fractals",
+    "lineno": 66,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Analyze all 17 canonical fractals with advanced mathematics"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.comprehensive_fractal_analysis",
+    "file": "Pre-Processing/EXTRACT_LOGIC/comprehensive_fractal_analysis.py",
+    "kind": "function",
+    "name": "generate_comprehensive_report",
+    "lineno": 110,
+    "is_async": false,
+    "args": [
+      {
+        "name": "analysis_results",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": "Generate a comprehensive analysis report"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.comprehensive_fractal_analysis",
+    "file": "Pre-Processing/EXTRACT_LOGIC/comprehensive_fractal_analysis.py",
+    "kind": "function",
+    "name": "create_visual_summary",
+    "lineno": 261,
+    "is_async": false,
+    "args": [
+      {
+        "name": "analysis_results",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Create visual summary plots of the analysis"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.comprehensive_fractal_analysis",
+    "file": "Pre-Processing/EXTRACT_LOGIC/comprehensive_fractal_analysis.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 315,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Main analysis workflow"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.gen_worldview_ontoprops",
+    "file": "Pre-Processing/EXTRACT_LOGIC/gen_worldview_ontoprops.py",
+    "kind": "function",
+    "name": "to_theo",
+    "lineno": 53,
+    "is_async": false,
+    "args": [
+      {
+        "name": "order",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.gen_worldview_ontoprops",
+    "file": "Pre-Processing/EXTRACT_LOGIC/gen_worldview_ontoprops.py",
+    "kind": "function",
+    "name": "fix_pm",
+    "lineno": 57,
+    "is_async": false,
+    "args": [
+      {
+        "name": "s",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.gen_worldview_ontoprops",
+    "file": "Pre-Processing/EXTRACT_LOGIC/gen_worldview_ontoprops.py",
+    "kind": "function",
+    "name": "parse",
+    "lineno": 61,
+    "is_async": false,
+    "args": [
+      {
+        "name": "s",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.gen_worldview_ontoprops",
+    "file": "Pre-Processing/EXTRACT_LOGIC/gen_worldview_ontoprops.py",
+    "kind": "function",
+    "name": "fmt",
+    "lineno": 72,
+    "is_async": false,
+    "args": [
+      {
+        "name": "rev",
+        "annotation": null
+      },
+      {
+        "name": "imv",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.gen_worldview_ontoprops",
+    "file": "Pre-Processing/EXTRACT_LOGIC/gen_worldview_ontoprops.py",
+    "kind": "function",
+    "name": "w",
+    "lineno": 136,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": null
+      },
+      {
+        "name": "s",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network",
+    "file": "Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py",
+    "kind": "function",
+    "name": "load_static_priors",
+    "lineno": 25,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "dict",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network",
+    "file": "Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py",
+    "kind": "function",
+    "name": "query_intent_analyzer",
+    "lineno": 31,
+    "is_async": false,
+    "args": [
+      {
+        "name": "q",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "dict",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network",
+    "file": "Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py",
+    "kind": "function",
+    "name": "preprocess_query",
+    "lineno": 43,
+    "is_async": false,
+    "args": [
+      {
+        "name": "q",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network",
+    "file": "Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py",
+    "kind": "function",
+    "name": "run_HBN_analysis",
+    "lineno": 47,
+    "is_async": false,
+    "args": [
+      {
+        "name": "query",
+        "annotation": "str"
+      },
+      {
+        "name": "priors",
+        "annotation": "dict"
+      }
+    ],
+    "return_annotation": "dict",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.hierarchical_bayes_network",
+    "file": "Pre-Processing/EXTRACT_LOGIC/hierarchical_bayes_network.py",
+    "kind": "function",
+    "name": "execute_HBN",
+    "lineno": 56,
+    "is_async": false,
+    "args": [
+      {
+        "name": "query",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "dict",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.iel_overlay",
+    "file": "Pre-Processing/EXTRACT_LOGIC/iel_overlay.py",
+    "kind": "function",
+    "name": "register_uip_handler",
+    "lineno": 36,
+    "is_async": false,
+    "args": [
+      {
+        "name": "step",
+        "annotation": null
+      },
+      {
+        "name": "dependencies",
+        "annotation": null
+      },
+      {
+        "name": "timeout",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Decorator to register UIP handlers"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.iel_overlay",
+    "file": "Pre-Processing/EXTRACT_LOGIC/iel_overlay.py",
+    "kind": "function",
+    "name": "handle_iel_overlay",
+    "lineno": 1126,
+    "is_async": true,
+    "args": [
+      {
+        "name": "context",
+        "annotation": "UIPContext"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "UIP Step 3: IEL Overlay Handler\n\nApplies Integrated Epistemic Logic frameworks to enhance reasoning\ncapabilities for the validated user request."
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.logos_mathematical_core",
+    "file": "Pre-Processing/EXTRACT_LOGIC/logos_mathematical_core.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 568,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Main demonstration function"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.privative_policies",
+    "file": "Pre-Processing/EXTRACT_LOGIC/privative_policies.py",
+    "kind": "function",
+    "name": "Good",
+    "lineno": 17,
+    "is_async": false,
+    "args": [
+      {
+        "name": "action",
+        "annotation": "Any"
+      },
+      {
+        "name": "ctx",
+        "annotation": "dict"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": false,
+    "docstring": "Privative predicate: Good(action) - determines if action is permissible"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.privative_policies",
+    "file": "Pre-Processing/EXTRACT_LOGIC/privative_policies.py",
+    "kind": "function",
+    "name": "TrueP",
+    "lineno": 40,
+    "is_async": false,
+    "args": [
+      {
+        "name": "prop",
+        "annotation": "Any"
+      },
+      {
+        "name": "ctx",
+        "annotation": "dict"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": false,
+    "docstring": "Privative predicate: TrueP(prop) - determines if proposition is true"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.privative_policies",
+    "file": "Pre-Processing/EXTRACT_LOGIC/privative_policies.py",
+    "kind": "function",
+    "name": "Coherent",
+    "lineno": 52,
+    "is_async": false,
+    "args": [
+      {
+        "name": "state",
+        "annotation": "Any"
+      },
+      {
+        "name": "ctx",
+        "annotation": "dict"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": false,
+    "docstring": "Privative predicate: Coherent(state) - determines if state is coherent"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.privative_policies",
+    "file": "Pre-Processing/EXTRACT_LOGIC/privative_policies.py",
+    "kind": "function",
+    "name": "obligation_for",
+    "lineno": 63,
+    "is_async": false,
+    "args": [
+      {
+        "name": "action",
+        "annotation": "str"
+      },
+      {
+        "name": "state",
+        "annotation": "str"
+      },
+      {
+        "name": "props",
+        "annotation": "str"
+      },
+      {
+        "name": "ctx",
+        "annotation": "dict"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": "PXL-side encoding; enrich as you formalize"
+  },
+  {
+    "module": "Pre-Processing.EXTRACT_LOGIC.privative_policies",
+    "file": "Pre-Processing/EXTRACT_LOGIC/privative_policies.py",
+    "kind": "function",
+    "name": "preserves_invariants",
+    "lineno": 68,
+    "is_async": false,
+    "args": [
+      {
+        "name": "step",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": "Generate preservation obligation for workflow steps"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.advanced_fractal_analyzer",
+    "file": "Pre-Processing/KEEP_VERIFY/advanced_fractal_analyzer.py",
+    "kind": "function",
+    "name": "analyze_fractal_iterations",
+    "lineno": 618,
+    "is_async": false,
+    "args": [
+      {
+        "name": "iterations",
+        "annotation": "np.ndarray"
+      }
+    ],
+    "return_annotation": "FractalAnalysisResult",
+    "is_private": false,
+    "docstring": "Convenience function to analyze fractal iteration data.\n\nArgs:\n    iterations: 2D numpy array of iteration counts\n\nReturns:\n    Comprehensive analysis results"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+    "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+    "kind": "function",
+    "name": "load_or_create_identity",
+    "lineno": 447,
+    "is_async": false,
+    "args": [
+      {
+        "name": "theory_hash",
+        "annotation": "str"
+      },
+      {
+        "name": "base_dir",
+        "annotation": "Optional[Path]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Load or create agent identity."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+    "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+    "kind": "function",
+    "name": "validate_identity",
+    "lineno": 453,
+    "is_async": false,
+    "args": [
+      {
+        "name": "identity",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "mission_profile_path",
+        "annotation": "Optional[Path]"
+      },
+      {
+        "name": "catalog_path",
+        "annotation": "Optional[Path]"
+      },
+      {
+        "name": "base_dir",
+        "annotation": "Optional[Path]"
+      }
+    ],
+    "return_annotation": "Tuple[bool, str]",
+    "is_private": false,
+    "docstring": "Validate agent identity."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+    "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+    "kind": "function",
+    "name": "update_identity",
+    "lineno": 460,
+    "is_async": false,
+    "args": [
+      {
+        "name": "identity",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "mission_profile_path",
+        "annotation": "Optional[Path]"
+      },
+      {
+        "name": "catalog_path",
+        "annotation": "Optional[Path]"
+      },
+      {
+        "name": "last_entry_id",
+        "annotation": "Optional[str]"
+      },
+      {
+        "name": "planner_digest_path",
+        "annotation": "Optional[Path]"
+      },
+      {
+        "name": "last_run_id",
+        "annotation": "Optional[str]"
+      },
+      {
+        "name": "world_model_snapshot_path",
+        "annotation": "Optional[str]"
+      },
+      {
+        "name": "world_model_snapshot_hash",
+        "annotation": "Optional[str]"
+      },
+      {
+        "name": "world_model_version",
+        "annotation": "Optional[int]"
+      },
+      {
+        "name": "commitment_ledger_path",
+        "annotation": "Optional[str]"
+      },
+      {
+        "name": "commitment_ledger_hash",
+        "annotation": "Optional[str]"
+      },
+      {
+        "name": "commitment_ledger_version",
+        "annotation": "Optional[int]"
+      },
+      {
+        "name": "base_dir",
+        "annotation": "Optional[Path]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Update agent identity."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+    "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+    "kind": "function",
+    "name": "identity_hash",
+    "lineno": 490,
+    "is_async": false,
+    "args": [
+      {
+        "name": "identity",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "base_dir",
+        "annotation": "Optional[Path]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": "Compute identity hash."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.agent_identity",
+    "file": "Pre-Processing/KEEP_VERIFY/agent_identity.py",
+    "kind": "function",
+    "name": "check_identity",
+    "lineno": 496,
+    "is_async": false,
+    "args": [
+      {
+        "name": "identity_path",
+        "annotation": "Optional[Path]"
+      },
+      {
+        "name": "catalog_path",
+        "annotation": "Optional[Path]"
+      },
+      {
+        "name": "mission_path",
+        "annotation": "Optional[Path]"
+      },
+      {
+        "name": "base_dir",
+        "annotation": "Optional[Path]"
+      }
+    ],
+    "return_annotation": "Tuple[bool, str]",
+    "is_private": false,
+    "docstring": "Check identity validation for CLI use.\nReturns (is_valid, status_message)"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.autonomous_learning",
+    "file": "Pre-Processing/KEEP_VERIFY/autonomous_learning.py",
+    "kind": "function",
+    "name": "get_global_learning_manager",
+    "lineno": 596,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "LearningCycleManager",
+    "is_private": false,
+    "docstring": "Get or create global learning manager instance"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.autonomous_learning",
+    "file": "Pre-Processing/KEEP_VERIFY/autonomous_learning.py",
+    "kind": "function",
+    "name": "shutdown_learning_manager",
+    "lineno": 604,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Shutdown global learning manager"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_interface",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_interface.py",
+    "kind": "function",
+    "name": "TrueP",
+    "lineno": 139,
+    "is_async": false,
+    "args": [
+      {
+        "name": "probability",
+        "annotation": null
+      },
+      {
+        "name": "threshold",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Truth predicate for probabilistic values\n\nArgs:\n    probability: Float probability value [0,1]\n    threshold: Minimum threshold for truth (default 0.5)\n\nReturns:\n    bool: True if probability exceeds threshold"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_interface",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_interface.py",
+    "kind": "function",
+    "name": "FalseP",
+    "lineno": 153,
+    "is_async": false,
+    "args": [
+      {
+        "name": "probability",
+        "annotation": null
+      },
+      {
+        "name": "threshold",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "False predicate for probabilistic values\n\nArgs:\n    probability: Float probability value [0,1]\n    threshold: Maximum threshold for false (default 0.5)\n\nReturns:\n    bool: True if probability is below threshold"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_interface",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_interface.py",
+    "kind": "function",
+    "name": "UncertainP",
+    "lineno": 167,
+    "is_async": false,
+    "args": [
+      {
+        "name": "probability",
+        "annotation": null
+      },
+      {
+        "name": "lower_threshold",
+        "annotation": null
+      },
+      {
+        "name": "upper_threshold",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Uncertainty predicate for probabilistic values\n\nArgs:\n    probability: Float probability value [0,1]\n    lower_threshold: Lower bound for uncertainty region\n    upper_threshold: Upper bound for uncertainty region\n\nReturns:\n    bool: True if probability is in uncertainty region"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_nexus",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+    "kind": "function",
+    "name": "_payload_is_smp",
+    "lineno": 28,
+    "is_async": false,
+    "args": [
+      {
+        "name": "payload",
+        "annotation": "Dict[str, object]"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_nexus",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+    "kind": "function",
+    "name": "_pxl_key_match",
+    "lineno": 34,
+    "is_async": false,
+    "args": [
+      {
+        "name": "text",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_nexus",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+    "kind": "function",
+    "name": "_contains_pxl_fragments",
+    "lineno": 39,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "object"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_nexus",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+    "kind": "function",
+    "name": "_extract_proof_refs",
+    "lineno": 52,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, object]"
+      }
+    ],
+    "return_annotation": "Dict[str, Optional[str]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_nexus",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+    "kind": "function",
+    "name": "_build_span_mapping",
+    "lineno": 72,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, object]"
+      }
+    ],
+    "return_annotation": "Dict[str, object]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_nexus",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+    "kind": "function",
+    "name": "_derive_polarity",
+    "lineno": 81,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, object]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_nexus",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+    "kind": "function",
+    "name": "_tag_append_artifact",
+    "lineno": 90,
+    "is_async": false,
+    "args": [
+      {
+        "name": "aa_payload",
+        "annotation": "Dict[str, object]"
+      }
+    ],
+    "return_annotation": "Dict[str, object]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_nexus",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_nexus.py",
+    "kind": "function",
+    "name": "_apply_provisional_proof_tagging",
+    "lineno": 116,
+    "is_async": false,
+    "args": [
+      {
+        "name": "payload",
+        "annotation": "object"
+      }
+    ],
+    "return_annotation": "object",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+    "kind": "function",
+    "name": "resolve_priors_path",
+    "lineno": 46,
+    "is_async": false,
+    "args": [
+      {
+        "name": "priors_path",
+        "annotation": "Optional[Union[str, Path]]"
+      }
+    ],
+    "return_annotation": "Path",
+    "is_private": false,
+    "docstring": "Resolve the priors file location with sensible fallbacks."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+    "kind": "function",
+    "name": "load_priors",
+    "lineno": 68,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Optional[Union[str, Path]]"
+      }
+    ],
+    "return_annotation": "Dict",
+    "is_private": false,
+    "docstring": "Load priors from JSON file"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+    "kind": "function",
+    "name": "load_static_priors",
+    "lineno": 75,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "dict",
+    "is_private": false,
+    "docstring": "Load static priors (alias for load_priors for backward compatibility)"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+    "kind": "function",
+    "name": "save_priors",
+    "lineno": 80,
+    "is_async": false,
+    "args": [
+      {
+        "name": "data",
+        "annotation": "Dict"
+      },
+      {
+        "name": "path",
+        "annotation": "Optional[Union[str, Path]]"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": "Save priors to JSON file"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+    "kind": "function",
+    "name": "score_data_point",
+    "lineno": 92,
+    "is_async": false,
+    "args": [
+      {
+        "name": "data_point",
+        "annotation": "Dict"
+      }
+    ],
+    "return_annotation": "int",
+    "is_private": false,
+    "docstring": "Score a data point based on EGTC criteria"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+    "kind": "function",
+    "name": "assign_confidence",
+    "lineno": 106,
+    "is_async": false,
+    "args": [
+      {
+        "name": "score",
+        "annotation": "int"
+      }
+    ],
+    "return_annotation": "float",
+    "is_private": false,
+    "docstring": "Assign confidence based on EGTC score"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+    "kind": "function",
+    "name": "filter_and_score",
+    "lineno": 114,
+    "is_async": false,
+    "args": [
+      {
+        "name": "raw_data",
+        "annotation": "List[Dict]"
+      }
+    ],
+    "return_annotation": "List[Dict]",
+    "is_private": false,
+    "docstring": "Filter and score raw data points"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+    "kind": "function",
+    "name": "predictive_refinement",
+    "lineno": 127,
+    "is_async": false,
+    "args": [
+      {
+        "name": "query",
+        "annotation": "str"
+      },
+      {
+        "name": "tier",
+        "annotation": "int"
+      }
+    ],
+    "return_annotation": "List[Dict]",
+    "is_private": false,
+    "docstring": "Placeholder for downstream integration hook"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+    "kind": "function",
+    "name": "run_BERT_pipeline",
+    "lineno": 132,
+    "is_async": false,
+    "args": [
+      {
+        "name": "priors_path",
+        "annotation": "Optional[Union[str, Path]]"
+      },
+      {
+        "name": "query",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "Tuple[bool, str]",
+    "is_private": false,
+    "docstring": "Run BERT-based real-time Bayesian update pipeline"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+    "kind": "function",
+    "name": "query_intent_analyzer",
+    "lineno": 178,
+    "is_async": false,
+    "args": [
+      {
+        "name": "q",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "dict",
+    "is_private": false,
+    "docstring": "Analyze query intent and flag inappropriate content"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+    "kind": "function",
+    "name": "preprocess_query",
+    "lineno": 191,
+    "is_async": false,
+    "args": [
+      {
+        "name": "q",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": "Preprocess query text for analysis"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+    "kind": "function",
+    "name": "run_HBN_analysis",
+    "lineno": 196,
+    "is_async": false,
+    "args": [
+      {
+        "name": "query",
+        "annotation": "str"
+      },
+      {
+        "name": "priors",
+        "annotation": "dict"
+      }
+    ],
+    "return_annotation": "dict",
+    "is_private": false,
+    "docstring": "Run hierarchical Bayesian network analysis"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.bayesian_updates",
+    "file": "Pre-Processing/KEEP_VERIFY/bayesian_updates.py",
+    "kind": "function",
+    "name": "execute_HBN",
+    "lineno": 206,
+    "is_async": false,
+    "args": [
+      {
+        "name": "query",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "dict",
+    "is_private": false,
+    "docstring": "Execute complete HBN pipeline with intent analysis"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.export_tool_registry",
+    "file": "Pre-Processing/KEEP_VERIFY/export_tool_registry.py",
+    "kind": "function",
+    "name": "_ensure_scripts_importable",
+    "lineno": 48,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "None",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.export_tool_registry",
+    "file": "Pre-Processing/KEEP_VERIFY/export_tool_registry.py",
+    "kind": "function",
+    "name": "_load_tools",
+    "lineno": 55,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.export_tool_registry",
+    "file": "Pre-Processing/KEEP_VERIFY/export_tool_registry.py",
+    "kind": "function",
+    "name": "_tool_metadata",
+    "lineno": 66,
+    "is_async": false,
+    "args": [
+      {
+        "name": "tool_id",
+        "annotation": "str"
+      },
+      {
+        "name": "tool",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.export_tool_registry",
+    "file": "Pre-Processing/KEEP_VERIFY/export_tool_registry.py",
+    "kind": "function",
+    "name": "_write_json",
+    "lineno": 96,
+    "is_async": false,
+    "args": [
+      {
+        "name": "entries",
+        "annotation": "List[Dict[str, Any]]"
+      },
+      {
+        "name": "target",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.export_tool_registry",
+    "file": "Pre-Processing/KEEP_VERIFY/export_tool_registry.py",
+    "kind": "function",
+    "name": "_write_markdown",
+    "lineno": 100,
+    "is_async": false,
+    "args": [
+      {
+        "name": "entries",
+        "annotation": "List[Dict[str, Any]]"
+      },
+      {
+        "name": "target",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.export_tool_registry",
+    "file": "Pre-Processing/KEEP_VERIFY/export_tool_registry.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 137,
+    "is_async": false,
+    "args": [
+      {
+        "name": "argv",
+        "annotation": "Optional[List[str]]"
+      }
+    ],
+    "return_annotation": "int",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.lambda_parser",
+    "file": "Pre-Processing/KEEP_VERIFY/lambda_parser.py",
+    "kind": "function",
+    "name": "parse_expr",
+    "lineno": 454,
+    "is_async": false,
+    "args": [
+      {
+        "name": "input_str",
+        "annotation": "str"
+      },
+      {
+        "name": "env",
+        "annotation": "Optional[Dict[str, Any]]"
+      }
+    ],
+    "return_annotation": "LogosExpr",
+    "is_private": false,
+    "docstring": "Parse Lambda Logos expression from string.\n\nArgs:\n    input_str: Input string\n    env: Optional environment with predefined constants and values\n\nReturns:\n    Parsed expression\n\nRaises:\n    ValueError: If parsing fails"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis",
+    "file": "Pre-Processing/KEEP_VERIFY/pxl_fractal_orbital_analysis.py",
+    "kind": "function",
+    "name": "analyze_logos_agent_ontology",
+    "lineno": 589,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Analyze the LOGOS agent's ontological profile using PXL logic stack."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis",
+    "file": "Pre-Processing/KEEP_VERIFY/pxl_fractal_orbital_analysis.py",
+    "kind": "function",
+    "name": "create_orbital_visualization",
+    "lineno": 634,
+    "is_async": false,
+    "args": [
+      {
+        "name": "analysis",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Create visualization of the orbital analysis."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.pxl_fractal_orbital_analysis",
+    "file": "Pre-Processing/KEEP_VERIFY/pxl_fractal_orbital_analysis.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 719,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Main analysis execution."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis",
+    "file": "Pre-Processing/KEEP_VERIFY/pxl_modal_fractal_boundary_analysis.py",
+    "kind": "function",
+    "name": "analyze_privative_modal_boundaries",
+    "lineno": 438,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Analyze ontological privation as modal fractal boundaries."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis",
+    "file": "Pre-Processing/KEEP_VERIFY/pxl_modal_fractal_boundary_analysis.py",
+    "kind": "function",
+    "name": "interpret_privative_boundaries",
+    "lineno": 481,
+    "is_async": false,
+    "args": [
+      {
+        "name": "results",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Interpret the privative boundaries in ontological terms."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis",
+    "file": "Pre-Processing/KEEP_VERIFY/pxl_modal_fractal_boundary_analysis.py",
+    "kind": "function",
+    "name": "assess_ontological_coherence",
+    "lineno": 534,
+    "is_async": false,
+    "args": [
+      {
+        "name": "results",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Assess overall ontological coherence based on fractal boundary analysis."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.pxl_modal_fractal_boundary_analysis",
+    "file": "Pre-Processing/KEEP_VERIFY/pxl_modal_fractal_boundary_analysis.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 581,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Main analysis execution."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+    "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+    "kind": "function",
+    "name": "validate_trinity_vector",
+    "lineno": 747,
+    "is_async": false,
+    "args": [
+      {
+        "name": "vector",
+        "annotation": "Tuple[float, float, float]"
+      }
+    ],
+    "return_annotation": "ValidationResult",
+    "is_private": false,
+    "docstring": "Validate Trinity vector tuple"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+    "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+    "kind": "function",
+    "name": "create_default_analysis_config",
+    "lineno": 773,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "PXLAnalysisConfig",
+    "is_private": false,
+    "docstring": "Create default analysis configuration"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+    "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+    "kind": "function",
+    "name": "merge_validation_results",
+    "lineno": 778,
+    "is_async": false,
+    "args": [
+      {
+        "name": "results",
+        "annotation": "List[ValidationResult]"
+      }
+    ],
+    "return_annotation": "ValidationResult",
+    "is_private": false,
+    "docstring": "Merge multiple validation results"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+    "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+    "kind": "function",
+    "name": "relation_to_json",
+    "lineno": 790,
+    "is_async": false,
+    "args": [
+      {
+        "name": "relation",
+        "annotation": "PXLRelation"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": "Convert PXL relation to JSON"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.pxl_schema",
+    "file": "Pre-Processing/KEEP_VERIFY/pxl_schema.py",
+    "kind": "function",
+    "name": "relation_from_json",
+    "lineno": 796,
+    "is_async": false,
+    "args": [
+      {
+        "name": "json_str",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "PXLRelation",
+    "is_private": false,
+    "docstring": "Create PXL relation from JSON"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.semantic_transformers",
+    "file": "Pre-Processing/KEEP_VERIFY/semantic_transformers.py",
+    "kind": "function",
+    "name": "encode_semantics",
+    "lineno": 609,
+    "is_async": false,
+    "args": [
+      {
+        "name": "trinity_vector",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "iel_bundle",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Any",
+    "is_private": false,
+    "docstring": "Encode semantics from Trinity vector and IEL bundle into embedding representation.\n\nArgs:\n    trinity_vector: Trinity reasoning output with existence/goodness/truth values\n    iel_bundle: IEL unified bundle with reasoning chains\n\nReturns:\n    Embedding-like object with shape attribute for semantic representation"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.semantic_transformers",
+    "file": "Pre-Processing/KEEP_VERIFY/semantic_transformers.py",
+    "kind": "function",
+    "name": "detect_concept_drift",
+    "lineno": 709,
+    "is_async": false,
+    "args": [
+      {
+        "name": "embeddings",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Detect concept drift in semantic embeddings.\n\nArgs:\n    embeddings: Embedding representation from encode_semantics\n\nReturns:\n    Dictionary with drift_detected boolean and drift metrics"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.semantic_transformers",
+    "file": "Pre-Processing/KEEP_VERIFY/semantic_transformers.py",
+    "kind": "function",
+    "name": "example_semantic_transformation",
+    "lineno": 814,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Example of unified semantic transformation with trinity integration"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_introspection",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+    "kind": "function",
+    "name": "_load_builtin_tools",
+    "lineno": 57,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": "Import TOOLS without executing any actions."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_introspection",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+    "kind": "function",
+    "name": "_load_approved_manifests",
+    "lineno": 64,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "List[Tuple[str, Dict[str, Any]]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_introspection",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+    "kind": "function",
+    "name": "_load_run_ledgers",
+    "lineno": 82,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "List[Dict[str, Any]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_introspection",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+    "kind": "function",
+    "name": "_compute_usage_stats",
+    "lineno": 95,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ledgers",
+        "annotation": "Iterable[Dict[str, Any]]"
+      }
+    ],
+    "return_annotation": "Dict[str, Dict[str, Any]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_introspection",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+    "kind": "function",
+    "name": "_builtin_defaults",
+    "lineno": 127,
+    "is_async": false,
+    "args": [
+      {
+        "name": "tool_name",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "Tuple[List[str], str, str, List[str], str, List[str]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_introspection",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+    "kind": "function",
+    "name": "build_capability_records",
+    "lineno": 142,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "List[ToolCapability]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_introspection",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+    "kind": "function",
+    "name": "build_introspection_summary",
+    "lineno": 199,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_introspection",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_introspection.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 213,
+    "is_async": false,
+    "args": [
+      {
+        "name": "argv",
+        "annotation": "Optional[List[str]]"
+      }
+    ],
+    "return_annotation": "int",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+    "kind": "function",
+    "name": "_now_iso",
+    "lineno": 74,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+    "kind": "function",
+    "name": "_read_json",
+    "lineno": 78,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "Any",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+    "kind": "function",
+    "name": "_file_hash",
+    "lineno": 85,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "Optional[str]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+    "kind": "function",
+    "name": "_relative_ref",
+    "lineno": 92,
+    "is_async": false,
+    "args": [
+      {
+        "name": "repo_root",
+        "annotation": "Path"
+      },
+      {
+        "name": "path",
+        "annotation": "Path"
+      },
+      {
+        "name": "digest",
+        "annotation": "Optional[str]"
+      }
+    ],
+    "return_annotation": "Optional[str]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_invention",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_invention.py",
+    "kind": "function",
+    "name": "run_tool_invention",
+    "lineno": 456,
+    "is_async": false,
+    "args": [
+      {
+        "name": "identity_path",
+        "annotation": "str | Path"
+      },
+      {
+        "name": "optimizer_dir",
+        "annotation": "str | Path | None"
+      },
+      {
+        "name": "output_dir",
+        "annotation": "str | Path | None"
+      },
+      {
+        "name": "proposal_only",
+        "annotation": "bool | None"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_now_utc",
+    "lineno": 112,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "datetime",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_iso_timestamp",
+    "lineno": 116,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_repo_root_from_identity",
+    "lineno": 120,
+    "is_async": false,
+    "args": [
+      {
+        "name": "identity_path",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "Path",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_safe_read_json",
+    "lineno": 129,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "Optional[Dict[str, Any]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_compute_file_hash",
+    "lineno": 136,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "Optional[str]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_module_path",
+    "lineno": 145,
+    "is_async": false,
+    "args": [
+      {
+        "name": "file_path",
+        "annotation": "Path"
+      },
+      {
+        "name": "repo_root",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_infer_protocol_tag",
+    "lineno": 164,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_infer_risk_tag",
+    "lineno": 181,
+    "is_async": false,
+    "args": [
+      {
+        "name": "module_path",
+        "annotation": "str"
+      },
+      {
+        "name": "symbol",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_io_hint_for_risk",
+    "lineno": 211,
+    "is_async": false,
+    "args": [
+      {
+        "name": "risk_tag",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_clean_docstring",
+    "lineno": 219,
+    "is_async": false,
+    "args": [
+      {
+        "name": "node",
+        "annotation": "ast.AST"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_matches_keyword",
+    "lineno": 227,
+    "is_async": false,
+    "args": [
+      {
+        "name": "name",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_scan_python_files",
+    "lineno": 232,
+    "is_async": false,
+    "args": [
+      {
+        "name": "base_dirs",
+        "annotation": "Sequence[Path]"
+      }
+    ],
+    "return_annotation": "List[Path]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_build_tool_registry",
+    "lineno": 245,
+    "is_async": false,
+    "args": [
+      {
+        "name": "repo_root",
+        "annotation": "Path"
+      },
+      {
+        "name": "anomalies",
+        "annotation": "List[str]"
+      }
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_stable_id",
+    "lineno": 292,
+    "is_async": false,
+    "args": [
+      {
+        "name": "seed",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_classify_sequence",
+    "lineno": 298,
+    "is_async": false,
+    "args": [
+      {
+        "name": "steps",
+        "annotation": "Sequence[str]"
+      }
+    ],
+    "return_annotation": "List[str]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_read_digest_file",
+    "lineno": 316,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path"
+      },
+      {
+        "name": "limit",
+        "annotation": "int"
+      },
+      {
+        "name": "sequences",
+        "annotation": "Dict[str, List[Tuple[Tuple[str, ...], str]]]"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_aggregate_profiles",
+    "lineno": 343,
+    "is_async": false,
+    "args": [
+      {
+        "name": "repo_root",
+        "annotation": "Path"
+      },
+      {
+        "name": "digests_glob",
+        "annotation": "str"
+      },
+      {
+        "name": "anomalies",
+        "annotation": "List[str]"
+      },
+      {
+        "name": "digest_limit",
+        "annotation": "int"
+      }
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_profile_payload",
+    "lineno": 398,
+    "is_async": false,
+    "args": [
+      {
+        "name": "task",
+        "annotation": "str"
+      },
+      {
+        "name": "steps",
+        "annotation": "List[str]"
+      },
+      {
+        "name": "evidence_refs",
+        "annotation": "List[str]"
+      },
+      {
+        "name": "preconditions",
+        "annotation": "List[str]"
+      },
+      {
+        "name": "postconditions",
+        "annotation": "List[str]"
+      },
+      {
+        "name": "confidence",
+        "annotation": "float"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_compute_catalog_tail_hash",
+    "lineno": 417,
+    "is_async": false,
+    "args": [
+      {
+        "name": "catalog_path",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "Optional[str]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_collect_inputs",
+    "lineno": 430,
+    "is_async": false,
+    "args": [
+      {
+        "name": "repo_root",
+        "annotation": "Path"
+      },
+      {
+        "name": "identity_path",
+        "annotation": "Path"
+      },
+      {
+        "name": "digest_paths",
+        "annotation": "Sequence[Path]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_write_json",
+    "lineno": 443,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path"
+      },
+      {
+        "name": "payload",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "_publish_catalog_artifact",
+    "lineno": 450,
+    "is_async": false,
+    "args": [
+      {
+        "name": "repo_root",
+        "annotation": "Path"
+      },
+      {
+        "name": "registry_ref",
+        "annotation": "str"
+      },
+      {
+        "name": "profiles_ref",
+        "annotation": "str"
+      },
+      {
+        "name": "report_ref",
+        "annotation": "str"
+      },
+      {
+        "name": "anomalies",
+        "annotation": "List[str]"
+      }
+    ],
+    "return_annotation": "Optional[str]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_optimizer",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_optimizer.py",
+    "kind": "function",
+    "name": "run_tool_optimization",
+    "lineno": 530,
+    "is_async": false,
+    "args": [
+      {
+        "name": "identity_path",
+        "annotation": "str | Path"
+      },
+      {
+        "name": "out_dir",
+        "annotation": "str | Path"
+      },
+      {
+        "name": "digests_glob",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+    "kind": "function",
+    "name": "_timestamp",
+    "lineno": 35,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": "ISO timestamp."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+    "kind": "function",
+    "name": "_load_current_hashes",
+    "lineno": 40,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": "Load current provenance hashes."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+    "kind": "function",
+    "name": "cmd_generate",
+    "lineno": 99,
+    "is_async": false,
+    "args": [
+      {
+        "name": "args",
+        "annotation": "argparse.Namespace"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": "Generate tool proposals using existing invention/optimization."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+    "kind": "function",
+    "name": "cmd_validate",
+    "lineno": 136,
+    "is_async": false,
+    "args": [
+      {
+        "name": "args",
+        "annotation": "argparse.Namespace"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": "Validate tool proposal in sandbox."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+    "kind": "function",
+    "name": "cmd_approve",
+    "lineno": 208,
+    "is_async": false,
+    "args": [
+      {
+        "name": "args",
+        "annotation": "argparse.Namespace"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": "Approve validated proposal and register tool."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+    "kind": "function",
+    "name": "cmd_register",
+    "lineno": 286,
+    "is_async": false,
+    "args": [
+      {
+        "name": "args",
+        "annotation": "argparse.Namespace"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": "Register approved tool in canonical registry."
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_proposal_pipeline",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_proposal_pipeline.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 315,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_repair_proposal",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py",
+    "kind": "function",
+    "name": "_timestamp",
+    "lineno": 35,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_repair_proposal",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py",
+    "kind": "function",
+    "name": "_load_health_report",
+    "lineno": 39,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_repair_proposal",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py",
+    "kind": "function",
+    "name": "_base_provenance",
+    "lineno": 44,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_repair_proposal",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py",
+    "kind": "function",
+    "name": "_build_proposal",
+    "lineno": 60,
+    "is_async": false,
+    "args": [
+      {
+        "name": "tool_name",
+        "annotation": "str"
+      },
+      {
+        "name": "health_entry",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_repair_proposal",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py",
+    "kind": "function",
+    "name": "_write_audit",
+    "lineno": 91,
+    "is_async": false,
+    "args": [
+      {
+        "name": "entry",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_repair_proposal",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py",
+    "kind": "function",
+    "name": "generate_repair_proposals",
+    "lineno": 97,
+    "is_async": false,
+    "args": [
+      {
+        "name": "health_report",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.tool_repair_proposal",
+    "file": "Pre-Processing/KEEP_VERIFY/tool_repair_proposal.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 105,
+    "is_async": false,
+    "args": [
+      {
+        "name": "argv",
+        "annotation": "List[str] | None"
+      }
+    ],
+    "return_annotation": "int",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "convert_to_nl",
+    "lineno": 23,
+    "is_async": false,
+    "args": [
+      {
+        "name": "normalized_data",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Convert normalized lambda structures to natural language representation\n\nArgs:\n    normalized_data: Normalized structure data from lambda_core\n\nReturns:\n    Dict containing natural language translations and metadata"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_generate_semantic_mapping",
+    "lineno": 104,
+    "is_async": false,
+    "args": [
+      {
+        "name": "structure_type",
+        "annotation": "str"
+      },
+      {
+        "name": "structure_data",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "nl_output",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": "Generate semantic mapping between formal structure and natural language"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_apply_grammar_rules",
+    "lineno": 126,
+    "is_async": false,
+    "args": [
+      {
+        "name": "semantic_mapping",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "List[str]",
+    "is_private": true,
+    "docstring": "Apply grammar rules to semantic mapping"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_optimize_readability",
+    "lineno": 133,
+    "is_async": false,
+    "args": [
+      {
+        "name": "nl_elements",
+        "annotation": "List[str]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": "Optimize natural language elements for readability"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_determine_translation_mode",
+    "lineno": 138,
+    "is_async": false,
+    "args": [
+      {
+        "name": "lambda_structures",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": "Determine optimal translation mode based on structure complexity"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_translate_structure",
+    "lineno": 168,
+    "is_async": false,
+    "args": [
+      {
+        "name": "structure_type",
+        "annotation": "str"
+      },
+      {
+        "name": "structure_data",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "context",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": "Translate individual lambda structure to natural language"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_translate_combinator_structure",
+    "lineno": 217,
+    "is_async": false,
+    "args": [
+      {
+        "name": "expressions",
+        "annotation": "List[Dict[str, Any]]"
+      },
+      {
+        "name": "reduction_steps",
+        "annotation": "List[Dict[str, Any]]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": "Translate combinator-based lambda structures"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_translate_logical_structure",
+    "lineno": 266,
+    "is_async": false,
+    "args": [
+      {
+        "name": "expressions",
+        "annotation": "List[Dict[str, Any]]"
+      },
+      {
+        "name": "semantic_content",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": "Translate logical lambda structures"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_translate_natural_structure",
+    "lineno": 307,
+    "is_async": false,
+    "args": [
+      {
+        "name": "semantic_content",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": "Translate natural language oriented structures"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_translate_standard_structure",
+    "lineno": 348,
+    "is_async": false,
+    "args": [
+      {
+        "name": "expressions",
+        "annotation": "List[Dict[str, Any]]"
+      },
+      {
+        "name": "semantic_content",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": "Translate standard lambda structures"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_describe_quantifiers",
+    "lineno": 371,
+    "is_async": false,
+    "args": [
+      {
+        "name": "quantifiers",
+        "annotation": "List[Dict[str, Any]]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": "Generate natural language description of quantifiers"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_describe_predicates",
+    "lineno": 392,
+    "is_async": false,
+    "args": [
+      {
+        "name": "predicates",
+        "annotation": "List[Dict[str, Any]]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": "Generate natural language description of predicates"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_describe_logical_operators",
+    "lineno": 406,
+    "is_async": false,
+    "args": [
+      {
+        "name": "operators",
+        "annotation": "List[Dict[str, Any]]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": "Generate natural language description of logical operators"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_generate_structural_description",
+    "lineno": 434,
+    "is_async": false,
+    "args": [
+      {
+        "name": "structure_data",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": "Generate description of lambda structure organization"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_synthesize_unified_representation",
+    "lineno": 459,
+    "is_async": false,
+    "args": [
+      {
+        "name": "translation_context",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": "Synthesize unified natural language from all structure translations"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_assess_readability",
+    "lineno": 490,
+    "is_async": false,
+    "args": [
+      {
+        "name": "text",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": "Assess readability metrics of natural language text"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_calculate_translation_confidence",
+    "lineno": 526,
+    "is_async": false,
+    "args": [
+      {
+        "name": "structure_data",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "nl_text",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "float",
+    "is_private": true,
+    "docstring": "Calculate confidence score for translation quality"
+  },
+  {
+    "module": "Pre-Processing.KEEP_VERIFY.translation_engine",
+    "file": "Pre-Processing/KEEP_VERIFY/translation_engine.py",
+    "kind": "function",
+    "name": "_calculate_translation_quality",
+    "lineno": 562,
+    "is_async": false,
+    "args": [
+      {
+        "name": "translation_context",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "unified_nl",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "Dict[str, float]",
+    "is_private": true,
+    "docstring": "Calculate overall translation quality metrics"
+  },
+  {
+    "module": "Pre-Processing.agent.agent_nexus",
+    "file": "Pre-Processing/agent/agent_nexus.py",
+    "kind": "function",
+    "name": "initialize_logos_agent_nexus",
+    "lineno": 823,
+    "is_async": true,
+    "args": [],
+    "return_annotation": "LOGOSAgentNexus",
+    "is_private": false,
+    "docstring": "Initialize and return LOGOS Agent nexus instance"
+  },
+  {
+    "module": "Pre-Processing.agent.base_nexus",
+    "file": "Pre-Processing/agent/base_nexus.py",
+    "kind": "function",
+    "name": "_payload_is_smp",
+    "lineno": 42,
+    "is_async": false,
+    "args": [
+      {
+        "name": "payload",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.base_nexus",
+    "file": "Pre-Processing/agent/base_nexus.py",
+    "kind": "function",
+    "name": "_pxl_key_match",
+    "lineno": 48,
+    "is_async": false,
+    "args": [
+      {
+        "name": "text",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.base_nexus",
+    "file": "Pre-Processing/agent/base_nexus.py",
+    "kind": "function",
+    "name": "_contains_pxl_fragments",
+    "lineno": 53,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.base_nexus",
+    "file": "Pre-Processing/agent/base_nexus.py",
+    "kind": "function",
+    "name": "_extract_proof_refs",
+    "lineno": 66,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Optional[str]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.base_nexus",
+    "file": "Pre-Processing/agent/base_nexus.py",
+    "kind": "function",
+    "name": "_build_span_mapping",
+    "lineno": 86,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.base_nexus",
+    "file": "Pre-Processing/agent/base_nexus.py",
+    "kind": "function",
+    "name": "_derive_polarity",
+    "lineno": 95,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.base_nexus",
+    "file": "Pre-Processing/agent/base_nexus.py",
+    "kind": "function",
+    "name": "_tag_append_artifact",
+    "lineno": 104,
+    "is_async": false,
+    "args": [
+      {
+        "name": "aa_payload",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.base_nexus",
+    "file": "Pre-Processing/agent/base_nexus.py",
+    "kind": "function",
+    "name": "_apply_provisional_proof_tagging",
+    "lineno": 130,
+    "is_async": false,
+    "args": [
+      {
+        "name": "payload",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "Any",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.base_nexus",
+    "file": "Pre-Processing/agent/base_nexus.py",
+    "kind": "function",
+    "name": "create_agent_request",
+    "lineno": 740,
+    "is_async": false,
+    "args": [
+      {
+        "name": "agent_id",
+        "annotation": "str"
+      },
+      {
+        "name": "operation",
+        "annotation": "str"
+      },
+      {
+        "name": "payload",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "AgentRequest",
+    "is_private": false,
+    "docstring": "Utility function to create standardized agent requests"
+  },
+  {
+    "module": "Pre-Processing.agent.base_nexus",
+    "file": "Pre-Processing/agent/base_nexus.py",
+    "kind": "function",
+    "name": "validate_nexus_system",
+    "lineno": 755,
+    "is_async": true,
+    "args": [
+      {
+        "name": "nexus_list",
+        "annotation": "List[BaseNexus]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Validate complete nexus system functionality"
+  },
+  {
+    "module": "Pre-Processing.agent.evaluation_packet",
+    "file": "Pre-Processing/agent/evaluation_packet.py",
+    "kind": "function",
+    "name": "emit_evaluation_packet",
+    "lineno": 39,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "EvaluationPacket",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.id_handler",
+    "file": "Pre-Processing/agent/id_handler.py",
+    "kind": "function",
+    "name": "generate_packet_identity",
+    "lineno": 37,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "PacketIdentity",
+    "is_private": false,
+    "docstring": "Create a unique packet identity.\n\n- origin: e.g., \"I1\", \"I2\", \"I3\", \"LOGOS\"\n- parent_id: upstream packet id if chaining\n- session_id: optional run/session marker\n- reference_obj: optional object to derive an additional stable reference hash"
+  },
+  {
+    "module": "Pre-Processing.agent.legacy_sop_nexus",
+    "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+    "kind": "function",
+    "name": "_payload_is_smp",
+    "lineno": 96,
+    "is_async": false,
+    "args": [
+      {
+        "name": "payload",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.legacy_sop_nexus",
+    "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+    "kind": "function",
+    "name": "_pxl_key_match",
+    "lineno": 102,
+    "is_async": false,
+    "args": [
+      {
+        "name": "text",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.legacy_sop_nexus",
+    "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+    "kind": "function",
+    "name": "_contains_pxl_fragments",
+    "lineno": 107,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.legacy_sop_nexus",
+    "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+    "kind": "function",
+    "name": "_extract_proof_refs",
+    "lineno": 120,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Optional[str]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.legacy_sop_nexus",
+    "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+    "kind": "function",
+    "name": "_build_span_mapping",
+    "lineno": 140,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.legacy_sop_nexus",
+    "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+    "kind": "function",
+    "name": "_derive_polarity",
+    "lineno": 149,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.legacy_sop_nexus",
+    "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+    "kind": "function",
+    "name": "_tag_append_artifact",
+    "lineno": 158,
+    "is_async": false,
+    "args": [
+      {
+        "name": "aa_payload",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.legacy_sop_nexus",
+    "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+    "kind": "function",
+    "name": "_apply_provisional_proof_tagging",
+    "lineno": 184,
+    "is_async": false,
+    "args": [
+      {
+        "name": "payload",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "Any",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.legacy_sop_nexus",
+    "file": "Pre-Processing/agent/legacy_sop_nexus.py",
+    "kind": "function",
+    "name": "initialize_sop_nexus",
+    "lineno": 1234,
+    "is_async": true,
+    "args": [],
+    "return_annotation": "SOPNexus",
+    "is_private": false,
+    "docstring": "Initialize and return SOP Nexus instance"
+  },
+  {
+    "module": "Pre-Processing.agent.plan_packet",
+    "file": "Pre-Processing/agent/plan_packet.py",
+    "kind": "function",
+    "name": "emit_plan_packet",
+    "lineno": 37,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "PlanPacket",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.sop_nexus",
+    "file": "Pre-Processing/agent/sop_nexus.py",
+    "kind": "function",
+    "name": "_payload_is_smp",
+    "lineno": 122,
+    "is_async": false,
+    "args": [
+      {
+        "name": "payload",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.sop_nexus",
+    "file": "Pre-Processing/agent/sop_nexus.py",
+    "kind": "function",
+    "name": "_pxl_key_match",
+    "lineno": 128,
+    "is_async": false,
+    "args": [
+      {
+        "name": "text",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.sop_nexus",
+    "file": "Pre-Processing/agent/sop_nexus.py",
+    "kind": "function",
+    "name": "_contains_pxl_fragments",
+    "lineno": 133,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.sop_nexus",
+    "file": "Pre-Processing/agent/sop_nexus.py",
+    "kind": "function",
+    "name": "_extract_proof_refs",
+    "lineno": 146,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Optional[str]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.sop_nexus",
+    "file": "Pre-Processing/agent/sop_nexus.py",
+    "kind": "function",
+    "name": "_build_span_mapping",
+    "lineno": 166,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.sop_nexus",
+    "file": "Pre-Processing/agent/sop_nexus.py",
+    "kind": "function",
+    "name": "_derive_polarity",
+    "lineno": 175,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.sop_nexus",
+    "file": "Pre-Processing/agent/sop_nexus.py",
+    "kind": "function",
+    "name": "_tag_append_artifact",
+    "lineno": 184,
+    "is_async": false,
+    "args": [
+      {
+        "name": "aa_payload",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.sop_nexus",
+    "file": "Pre-Processing/agent/sop_nexus.py",
+    "kind": "function",
+    "name": "_apply_provisional_proof_tagging",
+    "lineno": 210,
+    "is_async": false,
+    "args": [
+      {
+        "name": "payload",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "Any",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.sop_nexus",
+    "file": "Pre-Processing/agent/sop_nexus.py",
+    "kind": "function",
+    "name": "initialize_sop_nexus",
+    "lineno": 1382,
+    "is_async": true,
+    "args": [],
+    "return_annotation": "SOPNexus",
+    "is_private": false,
+    "docstring": "Initialize and return SOP Nexus instance"
+  },
+  {
+    "module": "Pre-Processing.agent.test_end_to_end_pipeline",
+    "file": "Pre-Processing/agent/test_end_to_end_pipeline.py",
+    "kind": "function",
+    "name": "test_end_to_end_pipeline",
+    "lineno": 21,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test complete end-to-end pipeline execution"
+  },
+  {
+    "module": "Pre-Processing.agent.test_end_to_end_pipeline",
+    "file": "Pre-Processing/agent/test_end_to_end_pipeline.py",
+    "kind": "function",
+    "name": "test_component_interfaces",
+    "lineno": 157,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test that all components have proper CLI interfaces"
+  },
+  {
+    "module": "Pre-Processing.agent.test_end_to_end_pipeline",
+    "file": "Pre-Processing/agent/test_end_to_end_pipeline.py",
+    "kind": "function",
+    "name": "test_artifacts_validation",
+    "lineno": 185,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test that generated artifacts have proper format"
+  },
+  {
+    "module": "Pre-Processing.agent.test_hardening",
+    "file": "Pre-Processing/agent/test_hardening.py",
+    "kind": "function",
+    "name": "test_hardening",
+    "lineno": 32,
+    "is_async": true,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test the hardening implementation."
+  },
+  {
+    "module": "Pre-Processing.agent.test_integration_identity",
+    "file": "Pre-Processing/agent/test_integration_identity.py",
+    "kind": "function",
+    "name": "_write_persisted_identity",
+    "lineno": 20,
+    "is_async": false,
+    "args": [
+      {
+        "name": "formal_identity",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": null,
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_integration_identity",
+    "file": "Pre-Processing/agent/test_integration_identity.py",
+    "kind": "function",
+    "name": "_make_fake_consciousness_module",
+    "lineno": 30,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_integration_identity",
+    "file": "Pre-Processing/agent/test_integration_identity.py",
+    "kind": "function",
+    "name": "test_emergence_uses_persisted_identity",
+    "lineno": 52,
+    "is_async": false,
+    "args": [
+      {
+        "name": "tmp_path",
+        "annotation": null
+      },
+      {
+        "name": "monkeypatch",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_llm_bypass_smoke",
+    "file": "Pre-Processing/agent/test_llm_bypass_smoke.py",
+    "kind": "function",
+    "name": "_run_with_payload",
+    "lineno": 24,
+    "is_async": false,
+    "args": [
+      {
+        "name": "payload",
+        "annotation": "dict"
+      }
+    ],
+    "return_annotation": "subprocess.CompletedProcess",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_llm_bypass_smoke",
+    "file": "Pre-Processing/agent/test_llm_bypass_smoke.py",
+    "kind": "function",
+    "name": "_load_state",
+    "lineno": 54,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_llm_bypass_smoke",
+    "file": "Pre-Processing/agent/test_llm_bypass_smoke.py",
+    "kind": "function",
+    "name": "test_high_impact_requires_uip",
+    "lineno": 63,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "bool",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_llm_bypass_smoke",
+    "file": "Pre-Processing/agent/test_llm_bypass_smoke.py",
+    "kind": "function",
+    "name": "test_proved_downgraded",
+    "lineno": 87,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "bool",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_llm_bypass_smoke",
+    "file": "Pre-Processing/agent/test_llm_bypass_smoke.py",
+    "kind": "function",
+    "name": "test_code_injection_rejected",
+    "lineno": 113,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "bool",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_llm_bypass_smoke",
+    "file": "Pre-Processing/agent/test_llm_bypass_smoke.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 138,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "bool",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_lock_unlock",
+    "file": "Pre-Processing/agent/test_lock_unlock.py",
+    "kind": "function",
+    "name": "_make_fake_consciousness_module",
+    "lineno": 21,
+    "is_async": false,
+    "args": [
+      {
+        "name": "emerged",
+        "annotation": "bool"
+      }
+    ],
+    "return_annotation": null,
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_lock_unlock",
+    "file": "Pre-Processing/agent/test_lock_unlock.py",
+    "kind": "function",
+    "name": "_clear_connector_log",
+    "lineno": 41,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_lock_unlock",
+    "file": "Pre-Processing/agent/test_lock_unlock.py",
+    "kind": "function",
+    "name": "_clear_persisted_identity",
+    "lineno": 49,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_lock_unlock",
+    "file": "Pre-Processing/agent/test_lock_unlock.py",
+    "kind": "function",
+    "name": "_read_connector_log",
+    "lineno": 64,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_lock_unlock",
+    "file": "Pre-Processing/agent/test_lock_unlock.py",
+    "kind": "function",
+    "name": "_import_bridge",
+    "lineno": 70,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_lock_unlock",
+    "file": "Pre-Processing/agent/test_lock_unlock.py",
+    "kind": "function",
+    "name": "test_connectors_blocked_when_no_identity",
+    "lineno": 78,
+    "is_async": false,
+    "args": [
+      {
+        "name": "monkeypatch",
+        "annotation": null
+      },
+      {
+        "name": "tmp_path",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_lock_unlock",
+    "file": "Pre-Processing/agent/test_lock_unlock.py",
+    "kind": "function",
+    "name": "test_connectors_allowed_after_identity",
+    "lineno": 113,
+    "is_async": false,
+    "args": [
+      {
+        "name": "monkeypatch",
+        "annotation": null
+      },
+      {
+        "name": "tmp_path",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_logos_agi_bootstrap_modes",
+    "file": "Pre-Processing/agent/test_logos_agi_bootstrap_modes.py",
+    "kind": "function",
+    "name": "test_stub_mode",
+    "lineno": 17,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Stub mode must always pass."
+  },
+  {
+    "module": "Pre-Processing.agent.test_logos_agi_bootstrap_modes",
+    "file": "Pre-Processing/agent/test_logos_agi_bootstrap_modes.py",
+    "kind": "function",
+    "name": "test_real_mode",
+    "lineno": 59,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Real mode must pass if dependencies OK, or fail with explicit error."
+  },
+  {
+    "module": "Pre-Processing.agent.test_logos_agi_bootstrap_modes",
+    "file": "Pre-Processing/agent/test_logos_agi_bootstrap_modes.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 94,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_logos_agi_replay_proposals",
+    "file": "Pre-Processing/agent/test_logos_agi_replay_proposals.py",
+    "kind": "function",
+    "name": "run_command",
+    "lineno": 21,
+    "is_async": false,
+    "args": [
+      {
+        "name": "cmd",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Run command and return (returncode, stdout, stderr)."
+  },
+  {
+    "module": "Pre-Processing.agent.test_logos_agi_replay_proposals",
+    "file": "Pre-Processing/agent/test_logos_agi_replay_proposals.py",
+    "kind": "function",
+    "name": "parse_audit_log",
+    "lineno": 27,
+    "is_async": false,
+    "args": [
+      {
+        "name": "output",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "list",
+    "is_private": false,
+    "docstring": "Extract audit log entries from agent output."
+  },
+  {
+    "module": "Pre-Processing.agent.test_logos_agi_replay_proposals",
+    "file": "Pre-Processing/agent/test_logos_agi_replay_proposals.py",
+    "kind": "function",
+    "name": "extract_first_proposed_tool",
+    "lineno": 40,
+    "is_async": false,
+    "args": [
+      {
+        "name": "output",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": "Extract the first tool proposed by Logos_AGI."
+  },
+  {
+    "module": "Pre-Processing.agent.test_logos_agi_replay_proposals",
+    "file": "Pre-Processing/agent/test_logos_agi_replay_proposals.py",
+    "kind": "function",
+    "name": "test_proposal_replay",
+    "lineno": 53,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test that proposals change based on replayed state."
+  },
+  {
+    "module": "Pre-Processing.agent.test_logos_agi_replay_proposals",
+    "file": "Pre-Processing/agent/test_logos_agi_replay_proposals.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 111,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_logos_runtime_phase2_smoke",
+    "file": "Pre-Processing/agent/test_logos_runtime_phase2_smoke.py",
+    "kind": "function",
+    "name": "_jsonable",
+    "lineno": 15,
+    "is_async": false,
+    "args": [
+      {
+        "name": "x",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "Any",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_logos_runtime_phase2_smoke",
+    "file": "Pre-Processing/agent/test_logos_runtime_phase2_smoke.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 24,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "int",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_nexus_capability_governance",
+    "file": "Pre-Processing/agent/test_nexus_capability_governance.py",
+    "kind": "function",
+    "name": "_require_key_payload",
+    "lineno": 53,
+    "is_async": false,
+    "args": [
+      {
+        "name": "required_key",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": null,
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_pai",
+    "file": "Pre-Processing/agent/test_pai.py",
+    "kind": "function",
+    "name": "test_pai",
+    "lineno": 22,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test PAI functionality."
+  },
+  {
+    "module": "Pre-Processing.agent.test_plan_revision_on_contradiction",
+    "file": "Pre-Processing/agent/test_plan_revision_on_contradiction.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 18,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_scp_recovery_mode_gate",
+    "file": "Pre-Processing/agent/test_scp_recovery_mode_gate.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 17,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_self_improvement_cycle",
+    "file": "Pre-Processing/agent/test_self_improvement_cycle.py",
+    "kind": "function",
+    "name": "test_multi_cycle_stability",
+    "lineno": 477,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Quick stability test for CI/CD pipeline"
+  },
+  {
+    "module": "Pre-Processing.agent.test_stub_beliefs_never_verified",
+    "file": "Pre-Processing/agent/test_stub_beliefs_never_verified.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 18,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "bool",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.agent.test_verify_pai",
+    "file": "Pre-Processing/agent/test_verify_pai.py",
+    "kind": "function",
+    "name": "test_fresh_start",
+    "lineno": 22,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test 1: Fresh start - delete identity, run cycle, confirm creation."
+  },
+  {
+    "module": "Pre-Processing.agent.test_verify_pai",
+    "file": "Pre-Processing/agent/test_verify_pai.py",
+    "kind": "function",
+    "name": "test_continuity",
+    "lineno": 50,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test 2: Stable continuity - run multiple updates, confirm hash chain."
+  },
+  {
+    "module": "Pre-Processing.agent.test_verify_pai",
+    "file": "Pre-Processing/agent/test_verify_pai.py",
+    "kind": "function",
+    "name": "test_capability_updates",
+    "lineno": 96,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test 3: Capability change updates identity."
+  },
+  {
+    "module": "Pre-Processing.agent.test_verify_pai",
+    "file": "Pre-Processing/agent/test_verify_pai.py",
+    "kind": "function",
+    "name": "test_policy_blocking",
+    "lineno": 163,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test 4: Policy mismatch blocks enhancements."
+  },
+  {
+    "module": "Pre-Processing.agent.test_verify_pai",
+    "file": "Pre-Processing/agent/test_verify_pai.py",
+    "kind": "function",
+    "name": "run_all_tests",
+    "lineno": 185,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Run all verification tests."
+  },
+  {
+    "module": "Pre-Processing.math.dual_bijection_demo",
+    "file": "Pre-Processing/math/dual_bijection_demo.py",
+    "kind": "function",
+    "name": "f",
+    "lineno": 14,
+    "is_async": false,
+    "args": [
+      {
+        "name": "x",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.math.dual_bijection_demo",
+    "file": "Pre-Processing/math/dual_bijection_demo.py",
+    "kind": "function",
+    "name": "f_inv",
+    "lineno": 15,
+    "is_async": false,
+    "args": [
+      {
+        "name": "y",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.math.dual_bijection_demo",
+    "file": "Pre-Processing/math/dual_bijection_demo.py",
+    "kind": "function",
+    "name": "g",
+    "lineno": 17,
+    "is_async": false,
+    "args": [
+      {
+        "name": "x",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.math.dual_bijection_demo",
+    "file": "Pre-Processing/math/dual_bijection_demo.py",
+    "kind": "function",
+    "name": "g_inv",
+    "lineno": 18,
+    "is_async": false,
+    "args": [
+      {
+        "name": "y",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.math.fractal_nexus",
+    "file": "Pre-Processing/math/fractal_nexus.py",
+    "kind": "function",
+    "name": "_payload_is_smp",
+    "lineno": 26,
+    "is_async": false,
+    "args": [
+      {
+        "name": "payload",
+        "annotation": "Dict[str, object]"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.math.fractal_nexus",
+    "file": "Pre-Processing/math/fractal_nexus.py",
+    "kind": "function",
+    "name": "_pxl_key_match",
+    "lineno": 32,
+    "is_async": false,
+    "args": [
+      {
+        "name": "text",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.math.fractal_nexus",
+    "file": "Pre-Processing/math/fractal_nexus.py",
+    "kind": "function",
+    "name": "_contains_pxl_fragments",
+    "lineno": 37,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "object"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.math.fractal_nexus",
+    "file": "Pre-Processing/math/fractal_nexus.py",
+    "kind": "function",
+    "name": "_extract_proof_refs",
+    "lineno": 50,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, object]"
+      }
+    ],
+    "return_annotation": "Dict[str, Optional[str]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.math.fractal_nexus",
+    "file": "Pre-Processing/math/fractal_nexus.py",
+    "kind": "function",
+    "name": "_build_span_mapping",
+    "lineno": 70,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, object]"
+      }
+    ],
+    "return_annotation": "Dict[str, object]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.math.fractal_nexus",
+    "file": "Pre-Processing/math/fractal_nexus.py",
+    "kind": "function",
+    "name": "_derive_polarity",
+    "lineno": 79,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, object]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.math.fractal_nexus",
+    "file": "Pre-Processing/math/fractal_nexus.py",
+    "kind": "function",
+    "name": "_tag_append_artifact",
+    "lineno": 88,
+    "is_async": false,
+    "args": [
+      {
+        "name": "aa_payload",
+        "annotation": "Dict[str, object]"
+      }
+    ],
+    "return_annotation": "Dict[str, object]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.math.fractal_nexus",
+    "file": "Pre-Processing/math/fractal_nexus.py",
+    "kind": "function",
+    "name": "_apply_provisional_proof_tagging",
+    "lineno": 114,
+    "is_async": false,
+    "args": [
+      {
+        "name": "payload",
+        "annotation": "object"
+      }
+    ],
+    "return_annotation": "object",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.reasoning.arp_nexus",
+    "file": "Pre-Processing/reasoning/arp_nexus.py",
+    "kind": "function",
+    "name": "_payload_is_smp",
+    "lineno": 87,
+    "is_async": false,
+    "args": [
+      {
+        "name": "payload",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.reasoning.arp_nexus",
+    "file": "Pre-Processing/reasoning/arp_nexus.py",
+    "kind": "function",
+    "name": "_pxl_key_match",
+    "lineno": 93,
+    "is_async": false,
+    "args": [
+      {
+        "name": "text",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.reasoning.arp_nexus",
+    "file": "Pre-Processing/reasoning/arp_nexus.py",
+    "kind": "function",
+    "name": "_contains_pxl_fragments",
+    "lineno": 98,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.reasoning.arp_nexus",
+    "file": "Pre-Processing/reasoning/arp_nexus.py",
+    "kind": "function",
+    "name": "_extract_proof_refs",
+    "lineno": 111,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Optional[str]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.reasoning.arp_nexus",
+    "file": "Pre-Processing/reasoning/arp_nexus.py",
+    "kind": "function",
+    "name": "_build_span_mapping",
+    "lineno": 131,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.reasoning.arp_nexus",
+    "file": "Pre-Processing/reasoning/arp_nexus.py",
+    "kind": "function",
+    "name": "_derive_polarity",
+    "lineno": 140,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.reasoning.arp_nexus",
+    "file": "Pre-Processing/reasoning/arp_nexus.py",
+    "kind": "function",
+    "name": "_tag_append_artifact",
+    "lineno": 149,
+    "is_async": false,
+    "args": [
+      {
+        "name": "aa_payload",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.reasoning.arp_nexus",
+    "file": "Pre-Processing/reasoning/arp_nexus.py",
+    "kind": "function",
+    "name": "_apply_provisional_proof_tagging",
+    "lineno": 175,
+    "is_async": false,
+    "args": [
+      {
+        "name": "payload",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "Any",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.reasoning.integration_test",
+    "file": "Pre-Processing/reasoning/integration_test.py",
+    "kind": "function",
+    "name": "test_protocol_integration",
+    "lineno": 28,
+    "is_async": true,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test ARP nexus integration with SCP and Agent nexuses"
+  },
+  {
+    "module": "Pre-Processing.reasoning.integration_test",
+    "file": "Pre-Processing/reasoning/integration_test.py",
+    "kind": "function",
+    "name": "test_recursive_processing_simulation",
+    "lineno": 78,
+    "is_async": true,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Simulate full recursive processing workflow"
+  },
+  {
+    "module": "Pre-Processing.reasoning.integration_test",
+    "file": "Pre-Processing/reasoning/integration_test.py",
+    "kind": "function",
+    "name": "test_emergency_cascade_handling",
+    "lineno": 150,
+    "is_async": true,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test emergency cascade detection and handling"
+  },
+  {
+    "module": "Pre-Processing.reasoning.integration_test",
+    "file": "Pre-Processing/reasoning/integration_test.py",
+    "kind": "function",
+    "name": "test_convergence_detection",
+    "lineno": 190,
+    "is_async": true,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test convergence detection in recursive cycles"
+  },
+  {
+    "module": "Pre-Processing.reasoning.integration_test",
+    "file": "Pre-Processing/reasoning/integration_test.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 226,
+    "is_async": true,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Run all integration tests"
+  },
+  {
+    "module": "Pre-Processing.reasoning.scp_nexus",
+    "file": "Pre-Processing/reasoning/scp_nexus.py",
+    "kind": "function",
+    "name": "initialize_scp_nexus",
+    "lineno": 732,
+    "is_async": true,
+    "args": [],
+    "return_annotation": "SCPNexus",
+    "is_private": false,
+    "docstring": "Initialize and return SCP nexus instance"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_arp_nexus",
+    "file": "Pre-Processing/reasoning/test_arp_nexus.py",
+    "kind": "function",
+    "name": "test_nexus_initialization",
+    "lineno": 30,
+    "is_async": true,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test ARP nexus initialization"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_arp_nexus",
+    "file": "Pre-Processing/reasoning/test_arp_nexus.py",
+    "kind": "function",
+    "name": "test_data_builder",
+    "lineno": 50,
+    "is_async": true,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test DataBuilder functionality"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_arp_nexus",
+    "file": "Pre-Processing/reasoning/test_arp_nexus.py",
+    "kind": "function",
+    "name": "test_reasoning_request",
+    "lineno": 82,
+    "is_async": true,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test reasoning request processing"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_arp_nexus",
+    "file": "Pre-Processing/reasoning/test_arp_nexus.py",
+    "kind": "function",
+    "name": "test_recursive_processing",
+    "lineno": 120,
+    "is_async": true,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test recursive processing simulation"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_arp_nexus",
+    "file": "Pre-Processing/reasoning/test_arp_nexus.py",
+    "kind": "function",
+    "name": "test_cycle_management",
+    "lineno": 156,
+    "is_async": true,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test cycle limit management"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_arp_nexus",
+    "file": "Pre-Processing/reasoning/test_arp_nexus.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 186,
+    "is_async": true,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Run all ARP nexus tests"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_dual_bijection",
+    "file": "Pre-Processing/reasoning/test_dual_bijection.py",
+    "kind": "function",
+    "name": "test_dual_bijection_system",
+    "lineno": 194,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test the dual bijection system implementation."
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_integration",
+    "file": "Pre-Processing/reasoning/test_integration.py",
+    "kind": "function",
+    "name": "test_imports",
+    "lineno": 25,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test that all v7 components can be imported"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_integration",
+    "file": "Pre-Processing/reasoning/test_integration.py",
+    "kind": "function",
+    "name": "test_component_initialization",
+    "lineno": 70,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test component initialization"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_integration",
+    "file": "Pre-Processing/reasoning/test_integration.py",
+    "kind": "function",
+    "name": "test_trinity_vector_creation",
+    "lineno": 105,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test trinity vector creation and validation"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_integration",
+    "file": "Pre-Processing/reasoning/test_integration.py",
+    "kind": "function",
+    "name": "test_unified_interface",
+    "lineno": 129,
+    "is_async": true,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test unified interface with basic operations"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_integration",
+    "file": "Pre-Processing/reasoning/test_integration.py",
+    "kind": "function",
+    "name": "test_proof_gate_validation",
+    "lineno": 208,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test proof gate validation"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_integration",
+    "file": "Pre-Processing/reasoning/test_integration.py",
+    "kind": "function",
+    "name": "run_integration_tests",
+    "lineno": 255,
+    "is_async": true,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Run all integration tests"
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_logos_agi_persistence_smoke",
+    "file": "Pre-Processing/reasoning/test_logos_agi_persistence_smoke.py",
+    "kind": "function",
+    "name": "run_test",
+    "lineno": 18,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Run persistence test."
+  },
+  {
+    "module": "Pre-Processing.reasoning.test_proved_grounding",
+    "file": "Pre-Processing/reasoning/test_proved_grounding.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 25,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.reasoning.uip_nexus",
+    "file": "Pre-Processing/reasoning/uip_nexus.py",
+    "kind": "function",
+    "name": "initialize_uip_nexus",
+    "lineno": 466,
+    "is_async": true,
+    "args": [],
+    "return_annotation": "UIPNexus",
+    "is_private": false,
+    "docstring": "Initialize and return UIP nexus instance"
+  },
+  {
+    "module": "Pre-Processing.safety.attestation",
+    "file": "Pre-Processing/safety/attestation.py",
+    "kind": "function",
+    "name": "_require",
+    "lineno": 23,
+    "is_async": false,
+    "args": [
+      {
+        "name": "condition",
+        "annotation": "bool"
+      },
+      {
+        "name": "message",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.safety.attestation",
+    "file": "Pre-Processing/safety/attestation.py",
+    "kind": "function",
+    "name": "_is_iso",
+    "lineno": 28,
+    "is_async": false,
+    "args": [
+      {
+        "name": "value",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.safety.attestation",
+    "file": "Pre-Processing/safety/attestation.py",
+    "kind": "function",
+    "name": "_ensure_hex",
+    "lineno": 36,
+    "is_async": false,
+    "args": [
+      {
+        "name": "value",
+        "annotation": "str"
+      },
+      {
+        "name": "length",
+        "annotation": "int | None"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.safety.attestation",
+    "file": "Pre-Processing/safety/attestation.py",
+    "kind": "function",
+    "name": "_load_json",
+    "lineno": 46,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "Any",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.safety.attestation",
+    "file": "Pre-Processing/safety/attestation.py",
+    "kind": "function",
+    "name": "validate_attestation",
+    "lineno": 60,
+    "is_async": false,
+    "args": [
+      {
+        "name": "attestation",
+        "annotation": "Mapping[str, Any]"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": "Validate the latest attestation entry produced by the Coq gate."
+  },
+  {
+    "module": "Pre-Processing.safety.attestation",
+    "file": "Pre-Processing/safety/attestation.py",
+    "kind": "function",
+    "name": "load_alignment_attestation",
+    "lineno": 82,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "str | Path"
+      }
+    ],
+    "return_annotation": "Mapping[str, Any]",
+    "is_private": false,
+    "docstring": "Load and validate the newest attestation entry."
+  },
+  {
+    "module": "Pre-Processing.safety.attestation",
+    "file": "Pre-Processing/safety/attestation.py",
+    "kind": "function",
+    "name": "compute_attestation_hash",
+    "lineno": 98,
+    "is_async": false,
+    "args": [
+      {
+        "name": "attestation",
+        "annotation": "Mapping[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": "Return the canonical hash of the attestation entry."
+  },
+  {
+    "module": "Pre-Processing.safety.attestation",
+    "file": "Pre-Processing/safety/attestation.py",
+    "kind": "function",
+    "name": "validate_mission_profile",
+    "lineno": 107,
+    "is_async": false,
+    "args": [
+      {
+        "name": "profile",
+        "annotation": "Mapping[str, Any]"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": "Validate persisted mission profile metadata."
+  },
+  {
+    "module": "Pre-Processing.safety.attestation",
+    "file": "Pre-Processing/safety/attestation.py",
+    "kind": "function",
+    "name": "load_mission_profile",
+    "lineno": 129,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "str | Path"
+      }
+    ],
+    "return_annotation": "Mapping[str, Any]",
+    "is_private": false,
+    "docstring": "Load and validate the mission profile JSON artifact."
+  },
+  {
+    "module": "Pre-Processing.safety.health_server",
+    "file": "Pre-Processing/safety/health_server.py",
+    "kind": "function",
+    "name": "health_dashboard",
+    "lineno": 17,
+    "is_async": true,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.safety.test_reference_monitor",
+    "file": "Pre-Processing/safety/test_reference_monitor.py",
+    "kind": "function",
+    "name": "run_safety_tests",
+    "lineno": 612,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Run all safety and anomaly tests"
+  },
+  {
+    "module": "Pre-Processing.safety.test_tool_pipeline_smoke",
+    "file": "Pre-Processing/safety/test_tool_pipeline_smoke.py",
+    "kind": "function",
+    "name": "run_pipeline_cmd",
+    "lineno": 27,
+    "is_async": false,
+    "args": [
+      {
+        "name": "cmd_args",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Run pipeline command and return result."
+  },
+  {
+    "module": "Pre-Processing.safety.test_tool_pipeline_smoke",
+    "file": "Pre-Processing/safety/test_tool_pipeline_smoke.py",
+    "kind": "function",
+    "name": "test_pipeline",
+    "lineno": 38,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test the full pipeline."
+  },
+  {
+    "module": "Pre-Processing.semantic.boot_system",
+    "file": "Pre-Processing/semantic/boot_system.py",
+    "kind": "function",
+    "name": "_scheduler_log",
+    "lineno": 33,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Path",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.boot_system",
+    "file": "Pre-Processing/semantic/boot_system.py",
+    "kind": "function",
+    "name": "initialize_runtime",
+    "lineno": 273,
+    "is_async": true,
+    "args": [
+      {
+        "name": "config_path",
+        "annotation": "Optional[Path]"
+      }
+    ],
+    "return_annotation": "SystemRuntime",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "_utc_now",
+    "lineno": 29,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "canonical_json",
+    "lineno": 33,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "bytes",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "sha256_bytes",
+    "lineno": 39,
+    "is_async": false,
+    "args": [
+      {
+        "name": "data",
+        "annotation": "bytes"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "_sha256_hex",
+    "lineno": 45,
+    "is_async": false,
+    "args": [
+      {
+        "name": "data",
+        "annotation": "bytes"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "compute_ledger_hash",
+    "lineno": 51,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ledger",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "atomic_write_json",
+    "lineno": 59,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path"
+      },
+      {
+        "name": "payload",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "_clamp_text",
+    "lineno": 69,
+    "is_async": false,
+    "args": [
+      {
+        "name": "value",
+        "annotation": "str"
+      },
+      {
+        "name": "limit",
+        "annotation": "int"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "_ensure_constraints",
+    "lineno": 75,
+    "is_async": false,
+    "args": [
+      {
+        "name": "constraints",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "defaults",
+        "annotation": "Dict[str, bool]"
+      }
+    ],
+    "return_annotation": "Dict[str, bool]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "_compute_commitment_id",
+    "lineno": 87,
+    "is_async": false,
+    "args": [
+      {
+        "name": "commitment",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "_compute_event_id",
+    "lineno": 99,
+    "is_async": false,
+    "args": [
+      {
+        "name": "event",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "_trim_commitments",
+    "lineno": 111,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ledger",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "_trim_history",
+    "lineno": 130,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ledger",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "load_or_create_ledger",
+    "lineno": 137,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path | str"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "validate_ledger",
+    "lineno": 163,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ledger",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "identity",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Tuple[bool, List[str], List[str]]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "record_event",
+    "lineno": 207,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ledger",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "action",
+        "annotation": "str"
+      },
+      {
+        "name": "commitment_id",
+        "annotation": "str"
+      },
+      {
+        "name": "summary",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "upsert_commitment",
+    "lineno": 222,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ledger",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "commitment",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "set_active_commitment",
+    "lineno": 245,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ledger",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "commitment_id",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "mark_commitment_status",
+    "lineno": 260,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ledger",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "commitment_id",
+        "annotation": "str"
+      },
+      {
+        "name": "status",
+        "annotation": "str"
+      },
+      {
+        "name": "reason",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "write_ledger",
+    "lineno": 282,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path | str"
+      },
+      {
+        "name": "ledger",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Tuple[str, Path]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "ensure_active_commitment",
+    "lineno": 291,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ledger",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "identity",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "uwm_ref",
+        "annotation": "Optional[str]"
+      },
+      {
+        "name": "planner_digest_ref",
+        "annotation": "Optional[str]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "mark_cycle_outcome",
+    "lineno": 351,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ledger",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "commitment_id",
+        "annotation": "Optional[str]"
+      },
+      {
+        "name": "succeeded",
+        "annotation": "bool"
+      },
+      {
+        "name": "details",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.commitment_ledger",
+    "file": "Pre-Processing/semantic/commitment_ledger.py",
+    "kind": "function",
+    "name": "_clamp_success_criteria",
+    "lineno": 372,
+    "is_async": false,
+    "args": [
+      {
+        "name": "commitment",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.dispatch",
+    "file": "Pre-Processing/semantic/dispatch.py",
+    "kind": "function",
+    "name": "dispatch_to_scp",
+    "lineno": 18,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Call I1 SCP pipeline and return JSON-serializable dict."
+  },
+  {
+    "module": "Pre-Processing.semantic.dispatch",
+    "file": "Pre-Processing/semantic/dispatch.py",
+    "kind": "function",
+    "name": "dispatch_to_arp",
+    "lineno": 26,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Call I3 ARP cycle and return JSON-serializable dict."
+  },
+  {
+    "module": "Pre-Processing.semantic.hashing",
+    "file": "Pre-Processing/semantic/hashing.py",
+    "kind": "function",
+    "name": "safe_hash",
+    "lineno": 13,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": "Stable hash for references; avoids persisting raw content."
+  },
+  {
+    "module": "Pre-Processing.semantic.maintenance",
+    "file": "Pre-Processing/semantic/maintenance.py",
+    "kind": "function",
+    "name": "_health_log",
+    "lineno": 24,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Path",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.maintenance",
+    "file": "Pre-Processing/semantic/maintenance.py",
+    "kind": "function",
+    "name": "rotate_resource_log",
+    "lineno": 138,
+    "is_async": true,
+    "args": [
+      {
+        "name": "max_bytes",
+        "annotation": "int"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": "Truncates the resource event log if it grows beyond ``max_bytes``."
+  },
+  {
+    "module": "Pre-Processing.semantic.nexus_manager",
+    "file": "Pre-Processing/semantic/nexus_manager.py",
+    "kind": "function",
+    "name": "_repo_sha",
+    "lineno": 24,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.prioritization",
+    "file": "Pre-Processing/semantic/prioritization.py",
+    "kind": "function",
+    "name": "_now_iso",
+    "lineno": 29,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.prioritization",
+    "file": "Pre-Processing/semantic/prioritization.py",
+    "kind": "function",
+    "name": "_inherit_constraints",
+    "lineno": 33,
+    "is_async": false,
+    "args": [
+      {
+        "name": "identity",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, bool]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.prioritization",
+    "file": "Pre-Processing/semantic/prioritization.py",
+    "kind": "function",
+    "name": "_dedupe_key",
+    "lineno": 45,
+    "is_async": false,
+    "args": [
+      {
+        "name": "commitment",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Tuple[str, str]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.prioritization",
+    "file": "Pre-Processing/semantic/prioritization.py",
+    "kind": "function",
+    "name": "_build_uwm_ref",
+    "lineno": 51,
+    "is_async": false,
+    "args": [
+      {
+        "name": "identity",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "uwm_snapshot",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Optional[str]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.prioritization",
+    "file": "Pre-Processing/semantic/prioritization.py",
+    "kind": "function",
+    "name": "_clamp",
+    "lineno": 69,
+    "is_async": false,
+    "args": [
+      {
+        "name": "text",
+        "annotation": "str"
+      },
+      {
+        "name": "limit",
+        "annotation": "int"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.prioritization",
+    "file": "Pre-Processing/semantic/prioritization.py",
+    "kind": "function",
+    "name": "_evidence_refs",
+    "lineno": 74,
+    "is_async": false,
+    "args": [
+      {
+        "name": "base_refs",
+        "annotation": "Iterable[str]"
+      }
+    ],
+    "return_annotation": "List[str]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.prioritization",
+    "file": "Pre-Processing/semantic/prioritization.py",
+    "kind": "function",
+    "name": "_default_success_criteria",
+    "lineno": 84,
+    "is_async": false,
+    "args": [
+      {
+        "name": "template_id",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "List[str]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.prioritization",
+    "file": "Pre-Processing/semantic/prioritization.py",
+    "kind": "function",
+    "name": "propose_candidate_commitments",
+    "lineno": 130,
+    "is_async": false,
+    "args": [
+      {
+        "name": "identity",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "uwm_snapshot",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "ledger",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "context",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.prioritization",
+    "file": "Pre-Processing/semantic/prioritization.py",
+    "kind": "function",
+    "name": "_parse_priority",
+    "lineno": 381,
+    "is_async": false,
+    "args": [
+      {
+        "name": "value",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "int",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.prioritization",
+    "file": "Pre-Processing/semantic/prioritization.py",
+    "kind": "function",
+    "name": "_iso_to_timestamp",
+    "lineno": 389,
+    "is_async": false,
+    "args": [
+      {
+        "name": "value",
+        "annotation": "Optional[str]"
+      }
+    ],
+    "return_annotation": "float",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.prioritization",
+    "file": "Pre-Processing/semantic/prioritization.py",
+    "kind": "function",
+    "name": "_find_commitment",
+    "lineno": 399,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ledger",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "commitment_id",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "Optional[Dict[str, Any]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.prioritization",
+    "file": "Pre-Processing/semantic/prioritization.py",
+    "kind": "function",
+    "name": "score_commitment",
+    "lineno": 408,
+    "is_async": false,
+    "args": [
+      {
+        "name": "commitment",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "identity",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "uwm_snapshot",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "ledger",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "context",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Tuple[int, List[str]]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.prioritization",
+    "file": "Pre-Processing/semantic/prioritization.py",
+    "kind": "function",
+    "name": "select_next_active_commitment",
+    "lineno": 490,
+    "is_async": false,
+    "args": [
+      {
+        "name": "identity",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "uwm_snapshot",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "ledger",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "context",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Tuple[Optional[str], Dict[str, Any], Dict[str, Any]]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.test_perception_ingestors",
+    "file": "Pre-Processing/semantic/test_perception_ingestors.py",
+    "kind": "function",
+    "name": "_write_events",
+    "lineno": 55,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path"
+      },
+      {
+        "name": "count",
+        "annotation": "int"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.test_registry_and_response",
+    "file": "Pre-Processing/semantic/test_registry_and_response.py",
+    "kind": "function",
+    "name": "test_registry_process_step_success",
+    "lineno": 26,
+    "is_async": true,
+    "args": [],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.test_registry_and_response",
+    "file": "Pre-Processing/semantic/test_registry_and_response.py",
+    "kind": "function",
+    "name": "test_response_formatter_basic",
+    "lineno": 44,
+    "is_async": true,
+    "args": [],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.test_simulation_cli",
+    "file": "Pre-Processing/semantic/test_simulation_cli.py",
+    "kind": "function",
+    "name": "test_run_simulation_stub_writes_to_custom_log_dir",
+    "lineno": 21,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.test_tool_fallback_proposal",
+    "file": "Pre-Processing/semantic/test_tool_fallback_proposal.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 24,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "int",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.time_utils",
+    "file": "Pre-Processing/semantic/time_utils.py",
+    "kind": "function",
+    "name": "utc_now_ts",
+    "lineno": 12,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "float",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.semantic.time_utils",
+    "file": "Pre-Processing/semantic/time_utils.py",
+    "kind": "function",
+    "name": "utc_now_iso",
+    "lineno": 15,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utility.causal_trace_operator",
+    "file": "Pre-Processing/utility/causal_trace_operator.py",
+    "kind": "function",
+    "name": "is_prime",
+    "lineno": 10,
+    "is_async": false,
+    "args": [
+      {
+        "name": "n",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utility.causal_trace_operator",
+    "file": "Pre-Processing/utility/causal_trace_operator.py",
+    "kind": "function",
+    "name": "goldbach_pair",
+    "lineno": 24,
+    "is_async": false,
+    "args": [
+      {
+        "name": "n",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utility.causal_trace_operator",
+    "file": "Pre-Processing/utility/causal_trace_operator.py",
+    "kind": "function",
+    "name": "generate_mandelbrot_seed",
+    "lineno": 32,
+    "is_async": false,
+    "args": [
+      {
+        "name": "real_base",
+        "annotation": null
+      },
+      {
+        "name": "imag_base",
+        "annotation": null
+      },
+      {
+        "name": "steps",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utility.causal_trace_operator",
+    "file": "Pre-Processing/utility/causal_trace_operator.py",
+    "kind": "function",
+    "name": "banach_node_trace",
+    "lineno": 40,
+    "is_async": false,
+    "args": [
+      {
+        "name": "seed_number",
+        "annotation": null
+      },
+      {
+        "name": "depth",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utility.causal_trace_operator",
+    "file": "Pre-Processing/utility/causal_trace_operator.py",
+    "kind": "function",
+    "name": "run_imae_test",
+    "lineno": 55,
+    "is_async": false,
+    "args": [
+      {
+        "name": "seed_real",
+        "annotation": null
+      },
+      {
+        "name": "seed_imag",
+        "annotation": null
+      },
+      {
+        "name": "steps",
+        "annotation": null
+      },
+      {
+        "name": "depth",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utility.development_environment",
+    "file": "Pre-Processing/utility/development_environment.py",
+    "kind": "function",
+    "name": "get_code_environment_status",
+    "lineno": 40,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Get coding environment status"
+  },
+  {
+    "module": "Pre-Processing.utility.regression_checker",
+    "file": "Pre-Processing/utility/regression_checker.py",
+    "kind": "function",
+    "name": "compare_tool_outputs",
+    "lineno": 67,
+    "is_async": false,
+    "args": [
+      {
+        "name": "baseline",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "candidate",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "tolerance",
+        "annotation": "float"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Compare two tool outputs and surface deltas."
+  },
+  {
+    "module": "Pre-Processing.utility.test_arp_modes",
+    "file": "Pre-Processing/utility/test_arp_modes.py",
+    "kind": "function",
+    "name": "test_active_mode_initialization",
+    "lineno": 41,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test ACTIVE mode initialization with testing and validation"
+  },
+  {
+    "module": "Pre-Processing.utility.test_arp_modes",
+    "file": "Pre-Processing/utility/test_arp_modes.py",
+    "kind": "function",
+    "name": "test_passive_mode_operation",
+    "lineno": 76,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test PASSIVE mode background operation"
+  },
+  {
+    "module": "Pre-Processing.utility.test_arp_modes",
+    "file": "Pre-Processing/utility/test_arp_modes.py",
+    "kind": "function",
+    "name": "test_passive_trigger",
+    "lineno": 101,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test passive trigger functionality"
+  },
+  {
+    "module": "Pre-Processing.utility.test_arp_modes",
+    "file": "Pre-Processing/utility/test_arp_modes.py",
+    "kind": "function",
+    "name": "test_shutdown_procedure",
+    "lineno": 144,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test full system shutdown procedure"
+  },
+  {
+    "module": "Pre-Processing.utility.test_arp_modes",
+    "file": "Pre-Processing/utility/test_arp_modes.py",
+    "kind": "function",
+    "name": "test_mode_transitions",
+    "lineno": 182,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test mode transition flow: INACTIVE → ACTIVE → PASSIVE → INACTIVE"
+  },
+  {
+    "module": "Pre-Processing.utility.test_arp_modes",
+    "file": "Pre-Processing/utility/test_arp_modes.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 228,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Run all mode system tests"
+  },
+  {
+    "module": "Pre-Processing.utility.test_determinism",
+    "file": "Pre-Processing/utility/test_determinism.py",
+    "kind": "function",
+    "name": "test_router_determinism",
+    "lineno": 8,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utility.test_evaluator_learning_smoke",
+    "file": "Pre-Processing/utility/test_evaluator_learning_smoke.py",
+    "kind": "function",
+    "name": "test_learning",
+    "lineno": 21,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Test that evaluator learns from outcomes."
+  },
+  {
+    "module": "Pre-Processing.utils._uip_connector_stubs",
+    "file": "Pre-Processing/utils/_uip_connector_stubs.py",
+    "kind": "function",
+    "name": "build_standard_connector",
+    "lineno": 95,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "StaticUIPConnector",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils._uip_connector_stubs",
+    "file": "Pre-Processing/utils/_uip_connector_stubs.py",
+    "kind": "function",
+    "name": "build_enhanced_connector",
+    "lineno": 99,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "StaticEnhancedUIPConnector",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.bridge",
+    "file": "Pre-Processing/utils/bridge.py",
+    "kind": "function",
+    "name": "bridge_status",
+    "lineno": 103,
+    "is_async": true,
+    "args": [],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Get protocol bridge status."
+  },
+  {
+    "module": "Pre-Processing.utils.bridge",
+    "file": "Pre-Processing/utils/bridge.py",
+    "kind": "function",
+    "name": "get_bridge_status",
+    "lineno": 108,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Synchronous wrapper for bridge status."
+  },
+  {
+    "module": "Pre-Processing.utils.causal_chain_node_predictor",
+    "file": "Pre-Processing/utils/causal_chain_node_predictor.py",
+    "kind": "function",
+    "name": "run_pc_causal_discovery",
+    "lineno": 18,
+    "is_async": false,
+    "args": [
+      {
+        "name": "data",
+        "annotation": null
+      },
+      {
+        "name": "alpha",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Performs causal discovery using the PC algorithm.\n\nArgs:\n    data (np.ndarray): Input data matrix (samples x variables).\n    alpha (float): Significance threshold for conditional independence tests.\n\nReturns:\n    cg (CausalGraph): Output causal graph."
+  },
+  {
+    "module": "Pre-Processing.utils.causal_chain_node_predictor",
+    "file": "Pre-Processing/utils/causal_chain_node_predictor.py",
+    "kind": "function",
+    "name": "simulate_example_data",
+    "lineno": 35,
+    "is_async": false,
+    "args": [
+      {
+        "name": "n_samples",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Simulates toy causal data for testing.\n\nReturns:\n    np.ndarray: Synthetic dataset."
+  },
+  {
+    "module": "Pre-Processing.utils.check_imports",
+    "file": "Pre-Processing/utils/check_imports.py",
+    "kind": "function",
+    "name": "check_imports",
+    "lineno": 16,
+    "is_async": false,
+    "args": [
+      {
+        "name": "file_path",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.check_run_cycle_prereqs",
+    "file": "Pre-Processing/utils/check_run_cycle_prereqs.py",
+    "kind": "function",
+    "name": "_check",
+    "lineno": 57,
+    "is_async": false,
+    "args": [
+      {
+        "name": "modules",
+        "annotation": "Iterable[str]"
+      }
+    ],
+    "return_annotation": "dict[str, bool]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.check_run_cycle_prereqs",
+    "file": "Pre-Processing/utils/check_run_cycle_prereqs.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 69,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "int",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.config",
+    "file": "Pre-Processing/utils/config.py",
+    "kind": "function",
+    "name": "load_config",
+    "lineno": 28,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "LLMConfig",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.cycle_ledger",
+    "file": "Pre-Processing/utils/cycle_ledger.py",
+    "kind": "function",
+    "name": "_sha256_file",
+    "lineno": 21,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.cycle_ledger",
+    "file": "Pre-Processing/utils/cycle_ledger.py",
+    "kind": "function",
+    "name": "_normalize_path",
+    "lineno": 31,
+    "is_async": false,
+    "args": [
+      {
+        "name": "raw_path",
+        "annotation": "str"
+      },
+      {
+        "name": "repo_root",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "Path",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.cycle_ledger",
+    "file": "Pre-Processing/utils/cycle_ledger.py",
+    "kind": "function",
+    "name": "_collect_bundle_hashes",
+    "lineno": 38,
+    "is_async": false,
+    "args": [
+      {
+        "name": "promotion_outcomes",
+        "annotation": "Iterable[Dict[str, Any]]"
+      },
+      {
+        "name": "repo_root",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "Dict[str, str]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.cycle_ledger",
+    "file": "Pre-Processing/utils/cycle_ledger.py",
+    "kind": "function",
+    "name": "_sanitize_steps",
+    "lineno": 68,
+    "is_async": false,
+    "args": [
+      {
+        "name": "steps",
+        "annotation": "List[Dict[str, Any]]"
+      }
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.cycle_ledger",
+    "file": "Pre-Processing/utils/cycle_ledger.py",
+    "kind": "function",
+    "name": "_sanitize_outcomes",
+    "lineno": 82,
+    "is_async": false,
+    "args": [
+      {
+        "name": "outcomes",
+        "annotation": "Iterable[Dict[str, Any]]"
+      }
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.cycle_ledger",
+    "file": "Pre-Processing/utils/cycle_ledger.py",
+    "kind": "function",
+    "name": "write_cycle_ledger",
+    "lineno": 101,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Path",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.evidence",
+    "file": "Pre-Processing/utils/evidence.py",
+    "kind": "function",
+    "name": "_as_posix",
+    "lineno": 22,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.evidence",
+    "file": "Pre-Processing/utils/evidence.py",
+    "kind": "function",
+    "name": "validate_evidence_ref",
+    "lineno": 26,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ref",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Validate a single evidence reference and return normalized copy."
+  },
+  {
+    "module": "Pre-Processing.utils.evidence",
+    "file": "Pre-Processing/utils/evidence.py",
+    "kind": "function",
+    "name": "_sort_key",
+    "lineno": 79,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ref",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "Tuple",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.evidence",
+    "file": "Pre-Processing/utils/evidence.py",
+    "kind": "function",
+    "name": "normalize_evidence_refs",
+    "lineno": 100,
+    "is_async": false,
+    "args": [
+      {
+        "name": "refs",
+        "annotation": "List[Dict[str, Any]]"
+      }
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "is_private": false,
+    "docstring": "Dedupe and deterministically order evidence references."
+  },
+  {
+    "module": "Pre-Processing.utils.evidence",
+    "file": "Pre-Processing/utils/evidence.py",
+    "kind": "function",
+    "name": "evidence_to_citation_string",
+    "lineno": 118,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ref",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.evidence",
+    "file": "Pre-Processing/utils/evidence.py",
+    "kind": "function",
+    "name": "is_proved_reference",
+    "lineno": 138,
+    "is_async": false,
+    "args": [
+      {
+        "name": "ref",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "theorem_index",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "bool",
+    "is_private": false,
+    "docstring": "Return True if ref is a proved Coq reference against index."
+  },
+  {
+    "module": "Pre-Processing.utils.guardrails",
+    "file": "Pre-Processing/utils/guardrails.py",
+    "kind": "function",
+    "name": "require_safe_interfaces",
+    "lineno": 40,
+    "is_async": false,
+    "args": [
+      {
+        "name": "func",
+        "annotation": "F"
+      }
+    ],
+    "return_annotation": "F",
+    "is_private": false,
+    "docstring": "Decorator blocking risky calls while the mission profile demands safety."
+  },
+  {
+    "module": "Pre-Processing.utils.guardrails",
+    "file": "Pre-Processing/utils/guardrails.py",
+    "kind": "function",
+    "name": "restrict_writes_to",
+    "lineno": 56,
+    "is_async": false,
+    "args": [
+      {
+        "name": "root",
+        "annotation": "str | os.PathLike[str]"
+      }
+    ],
+    "return_annotation": "Callable[[F], F]",
+    "is_private": false,
+    "docstring": "Block write attempts that escape the provided root directory."
+  },
+  {
+    "module": "Pre-Processing.utils.iel_integration",
+    "file": "Pre-Processing/utils/iel_integration.py",
+    "kind": "function",
+    "name": "get_iel_integration",
+    "lineno": 152,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "IELIntegration",
+    "is_private": false,
+    "docstring": "Get the global IEL integration instance."
+  },
+  {
+    "module": "Pre-Processing.utils.iel_integration",
+    "file": "Pre-Processing/utils/iel_integration.py",
+    "kind": "function",
+    "name": "initialize_iel_system",
+    "lineno": 160,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "bool",
+    "is_private": false,
+    "docstring": "Initialize the complete IEL system."
+  },
+  {
+    "module": "Pre-Processing.utils.iel_registryv1",
+    "file": "Pre-Processing/utils/iel_registryv1.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 750,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Main entry point for IEL registry command-line interface"
+  },
+  {
+    "module": "Pre-Processing.utils.iel_registryv2",
+    "file": "Pre-Processing/utils/iel_registryv2.py",
+    "kind": "function",
+    "name": "get_iel_registry",
+    "lineno": 117,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "IELRegistry",
+    "is_private": false,
+    "docstring": "Get the global IEL registry instance."
+  },
+  {
+    "module": "Pre-Processing.utils.io_normalizer",
+    "file": "Pre-Processing/utils/io_normalizer.py",
+    "kind": "function",
+    "name": "normalize_payload",
+    "lineno": 49,
+    "is_async": false,
+    "args": [
+      {
+        "name": "payload",
+        "annotation": "Any"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Normalize a single payload into canonical schema."
+  },
+  {
+    "module": "Pre-Processing.utils.iterative_loop",
+    "file": "Pre-Processing/utils/iterative_loop.py",
+    "kind": "function",
+    "name": "run_iterative_stabilization",
+    "lineno": 23,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "TransformOutcome",
+    "is_private": false,
+    "docstring": "Bounded iterative stabilization loop.\nApplies default safe transforms in a fixed order unless overridden.\nNo heavy reasoning. No hallucination. No rebuilds."
+  },
+  {
+    "module": "Pre-Processing.utils.logging_utils",
+    "file": "Pre-Processing/utils/logging_utils.py",
+    "kind": "function",
+    "name": "log_event",
+    "lineno": 15,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Lightweight structured log record generator.\n\nReturns a dict; caller decides where to emit it."
+  },
+  {
+    "module": "Pre-Processing.utils.logging_utils",
+    "file": "Pre-Processing/utils/logging_utils.py",
+    "kind": "function",
+    "name": "dumps_log",
+    "lineno": 36,
+    "is_async": false,
+    "args": [
+      {
+        "name": "record",
+        "annotation": "Dict[str, Any]"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.logos_monitor",
+    "file": "Pre-Processing/utils/logos_monitor.py",
+    "kind": "function",
+    "name": "get_detailed_status",
+    "lineno": 35,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Get comprehensive system status"
+  },
+  {
+    "module": "Pre-Processing.utils.logos_monitor",
+    "file": "Pre-Processing/utils/logos_monitor.py",
+    "kind": "function",
+    "name": "print_status_report",
+    "lineno": 90,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Print formatted status report"
+  },
+  {
+    "module": "Pre-Processing.utils.logos_monitor",
+    "file": "Pre-Processing/utils/logos_monitor.py",
+    "kind": "function",
+    "name": "export_json_report",
+    "lineno": 137,
+    "is_async": false,
+    "args": [
+      {
+        "name": "filename",
+        "annotation": null
+      }
+    ],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Export status as JSON"
+  },
+  {
+    "module": "Pre-Processing.utils.logos_monitor",
+    "file": "Pre-Processing/utils/logos_monitor.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 149,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.schema_utils",
+    "file": "Pre-Processing/utils/schema_utils.py",
+    "kind": "function",
+    "name": "require_dict",
+    "lineno": 15,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Any"
+      },
+      {
+        "name": "name",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.schema_utils",
+    "file": "Pre-Processing/utils/schema_utils.py",
+    "kind": "function",
+    "name": "require_str",
+    "lineno": 21,
+    "is_async": false,
+    "args": [
+      {
+        "name": "obj",
+        "annotation": "Any"
+      },
+      {
+        "name": "name",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.schema_utils",
+    "file": "Pre-Processing/utils/schema_utils.py",
+    "kind": "function",
+    "name": "get_str",
+    "lineno": 27,
+    "is_async": false,
+    "args": [
+      {
+        "name": "d",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "key",
+        "annotation": "str"
+      },
+      {
+        "name": "default",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.schema_utils",
+    "file": "Pre-Processing/utils/schema_utils.py",
+    "kind": "function",
+    "name": "get_dict",
+    "lineno": 32,
+    "is_async": false,
+    "args": [
+      {
+        "name": "d",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "key",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.schema_utils",
+    "file": "Pre-Processing/utils/schema_utils.py",
+    "kind": "function",
+    "name": "get_list",
+    "lineno": 37,
+    "is_async": false,
+    "args": [
+      {
+        "name": "d",
+        "annotation": "Dict[str, Any]"
+      },
+      {
+        "name": "key",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "List[Any]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.self_diagnosis",
+    "file": "Pre-Processing/utils/self_diagnosis.py",
+    "kind": "function",
+    "name": "perform_system_diagnosis",
+    "lineno": 386,
+    "is_async": true,
+    "args": [],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Perform comprehensive system diagnosis."
+  },
+  {
+    "module": "Pre-Processing.utils.self_diagnosis",
+    "file": "Pre-Processing/utils/self_diagnosis.py",
+    "kind": "function",
+    "name": "get_system_diagnosis",
+    "lineno": 391,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Get system diagnosis (synchronous wrapper)."
+  },
+  {
+    "module": "Pre-Processing.utils.shared_resources",
+    "file": "Pre-Processing/utils/shared_resources.py",
+    "kind": "function",
+    "name": "configure_runtime_state_dir",
+    "lineno": 45,
+    "is_async": false,
+    "args": [
+      {
+        "name": "target",
+        "annotation": "Optional[Path]"
+      }
+    ],
+    "return_annotation": "Path",
+    "is_private": false,
+    "docstring": "Select the active runtime directory and ensure it exists."
+  },
+  {
+    "module": "Pre-Processing.utils.shared_resources",
+    "file": "Pre-Processing/utils/shared_resources.py",
+    "kind": "function",
+    "name": "runtime_log_path",
+    "lineno": 54,
+    "is_async": false,
+    "args": [
+      {
+        "name": "filename",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "Path",
+    "is_private": false,
+    "docstring": "Return the path to a runtime log file, creating parents as needed."
+  },
+  {
+    "module": "Pre-Processing.utils.shared_resources",
+    "file": "Pre-Processing/utils/shared_resources.py",
+    "kind": "function",
+    "name": "_load_resource_config",
+    "lineno": 67,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, int]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.shared_resources",
+    "file": "Pre-Processing/utils/shared_resources.py",
+    "kind": "function",
+    "name": "_read_meminfo",
+    "lineno": 86,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, int]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.shared_resources",
+    "file": "Pre-Processing/utils/shared_resources.py",
+    "kind": "function",
+    "name": "_read_disk_free",
+    "lineno": 105,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "int",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.shared_resources",
+    "file": "Pre-Processing/utils/shared_resources.py",
+    "kind": "function",
+    "name": "_load_average",
+    "lineno": 113,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Dict[str, float]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.shared_resources",
+    "file": "Pre-Processing/utils/shared_resources.py",
+    "kind": "function",
+    "name": "stream_snapshots",
+    "lineno": 308,
+    "is_async": false,
+    "args": [
+      {
+        "name": "manager",
+        "annotation": "ResourceManager"
+      }
+    ],
+    "return_annotation": "Iterable[Dict[str, object]]",
+    "is_private": false,
+    "docstring": "Yield successive resource snapshots for polling diagnostics."
+  },
+  {
+    "module": "Pre-Processing.utils.smp_intake",
+    "file": "Pre-Processing/utils/smp_intake.py",
+    "kind": "function",
+    "name": "load_smp",
+    "lineno": 35,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "SMPEnvelope",
+    "is_private": false,
+    "docstring": "Validate + normalize an SMP dict.\nDoes not require full schema, only what SCP needs to begin."
+  },
+  {
+    "module": "Pre-Processing.utils.stress_sop_runtime",
+    "file": "Pre-Processing/utils/stress_sop_runtime.py",
+    "kind": "function",
+    "name": "_build_fallback_shared_resources",
+    "lineno": 45,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Any",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.stress_sop_runtime",
+    "file": "Pre-Processing/utils/stress_sop_runtime.py",
+    "kind": "function",
+    "name": "_spawn_user_requests",
+    "lineno": 79,
+    "is_async": true,
+    "args": [
+      {
+        "name": "registry",
+        "annotation": "AgentRegistry"
+      },
+      {
+        "name": "total",
+        "annotation": "int"
+      },
+      {
+        "name": "text",
+        "annotation": "str"
+      },
+      {
+        "name": "concurrency",
+        "annotation": "int"
+      }
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.stress_sop_runtime",
+    "file": "Pre-Processing/utils/stress_sop_runtime.py",
+    "kind": "function",
+    "name": "_spawn_meta_cycles",
+    "lineno": 115,
+    "is_async": true,
+    "args": [
+      {
+        "name": "registry",
+        "annotation": "AgentRegistry"
+      },
+      {
+        "name": "total",
+        "annotation": "int"
+      }
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.stress_sop_runtime",
+    "file": "Pre-Processing/utils/stress_sop_runtime.py",
+    "kind": "function",
+    "name": "_tail_jsonl",
+    "lineno": 146,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path"
+      },
+      {
+        "name": "keep",
+        "annotation": "int"
+      }
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.stress_sop_runtime",
+    "file": "Pre-Processing/utils/stress_sop_runtime.py",
+    "kind": "function",
+    "name": "_load_jsonl_since",
+    "lineno": 164,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path"
+      },
+      {
+        "name": "since",
+        "annotation": "float"
+      }
+    ],
+    "return_annotation": "List[Dict[str, Any]]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.stress_sop_runtime",
+    "file": "Pre-Processing/utils/stress_sop_runtime.py",
+    "kind": "function",
+    "name": "_prepare_run_directory",
+    "lineno": 183,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "Path",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.stress_sop_runtime",
+    "file": "Pre-Processing/utils/stress_sop_runtime.py",
+    "kind": "function",
+    "name": "_summarize_log_file",
+    "lineno": 197,
+    "is_async": false,
+    "args": [
+      {
+        "name": "path",
+        "annotation": "Path"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": true,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.stress_sop_runtime",
+    "file": "Pre-Processing/utils/stress_sop_runtime.py",
+    "kind": "function",
+    "name": "run",
+    "lineno": 226,
+    "is_async": true,
+    "args": [
+      {
+        "name": "args",
+        "annotation": "argparse.Namespace"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.stress_sop_runtime",
+    "file": "Pre-Processing/utils/stress_sop_runtime.py",
+    "kind": "function",
+    "name": "parse_args",
+    "lineno": 413,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "argparse.Namespace",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.stress_sop_runtime",
+    "file": "Pre-Processing/utils/stress_sop_runtime.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 452,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.system_utils",
+    "file": "Pre-Processing/utils/system_utils.py",
+    "kind": "function",
+    "name": "get_current_timestamp",
+    "lineno": 90,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": "Return an ISO-8601 UTC timestamp with trailing 'Z'."
+  },
+  {
+    "module": "Pre-Processing.utils.system_utils",
+    "file": "Pre-Processing/utils/system_utils.py",
+    "kind": "function",
+    "name": "log_uip_event",
+    "lineno": 95,
+    "is_async": false,
+    "args": [
+      {
+        "name": "event_type",
+        "annotation": "str"
+      },
+      {
+        "name": "data",
+        "annotation": "Optional[Dict[str, Any]]"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": "Log a structured UIP event for auditing and diagnostics."
+  },
+  {
+    "module": "Pre-Processing.utils.system_utils",
+    "file": "Pre-Processing/utils/system_utils.py",
+    "kind": "function",
+    "name": "handle_step_error",
+    "lineno": 124,
+    "is_async": false,
+    "args": [
+      {
+        "name": "step",
+        "annotation": "str"
+      },
+      {
+        "name": "error",
+        "annotation": "Exception"
+      },
+      {
+        "name": "context",
+        "annotation": "Optional[Dict[str, Any]]"
+      }
+    ],
+    "return_annotation": "Dict[str, Any]",
+    "is_private": false,
+    "docstring": "Wrap an exception from a UIP step into a structured payload."
+  },
+  {
+    "module": "Pre-Processing.utils.system_utils",
+    "file": "Pre-Processing/utils/system_utils.py",
+    "kind": "function",
+    "name": "calculate_average_processing_time",
+    "lineno": 140,
+    "is_async": false,
+    "args": [
+      {
+        "name": "current_avg",
+        "annotation": "float"
+      },
+      {
+        "name": "total_requests",
+        "annotation": "int"
+      },
+      {
+        "name": "new_time",
+        "annotation": "float"
+      }
+    ],
+    "return_annotation": "float",
+    "is_private": false,
+    "docstring": "Update running average processing time in milliseconds."
+  },
+  {
+    "module": "Pre-Processing.utils.system_utils",
+    "file": "Pre-Processing/utils/system_utils.py",
+    "kind": "function",
+    "name": "generate_correlation_id",
+    "lineno": 149,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "str",
+    "is_private": false,
+    "docstring": "Create a unique identifier for request correlation."
+  },
+  {
+    "module": "Pre-Processing.utils.system_utils",
+    "file": "Pre-Processing/utils/system_utils.py",
+    "kind": "function",
+    "name": "record_request_outcome",
+    "lineno": 154,
+    "is_async": false,
+    "args": [
+      {
+        "name": "status",
+        "annotation": "str"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": "Increment Prometheus counter for a routing outcome."
+  },
+  {
+    "module": "Pre-Processing.utils.system_utils",
+    "file": "Pre-Processing/utils/system_utils.py",
+    "kind": "function",
+    "name": "observe_request_latency",
+    "lineno": 159,
+    "is_async": false,
+    "args": [
+      {
+        "name": "duration_ms",
+        "annotation": "float"
+      }
+    ],
+    "return_annotation": "None",
+    "is_private": false,
+    "docstring": "Record routing latency in seconds for Prometheus histograms."
+  },
+  {
+    "module": "Pre-Processing.utils.system_utils",
+    "file": "Pre-Processing/utils/system_utils.py",
+    "kind": "function",
+    "name": "export_metrics",
+    "lineno": 165,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "bytes",
+    "is_private": false,
+    "docstring": "Return the latest UIP metrics snapshot in Prometheus exposition format."
+  },
+  {
+    "module": "Pre-Processing.utils.task_intake",
+    "file": "Pre-Processing/utils/task_intake.py",
+    "kind": "function",
+    "name": "load_task",
+    "lineno": 27,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "TaskEnvelope",
+    "is_private": false,
+    "docstring": null
+  },
+  {
+    "module": "Pre-Processing.utils.transform_registry",
+    "file": "Pre-Processing/utils/transform_registry.py",
+    "kind": "function",
+    "name": "default_registry",
+    "lineno": 34,
+    "is_async": false,
+    "args": [],
+    "return_annotation": "TransformRegistry",
+    "is_private": false,
+    "docstring": "Default safe transforms only:\n  - normalize: trim whitespace, basic string normalization\n  - reframe: wrap negation statements without rewriting content\n  - decompose: split on obvious delimiters into fragments\n  - annotate: attach a non-destructive annotation wrapper"
+  },
+  {
+    "module": "Pre-Processing.utils.uip_operations",
+    "file": "Pre-Processing/utils/uip_operations.py",
+    "kind": "function",
+    "name": "main",
+    "lineno": 332,
+    "is_async": false,
+    "args": [],
+    "return_annotation": null,
+    "is_private": false,
+    "docstring": "Main execution function"
+  }
+]
