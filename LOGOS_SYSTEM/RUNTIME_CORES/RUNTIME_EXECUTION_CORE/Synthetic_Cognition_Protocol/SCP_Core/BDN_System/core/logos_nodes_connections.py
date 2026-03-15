@@ -32,8 +32,8 @@ observability:
 
 import json
 from logos.imports.governance import TrinitarianAgent, CreatureAgent
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.logos_validator_hub import LOGOSValidatorHub
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.ontological_validator import OntologicalPropertyValidator
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.logos_validator_hub import LOGOSValidatorHub
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.ontological_validator import OntologicalPropertyValidator
 
 # --- 1. Load Ontological Property Dictionary ---
 try:

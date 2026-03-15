@@ -1,7 +1,7 @@
 import pytest
 import time
 from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.unified_binder import UnifiedBinder
-from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.hashing import safe_hash
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.Logos_Agents.I3_Agent.I3_Agent_Infra.config.hashing import safe_hash
 
 def minimal_smp_core():
     return {"id": "SMP-002", "data": {"bar": "baz"}}

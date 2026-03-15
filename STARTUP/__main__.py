@@ -28,6 +28,20 @@ Any failure during START_LOGOS execution halts runtime.
 
 from __future__ import annotations
 
+# ================================================================
+# LOGOS Repository Import Root Bootstrap
+# ================================================================
+
+import sys
+import pathlib
+
+_REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
+
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
+
+# ================================================================
+
 from .START_LOGOS import main as start_logos_main
 
 

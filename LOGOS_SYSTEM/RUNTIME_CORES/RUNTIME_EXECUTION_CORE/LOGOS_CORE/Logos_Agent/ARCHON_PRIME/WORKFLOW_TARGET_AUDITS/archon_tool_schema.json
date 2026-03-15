@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "schema_name": "ARCHON_TOOL_SCHEMA",
+  "authoring_authority": "ARCHON_PRIME",
+  "spec_reference": "SPEC-AP-V2.1",
+  "description": "Canonical schema for registering Archon Prime analysis tools. Every tool registered in archon_tool_index.json must conform to this schema.",
+  "fields": [
+    {
+      "name": "tool_name",
+      "type": "string",
+      "required": true,
+      "description": "Filename of the tool script (e.g. repo_mapper.py)."
+    },
+    {
+      "name": "analysis_domain",
+      "type": "string",
+      "required": true,
+      "description": "Subdirectory of MODULES/analysis that owns this tool.",
+      "allowed_values": [
+        "repo_maps",
+        "dependency_graphs",
+        "filesystem",
+        "ast_analysis",
+        "semantic_analysis",
+        "runtime_analysis",
+        "packet_analysis",
+        "structure_analysis",
+        "risk_detection",
+        "integration_analysis",
+        "classification"
+      ]
+    },
+    {
+      "name": "execution_stage",
+      "type": "integer",
+      "required": true,
+      "description": "Ordinal stage in the Archon pipeline. Lower numbers execute first."
+    },
+    {
+      "name": "execution_entry",
+      "type": "string",
+      "required": false,
+      "description": "Name of the callable entry point (function or class). Null if the script runs at module level."
+    },
+    {
+      "name": "dependencies",
+      "type": "array",
+      "items": "string",
+      "required": true,
+      "description": "List of stage keys (from archon_tool_index.json) that must complete before this tool runs. Empty array if none."
+    },
+    {
+      "name": "expected_inputs",
+      "type": "array",
+      "items": "string",
+      "required": true,
+      "description": "Filenames or environment variables this tool reads as inputs."
+    },
+    {
+      "name": "output_artifacts",
+      "type": "array",
+      "items": "string",
+      "required": true,
+      "description": "Filenames this tool writes to OUTPUT_ROOT. Must be non-empty."
+    },
+    {
+      "name": "mutation_capability",
+      "type": "boolean",
+      "required": true,
+      "description": "True if the tool modifies any file outside OUTPUT_ROOT. Governance-fail-closed: tools with mutation_capability=true require explicit authorization."
+    },
+    {
+      "name": "safety_classification",
+      "type": "string",
+      "required": true,
+      "description": "Risk classification of the tool.",
+      "allowed_values": [
+        "READ_ONLY",
+        "WRITE_DIAGNOSTICS",
+        "MUTATES_SOURCE",
+        "RESTRICTED"
+      ]
+    }
+  ]
+}

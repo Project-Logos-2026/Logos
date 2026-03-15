@@ -1,0 +1,3132 @@
+{
+  "symbols": [
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/Import_Linter.py",
+      "import_line_number": 39,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/Import_Linter.py",
+      "import_line_number": 40,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/Import_Linter.py",
+      "import_line_number": 41,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/Import_Linter.py",
+      "import_line_number": 42,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/Import_Linter.py",
+      "import_line_number": 209,
+      "import_statement": "    import json",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/Import_Linter.py",
+      "import_line_number": 218,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/triage.py",
+      "import_line_number": 39,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "difflib",
+      "source_module": "difflib",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/triage.py",
+      "import_line_number": 40,
+      "import_statement": "import difflib",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/triage.py",
+      "import_line_number": 41,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/triage.py",
+      "import_line_number": 42,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "re",
+      "source_module": "re",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/triage.py",
+      "import_line_number": 43,
+      "import_statement": "import re",
+      "alias": null
+    },
+    {
+      "symbol": "shutil",
+      "source_module": "shutil",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/triage.py",
+      "import_line_number": 44,
+      "import_statement": "import shutil",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/triage.py",
+      "import_line_number": 45,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "defaultdict",
+      "source_module": "collections",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/triage.py",
+      "import_line_number": 46,
+      "import_statement": "from collections import defaultdict",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/triage.py",
+      "import_line_number": 47,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/triage.py",
+      "import_line_number": 56,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/scanner.py",
+      "import_line_number": 37,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "Iterator",
+      "source_module": "typing",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/scanner.py",
+      "import_line_number": 38,
+      "import_statement": "from typing import Iterator",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/scanner.py",
+      "import_line_number": 47,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/repo_structure_export.py",
+      "import_line_number": 32,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/repo_structure_export.py",
+      "import_line_number": 33,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/repo_structure_export.py",
+      "import_line_number": 34,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Repo_Audit/repo_structure_export.py",
+      "import_line_number": 43,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/extract.py",
+      "import_line_number": 38,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/extract.py",
+      "import_line_number": 39,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/extract.py",
+      "import_line_number": 40,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "re",
+      "source_module": "re",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/extract.py",
+      "import_line_number": 41,
+      "import_statement": "import re",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/extract.py",
+      "import_line_number": 42,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "math",
+      "source_module": "math",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/extract.py",
+      "import_line_number": 43,
+      "import_statement": "import math",
+      "alias": null
+    },
+    {
+      "symbol": "Counter",
+      "source_module": "collections",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/extract.py",
+      "import_line_number": 44,
+      "import_statement": "from collections import Counter, defaultdict",
+      "alias": null
+    },
+    {
+      "symbol": "defaultdict",
+      "source_module": "collections",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/extract.py",
+      "import_line_number": 44,
+      "import_statement": "from collections import Counter, defaultdict",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/extract.py",
+      "import_line_number": 45,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "random",
+      "source_module": "random",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/extract.py",
+      "import_line_number": 317,
+      "import_statement": "    import random",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/extract.py",
+      "import_line_number": 326,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/legacy_extract.py",
+      "import_line_number": 38,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/legacy_extract.py",
+      "import_line_number": 39,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/legacy_extract.py",
+      "import_line_number": 40,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "re",
+      "source_module": "re",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/legacy_extract.py",
+      "import_line_number": 41,
+      "import_statement": "import re",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/legacy_extract.py",
+      "import_line_number": 42,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "Counter",
+      "source_module": "collections",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/legacy_extract.py",
+      "import_line_number": 43,
+      "import_statement": "from collections import Counter, defaultdict",
+      "alias": null
+    },
+    {
+      "symbol": "defaultdict",
+      "source_module": "collections",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/legacy_extract.py",
+      "import_line_number": 43,
+      "import_statement": "from collections import Counter, defaultdict",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/legacy_extract.py",
+      "import_line_number": 44,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Code_Extraction/legacy_extract.py",
+      "import_line_number": 53,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_module_tree_auditor.py",
+      "import_line_number": 34,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_module_tree_auditor.py",
+      "import_line_number": 35,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_module_tree_auditor.py",
+      "import_line_number": 36,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_module_tree_auditor.py",
+      "import_line_number": 37,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_debug_artifact_scanner.py",
+      "import_line_number": 34,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_debug_artifact_scanner.py",
+      "import_line_number": 35,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_debug_artifact_scanner.py",
+      "import_line_number": 36,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "re",
+      "source_module": "re",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_debug_artifact_scanner.py",
+      "import_line_number": 37,
+      "import_statement": "import re",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_debug_artifact_scanner.py",
+      "import_line_number": 38,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_execution_tracer.py",
+      "import_line_number": 34,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_execution_tracer.py",
+      "import_line_number": 35,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_execution_tracer.py",
+      "import_line_number": 36,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "runpy",
+      "source_module": "runpy",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_execution_tracer.py",
+      "import_line_number": 37,
+      "import_statement": "import runpy",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_execution_tracer.py",
+      "import_line_number": 38,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_callgraph_extractor.py",
+      "import_line_number": 34,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_callgraph_extractor.py",
+      "import_line_number": 35,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_callgraph_extractor.py",
+      "import_line_number": 36,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Runtime_Diagnostics/runtime_callgraph_extractor.py",
+      "import_line_number": 37,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Migration/reorganize.py",
+      "import_line_number": 38,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "shutil",
+      "source_module": "shutil",
+      "imported_by_file": "Runtime_Tools/Migration/reorganize.py",
+      "import_line_number": 39,
+      "import_statement": "import shutil",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Runtime_Tools/Migration/reorganize.py",
+      "import_line_number": 40,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Migration/reorganize.py",
+      "import_line_number": 41,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Migration/reorganize.py",
+      "import_line_number": 50,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/module_root_existence_checker.py",
+      "import_line_number": 34,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/module_root_existence_checker.py",
+      "import_line_number": 35,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/module_root_existence_checker.py",
+      "import_line_number": 36,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/violation_prefix_grouper.py",
+      "import_line_number": 34,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/violation_prefix_grouper.py",
+      "import_line_number": 35,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/violation_prefix_grouper.py",
+      "import_line_number": 36,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "defaultdict",
+      "source_module": "collections",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/violation_prefix_grouper.py",
+      "import_line_number": 37,
+      "import_statement": "from collections import defaultdict",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/import_prefix_verifier.py",
+      "import_line_number": 34,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/import_prefix_verifier.py",
+      "import_line_number": 35,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/import_prefix_verifier.py",
+      "import_line_number": 36,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "Counter",
+      "source_module": "collections",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/import_prefix_verifier.py",
+      "import_line_number": 37,
+      "import_statement": "from collections import Counter",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/import_violation_classifier.py",
+      "import_line_number": 34,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/import_violation_classifier.py",
+      "import_line_number": 35,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/import_violation_classifier.py",
+      "import_line_number": 36,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "defaultdict",
+      "source_module": "collections",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/import_violation_classifier.py",
+      "import_line_number": 37,
+      "import_statement": "from collections import defaultdict",
+      "alias": null
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/nexus_structural_audit.py",
+      "import_line_number": 34,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/nexus_structural_audit.py",
+      "import_line_number": 35,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/nexus_structural_audit.py",
+      "import_line_number": 36,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/nexus_structural_audit.py",
+      "import_line_number": 37,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/execution_core_isolation_audit.py",
+      "import_line_number": 34,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/execution_core_isolation_audit.py",
+      "import_line_number": 35,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/execution_core_isolation_audit.py",
+      "import_line_number": 36,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/execution_core_isolation_audit.py",
+      "import_line_number": 37,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/namespace_discovery_scan.py",
+      "import_line_number": 34,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/namespace_discovery_scan.py",
+      "import_line_number": 35,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/namespace_discovery_scan.py",
+      "import_line_number": 36,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/import_root_grouping_analyzer.py",
+      "import_line_number": 33,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/import_root_grouping_analyzer.py",
+      "import_line_number": 34,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/import_root_grouping_analyzer.py",
+      "import_line_number": 35,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "defaultdict",
+      "source_module": "collections",
+      "imported_by_file": "Runtime_Tools/Architecture_Validation/import_root_grouping_analyzer.py",
+      "import_line_number": 36,
+      "import_statement": "from collections import defaultdict",
+      "alias": null
+    },
+    {
+      "symbol": "pathlib",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Dev_Utilities/conftest.py",
+      "import_line_number": 1,
+      "import_statement": "import pathlib",
+      "alias": null
+    },
+    {
+      "symbol": "pytest",
+      "source_module": "pytest",
+      "imported_by_file": "Runtime_Tools/Dev_Utilities/conftest.py",
+      "import_line_number": 2,
+      "import_statement": "import pytest",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Report_Generation/registry_writer.py",
+      "import_line_number": 37,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "datetime",
+      "source_module": "datetime",
+      "imported_by_file": "Runtime_Tools/Report_Generation/registry_writer.py",
+      "import_line_number": 38,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "timezone",
+      "source_module": "datetime",
+      "imported_by_file": "Runtime_Tools/Report_Generation/registry_writer.py",
+      "import_line_number": 38,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Report_Generation/registry_writer.py",
+      "import_line_number": 39,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Report_Generation/registry_writer.py",
+      "import_line_number": 48,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "collections",
+      "source_module": "collections",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/cluster_analysis.py",
+      "import_line_number": 48,
+      "import_statement": "import collections",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/cluster_analysis.py",
+      "import_line_number": 49,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "math",
+      "source_module": "math",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/cluster_analysis.py",
+      "import_line_number": 50,
+      "import_statement": "import math",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/cluster_analysis.py",
+      "import_line_number": 51,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/cluster_analysis.py",
+      "import_line_number": 52,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "datetime",
+      "source_module": "datetime",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/cluster_analysis.py",
+      "import_line_number": 53,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "timezone",
+      "source_module": "datetime",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/cluster_analysis.py",
+      "import_line_number": 53,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "networkx",
+      "source_module": "networkx",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/cluster_analysis.py",
+      "import_line_number": 74,
+      "import_statement": "    import networkx as nx",
+      "alias": "nx"
+    },
+    {
+      "symbol": "louvain_communities",
+      "source_module": "networkx.algorithms.community",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/cluster_analysis.py",
+      "import_line_number": 75,
+      "import_statement": "    from networkx.algorithms.community import louvain_communities",
+      "alias": null
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+      "import_line_number": 46,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "collections",
+      "source_module": "collections",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+      "import_line_number": 47,
+      "import_statement": "import collections",
+      "alias": null
+    },
+    {
+      "symbol": "difflib",
+      "source_module": "difflib",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+      "import_line_number": 48,
+      "import_statement": "import difflib",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+      "import_line_number": 49,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "re",
+      "source_module": "re",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+      "import_line_number": 50,
+      "import_statement": "import re",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+      "import_line_number": 51,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "textwrap",
+      "source_module": "textwrap",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+      "import_line_number": 52,
+      "import_statement": "import textwrap",
+      "alias": null
+    },
+    {
+      "symbol": "datetime",
+      "source_module": "datetime",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+      "import_line_number": 53,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "timezone",
+      "source_module": "datetime",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+      "import_line_number": 53,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/facade_rewrite_pass.py",
+      "import_line_number": 54,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/generate_deep_import_violations.py",
+      "import_line_number": 49,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/generate_deep_import_violations.py",
+      "import_line_number": 50,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/generate_deep_import_violations.py",
+      "import_line_number": 51,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "timezone",
+      "source_module": "datetime",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/generate_deep_import_violations.py",
+      "import_line_number": 52,
+      "import_statement": "from datetime import timezone, datetime",
+      "alias": null
+    },
+    {
+      "symbol": "datetime",
+      "source_module": "datetime",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/generate_deep_import_violations.py",
+      "import_line_number": 52,
+      "import_statement": "from datetime import timezone, datetime",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/generate_deep_import_violations.py",
+      "import_line_number": 53,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Dependency_Analysis/generate_deep_import_violations.py",
+      "import_line_number": 62,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "re",
+      "source_module": "re",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/semantic_extractor.py",
+      "import_line_number": 40,
+      "import_statement": "import re",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/semantic_extractor.py",
+      "import_line_number": 41,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/semantic_extractor.py",
+      "import_line_number": 50,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/runtime_analysis.py",
+      "import_line_number": 42,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/runtime_analysis.py",
+      "import_line_number": 43,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/runtime_analysis.py",
+      "import_line_number": 44,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/runtime_analysis.py",
+      "import_line_number": 45,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "collections",
+      "source_module": "collections",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/runtime_analysis.py",
+      "import_line_number": 46,
+      "import_statement": "import collections",
+      "alias": null
+    },
+    {
+      "symbol": "math",
+      "source_module": "math",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/runtime_analysis.py",
+      "import_line_number": 47,
+      "import_statement": "import math",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/runtime_analysis.py",
+      "import_line_number": 48,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "Any",
+      "source_module": "typing",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/runtime_analysis.py",
+      "import_line_number": 49,
+      "import_statement": "from typing import Any",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/runtime_analysis.py",
+      "import_line_number": 58,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/drac_indexer.py",
+      "import_line_number": 39,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/drac_indexer.py",
+      "import_line_number": 40,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "re",
+      "source_module": "re",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/drac_indexer.py",
+      "import_line_number": 41,
+      "import_statement": "import re",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/drac_indexer.py",
+      "import_line_number": 42,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "defaultdict",
+      "source_module": "collections",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/drac_indexer.py",
+      "import_line_number": 43,
+      "import_statement": "from collections import defaultdict",
+      "alias": null
+    },
+    {
+      "symbol": "datetime",
+      "source_module": "datetime",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/drac_indexer.py",
+      "import_line_number": 44,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "timezone",
+      "source_module": "datetime",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/drac_indexer.py",
+      "import_line_number": 44,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/drac_indexer.py",
+      "import_line_number": 45,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/drac_indexer.py",
+      "import_line_number": 54,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/packet_discovery.py",
+      "import_line_number": 39,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/packet_discovery.py",
+      "import_line_number": 40,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/packet_discovery.py",
+      "import_line_number": 41,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "re",
+      "source_module": "re",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/packet_discovery.py",
+      "import_line_number": 42,
+      "import_statement": "import re",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/packet_discovery.py",
+      "import_line_number": 43,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "defaultdict",
+      "source_module": "collections",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/packet_discovery.py",
+      "import_line_number": 44,
+      "import_statement": "from collections import defaultdict, deque",
+      "alias": null
+    },
+    {
+      "symbol": "deque",
+      "source_module": "collections",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/packet_discovery.py",
+      "import_line_number": 44,
+      "import_statement": "from collections import defaultdict, deque",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/packet_discovery.py",
+      "import_line_number": 45,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/packet_discovery.py",
+      "import_line_number": 54,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/static_ast_analysis.py",
+      "import_line_number": 36,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/static_ast_analysis.py",
+      "import_line_number": 37,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/static_ast_analysis.py",
+      "import_line_number": 38,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/static_ast_analysis.py",
+      "import_line_number": 39,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/static_ast_analysis.py",
+      "import_line_number": 59,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/static_ast_analysis.py",
+      "import_line_number": 60,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "PYTHON_FILE_LIST",
+      "source_module": "python_file_list",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/static_ast_analysis.py",
+      "import_line_number": 62,
+      "import_statement": "from python_file_list import PYTHON_FILE_LIST",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/static_ast_analysis.py",
+      "import_line_number": 71,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/ast_parser.py",
+      "import_line_number": 37,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/ast_parser.py",
+      "import_line_number": 38,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "Any",
+      "source_module": "typing",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/ast_parser.py",
+      "import_line_number": 39,
+      "import_statement": "from typing import Any",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/ast_parser.py",
+      "import_line_number": 48,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/generate_symbol_import_index.py",
+      "import_line_number": 45,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/generate_symbol_import_index.py",
+      "import_line_number": 46,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/generate_symbol_import_index.py",
+      "import_line_number": 47,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/generate_symbol_import_index.py",
+      "import_line_number": 48,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/generate_symbol_import_index.py",
+      "import_line_number": 49,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/generate_symbol_import_index.py",
+      "import_line_number": 58,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "Optional",
+      "source_module": "typing",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/classifier.py",
+      "import_line_number": 36,
+      "import_statement": "from typing import Optional",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/classifier.py",
+      "import_line_number": 37,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Runtime_Tools/Static_Analysis/classifier.py",
+      "import_line_number": 46,
+      "import_statement": "        import json as _json",
+      "alias": "_json"
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Repo_Governance_Tools/devscript_header_validator.py",
+      "import_line_number": 33,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Repo_Governance_Tools/devscript_header_validator.py",
+      "import_line_number": 34,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Repo_Governance_Tools/devscript_header_validator.py",
+      "import_line_number": 35,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "re",
+      "source_module": "re",
+      "imported_by_file": "Repo_Governance_Tools/devscript_header_validator.py",
+      "import_line_number": 36,
+      "import_statement": "import re",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Repo_Governance_Tools/devscript_header_validator.py",
+      "import_line_number": 37,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "datetime",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/devscript_header_validator.py",
+      "import_line_number": 38,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "timezone",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/devscript_header_validator.py",
+      "import_line_number": 38,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Repo_Governance_Tools/devscript_header_validator.py",
+      "import_line_number": 39,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Repo_Governance_Tools/abbreviation_registry_validator.py",
+      "import_line_number": 35,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Repo_Governance_Tools/abbreviation_registry_validator.py",
+      "import_line_number": 36,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "re",
+      "source_module": "re",
+      "imported_by_file": "Repo_Governance_Tools/abbreviation_registry_validator.py",
+      "import_line_number": 37,
+      "import_statement": "import re",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Repo_Governance_Tools/abbreviation_registry_validator.py",
+      "import_line_number": 38,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "defaultdict",
+      "source_module": "collections",
+      "imported_by_file": "Repo_Governance_Tools/abbreviation_registry_validator.py",
+      "import_line_number": 39,
+      "import_statement": "from collections import defaultdict",
+      "alias": null
+    },
+    {
+      "symbol": "datetime",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/abbreviation_registry_validator.py",
+      "import_line_number": 40,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "timezone",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/abbreviation_registry_validator.py",
+      "import_line_number": 40,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Repo_Governance_Tools/abbreviation_registry_validator.py",
+      "import_line_number": 41,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Repo_Governance_Tools/directory_structure_validator.py",
+      "import_line_number": 34,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Repo_Governance_Tools/directory_structure_validator.py",
+      "import_line_number": 35,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Repo_Governance_Tools/directory_structure_validator.py",
+      "import_line_number": 36,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "datetime",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/directory_structure_validator.py",
+      "import_line_number": 37,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "timezone",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/directory_structure_validator.py",
+      "import_line_number": 37,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Repo_Governance_Tools/directory_structure_validator.py",
+      "import_line_number": 38,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Repo_Governance_Tools/dev_resources_freeze_validator.py",
+      "import_line_number": 35,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Repo_Governance_Tools/dev_resources_freeze_validator.py",
+      "import_line_number": 36,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Repo_Governance_Tools/dev_resources_freeze_validator.py",
+      "import_line_number": 37,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "datetime",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/dev_resources_freeze_validator.py",
+      "import_line_number": 38,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "timezone",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/dev_resources_freeze_validator.py",
+      "import_line_number": 38,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Repo_Governance_Tools/dev_resources_freeze_validator.py",
+      "import_line_number": 39,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Repo_Governance_Tools/runtime_wiring_log_validator.py",
+      "import_line_number": 34,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Repo_Governance_Tools/runtime_wiring_log_validator.py",
+      "import_line_number": 35,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Repo_Governance_Tools/runtime_wiring_log_validator.py",
+      "import_line_number": 36,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "datetime",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/runtime_wiring_log_validator.py",
+      "import_line_number": 37,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "timezone",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/runtime_wiring_log_validator.py",
+      "import_line_number": 37,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Repo_Governance_Tools/runtime_wiring_log_validator.py",
+      "import_line_number": 38,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Repo_Governance_Tools/tool_registry_validator.py",
+      "import_line_number": 36,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Repo_Governance_Tools/tool_registry_validator.py",
+      "import_line_number": 37,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Repo_Governance_Tools/tool_registry_validator.py",
+      "import_line_number": 38,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "datetime",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/tool_registry_validator.py",
+      "import_line_number": 39,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "timezone",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/tool_registry_validator.py",
+      "import_line_number": 39,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Repo_Governance_Tools/tool_registry_validator.py",
+      "import_line_number": 40,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Repo_Governance_Tools/repo_policy_enforcer.py",
+      "import_line_number": 39,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Repo_Governance_Tools/repo_policy_enforcer.py",
+      "import_line_number": 40,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "subprocess",
+      "source_module": "subprocess",
+      "imported_by_file": "Repo_Governance_Tools/repo_policy_enforcer.py",
+      "import_line_number": 41,
+      "import_statement": "import subprocess",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Repo_Governance_Tools/repo_policy_enforcer.py",
+      "import_line_number": 42,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "datetime",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/repo_policy_enforcer.py",
+      "import_line_number": 43,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "timezone",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/repo_policy_enforcer.py",
+      "import_line_number": 43,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Repo_Governance_Tools/repo_policy_enforcer.py",
+      "import_line_number": 44,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "argparse",
+      "source_module": "argparse",
+      "imported_by_file": "Repo_Governance_Tools/governance_contract_validator.py",
+      "import_line_number": 35,
+      "import_statement": "import argparse",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Repo_Governance_Tools/governance_contract_validator.py",
+      "import_line_number": 36,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "re",
+      "source_module": "re",
+      "imported_by_file": "Repo_Governance_Tools/governance_contract_validator.py",
+      "import_line_number": 37,
+      "import_statement": "import re",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Repo_Governance_Tools/governance_contract_validator.py",
+      "import_line_number": 38,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "datetime",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/governance_contract_validator.py",
+      "import_line_number": 39,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "timezone",
+      "source_module": "datetime",
+      "imported_by_file": "Repo_Governance_Tools/governance_contract_validator.py",
+      "import_line_number": 39,
+      "import_statement": "from datetime import datetime, timezone",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Repo_Governance_Tools/governance_contract_validator.py",
+      "import_line_number": 40,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Archive/RGE/rge_stage10_12_smoke.py",
+      "import_line_number": 2,
+      "import_statement": "import sys, time",
+      "alias": null
+    },
+    {
+      "symbol": "time",
+      "source_module": "time",
+      "imported_by_file": "Archive/RGE/rge_stage10_12_smoke.py",
+      "import_line_number": 2,
+      "import_statement": "import sys, time",
+      "alias": null
+    },
+    {
+      "symbol": "RGEPacketBase",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Base",
+      "imported_by_file": "Archive/RGE/rge_stage10_12_smoke.py",
+      "import_line_number": 5,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Base import RGEPacketBase",
+      "alias": null
+    },
+    {
+      "symbol": "RGEPacketType",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Types",
+      "imported_by_file": "Archive/RGE/rge_stage10_12_smoke.py",
+      "import_line_number": 6,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Types import RGEPacketType",
+      "alias": null
+    },
+    {
+      "symbol": "RGEPacketRegistry",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Registry",
+      "imported_by_file": "Archive/RGE/rge_stage10_12_smoke.py",
+      "import_line_number": 7,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Registry import RGEPacketRegistry",
+      "alias": null
+    },
+    {
+      "symbol": "RGEFieldNode",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Node",
+      "imported_by_file": "Archive/RGE/rge_stage10_12_smoke.py",
+      "import_line_number": 8,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Node import RGEFieldNode",
+      "alias": null
+    },
+    {
+      "symbol": "RGEFieldTopology",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology",
+      "imported_by_file": "Archive/RGE/rge_stage10_12_smoke.py",
+      "import_line_number": 9,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology import RGEFieldTopology",
+      "alias": null
+    },
+    {
+      "symbol": "RGETopologyBridge",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Topology_Bridge",
+      "imported_by_file": "Archive/RGE/rge_stage10_12_smoke.py",
+      "import_line_number": 10,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Topology_Bridge import RGETopologyBridge",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Archive/RGE/rge_stage13_16_smoke.py",
+      "import_line_number": 2,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "RGEFieldEdge",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Edge",
+      "imported_by_file": "Archive/RGE/rge_stage13_16_smoke.py",
+      "import_line_number": 5,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Edge import RGEFieldEdge",
+      "alias": null
+    },
+    {
+      "symbol": "RGEFieldNode",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Node",
+      "imported_by_file": "Archive/RGE/rge_stage13_16_smoke.py",
+      "import_line_number": 6,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Node import RGEFieldNode",
+      "alias": null
+    },
+    {
+      "symbol": "RGEFieldGraph",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Graph",
+      "imported_by_file": "Archive/RGE/rge_stage13_16_smoke.py",
+      "import_line_number": 7,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Graph import RGEFieldGraph",
+      "alias": null
+    },
+    {
+      "symbol": "RGEFieldTopology",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology",
+      "imported_by_file": "Archive/RGE/rge_stage13_16_smoke.py",
+      "import_line_number": 8,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology import RGEFieldTopology",
+      "alias": null
+    },
+    {
+      "symbol": "RGEGraphBuilder",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Graph_Builder",
+      "imported_by_file": "Archive/RGE/rge_stage13_16_smoke.py",
+      "import_line_number": 9,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Graph_Builder import RGEGraphBuilder",
+      "alias": null
+    },
+    {
+      "symbol": "RGEGraphTraversal",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Graph_Traversal",
+      "imported_by_file": "Archive/RGE/rge_stage13_16_smoke.py",
+      "import_line_number": 10,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Graph_Traversal import RGEGraphTraversal",
+      "alias": null
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Archive/RGE/rge_audit_runner.py",
+      "import_line_number": 5,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/RGE/rge_audit_runner.py",
+      "import_line_number": 6,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Archive/RGE/rge_audit_runner.py",
+      "import_line_number": 7,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Archive/RGE/rge_audit_runner.py",
+      "import_line_number": 8,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "time",
+      "source_module": "time",
+      "imported_by_file": "Archive/RGE/rge_audit_runner.py",
+      "import_line_number": 9,
+      "import_statement": "import time",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Archive/RGE/rge_stage17_20_smoke.py",
+      "import_line_number": 2,
+      "import_statement": "import sys, time",
+      "alias": null
+    },
+    {
+      "symbol": "time",
+      "source_module": "time",
+      "imported_by_file": "Archive/RGE/rge_stage17_20_smoke.py",
+      "import_line_number": 2,
+      "import_statement": "import sys, time",
+      "alias": null
+    },
+    {
+      "symbol": "RGEPacketBase",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Base",
+      "imported_by_file": "Archive/RGE/rge_stage17_20_smoke.py",
+      "import_line_number": 5,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Base import RGEPacketBase",
+      "alias": null
+    },
+    {
+      "symbol": "RGEPacketType",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Types",
+      "imported_by_file": "Archive/RGE/rge_stage17_20_smoke.py",
+      "import_line_number": 6,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Packet_Schemas.RGE_Packet_Types import RGEPacketType",
+      "alias": null
+    },
+    {
+      "symbol": "RGEPacketRegistry",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Registry",
+      "imported_by_file": "Archive/RGE/rge_stage17_20_smoke.py",
+      "import_line_number": 7,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Registry import RGEPacketRegistry",
+      "alias": null
+    },
+    {
+      "symbol": "RGEFieldTopology",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology",
+      "imported_by_file": "Archive/RGE/rge_stage17_20_smoke.py",
+      "import_line_number": 8,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology import RGEFieldTopology",
+      "alias": null
+    },
+    {
+      "symbol": "RGEFieldGraph",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Graph",
+      "imported_by_file": "Archive/RGE/rge_stage17_20_smoke.py",
+      "import_line_number": 9,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Graph import RGEFieldGraph",
+      "alias": null
+    },
+    {
+      "symbol": "RGEGraphBuilder",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Graph_Builder",
+      "imported_by_file": "Archive/RGE/rge_stage17_20_smoke.py",
+      "import_line_number": 10,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Graph_Builder import RGEGraphBuilder",
+      "alias": null
+    },
+    {
+      "symbol": "RGEPacketLocationMap",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Location_Map",
+      "imported_by_file": "Archive/RGE/rge_stage17_20_smoke.py",
+      "import_line_number": 11,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Location_Map import RGEPacketLocationMap",
+      "alias": null
+    },
+    {
+      "symbol": "RGENodePacketAccessor",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Node_Packet_Accessor",
+      "imported_by_file": "Archive/RGE/rge_stage17_20_smoke.py",
+      "import_line_number": 12,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Node_Packet_Accessor import RGENodePacketAccessor",
+      "alias": null
+    },
+    {
+      "symbol": "RGEPacketPropagator",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Propagator",
+      "imported_by_file": "Archive/RGE/rge_stage17_20_smoke.py",
+      "import_line_number": 13,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Propagator import RGEPacketPropagator",
+      "alias": null
+    },
+    {
+      "symbol": "RGERecursionFieldEngine",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Recursion_Field_Engine",
+      "imported_by_file": "Archive/RGE/rge_stage17_20_smoke.py",
+      "import_line_number": 14,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Recursion_Field_Engine import RGERecursionFieldEngine",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Archive/RGE/rge_stage21_24_smoke.py",
+      "import_line_number": 2,
+      "import_statement": "import sys, time",
+      "alias": null
+    },
+    {
+      "symbol": "time",
+      "source_module": "time",
+      "imported_by_file": "Archive/RGE/rge_stage21_24_smoke.py",
+      "import_line_number": 2,
+      "import_statement": "import sys, time",
+      "alias": null
+    },
+    {
+      "symbol": "RGECognitionSignal",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Signal",
+      "imported_by_file": "Archive/RGE/rge_stage21_24_smoke.py",
+      "import_line_number": 5,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Signal import RGECognitionSignal",
+      "alias": null
+    },
+    {
+      "symbol": "RGECognitionChannel",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Channel",
+      "imported_by_file": "Archive/RGE/rge_stage21_24_smoke.py",
+      "import_line_number": 6,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Channel import RGECognitionChannel",
+      "alias": null
+    },
+    {
+      "symbol": "RGESignalBroadcaster",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Signal_Broadcaster",
+      "imported_by_file": "Archive/RGE/rge_stage21_24_smoke.py",
+      "import_line_number": 7,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Signal_Broadcaster import RGESignalBroadcaster",
+      "alias": null
+    },
+    {
+      "symbol": "RGEFieldTopology",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology",
+      "imported_by_file": "Archive/RGE/rge_stage21_24_smoke.py",
+      "import_line_number": 8,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology import RGEFieldTopology",
+      "alias": null
+    },
+    {
+      "symbol": "RGEFieldGraph",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Graph",
+      "imported_by_file": "Archive/RGE/rge_stage21_24_smoke.py",
+      "import_line_number": 9,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Graph import RGEFieldGraph",
+      "alias": null
+    },
+    {
+      "symbol": "RGEGraphBuilder",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Graph_Builder",
+      "imported_by_file": "Archive/RGE/rge_stage21_24_smoke.py",
+      "import_line_number": 10,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Graph_Builder import RGEGraphBuilder",
+      "alias": null
+    },
+    {
+      "symbol": "RGEPacketLocationMap",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Location_Map",
+      "imported_by_file": "Archive/RGE/rge_stage21_24_smoke.py",
+      "import_line_number": 11,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Location_Map import RGEPacketLocationMap",
+      "alias": null
+    },
+    {
+      "symbol": "RGENodePacketAccessor",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Node_Packet_Accessor",
+      "imported_by_file": "Archive/RGE/rge_stage21_24_smoke.py",
+      "import_line_number": 12,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Node_Packet_Accessor import RGENodePacketAccessor",
+      "alias": null
+    },
+    {
+      "symbol": "RGEPacketPropagator",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Propagator",
+      "imported_by_file": "Archive/RGE/rge_stage21_24_smoke.py",
+      "import_line_number": 13,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Propagator import RGEPacketPropagator",
+      "alias": null
+    },
+    {
+      "symbol": "RGERecursionFieldEngine",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Recursion_Field_Engine",
+      "imported_by_file": "Archive/RGE/rge_stage21_24_smoke.py",
+      "import_line_number": 14,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Recursion_Field_Engine import RGERecursionFieldEngine",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Archive/RGE/rge_stage29_31_smoke.py",
+      "import_line_number": 2,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "time",
+      "source_module": "time",
+      "imported_by_file": "Archive/RGE/rge_stage29_31_smoke.py",
+      "import_line_number": 3,
+      "import_statement": "import time",
+      "alias": null
+    },
+    {
+      "symbol": "RGECognitionSignal",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Signal",
+      "imported_by_file": "Archive/RGE/rge_stage29_31_smoke.py",
+      "import_line_number": 6,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Signal import RGECognitionSignal",
+      "alias": null
+    },
+    {
+      "symbol": "RGERuntimeInterface",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Interface",
+      "imported_by_file": "Archive/RGE/rge_stage29_31_smoke.py",
+      "import_line_number": 7,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Interface import RGERuntimeInterface",
+      "alias": null
+    },
+    {
+      "symbol": "RGEBridgeNexus",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Bootstrap.RGE_Bridge_Nexus",
+      "imported_by_file": "Archive/RGE/rge_stage29_31_smoke.py",
+      "import_line_number": 8,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Bootstrap.RGE_Bridge_Nexus import RGEBridgeNexus",
+      "alias": null
+    },
+    {
+      "symbol": "RGERuntimeBootstrap",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Bootstrap.RGE_Runtime_Bootstrap",
+      "imported_by_file": "Archive/RGE/rge_stage29_31_smoke.py",
+      "import_line_number": 9,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Bootstrap.RGE_Runtime_Bootstrap import RGERuntimeBootstrap",
+      "alias": null
+    },
+    {
+      "symbol": "RGEActivationManager",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Bootstrap.RGE_Activation_Manager",
+      "imported_by_file": "Archive/RGE/rge_stage29_31_smoke.py",
+      "import_line_number": 10,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Bootstrap.RGE_Activation_Manager import RGEActivationManager",
+      "alias": null
+    },
+    {
+      "symbol": "RGEFieldTopology",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology",
+      "imported_by_file": "Archive/RGE/rge_stage29_31_smoke.py",
+      "import_line_number": 11,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology import RGEFieldTopology",
+      "alias": null
+    },
+    {
+      "symbol": "RGEFieldGraph",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Graph",
+      "imported_by_file": "Archive/RGE/rge_stage29_31_smoke.py",
+      "import_line_number": 12,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Graph import RGEFieldGraph",
+      "alias": null
+    },
+    {
+      "symbol": "RGEGraphBuilder",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Graph_Builder",
+      "imported_by_file": "Archive/RGE/rge_stage29_31_smoke.py",
+      "import_line_number": 13,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Graph_Builder import RGEGraphBuilder",
+      "alias": null
+    },
+    {
+      "symbol": "RGEPacketLocationMap",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Location_Map",
+      "imported_by_file": "Archive/RGE/rge_stage29_31_smoke.py",
+      "import_line_number": 14,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Location_Map import RGEPacketLocationMap",
+      "alias": null
+    },
+    {
+      "symbol": "RGENodePacketAccessor",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Node_Packet_Accessor",
+      "imported_by_file": "Archive/RGE/rge_stage29_31_smoke.py",
+      "import_line_number": 15,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Node_Packet_Accessor import RGENodePacketAccessor",
+      "alias": null
+    },
+    {
+      "symbol": "RGEPacketPropagator",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Propagator",
+      "imported_by_file": "Archive/RGE/rge_stage29_31_smoke.py",
+      "import_line_number": 16,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Propagator import RGEPacketPropagator",
+      "alias": null
+    },
+    {
+      "symbol": "RGERecursionFieldEngine",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Recursion_Field_Engine",
+      "imported_by_file": "Archive/RGE/rge_stage29_31_smoke.py",
+      "import_line_number": 17,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Recursion_Field_Engine import RGERecursionFieldEngine",
+      "alias": null
+    },
+    {
+      "symbol": "RGESignalBroadcaster",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Signal_Broadcaster",
+      "imported_by_file": "Archive/RGE/rge_stage29_31_smoke.py",
+      "import_line_number": 18,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Signal_Broadcaster import RGESignalBroadcaster",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 2,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "time",
+      "source_module": "time",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 3,
+      "import_statement": "import time",
+      "alias": null
+    },
+    {
+      "symbol": "RGECognitionSignal",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Signal",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 6,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Signal import RGECognitionSignal",
+      "alias": null
+    },
+    {
+      "symbol": "RGECognitionChannel",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Channel",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 7,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Cognition_Channel import RGECognitionChannel",
+      "alias": null
+    },
+    {
+      "symbol": "RGESignalBroadcaster",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Signal_Broadcaster",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 8,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Cognition.RGE_Signal_Broadcaster import RGESignalBroadcaster",
+      "alias": null
+    },
+    {
+      "symbol": "RGERuntimeInterface",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Interface",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 9,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Interface import RGERuntimeInterface",
+      "alias": null
+    },
+    {
+      "symbol": "RGERuntimeSubscriber",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Subscriber",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 10,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Subscriber import RGERuntimeSubscriber",
+      "alias": null
+    },
+    {
+      "symbol": "RGERuntimeDispatcher",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Dispatcher",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 11,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Dispatcher import RGERuntimeDispatcher",
+      "alias": null
+    },
+    {
+      "symbol": "RGERuntimeRegistry",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Registry",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 12,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Runtime.RGE_Runtime_Registry import RGERuntimeRegistry",
+      "alias": null
+    },
+    {
+      "symbol": "RGEFieldTopology",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 13,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Topology import RGEFieldTopology",
+      "alias": null
+    },
+    {
+      "symbol": "RGEFieldGraph",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Graph",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 14,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Field_Graph import RGEFieldGraph",
+      "alias": null
+    },
+    {
+      "symbol": "RGEGraphBuilder",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Graph_Builder",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 15,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Graph_Builder import RGEGraphBuilder",
+      "alias": null
+    },
+    {
+      "symbol": "RGEPacketLocationMap",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Location_Map",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 16,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Location_Map import RGEPacketLocationMap",
+      "alias": null
+    },
+    {
+      "symbol": "RGENodePacketAccessor",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Node_Packet_Accessor",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 17,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Node_Packet_Accessor import RGENodePacketAccessor",
+      "alias": null
+    },
+    {
+      "symbol": "RGEPacketPropagator",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Propagator",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 18,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Packet_Propagator import RGEPacketPropagator",
+      "alias": null
+    },
+    {
+      "symbol": "RGERecursionFieldEngine",
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Recursion_Field_Engine",
+      "imported_by_file": "Archive/RGE/rge_stage25_28_smoke.py",
+      "import_line_number": 19,
+      "import_statement": "from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Field.RGE_Recursion_Field_Engine import RGERecursionFieldEngine",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Archive/P1-5/Phase_2F_Prefix_String_Verification.py",
+      "import_line_number": 1,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/Phase_2F_Prefix_String_Verification.py",
+      "import_line_number": 2,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "re",
+      "source_module": "re",
+      "imported_by_file": "Archive/P1-5/Phase_2F_Prefix_String_Verification.py",
+      "import_line_number": 3,
+      "import_statement": "import re",
+      "alias": null
+    },
+    {
+      "symbol": "Counter",
+      "source_module": "collections",
+      "imported_by_file": "Archive/P1-5/Phase_2F_Prefix_String_Verification.py",
+      "import_line_number": 4,
+      "import_statement": "from collections import Counter, defaultdict",
+      "alias": null
+    },
+    {
+      "symbol": "defaultdict",
+      "source_module": "collections",
+      "imported_by_file": "Archive/P1-5/Phase_2F_Prefix_String_Verification.py",
+      "import_line_number": 4,
+      "import_statement": "from collections import Counter, defaultdict",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Archive/P1-5/phase6b_runtime_execution_tracer.py",
+      "import_line_number": 1,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Archive/P1-5/phase6b_runtime_execution_tracer.py",
+      "import_line_number": 2,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/phase6b_runtime_execution_tracer.py",
+      "import_line_number": 3,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "inspect",
+      "source_module": "inspect",
+      "imported_by_file": "Archive/P1-5/phase6b_runtime_execution_tracer.py",
+      "import_line_number": 4,
+      "import_statement": "import inspect",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Archive/P1-5/phase6b_runtime_execution_tracer.py",
+      "import_line_number": 5,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "importlib",
+      "source_module": "importlib.util",
+      "imported_by_file": "Archive/P1-5/phase6b_runtime_execution_tracer.py",
+      "import_line_number": 63,
+      "import_statement": "    import importlib.util",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Archive/P1-5/phase_2c_root_existence_map.py",
+      "import_line_number": 6,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/phase_2c_root_existence_map.py",
+      "import_line_number": 7,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Archive/P1-5/phase_2c_root_existence_map.py",
+      "import_line_number": 8,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/m5_validation_scan.py",
+      "import_line_number": 1,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Archive/P1-5/m5_validation_scan.py",
+      "import_line_number": 2,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Archive/P1-5/phase_2b_ast_mutator.py",
+      "import_line_number": 5,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Archive/P1-5/phase_2b_ast_mutator.py",
+      "import_line_number": 6,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/phase_2b_ast_mutator.py",
+      "import_line_number": 7,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Archive/P1-5/phase_2b_ast_mutator.py",
+      "import_line_number": 8,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "List",
+      "source_module": "typing",
+      "imported_by_file": "Archive/P1-5/phase_2b_ast_mutator.py",
+      "import_line_number": 9,
+      "import_statement": "from typing import List, Dict, Any",
+      "alias": null
+    },
+    {
+      "symbol": "Dict",
+      "source_module": "typing",
+      "imported_by_file": "Archive/P1-5/phase_2b_ast_mutator.py",
+      "import_line_number": 9,
+      "import_statement": "from typing import List, Dict, Any",
+      "alias": null
+    },
+    {
+      "symbol": "Any",
+      "source_module": "typing",
+      "imported_by_file": "Archive/P1-5/phase_2b_ast_mutator.py",
+      "import_line_number": 9,
+      "import_statement": "from typing import List, Dict, Any",
+      "alias": null
+    },
+    {
+      "symbol": "astor",
+      "source_module": "astor",
+      "imported_by_file": "Archive/P1-5/phase_2b_ast_mutator.py",
+      "import_line_number": 88,
+      "import_statement": "        import astor",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Archive/P1-5/phase_2f_structural_namespace_relocation.py",
+      "import_line_number": 5,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/phase_2f_structural_namespace_relocation.py",
+      "import_line_number": 6,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Archive/P1-5/phase_2f_structural_namespace_relocation.py",
+      "import_line_number": 7,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Archive/P1-5/phase_2f_structural_namespace_relocation.py",
+      "import_line_number": 8,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "astor",
+      "source_module": "astor",
+      "imported_by_file": "Archive/P1-5/phase_2f_structural_namespace_relocation.py",
+      "import_line_number": 130,
+      "import_statement": "        import astor",
+      "alias": null
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Archive/P1-5/phase6_runtime_callgraph_extractor.py",
+      "import_line_number": 1,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Archive/P1-5/phase6_runtime_callgraph_extractor.py",
+      "import_line_number": 2,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/phase6_runtime_callgraph_extractor.py",
+      "import_line_number": 3,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Archive/P1-5/phase6_runtime_callgraph_extractor.py",
+      "import_line_number": 4,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "Set",
+      "source_module": "typing",
+      "imported_by_file": "Archive/P1-5/phase6_runtime_callgraph_extractor.py",
+      "import_line_number": 5,
+      "import_statement": "from typing import Set, Dict, List, Tuple",
+      "alias": null
+    },
+    {
+      "symbol": "Dict",
+      "source_module": "typing",
+      "imported_by_file": "Archive/P1-5/phase6_runtime_callgraph_extractor.py",
+      "import_line_number": 5,
+      "import_statement": "from typing import Set, Dict, List, Tuple",
+      "alias": null
+    },
+    {
+      "symbol": "List",
+      "source_module": "typing",
+      "imported_by_file": "Archive/P1-5/phase6_runtime_callgraph_extractor.py",
+      "import_line_number": 5,
+      "import_statement": "from typing import Set, Dict, List, Tuple",
+      "alias": null
+    },
+    {
+      "symbol": "Tuple",
+      "source_module": "typing",
+      "imported_by_file": "Archive/P1-5/phase6_runtime_callgraph_extractor.py",
+      "import_line_number": 5,
+      "import_statement": "from typing import Set, Dict, List, Tuple",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/phase_2e_rule2_prefix_grouping.py",
+      "import_line_number": 5,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Archive/P1-5/phase_2e_rule2_prefix_grouping.py",
+      "import_line_number": 6,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "defaultdict",
+      "source_module": "collections",
+      "imported_by_file": "Archive/P1-5/phase_2e_rule2_prefix_grouping.py",
+      "import_line_number": 7,
+      "import_statement": "from collections import defaultdict",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/Phase_2A_Rule2_Classification.py",
+      "import_line_number": 1,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Archive/P1-5/Phase_2A_Rule2_Classification.py",
+      "import_line_number": 2,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "defaultdict",
+      "source_module": "collections",
+      "imported_by_file": "Archive/P1-5/Phase_2A_Rule2_Classification.py",
+      "import_line_number": 3,
+      "import_statement": "from collections import defaultdict",
+      "alias": null
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Archive/P1-5/Phase_2A_AST_Canonical_Root_Normalization.py",
+      "import_line_number": 1,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Archive/P1-5/Phase_2A_AST_Canonical_Root_Normalization.py",
+      "import_line_number": 2,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/Phase_2A_AST_Canonical_Root_Normalization.py",
+      "import_line_number": 3,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Archive/P1-5/Phase_2A_AST_Canonical_Root_Normalization.py",
+      "import_line_number": 4,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Archive/P1-5/Phase_2A_Corrected_Case_Normalization.py",
+      "import_line_number": 1,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "re",
+      "source_module": "re",
+      "imported_by_file": "Archive/P1-5/Phase_2A_Corrected_Case_Normalization.py",
+      "import_line_number": 2,
+      "import_statement": "import re",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/Phase_2A_Corrected_Case_Normalization.py",
+      "import_line_number": 3,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Archive/P1-5/phase_2d_canonical_root_expansion.py",
+      "import_line_number": 5,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/phase_2d_canonical_root_expansion.py",
+      "import_line_number": 6,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Archive/P1-5/phase_2d_canonical_root_expansion.py",
+      "import_line_number": 7,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Archive/P1-5/phase_2d_canonical_root_expansion.py",
+      "import_line_number": 8,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "astor",
+      "source_module": "astor",
+      "imported_by_file": "Archive/P1-5/phase_2d_canonical_root_expansion.py",
+      "import_line_number": 95,
+      "import_statement": "        import astor",
+      "alias": null
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Archive/P1-5/phase6c_execution_core_isolation_audit.py",
+      "import_line_number": 1,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "sys",
+      "source_module": "sys",
+      "imported_by_file": "Archive/P1-5/phase6c_execution_core_isolation_audit.py",
+      "import_line_number": 2,
+      "import_statement": "import sys",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/phase6c_execution_core_isolation_audit.py",
+      "import_line_number": 3,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Archive/P1-5/phase6c_execution_core_isolation_audit.py",
+      "import_line_number": 4,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "Set",
+      "source_module": "typing",
+      "imported_by_file": "Archive/P1-5/phase6c_execution_core_isolation_audit.py",
+      "import_line_number": 5,
+      "import_statement": "from typing import Set, Dict, List, Tuple",
+      "alias": null
+    },
+    {
+      "symbol": "Dict",
+      "source_module": "typing",
+      "imported_by_file": "Archive/P1-5/phase6c_execution_core_isolation_audit.py",
+      "import_line_number": 5,
+      "import_statement": "from typing import Set, Dict, List, Tuple",
+      "alias": null
+    },
+    {
+      "symbol": "List",
+      "source_module": "typing",
+      "imported_by_file": "Archive/P1-5/phase6c_execution_core_isolation_audit.py",
+      "import_line_number": 5,
+      "import_statement": "from typing import Set, Dict, List, Tuple",
+      "alias": null
+    },
+    {
+      "symbol": "Tuple",
+      "source_module": "typing",
+      "imported_by_file": "Archive/P1-5/phase6c_execution_core_isolation_audit.py",
+      "import_line_number": 5,
+      "import_statement": "from typing import Set, Dict, List, Tuple",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/Run_Nexus_Structural_Audit.py",
+      "import_line_number": 1,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "NexusASTValidator",
+      "source_module": "logos.imports.governance",
+      "imported_by_file": "Archive/P1-5/Run_Nexus_Structural_Audit.py",
+      "import_line_number": 2,
+      "import_statement": "from logos.imports.governance import NexusASTValidator",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Archive/P1-5/Run_Nexus_Structural_Audit.py",
+      "import_line_number": 5,
+      "import_statement": "    import os",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Archive/P1-5/Phase_2B_Pre_Discovery_Structure_Scan.py",
+      "import_line_number": 10,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/Phase_2B_Pre_Discovery_Structure_Scan.py",
+      "import_line_number": 11,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Archive/P1-5/Phase_2B_Pre_Discovery_Structure_Scan.py",
+      "import_line_number": 12,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/Phase_2B_A_Rule2_Root_Grouping.py",
+      "import_line_number": 1,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "Path",
+      "source_module": "pathlib",
+      "imported_by_file": "Archive/P1-5/Phase_2B_A_Rule2_Root_Grouping.py",
+      "import_line_number": 2,
+      "import_statement": "from pathlib import Path",
+      "alias": null
+    },
+    {
+      "symbol": "defaultdict",
+      "source_module": "collections",
+      "imported_by_file": "Archive/P1-5/Phase_2B_A_Rule2_Root_Grouping.py",
+      "import_line_number": 3,
+      "import_statement": "from collections import defaultdict",
+      "alias": null
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Archive/P1-5/Phase_3A_Rule3_Canonical_Expansion.py",
+      "import_line_number": 7,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Archive/P1-5/Phase_3A_Rule3_Canonical_Expansion.py",
+      "import_line_number": 8,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/Phase_3A_Rule3_Canonical_Expansion.py",
+      "import_line_number": 9,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "List",
+      "source_module": "typing",
+      "imported_by_file": "Archive/P1-5/Phase_3A_Rule3_Canonical_Expansion.py",
+      "import_line_number": 10,
+      "import_statement": "from typing import List, Dict",
+      "alias": null
+    },
+    {
+      "symbol": "Dict",
+      "source_module": "typing",
+      "imported_by_file": "Archive/P1-5/Phase_3A_Rule3_Canonical_Expansion.py",
+      "import_line_number": 10,
+      "import_statement": "from typing import List, Dict",
+      "alias": null
+    },
+    {
+      "symbol": "ast",
+      "source_module": "ast",
+      "imported_by_file": "Archive/P1-5/Phase_3B_Agent_Canonical_Expansion.py",
+      "import_line_number": 7,
+      "import_statement": "import ast",
+      "alias": null
+    },
+    {
+      "symbol": "os",
+      "source_module": "os",
+      "imported_by_file": "Archive/P1-5/Phase_3B_Agent_Canonical_Expansion.py",
+      "import_line_number": 8,
+      "import_statement": "import os",
+      "alias": null
+    },
+    {
+      "symbol": "json",
+      "source_module": "json",
+      "imported_by_file": "Archive/P1-5/Phase_3B_Agent_Canonical_Expansion.py",
+      "import_line_number": 9,
+      "import_statement": "import json",
+      "alias": null
+    },
+    {
+      "symbol": "List",
+      "source_module": "typing",
+      "imported_by_file": "Archive/P1-5/Phase_3B_Agent_Canonical_Expansion.py",
+      "import_line_number": 10,
+      "import_statement": "from typing import List, Dict",
+      "alias": null
+    },
+    {
+      "symbol": "Dict",
+      "source_module": "typing",
+      "imported_by_file": "Archive/P1-5/Phase_3B_Agent_Canonical_Expansion.py",
+      "import_line_number": 10,
+      "import_statement": "from typing import List, Dict",
+      "alias": null
+    }
+  ]
+}

@@ -255,7 +255,10 @@ class MREGovernor:
     def pre_execute(self, output_signature: Hashable) -> None:
         self.mre.update(output_signature)
         if not self.mre.should_continue():
-            raise MREHalt("MRE pre-execution halt")
+            print("MRE HALT — resource limit reached")
+            print("Participant:", output_signature)
+            print("MRE state:", self.mre.state)
+            raise MREHalt(f"MRE pre-execution halt for participant: {output_signature}")
 
     def post_execute(self, output_signature: Hashable) -> None:
         self.mre.update(output_signature)
@@ -337,14 +340,14 @@ class StandardNexus:
         for pid in sorted(self.participants.keys()):
             participant = self.participants[pid]
 
-            self.mre.pre_execute(pid)
+            self.mre.pre_execute((pid, self.tick_counter))
             participant.execute_tick(
                 {
                     "tick": self.tick_counter,
                     "causal_intent": causal_intent,
                 }
             )
-            self.mre.post_execute(pid)
+            self.mre.post_execute((pid, self.tick_counter))
 
         projections: List[StatePacket] = []
         for participant in self.participants.values():

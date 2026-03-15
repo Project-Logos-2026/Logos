@@ -1,0 +1,1097 @@
+{
+  "tool": "runtime_debug_artifact_scanner",
+  "scan_dirs": [
+    "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING"
+  ],
+  "files_with_artifacts": 53,
+  "total_artifacts": 658,
+  "delta": null,
+  "findings": [
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/analysis_controller.py",
+      "total_artifacts": 1,
+      "print_call": [
+        299
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/audit_controller.py",
+      "total_artifacts": 6,
+      "print_call": [
+        217,
+        218,
+        219,
+        220,
+        221,
+        222
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/crawler_controller.py",
+      "total_artifacts": 1,
+      "print_call": [
+        289
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/pipeline_controller.py",
+      "total_artifacts": 1,
+      "print_call": [
+        582
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/repair_controller.py",
+      "total_artifacts": 1,
+      "print_call": [
+        461
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/simulation_controller.py",
+      "total_artifacts": 1,
+      "print_call": [
+        307
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/crawler/core/crawl_engine.py",
+      "total_artifacts": 1,
+      "print_call": [
+        303
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/crawler/core/crawl_monitor.py",
+      "total_artifacts": 1,
+      "print_call": [
+        173
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/crawler/utils/file_scanner.py",
+      "total_artifacts": 1,
+      "print_call": [
+        193
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/registry/fbc_registry.py",
+      "total_artifacts": 42,
+      "print_call": [
+        412,
+        413,
+        414,
+        429,
+        430,
+        433,
+        444,
+        461,
+        464,
+        482,
+        530,
+        534,
+        537,
+        563,
+        566,
+        615,
+        619,
+        622,
+        655,
+        664,
+        668,
+        670,
+        671,
+        672,
+        675,
+        694,
+        697,
+        698,
+        699,
+        700,
+        701,
+        702,
+        703,
+        704,
+        705,
+        712,
+        719,
+        736
+      ],
+      "todo_comment": [],
+      "bare_assert": [
+        657,
+        658,
+        659,
+        669
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/facade_rewrite_pass.py",
+      "total_artifacts": 44,
+      "print_call": [
+        170,
+        179,
+        191,
+        223,
+        224,
+        244,
+        307,
+        308,
+        332,
+        454,
+        489,
+        490,
+        493,
+        507,
+        523,
+        525,
+        526,
+        528,
+        542,
+        582,
+        583,
+        584,
+        610,
+        644,
+        660,
+        680,
+        684,
+        783,
+        792,
+        793,
+        794,
+        795,
+        821,
+        825,
+        843,
+        844,
+        845,
+        846,
+        847,
+        848,
+        851,
+        854,
+        862,
+        864
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/facade_synthesis.py",
+      "total_artifacts": 53,
+      "print_call": [
+        90,
+        142,
+        151,
+        159,
+        165,
+        176,
+        209,
+        213,
+        289,
+        326,
+        334,
+        357,
+        365,
+        384,
+        386,
+        400,
+        445,
+        447,
+        460,
+        499,
+        511,
+        560,
+        562,
+        575,
+        614,
+        766,
+        785,
+        799,
+        802,
+        805,
+        808,
+        811,
+        814,
+        818,
+        821,
+        830,
+        831,
+        832,
+        833,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863,
+        864,
+        865,
+        866,
+        867,
+        868,
+        871,
+        874
+      ],
+      "todo_comment": [],
+      "bare_assert": [
+        479
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/reorganize.py",
+      "total_artifacts": 50,
+      "print_call": [
+        83,
+        98,
+        99,
+        100,
+        101,
+        102,
+        107,
+        110,
+        111,
+        126,
+        129,
+        130,
+        136,
+        138,
+        141,
+        142,
+        145,
+        148,
+        149,
+        158,
+        163,
+        165,
+        189,
+        204,
+        206,
+        217,
+        221,
+        222,
+        232,
+        235,
+        236,
+        242,
+        245,
+        246,
+        262,
+        265,
+        266,
+        276,
+        278,
+        281,
+        283,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/simulation/dependency_simulator/dependency_simulator.py",
+      "total_artifacts": 1,
+      "print_call": [
+        84
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/simulation/import_simulator/import_simulator.py",
+      "total_artifacts": 1,
+      "print_call": [
+        64
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/simulation/namespace_simulator/namespace_simulator.py",
+      "total_artifacts": 1,
+      "print_call": [
+        59
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/simulation/repo_simulator/repo_simulator.py",
+      "total_artifacts": 1,
+      "print_call": [
+        6
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/simulation/runtime_simulator/runtime_simulator.py",
+      "total_artifacts": 1,
+      "print_call": [
+        91
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/ap_phase2_audit.py",
+      "total_artifacts": 15,
+      "print_call": [
+        427,
+        431,
+        433,
+        437,
+        444,
+        450,
+        454,
+        498,
+        505,
+        506
+      ],
+      "todo_comment": [],
+      "bare_assert": [
+        421,
+        422,
+        426,
+        503,
+        504
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/_run_audit.py",
+      "total_artifacts": 36,
+      "print_call": [
+        57,
+        65,
+        76,
+        179,
+        194,
+        255,
+        263,
+        312,
+        322,
+        380,
+        382,
+        391,
+        596,
+        608,
+        682,
+        694,
+        838,
+        848,
+        1132,
+        1183,
+        1184,
+        1185,
+        1203,
+        1393,
+        1400,
+        1401,
+        1402,
+        1403,
+        1483,
+        1484,
+        1485,
+        1506,
+        1508,
+        1510,
+        1512,
+        1514
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/ap_artifact_collection_p1.py",
+      "total_artifacts": 61,
+      "print_call": [
+        140,
+        144,
+        145,
+        166,
+        183,
+        221,
+        229,
+        248,
+        269,
+        279,
+        304,
+        306,
+        354,
+        367,
+        439,
+        445,
+        446,
+        456,
+        477,
+        486,
+        490,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519,
+        520,
+        521,
+        522,
+        523,
+        524,
+        525,
+        526,
+        527,
+        528,
+        529,
+        530,
+        531,
+        534,
+        536,
+        537,
+        546,
+        561,
+        563,
+        571,
+        573,
+        576,
+        585,
+        589,
+        594,
+        596,
+        605,
+        606,
+        607,
+        608
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/execution_core_isolation_audit.py",
+      "total_artifacts": 4,
+      "print_call": [
+        77,
+        137,
+        145,
+        178
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/nexus_structural_audit.py",
+      "total_artifacts": 4,
+      "print_call": [
+        77,
+        138,
+        142,
+        164
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/scanner.py",
+      "total_artifacts": 1,
+      "print_call": [
+        80
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/static_ast_analysis.py",
+      "total_artifacts": 2,
+      "print_call": [
+        104,
+        168
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/triage.py",
+      "total_artifacts": 41,
+      "print_call": [
+        86,
+        418,
+        419,
+        420,
+        423,
+        427,
+        428,
+        431,
+        436,
+        437,
+        438,
+        441,
+        495,
+        496,
+        499,
+        500,
+        501,
+        504,
+        507,
+        517,
+        533,
+        536,
+        554,
+        557,
+        606,
+        616,
+        618,
+        621,
+        643,
+        648,
+        653,
+        666,
+        669,
+        680,
+        681,
+        682,
+        683,
+        684,
+        685,
+        686,
+        828
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/Import_Linter.py",
+      "total_artifacts": 3,
+      "print_call": [
+        266,
+        268,
+        273
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/generate_deep_import_violations.py",
+      "total_artifacts": 6,
+      "print_call": [
+        127,
+        140,
+        160,
+        163,
+        164,
+        165
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/generate_symbol_import_index.py",
+      "total_artifacts": 6,
+      "print_call": [
+        159,
+        161,
+        180,
+        181,
+        182,
+        183
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_prefix_verifier.py",
+      "total_artifacts": 4,
+      "print_call": [
+        77,
+        130,
+        138,
+        154
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_root_grouping_analyzer.py",
+      "total_artifacts": 5,
+      "print_call": [
+        76,
+        131,
+        139,
+        150,
+        152
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_violation_classifier.py",
+      "total_artifacts": 5,
+      "print_call": [
+        77,
+        127,
+        136,
+        146,
+        147
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/module_root_existence_checker.py",
+      "total_artifacts": 7,
+      "print_call": [
+        76,
+        142,
+        150,
+        152,
+        169,
+        171,
+        173
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/namespace_discovery_scan.py",
+      "total_artifacts": 5,
+      "print_call": [
+        76,
+        129,
+        130,
+        144,
+        146
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/violation_prefix_grouper.py",
+      "total_artifacts": 5,
+      "print_call": [
+        77,
+        146,
+        154,
+        169,
+        171
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/normalization_engine.py",
+      "total_artifacts": 20,
+      "print_call": [
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        300,
+        306,
+        312,
+        314,
+        316,
+        318,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/repo_mapping/repo_scanner.py",
+      "total_artifacts": 1,
+      "print_call": [
+        49
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/repo_mapping/repo_structure_export.py",
+      "total_artifacts": 4,
+      "print_call": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_analysis.py",
+      "total_artifacts": 52,
+      "print_call": [
+        90,
+        146,
+        187,
+        195,
+        215,
+        235,
+        308,
+        320,
+        322,
+        324,
+        326,
+        327,
+        335,
+        354,
+        362,
+        401,
+        403,
+        421,
+        446,
+        477,
+        515,
+        522,
+        572,
+        578,
+        580,
+        584,
+        588,
+        601,
+        773,
+        780,
+        781,
+        782,
+        783,
+        793,
+        800,
+        806,
+        824,
+        825,
+        826,
+        827,
+        828,
+        829,
+        830,
+        831,
+        832,
+        833,
+        838,
+        841,
+        844,
+        848,
+        852,
+        854
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_callgraph_extractor.py",
+      "total_artifacts": 4,
+      "print_call": [
+        77,
+        154,
+        157,
+        167
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_debug_artifact_scanner.py",
+      "total_artifacts": 5,
+      "print_call": [
+        38,
+        77,
+        148,
+        152,
+        184
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_execution_tracer.py",
+      "total_artifacts": 6,
+      "print_call": [
+        78,
+        148,
+        153,
+        154,
+        162,
+        174
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_module_tree_auditor.py",
+      "total_artifacts": 4,
+      "print_call": [
+        77,
+        133,
+        137,
+        162
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/ast_parser.py",
+      "total_artifacts": 1,
+      "print_call": [
+        81
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/classifier.py",
+      "total_artifacts": 1,
+      "print_call": [
+        79
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/drac_indexer.py",
+      "total_artifacts": 34,
+      "print_call": [
+        87,
+        335,
+        336,
+        337,
+        340,
+        351,
+        354,
+        383,
+        386,
+        392,
+        395,
+        416,
+        430,
+        479,
+        486,
+        487,
+        488,
+        489,
+        492,
+        500,
+        504,
+        508,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        524
+      ],
+      "todo_comment": [],
+      "bare_assert": [
+        481,
+        482,
+        483,
+        485
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/extract.py",
+      "total_artifacts": 36,
+      "print_call": [
+        132,
+        145,
+        151,
+        154,
+        187,
+        189,
+        196,
+        200,
+        240,
+        255,
+        259,
+        309,
+        334,
+        335,
+        336,
+        396,
+        449,
+        452,
+        463,
+        488,
+        506,
+        528,
+        529,
+        546,
+        663,
+        672,
+        673,
+        674,
+        685,
+        700,
+        701,
+        702,
+        703,
+        704,
+        705,
+        706
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/legacy_extract.py",
+      "total_artifacts": 30,
+      "print_call": [
+        84,
+        745,
+        746,
+        747,
+        750,
+        756,
+        757,
+        758,
+        761,
+        770,
+        771,
+        774,
+        810,
+        811,
+        814,
+        829,
+        832,
+        835,
+        854,
+        855,
+        858,
+        869,
+        870,
+        871,
+        872,
+        873,
+        874,
+        875,
+        876,
+        1075
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/pipeline.py",
+      "total_artifacts": 36,
+      "print_call": [
+        97,
+        98,
+        99,
+        102,
+        104,
+        107,
+        117,
+        118,
+        119,
+        122,
+        134,
+        135,
+        138,
+        140,
+        143,
+        147,
+        160,
+        162,
+        165,
+        169,
+        171,
+        173,
+        176,
+        183,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        196,
+        197,
+        204,
+        221
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/registry_writer.py",
+      "total_artifacts": 1,
+      "print_call": [
+        81
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/semantic_extractor.py",
+      "total_artifacts": 1,
+      "print_call": [
+        83
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/utils/python_file_list.py",
+      "total_artifacts": 1,
+      "print_call": [
+        41
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/utils/test_import_base_reasoning_registry.py",
+      "total_artifacts": 3,
+      "print_call": [
+        48,
+        51,
+        54
+      ],
+      "todo_comment": [],
+      "bare_assert": []
+    }
+  ]
+}

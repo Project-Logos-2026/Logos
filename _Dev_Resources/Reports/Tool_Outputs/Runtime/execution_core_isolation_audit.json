@@ -1,0 +1,15 @@
+{
+  "tool": "execution_core_isolation_audit",
+  "include_root": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main",
+  "forbidden_prefixes": [
+    "STAGING",
+    "_Dev_Resources",
+    "test_",
+    "legacy"
+  ],
+  "status": "PASS",
+  "total_modules": 97,
+  "violations_count": 0,
+  "clean_count": 97,
+  "violations": []
+}

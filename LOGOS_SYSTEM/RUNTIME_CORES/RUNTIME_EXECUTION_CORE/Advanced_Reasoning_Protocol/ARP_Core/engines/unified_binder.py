@@ -263,8 +263,8 @@ class UnifiedBinder:
         smp_core: Dict[str, Any] = None
     ) -> Dict[str, Any]:
         """Assemble final I3AA artifact per AA_CORE schema"""
-        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.aa import build_append_artifact
-        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I3_Agent.I3_Agent_Infra.config.hashing import safe_hash
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.Logos_Agents.I2_Agent.I2_Agent_Tools.aa import build_append_artifact
+        from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.Logos_Agents.I3_Agent.I3_Agent_Infra.config.hashing import safe_hash
         import json, hashlib, time
         if smp_core is None:
             raise Exception("AA_CORE compliance requires SMP core for hash computation.")

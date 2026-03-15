@@ -26,19 +26,19 @@ from __future__ import annotations
 # the facade itself remains importable at all times.
 
 try:
-    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Lem_Discharge import LemDischargeHalt, discharge_lem
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.Logos_Agents.Logos_Agent.Logos_Agent_Core.Lem_Discharge import LemDischargeHalt, discharge_lem
 except Exception:  # noqa: BLE001
     LemDischargeHalt = None  # type: ignore[assignment]
     discharge_lem = None  # type: ignore[assignment]
 
 try:
-    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Core.Start_Logos_Agent import LogosAgentStartupHalt, start_logos_agent
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.Logos_Agents.Logos_Agent.Logos_Agent_Core.Start_Logos_Agent import LogosAgentStartupHalt, start_logos_agent
 except Exception:  # noqa: BLE001
     LogosAgentStartupHalt = None  # type: ignore[assignment]
     start_logos_agent = None  # type: ignore[assignment]
 
 try:
-    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus import MREGovernor, MeshEnforcer, NexusHandle, NexusParticipant, StandardNexus, StatePacket
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.Logos_Protocol.LP_Nexus.Logos_Protocol_Nexus import MREGovernor, MeshEnforcer, NexusHandle, NexusParticipant, StandardNexus, StatePacket
 except Exception:  # noqa: BLE001
     MREGovernor = None  # type: ignore[assignment]
     MeshEnforcer = None  # type: ignore[assignment]
@@ -48,12 +48,12 @@ except Exception:  # noqa: BLE001
     StatePacket = None  # type: ignore[assignment]
 
 try:
-    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library import Epistemic_Library_Router
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.Logos_Protocol.Logos_Agent_Resources.Epistemic_Library import Epistemic_Library_Router
 except Exception:  # noqa: BLE001
     Epistemic_Library_Router = None  # type: ignore[assignment]
 
 try:
-    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Boundary_Validators import validate_agent_write_boundary, validate_promotion_boundary, validate_route_packet, validate_startup_context, validate_task
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.Orchestration.Boundary_Validators import validate_agent_write_boundary, validate_promotion_boundary, validate_route_packet, validate_startup_context, validate_task
 except Exception:  # noqa: BLE001
     validate_agent_write_boundary = None  # type: ignore[assignment]
     validate_promotion_boundary = None  # type: ignore[assignment]
@@ -62,32 +62,32 @@ except Exception:  # noqa: BLE001
     validate_task = None  # type: ignore[assignment]
 
 try:
-    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Runtime_Loop import RuntimeLoop
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.Orchestration.Runtime_Loop import RuntimeLoop
 except Exception:  # noqa: BLE001
     RuntimeLoop = None  # type: ignore[assignment]
 
 try:
-    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Topology_Context_Provider import TopologyContextProvider
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.Orchestration.Topology_Context_Provider import TopologyContextProvider
 except Exception:  # noqa: BLE001
     TopologyContextProvider = None  # type: ignore[assignment]
 
 try:
-    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Commutation_Residual_Producer import MeshCommutationOutput
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.Telemetry_Production.Commutation_Residual_Producer import MeshCommutationOutput
 except Exception:  # noqa: BLE001
     MeshCommutationOutput = None  # type: ignore[assignment]
 
 try:
-    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Stability_Scalar_Producer import ProtocolTickTelemetry
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.Telemetry_Production.Stability_Scalar_Producer import ProtocolTickTelemetry
 except Exception:  # noqa: BLE001
     ProtocolTickTelemetry = None  # type: ignore[assignment]
 
 try:
-    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Task_Triad_Derivation import Constraint
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.Telemetry_Production.Task_Triad_Derivation import Constraint
 except Exception:  # noqa: BLE001
     Constraint = None  # type: ignore[assignment]
 
 try:
-    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Telemetry_Production.Telemetry_Producer import assemble_telemetry
+    from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.LOGOS_CORE.Telemetry_Production.Telemetry_Producer import assemble_telemetry
 except Exception:  # noqa: BLE001
     assemble_telemetry = None  # type: ignore[assignment]
 

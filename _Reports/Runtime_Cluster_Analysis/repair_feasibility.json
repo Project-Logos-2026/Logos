@@ -1,0 +1,111 @@
+{
+  "total_cross_cluster_violations": 13,
+  "auto_repairable": 13,
+  "require_manual_review": 0,
+  "repair_rules": [
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Tests.test_topology_validation",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State",
+      "target_cluster": 549,
+      "proposed_facade": "logos.imports.protocols",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_BRIDGE.Radial_Genesis_Engine.Core.Topology_State import X' with 'from logos.imports.protocols import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_registryv1",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_evaluator",
+      "target_cluster": 2,
+      "proposed_facade": "logos.imports.agents",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_evaluator import X' with 'from logos.imports.agents import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_registryv1",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_generator",
+      "target_cluster": 1,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.IEL_Generator.iel_generator import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.tests.test_logosaa_aa_core",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.logos_aa_builder",
+      "target_cluster": 0,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.Logos_Agent.Logos_Agent_Tools.logos_aa_builder import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_mvs_adapter.mvs_adapter_real",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "target_cluster": 1,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.MVS_System.MVS_Core.mathematics.symbolic_math",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "target_cluster": 1,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Prediction.divergence_calculator",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors",
+      "target_cluster": 1,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Core.BDN_System.core.trinity_vectors import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_mvs_adapter.bdn_adapter_real",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+      "target_cluster": 1,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I1_Agent.I1_Agent_Tools.scp_mvs_adapter.mvs_adapter_real",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures",
+      "target_cluster": 1,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Tools.Integrations.data_c_values.data_structures import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.compiler.arp_compiler_core",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.integration_bridge",
+      "target_cluster": 1,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.engines.integration_bridge import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Logos_Agents.I2_Agent.I2_Agent_Tools.ui_io.adapter",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.core_processing.MTP_aggregator",
+      "target_cluster": 0,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Meaning_Translation_Protocol.MTP_Tools.core_processing.MTP_aggregator import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.CSP_Canonical_Store",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema",
+      "target_cluster": 0,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE.Cognitive_State_Protocol.CSP_Core.Unified_Working_Memory.SMP_Schema import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    },
+    {
+      "source_module": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Logos_Core.Orchestration.Nexus_Factory",
+      "illegal_import": "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.metered_reasoning_enforcer",
+      "target_cluster": 0,
+      "proposed_facade": "logos.imports.runtime",
+      "rewrite_rule": "replace 'from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Advanced_Reasoning_Protocol.ARP_Core.metered_reasoning_enforcer import X' with 'from logos.imports.runtime import X'",
+      "feasibility": "AUTO"
+    }
+  ]
+}

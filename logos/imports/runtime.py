@@ -47,3 +47,6 @@ except Exception:  # noqa: BLE001
     rsa = None  # type: ignore[assignment]
 
 __all__ = ["fractal_orbital_node_class", "padding", "pc", "rsa", "system_bootstrap"]
+
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Nexus.SCP_Nexus import StatePacket
+from LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_EXECUTION_CORE.Synthetic_Cognition_Protocol.SCP_Nexus.SCP_Nexus import NexusParticipant

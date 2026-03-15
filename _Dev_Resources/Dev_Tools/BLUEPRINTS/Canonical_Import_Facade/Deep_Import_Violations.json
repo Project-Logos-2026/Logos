@@ -1,0 +1,23 @@
+{
+  "generated_utc": "2026-03-13T02:37:36Z",
+  "forbidden_prefixes": [
+    "LOGOS_SYSTEM.RUNTIME_CORES",
+    "LOGOS_SYSTEM.RUNTIME_CORES.RUNTIME_OPPERATIONS_CORE",
+    "LOGOS_SYSTEM.GOVERNANCE_ENFORCEMENT",
+    "LOGOS_SYSTEM.Runtime_Spine",
+    "LOGOS_SYSTEM.STARTUP"
+  ],
+  "allowlisted_path_segments": [
+    "Canonical_Import_Facade",
+    "Import_Facade"
+  ],
+  "excluded_dirs": [
+    ".git",
+    ".venv",
+    "__pycache__",
+    "site-packages"
+  ],
+  "total_python_files_scanned": 71,
+  "total_violations": 0,
+  "violations": []
+}

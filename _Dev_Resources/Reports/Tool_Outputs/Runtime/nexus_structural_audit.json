@@ -1,0 +1,636 @@
+{
+  "tool": "nexus_structural_audit",
+  "root": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME",
+  "summary": {
+    "EXECUTION_NEXUS": 2,
+    "BINDING_NEXUS": 0,
+    "NON_NEXUS": 95,
+    "PARSE_ERROR": 0
+  },
+  "classification_index": {
+    "EXECUTION_NEXUS": [
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/crawler/core/crawl_engine.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_execution_tracer.py"
+    ],
+    "BINDING_NEXUS": [],
+    "NON_NEXUS": [
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/AP_SYSTEM_CONFIG/SYSTEM/SCHEMAS/AP_MODULE_HEADER_TEMPLATE.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/SYSTEM_AUDITS_AND_REPORTS/Complettion_Audit/_run_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/analysis_controller.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/audit_controller.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/config_loader.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/crawler_controller.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/pipeline_controller.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/repair_controller.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/simulation_controller.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/crawler/core/crawl_monitor.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/crawler/utils/file_scanner.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/orchestration/task_router/routing_table_loader.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/registry/fbc_registry.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/dependency_normalizer.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/facade_rewrite_pass.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/facade_synthesis.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/header_injection_operator.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/import_rewrite_operator.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/module_relocation_operator.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/namespace_disambiguator.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/reorganize.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/simulation/dependency_simulator/dependency_simulator.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/simulation/import_simulator/import_simulator.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/simulation/namespace_simulator/namespace_simulator.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/simulation/repo_simulator/repo_simulator.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/simulation/runtime_simulator/runtime_simulator.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/ap_phase2_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/_run_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/ap_artifact_collection_p1.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/audit_utils.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/circular_dependency_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/cross_package_dependency_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/duplicate_module_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/execution_core_isolation_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/facade_bypass_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/file_size_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/governance_contract_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/governance_coverage_map.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/governance_module_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/header_schema_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/import_surface_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/module_path_ambiguity_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/namespace_shadow_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/nexus_structural_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/orphan_module_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/repair_registry_loader.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/run_audit_suite.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/run_governance_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/runtime_entry_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/scanner.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/static_ast_analysis.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/symbol_collision_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/triage.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/unused_import_audit.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/governance_analysis/governance_scanner.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/Import_Linter.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/generate_deep_import_violations.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/generate_symbol_import_index.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_prefix_verifier.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_root_grouping_analyzer.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_scanner.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_violation_classifier.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/module_root_existence_checker.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/namespace_discovery_scan.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/violation_prefix_grouper.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/header_validator.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/normalization_engine.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/schema_registry.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/repo_mapping/repo_scanner.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/repo_mapping/repo_structure_export.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/dependency_graph.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_analysis.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_callgraph_extractor.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_debug_artifact_scanner.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_module_tree_auditor.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/__init__.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/ast_parser.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/classifier.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/drac_indexer.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/extract.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/legacy_extract.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/pipeline.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/registry_writer.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/semantic_extractor.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/utils/conftest.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/utils/logger.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/utils/python_file_list.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/utils/test_import_base_reasoning_registry.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_NEXUS/Governance/workflow_gate.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_TARGET_AUDITS/MODULES/analysis/dependency_graphs/cluster_analysis.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_TARGET_AUDITS/MODULES/analysis/dependency_graphs/packet_discovery.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_TARGET_AUDITS/MODULES/analysis/repo_maps/repo_mapper.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/tests/__init__.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/tests/test_smoke.py",
+      "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/tools_internal/v21_header_injection.py"
+    ],
+    "PARSE_ERROR": []
+  },
+  "modules": [
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/AP_SYSTEM_CONFIG/SYSTEM/SCHEMAS/AP_MODULE_HEADER_TEMPLATE.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/SYSTEM_AUDITS_AND_REPORTS/Complettion_Audit/_run_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/analysis_controller.py",
+      "classification": "NON_NEXUS",
+      "classes": [
+        "AnalysisController"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/audit_controller.py",
+      "classification": "NON_NEXUS",
+      "classes": [
+        "AuditController"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/config_loader.py",
+      "classification": "NON_NEXUS",
+      "classes": [
+        "ConfigLoader"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/crawler_controller.py",
+      "classification": "NON_NEXUS",
+      "classes": [
+        "CrawlerController"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/pipeline_controller.py",
+      "classification": "NON_NEXUS",
+      "classes": [
+        "PipelineController"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/repair_controller.py",
+      "classification": "NON_NEXUS",
+      "classes": [
+        "RepairController"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/controllers/simulation_controller.py",
+      "classification": "NON_NEXUS",
+      "classes": [
+        "SimulationController"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/crawler/core/crawl_engine.py",
+      "classification": "EXECUTION_NEXUS",
+      "classes": [
+        "CrawlEngine"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/crawler/core/crawl_monitor.py",
+      "classification": "NON_NEXUS",
+      "classes": [
+        "CrawlMonitor"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/crawler/utils/file_scanner.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/orchestration/task_router/routing_table_loader.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/registry/fbc_registry.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/dependency_normalizer.py",
+      "classification": "NON_NEXUS",
+      "classes": [
+        "DependencyNormalizerOperator"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/facade_rewrite_pass.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/facade_synthesis.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/header_injection_operator.py",
+      "classification": "NON_NEXUS",
+      "classes": [
+        "HeaderInjectionOperator"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/import_rewrite_operator.py",
+      "classification": "NON_NEXUS",
+      "classes": [
+        "ImportRewriteOperator"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/module_relocation_operator.py",
+      "classification": "NON_NEXUS",
+      "classes": [
+        "ModuleRelocationOperator"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/namespace_disambiguator.py",
+      "classification": "NON_NEXUS",
+      "classes": [
+        "NamespaceDisambiguatorOperator"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/repair/operators/reorganize.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/simulation/dependency_simulator/dependency_simulator.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/simulation/import_simulator/import_simulator.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/simulation/namespace_simulator/namespace_simulator.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/simulation/repo_simulator/repo_simulator.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/simulation/runtime_simulator/runtime_simulator.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/ap_phase2_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/_run_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/ap_artifact_collection_p1.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/audit_utils.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/circular_dependency_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/cross_package_dependency_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/duplicate_module_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/execution_core_isolation_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/facade_bypass_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/file_size_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/governance_contract_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/governance_coverage_map.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/governance_module_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/header_schema_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/import_surface_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/module_path_ambiguity_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/namespace_shadow_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/nexus_structural_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/orphan_module_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/repair_registry_loader.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/run_audit_suite.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/run_governance_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/runtime_entry_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/scanner.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/static_ast_analysis.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/symbol_collision_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/triage.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/audit_tools/unused_import_audit.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/governance_analysis/governance_scanner.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/Import_Linter.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/generate_deep_import_violations.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/generate_symbol_import_index.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_prefix_verifier.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_root_grouping_analyzer.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_scanner.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/import_violation_classifier.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/module_root_existence_checker.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/namespace_discovery_scan.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/import_analysis/violation_prefix_grouper.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/header_validator.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/normalization_engine.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/normalization_tools/schema_registry.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/repo_mapping/repo_scanner.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/repo_mapping/repo_structure_export.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/dependency_graph.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_analysis.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_callgraph_extractor.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_debug_artifact_scanner.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_execution_tracer.py",
+      "classification": "EXECUTION_NEXUS",
+      "classes": [
+        "ExecutionTracer"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/runtime_analysis/runtime_module_tree_auditor.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/__init__.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/ast_parser.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/classifier.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/drac_indexer.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/extract.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/legacy_extract.py",
+      "classification": "NON_NEXUS",
+      "classes": [
+        "ModuleAnalysis"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/pipeline.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/registry_writer.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/tools/semantic_extraction/semantic_extractor.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/utils/conftest.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/utils/logger.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/utils/python_file_list.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_MUTATION_TOOLING/utils/test_import_base_reasoning_registry.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_NEXUS/Governance/workflow_gate.py",
+      "classification": "NON_NEXUS",
+      "classes": [
+        "WorkflowGateError"
+      ]
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_TARGET_AUDITS/MODULES/analysis/dependency_graphs/cluster_analysis.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_TARGET_AUDITS/MODULES/analysis/dependency_graphs/packet_discovery.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/WORKFLOW_TARGET_AUDITS/MODULES/analysis/repo_maps/repo_mapper.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/tests/__init__.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/tests/test_smoke.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    },
+    {
+      "path": "LOGOS_SYSTEM/RUNTIME_BRIDGE/ARCHON_PRIME/ARCHON_PRIME-main/tools_internal/v21_header_injection.py",
+      "classification": "NON_NEXUS",
+      "classes": []
+    }
+  ]
+}
